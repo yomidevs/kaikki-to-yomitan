@@ -2,7 +2,7 @@ import json
 import os
 from datetime import datetime
 
-lang_short = os.environ.get('language_short')
+lang_short = os.environ.get('source_iso')
 dict_name = os.environ.get('DICT_NAME')
 
 if not os.path.exists(f'data/freq/{lang_short}-freq.json'):

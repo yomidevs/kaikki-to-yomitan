@@ -19,16 +19,17 @@ const {readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, createWr
 const date = require('date-and-time');
 const now = new Date();
 
-const {language_short, DEBUG_WORD, DICT_NAME} = process.env;
+const {source_iso, target_iso, DEBUG_WORD, DICT_NAME} = process.env;
 
 const currentDate = date.format(now, 'YYYY.MM.DD');
 
-const lemmaDict = JSON.parse(readFileSync(`data/tidy/${language_short}-lemmas.json`));
-const formDict = JSON.parse(readFileSync(`data/tidy/${language_short}-forms.json`));
+console.log(`5-make-yezichak.js: reading lemmas`);
+const lemmaDict = JSON.parse(readFileSync(`data/tidy/${source_iso}-${target_iso}-lemmas.json`));
+console.log(`5-make-yezichak.js: reading forms`);
+const formDict = JSON.parse(readFileSync(`data/tidy/${source_iso}-${target_iso}-forms.json`));
 
-// make folder if doesn't exist
-if (!existsSync(`data/language/${language_short}`)) {
-    mkdirSync(`data/language/${language_short}`, {recursive: true});
+if (!existsSync(`data/language/${source_iso}/${target_iso}`)) {
+    mkdirSync(`data/language/${source_iso}/${target_iso}`, {recursive: true});
 }
 
 function loadJson(file) {
@@ -36,11 +37,11 @@ function loadJson(file) {
 }
 
 const commonTermTags = loadJson('data/language/tag_bank_term.json');
-const languageTermTags = loadJson(`data/language/${language_short}/tag_bank_term.json`);
+const languageTermTags = loadJson(`data/language/${source_iso}/${target_iso}/tag_bank_term.json`);
 const termTags = [...commonTermTags, ...languageTermTags];
 
 const commonIpaTags = loadJson('data/language/tag_bank_ipa.json');
-const languageIpaTags = loadJson(`data/language/${language_short}/tag_bank_ipa.json`);
+const languageIpaTags = loadJson(`data/language/${source_iso}/${target_iso}/tag_bank_ipa.json`);
 const ipaTags = [...commonIpaTags, ...languageIpaTags];
 
 const tagModifiers = [
@@ -111,6 +112,7 @@ const skippedTermTags = {};
 let ipaCount = 0;
 let termTagCount = 0;
 
+console.log('5-make-yezichak.js: processing lemmas...');
 for (const [lemma, infoMap] of Object.entries(lemmaDict)) {
     normalizedLemma = normalizeOrthography(lemma);
     
@@ -256,6 +258,7 @@ const multiwordInflections = [
     'female equivalent', // de
 ];
 
+console.log('5-make-yezichak.js: Processing forms...');
 for (const [form, allInfo] of Object.entries(formDict)) {
     for (const [lemma, info] of Object.entries(allInfo)) {
         for (const [pos, glosses] of Object.entries(info)) {
@@ -264,18 +267,43 @@ for (const [form, allInfo] of Object.entries(formDict)) {
 
                 gloss = gloss
                     .replace(/-automated- /g, '')
-                    .replace(/multiword-construction /g, '')
-                    .replace(new RegExp(`of ${escapeRegExp(lemma)}.*$`), '');
+                
+                if(target_iso === 'en'){
+                    gloss = gloss
+                        .replace(/multiword-construction /g, '')
+                        .replace(new RegExp(`of ${escapeRegExp(lemma)}.*$`), '');
 
-                for (const multiwordInflection of multiwordInflections) {
-                    gloss = gloss.replace(new RegExp(multiwordInflection), multiwordInflection.replace(' ', '-'));
+                    for (const multiwordInflection of multiwordInflections) {
+                        gloss = gloss.replace(new RegExp(multiwordInflection), multiwordInflection.replace(' ', '-'));
+                    }
                 }
 
-                const hypotheses = gloss
-                    .split(' and ')
-                    .filter(Boolean)
-                    .map((hypothesis) =>
-                        hypothesis.split(' ').filter(Boolean));
+                // TODO: decide on format for de-de
+                // if(target_iso === 'de'){
+                //     gloss = gloss
+                //         .replace(/^\s*\[\d\]\s*/g, '')
+                // }
+                
+                let hypotheses = [[gloss]];
+
+                // TODO: generalize this
+                if(target_iso === 'en'){
+                    hypotheses = gloss.split(' and ') 
+                    hypotheses = hypotheses.map((hypothesis) => hypothesis.split(' '));
+                }
+
+                if(target_iso === 'fr'){
+                    hypotheses = hypotheses.map((hypothesis) => 
+                        hypothesis.filter(inflection => !inflection.trim().startsWith('Voir la conjugaison'))
+                    );
+                }
+
+                hypotheses = hypotheses
+                    .map((hypothesis) => 
+                        hypothesis
+                            .map((inflection) => (inflection).trim())
+                            .filter(Boolean)
+                    ).filter(hypothesis => hypothesis.length);
 
                 return hypotheses;
             });
@@ -290,18 +318,20 @@ for (const [form, allInfo] of Object.entries(formDict)) {
                 }
             }
 
-            yzk.form.push([
-                normalizeOrthography(form),
-                '',
-                'non-lemma',
-                '',
-                0,
-                [''],
-                0,
-                '',
-                normalizeOrthography(lemma),
-                uniqueHypotheses
-            ]);
+            if(uniqueHypotheses.length){
+                yzk.form.push([
+                    normalizeOrthography(form),
+                    '',
+                    'non-lemma',
+                    '',
+                    0,
+                    [''],
+                    0,
+                    '',
+                    normalizeOrthography(lemma),
+                    uniqueHypotheses
+                ]);
+            }
         }
     }
 }
@@ -319,31 +349,34 @@ const indexJson = {
 const folders = ['dict', 'ipa'];
 
 for (const folder of folders) {
+    console.log(`5-make-yezichak.js: Writing ${folder}...`);
     for (const file of readdirSync(`${tempPath}/${folder}`)) {
         if (file.includes('term_')) { unlinkSync(`${tempPath}/${folder}/${file}`); }
     }
 
     writeFileSync(`${tempPath}/${folder}/index.json`, JSON.stringify({
         ...indexJson,
-        title: `${DICT_NAME}-${folder}-${language_short}`
+        title: `${DICT_NAME}W-${source_iso}-${target_iso}` + (folder === 'dict' ? '' : '-ipa'),
     }));
 
     writeFileSync(`${tempPath}/${folder}/tag_bank_1.json`, JSON.stringify(Object.values(yzkTags[folder])));
 
     const filename = folder === 'dict' ? 'term_bank_' : 'term_meta_bank_';
 
-    writeInBatches(yzk[folder], `${folder}/${filename}`);
+    writeInBatches(yzk[folder], `${folder}/${filename}`, 20000);
 }
 
 console.log('total ipas', ipaCount, 'skipped ipa tags', Object.values(skippedIpaTags).reduce((a, b) => a + b, 0));
-writeFileSync(`data/language/${language_short}/skippedIpaTags.json`, JSON.stringify(sortBreakdown(skippedIpaTags), null, 2));
+writeFileSync(`data/language/${source_iso}/${target_iso}/skippedIpaTags.json`, JSON.stringify(sortBreakdown(skippedIpaTags), null, 2));
 
 console.log('total term tags', termTagCount, 'skipped term tags', Object.values(skippedTermTags).reduce((a, b) => a + (parseInt(b) || 0), 0));
-writeFileSync(`data/language/${language_short}/skippedTermTags.json`, JSON.stringify(sortBreakdown(skippedTermTags), null, 2));
+writeFileSync(`data/language/${source_iso}/${target_iso}/skippedTermTags.json`, JSON.stringify(sortBreakdown(skippedTermTags), null, 2));
 
 console.log('5-make-yezichak.js: Done!');
 
 function writeInBatches(inputArray, filenamePrefix, batchSize = 100000) {
+    console.log(`Writing ${inputArray.length.toLocaleString()} entries...`);
+
     let bankIndex = 0;
 
     while (inputArray.length > 0) {
@@ -369,7 +402,7 @@ function incrementCounter(key, counter) {
 }
 
 function normalizeOrthography(term) {
-    switch (language_short) {
+    switch (source_iso) {
         case 'ar':
             return term
                 .replace(/[\u064E-\u0650]/g, '');

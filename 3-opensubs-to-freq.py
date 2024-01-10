@@ -9,7 +9,7 @@ import json
 import collections
 
 max_sentences = int(os.environ.get("MAX_SENTENCES"))
-lang_short = os.environ.get("language_short")
+lang_short = os.environ.get("source_iso")
 opensubsPath = os.environ.get("OPENSUBS_PATH")
 
 db_name = 'opensubs.db'

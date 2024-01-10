@@ -18,10 +18,10 @@ const {readFileSync, writeFileSync, existsSync} = require('fs');
 
 const maxSentences = parseInt(process.env.MAX_SENTENCES);
 
-const lang_short = process.env.language_short;
+const {source_iso, target_iso} = process.env;
 
-const lemmaDict = JSON.parse(readFileSync(`data/tidy/${lang_short}-lemmas.json`));
-const formDict = JSON.parse(readFileSync(`data/tidy/${lang_short}-forms.json`));
+const lemmaDict = JSON.parse(readFileSync(`data/tidy/${source_iso}-${target_iso}-lemmas.json`));
+const formDict = JSON.parse(readFileSync(`data/tidy/${source_iso}-${target_iso}-forms.json`));
 
 const formPointer = {};
 
@@ -41,13 +41,13 @@ for (const [lemma, info] of Object.entries(lemmaDict)) {
     }
 }
 
-const sentencesFile = `data/sentences/${lang_short}-sentences.json`;
+const sentencesFile = `data/sentences/${source_iso}-sentences.json`;
 const sentences = existsSync(sentencesFile)
   ? JSON.parse(readFileSync(sentencesFile))
   : [];
 
 if (sentences.length === 0) {
-    console.log(`No sentences found for ${lang_short}. Exiting...`);
+    console.log(`No sentences found for ${source_iso}. Exiting...`);
     process.exit(1);
 }
 
@@ -168,7 +168,7 @@ const frequencies = {
     'missing': mapToSortedObj(missingList)
 };
 
-frequencies[`${lang_short}-freq`] = mapToSortedObj(freqList);
+frequencies[`${source_iso}-freq`] = mapToSortedObj(freqList);
 
 for (const [file, data] of Object.entries(frequencies)) {
     writeFileSync(`data/freq/${file}.json`, JSON.stringify(data));
