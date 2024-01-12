@@ -80,6 +80,12 @@ for entry in "${entries[@]}"; do
       continue
   fi
 
+    target_languages="es de en fr ru zh"
+    if [[ ! "$target_languages" == *"$target_iso"* ]]; then
+      echo "Unsupported target language: $target_iso"
+      continue
+    fi
+
   export target_iso="$target_iso"
   export target_language="$target_language_name"
 

@@ -1,10 +1,21 @@
 import json
 import os
+import re
 
 source_iso = os.environ.get("source_iso")
 target_iso = os.environ.get("target_iso")
 kaikki_file = os.environ.get("kaikki_file")
 
+def isInflectionGloss(glosses):
+    if(target_iso == 'en'):
+        return re.match(r".*inflection of.*", json.dumps(glosses))
+    elif(target_iso == 'fr'):
+        if re.match(r"(.*)du verbe\s+((?:(?!\bdu\b).)*)$", json.dumps(glosses)):
+            return True
+        if re.search(r"((?:(?:Masculin|Féminin)\s)?(?:(?:p|P)luriel|(?:s|S)ingulier)) de ([^\s]+)", json.dumps(glosses)):
+            return True
+    return False
+    
 def handle_level(nest, level):
     nest_defs = []
     def_index = 0
@@ -57,6 +68,15 @@ form_dict = {}
 form_stuff = []
 automated_forms = {}
 
+def addDeinflections(form_dict, word, pos, lemma, inflections):
+    if(target_iso == 'fr'):
+        word = re.sub(r"(qu\')?(ils/elles|il/elle/on)\s*", '', word)
+    form_dict[word] = form_dict.get(word, {})
+    form_dict[word][lemma] = form_dict[word].get(lemma, {})
+    form_dict[word][lemma][pos] = form_dict[word][lemma].get(pos, [])
+
+    form_dict[word][lemma][pos].extend(inflections)
+
 with open(f'data/kaikki/{kaikki_file}') as file:
     for line in file:
         line_count += 1
@@ -102,7 +122,7 @@ with open(f'data/kaikki/{kaikki_file}') as file:
                     if form_of:
                         form_stuff.append([word, sense, pos])
                     else:
-                        if 'inflection of ' not in json.dumps(glosses):
+                        if not isInflectionGloss(glosses):
                             lemma_dict[word] = lemma_dict.get(word, {})
                             lemma_dict[word][pos] = lemma_dict[word].get(pos, {})
                             lemma_dict[word][pos]['ipa'] = lemma_dict[word][pos].get('ipa', [])
@@ -139,26 +159,36 @@ with open(f'data/kaikki/{kaikki_file}') as file:
 
                             if curr_sense['glosses']:
                                 lemma_dict[word][pos]['senses'].append(curr_sense)
+                        else:
+                            if(target_iso == 'en'):
+                                lemma = re.sub(r'.+(?=inflection of)', '', sense['glosses'][0])
+                                lemma = re.sub(r' \(.+?\)', '', lemma)
+                                lemma = re.sub(r':$', '', lemma)
+                                lemma = re.sub(r':\n.+', '', lemma)
+                                lemma = re.sub(r'inflection of ', '', lemma)
+                                lemma = re.sub(r':.+', '', lemma)
+                                lemma = lemma.strip()
+                                
+                                inflection = sense['glosses'][1] if len(sense['glosses']) > 1 else ''
 
-                        if 'inflection of ' in json.dumps(glosses):
-                            lemma = sense['glosses'][0]\
-                                .replace('.+(?=inflection of)', '')\
-                                .replace(' \\(.+?\\)', '')\
-                                .replace(':$', '')\
-                                .replace(':\\n.+', '')\
-                                .replace('inflection of ', '')\
-                                .replace(':.+', '')\
-                                .strip()
-                            
-                            inflection = sense['glosses'][1] if len(sense['glosses']) > 1 else ''
+                                if inflection and 'inflection of ' not in inflection and word != lemma:
+                                    addDeinflections(form_dict, word, pos, lemma, [inflection])
 
-                            if inflection and 'inflection of ' not in inflection and word != lemma:
-                                form_dict[word] = form_dict.get(word, {})
-                                form_dict[word][lemma] = form_dict[word].get(lemma, {})
-                                form_dict[word][lemma][pos] = form_dict[word][lemma].get(pos, [])
+                            elif(target_iso == 'fr'):
+                                inflection, lemma = None, None
+                                
+                                if regexMatch := re.match(r"(.*)du verbe\s+((?:(?!\bdu\b).)*)$", sense['glosses'][0]):
+                                    inflection, lemma = regexMatch.group(1), regexMatch.group(2)
+                                              
+                                elif regexMatch := re.match(r"^((?:(?:Masculin|Féminin)\s)?(?:(?:p|P)luriel|(?:s|S)ingulier)) de ([^\s]*)$", sense['glosses'][0].strip()):
+                                    inflection, lemma = regexMatch.group(1), regexMatch.group(2)
 
-                                form_dict[word][lemma][pos].append(inflection)
-                sense_index += 1
+                                if inflection and lemma:
+                                    inflection = inflection.strip()
+                                    lemma = re.sub(r'\.$', '', lemma).strip()
+
+                                    if inflection and word != lemma:
+                                        addDeinflections(form_dict, word, pos, lemma, [inflection])
 
 print(f"Processed {line_count} lines...")
 
@@ -168,14 +198,10 @@ for form, info, pos in form_stuff:
     lemma = form_of[0]['word']
 
     if form != lemma and glosses:
-        form_dict[form] = form_dict.get(form, {})
-        form_dict[form][lemma] = form_dict[form].get(lemma, {})
-        form_dict[form][lemma][pos] = form_dict[form][lemma].get(pos, [])
-
         if not "##" in glosses[0]:
-            form_dict[form][lemma][pos].append(glosses[0])
+            addDeinflections(form_dict, form, pos, lemma, [glosses[0]])
         elif len(glosses) > 1:
-            form_dict[form][lemma][pos].append(glosses[1])
+            addDeinflections(form_dict, form, pos, lemma, [glosses[1]])
 
 missing_forms = 0
 
@@ -187,17 +213,16 @@ for form, info in automated_forms.items():
             for lemma, parts in info.items():
                 for pos, glosses in parts.items():
                     if form != lemma:
-                        form_dict[form] = form_dict.get(form, {})
-                        form_dict[form][lemma] = form_dict[form].get(lemma, {})
-                        form_dict[form][lemma][pos] = form_dict[form][lemma].get(pos, [])
-
-                        form_dict[form][lemma][pos].extend([f"-automated- {gloss}" for gloss in glosses])
+                        inflections = [f"-automated- {gloss}" for gloss in glosses]
+                        addDeinflections(form_dict, form, pos, lemma, inflections)
 
 print(f"There were {missing_forms} missing forms that have now been automatically populated.")
 
+print(f"Writing lemma dict to data/tidy/{source_iso}-{target_iso}-lemmas.json...")
 with open(f"data/tidy/{source_iso}-{target_iso}-lemmas.json", "w") as f:
     json.dump(lemma_dict, f)
 
+print(f"Writing form dict to data/tidy/{source_iso}-{target_iso}-forms.json...")
 with open(f"data/tidy/{source_iso}-{target_iso}-forms.json", "w") as f:
     json.dump(form_dict, f)
 

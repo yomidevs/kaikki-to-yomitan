@@ -4,7 +4,7 @@ import os
 source_iso = os.environ.get("source_iso")
 target_iso = os.environ.get("target_iso")
 
-input_file = f"data/kaikki/{source_iso}-extract.json"
+input_file = f"data/kaikki/{target_iso}-extract.json"
 output_file = f"data/kaikki/{source_iso}-{target_iso}-extract.json"
 
 print(f"Reading {input_file} and writing {output_file}...")
