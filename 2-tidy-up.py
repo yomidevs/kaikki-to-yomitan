@@ -31,7 +31,7 @@ def handle_level(nest, level):
             content = definition if level == 1 else [{"tag": "span", "data": {"listType": "number"}, "content": f"{def_index}. "}, definition]
 
             nest_defs.append([{"tag": "div", "data": {"listType": list_type}, "content": content},
-                              {"tag": "div", "data": {"listType": "ol"}, "content": child_defs}])
+                              {"tag": "div", "data": {"listType": "ol"}, "style": { "marginLeft": level + 1 }, "content": child_defs}])
         else:
             nest_defs.append({"tag": "div", "data": {"listType": "li"}, "content": [{"tag": "span", "data": {"listType": "number"}, "content": f"{def_index}. "}, definition]})
 
@@ -189,7 +189,7 @@ with open(f'data/kaikki/{kaikki_file}') as file:
 
                                     if inflection and word != lemma:
                                         addDeinflections(form_dict, word, pos, lemma, [inflection])
-
+                sense_index += 1
 print(f"Processed {line_count} lines...")
 
 for form, info, pos in form_stuff:
