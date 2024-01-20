@@ -1,6 +1,7 @@
 *.json
 !tag_bank_term.json
 !tag_bank_ipa.json
+!languages.json
 !package.json
 
 *.zip

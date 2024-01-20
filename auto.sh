@@ -18,11 +18,10 @@ source_all=false
 target_all=false
 redownload=false
 force_tidy=false
-force_freq=false
 force_yez=false
 force=false
 
-flags=('S' 'T' 'd' 't' 'f' 'y' 'F')
+flags=('S' 'T' 'd' 't' 'y' 'F')
 for flag in "${flags[@]}"; do
   case "$3" in 
     *"$flag"*) 
@@ -31,7 +30,6 @@ for flag in "${flags[@]}"; do
         'T') target_all=true ;;
         'd') redownload=true ;;
         't') force_tidy=true ;;
-        'f') force_freq=true ;;
         'y') force_yez=true ;;
         'F') force=true ;;
       esac
@@ -41,11 +39,10 @@ done
 
 if [ "$force" = true ]; then
   force_tidy=true
-  force_freq=true
   force_yez=true
 fi
 
-if [ "$force_tidy" = true ] || [ "$force_freq" = true ]; then
+if [ "$force_tidy" = true ]; then
   force_yez=true
 fi
 
@@ -54,7 +51,6 @@ echo "[T] target_all: $target_all"
 echo "[d] redownload: $redownload"
 echo "[F] force: $force"
 echo "[t] force_tidy: $force_tidy"
-echo "[f] force_freq: $force_freq"
 echo "[y] force_yez: $force_yez"
 
 # Step 1: Install dependencies
@@ -63,13 +59,13 @@ npm i
 # Step 2: Run create-folder.js
 node 1-create-folders.js
 
-languages=$(jq '.' ../ext/js/language/languages.json)
+languages=$(jq '.' languages.json)
 
 source_language="$1"
 target_language="$2"
 
 declare -a entries="($(
-  jq -r '.[] | @json | @sh' ../ext/js/language/languages.json
+  jq -r '.[] | @json | @sh' languages.json
 ))"
 
 for entry in "${entries[@]}"; do
@@ -155,41 +151,16 @@ for entry in "${entries[@]}"; do
       echo "Tidy file already exists. Skipping tidying."
     fi
 
-    # Step 5 (optional): Create an array of sentences
-    if \
-      [ ! -f "data/sentences/$source_iso-sentences.json" ] || \
-      [ "$force_freq" = true ]; then
-      if [ -d "$OPENSUBS_PATH" ]; then
-        echo "Creating sentences file"
-        python3 3-opensubs-to-freq.py
-      else
-        echo "OpenSubtitles path not found. Skipping sentence creation."
-      fi
-    else
-      echo "Sentences file already exists. Skipping sentence creation."
-    fi
-
-    # Step 6: Create a frequency list
-    if \
-      [ ! -f "data/freq/$source_iso-freq.json" ] || \
-      [ "$force_freq" = true ]; then
-      echo "Creating frequency file"
-      node 4-create-freq.js
-    else
-      echo "Freq file already exists. Skipping freq creation."
-    fi
-
     dict_file="${DICT_NAME}W-$source_iso-$target_iso.zip"
     ipa_file="${DICT_NAME}W-$source_iso-$target_iso-ipa.zip"
-    freq_file="${DICT_NAME}-$source_iso-freq.zip"
 
-    # Step 7: Create Yezichak files
+    # Step 5: Create Yezichak files
     if \
       [ ! -f "data/language/$source_iso/$target_iso/$dict_file" ] || \
       [ ! -f "data/language/$source_iso/$target_iso/$ipa_file" ] || \
       [ "$force_yez" = true ]; then
       echo "Creating Yezichak dict and IPA files"
-      if node --max-old-space-size=8192 5-make-yezichak.js; then
+      if node --max-old-space-size=8192 3-make-yomitan.js; then
         zip -j "$dict_file" data/temp/dict/index.json data/temp/dict/tag_bank_1.json data/temp/dict/term_bank_*.json
         zip -j "$ipa_file" data/temp/ipa/index.json data/temp/ipa/tag_bank_1.json data/temp/ipa/term_meta_bank_*.json
       else
@@ -199,20 +170,6 @@ for entry in "${entries[@]}"; do
       echo "Yezichak dict already exists. Skipping Yezichak creation."
     fi
 
-    # Step 8: Convert frequency list to rank-based Yezichak format
-    if \
-      [ ! -f "data/language/$source_iso/$freq_file" ] || \
-      [ "$force_yez" = true ]; then
-      echo "Creating Yezichak freq files"
-      if python3 6-freq-to-rank.py; then
-        zip -j "$freq_file" data/temp/freq/index.json data/temp/freq/term_meta_bank_*.json
-      else
-        echo "Error: Frequency to rank conversion script failed."
-      fi
-    else
-      echo "Yezichak freq already exists. Skipping Yezichak creation."
-    fi
-
     if [ -f "$dict_file" ]; then
       mv "$dict_file" "data/language/$source_iso/$target_iso/"
     fi
@@ -220,14 +177,6 @@ for entry in "${entries[@]}"; do
     if [ -f "$ipa_file" ]; then
       mv "$ipa_file" "data/language/$source_iso/$target_iso/"
     fi
-
-    if [ -f "$freq_file" ]; then
-      mv "$freq_file" "data/language/$target_iso/"
-    fi
-
-    # Step 9: Run tests
-    echo "Running tests..."
-    npm run test
 
     echo "----------------------------------------------------------------------------------"
   done

@@ -17,16 +17,14 @@
 const {mkdirSync} = require('fs');
 
 const folders = [
-    'freq',
-    'freq/metadata',
     'kaikki',
     'sentences',
     'tidy',
     'language',
     'temp',
     'temp/dict',
-    'temp/freq',
-    'temp/ipa'
+    'temp/ipa',
+    'test'
 ];
 
 for (const folder of folders) {
