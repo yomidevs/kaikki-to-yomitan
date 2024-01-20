@@ -1,20 +1,3 @@
-/*
- * Copyright (C) 2023  Yezichak Authors
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- */
-
 const {readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, createWriteStream, unlinkSync} = require('fs');
 const date = require('date-and-time');
 const now = new Date();
@@ -94,14 +77,14 @@ function findModifiedTag(tag){
     return modifiedTag;
 }
 
-const yzk = {
+const ymt = {
     lemma: [],
     form: [],
     ipa: [],
     dict: []
 };
 
-const yzkTags = {
+const ymtTags = {
     ipa: {},
     dict: {}
 };
@@ -181,13 +164,13 @@ for (const [lemma, infoMap] of Object.entries(lemmaDict)) {
 
                         if (fullTag) {
                             recognizedTags.push(fullTag[0]);
-                            yzkTags.dict[tag] = fullTag;
+                            ymtTags.dict[tag] = fullTag;
                             return null;
                         } else {
                             const modifiedTag = findModifiedTag(tag);
                             if (modifiedTag){
                                 recognizedTags.push(modifiedTag[0]);
-                                yzkTags.dict[tag] = modifiedTag;
+                                ymtTags.dict[tag] = modifiedTag;
                             }  else {
                                 if (allEntryTags.some((otherTag) => otherTag !== tag && otherTag.includes(tag))) return null;
                                 incrementCounter(tag, skippedTermTags)
@@ -208,7 +191,7 @@ for (const [lemma, infoMap] of Object.entries(lemmaDict)) {
 
         debug(entries);
         for (const [tags, entry] of Object.entries(entries)) {
-            yzk.lemma.push(entry);
+            ymt.lemma.push(entry);
         }
     }
 
@@ -218,7 +201,7 @@ for (const [lemma, infoMap] of Object.entries(lemmaDict)) {
             .map((tag) => {
                 const fullTag = findTag(ipaTags, tag);
                 if (fullTag){
-                    yzkTags.ipa[tag] = fullTag;
+                    ymtTags.ipa[tag] = fullTag;
                     return fullTag[0];
                 } else {
                     incrementCounter(tag, skippedIpaTags)
@@ -237,7 +220,7 @@ for (const [lemma, infoMap] of Object.entries(lemmaDict)) {
     }, []);
 
     if (mergedIpas.length) {
-        yzk.ipa.push([
+        ymt.ipa.push([
             normalizedLemma,
             'ipa',
             {
@@ -322,7 +305,7 @@ for (const [form, allInfo] of Object.entries(formDict)) {
             ]);
 
             if(deinflectionDefinitions.length){
-                yzk.form.push([
+                ymt.form.push([
                     normalizeOrthography(form),
                     '',
                     'non-lemma',
@@ -337,13 +320,13 @@ for (const [form, allInfo] of Object.entries(formDict)) {
     }
 }
 
-yzk.dict = [...yzk.lemma, ...yzk.form];
+ymt.dict = [...ymt.lemma, ...ymt.form];
 
 const tempPath = 'data/temp';
 
 const indexJson = {
     format: 3,
-    revision: currentDate,
+    revision: 'ymt-' + currentDate,
     sequenced: true
 };
 
@@ -360,11 +343,11 @@ for (const folder of folders) {
         title: `${DICT_NAME}W-${source_iso}-${target_iso}` + (folder === 'dict' ? '' : '-ipa'),
     }));
 
-    writeFileSync(`${tempPath}/${folder}/tag_bank_1.json`, JSON.stringify(Object.values(yzkTags[folder])));
+    writeFileSync(`${tempPath}/${folder}/tag_bank_1.json`, JSON.stringify(Object.values(ymtTags[folder])));
 
     const filename = folder === 'dict' ? 'term_bank_' : 'term_meta_bank_';
 
-    writeInBatches(yzk[folder], `${folder}/${filename}`, 25000);
+    writeInBatches(ymt[folder], `${folder}/${filename}`, 25000);
 }
 
 console.log('total ipas', ipaCount, 'skipped ipa tags', Object.values(skippedIpaTags).reduce((a, b) => a + b, 0));

@@ -2,9 +2,7 @@
 
 source .env
 
-export MAX_SENTENCES
 export DEBUG_WORD
-export OPENSUBS_PATH
 export DICT_NAME
 
 # Check for the source_language and target_language arguments
@@ -18,7 +16,7 @@ source_all=false
 target_all=false
 redownload=false
 force_tidy=false
-force_yez=false
+force_ymt=false
 force=false
 
 flags=('S' 'T' 'd' 't' 'y' 'F')
@@ -30,7 +28,7 @@ for flag in "${flags[@]}"; do
         'T') target_all=true ;;
         'd') redownload=true ;;
         't') force_tidy=true ;;
-        'y') force_yez=true ;;
+        'y') force_ymt=true ;;
         'F') force=true ;;
       esac
       ;;
@@ -39,11 +37,11 @@ done
 
 if [ "$force" = true ]; then
   force_tidy=true
-  force_yez=true
+  force_ymt=true
 fi
 
 if [ "$force_tidy" = true ]; then
-  force_yez=true
+  force_ymt=true
 fi
 
 echo "[S] source_all: $source_all"
@@ -51,7 +49,7 @@ echo "[T] target_all: $target_all"
 echo "[d] redownload: $redownload"
 echo "[F] force: $force"
 echo "[t] force_tidy: $force_tidy"
-echo "[y] force_yez: $force_yez"
+echo "[y] force_ymt: $force_ymt"
 
 # Step 1: Install dependencies
 npm i
@@ -154,20 +152,20 @@ for entry in "${entries[@]}"; do
     dict_file="${DICT_NAME}W-$source_iso-$target_iso.zip"
     ipa_file="${DICT_NAME}W-$source_iso-$target_iso-ipa.zip"
 
-    # Step 5: Create Yezichak files
+    # Step 5: Create Yomitan files
     if \
       [ ! -f "data/language/$source_iso/$target_iso/$dict_file" ] || \
       [ ! -f "data/language/$source_iso/$target_iso/$ipa_file" ] || \
-      [ "$force_yez" = true ]; then
-      echo "Creating Yezichak dict and IPA files"
+      [ "$force_ymt" = true ]; then
+      echo "Creating Yomitan dict and IPA files"
       if node --max-old-space-size=8192 3-make-yomitan.js; then
         zip -j "$dict_file" data/temp/dict/index.json data/temp/dict/tag_bank_1.json data/temp/dict/term_bank_*.json
         zip -j "$ipa_file" data/temp/ipa/index.json data/temp/ipa/tag_bank_1.json data/temp/ipa/term_meta_bank_*.json
       else
-        echo "Error: Yezichak generation script failed."
+        echo "Error: Yomitan generation script failed."
       fi
     else
-      echo "Yezichak dict already exists. Skipping Yezichak creation."
+      echo "Yomitan dict already exists. Skipping Yomitan creation."
     fi
 
     if [ -f "$dict_file" ]; then

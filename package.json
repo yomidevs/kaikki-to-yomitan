@@ -1,5 +1,5 @@
 {
-  "name": "kaikki-to-yezichak",
+  "name": "kaikki-to-yomitan",
   "version": "1.0.0",
   "main": "create-folders.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "date-and-time": "^2.4.2",
     "line-by-line": "^0.1.6"
   },
-  "description": "Converts Kaikki JSON to Yezichak compatible dictionary.",
+  "description": "Converts Kaikki JSON to Yomitan compatible dictionary.",
   "devDependencies": {
     "jest": "^29.7.0"
   }

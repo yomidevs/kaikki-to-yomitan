@@ -137,7 +137,7 @@ sns.heatmap(df, annot=annotations, cmap="YlGnBu", annot_kws={"size": 7}, fmt="s"
 # Add labels and title
 plt.xlabel("Source Language (headwords in this language)", fontsize=8)
 plt.ylabel("Target Language (glosses in this language)", fontsize=8)
-plt.title("yzkW", fontsize=12)
+plt.title("ymtW", fontsize=12)
 
 # Save the plot with a higher resolution
 plt.savefig("heatmap.png", dpi=300)
