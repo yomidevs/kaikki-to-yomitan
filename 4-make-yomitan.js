@@ -6,9 +6,9 @@ const {source_iso, target_iso, DEBUG_WORD, DICT_NAME} = process.env;
 
 const currentDate = date.format(now, 'YYYY.MM.DD');
 
-console.log(`3-make-yomitan.js: reading lemmas`);
+console.log(`4-make-yomitan.js: reading lemmas`);
 const lemmaDict = JSON.parse(readFileSync(`data/tidy/${source_iso}-${target_iso}-lemmas.json`));
-console.log(`3-make-yomitan.js: reading forms`);
+console.log(`4-make-yomitan.js: reading forms`);
 const formDict = JSON.parse(readFileSync(`data/tidy/${source_iso}-${target_iso}-forms.json`));
 
 if (!existsSync(`data/language/${source_iso}/${target_iso}`)) {
@@ -95,7 +95,7 @@ const skippedTermTags = {};
 let ipaCount = 0;
 let termTagCount = 0;
 
-console.log('3-make-yomitan.js: processing lemmas...');
+console.log('4-make-yomitan.js: processing lemmas...');
 for (const [lemma, infoMap] of Object.entries(lemmaDict)) {
     normalizedLemma = normalizeOrthography(lemma);
     
@@ -239,7 +239,7 @@ const multiwordInflections = [
     'female equivalent', // de
 ];
 
-console.log('3-make-yomitan.js: Processing forms...');
+console.log('4-make-yomitan.js: Processing forms...');
 for (const [form, allInfo] of Object.entries(formDict)) {
     for (const [lemma, info] of Object.entries(allInfo)) {
         for (const [pos, glosses] of Object.entries(info)) {
@@ -333,7 +333,7 @@ const indexJson = {
 const folders = ['dict', 'ipa'];
 
 for (const folder of folders) {
-    console.log(`3-make-yomitan.js: Writing ${folder}...`);
+    console.log(`4-make-yomitan.js: Writing ${folder}...`);
     for (const file of readdirSync(`${tempPath}/${folder}`)) {
         if (file.includes('term_')) { unlinkSync(`${tempPath}/${folder}/${file}`); }
     }
@@ -356,7 +356,7 @@ writeFileSync(`data/language/${source_iso}/${target_iso}/skippedIpaTags.json`, J
 console.log('total term tags', termTagCount, 'skipped term tags', Object.values(skippedTermTags).reduce((a, b) => a + (parseInt(b) || 0), 0));
 writeFileSync(`data/language/${source_iso}/${target_iso}/skippedTermTags.json`, JSON.stringify(sortBreakdown(skippedTermTags), null, 2));
 
-console.log('3-make-yomitan.js: Done!');
+console.log('4-make-yomitan.js: Done!');
 
 function writeInBatches(inputArray, filenamePrefix, batchSize = 100000) {
     console.log(`Writing ${inputArray.length.toLocaleString()} entries...`);

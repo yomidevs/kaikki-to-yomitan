@@ -409,5 +409,5 @@ lr.on('end', () => {
         }
     }
 
-    console.log('2-tidy-up.js finished.');
+    console.log('3-tidy-up.js finished.');
 });

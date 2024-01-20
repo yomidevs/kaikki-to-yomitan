@@ -226,4 +226,4 @@ print(f"Writing form dict to data/tidy/{source_iso}-{target_iso}-forms.json...")
 with open(f"data/tidy/{source_iso}-{target_iso}-forms.json", "w") as f:
     json.dump(form_dict, f)
 
-print('2-tidy-up.py finished.')
+print('3-tidy-up.py finished.')

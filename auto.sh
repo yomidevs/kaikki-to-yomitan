@@ -144,7 +144,7 @@ for entry in "${entries[@]}"; do
       [ ! -f "data/tidy/$source_iso-$target_iso-lemmas.json" ] || \
       [ "$force_tidy" = true ]; then
       echo "Tidying up $filename"
-      node --max-old-space-size=4096 2-tidy-up.js
+      node --max-old-space-size=4096 3-tidy-up.js
     else
       echo "Tidy file already exists. Skipping tidying."
     fi
@@ -158,7 +158,7 @@ for entry in "${entries[@]}"; do
       [ ! -f "data/language/$source_iso/$target_iso/$ipa_file" ] || \
       [ "$force_ymt" = true ]; then
       echo "Creating Yomitan dict and IPA files"
-      if node --max-old-space-size=8192 3-make-yomitan.js; then
+      if node --max-old-space-size=8192 4-make-yomitan.js; then
         zip -j "$dict_file" data/temp/dict/index.json data/temp/dict/tag_bank_1.json data/temp/dict/term_bank_*.json
         zip -j "$ipa_file" data/temp/ipa/index.json data/temp/ipa/tag_bank_1.json data/temp/ipa/term_meta_bank_*.json
       else
