@@ -150,7 +150,7 @@ for entry in "${entries[@]}"; do
       [ ! -f "data/tidy/$source_iso-$target_iso-lemmas.json" ] || \
       [ "$force_tidy" = true ]; then
       echo "Tidying up $filename"
-      python3 2-tidy-up.py
+      node --max-old-space-size=4096 2-tidy-up.js
     else
       echo "Tidy file already exists. Skipping tidying."
     fi
@@ -224,6 +224,10 @@ for entry in "${entries[@]}"; do
     if [ -f "$freq_file" ]; then
       mv "$freq_file" "data/language/$target_iso/"
     fi
+
+    # Step 9: Run tests
+    echo "Running tests..."
+    npm run test
 
     echo "----------------------------------------------------------------------------------"
   done
