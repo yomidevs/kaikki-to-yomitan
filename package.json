@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "create-folders.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test-write": "node write-tests.js"
   },
   "keywords": [],
   "license": "ISC",

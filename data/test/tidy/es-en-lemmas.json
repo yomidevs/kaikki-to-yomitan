@@ -1,0 +1,50 @@
+{
+  "vivir": {
+    "verb": {
+      "ipa": [
+        {
+          "ipa": "/biˈbiɾ/",
+          "tags": []
+        },
+        {
+          "ipa": "[biˈβ̞iɾ]",
+          "tags": []
+        }
+      ],
+      "senses": [
+        {
+          "glosses": [
+            "(intransitive) to live; to be alive"
+          ],
+          "tags": [
+            "intransitive"
+          ]
+        },
+        {
+          "glosses": [
+            "(intransitive) to make a living, to live on"
+          ],
+          "tags": [
+            "intransitive"
+          ]
+        },
+        {
+          "glosses": [
+            "(intransitive) to live in, reside, inhabit"
+          ],
+          "tags": [
+            "intransitive"
+          ]
+        },
+        {
+          "glosses": [
+            "(transitive) to experience, to live through"
+          ],
+          "tags": [
+            "transitive"
+          ]
+        }
+      ]
+    }
+  }
+}

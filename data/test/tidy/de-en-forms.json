@@ -1,0 +1,639 @@
+{
+  "pflegt": {
+    "pflegen": {
+      "verb": [
+        "-automated- imperative plural second-person"
+      ]
+    }
+  },
+  "pflegte": {
+    "pflegen": {
+      "verb": [
+        "-automated- singular subjunctive subjunctive-ii third-person"
+      ]
+    }
+  },
+  "gepflegt": {
+    "pflegen": {
+      "verb": [
+        "-automated- participle past"
+      ]
+    }
+  },
+  "haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- auxiliary"
+      ]
+    }
+  },
+  "pflog": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative preterite singular third-person"
+      ]
+    }
+  },
+  "gepflogen": {
+    "pflegen": {
+      "verb": [
+        "-automated- participle past"
+      ]
+    }
+  },
+  "pflöge": {
+    "pflegen": {
+      "verb": [
+        "-automated- singular subjunctive subjunctive-ii third-person"
+      ]
+    }
+  },
+  "pflegend": {
+    "pflegen": {
+      "verb": [
+        "-automated- participle present"
+      ]
+    }
+  },
+  "pflege": {
+    "pflegen": {
+      "verb": [
+        "-automated- imperative second-person singular"
+      ]
+    }
+  },
+  "pflegst": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative present second-person singular"
+      ]
+    }
+  },
+  "pflegest": {
+    "pflegen": {
+      "verb": [
+        "-automated- second-person singular subjunctive subjunctive-i"
+      ]
+    }
+  },
+  "pfleget": {
+    "pflegen": {
+      "verb": [
+        "-automated- plural second-person subjunctive subjunctive-i"
+      ]
+    }
+  },
+  "pflegten": {
+    "pflegen": {
+      "verb": [
+        "-automated- plural subjunctive subjunctive-ii third-person"
+      ]
+    }
+  },
+  "pflegtest": {
+    "pflegen": {
+      "verb": [
+        "-automated- second-person singular subjunctive subjunctive-ii"
+      ]
+    }
+  },
+  "pflegtet": {
+    "pflegen": {
+      "verb": [
+        "-automated- plural second-person subjunctive subjunctive-ii"
+      ]
+    }
+  },
+  "pfleg": {
+    "pflegen": {
+      "verb": [
+        "-automated- imperative second-person singular"
+      ]
+    }
+  },
+  "habe gepflegt": {
+    "pflegen": {
+      "verb": [
+        "-automated- multiword-construction perfect singular subjunctive third-person"
+      ]
+    }
+  },
+  "haben gepflegt": {
+    "pflegen": {
+      "verb": [
+        "-automated- multiword-construction perfect plural subjunctive third-person"
+      ]
+    }
+  },
+  "hast gepflegt": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative multiword-construction perfect second-person singular"
+      ]
+    }
+  },
+  "habt gepflegt": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative multiword-construction perfect plural second-person"
+      ]
+    }
+  },
+  "habest gepflegt": {
+    "pflegen": {
+      "verb": [
+        "-automated- multiword-construction perfect second-person singular subjunctive"
+      ]
+    }
+  },
+  "habet gepflegt": {
+    "pflegen": {
+      "verb": [
+        "-automated- multiword-construction perfect plural second-person subjunctive"
+      ]
+    }
+  },
+  "hat gepflegt": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative multiword-construction perfect singular third-person"
+      ]
+    }
+  },
+  "hatte gepflegt": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative multiword-construction pluperfect singular third-person"
+      ]
+    }
+  },
+  "hatten gepflegt": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative multiword-construction pluperfect plural third-person"
+      ]
+    }
+  },
+  "hätte gepflegt": {
+    "pflegen": {
+      "verb": [
+        "-automated- multiword-construction pluperfect singular subjunctive third-person"
+      ]
+    }
+  },
+  "hätten gepflegt": {
+    "pflegen": {
+      "verb": [
+        "-automated- multiword-construction pluperfect plural subjunctive third-person"
+      ]
+    }
+  },
+  "hattest gepflegt": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative multiword-construction pluperfect second-person singular"
+      ]
+    }
+  },
+  "hattet gepflegt": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative multiword-construction pluperfect plural second-person"
+      ]
+    }
+  },
+  "hättest gepflegt": {
+    "pflegen": {
+      "verb": [
+        "-automated- multiword-construction pluperfect second-person singular subjunctive"
+      ]
+    }
+  },
+  "hättet gepflegt": {
+    "pflegen": {
+      "verb": [
+        "-automated- multiword-construction pluperfect plural second-person subjunctive"
+      ]
+    }
+  },
+  "werde pflegen": {
+    "pflegen": {
+      "verb": [
+        "-automated- first-person future future-i indicative multiword-construction singular"
+      ]
+    }
+  },
+  "werden pflegen": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-i indicative multiword-construction plural third-person"
+      ]
+    }
+  },
+  "werdest pflegen": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-i multiword-construction second-person singular subjunctive subjunctive-i"
+      ]
+    }
+  },
+  "werdet pflegen": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-i indicative multiword-construction plural second-person"
+      ]
+    }
+  },
+  "würde pflegen": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-i multiword-construction singular subjunctive subjunctive-ii third-person"
+      ]
+    }
+  },
+  "würden pflegen": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-i multiword-construction plural subjunctive subjunctive-ii third-person"
+      ]
+    }
+  },
+  "wirst pflegen": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-i indicative multiword-construction second-person singular"
+      ]
+    }
+  },
+  "würdest pflegen": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-i multiword-construction second-person singular subjunctive subjunctive-ii"
+      ]
+    }
+  },
+  "würdet pflegen": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-i multiword-construction plural second-person subjunctive subjunctive-ii"
+      ]
+    }
+  },
+  "wird pflegen": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-i indicative multiword-construction singular third-person"
+      ]
+    }
+  },
+  "werde gepflegt haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- first-person future future-ii indicative multiword-construction singular"
+      ]
+    }
+  },
+  "werden gepflegt haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-ii indicative multiword-construction plural third-person"
+      ]
+    }
+  },
+  "werdest gepflegt haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-ii multiword-construction second-person singular subjunctive subjunctive-i"
+      ]
+    }
+  },
+  "werdet gepflegt haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-ii indicative multiword-construction plural second-person"
+      ]
+    }
+  },
+  "würde gepflegt haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-ii multiword-construction singular subjunctive subjunctive-ii third-person"
+      ]
+    }
+  },
+  "würden gepflegt haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-ii multiword-construction plural subjunctive subjunctive-ii third-person"
+      ]
+    }
+  },
+  "wirst gepflegt haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-ii indicative multiword-construction second-person singular"
+      ]
+    }
+  },
+  "würdest gepflegt haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-ii multiword-construction second-person singular subjunctive subjunctive-ii"
+      ]
+    }
+  },
+  "würdet gepflegt haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-ii multiword-construction plural second-person subjunctive subjunctive-ii"
+      ]
+    }
+  },
+  "wird gepflegt haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-ii indicative multiword-construction singular third-person"
+      ]
+    }
+  },
+  "pflogen": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative plural preterite third-person"
+      ]
+    }
+  },
+  "pflögen": {
+    "pflegen": {
+      "verb": [
+        "-automated- plural subjunctive subjunctive-ii third-person"
+      ]
+    }
+  },
+  "pflogst": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative preterite second-person singular"
+      ]
+    }
+  },
+  "pflogt": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative plural preterite second-person"
+      ]
+    }
+  },
+  "pflögest": {
+    "pflegen": {
+      "verb": [
+        "-automated- second-person singular subjunctive subjunctive-ii"
+      ]
+    }
+  },
+  "pflögst": {
+    "pflegen": {
+      "verb": [
+        "-automated- second-person singular subjunctive subjunctive-ii"
+      ]
+    }
+  },
+  "pflöget": {
+    "pflegen": {
+      "verb": [
+        "-automated- plural second-person subjunctive subjunctive-ii"
+      ]
+    }
+  },
+  "pflögt": {
+    "pflegen": {
+      "verb": [
+        "-automated- plural second-person subjunctive subjunctive-ii"
+      ]
+    }
+  },
+  "habe gepflogen": {
+    "pflegen": {
+      "verb": [
+        "-automated- multiword-construction perfect singular subjunctive third-person"
+      ]
+    }
+  },
+  "haben gepflogen": {
+    "pflegen": {
+      "verb": [
+        "-automated- multiword-construction perfect plural subjunctive third-person"
+      ]
+    }
+  },
+  "hast gepflogen": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative multiword-construction perfect second-person singular"
+      ]
+    }
+  },
+  "habt gepflogen": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative multiword-construction perfect plural second-person"
+      ]
+    }
+  },
+  "habest gepflogen": {
+    "pflegen": {
+      "verb": [
+        "-automated- multiword-construction perfect second-person singular subjunctive"
+      ]
+    }
+  },
+  "habet gepflogen": {
+    "pflegen": {
+      "verb": [
+        "-automated- multiword-construction perfect plural second-person subjunctive"
+      ]
+    }
+  },
+  "hat gepflogen": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative multiword-construction perfect singular third-person"
+      ]
+    }
+  },
+  "hatte gepflogen": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative multiword-construction pluperfect singular third-person"
+      ]
+    }
+  },
+  "hatten gepflogen": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative multiword-construction pluperfect plural third-person"
+      ]
+    }
+  },
+  "hätte gepflogen": {
+    "pflegen": {
+      "verb": [
+        "-automated- multiword-construction pluperfect singular subjunctive third-person"
+      ]
+    }
+  },
+  "hätten gepflogen": {
+    "pflegen": {
+      "verb": [
+        "-automated- multiword-construction pluperfect plural subjunctive third-person"
+      ]
+    }
+  },
+  "hattest gepflogen": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative multiword-construction pluperfect second-person singular"
+      ]
+    }
+  },
+  "hattet gepflogen": {
+    "pflegen": {
+      "verb": [
+        "-automated- indicative multiword-construction pluperfect plural second-person"
+      ]
+    }
+  },
+  "hättest gepflogen": {
+    "pflegen": {
+      "verb": [
+        "-automated- multiword-construction pluperfect second-person singular subjunctive"
+      ]
+    }
+  },
+  "hättet gepflogen": {
+    "pflegen": {
+      "verb": [
+        "-automated- multiword-construction pluperfect plural second-person subjunctive"
+      ]
+    }
+  },
+  "werde gepflogen haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- first-person future future-ii indicative multiword-construction singular"
+      ]
+    }
+  },
+  "werden gepflogen haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-ii indicative multiword-construction plural third-person"
+      ]
+    }
+  },
+  "werdest gepflogen haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-ii multiword-construction second-person singular subjunctive subjunctive-i"
+      ]
+    }
+  },
+  "werdet gepflogen haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-ii indicative multiword-construction plural second-person"
+      ]
+    }
+  },
+  "würde gepflogen haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-ii multiword-construction singular subjunctive subjunctive-ii third-person"
+      ]
+    }
+  },
+  "würden gepflogen haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-ii multiword-construction plural subjunctive subjunctive-ii third-person"
+      ]
+    }
+  },
+  "wirst gepflogen haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-ii indicative multiword-construction second-person singular"
+      ]
+    }
+  },
+  "würdest gepflogen haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-ii multiword-construction second-person singular subjunctive subjunctive-ii"
+      ]
+    }
+  },
+  "würdet gepflogen haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-ii multiword-construction plural second-person subjunctive subjunctive-ii"
+      ]
+    }
+  },
+  "wird gepflogen haben": {
+    "pflegen": {
+      "verb": [
+        "-automated- future future-ii indicative multiword-construction singular third-person"
+      ]
+    }
+  },
+  "Fuchses": {
+    "Fuchs": {
+      "noun": [
+        "-automated- genitive singular"
+      ]
+    }
+  },
+  "Füchse": {
+    "Fuchs": {
+      "noun": [
+        "-automated- accusative definite plural"
+      ]
+    }
+  },
+  "Füchslein": {
+    "Fuchs": {
+      "noun": [
+        "-automated- diminutive neuter"
+      ]
+    }
+  },
+  "Füchschen": {
+    "Fuchs": {
+      "noun": [
+        "-automated- diminutive neuter"
+      ]
+    }
+  },
+  "Füchsin": {
+    "Fuchs": {
+      "noun": [
+        "-automated- feminine"
+      ]
+    }
+  },
+  "Fuchse": {
+    "Fuchs": {
+      "noun": [
+        "-automated- dative singular"
+      ]
+    }
+  },
+  "Füchsen": {
+    "Fuchs": {
+      "noun": [
+        "-automated- dative definite plural"
+      ]
+    }
+  }
+}
