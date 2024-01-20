@@ -143,7 +143,7 @@ for (const [lemma, infoMap] of Object.entries(lemmaDict)) {
                 function addGlossToEntries(joinedTags) {
                     if (entries[joinedTags]) {
                         entries[joinedTags][5].push(gloss);
-                    } else {
+                    } else if (gloss) {
                         entries[joinedTags] = [
                             normalizedLemma, // term
                             normalizedLemma, // reading
@@ -153,8 +153,6 @@ for (const [lemma, infoMap] of Object.entries(lemmaDict)) {
                             [gloss], // definitions
                             0, // sequence
                             '', // term_tags
-                            '', // lemma form (if non-lemma)
-                            [] // inflection combinations (if non-lemma)
                         ];
                     }
                 }
@@ -244,7 +242,7 @@ for (const [lemma, infoMap] of Object.entries(lemmaDict)) {
             'ipa',
             {
                 reading: normalizedLemma,
-                ipa: mergedIpas
+                transcriptions: mergedIpas
             }
         ]);
     }
@@ -318,18 +316,21 @@ for (const [form, allInfo] of Object.entries(formDict)) {
                 }
             }
 
-            if(uniqueHypotheses.length){
+            deinflectionDefinitions = uniqueHypotheses.map((hypothesis) => [
+                normalizeOrthography(lemma),
+                hypothesis
+            ]);
+
+            if(deinflectionDefinitions.length){
                 yzk.form.push([
                     normalizeOrthography(form),
                     '',
                     'non-lemma',
                     '',
                     0,
-                    [''],
+                    deinflectionDefinitions,
                     0,
-                    '',
-                    normalizeOrthography(lemma),
-                    uniqueHypotheses
+                    ''
                 ]);
             }
         }
@@ -341,7 +342,7 @@ yzk.dict = [...yzk.lemma, ...yzk.form];
 const tempPath = 'data/temp';
 
 const indexJson = {
-    format: 4,
+    format: 3,
     revision: currentDate,
     sequenced: true
 };
@@ -363,7 +364,7 @@ for (const folder of folders) {
 
     const filename = folder === 'dict' ? 'term_bank_' : 'term_meta_bank_';
 
-    writeInBatches(yzk[folder], `${folder}/${filename}`, 20000);
+    writeInBatches(yzk[folder], `${folder}/${filename}`, 25000);
 }
 
 console.log('total ipas', ipaCount, 'skipped ipa tags', Object.values(skippedIpaTags).reduce((a, b) => a + b, 0));

@@ -1,9 +1,12 @@
-const { readFileSync, readdirSync } = require('fs');
+const { readFileSync, readdirSync, existsSync, mkdirSync } = require('fs');
 const path = require('path');
 
 const filePairs = {};
 
 const testFolder = 'data/test';
+if (!existsSync(testFolder)) {
+    mkdirSync(testFolder);
+}
 
 for (const file of readdirSync(testFolder)) {
     const filePath = path.join(testFolder, file);
