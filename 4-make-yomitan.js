@@ -6,9 +6,9 @@ const {source_iso, target_iso, DEBUG_WORD, DICT_NAME} = process.env;
 
 const currentDate = date.format(now, 'YYYY.MM.DD');
 
-console.log(`4-make-yomitan.js: reading lemmas`);
+consoleOverwrite(`4-make-yomitan.js: reading lemmas...`);
 const lemmaDict = JSON.parse(readFileSync(`data/tidy/${source_iso}-${target_iso}-lemmas.json`));
-console.log(`4-make-yomitan.js: reading forms`);
+consoleOverwrite(`4-make-yomitan.js: reading forms...`);
 const formDict = JSON.parse(readFileSync(`data/tidy/${source_iso}-${target_iso}-forms.json`));
 
 if (!existsSync(`data/language/${source_iso}/${target_iso}`)) {
@@ -95,7 +95,7 @@ const skippedTermTags = {};
 let ipaCount = 0;
 let termTagCount = 0;
 
-console.log('4-make-yomitan.js: processing lemmas...');
+consoleOverwrite('4-make-yomitan.js: processing lemmas...');
 for (const [lemma, infoMap] of Object.entries(lemmaDict)) {
     normalizedLemma = normalizeOrthography(lemma);
     
@@ -239,7 +239,7 @@ const multiwordInflections = [
     'female equivalent', // de
 ];
 
-console.log('4-make-yomitan.js: Processing forms...');
+consoleOverwrite('4-make-yomitan.js: Processing forms...');
 for (const [form, allInfo] of Object.entries(formDict)) {
     for (const [lemma, info] of Object.entries(allInfo)) {
         for (const [pos, glosses] of Object.entries(info)) {
@@ -333,7 +333,7 @@ const indexJson = {
 const folders = ['dict', 'ipa'];
 
 for (const folder of folders) {
-    console.log(`4-make-yomitan.js: Writing ${folder}...`);
+    consoleOverwrite(`4-make-yomitan.js: Writing ${folder}...`);
     for (const file of readdirSync(`${tempPath}/${folder}`)) {
         if (file.includes('term_')) { unlinkSync(`${tempPath}/${folder}/${file}`); }
     }
@@ -350,16 +350,25 @@ for (const folder of folders) {
     writeInBatches(ymt[folder], `${folder}/${filename}`, 25000);
 }
 
-console.log('total ipas', ipaCount, 'skipped ipa tags', Object.values(skippedIpaTags).reduce((a, b) => a + b, 0));
+console.log('');
+console.log(
+    'total ipas',
+    ipaCount,
+    'skipped ipa tags',
+    Object.values(skippedIpaTags).reduce((a, b) => a + b, 0),
+    'total term tags',
+    termTagCount,
+    'skipped term tags',
+    Object.values(skippedTermTags).reduce((a, b) => a + (parseInt(b) || 0), 0))
+;
 writeFileSync(`data/language/${source_iso}/${target_iso}/skippedIpaTags.json`, JSON.stringify(sortBreakdown(skippedIpaTags), null, 2));
 
-console.log('total term tags', termTagCount, 'skipped term tags', Object.values(skippedTermTags).reduce((a, b) => a + (parseInt(b) || 0), 0));
 writeFileSync(`data/language/${source_iso}/${target_iso}/skippedTermTags.json`, JSON.stringify(sortBreakdown(skippedTermTags), null, 2));
 
 console.log('4-make-yomitan.js: Done!');
 
 function writeInBatches(inputArray, filenamePrefix, batchSize = 100000) {
-    console.log(`Writing ${inputArray.length.toLocaleString()} entries...`);
+    consoleOverwrite(`Writing ${inputArray.length.toLocaleString()} entries of ${filenamePrefix}...`);
 
     let bankIndex = 0;
 
@@ -403,4 +412,13 @@ function normalizeOrthography(term) {
         default:
             return term;
     }
+}
+
+function clearConsoleLine() {
+    process.stdout.write('\r\x1b[K'); // \r moves the cursor to the beginning of the line, \x1b[K clears the line
+}
+
+function consoleOverwrite(text) {
+    clearConsoleLine();
+    process.stdout.write(text);
 }

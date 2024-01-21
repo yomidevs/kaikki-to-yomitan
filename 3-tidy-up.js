@@ -107,7 +107,7 @@ let formDict = {};
 let formStuff = [];
 let automatedForms = {};
 
-console.log(`3-tidy-up.js started...`);
+consoleOverwrite(`3-tidy-up.js started...`);
 
 const lr = new LineByLineReader(kaikkiFile);
 
@@ -116,18 +116,12 @@ lr.on('line', (line) => {
         lineCount += 1;
 
         if (lineCount % printInterval === 0) {
-            process.stdout.clearLine();
-            process.stdout.cursorTo(0);
-            process.stdout.write(`Processed ${lineCount} lines...`);
+            consoleOverwrite(`3-tidy-up.js: Processed ${lineCount} lines...`);
         }
 
         handleLine(line, lemmaDict, formDict, formStuff, automatedForms, `${sourceIso}-${targetIso}`);
     }
 });
-
-function clearConsoleLine() {
-    process.stdout.write('\r\x1b[K'); // \r moves the cursor to the beginning of the line, \x1b[K clears the line
-}
 
 function handleLine(line, lemmaDict, formDict, formStuff, automatedForms, langPair) {
     const { word, pos, senses, sounds, forms } = JSON.parse(line);
@@ -309,12 +303,22 @@ lr.on('end', () => {
     handleForms(formStuff, formDict, automatedForms);
 
     const lemmasFilePath = `${writeFolder}/${sourceIso}-${targetIso}-lemmas.json`;
-    console.log(`Writing lemma dict to ${lemmasFilePath}...`);
+    consoleOverwrite(`3-tidy-up.js: Writing lemma dict to ${lemmasFilePath}...`);
     writeFileSync(lemmasFilePath, JSON.stringify(lemmaDict));
 
     const formsFilePath = `${writeFolder}/${sourceIso}-${targetIso}-forms.json`;
-    console.log(`Writing form dict to ${formsFilePath}...`);
+    consoleOverwrite(`3-tidy-up.js: Writing form dict to ${formsFilePath}...`);
     writeFileSync(formsFilePath, JSON.stringify(formDict));
 
-    console.log('3-tidy-up.js finished.');
+    consoleOverwrite('3-tidy-up.js finished.');
 });
+
+function clearConsoleLine() {
+    process.stdout.write('\r\x1b[K'); // \r moves the cursor to the beginning of the line, \x1b[K clears the line
+}
+
+
+function consoleOverwrite(text) {
+    clearConsoleLine();
+    process.stdout.write(text);
+}
