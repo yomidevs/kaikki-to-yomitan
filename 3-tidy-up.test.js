@@ -3,7 +3,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 
-for (const dir of ["./data/test/kaikki", "./data/test/tidy"]){
+for (const dir of ["./data/test/kaikki", "./data/test/tidy", "./data/test/temp"]){
     if(!existsSync(dir)){
         mkdirSync(dir, {recursive: true});
     }
