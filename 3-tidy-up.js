@@ -3,9 +3,12 @@ const path = require('path');
 
 const LineByLineReader = require('line-by-line');
 
-const sourceIso = process.env.source_iso;
-const targetIso = process.env.target_iso;
-const kaikkiFile = process.env.kaikki_file;
+const { 
+    source_iso: sourceIso,
+    target_iso: targetIso,
+    kaikki_file: kaikkiFile,
+    tidy_folder: writeFolder
+} = process.env;
 
 function isInflectionGloss(glosses) {
     if (targetIso === 'en') {
@@ -104,19 +107,9 @@ let formDict = {};
 let formStuff = [];
 let automatedForms = {};
 
-const testLemmas = {
-    "de-en": ["pflegen", "trinken"],
-    "es-en": ["soliviantar", "vivir"]
-}
+console.log(`3-tidy-up.js started...`);
 
-const testForms = {
-    "de-en": ["trinkt", "gepflegt"],
-    "es-en": ["quiero", "tonterías"]
-}
-
-let testResults = {};
-
-const lr = new LineByLineReader(`data/kaikki/${kaikkiFile}`);
+const lr = new LineByLineReader(kaikkiFile);
 
 lr.on('line', (line) => {
     if (line) {
@@ -131,6 +124,10 @@ lr.on('line', (line) => {
         handleLine(line, lemmaDict, formDict, formStuff, automatedForms, `${sourceIso}-${targetIso}`);
     }
 });
+
+function clearConsoleLine() {
+    process.stdout.write('\r\x1b[K'); // \r moves the cursor to the beginning of the line, \x1b[K clears the line
+}
 
 function handleLine(line, lemmaDict, formDict, formStuff, automatedForms, langPair) {
     const { word, pos, senses, sounds, forms } = JSON.parse(line);
@@ -155,11 +152,6 @@ function handleLine(line, lemmaDict, formDict, formStuff, automatedForms, langPa
         }
 
         const ipa = sounds ? sounds.filter(sound => sound && sound.ipa).map(sound => ({ ipa: sound.ipa, tags: sound.tags || [] })) : [];
-
-        // if (word === 'akull') {
-        //     console.log(sounds);
-        //     console.log(ipa);
-        // }
 
         let nestedGlossObj = {};
 
@@ -267,12 +259,6 @@ function handleLine(line, lemmaDict, formDict, formStuff, automatedForms, langPa
             senseIndex += 1;
         }
 
-        for (const [testWords, dict] of [[testLemmas, lemmaDict], [testForms, formDict]]) {
-            if (testWords[langPair] && testWords[langPair].includes(word)) {
-                testResults[word] ??= { dictPointer: dict, lines: [] };
-                testResults[word].lines.push(JSON.parse(line));
-            }
-        }
     }
 }
 
@@ -291,7 +277,6 @@ function handleForms(formStuff, formDict, automatedForms) {
         }
     }
 
-    // avoid automated forms during extra lang testing
     if (automatedForms) {
         let missingForms = 0;
 
@@ -318,96 +303,18 @@ function handleForms(formStuff, formDict, automatedForms) {
 }
 
 lr.on('end', () => {
-    process.stdout.clearLine();
-    process.stdout.cursorTo(0);
+    clearConsoleLine();
     process.stdout.write(`Processed ${lineCount} lines...\n`);
 
     handleForms(formStuff, formDict, automatedForms);
 
-    const lemmasFilePath = `data/tidy/${sourceIso}-${targetIso}-lemmas.json`;
+    const lemmasFilePath = `${writeFolder}/${sourceIso}-${targetIso}-lemmas.json`;
     console.log(`Writing lemma dict to ${lemmasFilePath}...`);
     writeFileSync(lemmasFilePath, JSON.stringify(lemmaDict));
 
-    const formsFilePath = `data/tidy/${sourceIso}-${targetIso}-forms.json`;
+    const formsFilePath = `${writeFolder}/${sourceIso}-${targetIso}-forms.json`;
     console.log(`Writing form dict to ${formsFilePath}...`);
     writeFileSync(formsFilePath, JSON.stringify(formDict));
-
-    if (testResults) {
-        let validResults = {};
-
-        for (const [word, { dictPointer, lines }] of Object.entries(testResults)) {
-            testResults[word].result = dictPointer[word];
-            testResults[word].lines = lines;
-            delete testResults[word].dictPointer;
-        }
-
-        validResults = JSON.parse(JSON.stringify(testResults));
-
-        for (const [word] of Object.entries(testResults)) {
-            delete testResults[word].lines;
-        }
-
-        const validTestFilePath = `data/test/${sourceIso}-${targetIso}-valid.json`;
-        const latestTestFilePath = `data/test/${sourceIso}-${targetIso}-latest.json`;
-
-        if (!existsSync(validTestFilePath)) {
-            writeFileSync(validTestFilePath, JSON.stringify(validResults));
-        }
-
-        writeFileSync(latestTestFilePath, JSON.stringify(testResults));
-    }
-
-    // run code on other lang lines for testing
-    const filePairs = {};
-
-    const testFolder = 'data/test';
-
-    for (const file of readdirSync(testFolder)) {
-        const filePath = path.join(testFolder, file);
-        const fileName = path.basename(filePath, path.extname(filePath));
-        const langPair = fileName.replace('-latest', '').replace('-valid', '');
-
-        filePairs[langPair] ??= {};
-
-        if (fileName.includes('valid')) {
-            filePairs[langPair].validFile = filePath;
-        } else if (fileName.includes('latest')) {
-            filePairs[langPair].latestFile = filePath;
-        }
-    }
-
-    for (const [langPair, { validFile }] of Object.entries(filePairs)) {
-        if (langPair !== `${sourceIso}-${targetIso}`) {
-            const valid = JSON.parse(readFileSync(validFile));
-
-            lemmaDict = {};
-            formDict = {};
-            formStuff = [];
-            automatedForms = {};
-
-            testResults = {};
-
-            for (const [word, { lines }] of Object.entries(valid)) {
-                for (const line of lines) {
-                    handleLine(JSON.stringify(line), lemmaDict, formDict, formStuff, automatedForms, langPair);
-                }
-
-                handleForms(formStuff, formDict);
-            }
-
-            if (testResults) {
-                for (const [word, { dictPointer }] of Object.entries(testResults)) {
-                    testResults[word].result = dictPointer[word];
-                    delete testResults[word].lines;
-                    delete testResults[word].dictPointer;
-                }
-
-                const latestTestFilePath = `data/test/${langPair}-latest.json`;
-
-                writeFileSync(latestTestFilePath, JSON.stringify(testResults));
-            }
-        }
-    }
 
     console.log('3-tidy-up.js finished.');
 });

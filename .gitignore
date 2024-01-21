@@ -3,6 +3,8 @@
 !tag_bank_ipa.json
 !languages.json
 !package.json
+!data/test/kaikki/*.json
+!data/test/tidy/*.json
 
 *.zip
 

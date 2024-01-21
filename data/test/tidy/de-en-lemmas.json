@@ -1,0 +1,359 @@
+{
+  "pflegen": {
+    "verb": {
+      "ipa": [
+        {
+          "ipa": "/ˈpfleːɡən/",
+          "tags": []
+        },
+        {
+          "ipa": "[ˈpfleːɡən]",
+          "tags": []
+        },
+        {
+          "ipa": "[ˈpfleːɡŋ̩]",
+          "tags": []
+        },
+        {
+          "ipa": "/ˈfleːɡən/",
+          "tags": []
+        }
+      ],
+      "senses": [
+        {
+          "glosses": [
+            {
+              "type": "structured-content",
+              "content": [
+                {
+                  "tag": "div",
+                  "data": {
+                    "listType": "li"
+                  },
+                  "content": "Providing care or service for someone/something. [weak verb]"
+                },
+                {
+                  "tag": "div",
+                  "data": {
+                    "listType": "ol"
+                  },
+                  "style": {
+                    "marginLeft": 2
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "listType": "li"
+                      },
+                      "content": [
+                        {
+                          "tag": "span",
+                          "data": {
+                            "listType": "number"
+                          },
+                          "content": "1. "
+                        },
+                        "(transitive, medicine) to nurse; to care for someone in poor health"
+                      ]
+                    },
+                    [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "listType": "number"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "data": {
+                              "listType": "number"
+                            },
+                            "content": "2. "
+                          },
+                          "(transitive) to take care of, to tend to, to maintain"
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "listType": "ol"
+                        },
+                        "style": {
+                          "marginLeft": 3
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "listType": "li"
+                            },
+                            "content": [
+                              {
+                                "tag": "span",
+                                "data": {
+                                  "listType": "number"
+                                },
+                                "content": "1. "
+                              },
+                              "(intransitive, archaic, with genitive)"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            },
+            "To improve or care for something in an intellectual sense. [weak or strong verb]"
+          ],
+          "tags": [
+            "class-4",
+            "strong"
+          ]
+        },
+        {
+          "glosses": [
+            {
+              "type": "structured-content",
+              "content": [
+                {
+                  "tag": "div",
+                  "data": {
+                    "listType": "li"
+                  },
+                  "content": "To improve or care for something in an intellectual sense. [weak or strong verb]"
+                },
+                {
+                  "tag": "div",
+                  "data": {
+                    "listType": "ol"
+                  },
+                  "style": {
+                    "marginLeft": 2
+                  },
+                  "content": [
+                    [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "listType": "number"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "data": {
+                              "listType": "number"
+                            },
+                            "content": "1. "
+                          },
+                          "(transitive) to cultivate; to foster; to nurture; to maintain"
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "listType": "ol"
+                        },
+                        "style": {
+                          "marginLeft": 3
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "listType": "li"
+                            },
+                            "content": [
+                              {
+                                "tag": "span",
+                                "data": {
+                                  "listType": "number"
+                                },
+                                "content": "1. "
+                              },
+                              "(intransitive, higher register or poetic, with genitive)"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "structured-content",
+              "content": [
+                {
+                  "tag": "div",
+                  "data": {
+                    "listType": "li"
+                  },
+                  "content": "Expressing habituality. [weak or strong verb]"
+                },
+                {
+                  "tag": "div",
+                  "data": {
+                    "listType": "ol"
+                  },
+                  "style": {
+                    "marginLeft": 2
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "listType": "li"
+                      },
+                      "content": [
+                        {
+                          "tag": "span",
+                          "data": {
+                            "listType": "number"
+                          },
+                          "content": "1. "
+                        },
+                        "(transitive) to carry out regularly"
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "listType": "li"
+                      },
+                      "content": [
+                        {
+                          "tag": "span",
+                          "data": {
+                            "listType": "number"
+                          },
+                          "content": "2. "
+                        },
+                        "(intransitive, with “zu” followed by an infinitive verb) to perform habitually; to be accustomed (to doing something); to be in the habit (of doing something)"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "tags": [
+            "class-4",
+            "intransitive",
+            "strong",
+            "with “zu” followed by an infinitive verb"
+          ]
+        }
+      ]
+    }
+  },
+  "Fuchs": {
+    "noun": {
+      "ipa": [
+        {
+          "ipa": "/fʊks/",
+          "tags": []
+        }
+      ],
+      "senses": [
+        {
+          "glosses": [
+            "fox (animal)"
+          ],
+          "tags": [
+            "masculine",
+            "strong"
+          ]
+        },
+        {
+          "glosses": [
+            "(informal) a clever or cunning person"
+          ],
+          "tags": [
+            "informal",
+            "masculine",
+            "strong"
+          ]
+        },
+        {
+          "glosses": [
+            "(informal) a red-haired person or horse."
+          ],
+          "tags": [
+            "informal",
+            "masculine",
+            "strong"
+          ]
+        },
+        {
+          "glosses": [
+            "pledge (prospective member of a fraternity)"
+          ],
+          "tags": [
+            "masculine",
+            "strong"
+          ]
+        },
+        {
+          "glosses": [
+            "(military, slang) A new recruit."
+          ],
+          "tags": [
+            "masculine",
+            "slang",
+            "strong"
+          ]
+        },
+        {
+          "glosses": [
+            "(card games) In Doppelkopf, the ace of diamonds, which earns a side of players an extra point if they win it from the other side"
+          ],
+          "tags": [
+            "masculine",
+            "strong"
+          ]
+        },
+        {
+          "glosses": [
+            "(military) a tank Transportpanzer Fuchs"
+          ],
+          "tags": [
+            "masculine",
+            "strong"
+          ]
+        },
+        {
+          "glosses": [
+            "(archaic) A form of sunscald on hops."
+          ],
+          "tags": [
+            "archaic",
+            "masculine",
+            "strong"
+          ]
+        },
+        {
+          "glosses": [
+            "a fox in radiosport foxhunt"
+          ],
+          "tags": [
+            "masculine",
+            "strong"
+          ]
+        },
+        {
+          "glosses": [
+            "(obsolete) any gold coin"
+          ],
+          "tags": [
+            "masculine",
+            "obsolete",
+            "strong"
+          ]
+        }
+      ]
+    }
+  }
+}

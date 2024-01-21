@@ -135,8 +135,9 @@ for entry in "${entries[@]}"; do
         echo "Extracted file already exists. Skipping extraction."
       fi
     fi
-    export kaikki_file="$filename"
 
+    export kaikki_file="data/kaikki/$filename"
+    export tidy_folder="data/tidy"
 
     # Step 4: Run tidy-up.js if the tidy files don't exist
     if \
