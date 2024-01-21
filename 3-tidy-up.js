@@ -1,5 +1,4 @@
-const { writeFileSync, existsSync, readFileSync, readdirSync } = require('fs');
-const path = require('path');
+const { writeFileSync } = require('fs');
 
 const LineByLineReader = require('line-by-line');
 
@@ -102,10 +101,10 @@ const blacklistedTags = [
 let lineCount = 0;
 const printInterval = 1000;
 
-let lemmaDict = {};
-let formDict = {};
-let formStuff = [];
-let automatedForms = {};
+const lemmaDict = {};
+const formDict = {};
+const formStuff = [];
+const automatedForms = {};
 
 consoleOverwrite(`3-tidy-up.js started...`);
 
@@ -123,7 +122,7 @@ lr.on('line', (line) => {
     }
 });
 
-function handleLine(line, lemmaDict, formDict, formStuff, automatedForms, langPair) {
+function handleLine(line, lemmaDict, formDict, formStuff, automatedForms) {
     const { word, pos, senses, sounds, forms } = JSON.parse(line);
 
     if (word && pos && senses) {
@@ -310,7 +309,7 @@ lr.on('end', () => {
     consoleOverwrite(`3-tidy-up.js: Writing form dict to ${formsFilePath}...`);
     writeFileSync(formsFilePath, JSON.stringify(formDict));
 
-    consoleOverwrite('3-tidy-up.js finished.');
+    consoleOverwrite('3-tidy-up.js finished.\n');
 });
 
 function clearConsoleLine() {
