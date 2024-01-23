@@ -1,4 +1,4 @@
-const { readFileSync } = require('fs');
+const { readFileSync, writeFileSync } = require('fs');
 
 const tagOrder = JSON.parse(readFileSync('data/language/tag_order.json'));
 
@@ -56,4 +56,29 @@ function similarSort(tags) {
     });
 }
 
-module.exports = { sortTags, similarSort };
+
+function writeInBatches(tempPath, inputArray, filenamePrefix, batchSize = 100000) {
+    consoleOverwrite(`Writing ${inputArray.length.toLocaleString()} entries of ${filenamePrefix}...`);
+
+    let bankIndex = 0;
+
+    while (inputArray.length > 0) {
+        const batch = inputArray.splice(0, batchSize);
+        bankIndex += 1;
+        const filename = `${tempPath}/${filenamePrefix}${bankIndex}.json`;
+        const content = JSON.stringify(batch, null, 2);
+
+        writeFileSync(filename, content);
+    }
+}
+
+function clearConsoleLine() {
+    process.stdout.write('\r\x1b[K'); // \r moves the cursor to the beginning of the line, \x1b[K clears the line
+}
+
+function consoleOverwrite(text) {
+    clearConsoleLine();
+    process.stdout.write(text);
+}
+
+module.exports = { sortTags, similarSort, writeInBatches, consoleOverwrite, clearConsoleLine };

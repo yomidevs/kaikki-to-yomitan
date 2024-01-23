@@ -1,12 +1,11 @@
 const {readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, createWriteStream, unlinkSync} = require('fs');
 const date = require('date-and-time');
 const now = new Date();
-
-const {source_iso, target_iso, DEBUG_WORD, DICT_NAME} = process.env;
-
 const currentDate = date.format(now, 'YYYY.MM.DD');
 
-const { sortTags } = require('./util/sort-tags');
+const { sortTags, writeInBatches, consoleOverwrite } = require('./util/util');
+
+const {source_iso, target_iso, DEBUG_WORD, DICT_NAME} = process.env;
 
 consoleOverwrite(`4-make-yomitan.js: reading lemmas...`);
 const lemmaDict = JSON.parse(readFileSync(`data/tidy/${source_iso}-${target_iso}-lemmas.json`));
@@ -21,11 +20,11 @@ function loadJson(file) {
     return existsSync(file) ? JSON.parse(readFileSync(file)) : [];
 }
 
-const commonTermTags = loadJson('data/language/tag_bank_term.json');
+const commonTermTags = loadJson(`data/language/${source_iso}/tag_bank_term.json`);
 const languageTermTags = loadJson(`data/language/${source_iso}/${target_iso}/tag_bank_term.json`);
 const termTags = [...commonTermTags, ...languageTermTags];
 
-const commonIpaTags = loadJson('data/language/tag_bank_ipa.json');
+const commonIpaTags = loadJson(`data/language/${source_iso}/tag_bank_ipa.json`);
 const languageIpaTags = loadJson(`data/language/${source_iso}/${target_iso}/tag_bank_ipa.json`);
 const ipaTags = [...commonIpaTags, ...languageIpaTags];
 
@@ -328,7 +327,7 @@ const tempPath = 'data/temp';
 
 const indexJson = {
     format: 3,
-    revision: 'ymt-' + currentDate,
+    revision: currentDate,
     sequenced: true
 };
 
@@ -342,14 +341,14 @@ for (const folder of folders) {
 
     writeFileSync(`${tempPath}/${folder}/index.json`, JSON.stringify({
         ...indexJson,
-        title: `${DICT_NAME}W-${source_iso}-${target_iso}` + (folder === 'dict' ? '' : '-ipa'),
+        title: `${DICT_NAME}-${source_iso}-${target_iso}` + (folder === 'dict' ? '' : '-ipa'),
     }));
 
     writeFileSync(`${tempPath}/${folder}/tag_bank_1.json`, JSON.stringify(Object.values(ymtTags[folder])));
 
     const filename = folder === 'dict' ? 'term_bank_' : 'term_meta_bank_';
 
-    writeInBatches(ymt[folder], `${folder}/${filename}`, 25000);
+    writeInBatches(tempPath, ymt[folder], `${folder}/${filename}`, 25000);
 }
 
 console.log('');
@@ -367,22 +366,7 @@ writeFileSync(`data/language/${source_iso}/${target_iso}/skippedIpaTags.json`, J
 
 writeFileSync(`data/language/${source_iso}/${target_iso}/skippedTermTags.json`, JSON.stringify(sortBreakdown(skippedTermTags), null, 2));
 
-console.log('4-make-yomitan.js: Done!');
-
-function writeInBatches(inputArray, filenamePrefix, batchSize = 100000) {
-    consoleOverwrite(`Writing ${inputArray.length.toLocaleString()} entries of ${filenamePrefix}...`);
-
-    let bankIndex = 0;
-
-    while (inputArray.length > 0) {
-        const batch = inputArray.splice(0, batchSize);
-        bankIndex += 1;
-        const filename = `${tempPath}/${filenamePrefix}${bankIndex}.json`;
-        const content = JSON.stringify(batch, null, 2);
-
-        writeFileSync(filename, content);
-    }
-}
+console.log('4-make-yomitan.js: Done!')
 
 function escapeRegExp(text) {
     return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
@@ -416,11 +400,3 @@ function normalizeOrthography(term) {
     }
 }
 
-function clearConsoleLine() {
-    process.stdout.write('\r\x1b[K'); // \r moves the cursor to the beginning of the line, \x1b[K clears the line
-}
-
-function consoleOverwrite(text) {
-    clearConsoleLine();
-    process.stdout.write(text);
-}

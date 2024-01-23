@@ -157,8 +157,8 @@ for entry in "${entries[@]}"; do
       rm -f "$kaikki_file"
     fi
 
-    dict_file="${DICT_NAME}W-$source_iso-$target_iso.zip"
-    ipa_file="${DICT_NAME}W-$source_iso-$target_iso-ipa.zip"
+    dict_file="${DICT_NAME}-$source_iso-$target_iso.zip"
+    ipa_file="${DICT_NAME}-$source_iso-$target_iso-ipa.zip"
 
     # Step 5: Create Yomitan files
     if \

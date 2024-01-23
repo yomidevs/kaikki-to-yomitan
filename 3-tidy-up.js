@@ -9,7 +9,7 @@ const {
     tidy_folder: writeFolder
 } = process.env;
 
-const { sortTags, similarSort } = require('./util/sort-tags');
+const { sortTags, similarSort, consoleOverwrite, clearConsoleLine } = require('./util/util');
 
 function isInflectionGloss(glosses) {
     if (targetIso === 'en') {
@@ -151,6 +151,7 @@ function handleLine(line, lemmaDict, formDict, formStuff, automatedForms) {
                 .filter(sound => sound && sound.ipa)
                 .map(sound => ({ ipa: sound.ipa, tags: sound.tags || [] }))
                 .flatMap(ipaObj => typeof ipaObj.ipa === 'string' ? [ipaObj] : ipaObj.ipa.map(ipa => ({ ipa, tags: ipaObj.tags })) )
+                .filter(ipaObj => ipaObj.ipa)
             : [];
 
         let nestedGlossObj = {};
@@ -321,13 +322,3 @@ lr.on('end', () => {
 
     consoleOverwrite('3-tidy-up.js finished.\n');
 });
-
-function clearConsoleLine() {
-    process.stdout.write('\r\x1b[K'); // \r moves the cursor to the beginning of the line, \x1b[K clears the line
-}
-
-
-function consoleOverwrite(text) {
-    clearConsoleLine();
-    process.stdout.write(text);
-}
