@@ -6,6 +6,8 @@ const {source_iso, target_iso, DEBUG_WORD, DICT_NAME} = process.env;
 
 const currentDate = date.format(now, 'YYYY.MM.DD');
 
+const { sortTags } = require('./util/sort-tags');
+
 consoleOverwrite(`4-make-yomitan.js: reading lemmas...`);
 const lemmaDict = JSON.parse(readFileSync(`data/tidy/${source_iso}-${target_iso}-lemmas.json`));
 consoleOverwrite(`4-make-yomitan.js: reading forms...`);
@@ -292,19 +294,19 @@ for (const [form, allInfo] of Object.entries(formDict)) {
             uniqueHypotheses = [];
 
             for (const hypothesis of inflectionHypotheses) {
-                const hypothesisStrings = uniqueHypotheses.map((hypothesis) => hypothesis.sort().join(' '));
-                const hypothesisString = hypothesis.sort().join(' ');
+                const hypothesisStrings = uniqueHypotheses.map((hypothesis) => sortTags(target_iso, hypothesis).join(' '));
+                const hypothesisString = sortTags(target_iso, hypothesis).join(' ');
                 if (!hypothesisStrings.includes(hypothesisString)) {
                     uniqueHypotheses.push(hypothesis);
                 }
             }
 
-            deinflectionDefinitions = uniqueHypotheses.map((hypothesis) => [
+            const deinflectionDefinitions = uniqueHypotheses.map((hypothesis) => [
                 normalizeOrthography(lemma),
                 hypothesis
             ]);
 
-            if(deinflectionDefinitions.length){
+            if(deinflectionDefinitions.length > 0){
                 ymt.form.push([
                     normalizeOrthography(form),
                     '',
