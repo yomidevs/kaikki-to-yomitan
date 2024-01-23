@@ -149,6 +149,7 @@ function handleLine(line, lemmaDict, formDict, formStuff, automatedForms, langPa
             ? sounds
                 .filter(sound => sound && sound.ipa)
                 .map(sound => ({ ipa: sound.ipa, tags: sound.tags || [] }))
+                .flatMap(ipaObj => typeof ipaObj.ipa === 'string' ? [ipaObj] : ipaObj.ipa.map(ipa => ({ ipa, tags: ipaObj.tags })) )
             : [];
 
         let nestedGlossObj = {};
