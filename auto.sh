@@ -19,8 +19,9 @@ redownload=false
 force_tidy=false
 force_ymt=false
 force=false
+keep_files=false
 
-flags=('S' 'T' 'd' 't' 'y' 'F')
+flags=('S' 'T' 'd' 't' 'y' 'F' 'k')
 for flag in "${flags[@]}"; do
   case "$3" in 
     *"$flag"*) 
@@ -31,6 +32,7 @@ for flag in "${flags[@]}"; do
         't') force_tidy=true ;;
         'y') force_ymt=true ;;
         'F') force=true ;;
+        'k') keep_files=true ;;
       esac
       ;;
   esac
@@ -51,6 +53,7 @@ echo "[d] redownload: $redownload"
 echo "[F] force: $force"
 echo "[t] force_tidy: $force_tidy"
 echo "[y] force_ymt: $force_ymt"
+echo "[k] keep_files: $keep_files"
 
 # Step 1: Install dependencies
 npm i
@@ -113,15 +116,15 @@ for entry in "${entries[@]}"; do
         echo "Kaikki dict already exists. Skipping download."
       fi
     else
-      filename="$target_iso-extract.json"
-      filepath="data/kaikki/$filename"
+      target_extract="$target_iso-extract.json"
+      target_extract_path="data/kaikki/$target_extract"
 
-      if [ ! -f "$filepath" ] || [ "$redownload" = true ]; then
-        url="https://kaikki.org/dictionary/downloads/$target_iso/$filename.gz"
-        echo "Downloading $filename from $url"
-        wget "$url" -O "$filepath".gz
-        echo "Extracting $filename"
-        gunzip "$filepath".gz  # Use 'gunzip' to extract the compressed file
+      if [ ! -f "$target_extract_path" ] || [ "$redownload" = true ]; then
+        url="https://kaikki.org/dictionary/downloads/$target_iso/$target_extract.gz"
+        echo "Downloading $target_extract from $url"
+        wget "$url" -O "$target_extract_path".gz
+        echo "Extracting $target_extract"
+        gunzip "$target_extract_path".gz  # Use 'gunzip' to extract the compressed file
       else
         echo "Kaikki dict already exists. Skipping download."
       fi
@@ -147,7 +150,11 @@ for entry in "${entries[@]}"; do
       [ "$force_tidy" = true ]; then
         node --max-old-space-size="$max_memory_mb" 3-tidy-up.js
       else
-      echo "Tidy file already exists. Skipping tidying."
+        echo "Tidy file already exists. Skipping tidying."
+    fi
+
+    if [ "$keep_files" = false ]; then
+      rm -f "$kaikki_file"
     fi
 
     dict_file="${DICT_NAME}W-$source_iso-$target_iso.zip"
@@ -180,5 +187,9 @@ for entry in "${entries[@]}"; do
 
     echo "----------------------------------------------------------------------------------"
   done
+
+  if [ "$keep_files" = false ]; then
+    rm -rf "$target_extract_path"
+  fi
 done
 echo "All done!"
