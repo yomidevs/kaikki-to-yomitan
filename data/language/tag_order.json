@@ -1,0 +1,95 @@
+{
+    "formality": [
+        "informal",
+        "formal"
+    ],
+    "cases": [
+        "nominative",
+        "genitive",
+        "dative",
+        "accusative",
+        "vocative",
+        "locative",
+        "instrumental"
+    ],
+    "persons": [
+        "first-person",
+        "second-person",
+        "third-person",
+        "first/third-person",
+        "first-person-semantically",
+        "second-person-semantically",
+        "third-person-semantically"
+    ],
+    "numbers": [
+        "singular",
+        "plural",
+        "plural-only"
+    ],
+    "definitiveness": [
+        "definite",
+        "indefinite"
+    ],
+    "genders": [
+        "masculine",
+        "feminine",
+        "neuter",
+        "common-gender"
+    ],
+    "animacy": [
+        "inanimate",
+        "animate"
+    ],
+    "comparativeForms": [
+        "comparative",
+        "positive",
+        "superlative"
+    ],
+    "tenses": [
+        "present",
+        "past",
+        "future",
+        "future-i",
+        "future-ii",
+        "perfect",
+        "pluperfect",
+        "aorist",
+        "imperfect",
+        "conditional",
+        "conditional-i",
+        "conditional-ii"
+    ],
+    "verbForms": [
+        "imperative",
+        "gerund",
+        "imperfective",
+        "perfective",
+        "active",
+        "passive",
+        "participle",
+        "subjunctive",
+        "indicative"
+    ],
+    "modifiers": [
+        "adjective",
+        "noun-from-verb",
+        "infinitive",
+        "adverbial",
+        "emphatic",
+        "relational",
+        "diminutive",
+        "poetic",
+        "regional",
+        "rare",
+        "augmentative",
+        "archaic",
+        "with-genitive",
+        "object-first-person",
+        "object-second-person",
+        "object-third-person",
+        "object-singular",
+        "object-plural",
+        "negative",
+        "combined-form"
+    ]
+}

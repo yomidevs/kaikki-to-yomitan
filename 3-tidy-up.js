@@ -9,6 +9,8 @@ const {
     tidy_folder: writeFolder
 } = process.env;
 
+const { sortTags, similarSort } = require('./util/sort-tags');
+
 function isInflectionGloss(glosses) {
     if (targetIso === 'en') {
         return /.*inflection of.*/.test(JSON.stringify(glosses));
@@ -130,16 +132,16 @@ function handleLine(line, lemmaDict, formDict, formStuff, automatedForms) {
             forms.forEach((formData) => {
                 const { form, tags } = formData;
 
-                if (form && tags && !tags.some(value => blacklistedTags.includes(value))) {
+                if (form && tags && !tags.some(value => blacklistedTags.includes(value)) && form !== '-') {
                     automatedForms[form] ??= {};
-                    automatedForms[form][word] = {};
+                    automatedForms[form][word] ??= {};
                     automatedForms[form][word][pos] ??= new Set();
 
                     const tagsSet = new Set(automatedForms[form][word][pos]);
 
-                    tagsSet.add(tags.join(' '));
+                    tagsSet.add(sortTags(targetIso, tags).join(' '));
 
-                    automatedForms[form][word][pos] = Array.from(tagsSet);
+                    automatedForms[form][word][pos] = similarSort(Array.from(tagsSet));
                 }
             });
         }
