@@ -144,8 +144,12 @@ function handleLine(line, lemmaDict, formDict, formStuff, automatedForms, langPa
                 }
             });
         }
-
-        const ipa = sounds ? sounds.filter(sound => sound && sound.ipa).map(sound => ({ ipa: sound.ipa, tags: sound.tags || [] })) : [];
+        
+        const ipa = sounds 
+            ? sounds
+                .filter(sound => sound && sound.ipa)
+                .map(sound => ({ ipa: sound.ipa, tags: sound.tags || [] }))
+            : [];
 
         let nestedGlossObj = {};
 
