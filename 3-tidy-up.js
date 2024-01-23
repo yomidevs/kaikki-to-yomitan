@@ -212,18 +212,21 @@ function handleLine(line, lemmaDict, formDict, formStuff, automatedForms) {
                         }
                     } else {
                         if (targetIso === 'en') {
-                            let lemma = sense.glosses[0].replace(/.+(?=inflection of)/, '');
-                            lemma = lemma.replace(/ \(.+?\)/, '');
-                            lemma = lemma.replace(/:$/, '');
-                            lemma = lemma.replace(/:\n.+/, '');
-                            lemma = lemma.replace(/inflection of /, '');
-                            lemma = lemma.replace(/:.+/, '');
-                            lemma = lemma.trim();
+                            if (!sense.glosses[0].includes('##')) {
+                                let lemma = sense.glosses[0]
+                                    .replace(/.+(?=inflection of)/, '')
+                                    .replace(/ \(.+?\)/, '')
+                                    .replace(/:$/, '')
+                                    .replace(/:\n.+/, '')
+                                    .replace(/inflection of /, '')
+                                    .replace(/:.+/, '')
+                                    .trim()
 
-                            const inflection = sense.glosses[1] || '';
+                                const inflection = sense.glosses[1] || '';
 
-                            if (inflection && !inflection.includes('inflection of') && word !== lemma) {
-                                addDeinflections(formDict, word, pos, lemma, [inflection]);
+                                if (inflection && !inflection.includes('inflection of') && word !== lemma) {
+                                    addDeinflections(formDict, word, pos, lemma, [inflection]);
+                                }
                             }
                         } else if (targetIso === 'fr') {
                             let inflection, lemma;
@@ -266,7 +269,7 @@ function handleForms(formStuff, formDict, automatedForms) {
         if (form !== lemma && glosses) {
             if (!glosses[0].includes("##")) {
                 addDeinflections(formDict, form, pos, lemma, [glosses[0]]);
-            } else if (glosses.length > 1) {
+            } else if (glosses.length > 1 && !glosses[1].includes('inflection of')) {
                 addDeinflections(formDict, form, pos, lemma, [glosses[1]]);
             }
         }
