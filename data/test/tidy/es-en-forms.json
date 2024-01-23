@@ -2,21 +2,25 @@
   "vivo": {
     "vivir": {
       "verb": [
-        "-automated- first-person indicative present singular"
+        "-automated- first-person singular present",
+        "-automated- first-person singular present indicative"
       ]
     }
   },
   "viví": {
     "vivir": {
       "verb": [
-        "-automated- imperative informal second-person singular vos-form"
+        "-automated- informal second-person singular imperative vos-form",
+        "-automated- first-person singular indicative preterite",
+        "-automated- first-person singular preterite"
       ]
     }
   },
   "vivido": {
     "vivir": {
       "verb": [
-        "-automated- masculine participle past singular"
+        "-automated- singular masculine past participle",
+        "-automated- past participle"
       ]
     }
   },
@@ -30,812 +34,851 @@
   "vivida": {
     "vivir": {
       "verb": [
-        "-automated- feminine participle past singular"
+        "-automated- singular feminine past participle"
       ]
     }
   },
   "vividos": {
     "vivir": {
       "verb": [
-        "-automated- masculine participle past plural"
+        "-automated- plural masculine past participle"
       ]
     }
   },
   "vividas": {
     "vivir": {
       "verb": [
-        "-automated- feminine participle past plural"
+        "-automated- plural feminine past participle"
       ]
     }
   },
   "vives": {
     "vivir": {
       "verb": [
-        "-automated- indicative informal present second-person singular"
+        "-automated- informal second-person singular present indicative"
       ]
     }
   },
   "vivís": {
     "vivir": {
       "verb": [
-        "-automated- indicative plural present second-person"
+        "-automated- second-person plural present indicative",
+        "-automated- informal second-person singular present indicative vos-form"
       ]
     }
   },
   "vive": {
     "vivir": {
       "verb": [
-        "-automated- imperative informal second-person singular"
+        "-automated- informal second-person singular imperative",
+        "-automated- third-person singular present indicative"
       ]
     }
   },
   "vivimos": {
     "vivir": {
       "verb": [
-        "-automated- first-person indicative plural preterite"
+        "-automated- first-person plural indicative preterite",
+        "-automated- first-person plural present indicative"
       ]
     }
   },
   "viven": {
     "vivir": {
       "verb": [
-        "-automated- indicative plural present third-person"
+        "-automated- third-person plural present indicative"
       ]
     }
   },
   "vivía": {
     "vivir": {
       "verb": [
-        "-automated- imperfect indicative singular third-person"
+        "-automated- first-person singular imperfect indicative",
+        "-automated- third-person singular imperfect indicative"
       ]
     }
   },
   "vivías": {
     "vivir": {
       "verb": [
-        "-automated- imperfect indicative second-person singular"
+        "-automated- second-person singular imperfect indicative"
       ]
     }
   },
   "vivíamos": {
     "vivir": {
       "verb": [
-        "-automated- first-person imperfect indicative plural"
+        "-automated- first-person plural imperfect indicative"
       ]
     }
   },
   "vivíais": {
     "vivir": {
       "verb": [
-        "-automated- imperfect indicative plural second-person"
+        "-automated- second-person plural imperfect indicative"
       ]
     }
   },
   "vivían": {
     "vivir": {
       "verb": [
-        "-automated- imperfect indicative plural third-person"
+        "-automated- third-person plural imperfect indicative"
       ]
     }
   },
   "viviste": {
     "vivir": {
       "verb": [
-        "-automated- indicative preterite second-person singular"
+        "-automated- second-person singular indicative preterite"
       ]
     }
   },
   "vivió": {
     "vivir": {
       "verb": [
-        "-automated- indicative preterite singular third-person"
+        "-automated- third-person singular indicative preterite"
       ]
     }
   },
   "vivisteis": {
     "vivir": {
       "verb": [
-        "-automated- indicative plural preterite second-person"
+        "-automated- second-person plural indicative preterite"
       ]
     }
   },
   "vivieron": {
     "vivir": {
       "verb": [
-        "-automated- indicative plural preterite third-person"
+        "-automated- third-person plural indicative preterite"
       ]
     }
   },
   "viviré": {
     "vivir": {
       "verb": [
-        "-automated- first-person future indicative singular"
+        "-automated- first-person singular future indicative"
       ]
     }
   },
   "vivirás": {
     "vivir": {
       "verb": [
-        "-automated- future indicative second-person singular"
+        "-automated- second-person singular future indicative"
       ]
     }
   },
   "vivirá": {
     "vivir": {
       "verb": [
-        "-automated- future indicative singular third-person"
+        "-automated- third-person singular future indicative"
       ]
     }
   },
   "viviremos": {
     "vivir": {
       "verb": [
-        "-automated- first-person future indicative plural"
+        "-automated- first-person plural future indicative"
       ]
     }
   },
   "viviréis": {
     "vivir": {
       "verb": [
-        "-automated- future indicative plural second-person"
+        "-automated- second-person plural future indicative"
       ]
     }
   },
   "vivirán": {
     "vivir": {
       "verb": [
-        "-automated- future indicative plural third-person"
+        "-automated- third-person plural future indicative"
       ]
     }
   },
   "viviría": {
     "vivir": {
       "verb": [
-        "-automated- conditional indicative singular third-person"
+        "-automated- first-person singular conditional indicative",
+        "-automated- third-person singular conditional indicative"
       ]
     }
   },
   "vivirías": {
     "vivir": {
       "verb": [
-        "-automated- conditional indicative second-person singular"
+        "-automated- second-person singular conditional indicative"
       ]
     }
   },
   "viviríamos": {
     "vivir": {
       "verb": [
-        "-automated- conditional first-person indicative plural"
+        "-automated- first-person plural conditional indicative"
       ]
     }
   },
   "viviríais": {
     "vivir": {
       "verb": [
-        "-automated- conditional indicative plural second-person"
+        "-automated- second-person plural conditional indicative"
       ]
     }
   },
   "vivirían": {
     "vivir": {
       "verb": [
-        "-automated- conditional indicative plural third-person"
+        "-automated- third-person plural conditional indicative"
       ]
     }
   },
   "viva": {
     "vivir": {
       "verb": [
-        "-automated- imperative negative singular third-person"
+        "-automated- first-person singular present subjunctive",
+        "-automated- third-person singular imperative",
+        "-automated- third-person singular imperative negative",
+        "-automated- third-person singular present subjunctive",
+        "-automated- formal third-person second-person-semantically singular imperative",
+        "-automated- formal third-person second-person-semantically singular imperative negative"
       ]
     }
   },
   "vivas": {
     "vivir": {
       "verb": [
-        "-automated- imperative negative second-person singular"
+        "-automated- informal second-person singular present subjunctive",
+        "-automated- second-person singular imperative negative"
       ]
     }
   },
   "vivás": {
     "vivir": {
       "verb": [
-        "-automated- informal present second-person singular subjunctive vos-form"
+        "-automated- informal second-person singular present subjunctive vos-form"
       ]
     }
   },
   "vivamos": {
     "vivir": {
       "verb": [
-        "-automated- first-person imperative negative plural"
+        "-automated- first-person plural imperative",
+        "-automated- first-person plural imperative negative",
+        "-automated- first-person plural present subjunctive"
       ]
     }
   },
   "viváis": {
     "vivir": {
       "verb": [
-        "-automated- imperative negative plural second-person"
+        "-automated- second-person plural imperative negative",
+        "-automated- second-person plural present subjunctive"
       ]
     }
   },
   "vivan": {
     "vivir": {
       "verb": [
-        "-automated- imperative negative plural third-person"
+        "-automated- third-person plural imperative",
+        "-automated- third-person plural imperative negative",
+        "-automated- third-person plural present subjunctive",
+        "-automated- formal third-person second-person-semantically plural imperative",
+        "-automated- formal third-person second-person-semantically plural imperative negative"
       ]
     }
   },
   "viviera": {
     "vivir": {
       "verb": [
-        "-automated- imperfect singular subjunctive third-person"
+        "-automated- first-person singular imperfect subjunctive",
+        "-automated- third-person singular imperfect subjunctive"
       ]
     }
   },
   "vivieras": {
     "vivir": {
       "verb": [
-        "-automated- imperfect second-person singular subjunctive"
+        "-automated- second-person singular imperfect subjunctive"
       ]
     }
   },
   "viviéramos": {
     "vivir": {
       "verb": [
-        "-automated- first-person imperfect plural subjunctive"
+        "-automated- first-person plural imperfect subjunctive"
       ]
     }
   },
   "vivierais": {
     "vivir": {
       "verb": [
-        "-automated- imperfect plural second-person subjunctive"
+        "-automated- second-person plural imperfect subjunctive"
       ]
     }
   },
   "vivieran": {
     "vivir": {
       "verb": [
-        "-automated- imperfect plural subjunctive third-person"
+        "-automated- third-person plural imperfect subjunctive"
       ]
     }
   },
   "viviese": {
     "vivir": {
       "verb": [
-        "-automated- imperfect imperfect-se singular subjunctive third-person"
+        "-automated- first-person singular imperfect subjunctive imperfect-se",
+        "-automated- third-person singular imperfect subjunctive imperfect-se"
       ]
     }
   },
   "vivieses": {
     "vivir": {
       "verb": [
-        "-automated- imperfect imperfect-se second-person singular subjunctive"
+        "-automated- second-person singular imperfect subjunctive imperfect-se"
       ]
     }
   },
   "viviésemos": {
     "vivir": {
       "verb": [
-        "-automated- first-person imperfect imperfect-se plural subjunctive"
+        "-automated- first-person plural imperfect subjunctive imperfect-se"
       ]
     }
   },
   "vivieseis": {
     "vivir": {
       "verb": [
-        "-automated- imperfect imperfect-se plural second-person subjunctive"
+        "-automated- second-person plural imperfect subjunctive imperfect-se"
       ]
     }
   },
   "viviesen": {
     "vivir": {
       "verb": [
-        "-automated- imperfect imperfect-se plural subjunctive third-person"
+        "-automated- third-person plural imperfect subjunctive imperfect-se"
       ]
     }
   },
   "viviere": {
     "vivir": {
       "verb": [
-        "-automated- future singular subjunctive third-person"
+        "-automated- first-person singular future subjunctive",
+        "-automated- third-person singular future subjunctive"
       ]
     }
   },
   "vivieres": {
     "vivir": {
       "verb": [
-        "-automated- future second-person singular subjunctive"
+        "-automated- second-person singular future subjunctive"
       ]
     }
   },
   "viviéremos": {
     "vivir": {
       "verb": [
-        "-automated- first-person future plural subjunctive"
+        "-automated- first-person plural future subjunctive"
       ]
     }
   },
   "viviereis": {
     "vivir": {
       "verb": [
-        "-automated- future plural second-person subjunctive"
+        "-automated- second-person plural future subjunctive"
       ]
     }
   },
   "vivieren": {
     "vivir": {
       "verb": [
-        "-automated- future plural subjunctive third-person"
+        "-automated- third-person plural future subjunctive"
       ]
     }
   },
   "vivid": {
     "vivir": {
       "verb": [
-        "-automated- imperative plural second-person"
+        "-automated- second-person plural imperative"
       ]
     }
   },
   "viviéndome": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form gerund object-first-person object-singular"
+        "-automated- accusative gerund object-first-person object-singular combined-form",
+        "-automated- dative gerund object-first-person object-singular combined-form"
       ]
     }
   },
   "viviéndote": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form gerund object-second-person object-singular"
+        "-automated- accusative gerund object-second-person object-singular combined-form",
+        "-automated- dative gerund object-second-person object-singular combined-form"
       ]
     }
   },
   "viviéndole": {
     "vivir": {
       "verb": [
-        "-automated- combined-form dative gerund object-singular object-third-person"
+        "-automated- dative gerund object-third-person object-singular combined-form"
       ]
     }
   },
   "viviéndose": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form gerund object-plural object-third-person"
+        "-automated- accusative gerund object-third-person object-plural combined-form",
+        "-automated- accusative gerund object-third-person object-singular combined-form",
+        "-automated- dative gerund object-third-person object-plural combined-form",
+        "-automated- dative gerund object-third-person object-singular combined-form"
       ]
     }
   },
   "viviéndonos": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form gerund object-first-person object-plural"
+        "-automated- accusative gerund object-first-person object-plural combined-form",
+        "-automated- dative gerund object-first-person object-plural combined-form"
       ]
     }
   },
   "viviéndoos": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form gerund object-plural object-second-person"
+        "-automated- accusative gerund object-second-person object-plural combined-form",
+        "-automated- dative gerund object-second-person object-plural combined-form"
       ]
     }
   },
   "viviéndoles": {
     "vivir": {
       "verb": [
-        "-automated- combined-form dative gerund object-plural object-third-person"
+        "-automated- dative gerund object-third-person object-plural combined-form"
       ]
     }
   },
   "viviéndolo": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form gerund object-singular object-third-person"
+        "-automated- accusative gerund object-third-person object-singular combined-form"
       ]
     }
   },
   "viviéndola": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form gerund object-singular object-third-person"
+        "-automated- accusative gerund object-third-person object-singular combined-form"
       ]
     }
   },
   "viviéndolos": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form gerund object-plural object-third-person"
+        "-automated- accusative gerund object-third-person object-plural combined-form"
       ]
     }
   },
   "viviéndolas": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form gerund object-plural object-third-person"
+        "-automated- accusative gerund object-third-person object-plural combined-form"
       ]
     }
   },
   "víveme": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-first-person object-singular second-person singular with-tú"
+        "-automated- informal accusative second-person singular imperative object-first-person object-singular combined-form with-tú",
+        "-automated- informal dative second-person singular imperative object-first-person object-singular combined-form with-tú"
       ]
     }
   },
   "vívete": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-second-person object-singular second-person singular with-tú"
+        "-automated- informal accusative second-person singular imperative object-second-person object-singular combined-form with-tú",
+        "-automated- informal dative second-person singular imperative object-second-person object-singular combined-form with-tú"
       ]
     }
   },
   "vívele": {
     "vivir": {
       "verb": [
-        "-automated- combined-form dative imperative informal object-singular object-third-person second-person singular with-tú"
+        "-automated- informal dative second-person singular imperative object-third-person object-singular combined-form with-tú"
       ]
     }
   },
   "vívenos": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-first-person object-plural second-person singular with-tú"
-      ]
-    }
-  },
-  "-": {
-    "vivir": {
-      "verb": [
-        "-automated- accusative combined-form formal imperative object-plural object-second-person plural second-person"
+        "-automated- informal accusative second-person singular imperative object-first-person object-plural combined-form with-tú",
+        "-automated- informal dative second-person singular imperative object-first-person object-plural combined-form with-tú"
       ]
     }
   },
   "víveles": {
     "vivir": {
       "verb": [
-        "-automated- combined-form dative imperative informal object-plural object-third-person second-person singular with-tú"
+        "-automated- informal dative second-person singular imperative object-third-person object-plural combined-form with-tú"
       ]
     }
   },
   "vívelo": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-singular object-third-person second-person singular with-tú"
+        "-automated- informal accusative second-person singular imperative object-third-person object-singular combined-form with-tú"
       ]
     }
   },
   "vívela": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-singular object-third-person second-person singular with-tú"
+        "-automated- informal accusative second-person singular imperative object-third-person object-singular combined-form with-tú"
       ]
     }
   },
   "vívelos": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-plural object-third-person second-person singular with-tú"
+        "-automated- informal accusative second-person singular imperative object-third-person object-plural combined-form with-tú"
       ]
     }
   },
   "vívelas": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-plural object-third-person second-person singular with-tú"
+        "-automated- informal accusative second-person singular imperative object-third-person object-plural combined-form with-tú"
       ]
     }
   },
   "vivime": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-first-person object-singular second-person singular with-vos"
+        "-automated- informal accusative second-person singular imperative object-first-person object-singular combined-form with-vos",
+        "-automated- informal dative second-person singular imperative object-first-person object-singular combined-form with-vos"
       ]
     }
   },
   "vivite": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-second-person object-singular second-person singular with-vos"
+        "-automated- informal accusative second-person singular imperative object-second-person object-singular combined-form with-vos",
+        "-automated- informal dative second-person singular imperative object-second-person object-singular combined-form with-vos"
       ]
     }
   },
   "vivile": {
     "vivir": {
       "verb": [
-        "-automated- combined-form dative imperative informal object-singular object-third-person second-person singular with-vos"
+        "-automated- informal dative second-person singular imperative object-third-person object-singular combined-form with-vos"
       ]
     }
   },
   "vivinos": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-first-person object-plural second-person singular with-vos"
+        "-automated- informal accusative second-person singular imperative object-first-person object-plural combined-form with-vos",
+        "-automated- informal dative second-person singular imperative object-first-person object-plural combined-form with-vos"
       ]
     }
   },
   "viviles": {
     "vivir": {
       "verb": [
-        "-automated- combined-form dative imperative informal object-plural object-third-person second-person singular with-vos"
+        "-automated- informal dative second-person singular imperative object-third-person object-plural combined-form with-vos"
       ]
     }
   },
   "vivilo": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-singular object-third-person second-person singular with-vos"
+        "-automated- informal accusative second-person singular imperative object-third-person object-singular combined-form with-vos"
       ]
     }
   },
   "vivila": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-singular object-third-person second-person singular with-vos"
+        "-automated- informal accusative second-person singular imperative object-third-person object-singular combined-form with-vos"
       ]
     }
   },
   "vivilos": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-plural object-third-person second-person singular with-vos"
+        "-automated- informal accusative second-person singular imperative object-third-person object-plural combined-form with-vos"
       ]
     }
   },
   "vivilas": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-plural object-third-person second-person singular with-vos"
+        "-automated- informal accusative second-person singular imperative object-third-person object-plural combined-form with-vos"
       ]
     }
   },
   "vívame": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form formal imperative object-first-person object-singular second-person singular"
+        "-automated- formal accusative second-person singular imperative object-first-person object-singular combined-form",
+        "-automated- formal dative second-person singular imperative object-first-person object-singular combined-form"
       ]
     }
   },
   "vívale": {
     "vivir": {
       "verb": [
-        "-automated- combined-form dative formal imperative object-singular object-third-person second-person singular"
+        "-automated- formal dative second-person singular imperative object-third-person object-singular combined-form"
       ]
     }
   },
   "vívase": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form formal imperative object-singular object-third-person second-person singular"
+        "-automated- formal accusative second-person singular imperative object-third-person object-singular combined-form",
+        "-automated- formal dative second-person singular imperative object-third-person object-singular combined-form"
       ]
     }
   },
   "vívanos": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form formal imperative object-first-person object-plural second-person singular"
+        "-automated- formal accusative second-person singular imperative object-first-person object-plural combined-form",
+        "-automated- formal dative second-person singular imperative object-first-person object-plural combined-form"
       ]
     }
   },
   "vívales": {
     "vivir": {
       "verb": [
-        "-automated- combined-form dative formal imperative object-plural object-third-person second-person singular"
+        "-automated- formal dative second-person singular imperative object-third-person object-plural combined-form"
       ]
     }
   },
   "vívalo": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form formal imperative object-singular object-third-person second-person singular"
+        "-automated- formal accusative second-person singular imperative object-third-person object-singular combined-form"
       ]
     }
   },
   "vívala": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form formal imperative object-singular object-third-person second-person singular"
+        "-automated- formal accusative second-person singular imperative object-third-person object-singular combined-form"
       ]
     }
   },
   "vívalos": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form formal imperative object-plural object-third-person second-person singular"
+        "-automated- formal accusative second-person singular imperative object-third-person object-plural combined-form"
       ]
     }
   },
   "vívalas": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form formal imperative object-plural object-third-person second-person singular"
+        "-automated- formal accusative second-person singular imperative object-third-person object-plural combined-form"
       ]
     }
   },
   "vivámoste": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form first-person imperative object-second-person object-singular plural"
+        "-automated- accusative first-person plural imperative object-second-person object-singular combined-form",
+        "-automated- dative first-person plural imperative object-second-person object-singular combined-form"
       ]
     }
   },
   "vivámosle": {
     "vivir": {
       "verb": [
-        "-automated- combined-form dative first-person imperative object-singular object-third-person plural"
+        "-automated- dative first-person plural imperative object-third-person object-singular combined-form"
       ]
     }
   },
   "vivámonos": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form first-person imperative object-first-person object-plural plural"
+        "-automated- accusative first-person plural imperative object-first-person object-plural combined-form",
+        "-automated- dative first-person plural imperative object-first-person object-plural combined-form"
       ]
     }
   },
   "vivámoos": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form first-person imperative object-plural object-second-person plural"
+        "-automated- accusative first-person plural imperative object-second-person object-plural combined-form",
+        "-automated- dative first-person plural imperative object-second-person object-plural combined-form"
       ]
     }
   },
   "vivámosles": {
     "vivir": {
       "verb": [
-        "-automated- combined-form dative first-person imperative object-plural object-third-person plural"
+        "-automated- dative first-person plural imperative object-third-person object-plural combined-form"
       ]
     }
   },
   "vivámoslo": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form first-person imperative object-singular object-third-person plural"
+        "-automated- accusative first-person plural imperative object-third-person object-singular combined-form"
       ]
     }
   },
   "vivámosla": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form first-person imperative object-singular object-third-person plural"
+        "-automated- accusative first-person plural imperative object-third-person object-singular combined-form"
       ]
     }
   },
   "vivámoslos": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form first-person imperative object-plural object-third-person plural"
+        "-automated- accusative first-person plural imperative object-third-person object-plural combined-form"
       ]
     }
   },
   "vivámoslas": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form first-person imperative object-plural object-third-person plural"
+        "-automated- accusative first-person plural imperative object-third-person object-plural combined-form"
       ]
     }
   },
   "vividme": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-first-person object-singular plural second-person"
+        "-automated- informal accusative second-person plural imperative object-first-person object-singular combined-form",
+        "-automated- informal dative second-person plural imperative object-first-person object-singular combined-form"
       ]
     }
   },
   "vividle": {
     "vivir": {
       "verb": [
-        "-automated- combined-form dative imperative informal object-singular object-third-person plural second-person"
+        "-automated- informal dative second-person plural imperative object-third-person object-singular combined-form"
       ]
     }
   },
   "vividnos": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-first-person object-plural plural second-person"
+        "-automated- informal accusative second-person plural imperative object-first-person object-plural combined-form",
+        "-automated- informal dative second-person plural imperative object-first-person object-plural combined-form"
       ]
     }
   },
   "vivíos": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-plural object-second-person plural second-person"
+        "-automated- informal accusative second-person plural imperative object-second-person object-plural combined-form",
+        "-automated- informal dative second-person plural imperative object-second-person object-plural combined-form"
       ]
     }
   },
   "vividles": {
     "vivir": {
       "verb": [
-        "-automated- combined-form dative imperative informal object-plural object-third-person plural second-person"
+        "-automated- informal dative second-person plural imperative object-third-person object-plural combined-form"
       ]
     }
   },
   "vividlo": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-singular object-third-person plural second-person"
+        "-automated- informal accusative second-person plural imperative object-third-person object-singular combined-form"
       ]
     }
   },
   "vividla": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-singular object-third-person plural second-person"
+        "-automated- informal accusative second-person plural imperative object-third-person object-singular combined-form"
       ]
     }
   },
   "vividlos": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-plural object-third-person plural second-person"
+        "-automated- informal accusative second-person plural imperative object-third-person object-plural combined-form"
       ]
     }
   },
   "vividlas": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form imperative informal object-plural object-third-person plural second-person"
+        "-automated- informal accusative second-person plural imperative object-third-person object-plural combined-form"
       ]
     }
   },
   "vívanme": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form formal imperative object-first-person object-singular plural second-person"
+        "-automated- formal accusative second-person plural imperative object-first-person object-singular combined-form",
+        "-automated- formal dative second-person plural imperative object-first-person object-singular combined-form"
       ]
     }
   },
   "vívanle": {
     "vivir": {
       "verb": [
-        "-automated- combined-form dative formal imperative object-singular object-third-person plural second-person"
+        "-automated- formal dative second-person plural imperative object-third-person object-singular combined-form"
       ]
     }
   },
   "vívannos": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form formal imperative object-first-person object-plural plural second-person"
+        "-automated- formal accusative second-person plural imperative object-first-person object-plural combined-form",
+        "-automated- formal dative second-person plural imperative object-first-person object-plural combined-form"
       ]
     }
   },
   "vívanles": {
     "vivir": {
       "verb": [
-        "-automated- combined-form dative formal imperative object-plural object-third-person plural second-person"
+        "-automated- formal dative second-person plural imperative object-third-person object-plural combined-form"
       ]
     }
   },
   "vívanse": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form formal imperative object-plural object-third-person plural second-person"
+        "-automated- formal accusative second-person plural imperative object-third-person object-plural combined-form",
+        "-automated- formal dative second-person plural imperative object-third-person object-plural combined-form"
       ]
     }
   },
   "vívanlo": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form formal imperative object-singular object-third-person plural second-person"
+        "-automated- formal accusative second-person plural imperative object-third-person object-singular combined-form"
       ]
     }
   },
   "vívanla": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form formal imperative object-singular object-third-person plural second-person"
+        "-automated- formal accusative second-person plural imperative object-third-person object-singular combined-form"
       ]
     }
   },
   "vívanlos": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form formal imperative object-plural object-third-person plural second-person"
+        "-automated- formal accusative second-person plural imperative object-third-person object-plural combined-form"
       ]
     }
   },
   "vívanlas": {
     "vivir": {
       "verb": [
-        "-automated- accusative combined-form formal imperative object-plural object-third-person plural second-person"
+        "-automated- formal accusative second-person plural imperative object-third-person object-plural combined-form"
       ]
     }
   }
