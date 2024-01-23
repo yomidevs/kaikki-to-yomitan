@@ -3,7 +3,7 @@ const date = require('date-and-time');
 const now = new Date();
 const currentDate = date.format(now, 'YYYY.MM.DD');
 
-const { sortTags } = require('./util/sort-tags');
+const { sortTags } = require('./util/util');
 const { writeInBatches } = require('./util/write-dict')
 
 const {source_iso, target_iso, DEBUG_WORD, DICT_NAME} = process.env;
