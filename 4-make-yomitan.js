@@ -3,8 +3,7 @@ const date = require('date-and-time');
 const now = new Date();
 const currentDate = date.format(now, 'YYYY.MM.DD');
 
-const { sortTags } = require('./util/util');
-const { writeInBatches } = require('./util/write-dict')
+const { sortTags, writeInBatches, consoleOverwrite } = require('./util/util');
 
 const {source_iso, target_iso, DEBUG_WORD, DICT_NAME} = process.env;
 
@@ -349,7 +348,7 @@ for (const folder of folders) {
 
     const filename = folder === 'dict' ? 'term_bank_' : 'term_meta_bank_';
 
-    writeInBatches(ymt[folder], `${folder}/${filename}`, 25000);
+    writeInBatches(tempPath, ymt[folder], `${folder}/${filename}`, 25000);
 }
 
 console.log('');
@@ -401,11 +400,3 @@ function normalizeOrthography(term) {
     }
 }
 
-function clearConsoleLine() {
-    process.stdout.write('\r\x1b[K'); // \r moves the cursor to the beginning of the line, \x1b[K clears the line
-}
-
-function consoleOverwrite(text) {
-    clearConsoleLine();
-    process.stdout.write(text);
-}

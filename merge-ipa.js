@@ -1,6 +1,7 @@
 const StreamZip = require('node-stream-zip');
 const { execSync } = require('child_process');
-const { readdirSync, existsSync, readFileSync, writeFileSync, mkdirSync } = require('fs');
+const { readdirSync, existsSync, readFileSync, writeFileSync, unlinkSync } = require('fs');
+const { writeInBatches } = require('./util/util');
 const date = require('date-and-time');
 const now = new Date();
 
@@ -9,7 +10,7 @@ async function main(){
     
     for (const {iso: sourceIso} of languages){
         const globalIpa = {};
-        const globalTags = [];
+        let globalTags = [];
 
         for (const {iso: targetIso} of languages){
             let localIpa = [];
@@ -45,27 +46,56 @@ async function main(){
                     } else {
                         const existingIpas = globalIpa[term][2]['transcriptions']
                         const newIpas = local[2]['transcriptions']
-
+                                  
                         for (const newIpa of newIpas) {
-                            if(!existingIpas.find(({ipa}) => ipa === newIpa.ipa)){
+                            const existingIpa = existingIpas.find(({ipa}) => ipa === newIpa.ipa);
+                            if(!existingIpa){
                                 existingIpas.push(newIpa);
-                                // [["🇺🇸","dialect",0,"US",0]] tag bank
                                 const newTags = newIpa.tags.map(tag => localTags.find(([tagId]) => tagId === tag));
-                                globalTags = globalTags.concat(newTags);
-                            }
+                                for (const newTag of newTags) {
+                                    if(!globalTags.find(([tagId]) => tagId === newTag[0])){
+                                        globalTags.push(newTag);
+                                    }
+                                }
+                            } else {
+                                const newTags = newIpa.tags.filter(tag => !existingIpa.tags.includes(tag));
+                                for (const newTag of newTags) {
+                                    existingIpa.tags.push(newTag);
+                                    const fullTag = localTags.find(([tagId]) => tagId === newTag);
+                                    if(!globalTags.find(([tagId]) => tagId === fullTag[0])){
+                                        globalTags.push(fullTag);
+                                    }
+                                }
+                            }   
                         }
                     }
                 }
+            } 
+        }
 
-                // const index = {"format":3,"revision":"ymt-2024.01.23","sequenced":true,"title":"kty-en-de-ipa"}
-                const globalIndex = {
-                    "format": 3,
-                    "revision": date.format(now, 'YYYY.MM.DD'),
-                    "sequenced": true,
-                    "title": `kty-${sourceIso}-ipa`
-                }
-                // write index.json, term
+        const globalIpaLength = Object.keys(globalIpa).length;
+        if(globalIpaLength) console.log("globalIpa", globalIpaLength);
+        const globalTagsLength = globalTags.length;
+        if(globalTagsLength) console.log("globalTags", globalTagsLength);
+            
+        const globalIndex = {
+            "format": 3,
+            "revision": date.format(now, 'YYYY.MM.DD'),
+            "sequenced": true,
+            "title": `kty-${sourceIso}-ipa`
+        }
+
+        if(globalIpaLength){
+
+            for (const file of readdirSync('data/temp/ipa')) {
+                unlinkSync(`data/temp/ipa/${file}`);
             }
+
+            writeFileSync(`data/temp/ipa/index.json`, JSON.stringify(globalIndex, null, 4));
+            writeInBatches('data/temp/ipa', Object.values(globalIpa), 'term_meta_bank_', 500000);
+            writeInBatches('data/temp/ipa', globalTags, 'tag_bank_', 50000);
+
+            execSync(`zip -j data/language/${sourceIso}/kty-${sourceIso}-ipa.zip data/temp/ipa/*`);
         }
     }
 }
