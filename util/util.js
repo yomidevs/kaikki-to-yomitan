@@ -56,6 +56,48 @@ function similarSort(tags) {
     });
 }
 
+// merge similar tags if the only difference is the persons
+// input: ['first-person singular present', 'third-person singular present']
+// output: ['first/third-person singular present']
+
+function mergePersonTags(targetIso, tags) {
+    const persons = ["first-person", "second-person", "third-person"];
+
+    if (tags.length > 1 && persons.some(item => JSON.stringify(tags).includes(item)) && targetIso === 'en') {
+        function personSort(items) {
+            return items.sort((a, b) => persons.indexOf(a) - persons.indexOf(b));
+        }
+
+        const result = [];
+        const mergeObj = {};
+
+        for (const item of tags) {
+            const allTags = item.split(' ');
+            const personTags = allTags.filter(tag => persons.includes(tag));
+
+            if (personTags.length === 1) {
+                const [person] = personTags;
+                const otherTags = allTags.filter(tag => !persons.includes(tag));
+                const tagKey = otherTags.join('_');
+
+                mergeObj[tagKey] ??= [];
+                mergeObj[tagKey].push(person);
+            } else {
+                result.push(item);
+            }
+        }
+
+        for (const [tagKey, personMatches] of Object.entries(mergeObj)) {
+            const tags = tagKey.split('_');
+            const mergedTag = personSort(personMatches).join('/').replace(/-person/g, '') + '-person';
+
+            result.push(sortTags(targetIso, [...tags, mergedTag]).join(' '));
+        }
+
+        return result;
+    } else return tags;
+}
+
 
 function writeInBatches(tempPath, inputArray, filenamePrefix, batchSize = 100000) {
     consoleOverwrite(`Writing ${inputArray.length.toLocaleString()} entries of ${filenamePrefix}...`);
@@ -81,4 +123,4 @@ function consoleOverwrite(text) {
     process.stdout.write(text);
 }
 
-module.exports = { sortTags, similarSort, writeInBatches, consoleOverwrite, clearConsoleLine };
+module.exports = { sortTags, similarSort, mergePersonTags, writeInBatches, consoleOverwrite, clearConsoleLine };
