@@ -9,7 +9,7 @@ const {
     tidy_folder: writeFolder
 } = process.env;
 
-const { sortTags, similarSort, consoleOverwrite, clearConsoleLine } = require('./util/util');
+const { sortTags, similarSort, mergePersonTags, consoleOverwrite, clearConsoleLine } = require('./util/util');
 
 function isInflectionGloss(glosses) {
     if (targetIso === 'en') {
@@ -141,7 +141,7 @@ function handleLine(line, lemmaDict, formDict, formStuff, automatedForms) {
 
                     tagsSet.add(sortTags(targetIso, tags).join(' '));
 
-                    automatedForms[form][word][pos] = similarSort(Array.from(tagsSet));
+                    automatedForms[form][word][pos] = similarSort(mergePersonTags(targetIso, Array.from(tagsSet)));
                 }
             });
         }

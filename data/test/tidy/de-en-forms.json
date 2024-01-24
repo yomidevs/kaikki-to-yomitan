@@ -13,10 +13,8 @@
     "pflegen": {
       "verb": [
         "-automated- past",
-        "-automated- first-person singular indicative preterite",
-        "-automated- first-person singular subjunctive subjunctive-ii",
-        "-automated- third-person singular indicative preterite",
-        "-automated- third-person singular subjunctive subjunctive-ii"
+        "-automated- first/third-person singular indicative preterite",
+        "-automated- first/third-person singular subjunctive subjunctive-ii"
       ]
     }
   },
@@ -38,8 +36,7 @@
     "pflegen": {
       "verb": [
         "-automated- past",
-        "-automated- first-person singular indicative preterite",
-        "-automated- third-person singular indicative preterite"
+        "-automated- first/third-person singular indicative preterite"
       ]
     }
   },
@@ -53,8 +50,7 @@
   "pflöge": {
     "pflegen": {
       "verb": [
-        "-automated- first-person singular subjunctive subjunctive-ii",
-        "-automated- third-person singular subjunctive subjunctive-ii",
+        "-automated- first/third-person singular subjunctive subjunctive-ii",
         "-automated- past subjunctive"
       ]
     }
@@ -70,9 +66,8 @@
     "pflegen": {
       "verb": [
         "-automated- first-person singular present indicative",
-        "-automated- first-person singular subjunctive subjunctive-i",
-        "-automated- second-person singular imperative",
-        "-automated- third-person singular subjunctive subjunctive-i"
+        "-automated- first/third-person singular subjunctive subjunctive-i",
+        "-automated- second-person singular imperative"
       ]
     }
   },
@@ -100,10 +95,8 @@
   "pflegten": {
     "pflegen": {
       "verb": [
-        "-automated- first-person plural indicative preterite",
-        "-automated- first-person plural subjunctive subjunctive-ii",
-        "-automated- third-person plural indicative preterite",
-        "-automated- third-person plural subjunctive subjunctive-ii"
+        "-automated- first/third-person plural indicative preterite",
+        "-automated- first/third-person plural subjunctive subjunctive-ii"
       ]
     }
   },
@@ -134,18 +127,15 @@
     "pflegen": {
       "verb": [
         "-automated- first-person singular perfect indicative multiword-construction",
-        "-automated- first-person singular perfect subjunctive multiword-construction",
-        "-automated- third-person singular perfect subjunctive multiword-construction"
+        "-automated- first/third-person singular perfect subjunctive multiword-construction"
       ]
     }
   },
   "haben gepflegt": {
     "pflegen": {
       "verb": [
-        "-automated- first-person plural perfect indicative multiword-construction",
-        "-automated- first-person plural perfect subjunctive multiword-construction",
-        "-automated- third-person plural perfect indicative multiword-construction",
-        "-automated- third-person plural perfect subjunctive multiword-construction"
+        "-automated- first/third-person plural perfect indicative multiword-construction",
+        "-automated- first/third-person plural perfect subjunctive multiword-construction"
       ]
     }
   },
@@ -187,32 +177,28 @@
   "hatte gepflegt": {
     "pflegen": {
       "verb": [
-        "-automated- first-person singular pluperfect indicative multiword-construction",
-        "-automated- third-person singular pluperfect indicative multiword-construction"
+        "-automated- first/third-person singular pluperfect indicative multiword-construction"
       ]
     }
   },
   "hatten gepflegt": {
     "pflegen": {
       "verb": [
-        "-automated- first-person plural pluperfect indicative multiword-construction",
-        "-automated- third-person plural pluperfect indicative multiword-construction"
+        "-automated- first/third-person plural pluperfect indicative multiword-construction"
       ]
     }
   },
   "hätte gepflegt": {
     "pflegen": {
       "verb": [
-        "-automated- first-person singular pluperfect subjunctive multiword-construction",
-        "-automated- third-person singular pluperfect subjunctive multiword-construction"
+        "-automated- first/third-person singular pluperfect subjunctive multiword-construction"
       ]
     }
   },
   "hätten gepflegt": {
     "pflegen": {
       "verb": [
-        "-automated- first-person plural pluperfect subjunctive multiword-construction",
-        "-automated- third-person plural pluperfect subjunctive multiword-construction"
+        "-automated- first/third-person plural pluperfect subjunctive multiword-construction"
       ]
     }
   },
@@ -248,18 +234,15 @@
     "pflegen": {
       "verb": [
         "-automated- first-person singular future future-i indicative multiword-construction",
-        "-automated- first-person singular future future-i subjunctive multiword-construction subjunctive-i",
-        "-automated- third-person singular future future-i subjunctive multiword-construction subjunctive-i"
+        "-automated- first/third-person singular future future-i subjunctive multiword-construction subjunctive-i"
       ]
     }
   },
   "werden pflegen": {
     "pflegen": {
       "verb": [
-        "-automated- first-person plural future future-i indicative multiword-construction",
-        "-automated- first-person plural future future-i subjunctive multiword-construction subjunctive-i",
-        "-automated- third-person plural future future-i indicative multiword-construction",
-        "-automated- third-person plural future future-i subjunctive multiword-construction subjunctive-i"
+        "-automated- first/third-person plural future future-i indicative multiword-construction",
+        "-automated- first/third-person plural future future-i subjunctive multiword-construction subjunctive-i"
       ]
     }
   },
@@ -281,16 +264,14 @@
   "würde pflegen": {
     "pflegen": {
       "verb": [
-        "-automated- first-person singular future future-i subjunctive multiword-construction subjunctive-ii",
-        "-automated- third-person singular future future-i subjunctive multiword-construction subjunctive-ii"
+        "-automated- first/third-person singular future future-i subjunctive multiword-construction subjunctive-ii"
       ]
     }
   },
   "würden pflegen": {
     "pflegen": {
       "verb": [
-        "-automated- first-person plural future future-i subjunctive multiword-construction subjunctive-ii",
-        "-automated- third-person plural future future-i subjunctive multiword-construction subjunctive-ii"
+        "-automated- first/third-person plural future future-i subjunctive multiword-construction subjunctive-ii"
       ]
     }
   },
@@ -326,18 +307,15 @@
     "pflegen": {
       "verb": [
         "-automated- first-person singular future future-ii indicative multiword-construction",
-        "-automated- first-person singular future future-ii subjunctive multiword-construction subjunctive-i",
-        "-automated- third-person singular future future-ii subjunctive multiword-construction subjunctive-i"
+        "-automated- first/third-person singular future future-ii subjunctive multiword-construction subjunctive-i"
       ]
     }
   },
   "werden gepflegt haben": {
     "pflegen": {
       "verb": [
-        "-automated- first-person plural future future-ii indicative multiword-construction",
-        "-automated- first-person plural future future-ii subjunctive multiword-construction subjunctive-i",
-        "-automated- third-person plural future future-ii indicative multiword-construction",
-        "-automated- third-person plural future future-ii subjunctive multiword-construction subjunctive-i"
+        "-automated- first/third-person plural future future-ii indicative multiword-construction",
+        "-automated- first/third-person plural future future-ii subjunctive multiword-construction subjunctive-i"
       ]
     }
   },
@@ -359,16 +337,14 @@
   "würde gepflegt haben": {
     "pflegen": {
       "verb": [
-        "-automated- first-person singular future future-ii subjunctive multiword-construction subjunctive-ii",
-        "-automated- third-person singular future future-ii subjunctive multiword-construction subjunctive-ii"
+        "-automated- first/third-person singular future future-ii subjunctive multiword-construction subjunctive-ii"
       ]
     }
   },
   "würden gepflegt haben": {
     "pflegen": {
       "verb": [
-        "-automated- first-person plural future future-ii subjunctive multiword-construction subjunctive-ii",
-        "-automated- third-person plural future future-ii subjunctive multiword-construction subjunctive-ii"
+        "-automated- first/third-person plural future future-ii subjunctive multiword-construction subjunctive-ii"
       ]
     }
   },
@@ -403,16 +379,14 @@
   "pflogen": {
     "pflegen": {
       "verb": [
-        "-automated- first-person plural indicative preterite",
-        "-automated- third-person plural indicative preterite"
+        "-automated- first/third-person plural indicative preterite"
       ]
     }
   },
   "pflögen": {
     "pflegen": {
       "verb": [
-        "-automated- first-person plural subjunctive subjunctive-ii",
-        "-automated- third-person plural subjunctive subjunctive-ii"
+        "-automated- first/third-person plural subjunctive subjunctive-ii"
       ]
     }
   },
@@ -462,18 +436,15 @@
     "pflegen": {
       "verb": [
         "-automated- first-person singular perfect indicative multiword-construction",
-        "-automated- first-person singular perfect subjunctive multiword-construction",
-        "-automated- third-person singular perfect subjunctive multiword-construction"
+        "-automated- first/third-person singular perfect subjunctive multiword-construction"
       ]
     }
   },
   "haben gepflogen": {
     "pflegen": {
       "verb": [
-        "-automated- first-person plural perfect indicative multiword-construction",
-        "-automated- first-person plural perfect subjunctive multiword-construction",
-        "-automated- third-person plural perfect indicative multiword-construction",
-        "-automated- third-person plural perfect subjunctive multiword-construction"
+        "-automated- first/third-person plural perfect indicative multiword-construction",
+        "-automated- first/third-person plural perfect subjunctive multiword-construction"
       ]
     }
   },
@@ -515,32 +486,28 @@
   "hatte gepflogen": {
     "pflegen": {
       "verb": [
-        "-automated- first-person singular pluperfect indicative multiword-construction",
-        "-automated- third-person singular pluperfect indicative multiword-construction"
+        "-automated- first/third-person singular pluperfect indicative multiword-construction"
       ]
     }
   },
   "hatten gepflogen": {
     "pflegen": {
       "verb": [
-        "-automated- first-person plural pluperfect indicative multiword-construction",
-        "-automated- third-person plural pluperfect indicative multiword-construction"
+        "-automated- first/third-person plural pluperfect indicative multiword-construction"
       ]
     }
   },
   "hätte gepflogen": {
     "pflegen": {
       "verb": [
-        "-automated- first-person singular pluperfect subjunctive multiword-construction",
-        "-automated- third-person singular pluperfect subjunctive multiword-construction"
+        "-automated- first/third-person singular pluperfect subjunctive multiword-construction"
       ]
     }
   },
   "hätten gepflogen": {
     "pflegen": {
       "verb": [
-        "-automated- first-person plural pluperfect subjunctive multiword-construction",
-        "-automated- third-person plural pluperfect subjunctive multiword-construction"
+        "-automated- first/third-person plural pluperfect subjunctive multiword-construction"
       ]
     }
   },
@@ -576,18 +543,15 @@
     "pflegen": {
       "verb": [
         "-automated- first-person singular future future-ii indicative multiword-construction",
-        "-automated- first-person singular future future-ii subjunctive multiword-construction subjunctive-i",
-        "-automated- third-person singular future future-ii subjunctive multiword-construction subjunctive-i"
+        "-automated- first/third-person singular future future-ii subjunctive multiword-construction subjunctive-i"
       ]
     }
   },
   "werden gepflogen haben": {
     "pflegen": {
       "verb": [
-        "-automated- first-person plural future future-ii indicative multiword-construction",
-        "-automated- first-person plural future future-ii subjunctive multiword-construction subjunctive-i",
-        "-automated- third-person plural future future-ii indicative multiword-construction",
-        "-automated- third-person plural future future-ii subjunctive multiword-construction subjunctive-i"
+        "-automated- first/third-person plural future future-ii indicative multiword-construction",
+        "-automated- first/third-person plural future future-ii subjunctive multiword-construction subjunctive-i"
       ]
     }
   },
@@ -609,16 +573,14 @@
   "würde gepflogen haben": {
     "pflegen": {
       "verb": [
-        "-automated- first-person singular future future-ii subjunctive multiword-construction subjunctive-ii",
-        "-automated- third-person singular future future-ii subjunctive multiword-construction subjunctive-ii"
+        "-automated- first/third-person singular future future-ii subjunctive multiword-construction subjunctive-ii"
       ]
     }
   },
   "würden gepflogen haben": {
     "pflegen": {
       "verb": [
-        "-automated- first-person plural future future-ii subjunctive multiword-construction subjunctive-ii",
-        "-automated- third-person plural future future-ii subjunctive multiword-construction subjunctive-ii"
+        "-automated- first/third-person plural future future-ii subjunctive multiword-construction subjunctive-ii"
       ]
     }
   },

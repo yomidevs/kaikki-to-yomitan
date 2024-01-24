@@ -101,8 +101,7 @@
   "vivía": {
     "vivir": {
       "verb": [
-        "-automated- first-person singular imperfect indicative",
-        "-automated- third-person singular imperfect indicative"
+        "-automated- first/third-person singular imperfect indicative"
       ]
     }
   },
@@ -207,8 +206,7 @@
   "viviría": {
     "vivir": {
       "verb": [
-        "-automated- first-person singular conditional indicative",
-        "-automated- third-person singular conditional indicative"
+        "-automated- first/third-person singular conditional indicative"
       ]
     }
   },
@@ -243,10 +241,9 @@
   "viva": {
     "vivir": {
       "verb": [
-        "-automated- first-person singular present subjunctive",
+        "-automated- first/third-person singular present subjunctive",
         "-automated- third-person singular imperative",
         "-automated- third-person singular imperative negative",
-        "-automated- third-person singular present subjunctive",
         "-automated- formal third-person second-person-semantically singular imperative",
         "-automated- formal third-person second-person-semantically singular imperative negative"
       ]
@@ -298,8 +295,7 @@
   "viviera": {
     "vivir": {
       "verb": [
-        "-automated- first-person singular imperfect subjunctive",
-        "-automated- third-person singular imperfect subjunctive"
+        "-automated- first/third-person singular imperfect subjunctive"
       ]
     }
   },
@@ -334,8 +330,7 @@
   "viviese": {
     "vivir": {
       "verb": [
-        "-automated- first-person singular imperfect subjunctive imperfect-se",
-        "-automated- third-person singular imperfect subjunctive imperfect-se"
+        "-automated- first/third-person singular imperfect subjunctive imperfect-se"
       ]
     }
   },
@@ -370,8 +365,7 @@
   "viviere": {
     "vivir": {
       "verb": [
-        "-automated- first-person singular future subjunctive",
-        "-automated- third-person singular future subjunctive"
+        "-automated- first/third-person singular future subjunctive"
       ]
     }
   },
