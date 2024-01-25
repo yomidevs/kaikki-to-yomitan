@@ -35,19 +35,31 @@ for (const {iso: sourceIso} of languages){
             }
         );
         
-        const testTags = JSON.parse(readFileSync(`data/test/temp/tag_bank_1.json`, 'utf8'));
-        const testTerms = JSON.parse(readFileSync(`data/test/temp/term_bank_1.json`, 'utf8'));
-        
-        const validTags = JSON.parse(readFileSync(`data/test/dict/${sourceIso}/${targetIso}/tag_bank_1.json`, 'utf8'));
+        const testTermTags = JSON.parse(readFileSync(`data/test/temp/dict/tag_bank_1.json`, 'utf8'));
+        const testTerms = JSON.parse(readFileSync(`data/test/temp/dict/term_bank_1.json`, 'utf8'));
+        const testIpaTags = JSON.parse(readFileSync(`data/test/temp/ipa/tag_bank_1.json`, 'utf8'));
+        const testIpa = JSON.parse(readFileSync(`data/test/temp/ipa/term_meta_bank_1.json`, 'utf8'));
+
+        const validTermTags = JSON.parse(readFileSync(`data/test/dict/${sourceIso}/${targetIso}/tag_bank_1.json`, 'utf8'));
         const validTerms = JSON.parse(readFileSync(`data/test/dict/${sourceIso}/${targetIso}/term_bank_1.json`, 'utf8'));
+        const validIpaTags = JSON.parse(readFileSync(`data/test/ipa/${sourceIso}/${targetIso}/tag_bank_1.json`, 'utf8'));
+        const validIpa = JSON.parse(readFileSync(`data/test/ipa/${sourceIso}/${targetIso}/term_meta_bank_1.json`, 'utf8'));
 
         describe(`Converting tidy ${sourceIso}-${targetIso} to yomitan format`, () => {
-            test('should have valid tags', () => {
-                expect(testTags).toEqual(validTags);
+            test('should have valid term tags', () => {
+                expect(testTermTags).toEqual(validTermTags);
             });
 
             test('should have valid terms', () => {
                 expect(testTerms).toEqual(validTerms);
+            });
+
+            test('should have valid ipa tags', () => {
+                expect(testIpaTags).toEqual(validIpaTags);
+            });
+
+            test('should have valid ipa', () => {
+                expect(testIpa).toEqual(validIpa);
             });
         });
     }
