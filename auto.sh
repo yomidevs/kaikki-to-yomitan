@@ -107,7 +107,7 @@ for target_lang in "${languages[@]}"; do
       
 
       if [ ! -f "$filepath" ] || [ "$redownload" = true ]; then
-        url="https://kaikki.org/dictionary/$language/$filename"
+        url="kaikki.org/dictionary/$language/$filename"
         echo "Downloading $filename from $url"
         wget "$url" -O "$filepath"
       else

@@ -1,0 +1,31 @@
+{
+  "brings": {
+    "bring": {
+      "verb": [
+        "-automated- third-person singular present"
+      ]
+    }
+  },
+  "bringing": {
+    "bring": {
+      "verb": [
+        "-automated- present participle"
+      ]
+    }
+  },
+  "brought": {
+    "bring": {
+      "verb": [
+        "-automated- past",
+        "-automated- past participle"
+      ]
+    }
+  },
+  "broughten": {
+    "bring": {
+      "verb": [
+        "-automated- past participle rare dialectal"
+      ]
+    }
+  }
+}
