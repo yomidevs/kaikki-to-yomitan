@@ -61,18 +61,16 @@ npm i
 # Step 2: Run create-folder.js
 node 1-create-folders.js
 
-languages=$(jq '.' languages.json)
-
 source_language="$1"
 target_language="$2"
 
-declare -a entries="($(
+declare -a languages="($(
   jq -r '.[] | @json | @sh' languages.json
 ))"
 
-for entry in "${entries[@]}"; do
-  target_iso=$(echo "${entry}" | jq -r '.iso')
-  target_language_name=$(echo "${entry}" | jq -r '.language')
+for target_lang in "${languages[@]}"; do
+  target_iso=$(echo "${target_lang}" | jq -r '.iso')
+  target_language_name=$(echo "${target_lang}" | jq -r '.language')
     
   if [ "$target_language_name" != "$target_language" ] && [ "$target_all" = false ]; then
       continue
@@ -87,10 +85,10 @@ for entry in "${entries[@]}"; do
   export target_iso="$target_iso"
   export target_language="$target_language_name"
 
-  for entry in "${entries[@]}"; do
-    iso=$(echo "${entry}" | jq -r '.iso')
-    language=$(echo "${entry}" | jq -r '.language')
-    flag=$(echo "${entry}" | jq -r '.flag')
+  for source_lang in "${languages[@]}"; do
+    iso=$(echo "${source_lang}" | jq -r '.iso')
+    language=$(echo "${source_lang}" | jq -r '.language')
+    flag=$(echo "${source_lang}" | jq -r '.flag')
     
     if [ "$language" != "$source_language" ] && [ "$source_all" = false ]; then
       continue
