@@ -30,13 +30,13 @@ function loadJson(file) {
     return existsSync(file) ? JSON.parse(readFileSync(file)) : [];
 }
 
-const commonTermTags = loadJson(`data/language/${source_iso}/tag_bank_term.json`);
+const targetLanguageTermTags = loadJson(`data/language/target-language-tags/${target_iso}/tag_bank_term.json`);
 const languageTermTags = loadJson(`data/language/${source_iso}/${target_iso}/tag_bank_term.json`);
-const termTags = [...commonTermTags, ...languageTermTags];
+const termTags = [...targetLanguageTermTags, ...languageTermTags];
 
-const commonIpaTags = loadJson(`data/language/${source_iso}/tag_bank_ipa.json`);
+const targetLanguageIpaTags = loadJson(`data/language/target-language-tags/${target_iso}/tag_bank_ipa.json`);
 const languageIpaTags = loadJson(`data/language/${source_iso}/${target_iso}/tag_bank_ipa.json`);
-const ipaTags = [...commonIpaTags, ...languageIpaTags];
+const ipaTags = [...targetLanguageIpaTags, ...languageIpaTags];
 
 const tagModifiers = [
     ['chiefly', 'chief'],

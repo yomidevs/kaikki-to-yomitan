@@ -1,1 +1,23 @@
-[]
+[
+  [
+    "v",
+    "partOfSpeech",
+    -1,
+    "verb",
+    1
+  ],
+  [
+    "vi",
+    "partOfSpeech",
+    -1,
+    "intransitive verb",
+    1
+  ],
+  [
+    "vt",
+    "partOfSpeech",
+    -1,
+    "transitive verb",
+    1
+  ]
+]

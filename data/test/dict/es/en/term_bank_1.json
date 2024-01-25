@@ -2,14 +2,25 @@
   [
     "vivir",
     "vivir",
-    "",
+    "v vi",
     "verb",
     0,
     [
-      "(intransitive) to live; to be alive",
-      "(intransitive) to make a living, to live on",
-      "(intransitive) to live in, reside, inhabit",
-      "(transitive) to experience, to live through"
+      "to live; to be alive",
+      "to make a living, to live on",
+      "to live in, reside, inhabit"
+    ],
+    0,
+    ""
+  ],
+  [
+    "vivir",
+    "vivir",
+    "v vt",
+    "verb",
+    0,
+    [
+      "to experience, to live through"
     ],
     0,
     ""

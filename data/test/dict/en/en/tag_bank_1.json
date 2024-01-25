@@ -1,1 +1,30 @@
-[]
+[
+  [
+    "v",
+    "partOfSpeech",
+    -1,
+    "verb",
+    1
+  ],
+  [
+    "vdt",
+    "partOfSpeech",
+    -1,
+    "ditransitive verb",
+    1
+  ],
+  [
+    "vt",
+    "partOfSpeech",
+    -1,
+    "transitive verb",
+    1
+  ],
+  [
+    "fig",
+    "",
+    0,
+    "figuratively",
+    0
+  ]
+]

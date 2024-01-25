@@ -2,14 +2,47 @@
   [
     "bring",
     "bring",
-    "",
+    "v vdt vt",
     "verb",
     0,
     [
-      "(ditransitive) To transport toward somebody/somewhere.",
-      "(figuratively, transitive) To supply or contribute.",
-      "(transitive) To occasion or bring about.",
-      "(transitive) To raise (a lawsuit, charges, etc.) against somebody.",
+      "To transport toward somebody/somewhere."
+    ],
+    0,
+    ""
+  ],
+  [
+    "bring",
+    "bring",
+    "v fig vt",
+    "verb",
+    0,
+    [
+      "To supply or contribute."
+    ],
+    0,
+    ""
+  ],
+  [
+    "bring",
+    "bring",
+    "v vt",
+    "verb",
+    0,
+    [
+      "To occasion or bring about.",
+      "To raise (a lawsuit, charges, etc.) against somebody."
+    ],
+    0,
+    ""
+  ],
+  [
+    "bring",
+    "bring",
+    "v",
+    "verb",
+    0,
+    [
       "To persuade; to induce; to draw; to lead; to guide.",
       "To produce in exchange; to sell for; to fetch.",
       "(baseball) To pitch, often referring to a particularly hard thrown fastball."
