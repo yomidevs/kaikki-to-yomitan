@@ -97,7 +97,7 @@
   [
     "pflegen",
     "pflegen",
-    "c-4 strong",
+    "v c-4 strong",
     "verb",
     0,
     [
@@ -243,20 +243,86 @@
   [
     "Fuchs",
     "Fuchs",
-    "strong",
+    "n masc strong",
     "noun",
     0,
     [
       "fox (animal)",
-      "(informal) a clever or cunning person",
-      "(informal) a red-haired person or horse.",
       "pledge (prospective member of a fraternity)",
-      "(slang, military) A new recruit.",
-      "(card games) In Doppelkopf, the ace of diamonds, which earns a side of players an extra point if they win it from the other side",
-      "(military) a tank Transportpanzer Fuchs",
-      "(archaic) A form of sunscald on hops.",
-      "a fox in radiosport foxhunt",
-      "(obsolete) any gold coin"
+      "a fox in radiosport foxhunt"
+    ],
+    0,
+    ""
+  ],
+  [
+    "Fuchs",
+    "Fuchs",
+    "n inf masc strong",
+    "noun",
+    0,
+    [
+      "a clever or cunning person",
+      "a red-haired person or horse."
+    ],
+    0,
+    ""
+  ],
+  [
+    "Fuchs",
+    "Fuchs",
+    "n masc sl strong mil",
+    "noun",
+    0,
+    [
+      "A new recruit."
+    ],
+    0,
+    ""
+  ],
+  [
+    "Fuchs",
+    "Fuchs",
+    "n masc strong cards",
+    "noun",
+    0,
+    [
+      "In Doppelkopf, the ace of diamonds, which earns a side of players an extra point if they win it from the other side"
+    ],
+    0,
+    ""
+  ],
+  [
+    "Fuchs",
+    "Fuchs",
+    "n masc strong mil",
+    "noun",
+    0,
+    [
+      "a tank Transportpanzer Fuchs"
+    ],
+    0,
+    ""
+  ],
+  [
+    "Fuchs",
+    "Fuchs",
+    "n arch masc strong",
+    "noun",
+    0,
+    [
+      "A form of sunscald on hops."
+    ],
+    0,
+    ""
+  ],
+  [
+    "Fuchs",
+    "Fuchs",
+    "n masc obs strong",
+    "noun",
+    0,
+    [
+      "any gold coin"
     ],
     0,
     ""
