@@ -1,16 +1,26 @@
 const {readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, createWriteStream, unlinkSync} = require('fs');
+const path = require('path');
 const date = require('date-and-time');
 const now = new Date();
 const currentDate = date.format(now, 'YYYY.MM.DD');
 
 const { sortTags, writeInBatches, consoleOverwrite } = require('./util/util');
 
-const {source_iso, target_iso, DEBUG_WORD, DICT_NAME} = process.env;
+const {
+    source_iso, 
+    target_iso, 
+    DEBUG_WORD, 
+    DICT_NAME,
+    tidy_folder: readFolder,
+    temp_folder: writeFolder
+} = process.env;
 
 consoleOverwrite(`4-make-yomitan.js: reading lemmas...`);
-const lemmaDict = JSON.parse(readFileSync(`data/tidy/${source_iso}-${target_iso}-lemmas.json`));
+const lemmasFile = `${readFolder}/${source_iso}-${target_iso}-lemmas.json`;
+const lemmaDict = JSON.parse(readFileSync(path.resolve(__dirname, lemmasFile)));
 consoleOverwrite(`4-make-yomitan.js: reading forms...`);
-const formDict = JSON.parse(readFileSync(`data/tidy/${source_iso}-${target_iso}-forms.json`));
+const formsFile = `${readFolder}/${source_iso}-${target_iso}-forms.json`;
+const formDict = JSON.parse(readFileSync(path.resolve(__dirname, formsFile)));
 
 if (!existsSync(`data/language/${source_iso}/${target_iso}`)) {
     mkdirSync(`data/language/${source_iso}/${target_iso}`, {recursive: true});
@@ -323,8 +333,6 @@ for (const [form, allInfo] of Object.entries(formDict)) {
 
 ymt.dict = [...ymt.lemma, ...ymt.form];
 
-const tempPath = 'data/temp';
-
 const indexJson = {
     format: 3,
     revision: currentDate,
@@ -335,20 +343,20 @@ const folders = ['dict', 'ipa'];
 
 for (const folder of folders) {
     consoleOverwrite(`4-make-yomitan.js: Writing ${folder}...`);
-    for (const file of readdirSync(`${tempPath}/${folder}`)) {
-        if (file.includes('term_')) { unlinkSync(`${tempPath}/${folder}/${file}`); }
+    for (const file of readdirSync(`${writeFolder}/${folder}`)) {
+        if (file.includes('term_')) { unlinkSync(`${writeFolder}/${folder}/${file}`); }
     }
 
-    writeFileSync(`${tempPath}/${folder}/index.json`, JSON.stringify({
+    writeFileSync(`${writeFolder}/${folder}/index.json`, JSON.stringify({
         ...indexJson,
         title: `${DICT_NAME}-${source_iso}-${target_iso}` + (folder === 'dict' ? '' : '-ipa'),
     }));
 
-    writeFileSync(`${tempPath}/${folder}/tag_bank_1.json`, JSON.stringify(Object.values(ymtTags[folder])));
+    writeFileSync(`${writeFolder}/${folder}/tag_bank_1.json`, JSON.stringify(Object.values(ymtTags[folder])));
 
     const filename = folder === 'dict' ? 'term_bank_' : 'term_meta_bank_';
 
-    writeInBatches(tempPath, ymt[folder], `${folder}/${filename}`, 25000);
+    writeInBatches(writeFolder, ymt[folder], `${folder}/${filename}`, 25000);
 }
 
 console.log('');

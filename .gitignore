@@ -6,6 +6,8 @@
 !package.json
 !data/test/kaikki/*.json
 !data/test/tidy/*.json
+!data/test/dict/**/*.json
+!data/test/ipa/**/*.json
 
 *.zip
 

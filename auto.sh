@@ -155,6 +155,7 @@ for target_lang in "${languages[@]}"; do
       rm -f "$kaikki_file"
     fi
 
+    export temp_folder="data/temp"
     dict_file="${DICT_NAME}-$source_iso-$target_iso.zip"
     ipa_file="${DICT_NAME}-$source_iso-$target_iso-ipa.zip"
 
@@ -166,8 +167,8 @@ for target_lang in "${languages[@]}"; do
       echo "Creating Yomitan dict and IPA files"
       if node --max-old-space-size="$max_memory_mb" 4-make-yomitan.js; then
         echo "Zipping Yomitan files"
-        zip -qj "$dict_file" data/temp/dict/index.json data/temp/dict/tag_bank_1.json data/temp/dict/term_bank_*.json
-        zip -qj "$ipa_file" data/temp/ipa/index.json data/temp/ipa/tag_bank_1.json data/temp/ipa/term_meta_bank_*.json
+        zip -qj "$dict_file" $temp_folder/dict/index.json $temp_folder/dict/tag_bank_1.json $temp_folder/dict/term_bank_*.json
+        zip -qj "$ipa_file" $temp_folder/ipa/index.json $temp_folder/ipa/tag_bank_1.json $temp_folder/ipa/term_meta_bank_*.json
       else
         echo "Error: Yomitan generation script failed."
       fi

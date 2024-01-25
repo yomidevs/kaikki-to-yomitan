@@ -1,0 +1,40 @@
+[
+  [
+    "pflegen",
+    "ipa",
+    {
+      "reading": "pflegen",
+      "transcriptions": [
+        {
+          "ipa": "/ˈpfleːɡən/",
+          "tags": []
+        },
+        {
+          "ipa": "[ˈpfleːɡən]",
+          "tags": []
+        },
+        {
+          "ipa": "[ˈpfleːɡŋ̩]",
+          "tags": []
+        },
+        {
+          "ipa": "/ˈfleːɡən/",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  [
+    "Fuchs",
+    "ipa",
+    {
+      "reading": "Fuchs",
+      "transcriptions": [
+        {
+          "ipa": "/fʊks/",
+          "tags": []
+        }
+      ]
+    }
+  ]
+]
