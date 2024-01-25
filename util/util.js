@@ -1,6 +1,7 @@
+const path = require('path');
 const { readFileSync, writeFileSync } = require('fs');
 
-const tagOrder = JSON.parse(readFileSync('data/language/tag_order.json'));
+const tagOrder = JSON.parse(readFileSync(path.resolve(__dirname, '../data/language/tag_order.json')));
 
 const tagOrderAll = [];
 
