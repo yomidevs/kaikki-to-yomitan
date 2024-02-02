@@ -132,7 +132,16 @@ annotations = annotations[df.sum().sort_values(ascending=False).head(size).index
 plt.figure(figsize=(15, 4))
 
 # Create a heatmap using seaborn
-sns.heatmap(df, annot=annotations, cmap="YlGnBu", annot_kws={"size": 7}, fmt="s", vmax=150000, cbar_kws={'label': 'number of words'})
+sns.heatmap(
+    df, 
+    annot=annotations,
+    cmap="YlGnBu", 
+    annot_kws={"size": 7}, 
+    fmt="s",
+    vmax=150000, 
+    cbar_kws={'label': 'number of words'},
+    linewidths=.5
+)
 
 # Add labels and title
 plt.xlabel("Source Language (headwords in this language)", fontsize=8)

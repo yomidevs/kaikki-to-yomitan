@@ -14,6 +14,8 @@
 *.txt
 !instructions.txt
 
+*.png
+
 .env
 
 __pycache__

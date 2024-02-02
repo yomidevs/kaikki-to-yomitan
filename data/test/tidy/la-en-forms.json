@@ -1,0 +1,55 @@
+{
+  "fāmae": {
+    "fama": {
+      "noun": [
+        "-automated- genitive",
+        "-automated- vocative plural",
+        "-automated- dative singular",
+        "-automated- genitive singular"
+      ]
+    }
+  },
+  "fāmārum": {
+    "fama": {
+      "noun": [
+        "-automated- genitive plural"
+      ]
+    }
+  },
+  "fāmīs": {
+    "fama": {
+      "noun": [
+        "-automated- plural ablative",
+        "-automated- dative plural"
+      ]
+    }
+  },
+  "fāmam": {
+    "fama": {
+      "noun": [
+        "-automated- accusative singular"
+      ]
+    }
+  },
+  "fāmās": {
+    "fama": {
+      "noun": [
+        "-automated- accusative plural"
+      ]
+    }
+  },
+  "fāmā": {
+    "fama": {
+      "noun": [
+        "-automated- singular ablative"
+      ]
+    }
+  },
+  "fāma": {
+    "fama": {
+      "noun": [
+        "-automated- vocative singular"
+      ]
+    }
+  }
+}
