@@ -203,9 +203,9 @@ for (const [lemma, infoMap] of Object.entries(lemmaDict)) {
                     return fullTag[0];
                 } else {
                     incrementCounter(tag, skippedIpaTags)
+                    return tag;
                 }
             })
-            .filter(Boolean);
 
         const existingIpa = result.find((x) => x.ipa === item.ipa);
 
