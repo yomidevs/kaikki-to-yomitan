@@ -125,10 +125,21 @@ lr.on('line', (line) => {
 });
 
 function handleLine(line, lemmaDict, formDict, formStuff, automatedForms) {
-    const { word, pos, senses, sounds, forms } = JSON.parse(line);
-
+    const { pos, senses, sounds, forms } = JSON.parse(line);
+    let { word } = JSON.parse(line);
+    
     if (word && pos && senses) {
         if (forms) {
+            const canonicalForm = forms.find(form => 
+                form.tags &&
+                form.tags.includes('canonical') &&
+                form.tags.length === 1 &&
+                !form.form.endsWith(' or')
+            );
+            if (canonicalForm) {
+                word = canonicalForm.form;
+            }
+
             forms.forEach((formData) => {
                 const { form, tags } = formData;
 

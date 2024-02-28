@@ -53,7 +53,7 @@
     }
   },
   "lēgī": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- perfect active",
         "-automated- first-person singular perfect active indicative"
@@ -61,99 +61,92 @@
     }
   },
   "lēctum": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- supine",
         "-automated- accusative noun-from-verb supine"
       ]
     }
   },
-  "legō": {
-    "lego": {
-      "verb": [
-        "-automated- first-person singular present active indicative"
-      ]
-    }
-  },
   "legis": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular present active indicative"
       ]
     }
   },
   "legit": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person singular present active indicative"
       ]
     }
   },
   "legimus": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person plural present active indicative"
       ]
     }
   },
   "legitis": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person plural present active indicative"
       ]
     }
   },
   "legunt": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person plural present active indicative"
       ]
     }
   },
   "legēbam": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person singular imperfect active indicative"
       ]
     }
   },
   "legēbās": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular imperfect active indicative"
       ]
     }
   },
   "legēbat": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person singular imperfect active indicative"
       ]
     }
   },
   "legēbāmus": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person plural imperfect active indicative"
       ]
     }
   },
   "legēbātis": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person plural imperfect active indicative"
       ]
     }
   },
   "legēbant": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person plural imperfect active indicative"
       ]
     }
   },
   "legam": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person singular future active indicative",
         "-automated- first-person singular present active subjunctive"
@@ -161,140 +154,140 @@
     }
   },
   "legēs": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular future active indicative"
       ]
     }
   },
   "leget": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person singular future active indicative"
       ]
     }
   },
   "legēmus": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person plural future active indicative"
       ]
     }
   },
   "legētis": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person plural future active indicative"
       ]
     }
   },
   "legent": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person plural future active indicative"
       ]
     }
   },
   "lēgistī": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular perfect active indicative"
       ]
     }
   },
   "lēgit": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person singular perfect active indicative"
       ]
     }
   },
   "lēgimus": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person plural perfect active indicative"
       ]
     }
   },
   "lēgistis": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person plural perfect active indicative"
       ]
     }
   },
   "lēgērunt": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person plural perfect active indicative"
       ]
     }
   },
   "lēgēre": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person plural perfect active indicative"
       ]
     }
   },
   "lēgeram": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person singular pluperfect active indicative"
       ]
     }
   },
   "lēgerās": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular pluperfect active indicative"
       ]
     }
   },
   "lēgerat": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person singular pluperfect active indicative"
       ]
     }
   },
   "lēgerāmus": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person plural pluperfect active indicative"
       ]
     }
   },
   "lēgerātis": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person plural pluperfect active indicative"
       ]
     }
   },
   "lēgerant": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person plural pluperfect active indicative"
       ]
     }
   },
   "lēgerō": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person singular future perfect active indicative"
       ]
     }
   },
   "lēgeris": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular future perfect active indicative"
       ]
     }
   },
   "lēgerit": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person singular future perfect active indicative",
         "-automated- third-person singular perfect active subjunctive"
@@ -302,21 +295,21 @@
     }
   },
   "lēgerimus": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person plural future perfect active indicative"
       ]
     }
   },
   "lēgeritis": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person plural future perfect active indicative"
       ]
     }
   },
   "lēgerint": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person plural future perfect active indicative",
         "-automated- third-person plural perfect active subjunctive"
@@ -324,21 +317,21 @@
     }
   },
   "legor": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person singular present passive indicative"
       ]
     }
   },
   "legeris": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular present passive indicative"
       ]
     }
   },
   "legere": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular present imperative passive",
         "-automated- second-person singular present passive indicative"
@@ -346,21 +339,21 @@
     }
   },
   "legitur": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person singular present passive indicative"
       ]
     }
   },
   "legimur": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person plural present passive indicative"
       ]
     }
   },
   "legiminī": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person plural present imperative passive",
         "-automated- second-person plural present passive indicative"
@@ -368,63 +361,63 @@
     }
   },
   "leguntur": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person plural present passive indicative"
       ]
     }
   },
   "legēbar": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person singular imperfect passive indicative"
       ]
     }
   },
   "legēbāris": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular imperfect passive indicative"
       ]
     }
   },
   "legēbāre": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular imperfect passive indicative"
       ]
     }
   },
   "legēbātur": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person singular imperfect passive indicative"
       ]
     }
   },
   "legēbāmur": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person plural imperfect passive indicative"
       ]
     }
   },
   "legēbāminī": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person plural imperfect passive indicative"
       ]
     }
   },
   "legēbantur": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person plural imperfect passive indicative"
       ]
     }
   },
   "legar": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person singular future passive indicative",
         "-automated- first-person singular present passive subjunctive"
@@ -432,413 +425,413 @@
     }
   },
   "legēris": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular future passive indicative"
       ]
     }
   },
   "legēre": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular future passive indicative"
       ]
     }
   },
   "legētur": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person singular future passive indicative"
       ]
     }
   },
   "legēmur": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person plural future passive indicative"
       ]
     }
   },
   "legēminī": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person plural future passive indicative"
       ]
     }
   },
   "legentur": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person plural future passive indicative"
       ]
     }
   },
   "lēctus + present active indicative of sum": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- perfect passive indicative"
       ]
     }
   },
   "lēctus + imperfect active indicative of sum": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- pluperfect passive indicative"
       ]
     }
   },
   "lēctus + future active indicative of sum": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- future perfect passive indicative"
       ]
     }
   },
   "legās": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular present active subjunctive"
       ]
     }
   },
   "legat": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person singular present active subjunctive"
       ]
     }
   },
   "legāmus": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person plural present active subjunctive"
       ]
     }
   },
   "legātis": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person plural present active subjunctive"
       ]
     }
   },
   "legant": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person plural present active subjunctive"
       ]
     }
   },
   "legerem": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person singular imperfect active subjunctive"
       ]
     }
   },
   "legerēs": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular imperfect active subjunctive"
       ]
     }
   },
   "legeret": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person singular imperfect active subjunctive"
       ]
     }
   },
   "legerēmus": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person plural imperfect active subjunctive"
       ]
     }
   },
   "legerētis": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person plural imperfect active subjunctive"
       ]
     }
   },
   "legerent": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person plural imperfect active subjunctive"
       ]
     }
   },
   "lēgerim": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person singular perfect active subjunctive"
       ]
     }
   },
   "lēgerīs": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular perfect active subjunctive"
       ]
     }
   },
   "lēgerīmus": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person plural perfect active subjunctive"
       ]
     }
   },
   "lēgerītis": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person plural perfect active subjunctive"
       ]
     }
   },
   "lēgissem": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person singular pluperfect active subjunctive"
       ]
     }
   },
   "lēgissēs": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular pluperfect active subjunctive"
       ]
     }
   },
   "lēgisset": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person singular pluperfect active subjunctive"
       ]
     }
   },
   "lēgissēmus": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person plural pluperfect active subjunctive"
       ]
     }
   },
   "lēgissētis": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person plural pluperfect active subjunctive"
       ]
     }
   },
   "lēgissent": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person plural pluperfect active subjunctive"
       ]
     }
   },
   "legāris": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular present passive subjunctive"
       ]
     }
   },
   "legāre": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular present passive subjunctive"
       ]
     }
   },
   "legātur": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person singular present passive subjunctive"
       ]
     }
   },
   "legāmur": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person plural present passive subjunctive"
       ]
     }
   },
   "legāminī": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person plural present passive subjunctive"
       ]
     }
   },
   "legantur": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person plural present passive subjunctive"
       ]
     }
   },
   "legerer": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person singular imperfect passive subjunctive"
       ]
     }
   },
   "legerēris": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular imperfect passive subjunctive"
       ]
     }
   },
   "legerēre": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular imperfect passive subjunctive"
       ]
     }
   },
   "legerētur": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person singular imperfect passive subjunctive"
       ]
     }
   },
   "legerēmur": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- first-person plural imperfect passive subjunctive"
       ]
     }
   },
   "legerēminī": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person plural imperfect passive subjunctive"
       ]
     }
   },
   "legerentur": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person plural imperfect passive subjunctive"
       ]
     }
   },
   "lēctus + present active subjunctive of sum": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- perfect passive subjunctive"
       ]
     }
   },
   "lēctus + imperfect active subjunctive of sum": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- pluperfect passive subjunctive"
       ]
     }
   },
   "lege": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person singular present imperative active"
       ]
     }
   },
   "legite": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person plural present imperative active"
       ]
     }
   },
   "legitō": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- singular future imperative active second/third-person"
       ]
     }
   },
   "legitōte": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- second-person plural future imperative active"
       ]
     }
   },
   "leguntō": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person plural future imperative active"
       ]
     }
   },
   "legitor": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- singular future imperative passive second/third-person"
       ]
     }
   },
   "leguntor": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- third-person plural future imperative passive"
       ]
     }
   },
   "legēns": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- present active participle"
       ]
     }
   },
   "lēctūrus": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- future active participle"
       ]
     }
   },
   "lēctus": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- perfect passive participle"
       ]
     }
   },
   "legendus": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- future passive participle"
       ]
     }
   },
   "legundus": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- future passive participle"
       ]
     }
   },
   "legendī": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- genitive gerund noun-from-verb"
       ]
     }
   },
   "legendō": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- dative gerund noun-from-verb",
         "-automated- gerund noun-from-verb ablative"
@@ -846,14 +839,14 @@
     }
   },
   "legendum": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- accusative gerund noun-from-verb"
       ]
     }
   },
   "lēctū": {
-    "lego": {
+    "legō": {
       "verb": [
         "-automated- noun-from-verb ablative supine"
       ]

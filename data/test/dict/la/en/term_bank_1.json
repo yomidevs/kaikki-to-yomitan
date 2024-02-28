@@ -16,7 +16,7 @@
   ],
   [
     "lego",
-    "lego",
+    "legō",
     "v cnjg-3",
     "v",
     0,
@@ -33,7 +33,7 @@
   ],
   [
     "lego",
-    "lego",
+    "legō",
     "v Medieval cnjg-3",
     "v",
     0,
@@ -45,7 +45,7 @@
   ],
   [
     "famae",
-    "",
+    "fāmae",
     "non-lemma",
     "",
     0,
@@ -83,7 +83,7 @@
   ],
   [
     "famarum",
-    "",
+    "fāmārum",
     "non-lemma",
     "",
     0,
@@ -101,7 +101,7 @@
   ],
   [
     "famis",
-    "",
+    "fāmīs",
     "non-lemma",
     "",
     0,
@@ -126,7 +126,7 @@
   ],
   [
     "famam",
-    "",
+    "fāmam",
     "non-lemma",
     "",
     0,
@@ -144,7 +144,7 @@
   ],
   [
     "famas",
-    "",
+    "fāmās",
     "non-lemma",
     "",
     0,
@@ -162,7 +162,7 @@
   ],
   [
     "fama",
-    "",
+    "fāmā",
     "non-lemma",
     "",
     0,
@@ -180,7 +180,7 @@
   ],
   [
     "fama",
-    "",
+    "fāma",
     "non-lemma",
     "",
     0,
@@ -198,20 +198,20 @@
   ],
   [
     "legi",
-    "",
+    "lēgī",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "perfect",
           "active"
         ]
       ],
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "singular",
@@ -226,44 +226,23 @@
   ],
   [
     "lectum",
-    "",
+    "lēctum",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "supine"
         ]
       ],
       [
-        "lego",
+        "legō",
         [
           "accusative",
           "noun-from-verb",
           "supine"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "lego",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "lego",
-        [
-          "first-person",
-          "singular",
-          "present",
-          "active",
-          "indicative"
         ]
       ]
     ],
@@ -278,7 +257,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -299,7 +278,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "singular",
@@ -320,7 +299,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "plural",
@@ -341,7 +320,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "plural",
@@ -362,7 +341,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "plural",
@@ -377,13 +356,13 @@
   ],
   [
     "legebam",
-    "",
+    "legēbam",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "singular",
@@ -398,13 +377,13 @@
   ],
   [
     "legebas",
-    "",
+    "legēbās",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -419,13 +398,13 @@
   ],
   [
     "legebat",
-    "",
+    "legēbat",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "singular",
@@ -440,13 +419,13 @@
   ],
   [
     "legebamus",
-    "",
+    "legēbāmus",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "plural",
@@ -461,13 +440,13 @@
   ],
   [
     "legebatis",
-    "",
+    "legēbātis",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "plural",
@@ -482,13 +461,13 @@
   ],
   [
     "legebant",
-    "",
+    "legēbant",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "plural",
@@ -509,7 +488,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "singular",
@@ -519,7 +498,7 @@
         ]
       ],
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "singular",
@@ -534,13 +513,13 @@
   ],
   [
     "leges",
-    "",
+    "legēs",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -561,7 +540,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "singular",
@@ -576,13 +555,13 @@
   ],
   [
     "legemus",
-    "",
+    "legēmus",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "plural",
@@ -597,13 +576,13 @@
   ],
   [
     "legetis",
-    "",
+    "legētis",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "plural",
@@ -624,7 +603,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "plural",
@@ -639,13 +618,13 @@
   ],
   [
     "legisti",
-    "",
+    "lēgistī",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -660,13 +639,13 @@
   ],
   [
     "legit",
-    "",
+    "lēgit",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "singular",
@@ -681,13 +660,13 @@
   ],
   [
     "legimus",
-    "",
+    "lēgimus",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "plural",
@@ -702,13 +681,13 @@
   ],
   [
     "legistis",
-    "",
+    "lēgistis",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "plural",
@@ -723,13 +702,13 @@
   ],
   [
     "legerunt",
-    "",
+    "lēgērunt",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "plural",
@@ -744,13 +723,13 @@
   ],
   [
     "legere",
-    "",
+    "lēgēre",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "plural",
@@ -765,13 +744,13 @@
   ],
   [
     "legeram",
-    "",
+    "lēgeram",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "singular",
@@ -786,13 +765,13 @@
   ],
   [
     "legeras",
-    "",
+    "lēgerās",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -807,13 +786,13 @@
   ],
   [
     "legerat",
-    "",
+    "lēgerat",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "singular",
@@ -828,13 +807,13 @@
   ],
   [
     "legeramus",
-    "",
+    "lēgerāmus",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "plural",
@@ -849,13 +828,13 @@
   ],
   [
     "legeratis",
-    "",
+    "lēgerātis",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "plural",
@@ -870,13 +849,13 @@
   ],
   [
     "legerant",
-    "",
+    "lēgerant",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "plural",
@@ -891,13 +870,13 @@
   ],
   [
     "legero",
-    "",
+    "lēgerō",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "singular",
@@ -913,13 +892,13 @@
   ],
   [
     "legeris",
-    "",
+    "lēgeris",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -935,13 +914,13 @@
   ],
   [
     "legerit",
-    "",
+    "lēgerit",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "singular",
@@ -952,7 +931,7 @@
         ]
       ],
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "singular",
@@ -967,13 +946,13 @@
   ],
   [
     "legerimus",
-    "",
+    "lēgerimus",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "plural",
@@ -989,13 +968,13 @@
   ],
   [
     "legeritis",
-    "",
+    "lēgeritis",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "plural",
@@ -1011,13 +990,13 @@
   ],
   [
     "legerint",
-    "",
+    "lēgerint",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "plural",
@@ -1028,7 +1007,7 @@
         ]
       ],
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "plural",
@@ -1049,7 +1028,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "singular",
@@ -1070,7 +1049,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -1091,7 +1070,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -1101,7 +1080,7 @@
         ]
       ],
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -1122,7 +1101,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "singular",
@@ -1143,7 +1122,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "plural",
@@ -1158,13 +1137,13 @@
   ],
   [
     "legimini",
-    "",
+    "legiminī",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "plural",
@@ -1174,7 +1153,7 @@
         ]
       ],
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "plural",
@@ -1195,7 +1174,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "plural",
@@ -1210,13 +1189,13 @@
   ],
   [
     "legebar",
-    "",
+    "legēbar",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "singular",
@@ -1231,13 +1210,13 @@
   ],
   [
     "legebaris",
-    "",
+    "legēbāris",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -1252,13 +1231,13 @@
   ],
   [
     "legebare",
-    "",
+    "legēbāre",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -1273,13 +1252,13 @@
   ],
   [
     "legebatur",
-    "",
+    "legēbātur",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "singular",
@@ -1294,13 +1273,13 @@
   ],
   [
     "legebamur",
-    "",
+    "legēbāmur",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "plural",
@@ -1315,13 +1294,13 @@
   ],
   [
     "legebamini",
-    "",
+    "legēbāminī",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "plural",
@@ -1336,13 +1315,13 @@
   ],
   [
     "legebantur",
-    "",
+    "legēbantur",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "plural",
@@ -1363,7 +1342,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "singular",
@@ -1373,7 +1352,7 @@
         ]
       ],
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "singular",
@@ -1388,13 +1367,13 @@
   ],
   [
     "legeris",
-    "",
+    "legēris",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -1409,13 +1388,13 @@
   ],
   [
     "legere",
-    "",
+    "legēre",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -1430,13 +1409,13 @@
   ],
   [
     "legetur",
-    "",
+    "legētur",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "singular",
@@ -1451,13 +1430,13 @@
   ],
   [
     "legemur",
-    "",
+    "legēmur",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "plural",
@@ -1472,13 +1451,13 @@
   ],
   [
     "legemini",
-    "",
+    "legēminī",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "plural",
@@ -1499,7 +1478,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "plural",
@@ -1514,13 +1493,13 @@
   ],
   [
     "lectus + present active indicative of sum",
-    "",
+    "lēctus + present active indicative of sum",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "perfect",
           "passive",
@@ -1533,13 +1512,13 @@
   ],
   [
     "lectus + imperfect active indicative of sum",
-    "",
+    "lēctus + imperfect active indicative of sum",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "pluperfect",
           "passive",
@@ -1552,13 +1531,13 @@
   ],
   [
     "lectus + future active indicative of sum",
-    "",
+    "lēctus + future active indicative of sum",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "future",
           "perfect",
@@ -1572,13 +1551,13 @@
   ],
   [
     "legas",
-    "",
+    "legās",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -1599,7 +1578,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "singular",
@@ -1614,13 +1593,13 @@
   ],
   [
     "legamus",
-    "",
+    "legāmus",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "plural",
@@ -1635,13 +1614,13 @@
   ],
   [
     "legatis",
-    "",
+    "legātis",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "plural",
@@ -1662,7 +1641,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "plural",
@@ -1683,7 +1662,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "singular",
@@ -1698,13 +1677,13 @@
   ],
   [
     "legeres",
-    "",
+    "legerēs",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -1725,7 +1704,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "singular",
@@ -1740,13 +1719,13 @@
   ],
   [
     "legeremus",
-    "",
+    "legerēmus",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "plural",
@@ -1761,13 +1740,13 @@
   ],
   [
     "legeretis",
-    "",
+    "legerētis",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "plural",
@@ -1788,7 +1767,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "plural",
@@ -1803,13 +1782,13 @@
   ],
   [
     "legerim",
-    "",
+    "lēgerim",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "singular",
@@ -1824,13 +1803,13 @@
   ],
   [
     "legeris",
-    "",
+    "lēgerīs",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -1845,13 +1824,13 @@
   ],
   [
     "legerimus",
-    "",
+    "lēgerīmus",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "plural",
@@ -1866,13 +1845,13 @@
   ],
   [
     "legeritis",
-    "",
+    "lēgerītis",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "plural",
@@ -1887,13 +1866,13 @@
   ],
   [
     "legissem",
-    "",
+    "lēgissem",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "singular",
@@ -1908,13 +1887,13 @@
   ],
   [
     "legisses",
-    "",
+    "lēgissēs",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -1929,13 +1908,13 @@
   ],
   [
     "legisset",
-    "",
+    "lēgisset",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "singular",
@@ -1950,13 +1929,13 @@
   ],
   [
     "legissemus",
-    "",
+    "lēgissēmus",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "plural",
@@ -1971,13 +1950,13 @@
   ],
   [
     "legissetis",
-    "",
+    "lēgissētis",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "plural",
@@ -1992,13 +1971,13 @@
   ],
   [
     "legissent",
-    "",
+    "lēgissent",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "plural",
@@ -2013,13 +1992,13 @@
   ],
   [
     "legaris",
-    "",
+    "legāris",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -2034,13 +2013,13 @@
   ],
   [
     "legare",
-    "",
+    "legāre",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -2055,13 +2034,13 @@
   ],
   [
     "legatur",
-    "",
+    "legātur",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "singular",
@@ -2076,13 +2055,13 @@
   ],
   [
     "legamur",
-    "",
+    "legāmur",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "plural",
@@ -2097,13 +2076,13 @@
   ],
   [
     "legamini",
-    "",
+    "legāminī",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "plural",
@@ -2124,7 +2103,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "plural",
@@ -2145,7 +2124,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "singular",
@@ -2160,13 +2139,13 @@
   ],
   [
     "legereris",
-    "",
+    "legerēris",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -2181,13 +2160,13 @@
   ],
   [
     "legerere",
-    "",
+    "legerēre",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -2202,13 +2181,13 @@
   ],
   [
     "legeretur",
-    "",
+    "legerētur",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "singular",
@@ -2223,13 +2202,13 @@
   ],
   [
     "legeremur",
-    "",
+    "legerēmur",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "first-person",
           "plural",
@@ -2244,13 +2223,13 @@
   ],
   [
     "legeremini",
-    "",
+    "legerēminī",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "plural",
@@ -2271,7 +2250,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "plural",
@@ -2286,13 +2265,13 @@
   ],
   [
     "lectus + present active subjunctive of sum",
-    "",
+    "lēctus + present active subjunctive of sum",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "perfect",
           "passive",
@@ -2305,13 +2284,13 @@
   ],
   [
     "lectus + imperfect active subjunctive of sum",
-    "",
+    "lēctus + imperfect active subjunctive of sum",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "pluperfect",
           "passive",
@@ -2330,7 +2309,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "singular",
@@ -2351,7 +2330,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "plural",
@@ -2366,13 +2345,13 @@
   ],
   [
     "legito",
-    "",
+    "legitō",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "singular",
           "future",
@@ -2387,13 +2366,13 @@
   ],
   [
     "legitote",
-    "",
+    "legitōte",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "second-person",
           "plural",
@@ -2408,13 +2387,13 @@
   ],
   [
     "legunto",
-    "",
+    "leguntō",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "plural",
@@ -2435,7 +2414,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "singular",
           "future",
@@ -2456,7 +2435,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "third-person",
           "plural",
@@ -2471,13 +2450,13 @@
   ],
   [
     "legens",
-    "",
+    "legēns",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "present",
           "active",
@@ -2490,13 +2469,13 @@
   ],
   [
     "lecturus",
-    "",
+    "lēctūrus",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "future",
           "active",
@@ -2509,13 +2488,13 @@
   ],
   [
     "lectus",
-    "",
+    "lēctus",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "perfect",
           "passive",
@@ -2534,7 +2513,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "future",
           "passive",
@@ -2553,7 +2532,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "future",
           "passive",
@@ -2566,13 +2545,13 @@
   ],
   [
     "legendi",
-    "",
+    "legendī",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "genitive",
           "gerund",
@@ -2585,13 +2564,13 @@
   ],
   [
     "legendo",
-    "",
+    "legendō",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "dative",
           "gerund",
@@ -2599,7 +2578,7 @@
         ]
       ],
       [
-        "lego",
+        "legō",
         [
           "gerund",
           "noun-from-verb",
@@ -2618,7 +2597,7 @@
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "accusative",
           "gerund",
@@ -2631,13 +2610,13 @@
   ],
   [
     "lectu",
-    "",
+    "lēctū",
     "non-lemma",
     "",
     0,
     [
       [
-        "lego",
+        "legō",
         [
           "noun-from-verb",
           "ablative",

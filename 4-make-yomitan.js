@@ -153,7 +153,7 @@ for (const [lemma, infoMap] of Object.entries(lemmaDict)) {
                     } else if (gloss) {
                         entries[joinedTags] = [
                             normalizedLemma, // term
-                            normalizedLemma, // reading
+                            lemma, // reading
                             joinedTags, // definition_tags
                             findPartOfSpeech(pos), // rules
                             0, // frequency
@@ -221,7 +221,7 @@ for (const [lemma, infoMap] of Object.entries(lemmaDict)) {
             normalizedLemma,
             'ipa',
             {
-                reading: normalizedLemma,
+                reading: lemma,
                 transcriptions: mergedIpas
             }
         ]);
@@ -297,14 +297,14 @@ for (const [form, allInfo] of Object.entries(formDict)) {
             }
 
             const deinflectionDefinitions = uniqueHypotheses.map((hypothesis) => [
-                normalizeOrthography(lemma),
+                lemma,
                 hypothesis
             ]);
 
             if(deinflectionDefinitions.length > 0){
                 ymt.form.push([
                     normalizeOrthography(form),
-                    '',
+                    form !== normalizeOrthography(form) ? form : '',
                     'non-lemma',
                     '',
                     0,
