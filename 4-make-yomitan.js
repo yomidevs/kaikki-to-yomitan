@@ -166,7 +166,8 @@ for (const [lemma, infoMap] of Object.entries(lemmaDict)) {
                 }
 
                 if (typeof gloss !== 'string') { 
-                    addGlossToEntries(senseTags.join(' '));
+                    const { leftoverTags, recognizedTags } = processTags(lemmaTags, senseTags, [], pos);
+                    addGlossToEntries(recognizedTags.join(' '));
                     return; 
                 }
 

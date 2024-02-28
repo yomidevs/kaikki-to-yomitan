@@ -2,7 +2,7 @@
   [
     "pflegen",
     "pflegen",
-    "verb class-4 strong",
+    "v c-4 strong",
     "v",
     0,
     [
@@ -89,18 +89,7 @@
             ]
           }
         ]
-      }
-    ],
-    0,
-    ""
-  ],
-  [
-    "pflegen",
-    "pflegen",
-    "v c-4 strong",
-    "v",
-    0,
-    [
+      },
       "To improve or care for something in an intellectual sense. [weak or strong verb]"
     ],
     0,
@@ -109,7 +98,7 @@
   [
     "pflegen",
     "pflegen",
-    "verb class-4 intransitive strong with “zu” followed by an infinitive verb",
+    "v c-4 vi strong",
     "v",
     0,
     [
