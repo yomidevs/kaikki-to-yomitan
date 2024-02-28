@@ -365,7 +365,7 @@ writeFileSync(`data/language/${source_iso}/${target_iso}/skippedPartsOfSpeech.js
 console.log('4-make-yomitan.js: Done!')
 
 function processTags(lemmaTags, senseTags, parenthesesTags, pos) {
-    const recognizedTags = [];
+    let recognizedTags = [];
 
     const allEntryTags = [...new Set([...lemmaTags, ...senseTags, ...parenthesesTags])];
     termTagCount += allEntryTags.length;
@@ -392,8 +392,10 @@ function processTags(lemmaTags, senseTags, parenthesesTags, pos) {
             }
         })
         .filter(Boolean);
+    
+    leftoverTags = unrecognizedTags.length ? `(${unrecognizedTags.join(', ')}) ` : '';
+    recognizedTags = [...new Set(recognizedTags)];
 
-    const leftoverTags = unrecognizedTags.length ? `(${unrecognizedTags.join(', ')}) ` : '';
     return { leftoverTags, recognizedTags };
 }
 

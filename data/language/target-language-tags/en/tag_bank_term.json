@@ -189,10 +189,17 @@
 		0
 	],
 	[
-		"part",
+		"ptcl",
 		"partOfSpeech",
 		-1,
 		"particle",
+		1
+	],
+	[
+		"ptcpl",
+		"partOfSpeech",
+		-1,
+		"participle",
 		1
 	],
     [
@@ -256,6 +263,13 @@
 		"",
 		0,
 		"in the plural",
+		0
+	],
+	[
+		"sg",
+		"",
+		0,
+		"singular",
 		0
 	],
 	[

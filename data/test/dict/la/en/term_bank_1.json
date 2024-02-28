@@ -2,7 +2,7 @@
   [
     "fama",
     "fama",
-    "n",
+    "n decl-1",
     "n",
     0,
     [
@@ -17,7 +17,7 @@
   [
     "lego",
     "lego",
-    "v",
+    "v cnjg-3",
     "v",
     0,
     [
@@ -26,8 +26,19 @@
       "to collect, gather, bring together",
       "to take out, pick out, extract, remove",
       "to take to one's self unjustly, carry off, steal, purloin, plunder, abstract",
-      "to read",
-      "(Medieval Latin) to teach, profess"
+      "to read"
+    ],
+    0,
+    ""
+  ],
+  [
+    "lego",
+    "lego",
+    "v Medieval cnjg-3",
+    "v",
+    0,
+    [
+      "to teach, profess"
     ],
     0,
     ""
