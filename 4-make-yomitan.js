@@ -26,20 +26,19 @@ if (!existsSync(`data/language/${source_iso}/${target_iso}`)) {
     mkdirSync(`data/language/${source_iso}/${target_iso}`, {recursive: true});
 }
 
-function loadJson(file) {
+function loadJsonArray(file) {
     return existsSync(file) ? JSON.parse(readFileSync(file)) : [];
 }
 
-const targetLanguageTermTags = loadJson(`data/language/target-language-tags/${target_iso}/tag_bank_term.json`);
-const languageTermTags = loadJson(`data/language/${source_iso}/${target_iso}/tag_bank_term.json`);
+const targetLanguageTermTags = loadJsonArray(`data/language/target-language-tags/${target_iso}/tag_bank_term.json`);
+const languageTermTags = loadJsonArray(`data/language/${source_iso}/${target_iso}/tag_bank_term.json`);
 const termTags = [...targetLanguageTermTags, ...languageTermTags];
 
-const targetLanguageIpaTags = loadJson(`data/language/target-language-tags/${target_iso}/tag_bank_ipa.json`);
-const languageIpaTags = loadJson(`data/language/${source_iso}/${target_iso}/tag_bank_ipa.json`);
+const targetLanguageIpaTags = loadJsonArray(`data/language/target-language-tags/${target_iso}/tag_bank_ipa.json`);
+const languageIpaTags = loadJsonArray(`data/language/${source_iso}/${target_iso}/tag_bank_ipa.json`);
 const ipaTags = [...targetLanguageIpaTags, ...languageIpaTags];
 
-const partsOfSpeech = loadJson(`data/language/target-language-tags/${target_iso}/parts_of_speech.json`);
-console.log(partsOfSpeech);
+const partsOfSpeech = loadJsonArray(`data/language/target-language-tags/${target_iso}/parts_of_speech.json`);
 
 const tagModifiers = [
     ['chiefly', 'chief'],
