@@ -3,7 +3,7 @@
     "pflegen",
     "pflegen",
     "verb class-4 strong",
-    "verb",
+    "v",
     0,
     [
       {
@@ -98,7 +98,7 @@
     "pflegen",
     "pflegen",
     "v c-4 strong",
-    "verb",
+    "v",
     0,
     [
       "To improve or care for something in an intellectual sense. [weak or strong verb]"
@@ -110,7 +110,7 @@
     "pflegen",
     "pflegen",
     "verb class-4 intransitive strong with “zu” followed by an infinitive verb",
-    "verb",
+    "v",
     0,
     [
       {
@@ -244,7 +244,7 @@
     "Fuchs",
     "Fuchs",
     "n masc strong",
-    "noun",
+    "n",
     0,
     [
       "fox (animal)",
@@ -258,7 +258,7 @@
     "Fuchs",
     "Fuchs",
     "n inf masc strong",
-    "noun",
+    "n",
     0,
     [
       "a clever or cunning person",
@@ -271,7 +271,7 @@
     "Fuchs",
     "Fuchs",
     "n masc sl strong mil",
-    "noun",
+    "n",
     0,
     [
       "A new recruit."
@@ -283,7 +283,7 @@
     "Fuchs",
     "Fuchs",
     "n masc strong cards",
-    "noun",
+    "n",
     0,
     [
       "In Doppelkopf, the ace of diamonds, which earns a side of players an extra point if they win it from the other side"
@@ -295,7 +295,7 @@
     "Fuchs",
     "Fuchs",
     "n masc strong mil",
-    "noun",
+    "n",
     0,
     [
       "a tank Transportpanzer Fuchs"
@@ -307,7 +307,7 @@
     "Fuchs",
     "Fuchs",
     "n arch masc strong",
-    "noun",
+    "n",
     0,
     [
       "A form of sunscald on hops."
@@ -319,7 +319,7 @@
     "Fuchs",
     "Fuchs",
     "n masc obs strong",
-    "noun",
+    "n",
     0,
     [
       "any gold coin"

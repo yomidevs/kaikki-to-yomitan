@@ -38,6 +38,9 @@ const targetLanguageIpaTags = loadJson(`data/language/target-language-tags/${tar
 const languageIpaTags = loadJson(`data/language/${source_iso}/${target_iso}/tag_bank_ipa.json`);
 const ipaTags = [...targetLanguageIpaTags, ...languageIpaTags];
 
+const partsOfSpeech = loadJson(`data/language/target-language-tags/${target_iso}/parts_of_speech.json`);
+console.log(partsOfSpeech);
+
 const tagModifiers = [
     ['chiefly', 'chief'],
     ['usually', 'usu'],
@@ -65,6 +68,16 @@ function findTag(tags, tag) {
     }
 
     return result;
+}
+
+function findPartOfSpeech(pos) {
+    for(const posAliases of partsOfSpeech){
+        if (posAliases.includes(pos)){
+            return posAliases[0];
+        }
+    }
+    incrementCounter(pos, skippedPartsOfSpeech);
+    return pos;
 }
 
 function findModifiedTag(tag){
@@ -102,6 +115,7 @@ const ymtTags = {
 
 const skippedIpaTags = {};
 const skippedTermTags = {};
+const skippedPartsOfSpeech = {};
 
 let ipaCount = 0;
 let termTagCount = 0;
@@ -142,7 +156,7 @@ for (const [lemma, infoMap] of Object.entries(lemmaDict)) {
                             normalizedLemma, // term
                             normalizedLemma, // reading
                             joinedTags, // definition_tags
-                            pos, // rules
+                            findPartOfSpeech(pos), // rules
                             0, // frequency
                             [gloss], // definitions
                             0, // sequence
@@ -150,7 +164,6 @@ for (const [lemma, infoMap] of Object.entries(lemmaDict)) {
                         ];
                     }
                 }
-    
 
                 if (typeof gloss !== 'string') { 
                     addGlossToEntries(senseTags.join(' '));
@@ -164,35 +177,8 @@ for (const [lemma, infoMap] of Object.entries(lemmaDict)) {
                     ? parenthesesContent.replace(/ or /g, ', ').split(', ').filter(Boolean)
                     : [];
 
-                const recognizedTags = [];
-                
-                const allEntryTags = [...new Set([...lemmaTags, ...senseTags, ...parenthesesTags])];
-                termTagCount += allEntryTags.length;
+                const { leftoverTags, recognizedTags } = processTags(lemmaTags, senseTags, parenthesesTags, pos);
 
-                unrecognizedTags = allEntryTags
-                    .map((tag) => {
-                        const fullTag = findTag(termTags, tag);
-
-                        if (fullTag) {
-                            recognizedTags.push(fullTag[0]);
-                            ymtTags.dict[tag] = fullTag;
-                            return null;
-                        } else {
-                            const modifiedTag = findModifiedTag(tag);
-                            if (modifiedTag){
-                                recognizedTags.push(modifiedTag[0]);
-                                ymtTags.dict[tag] = modifiedTag;
-                            }  else {
-                                if (allEntryTags.some((otherTag) => otherTag !== tag && otherTag.includes(tag))) return null;
-                                incrementCounter(tag, skippedTermTags)
-                                if(tag === pos) incrementCounter("pos-" + tag, skippedTermTags)
-                                if (parenthesesTags.includes(tag)) return tag;
-                            }
-                        }
-                    })
-                    .filter(Boolean);
-
-                const leftoverTags = unrecognizedTags.length ? `(${unrecognizedTags.join(', ')}) ` : '';
                 gloss = gloss.replace(regex, leftoverTags);
 
                 addGlossToEntries(recognizedTags.join(' '));
@@ -374,7 +360,42 @@ writeFileSync(`data/language/${source_iso}/${target_iso}/skippedIpaTags.json`, J
 
 writeFileSync(`data/language/${source_iso}/${target_iso}/skippedTermTags.json`, JSON.stringify(sortBreakdown(skippedTermTags), null, 2));
 
+writeFileSync(`data/language/${source_iso}/${target_iso}/skippedPartsOfSpeech.json`, JSON.stringify(sortBreakdown(skippedPartsOfSpeech), null, 2));
+
 console.log('4-make-yomitan.js: Done!')
+
+function processTags(lemmaTags, senseTags, parenthesesTags, pos) {
+    const recognizedTags = [];
+
+    const allEntryTags = [...new Set([...lemmaTags, ...senseTags, ...parenthesesTags])];
+    termTagCount += allEntryTags.length;
+
+    unrecognizedTags = allEntryTags
+        .map((tag) => {
+            const fullTag = findTag(termTags, tag);
+
+            if (fullTag) {
+                recognizedTags.push(fullTag[0]);
+                ymtTags.dict[tag] = fullTag;
+                return null;
+            } else {
+                const modifiedTag = findModifiedTag(tag);
+                if (modifiedTag) {
+                    recognizedTags.push(modifiedTag[0]);
+                    ymtTags.dict[tag] = modifiedTag;
+                } else {
+                    if (allEntryTags.some((otherTag) => otherTag !== tag && otherTag.includes(tag))) return null;
+                    incrementCounter(tag, skippedTermTags);
+                    if (tag === pos) incrementCounter("pos-" + tag, skippedTermTags);
+                    if (parenthesesTags.includes(tag)) return tag;
+                }
+            }
+        })
+        .filter(Boolean);
+
+    const leftoverTags = unrecognizedTags.length ? `(${unrecognizedTags.join(', ')}) ` : '';
+    return { leftoverTags, recognizedTags };
+}
 
 function escapeRegExp(text) {
     return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
