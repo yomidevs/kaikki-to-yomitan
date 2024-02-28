@@ -54,5 +54,90 @@
         }
       ]
     }
+  },
+  "lego": {
+    "verb": {
+      "ipa": [
+        {
+          "ipa": "/ˈle.ɡoː/",
+          "tags": [
+            "Classical"
+          ]
+        },
+        {
+          "ipa": "[ˈɫ̪ɛɡoː]",
+          "tags": [
+            "Classical"
+          ]
+        },
+        {
+          "ipa": "/ˈle.ɡo/",
+          "tags": []
+        },
+        {
+          "ipa": "[ˈlɛːɡo]",
+          "tags": []
+        }
+      ],
+      "senses": [
+        {
+          "glosses": [
+            "to choose, select"
+          ],
+          "tags": [
+            "conjugation-3"
+          ]
+        },
+        {
+          "glosses": [
+            "to appoint"
+          ],
+          "tags": [
+            "conjugation-3"
+          ]
+        },
+        {
+          "glosses": [
+            "to collect, gather, bring together"
+          ],
+          "tags": [
+            "conjugation-3"
+          ]
+        },
+        {
+          "glosses": [
+            "to take out, pick out, extract, remove"
+          ],
+          "tags": [
+            "conjugation-3"
+          ]
+        },
+        {
+          "glosses": [
+            "to take to one's self unjustly, carry off, steal, purloin, plunder, abstract"
+          ],
+          "tags": [
+            "conjugation-3"
+          ]
+        },
+        {
+          "glosses": [
+            "to read"
+          ],
+          "tags": [
+            "conjugation-3"
+          ]
+        },
+        {
+          "glosses": [
+            "(Medieval Latin) to teach, profess"
+          ],
+          "tags": [
+            "Medieval-Latin",
+            "conjugation-3"
+          ]
+        }
+      ]
+    }
   }
 }

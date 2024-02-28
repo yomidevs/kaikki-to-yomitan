@@ -23,5 +23,34 @@
         }
       ]
     }
+  ],
+  [
+    "lego",
+    "ipa",
+    {
+      "reading": "lego",
+      "transcriptions": [
+        {
+          "ipa": "/ˈle.ɡoː/",
+          "tags": [
+            "Classical"
+          ]
+        },
+        {
+          "ipa": "[ˈɫ̪ɛɡoː]",
+          "tags": [
+            "Classical"
+          ]
+        },
+        {
+          "ipa": "/ˈle.ɡo/",
+          "tags": []
+        },
+        {
+          "ipa": "[ˈlɛːɡo]",
+          "tags": []
+        }
+      ]
+    }
   ]
 ]
