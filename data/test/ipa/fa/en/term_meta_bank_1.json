@@ -1,0 +1,31 @@
+[
+  [
+    "ملک",
+    "ipa",
+    {
+      "reading": "ملک",
+      "transcriptions": [
+        {
+          "ipa": "[mulk]",
+          "tags": [
+            "classic"
+          ]
+        },
+        {
+          "ipa": "[mʊlk]",
+          "tags": [
+            "🇦🇫",
+            "frm"
+          ]
+        },
+        {
+          "ipa": "[molkʲ]",
+          "tags": [
+            "🇮🇷",
+            "frm"
+          ]
+        }
+      ]
+    }
+  ]
+]
