@@ -1,5 +1,5 @@
 {
-  "fama": {
+  "fāma": {
     "noun": {
       "ipa": [
         {
@@ -141,6 +141,46 @@
           "tags": [
             "Medieval-Latin",
             "conjugation-3"
+          ]
+        }
+      ]
+    }
+  },
+  "līlium": {
+    "noun": {
+      "ipa": [
+        {
+          "ipa": "/ˈliː.li.um/",
+          "tags": [
+            "Classical"
+          ]
+        },
+        {
+          "ipa": "[ˈlʲiːlʲiʊ̃ˑ]",
+          "tags": [
+            "Classical"
+          ]
+        },
+        {
+          "ipa": "/ˈli.li.um/",
+          "tags": [
+            "modern Italianate Ecclesiastical"
+          ]
+        },
+        {
+          "ipa": "[ˈliːlium]",
+          "tags": [
+            "modern Italianate Ecclesiastical"
+          ]
+        }
+      ],
+      "senses": [
+        {
+          "glosses": [
+            "a lily"
+          ],
+          "tags": [
+            "declension-2"
           ]
         }
       ]

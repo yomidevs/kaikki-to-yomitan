@@ -3,7 +3,7 @@
     "fama",
     "ipa",
     {
-      "reading": "fama",
+      "reading": "fāma",
       "transcriptions": [
         {
           "ipa": "/ˈfaː.ma/",
@@ -52,6 +52,39 @@
         },
         {
           "ipa": "[ˈlɛːɡo]",
+          "tags": [
+            "modern Italianate Ecclesiastical"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "lilium",
+    "ipa",
+    {
+      "reading": "līlium",
+      "transcriptions": [
+        {
+          "ipa": "/ˈliː.li.um/",
+          "tags": [
+            "Classical"
+          ]
+        },
+        {
+          "ipa": "[ˈlʲiːlʲiʊ̃ˑ]",
+          "tags": [
+            "Classical"
+          ]
+        },
+        {
+          "ipa": "/ˈli.li.um/",
+          "tags": [
+            "modern Italianate Ecclesiastical"
+          ]
+        },
+        {
+          "ipa": "[ˈliːlium]",
           "tags": [
             "modern Italianate Ecclesiastical"
           ]

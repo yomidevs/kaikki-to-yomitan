@@ -1,7 +1,7 @@
 [
   [
     "fama",
-    "fama",
+    "fāma",
     "n decl-1",
     "n",
     0,
@@ -44,6 +44,18 @@
     ""
   ],
   [
+    "lilium",
+    "līlium",
+    "n decl-2",
+    "n",
+    0,
+    [
+      "a lily"
+    ],
+    0,
+    ""
+  ],
+  [
     "famae",
     "fāmae",
     "non-lemma",
@@ -51,27 +63,27 @@
     0,
     [
       [
-        "fama",
+        "fāma",
         [
           "genitive"
         ]
       ],
       [
-        "fama",
+        "fāma",
         [
           "vocative",
           "plural"
         ]
       ],
       [
-        "fama",
+        "fāma",
         [
           "dative",
           "singular"
         ]
       ],
       [
-        "fama",
+        "fāma",
         [
           "genitive",
           "singular"
@@ -89,7 +101,7 @@
     0,
     [
       [
-        "fama",
+        "fāma",
         [
           "genitive",
           "plural"
@@ -107,14 +119,14 @@
     0,
     [
       [
-        "fama",
+        "fāma",
         [
           "plural",
           "ablative"
         ]
       ],
       [
-        "fama",
+        "fāma",
         [
           "dative",
           "plural"
@@ -132,7 +144,7 @@
     0,
     [
       [
-        "fama",
+        "fāma",
         [
           "accusative",
           "singular"
@@ -150,7 +162,7 @@
     0,
     [
       [
-        "fama",
+        "fāma",
         [
           "accusative",
           "plural"
@@ -168,28 +180,10 @@
     0,
     [
       [
-        "fama",
+        "fāma",
         [
           "singular",
           "ablative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "fama",
-    "fāma",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "fama",
-        [
-          "vocative",
-          "singular"
         ]
       ]
     ],
@@ -2621,6 +2615,147 @@
           "noun-from-verb",
           "ablative",
           "supine"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "lilii",
+    "līliī",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "līlium",
+        [
+          "genitive"
+        ]
+      ],
+      [
+        "līlium",
+        [
+          "genitive",
+          "singular"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "lili",
+    "līlī",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "līlium",
+        [
+          "genitive"
+        ]
+      ],
+      [
+        "līlium",
+        [
+          "genitive",
+          "singular"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "liliorum",
+    "līliōrum",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "līlium",
+        [
+          "genitive",
+          "plural"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "lilio",
+    "līliō",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "līlium",
+        [
+          "singular",
+          "ablative"
+        ]
+      ],
+      [
+        "līlium",
+        [
+          "dative",
+          "singular"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "liliis",
+    "līliīs",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "līlium",
+        [
+          "plural",
+          "ablative"
+        ]
+      ],
+      [
+        "līlium",
+        [
+          "dative",
+          "plural"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "lilia",
+    "līlia",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "līlium",
+        [
+          "accusative",
+          "plural"
+        ]
+      ],
+      [
+        "līlium",
+        [
+          "vocative",
+          "plural"
         ]
       ]
     ],

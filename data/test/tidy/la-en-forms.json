@@ -1,6 +1,6 @@
 {
   "fāmae": {
-    "fama": {
+    "fāma": {
       "noun": [
         "-automated- genitive",
         "-automated- vocative plural",
@@ -10,14 +10,14 @@
     }
   },
   "fāmārum": {
-    "fama": {
+    "fāma": {
       "noun": [
         "-automated- genitive plural"
       ]
     }
   },
   "fāmīs": {
-    "fama": {
+    "fāma": {
       "noun": [
         "-automated- plural ablative",
         "-automated- dative plural"
@@ -25,30 +25,23 @@
     }
   },
   "fāmam": {
-    "fama": {
+    "fāma": {
       "noun": [
         "-automated- accusative singular"
       ]
     }
   },
   "fāmās": {
-    "fama": {
+    "fāma": {
       "noun": [
         "-automated- accusative plural"
       ]
     }
   },
   "fāmā": {
-    "fama": {
+    "fāma": {
       "noun": [
         "-automated- singular ablative"
-      ]
-    }
-  },
-  "fāma": {
-    "fama": {
-      "noun": [
-        "-automated- vocative singular"
       ]
     }
   },
@@ -849,6 +842,53 @@
     "legō": {
       "verb": [
         "-automated- noun-from-verb ablative supine"
+      ]
+    }
+  },
+  "līliī": {
+    "līlium": {
+      "noun": [
+        "-automated- genitive",
+        "-automated- genitive singular"
+      ]
+    }
+  },
+  "līlī": {
+    "līlium": {
+      "noun": [
+        "-automated- genitive",
+        "-automated- genitive singular"
+      ]
+    }
+  },
+  "līliōrum": {
+    "līlium": {
+      "noun": [
+        "-automated- genitive plural"
+      ]
+    }
+  },
+  "līliō": {
+    "līlium": {
+      "noun": [
+        "-automated- singular ablative",
+        "-automated- dative singular"
+      ]
+    }
+  },
+  "līliīs": {
+    "līlium": {
+      "noun": [
+        "-automated- plural ablative",
+        "-automated- dative plural"
+      ]
+    }
+  },
+  "līlia": {
+    "līlium": {
+      "noun": [
+        "-automated- accusative plural",
+        "-automated- vocative plural"
       ]
     }
   }

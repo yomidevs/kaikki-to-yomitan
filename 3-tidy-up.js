@@ -133,7 +133,6 @@ function handleLine(line, lemmaDict, formDict, formStuff, automatedForms) {
             const canonicalForm = forms.find(form => 
                 form.tags &&
                 form.tags.includes('canonical') &&
-                form.tags.length === 1 &&
                 !form.form.endsWith(' or')
             );
             if (canonicalForm) {
