@@ -1,189 +1,195 @@
 {
   "fāma": {
-    "noun": {
-      "ipa": [
-        {
-          "ipa": "/ˈfaː.ma/",
-          "tags": [
-            "Classical"
-          ]
-        },
-        {
-          "ipa": "[ˈfäːmä]",
-          "tags": [
-            "Classical"
-          ]
-        },
-        {
-          "ipa": "/ˈfa.ma/",
-          "tags": [
-            "modern Italianate Ecclesiastical"
-          ]
-        }
-      ],
-      "senses": [
-        {
-          "glosses": [
-            "fame"
-          ],
-          "tags": [
-            "declension-1"
-          ]
-        },
-        {
-          "glosses": [
-            "rumour, talk, opinion, report"
-          ],
-          "tags": [
-            "declension-1"
-          ]
-        },
-        {
-          "glosses": [
-            "reputation"
-          ],
-          "tags": [
-            "declension-1"
-          ]
-        },
-        {
-          "glosses": [
-            "Fama, personified as a fast-moving, malicious goddess, the daughter of Terra. From the Greek φήμη, Pheme. Typically translated from the Latin as “Rumor.”"
-          ],
-          "tags": [
-            "declension-1"
-          ]
-        }
-      ]
+    "fāma": {
+      "noun": {
+        "ipa": [
+          {
+            "ipa": "/ˈfaː.ma/",
+            "tags": [
+              "Classical"
+            ]
+          },
+          {
+            "ipa": "[ˈfäːmä]",
+            "tags": [
+              "Classical"
+            ]
+          },
+          {
+            "ipa": "/ˈfa.ma/",
+            "tags": [
+              "modern Italianate Ecclesiastical"
+            ]
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "fame"
+            ],
+            "tags": [
+              "declension-1"
+            ]
+          },
+          {
+            "glosses": [
+              "rumour, talk, opinion, report"
+            ],
+            "tags": [
+              "declension-1"
+            ]
+          },
+          {
+            "glosses": [
+              "reputation"
+            ],
+            "tags": [
+              "declension-1"
+            ]
+          },
+          {
+            "glosses": [
+              "Fama, personified as a fast-moving, malicious goddess, the daughter of Terra. From the Greek φήμη, Pheme. Typically translated from the Latin as “Rumor.”"
+            ],
+            "tags": [
+              "declension-1"
+            ]
+          }
+        ]
+      }
     }
   },
   "legō": {
-    "verb": {
-      "ipa": [
-        {
-          "ipa": "/ˈle.ɡoː/",
-          "tags": [
-            "Classical"
-          ]
-        },
-        {
-          "ipa": "[ˈɫ̪ɛɡoː]",
-          "tags": [
-            "Classical"
-          ]
-        },
-        {
-          "ipa": "/ˈle.ɡo/",
-          "tags": [
-            "modern Italianate Ecclesiastical"
-          ]
-        },
-        {
-          "ipa": "[ˈlɛːɡo]",
-          "tags": [
-            "modern Italianate Ecclesiastical"
-          ]
-        }
-      ],
-      "senses": [
-        {
-          "glosses": [
-            "to choose, select"
-          ],
-          "tags": [
-            "conjugation-3"
-          ]
-        },
-        {
-          "glosses": [
-            "to appoint"
-          ],
-          "tags": [
-            "conjugation-3"
-          ]
-        },
-        {
-          "glosses": [
-            "to collect, gather, bring together"
-          ],
-          "tags": [
-            "conjugation-3"
-          ]
-        },
-        {
-          "glosses": [
-            "to take out, pick out, extract, remove"
-          ],
-          "tags": [
-            "conjugation-3"
-          ]
-        },
-        {
-          "glosses": [
-            "to take to one's self unjustly, carry off, steal, purloin, plunder, abstract"
-          ],
-          "tags": [
-            "conjugation-3"
-          ]
-        },
-        {
-          "glosses": [
-            "to read"
-          ],
-          "tags": [
-            "conjugation-3"
-          ]
-        },
-        {
-          "glosses": [
-            "(Medieval Latin) to teach, profess"
-          ],
-          "tags": [
-            "Medieval-Latin",
-            "conjugation-3"
-          ]
-        }
-      ]
+    "legō": {
+      "verb": {
+        "ipa": [
+          {
+            "ipa": "/ˈle.ɡoː/",
+            "tags": [
+              "Classical"
+            ]
+          },
+          {
+            "ipa": "[ˈɫ̪ɛɡoː]",
+            "tags": [
+              "Classical"
+            ]
+          },
+          {
+            "ipa": "/ˈle.ɡo/",
+            "tags": [
+              "modern Italianate Ecclesiastical"
+            ]
+          },
+          {
+            "ipa": "[ˈlɛːɡo]",
+            "tags": [
+              "modern Italianate Ecclesiastical"
+            ]
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "to choose, select"
+            ],
+            "tags": [
+              "conjugation-3"
+            ]
+          },
+          {
+            "glosses": [
+              "to appoint"
+            ],
+            "tags": [
+              "conjugation-3"
+            ]
+          },
+          {
+            "glosses": [
+              "to collect, gather, bring together"
+            ],
+            "tags": [
+              "conjugation-3"
+            ]
+          },
+          {
+            "glosses": [
+              "to take out, pick out, extract, remove"
+            ],
+            "tags": [
+              "conjugation-3"
+            ]
+          },
+          {
+            "glosses": [
+              "to take to one's self unjustly, carry off, steal, purloin, plunder, abstract"
+            ],
+            "tags": [
+              "conjugation-3"
+            ]
+          },
+          {
+            "glosses": [
+              "to read"
+            ],
+            "tags": [
+              "conjugation-3"
+            ]
+          },
+          {
+            "glosses": [
+              "(Medieval Latin) to teach, profess"
+            ],
+            "tags": [
+              "Medieval-Latin",
+              "conjugation-3"
+            ]
+          }
+        ]
+      }
     }
   },
   "līlium": {
-    "noun": {
-      "ipa": [
-        {
-          "ipa": "/ˈliː.li.um/",
-          "tags": [
-            "Classical"
-          ]
-        },
-        {
-          "ipa": "[ˈlʲiːlʲiʊ̃ˑ]",
-          "tags": [
-            "Classical"
-          ]
-        },
-        {
-          "ipa": "/ˈli.li.um/",
-          "tags": [
-            "modern Italianate Ecclesiastical"
-          ]
-        },
-        {
-          "ipa": "[ˈliːlium]",
-          "tags": [
-            "modern Italianate Ecclesiastical"
-          ]
-        }
-      ],
-      "senses": [
-        {
-          "glosses": [
-            "a lily"
-          ],
-          "tags": [
-            "declension-2"
-          ]
-        }
-      ]
+    "līlium": {
+      "noun": {
+        "ipa": [
+          {
+            "ipa": "/ˈliː.li.um/",
+            "tags": [
+              "Classical"
+            ]
+          },
+          {
+            "ipa": "[ˈlʲiːlʲiʊ̃ˑ]",
+            "tags": [
+              "Classical"
+            ]
+          },
+          {
+            "ipa": "/ˈli.li.um/",
+            "tags": [
+              "modern Italianate Ecclesiastical"
+            ]
+          },
+          {
+            "ipa": "[ˈliːlium]",
+            "tags": [
+              "modern Italianate Ecclesiastical"
+            ]
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "a lily"
+            ],
+            "tags": [
+              "declension-2"
+            ]
+          }
+        ]
+      }
     }
   }
 }

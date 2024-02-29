@@ -78,10 +78,7 @@ function addDeinflections(formDict, word, pos, lemma, inflections) {
     
         formDict[word][lemma][pos] = Array.from(inflectionsSet);
     } catch(e) {
-        // reserved keyword "constructor" causing issues
-
-        // console.log(word, lemma, pos);
-        // console.log(formDict[word][lemma][pos]);
+        console.log(e);
     }
 }
 
@@ -125,20 +122,13 @@ lr.on('line', (line) => {
 });
 
 function handleLine(line, lemmaDict, formDict, formStuff, automatedForms) {
-    const { pos, senses, sounds, forms } = JSON.parse(line);
-    let { word } = JSON.parse(line);
-    
+    const parsedLine = JSON.parse(line);
+    const { pos, senses, sounds, forms } = parsedLine;
+    const word = getCanonicalForm(parsedLine);
+    const reading = getReading(word, parsedLine);
+
     if (word && pos && senses) {
         if (forms) {
-            const canonicalForm = forms.find(form => 
-                form.tags &&
-                form.tags.includes('canonical') &&
-                !form.form.endsWith(' or')
-            );
-            if (canonicalForm) {
-                word = canonicalForm.form;
-            }
-
             forms.forEach((formData) => {
                 const { form, tags } = formData;
 
@@ -189,16 +179,17 @@ function handleLine(line, lemmaDict, formDict, formStuff, automatedForms) {
                 } else {
                     if (!isInflectionGloss(glossesArray)) {
                         lemmaDict[word] ??= {};
-                        lemmaDict[word][pos] ??= {};
-                        lemmaDict[word][pos].ipa ??= [];
+                        lemmaDict[word][reading] ??= {};
+                        lemmaDict[word][reading][pos] ??= {};
+                        lemmaDict[word][reading][pos].ipa ??= [];
 
                         for (const ipaObj of ipa) {
-                            if (!lemmaDict[word][pos].ipa.some(obj => obj.ipa === ipaObj.ipa)) {
-                                lemmaDict[word][pos].ipa.push(ipaObj);
+                            if (!lemmaDict[word][reading][pos].ipa.some(obj => obj.ipa === ipaObj.ipa)) {
+                                lemmaDict[word][reading][pos].ipa.push(ipaObj);
                             }
                         }
 
-                        lemmaDict[word][pos].senses ??= [];
+                        lemmaDict[word][reading][pos].senses ??= [];
 
                         const currSense = { glosses: [], tags };
 
@@ -233,7 +224,7 @@ function handleLine(line, lemmaDict, formDict, formStuff, automatedForms) {
                         }
 
                         if (currSense.glosses.length > 0) {
-                            lemmaDict[word][pos].senses.push(currSense);
+                            lemmaDict[word][reading][pos].senses.push(currSense);
                         }
                     } else {
                         if (targetIso === 'en') {
@@ -283,6 +274,36 @@ function handleLine(line, lemmaDict, formDict, formStuff, automatedForms) {
         }
 
     }
+}
+
+function getCanonicalForm({word, forms}) {
+    if(!forms) return word;
+
+    const canonicalForm = forms.find(form => 
+        form.tags &&
+        form.tags.includes('canonical') &&
+        !form.form.endsWith(' or') // remove this line once they release new files (https://github.com/tatuylonen/wiktextract/commit/278af036b0ea5a301856795fdbbfa069315c2c0f)
+    );
+    if (canonicalForm) {
+        word = canonicalForm.form;
+    }
+    return word;
+}
+
+function getReading(word, line){
+    switch(sourceIso){
+        case 'fa':
+            return getPersianReading(word, line);
+        default:
+            return word;
+    }
+}
+
+function getPersianReading(word, line){
+    const {forms} = line;
+    if(!forms) return word;
+    const romanization = forms.find(({form, tags}) => tags && tags.includes('romanization') && tags.length === 1 && form);
+    return romanization ? romanization.form : word;
 }
 
 function handleForms(formStuff, formDict, automatedForms) {

@@ -1,66 +1,68 @@
 {
   "bring": {
-    "verb": {
-      "ipa": [
-        {
-          "ipa": "/ˈbɹɪŋ/",
-          "tags": []
-        }
-      ],
-      "senses": [
-        {
-          "glosses": [
-            "(transitive, ditransitive) To transport toward somebody/somewhere."
-          ],
-          "tags": [
-            "ditransitive",
-            "transitive"
-          ]
-        },
-        {
-          "glosses": [
-            "(transitive, figuratively) To supply or contribute."
-          ],
-          "tags": [
-            "figuratively",
-            "transitive"
-          ]
-        },
-        {
-          "glosses": [
-            "(transitive) To occasion or bring about."
-          ],
-          "tags": [
-            "transitive"
-          ]
-        },
-        {
-          "glosses": [
-            "(transitive) To raise (a lawsuit, charges, etc.) against somebody."
-          ],
-          "tags": [
-            "transitive"
-          ]
-        },
-        {
-          "glosses": [
-            "To persuade; to induce; to draw; to lead; to guide."
-          ],
-          "tags": []
-        },
-        {
-          "glosses": [
-            "To produce in exchange; to sell for; to fetch."
-          ],
-          "tags": []
-        },
-        {
-          "glosses": [
-            "(baseball) To pitch, often referring to a particularly hard thrown fastball."
-          ],
-          "tags": []
-        }
-      ]
+    "bring": {
+      "verb": {
+        "ipa": [
+          {
+            "ipa": "/ˈbɹɪŋ/",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "(transitive, ditransitive) To transport toward somebody/somewhere."
+            ],
+            "tags": [
+              "ditransitive",
+              "transitive"
+            ]
+          },
+          {
+            "glosses": [
+              "(transitive, figuratively) To supply or contribute."
+            ],
+            "tags": [
+              "figuratively",
+              "transitive"
+            ]
+          },
+          {
+            "glosses": [
+              "(transitive) To occasion or bring about."
+            ],
+            "tags": [
+              "transitive"
+            ]
+          },
+          {
+            "glosses": [
+              "(transitive) To raise (a lawsuit, charges, etc.) against somebody."
+            ],
+            "tags": [
+              "transitive"
+            ]
+          },
+          {
+            "glosses": [
+              "To persuade; to induce; to draw; to lead; to guide."
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "To produce in exchange; to sell for; to fetch."
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "(baseball) To pitch, often referring to a particularly hard thrown fastball."
+            ],
+            "tags": []
+          }
+        ]
+      }
     }
   }
 }

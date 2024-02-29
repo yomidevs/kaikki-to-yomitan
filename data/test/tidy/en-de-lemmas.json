@@ -1,20 +1,22 @@
 {
   "choose": {
-    "verb": {
-      "ipa": [
-        {
-          "ipa": "tʃuːz",
-          "tags": []
-        }
-      ],
-      "senses": [
-        {
-          "glosses": [
-            "[1] aussuchen, auswählen, vorziehen, wählen"
-          ],
-          "tags": []
-        }
-      ]
+    "choose": {
+      "verb": {
+        "ipa": [
+          {
+            "ipa": "tʃuːz",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "[1] aussuchen, auswählen, vorziehen, wählen"
+            ],
+            "tags": []
+          }
+        ]
+      }
     }
   }
 }

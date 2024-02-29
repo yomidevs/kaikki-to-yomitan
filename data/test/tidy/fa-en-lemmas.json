@@ -1,38 +1,40 @@
 {
   "ملک": {
-    "noun": {
-      "ipa": [
-        {
-          "ipa": "[mulk]",
-          "tags": [
-            "Classical-Persian"
-          ]
-        },
-        {
-          "ipa": "[mʊlk]",
-          "tags": [
-            "Dari",
-            "formal"
-          ]
-        },
-        {
-          "ipa": "[molkʲ]",
-          "tags": [
-            "Iran",
-            "formal"
-          ]
-        }
-      ],
-      "senses": [
-        {
-          "glosses": [
-            "(Khorasan) a kind of pea"
-          ],
-          "tags": [
-            "Khorasan"
-          ]
-        }
-      ]
+    "molk": {
+      "noun": {
+        "ipa": [
+          {
+            "ipa": "[mulk]",
+            "tags": [
+              "Classical-Persian"
+            ]
+          },
+          {
+            "ipa": "[mʊlk]",
+            "tags": [
+              "Dari",
+              "formal"
+            ]
+          },
+          {
+            "ipa": "[molkʲ]",
+            "tags": [
+              "Iran",
+              "formal"
+            ]
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "(Khorasan) a kind of pea"
+            ],
+            "tags": [
+              "Khorasan"
+            ]
+          }
+        ]
+      }
     }
   }
 }

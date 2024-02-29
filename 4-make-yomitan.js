@@ -120,111 +120,113 @@ let ipaCount = 0;
 let termTagCount = 0;
 
 consoleOverwrite('4-make-yomitan.js: processing lemmas...');
-for (const [lemma, infoMap] of Object.entries(lemmaDict)) {
-    normalizedLemma = normalizeOrthography(lemma);
-    
-    function debug(word) {
-        if (normalizedLemma === DEBUG_WORD) {
-            console.log('-------------------');
-            console.log(word);
-        }
-    }
-
-    const ipa = [];
-
-    for (const [pos, info] of Object.entries(infoMap)) {
-        const {senses} = info;
-
-        const lemmaTags = [pos, ...(info.tags || [])];
-        ipa.push(...info.ipa);
-        const entries = {};
-
-        for (const sense of senses) {
-
-            const {glosses, tags} = sense;
-            const senseTags = [...lemmaTags, ...tags]
-
-            glosses.forEach((gloss) => {
-                debug(gloss);
-
-                function addGlossToEntries(joinedTags) {
-                    if (entries[joinedTags]) {
-                        entries[joinedTags][5].push(gloss);
-                    } else if (gloss) {
-                        entries[joinedTags] = [
-                            normalizedLemma, // term
-                            lemma, // reading
-                            joinedTags, // definition_tags
-                            findPartOfSpeech(pos), // rules
-                            0, // frequency
-                            [gloss], // definitions
-                            0, // sequence
-                            '', // term_tags
-                        ];
-                    }
-                }
-
-                if (typeof gloss !== 'string') { 
-                    const { leftoverTags, recognizedTags } = processTags(lemmaTags, senseTags, [], pos);
-                    addGlossToEntries(recognizedTags.join(' '));
-                    return; 
-                }
-
-                const regex = /^\(([^()]+)\) ?/;
-                const parenthesesContent = gloss.match(regex)?.[1];
-
-                const parenthesesTags = parenthesesContent
-                    ? parenthesesContent.replace(/ or /g, ', ').split(', ').filter(Boolean)
-                    : [];
-
-                const { leftoverTags, recognizedTags } = processTags(lemmaTags, senseTags, parenthesesTags, pos);
-
-                gloss = gloss.replace(regex, leftoverTags);
-
-                addGlossToEntries(recognizedTags.join(' '));
-            });
-            
-        }
-
-        debug(entries);
-        for (const [tags, entry] of Object.entries(entries)) {
-            ymt.lemma.push(entry);
-        }
-    }
-
-    const mergedIpas = ipa.reduce((result, item) => {
-        ipaCount++;
-        item.tags = item.tags
-            .map((tag) => {
-                const fullTag = findTag(ipaTags, tag);
-                if (fullTag){
-                    ymtTags.ipa[tag] = fullTag;
-                    return fullTag[0];
-                } else {
-                    incrementCounter(tag, skippedIpaTags)
-                    return tag;
-                }
-            })
-
-        const existingIpa = result.find((x) => x.ipa === item.ipa);
-
-        if (existingIpa) {
-            existingIpa.tags = [...new Set([...existingIpa.tags, ...item.tags])];
-        } else {
-            result.push(item);
-        }
-        return result;
-    }, []);
-
-    if (mergedIpas.length) {
-        ymt.ipa.push([
-            normalizedLemma,
-            'ipa',
-            {
-                reading: lemma,
-                transcriptions: mergedIpas
+for (const [lemma, readings] of Object.entries(lemmaDict)) {
+    for (const [reading, partsOfSpeechOfWord] of Object.entries(readings)) {
+        normalizedLemma = normalizeOrthography(lemma);
+        
+        function debug(word) {
+            if (normalizedLemma === DEBUG_WORD) {
+                console.log('-------------------');
+                console.log(word);
             }
-        ]);
+        }
+
+        const ipa = [];
+
+        for (const [pos, info] of Object.entries(partsOfSpeechOfWord)) {
+            const {senses} = info;
+
+            const lemmaTags = [pos, ...(info.tags || [])];
+            ipa.push(...info.ipa);
+            const entries = {};
+
+            for (const sense of senses) {
+
+                const {glosses, tags} = sense;
+                const senseTags = [...lemmaTags, ...tags]
+
+                glosses.forEach((gloss) => {
+                    debug(gloss);
+
+                    function addGlossToEntries(joinedTags) {
+                        if (entries[joinedTags]) {
+                            entries[joinedTags][5].push(gloss);
+                        } else if (gloss) {
+                            entries[joinedTags] = [
+                                normalizedLemma, // term
+                                reading !== normalizedLemma ? reading : '', // reading
+                                joinedTags, // definition_tags
+                                findPartOfSpeech(pos), // rules
+                                0, // frequency
+                                [gloss], // definitions
+                                0, // sequence
+                                '', // term_tags
+                            ];
+                        }
+                    }
+
+                    if (typeof gloss !== 'string') { 
+                        const { leftoverTags, recognizedTags } = processTags(lemmaTags, senseTags, [], pos);
+                        addGlossToEntries(recognizedTags.join(' '));
+                        return; 
+                    }
+
+                    const regex = /^\(([^()]+)\) ?/;
+                    const parenthesesContent = gloss.match(regex)?.[1];
+
+                    const parenthesesTags = parenthesesContent
+                        ? parenthesesContent.replace(/ or /g, ', ').split(', ').filter(Boolean)
+                        : [];
+
+                    const { leftoverTags, recognizedTags } = processTags(lemmaTags, senseTags, parenthesesTags, pos);
+
+                    gloss = gloss.replace(regex, leftoverTags);
+
+                    addGlossToEntries(recognizedTags.join(' '));
+                });
+                
+            }
+
+            debug(entries);
+            for (const [tags, entry] of Object.entries(entries)) {
+                ymt.lemma.push(entry);
+            }
+        }
+
+        const mergedIpas = ipa.reduce((result, item) => {
+            ipaCount++;
+            item.tags = item.tags
+                .map((tag) => {
+                    const fullTag = findTag(ipaTags, tag);
+                    if (fullTag){
+                        ymtTags.ipa[tag] = fullTag;
+                        return fullTag[0];
+                    } else {
+                        incrementCounter(tag, skippedIpaTags)
+                        return tag;
+                    }
+                })
+
+            const existingIpa = result.find((x) => x.ipa === item.ipa);
+
+            if (existingIpa) {
+                existingIpa.tags = [...new Set([...existingIpa.tags, ...item.tags])];
+            } else {
+                result.push(item);
+            }
+            return result;
+        }, []);
+
+        if (mergedIpas.length) {
+            ymt.ipa.push([
+                normalizedLemma,
+                'ipa',
+                {
+                    reading,
+                    transcriptions: mergedIpas
+                }
+            ]);
+        }
     }
 }
 
