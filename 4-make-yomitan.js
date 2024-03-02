@@ -149,9 +149,10 @@ for (const [lemma, readings] of Object.entries(lemmaDict)) {
                     debug(gloss);
 
                     function addGlossToEntries(joinedTags) {
+                        if(!gloss) return;
                         if (entries[joinedTags]) {
                             entries[joinedTags][5].push(gloss);
-                        } else if (gloss) {
+                        } else {
                             entries[joinedTags] = [
                                 normalizedLemma, // term
                                 reading !== normalizedLemma ? reading : '', // reading
@@ -416,8 +417,24 @@ function incrementCounter(key, counter) {
 function normalizeOrthography(term) {
     switch (source_iso) {
         case 'ar':
-            return term
-                .replace(/[\u064E-\u0650]/g, '');
+        case 'fa':
+            const optionalDiacritics = [
+                '\u0618', // Small Fatha
+                '\u0619', // Small Damma
+                '\u061A', // Small Kasra
+                '\u064B', // Fathatan
+                '\u064C', // Dammatan
+                '\u064D', // Kasratan
+                '\u064E', // Fatha
+                '\u064F', // Damma
+                '\u0650', // Kasra
+                '\u0651', // Shadda
+                '\u0652' // Sukun
+            ];
+            
+            const diacriticsRegex = new RegExp(`[${optionalDiacritics.join('')}]`, 'g');
+            
+            return term.replace(diacriticsRegex, '')
         case 'la':
             const diacriticMap = {
                 'ā': 'a', 'ē': 'e', 'ī': 'i', 'ō': 'o', 'ū': 'u', 'ȳ': 'y',
