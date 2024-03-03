@@ -150,11 +150,22 @@ for (const [lemma, readings] of Object.entries(lemmaDict)) {
 
                     function addGlossToEntries(joinedTags) {
                         if(!gloss) return;
+                        let term = normalizedLemma;
+                        if(lemma !== normalizedLemma && lemma !== reading){
+                            term = lemma;
+                            formDict[normalizedLemma] ??= {};
+                            formDict[normalizedLemma][lemma] ??= {};
+                            formDict[normalizedLemma][lemma][pos] ??= [];
+                            const message = `${normalizedLemma}\u00A0≈\u00A0${lemma}`;
+                            if (!formDict[normalizedLemma][lemma][pos].includes(message)){
+                                formDict[normalizedLemma][lemma][pos].push(message);
+                            }
+                        }
                         if (entries[joinedTags]) {
                             entries[joinedTags][5].push(gloss);
                         } else {
                             entries[joinedTags] = [
-                                normalizedLemma, // term
+                                term, // term
                                 reading !== normalizedLemma ? reading : '', // reading
                                 joinedTags, // definition_tags
                                 findPartOfSpeech(pos), // rules
