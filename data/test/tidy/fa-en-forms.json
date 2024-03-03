@@ -5,5 +5,12 @@
         "-automated- romanization"
       ]
     }
+  },
+  "fârsi": {
+    "فارْسی": {
+      "noun": [
+        "-automated- romanization"
+      ]
+    }
   }
 }

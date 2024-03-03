@@ -36,5 +36,66 @@
         ]
       }
     }
+  },
+  "فارْسی": {
+    "fârsi": {
+      "noun": {
+        "ipa": [
+          {
+            "ipa": "[fɑːɾ.ˈsiː]",
+            "tags": [
+              "Classical-Persian"
+            ]
+          },
+          {
+            "ipa": "[fɑːɾ.síː]",
+            "tags": [
+              "Dari",
+              "formal"
+            ]
+          },
+          {
+            "ipa": "[fɔːɾ.sí]",
+            "tags": [
+              "Hazaragi"
+            ]
+          },
+          {
+            "ipa": "[fɒːɹ.síː]",
+            "tags": [
+              "Iran",
+              "formal"
+            ]
+          },
+          {
+            "ipa": "[fɔɾ.sí]",
+            "tags": [
+              "Tajik",
+              "formal"
+            ]
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan)."
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "Persian (the language of Ancient Persia)."
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "Persian, main ethnic group of Iran."
+            ],
+            "tags": []
+          }
+        ]
+      }
+    }
   }
 }

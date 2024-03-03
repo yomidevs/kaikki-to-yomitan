@@ -12,6 +12,20 @@
     ""
   ],
   [
+    "فارسی",
+    "fârsi",
+    "n",
+    "n",
+    0,
+    [
+      "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan).",
+      "Persian (the language of Ancient Persia).",
+      "Persian, main ethnic group of Iran."
+    ],
+    0,
+    ""
+  ],
+  [
     "molk",
     "",
     "non-lemma",
@@ -20,6 +34,23 @@
     [
       [
         "ملک",
+        [
+          "romanization"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "fârsi",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "فارْسی",
         [
           "romanization"
         ]
