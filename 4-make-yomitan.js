@@ -123,7 +123,19 @@ consoleOverwrite('4-make-yomitan.js: processing lemmas...');
 for (const [lemma, readings] of Object.entries(lemmaDict)) {
     for (const [reading, partsOfSpeechOfWord] of Object.entries(readings)) {
         normalizedLemma = normalizeOrthography(lemma);
-        
+        let term = normalizedLemma;
+
+        if(lemma !== normalizedLemma && lemma !== reading){
+            term = lemma;
+            formDict[normalizedLemma] ??= {};
+            formDict[normalizedLemma][lemma] ??= {};
+            formDict[normalizedLemma][lemma]["any"] ??= [];
+            const message = `${normalizedLemma}\u00A0≈\u00A0${lemma}`;
+            if (!formDict[normalizedLemma][lemma]["any"].includes(message)){
+                formDict[normalizedLemma][lemma]["any"].push(message);
+            }
+        }
+
         function debug(word) {
             if (normalizedLemma === DEBUG_WORD) {
                 console.log('-------------------');
@@ -150,17 +162,6 @@ for (const [lemma, readings] of Object.entries(lemmaDict)) {
 
                     function addGlossToEntries(joinedTags) {
                         if(!gloss) return;
-                        let term = normalizedLemma;
-                        if(lemma !== normalizedLemma && lemma !== reading){
-                            term = lemma;
-                            formDict[normalizedLemma] ??= {};
-                            formDict[normalizedLemma][lemma] ??= {};
-                            formDict[normalizedLemma][lemma][pos] ??= [];
-                            const message = `${normalizedLemma}\u00A0≈\u00A0${lemma}`;
-                            if (!formDict[normalizedLemma][lemma][pos].includes(message)){
-                                formDict[normalizedLemma][lemma][pos].push(message);
-                            }
-                        }
                         if (entries[joinedTags]) {
                             entries[joinedTags][5].push(gloss);
                         } else {
@@ -231,7 +232,7 @@ for (const [lemma, readings] of Object.entries(lemmaDict)) {
 
         if (mergedIpas.length) {
             ymt.ipa.push([
-                normalizedLemma,
+                term,
                 'ipa',
                 {
                     reading,
