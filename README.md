@@ -1,3 +1,5 @@
+> ⚠️ The dictionary format requires Yomitan 24.01.20 to load, and 24.2.23 to work optimally. 
+
 Converts wiktionary data from https://kaikki.org/ to yomitan-compatible dictionaries. Converted dictionaries can be found in the [Releases](https://github.com/themoeway/kaikki-to-yomitan/releases) section.
 
 # Instructions
@@ -35,7 +37,7 @@ After a run, `data/language/de/en` should contain files with skipped tags for IP
 Test inputs are in `data/test/kaikki`. Each line is a line from the corresponding kaikki file (from `data/kaikki`, after downloading). 
 
 To fix something in the conversion of a word, add its line from `data/kaikki` to the corresponding test file in `data/test/kaikki`. 
-Then run `npm run test-write` to add it to the expected test output, and commit the changes (say `add baseline test for "word"`).
+Then run `npm run test-write` to add it to the expected test output, and commit the changes (e.g. `add baseline test for "word"`).
 Now when you modify tidy-up or make-yomitan, you can run `npm run test-write` to see the changes you made.
 
 If you are making a change that shouldn't change the output, just run `npm run test` to check if anything broke.
