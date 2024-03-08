@@ -281,8 +281,7 @@ function getCanonicalForm({word, forms}) {
 
     const canonicalForm = forms.find(form => 
         form.tags &&
-        form.tags.includes('canonical') &&
-        !form.form.endsWith(' or') // remove this line once they release new files (https://github.com/tatuylonen/wiktextract/commit/278af036b0ea5a301856795fdbbfa069315c2c0f)
+        form.tags.includes('canonical')
     );
     if (canonicalForm) {
         word = canonicalForm.form;
