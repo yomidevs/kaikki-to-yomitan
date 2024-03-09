@@ -16,6 +16,7 @@
         "first-person",
         "second-person",
         "third-person",
+        "first/second-person",
         "first/third-person",
         "first-person-semantically",
         "second-person-semantically",
