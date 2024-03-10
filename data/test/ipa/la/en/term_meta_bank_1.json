@@ -91,5 +91,50 @@
         }
       ]
     }
+  ],
+  [
+    "ŭsque",
+    "ipa",
+    {
+      "reading": "ū̆sque",
+      "transcriptions": [
+        {
+          "ipa": "/ˈuːs.kʷe/",
+          "tags": [
+            "Classical"
+          ]
+        },
+        {
+          "ipa": "[ˈuːs̠kʷɛ]",
+          "tags": [
+            "Classical"
+          ]
+        },
+        {
+          "ipa": "/ˈus.kʷe/",
+          "tags": [
+            "Classical"
+          ]
+        },
+        {
+          "ipa": "[ˈʊs̠kʷɛ]",
+          "tags": [
+            "Classical"
+          ]
+        },
+        {
+          "ipa": "/ˈus.kwe/",
+          "tags": [
+            "✝️"
+          ]
+        },
+        {
+          "ipa": "[ˈuskwe]",
+          "tags": [
+            "✝️"
+          ]
+        }
+      ]
+    }
   ]
 ]

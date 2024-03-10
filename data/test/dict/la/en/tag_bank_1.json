@@ -47,5 +47,19 @@
     0,
     "declension-2",
     0
+  ],
+  [
+    "adv",
+    "partOfSpeech",
+    -1,
+    "adverb",
+    1
+  ],
+  [
+    "not-comp",
+    "",
+    0,
+    "not comparable",
+    0
   ]
 ]

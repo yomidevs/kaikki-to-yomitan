@@ -191,5 +191,75 @@
         ]
       }
     }
+  },
+  "ū̆sque": {
+    "ū̆sque": {
+      "adv": {
+        "ipa": [
+          {
+            "ipa": "/ˈuːs.kʷe/",
+            "tags": [
+              "Classical"
+            ]
+          },
+          {
+            "ipa": "[ˈuːs̠kʷɛ]",
+            "tags": [
+              "Classical"
+            ]
+          },
+          {
+            "ipa": "/ˈus.kʷe/",
+            "tags": [
+              "Classical"
+            ]
+          },
+          {
+            "ipa": "[ˈʊs̠kʷɛ]",
+            "tags": [
+              "Classical"
+            ]
+          },
+          {
+            "ipa": "/ˈus.kwe/",
+            "tags": [
+              "modern Italianate Ecclesiastical"
+            ]
+          },
+          {
+            "ipa": "[ˈuskwe]",
+            "tags": [
+              "modern Italianate Ecclesiastical"
+            ]
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "all the way"
+            ],
+            "tags": [
+              "not-comparable"
+            ]
+          },
+          {
+            "glosses": [
+              "until, up to (sometimes with \"ad\")"
+            ],
+            "tags": [
+              "not-comparable"
+            ]
+          },
+          {
+            "glosses": [
+              "constantly, continuously"
+            ],
+            "tags": [
+              "not-comparable"
+            ]
+          }
+        ]
+      }
+    }
   }
 }
