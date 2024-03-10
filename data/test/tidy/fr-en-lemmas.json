@@ -1,0 +1,286 @@
+{
+  "prendre": {
+    "prendre": {
+      "verb": {
+        "ipa": [
+          {
+            "ipa": "/pʁɑ̃dʁ/",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "(transitive) to take"
+            ],
+            "tags": [
+              "transitive"
+            ]
+          },
+          {
+            "glosses": [
+              "(transitive) to eat; to drink"
+            ],
+            "tags": [
+              "transitive"
+            ]
+          },
+          {
+            "glosses": [
+              "(transitive) to get; to buy"
+            ],
+            "tags": [
+              "transitive"
+            ]
+          },
+          {
+            "glosses": [
+              "(transitive) to rob; to deprive"
+            ],
+            "tags": [
+              "transitive"
+            ]
+          },
+          {
+            "glosses": [
+              "(transitive) to make"
+            ],
+            "tags": [
+              "transitive"
+            ]
+          },
+          {
+            "glosses": [
+              "(intransitive) to catch, to work, to start"
+            ],
+            "tags": [
+              "intransitive"
+            ]
+          },
+          {
+            "glosses": [
+              "(reflexive) to get (something) caught (in), to jam"
+            ],
+            "tags": [
+              "reflexive"
+            ]
+          },
+          {
+            "glosses": [
+              {
+                "type": "structured-content",
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "listType": "li"
+                    },
+                    "content": "(transitive with à)"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "listType": "ol"
+                    },
+                    "style": {
+                      "marginLeft": 2
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "listType": "li"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "data": {
+                              "listType": "number"
+                            },
+                            "content": "1. "
+                          },
+                          "(transitive, in various idiomatic expressions) to start having a negative feeling towards someone"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "(followed by a partitive, in various idiomatic expressions) to gain"
+            ],
+            "tags": [
+              "followed by a partitive",
+              "in various idiomatic expressions"
+            ]
+          },
+          {
+            "glosses": [
+              "(colloquial; impersonal) to take (a certain amount of time)"
+            ],
+            "tags": [
+              "colloquial",
+              "impersonal"
+            ]
+          },
+          {
+            "glosses": [
+              "(colloquial; impersonal; by extension) to take (a certain number or amount of)"
+            ],
+            "tags": [
+              "broadly",
+              "colloquial",
+              "impersonal"
+            ]
+          },
+          {
+            "glosses": [
+              "(impersonal) to come over (to arise in and gain some control over one's thoughts and/or actions)"
+            ],
+            "tags": [
+              "impersonal"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "sembler": {
+    "sembler": {
+      "verb": {
+        "ipa": [
+          {
+            "ipa": "/sɑ̃.ble/",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "(intransitive, impersonal) to seem, to resemble"
+            ],
+            "tags": [
+              "impersonal",
+              "intransitive"
+            ]
+          },
+          {
+            "glosses": [
+              "(intransitive) to appear"
+            ],
+            "tags": [
+              "intransitive"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "chambre": {
+    "chambre": {
+      "noun": {
+        "ipa": [
+          {
+            "ipa": "/ʃɑ̃bʁ/",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              {
+                "type": "structured-content",
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "listType": "li"
+                    },
+                    "content": "a chamber in its various senses, including:"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "listType": "ol"
+                    },
+                    "style": {
+                      "marginLeft": 2
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "listType": "li"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "data": {
+                              "listType": "number"
+                            },
+                            "content": "1. "
+                          },
+                          "a room."
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "listType": "li"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "data": {
+                              "listType": "number"
+                            },
+                            "content": "2. "
+                          },
+                          "a hotel room."
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "listType": "li"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "data": {
+                              "listType": "number"
+                            },
+                            "content": "3. "
+                          },
+                          "a bedroom."
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "listType": "li"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "data": {
+                              "listType": "number"
+                            },
+                            "content": "4. "
+                          },
+                          "a house of a parliament."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "tags": [
+              "feminine"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

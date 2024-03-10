@@ -1,0 +1,41 @@
+[
+  [
+    "prendre",
+    "ipa",
+    {
+      "reading": "prendre",
+      "transcriptions": [
+        {
+          "ipa": "/pʁɑ̃dʁ/",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  [
+    "sembler",
+    "ipa",
+    {
+      "reading": "sembler",
+      "transcriptions": [
+        {
+          "ipa": "/sɑ̃.ble/",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  [
+    "chambre",
+    "ipa",
+    {
+      "reading": "chambre",
+      "transcriptions": [
+        {
+          "ipa": "/ʃɑ̃bʁ/",
+          "tags": []
+        }
+      ]
+    }
+  ]
+]
