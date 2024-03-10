@@ -261,5 +261,80 @@
         ]
       }
     }
+  },
+  "rēctus": {
+    "rēctus": {
+      "verb": {
+        "ipa": [
+          {
+            "ipa": "/ˈreːk.tus/",
+            "tags": [
+              "Classical"
+            ]
+          },
+          {
+            "ipa": "[ˈreːkt̪ʊs̠]",
+            "tags": [
+              "Classical"
+            ]
+          },
+          {
+            "ipa": "/ˈrek.tus/",
+            "tags": [
+              "modern Italianate Ecclesiastical"
+            ]
+          },
+          {
+            "ipa": "[ˈrɛkt̪us]",
+            "tags": [
+              "modern Italianate Ecclesiastical"
+            ]
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "led straight along, drawn in a straight line, straight, upright."
+            ],
+            "tags": [
+              "declension-1",
+              "declension-2",
+              "form-of",
+              "participle",
+              "passive",
+              "perfect"
+            ]
+          },
+          {
+            "glosses": [
+              "(in general) right, correct, proper, appropriate, befitting."
+            ],
+            "tags": [
+              "declension-1",
+              "declension-2",
+              "form-of",
+              "participle",
+              "passive",
+              "perfect",
+              "usually"
+            ]
+          },
+          {
+            "glosses": [
+              "(in particular) morally right, correct, lawful, just, virtuous, noble, good, proper, honest."
+            ],
+            "tags": [
+              "declension-1",
+              "declension-2",
+              "form-of",
+              "in particular",
+              "participle",
+              "passive",
+              "perfect"
+            ]
+          }
+        ]
+      }
+    }
   }
 }

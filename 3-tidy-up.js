@@ -11,19 +11,23 @@ const {
 
 const { sortTags, similarSort, mergePersonTags, consoleOverwrite, clearConsoleLine } = require('./util/util');
 
-function isInflectionGloss(glosses) {
-    if (targetIso === 'en') {
-        return /.*inflection of.*/.test(JSON.stringify(glosses));
-    } else if (targetIso === 'fr') {
-        if (/.*du verbe\s+((?:(?!\bdu\b).)*)$/.test(JSON.stringify(glosses))) {
-            return true;
-        }
-        if (/((?:(?:Masculin|Féminin)\s)?(?:(?:p|P)luriel|(?:s|S)ingulier)) de ([^\s]+)/.test(JSON.stringify(glosses))) {
-            return true;
-        }
+function isInflectionGloss(glosses, formOf) {
+    glossesString = JSON.stringify(glosses);
+    switch (targetIso) {
+        case 'en':
+            if (/.*inflection of.*/.test(glossesString)) return true;
+            if(Array.isArray(formOf)) {
+                for (const {word: lemma} of formOf) {
+                    if (new RegExp(`of ${lemma}`).test(glossesString)) return true;
+                }
+            }
+        case 'fr':
+            if (/.*du verbe\s+((?:(?!\bdu\b).)*)$/.test(glossesString)) return true;
+            if (/((?:(?:Masculin|Féminin)\s)?(?:(?:p|P)luriel|(?:s|S)ingulier)) de ([^\s]+)/.test(glossesString)) return true;
     }
     return false;
 }
+
 
 function handleLevel(nest, level) {
     const nestDefs = [];
@@ -168,7 +172,9 @@ function handleLine(line, lemmaDict, formDict, formStuff, automatedForms) {
         let senseIndex = 0;
         for (const sense of senses) {
             const glosses = sense.raw_glosses || sense.raw_gloss || sense.glosses;
-            const glossesArray = Array.isArray(glosses) ? glosses : [glosses];
+            const glossesArray = glosses
+                ? Array.isArray(glosses) ? glosses : [glosses]
+                : [];
 
             const formOf = sense.form_of;
             const tags = sense.tags || [];
@@ -176,95 +182,94 @@ function handleLine(line, lemmaDict, formDict, formStuff, automatedForms) {
             if (glossesArray.length > 0) {
                 if (formOf) {
                     formStuff.push([word, sense, pos]);
-                } else {
-                    if (!isInflectionGloss(glossesArray)) {
-                        lemmaDict[word] ??= {};
-                        lemmaDict[word][reading] ??= {};
-                        lemmaDict[word][reading][pos] ??= {};
-                        lemmaDict[word][reading][pos].ipa ??= [];
+                } 
+                if (!isInflectionGloss(glossesArray, formOf)) {
+                    lemmaDict[word] ??= {};
+                    lemmaDict[word][reading] ??= {};
+                    lemmaDict[word][reading][pos] ??= {};
+                    lemmaDict[word][reading][pos].ipa ??= [];
 
-                        for (const ipaObj of ipa) {
-                            if (!lemmaDict[word][reading][pos].ipa.some(obj => obj.ipa === ipaObj.ipa)) {
-                                lemmaDict[word][reading][pos].ipa.push(ipaObj);
-                            }
+                    for (const ipaObj of ipa) {
+                        if (!lemmaDict[word][reading][pos].ipa.some(obj => obj.ipa === ipaObj.ipa)) {
+                            lemmaDict[word][reading][pos].ipa.push(ipaObj);
+                        }
+                    }
+
+                    lemmaDict[word][reading][pos].senses ??= [];
+
+                    const currSense = { glosses: [], tags };
+
+                    if (glossesArray.length > 1) {
+                        let nestedObj = nestedGlossObj;
+
+                        for (const level of glossesArray) {
+                            nestedObj[level] ??= {};
+                            nestedObj = nestedObj[level];
                         }
 
-                        lemmaDict[word][reading][pos].senses ??= [];
-
-                        const currSense = { glosses: [], tags };
-
-                        if (glossesArray.length > 1) {
-                            let nestedObj = nestedGlossObj;
-
-                            for (const level of glossesArray) {
-                                nestedObj[level] ??= {};
-                                nestedObj = nestedObj[level];
-                            }
-
-                            if (senseIndex === senses.length - 1 && nestedGlossObj) {
-                                try {
-                                    handleNest(nestedGlossObj, currSense);
-                                } catch (error) {
-                                    console.log(`Recursion error on word '${word}', pos '${pos}'`);
-                                    continue;
-                                }
-                                nestedGlossObj = {};
-                            }
-                        } else if (glossesArray.length === 1) {
-                            if (nestedGlossObj) {
+                        if (senseIndex === senses.length - 1 && nestedGlossObj) {
+                            try {
                                 handleNest(nestedGlossObj, currSense);
-                                nestedGlossObj = {};
+                            } catch (error) {
+                                console.log(`Recursion error on word '${word}', pos '${pos}'`);
+                                continue;
                             }
-
-                            const gloss = glossesArray[0];
-
-                            if (!JSON.stringify(currSense.glosses).includes(gloss)) {
-                                currSense.glosses.push(gloss);
-                            }
+                            nestedGlossObj = {};
+                        }
+                    } else if (glossesArray.length === 1) {
+                        if (nestedGlossObj) {
+                            handleNest(nestedGlossObj, currSense);
+                            nestedGlossObj = {};
                         }
 
-                        if (currSense.glosses.length > 0) {
-                            lemmaDict[word][reading][pos].senses.push(currSense);
+                        const gloss = glossesArray[0];
+
+                        if (!JSON.stringify(currSense.glosses).includes(gloss)) {
+                            currSense.glosses.push(gloss);
                         }
-                    } else {
-                        if (targetIso === 'en') {
-                            if (!sense.glosses[0].includes('##')) {
-                                let lemma = sense.glosses[0]
-                                    .replace(/.+(?=inflection of)/, '')
-                                    .replace(/ \(.+?\)/, '')
-                                    .replace(/:$/, '')
-                                    .replace(/:\n.+/, '')
-                                    .replace(/inflection of /, '')
-                                    .replace(/:.+/, '')
-                                    .trim()
+                    }
 
-                                const inflection = sense.glosses[1] || '';
+                    if (currSense.glosses.length > 0) {
+                        lemmaDict[word][reading][pos].senses.push(currSense);
+                    }
+                } else {
+                    if (targetIso === 'en') {
+                        if (!sense.glosses[0].includes('##')) {
+                            let lemma = sense.glosses[0]
+                                .replace(/.+(?=inflection of)/, '')
+                                .replace(/ \(.+?\)/, '')
+                                .replace(/:$/, '')
+                                .replace(/:\n.+/, '')
+                                .replace(/inflection of /, '')
+                                .replace(/:.+/, '')
+                                .trim()
 
-                                if (inflection && !inflection.includes('inflection of') && word !== lemma) {
-                                    addDeinflections(formDict, word, pos, lemma, [inflection]);
-                                }
+                            const inflection = sense.glosses[1] || '';
+
+                            if (inflection && !inflection.includes('inflection of') && word !== lemma) {
+                                addDeinflections(formDict, word, pos, lemma, [inflection]);
                             }
-                        } else if (targetIso === 'fr') {
-                            let inflection, lemma;
+                        }
+                    } else if (targetIso === 'fr') {
+                        let inflection, lemma;
 
-                            const match1 = sense.glosses[0].match(/(.*)du verbe\s+((?:(?!\bdu\b).)*)$/);
-                            const match2 = sense.glosses[0].match(/^((?:(?:Masculin|Féminin)\s)?(?:(?:p|P)luriel|(?:s|S)ingulier)) de ([^\s]*)$/);
+                        const match1 = sense.glosses[0].match(/(.*)du verbe\s+((?:(?!\bdu\b).)*)$/);
+                        const match2 = sense.glosses[0].match(/^((?:(?:Masculin|Féminin)\s)?(?:(?:p|P)luriel|(?:s|S)ingulier)) de ([^\s]*)$/);
 
-                            if (match1) {
-                                inflection = match1[1];
-                                lemma = match1[2];
-                            } else if (match2) {
-                                inflection = match2[1];
-                                lemma = match2[2];
-                            }
+                        if (match1) {
+                            inflection = match1[1];
+                            lemma = match1[2];
+                        } else if (match2) {
+                            inflection = match2[1];
+                            lemma = match2[2];
+                        }
 
-                            if (inflection && lemma) {
-                                inflection = inflection.trim();
-                                lemma = lemma.replace(/\.$/, '').trim();
+                        if (inflection && lemma) {
+                            inflection = inflection.trim();
+                            lemma = lemma.replace(/\.$/, '').trim();
 
-                                if (inflection && word !== lemma) {
-                                    addDeinflections(formDict, word, pos, lemma, [inflection]);
-                                }
+                            if (inflection && word !== lemma) {
+                                addDeinflections(formDict, word, pos, lemma, [inflection]);
                             }
                         }
                     }

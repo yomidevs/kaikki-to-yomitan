@@ -136,5 +136,38 @@
         }
       ]
     }
+  ],
+  [
+    "rectus",
+    "ipa",
+    {
+      "reading": "rēctus",
+      "transcriptions": [
+        {
+          "ipa": "/ˈreːk.tus/",
+          "tags": [
+            "Classical"
+          ]
+        },
+        {
+          "ipa": "[ˈreːkt̪ʊs̠]",
+          "tags": [
+            "Classical"
+          ]
+        },
+        {
+          "ipa": "/ˈrek.tus/",
+          "tags": [
+            "✝️"
+          ]
+        },
+        {
+          "ipa": "[ˈrɛkt̪us]",
+          "tags": [
+            "✝️"
+          ]
+        }
+      ]
+    }
   ]
 ]

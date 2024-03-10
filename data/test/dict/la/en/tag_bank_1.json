@@ -61,5 +61,12 @@
     0,
     "not comparable",
     0
+  ],
+  [
+    "ptcpl",
+    "partOfSpeech",
+    -1,
+    "participle",
+    1
   ]
 ]
