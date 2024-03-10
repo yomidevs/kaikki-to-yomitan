@@ -453,13 +453,7 @@ function normalizeOrthography(term) {
             
             return term.replace(diacriticsRegex, '')
         case 'la':
-            const diacriticMap = {
-                'ā': 'a', 'ē': 'e', 'ī': 'i', 'ō': 'o', 'ū': 'u', 'ȳ': 'y',
-                'Ā': 'A', 'Ē': 'E', 'Ī': 'I', 'Ō': 'O', 'Ū': 'U', 'Ȳ': 'Y',
-                'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u', 'ý': 'y',
-                'Á': 'A', 'É': 'E', 'Í': 'I', 'Ó': 'O', 'Ú': 'U', 'Ý': 'Y'
-            };
-            return term.replace(/[āēīōūȳáéíóúýĀĒĪŌŪȲÁÉÍÓÚÝ]/g, (match) => diacriticMap[match] || match);
+            return term.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
         case 'ru':
             return term.replace(/́/g, '');
         default:

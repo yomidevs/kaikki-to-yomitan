@@ -286,7 +286,7 @@ function getCanonicalForm({word, forms}) {
     if (canonicalForm) {
         word = canonicalForm.form;
 
-        if (word.includes('{{#ifexist:Wiktionary')) {
+        if (word.includes('{{#ifexist:Wiktionary')) { // TODO: remove once fixed in kaikki
             word = word.replace(/ {{#if:.+/, '');
         }
     }
