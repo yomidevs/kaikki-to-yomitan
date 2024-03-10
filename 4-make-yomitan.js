@@ -243,12 +243,14 @@ for (const [lemma, readings] of Object.entries(lemmaDict)) {
     }
 }
 
-const multiwordInflections = [
+const multiwordInflections = [ // TODO: switch on source_iso
     'subjunctive I', // de
     'subjunctive II', // de
     'Archaic form', // de
     'archaic form', // de
     'female equivalent', // de
+    'perfect passive participle', // la
+    'perfect active participle', // la
 ];
 
 consoleOverwrite('4-make-yomitan.js: Processing forms...');
@@ -260,13 +262,12 @@ for (const [form, allInfo] of Object.entries(formDict)) {
 
                 gloss = gloss
                     .replace(/-automated- /g, '')
-                
                 if(target_iso === 'en'){
                     gloss = gloss
                         .replace(/multiword-construction /g, '')
 
                     for (const multiwordInflection of multiwordInflections) {
-                        gloss = gloss.replace(new RegExp(multiwordInflection), multiwordInflection.replace(' ', '-'));
+                        gloss = gloss.replace(new RegExp(multiwordInflection), multiwordInflection.replace(/ /g, '\u00A0'));
                     }
                 }
 
