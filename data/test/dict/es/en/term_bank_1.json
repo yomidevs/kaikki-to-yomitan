@@ -33,6 +33,34 @@
     0,
     [
       [
+        "recebir",
+        [
+          "first/third-person",
+          "singular",
+          "present",
+          "subjunctive"
+        ]
+      ],
+      [
+        "recebir",
+        [
+          "third-person",
+          "singular",
+          "imperative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "reciba",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
         "recibir",
         [
           "first/third-person",

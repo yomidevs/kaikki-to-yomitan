@@ -264,7 +264,6 @@ for (const [form, allInfo] of Object.entries(formDict)) {
                 if(target_iso === 'en'){
                     gloss = gloss
                         .replace(/multiword-construction /g, '')
-                        .replace(new RegExp(`of ${escapeRegExp(lemma)}.*$`), '');
 
                     for (const multiwordInflection of multiwordInflections) {
                         gloss = gloss.replace(new RegExp(multiwordInflection), multiwordInflection.replace(' ', '-'));
@@ -412,10 +411,6 @@ function processTags(lemmaTags, senseTags, parenthesesTags, pos) {
     recognizedTags = [...new Set(recognizedTags)];
 
     return { leftoverTags, recognizedTags };
-}
-
-function escapeRegExp(text) {
-    return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
 }
 
 function sortBreakdown(obj){

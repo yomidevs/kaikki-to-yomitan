@@ -11,6 +11,15 @@ const {
 
 const { sortTags, similarSort, mergePersonTags, consoleOverwrite, clearConsoleLine } = require('./util/util');
 
+const lemmaDict = {};
+const formDict = {};
+const formStuff = [];
+const automatedForms = {};
+
+function escapeRegExp(string) {
+    return string.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&');
+}
+
 function isInflectionGloss(glosses, formOf) {
     glossesString = JSON.stringify(glosses);
     switch (targetIso) {
@@ -18,7 +27,7 @@ function isInflectionGloss(glosses, formOf) {
             if (/.*inflection of.*/.test(glossesString)) return true;
             if(Array.isArray(formOf)) {
                 for (const {word: lemma} of formOf) {
-                    if (new RegExp(`of ${lemma}`).test(glossesString)) return true;
+                    if (new RegExp(`of ${escapeRegExp(lemma)}`).test(glossesString)) return true;
                 }
             }
         case 'fr':
@@ -65,7 +74,7 @@ function handleNest(nestedGlossObj, sense) {
     }
 }
 
-function addDeinflections(formDict, word, pos, lemma, inflections) {
+function addDeinflections(word, pos, lemma, inflections) {
     if (targetIso === 'fr') {
         word = word.replace(/(qu\')?(ils\/elles|il\/elle\/on)\s*/, '');
     }
@@ -103,11 +112,6 @@ const blacklistedTags = [
 
 let lineCount = 0;
 const printInterval = 1000;
-
-const lemmaDict = {};
-const formDict = {};
-const formStuff = [];
-const automatedForms = {};
 
 consoleOverwrite(`3-tidy-up.js started...`);
 
@@ -180,9 +184,6 @@ function handleLine(line, lemmaDict, formDict, formStuff, automatedForms) {
             const tags = sense.tags || [];
 
             if (glossesArray.length > 0) {
-                if (formOf) {
-                    formStuff.push([word, sense, pos]);
-                } 
                 if (!isInflectionGloss(glossesArray, formOf)) {
                     lemmaDict[word] ??= {};
                     lemmaDict[word][reading] ??= {};
@@ -233,51 +234,81 @@ function handleLine(line, lemmaDict, formDict, formStuff, automatedForms) {
                         lemmaDict[word][reading][pos].senses.push(currSense);
                     }
                 } else {
-                    if (targetIso === 'en') {
-                        if (!sense.glosses[0].includes('##')) {
-                            let lemma = sense.glosses[0]
-                                .replace(/.+(?=inflection of)/, '')
-                                .replace(/ \(.+?\)/, '')
-                                .replace(/:$/, '')
-                                .replace(/:\n.+/, '')
-                                .replace(/inflection of /, '')
-                                .replace(/:.+/, '')
-                                .trim()
+                    switch (targetIso) {
+                        case 'en':
+                            processEnglishInflectionGlosses(sense, word, pos);
+                            break;
+                        case 'fr':
+                            let inflection, lemma;
 
-                            const inflection = sense.glosses[1] || '';
+                            const match1 = sense.glosses[0].match(/(.*)du verbe\s+((?:(?!\bdu\b).)*)$/);
+                            const match2 = sense.glosses[0].match(/^((?:(?:Masculin|Féminin)\s)?(?:(?:p|P)luriel|(?:s|S)ingulier)) de ([^\s]*)$/);
 
-                            if (inflection && !inflection.includes('inflection of') && word !== lemma) {
-                                addDeinflections(formDict, word, pos, lemma, [inflection]);
+                            if (match1) {
+                                inflection = match1[1];
+                                lemma = match1[2];
+                            } else if (match2) {
+                                inflection = match2[1];
+                                lemma = match2[2];
                             }
-                        }
-                    } else if (targetIso === 'fr') {
-                        let inflection, lemma;
 
-                        const match1 = sense.glosses[0].match(/(.*)du verbe\s+((?:(?!\bdu\b).)*)$/);
-                        const match2 = sense.glosses[0].match(/^((?:(?:Masculin|Féminin)\s)?(?:(?:p|P)luriel|(?:s|S)ingulier)) de ([^\s]*)$/);
+                            if (inflection && lemma) {
+                                inflection = inflection.trim();
+                                lemma = lemma.replace(/\.$/, '').trim();
 
-                        if (match1) {
-                            inflection = match1[1];
-                            lemma = match1[2];
-                        } else if (match2) {
-                            inflection = match2[1];
-                            lemma = match2[2];
-                        }
-
-                        if (inflection && lemma) {
-                            inflection = inflection.trim();
-                            lemma = lemma.replace(/\.$/, '').trim();
-
-                            if (inflection && word !== lemma) {
-                                addDeinflections(formDict, word, pos, lemma, [inflection]);
+                                if (inflection && word !== lemma) {
+                                    addDeinflections(word, pos, lemma, [inflection]);
+                                }
                             }
-                        }
+                            break;
                     }
                 }
             }
             senseIndex += 1;
         }
 
+    }
+}
+
+function processEnglishInflectionGlosses(sense, word, pos) {
+    if (sense.glosses) {
+        glossPieces = sense.glosses.flatMap(gloss => gloss.split('##').map(piece => piece.trim()));
+        const lemmas = new Set();
+        const inflections = new Set();
+        for (const piece of glossPieces) {
+            const lemmaMatch = piece.match(/of ([^\s]+)\s*$/);
+            if (lemmaMatch) {
+                lemmas.add(lemmaMatch[1].replace(/:/g, '').trim());
+            }
+
+            if (lemmas.size > 1) {
+                // console.warn(`Multiple lemmas in inflection glosses for word '${word}'`, lemmas);
+                return;
+            }
+
+            const lemma = lemmas.values().next().value;
+
+            if(!lemma) continue;
+
+            const escapedLemma = escapeRegExp(lemma);
+
+            const inflection = piece
+                .replace(/inflection of /, '')
+                .replace(new RegExp(`of ${escapedLemma}`), '')
+                .replace(new RegExp(`${escapedLemma}`), '')
+                .replace(new RegExp(`\\s+`), ' ')
+                .replace(/:/g, '')
+                .trim();
+
+            inflections.add(inflection); 
+        }
+        
+        const lemma = lemmas.values().next().value;
+        if (word !== lemma) {
+            for (const inflection of [...inflections].filter(Boolean)) {
+                addDeinflections(word, pos, lemma, [inflection]);
+            }
+        }
     }
 }
 
@@ -314,51 +345,34 @@ function getPersianReading(word, line){
     return romanization ? romanization.form : word;
 }
 
-function handleForms(formStuff, formDict, automatedForms) {
-    for (const [form, info, pos] of formStuff) {
-        const glosses = info.glosses;
-        const formOf = info.form_of;
-        const lemma = formOf[0].word;
+function handleAutomatedForms() {
+    let missingForms = 0;
 
-        if (form !== lemma && glosses) {
-            if (!glosses[0].includes("##")) {
-                addDeinflections(formDict, form, pos, lemma, [glosses[0]]);
-            } else if (glosses.length > 1 && !glosses[1].includes('inflection of')) {
-                addDeinflections(formDict, form, pos, lemma, [glosses[1]]);
-            }
-        }
-    }
+    for (const [form, info] of Object.entries(automatedForms)) {
+        if (!(form in formDict)) {
+            missingForms += 1;
 
-    if (automatedForms) {
-        let missingForms = 0;
-
-        for (const [form, info] of Object.entries(automatedForms)) {
-            if (!(form in formDict)) {
-                missingForms += 1;
-
-                if (Object.keys(info).length < 5) {
-                    for (const [lemma, parts] of Object.entries(info)) {
-                        for (const [pos, glosses] of Object.entries(parts)) {
-                            if (form !== lemma) {
-                                const inflections = glosses.map(gloss => `-automated- ${gloss}`);
-                                addDeinflections(formDict, form, pos, lemma, inflections);
-                            }
+            if (Object.keys(info).length < 5) {
+                for (const [lemma, parts] of Object.entries(info)) {
+                    for (const [pos, glosses] of Object.entries(parts)) {
+                        if (form !== lemma) {
+                            const inflections = glosses.map(gloss => `-automated- ${gloss}`);
+                            addDeinflections(form, pos, lemma, inflections);
                         }
                     }
                 }
             }
         }
-
-        console.log(`There were ${missingForms} missing forms that have now been automatically populated.`);
     }
 
+    console.log(`There were ${missingForms} missing forms that have now been automatically populated.`);
 }
 
 lr.on('end', () => {
     clearConsoleLine();
     process.stdout.write(`Processed ${lineCount} lines...\n`);
 
-    handleForms(formStuff, formDict, automatedForms);
+    handleAutomatedForms();
 
     const lemmasFilePath = `${writeFolder}/${sourceIso}-${targetIso}-lemmas.json`;
     consoleOverwrite(`3-tidy-up.js: Writing lemma dict to ${lemmasFilePath}...`);
