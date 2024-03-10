@@ -13,7 +13,6 @@ const { sortTags, similarSort, mergePersonTags, consoleOverwrite, clearConsoleLi
 
 const lemmaDict = {};
 const formDict = {};
-const formStuff = [];
 const automatedForms = {};
 
 function escapeRegExp(string) {
@@ -125,11 +124,11 @@ lr.on('line', (line) => {
             consoleOverwrite(`3-tidy-up.js: Processed ${lineCount} lines...`);
         }
 
-        handleLine(line, lemmaDict, formDict, formStuff, automatedForms, `${sourceIso}-${targetIso}`);
+        handleLine(line);
     }
 });
 
-function handleLine(line, lemmaDict, formDict, formStuff, automatedForms) {
+function handleLine(line) {
     const parsedLine = JSON.parse(line);
     const { pos, senses, sounds, forms } = parsedLine;
     const word = getCanonicalForm(parsedLine);
