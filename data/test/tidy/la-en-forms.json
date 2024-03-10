@@ -1,4 +1,13 @@
 {
+  "rēctus": {
+    "regō": {
+      "verb": [
+        "led straight along, drawn in a straight line, straight, upright.",
+        "right, correct, proper, appropriate, befitting.",
+        "morally right, correct, lawful, just, virtuous, noble, good, proper, honest."
+      ]
+    }
+  },
   "fāmae": {
     "fāma": {
       "noun": [
@@ -889,6 +898,133 @@
       "noun": [
         "-automated- accusative plural",
         "-automated- vocative plural"
+      ]
+    }
+  },
+  "rēcta": {
+    "rēctus": {
+      "verb": [
+        "-automated- feminine",
+        "-automated- accusative plural neuter",
+        "-automated- vocative plural neuter",
+        "-automated- vocative singular feminine"
+      ]
+    }
+  },
+  "rēctum": {
+    "rēctus": {
+      "verb": [
+        "-automated- neuter",
+        "-automated- accusative singular masculine",
+        "-automated- accusative singular neuter",
+        "-automated- vocative singular neuter"
+      ]
+    }
+  },
+  "rēctior": {
+    "rēctus": {
+      "verb": [
+        "-automated- comparative"
+      ]
+    }
+  },
+  "rēctissimus": {
+    "rēctus": {
+      "verb": [
+        "-automated- superlative"
+      ]
+    }
+  },
+  "rēctē": {
+    "rēctus": {
+      "verb": [
+        "-automated- adverb"
+      ]
+    }
+  },
+  "rēctī": {
+    "rēctus": {
+      "verb": [
+        "-automated- vocative plural masculine",
+        "-automated- genitive singular masculine",
+        "-automated- genitive singular neuter"
+      ]
+    }
+  },
+  "rēctae": {
+    "rēctus": {
+      "verb": [
+        "-automated- vocative plural feminine",
+        "-automated- dative singular feminine",
+        "-automated- genitive singular feminine"
+      ]
+    }
+  },
+  "rēctōrum": {
+    "rēctus": {
+      "verb": [
+        "-automated- genitive plural masculine",
+        "-automated- genitive plural neuter"
+      ]
+    }
+  },
+  "rēctārum": {
+    "rēctus": {
+      "verb": [
+        "-automated- genitive plural feminine"
+      ]
+    }
+  },
+  "rēctō": {
+    "rēctus": {
+      "verb": [
+        "-automated- singular masculine ablative",
+        "-automated- singular neuter ablative",
+        "-automated- dative singular masculine",
+        "-automated- dative singular neuter"
+      ]
+    }
+  },
+  "rēctīs": {
+    "rēctus": {
+      "verb": [
+        "-automated- plural masculine feminine neuter ablative",
+        "-automated- dative plural masculine feminine neuter"
+      ]
+    }
+  },
+  "rēctam": {
+    "rēctus": {
+      "verb": [
+        "-automated- accusative singular feminine"
+      ]
+    }
+  },
+  "rēctōs": {
+    "rēctus": {
+      "verb": [
+        "-automated- accusative plural masculine"
+      ]
+    }
+  },
+  "rēctās": {
+    "rēctus": {
+      "verb": [
+        "-automated- accusative plural feminine"
+      ]
+    }
+  },
+  "rēctā": {
+    "rēctus": {
+      "verb": [
+        "-automated- singular feminine ablative"
+      ]
+    }
+  },
+  "rēcte": {
+    "rēctus": {
+      "verb": [
+        "-automated- vocative singular masculine"
       ]
     }
   }
