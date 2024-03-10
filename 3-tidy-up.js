@@ -285,6 +285,10 @@ function getCanonicalForm({word, forms}) {
     );
     if (canonicalForm) {
         word = canonicalForm.form;
+
+        if (word.includes('{{#ifexist:Wiktionary')) {
+            word = word.replace(/ {{#if:.+/, '');
+        }
     }
     return word;
 }
