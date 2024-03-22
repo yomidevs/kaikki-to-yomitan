@@ -21,5 +21,6 @@
     {"iso": "sv",  "language": "Swedish",        "flag": "🇸🇪"},
     {"iso": "es",  "language": "Spanish",        "flag": "🇪🇸"},
     {"iso": "th",  "language": "Thai",           "flag": "🇹🇭"},
+    {"iso": "tr",  "language": "Turkish",        "flag": "🇹🇷"},
     {"iso": "vi",  "language": "Vietnamese",     "flag": "🇻🇳"}
 ]
