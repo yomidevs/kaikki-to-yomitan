@@ -6,7 +6,7 @@ const { writeInBatches } = require('../util/util');
 const temp_folder = "../data/temp/dict"; // empty folder, will DELETE all files in it
 
 if(!process.argv[2]){
-    console.log("no file name provided, run with: node filter-structured.js <file>.zip");
+    console.log("no file name provided, run with: node v4-to-v3.js <file>.zip");
     process.exit();
 }
 
@@ -18,6 +18,7 @@ if(!file.endsWith(".zip")){
 }
 
 let terms = [];
+let metaTerms = [];
 let tags = [];
 let index = {};
 
@@ -30,6 +31,9 @@ async function main(file){
         const files = Object.keys(await zip.entries());
         
         for (const file of files) {
+            if(file.startsWith("term_meta_bank_")){
+                metaTerms = metaTerms.concat(await getZipFileData(file, zip));
+            }
             if(file.startsWith("term_bank_")){
                 terms = terms.concat(await getZipFileData(file, zip));
             }
@@ -43,10 +47,11 @@ async function main(file){
 
         console.log("index", index)
         console.log("terms", terms.length);
+        console.log("meta terms", metaTerms.length);
         console.log("tags", tags.length);
 
         index['format'] = 3;
-        index['title'] = index['title'] + '-v3';
+        index['title'] += '-v3';
 
         await zip.close();
 
@@ -68,10 +73,12 @@ async function main(file){
 
         writeFileSync(`${temp_folder}/index.json`, JSON.stringify(index, null, 4));
         writeInBatches(temp_folder, Object.values(terms), 'term_bank_', 50000);
+        writeInBatches(temp_folder, metaTerms, 'term_meta_bank_', 50000);
         writeInBatches(temp_folder, tags, 'tag_bank_', 50000);
 
         execSync(`zip -j ${index.title.split(' ').join('_')}.zip ${temp_folder}/*`);
 
+        console.log(`\nDone.`);
     } else {
         console.log("file not found");
     }
