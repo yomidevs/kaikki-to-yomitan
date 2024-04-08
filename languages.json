@@ -17,6 +17,7 @@
     {"iso": "pl",  "language": "Polish",         "flag": "🇵🇱"},
     {"iso": "pt",  "language": "Portuguese",     "flag": "🇧🇷🇵🇹"},
     {"iso": "ru",  "language": "Russian",        "flag": "🇷🇺"},
+    {"iso": "sga", "language": "Old Irish",      "flag": "🍀"},
     {"iso": "sh",  "language": "Serbo-Croatian", "flag": "🇷🇸🇭🇷"},
     {"iso": "sq",  "language": "Albanian",       "flag": "🇦🇱"},
     {"iso": "sv",  "language": "Swedish",        "flag": "🇸🇪"},
