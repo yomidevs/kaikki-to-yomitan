@@ -84,6 +84,7 @@ for target_lang in "${languages[@]}"; do
 
   export target_iso="$target_iso"
   export target_language="$target_language_name"
+  downloaded_target_extract=false
 
   for source_lang in "${languages[@]}"; do
     iso=$(echo "${source_lang}" | jq -r '.iso')
@@ -117,12 +118,13 @@ for target_lang in "${languages[@]}"; do
       target_extract="$target_iso-extract.json"
       target_extract_path="data/kaikki/$target_extract"
 
-      if [ ! -f "$target_extract_path" ] || [ "$redownload" = true ]; then
+      if [ ! -f "$target_extract_path" ] || [ "$redownload" = true ] && [ "$downloaded_target_extract" = false ]; then
         url="https://kaikki.org/dictionary/downloads/$target_iso/$target_extract.gz"
         echo "Downloading $target_extract from $url"
         wget "$url" -O "$target_extract_path".gz
         echo "Extracting $target_extract"
-        gunzip "$target_extract_path".gz  # Use 'gunzip' to extract the compressed file
+        gunzip -f "$target_extract_path".gz
+        downloaded_target_extract=true
       else
         echo "Kaikki dict already exists. Skipping download."
       fi
