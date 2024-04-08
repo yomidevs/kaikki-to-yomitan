@@ -53,7 +53,7 @@ async function main(){
                                 existingIpas.push(newIpa);
                                 const newTags = newIpa.tags.map(tag => localTags.find(([tagId]) => tagId === tag));
                                 for (const newTag of newTags) {
-                                    if(!globalTags.find(([tagId]) => tagId === newTag[0])){
+                                    if(newTag && !globalTags.find(([tagId]) => tagId === newTag[0])){
                                         globalTags.push(newTag);
                                     }
                                 }
@@ -62,7 +62,7 @@ async function main(){
                                 for (const newTag of newTags) {
                                     existingIpa.tags.push(newTag);
                                     const fullTag = localTags.find(([tagId]) => tagId === newTag);
-                                    if(!globalTags.find(([tagId]) => tagId === fullTag[0])){
+                                    if(fullTag && !globalTags.find(([tagId]) => tagId === fullTag[0])){
                                         globalTags.push(fullTag);
                                     }
                                 }
