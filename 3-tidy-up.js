@@ -386,8 +386,24 @@ lr.on('end', () => {
     handleAutomatedForms();
 
     const formsFilePath = `${writeFolder}/${sourceIso}-${targetIso}-forms.json`;
-    consoleOverwrite(`3-tidy-up.js: Writing form dict to ${formsFilePath}...`);
-    writeFileSync(formsFilePath, JSON.stringify(formsMap, mapJsonReplacer));
+
+    const mapChunks = Array.from(formsMap.entries()).reduce((acc, [key, value], index) => {
+        logProgress("Chunking form dict", index, formsMap.size);
+        const chunkIndex = Math.floor(index / 10000);
+        acc[chunkIndex] ??= new Map();
+        acc[chunkIndex].set(key, value);
+        return acc;
+    }, {});
+    
+    if(!mapChunks['0']) {
+        mapChunks['0'] = new Map();
+    }
+
+    for (const [index, chunk] of Object.entries(mapChunks)) {
+        logProgress("Writing form dict chunks", index, Object.keys(mapChunks).length);
+        consoleOverwrite(`3-tidy-up.js: Writing form dict ${index} to ${formsFilePath}...`);
+        writeFileSync(`${formsFilePath.replace('.json', '')}-${index}.json`, JSON.stringify(chunk, mapJsonReplacer));
+    }
 
     consoleOverwrite('3-tidy-up.js finished.\n');
 });

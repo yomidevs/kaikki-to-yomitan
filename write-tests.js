@@ -51,7 +51,7 @@ for (const {iso: sourceIso} of languages){
             }
         );
 
-        prettifyFile(`data/test/tidy/${sourceIso}-${targetIso}-forms.json`);
+        prettifyFile(`data/test/tidy/${sourceIso}-${targetIso}-forms-0.json`);
         prettifyFile(`data/test/tidy/${sourceIso}-${targetIso}-lemmas.json`);
 
         const dictFiles = readdirSync(`data/temp/dict`);

@@ -19,8 +19,15 @@ consoleOverwrite(`4-make-yomitan.js: reading lemmas...`);
 const lemmasFile = `${readFolder}/${source_iso}-${target_iso}-lemmas.json`;
 const lemmaDict = JSON.parse(readFileSync(path.resolve(__dirname, lemmasFile)));
 consoleOverwrite(`4-make-yomitan.js: reading forms...`);
-const formsFile = `${readFolder}/${source_iso}-${target_iso}-forms.json`;
-const formsMap = JSON.parse(readFileSync(path.resolve(__dirname, formsFile)), mapJsonReviver);
+
+const formsFiles = readdirSync(readFolder).filter((file) => file.startsWith(`${source_iso}-${target_iso}-forms-`));
+const formsMap = new Map();
+for (const file of formsFiles) {
+    const formsPart = JSON.parse(readFileSync(path.resolve(__dirname, readFolder, file)), mapJsonReviver);
+    for (const [lemma, forms] of formsPart.entries()) {
+        formsMap.set(lemma, forms);
+    }
+}
 
 if (!existsSync(`data/language/${source_iso}/${target_iso}`)) {
     mkdirSync(`data/language/${source_iso}/${target_iso}`, {recursive: true});
