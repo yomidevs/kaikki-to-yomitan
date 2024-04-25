@@ -9,11 +9,11 @@ const {
     tidy_folder: writeFolder
 } = process.env;
 
-const { sortTags, similarSort, mergePersonTags, consoleOverwrite, clearConsoleLine } = require('./util/util');
+const { sortTags, similarSort, mergePersonTags, consoleOverwrite, clearConsoleLine, logProgress, mapJsonReplacer } = require('./util/util');
 
 const lemmaDict = {};
-const formDict = {};
-const automatedForms = {};
+const formsMap = new Map();
+const automatedForms = new Map();
 
 function escapeRegExp(string) {
     return string.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&');
@@ -73,22 +73,24 @@ function handleNest(nestedGlossObj, sense) {
     }
 }
 
-function addDeinflections(word, pos, lemma, inflections) {
+function addDeinflections(form, pos, lemma, inflections) {
     if (targetIso === 'fr') {
-        word = word.replace(/(qu\')?(ils\/elles|il\/elle\/on)\s*/, '');
+        form = form.replace(/(qu\')?(ils\/elles|il\/elle\/on)\s*/, '');
     }
 
-    formDict[word] ??= {};
-    formDict[word][lemma] ??= {};
-    formDict[word][lemma][pos] ??= [];
+    const lemmaForms = formsMap.get(lemma) || new Map();
+    formsMap.set(lemma, lemmaForms);
+    const formPOSs = lemmaForms.get(form) || new Map();
+    lemmaForms.set(form, formPOSs);
+    formPOSs.get(pos) || formPOSs.set(pos, []);
 
     try {
-        const inflectionsSet = new Set(formDict[word][lemma][pos]);
+        const inflectionsSet = new Set(formPOSs.get(pos));
         for (const inflection of inflections) {
             inflectionsSet.add(inflection);
         }
     
-        formDict[word][lemma][pos] = Array.from(inflectionsSet);
+        formPOSs.set(pos, Array.from(inflectionsSet));
     } catch(e) {
         console.log(e);
     }
@@ -110,8 +112,6 @@ const blacklistedTags = [
 ];
 
 let lineCount = 0;
-const printInterval = 1000;
-
 consoleOverwrite(`3-tidy-up.js started...`);
 
 const lr = new LineByLineReader(kaikkiFile);
@@ -119,11 +119,7 @@ const lr = new LineByLineReader(kaikkiFile);
 lr.on('line', (line) => {
     if (line) {
         lineCount += 1;
-
-        if (lineCount % printInterval === 0) {
-            consoleOverwrite(`3-tidy-up.js: Processed ${lineCount} lines...`);
-        }
-
+        logProgress("Processing lines", lineCount);
         handleLine(line);
     }
 });
@@ -140,15 +136,17 @@ function handleLine(line) {
                 const { form, tags } = formData;
 
                 if (form && tags && !tags.some(value => blacklistedTags.includes(value)) && form !== '-') {
-                    automatedForms[form] ??= {};
-                    automatedForms[form][word] ??= {};
-                    automatedForms[form][word][pos] ??= new Set();
-
-                    const tagsSet = new Set(automatedForms[form][word][pos]);
-
+                    const wordMap = automatedForms.get(word) || new Map();
+                    const formMap = wordMap.get(form) || new Map();
+                    formMap.get(pos) || formMap.set(pos, new Set());
+                    wordMap.set(form, formMap);
+                    automatedForms.set(word, wordMap);
+                    
+                    const tagsSet = new Set((formMap.get(pos)));
+                    
                     tagsSet.add(sortTags(targetIso, tags).join(' '));
-
-                    automatedForms[form][word][pos] = similarSort(mergePersonTags(targetIso, Array.from(tagsSet)));
+                    
+                    formMap.set(pos, similarSort(mergePersonTags(targetIso, Array.from(tagsSet))));                 
                 }
             });
         }
@@ -345,23 +343,29 @@ function getPersianReading(word, line){
 }
 
 function handleAutomatedForms() {
+    consoleOverwrite('3-tidy-up.js: Handling automated forms...');
+
+    let counter = 0;
+    let total = [...automatedForms.entries()].reduce((acc, [_, formInfo]) => acc + formInfo.size, 0);
     let missingForms = 0;
 
-    for (const [form, info] of Object.entries(automatedForms)) {
-        if (!(form in formDict)) {
-            missingForms += 1;
-
-            if (Object.keys(info).length < 5) {
-                for (const [lemma, parts] of Object.entries(info)) {
-                    for (const [pos, glosses] of Object.entries(parts)) {
-                        if (form !== lemma) {
-                            const inflections = glosses.map(gloss => `-automated- ${gloss}`);
-                            addDeinflections(form, pos, lemma, inflections);
-                        }
+    for (const [lemma, formInfo] of automatedForms.entries()) {
+        for (const [form, posInfo] of formInfo.entries()) {
+            counter += 1;
+            logProgress("Processing automated forms", counter, total);
+            if (!formsMap.get(lemma)?.get(form)) {
+                missingForms += 1;  
+                for (const [pos, glosses] of posInfo.entries()) {
+            
+                    if (form !== lemma) {
+                        addDeinflections(form, pos, lemma, glosses);
                     }
+                    posInfo.delete(pos);
                 }
             }
+            formInfo.delete(form);
         }
+        automatedForms.delete(lemma);
     }
 
     console.log(`There were ${missingForms} missing forms that have now been automatically populated.`);
@@ -371,15 +375,19 @@ lr.on('end', () => {
     clearConsoleLine();
     process.stdout.write(`Processed ${lineCount} lines...\n`);
 
-    handleAutomatedForms();
-
     const lemmasFilePath = `${writeFolder}/${sourceIso}-${targetIso}-lemmas.json`;
     consoleOverwrite(`3-tidy-up.js: Writing lemma dict to ${lemmasFilePath}...`);
     writeFileSync(lemmasFilePath, JSON.stringify(lemmaDict));
+    
+    for (const prop of Object.getOwnPropertyNames(lemmaDict)) {
+        delete lemmaDict[prop];
+    }
+
+    handleAutomatedForms();
 
     const formsFilePath = `${writeFolder}/${sourceIso}-${targetIso}-forms.json`;
     consoleOverwrite(`3-tidy-up.js: Writing form dict to ${formsFilePath}...`);
-    writeFileSync(formsFilePath, JSON.stringify(formDict));
+    writeFileSync(formsFilePath, JSON.stringify(formsMap, mapJsonReplacer));
 
     consoleOverwrite('3-tidy-up.js finished.\n');
 });

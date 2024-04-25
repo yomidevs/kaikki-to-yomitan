@@ -305,26 +305,6 @@
     ""
   ],
   [
-    "ayant + past participle",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "sembler",
-        [
-          "present",
-          "gerund",
-          "participle",
-          "multiword-construction"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
     "pris",
     "",
     "non-lemma",
@@ -923,26 +903,6 @@
     ""
   ],
   [
-    "present indicative of avoir + past participle",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "sembler",
-        [
-          "present",
-          "perfect",
-          "indicative",
-          "multiword-construction"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
     "imperfect indicative of avoir + past participle",
     "",
     "non-lemma",
@@ -962,25 +922,6 @@
     ""
   ],
   [
-    "imperfect indicative of avoir + past participle",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "sembler",
-        [
-          "pluperfect",
-          "indicative",
-          "multiword-construction"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
     "past historic of avoir + past participle",
     "",
     "non-lemma",
@@ -989,26 +930,6 @@
     [
       [
         "prendre",
-        [
-          "past",
-          "indicative",
-          "anterior",
-          "multiword-construction"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "past historic of avoir + past participle",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "sembler",
         [
           "past",
           "indicative",
@@ -1041,26 +962,6 @@
     ""
   ],
   [
-    "future of avoir + past participle",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "sembler",
-        [
-          "future",
-          "perfect",
-          "indicative",
-          "multiword-construction"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
     "conditional of avoir + past participle",
     "",
     "non-lemma",
@@ -1069,25 +970,6 @@
     [
       [
         "prendre",
-        [
-          "perfect",
-          "conditional",
-          "multiword-construction"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "conditional of avoir + past participle",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "sembler",
         [
           "perfect",
           "conditional",
@@ -1278,25 +1160,6 @@
     ""
   ],
   [
-    "present subjunctive of avoir + past participle",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "sembler",
-        [
-          "past",
-          "subjunctive",
-          "multiword-construction"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
     "imperfect subjunctive of avoir + past participle",
     "",
     "non-lemma",
@@ -1305,25 +1168,6 @@
     [
       [
         "prendre",
-        [
-          "pluperfect",
-          "subjunctive",
-          "multiword-construction"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "imperfect subjunctive of avoir + past participle",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "sembler",
         [
           "pluperfect",
           "subjunctive",
@@ -1352,35 +1196,6 @@
       ],
       [
         "prendre",
-        [
-          "second-person",
-          "singular",
-          "imperative",
-          "multiword-construction"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "simple imperative of avoir + past participle",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "sembler",
-        [
-          "first/second-person",
-          "plural",
-          "imperative",
-          "multiword-construction"
-        ]
-      ],
-      [
-        "sembler",
         [
           "second-person",
           "singular",
@@ -1405,6 +1220,26 @@
           "present",
           "gerund",
           "participle"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "ayant + past participle",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "sembler",
+        [
+          "present",
+          "gerund",
+          "participle",
+          "multiword-construction"
         ]
       ]
     ],
@@ -2040,6 +1875,104 @@
     ""
   ],
   [
+    "present indicative of avoir + past participle",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "sembler",
+        [
+          "present",
+          "perfect",
+          "indicative",
+          "multiword-construction"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "imperfect indicative of avoir + past participle",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "sembler",
+        [
+          "pluperfect",
+          "indicative",
+          "multiword-construction"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "past historic of avoir + past participle",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "sembler",
+        [
+          "past",
+          "indicative",
+          "anterior",
+          "multiword-construction"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "future of avoir + past participle",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "sembler",
+        [
+          "future",
+          "perfect",
+          "indicative",
+          "multiword-construction"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "conditional of avoir + past participle",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "sembler",
+        [
+          "perfect",
+          "conditional",
+          "multiword-construction"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
     "semblasse",
     "",
     "non-lemma",
@@ -2153,6 +2086,73 @@
           "plural",
           "imperfect",
           "subjunctive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "present subjunctive of avoir + past participle",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "sembler",
+        [
+          "past",
+          "subjunctive",
+          "multiword-construction"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "imperfect subjunctive of avoir + past participle",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "sembler",
+        [
+          "pluperfect",
+          "subjunctive",
+          "multiword-construction"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "simple imperative of avoir + past participle",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "sembler",
+        [
+          "first/second-person",
+          "plural",
+          "imperative",
+          "multiword-construction"
+        ]
+      ],
+      [
+        "sembler",
+        [
+          "second-person",
+          "singular",
+          "imperative",
+          "multiword-construction"
         ]
       ]
     ],
