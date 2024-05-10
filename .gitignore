@@ -4,7 +4,7 @@
 !parts_of_speech.json
 !tag_order.json
 !languages.json
-!package.json
+!package*.json
 !data/test/kaikki/*.json
 !data/test/tidy/*.json
 !data/test/dict/**/*.json
