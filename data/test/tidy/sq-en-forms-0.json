@@ -1,0 +1,49 @@
+{
+  "_type": "map",
+  "map": [
+    [
+      "iki",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "ik",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular imperative"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "akull",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "akuj",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "plural"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ]
+}

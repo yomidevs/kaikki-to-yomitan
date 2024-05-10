@@ -15,7 +15,7 @@ const languages = JSON.parse(readFileSync('languages.json', 'utf8'));
 for (const {iso: sourceIso} of languages){
     for (const {iso: targetIso} of languages){
         const tidyLemmas = `data/test/tidy/${sourceIso}-${targetIso}-lemmas.json`;
-        const tidyForms = `data/test/tidy/${sourceIso}-${targetIso}-forms.json`;
+        const tidyForms = `data/test/tidy/${sourceIso}-${targetIso}-forms-0.json`;
         
         if(!existsSync(tidyLemmas) || !existsSync(tidyForms)){
             continue;

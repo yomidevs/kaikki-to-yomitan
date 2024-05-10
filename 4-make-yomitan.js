@@ -4,7 +4,7 @@ const date = require('date-and-time');
 const now = new Date();
 const currentDate = date.format(now, 'YYYY.MM.DD');
 
-const { sortTags, writeInBatches, consoleOverwrite } = require('./util/util');
+const { sortTags, writeInBatches, consoleOverwrite, mapJsonReviver } = require('./util/util');
 
 const {
     source_iso, 
@@ -19,8 +19,15 @@ consoleOverwrite(`4-make-yomitan.js: reading lemmas...`);
 const lemmasFile = `${readFolder}/${source_iso}-${target_iso}-lemmas.json`;
 const lemmaDict = JSON.parse(readFileSync(path.resolve(__dirname, lemmasFile)));
 consoleOverwrite(`4-make-yomitan.js: reading forms...`);
-const formsFile = `${readFolder}/${source_iso}-${target_iso}-forms.json`;
-const formDict = JSON.parse(readFileSync(path.resolve(__dirname, formsFile)));
+
+const formsFiles = readdirSync(readFolder).filter((file) => file.startsWith(`${source_iso}-${target_iso}-forms-`));
+const formsMap = new Map();
+for (const file of formsFiles) {
+    const formsPart = JSON.parse(readFileSync(path.resolve(__dirname, readFolder, file)), mapJsonReviver);
+    for (const [lemma, forms] of formsPart.entries()) {
+        formsMap.set(lemma, forms);
+    }
+}
 
 if (!existsSync(`data/language/${source_iso}/${target_iso}`)) {
     mkdirSync(`data/language/${source_iso}/${target_iso}`, {recursive: true});
@@ -127,12 +134,16 @@ for (const [lemma, readings] of Object.entries(lemmaDict)) {
 
         if(lemma !== normalizedLemma && lemma !== reading){
             term = lemma;
-            formDict[normalizedLemma] ??= {};
-            formDict[normalizedLemma][lemma] ??= {};
-            formDict[normalizedLemma][lemma]["any"] ??= [];
+            const lemmaForms = formsMap.get(lemma) || new Map();
+            const formPOSs = lemmaForms.get(normalizedLemma) || new Map();
+            const anyForms = formPOSs.get("any") || [];
+            formPOSs.set("any", anyForms);
+            lemmaForms.set(normalizedLemma, formPOSs);
+            formsMap.set(lemma, lemmaForms);
+
             const message = `${normalizedLemma}\u00A0≈\u00A0${lemma}`;
-            if (!formDict[normalizedLemma][lemma]["any"].includes(message)){
-                formDict[normalizedLemma][lemma]["any"].push(message);
+            if (!anyForms.includes(message)){
+                anyForms.push(message);
             }
         }
 
@@ -254,9 +265,9 @@ const multiwordInflections = [ // TODO: switch on source_iso
 ];
 
 consoleOverwrite('4-make-yomitan.js: Processing forms...');
-for (const [form, allInfo] of Object.entries(formDict)) {
-    for (const [lemma, info] of Object.entries(allInfo)) {
-        for (const [pos, glosses] of Object.entries(info)) {
+for (const [lemma, forms] of formsMap.entries()) {
+    for (const [form, POSs] of forms.entries()) {
+        for (const [pos, glosses] of POSs.entries()) {
             const inflectionHypotheses = glosses.flatMap((gloss) => {
                 if (!gloss) { return []; }
 

@@ -1,0 +1,1323 @@
+{
+  "_type": "map",
+  "map": [
+    [
+      "pflegen",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "pflegt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural imperative",
+                    "second-person plural present indicative",
+                    "third-person singular present",
+                    "third-person singular present indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflegte",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past",
+                    "first/third-person singular indicative preterite",
+                    "first/third-person singular subjunctive subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gepflegt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "auxiliary"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflog",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past",
+                    "first/third-person singular indicative preterite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gepflogen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflöge",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person singular subjunctive subjunctive-ii",
+                    "past subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflegend",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "present participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflege",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular present indicative",
+                    "first/third-person singular subjunctive subjunctive-i",
+                    "second-person singular imperative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflegst",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular present indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflegest",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular subjunctive subjunctive-i"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pfleget",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural subjunctive subjunctive-i"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflegten",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person plural indicative preterite",
+                    "first/third-person plural subjunctive subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflegtest",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular indicative preterite",
+                    "second-person singular subjunctive subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflegtet",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural indicative preterite",
+                    "second-person plural subjunctive subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pfleg",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular imperative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "habe gepflegt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular perfect indicative multiword-construction",
+                    "first/third-person singular perfect subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "haben gepflegt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person plural perfect indicative multiword-construction",
+                    "first/third-person plural perfect subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hast gepflegt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular perfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "habt gepflegt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural perfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "habest gepflegt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular perfect subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "habet gepflegt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural perfect subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hat gepflegt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular perfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hatte gepflegt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person singular pluperfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hatten gepflegt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person plural pluperfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hätte gepflegt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person singular pluperfect subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hätten gepflegt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person plural pluperfect subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hattest gepflegt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular pluperfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hattet gepflegt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural pluperfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hättest gepflegt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular pluperfect subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hättet gepflegt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural pluperfect subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "werde pflegen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular future future-i indicative multiword-construction",
+                    "first/third-person singular future future-i subjunctive multiword-construction subjunctive-i"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "werden pflegen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person plural future future-i indicative multiword-construction",
+                    "first/third-person plural future future-i subjunctive multiword-construction subjunctive-i"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "werdest pflegen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular future future-i subjunctive multiword-construction subjunctive-i"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "werdet pflegen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural future future-i indicative multiword-construction",
+                    "second-person plural future future-i subjunctive multiword-construction subjunctive-i"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "würde pflegen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person singular future future-i subjunctive multiword-construction subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "würden pflegen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person plural future future-i subjunctive multiword-construction subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "wirst pflegen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular future future-i indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "würdest pflegen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular future future-i subjunctive multiword-construction subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "würdet pflegen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural future future-i subjunctive multiword-construction subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "wird pflegen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular future future-i indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "werde gepflegt haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular future future-ii indicative multiword-construction",
+                    "first/third-person singular future future-ii subjunctive multiword-construction subjunctive-i"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "werden gepflegt haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person plural future future-ii indicative multiword-construction",
+                    "first/third-person plural future future-ii subjunctive multiword-construction subjunctive-i"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "werdest gepflegt haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular future future-ii subjunctive multiword-construction subjunctive-i"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "werdet gepflegt haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural future future-ii indicative multiword-construction",
+                    "second-person plural future future-ii subjunctive multiword-construction subjunctive-i"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "würde gepflegt haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person singular future future-ii subjunctive multiword-construction subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "würden gepflegt haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person plural future future-ii subjunctive multiword-construction subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "wirst gepflegt haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular future future-ii indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "würdest gepflegt haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular future future-ii subjunctive multiword-construction subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "würdet gepflegt haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural future future-ii subjunctive multiword-construction subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "wird gepflegt haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular future future-ii indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflogen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person plural indicative preterite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflögen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person plural subjunctive subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflogst",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular indicative preterite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflogt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural indicative preterite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflögest",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular subjunctive subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflögst",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular subjunctive subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflöget",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural subjunctive subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflögt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural subjunctive subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "habe gepflogen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular perfect indicative multiword-construction",
+                    "first/third-person singular perfect subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "haben gepflogen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person plural perfect indicative multiword-construction",
+                    "first/third-person plural perfect subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hast gepflogen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular perfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "habt gepflogen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural perfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "habest gepflogen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular perfect subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "habet gepflogen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural perfect subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hat gepflogen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular perfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hatte gepflogen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person singular pluperfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hatten gepflogen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person plural pluperfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hätte gepflogen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person singular pluperfect subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hätten gepflogen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person plural pluperfect subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hattest gepflogen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular pluperfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hattet gepflogen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural pluperfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hättest gepflogen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular pluperfect subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hättet gepflogen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural pluperfect subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "werde gepflogen haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular future future-ii indicative multiword-construction",
+                    "first/third-person singular future future-ii subjunctive multiword-construction subjunctive-i"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "werden gepflogen haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person plural future future-ii indicative multiword-construction",
+                    "first/third-person plural future future-ii subjunctive multiword-construction subjunctive-i"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "werdest gepflogen haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular future future-ii subjunctive multiword-construction subjunctive-i"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "werdet gepflogen haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural future future-ii indicative multiword-construction",
+                    "second-person plural future future-ii subjunctive multiword-construction subjunctive-i"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "würde gepflogen haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person singular future future-ii subjunctive multiword-construction subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "würden gepflogen haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person plural future future-ii subjunctive multiword-construction subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "wirst gepflogen haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular future future-ii indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "würdest gepflogen haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular future future-ii subjunctive multiword-construction subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "würdet gepflogen haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural future future-ii subjunctive multiword-construction subjunctive-ii"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "wird gepflogen haben",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular future future-ii indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "Fuchs",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "Fuchses",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive",
+                    "genitive singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "Füchse",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "plural",
+                    "accusative plural definite",
+                    "genitive plural definite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "Füchslein",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "neuter diminutive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "Füchschen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "neuter diminutive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "Füchsin",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "feminine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "Fuchse",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "dative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "Füchsen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "dative plural definite"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ]
+}

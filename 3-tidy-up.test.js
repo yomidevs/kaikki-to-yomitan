@@ -33,10 +33,10 @@ for (const {iso: sourceIso} of languages){
             }
         );
         
-        const testForms = JSON.parse(readFileSync(`data/test/temp/${sourceIso}-${targetIso}-forms.json`, 'utf8'));
+        const testForms = JSON.parse(readFileSync(`data/test/temp/${sourceIso}-${targetIso}-forms-0.json`, 'utf8'));
         const testLemmas = JSON.parse(readFileSync(`data/test/temp/${sourceIso}-${targetIso}-lemmas.json`, 'utf8'));
         
-        const validForms = JSON.parse(readFileSync(`data/test/tidy/${sourceIso}-${targetIso}-forms.json`, 'utf8'));
+        const validForms = JSON.parse(readFileSync(`data/test/tidy/${sourceIso}-${targetIso}-forms-0.json`, 'utf8'));
         const validLemmas = JSON.parse(readFileSync(`data/test/tidy/${sourceIso}-${targetIso}-lemmas.json`, 'utf8'));
 
         describe(`Tidying up ${sourceIso}-${targetIso}`, () => {

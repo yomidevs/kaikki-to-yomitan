@@ -1,0 +1,2044 @@
+{
+  "_type": "map",
+  "map": [
+    [
+      "fāma",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "fāmae",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive",
+                    "vocative plural",
+                    "dative singular",
+                    "genitive singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fāmārum",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fāmīs",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "plural ablative",
+                    "dative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fāmam",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fāmās",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fāmā",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "singular ablative"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "legō",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "lēgī",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect active",
+                    "first-person singular perfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctum",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "supine",
+                    "accusative noun-from-verb supine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legis",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular present active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legit",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular present active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legimus",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural present active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legitis",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural present active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legunt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural present active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēbam",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular imperfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēbās",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular imperfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēbat",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular imperfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēbāmus",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural imperfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēbātis",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural imperfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēbant",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural imperfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legam",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular future active indicative",
+                    "first-person singular present active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēs",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular future active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "leget",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular future active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēmus",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural future active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legētis",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural future active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legent",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural future active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgistī",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular perfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgit",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular perfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgimus",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural perfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgistis",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural perfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgērunt",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural perfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgēre",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural perfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgeram",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular pluperfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgerās",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular pluperfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgerat",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular pluperfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgerāmus",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural pluperfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgerātis",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural pluperfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgerant",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural pluperfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgerō",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular future perfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgeris",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular future perfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgerit",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular future perfect active indicative",
+                    "third-person singular perfect active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgerimus",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural future perfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgeritis",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural future perfect active indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgerint",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural future perfect active indicative",
+                    "third-person plural perfect active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legor",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular present passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legeris",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular present passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legere",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular present imperative passive",
+                    "second-person singular present passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legitur",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular present passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legimur",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural present passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legiminī",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural present imperative passive",
+                    "second-person plural present passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "leguntur",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural present passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēbar",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular imperfect passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēbāris",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular imperfect passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēbāre",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular imperfect passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēbātur",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular imperfect passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēbāmur",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural imperfect passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēbāminī",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural imperfect passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēbantur",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural imperfect passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legar",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular future passive indicative",
+                    "first-person singular present passive subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēris",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular future passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēre",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular future passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legētur",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular future passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēmur",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural future passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēminī",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural future passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legentur",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural future passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctus + present active indicative of sum",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctus + imperfect active indicative of sum",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "pluperfect passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctus + future active indicative of sum",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "future perfect passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legās",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular present active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legat",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular present active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legāmus",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural present active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legātis",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural present active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legant",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural present active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legerem",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular imperfect active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legerēs",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular imperfect active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legeret",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular imperfect active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legerēmus",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural imperfect active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legerētis",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural imperfect active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legerent",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural imperfect active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgerim",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular perfect active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgerīs",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular perfect active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgerīmus",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural perfect active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgerītis",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural perfect active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgissem",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular pluperfect active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgissēs",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular pluperfect active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgisset",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular pluperfect active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgissēmus",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural pluperfect active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgissētis",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural pluperfect active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgissent",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural pluperfect active subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legāris",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular present passive subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legāre",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular present passive subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legātur",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular present passive subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legāmur",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural present passive subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legāminī",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural present passive subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legantur",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural present passive subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legerer",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular imperfect passive subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legerēris",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular imperfect passive subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legerēre",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular imperfect passive subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legerētur",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular imperfect passive subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legerēmur",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural imperfect passive subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legerēminī",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural imperfect passive subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legerentur",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural imperfect passive subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctus + present active subjunctive of sum",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect passive subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctus + imperfect active subjunctive of sum",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "pluperfect passive subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lege",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular present imperative active"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legite",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural present imperative active"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legitō",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "singular future imperative active second/third-person"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legitōte",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural future imperative active"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "leguntō",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural future imperative active"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legitor",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "singular future imperative passive second/third-person"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "leguntor",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural future imperative passive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legēns",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "present active participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctūrus",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "future active participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctus",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect passive participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legendus",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "future passive participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legundus",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "future passive participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legendī",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "genitive gerund noun-from-verb"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legendō",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "dative gerund noun-from-verb",
+                    "gerund noun-from-verb ablative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legendum",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "accusative gerund noun-from-verb"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctū",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "noun-from-verb ablative supine"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "līlium",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "līliī",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive",
+                    "genitive singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "līlī",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive",
+                    "genitive singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "līliōrum",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "līliō",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "singular ablative",
+                    "dative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "līliīs",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "plural ablative",
+                    "dative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "līlia",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative plural",
+                    "vocative plural"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "rēctus",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "rēcta",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "feminine",
+                    "accusative plural neuter",
+                    "vocative plural neuter",
+                    "vocative singular feminine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "rēctum",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "neuter",
+                    "accusative singular masculine",
+                    "accusative singular neuter",
+                    "vocative singular neuter"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "rēctior",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "comparative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "rēctissimus",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "superlative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "rēctē",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "adverb"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "rēctī",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "vocative plural masculine",
+                    "genitive singular masculine",
+                    "genitive singular neuter"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "rēctae",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "vocative plural feminine",
+                    "dative singular feminine",
+                    "genitive singular feminine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "rēctōrum",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "genitive plural masculine",
+                    "genitive plural neuter"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "rēctārum",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "genitive plural feminine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "rēctō",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "singular masculine ablative",
+                    "singular neuter ablative",
+                    "dative singular masculine",
+                    "dative singular neuter"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "rēctīs",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "plural masculine feminine neuter ablative",
+                    "dative plural masculine feminine neuter"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "rēctam",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "accusative singular feminine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "rēctōs",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "accusative plural masculine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "rēctās",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "accusative plural feminine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "rēctā",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "singular feminine ablative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "rēcte",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "vocative singular masculine"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ]
+}

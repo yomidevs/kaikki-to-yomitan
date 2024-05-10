@@ -1,0 +1,1315 @@
+{
+  "_type": "map",
+  "map": [
+    [
+      "démarcher",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "démarche",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person singular present indicative/subjunctive",
+                    "second-person singular imperative"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "prendre",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "prenant",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "present gerund participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "ayant + past participle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "present gerund participle multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pris",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past participle",
+                    "first/second-person singular past indicative historic"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prends",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/second-person singular present indicative",
+                    "second-person singular imperative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prend",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular present indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prenons",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural imperative",
+                    "first-person plural present indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prenez",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural imperative",
+                    "second-person plural present indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prennent",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural present indicative",
+                    "third-person plural present subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prenais",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/second-person singular imperfect indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prenait",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular imperfect indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prenions",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural imperfect indicative",
+                    "first-person plural present subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "preniez",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural imperfect indicative",
+                    "second-person plural present subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prenaient",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural imperfect indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prit",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular past indicative historic"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prîmes",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural past indicative historic"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prîtes",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural past indicative historic"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prirent",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural past indicative historic"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prendrai",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular future indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prendras",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular future indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prendra",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular future indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prendrons",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural future indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prendrez",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural future indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prendront",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural future indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prendrais",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/second-person singular conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prendrait",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prendrions",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prendriez",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prendraient",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "present indicative of avoir + past participle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "present perfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "imperfect indicative of avoir + past participle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "pluperfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "past historic of avoir + past participle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past indicative anterior multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "future of avoir + past participle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "future perfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "conditional of avoir + past participle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect conditional multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prenne",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person singular present subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prennes",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular present subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prisse",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular imperfect subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prisses",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular imperfect subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prît",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular imperfect subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prissions",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural imperfect subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prissiez",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural imperfect subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prissent",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural imperfect subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "present subjunctive of avoir + past participle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "imperfect subjunctive of avoir + past participle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "pluperfect subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "simple imperative of avoir + past participle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/second-person plural imperative multiword-construction",
+                    "second-person singular imperative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "sembler",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "semblant",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "present gerund participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "ayant + past participle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "present gerund participle multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblé",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semble",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/third-person singular present indicative",
+                    "first/third-person singular present subjunctive",
+                    "second-person singular imperative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "sembles",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular present indicative",
+                    "second-person singular present subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblons",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural imperative",
+                    "first-person plural present indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblez",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural imperative",
+                    "second-person plural present indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblent",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural present indicative",
+                    "third-person plural present subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblais",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/second-person singular imperfect indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblait",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular imperfect indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblions",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural imperfect indicative",
+                    "first-person plural present subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "sembliez",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural imperfect indicative",
+                    "second-person plural present subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblaient",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural imperfect indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblai",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular past indicative historic"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblas",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular past indicative historic"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "sembla",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular past indicative historic"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblâmes",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural past indicative historic"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblâtes",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural past indicative historic"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblèrent",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural past indicative historic"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblerai",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular future indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "sembleras",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular future indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblera",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular future indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblerons",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural future indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblerez",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural future indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "sembleront",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural future indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblerais",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/second-person singular conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblerait",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblerions",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "sembleriez",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "sembleraient",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "present indicative of avoir + past participle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "present perfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "imperfect indicative of avoir + past participle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "pluperfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "past historic of avoir + past participle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past indicative anterior multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "future of avoir + past participle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "future perfect indicative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "conditional of avoir + past participle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect conditional multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblasse",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular imperfect subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblasses",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular imperfect subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblât",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular imperfect subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblassions",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural imperfect subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblassiez",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural imperfect subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "semblassent",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural imperfect subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "present subjunctive of avoir + past participle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "imperfect subjunctive of avoir + past participle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "pluperfect subjunctive multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "simple imperative of avoir + past participle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first/second-person plural imperative multiword-construction",
+                    "second-person singular imperative multiword-construction"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "chambre",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "chambres",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "plural"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ]
+}

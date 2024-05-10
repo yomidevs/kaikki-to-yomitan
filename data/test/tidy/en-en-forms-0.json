@@ -1,0 +1,70 @@
+{
+  "_type": "map",
+  "map": [
+    [
+      "bring",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "brings",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular present"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "bringing",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "present participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "brought",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past",
+                    "past participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "broughten",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past participle rare dialectal"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ]
+}

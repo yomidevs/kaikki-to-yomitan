@@ -124,4 +124,38 @@ function consoleOverwrite(text) {
     process.stdout.write(text);
 }
 
-module.exports = { sortTags, similarSort, mergePersonTags, writeInBatches, consoleOverwrite, clearConsoleLine };
+function logProgress(msg, current, total, interval = 1000) {
+    const percent = Math.floor(current / total * 100);
+    if (current % interval === 0) {
+        let progress = `${msg} ${current.toLocaleString()}`;
+        if (total) progress += ` / ${total.toLocaleString()} (${percent}%)`;
+        progress += '...';
+        consoleOverwrite(progress);
+    }
+}
+
+function mapJsonReplacer (key, value) {
+    if (value instanceof Map) {
+        return {
+            _type: "map",
+            map: [...value],
+        }
+    } else return value;
+}
+
+function mapJsonReviver (key, value) {
+    if (value._type == "map") return new Map(value.map);
+    else return value;
+}
+
+module.exports = { 
+    sortTags, 
+    similarSort,
+    mergePersonTags,
+    writeInBatches,
+    consoleOverwrite,
+    clearConsoleLine,
+    logProgress,
+    mapJsonReplacer,
+    mapJsonReviver
+};
