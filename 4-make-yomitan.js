@@ -348,7 +348,13 @@ ymt.dict = [...ymt.lemma, ...ymt.form];
 const indexJson = {
     format: 3,
     revision: currentDate,
-    sequenced: true
+    sequenced: true,
+    author: 'Kaikki-to-Yomitan contributors',
+    url: 'https://github.com/themoeway/kaikki-to-yomitan',
+    description: 'Dictionaries for various language pairs generated from Wiktionary data, via Kaikki and Kaikki-to-Yomitan.',
+    attribution: 'https://kaikki.org/',
+    sourceLanguage: source_iso,
+    targetLanguage: target_iso,
 };
 
 const folders = ['dict', 'ipa'];
