@@ -15,6 +15,7 @@
     {"iso": "ja",  "language": "Japanese",       "flag": "🇯🇵"},
     {"iso": "km",  "language": "Khmer",          "flag": "🇰🇭"},
     {"iso": "la",  "language": "Latin",          "flag": "🏛"},
+    {"iso": "nl",  "language": "Dutch",          "flag": "🇳🇱"},
     {"iso": "pl",  "language": "Polish",         "flag": "🇵🇱"},
     {"iso": "pt",  "language": "Portuguese",     "flag": "🇧🇷🇵🇹"},
     {"iso": "ru",  "language": "Russian",        "flag": "🇷🇺"},
