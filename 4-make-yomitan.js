@@ -269,6 +269,7 @@ let lastTermBankIndex = 0;
 
 {
     let ymtFormData = [];
+    let formCounter = 0;
 
     const multiwordInflections = [ // TODO: switch on source_iso
         'subjunctive I', // de
@@ -288,7 +289,6 @@ let lastTermBankIndex = 0;
             formsMap.set(lemma, forms);
         }
     
-        let formCounter = 0;
         for(const [lemma, forms] of formsMap.entries()){
             logProgress('Processing forms...', formCounter, undefined, 100);
             formCounter++;
@@ -414,7 +414,6 @@ writeFileSync(`data/language/${source_iso}/${target_iso}/skippedPartsOfSpeech.js
 console.log('4-make-yomitan.js: Done!')
 
 function writeBanks(folder, data, bankIndex = 0) {
-    consoleOverwrite(`4-make-yomitan.js: Writing ${folder}...`);
     if(folder === 'form') folder = 'dict';
 
     if(bankIndex === 0){
