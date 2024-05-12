@@ -100,10 +100,8 @@ function mergePersonTags(targetIso, tags) {
 }
 
 
-function writeInBatches(tempPath, inputArray, filenamePrefix, batchSize = 100000) {
+function writeInBatches(tempPath, inputArray, filenamePrefix, batchSize = 100000, bankIndex = 0) {
     consoleOverwrite(`Writing ${inputArray.length.toLocaleString()} entries of ${filenamePrefix}...`);
-
-    let bankIndex = 0;
 
     while (inputArray.length > 0) {
         const batch = inputArray.splice(0, batchSize);
@@ -113,6 +111,8 @@ function writeInBatches(tempPath, inputArray, filenamePrefix, batchSize = 100000
 
         writeFileSync(filename, content);
     }
+
+    return bankIndex;
 }
 
 function clearConsoleLine() {
@@ -125,10 +125,12 @@ function consoleOverwrite(text) {
 }
 
 function logProgress(msg, current, total, interval = 1000) {
-    const percent = Math.floor(current / total * 100);
     if (current % interval === 0) {
         let progress = `${msg} ${current.toLocaleString()}`;
-        if (total) progress += ` / ${total.toLocaleString()} (${percent}%)`;
+        if (total) {
+            const percent = Math.floor(current / total * 100);
+            progress += ` / ${total.toLocaleString()} (${percent}%)`;
+        }
         progress += '...';
         consoleOverwrite(progress);
     }

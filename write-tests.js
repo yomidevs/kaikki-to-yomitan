@@ -54,9 +54,9 @@ for (const {iso: sourceIso} of languages){
         prettifyFile(`data/test/tidy/${sourceIso}-${targetIso}-forms-0.json`);
         prettifyFile(`data/test/tidy/${sourceIso}-${targetIso}-lemmas.json`);
 
-        const dictFiles = readdirSync(`data/temp/dict`);
+        const dictFiles = readdirSync(`data/test/temp/dict`);
         for(const file of dictFiles){
-            if(file === `tag_bank_1.json` || file === 'term_bank_1.json'){
+            if(file === `tag_bank_1.json` || /^term_bank_\d+\.json$/.test(file)){
                 outputFile = `data/test/dict/${sourceIso}/${targetIso}/${file}`;
                 execSync(`mv data/test/temp/dict/${file} ${outputFile}`);
                 prettifyFile(outputFile);

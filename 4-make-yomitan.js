@@ -1,10 +1,10 @@
-const {readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, createWriteStream, unlinkSync} = require('fs');
+const { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, createWriteStream, unlinkSync, write } = require('fs');
+const { sortTags, writeInBatches, consoleOverwrite, mapJsonReviver, logProgress } = require('./util/util');
+
 const path = require('path');
 const date = require('date-and-time');
 const now = new Date();
 const currentDate = date.format(now, 'YYYY.MM.DD');
-
-const { sortTags, writeInBatches, consoleOverwrite, mapJsonReviver } = require('./util/util');
 
 const {
     source_iso, 
@@ -15,19 +15,17 @@ const {
     temp_folder: writeFolder
 } = process.env;
 
-consoleOverwrite(`4-make-yomitan.js: reading lemmas...`);
-const lemmasFile = `${readFolder}/${source_iso}-${target_iso}-lemmas.json`;
-const lemmaDict = JSON.parse(readFileSync(path.resolve(__dirname, lemmasFile)));
-consoleOverwrite(`4-make-yomitan.js: reading forms...`);
-
-const formsFiles = readdirSync(readFolder).filter((file) => file.startsWith(`${source_iso}-${target_iso}-forms-`));
-const formsMap = new Map();
-for (const file of formsFiles) {
-    const formsPart = JSON.parse(readFileSync(path.resolve(__dirname, readFolder, file)), mapJsonReviver);
-    for (const [lemma, forms] of formsPart.entries()) {
-        formsMap.set(lemma, forms);
-    }
-}
+const indexJson = {
+    format: 3,
+    revision: currentDate,
+    sequenced: true,
+    author: 'Kaikki-to-Yomitan contributors',
+    url: 'https://github.com/themoeway/kaikki-to-yomitan',
+    description: 'Dictionaries for various language pairs generated from Wiktionary data, via Kaikki and Kaikki-to-Yomitan.',
+    attribution: 'https://kaikki.org/',
+    sourceLanguage: source_iso,
+    targetLanguage: target_iso,
+};
 
 if (!existsSync(`data/language/${source_iso}/${target_iso}`)) {
     mkdirSync(`data/language/${source_iso}/${target_iso}`, {recursive: true});
@@ -107,12 +105,7 @@ function findModifiedTag(tag){
     return modifiedTag;
 }
 
-const ymt = {
-    lemma: [],
-    form: [],
-    ipa: [],
-    dict: []
-};
+const formsMap = new Map();
 
 const ymtTags = {
     ipa: {},
@@ -126,255 +119,279 @@ const skippedPartsOfSpeech = {};
 let ipaCount = 0;
 let termTagCount = 0;
 
-consoleOverwrite('4-make-yomitan.js: processing lemmas...');
-for (const [lemma, readings] of Object.entries(lemmaDict)) {
-    for (const [reading, partsOfSpeechOfWord] of Object.entries(readings)) {
-        normalizedLemma = normalizeOrthography(lemma);
-        let term = normalizedLemma;
+let lastTermBankIndex = 0;
 
-        if(lemma !== normalizedLemma && lemma !== reading){
-            term = lemma;
-            const lemmaForms = formsMap.get(lemma) || new Map();
-            const formPOSs = lemmaForms.get(normalizedLemma) || new Map();
-            const anyForms = formPOSs.get("any") || [];
-            formPOSs.set("any", anyForms);
-            lemmaForms.set(normalizedLemma, formPOSs);
-            formsMap.set(lemma, lemmaForms);
+{
+    const ymtLemmas = [];
+    const ymtIpa = [];
 
-            const message = `${normalizedLemma}\u00A0≈\u00A0${lemma}`;
-            if (!anyForms.includes(message)){
-                anyForms.push(message);
+    consoleOverwrite(`4-make-yomitan.js: reading lemmas...`);
+    const lemmasFile = `${readFolder}/${source_iso}-${target_iso}-lemmas.json`;
+    const lemmaDict = JSON.parse(readFileSync(path.resolve(__dirname, lemmasFile)));
+
+    consoleOverwrite('4-make-yomitan.js: processing lemmas...');
+    for (const [lemma, readings] of Object.entries(lemmaDict)) {
+        for (const [reading, partsOfSpeechOfWord] of Object.entries(readings)) {
+            normalizedLemma = normalizeOrthography(lemma);
+            let term = normalizedLemma;
+
+            if(lemma !== normalizedLemma && lemma !== reading){
+                term = lemma;
+                const lemmaForms = formsMap.get(lemma) || new Map();
+                const formPOSs = lemmaForms.get(normalizedLemma) || new Map();
+                const anyForms = formPOSs.get("any") || [];
+                formPOSs.set("any", anyForms);
+                lemmaForms.set(normalizedLemma, formPOSs);
+                formsMap.set(lemma, lemmaForms);
+
+                const message = `${normalizedLemma}\u00A0≈\u00A0${lemma}`;
+                if (!anyForms.includes(message)){
+                    anyForms.push(message);
+                }
             }
-        }
 
-        function debug(word) {
-            if (normalizedLemma === DEBUG_WORD) {
-                console.log('-------------------');
-                console.log(word);
+            function debug(word) {
+                if (normalizedLemma === DEBUG_WORD) {
+                    console.log('-------------------');
+                    console.log(word);
+                }
             }
-        }
 
-        const ipa = [];
+            const ipa = [];
 
-        for (const [pos, info] of Object.entries(partsOfSpeechOfWord)) {
-            const {senses} = info;
+            for (const [pos, info] of Object.entries(partsOfSpeechOfWord)) {
+                const {senses} = info;
 
-            const lemmaTags = [pos, ...(info.tags || [])];
-            ipa.push(...info.ipa);
-            const entries = {};
+                const lemmaTags = [pos, ...(info.tags || [])];
+                ipa.push(...info.ipa);
+                const entries = {};
 
-            for (const sense of senses) {
+                for (const sense of senses) {
 
-                const {glosses, tags} = sense;
-                const senseTags = [...lemmaTags, ...tags]
+                    const {glosses, tags} = sense;
+                    const senseTags = [...lemmaTags, ...tags]
 
-                glosses.forEach((gloss) => {
-                    debug(gloss);
+                    glosses.forEach((gloss) => {
+                        debug(gloss);
 
-                    function addGlossToEntries(joinedTags) {
-                        if(!gloss) return;
-                        if (entries[joinedTags]) {
-                            entries[joinedTags][5].push(gloss);
+                        function addGlossToEntries(joinedTags) {
+                            if(!gloss) return;
+                            if (entries[joinedTags]) {
+                                entries[joinedTags][5].push(gloss);
+                            } else {
+                                entries[joinedTags] = [
+                                    term, // term
+                                    reading !== normalizedLemma ? reading : '', // reading
+                                    joinedTags, // definition_tags
+                                    findPartOfSpeech(pos), // rules
+                                    0, // frequency
+                                    [gloss], // definitions
+                                    0, // sequence
+                                    '', // term_tags
+                                ];
+                            }
+                        }
+
+                        if (typeof gloss !== 'string') { 
+                            const { leftoverTags, recognizedTags } = processTags(lemmaTags, senseTags, [], pos);
+                            addGlossToEntries(recognizedTags.join(' '));
+                            return; 
+                        }
+
+                        const regex = /^\(([^()]+)\) ?/;
+                        const parenthesesContent = gloss.match(regex)?.[1];
+
+                        const parenthesesTags = parenthesesContent
+                            ? parenthesesContent.replace(/ or /g, ', ').split(', ').filter(Boolean)
+                            : [];
+
+                        const { leftoverTags, recognizedTags } = processTags(lemmaTags, senseTags, parenthesesTags, pos);
+
+                        gloss = gloss.replace(regex, leftoverTags);
+
+                        addGlossToEntries(recognizedTags.join(' '));
+                    });
+                    
+                }
+
+                debug(entries);
+                for (const [tags, entry] of Object.entries(entries)) {
+                    ymtLemmas.push(entry);
+                }
+            }
+
+            const mergedIpas = ipa.reduce((result, item) => {
+                ipaCount++;
+                item.tags = item.tags
+                    .map((tag) => {
+                        const fullTag = findTag(ipaTags, tag);
+                        if (fullTag){
+                            ymtTags.ipa[tag] = fullTag;
+                            return fullTag[0];
                         } else {
-                            entries[joinedTags] = [
-                                term, // term
-                                reading !== normalizedLemma ? reading : '', // reading
-                                joinedTags, // definition_tags
-                                findPartOfSpeech(pos), // rules
-                                0, // frequency
-                                [gloss], // definitions
-                                0, // sequence
-                                '', // term_tags
-                            ];
+                            incrementCounter(tag, skippedIpaTags)
+                            return tag;
+                        }
+                    })
+
+                const existingIpa = result.find((x) => x.ipa === item.ipa);
+
+                if (existingIpa) {
+                    existingIpa.tags = [...new Set([...existingIpa.tags, ...item.tags])];
+                } else {
+                    result.push(item);
+                }
+                return result;
+            }, []);
+
+            if (mergedIpas.length) {
+                ymtIpa.push([
+                    term,
+                    'ipa',
+                    {
+                        reading,
+                        transcriptions: mergedIpas
+                    }
+                ]);
+            }
+            delete readings[reading];
+        }
+        delete lemmaDict[lemma];
+    }
+
+    writeIndex('dict');
+    writeTags('dict');
+    lastTermBankIndex = writeBanks('dict', ymtLemmas, lastTermBankIndex);
+    writeIndex('ipa');
+    writeTags('ipa');
+    writeBanks('ipa', ymtIpa);
+}
+
+{
+    let ymtFormData = [];
+    let formCounter = 0;
+
+    const multiwordInflections = [ // TODO: switch on source_iso
+        'subjunctive I', // de
+        'subjunctive II', // de
+        'Archaic form', // de
+        'archaic form', // de
+        'female equivalent', // de
+        'perfect passive participle', // la
+        'perfect active participle', // la
+    ];
+
+    consoleOverwrite('4-make-yomitan.js: Processing forms...');
+    const formsFiles = readdirSync(readFolder).filter((file) => file.startsWith(`${source_iso}-${target_iso}-forms-`));
+    for (const file of formsFiles) {
+        const formsPart = JSON.parse(readFileSync(path.resolve(__dirname, readFolder, file)), mapJsonReviver);
+        for (const [lemma, forms] of formsPart.entries()) {
+            formsMap.set(lemma, forms);
+        }
+    
+        for(const [lemma, forms] of formsMap.entries()){
+            logProgress('Processing forms...', formCounter, undefined, 100);
+            formCounter++;
+            for (const [form, POSs] of forms.entries()) {
+                for (const [pos, glosses] of POSs.entries()) {
+                    const inflectionHypotheses = glosses.flatMap((gloss) => {
+                        if (!gloss) { return []; }
+
+                        gloss = gloss
+                            .replace(/-automated- /g, '')
+                        if(target_iso === 'en'){
+                            gloss = gloss
+                                .replace(/multiword-construction /g, '')
+
+                            for (const multiwordInflection of multiwordInflections) {
+                                gloss = gloss.replace(new RegExp(multiwordInflection), multiwordInflection.replace(/ /g, '\u00A0'));
+                            }
+                        }
+
+                        // TODO: decide on format for de-de
+                        // if(target_iso === 'de'){
+                        //     gloss = gloss
+                        //         .replace(/^\s*\[\d\]\s*/g, '')
+                        // }
+                        
+                        let hypotheses = [[gloss]];
+
+                        // TODO: generalize this
+                        if(target_iso === 'en'){
+                            hypotheses = gloss.split(' and ') 
+                            hypotheses = hypotheses.map((hypothesis) => hypothesis.split(' '));
+                        }
+
+                        if(target_iso === 'fr'){
+                            hypotheses = hypotheses.map((hypothesis) => 
+                                hypothesis.filter(inflection => !inflection.trim().startsWith('Voir la conjugaison'))
+                            );
+                        }
+
+                        hypotheses = hypotheses
+                            .map((hypothesis) => 
+                                hypothesis
+                                    .map((inflection) => (inflection).trim())
+                                    .filter(Boolean)
+                            ).filter(hypothesis => hypothesis.length);
+
+                        return hypotheses;
+                    });
+
+                    const uniqueHypotheses = [];
+
+                    for (const hypothesis of inflectionHypotheses) {
+                        const hypothesisStrings = uniqueHypotheses.map((hypothesis) => sortTags(target_iso, hypothesis).join(' '));
+                        const hypothesisString = sortTags(target_iso, hypothesis).join(' ');
+                        if (!hypothesisStrings.includes(hypothesisString)) {
+                            uniqueHypotheses.push(hypothesis);
                         }
                     }
 
-                    if (typeof gloss !== 'string') { 
-                        const { leftoverTags, recognizedTags } = processTags(lemmaTags, senseTags, [], pos);
-                        addGlossToEntries(recognizedTags.join(' '));
-                        return; 
-                    }
-
-                    const regex = /^\(([^()]+)\) ?/;
-                    const parenthesesContent = gloss.match(regex)?.[1];
-
-                    const parenthesesTags = parenthesesContent
-                        ? parenthesesContent.replace(/ or /g, ', ').split(', ').filter(Boolean)
-                        : [];
-
-                    const { leftoverTags, recognizedTags } = processTags(lemmaTags, senseTags, parenthesesTags, pos);
-
-                    gloss = gloss.replace(regex, leftoverTags);
-
-                    addGlossToEntries(recognizedTags.join(' '));
-                });
-                
-            }
-
-            debug(entries);
-            for (const [tags, entry] of Object.entries(entries)) {
-                ymt.lemma.push(entry);
-            }
-        }
-
-        const mergedIpas = ipa.reduce((result, item) => {
-            ipaCount++;
-            item.tags = item.tags
-                .map((tag) => {
-                    const fullTag = findTag(ipaTags, tag);
-                    if (fullTag){
-                        ymtTags.ipa[tag] = fullTag;
-                        return fullTag[0];
-                    } else {
-                        incrementCounter(tag, skippedIpaTags)
-                        return tag;
-                    }
-                })
-
-            const existingIpa = result.find((x) => x.ipa === item.ipa);
-
-            if (existingIpa) {
-                existingIpa.tags = [...new Set([...existingIpa.tags, ...item.tags])];
-            } else {
-                result.push(item);
-            }
-            return result;
-        }, []);
-
-        if (mergedIpas.length) {
-            ymt.ipa.push([
-                term,
-                'ipa',
-                {
-                    reading,
-                    transcriptions: mergedIpas
-                }
-            ]);
-        }
-    }
-}
-
-const multiwordInflections = [ // TODO: switch on source_iso
-    'subjunctive I', // de
-    'subjunctive II', // de
-    'Archaic form', // de
-    'archaic form', // de
-    'female equivalent', // de
-    'perfect passive participle', // la
-    'perfect active participle', // la
-];
-
-consoleOverwrite('4-make-yomitan.js: Processing forms...');
-for (const [lemma, forms] of formsMap.entries()) {
-    for (const [form, POSs] of forms.entries()) {
-        for (const [pos, glosses] of POSs.entries()) {
-            const inflectionHypotheses = glosses.flatMap((gloss) => {
-                if (!gloss) { return []; }
-
-                gloss = gloss
-                    .replace(/-automated- /g, '')
-                if(target_iso === 'en'){
-                    gloss = gloss
-                        .replace(/multiword-construction /g, '')
-
-                    for (const multiwordInflection of multiwordInflections) {
-                        gloss = gloss.replace(new RegExp(multiwordInflection), multiwordInflection.replace(/ /g, '\u00A0'));
-                    }
-                }
-
-                // TODO: decide on format for de-de
-                // if(target_iso === 'de'){
-                //     gloss = gloss
-                //         .replace(/^\s*\[\d\]\s*/g, '')
-                // }
-                
-                let hypotheses = [[gloss]];
-
-                // TODO: generalize this
-                if(target_iso === 'en'){
-                    hypotheses = gloss.split(' and ') 
-                    hypotheses = hypotheses.map((hypothesis) => hypothesis.split(' '));
-                }
-
-                if(target_iso === 'fr'){
-                    hypotheses = hypotheses.map((hypothesis) => 
-                        hypothesis.filter(inflection => !inflection.trim().startsWith('Voir la conjugaison'))
-                    );
-                }
-
-                hypotheses = hypotheses
-                    .map((hypothesis) => 
+                    const deinflectionDefinitions = uniqueHypotheses.map((hypothesis) => [
+                        lemma,
                         hypothesis
-                            .map((inflection) => (inflection).trim())
-                            .filter(Boolean)
-                    ).filter(hypothesis => hypothesis.length);
+                    ]);
 
-                return hypotheses;
-            });
-
-            uniqueHypotheses = [];
-
-            for (const hypothesis of inflectionHypotheses) {
-                const hypothesisStrings = uniqueHypotheses.map((hypothesis) => sortTags(target_iso, hypothesis).join(' '));
-                const hypothesisString = sortTags(target_iso, hypothesis).join(' ');
-                if (!hypothesisStrings.includes(hypothesisString)) {
-                    uniqueHypotheses.push(hypothesis);
+                    if(deinflectionDefinitions.length > 0){
+                        ymtFormData.push([
+                            normalizeOrthography(form),
+                            form !== normalizeOrthography(form) ? form : '',
+                            // 'non-lemma',
+                            // '',
+                            // 0,
+                            deinflectionDefinitions,
+                            // 0,
+                            // ''
+                        ]);
+                    }
+                    POSs.delete(pos);
                 }
             }
 
-            const deinflectionDefinitions = uniqueHypotheses.map((hypothesis) => [
-                lemma,
-                hypothesis
-            ]);
+            formsMap.delete(lemma);
 
-            if(deinflectionDefinitions.length > 0){
-                ymt.form.push([
-                    normalizeOrthography(form),
-                    form !== normalizeOrthography(form) ? form : '',
-                    'non-lemma',
-                    '',
-                    0,
-                    deinflectionDefinitions,
-                    0,
-                    ''
-                ]);
+            const chunkSize = 20000;
+            if(ymtFormData.length > chunkSize){
+                const ymtForms = ymtFormData.map((form, index) => {
+                    const [term, reading, definitions] = form;
+                    return [
+                        term,
+                        reading,
+                        'non-lemma',
+                        '',
+                        0,
+                        definitions,
+                        0,
+                        ''
+                    ];
+                });
+        
+                lastTermBankIndex = writeBanks('form', ymtForms, lastTermBankIndex);
+                ymtFormData = [];
             }
         }
     }
-}
-
-ymt.dict = [...ymt.lemma, ...ymt.form];
-
-const indexJson = {
-    format: 3,
-    revision: currentDate,
-    sequenced: true,
-    author: 'Kaikki-to-Yomitan contributors',
-    url: 'https://github.com/themoeway/kaikki-to-yomitan',
-    description: 'Dictionaries for various language pairs generated from Wiktionary data, via Kaikki and Kaikki-to-Yomitan.',
-    attribution: 'https://kaikki.org/',
-    sourceLanguage: source_iso,
-    targetLanguage: target_iso,
-};
-
-const folders = ['dict', 'ipa'];
-
-for (const folder of folders) {
-    consoleOverwrite(`4-make-yomitan.js: Writing ${folder}...`);
-    for (const file of readdirSync(`${writeFolder}/${folder}`)) {
-        if (file.includes('term_')) { unlinkSync(`${writeFolder}/${folder}/${file}`); }
-    }
-
-    writeFileSync(`${writeFolder}/${folder}/index.json`, JSON.stringify({
-        ...indexJson,
-        title: `${DICT_NAME}-${source_iso}-${target_iso}` + (folder === 'dict' ? '' : '-ipa'),
-    }));
-
-    writeFileSync(`${writeFolder}/${folder}/tag_bank_1.json`, JSON.stringify(Object.values(ymtTags[folder])));
-
-    const filename = folder === 'dict' ? 'term_bank_' : 'term_meta_bank_';
-
-    writeInBatches(writeFolder, ymt[folder], `${folder}/${filename}`, 25000);
 }
 
 console.log('');
@@ -395,6 +412,31 @@ writeFileSync(`data/language/${source_iso}/${target_iso}/skippedTermTags.json`, 
 writeFileSync(`data/language/${source_iso}/${target_iso}/skippedPartsOfSpeech.json`, JSON.stringify(sortBreakdown(skippedPartsOfSpeech), null, 2));
 
 console.log('4-make-yomitan.js: Done!')
+
+function writeBanks(folder, data, bankIndex = 0) {
+    if(folder === 'form') folder = 'dict';
+
+    if(bankIndex === 0){
+        for (const file of readdirSync(`${writeFolder}/${folder}`)) {
+            if (file.includes('term_')) { unlinkSync(`${writeFolder}/${folder}/${file}`); }
+        }
+    }
+
+    const filename = folder === 'ipa' ? 'term_meta_bank_' : 'term_bank_';
+
+    return writeInBatches(writeFolder, data, `${folder}/${filename}`, 25000, bankIndex);
+}
+
+function writeTags(folder) {
+    writeFileSync(`${writeFolder}/${folder}/tag_bank_1.json`, JSON.stringify(Object.values(ymtTags[folder])));
+}
+
+function writeIndex(folder) {
+    writeFileSync(`${writeFolder}/${folder}/index.json`, JSON.stringify({
+        ...indexJson,
+        title: `${DICT_NAME}-${source_iso}-${target_iso}` + (folder === 'dict' ? '' : '-ipa'),
+    }));
+}
 
 function processTags(lemmaTags, senseTags, parenthesesTags, pos) {
     let recognizedTags = [];
