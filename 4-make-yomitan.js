@@ -1,10 +1,10 @@
-const {readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, createWriteStream, unlinkSync} = require('fs');
+const { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, createWriteStream, unlinkSync, write } = require('fs');
+const { sortTags, writeInBatches, consoleOverwrite, mapJsonReviver, logProgress } = require('./util/util');
+
 const path = require('path');
 const date = require('date-and-time');
 const now = new Date();
 const currentDate = date.format(now, 'YYYY.MM.DD');
-
-const { sortTags, writeInBatches, consoleOverwrite, mapJsonReviver } = require('./util/util');
 
 const {
     source_iso, 
@@ -14,6 +14,18 @@ const {
     tidy_folder: readFolder,
     temp_folder: writeFolder
 } = process.env;
+
+const indexJson = {
+    format: 3,
+    revision: currentDate,
+    sequenced: true,
+    author: 'Kaikki-to-Yomitan contributors',
+    url: 'https://github.com/themoeway/kaikki-to-yomitan',
+    description: 'Dictionaries for various language pairs generated from Wiktionary data, via Kaikki and Kaikki-to-Yomitan.',
+    attribution: 'https://kaikki.org/',
+    sourceLanguage: source_iso,
+    targetLanguage: target_iso,
+};
 
 consoleOverwrite(`4-make-yomitan.js: reading lemmas...`);
 const lemmasFile = `${readFolder}/${source_iso}-${target_iso}-lemmas.json`;
@@ -125,6 +137,8 @@ const skippedPartsOfSpeech = {};
 
 let ipaCount = 0;
 let termTagCount = 0;
+
+let lastTermBankIndex = 0;
 
 consoleOverwrite('4-make-yomitan.js: processing lemmas...');
 for (const [lemma, readings] of Object.entries(lemmaDict)) {
@@ -251,8 +265,20 @@ for (const [lemma, readings] of Object.entries(lemmaDict)) {
                 }
             ]);
         }
+        delete readings[reading];
     }
+    delete lemmaDict[lemma];
 }
+
+writeIndex('dict');
+writeTags('dict');
+lastTermBankIndex = writeBanks('dict', ymt.lemma, lastTermBankIndex);
+writeIndex('ipa');
+writeTags('ipa');
+writeBanks('ipa', ymt.ipa);
+
+delete ymt['lemma'];
+delete ymt['ipa'];
 
 const multiwordInflections = [ // TODO: switch on source_iso
     'subjunctive I', // de
@@ -265,7 +291,9 @@ const multiwordInflections = [ // TODO: switch on source_iso
 ];
 
 consoleOverwrite('4-make-yomitan.js: Processing forms...');
-for (const [lemma, forms] of formsMap.entries()) {
+const formCount = formsMap.size;
+[...formsMap.entries()].forEach(([lemma, forms], index) => {
+    logProgress('Processing forms...', index, formCount, 10);
     for (const [form, POSs] of forms.entries()) {
         for (const [pos, glosses] of POSs.entries()) {
             const inflectionHypotheses = glosses.flatMap((gloss) => {
@@ -331,51 +359,37 @@ for (const [lemma, forms] of formsMap.entries()) {
                 ymt.form.push([
                     normalizeOrthography(form),
                     form !== normalizeOrthography(form) ? form : '',
-                    'non-lemma',
-                    '',
-                    0,
+                    // 'non-lemma',
+                    // '',
+                    // 0,
                     deinflectionDefinitions,
-                    0,
-                    ''
+                    // 0,
+                    // ''
                 ]);
             }
+            POSs.delete(pos);
         }
     }
-}
+    formsMap.delete(lemma);
+});
 
-ymt.dict = [...ymt.lemma, ...ymt.form];
+console.log("expanding forms");
+ymt.form = ymt.form.map((form, index) => {
+    logProgress('Expanding forms...', index, ymt.form.length, 1);
+    const [term, reading, definitions] = form;
+    return [
+        term,
+        reading,
+        'non-lemma',
+        '',
+        0,
+        definitions,
+        0,
+        ''
+    ]
+});
 
-const indexJson = {
-    format: 3,
-    revision: currentDate,
-    sequenced: true,
-    author: 'Kaikki-to-Yomitan contributors',
-    url: 'https://github.com/themoeway/kaikki-to-yomitan',
-    description: 'Dictionaries for various language pairs generated from Wiktionary data, via Kaikki and Kaikki-to-Yomitan.',
-    attribution: 'https://kaikki.org/',
-    sourceLanguage: source_iso,
-    targetLanguage: target_iso,
-};
-
-const folders = ['dict', 'ipa'];
-
-for (const folder of folders) {
-    consoleOverwrite(`4-make-yomitan.js: Writing ${folder}...`);
-    for (const file of readdirSync(`${writeFolder}/${folder}`)) {
-        if (file.includes('term_')) { unlinkSync(`${writeFolder}/${folder}/${file}`); }
-    }
-
-    writeFileSync(`${writeFolder}/${folder}/index.json`, JSON.stringify({
-        ...indexJson,
-        title: `${DICT_NAME}-${source_iso}-${target_iso}` + (folder === 'dict' ? '' : '-ipa'),
-    }));
-
-    writeFileSync(`${writeFolder}/${folder}/tag_bank_1.json`, JSON.stringify(Object.values(ymtTags[folder])));
-
-    const filename = folder === 'dict' ? 'term_bank_' : 'term_meta_bank_';
-
-    writeInBatches(writeFolder, ymt[folder], `${folder}/${filename}`, 25000);
-}
+lastTermBankIndex = writeBanks('form', ymt.form, lastTermBankIndex);
 
 console.log('');
 console.log(
@@ -395,6 +409,32 @@ writeFileSync(`data/language/${source_iso}/${target_iso}/skippedTermTags.json`, 
 writeFileSync(`data/language/${source_iso}/${target_iso}/skippedPartsOfSpeech.json`, JSON.stringify(sortBreakdown(skippedPartsOfSpeech), null, 2));
 
 console.log('4-make-yomitan.js: Done!')
+
+function writeBanks(folder, data, bankIndex = 0) {
+    consoleOverwrite(`4-make-yomitan.js: Writing ${folder}...`);
+    if(folder === 'form') folder = 'dict';
+
+    if(bankIndex === 0){
+        for (const file of readdirSync(`${writeFolder}/${folder}`)) {
+            if (file.includes('term_')) { unlinkSync(`${writeFolder}/${folder}/${file}`); }
+        }
+    }
+
+    const filename = folder === 'ipa' ? 'term_meta_bank_' : 'term_bank_';
+
+    return writeInBatches(writeFolder, data, `${folder}/${filename}`, 25000, bankIndex);
+}
+
+function writeTags(folder) {
+    writeFileSync(`${writeFolder}/${folder}/tag_bank_1.json`, JSON.stringify(Object.values(ymtTags[folder])));
+}
+
+function writeIndex(folder) {
+    writeFileSync(`${writeFolder}/${folder}/index.json`, JSON.stringify({
+        ...indexJson,
+        title: `${DICT_NAME}-${source_iso}-${target_iso}` + (folder === 'dict' ? '' : '-ipa'),
+    }));
+}
 
 function processTags(lemmaTags, senseTags, parenthesesTags, pos) {
     let recognizedTags = [];

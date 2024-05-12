@@ -100,10 +100,8 @@ function mergePersonTags(targetIso, tags) {
 }
 
 
-function writeInBatches(tempPath, inputArray, filenamePrefix, batchSize = 100000) {
+function writeInBatches(tempPath, inputArray, filenamePrefix, batchSize = 100000, bankIndex = 0) {
     consoleOverwrite(`Writing ${inputArray.length.toLocaleString()} entries of ${filenamePrefix}...`);
-
-    let bankIndex = 0;
 
     while (inputArray.length > 0) {
         const batch = inputArray.splice(0, batchSize);
@@ -113,6 +111,8 @@ function writeInBatches(tempPath, inputArray, filenamePrefix, batchSize = 100000
 
         writeFileSync(filename, content);
     }
+
+    return bankIndex;
 }
 
 function clearConsoleLine() {

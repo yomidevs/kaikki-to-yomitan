@@ -145,7 +145,7 @@ for target_lang in "${languages[@]}"; do
 
     # Step 4: Run tidy-up.js if the tidy files don't exist
     if \
-      [ ! -f "data/tidy/$source_iso-$target_iso-forms.json" ] || \
+      [ ! -f "data/tidy/$source_iso-$target_iso-forms-0.json" ] || \
       [ ! -f "data/tidy/$source_iso-$target_iso-lemmas.json" ] || \
       [ "$force_tidy" = true ]; then
         node --max-old-space-size="$max_memory_mb" 3-tidy-up.js
