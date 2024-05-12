@@ -268,16 +268,7 @@ let lastTermBankIndex = 0;
 }
 
 {
-    const ymtFormData = [];
-
-    consoleOverwrite(`4-make-yomitan.js: reading forms...`);
-    const formsFiles = readdirSync(readFolder).filter((file) => file.startsWith(`${source_iso}-${target_iso}-forms-`));
-    for (const file of formsFiles) {
-        const formsPart = JSON.parse(readFileSync(path.resolve(__dirname, readFolder, file)), mapJsonReviver);
-        for (const [lemma, forms] of formsPart.entries()) {
-            formsMap.set(lemma, forms);
-        }
-    }
+    let ymtFormData = [];
 
     const multiwordInflections = [ // TODO: switch on source_iso
         'subjunctive I', // de
@@ -290,107 +281,117 @@ let lastTermBankIndex = 0;
     ];
 
     consoleOverwrite('4-make-yomitan.js: Processing forms...');
-    const formCount = formsMap.size;
-    let formCounter = 0;
-    for(const [lemma, forms] of formsMap.entries()){
-        logProgress('Processing forms...', formCounter, formCount, 10);
-        formCounter++;
-        for (const [form, POSs] of forms.entries()) {
-            for (const [pos, glosses] of POSs.entries()) {
-                const inflectionHypotheses = glosses.flatMap((gloss) => {
-                    if (!gloss) { return []; }
+    const formsFiles = readdirSync(readFolder).filter((file) => file.startsWith(`${source_iso}-${target_iso}-forms-`));
+    for (const file of formsFiles) {
+        const formsPart = JSON.parse(readFileSync(path.resolve(__dirname, readFolder, file)), mapJsonReviver);
+        for (const [lemma, forms] of formsPart.entries()) {
+            formsMap.set(lemma, forms);
+        }
+    
+        let formCounter = 0;
+        for(const [lemma, forms] of formsMap.entries()){
+            logProgress('Processing forms...', formCounter, undefined, 100);
+            formCounter++;
+            for (const [form, POSs] of forms.entries()) {
+                for (const [pos, glosses] of POSs.entries()) {
+                    const inflectionHypotheses = glosses.flatMap((gloss) => {
+                        if (!gloss) { return []; }
 
-                    gloss = gloss
-                        .replace(/-automated- /g, '')
-                    if(target_iso === 'en'){
                         gloss = gloss
-                            .replace(/multiword-construction /g, '')
+                            .replace(/-automated- /g, '')
+                        if(target_iso === 'en'){
+                            gloss = gloss
+                                .replace(/multiword-construction /g, '')
 
-                        for (const multiwordInflection of multiwordInflections) {
-                            gloss = gloss.replace(new RegExp(multiwordInflection), multiwordInflection.replace(/ /g, '\u00A0'));
+                            for (const multiwordInflection of multiwordInflections) {
+                                gloss = gloss.replace(new RegExp(multiwordInflection), multiwordInflection.replace(/ /g, '\u00A0'));
+                            }
+                        }
+
+                        // TODO: decide on format for de-de
+                        // if(target_iso === 'de'){
+                        //     gloss = gloss
+                        //         .replace(/^\s*\[\d\]\s*/g, '')
+                        // }
+                        
+                        let hypotheses = [[gloss]];
+
+                        // TODO: generalize this
+                        if(target_iso === 'en'){
+                            hypotheses = gloss.split(' and ') 
+                            hypotheses = hypotheses.map((hypothesis) => hypothesis.split(' '));
+                        }
+
+                        if(target_iso === 'fr'){
+                            hypotheses = hypotheses.map((hypothesis) => 
+                                hypothesis.filter(inflection => !inflection.trim().startsWith('Voir la conjugaison'))
+                            );
+                        }
+
+                        hypotheses = hypotheses
+                            .map((hypothesis) => 
+                                hypothesis
+                                    .map((inflection) => (inflection).trim())
+                                    .filter(Boolean)
+                            ).filter(hypothesis => hypothesis.length);
+
+                        return hypotheses;
+                    });
+
+                    const uniqueHypotheses = [];
+
+                    for (const hypothesis of inflectionHypotheses) {
+                        const hypothesisStrings = uniqueHypotheses.map((hypothesis) => sortTags(target_iso, hypothesis).join(' '));
+                        const hypothesisString = sortTags(target_iso, hypothesis).join(' ');
+                        if (!hypothesisStrings.includes(hypothesisString)) {
+                            uniqueHypotheses.push(hypothesis);
                         }
                     }
 
-                    // TODO: decide on format for de-de
-                    // if(target_iso === 'de'){
-                    //     gloss = gloss
-                    //         .replace(/^\s*\[\d\]\s*/g, '')
-                    // }
-                    
-                    let hypotheses = [[gloss]];
-
-                    // TODO: generalize this
-                    if(target_iso === 'en'){
-                        hypotheses = gloss.split(' and ') 
-                        hypotheses = hypotheses.map((hypothesis) => hypothesis.split(' '));
-                    }
-
-                    if(target_iso === 'fr'){
-                        hypotheses = hypotheses.map((hypothesis) => 
-                            hypothesis.filter(inflection => !inflection.trim().startsWith('Voir la conjugaison'))
-                        );
-                    }
-
-                    hypotheses = hypotheses
-                        .map((hypothesis) => 
-                            hypothesis
-                                .map((inflection) => (inflection).trim())
-                                .filter(Boolean)
-                        ).filter(hypothesis => hypothesis.length);
-
-                    return hypotheses;
-                });
-
-                const uniqueHypotheses = [];
-
-                for (const hypothesis of inflectionHypotheses) {
-                    const hypothesisStrings = uniqueHypotheses.map((hypothesis) => sortTags(target_iso, hypothesis).join(' '));
-                    const hypothesisString = sortTags(target_iso, hypothesis).join(' ');
-                    if (!hypothesisStrings.includes(hypothesisString)) {
-                        uniqueHypotheses.push(hypothesis);
-                    }
-                }
-
-                const deinflectionDefinitions = uniqueHypotheses.map((hypothesis) => [
-                    lemma,
-                    hypothesis
-                ]);
-
-                if(deinflectionDefinitions.length > 0){
-                    ymtFormData.push([
-                        normalizeOrthography(form),
-                        form !== normalizeOrthography(form) ? form : '',
-                        // 'non-lemma',
-                        // '',
-                        // 0,
-                        deinflectionDefinitions,
-                        // 0,
-                        // ''
+                    const deinflectionDefinitions = uniqueHypotheses.map((hypothesis) => [
+                        lemma,
+                        hypothesis
                     ]);
+
+                    if(deinflectionDefinitions.length > 0){
+                        ymtFormData.push([
+                            normalizeOrthography(form),
+                            form !== normalizeOrthography(form) ? form : '',
+                            // 'non-lemma',
+                            // '',
+                            // 0,
+                            deinflectionDefinitions,
+                            // 0,
+                            // ''
+                        ]);
+                    }
+                    POSs.delete(pos);
                 }
-                POSs.delete(pos);
+            }
+
+            formsMap.delete(lemma);
+
+            const chunkSize = 20000;
+            if(ymtFormData.length > chunkSize){
+                const ymtForms = ymtFormData.map((form, index) => {
+                    const [term, reading, definitions] = form;
+                    return [
+                        term,
+                        reading,
+                        'non-lemma',
+                        '',
+                        0,
+                        definitions,
+                        0,
+                        ''
+                    ];
+                });
+        
+                lastTermBankIndex = writeBanks('form', ymtForms, lastTermBankIndex);
+                ymtFormData = [];
             }
         }
-        formsMap.delete(lemma);
     }
-
-    console.log("expanding forms");
-    const ymtForms = ymtFormData.map((form, index) => {
-        logProgress('Expanding forms...', index, ymtFormData.length, 1000);
-        const [term, reading, definitions] = form;
-        return [
-            term,
-            reading,
-            'non-lemma',
-            '',
-            0,
-            definitions,
-            0,
-            ''
-        ]
-    });
-
-    lastTermBankIndex = writeBanks('form', ymtForms, lastTermBankIndex);
 }
 
 console.log('');
