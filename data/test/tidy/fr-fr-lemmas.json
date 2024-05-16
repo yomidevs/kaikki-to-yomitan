@@ -1,0 +1,38 @@
+{
+  "avatar": {
+    "avatar": {
+      "noun": {
+        "ipa": [
+          {
+            "ipa": "\\a.va.taʁ\\",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "Dans la religion hindouiste, chacune des incarnations du dieu Vishnou."
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "Métamorphose, transformation d’un objet ou d’un individu qui en a déjà subi plusieurs."
+            ],
+            "tags": [
+              "figuratively"
+            ]
+          },
+          {
+            "glosses": [
+              "Mésaventure, malheur."
+            ],
+            "tags": [
+              "broadly"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

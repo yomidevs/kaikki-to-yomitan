@@ -1,0 +1,27 @@
+{
+  "_type": "map",
+  "map": [
+    [
+      "avatar",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "avatars",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "plural"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ]
+}
