@@ -179,6 +179,9 @@ function handleLine(line) {
 
             const formOf = sense.form_of;
             const tags = sense.tags || [];
+            if(sense.raw_tags && Array.isArray(sense.raw_tags)) {
+                tags.push(...sense.raw_tags);
+            }
 
             if (glossesArray.length > 0) {
                 if (!isInflectionGloss(glossesArray, formOf)) {
