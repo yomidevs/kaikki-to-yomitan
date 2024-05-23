@@ -36,7 +36,7 @@ jobs:
         run: npm install
 
       - name: Run auto.sh script
-        run: ./auto.sh Greek English
+        run: ./auto.sh ST any any
       
       - name: Generate list of .zip files
         id: generate_file_list
