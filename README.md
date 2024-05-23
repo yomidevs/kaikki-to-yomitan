@@ -1,5 +1,3 @@
-> ⚠️ The dictionary format requires Yomitan 24.01.20 to load, and 24.2.23 to work optimally. 
-
 Converts wiktionary data from https://kaikki.org/ to yomitan-compatible dictionaries. Converted dictionaries can be found in the [Releases](https://github.com/themoeway/kaikki-to-yomitan/releases) section.
 
 # Instructions
