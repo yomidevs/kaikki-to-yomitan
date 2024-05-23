@@ -22,7 +22,9 @@ jobs:
           python-version: '3.9'
     
       - name: Create .env file
-        run: cp .env.example .env
+        run: |
+          cp .env.example .env
+          sed -i 's/^DICT_NAME=.*/DICT_NAME=kty/' .env
 
       - name: Install jq
         run: sudo apt-get install -y jq
