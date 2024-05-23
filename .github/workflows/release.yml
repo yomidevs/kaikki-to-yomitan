@@ -34,8 +34,15 @@ jobs:
         run: npm install
 
       - name: Run auto.sh script
-        run: ./auto.sh Albanian English
+        run: ./auto.sh Greek English
       
+      - name: Generate list of .zip files
+      id: generate_file_list
+      run: |
+        find data/language -type f -name '*.zip' > zip_files.txt
+        cat zip_files.txt
+        echo "zip_files=$(cat zip_files.txt)" >> $GITHUB_OUTPUT
+
       - name: Configure git
         run: |
           git config --global user.name "github-actions[bot]"
@@ -58,6 +65,4 @@ jobs:
           tag_name: ${{ steps.tag.outputs.tag }}
           prerelease: true
           generate_release_notes: true
-          files: |
-            data/language/sq/en/abc-sq-en.zip
-            data/language/sq/en/abc-sq-en-ipa.zip
+          files: ${{ steps.generate_file_list.outputs.zip_files }}
