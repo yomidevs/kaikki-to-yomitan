@@ -1,0 +1,47 @@
+name: Create a new release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+    
+      - name: Create .env file
+        run: cp .env.example .env
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      - name: Install gzip
+        run: sudo apt-get install -y gzip
+
+      - name: Install npm dependencies
+        run: npm install
+
+      - name: Run auto.sh script
+        run: ./auto.sh Albanian English
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Test auto release
+          prerelease: true
+          generate_release_notes: true
+          files: |
+            data/language/sq/en/abc-sq-en.zip
+            data/language/sq/en/abc-sq-en-ipa.zip
