@@ -41,7 +41,9 @@ jobs:
         run: |
           find data/language -type f -name '*.zip' > zip_files.txt
           cat zip_files.txt
-          echo "zip_files=$(cat zip_files.txt)" >> $GITHUB_OUTPUT
+          echo "zip_files<<EOF" >> $GITHUB_OUTPUT
+          cat zip_files.txt >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Configure git
         run: |
