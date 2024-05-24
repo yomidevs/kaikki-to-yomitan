@@ -508,6 +508,9 @@ function normalizeOrthography(term) {
             
             return term.replace(diacriticsRegex, '')
         case 'la':
+        case 'ang':
+        case 'sga':
+        case 'grc':
             return term.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
         case 'ru':
             return term.replace(/́/g, '');
