@@ -37,6 +37,9 @@ jobs:
 
       - name: Run auto.sh script
         run: ./auto.sh any any ST
+
+      - name: Run merge-ipa
+        run: node merge-ipa.js
       
       - name: Generate list of .zip files
         id: generate_file_list
