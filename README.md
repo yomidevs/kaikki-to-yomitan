@@ -16,6 +16,10 @@ Converts wiktionary data from https://kaikki.org/ to yomitan-compatible dictiona
 
 ## Contributing
 
+Instead of a language name, you can also write `?` to run for all languages.
+- `./auto.sh ? English` will run for any language to English.
+- `./auto.sh German ?` will run for German to any language.
+
 The `auto.sh` script can also be run with flags:
 
 - k: keep files (by default, the script deletes the downloaded files after running),
@@ -23,8 +27,6 @@ The `auto.sh` script can also be run with flags:
 - t: force_tidy (run tidy script again, even if its output already exists. useful when the tidy script is updated),
 - y: force_ymt (run yomitan script again, even if its output already exists. useful when the yomitan script is updated),
 - F: force = force_tidy + force_ymt,
-- S: run for all source languages (`./auto.sh German English S` is like `./auto.sh * English`),
-- T: run for all target languages (`./auto.sh German English T` is like `./auto.sh German *`).
 
 Most often, you will want to run `./auto.sh German English kty` to recreate the dictionaries, then load them in yomitan and test them.
 

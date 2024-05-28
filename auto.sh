@@ -13,8 +13,6 @@ if [ -z "$1" ] || [ -z "$2" ]; then
 fi
 
 # Parse flags
-source_all=false
-target_all=false
 redownload=false
 force_tidy=false
 force_ymt=false
@@ -26,8 +24,6 @@ for flag in "${flags[@]}"; do
   case "$3" in 
     *"$flag"*) 
       case "$flag" in
-        'S') source_all=true ;;
-        'T') target_all=true ;;
         'd') redownload=true ;;
         't') force_tidy=true ;;
         'y') force_ymt=true ;;
@@ -47,8 +43,6 @@ if [ "$force_tidy" = true ]; then
   force_ymt=true
 fi
 
-echo "[S] source_all: $source_all"
-echo "[T] target_all: $target_all"
 echo "[d] redownload: $redownload"
 echo "[F] force: $force"
 echo "[t] force_tidy: $force_tidy"
@@ -61,8 +55,8 @@ npm i
 # Step 2: Run create-folder.js
 node 1-create-folders.js
 
-source_language="$1"
-target_language="$2"
+language_source="$1"
+language_target="$2"
 
 declare -a languages="($(
   jq -r '.[] | @json | @sh' languages.json
@@ -72,11 +66,11 @@ for target_lang in "${languages[@]}"; do
   target_iso=$(echo "${target_lang}" | jq -r '.iso')
   target_language_name=$(echo "${target_lang}" | jq -r '.language')
     
-  if [ "$target_language_name" != "$target_language" ] && [ "$target_all" = false ]; then
+  if [ "$target_language_name" != "$language_target" ] && [ "$language_target" != "?" ]; then
       continue
   fi
 
-    target_languages="es de en fr ru zh"
+    target_languages="de en es fr ru zh"
     if [[ ! "$target_languages" == *"$target_iso"* ]]; then
       echo "Unsupported target language: $target_iso"
       continue
@@ -91,7 +85,7 @@ for target_lang in "${languages[@]}"; do
     language=$(echo "${source_lang}" | jq -r '.language')
     flag=$(echo "${source_lang}" | jq -r '.flag')
     
-    if [ "$language" != "$source_language" ] && [ "$source_all" = false ]; then
+    if [ "$language" != "$language_source" ] && [ "$language_source" != "?" ]; then
       continue
     fi
 
