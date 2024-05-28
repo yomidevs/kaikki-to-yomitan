@@ -10,17 +10,17 @@ Converts wiktionary data from https://kaikki.org/ to yomitan-compatible dictiona
 
 2. If your language is not in `languages.json`, add it.
 
-3. Run `./auto.sh German English`.
+3. Run `./main.sh German English`.
 
 4. Dictionaries should be in `data/language/de/en`.
 
 ## Contributing
 
 Instead of a language name, you can also write `?` to run for all languages.
-- `./auto.sh ? English` will run for any language to English.
-- `./auto.sh German ?` will run for German to any language.
+- `./main.sh ? English` will run for any language to English.
+- `./main.sh German ?` will run for German to any language.
 
-The `auto.sh` script can also be run with flags:
+The `main.sh` script can also be run with flags:
 
 - k: keep files (by default, the script deletes the downloaded files after running),
 - d: redownload (by default, the script skips downloading if the file already exists),
@@ -28,7 +28,7 @@ The `auto.sh` script can also be run with flags:
 - y: force_ymt (run yomitan script again, even if its output already exists. useful when the yomitan script is updated),
 - F: force = force_tidy + force_ymt,
 
-Most often, you will want to run `./auto.sh German English kty` to recreate the dictionaries, then load them in yomitan and test them.
+Most often, you will want to run `./main.sh German English kty` to recreate the dictionaries, then load them in yomitan and test them.
 
 After a run, `data/language/de/en` should contain files with skipped tags for IPA and terms. Adding some to `tag_bank_ipa.json` or `tag_bank_term.json` is an easy way to improve the conversion for your language pair. 
 
