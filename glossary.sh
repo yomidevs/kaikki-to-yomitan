@@ -87,7 +87,7 @@ for target_lang in "${languages[@]}"; do
 
     dict_file="${DICT_NAME}-$source_iso-$target_iso-gloss.zip"
 
-    # Step 5: Create Yomitan files
+    # Step 4: Create Yomitan files
     echo "Creating Yomitan dict files"
     if node --max-old-space-size="$max_memory_mb" make-glossary.js; then
       echo "Zipping Yomitan files"
@@ -100,8 +100,13 @@ for target_lang in "${languages[@]}"; do
       rm -f "$kaikki_file"
     fi
 
+    output_folder="data/language/$source_iso/$target_iso"
+    if [ ! -d "$output_folder" ]; then
+      mkdir -p "$output_folder"
+    fi
+
     if [ -f "$dict_file" ]; then
-      mv "$dict_file" "data/language/$source_iso/$target_iso/"
+      mv "$dict_file" "$output_folder"
     fi
 
     echo "----------------------------------------------------------------------------------"
