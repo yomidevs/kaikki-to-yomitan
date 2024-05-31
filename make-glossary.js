@@ -54,12 +54,6 @@ function handleLine(line) {
         const { translations } = sense;
         if (!translations) continue;
         const formOf = sense.form_of;
-        // const tags = sense.tags || [];
-        // if(sense.raw_tags && Array.isArray(sense.raw_tags)) {
-        //     tags.push(...sense.raw_tags);
-        // }
-
-        // do everything
 
         for (const translation of translations) {
             const {code: translationIso, note} = translation;
