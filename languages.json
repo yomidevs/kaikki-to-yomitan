@@ -5,6 +5,7 @@
     {"iso": "de",  "language": "German",         "flag": "🇩🇪"},
     {"iso": "el",  "language": "Greek",          "flag": "🇬🇷"},
     {"iso": "en",  "language": "English",        "flag": "🇺🇸🇬🇧"},
+    {"iso": "eo",  "language": "Esperanto",      "flag": "🌍"},
     {"iso": "es",  "language": "Spanish",        "flag": "🇪🇸"},
     {"iso": "fa",  "language": "Persian",        "flag": "🇮🇷"},
     {"iso": "fi",  "language": "Finnish",        "flag": "🇫🇮"},
