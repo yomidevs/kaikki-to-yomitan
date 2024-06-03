@@ -114,6 +114,10 @@ lr.on('end', () => {
     clearConsoleLine();
     process.stdout.write(`Processed ${lineCount} lines...\n`);
 
+    if(ymtLemmas.length === 0){
+        console.log("No translations found. Exiting...");
+        process.exit(0);
+    }
 
     for (const file of readdirSync(`${writeFolder}/dict`)) {
         unlinkSync(`${writeFolder}/dict/${file}`);
