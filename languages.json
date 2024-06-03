@@ -2,6 +2,7 @@
     {"iso": "afb", "language": "Gulf Arabic",    "flag": "🇦🇪"},
     {"iso": "ang", "language": "Old English",    "flag": "🗡️"},
     {"iso": "ar",  "language": "Arabic",         "flag": "🇪🇬"},
+    {"iso": "cs",  "language": "Czech",          "flag": "🇨🇿"},
     {"iso": "de",  "language": "German",         "flag": "🇩🇪"},
     {"iso": "el",  "language": "Greek",          "flag": "🇬🇷"},
     {"iso": "en",  "language": "English",        "flag": "🇺🇸🇬🇧"},
