@@ -419,8 +419,7 @@
           "first-person",
           "singular",
           "perfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ],
       [
@@ -429,8 +428,7 @@
           "first/third-person",
           "singular",
           "perfect",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
         ]
       ]
     ],
@@ -450,8 +448,7 @@
           "first/third-person",
           "plural",
           "perfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ],
       [
@@ -460,8 +457,7 @@
           "first/third-person",
           "plural",
           "perfect",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
         ]
       ]
     ],
@@ -481,8 +477,7 @@
           "second-person",
           "singular",
           "perfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -502,8 +497,7 @@
           "second-person",
           "plural",
           "perfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -523,8 +517,7 @@
           "second-person",
           "singular",
           "perfect",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
         ]
       ]
     ],
@@ -544,8 +537,7 @@
           "second-person",
           "plural",
           "perfect",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
         ]
       ]
     ],
@@ -565,8 +557,7 @@
           "third-person",
           "singular",
           "perfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -586,8 +577,7 @@
           "first/third-person",
           "singular",
           "pluperfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -607,8 +597,7 @@
           "first/third-person",
           "plural",
           "pluperfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -628,8 +617,7 @@
           "first/third-person",
           "singular",
           "pluperfect",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
         ]
       ]
     ],
@@ -649,8 +637,7 @@
           "first/third-person",
           "plural",
           "pluperfect",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
         ]
       ]
     ],
@@ -670,8 +657,7 @@
           "second-person",
           "singular",
           "pluperfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -691,8 +677,7 @@
           "second-person",
           "plural",
           "pluperfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -712,8 +697,7 @@
           "second-person",
           "singular",
           "pluperfect",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
         ]
       ]
     ],
@@ -733,8 +717,26 @@
           "second-person",
           "plural",
           "pluperfect",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "pflegen werden",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "pflegen",
+        [
+          "future",
+          "future-i",
+          "infinitive"
         ]
       ]
     ],
@@ -755,8 +757,7 @@
           "singular",
           "future",
           "future-i",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ],
       [
@@ -788,8 +789,7 @@
           "plural",
           "future",
           "future-i",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ],
       [
@@ -843,8 +843,7 @@
           "plural",
           "future",
           "future-i",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ],
       [
@@ -920,8 +919,7 @@
           "singular",
           "future",
           "future-i",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -986,8 +984,26 @@
           "singular",
           "future",
           "future-i",
-          "indicative",
-          "multiword-construction"
+          "indicative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "gepflegt haben werden",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "pflegen",
+        [
+          "future",
+          "future-ii",
+          "infinitive"
         ]
       ]
     ],
@@ -1008,8 +1024,7 @@
           "singular",
           "future",
           "future-ii",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ],
       [
@@ -1041,8 +1056,7 @@
           "plural",
           "future",
           "future-ii",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ],
       [
@@ -1096,8 +1110,7 @@
           "plural",
           "future",
           "future-ii",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ],
       [
@@ -1173,8 +1186,7 @@
           "singular",
           "future",
           "future-ii",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -1239,8 +1251,7 @@
           "singular",
           "future",
           "future-ii",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -1420,8 +1431,7 @@
           "first-person",
           "singular",
           "perfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ],
       [
@@ -1430,8 +1440,7 @@
           "first/third-person",
           "singular",
           "perfect",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
         ]
       ]
     ],
@@ -1451,8 +1460,7 @@
           "first/third-person",
           "plural",
           "perfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ],
       [
@@ -1461,8 +1469,7 @@
           "first/third-person",
           "plural",
           "perfect",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
         ]
       ]
     ],
@@ -1482,8 +1489,7 @@
           "second-person",
           "singular",
           "perfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -1503,8 +1509,7 @@
           "second-person",
           "plural",
           "perfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -1524,8 +1529,7 @@
           "second-person",
           "singular",
           "perfect",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
         ]
       ]
     ],
@@ -1545,8 +1549,7 @@
           "second-person",
           "plural",
           "perfect",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
         ]
       ]
     ],
@@ -1566,8 +1569,7 @@
           "third-person",
           "singular",
           "perfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -1587,8 +1589,7 @@
           "first/third-person",
           "singular",
           "pluperfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -1608,8 +1609,7 @@
           "first/third-person",
           "plural",
           "pluperfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -1629,8 +1629,7 @@
           "first/third-person",
           "singular",
           "pluperfect",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
         ]
       ]
     ],
@@ -1650,8 +1649,7 @@
           "first/third-person",
           "plural",
           "pluperfect",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
         ]
       ]
     ],
@@ -1671,8 +1669,7 @@
           "second-person",
           "singular",
           "pluperfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -1692,8 +1689,7 @@
           "second-person",
           "plural",
           "pluperfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -1713,8 +1709,7 @@
           "second-person",
           "singular",
           "pluperfect",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
         ]
       ]
     ],
@@ -1734,8 +1729,26 @@
           "second-person",
           "plural",
           "pluperfect",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "gepflogen haben werden",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "pflegen",
+        [
+          "future",
+          "future-ii",
+          "infinitive"
         ]
       ]
     ],
@@ -1756,8 +1769,7 @@
           "singular",
           "future",
           "future-ii",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ],
       [
@@ -1789,8 +1801,7 @@
           "plural",
           "future",
           "future-ii",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ],
       [
@@ -1844,8 +1855,7 @@
           "plural",
           "future",
           "future-ii",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ],
       [
@@ -1921,8 +1931,7 @@
           "singular",
           "future",
           "future-ii",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -1987,8 +1996,7 @@
           "singular",
           "future",
           "future-ii",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -2044,6 +2052,14 @@
         "Fuchs",
         [
           "genitive",
+          "plural",
+          "definite"
+        ]
+      ],
+      [
+        "Fuchs",
+        [
+          "nominative",
           "plural",
           "definite"
         ]

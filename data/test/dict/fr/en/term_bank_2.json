@@ -58,8 +58,7 @@
         [
           "present",
           "gerund",
-          "participle",
-          "multiword-construction"
+          "participle"
         ]
       ]
     ],
@@ -656,8 +655,7 @@
         [
           "present",
           "perfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -675,8 +673,7 @@
         "prendre",
         [
           "pluperfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -695,8 +692,7 @@
         [
           "past",
           "indicative",
-          "anterior",
-          "multiword-construction"
+          "anterior"
         ]
       ]
     ],
@@ -715,8 +711,7 @@
         [
           "future",
           "perfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -734,8 +729,7 @@
         "prendre",
         [
           "perfect",
-          "conditional",
-          "multiword-construction"
+          "conditional"
         ]
       ]
     ],
@@ -913,8 +907,7 @@
         "prendre",
         [
           "past",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
         ]
       ]
     ],
@@ -932,8 +925,7 @@
         "prendre",
         [
           "pluperfect",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
         ]
       ]
     ],
@@ -952,8 +944,7 @@
         [
           "first/second-person",
           "plural",
-          "imperative",
-          "multiword-construction"
+          "imperative"
         ]
       ],
       [
@@ -961,8 +952,7 @@
         [
           "second-person",
           "singular",
-          "imperative",
-          "multiword-construction"
+          "imperative"
         ]
       ]
     ],
@@ -1000,8 +990,7 @@
         [
           "present",
           "gerund",
-          "participle",
-          "multiword-construction"
+          "participle"
         ]
       ]
     ],
@@ -1648,8 +1637,7 @@
         [
           "present",
           "perfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -1667,8 +1655,7 @@
         "sembler",
         [
           "pluperfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -1687,8 +1674,7 @@
         [
           "past",
           "indicative",
-          "anterior",
-          "multiword-construction"
+          "anterior"
         ]
       ]
     ],
@@ -1707,8 +1693,7 @@
         [
           "future",
           "perfect",
-          "indicative",
-          "multiword-construction"
+          "indicative"
         ]
       ]
     ],
@@ -1726,8 +1711,7 @@
         "sembler",
         [
           "perfect",
-          "conditional",
-          "multiword-construction"
+          "conditional"
         ]
       ]
     ],
@@ -1865,8 +1849,7 @@
         "sembler",
         [
           "past",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
         ]
       ]
     ],
@@ -1884,8 +1867,7 @@
         "sembler",
         [
           "pluperfect",
-          "subjunctive",
-          "multiword-construction"
+          "subjunctive"
         ]
       ]
     ],
@@ -1904,8 +1886,7 @@
         [
           "first/second-person",
           "plural",
-          "imperative",
-          "multiword-construction"
+          "imperative"
         ]
       ],
       [
@@ -1913,8 +1894,7 @@
         [
           "second-person",
           "singular",
-          "imperative",
-          "multiword-construction"
+          "imperative"
         ]
       ]
     ],

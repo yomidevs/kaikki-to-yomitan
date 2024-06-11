@@ -99,16 +99,25 @@ function addDeinflections(form, pos, lemma, inflections) {
 const blacklistedTags = [
     'inflection-template',
     'table-tags',
-    'nominative',
     'canonical',
     'class',
     'error-unknown-tag',
     'error-unrecognized-form',
-    'infinitive',
     'includes-article',
     'obsolete',
     'archaic',
-    'used-in-the-form'
+    'used-in-the-form',
+];
+
+const identityTags = [
+    'nominative',
+    'singular',
+    'infinitive',
+]
+
+const redundantTags = [
+    'multiword-construction',
+    'combined-form'
 ];
 
 let lineCount = 0;
@@ -133,21 +142,28 @@ function handleLine(line) {
     if (word && pos && senses) {
         if (forms) {
             forms.forEach((formData) => {
-                const { form, tags } = formData;
+                const { form } = formData;
+                let { tags } = formData;
+                if(!form) return;
+                if(!tags) return;
+                if(form === '-') return;
+                tags = tags.filter(tag => !redundantTags.includes(tag));
+                const isBlacklisted = tags.some(value => blacklistedTags.includes(value));
+                if (isBlacklisted) return;
+                const isIdentity = !tags.some(value => !identityTags.includes(value));
+                if (isIdentity) return;
 
-                if (form && tags && !tags.some(value => blacklistedTags.includes(value)) && form !== '-') {
-                    const wordMap = automatedForms.get(word) || new Map();
-                    const formMap = wordMap.get(form) || new Map();
-                    formMap.get(pos) || formMap.set(pos, new Set());
-                    wordMap.set(form, formMap);
-                    automatedForms.set(word, wordMap);
-                    
-                    const tagsSet = new Set((formMap.get(pos)));
-                    
-                    tagsSet.add(sortTags(targetIso, tags).join(' '));
-                    
-                    formMap.set(pos, similarSort(mergePersonTags(targetIso, Array.from(tagsSet))));                 
-                }
+                const wordMap = automatedForms.get(word) || new Map();
+                const formMap = wordMap.get(form) || new Map();
+                formMap.get(pos) || formMap.set(pos, new Set());
+                wordMap.set(form, formMap);
+                automatedForms.set(word, wordMap);
+                
+                const tagsSet = new Set((formMap.get(pos)));
+                
+                tagsSet.add(sortTags(targetIso, tags).join(' '));
+                
+                formMap.set(pos, similarSort(mergePersonTags(targetIso, Array.from(tagsSet))));                     
             });
         }
         

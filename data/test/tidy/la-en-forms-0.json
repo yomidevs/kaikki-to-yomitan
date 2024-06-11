@@ -15,6 +15,7 @@
                   "noun",
                   [
                     "genitive",
+                    "nominative plural",
                     "vocative plural",
                     "dative singular",
                     "genitive singular"
@@ -102,6 +103,23 @@
       {
         "_type": "map",
         "map": [
+          [
+            "legere",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "present active infinitive",
+                    "present infinitive",
+                    "second-person singular present imperative passive",
+                    "second-person singular present passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
           [
             "lēgī",
             {
@@ -647,21 +665,6 @@
                 [
                   "verb",
                   [
-                    "second-person singular present passive indicative"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "legere",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "second-person singular present imperative passive",
                     "second-person singular present passive indicative"
                   ]
                 ]
@@ -1567,6 +1570,76 @@
             }
           ],
           [
+            "lēgisse",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect active infinitive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctūrum esse",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "future active infinitive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legī",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "present passive infinitive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctum esse",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect passive infinitive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctum īrī",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "future passive infinitive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
             "legēns",
             {
               "_type": "map",
@@ -1732,6 +1805,22 @@
             }
           ],
           [
+            "līlia",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative plural",
+                    "nominative plural",
+                    "vocative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
             "līliōrum",
             {
               "_type": "map",
@@ -1774,21 +1863,6 @@
                 ]
               ]
             }
-          ],
-          [
-            "līlia",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "noun",
-                  [
-                    "accusative plural",
-                    "vocative plural"
-                  ]
-                ]
-              ]
-            }
           ]
         ]
       }
@@ -1808,7 +1882,9 @@
                   [
                     "feminine",
                     "accusative plural neuter",
+                    "nominative plural neuter",
                     "vocative plural neuter",
+                    "nominative singular feminine",
                     "vocative singular feminine"
                   ]
                 ]
@@ -1826,6 +1902,7 @@
                     "neuter",
                     "accusative singular masculine",
                     "accusative singular neuter",
+                    "nominative singular neuter",
                     "vocative singular neuter"
                   ]
                 ]
@@ -1882,6 +1959,7 @@
                 [
                   "verb",
                   [
+                    "nominative plural masculine",
                     "vocative plural masculine",
                     "genitive singular masculine",
                     "genitive singular neuter"
@@ -1898,6 +1976,7 @@
                 [
                   "verb",
                   [
+                    "nominative plural feminine",
                     "vocative plural feminine",
                     "dative singular feminine",
                     "genitive singular feminine"
