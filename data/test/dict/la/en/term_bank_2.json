@@ -15,6 +15,13 @@
       [
         "fāma",
         [
+          "nominative",
+          "plural"
+        ]
+      ],
+      [
+        "fāma",
+        [
           "vocative",
           "plural"
         ]
@@ -2612,6 +2619,38 @@
     ""
   ],
   [
+    "lilia",
+    "līlia",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "līlium",
+        [
+          "accusative",
+          "plural"
+        ]
+      ],
+      [
+        "līlium",
+        [
+          "nominative",
+          "plural"
+        ]
+      ],
+      [
+        "līlium",
+        [
+          "vocative",
+          "plural"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
     "liliorum",
     "līliōrum",
     "non-lemma",
@@ -2680,31 +2719,6 @@
     ""
   ],
   [
-    "lilia",
-    "līlia",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "līlium",
-        [
-          "accusative",
-          "plural"
-        ]
-      ],
-      [
-        "līlium",
-        [
-          "vocative",
-          "plural"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
     "recta",
     "rēcta",
     "non-lemma",
@@ -2728,9 +2742,25 @@
       [
         "rēctus",
         [
+          "nominative",
+          "plural",
+          "neuter"
+        ]
+      ],
+      [
+        "rēctus",
+        [
           "vocative",
           "plural",
           "neuter"
+        ]
+      ],
+      [
+        "rēctus",
+        [
+          "nominative",
+          "singular",
+          "feminine"
         ]
       ],
       [
@@ -2770,6 +2800,14 @@
         "rēctus",
         [
           "accusative",
+          "singular",
+          "neuter"
+        ]
+      ],
+      [
+        "rēctus",
+        [
+          "nominative",
           "singular",
           "neuter"
         ]
@@ -2847,6 +2885,14 @@
       [
         "rēctus",
         [
+          "nominative",
+          "plural",
+          "masculine"
+        ]
+      ],
+      [
+        "rēctus",
+        [
           "vocative",
           "plural",
           "masculine"
@@ -2879,6 +2925,14 @@
     "",
     0,
     [
+      [
+        "rēctus",
+        [
+          "nominative",
+          "plural",
+          "feminine"
+        ]
+      ],
       [
         "rēctus",
         [

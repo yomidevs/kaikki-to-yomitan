@@ -15,6 +15,7 @@
                   "noun",
                   [
                     "genitive",
+                    "nominative plural",
                     "vocative plural",
                     "dative singular",
                     "genitive singular"
@@ -1732,6 +1733,22 @@
             }
           ],
           [
+            "līlia",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative plural",
+                    "nominative plural",
+                    "vocative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
             "līliōrum",
             {
               "_type": "map",
@@ -1774,21 +1791,6 @@
                 ]
               ]
             }
-          ],
-          [
-            "līlia",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "noun",
-                  [
-                    "accusative plural",
-                    "vocative plural"
-                  ]
-                ]
-              ]
-            }
           ]
         ]
       }
@@ -1808,7 +1810,9 @@
                   [
                     "feminine",
                     "accusative plural neuter",
+                    "nominative plural neuter",
                     "vocative plural neuter",
+                    "nominative singular feminine",
                     "vocative singular feminine"
                   ]
                 ]
@@ -1826,6 +1830,7 @@
                     "neuter",
                     "accusative singular masculine",
                     "accusative singular neuter",
+                    "nominative singular neuter",
                     "vocative singular neuter"
                   ]
                 ]
@@ -1882,6 +1887,7 @@
                 [
                   "verb",
                   [
+                    "nominative plural masculine",
                     "vocative plural masculine",
                     "genitive singular masculine",
                     "genitive singular neuter"
@@ -1898,6 +1904,7 @@
                 [
                   "verb",
                   [
+                    "nominative plural feminine",
                     "vocative plural feminine",
                     "dative singular feminine",
                     "genitive singular feminine"

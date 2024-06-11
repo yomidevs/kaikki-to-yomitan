@@ -290,14 +290,10 @@ let lastTermBankIndex = 0;
                         if (!gloss) { return []; }
 
                         gloss = gloss
-                            .replace(/-automated- /g, '')
-                        if(target_iso === 'en'){
-                            gloss = gloss
-                                .replace(/multiword-construction /g, '')
+                            .replace(/multiword-construction /g, '')
 
-                            for (const multiwordInflection of multiwordInflections) {
-                                gloss = gloss.replace(new RegExp(multiwordInflection), multiwordInflection.replace(/ /g, '\u00A0'));
-                            }
+                        for (const multiwordInflection of multiwordInflections) {
+                            gloss = gloss.replace(new RegExp(multiwordInflection), multiwordInflection.replace(/ /g, '\u00A0'));
                         }
 
                         // TODO: decide on format for de-de
