@@ -1,0 +1,142 @@
+{
+  "_type": "map",
+  "map": [
+    [
+      "zpráva",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "zprávy",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative plural",
+                    "vocative plural",
+                    "genitive singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "zpráv",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "zprávě",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "dative singular",
+                    "locative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "zprávám",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "dative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "zprávu",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "zprávo",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "vocative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "zprávách",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "locative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "zprávou",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "instrumental singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "zprávami",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "instrumental plural"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ]
+}

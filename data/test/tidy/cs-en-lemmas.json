@@ -1,0 +1,32 @@
+{
+  "zpráva": {
+    "zpráva": {
+      "noun": {
+        "ipa": [
+          {
+            "ipa": "[ˈspraːva]",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "message"
+            ],
+            "tags": [
+              "feminine"
+            ]
+          },
+          {
+            "glosses": [
+              "report"
+            ],
+            "tags": [
+              "feminine"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
