@@ -38,8 +38,7 @@
         [
           "first-person",
           "singular",
-          "present",
-          "indicative"
+          "present indicative"
         ]
       ]
     ],
@@ -67,8 +66,7 @@
         [
           "first-person",
           "plural",
-          "present",
-          "indicative"
+          "present indicative"
         ]
       ]
     ],
@@ -87,8 +85,7 @@
         [
           "second-person",
           "singular",
-          "present",
-          "indicative"
+          "present indicative"
         ]
       ]
     ],
@@ -116,8 +113,7 @@
         [
           "second-person",
           "plural",
-          "present",
-          "indicative"
+          "present indicative"
         ]
       ]
     ],
@@ -156,8 +152,7 @@
         [
           "singular",
           "masculine",
-          "present",
-          "transgressive"
+          "present transgressive"
         ]
       ],
       [
@@ -165,8 +160,7 @@
         [
           "third-person",
           "singular",
-          "present",
-          "indicative"
+          "present indicative"
         ]
       ]
     ],
@@ -185,8 +179,7 @@
         [
           "third-person",
           "plural",
-          "present",
-          "indicative"
+          "present indicative"
         ]
       ]
     ],
@@ -204,20 +197,18 @@
         "přít",
         [
           "singular",
-          "masculine",
-          "animate",
           "past",
-          "participle"
+          "participle",
+          "masculine animate"
         ]
       ],
       [
         "přít",
         [
           "singular",
-          "masculine",
-          "inanimate",
           "past",
-          "participle"
+          "participle",
+          "masculine inanimate"
         ]
       ]
     ],
@@ -235,10 +226,9 @@
         "přít",
         [
           "plural",
-          "masculine",
-          "animate",
           "past",
-          "participle"
+          "participle",
+          "masculine animate"
         ]
       ]
     ],
@@ -265,10 +255,9 @@
         "přít",
         [
           "plural",
-          "masculine",
-          "inanimate",
           "past",
-          "participle"
+          "participle",
+          "masculine inanimate"
         ]
       ]
     ],
@@ -307,8 +296,7 @@
         [
           "singular",
           "masculine",
-          "present",
-          "transgressive"
+          "present transgressive"
         ]
       ]
     ],
@@ -328,8 +316,7 @@
           "singular",
           "feminine",
           "neuter",
-          "present",
-          "transgressive"
+          "present transgressive"
         ]
       ]
     ],
@@ -349,8 +336,7 @@
           "singular",
           "feminine",
           "neuter",
-          "present",
-          "transgressive"
+          "present transgressive"
         ]
       ]
     ],
@@ -368,8 +354,7 @@
         "přít",
         [
           "plural",
-          "present",
-          "transgressive"
+          "present transgressive"
         ]
       ]
     ],
@@ -387,8 +372,7 @@
         "přít",
         [
           "plural",
-          "present",
-          "transgressive"
+          "present transgressive"
         ]
       ]
     ],
