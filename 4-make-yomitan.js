@@ -45,6 +45,8 @@ const ipaTags = [...targetLanguageIpaTags, ...languageIpaTags];
 
 const partsOfSpeech = loadJsonArray(`data/language/target-language-tags/${target_iso}/parts_of_speech.json`);
 
+const multiwordInflections = loadJsonArray(`data/language/${source_iso}/${target_iso}/multiword_inflections.json`);
+
 const tagModifiers = [
     ['chiefly', 'chief'],
     ['usually', 'usu'],
@@ -270,16 +272,6 @@ let lastTermBankIndex = 0;
 {
     let ymtFormData = [];
     let formCounter = 0;
-
-    const multiwordInflections = [ // TODO: switch on source_iso
-        'subjunctive I', // de
-        'subjunctive II', // de
-        'Archaic form', // de
-        'archaic form', // de
-        'female equivalent', // de
-        'perfect passive participle', // la
-        'perfect active participle', // la
-    ];
 
     consoleOverwrite('4-make-yomitan.js: Processing forms...');
     const formsFiles = readdirSync(readFolder).filter((file) => file.startsWith(`${source_iso}-${target_iso}-forms-`));
