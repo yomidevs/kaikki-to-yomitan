@@ -48,5 +48,29 @@
         ]
       }
     }
+  },
+  "přít": {
+    "přít": {
+      "verb": {
+        "ipa": [
+          {
+            "ipa": "[ˈpr̝̊iːt]",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "(reflexive with se) to dispute"
+            ],
+            "tags": [
+              "imperfective",
+              "reflexive",
+              "with se"
+            ]
+          }
+        ]
+      }
+    }
   }
 }
