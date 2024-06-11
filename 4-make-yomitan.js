@@ -373,24 +373,12 @@ let lastTermBankIndex = 0;
 
             const chunkSize = 20000;
             if(ymtFormData.length > chunkSize){
-                const ymtForms = ymtFormData.map((form, index) => {
-                    const [term, reading, definitions] = form;
-                    return [
-                        term,
-                        reading,
-                        'non-lemma',
-                        '',
-                        0,
-                        definitions,
-                        0,
-                        ''
-                    ];
-                });
-        
-                lastTermBankIndex = writeBanks('form', ymtForms, lastTermBankIndex);
-                ymtFormData = [];
+                ymtFormData = writeYmtFormData(ymtFormData);
             }
         }
+    }
+    if(ymtFormData.length){
+        writeYmtFormData(ymtFormData);
     }
 }
 
@@ -412,6 +400,26 @@ writeFileSync(`data/language/${source_iso}/${target_iso}/skippedTermTags.json`, 
 writeFileSync(`data/language/${source_iso}/${target_iso}/skippedPartsOfSpeech.json`, JSON.stringify(sortBreakdown(skippedPartsOfSpeech), null, 2));
 
 console.log('4-make-yomitan.js: Done!')
+
+function writeYmtFormData(ymtFormData) {
+    const ymtForms = ymtFormData.map((form, index) => {
+        const [term, reading, definitions] = form;
+        return [
+            term,
+            reading,
+            'non-lemma',
+            '',
+            0,
+            definitions,
+            0,
+            ''
+        ];
+    });
+
+    lastTermBankIndex = writeBanks('form', ymtForms, lastTermBankIndex);
+    ymtFormData = [];
+    return ymtFormData;
+}
 
 function writeBanks(folder, data, bankIndex = 0) {
     if(folder === 'form') folder = 'dict';
