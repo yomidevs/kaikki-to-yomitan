@@ -103,7 +103,6 @@ const blacklistedTags = [
     'class',
     'error-unknown-tag',
     'error-unrecognized-form',
-    'infinitive',
     'includes-article',
     'obsolete',
     'archaic',
@@ -113,6 +112,7 @@ const blacklistedTags = [
 const identityTags = [
     'nominative',
     'singular',
+    'infinitive',
 ]
 
 let lineCount = 0;
