@@ -2,6 +2,7 @@
 !tag_bank_term.json
 !tag_bank_ipa.json
 !parts_of_speech.json
+!multiword_inflections.json
 !tag_order.json
 !languages.json
 !package*.json
