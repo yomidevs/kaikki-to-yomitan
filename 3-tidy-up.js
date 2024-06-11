@@ -106,7 +106,7 @@ const blacklistedTags = [
     'includes-article',
     'obsolete',
     'archaic',
-    'used-in-the-form'
+    'used-in-the-form',
 ];
 
 const identityTags = [
@@ -114,6 +114,11 @@ const identityTags = [
     'singular',
     'infinitive',
 ]
+
+const redundantTags = [
+    'multiword-construction',
+    'combined-form'
+];
 
 let lineCount = 0;
 consoleOverwrite(`3-tidy-up.js started...`);
@@ -137,10 +142,12 @@ function handleLine(line) {
     if (word && pos && senses) {
         if (forms) {
             forms.forEach((formData) => {
-                const { form, tags } = formData;
+                const { form } = formData;
+                let { tags } = formData;
                 if(!form) return;
                 if(!tags) return;
                 if(form === '-') return;
+                tags = tags.filter(tag => !redundantTags.includes(tag));
                 const isBlacklisted = tags.some(value => blacklistedTags.includes(value));
                 if (isBlacklisted) return;
                 const isIdentity = !tags.some(value => !identityTags.includes(value));

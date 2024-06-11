@@ -104,6 +104,23 @@
         "_type": "map",
         "map": [
           [
+            "legere",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "present active infinitive",
+                    "present infinitive",
+                    "second-person singular present imperative passive",
+                    "second-person singular present passive indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
             "lēgī",
             {
               "_type": "map",
@@ -648,21 +665,6 @@
                 [
                   "verb",
                   [
-                    "second-person singular present passive indicative"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "legere",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "second-person singular present imperative passive",
                     "second-person singular present passive indicative"
                   ]
                 ]
@@ -1562,6 +1564,76 @@
                   "verb",
                   [
                     "third-person plural future imperative passive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgisse",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect active infinitive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctūrum esse",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "future active infinitive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "legī",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "present passive infinitive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctum esse",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect passive infinitive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctum īrī",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "future passive infinitive"
                   ]
                 ]
               ]

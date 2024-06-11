@@ -828,6 +828,167 @@
             }
           ],
           [
+            "vivirme",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "accusative infinitive object-first-person object-singular",
+                    "dative infinitive object-first-person object-singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "vivirte",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "accusative infinitive object-second-person object-singular",
+                    "dative infinitive object-second-person object-singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "vivirle",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "dative infinitive object-third-person object-singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "vivirse",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "accusative infinitive object-third-person object-plural",
+                    "accusative infinitive object-third-person object-singular",
+                    "dative infinitive object-third-person object-plural",
+                    "dative infinitive object-third-person object-singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "vivirnos",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "accusative infinitive object-first-person object-plural",
+                    "dative infinitive object-first-person object-plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "viviros",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "accusative infinitive object-second-person object-plural",
+                    "dative infinitive object-second-person object-plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "vivirles",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "dative infinitive object-third-person object-plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "vivirlo",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "accusative infinitive object-third-person object-singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "vivirla",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "accusative infinitive object-third-person object-singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "vivirlos",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "accusative infinitive object-third-person object-plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "vivirlas",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "accusative infinitive object-third-person object-plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
             "viviéndome",
             {
               "_type": "map",
@@ -835,8 +996,8 @@
                 [
                   "verb",
                   [
-                    "accusative gerund object-first-person object-singular combined-form",
-                    "dative gerund object-first-person object-singular combined-form"
+                    "accusative gerund object-first-person object-singular",
+                    "dative gerund object-first-person object-singular"
                   ]
                 ]
               ]
@@ -850,8 +1011,8 @@
                 [
                   "verb",
                   [
-                    "accusative gerund object-second-person object-singular combined-form",
-                    "dative gerund object-second-person object-singular combined-form"
+                    "accusative gerund object-second-person object-singular",
+                    "dative gerund object-second-person object-singular"
                   ]
                 ]
               ]
@@ -865,7 +1026,7 @@
                 [
                   "verb",
                   [
-                    "dative gerund object-third-person object-singular combined-form"
+                    "dative gerund object-third-person object-singular"
                   ]
                 ]
               ]
@@ -879,10 +1040,10 @@
                 [
                   "verb",
                   [
-                    "accusative gerund object-third-person object-plural combined-form",
-                    "accusative gerund object-third-person object-singular combined-form",
-                    "dative gerund object-third-person object-plural combined-form",
-                    "dative gerund object-third-person object-singular combined-form"
+                    "accusative gerund object-third-person object-plural",
+                    "accusative gerund object-third-person object-singular",
+                    "dative gerund object-third-person object-plural",
+                    "dative gerund object-third-person object-singular"
                   ]
                 ]
               ]
@@ -896,8 +1057,8 @@
                 [
                   "verb",
                   [
-                    "accusative gerund object-first-person object-plural combined-form",
-                    "dative gerund object-first-person object-plural combined-form"
+                    "accusative gerund object-first-person object-plural",
+                    "dative gerund object-first-person object-plural"
                   ]
                 ]
               ]
@@ -911,8 +1072,8 @@
                 [
                   "verb",
                   [
-                    "accusative gerund object-second-person object-plural combined-form",
-                    "dative gerund object-second-person object-plural combined-form"
+                    "accusative gerund object-second-person object-plural",
+                    "dative gerund object-second-person object-plural"
                   ]
                 ]
               ]
@@ -926,7 +1087,7 @@
                 [
                   "verb",
                   [
-                    "dative gerund object-third-person object-plural combined-form"
+                    "dative gerund object-third-person object-plural"
                   ]
                 ]
               ]
@@ -940,7 +1101,7 @@
                 [
                   "verb",
                   [
-                    "accusative gerund object-third-person object-singular combined-form"
+                    "accusative gerund object-third-person object-singular"
                   ]
                 ]
               ]
@@ -954,7 +1115,7 @@
                 [
                   "verb",
                   [
-                    "accusative gerund object-third-person object-singular combined-form"
+                    "accusative gerund object-third-person object-singular"
                   ]
                 ]
               ]
@@ -968,7 +1129,7 @@
                 [
                   "verb",
                   [
-                    "accusative gerund object-third-person object-plural combined-form"
+                    "accusative gerund object-third-person object-plural"
                   ]
                 ]
               ]
@@ -982,7 +1143,7 @@
                 [
                   "verb",
                   [
-                    "accusative gerund object-third-person object-plural combined-form"
+                    "accusative gerund object-third-person object-plural"
                   ]
                 ]
               ]
@@ -996,8 +1157,8 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person singular imperative object-first-person object-singular combined-form with-tú",
-                    "informal dative second-person singular imperative object-first-person object-singular combined-form with-tú"
+                    "informal accusative second-person singular imperative object-first-person object-singular with-tú",
+                    "informal dative second-person singular imperative object-first-person object-singular with-tú"
                   ]
                 ]
               ]
@@ -1011,8 +1172,8 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person singular imperative object-second-person object-singular combined-form with-tú",
-                    "informal dative second-person singular imperative object-second-person object-singular combined-form with-tú"
+                    "informal accusative second-person singular imperative object-second-person object-singular with-tú",
+                    "informal dative second-person singular imperative object-second-person object-singular with-tú"
                   ]
                 ]
               ]
@@ -1026,7 +1187,7 @@
                 [
                   "verb",
                   [
-                    "informal dative second-person singular imperative object-third-person object-singular combined-form with-tú"
+                    "informal dative second-person singular imperative object-third-person object-singular with-tú"
                   ]
                 ]
               ]
@@ -1040,8 +1201,8 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person singular imperative object-first-person object-plural combined-form with-tú",
-                    "informal dative second-person singular imperative object-first-person object-plural combined-form with-tú"
+                    "informal accusative second-person singular imperative object-first-person object-plural with-tú",
+                    "informal dative second-person singular imperative object-first-person object-plural with-tú"
                   ]
                 ]
               ]
@@ -1055,7 +1216,7 @@
                 [
                   "verb",
                   [
-                    "informal dative second-person singular imperative object-third-person object-plural combined-form with-tú"
+                    "informal dative second-person singular imperative object-third-person object-plural with-tú"
                   ]
                 ]
               ]
@@ -1069,7 +1230,7 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person singular imperative object-third-person object-singular combined-form with-tú"
+                    "informal accusative second-person singular imperative object-third-person object-singular with-tú"
                   ]
                 ]
               ]
@@ -1083,7 +1244,7 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person singular imperative object-third-person object-singular combined-form with-tú"
+                    "informal accusative second-person singular imperative object-third-person object-singular with-tú"
                   ]
                 ]
               ]
@@ -1097,7 +1258,7 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person singular imperative object-third-person object-plural combined-form with-tú"
+                    "informal accusative second-person singular imperative object-third-person object-plural with-tú"
                   ]
                 ]
               ]
@@ -1111,7 +1272,7 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person singular imperative object-third-person object-plural combined-form with-tú"
+                    "informal accusative second-person singular imperative object-third-person object-plural with-tú"
                   ]
                 ]
               ]
@@ -1125,8 +1286,8 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person singular imperative object-first-person object-singular combined-form with-vos",
-                    "informal dative second-person singular imperative object-first-person object-singular combined-form with-vos"
+                    "informal accusative second-person singular imperative object-first-person object-singular with-vos",
+                    "informal dative second-person singular imperative object-first-person object-singular with-vos"
                   ]
                 ]
               ]
@@ -1140,8 +1301,8 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person singular imperative object-second-person object-singular combined-form with-vos",
-                    "informal dative second-person singular imperative object-second-person object-singular combined-form with-vos"
+                    "informal accusative second-person singular imperative object-second-person object-singular with-vos",
+                    "informal dative second-person singular imperative object-second-person object-singular with-vos"
                   ]
                 ]
               ]
@@ -1155,7 +1316,7 @@
                 [
                   "verb",
                   [
-                    "informal dative second-person singular imperative object-third-person object-singular combined-form with-vos"
+                    "informal dative second-person singular imperative object-third-person object-singular with-vos"
                   ]
                 ]
               ]
@@ -1169,8 +1330,8 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person singular imperative object-first-person object-plural combined-form with-vos",
-                    "informal dative second-person singular imperative object-first-person object-plural combined-form with-vos"
+                    "informal accusative second-person singular imperative object-first-person object-plural with-vos",
+                    "informal dative second-person singular imperative object-first-person object-plural with-vos"
                   ]
                 ]
               ]
@@ -1184,7 +1345,7 @@
                 [
                   "verb",
                   [
-                    "informal dative second-person singular imperative object-third-person object-plural combined-form with-vos"
+                    "informal dative second-person singular imperative object-third-person object-plural with-vos"
                   ]
                 ]
               ]
@@ -1198,7 +1359,7 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person singular imperative object-third-person object-singular combined-form with-vos"
+                    "informal accusative second-person singular imperative object-third-person object-singular with-vos"
                   ]
                 ]
               ]
@@ -1212,7 +1373,7 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person singular imperative object-third-person object-singular combined-form with-vos"
+                    "informal accusative second-person singular imperative object-third-person object-singular with-vos"
                   ]
                 ]
               ]
@@ -1226,7 +1387,7 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person singular imperative object-third-person object-plural combined-form with-vos"
+                    "informal accusative second-person singular imperative object-third-person object-plural with-vos"
                   ]
                 ]
               ]
@@ -1240,7 +1401,7 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person singular imperative object-third-person object-plural combined-form with-vos"
+                    "informal accusative second-person singular imperative object-third-person object-plural with-vos"
                   ]
                 ]
               ]
@@ -1254,8 +1415,8 @@
                 [
                   "verb",
                   [
-                    "formal accusative second-person singular imperative object-first-person object-singular combined-form",
-                    "formal dative second-person singular imperative object-first-person object-singular combined-form"
+                    "formal accusative second-person singular imperative object-first-person object-singular",
+                    "formal dative second-person singular imperative object-first-person object-singular"
                   ]
                 ]
               ]
@@ -1269,7 +1430,7 @@
                 [
                   "verb",
                   [
-                    "formal dative second-person singular imperative object-third-person object-singular combined-form"
+                    "formal dative second-person singular imperative object-third-person object-singular"
                   ]
                 ]
               ]
@@ -1283,8 +1444,8 @@
                 [
                   "verb",
                   [
-                    "formal accusative second-person singular imperative object-third-person object-singular combined-form",
-                    "formal dative second-person singular imperative object-third-person object-singular combined-form"
+                    "formal accusative second-person singular imperative object-third-person object-singular",
+                    "formal dative second-person singular imperative object-third-person object-singular"
                   ]
                 ]
               ]
@@ -1298,8 +1459,8 @@
                 [
                   "verb",
                   [
-                    "formal accusative second-person singular imperative object-first-person object-plural combined-form",
-                    "formal dative second-person singular imperative object-first-person object-plural combined-form"
+                    "formal accusative second-person singular imperative object-first-person object-plural",
+                    "formal dative second-person singular imperative object-first-person object-plural"
                   ]
                 ]
               ]
@@ -1313,7 +1474,7 @@
                 [
                   "verb",
                   [
-                    "formal dative second-person singular imperative object-third-person object-plural combined-form"
+                    "formal dative second-person singular imperative object-third-person object-plural"
                   ]
                 ]
               ]
@@ -1327,7 +1488,7 @@
                 [
                   "verb",
                   [
-                    "formal accusative second-person singular imperative object-third-person object-singular combined-form"
+                    "formal accusative second-person singular imperative object-third-person object-singular"
                   ]
                 ]
               ]
@@ -1341,7 +1502,7 @@
                 [
                   "verb",
                   [
-                    "formal accusative second-person singular imperative object-third-person object-singular combined-form"
+                    "formal accusative second-person singular imperative object-third-person object-singular"
                   ]
                 ]
               ]
@@ -1355,7 +1516,7 @@
                 [
                   "verb",
                   [
-                    "formal accusative second-person singular imperative object-third-person object-plural combined-form"
+                    "formal accusative second-person singular imperative object-third-person object-plural"
                   ]
                 ]
               ]
@@ -1369,7 +1530,7 @@
                 [
                   "verb",
                   [
-                    "formal accusative second-person singular imperative object-third-person object-plural combined-form"
+                    "formal accusative second-person singular imperative object-third-person object-plural"
                   ]
                 ]
               ]
@@ -1383,8 +1544,8 @@
                 [
                   "verb",
                   [
-                    "accusative first-person plural imperative object-second-person object-singular combined-form",
-                    "dative first-person plural imperative object-second-person object-singular combined-form"
+                    "accusative first-person plural imperative object-second-person object-singular",
+                    "dative first-person plural imperative object-second-person object-singular"
                   ]
                 ]
               ]
@@ -1398,7 +1559,7 @@
                 [
                   "verb",
                   [
-                    "dative first-person plural imperative object-third-person object-singular combined-form"
+                    "dative first-person plural imperative object-third-person object-singular"
                   ]
                 ]
               ]
@@ -1412,8 +1573,8 @@
                 [
                   "verb",
                   [
-                    "accusative first-person plural imperative object-first-person object-plural combined-form",
-                    "dative first-person plural imperative object-first-person object-plural combined-form"
+                    "accusative first-person plural imperative object-first-person object-plural",
+                    "dative first-person plural imperative object-first-person object-plural"
                   ]
                 ]
               ]
@@ -1427,8 +1588,8 @@
                 [
                   "verb",
                   [
-                    "accusative first-person plural imperative object-second-person object-plural combined-form",
-                    "dative first-person plural imperative object-second-person object-plural combined-form"
+                    "accusative first-person plural imperative object-second-person object-plural",
+                    "dative first-person plural imperative object-second-person object-plural"
                   ]
                 ]
               ]
@@ -1442,7 +1603,7 @@
                 [
                   "verb",
                   [
-                    "dative first-person plural imperative object-third-person object-plural combined-form"
+                    "dative first-person plural imperative object-third-person object-plural"
                   ]
                 ]
               ]
@@ -1456,7 +1617,7 @@
                 [
                   "verb",
                   [
-                    "accusative first-person plural imperative object-third-person object-singular combined-form"
+                    "accusative first-person plural imperative object-third-person object-singular"
                   ]
                 ]
               ]
@@ -1470,7 +1631,7 @@
                 [
                   "verb",
                   [
-                    "accusative first-person plural imperative object-third-person object-singular combined-form"
+                    "accusative first-person plural imperative object-third-person object-singular"
                   ]
                 ]
               ]
@@ -1484,7 +1645,7 @@
                 [
                   "verb",
                   [
-                    "accusative first-person plural imperative object-third-person object-plural combined-form"
+                    "accusative first-person plural imperative object-third-person object-plural"
                   ]
                 ]
               ]
@@ -1498,7 +1659,7 @@
                 [
                   "verb",
                   [
-                    "accusative first-person plural imperative object-third-person object-plural combined-form"
+                    "accusative first-person plural imperative object-third-person object-plural"
                   ]
                 ]
               ]
@@ -1512,8 +1673,8 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person plural imperative object-first-person object-singular combined-form",
-                    "informal dative second-person plural imperative object-first-person object-singular combined-form"
+                    "informal accusative second-person plural imperative object-first-person object-singular",
+                    "informal dative second-person plural imperative object-first-person object-singular"
                   ]
                 ]
               ]
@@ -1527,7 +1688,7 @@
                 [
                   "verb",
                   [
-                    "informal dative second-person plural imperative object-third-person object-singular combined-form"
+                    "informal dative second-person plural imperative object-third-person object-singular"
                   ]
                 ]
               ]
@@ -1541,8 +1702,8 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person plural imperative object-first-person object-plural combined-form",
-                    "informal dative second-person plural imperative object-first-person object-plural combined-form"
+                    "informal accusative second-person plural imperative object-first-person object-plural",
+                    "informal dative second-person plural imperative object-first-person object-plural"
                   ]
                 ]
               ]
@@ -1556,8 +1717,8 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person plural imperative object-second-person object-plural combined-form",
-                    "informal dative second-person plural imperative object-second-person object-plural combined-form"
+                    "informal accusative second-person plural imperative object-second-person object-plural",
+                    "informal dative second-person plural imperative object-second-person object-plural"
                   ]
                 ]
               ]
@@ -1571,7 +1732,7 @@
                 [
                   "verb",
                   [
-                    "informal dative second-person plural imperative object-third-person object-plural combined-form"
+                    "informal dative second-person plural imperative object-third-person object-plural"
                   ]
                 ]
               ]
@@ -1585,7 +1746,7 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person plural imperative object-third-person object-singular combined-form"
+                    "informal accusative second-person plural imperative object-third-person object-singular"
                   ]
                 ]
               ]
@@ -1599,7 +1760,7 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person plural imperative object-third-person object-singular combined-form"
+                    "informal accusative second-person plural imperative object-third-person object-singular"
                   ]
                 ]
               ]
@@ -1613,7 +1774,7 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person plural imperative object-third-person object-plural combined-form"
+                    "informal accusative second-person plural imperative object-third-person object-plural"
                   ]
                 ]
               ]
@@ -1627,7 +1788,7 @@
                 [
                   "verb",
                   [
-                    "informal accusative second-person plural imperative object-third-person object-plural combined-form"
+                    "informal accusative second-person plural imperative object-third-person object-plural"
                   ]
                 ]
               ]
@@ -1641,8 +1802,8 @@
                 [
                   "verb",
                   [
-                    "formal accusative second-person plural imperative object-first-person object-singular combined-form",
-                    "formal dative second-person plural imperative object-first-person object-singular combined-form"
+                    "formal accusative second-person plural imperative object-first-person object-singular",
+                    "formal dative second-person plural imperative object-first-person object-singular"
                   ]
                 ]
               ]
@@ -1656,7 +1817,7 @@
                 [
                   "verb",
                   [
-                    "formal dative second-person plural imperative object-third-person object-singular combined-form"
+                    "formal dative second-person plural imperative object-third-person object-singular"
                   ]
                 ]
               ]
@@ -1670,8 +1831,8 @@
                 [
                   "verb",
                   [
-                    "formal accusative second-person plural imperative object-first-person object-plural combined-form",
-                    "formal dative second-person plural imperative object-first-person object-plural combined-form"
+                    "formal accusative second-person plural imperative object-first-person object-plural",
+                    "formal dative second-person plural imperative object-first-person object-plural"
                   ]
                 ]
               ]
@@ -1685,7 +1846,7 @@
                 [
                   "verb",
                   [
-                    "formal dative second-person plural imperative object-third-person object-plural combined-form"
+                    "formal dative second-person plural imperative object-third-person object-plural"
                   ]
                 ]
               ]
@@ -1699,8 +1860,8 @@
                 [
                   "verb",
                   [
-                    "formal accusative second-person plural imperative object-third-person object-plural combined-form",
-                    "formal dative second-person plural imperative object-third-person object-plural combined-form"
+                    "formal accusative second-person plural imperative object-third-person object-plural",
+                    "formal dative second-person plural imperative object-third-person object-plural"
                   ]
                 ]
               ]
@@ -1714,7 +1875,7 @@
                 [
                   "verb",
                   [
-                    "formal accusative second-person plural imperative object-third-person object-singular combined-form"
+                    "formal accusative second-person plural imperative object-third-person object-singular"
                   ]
                 ]
               ]
@@ -1728,7 +1889,7 @@
                 [
                   "verb",
                   [
-                    "formal accusative second-person plural imperative object-third-person object-singular combined-form"
+                    "formal accusative second-person plural imperative object-third-person object-singular"
                   ]
                 ]
               ]
@@ -1742,7 +1903,7 @@
                 [
                   "verb",
                   [
-                    "formal accusative second-person plural imperative object-third-person object-plural combined-form"
+                    "formal accusative second-person plural imperative object-third-person object-plural"
                   ]
                 ]
               ]
@@ -1756,7 +1917,7 @@
                 [
                   "verb",
                   [
-                    "formal accusative second-person plural imperative object-third-person object-plural combined-form"
+                    "formal accusative second-person plural imperative object-third-person object-plural"
                   ]
                 ]
               ]

@@ -142,6 +142,52 @@
     ""
   ],
   [
+    "legere",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "present",
+          "active",
+          "infinitive"
+        ]
+      ],
+      [
+        "legō",
+        [
+          "present",
+          "infinitive"
+        ]
+      ],
+      [
+        "legō",
+        [
+          "second-person",
+          "singular",
+          "present",
+          "imperative",
+          "passive"
+        ]
+      ],
+      [
+        "legō",
+        [
+          "second-person",
+          "singular",
+          "present",
+          "passive",
+          "indicative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
     "legi",
     "lēgī",
     "non-lemma",
@@ -993,37 +1039,6 @@
     "",
     0,
     [
-      [
-        "legō",
-        [
-          "second-person",
-          "singular",
-          "present",
-          "passive",
-          "indicative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "legere",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "legō",
-        [
-          "second-person",
-          "singular",
-          "present",
-          "imperative",
-          "passive"
-        ]
-      ],
       [
         "legō",
         [
@@ -2387,6 +2402,101 @@
           "future",
           "imperative",
           "passive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "legisse",
+    "lēgisse",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "perfect",
+          "active",
+          "infinitive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "lecturum esse",
+    "lēctūrum esse",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "future",
+          "active",
+          "infinitive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "legi",
+    "legī",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "present",
+          "passive",
+          "infinitive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "lectum esse",
+    "lēctum esse",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "perfect",
+          "passive",
+          "infinitive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "lectum iri",
+    "lēctum īrī",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "future",
+          "passive",
+          "infinitive"
         ]
       ]
     ],
