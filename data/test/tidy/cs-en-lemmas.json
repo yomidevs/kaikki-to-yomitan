@@ -28,5 +28,25 @@
         ]
       }
     }
+  },
+  "pro [+accusative]": {
+    "pro [+accusative]": {
+      "prep": {
+        "ipa": [
+          {
+            "ipa": "[ˈpro]",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "for"
+            ],
+            "tags": []
+          }
+        ]
+      }
+    }
   }
 }

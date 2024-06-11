@@ -11,5 +11,18 @@
         }
       ]
     }
+  ],
+  [
+    "pro [+accusative]",
+    "ipa",
+    {
+      "reading": "pro [+accusative]",
+      "transcriptions": [
+        {
+          "ipa": "[ˈpro]",
+          "tags": []
+        }
+      ]
+    }
   ]
 ]
