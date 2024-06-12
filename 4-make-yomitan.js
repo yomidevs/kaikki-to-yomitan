@@ -510,6 +510,8 @@ function normalizeOrthography(term) {
             return term.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
         case 'sh':
             return term.normalize('NFD').replace(/[aeiourAEIOUR][\u0300-\u036f]/g, (match) => match[0]);
+        case 'ro':
+            return term.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
         case 'ru':
             return term.replace(/́/g, '');
         default:
