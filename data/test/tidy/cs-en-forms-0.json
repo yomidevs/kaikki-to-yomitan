@@ -1,0 +1,395 @@
+{
+  "_type": "map",
+  "map": [
+    [
+      "přít",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "přela",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "feminine singular past active participle",
+                    "neuter plural past active participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "přu",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular present indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "přeme",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural present imperative",
+                    "first-person plural present indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "přeš",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular present indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "přete",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural present imperative",
+                    "second-person plural present indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "při",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular present imperative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pře",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "singular masculine present transgressive",
+                    "third-person singular present indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "přou",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural present indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "přel",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "singular masculine animate past participle",
+                    "singular masculine inanimate past participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "přeli",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "plural masculine animate past participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "přely",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "plural feminine past participle",
+                    "plural masculine inanimate past participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "přelo",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "singular neuter past participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pra",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "singular masculine present transgressive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "příc",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "singular feminine neuter present transgressive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prouc",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "singular feminine neuter present transgressive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "příce",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "plural present transgressive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "prouce",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "plural present transgressive"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "zpráva",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "zprávy",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative plural",
+                    "nominative plural",
+                    "vocative plural",
+                    "genitive singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "zpráv",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "zprávě",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "dative singular",
+                    "locative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "zprávám",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "dative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "zprávu",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "zprávo",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "vocative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "zprávách",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "locative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "zprávou",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "instrumental singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "zprávami",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "instrumental plural"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ]
+}

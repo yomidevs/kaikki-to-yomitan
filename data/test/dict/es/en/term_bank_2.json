@@ -1314,6 +1314,289 @@
     ""
   ],
   [
+    "vivirme",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "vivir",
+        [
+          "accusative",
+          "infinitive",
+          "object-first-person",
+          "object-singular"
+        ]
+      ],
+      [
+        "vivir",
+        [
+          "dative",
+          "infinitive",
+          "object-first-person",
+          "object-singular"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "vivirte",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "vivir",
+        [
+          "accusative",
+          "infinitive",
+          "object-second-person",
+          "object-singular"
+        ]
+      ],
+      [
+        "vivir",
+        [
+          "dative",
+          "infinitive",
+          "object-second-person",
+          "object-singular"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "vivirle",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "vivir",
+        [
+          "dative",
+          "infinitive",
+          "object-third-person",
+          "object-singular"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "vivirse",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "vivir",
+        [
+          "accusative",
+          "infinitive",
+          "object-third-person",
+          "object-plural"
+        ]
+      ],
+      [
+        "vivir",
+        [
+          "accusative",
+          "infinitive",
+          "object-third-person",
+          "object-singular"
+        ]
+      ],
+      [
+        "vivir",
+        [
+          "dative",
+          "infinitive",
+          "object-third-person",
+          "object-plural"
+        ]
+      ],
+      [
+        "vivir",
+        [
+          "dative",
+          "infinitive",
+          "object-third-person",
+          "object-singular"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "vivirnos",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "vivir",
+        [
+          "accusative",
+          "infinitive",
+          "object-first-person",
+          "object-plural"
+        ]
+      ],
+      [
+        "vivir",
+        [
+          "dative",
+          "infinitive",
+          "object-first-person",
+          "object-plural"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "viviros",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "vivir",
+        [
+          "accusative",
+          "infinitive",
+          "object-second-person",
+          "object-plural"
+        ]
+      ],
+      [
+        "vivir",
+        [
+          "dative",
+          "infinitive",
+          "object-second-person",
+          "object-plural"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "vivirles",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "vivir",
+        [
+          "dative",
+          "infinitive",
+          "object-third-person",
+          "object-plural"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "vivirlo",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "vivir",
+        [
+          "accusative",
+          "infinitive",
+          "object-third-person",
+          "object-singular"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "vivirla",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "vivir",
+        [
+          "accusative",
+          "infinitive",
+          "object-third-person",
+          "object-singular"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "vivirlos",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "vivir",
+        [
+          "accusative",
+          "infinitive",
+          "object-third-person",
+          "object-plural"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "vivirlas",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "vivir",
+        [
+          "accusative",
+          "infinitive",
+          "object-third-person",
+          "object-plural"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
     "viviéndome",
     "",
     "non-lemma",
@@ -1326,8 +1609,7 @@
           "accusative",
           "gerund",
           "object-first-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ],
       [
@@ -1336,8 +1618,7 @@
           "dative",
           "gerund",
           "object-first-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -1357,8 +1638,7 @@
           "accusative",
           "gerund",
           "object-second-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ],
       [
@@ -1367,8 +1647,7 @@
           "dative",
           "gerund",
           "object-second-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -1388,8 +1667,7 @@
           "dative",
           "gerund",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -1409,8 +1687,7 @@
           "accusative",
           "gerund",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ],
       [
@@ -1419,8 +1696,7 @@
           "accusative",
           "gerund",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ],
       [
@@ -1429,8 +1705,7 @@
           "dative",
           "gerund",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ],
       [
@@ -1439,8 +1714,7 @@
           "dative",
           "gerund",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -1460,8 +1734,7 @@
           "accusative",
           "gerund",
           "object-first-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ],
       [
@@ -1470,8 +1743,7 @@
           "dative",
           "gerund",
           "object-first-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -1491,8 +1763,7 @@
           "accusative",
           "gerund",
           "object-second-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ],
       [
@@ -1501,8 +1772,7 @@
           "dative",
           "gerund",
           "object-second-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -1522,8 +1792,7 @@
           "dative",
           "gerund",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -1543,8 +1812,7 @@
           "accusative",
           "gerund",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -1564,8 +1832,7 @@
           "accusative",
           "gerund",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -1585,8 +1852,7 @@
           "accusative",
           "gerund",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -1606,8 +1872,7 @@
           "accusative",
           "gerund",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -1631,7 +1896,6 @@
           "imperative",
           "object-first-person",
           "object-singular",
-          "combined-form",
           "with-tú"
         ]
       ],
@@ -1645,7 +1909,6 @@
           "imperative",
           "object-first-person",
           "object-singular",
-          "combined-form",
           "with-tú"
         ]
       ]
@@ -1670,7 +1933,6 @@
           "imperative",
           "object-second-person",
           "object-singular",
-          "combined-form",
           "with-tú"
         ]
       ],
@@ -1684,7 +1946,6 @@
           "imperative",
           "object-second-person",
           "object-singular",
-          "combined-form",
           "with-tú"
         ]
       ]
@@ -1709,7 +1970,6 @@
           "imperative",
           "object-third-person",
           "object-singular",
-          "combined-form",
           "with-tú"
         ]
       ]
@@ -1734,7 +1994,6 @@
           "imperative",
           "object-first-person",
           "object-plural",
-          "combined-form",
           "with-tú"
         ]
       ],
@@ -1748,7 +2007,6 @@
           "imperative",
           "object-first-person",
           "object-plural",
-          "combined-form",
           "with-tú"
         ]
       ]
@@ -1773,7 +2031,6 @@
           "imperative",
           "object-third-person",
           "object-plural",
-          "combined-form",
           "with-tú"
         ]
       ]
@@ -1798,7 +2055,6 @@
           "imperative",
           "object-third-person",
           "object-singular",
-          "combined-form",
           "with-tú"
         ]
       ]
@@ -1823,7 +2079,6 @@
           "imperative",
           "object-third-person",
           "object-singular",
-          "combined-form",
           "with-tú"
         ]
       ]
@@ -1848,7 +2103,6 @@
           "imperative",
           "object-third-person",
           "object-plural",
-          "combined-form",
           "with-tú"
         ]
       ]
@@ -1873,7 +2127,6 @@
           "imperative",
           "object-third-person",
           "object-plural",
-          "combined-form",
           "with-tú"
         ]
       ]
@@ -1898,7 +2151,6 @@
           "imperative",
           "object-first-person",
           "object-singular",
-          "combined-form",
           "with-vos"
         ]
       ],
@@ -1912,7 +2164,6 @@
           "imperative",
           "object-first-person",
           "object-singular",
-          "combined-form",
           "with-vos"
         ]
       ]
@@ -1937,7 +2188,6 @@
           "imperative",
           "object-second-person",
           "object-singular",
-          "combined-form",
           "with-vos"
         ]
       ],
@@ -1951,7 +2201,6 @@
           "imperative",
           "object-second-person",
           "object-singular",
-          "combined-form",
           "with-vos"
         ]
       ]
@@ -1976,7 +2225,6 @@
           "imperative",
           "object-third-person",
           "object-singular",
-          "combined-form",
           "with-vos"
         ]
       ]
@@ -2001,7 +2249,6 @@
           "imperative",
           "object-first-person",
           "object-plural",
-          "combined-form",
           "with-vos"
         ]
       ],
@@ -2015,7 +2262,6 @@
           "imperative",
           "object-first-person",
           "object-plural",
-          "combined-form",
           "with-vos"
         ]
       ]
@@ -2040,7 +2286,6 @@
           "imperative",
           "object-third-person",
           "object-plural",
-          "combined-form",
           "with-vos"
         ]
       ]
@@ -2065,7 +2310,6 @@
           "imperative",
           "object-third-person",
           "object-singular",
-          "combined-form",
           "with-vos"
         ]
       ]
@@ -2090,7 +2334,6 @@
           "imperative",
           "object-third-person",
           "object-singular",
-          "combined-form",
           "with-vos"
         ]
       ]
@@ -2115,7 +2358,6 @@
           "imperative",
           "object-third-person",
           "object-plural",
-          "combined-form",
           "with-vos"
         ]
       ]
@@ -2140,7 +2382,6 @@
           "imperative",
           "object-third-person",
           "object-plural",
-          "combined-form",
           "with-vos"
         ]
       ]
@@ -2164,8 +2405,7 @@
           "singular",
           "imperative",
           "object-first-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ],
       [
@@ -2177,8 +2417,7 @@
           "singular",
           "imperative",
           "object-first-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -2201,8 +2440,7 @@
           "singular",
           "imperative",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -2225,8 +2463,7 @@
           "singular",
           "imperative",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ],
       [
@@ -2238,8 +2475,7 @@
           "singular",
           "imperative",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -2262,8 +2498,7 @@
           "singular",
           "imperative",
           "object-first-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ],
       [
@@ -2275,8 +2510,7 @@
           "singular",
           "imperative",
           "object-first-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -2299,8 +2533,7 @@
           "singular",
           "imperative",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -2323,8 +2556,7 @@
           "singular",
           "imperative",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -2347,8 +2579,7 @@
           "singular",
           "imperative",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -2371,8 +2602,7 @@
           "singular",
           "imperative",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -2395,8 +2625,7 @@
           "singular",
           "imperative",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -2418,8 +2647,7 @@
           "plural",
           "imperative",
           "object-second-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ],
       [
@@ -2430,8 +2658,7 @@
           "plural",
           "imperative",
           "object-second-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -2453,8 +2680,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -2476,8 +2702,7 @@
           "plural",
           "imperative",
           "object-first-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ],
       [
@@ -2488,8 +2713,7 @@
           "plural",
           "imperative",
           "object-first-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -2511,8 +2735,7 @@
           "plural",
           "imperative",
           "object-second-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ],
       [
@@ -2523,8 +2746,7 @@
           "plural",
           "imperative",
           "object-second-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -2546,8 +2768,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -2569,8 +2790,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -2592,8 +2812,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -2615,8 +2834,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -2638,8 +2856,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -2662,8 +2879,7 @@
           "plural",
           "imperative",
           "object-first-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ],
       [
@@ -2675,8 +2891,7 @@
           "plural",
           "imperative",
           "object-first-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -2699,8 +2914,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -2723,8 +2937,7 @@
           "plural",
           "imperative",
           "object-first-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ],
       [
@@ -2736,8 +2949,7 @@
           "plural",
           "imperative",
           "object-first-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -2760,8 +2972,7 @@
           "plural",
           "imperative",
           "object-second-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ],
       [
@@ -2773,8 +2984,7 @@
           "plural",
           "imperative",
           "object-second-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -2797,8 +3007,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -2821,8 +3030,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -2845,8 +3053,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -2869,8 +3076,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -2893,8 +3099,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -2917,8 +3122,7 @@
           "plural",
           "imperative",
           "object-first-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ],
       [
@@ -2930,8 +3134,7 @@
           "plural",
           "imperative",
           "object-first-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -2954,8 +3157,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -2978,8 +3180,7 @@
           "plural",
           "imperative",
           "object-first-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ],
       [
@@ -2991,8 +3192,7 @@
           "plural",
           "imperative",
           "object-first-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -3015,8 +3215,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -3039,8 +3238,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ],
       [
@@ -3052,8 +3250,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -3076,8 +3273,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -3100,8 +3296,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-singular",
-          "combined-form"
+          "object-singular"
         ]
       ]
     ],
@@ -3124,8 +3319,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],
@@ -3148,8 +3342,7 @@
           "plural",
           "imperative",
           "object-third-person",
-          "object-plural",
-          "combined-form"
+          "object-plural"
         ]
       ]
     ],

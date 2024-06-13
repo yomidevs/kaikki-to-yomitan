@@ -1,0 +1,41 @@
+[
+  [
+    "zpráva",
+    "ipa",
+    {
+      "reading": "zpráva",
+      "transcriptions": [
+        {
+          "ipa": "[ˈspraːva]",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  [
+    "pro [+accusative]",
+    "ipa",
+    {
+      "reading": "pro [+accusative]",
+      "transcriptions": [
+        {
+          "ipa": "[ˈpro]",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  [
+    "přít",
+    "ipa",
+    {
+      "reading": "přít",
+      "transcriptions": [
+        {
+          "ipa": "[ˈpr̝̊iːt]",
+          "tags": []
+        }
+      ]
+    }
+  ]
+]

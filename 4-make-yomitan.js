@@ -39,6 +39,8 @@ const ipaTags = [...targetLanguageIpaTags, ...languageIpaTags];
 
 const partsOfSpeech = loadJsonArray(`data/language/target-language-tags/${target_iso}/parts_of_speech.json`);
 
+const multiwordInflections = loadJsonArray(`data/language/${source_iso}/${target_iso}/multiword_inflections.json`);
+
 const tagModifiers = [
     ['chiefly', 'chief'],
     ['usually', 'usu'],
@@ -255,16 +257,6 @@ let lastTermBankIndex = 0;
     let ymtFormData = [];
     let formCounter = 0;
 
-    const multiwordInflections = [ // TODO: switch on source_iso
-        'subjunctive I', // de
-        'subjunctive II', // de
-        'Archaic form', // de
-        'archaic form', // de
-        'female equivalent', // de
-        'perfect passive participle', // la
-        'perfect active participle', // la
-    ];
-
     consoleOverwrite('4-make-yomitan.js: Processing forms...');
     const formsFiles = readdirSync(readFolder).filter((file) => file.startsWith(`${source_iso}-${target_iso}-forms-`));
     for (const file of formsFiles) {
@@ -282,14 +274,10 @@ let lastTermBankIndex = 0;
                         if (!gloss) { return []; }
 
                         gloss = gloss
-                            .replace(/-automated- /g, '')
-                        if(target_iso === 'en'){
-                            gloss = gloss
-                                .replace(/multiword-construction /g, '')
+                            .replace(/multiword-construction /g, '')
 
-                            for (const multiwordInflection of multiwordInflections) {
-                                gloss = gloss.replace(new RegExp(multiwordInflection), multiwordInflection.replace(/ /g, '\u00A0'));
-                            }
+                        for (const multiwordInflection of multiwordInflections) {
+                            gloss = gloss.replace(new RegExp(multiwordInflection), multiwordInflection.replace(/ /g, '\u00A0'));
                         }
 
                         // TODO: decide on format for de-de
@@ -357,24 +345,12 @@ let lastTermBankIndex = 0;
 
             const chunkSize = 20000;
             if(ymtFormData.length > chunkSize){
-                const ymtForms = ymtFormData.map((form, index) => {
-                    const [term, reading, definitions] = form;
-                    return [
-                        term,
-                        reading,
-                        'non-lemma',
-                        '',
-                        0,
-                        definitions,
-                        0,
-                        ''
-                    ];
-                });
-        
-                lastTermBankIndex = writeBanks('form', ymtForms, lastTermBankIndex);
-                ymtFormData = [];
+                ymtFormData = writeYmtFormData(ymtFormData);
             }
         }
+    }
+    if(ymtFormData.length){
+        writeYmtFormData(ymtFormData);
     }
 }
 
@@ -396,6 +372,26 @@ writeFileSync(`data/language/${source_iso}/${target_iso}/skippedTermTags.json`, 
 writeFileSync(`data/language/${source_iso}/${target_iso}/skippedPartsOfSpeech.json`, JSON.stringify(sortBreakdown(skippedPartsOfSpeech), null, 2));
 
 console.log('4-make-yomitan.js: Done!')
+
+function writeYmtFormData(ymtFormData) {
+    const ymtForms = ymtFormData.map((form, index) => {
+        const [term, reading, definitions] = form;
+        return [
+            term,
+            reading,
+            'non-lemma',
+            '',
+            0,
+            definitions,
+            0,
+            ''
+        ];
+    });
+
+    lastTermBankIndex = writeBanks('form', ymtForms, lastTermBankIndex);
+    ymtFormData = [];
+    return ymtFormData;
+}
 
 function writeBanks(folder, data, bankIndex = 0) {
     if(folder === 'form') folder = 'dict';
@@ -491,6 +487,10 @@ function normalizeOrthography(term) {
         case 'ang':
         case 'sga':
         case 'grc':
+            return term.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        case 'sh':
+            return term.normalize('NFD').replace(/[aeiourAEIOUR][\u0300-\u036f]/g, (match) => match[0]);
+        case 'ro':
             return term.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
         case 'ru':
             return term.replace(/́/g, '');

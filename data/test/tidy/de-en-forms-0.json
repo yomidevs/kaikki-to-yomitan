@@ -250,8 +250,8 @@
                 [
                   "verb",
                   [
-                    "first-person singular perfect indicative multiword-construction",
-                    "first/third-person singular perfect subjunctive multiword-construction"
+                    "first-person singular perfect indicative",
+                    "first/third-person singular perfect subjunctive"
                   ]
                 ]
               ]
@@ -265,8 +265,8 @@
                 [
                   "verb",
                   [
-                    "first/third-person plural perfect indicative multiword-construction",
-                    "first/third-person plural perfect subjunctive multiword-construction"
+                    "first/third-person plural perfect indicative",
+                    "first/third-person plural perfect subjunctive"
                   ]
                 ]
               ]
@@ -280,7 +280,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular perfect indicative multiword-construction"
+                    "second-person singular perfect indicative"
                   ]
                 ]
               ]
@@ -294,7 +294,7 @@
                 [
                   "verb",
                   [
-                    "second-person plural perfect indicative multiword-construction"
+                    "second-person plural perfect indicative"
                   ]
                 ]
               ]
@@ -308,7 +308,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular perfect subjunctive multiword-construction"
+                    "second-person singular perfect subjunctive"
                   ]
                 ]
               ]
@@ -322,7 +322,7 @@
                 [
                   "verb",
                   [
-                    "second-person plural perfect subjunctive multiword-construction"
+                    "second-person plural perfect subjunctive"
                   ]
                 ]
               ]
@@ -336,7 +336,7 @@
                 [
                   "verb",
                   [
-                    "third-person singular perfect indicative multiword-construction"
+                    "third-person singular perfect indicative"
                   ]
                 ]
               ]
@@ -350,7 +350,7 @@
                 [
                   "verb",
                   [
-                    "first/third-person singular pluperfect indicative multiword-construction"
+                    "first/third-person singular pluperfect indicative"
                   ]
                 ]
               ]
@@ -364,7 +364,7 @@
                 [
                   "verb",
                   [
-                    "first/third-person plural pluperfect indicative multiword-construction"
+                    "first/third-person plural pluperfect indicative"
                   ]
                 ]
               ]
@@ -378,7 +378,7 @@
                 [
                   "verb",
                   [
-                    "first/third-person singular pluperfect subjunctive multiword-construction"
+                    "first/third-person singular pluperfect subjunctive"
                   ]
                 ]
               ]
@@ -392,7 +392,7 @@
                 [
                   "verb",
                   [
-                    "first/third-person plural pluperfect subjunctive multiword-construction"
+                    "first/third-person plural pluperfect subjunctive"
                   ]
                 ]
               ]
@@ -406,7 +406,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular pluperfect indicative multiword-construction"
+                    "second-person singular pluperfect indicative"
                   ]
                 ]
               ]
@@ -420,7 +420,7 @@
                 [
                   "verb",
                   [
-                    "second-person plural pluperfect indicative multiword-construction"
+                    "second-person plural pluperfect indicative"
                   ]
                 ]
               ]
@@ -434,7 +434,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular pluperfect subjunctive multiword-construction"
+                    "second-person singular pluperfect subjunctive"
                   ]
                 ]
               ]
@@ -448,7 +448,21 @@
                 [
                   "verb",
                   [
-                    "second-person plural pluperfect subjunctive multiword-construction"
+                    "second-person plural pluperfect subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "pflegen werden",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "future future-i infinitive"
                   ]
                 ]
               ]
@@ -462,8 +476,8 @@
                 [
                   "verb",
                   [
-                    "first-person singular future future-i indicative multiword-construction",
-                    "first/third-person singular future future-i subjunctive multiword-construction subjunctive-i"
+                    "first-person singular future future-i indicative",
+                    "first/third-person singular future future-i subjunctive subjunctive-i"
                   ]
                 ]
               ]
@@ -477,8 +491,8 @@
                 [
                   "verb",
                   [
-                    "first/third-person plural future future-i indicative multiword-construction",
-                    "first/third-person plural future future-i subjunctive multiword-construction subjunctive-i"
+                    "first/third-person plural future future-i indicative",
+                    "first/third-person plural future future-i subjunctive subjunctive-i"
                   ]
                 ]
               ]
@@ -492,7 +506,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular future future-i subjunctive multiword-construction subjunctive-i"
+                    "second-person singular future future-i subjunctive subjunctive-i"
                   ]
                 ]
               ]
@@ -506,8 +520,8 @@
                 [
                   "verb",
                   [
-                    "second-person plural future future-i indicative multiword-construction",
-                    "second-person plural future future-i subjunctive multiword-construction subjunctive-i"
+                    "second-person plural future future-i indicative",
+                    "second-person plural future future-i subjunctive subjunctive-i"
                   ]
                 ]
               ]
@@ -521,7 +535,7 @@
                 [
                   "verb",
                   [
-                    "first/third-person singular future future-i subjunctive multiword-construction subjunctive-ii"
+                    "first/third-person singular future future-i subjunctive subjunctive-ii"
                   ]
                 ]
               ]
@@ -535,7 +549,7 @@
                 [
                   "verb",
                   [
-                    "first/third-person plural future future-i subjunctive multiword-construction subjunctive-ii"
+                    "first/third-person plural future future-i subjunctive subjunctive-ii"
                   ]
                 ]
               ]
@@ -549,7 +563,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular future future-i indicative multiword-construction"
+                    "second-person singular future future-i indicative"
                   ]
                 ]
               ]
@@ -563,7 +577,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular future future-i subjunctive multiword-construction subjunctive-ii"
+                    "second-person singular future future-i subjunctive subjunctive-ii"
                   ]
                 ]
               ]
@@ -577,7 +591,7 @@
                 [
                   "verb",
                   [
-                    "second-person plural future future-i subjunctive multiword-construction subjunctive-ii"
+                    "second-person plural future future-i subjunctive subjunctive-ii"
                   ]
                 ]
               ]
@@ -591,7 +605,21 @@
                 [
                   "verb",
                   [
-                    "third-person singular future future-i indicative multiword-construction"
+                    "third-person singular future future-i indicative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gepflegt haben werden",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "future future-ii infinitive"
                   ]
                 ]
               ]
@@ -605,8 +633,8 @@
                 [
                   "verb",
                   [
-                    "first-person singular future future-ii indicative multiword-construction",
-                    "first/third-person singular future future-ii subjunctive multiword-construction subjunctive-i"
+                    "first-person singular future future-ii indicative",
+                    "first/third-person singular future future-ii subjunctive subjunctive-i"
                   ]
                 ]
               ]
@@ -620,8 +648,8 @@
                 [
                   "verb",
                   [
-                    "first/third-person plural future future-ii indicative multiword-construction",
-                    "first/third-person plural future future-ii subjunctive multiword-construction subjunctive-i"
+                    "first/third-person plural future future-ii indicative",
+                    "first/third-person plural future future-ii subjunctive subjunctive-i"
                   ]
                 ]
               ]
@@ -635,7 +663,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular future future-ii subjunctive multiword-construction subjunctive-i"
+                    "second-person singular future future-ii subjunctive subjunctive-i"
                   ]
                 ]
               ]
@@ -649,8 +677,8 @@
                 [
                   "verb",
                   [
-                    "second-person plural future future-ii indicative multiword-construction",
-                    "second-person plural future future-ii subjunctive multiword-construction subjunctive-i"
+                    "second-person plural future future-ii indicative",
+                    "second-person plural future future-ii subjunctive subjunctive-i"
                   ]
                 ]
               ]
@@ -664,7 +692,7 @@
                 [
                   "verb",
                   [
-                    "first/third-person singular future future-ii subjunctive multiword-construction subjunctive-ii"
+                    "first/third-person singular future future-ii subjunctive subjunctive-ii"
                   ]
                 ]
               ]
@@ -678,7 +706,7 @@
                 [
                   "verb",
                   [
-                    "first/third-person plural future future-ii subjunctive multiword-construction subjunctive-ii"
+                    "first/third-person plural future future-ii subjunctive subjunctive-ii"
                   ]
                 ]
               ]
@@ -692,7 +720,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular future future-ii indicative multiword-construction"
+                    "second-person singular future future-ii indicative"
                   ]
                 ]
               ]
@@ -706,7 +734,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular future future-ii subjunctive multiword-construction subjunctive-ii"
+                    "second-person singular future future-ii subjunctive subjunctive-ii"
                   ]
                 ]
               ]
@@ -720,7 +748,7 @@
                 [
                   "verb",
                   [
-                    "second-person plural future future-ii subjunctive multiword-construction subjunctive-ii"
+                    "second-person plural future future-ii subjunctive subjunctive-ii"
                   ]
                 ]
               ]
@@ -734,7 +762,7 @@
                 [
                   "verb",
                   [
-                    "third-person singular future future-ii indicative multiword-construction"
+                    "third-person singular future future-ii indicative"
                   ]
                 ]
               ]
@@ -860,8 +888,8 @@
                 [
                   "verb",
                   [
-                    "first-person singular perfect indicative multiword-construction",
-                    "first/third-person singular perfect subjunctive multiword-construction"
+                    "first-person singular perfect indicative",
+                    "first/third-person singular perfect subjunctive"
                   ]
                 ]
               ]
@@ -875,8 +903,8 @@
                 [
                   "verb",
                   [
-                    "first/third-person plural perfect indicative multiword-construction",
-                    "first/third-person plural perfect subjunctive multiword-construction"
+                    "first/third-person plural perfect indicative",
+                    "first/third-person plural perfect subjunctive"
                   ]
                 ]
               ]
@@ -890,7 +918,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular perfect indicative multiword-construction"
+                    "second-person singular perfect indicative"
                   ]
                 ]
               ]
@@ -904,7 +932,7 @@
                 [
                   "verb",
                   [
-                    "second-person plural perfect indicative multiword-construction"
+                    "second-person plural perfect indicative"
                   ]
                 ]
               ]
@@ -918,7 +946,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular perfect subjunctive multiword-construction"
+                    "second-person singular perfect subjunctive"
                   ]
                 ]
               ]
@@ -932,7 +960,7 @@
                 [
                   "verb",
                   [
-                    "second-person plural perfect subjunctive multiword-construction"
+                    "second-person plural perfect subjunctive"
                   ]
                 ]
               ]
@@ -946,7 +974,7 @@
                 [
                   "verb",
                   [
-                    "third-person singular perfect indicative multiword-construction"
+                    "third-person singular perfect indicative"
                   ]
                 ]
               ]
@@ -960,7 +988,7 @@
                 [
                   "verb",
                   [
-                    "first/third-person singular pluperfect indicative multiword-construction"
+                    "first/third-person singular pluperfect indicative"
                   ]
                 ]
               ]
@@ -974,7 +1002,7 @@
                 [
                   "verb",
                   [
-                    "first/third-person plural pluperfect indicative multiword-construction"
+                    "first/third-person plural pluperfect indicative"
                   ]
                 ]
               ]
@@ -988,7 +1016,7 @@
                 [
                   "verb",
                   [
-                    "first/third-person singular pluperfect subjunctive multiword-construction"
+                    "first/third-person singular pluperfect subjunctive"
                   ]
                 ]
               ]
@@ -1002,7 +1030,7 @@
                 [
                   "verb",
                   [
-                    "first/third-person plural pluperfect subjunctive multiword-construction"
+                    "first/third-person plural pluperfect subjunctive"
                   ]
                 ]
               ]
@@ -1016,7 +1044,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular pluperfect indicative multiword-construction"
+                    "second-person singular pluperfect indicative"
                   ]
                 ]
               ]
@@ -1030,7 +1058,7 @@
                 [
                   "verb",
                   [
-                    "second-person plural pluperfect indicative multiword-construction"
+                    "second-person plural pluperfect indicative"
                   ]
                 ]
               ]
@@ -1044,7 +1072,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular pluperfect subjunctive multiword-construction"
+                    "second-person singular pluperfect subjunctive"
                   ]
                 ]
               ]
@@ -1058,7 +1086,21 @@
                 [
                   "verb",
                   [
-                    "second-person plural pluperfect subjunctive multiword-construction"
+                    "second-person plural pluperfect subjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gepflogen haben werden",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "future future-ii infinitive"
                   ]
                 ]
               ]
@@ -1072,8 +1114,8 @@
                 [
                   "verb",
                   [
-                    "first-person singular future future-ii indicative multiword-construction",
-                    "first/third-person singular future future-ii subjunctive multiword-construction subjunctive-i"
+                    "first-person singular future future-ii indicative",
+                    "first/third-person singular future future-ii subjunctive subjunctive-i"
                   ]
                 ]
               ]
@@ -1087,8 +1129,8 @@
                 [
                   "verb",
                   [
-                    "first/third-person plural future future-ii indicative multiword-construction",
-                    "first/third-person plural future future-ii subjunctive multiword-construction subjunctive-i"
+                    "first/third-person plural future future-ii indicative",
+                    "first/third-person plural future future-ii subjunctive subjunctive-i"
                   ]
                 ]
               ]
@@ -1102,7 +1144,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular future future-ii subjunctive multiword-construction subjunctive-i"
+                    "second-person singular future future-ii subjunctive subjunctive-i"
                   ]
                 ]
               ]
@@ -1116,8 +1158,8 @@
                 [
                   "verb",
                   [
-                    "second-person plural future future-ii indicative multiword-construction",
-                    "second-person plural future future-ii subjunctive multiword-construction subjunctive-i"
+                    "second-person plural future future-ii indicative",
+                    "second-person plural future future-ii subjunctive subjunctive-i"
                   ]
                 ]
               ]
@@ -1131,7 +1173,7 @@
                 [
                   "verb",
                   [
-                    "first/third-person singular future future-ii subjunctive multiword-construction subjunctive-ii"
+                    "first/third-person singular future future-ii subjunctive subjunctive-ii"
                   ]
                 ]
               ]
@@ -1145,7 +1187,7 @@
                 [
                   "verb",
                   [
-                    "first/third-person plural future future-ii subjunctive multiword-construction subjunctive-ii"
+                    "first/third-person plural future future-ii subjunctive subjunctive-ii"
                   ]
                 ]
               ]
@@ -1159,7 +1201,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular future future-ii indicative multiword-construction"
+                    "second-person singular future future-ii indicative"
                   ]
                 ]
               ]
@@ -1173,7 +1215,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular future future-ii subjunctive multiword-construction subjunctive-ii"
+                    "second-person singular future future-ii subjunctive subjunctive-ii"
                   ]
                 ]
               ]
@@ -1187,7 +1229,7 @@
                 [
                   "verb",
                   [
-                    "second-person plural future future-ii subjunctive multiword-construction subjunctive-ii"
+                    "second-person plural future future-ii subjunctive subjunctive-ii"
                   ]
                 ]
               ]
@@ -1201,7 +1243,7 @@
                 [
                   "verb",
                   [
-                    "third-person singular future future-ii indicative multiword-construction"
+                    "third-person singular future future-ii indicative"
                   ]
                 ]
               ]
@@ -1240,7 +1282,8 @@
                   [
                     "plural",
                     "accusative plural definite",
-                    "genitive plural definite"
+                    "genitive plural definite",
+                    "nominative plural definite"
                   ]
                 ]
               ]

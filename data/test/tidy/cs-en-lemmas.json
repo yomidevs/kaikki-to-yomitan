@@ -1,0 +1,76 @@
+{
+  "zpráva": {
+    "zpráva": {
+      "noun": {
+        "ipa": [
+          {
+            "ipa": "[ˈspraːva]",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "message"
+            ],
+            "tags": [
+              "feminine"
+            ]
+          },
+          {
+            "glosses": [
+              "report"
+            ],
+            "tags": [
+              "feminine"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "pro [+accusative]": {
+    "pro [+accusative]": {
+      "prep": {
+        "ipa": [
+          {
+            "ipa": "[ˈpro]",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "for"
+            ],
+            "tags": []
+          }
+        ]
+      }
+    }
+  },
+  "přít": {
+    "přít": {
+      "verb": {
+        "ipa": [
+          {
+            "ipa": "[ˈpr̝̊iːt]",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "(reflexive with se) to dispute"
+            ],
+            "tags": [
+              "imperfective",
+              "reflexive",
+              "with se"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

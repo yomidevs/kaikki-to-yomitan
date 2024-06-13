@@ -15,6 +15,13 @@
       [
         "fāma",
         [
+          "nominative",
+          "plural"
+        ]
+      ],
+      [
+        "fāma",
+        [
           "vocative",
           "plural"
         ]
@@ -128,6 +135,52 @@
         [
           "singular",
           "ablative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "legere",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "present",
+          "active",
+          "infinitive"
+        ]
+      ],
+      [
+        "legō",
+        [
+          "present",
+          "infinitive"
+        ]
+      ],
+      [
+        "legō",
+        [
+          "second-person",
+          "singular",
+          "present",
+          "imperative",
+          "passive"
+        ]
+      ],
+      [
+        "legō",
+        [
+          "second-person",
+          "singular",
+          "present",
+          "passive",
+          "indicative"
         ]
       ]
     ],
@@ -986,37 +1039,6 @@
     "",
     0,
     [
-      [
-        "legō",
-        [
-          "second-person",
-          "singular",
-          "present",
-          "passive",
-          "indicative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "legere",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "legō",
-        [
-          "second-person",
-          "singular",
-          "present",
-          "imperative",
-          "passive"
-        ]
-      ],
       [
         "legō",
         [
@@ -2387,6 +2409,101 @@
     ""
   ],
   [
+    "legisse",
+    "lēgisse",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "perfect",
+          "active",
+          "infinitive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "lecturum esse",
+    "lēctūrum esse",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "future",
+          "active",
+          "infinitive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "legi",
+    "legī",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "present",
+          "passive",
+          "infinitive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "lectum esse",
+    "lēctum esse",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "perfect",
+          "passive",
+          "infinitive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "lectum iri",
+    "lēctum īrī",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "future",
+          "passive",
+          "infinitive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
     "legens",
     "legēns",
     "non-lemma",
@@ -2612,6 +2729,38 @@
     ""
   ],
   [
+    "lilia",
+    "līlia",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "līlium",
+        [
+          "accusative",
+          "plural"
+        ]
+      ],
+      [
+        "līlium",
+        [
+          "nominative",
+          "plural"
+        ]
+      ],
+      [
+        "līlium",
+        [
+          "vocative",
+          "plural"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
     "liliorum",
     "līliōrum",
     "non-lemma",
@@ -2680,31 +2829,6 @@
     ""
   ],
   [
-    "lilia",
-    "līlia",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "līlium",
-        [
-          "accusative",
-          "plural"
-        ]
-      ],
-      [
-        "līlium",
-        [
-          "vocative",
-          "plural"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
     "recta",
     "rēcta",
     "non-lemma",
@@ -2728,9 +2852,25 @@
       [
         "rēctus",
         [
+          "nominative",
+          "plural",
+          "neuter"
+        ]
+      ],
+      [
+        "rēctus",
+        [
           "vocative",
           "plural",
           "neuter"
+        ]
+      ],
+      [
+        "rēctus",
+        [
+          "nominative",
+          "singular",
+          "feminine"
         ]
       ],
       [
@@ -2770,6 +2910,14 @@
         "rēctus",
         [
           "accusative",
+          "singular",
+          "neuter"
+        ]
+      ],
+      [
+        "rēctus",
+        [
+          "nominative",
           "singular",
           "neuter"
         ]
@@ -2847,6 +2995,14 @@
       [
         "rēctus",
         [
+          "nominative",
+          "plural",
+          "masculine"
+        ]
+      ],
+      [
+        "rēctus",
+        [
           "vocative",
           "plural",
           "masculine"
@@ -2879,6 +3035,14 @@
     "",
     0,
     [
+      [
+        "rēctus",
+        [
+          "nominative",
+          "plural",
+          "feminine"
+        ]
+      ],
       [
         "rēctus",
         [

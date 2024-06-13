@@ -1,0 +1,44 @@
+[
+  [
+    "n",
+    "partOfSpeech",
+    -1,
+    "noun",
+    1
+  ],
+  [
+    "fem",
+    "",
+    -1,
+    "feminine",
+    1
+  ],
+  [
+    "prep",
+    "partOfSpeech",
+    -1,
+    "preposition",
+    1
+  ],
+  [
+    "v",
+    "partOfSpeech",
+    -1,
+    "verb",
+    1
+  ],
+  [
+    "impf",
+    "",
+    0,
+    "imperfective",
+    0
+  ],
+  [
+    "vr",
+    "partOfSpeech",
+    -1,
+    "reflexive verb",
+    1
+  ]
+]
