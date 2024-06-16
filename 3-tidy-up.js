@@ -191,12 +191,14 @@ function handleLine(line) {
     let nestedGlossObj = {};
     
     const sensesWithGlosses = senses.filter(sense => sense.glosses || sense.raw_glosses || sense.raw_gloss);
+    sensesWithGlosses.map(sense => {
+        const glosses = sense.raw_glosses || sense.raw_gloss || sense.glosses;
+        const glossesArray = Array.isArray(glosses) ? glosses : [glosses];
+        sense.glossesArray = glossesArray;
+    });
     
     for (const [senseIndex, sense] of sensesWithGlosses.entries()) {
-        const glosses = sense.raw_glosses || sense.raw_gloss || sense.glosses;
-        const glossesArray = glosses
-            ? Array.isArray(glosses) ? glosses : [glosses]
-            : [];
+        const glossesArray = sense.glossesArray;
 
         const formOf = sense.form_of;
         const tags = sense.tags || [];
