@@ -189,8 +189,10 @@ function handleLine(line) {
     const {senses} = parsedLine;
     if (!senses) return;
     let nestedGlossObj = {};
-
-    for (const [senseIndex, sense] of senses.entries()) {
+    
+    const sensesWithGlosses = senses.filter(sense => sense.glosses || sense.raw_glosses || sense.raw_gloss);
+    
+    for (const [senseIndex, sense] of sensesWithGlosses.entries()) {
         const glosses = sense.raw_glosses || sense.raw_gloss || sense.glosses;
         const glossesArray = glosses
             ? Array.isArray(glosses) ? glosses : [glosses]
