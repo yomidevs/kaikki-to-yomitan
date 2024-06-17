@@ -206,39 +206,8 @@ function handleLine(line) {
             tags.push(...sense.raw_tags);
         }
 
-        if(glossesArray.length === 0) {
-            continue;
-        }
-
         if(isInflectionGloss(glossesArray, formOf)) {
-            switch (targetIso) {
-                case 'en':
-                    processEnglishInflectionGlosses(sense, word, pos);
-                    break;
-                case 'fr':
-                    let inflection, lemma;
-
-                    const match1 = sense.glosses[0].match(/(.*)du verbe\s+((?:(?!\bdu\b).)*)$/);
-                    const match2 = sense.glosses[0].match(/^((?:(?:Masculin|Féminin)\s)?(?:(?:p|P)luriel|(?:s|S)ingulier)) de ([^\s]*)$/);
-
-                    if (match1) {
-                        inflection = match1[1];
-                        lemma = match1[2];
-                    } else if (match2) {
-                        inflection = match2[1];
-                        lemma = match2[2];
-                    }
-
-                    if (inflection && lemma) {
-                        inflection = inflection.trim();
-                        lemma = lemma.replace(/\.$/, '').trim();
-
-                        if (inflection && word !== lemma) {
-                            addDeinflections(word, pos, lemma, [inflection]);
-                        }
-                    }
-                    break;
-            }
+            processInflectionGlosses(sense.glosses, word, pos);
             continue;
         }
 
@@ -293,44 +262,74 @@ function handleLine(line) {
     }
 }
 
-function processEnglishInflectionGlosses(sense, word, pos) {
-    if (sense.glosses) {
-        glossPieces = sense.glosses.flatMap(gloss => gloss.split('##').map(piece => piece.trim()));
-        const lemmas = new Set();
-        const inflections = new Set();
-        for (const piece of glossPieces) {
-            const lemmaMatch = piece.match(/of ([^\s]+)\s*$/);
-            if (lemmaMatch) {
-                lemmas.add(lemmaMatch[1].replace(/:/g, '').trim());
+function processInflectionGlosses(glosses, word, pos) {
+    switch (targetIso) {
+        case 'en':
+            processEnglishInflectionGlosses(glosses, word, pos);
+            break;
+        case 'fr':
+            let inflection, lemma;
+
+            const match1 = glosses[0].match(/(.*)du verbe\s+((?:(?!\bdu\b).)*)$/);
+            const match2 = glosses[0].match(/^((?:(?:Masculin|Féminin)\s)?(?:(?:p|P)luriel|(?:s|S)ingulier)) de ([^\s]*)$/);
+
+            if (match1) {
+                inflection = match1[1];
+                lemma = match1[2];
+            } else if (match2) {
+                inflection = match2[1];
+                lemma = match2[2];
             }
 
-            if (lemmas.size > 1) {
-                // console.warn(`Multiple lemmas in inflection glosses for word '${word}'`, lemmas);
-                return;
+            if (inflection && lemma) {
+                inflection = inflection.trim();
+                lemma = lemma.replace(/\.$/, '').trim();
+
+                if (inflection && word !== lemma) {
+                    addDeinflections(word, pos, lemma, [inflection]);
+                }
             }
+            break;
+    }
+}
 
-            const lemma = lemmas.values().next().value;
-
-            if(!lemma) continue;
-
-            const escapedLemma = escapeRegExp(lemma);
-
-            const inflection = piece
-                .replace(/inflection of /, '')
-                .replace(new RegExp(`of ${escapedLemma}`), '')
-                .replace(new RegExp(`${escapedLemma}`), '')
-                .replace(new RegExp(`\\s+`), ' ')
-                .replace(/:/g, '')
-                .trim();
-
-            inflections.add(inflection); 
+function processEnglishInflectionGlosses(glosses, word, pos) {
+    if(!glosses) return;
+    glossPieces = glosses.flatMap(gloss => gloss.split('##').map(piece => piece.trim()));
+    const lemmas = new Set();
+    const inflections = new Set();
+    for (const piece of glossPieces) {
+        const lemmaMatch = piece.match(/of ([^\s]+)\s*$/);
+        if (lemmaMatch) {
+            lemmas.add(lemmaMatch[1].replace(/:/g, '').trim());
         }
-        
+
+        if (lemmas.size > 1) {
+            // console.warn(`Multiple lemmas in inflection glosses for word '${word}'`, lemmas);
+            return;
+        }
+
         const lemma = lemmas.values().next().value;
-        if (word !== lemma) {
-            for (const inflection of [...inflections].filter(Boolean)) {
-                addDeinflections(word, pos, lemma, [inflection]);
-            }
+
+        if(!lemma) continue;
+
+        const escapedLemma = escapeRegExp(lemma);
+
+        const inflection = piece
+            .replace(/inflection of /, '')
+            .replace(new RegExp(`of ${escapedLemma}`), '')
+            .replace(new RegExp(`${escapedLemma}`), '')
+            .replace(new RegExp(`\\s+`), ' ')
+            .replace(/:/g, '')
+            .trim();
+
+        inflections.add(inflection); 
+    }
+    
+    const lemma = lemmas.values().next().value;
+    if (word !== lemma) {
+        for (const inflection of [...inflections].filter(Boolean)) {
+            addDeinflections(word, pos, lemma, [inflection]);
         }
     }
 }
