@@ -19,6 +19,10 @@ function escapeRegExp(string) {
     return string.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&');
 }
 
+function isEmpty(obj) {
+    return Object.keys(obj).length === 0;
+}
+
 function isInflectionGloss(glosses, formOf) {
     glossesString = JSON.stringify(glosses);
     switch (targetIso) {
@@ -63,8 +67,8 @@ function handleLevel(nest, level) {
     return nestDefs;
 }
 
-function handleNest(nestedGlossObj, sense) {
-    const nestedGloss = handleLevel(nestedGlossObj, 1);
+function handleNest(glossTree, sense) {
+    const nestedGloss = handleLevel(glossTree, 1);
 
     if (nestedGloss.length > 0) {
         for (const entry of nestedGloss) {
@@ -135,195 +139,200 @@ lr.on('line', (line) => {
 
 function handleLine(line) {
     const parsedLine = JSON.parse(line);
-    const { pos, senses, sounds, forms } = parsedLine;
+    const { pos, sounds, forms } = parsedLine;
+    if(!pos) return;
     const word = getCanonicalForm(parsedLine);
+    if (!word) return;
     const reading = getReading(word, parsedLine);
+    
+    if (forms) {
+        forms.forEach((formData) => {
+            const { form } = formData;
+            let { tags } = formData;
+            if(!form) return;
+            if(!tags) return;
+            if(form === '-') return;
+            tags = tags.filter(tag => !redundantTags.includes(tag));
+            const isBlacklisted = tags.some(value => blacklistedTags.includes(value));
+            if (isBlacklisted) return;
+            const isIdentity = !tags.some(value => !identityTags.includes(value));
+            if (isIdentity) return;
 
-    if (word && pos && senses) {
-        if (forms) {
-            forms.forEach((formData) => {
-                const { form } = formData;
-                let { tags } = formData;
-                if(!form) return;
-                if(!tags) return;
-                if(form === '-') return;
-                tags = tags.filter(tag => !redundantTags.includes(tag));
-                const isBlacklisted = tags.some(value => blacklistedTags.includes(value));
-                if (isBlacklisted) return;
-                const isIdentity = !tags.some(value => !identityTags.includes(value));
-                if (isIdentity) return;
-
-                const wordMap = automatedForms.get(word) || new Map();
-                const formMap = wordMap.get(form) || new Map();
-                formMap.get(pos) || formMap.set(pos, new Set());
-                wordMap.set(form, formMap);
-                automatedForms.set(word, wordMap);
-                
-                const tagsSet = new Set((formMap.get(pos)));
-                
-                tagsSet.add(sortTags(targetIso, tags).join(' '));
-                
-                formMap.set(pos, similarSort(mergePersonTags(targetIso, Array.from(tagsSet))));                     
-            });
-        }
-        
-        const ipa = sounds 
-            ? sounds
-                .filter(sound => sound && sound.ipa)
-                .map(({ipa, tags, note}) => {
-                    if(!tags) {
-                        if (note) {
-                            tags = [note];
-                        } else {
-                            tags = [];
-                        }
-                    }
-                    return ({ipa, tags})
-                })
-                .flatMap(ipaObj => typeof ipaObj.ipa === 'string' ? [ipaObj] : ipaObj.ipa.map(ipa => ({ ipa, tags: ipaObj.tags })) )
-                .filter(ipaObj => ipaObj.ipa)
-            : [];
-
-        let nestedGlossObj = {};
-
-        let senseIndex = 0;
-        for (const sense of senses) {
-            const glosses = sense.raw_glosses || sense.raw_gloss || sense.glosses;
-            const glossesArray = glosses
-                ? Array.isArray(glosses) ? glosses : [glosses]
-                : [];
-
-            const formOf = sense.form_of;
-            const tags = sense.tags || [];
-            if(sense.raw_tags && Array.isArray(sense.raw_tags)) {
-                tags.push(...sense.raw_tags);
-            }
-
-            if (glossesArray.length > 0) {
-                if (!isInflectionGloss(glossesArray, formOf)) {
-                    lemmaDict[word] ??= {};
-                    lemmaDict[word][reading] ??= {};
-                    lemmaDict[word][reading][pos] ??= {};
-                    lemmaDict[word][reading][pos].ipa ??= [];
-
-                    for (const ipaObj of ipa) {
-                        if (!lemmaDict[word][reading][pos].ipa.some(obj => obj.ipa === ipaObj.ipa)) {
-                            lemmaDict[word][reading][pos].ipa.push(ipaObj);
-                        }
-                    }
-
-                    lemmaDict[word][reading][pos].senses ??= [];
-
-                    const currSense = { glosses: [], tags };
-
-                    if (glossesArray.length > 1) {
-                        let nestedObj = nestedGlossObj;
-
-                        for (const level of glossesArray) {
-                            nestedObj[level] ??= {};
-                            nestedObj = nestedObj[level];
-                        }
-
-                        if (senseIndex === senses.length - 1 && nestedGlossObj) {
-                            try {
-                                handleNest(nestedGlossObj, currSense);
-                            } catch (error) {
-                                console.log(`Recursion error on word '${word}', pos '${pos}'`);
-                                continue;
-                            }
-                            nestedGlossObj = {};
-                        }
-                    } else if (glossesArray.length === 1) {
-                        if (nestedGlossObj) {
-                            handleNest(nestedGlossObj, currSense);
-                            nestedGlossObj = {};
-                        }
-
-                        const gloss = glossesArray[0];
-
-                        if (!JSON.stringify(currSense.glosses).includes(gloss)) {
-                            currSense.glosses.push(gloss);
-                        }
-                    }
-
-                    if (currSense.glosses.length > 0) {
-                        lemmaDict[word][reading][pos].senses.push(currSense);
-                    }
-                } else {
-                    switch (targetIso) {
-                        case 'en':
-                            processEnglishInflectionGlosses(sense, word, pos);
-                            break;
-                        case 'fr':
-                            let inflection, lemma;
-
-                            const match1 = sense.glosses[0].match(/(.*)du verbe\s+((?:(?!\bdu\b).)*)$/);
-                            const match2 = sense.glosses[0].match(/^((?:(?:Masculin|Féminin)\s)?(?:(?:p|P)luriel|(?:s|S)ingulier)) de ([^\s]*)$/);
-
-                            if (match1) {
-                                inflection = match1[1];
-                                lemma = match1[2];
-                            } else if (match2) {
-                                inflection = match2[1];
-                                lemma = match2[2];
-                            }
-
-                            if (inflection && lemma) {
-                                inflection = inflection.trim();
-                                lemma = lemma.replace(/\.$/, '').trim();
-
-                                if (inflection && word !== lemma) {
-                                    addDeinflections(word, pos, lemma, [inflection]);
-                                }
-                            }
-                            break;
+            const wordMap = automatedForms.get(word) || new Map();
+            const formMap = wordMap.get(form) || new Map();
+            formMap.get(pos) || formMap.set(pos, new Set());
+            wordMap.set(form, formMap);
+            automatedForms.set(word, wordMap);
+            
+            const tagsSet = new Set((formMap.get(pos)));
+            
+            tagsSet.add(sortTags(targetIso, tags).join(' '));
+            
+            formMap.set(pos, similarSort(mergePersonTags(targetIso, Array.from(tagsSet))));                     
+        });
+    }
+    
+    const ipa = sounds 
+        ? sounds
+            .filter(sound => sound && sound.ipa)
+            .map(({ipa, tags, note}) => {
+                if(!tags) {
+                    if (note) {
+                        tags = [note];
+                    } else {
+                        tags = [];
                     }
                 }
-            }
-            senseIndex += 1;
+                return ({ipa, tags})
+            })
+            .flatMap(ipaObj => typeof ipaObj.ipa === 'string' ? [ipaObj] : ipaObj.ipa.map(ipa => ({ ipa, tags: ipaObj.tags })) )
+            .filter(ipaObj => ipaObj.ipa)
+        : [];
+
+    
+    const {senses} = parsedLine;
+    if (!senses) return;
+
+    const sensesWithGlosses = senses.filter(sense => sense.glosses || sense.raw_glosses || sense.raw_gloss);
+    sensesWithGlosses.map(sense => {
+        const glosses = sense.raw_glosses || sense.raw_gloss || sense.glosses;
+        const glossesArray = Array.isArray(glosses) ? glosses : [glosses];
+
+        const tags = sense.tags || [];
+        if(sense.raw_tags && Array.isArray(sense.raw_tags)) {
+            tags.push(...sense.raw_tags);
         }
 
+        sense.glossesArray = glossesArray;
+        sense.tags = tags;
+    });
+
+    const sensesWithoutInflectionGlosses = sensesWithGlosses.filter(sense => {
+        const {glossesArray, form_of, glosses} = sense;
+        if(!isInflectionGloss(glossesArray, form_of)) return true;
+        processInflectionGlosses(glosses, word, pos);
+        return false;
+    });
+
+    if (sensesWithoutInflectionGlosses.length === 0) return;
+        
+    lemmaDict[word] ??= {};
+    lemmaDict[word][reading] ??= {};
+    lemmaDict[word][reading][pos] ??= {};
+    lemmaDict[word][reading][pos].ipa ??= [];
+
+    for (const ipaObj of ipa) {
+        if (!lemmaDict[word][reading][pos].ipa.some(obj => obj.ipa === ipaObj.ipa)) {
+            lemmaDict[word][reading][pos].ipa.push(ipaObj);
+        }
+    }
+
+    lemmaDict[word][reading][pos].senses ??= [];
+
+    const glossTree = {};
+    for (const sense of sensesWithoutInflectionGlosses) {
+        const { glossesArray, tags } = sense;
+        let temp = glossTree;
+        for (const [levelIndex, levelGloss] of glossesArray.entries()) {
+            if(!temp[levelGloss]) {
+                temp[levelGloss] = {};
+                if(levelIndex === 0) {
+                    temp[levelGloss]['_tags'] = tags;
+                }
+            } else if (levelIndex === 0) {
+                temp[levelGloss]['_tags'] = tags.filter(value => temp[levelGloss]['_tags'].includes(value));
+            }
+            temp = temp[levelGloss];
+        }
+    }
+    
+    for (const [gloss, children] of Object.entries(glossTree)) {
+        const tags = children._tags;
+        delete children['_tags'];
+
+        const currSense = { glosses: [], tags };
+        if(isEmpty(children)) {
+            currSense.glosses.push(gloss);
+        } else {
+            const branch = {};
+            branch[gloss] = children;
+            handleNest(branch, currSense);
+        }
+
+        if (currSense.glosses.length > 0) {
+            lemmaDict[word][reading][pos].senses.push(currSense);
+        }
     }
 }
 
-function processEnglishInflectionGlosses(sense, word, pos) {
-    if (sense.glosses) {
-        glossPieces = sense.glosses.flatMap(gloss => gloss.split('##').map(piece => piece.trim()));
-        const lemmas = new Set();
-        const inflections = new Set();
-        for (const piece of glossPieces) {
-            const lemmaMatch = piece.match(/of ([^\s]+)\s*$/);
-            if (lemmaMatch) {
-                lemmas.add(lemmaMatch[1].replace(/:/g, '').trim());
+function processInflectionGlosses(glosses, word, pos) {
+    switch (targetIso) {
+        case 'en':
+            processEnglishInflectionGlosses(glosses, word, pos);
+            break;
+        case 'fr':
+            let inflection, lemma;
+
+            const match1 = glosses[0].match(/(.*)du verbe\s+((?:(?!\bdu\b).)*)$/);
+            const match2 = glosses[0].match(/^((?:(?:Masculin|Féminin)\s)?(?:(?:p|P)luriel|(?:s|S)ingulier)) de ([^\s]*)$/);
+
+            if (match1) {
+                inflection = match1[1];
+                lemma = match1[2];
+            } else if (match2) {
+                inflection = match2[1];
+                lemma = match2[2];
             }
 
-            if (lemmas.size > 1) {
-                // console.warn(`Multiple lemmas in inflection glosses for word '${word}'`, lemmas);
-                return;
+            if (inflection && lemma) {
+                inflection = inflection.trim();
+                lemma = lemma.replace(/\.$/, '').trim();
+
+                if (inflection && word !== lemma) {
+                    addDeinflections(word, pos, lemma, [inflection]);
+                }
             }
+            break;
+    }
+}
 
-            const lemma = lemmas.values().next().value;
-
-            if(!lemma) continue;
-
-            const escapedLemma = escapeRegExp(lemma);
-
-            const inflection = piece
-                .replace(/inflection of /, '')
-                .replace(new RegExp(`of ${escapedLemma}`), '')
-                .replace(new RegExp(`${escapedLemma}`), '')
-                .replace(new RegExp(`\\s+`), ' ')
-                .replace(/:/g, '')
-                .trim();
-
-            inflections.add(inflection); 
+function processEnglishInflectionGlosses(glosses, word, pos) {
+    if(!glosses) return;
+    glossPieces = glosses.flatMap(gloss => gloss.split('##').map(piece => piece.trim()));
+    const lemmas = new Set();
+    const inflections = new Set();
+    for (const piece of glossPieces) {
+        const lemmaMatch = piece.match(/of ([^\s]+)\s*$/);
+        if (lemmaMatch) {
+            lemmas.add(lemmaMatch[1].replace(/:/g, '').trim());
         }
-        
+
+        if (lemmas.size > 1) {
+            // console.warn(`Multiple lemmas in inflection glosses for word '${word}'`, lemmas);
+            return;
+        }
+
         const lemma = lemmas.values().next().value;
-        if (word !== lemma) {
-            for (const inflection of [...inflections].filter(Boolean)) {
-                addDeinflections(word, pos, lemma, [inflection]);
-            }
+
+        if(!lemma) continue;
+
+        const escapedLemma = escapeRegExp(lemma);
+
+        const inflection = piece
+            .replace(/inflection of /, '')
+            .replace(new RegExp(`of ${escapedLemma}`), '')
+            .replace(new RegExp(`${escapedLemma}`), '')
+            .replace(new RegExp(`\\s+`), ' ')
+            .replace(/:/g, '')
+            .trim();
+
+        inflections.add(inflection); 
+    }
+    
+    const lemma = lemmas.values().next().value;
+    if (word !== lemma) {
+        for (const inflection of [...inflections].filter(Boolean)) {
+            addDeinflections(word, pos, lemma, [inflection]);
         }
     }
 }

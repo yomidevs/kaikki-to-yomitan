@@ -106,12 +106,12 @@
                     ]
                   }
                 ]
-              },
-              "To improve or care for something in an intellectual sense. [weak or strong verb]"
+              }
             ],
             "tags": [
               "class-4",
-              "strong"
+              "strong",
+              "transitive"
             ]
           },
           {
@@ -183,7 +183,15 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "tags": [
+              "class-4",
+              "strong"
+            ]
+          },
+          {
+            "glosses": [
               {
                 "type": "structured-content",
                 "content": [
@@ -242,9 +250,7 @@
             ],
             "tags": [
               "class-4",
-              "intransitive",
-              "strong",
-              "with “zu” followed by an infinitive verb"
+              "strong"
             ]
           }
         ]

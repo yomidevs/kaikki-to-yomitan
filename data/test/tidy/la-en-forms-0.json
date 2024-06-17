@@ -2118,6 +2118,164 @@
           ]
         ]
       }
+    ],
+    [
+      "domus",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "domūs",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive",
+                    "accusative plural",
+                    "nominative plural",
+                    "vocative plural",
+                    "genitive singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "domī",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive",
+                    "genitive singular",
+                    "locative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "domuum",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "domōrum",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "domuī",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "dative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "domō",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "singular ablative",
+                    "dative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "domū",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "singular ablative",
+                    "dative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "domibus",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "plural ablative",
+                    "dative plural",
+                    "locative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "domum",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "domōs",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative plural"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
     ]
   ]
 }
