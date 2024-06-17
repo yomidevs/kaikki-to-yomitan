@@ -19,6 +19,10 @@ function escapeRegExp(string) {
     return string.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&');
 }
 
+function isEmpty(obj) {
+    return Object.keys(obj).length === 0;
+}
+
 function isInflectionGloss(glosses, formOf) {
     glossesString = JSON.stringify(glosses);
     switch (targetIso) {
@@ -63,8 +67,8 @@ function handleLevel(nest, level) {
     return nestDefs;
 }
 
-function handleNest(nestedGlossObj, sense) {
-    const nestedGloss = handleLevel(nestedGlossObj, 1);
+function handleNest(glossTree, sense) {
+    const nestedGloss = handleLevel(glossTree, 1);
 
     if (nestedGloss.length > 0) {
         for (const entry of nestedGloss) {
@@ -235,49 +239,26 @@ function handleLine(line) {
             if(!temp[levelGloss]) {
                 temp[levelGloss] = {};
                 if(levelIndex === 0) {
-                    temp['tags'] = tags;
+                    temp[levelGloss]['_tags'] = tags;
                 }
             } else if (levelIndex === 0) {
-                // set intersection of tags
-                temp['tags'] = tags.filter(value => temp['tags'].includes(value));
+                temp[levelGloss]['_tags'] = tags.filter(value => temp[levelGloss]['_tags'].includes(value));
             }
             temp = temp[levelGloss];
         }
     }
     
-    for (const [senseIndex, sense] of sensesWithoutInflectionGlosses.entries()) {
-        const { glossesArray, tags } = sense;
+    for (const [gloss, children] of Object.entries(glossTree)) {
+        const tags = children._tags;
+        delete children['_tags'];
 
         const currSense = { glosses: [], tags };
-
-        if (glossesArray.length > 1) {
-            let nestedObj = nestedGlossObj;
-
-            for (const level of glossesArray) {
-                nestedObj[level] ??= {};
-                nestedObj = nestedObj[level];
-            }
-
-            if (senseIndex === senses.length - 1 && nestedGlossObj) {
-                try {
-                    handleNest(nestedGlossObj, currSense);
-                } catch (error) {
-                    console.log(`Recursion error on word '${word}', pos '${pos}'`);
-                    continue;
-                }
-                nestedGlossObj = {};
-            }
-        } else if (glossesArray.length === 1) {
-            if (nestedGlossObj) {
-                handleNest(nestedGlossObj, currSense);
-                nestedGlossObj = {};
-            }
-
-            const gloss = glossesArray[0];
-
-            if (!JSON.stringify(currSense.glosses).includes(gloss)) {
-                currSense.glosses.push(gloss);
-            }
+        if(isEmpty(children)) {
+            currSense.glosses.push(gloss);
+        } else {
+            const branch = {};
+            branch[gloss] = children;
+            handleNest(branch, currSense);
         }
 
         if (currSense.glosses.length > 0) {

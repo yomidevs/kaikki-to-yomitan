@@ -10,42 +10,7 @@
       "to eat; to drink",
       "to get; to buy",
       "to rob; to deprive",
-      "to make"
-    ],
-    0,
-    ""
-  ],
-  [
-    "prendre",
-    "",
-    "v vi",
-    "v",
-    0,
-    [
-      "to catch, to work, to start"
-    ],
-    0,
-    ""
-  ],
-  [
-    "prendre",
-    "",
-    "v vr",
-    "v",
-    0,
-    [
-      "to get (something) caught (in), to jam"
-    ],
-    0,
-    ""
-  ],
-  [
-    "prendre",
-    "",
-    "v",
-    "v",
-    0,
-    [
+      "to make",
       {
         "type": "structured-content",
         "content": [
@@ -84,7 +49,42 @@
             ]
           }
         ]
-      },
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "prendre",
+    "",
+    "v vi",
+    "v",
+    0,
+    [
+      "to catch, to work, to start"
+    ],
+    0,
+    ""
+  ],
+  [
+    "prendre",
+    "",
+    "v vr",
+    "v",
+    0,
+    [
+      "to get (something) caught (in), to jam"
+    ],
+    0,
+    ""
+  ],
+  [
+    "prendre",
+    "",
+    "v",
+    "v",
+    0,
+    [
       "(followed by a partitive, in various idiomatic expressions) to gain"
     ],
     0,
