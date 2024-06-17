@@ -363,17 +363,6 @@
         "senses": [
           {
             "glosses": [
-              "house, home (the building where a person lives)"
-            ],
-            "tags": [
-              "declension-2",
-              "declension-4",
-              "feminine",
-              "irregular"
-            ]
-          },
-          {
-            "glosses": [
               {
                 "type": "structured-content",
                 "content": [
@@ -412,8 +401,7 @@
                     ]
                   }
                 ]
-              },
-              "any dwelling-place or abode (of people or animals)"
+              }
             ],
             "tags": [
               "declension-2",
@@ -424,7 +412,7 @@
           },
           {
             "glosses": [
-              "the place of one's birth or residence, native country, town"
+              "any dwelling-place or abode (of people or animals)"
             ],
             "tags": [
               "declension-2",
@@ -473,7 +461,17 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "tags": [
+              "declension-2",
+              "declension-4",
+              "feminine",
+              "irregular"
+            ]
+          },
+          {
+            "glosses": [
               {
                 "type": "structured-content",
                 "content": [
@@ -528,7 +526,17 @@
                     ]
                   }
                 ]
-              },
+              }
+            ],
+            "tags": [
+              "declension-2",
+              "declension-4",
+              "feminine",
+              "irregular"
+            ]
+          },
+          {
+            "glosses": [
               "(idiomatic) one's own possessions or resources"
             ],
             "tags": [

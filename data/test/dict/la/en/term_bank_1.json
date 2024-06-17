@@ -90,7 +90,6 @@
     "n",
     0,
     [
-      "house, home (the building where a person lives)",
       {
         "type": "structured-content",
         "content": [
@@ -131,18 +130,6 @@
         ]
       },
       "any dwelling-place or abode (of people or animals)",
-      "the place of one's birth or residence, native country, town"
-    ],
-    0,
-    ""
-  ],
-  [
-    "domus",
-    "",
-    "n decl-2 decl-4 fem idio irreg",
-    "n",
-    0,
-    [
       {
         "type": "structured-content",
         "content": [
@@ -236,7 +223,18 @@
             ]
           }
         ]
-      },
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "domus",
+    "",
+    "n decl-2 decl-4 fem idio irreg",
+    "n",
+    0,
+    [
       "one's own possessions or resources",
       "(in locative case in phrases) peace"
     ],
