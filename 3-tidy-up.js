@@ -196,19 +196,20 @@ function handleLine(line) {
         const glossesArray = Array.isArray(glosses) ? glosses : [glosses];
         sense.glossesArray = glossesArray;
     });
+
+    const sensesWithoutInflectionGlosses = sensesWithGlosses.filter(sense => {
+        const {glossesArray, form_of, glosses} = sense;
+        if(!isInflectionGloss(glossesArray, form_of)) return true;
+        processInflectionGlosses(glosses, word, pos);
+        return false;
+    });
     
-    for (const [senseIndex, sense] of sensesWithGlosses.entries()) {
+    for (const [senseIndex, sense] of sensesWithoutInflectionGlosses.entries()) {
         const glossesArray = sense.glossesArray;
 
-        const formOf = sense.form_of;
         const tags = sense.tags || [];
         if(sense.raw_tags && Array.isArray(sense.raw_tags)) {
             tags.push(...sense.raw_tags);
-        }
-
-        if(isInflectionGloss(glossesArray, formOf)) {
-            processInflectionGlosses(sense.glosses, word, pos);
-            continue;
         }
 
         lemmaDict[word] ??= {};
