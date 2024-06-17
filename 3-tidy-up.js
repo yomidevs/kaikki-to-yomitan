@@ -188,8 +188,7 @@ function handleLine(line) {
     
     const {senses} = parsedLine;
     if (!senses) return;
-    let nestedGlossObj = {};
-    
+
     const sensesWithGlosses = senses.filter(sense => sense.glosses || sense.raw_glosses || sense.raw_gloss);
     sensesWithGlosses.map(sense => {
         const glosses = sense.raw_glosses || sense.raw_gloss || sense.glosses;
@@ -210,22 +209,44 @@ function handleLine(line) {
         processInflectionGlosses(glosses, word, pos);
         return false;
     });
+
+    if (sensesWithoutInflectionGlosses.length === 0) return;
+        
+    lemmaDict[word] ??= {};
+    lemmaDict[word][reading] ??= {};
+    lemmaDict[word][reading][pos] ??= {};
+    lemmaDict[word][reading][pos].ipa ??= [];
+
+    for (const ipaObj of ipa) {
+        if (!lemmaDict[word][reading][pos].ipa.some(obj => obj.ipa === ipaObj.ipa)) {
+            lemmaDict[word][reading][pos].ipa.push(ipaObj);
+        }
+    }
+
+    lemmaDict[word][reading][pos].senses ??= [];
+
+    const sensesWithNesting = [];
+    let nestedGlossObj = {};
+    const glossTree = {};
+    for (const [senseIndex, sense] of sensesWithoutInflectionGlosses.entries()) {
+        const { glossesArray, tags } = sense;
+        let temp = glossTree;
+        for (const [levelIndex, levelGloss] of glossesArray.entries()) {
+            if(!temp[levelGloss]) {
+                temp[levelGloss] = {};
+                if(levelIndex === 0) {
+                    temp['tags'] = tags;
+                }
+            } else if (levelIndex === 0) {
+                // set intersection of tags
+                temp['tags'] = tags.filter(value => temp['tags'].includes(value));
+            }
+            temp = temp[levelGloss];
+        }
+    }
     
     for (const [senseIndex, sense] of sensesWithoutInflectionGlosses.entries()) {
         const { glossesArray, tags } = sense;
-        
-        lemmaDict[word] ??= {};
-        lemmaDict[word][reading] ??= {};
-        lemmaDict[word][reading][pos] ??= {};
-        lemmaDict[word][reading][pos].ipa ??= [];
-
-        for (const ipaObj of ipa) {
-            if (!lemmaDict[word][reading][pos].ipa.some(obj => obj.ipa === ipaObj.ipa)) {
-                lemmaDict[word][reading][pos].ipa.push(ipaObj);
-            }
-        }
-
-        lemmaDict[word][reading][pos].senses ??= [];
 
         const currSense = { glosses: [], tags };
 
