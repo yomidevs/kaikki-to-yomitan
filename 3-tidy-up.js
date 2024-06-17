@@ -194,7 +194,14 @@ function handleLine(line) {
     sensesWithGlosses.map(sense => {
         const glosses = sense.raw_glosses || sense.raw_gloss || sense.glosses;
         const glossesArray = Array.isArray(glosses) ? glosses : [glosses];
+
+        const tags = sense.tags || [];
+        if(sense.raw_tags && Array.isArray(sense.raw_tags)) {
+            tags.push(...sense.raw_tags);
+        }
+
         sense.glossesArray = glossesArray;
+        sense.tags = tags;
     });
 
     const sensesWithoutInflectionGlosses = sensesWithGlosses.filter(sense => {
@@ -205,13 +212,8 @@ function handleLine(line) {
     });
     
     for (const [senseIndex, sense] of sensesWithoutInflectionGlosses.entries()) {
-        const glossesArray = sense.glossesArray;
-
-        const tags = sense.tags || [];
-        if(sense.raw_tags && Array.isArray(sense.raw_tags)) {
-            tags.push(...sense.raw_tags);
-        }
-
+        const { glossesArray, tags } = sense;
+        
         lemmaDict[word] ??= {};
         lemmaDict[word][reading] ??= {};
         lemmaDict[word][reading][pos] ??= {};
