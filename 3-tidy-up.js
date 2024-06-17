@@ -229,10 +229,8 @@ function handleLine(line) {
 
     lemmaDict[word][reading][pos].senses ??= [];
 
-    const sensesWithNesting = [];
-    let nestedGlossObj = {};
     const glossTree = {};
-    for (const [senseIndex, sense] of sensesWithoutInflectionGlosses.entries()) {
+    for (const sense of sensesWithoutInflectionGlosses) {
         const { glossesArray, tags } = sense;
         let temp = glossTree;
         for (const [levelIndex, levelGloss] of glossesArray.entries()) {
