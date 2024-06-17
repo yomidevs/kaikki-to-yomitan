@@ -68,5 +68,33 @@
     -1,
     "participle",
     1
+  ],
+  [
+    "decl-4",
+    "",
+    0,
+    "declension-4",
+    0
+  ],
+  [
+    "fem",
+    "",
+    -1,
+    "feminine",
+    1
+  ],
+  [
+    "irreg",
+    "",
+    0,
+    "irregular",
+    0
+  ],
+  [
+    "idio",
+    "",
+    0,
+    "idiomatic",
+    0
   ]
 ]
