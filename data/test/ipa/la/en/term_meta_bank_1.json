@@ -169,5 +169,32 @@
         }
       ]
     }
+  ],
+  [
+    "domus",
+    "ipa",
+    {
+      "reading": "domus",
+      "transcriptions": [
+        {
+          "ipa": "/ˈdo.mus/",
+          "tags": [
+            "Classical"
+          ]
+        },
+        {
+          "ipa": "[ˈd̪ɔmʊs̠]",
+          "tags": [
+            "Classical"
+          ]
+        },
+        {
+          "ipa": "[ˈd̪ɔːmus]",
+          "tags": [
+            "✝️"
+          ]
+        }
+      ]
+    }
   ]
 ]
