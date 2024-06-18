@@ -30,6 +30,7 @@
     {"iso": "sv",  "language": "Swedish",        "flag": "🇸🇪"},
     {"iso": "th",  "language": "Thai",           "flag": "🇹🇭"},
     {"iso": "tr",  "language": "Turkish",        "flag": "🇹🇷"},
+    {"iso": "uk",  "language": "Ukrainian",      "flag": "🇺🇦"},
     {"iso": "vi",  "language": "Vietnamese",     "flag": "🇻🇳"},
     {"iso": "zh",  "language": "Chinese",        "flag": "🇨🇳"}
 ]
