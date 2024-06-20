@@ -63,7 +63,7 @@ for (const {iso: sourceIso} of languages){
             }
         }
 
-        const ipaFiles = readdirSync(`data/temp/ipa`);
+        const ipaFiles = readdirSync(`data/test/temp/ipa`);
         for(const file of ipaFiles){
             if(file === `tag_bank_1.json` || file === 'term_meta_bank_1.json'){
                 outputFile = `data/test/ipa/${sourceIso}/${targetIso}/${file}`;

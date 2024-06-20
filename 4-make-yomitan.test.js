@@ -38,12 +38,14 @@ for (const {iso: sourceIso} of languages){
         const testTermTags = JSON.parse(readFileSync(`data/test/temp/dict/tag_bank_1.json`, 'utf8'));
         const testTerms = JSON.parse(readFileSync(`data/test/temp/dict/term_bank_1.json`, 'utf8'));
         const testIpaTags = JSON.parse(readFileSync(`data/test/temp/ipa/tag_bank_1.json`, 'utf8'));
-        const testIpa = JSON.parse(readFileSync(`data/test/temp/ipa/term_meta_bank_1.json`, 'utf8'));
+        const testIpaFile = `data/test/temp/ipa/term_meta_bank_1.json`;
+        const testIpa = existsSync(testIpaFile) ? JSON.parse(readFileSync(testIpaFile, 'utf8')) : null;
 
         const validTermTags = JSON.parse(readFileSync(`data/test/dict/${sourceIso}/${targetIso}/tag_bank_1.json`, 'utf8'));
         const validTerms = JSON.parse(readFileSync(`data/test/dict/${sourceIso}/${targetIso}/term_bank_1.json`, 'utf8'));
         const validIpaTags = JSON.parse(readFileSync(`data/test/ipa/${sourceIso}/${targetIso}/tag_bank_1.json`, 'utf8'));
-        const validIpa = JSON.parse(readFileSync(`data/test/ipa/${sourceIso}/${targetIso}/term_meta_bank_1.json`, 'utf8'));
+        const validIpaFile = `data/test/ipa/${sourceIso}/${targetIso}/term_meta_bank_1.json`;
+        const validIpa = existsSync(validIpaFile) ? JSON.parse(readFileSync(validIpaFile, 'utf8')) : null;
 
         describe(`Converting tidy ${sourceIso}-${targetIso} to yomitan format`, () => {
             test('should have valid term tags', () => {
