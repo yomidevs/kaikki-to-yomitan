@@ -3,7 +3,7 @@
      "tort",
      "",
      0,
-     "Utilisé à tort",
+     ["Utilisé à tort", "Par erreur ?"],
      0
    ],
    [
@@ -14,7 +14,7 @@
      0
    ],
    [
-     "usage critiqué",
+     "critiqué",
      "",
      0,
      "Usage critiqué",
@@ -28,10 +28,10 @@
      0
    ],
    [
-     "abus de langage",
+     "par abus",
      "",
      0,
-     "Abusivement",
+     ["Par abus", "Abusivement", "Abus de langage", "Usage abusif"],
      0
    ],
    [
@@ -42,38 +42,10 @@
      0
    ],
    [
-     "abus de langage",
-     "",
-     0,
-     "Abus de langage",
-     0
-   ],
-   [
-     "abus de langage",
-     "",
-     0,
-     "Par abus",
-     0
-   ],
-   [
-     "abus de langage",
-     "",
-     0,
-     "Usage abusif",
-     0
-   ],
-   [
      "non standard",
      "",
      0,
      "Verbe non standard",
-     0
-   ],
-   [
-     "tort",
-     "",
-     0,
-     "Par erreur ?",
      0
    ]
  ]
