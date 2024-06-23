@@ -3,7 +3,49 @@
      "tort",
      "",
      0,
-     "Utilisé à tort",
+     ["Utilisé à tort", "Par erreur ?"],
+     0
+   ],
+   [
+     "verlan",
+     "",
+     0,
+     "Verlan",
+     0
+   ],
+   [
+     "critiqué",
+     "",
+     0,
+     "Usage critiqué",
+     0
+   ],
+   [
+     "par confusion",
+     "",
+     0,
+     "Par confusion",
+     0
+   ],
+   [
+     "par abus",
+     "",
+     0,
+     ["Par abus", "Abusivement", "Abus de langage", "Usage abusif"],
+     0
+   ],
+   [
+     "impropre",
+     "",
+     0,
+     "Impropre",
+     0
+   ],
+   [
+     "non standard",
+     "",
+     0,
+     "Verbe non standard",
      0
    ]
  ]
