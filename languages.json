@@ -20,6 +20,7 @@
     {"iso": "km",  "language": "Khmer",          "flag": "🇰🇭"},
     {"iso": "ko",  "language": "Korean",         "flag": "🇰🇷"},
     {"iso": "la",  "language": "Latin",          "flag": "🏛"},
+    {"iso": "mn",  "language": "Mongolian",      "flag": "🇲🇳"},
     {"iso": "nl",  "language": "Dutch",          "flag": "🇳🇱"},
     {"iso": "pl",  "language": "Polish",         "flag": "🇵🇱"},
     {"iso": "pt",  "language": "Portuguese",     "flag": "🇧🇷🇵🇹"},
