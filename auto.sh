@@ -152,6 +152,8 @@ for target_lang in "${languages[@]}"; do
     fi
 
     export temp_folder="data/temp"
+    temp_dict_folder="$temp_folder/dict"
+    temp_ipa_folder="$temp_folder/ipa"
     dict_file="${DICT_NAME}-$source_iso-$target_iso.zip"
     ipa_file="${DICT_NAME}-$source_iso-$target_iso-ipa.zip"
 
@@ -163,8 +165,8 @@ for target_lang in "${languages[@]}"; do
       echo "Creating Yomitan dict and IPA files"
       if node --max-old-space-size="$max_memory_mb" 4-make-yomitan.js; then
         echo "Zipping Yomitan files"
-        zip -qj "$dict_file" $temp_folder/dict/index.json $temp_folder/dict/tag_bank_1.json $temp_folder/dict/term_bank_*.json
-        zip -qj "$ipa_file" $temp_folder/ipa/index.json $temp_folder/ipa/tag_bank_1.json $temp_folder/ipa/term_meta_bank_*.json
+        zip -qj "$dict_file" $temp_dict_folder/index.json $temp_dict_folder/styles.css $temp_dict_folder/tag_bank_1.json $temp_dict_folder/term_bank_*.json 
+        zip -qj "$ipa_file" $temp_ipa_folder/index.json $temp_ipa_folder/tag_bank_1.json $temp_ipa_folder/term_meta_bank_*.json
       else
         echo "Error: Yomitan generation script failed."
       fi

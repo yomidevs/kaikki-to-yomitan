@@ -71,7 +71,7 @@
 	],
 	[
 		"name",
-		"partOfSpeech",
+		"name",
 		-1,
 		"name",
 		1
@@ -491,7 +491,7 @@
     ],
     [
         "arch",
-        "",
+        "archaism",
         4,
         "archaic",
         -4
@@ -561,14 +561,14 @@
 	],
     [
         "dated",
-        "",
+        "archaism",
         0,
         "dated",
         0
     ],
     [
         "obs",
-        "",
+        "archaism",
         0,
         "obsolete",
         0

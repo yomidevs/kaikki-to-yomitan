@@ -46,6 +46,8 @@ const ipaTags = [...targetLanguageIpaTags, ...languageIpaTags];
 const partsOfSpeech = loadJsonArray(`data/language/target-language-tags/${target_iso}/parts_of_speech.json`);
 
 const multiwordInflections = loadJsonArray(`data/language/${source_iso}/${target_iso}/multiword_inflections.json`);
+const tagStylesFile = `data/language/target-language-tags/${target_iso}/tag_styles.json`;
+const tagStyles = existsSync(tagStylesFile) ? JSON.parse(readFileSync(tagStylesFile)) : {};
 
 const tagModifiers = [
     ['chiefly', 'chief'],
@@ -263,9 +265,18 @@ let lastTermBankIndex = 0;
 
     writeIndex('dict');
     writeTags('dict');
+    const dictTagStyles = getTagStyles('dict');
+    if(dictTagStyles){
+        writeStyles('dict', dictTagStyles);
+    }
     lastTermBankIndex = writeBanks('dict', ymtLemmas, lastTermBankIndex);
     writeIndex('ipa');
     writeTags('ipa');
+    const ipaTagStyles = getTagStyles('ipa');
+    if(ipaTagStyles){
+        writeStyles('ipa', ipaTagStyles);
+    }
+
     writeBanks('ipa', ymtIpa);
 }
 
@@ -425,6 +436,21 @@ function writeBanks(folder, data, bankIndex = 0) {
 
 function writeTags(folder) {
     writeFileSync(`${writeFolder}/${folder}/tag_bank_1.json`, JSON.stringify(Object.values(ymtTags[folder])));
+}
+
+function writeStyles(folder, tagStyles){
+    writeFileSync(`${writeFolder}/${folder}/styles.css`, tagStyles);
+}
+
+function getTagStyles(folder){
+    let styles = "";
+    for (const fullTag of Object.values(ymtTags[folder])) {
+        const tag = fullTag[0];
+        if (tagStyles[tag]) {
+            styles += tagStyles[tag] + '\n';
+        }
+    }
+    return styles;
 }
 
 function writeIndex(folder) {

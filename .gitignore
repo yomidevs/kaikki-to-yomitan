@@ -4,6 +4,7 @@
 !tag_bank_ipa.json
 !parts_of_speech.json
 !multiword_inflections.json
+!tag_styles.json
 !tag_order.json
 !languages.json
 !package*.json
@@ -13,6 +14,7 @@
 !data/test/ipa/**/*.json
 
 *.zip
+data/**/*.css
 
 *.txt
 !instructions.txt
