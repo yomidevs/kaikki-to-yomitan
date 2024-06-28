@@ -97,19 +97,19 @@ for target_lang in "${languages[@]}"; do
     # Step 3: Download JSON data if it doesn't exist
     if [ "$target_language" = "English" ]; then
       language_no_special_chars=$(echo "$language" | tr -d '[:space:]-') #Serbo-Croatian, Ancient Greek and such cases
-      filename="kaikki.org-dictionary-$language_no_special_chars.json"
+      filename="kaikki.org-dictionary-$language_no_special_chars.jsonl"
       filepath="data/kaikki/$filename"
       
 
       if [ ! -f "$filepath" ] || [ "$redownload" = true ]; then
-        url="kaikki.org/dictionary/$language/$filename"
+        url="https://kaikki.org/dictionary/$language/$filename"
         echo "Downloading $filename from $url"
         wget "$url" -O "$filepath"
       else
         echo "Kaikki dict already exists. Skipping download."
       fi
     else
-      target_extract="$target_iso-extract.json"
+      target_extract="$target_iso-extract.jsonl"
       target_extract_path="data/kaikki/$target_extract"
 
       if [ ! -f "$target_extract_path" ] || [ "$redownload" = true ] && [ "$downloaded_target_extract" = false ]; then
@@ -123,7 +123,7 @@ for target_lang in "${languages[@]}"; do
         echo "Kaikki dict already exists. Skipping download."
       fi
 
-      filename="$source_iso-$target_iso-extract.json"
+      filename="$source_iso-$target_iso-extract.jsonl"
       filepath="data/kaikki/$filename"
 
       if [ ! -f "$filepath" ]; then
