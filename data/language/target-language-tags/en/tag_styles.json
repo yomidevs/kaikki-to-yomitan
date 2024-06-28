@@ -1,0 +1,5 @@
+{
+    "masc": ".tag[data-details='masculine'] .tag-label{background-color: blue;}",
+    "fem": ".tag[data-details='feminine'] .tag-label{background-color: red;}",
+    "neut": ".tag[data-details='neuter'] .tag-label{background-color: green;}"
+}
