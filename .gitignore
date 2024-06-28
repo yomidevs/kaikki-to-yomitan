@@ -1,4 +1,5 @@
 *.json
+*.jsonl
 !tag_bank_term.json
 !tag_bank_ipa.json
 !parts_of_speech.json
