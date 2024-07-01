@@ -73,11 +73,13 @@ jobs:
           echo "| File Name |" > table.md
           echo "|-----------|" >> table.md
           while IFS= read -r file; do
-            echo "| [$file]($file) |" >> table.md
+            filename=$(basename "$file")
+            echo "| [$filename]($file) |" >> table.md
           done < zip_files.txt
           cat table.md
-  
+        
       - name: Update downloads.md
+        shell: bash
         run: |
           branch="update-downloads-md-$(date +%s)"
           git checkout -b "$branch"
