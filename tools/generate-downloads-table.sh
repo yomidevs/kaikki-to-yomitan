@@ -16,8 +16,8 @@ declare -a languages="($(
   jq -r '.[] | @json | @sh' languages.json
 ))"
 
-echo "| | English (en) | Chinese (zh) | French (fr) | German (de) | Russian (ru) | Spanish (es) | Merged IPA |" > table.md
-echo "|---|---|---|---|---|---|---|---|" >> table.md
+echo "| | English (en) | Chinese (zh) | French (fr) | German (de) | Russian (ru) | Spanish (es) | Merged IPA |" > temp.md
+echo "|---|---|---|---|---|---|---|---|" >> temp.md
 columns=("en" "zh" "fr" "de" "ru" "es" "ipa")
 for source_lang in "${languages[@]}"; do
     source_iso=$(echo "${source_lang}" | jq -r '.iso')
@@ -41,7 +41,8 @@ for source_lang in "${languages[@]}"; do
         done
         row="$row | $cell"
     done
-    echo "$row" >> table.md
+    echo "$row" >> temp.md
 done
 
-cat table.md
+cat temp.md
+rm temp.md
