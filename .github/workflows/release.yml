@@ -36,7 +36,7 @@ jobs:
         run: npm install
 
       - name: Run auto.sh script
-        run: ./auto.sh Albanian ?
+        run: ./auto.sh Albanian German
 
       - name: Run merge-ipa
         run: node merge-ipa.js
