@@ -60,15 +60,17 @@ jobs:
         run: |
           # See https://docs.github.com/en/get-started/using-git/dealing-with-special-characters-in-branch-and-tag-names
           TAG=v$(date -Iseconds | sed 's/[T:\+]/-/g')
+          CALVER=$(date +'%y.%m.%d.%H')
           echo "$TAG"
           echo "tag=$TAG" >> $GITHUB_OUTPUT
+          ehoc "calver=$CALVER" >> $GITHUB_OUTPUT
           git tag -a $TAG -m "Published version $TAG" ${GITHUB_SHA}
           git push origin $TAG
 
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          name: Test auto release
+          name: ${{ steps.tag.outputs.calver }}
           tag_name: ${{ steps.tag.outputs.tag }}
           prerelease: true
           generate_release_notes: true
