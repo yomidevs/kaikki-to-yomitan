@@ -36,7 +36,7 @@ jobs:
         run: npm install
 
       - name: Run auto.sh script
-        run: ./auto.sh ? ?
+        run: ./auto.sh Albanian ?
 
       - name: Run merge-ipa
         run: node merge-ipa.js
@@ -67,10 +67,37 @@ jobs:
           git tag -a $TAG -m "Published version $TAG" ${GITHUB_SHA}
           git push origin $TAG
 
+      - name: Generate markdown table
+        id: generate_markdown
+        run: |
+          echo "| File Name |" > table.md
+          echo "|-----------|" >> table.md
+          while IFS= read -r file; do
+            echo "| [$file]($file) |" >> table.md
+          done < zip_files.txt
+          cat table.md
+  
+      - name: Update downloads.md
+        run: |
+          branch="update-downloads-md-$(date +%s)"
+          git checkout -b "$branch"
+          cp table.md downloads.md
+          git add downloads.md
+          git commit -m "Update downloads.md with list of .zip files"
+          git push -u origin "$branch"
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: "$branch"
+          title: "Update downloads.md with list of .zip files"
+          body: "This PR updates the downloads.md file with a table listing all .zip files."
+
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          name: ${{ steps.tag.outputs.calver }}
+          name: temp test ${{ steps.tag.outputs.calver }}
           tag_name: ${{ steps.tag.outputs.tag }}
           prerelease: true
           generate_release_notes: true
