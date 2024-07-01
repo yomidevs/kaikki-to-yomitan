@@ -79,7 +79,7 @@ jobs:
         run: |
           branch="update-downloads-md-$(date +%s)"
           git checkout -b "$branch"
-          cat downloads_preamble.md table.md > downloads.md
+          cat downloads-preamble.md table.md > downloads.md
           git add downloads.md
           git commit -m "Update downloads.md with list of .zip files"
           git push -u origin "$branch"
