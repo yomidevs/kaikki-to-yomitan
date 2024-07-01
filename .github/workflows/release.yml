@@ -70,15 +70,11 @@ jobs:
       - name: Generate markdown table
         id: generate_markdown
         run: |
-          echo "| File Name |" > table.md
-          echo "|-----------|" >> table.md
-          while IFS= read -r file; do
-            filename=$(basename "$file")
-            echo "| [$filename]($file) |" >> table.md
-          done < zip_files.txt
+          ./tools/generate-downloads-table.sh > table.md
           cat table.md
         
-      - name: Update downloads.md
+      - name: Write to downloads.md
+        id: write_downloads_md
         shell: bash
         run: |
           branch="update-downloads-md-$(date +%s)"
@@ -87,12 +83,14 @@ jobs:
           git add downloads.md
           git commit -m "Update downloads.md with list of .zip files"
           git push -u origin "$branch"
+          echo "branch=$branch" >> $GITHUB_OUTPUT
 
       - name: Create pull request
         uses: peter-evans/create-pull-request@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: "$branch"
+          branch: ${{ steps.write_downloads_md.outputs.branch }}
+          base: master
           title: "Update downloads.md with list of .zip files"
           body: "This PR updates the downloads.md file with a table listing all .zip files."
 
