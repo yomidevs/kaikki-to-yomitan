@@ -97,7 +97,7 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          name: temp test ${{ steps.tag.outputs.calver }}
+          name: ${{ steps.tag.outputs.calver }}
           tag_name: ${{ steps.tag.outputs.tag }}
           prerelease: true
           generate_release_notes: true
