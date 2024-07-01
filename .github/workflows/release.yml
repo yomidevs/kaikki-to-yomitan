@@ -63,7 +63,7 @@ jobs:
           CALVER=$(date +'%y.%m.%d.%H')
           echo "$TAG"
           echo "tag=$TAG" >> $GITHUB_OUTPUT
-          ehoc "calver=$CALVER" >> $GITHUB_OUTPUT
+          echo "calver=$CALVER" >> $GITHUB_OUTPUT
           git tag -a $TAG -m "Published version $TAG" ${GITHUB_SHA}
           git push origin $TAG
 
