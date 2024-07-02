@@ -77,13 +77,7 @@ jobs:
         id: write_downloads_md
         shell: bash
         run: |
-          branch="update-downloads-md-$(date +%s)"
-          git checkout -b "$branch"
           cat downloads-preamble.md table.md > downloads.md
-          git add downloads.md
-          git commit -m "Update downloads.md with list of .zip files"
-          git push -u origin "$branch"
-          echo "branch=$branch" >> $GITHUB_OUTPUT
           rm table.md
           cat downloads.md
 
@@ -91,7 +85,6 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ steps.write_downloads_md.outputs.branch }}
           title: "Update downloads.md with list of .zip files"
           body: "This PR updates the downloads.md file with a table listing all .zip files."
 
