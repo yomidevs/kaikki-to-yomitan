@@ -45,10 +45,10 @@ function handleLevel(nest, level) {
     const nestDefs = [];
     let defIndex = 0;
 
-    for (const [def, children] of Object.entries(nest)) {
+    for (const [def, children] of nest) {
         defIndex += 1;
 
-        if (Object.keys(children).length > 0) {
+        if(children.size > 0) {
             const nextLevel = level + 1;
             const childDefs = handleLevel(children, nextLevel);
 
@@ -229,33 +229,33 @@ function handleLine(line) {
 
     lemmaDict[word][reading][pos].senses ??= [];
 
-    const glossTree = {};
+    const glossTree = new Map();
     for (const sense of sensesWithoutInflectionGlosses) {
         const { glossesArray, tags } = sense;
         let temp = glossTree;
         for (const [levelIndex, levelGloss] of glossesArray.entries()) {
-            if(!temp[levelGloss]) {
-                temp[levelGloss] = {};
+            if(!temp.get(levelGloss)) {
+                temp.set(levelGloss, new Map());
                 if(levelIndex === 0) {
-                    temp[levelGloss]['_tags'] = tags;
+                    temp.get(levelGloss).set('_tags', tags);
                 }
             } else if (levelIndex === 0) {
-                temp[levelGloss]['_tags'] = tags.filter(value => temp[levelGloss]['_tags'].includes(value));
+                temp.get(levelGloss).set('_tags', tags.filter(value => temp.get(levelGloss).get('_tags').includes(value)));
             }
-            temp = temp[levelGloss];
+            temp = temp.get(levelGloss);
         }
     }
     
-    for (const [gloss, children] of Object.entries(glossTree)) {
-        const tags = children._tags;
-        delete children['_tags'];
+    for (const [gloss, children] of glossTree) {
+        const tags = children.get('_tags');
+        children.delete('_tags');
 
         const currSense = { glosses: [], tags };
-        if(isEmpty(children)) {
+        if(children.size === 0) {
             currSense.glosses.push(gloss);
         } else {
-            const branch = {};
-            branch[gloss] = children;
+            const branch = new Map();
+            branch.set(gloss, children);
             handleNest(branch, currSense);
         }
 
