@@ -36,7 +36,7 @@ jobs:
         run: npm install
 
       - name: Run auto.sh script
-        run: ./auto.sh ? ?
+        run: ./auto.sh Albanian German
 
       - name: Run merge-ipa
         run: node merge-ipa.js
@@ -84,6 +84,8 @@ jobs:
           git commit -m "Update downloads.md with list of .zip files"
           git push -u origin "$branch"
           echo "branch=$branch" >> $GITHUB_OUTPUT
+          rm table.md
+          cat downloads.md
 
       - name: Create pull request
         uses: peter-evans/create-pull-request@v4
