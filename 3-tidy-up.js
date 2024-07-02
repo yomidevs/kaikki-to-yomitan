@@ -19,10 +19,6 @@ function escapeRegExp(string) {
     return string.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&');
 }
 
-function isEmpty(obj) {
-    return Object.keys(obj).length === 0;
-}
-
 function isInflectionGloss(glosses, formOf) {
     glossesString = JSON.stringify(glosses);
     switch (targetIso) {
