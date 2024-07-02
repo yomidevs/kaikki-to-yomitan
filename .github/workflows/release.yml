@@ -92,15 +92,14 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ steps.write_downloads_md.outputs.branch }}
-          base: master
           title: "Update downloads.md with list of .zip files"
           body: "This PR updates the downloads.md file with a table listing all .zip files."
 
-      - name: Release
-        uses: softprops/action-gh-release@v2
-        with:
-          name: ${{ steps.tag.outputs.calver }}
-          tag_name: ${{ steps.tag.outputs.tag }}
-          prerelease: true
-          generate_release_notes: true
-          files: ${{ steps.generate_file_list.outputs.zip_files }}
+      # - name: Release
+      #   uses: softprops/action-gh-release@v2
+      #   with:
+      #     name: ${{ steps.tag.outputs.calver }}
+      #     tag_name: ${{ steps.tag.outputs.tag }}
+      #     prerelease: true
+      #     generate_release_notes: true
+      #     files: ${{ steps.generate_file_list.outputs.zip_files }}
