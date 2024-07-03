@@ -154,8 +154,13 @@ for target_lang in "${languages[@]}"; do
     export temp_folder="data/temp"
     temp_dict_folder="$temp_folder/dict"
     temp_ipa_folder="$temp_folder/ipa"
-    dict_file="${DICT_NAME}-$source_iso-$target_iso.zip"
-    ipa_file="${DICT_NAME}-$source_iso-$target_iso-ipa.zip"
+
+    base_title="${DICT_NAME}-$source_iso-$target_iso"
+    dict_file="${base_title}.zip"
+    ipa_file="${base_title}-ipa.zip"
+    
+    dict_index="$temp_dict_folder/index.json"
+    ipa_index="$temp_ipa_folder/index.json"
 
     # Step 5: Create Yomitan files
     if \
@@ -180,6 +185,14 @@ for target_lang in "${languages[@]}"; do
 
     if [ -f "$ipa_file" ]; then
       mv "$ipa_file" "data/language/$source_iso/$target_iso/"
+    fi
+
+    if [ -f "$dict_index" ]; then
+      mv "$dict_index" "data/language/$source_iso/$target_iso/$base_title-index.json"
+    fi
+
+    if [ -f "$ipa_index" ]; then
+      mv "$ipa_index" "data/language/$source_iso/$target_iso/$base_title-ipa-index.json"
     fi
 
     echo "----------------------------------------------------------------------------------"
