@@ -1,7 +1,7 @@
 [
     {"iso": "sq",  "language": "Albanian",       "flag": "🇦🇱"},
     {"iso": "grc", "language": "Ancient Greek",  "flag": "🏺"},
-    {"iso": "ar",  "language": "Arabic",         "flag": "🇪🇬"},
+    {"iso": "ar",  "language": "Arabic",         "flag": "🟩"},
     {"iso": "zh",  "language": "Chinese",        "flag": "🇨🇳"},
     {"iso": "cs",  "language": "Czech",          "flag": "🇨🇿"},
     {"iso": "nl",  "language": "Dutch",          "flag": "🇳🇱"},

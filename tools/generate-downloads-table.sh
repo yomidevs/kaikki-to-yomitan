@@ -1,17 +1,3 @@
-find data/language -type f -name '*.zip' > zip_files.txt
-
-check_file_exists() {
-  local filename=$1
-  while IFS= read -r file; do
-    # Extract the part of the path after 'kty-' and before the '.zip'
-    extracted_name=$(basename "$file" .zip | sed 's/^kty-//')
-    if [ "$extracted_name" = "$filename" ]; then
-      return 0
-    fi
-  done < zip_files.txt
-  return 1
-}
-
 declare -a languages="($(
   jq -r '.[] | @json | @sh' languages.json
 ))"
@@ -22,8 +8,9 @@ columns=("en" "zh" "fr" "de" "ru" "es" "ipa")
 for source_lang in "${languages[@]}"; do
     source_iso=$(echo "${source_lang}" | jq -r '.iso')
     source_language_name=$(echo "${source_lang}" | jq -r '.language')
+    flag=$(echo "${source_lang}" | jq -r '.flag')
         
-    row="| $source_language_name ($source_iso)"
+    row="| $flag </br> $source_language_name ($source_iso)"
 
     for column in "${columns[@]}"; do
 
@@ -35,9 +22,13 @@ for source_lang in "${languages[@]}"; do
 
         cell=""
         for expected_filename in "${expected_filenames[@]}"; do
-            if check_file_exists "$expected_filename"; then
-                cell="$cell [kty-$expected_filename.zip](https://github.com/themoeway/kaikki-to-yomitan/releases/latest/download/kty-$expected_filename.zip) </br>"                
+            if [[ "$expected_filename" == *"-ipa" ]]; then
+                display_filename="IPA for ${expected_filename%-ipa}"
+            else
+                display_filename="$expected_filename"
             fi
+
+            cell="$cell [$display_filename](https://github.com/themoeway/kaikki-to-yomitan/releases/latest/download/kty-$expected_filename.zip) </br>"                
         done
         row="$row | $cell"
     done
