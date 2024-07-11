@@ -35,8 +35,8 @@ jobs:
       - name: Install npm dependencies
         run: npm install
 
-      - name: Run main.sh script
-        run: ./main.sh ? ?
+      - name: Run auto.sh script
+        run: ./auto.sh ? ?
 
       - name: Run merge-ipa
         run: node merge-ipa.js
