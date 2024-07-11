@@ -38,12 +38,6 @@ function processTranslations(translations, glosses, senses, sense){
     }
 }
 
-
-console.log(`Source: ${sourceIso}`);
-console.log(`Target: ${targetIso}`);
-console.log(`Kaikki file: ${kaikkiFile}`);
-console.log(`Temp folder: ${writeFolder}`);
-
 const partsOfSpeech = loadJsonArray(`data/language/target-language-tags/en/parts_of_speech.json`);
 const skippedPartsOfSpeech = {};
 

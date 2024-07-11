@@ -56,8 +56,8 @@ convertMainDict(){
 convertGlossary(){
   export source_iso="$edition_iso"
   export source_language="$edition_name"
-  export target_language="$language"
-  export target_iso="$language_iso"
+  export target_language="$gloss_lang_name"
+  export target_iso="$gloss_iso"
   export temp_folder="data/temp"
 
   dict_file="${DICT_NAME}-$source_iso-$target_iso-gloss.zip"
@@ -69,10 +69,6 @@ convertGlossary(){
     zip -qj "$dict_file" $temp_folder/dict/index.json $temp_folder/dict/tag_bank_1.json $temp_folder/dict/term_bank_*.json
   else
     echo "Error: Yomitan generation script failed."
-  fi
-
-  if [ "$keep_files" = false ]; then
-    rm -f "$kaikki_file"
   fi
 
   output_folder="data/language/$source_iso/$target_iso"
@@ -164,12 +160,12 @@ for edition_lang in "${languages[@]}"; do
   downloaded_edition_extract=false
 
   #Iterate over every language
-  for source_lang in "${languages[@]}"; do
-    export language_iso=$(echo "${source_lang}" | jq -r '.iso')
-    language=$(echo "${source_lang}" | jq -r '.language')
+  for some_lang in "${languages[@]}"; do
+    export language_iso=$(echo "${some_lang}" | jq -r '.iso')
+    language=$(echo "${some_lang}" | jq -r '.language')
     
     convert_main=true
-    convert_glossary=true
+    convert_glossary=false
 
     if [ "$edition_name" != "$requested_target" ] && [ "$requested_target" != "?" ]; then
       convert_main=false
@@ -179,15 +175,11 @@ for edition_lang in "${languages[@]}"; do
       convert_main=false
     fi
 
+    if [ "$edition_name" = "$language" ]; then
+      convert_glossary=true
+    fi
+
     if [ "$edition_name" != "$requested_source" ] && [ "$requested_source" != "?" ]; then
-      convert_glossary=false
-    fi
-
-    if [ "$language" != "$requested_target" ] && [ "$requested_target" != "?" ]; then
-      convert_glossary=false
-    fi
-
-    if [ "$requested_target" = "$requested_source" ]; then
       convert_glossary=false
     fi
 
@@ -201,10 +193,6 @@ for edition_lang in "${languages[@]}"; do
 
     download_language="$language"
     download_iso="$language_iso"
-    if [ "$convert_glossary" = true ]; then
-      download_language="$edition_name"
-      download_iso="$edition_iso"
-    fi
 
     export download_language
     export download_iso
@@ -257,7 +245,21 @@ for edition_lang in "${languages[@]}"; do
     fi
 
     if [ "$convert_glossary" = true ]; then
-      convertGlossary
+      for gloss_lang in "${languages[@]}"; do
+        
+        export gloss_iso=$(echo "${gloss_lang}" | jq -r '.iso')
+        gloss_lang_name=$(echo "${gloss_lang}" | jq -r '.language')
+
+        if [ "$gloss_lang" = "$edition_name" ]; then
+          continue
+        fi
+
+        if [ "$gloss_lang_name" != "$requested_target" ] && [ "$requested_target" != "?" ]; then
+          continue
+        fi
+
+        convertGlossary
+      done
     fi
 
   done
@@ -265,6 +267,11 @@ for edition_lang in "${languages[@]}"; do
   if [ "$keep_files" = false ]; then
     rm -rf "$kaikki_file"
     rm -rf "$target_extract_path"
+    edition_extract="$edition_iso-extract.jsonl"
+    edition_extract_path="data/kaikki/$edition_extract"
+    if [ -f "$edition_extract_path" ]; then
+      rm -rf "$edition_extract_path"
+    fi
   fi
 done
 echo "All done!"
