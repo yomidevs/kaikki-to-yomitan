@@ -262,11 +262,12 @@ for edition_lang in "${languages[@]}"; do
       done
     fi
 
+    if [ "$keep_files" = false ]; then
+      rm -rf "$kaikki_file"
+    fi
   done
 
   if [ "$keep_files" = false ]; then
-    rm -rf "$kaikki_file"
-    rm -rf "$target_extract_path"
     edition_extract="$edition_iso-extract.jsonl"
     edition_extract_path="data/kaikki/$edition_extract"
     if [ -f "$edition_extract_path" ]; then
