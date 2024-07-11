@@ -103,8 +103,9 @@ force_tidy=false
 force_ymt=false
 force=false
 keep_files=false
+glossary_only=false
 
-flags=('d' 't' 'y' 'F' 'k')
+flags=('d' 't' 'y' 'F' 'k' 'g')
 for flag in "${flags[@]}"; do
   case "$3" in 
     *"$flag"*) 
@@ -114,6 +115,7 @@ for flag in "${flags[@]}"; do
         'y') force_ymt=true ;;
         'F') force=true ;;
         'k') keep_files=true ;;
+        'g') glossary_only=true ;;
       esac
       ;;
   esac
@@ -133,6 +135,7 @@ echo "[F] force: $force"
 echo "[t] force_tidy: $force_tidy"
 echo "[y] force_ymt: $force_ymt"
 echo "[k] keep_files: $keep_files"
+echo "[g] glossary_only: $glossary_only"
 
 # Step 1: Install dependencies
 npm i
@@ -182,6 +185,10 @@ for edition_lang in "${languages[@]}"; do
 
     if [ "$language" != "$requested_target" ] && [ "$requested_target" != "?" ]; then
       convert_glossary=false
+    fi
+
+   if [ "$glossary_only" = true ]; then
+      convert_main=false
     fi
 
     if [ "$convert_main" = false ] && [ "$convert_glossary" = false ]; then
