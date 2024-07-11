@@ -9,7 +9,7 @@ const {
     temp_folder: writeFolder,
 } = process.env;
 
-function processTranslations(translations, glosses){
+function processTranslations(translations, glosses, senses, sense){
     if (!translations) return;
 
     for (const translation of translations) {
@@ -17,7 +17,24 @@ function processTranslations(translations, glosses){
         if (translationIso !== targetIso) continue;
         const translated = translation.word || translation.note;
         if(!translated) continue;
-        glosses.push(translated);
+        if(!translation.sense){
+            if(!translation.sense_id){
+                if(!sense){
+                    console.log(`Nothing found for ${translated}`, translation, sense);
+                    translation.sense = "_none";
+                } else {
+                    translation.sense = sense?.glosses[0];
+                }
+            } else {
+                translation.sense = senses[translation.sense_id - 1]?.glosses[0]
+            }
+        }
+        const senseTranslations = glosses.get(translation.sense);
+        if(!senseTranslations){
+            glosses.set(translation.sense, [translated]);
+        } else {
+            senseTranslations.push(translated);
+        }
     }
 }
 
@@ -66,24 +83,51 @@ function handleLine(line) {
 
     if(!(word && pos && senses)) return;
 
-    const glosses = [];
+    const glosses = new Map();
 
-    processTranslations(translations, glosses);
+    processTranslations(translations, glosses, senses, null);
     for (const sense of senses) {
         const { translations } = sense;
-        processTranslations(translations, glosses);
+        processTranslations(translations, glosses, senses, sense);
     }
 
     if (glosses.length === 0) return;
     
     const processedPoS = findPartOfSpeech(pos, partsOfSpeech, skippedPartsOfSpeech);
+    const definitions = [];
+    for (const [sense, translations] of glosses.entries()) {
+        if(sense === "_none") {
+            definitions.push(...translations)
+            continue;
+        } 
+        definitions.push({
+            type: "structured-content", 
+            content: {
+                tag: 'div',
+                content: [
+                    {
+                        tag: 'span',
+                        content: sense
+                    },
+                    {
+                        tag: 'ul',
+                        content: translations.map(translation => ({
+                            tag: 'li',
+                            content: translation
+                        }))
+                    }
+                ]
+            }
+        })
+    }
+    if(definitions.length === 0) return;
     ymtLemmas.push([
         word,
         reading,
         processedPoS,
         processedPoS,
         0, // frequency
-        [...new Set(glosses)], // glosses
+        definitions, // glosses
         0, // sequence
         '', // term_tags
     ]);
