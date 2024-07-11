@@ -19,16 +19,16 @@ function processTranslations(translations, glosses, senses, sense){
         if(!translated) continue;
         if(!translation.sense){
             if(!translation.sense_id){
-                if(!sense){
-                    console.log(`Nothing found for ${translated}`, translation, sense);
-                    translation.sense = "_none";
-                } else {
-                    translation.sense = sense?.glosses[0];
+                if(sense){
+                    translation.sense = sense?.glosses?.[0];
                 }
             } else {
-                translation.sense = senses[translation.sense_id - 1]?.glosses[0]
+                translation.sense = senses?.[translation.sense_id - 1]?.glosses?.[0]
             }
         }
+        if(!translation.sense){
+            translation.sense = "_none";
+        } 
         const senseTranslations = glosses.get(translation.sense);
         if(!senseTranslations){
             glosses.set(translation.sense, [translated]);
