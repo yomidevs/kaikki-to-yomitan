@@ -9,6 +9,24 @@ const {
     temp_folder: writeFolder,
 } = process.env;
 
+function processTranslations(translations, glosses){
+    if (!translations) return;
+
+    for (const translation of translations) {
+        const translationIso = translation.code || translation.lang_code;
+        if (translationIso !== targetIso) continue;
+        const translated = translation.word || translation.note;
+        if(!translated) continue;
+        glosses.push(translated);
+    }
+}
+
+
+console.log(`Source: ${sourceIso}`);
+console.log(`Target: ${targetIso}`);
+console.log(`Kaikki file: ${kaikkiFile}`);
+console.log(`Temp folder: ${writeFolder}`);
+
 const partsOfSpeech = loadJsonArray(`data/language/target-language-tags/en/parts_of_speech.json`);
 const skippedPartsOfSpeech = {};
 
@@ -42,7 +60,7 @@ lr.on('line', (line) => {
 
 function handleLine(line) {
     const parsedLine = JSON.parse(line);
-    const { pos, senses } = parsedLine;
+    const { pos, senses, translations } = parsedLine;
     const word = getCanonicalForm(parsedLine);
     const reading = getReading(word, parsedLine);
 
@@ -50,19 +68,10 @@ function handleLine(line) {
 
     const glosses = [];
 
+    processTranslations(translations, glosses);
     for (const sense of senses) {
         const { translations } = sense;
-        if (!translations) continue;
-        const formOf = sense.form_of;
-
-        for (const translation of translations) {
-            const {code: translationIso, note} = translation;
-            if (translationIso !== targetIso) continue;
-            const translated = translation.word || note;
-            if(!translated) continue;
-            glosses.push(translated);
-        }
-
+        processTranslations(translations, glosses);
     }
 
     if (glosses.length === 0) return;
