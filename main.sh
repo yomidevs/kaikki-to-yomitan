@@ -19,7 +19,7 @@ force_ymt=false
 force=false
 keep_files=false
 
-flags=('S' 'T' 'd' 't' 'y' 'F' 'k')
+flags=('d' 't' 'y' 'F' 'k')
 for flag in "${flags[@]}"; do
   case "$3" in 
     *"$flag"*) 
@@ -62,28 +62,29 @@ declare -a languages="($(
   jq -r '.[] | @json | @sh' languages.json
 ))"
 
+supported_wiktionaries="de en es fr ru zh"
+
 for target_lang in "${languages[@]}"; do
   target_iso=$(echo "${target_lang}" | jq -r '.iso')
-  target_language_name=$(echo "${target_lang}" | jq -r '.language')
-    
-  if [ "$target_language_name" != "$language_target" ] && [ "$language_target" != "?" ]; then
-      continue
+  target_name=$(echo "${target_lang}" | jq -r '.language')
+  
+  if [[ ! "$supported_wiktionaries" == *"$target_iso"* ]]; then
+    continue
   fi
 
-    target_languages="de en es fr ru zh"
-    if [[ ! "$target_languages" == *"$target_iso"* ]]; then
-      echo "Unsupported target language: $target_iso"
-      continue
-    fi
 
   export target_iso="$target_iso"
-  export target_language="$target_language_name"
+  export target_language="$target_name"
   downloaded_target_extract=false
 
   for source_lang in "${languages[@]}"; do
     iso=$(echo "${source_lang}" | jq -r '.iso')
     language=$(echo "${source_lang}" | jq -r '.language')
     flag=$(echo "${source_lang}" | jq -r '.flag')
+    
+    if [ "$target_name" != "$language_target" ] && [ "$language_target" != "?" ]; then
+      continue
+    fi
     
     if [ "$language" != "$language_source" ] && [ "$language_source" != "?" ]; then
       continue
@@ -99,7 +100,7 @@ for target_lang in "${languages[@]}"; do
       language_no_special_chars=$(echo "$language" | tr -d '[:space:]-') #Serbo-Croatian, Ancient Greek and such cases
       filename="kaikki.org-dictionary-$language_no_special_chars.jsonl"
       filepath="data/kaikki/$filename"
-      
+
 
       if [ ! -f "$filepath" ] || [ "$redownload" = true ]; then
         url="https://kaikki.org/dictionary/$language/$filename"
