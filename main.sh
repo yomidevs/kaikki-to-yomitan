@@ -187,6 +187,10 @@ for edition_lang in "${languages[@]}"; do
       convert_glossary=false
     fi
 
+    if [ "$requested_target" = "$requested_source" ]; then
+      convert_glossary=false
+    fi
+
    if [ "$glossary_only" = true ]; then
       convert_main=false
     fi
