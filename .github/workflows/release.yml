@@ -6,7 +6,9 @@ on:
 jobs:
   prepare:
     runs-on: ubuntu-latest
-
+    outputs:
+      tag: ${{ steps.tag.outputs.tag }}
+      languages: ${{ steps.load-languages.outputs.languages }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -81,7 +83,7 @@ jobs:
     strategy:
       max-parallel: 1
       matrix:
-        source_language: ${{fromJson(needs.prepare.outputs.load-languages.outputs.languages)}}
+        source_language: ${{fromJson(needs.prepare.outputs.languages)}}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
