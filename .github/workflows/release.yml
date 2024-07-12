@@ -66,13 +66,13 @@ jobs:
           title: "Update downloads.md with list of .zip files"
           body: "This PR updates the downloads.md file with a table listing all .zip files."
       
-      - name: Release
-        uses: softprops/action-gh-release@v2
-        with:
-          name: ${{ steps.tag.outputs.calver }}
-          tag_name: ${{ steps.tag.outputs.tag }}
-          prerelease: true
-          generate_release_notes: true
+      # - name: Release
+      #   uses: softprops/action-gh-release@v2
+      #   with:
+      #     name: ${{ steps.tag.outputs.calver }}
+      #     tag_name: ${{ steps.tag.outputs.tag }}
+      #     prerelease: true
+      #     generate_release_notes: true
   
 
   convert:
@@ -81,7 +81,7 @@ jobs:
     strategy:
       max-parallel: 1
       matrix:
-        source_language: ${{fromJson(needs.prepare.outputs.languages)}}
+        source_language: ${{fromJson(needs.prepare.outputs.load-languages.outputs.languages)}}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
