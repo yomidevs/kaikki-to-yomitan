@@ -129,5 +129,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           for f in ${{ steps.generate_file_list.outputs.zip_files }}; do
+            echo "Uploading $f"
             gh release upload ${{ needs.prepare.outputs.tag }} $f
           done
