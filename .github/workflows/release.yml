@@ -110,7 +110,7 @@ jobs:
         run: sudo apt-get install -y gzip
       
       - name: Run auto.sh script
-        run: ./auto.sh ${{ matrix.source_language }}" ?
+        run: ./auto.sh "${{ matrix.source_language }}" ?
   
       - name: Run merge-ipa
         run: node merge-ipa.js
