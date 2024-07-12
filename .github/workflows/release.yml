@@ -9,6 +9,7 @@ jobs:
     outputs:
       tag: ${{ steps.tag.outputs.tag }}
       languages: ${{ steps.load-languages.outputs.languages }}
+      calver: ${{ steps.tag.outputs.calver }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -124,11 +125,11 @@ jobs:
           cat zip_files.txt >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
-      - name: Upload Release Asset
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          for f in ${{ steps.generate_file_list.outputs.zip_files }}; do
-            echo "Uploading $f"
-            gh release upload ${{ needs.prepare.outputs.tag }} $f
-          done
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ needs.prepare.outputs.tag }}
+          tag_name: ${{ needs.prepare.outputs.tag }}
+          prerelease: true
+          generate_release_notes: true
+          files: ${{ steps.generate_file_list.outputs.zip_files }}
