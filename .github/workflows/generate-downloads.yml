@@ -22,16 +22,7 @@ jobs:
       - name: Generate markdown table
         id: generate_markdown
         run: |
-          ./tools/generate-downloads-table.sh > table.md
-          cat table.md
-        
-      - name: Write to downloads.md
-        id: write_downloads_md
-        shell: bash
-        run: |
-          cat downloads-preamble.md table.md > downloads.md
-          rm table.md
-          cat downloads.md
+          ./tools/generate-downloads-table.sh
 
       - name: Create pull request
         uses: peter-evans/create-pull-request@v4
