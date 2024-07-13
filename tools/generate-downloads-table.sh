@@ -80,23 +80,6 @@ ipa_columns=("${columns[@]}" "merged")
 echo "$ipa_header" > ipa-table.md
 echo "$ipa_divider" >> ipa-table.md
 
-second_text="## IPA Dictionaries
-These dictionaries contain the International Phonetic Alphabet (IPA) transcriptions for the headwords. There are two types of IPA dictionaries:
-1. IPA dictionaries from a single wiktionary edition - e.g. \`en-de\` contains IPA transcriptions for English headwords from the German wiktionary edition.
-2. Merged IPA dictionaries from all 6 supported editions - e.g. \`en merged\`. These have more terms covered but not all the entries might be formatted the same way.
-"
-
-{
-  echo "$second_text"
-} >> downloads.md
-
-ipa_header="$header Merged |"
-ipa_divider="$divider---|"  
-ipa_columns=("${columns[@]}" "merged")
-
-echo "$ipa_header" > ipa-table.md
-echo "$ipa_divider" >> ipa-table.md
-
 for source_lang in "${languages[@]}"; do
     source_iso=$(echo "${source_lang}" | jq -r '.iso')
     source_language_name=$(echo "${source_lang}" | jq -r '.language')
