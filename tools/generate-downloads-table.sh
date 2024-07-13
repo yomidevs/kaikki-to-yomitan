@@ -129,8 +129,9 @@ for target_lang in "${languages[@]}"; do
     for column in "${columns[@]}"; do
         cell=""
         if [ "$column" != "$target_iso" ]; then
-            expected_filename="${column}"-"${target_iso}"
-            cell="$cell [$expected_filename](https://github.com/themoeway/kaikki-to-yomitan/releases/latest/download/kty-$expected_filename.zip) </br>"
+            display_filename="${column}"-"${target_iso}"
+            expected_filename="${display_filename}-gloss"
+            cell="$cell [$display_filename](https://github.com/themoeway/kaikki-to-yomitan/releases/latest/download/kty-$expected_filename.zip) </br>"
         fi
         row="$row | $cell"
     done
