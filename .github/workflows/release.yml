@@ -128,7 +128,7 @@ jobs:
       - name: Upload dictionary files
         uses: softprops/action-gh-release@v2
         with:
-          name: ${{ needs.prepare.outputs.tag }}
+          name: ${{ needs.prepare.outputs.calver }}
           tag_name: ${{ needs.prepare.outputs.tag }}
           prerelease: true
           generate_release_notes: true
@@ -148,8 +148,18 @@ jobs:
       
       - name: Download IPA dicts
         run: |
-          for source_iso in ${{needs.prepare.outputs.isos}}; do
-            for target_iso in ${{needs.prepare.outputs.isos}}; do
+          mapfile -t iso_array < <(echo "$isos" | jq -r '.[]')
+          supported_editions="de en es fr ru zh"
+          for source_iso in "${iso_array[@]}"; do
+            for target_iso in "${iso_array[@]}"; do
+              filename="kty-${source_iso}-${target_iso}-ipa.zip"
+              if [ -f "$filename" ]; then
+                  continue
+              fi
+
+              if [[ ! "$supported_editions" == *"$target_iso"* ]]; then
+                  continue
+              fi
               url="https://github.com/themoeway/kaikki-to-yomitan/releases/download/${{needs.prepare.outputs.tag}}/kty-${source_iso}-${target_iso}-ipa.zip"
               wget -nv "$url"
             done
@@ -173,7 +183,7 @@ jobs:
       - name: Upload dictionary files
         uses: softprops/action-gh-release@v2
         with:
-          name: ${{ needs.prepare.outputs.tag }}
+          name: ${{ needs.prepare.outputs.calver }}
           tag_name: ${{ needs.prepare.outputs.tag }}
           prerelease: true
           generate_release_notes: true
