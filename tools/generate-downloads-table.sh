@@ -20,48 +20,9 @@ This table contains the main dictionaries:
 } > downloads.md
 
 
-first_text="# Downloads
-
-Currently, [Kaikki](https://kaikki.org/dictionary/rawdata.html) supports 6 wiktionary editions (English, Chinese, French, German, Russian and Spanish), so only dictionaries including these languages are available.
-
-If the language you want isn't here, or you would like to see an improvement to a dictionary, please [open an issue](https://github.com/themoeway/kaikki-to-yomitan/issues/new).
-
-Some of the dictionaries listed here are small; rather than decide on a lower bound for usefulness they are all included here. 
-
-<sub><sup> Languages are referred to by their shortest [ISO code](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) (ISO 639-1 where available, [ISO 639-3](https://en.wikipedia.org/wiki/List_of_ISO_639-3_codes) where not)</sup></sub>
-
-## Main Dictionaries
-This table contains the main dictionaries:
-
-1. Bilingual dictionaries - \`en-de\` for example has English headwords and their definitions/translations in German.
-2. Monolingual dictionaries - \`en-en\` and such. These have good coverage, but tend to be verbose.
-"
-
-{
-  echo "$first_text"
-} > downloads.md
-
-
 declare -a languages="($(
   jq -r '.[] | @json | @sh' languages.json
 ))"
-
-columns=()
-header="| |"
-divider="|---|"
-for language in "${languages[@]}"; do
-    language_name=$(echo "${language}" | jq -r '.language')
-    iso=$(echo "${language}" | jq -r '.iso')
-    hasEdition=$(echo "${language}" | jq -r '.hasEdition')
-    if [ "$hasEdition" = "true" ]; then
-        header="$header $language_name ($iso) |"
-        divider="$divider---|"
-        columns+=("$iso")
-    fi
-done
-
-echo "$header" > main-table.md
-echo "$divider" >> main-table.md
 
 columns=()
 header="| |"
