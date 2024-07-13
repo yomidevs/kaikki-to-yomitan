@@ -80,28 +80,6 @@ ipa_columns=("${columns[@]}" "merged")
 echo "$ipa_header" > ipa-table.md
 echo "$ipa_divider" >> ipa-table.md
 
-for source_lang in "${languages[@]}"; do
-    source_iso=$(echo "${source_lang}" | jq -r '.iso')
-    source_language_name=$(echo "${source_lang}" | jq -r '.language')
-    flag=$(echo "${source_lang}" | jq -r '.flag')
-        
-    row="| $flag </br> $source_language_name ($source_iso)"
-
-    for column in "${ipa_columns[@]}"; do
-        cell=""
-        expected_filename="${source_iso}-${column}"
-
-        cell="$cell [$expected_filename](https://github.com/themoeway/kaikki-to-yomitan/releases/latest/download/kty-$expected_filename.zip) </br>"
-
-        row="$row | $cell"
-    done
-    echo "$row" >> main-table.md
-done
-
-
-cat main-table.md >> downloads.md
-rm main-table.md
-
 second_text="## IPA Dictionaries
 These dictionaries contain the International Phonetic Alphabet (IPA) transcriptions for the headwords. There are two types of IPA dictionaries:
 1. IPA dictionaries from a single wiktionary edition - e.g. \`en-de\` contains IPA transcriptions for English headwords from the German wiktionary edition.
