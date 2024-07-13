@@ -16,9 +16,8 @@ async function main(){
             let localIpa = [];
             let localTags = [];
 
-            const file = `data/language/${sourceIso}/${targetIso}/kty-${sourceIso}-${targetIso}-ipa.zip`;
+            const file = `kty-${sourceIso}-${targetIso}-ipa.zip`;
             if (existsSync(file)) {
-                console.log("found", file);
                 const zip = new StreamZip.async({ file });
                 const files = Object.keys(await zip.entries());
                 for (const file of files) {

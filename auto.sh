@@ -88,8 +88,8 @@ max_memory_mb=${MAX_MEMORY_MB:-8192}
 
 
 # Check for the source_language and target_language arguments
-if [ -z "$1" ] || [ -z "$2" ]; then
-  echo "Usage: $0 <source_language> <target_language> [flags]"
+if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]; then
+  echo "Usage: $0 <edition> <source_language> <target_language> [flags]"
   exit 1
 fi
 
@@ -103,7 +103,7 @@ glossary_only=false
 
 flags=('d' 't' 'y' 'F' 'k' 'g')
 for flag in "${flags[@]}"; do
-  case "$3" in 
+  case "$4" in 
     *"$flag"*) 
       case "$flag" in
         'd') redownload=true ;;
@@ -139,8 +139,9 @@ npm i
 # Step 2: Run create-folder.js
 node 1-create-folders.js
 
-requested_source="$1"
-requested_target="$2"
+requested_edition="$1"
+requested_source="$2"
+requested_target="$3"
 
 declare -a languages="($(
   jq -r '.[] | @json | @sh' languages.json
@@ -154,6 +155,10 @@ for edition_lang in "${languages[@]}"; do
   edition_name=$(echo "${edition_lang}" | jq -r '.language')
 
   if [[ ! "$supported_editions" == *"$edition_iso"* ]]; then
+    continue
+  fi
+
+  if [ "$edition_name" != "$requested_edition" ] && [ "$requested_edition" != "?" ]; then
     continue
   fi
 
@@ -207,7 +212,7 @@ for edition_lang in "${languages[@]}"; do
       if [ ! -f "$filepath" ] || [ "$redownload" = true ]; then
         url="https://kaikki.org/dictionary/$download_language/$filename"
         echo "Downloading $filename from $url"
-        wget "$url" -O "$filepath"
+        wget -nv "$url" -O "$filepath" 
       else
         echo "Kaikki dict already exists. Skipping download."
       fi
@@ -218,7 +223,7 @@ for edition_lang in "${languages[@]}"; do
       if [ ! -f "$edition_extract_path" ] || [ "$redownload" = true ] && [ "$downloaded_edition_extract" = false ]; then
         url="https://kaikki.org/dictionary/downloads/$edition_iso/$edition_extract.gz"
         echo "Downloading $edition_extract from $url"
-        wget "$url" -O "$edition_extract_path".gz
+        wget -nv "$url" -O "$edition_extract_path".gz 
         echo "Extracting $edition_extract"
         gunzip -f "$edition_extract_path".gz
         downloaded_edition_extract=true
