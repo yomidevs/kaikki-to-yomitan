@@ -1,6 +1,6 @@
 const StreamZip = require('node-stream-zip');
 const { execSync } = require('child_process');
-const { readdirSync, existsSync, readFileSync, writeFileSync, unlinkSync } = require('fs');
+const { readdirSync, existsSync, readFileSync, writeFileSync, unlinkSync, mkdirSync } = require('fs');
 const { writeInBatches } = require('./util/util');
 const date = require('date-and-time');
 const now = new Date();
@@ -16,9 +16,8 @@ async function main(){
             let localIpa = [];
             let localTags = [];
 
-            const file = `data/language/${sourceIso}/${targetIso}/kty-${sourceIso}-${targetIso}-ipa.zip`;
+            const file = `kty-${sourceIso}-${targetIso}-ipa.zip`;
             if (existsSync(file)) {
-                console.log("found", file);
                 const zip = new StreamZip.async({ file });
                 const files = Object.keys(await zip.entries());
                 for (const file of files) {
@@ -94,7 +93,8 @@ async function main(){
             writeFileSync(`data/temp/ipa/index.json`, JSON.stringify(globalIndex, null, 4));
             writeInBatches('data/temp/ipa', Object.values(globalIpa), 'term_meta_bank_', 500000);
             writeInBatches('data/temp/ipa', globalTags, 'tag_bank_', 50000);
-
+            
+            mkdirSync(`data/language/${sourceIso}`, { recursive: true });
             execSync(`zip -j data/language/${sourceIso}/kty-${sourceIso}-ipa.zip data/temp/ipa/*`);
         }
     }

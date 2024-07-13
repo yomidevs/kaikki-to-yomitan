@@ -1,5 +1,6 @@
 const path = require('path');
-const { readFileSync, writeFileSync } = require('fs');
+const { readFileSync, writeFileSync, existsSync } = require('fs');
+const date = require('date-and-time');
 
 const tagOrder = JSON.parse(readFileSync(path.resolve(__dirname, '../data/language/tag_order.json')));
 
@@ -150,6 +151,27 @@ function mapJsonReviver (key, value) {
     else return value;
 }
 
+function loadJsonArray(file) {
+    return existsSync(file) ? JSON.parse(readFileSync(file)) : [];
+}
+
+function incrementCounter(key, counter) {
+    counter[key] = (counter[key] || 0) + 1;
+}
+
+function findPartOfSpeech(pos, partsOfSpeech, skippedPartsOfSpeech) {
+    for(const posAliases of partsOfSpeech){
+        if (posAliases.includes(pos)){
+            return posAliases[0];
+        }
+    }
+    if(skippedPartsOfSpeech) incrementCounter(pos, skippedPartsOfSpeech);
+    return pos;
+}
+
+const now = new Date();
+const currentDate = date.format(now, 'YYYY.MM.DD');
+
 module.exports = { 
     sortTags, 
     similarSort,
@@ -159,5 +181,9 @@ module.exports = {
     clearConsoleLine,
     logProgress,
     mapJsonReplacer,
-    mapJsonReviver
+    mapJsonReviver,
+    loadJsonArray,
+    findPartOfSpeech,
+    incrementCounter,
+    currentDate
 };
