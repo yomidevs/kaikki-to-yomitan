@@ -89,19 +89,12 @@ for source_lang in "${languages[@]}"; do
 
     for column in "${ipa_columns[@]}"; do
         cell=""
-        expected_filename="${source_iso}-${column}-ipa"
         display_filename="${source_iso}-${column}"
+        expected_filename="${display_filename}-ipa"
         if [ "$column" = "merged" ]; then
             expected_filename="${source_iso}-ipa"
             display_filename="${source_iso} merged"
         fi
-        expected_filename="${source_iso}-${column}-ipa"
-        display_filename="${source_iso}-${column}"
-        if [ "$column" = "merged" ]; then
-            expected_filename="${source_iso}-ipa"
-            display_filename="${source_iso} merged"
-        fi
-
         cell="$cell [$display_filename](https://github.com/themoeway/kaikki-to-yomitan/releases/latest/download/kty-$expected_filename.zip) </br>"
 
         row="$row | $cell"
@@ -142,10 +135,7 @@ for target_lang in "${languages[@]}"; do
         row="$row | $cell"
     done
     echo "$row" >> glossary-table.md
-    echo "$row" >> glossary-table.md
 done
 
-cat glossary-table.md >> downloads.md
-rm glossary-table.md
 cat glossary-table.md >> downloads.md
 rm glossary-table.md
