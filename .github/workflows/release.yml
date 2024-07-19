@@ -105,7 +105,7 @@ jobs:
         run: sudo apt-get install -y gzip
       
       - name: Run auto.sh script
-        run: ./auto.sh "${{ matrix.edition_language }}" Spanish Chinese
+        run: ./auto.sh "${{ matrix.edition_language }}" Spanish Spanish
 
       - name: Upload dictionary files
         uses: softprops/action-gh-release@v2
