@@ -514,6 +514,7 @@ function normalizeOrthography(term) {
         case 'sga':
         case 'grc':
         case 'ro':
+        case 'it':
             return term.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
         case 'tl':
             return term.normalize('NFD').replace(/[\u0300-\u036f\-']/g, '');
