@@ -21,8 +21,9 @@ convertMainDict(){
   export temp_folder="data/temp"
   temp_dict_folder="$temp_folder/dict"
   temp_ipa_folder="$temp_folder/ipa"
-  dict_file="${DICT_NAME}-$source_iso-$target_iso.zip"
-  ipa_file="${DICT_NAME}-$source_iso-$target_iso-ipa.zip"
+  dict_title=${DICT_NAME}-$source_iso-$target_iso
+  dict_file="${dict_title}.zip"
+  ipa_file="${dict_title}-ipa.zip"
 
   # Step 5: Create Yomitan files
   if \
@@ -49,6 +50,14 @@ convertMainDict(){
     mv "$ipa_file" "data/language/$source_iso/$target_iso/"
   fi
 
+  if [ -f "$temp_dict_folder/index.json" ]; then
+    mv "$temp_dict_folder/index.json" "data/language/$source_iso/$target_iso/$dict_title-index.json"
+  fi
+
+  if [ -f "$temp_ipa_folder/index.json" ]; then
+    mv "$temp_ipa_folder/index.json" "data/language/$source_iso/$target_iso/${dict_title}-ipa-index.json"
+  fi
+
   echo "----------------------------------------------------------------------------------"
   return 0
 }
@@ -60,7 +69,8 @@ convertGlossary(){
   export target_iso="$gloss_iso"
   export temp_folder="data/temp"
 
-  dict_file="${DICT_NAME}-$source_iso-$target_iso-gloss.zip"
+  dict_title="${DICT_NAME}-$source_iso-$target_iso-gloss"
+  dict_file="${dict_title}.zip"
 
   # Step 4: Create Yomitan files
   echo "Creating Yomitan dict files"
@@ -78,6 +88,10 @@ convertGlossary(){
 
   if [ -f "$dict_file" ]; then
     mv "$dict_file" "$output_folder"
+  fi
+
+  if [ -f "$temp_folder/dict/index.json" ]; then
+    mv "$temp_folder/dict/index.json" "$output_folder/${dict_title}-index.json"
   fi
 }
 

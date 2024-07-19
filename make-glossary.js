@@ -1,6 +1,7 @@
 const LineByLineReader = require('line-by-line');
 const { consoleOverwrite, clearConsoleLine, logProgress, findPartOfSpeech, loadJsonArray, writeInBatches, currentDate } = require('./util/util');
 const { readdirSync, unlinkSync, writeFileSync } = require('fs');
+const { isUint16Array } = require('util/types');
 
 const { 
     source_iso: sourceIso,
@@ -41,17 +42,23 @@ function processTranslations(translations, glosses, senses, sense){
 const partsOfSpeech = loadJsonArray(`data/language/target-language-tags/en/parts_of_speech.json`);
 const skippedPartsOfSpeech = {};
 
+const url = 'https://github.com/themoeway/kaikki-to-yomitan';
+const latestReleaseUrl = `${url}/releases/latest/download/`;
+const title = `kty-${sourceIso}-${targetIso}-gloss`;
 const indexJson = {
-    title: `kty-${sourceIso}-${targetIso}-gloss`,
+    title: title,
     format: 3,
     revision: currentDate,
     sequenced: true,
     author: 'Kaikki-to-Yomitan contributors',
-    url: 'https://github.com/themoeway/kaikki-to-yomitan',
+    url,
     description: 'Dictionaries for various language pairs generated from Wiktionary data, via Kaikki and Kaikki-to-Yomitan.',
     attribution: 'https://kaikki.org/',
     sourceLanguage: sourceIso,
     targetLanguage: targetIso,
+    isUpdatable: true,
+    indexUrl: `${latestReleaseUrl}${title}-index.json`,
+    downloadUrl: `${latestReleaseUrl}${title}.zip`,
 };
 
 const ymtLemmas = [];
