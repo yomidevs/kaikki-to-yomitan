@@ -1,11 +1,11 @@
 import json
 import os
 
-source_iso = os.environ.get("source_iso")
-target_iso = os.environ.get("target_iso")
+download_iso = os.environ.get("download_iso")
+edition_iso = os.environ.get("edition_iso")
 
-input_file = f"data/kaikki/{target_iso}-extract.jsonl"
-output_file = f"data/kaikki/{source_iso}-{target_iso}-extract.jsonl"
+input_file = f"data/kaikki/{edition_iso}-extract.jsonl"
+output_file = f"data/kaikki/{download_iso}-{edition_iso}-extract.jsonl"
 
 print(f"Reading {input_file} and writing {output_file}...")
 
@@ -29,7 +29,7 @@ with open(input_file, "r", encoding="utf-8") as input_file, \
                 print(f"Error: no lang_code or redirect in line {line_count}.", obj)
             continue
 
-        if obj["lang_code"] == source_iso:
+        if obj["lang_code"] == download_iso:
             output_file.write(line)
 
         # Print progress at the specified interval

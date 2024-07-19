@@ -4,13 +4,85 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  prepare:
     runs-on: ubuntu-latest
-
+    outputs:
+      tag: ${{ steps.tag.outputs.tag }}
+      languages: ${{ steps.load-languages.outputs.languages }}
+      isos: ${{ steps.load-languages.outputs.isos }}
+      calver: ${{ steps.tag.outputs.calver }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      - name: Install npm dependencies
+        run: npm install
+
+      - name: Configure git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Tag the repository
+        id: tag
+        run: |
+          # See https://docs.github.com/en/get-started/using-git/dealing-with-special-characters-in-branch-and-tag-names
+          TAG=v$(date -Iseconds | sed 's/[T:\+]/-/g')
+          CALVER=$(date +'%y.%m.%d.%H')
+          echo "$TAG"
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "calver=$CALVER" >> $GITHUB_OUTPUT
+          git tag -a $TAG -m "Published version $TAG" ${GITHUB_SHA}
+          git push origin $TAG
+
+      - name: Load Languages
+        id: load-languages
+        run: |
+          languages=$(jq -r '.[].language' languages.json | jq -R -s -c 'split("\n") | map(select(. != ""))')
+          echo "languages=$languages" >> $GITHUB_OUTPUT
+          isos=$(jq -r '.[].iso' languages.json | jq -R -s -c 'split("\n") | map(select(. != ""))')
+          echo "isos=$isos" >> $GITHUB_OUTPUT
+      
+      - name: Generate markdown table
+        id: generate_markdown
+        run: |
+          ./tools/generate-downloads-table.sh
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          title: "Update downloads.md with list of .zip files"
+          body: "This PR updates the downloads.md file with a table listing all .zip files."
+      
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ steps.tag.outputs.calver }}
+          tag_name: ${{ steps.tag.outputs.tag }}
+          prerelease: true
+          generate_release_notes: true
+  
+
+  convert:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 1
+      matrix:
+        edition_language: ${{fromJson(needs.prepare.outputs.languages)}}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -31,16 +103,10 @@ jobs:
 
       - name: Install gzip
         run: sudo apt-get install -y gzip
-
-      - name: Install npm dependencies
-        run: npm install
-
-      - name: Run auto.sh script
-        run: ./auto.sh ? ?
-
-      - name: Run merge-ipa
-        run: node merge-ipa.js
       
+      - name: Run auto.sh script
+        run: ./auto.sh "${{ matrix.edition_language }}" ? ?
+        
       - name: Generate list of .zip files
         id: generate_file_list
         run: |
@@ -50,49 +116,66 @@ jobs:
           cat zip_files.txt >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
-      - name: Configure git
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Tag the repository
-        id: tag
-        run: |
-          # See https://docs.github.com/en/get-started/using-git/dealing-with-special-characters-in-branch-and-tag-names
-          TAG=v$(date -Iseconds | sed 's/[T:\+]/-/g')
-          CALVER=$(date +'%y.%m.%d.%H')
-          echo "$TAG"
-          echo "tag=$TAG" >> $GITHUB_OUTPUT
-          echo "calver=$CALVER" >> $GITHUB_OUTPUT
-          git tag -a $TAG -m "Published version $TAG" ${GITHUB_SHA}
-          git push origin $TAG
-
-      - name: Generate markdown table
-        id: generate_markdown
-        run: |
-          ./tools/generate-downloads-table.sh > table.md
-          cat table.md
-        
-      - name: Write to downloads.md
-        id: write_downloads_md
-        shell: bash
-        run: |
-          cat downloads-preamble.md table.md > downloads.md
-          rm table.md
-          cat downloads.md
-
-      - name: Create pull request
-        uses: peter-evans/create-pull-request@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          title: "Update downloads.md with list of .zip files"
-          body: "This PR updates the downloads.md file with a table listing all .zip files."
-
-      - name: Release
+      - name: Upload dictionary files
         uses: softprops/action-gh-release@v2
         with:
-          name: ${{ steps.tag.outputs.calver }}
-          tag_name: ${{ steps.tag.outputs.tag }}
+          name: ${{ needs.prepare.outputs.calver }}
+          tag_name: ${{ needs.prepare.outputs.tag }}
+          prerelease: true
+          generate_release_notes: true
+          files: ${{ steps.generate_file_list.outputs.zip_files }}
+
+  merge-ipa:
+    needs: ["prepare", "convert"]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      
+      - name: Download IPA dicts
+        run: |
+          mapfile -t iso_array < <(echo "$isos" | jq -r '.[]')
+          supported_editions="de en es fr ru zh"
+          for source_iso in "${iso_array[@]}"; do
+            for target_iso in "${iso_array[@]}"; do
+              filename="kty-${source_iso}-${target_iso}-ipa.zip"
+              if [ -f "$filename" ]; then
+                  continue
+              fi
+
+              if [[ ! "$supported_editions" == *"$target_iso"* ]]; then
+                  continue
+              fi
+              url="https://github.com/themoeway/kaikki-to-yomitan/releases/download/${{needs.prepare.outputs.tag}}/kty-${source_iso}-${target_iso}-ipa.zip"
+              wget -nv "$url"
+            done
+          done
+
+      - name: Run merge-ipa
+        run: node merge-ipa.js
+
+      - name: Delete downloaded IPA files
+        run: rm *.zip
+
+      - name: Generate list of .zip files
+        id: generate_file_list
+        run: |
+          find data/language -type f -name '*.zip' > zip_files.txt
+          cat zip_files.txt
+          echo "zip_files<<EOF" >> $GITHUB_OUTPUT
+          cat zip_files.txt >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+      
+      - name: Upload dictionary files
+        uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ needs.prepare.outputs.calver }}
+          tag_name: ${{ needs.prepare.outputs.tag }}
           prerelease: true
           generate_release_notes: true
           files: ${{ steps.generate_file_list.outputs.zip_files }}

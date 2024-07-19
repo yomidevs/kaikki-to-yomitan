@@ -1,0 +1,32 @@
+name: Generate downloads page
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      - name: Configure git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Generate markdown table
+        id: generate_markdown
+        run: |
+          ./tools/generate-downloads-table.sh
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          title: "Update downloads.md with list of .zip files"
+          body: "This PR updates the downloads.md file with a table listing all .zip files."

@@ -1,15 +1,13 @@
-const { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, createWriteStream, unlinkSync, write } = require('fs');
-const { sortTags, writeInBatches, consoleOverwrite, mapJsonReviver, logProgress } = require('./util/util');
-
 const path = require('path');
-const date = require('date-and-time');
-const now = new Date();
-const currentDate = date.format(now, 'YYYY.MM.DD');
+const { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, unlinkSync } = require('fs');
+const { sortTags, writeInBatches, consoleOverwrite, 
+    mapJsonReviver, logProgress, loadJsonArray, 
+    findPartOfSpeech, incrementCounter, currentDate } = require('./util/util');
 
 const {
-    source_iso, 
-    target_iso, 
-    DEBUG_WORD, 
+    source_iso,
+    target_iso,
+    DEBUG_WORD,
     DICT_NAME,
     tidy_folder: readFolder,
     temp_folder: writeFolder
@@ -31,10 +29,6 @@ const indexJson = {
 
 if (!existsSync(`data/language/${source_iso}/${target_iso}`)) {
     mkdirSync(`data/language/${source_iso}/${target_iso}`, {recursive: true});
-}
-
-function loadJsonArray(file) {
-    return existsSync(file) ? JSON.parse(readFileSync(file)) : [];
 }
 
 const targetLanguageTermTags = loadJsonArray(`data/language/target-language-tags/${target_iso}/tag_bank_term.json`);
@@ -78,16 +72,6 @@ function findTag(tags, tag) {
     }
 
     return result;
-}
-
-function findPartOfSpeech(pos) {
-    for(const posAliases of partsOfSpeech){
-        if (posAliases.includes(pos)){
-            return posAliases[0];
-        }
-    }
-    incrementCounter(pos, skippedPartsOfSpeech);
-    return pos;
 }
 
 function findModifiedTag(tag){
@@ -189,7 +173,7 @@ let lastTermBankIndex = 0;
                                     term, // term
                                     reading !== normalizedLemma ? reading : '', // reading
                                     joinedTags, // definition_tags
-                                    findPartOfSpeech(pos), // rules
+                                    findPartOfSpeech(pos, partsOfSpeech, skippedPartsOfSpeech), // rules
                                     0, // frequency
                                     [gloss], // definitions
                                     0, // sequence
@@ -505,10 +489,6 @@ function sortBreakdown(obj){
     return Object.fromEntries(Object.entries(obj).sort((a, b) => b[1] - a[1]));
 }
 
-function incrementCounter(key, counter) {
-    counter[key] = (counter[key] || 0) + 1;
-}
-
 function normalizeOrthography(term) {
     switch (source_iso) {
         case 'ar':
@@ -539,11 +519,13 @@ function normalizeOrthography(term) {
         case 'ang':
         case 'sga':
         case 'grc':
+        case 'ro':
+        case 'it':
             return term.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        case 'tl':
+            return term.normalize('NFD').replace(/[\u0300-\u036f\-']/g, '');
         case 'sh':
             return term.normalize('NFD').replace(/[aeiourAEIOUR][\u0300-\u036f]/g, (match) => match[0]);
-        case 'ro':
-            return term.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
         case 'uk':
         case 'ru':
             return term.replace(/́/g, '');
