@@ -5,6 +5,8 @@ const { writeInBatches } = require('./util/util');
 const date = require('date-and-time');
 const now = new Date();
 
+const tempFolder = 'data/temp/ipa';
+
 async function main(){
     const languages = JSON.parse(readFileSync('languages.json', 'utf8'));
     
@@ -76,26 +78,36 @@ async function main(){
         if(globalIpaLength) console.log("globalIpa", globalIpaLength);
         const globalTagsLength = globalTags.length;
         if(globalTagsLength) console.log("globalTags", globalTagsLength);
-            
+        
+        const url = 'https://github.com/themoeway/kaikki-to-yomitan';
+        const title = `kty-${sourceIso}-ipa`;
+        const latestReleaseUrl = `${url}/releases/latest/download/${title}`;
         const globalIndex = {
             "format": 3,
             "revision": date.format(now, 'YYYY.MM.DD'),
             "sequenced": true,
-            "title": `kty-${sourceIso}-ipa`
+            title,
+            url,
+            "isUpdatable": true,
+            "indexUrl": `${latestReleaseUrl}-index.json`,
+            "downloadUrl": `${latestReleaseUrl}.zip`,
         }
 
         if(globalIpaLength){
 
-            for (const file of readdirSync('data/temp/ipa')) {
-                unlinkSync(`data/temp/ipa/${file}`);
+            for (const file of readdirSync(tempFolder)) {
+                unlinkSync(`${tempFolder}/${file}`);
             }
 
-            writeFileSync(`data/temp/ipa/index.json`, JSON.stringify(globalIndex, null, 4));
-            writeInBatches('data/temp/ipa', Object.values(globalIpa), 'term_meta_bank_', 500000);
-            writeInBatches('data/temp/ipa', globalTags, 'tag_bank_', 50000);
+
+            writeFileSync(`${tempFolder}/index.json`, JSON.stringify(globalIndex, null, 4));
+            writeInBatches(tempFolder, Object.values(globalIpa), 'term_meta_bank_', 500000);
+            writeInBatches(tempFolder, globalTags, 'tag_bank_', 50000);
             
-            mkdirSync(`data/language/${sourceIso}`, { recursive: true });
-            execSync(`zip -j data/language/${sourceIso}/kty-${sourceIso}-ipa.zip data/temp/ipa/*`);
+            outputFolder = `data/language/${sourceIso}/`;
+            mkdirSync(outputFolder, { recursive: true });
+            execSync(`zip -j ${outputFolder}/${title}.zip data/temp/ipa/*`);
+            writeFileSync(`${outputFolder}/${title}-index.json`, JSON.stringify(globalIndex, null, 4));
         }
     }
 }
