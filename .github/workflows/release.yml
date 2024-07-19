@@ -142,8 +142,8 @@ jobs:
       
       - name: Download IPA dicts
         run: |
-          echo "${{needs.prepare.outputs.isos}}"
-          mapfile -t iso_array < <(echo "${{needs.prepare.outputs.isos}}" | jq -r '.[]')
+          echo "${{fromJson(needs.prepare.outputs.isos)}}"
+          mapfile -t iso_array < <(echo "${{fromJson(needs.prepare.outputs.isos)}}" | jq -r '.[]')
           supported_editions="de en es fr ru zh"
           for source_iso in "${iso_array[@]}"; do
             for target_iso in "${iso_array[@]}"; do
