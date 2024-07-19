@@ -114,7 +114,7 @@ jobs:
           tag_name: ${{ needs.prepare.outputs.tag }}
           prerelease: true
           generate_release_notes: true
-          files: "data/languages/**/*.zip"
+          files: "data/language/**/*.zip"
 
       - name: Upload index.json files
         uses: softprops/action-gh-release@v2
@@ -123,7 +123,7 @@ jobs:
           tag_name: ${{ needs.prepare.outputs.tag }}
           prerelease: true
           generate_release_notes: true
-          files: "data/languages/**/*-index.json"
+          files: "data/language/**/*-index.json"
 
   merge-ipa:
     needs: ["prepare", "convert"]
@@ -169,7 +169,7 @@ jobs:
           tag_name: ${{ needs.prepare.outputs.tag }}
           prerelease: true
           generate_release_notes: true
-          files: "data/languages/**/*.zip"
+          files: "data/language/**/*.zip"
 
       - name: Upload index.json files
         uses: softprops/action-gh-release@v2
@@ -178,4 +178,4 @@ jobs:
           tag_name: ${{ needs.prepare.outputs.tag }}
           prerelease: true
           generate_release_notes: true
-          files: "data/languages/**/*-index.json"
+          files: "data/language/**/*-index.json"
