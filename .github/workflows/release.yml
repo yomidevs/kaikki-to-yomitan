@@ -105,7 +105,7 @@ jobs:
         run: sudo apt-get install -y gzip
       
       - name: Run auto.sh script
-        run: ./auto.sh "${{ matrix.edition_language }}" ? ?
+        run: ./auto.sh "${{ matrix.edition_language }}" Spanish Chinese
         
       - name: Generate list of .zip files
         id: generate_file_list
@@ -179,3 +179,12 @@ jobs:
           prerelease: true
           generate_release_notes: true
           files: ${{ steps.generate_file_list.outputs.zip_files }}
+
+      - name: Upload index.json files
+        uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ needs.prepare.outputs.calver }}
+          tag_name: ${{ needs.prepare.outputs.tag }}
+          prerelease: true
+          generate_release_notes: true
+          files: "data/languages/**/*-index.json"
