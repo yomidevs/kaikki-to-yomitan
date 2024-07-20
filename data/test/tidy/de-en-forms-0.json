@@ -1361,6 +1361,89 @@
           ]
         ]
       }
+    ],
+    [
+      "Herz n weak",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "Ruhrpöttisch",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "also"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "Herzen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative plural definite",
+                    "dative plural definite",
+                    "genitive plural definite",
+                    "nominative plural definite",
+                    "dative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "Herzens",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "Herzes",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "Herz",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative singular",
+                    "dative singular"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
     ]
   ]
 }

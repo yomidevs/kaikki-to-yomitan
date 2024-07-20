@@ -2157,5 +2157,133 @@
     ],
     0,
     ""
+  ],
+  [
+    "Ruhrpöttisch",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "Herz n weak",
+        [
+          "also"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "Herzen",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "Herz n weak",
+        [
+          "accusative",
+          "plural",
+          "definite"
+        ]
+      ],
+      [
+        "Herz n weak",
+        [
+          "dative",
+          "plural",
+          "definite"
+        ]
+      ],
+      [
+        "Herz n weak",
+        [
+          "genitive",
+          "plural",
+          "definite"
+        ]
+      ],
+      [
+        "Herz n weak",
+        [
+          "nominative",
+          "plural",
+          "definite"
+        ]
+      ],
+      [
+        "Herz n weak",
+        [
+          "dative",
+          "singular"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "Herzens",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "Herz n weak",
+        [
+          "genitive",
+          "singular"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "Herzes",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "Herz n weak",
+        [
+          "genitive",
+          "singular"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "Herz",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "Herz n weak",
+        [
+          "accusative",
+          "singular"
+        ]
+      ],
+      [
+        "Herz n weak",
+        [
+          "dative",
+          "singular"
+        ]
+      ]
+    ],
+    0,
+    ""
   ]
 ]
