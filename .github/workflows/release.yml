@@ -156,7 +156,7 @@ jobs:
                   continue
               fi
               url="https://github.com/themoeway/kaikki-to-yomitan/releases/download/${{needs.prepare.outputs.tag}}/kty-${source_iso}-${target_iso}-ipa.zip"
-              curl -s -O "$url" || echo "Skipping $url due to an error."
+              curl -s -O -f "$url" || echo "Skipping $url due to an error."
             done
           done
 

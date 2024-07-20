@@ -269,7 +269,7 @@ for edition_lang in "${languages[@]}"; do
         export gloss_iso=$(echo "${gloss_lang}" | jq -r '.iso')
         gloss_lang_name=$(echo "${gloss_lang}" | jq -r '.language')
 
-        if [ "$gloss_lang" = "$edition_name" ]; then
+        if [ "$gloss_lang_name" = "$edition_name" ]; then
           continue
         fi
 
