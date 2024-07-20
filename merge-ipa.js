@@ -6,6 +6,7 @@ const date = require('date-and-time');
 const now = new Date();
 
 const tempFolder = 'data/temp/ipa';
+mkdirSync(tempFolder, { recursive: true });
 
 async function main(){
     const languages = JSON.parse(readFileSync('languages.json', 'utf8'));
@@ -106,7 +107,7 @@ async function main(){
             
             outputFolder = `data/language/${sourceIso}/`;
             mkdirSync(outputFolder, { recursive: true });
-            execSync(`zip -j ${outputFolder}/${title}.zip data/temp/ipa/*`);
+            execSync(`zip -j ${outputFolder}/${title}.zip ${tempFolder}/*`);
             writeFileSync(`${outputFolder}/${title}-index.json`, JSON.stringify(globalIndex, null, 4));
         }
     }
