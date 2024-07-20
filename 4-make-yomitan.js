@@ -13,6 +13,8 @@ const {
     temp_folder: writeFolder
 } = process.env;
 
+const latestDownloadLink = 'https://github.com/themoeway/kaikki-to-yomitan/releases/latest/download/';
+
 const indexJson = {
     format: 3,
     revision: currentDate,
@@ -438,10 +440,14 @@ function getTagStyles(folder){
 }
 
 function writeIndex(folder) {
+    const title = `${DICT_NAME}-${source_iso}-${target_iso}` + (folder === 'dict' ? '' : '-ipa');
     writeFileSync(`${writeFolder}/${folder}/index.json`, JSON.stringify({
         ...indexJson,
-        title: `${DICT_NAME}-${source_iso}-${target_iso}` + (folder === 'dict' ? '' : '-ipa'),
-    }));
+        title,
+        isUpdatable: true,
+        indexUrl: `${latestDownloadLink}${title}-index.json`,
+        downloadUrl: `${latestDownloadLink}${title}.zip`,
+    }));        
 }
 
 function processTags(lemmaTags, senseTags, parenthesesTags, pos) {

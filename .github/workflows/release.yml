@@ -46,7 +46,7 @@ jobs:
       - name: Load Languages
         id: load-languages
         run: |
-          languages=$(jq -r '.[].language' languages.json | jq -R -s -c 'split("\n") | map(select(. != ""))')
+          languages=$(jq '[.[] | select(.hasEdition == true) | .language]' languages.json | jq -c 'map(.)')
           echo "languages=$languages" >> $GITHUB_OUTPUT
           isos=$(jq -r '.[].iso' languages.json | jq -R -s -c 'split("\n") | map(select(. != ""))')
           echo "isos=$isos" >> $GITHUB_OUTPUT
@@ -56,21 +56,12 @@ jobs:
         run: |
           ./tools/generate-downloads-table.sh
 
-      - name: Create pull request
+      - name: Create pull request if necessary
         uses: peter-evans/create-pull-request@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           title: "Update downloads.md with list of .zip files"
-          body: "This PR updates the downloads.md file with a table listing all .zip files."
-      
-      - name: Release
-        uses: softprops/action-gh-release@v2
-        with:
-          name: ${{ steps.tag.outputs.calver }}
-          tag_name: ${{ steps.tag.outputs.tag }}
-          prerelease: true
-          generate_release_notes: true
-  
+          body: "This PR updates the downloads.md file with a table listing all .zip files."  
 
   convert:
     needs: prepare
@@ -106,15 +97,6 @@ jobs:
       
       - name: Run auto.sh script
         run: ./auto.sh "${{ matrix.edition_language }}" ? ?
-        
-      - name: Generate list of .zip files
-        id: generate_file_list
-        run: |
-          find data/language -type f -name '*.zip' > zip_files.txt
-          cat zip_files.txt
-          echo "zip_files<<EOF" >> $GITHUB_OUTPUT
-          cat zip_files.txt >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Upload dictionary files
         uses: softprops/action-gh-release@v2
@@ -123,7 +105,16 @@ jobs:
           tag_name: ${{ needs.prepare.outputs.tag }}
           prerelease: true
           generate_release_notes: true
-          files: ${{ steps.generate_file_list.outputs.zip_files }}
+          files: "data/language/**/*.zip"
+
+      - name: Upload index.json files
+        uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ needs.prepare.outputs.calver }}
+          tag_name: ${{ needs.prepare.outputs.tag }}
+          prerelease: true
+          generate_release_notes: true
+          files: "data/language/**/*-index.json"
 
   merge-ipa:
     needs: ["prepare", "convert"]
@@ -136,10 +127,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20'
+
+      - name: Install npm dependencies
+        run: npm install
       
       - name: Download IPA dicts
         run: |
-          mapfile -t iso_array < <(echo "$isos" | jq -r '.[]')
+          mapfile -t iso_array < <(printf '%s' '${{needs.prepare.outputs.isos}}' | jq -r '.[]')
           supported_editions="de en es fr ru zh"
           for source_iso in "${iso_array[@]}"; do
             for target_iso in "${iso_array[@]}"; do
@@ -152,7 +146,7 @@ jobs:
                   continue
               fi
               url="https://github.com/themoeway/kaikki-to-yomitan/releases/download/${{needs.prepare.outputs.tag}}/kty-${source_iso}-${target_iso}-ipa.zip"
-              wget -nv "$url"
+              curl -s -O -f -L "$url" || echo "Skipping $url due to an error."
             done
           done
 
@@ -161,15 +155,6 @@ jobs:
 
       - name: Delete downloaded IPA files
         run: rm *.zip
-
-      - name: Generate list of .zip files
-        id: generate_file_list
-        run: |
-          find data/language -type f -name '*.zip' > zip_files.txt
-          cat zip_files.txt
-          echo "zip_files<<EOF" >> $GITHUB_OUTPUT
-          cat zip_files.txt >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
       
       - name: Upload dictionary files
         uses: softprops/action-gh-release@v2
@@ -178,4 +163,13 @@ jobs:
           tag_name: ${{ needs.prepare.outputs.tag }}
           prerelease: true
           generate_release_notes: true
-          files: ${{ steps.generate_file_list.outputs.zip_files }}
+          files: "data/language/**/*.zip"
+
+      - name: Upload index.json files
+        uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ needs.prepare.outputs.calver }}
+          tag_name: ${{ needs.prepare.outputs.tag }}
+          prerelease: true
+          generate_release_notes: true
+          files: "data/language/**/*-index.json"
