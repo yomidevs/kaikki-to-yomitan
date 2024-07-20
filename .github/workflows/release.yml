@@ -47,6 +47,7 @@ jobs:
         id: load-languages
         run: |
           languages=$(jq '[.[] | select(.hasEdition == true) | .language]' languages.json | jq -c 'map(.)')
+          echo "languages=$languages" >> $GITHUB_OUTPUT
           isos=$(jq -r '.[].iso' languages.json | jq -R -s -c 'split("\n") | map(select(. != ""))')
           echo "isos=$isos" >> $GITHUB_OUTPUT
       
