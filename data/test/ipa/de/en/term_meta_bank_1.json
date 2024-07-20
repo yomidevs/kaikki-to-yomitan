@@ -36,5 +36,26 @@
         }
       ]
     }
+  ],
+  [
+    "Herz n weak",
+    "ipa",
+    {
+      "reading": "Herz n weak",
+      "transcriptions": [
+        {
+          "ipa": "/hɛrts/",
+          "tags": []
+        },
+        {
+          "ipa": "[hɛʁt͡s]",
+          "tags": []
+        },
+        {
+          "ipa": "[hɛɐ̯t͡s]",
+          "tags": []
+        }
+      ]
+    }
   ]
 ]

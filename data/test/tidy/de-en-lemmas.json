@@ -365,5 +365,54 @@
         ]
       }
     }
+  },
+  "Herz n weak": {
+    "Herz n weak": {
+      "noun": {
+        "ipa": [
+          {
+            "ipa": "/hɛrts/",
+            "tags": []
+          },
+          {
+            "ipa": "[hɛʁt͡s]",
+            "tags": []
+          },
+          {
+            "ipa": "[hɛɐ̯t͡s]",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "heart"
+            ],
+            "tags": [
+              "also",
+              "rare"
+            ]
+          },
+          {
+            "glosses": [
+              "(card games) hearts"
+            ],
+            "tags": [
+              "also",
+              "rare"
+            ]
+          },
+          {
+            "glosses": [
+              "sweetheart, darling"
+            ],
+            "tags": [
+              "also",
+              "rare"
+            ]
+          }
+        ]
+      }
+    }
   }
 }
