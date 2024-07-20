@@ -46,8 +46,7 @@ jobs:
       - name: Load Languages
         id: load-languages
         run: |
-          languages=$(jq -r '.[].language' languages.json | jq -R -s -c 'split("\n") | map(select(. != ""))')
-          echo "languages=$languages" >> $GITHUB_OUTPUT
+          languages=$(jq '[.[] | select(.hasEdition) | .language]' languages.json)          echo "languages=$languages" >> $GITHUB_OUTPUT
           isos=$(jq -r '.[].iso' languages.json | jq -R -s -c 'split("\n") | map(select(. != ""))')
           echo "isos=$isos" >> $GITHUB_OUTPUT
       
@@ -156,7 +155,6 @@ jobs:
                   continue
               fi
               url="https://github.com/themoeway/kaikki-to-yomitan/releases/download/${{needs.prepare.outputs.tag}}/kty-${source_iso}-${target_iso}-ipa.zip"
-              wget -nv "$url"
               curl -s -O "$url" || echo "Skipping $url due to an error."
             done
           done
