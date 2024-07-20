@@ -56,21 +56,12 @@ jobs:
         run: |
           ./tools/generate-downloads-table.sh
 
-      - name: Create pull request
+      - name: Create pull request if necessary
         uses: peter-evans/create-pull-request@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           title: "Update downloads.md with list of .zip files"
-          body: "This PR updates the downloads.md file with a table listing all .zip files."
-      
-      # - name: Release
-      #   uses: softprops/action-gh-release@v2
-      #   with:
-      #     name: ${{ steps.tag.outputs.calver }}
-      #     tag_name: ${{ steps.tag.outputs.tag }}
-      #     prerelease: true
-      #     generate_release_notes: true
-  
+          body: "This PR updates the downloads.md file with a table listing all .zip files."  
 
   convert:
     needs: prepare
@@ -105,7 +96,7 @@ jobs:
         run: sudo apt-get install -y gzip
       
       - name: Run auto.sh script
-        run: ./auto.sh "${{ matrix.edition_language }}" Spanish Spanish
+        run: ./auto.sh "${{ matrix.edition_language }}" ? ?
 
       - name: Upload dictionary files
         uses: softprops/action-gh-release@v2
@@ -142,7 +133,6 @@ jobs:
       
       - name: Download IPA dicts
         run: |
-          printf '%s' '${{needs.prepare.outputs.isos}}'
           mapfile -t iso_array < <(printf '%s' '${{needs.prepare.outputs.isos}}' | jq -r '.[]')
           supported_editions="de en es fr ru zh"
           for source_iso in "${iso_array[@]}"; do
