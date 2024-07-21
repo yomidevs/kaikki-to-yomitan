@@ -2285,5 +2285,65 @@
     ],
     0,
     ""
+  ],
+  [
+    "Fahrers",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "Fahrer",
+        [
+          "genitive"
+        ]
+      ],
+      [
+        "Fahrer",
+        [
+          "genitive",
+          "singular"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "Fahrerin",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "Fahrer",
+        [
+          "feminine"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "Fahrern",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "Fahrer",
+        [
+          "dative",
+          "plural",
+          "definite"
+        ]
+      ]
+    ],
+    0,
+    ""
   ]
 ]
