@@ -1444,6 +1444,57 @@
           ]
         ]
       }
+    ],
+    [
+      "Fahrer",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "Fahrers",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive",
+                    "genitive singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "Fahrerin",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "feminine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "Fahrern",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "dative plural definite"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
     ]
   ]
 }
