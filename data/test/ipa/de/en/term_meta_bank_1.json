@@ -57,5 +57,18 @@
         }
       ]
     }
+  ],
+  [
+    "Fahrer",
+    "ipa",
+    {
+      "reading": "Fahrer",
+      "transcriptions": [
+        {
+          "ipa": "/ˈfaːʁɐ/",
+          "tags": []
+        }
+      ]
+    }
   ]
 ]
