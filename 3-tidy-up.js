@@ -23,12 +23,12 @@ function isInflectionGloss(glosses, formOf) {
     glossesString = JSON.stringify(glosses);
     switch (targetIso) {
         case 'en':
-            if (/.*inflection of.*/.test(glossesString)) return true;
-            if(Array.isArray(formOf)) {
-                for (const {word: lemma} of formOf) {
-                    if (new RegExp(`of ${escapeRegExp(lemma)}`).test(glossesString)) return true;
-                }
+            if (glosses.some(gloss => /.*inflection of.*/.test(gloss))) return true;
+            if(!Array.isArray(formOf)) return false;
+            for (const {word: lemma} of formOf) {
+                if (glosses.some(gloss => new RegExp(`of ${escapeRegExp(lemma)}$`).test(gloss))) return true;
             }
+            
         case 'fr':
             if (/.*du verbe\s+((?:(?!\bdu\b).)*)$/.test(glossesString)) return true;
             if (/((?:(?:Masculin|Féminin)\s)?(?:(?:p|P)luriel|(?:s|S)ingulier)) de ([^\s]+)/.test(glossesString)) return true;

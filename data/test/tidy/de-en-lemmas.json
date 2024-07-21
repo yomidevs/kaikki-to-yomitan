@@ -414,5 +414,30 @@
         ]
       }
     }
+  },
+  "Fahrer": {
+    "Fahrer": {
+      "noun": {
+        "ipa": [
+          {
+            "ipa": "/ˈfaːʁɐ/",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "agent noun of fahren; driver (person)"
+            ],
+            "tags": [
+              "agent",
+              "form-of",
+              "masculine",
+              "strong"
+            ]
+          }
+        ]
+      }
+    }
   }
 }
