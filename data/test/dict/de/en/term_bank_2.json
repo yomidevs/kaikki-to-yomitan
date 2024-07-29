@@ -2166,7 +2166,7 @@
     0,
     [
       [
-        "Herz n weak",
+        "Herz",
         [
           "also"
         ]
@@ -2183,7 +2183,7 @@
     0,
     [
       [
-        "Herz n weak",
+        "Herz",
         [
           "accusative",
           "plural",
@@ -2191,7 +2191,7 @@
         ]
       ],
       [
-        "Herz n weak",
+        "Herz",
         [
           "dative",
           "plural",
@@ -2199,7 +2199,7 @@
         ]
       ],
       [
-        "Herz n weak",
+        "Herz",
         [
           "genitive",
           "plural",
@@ -2207,7 +2207,7 @@
         ]
       ],
       [
-        "Herz n weak",
+        "Herz",
         [
           "nominative",
           "plural",
@@ -2215,7 +2215,7 @@
         ]
       ],
       [
-        "Herz n weak",
+        "Herz",
         [
           "dative",
           "singular"
@@ -2233,7 +2233,7 @@
     0,
     [
       [
-        "Herz n weak",
+        "Herz",
         [
           "genitive",
           "singular"
@@ -2251,34 +2251,9 @@
     0,
     [
       [
-        "Herz n weak",
+        "Herz",
         [
           "genitive",
-          "singular"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "Herz",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "Herz n weak",
-        [
-          "accusative",
-          "singular"
-        ]
-      ],
-      [
-        "Herz n weak",
-        [
-          "dative",
           "singular"
         ]
       ]
