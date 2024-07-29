@@ -22,6 +22,8 @@ function escapeRegExp(string) {
 function isInflectionGloss(glosses, formOf) {
     glossesString = JSON.stringify(glosses);
     switch (targetIso) {
+        case 'de':
+            if (glosses.some(gloss => /des (?:Verbs|Adjektivs|Substantivs)/.test(gloss))) return true;
         case 'en':
             if (glosses.some(gloss => /.*inflection of.*/.test(gloss))) return true;
             if(!Array.isArray(formOf)) return false;
@@ -263,9 +265,10 @@ function handleLine(line) {
 
 function processInflectionGlosses(glosses, word, pos) {
     switch (targetIso) {
+        case 'de':
+            return processGermanInflectionGlosses(glosses, word, pos);
         case 'en':
-            processEnglishInflectionGlosses(glosses, word, pos);
-            break;
+            return processEnglishInflectionGlosses(glosses, word, pos);
         case 'fr':
             let inflection, lemma;
 
@@ -289,6 +292,16 @@ function processInflectionGlosses(glosses, word, pos) {
                 }
             }
             break;
+    }
+}
+
+function processGermanInflectionGlosses(glosses, word, pos) {
+    const match1 = glosses[0].match(/(.*)des (?:Verbs|Adjektivs|Substantivs) (.*)$/);
+    if (!match1 || match1.length < 3) return;
+    const inflection = match1[1].trim();
+    const lemma = match1[2].trim();
+    if (inflection && word !== lemma) {
+        addDeinflections(word, pos, lemma, [inflection]);
     }
 }
 
