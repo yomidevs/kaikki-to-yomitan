@@ -2,22 +2,82 @@
   [
     "befruchteten",
     "",
+    "non-lemma",
     "",
-    "adj",
     0,
     [
-      "Genitiv Singular Maskulinum der starken Deklination des Positivs des Adjektivs befruchtet",
-      "Akkusativ Singular Maskulinum der starken Deklination des Positivs des Adjektivs befruchtet",
-      "Genitiv Singular Neutrum der starken Deklination des Positivs des Adjektivs befruchtet",
-      "Dativ Plural alle Genera der starken Deklination des Positivs des Adjektivs befruchtet",
-      "Genitiv Singular alle Genera der schwachen Deklination des Positivs des Adjektivs befruchtet",
-      "Dativ Singular alle Genera der schwachen Deklination des Positivs des Adjektivs befruchtet",
-      "Akkusativ Singular Maskulinum der schwachen Deklination des Positivs des Adjektivs befruchtet",
-      "Alle Kasus Plural alle Genera der schwachen Deklination des Positivs des Adjektivs befruchtet",
-      "Genitiv Singular alle Genera der gemischten Deklination des Positivs des Adjektivs befruchtet",
-      "Dativ Singular alle Genera der gemischten Deklination des Positivs des Adjektivs befruchtet",
-      "Akkusativ Singular Maskulinum der gemischten Deklination des Positivs des Adjektivs befruchtet",
-      "Alle Kasus Plural alle Genera der gemischten Deklination des Positivs des Adjektivs befruchtet"
+      [
+        "befruchtet",
+        [
+          "Genitiv Singular Maskulinum der starken Deklination des Positivs"
+        ]
+      ],
+      [
+        "befruchtet",
+        [
+          "Akkusativ Singular Maskulinum der starken Deklination des Positivs"
+        ]
+      ],
+      [
+        "befruchtet",
+        [
+          "Genitiv Singular Neutrum der starken Deklination des Positivs"
+        ]
+      ],
+      [
+        "befruchtet",
+        [
+          "Dativ Plural alle Genera der starken Deklination des Positivs"
+        ]
+      ],
+      [
+        "befruchtet",
+        [
+          "Genitiv Singular alle Genera der schwachen Deklination des Positivs"
+        ]
+      ],
+      [
+        "befruchtet",
+        [
+          "Dativ Singular alle Genera der schwachen Deklination des Positivs"
+        ]
+      ],
+      [
+        "befruchtet",
+        [
+          "Akkusativ Singular Maskulinum der schwachen Deklination des Positivs"
+        ]
+      ],
+      [
+        "befruchtet",
+        [
+          "Alle Kasus Plural alle Genera der schwachen Deklination des Positivs"
+        ]
+      ],
+      [
+        "befruchtet",
+        [
+          "Genitiv Singular alle Genera der gemischten Deklination des Positivs"
+        ]
+      ],
+      [
+        "befruchtet",
+        [
+          "Dativ Singular alle Genera der gemischten Deklination des Positivs"
+        ]
+      ],
+      [
+        "befruchtet",
+        [
+          "Akkusativ Singular Maskulinum der gemischten Deklination des Positivs"
+        ]
+      ],
+      [
+        "befruchtet",
+        [
+          "Alle Kasus Plural alle Genera der gemischten Deklination des Positivs"
+        ]
+      ]
     ],
     0,
     ""
