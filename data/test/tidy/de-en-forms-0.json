@@ -1363,7 +1363,7 @@
       }
     ],
     [
-      "Herz n weak",
+      "Herz",
       {
         "_type": "map",
         "map": [
@@ -1422,21 +1422,6 @@
                   "noun",
                   [
                     "genitive singular"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "Herz",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "noun",
-                  [
-                    "accusative singular",
-                    "dative singular"
                   ]
                 ]
               ]

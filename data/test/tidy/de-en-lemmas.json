@@ -366,8 +366,8 @@
       }
     }
   },
-  "Herz n weak": {
-    "Herz n weak": {
+  "Herz": {
+    "Herz": {
       "noun": {
         "ipa": [
           {
@@ -390,6 +390,7 @@
             ],
             "tags": [
               "also",
+              "neuter",
               "rare"
             ]
           },
@@ -399,6 +400,7 @@
             ],
             "tags": [
               "also",
+              "neuter",
               "rare"
             ]
           },
@@ -408,6 +410,7 @@
             ],
             "tags": [
               "also",
+              "neuter",
               "rare"
             ]
           }
