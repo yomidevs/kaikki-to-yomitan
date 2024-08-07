@@ -23,7 +23,7 @@ function isInflectionGloss(glosses, formOf) {
     glossesString = JSON.stringify(glosses);
     switch (targetIso) {
         case 'de':
-            if (glosses.some(gloss => /des (?:Verbs|Adjektivs|Substantivs|Demonstrativpronomens)/.test(gloss))) return true;
+            if (glosses.some(gloss => /des (?:Verbs|Adjektivs|Substantivs|Demonstrativpronomens|Possessivpronomens|Pronomens)/.test(gloss))) return true;
         case 'en':
             if (glosses.some(gloss => /.*inflection of.*/.test(gloss))) return true;
             if(!Array.isArray(formOf)) return false;
@@ -296,7 +296,7 @@ function processInflectionGlosses(glosses, word, pos) {
 }
 
 function processGermanInflectionGlosses(glosses, word, pos) {
-    const match1 = glosses[0].match(/(.*)des (?:Verbs|Adjektivs|Substantivs|Demonstrativpronomens) (.*)$/);
+    const match1 = glosses[0].match(/(.*)des (?:Verbs|Adjektivs|Substantivs|Demonstrativpronomens|Possessivpronomens|Pronomens) (.*)$/);
     if (!match1 || match1.length < 3) return;
     const inflection = match1[1].trim();
     const lemma = match1[2].trim();
