@@ -316,9 +316,16 @@ let lastTermBankIndex = 0;
                         hypotheses = hypotheses
                             .map((hypothesis) => 
                                 hypothesis
-                                    .map((inflection) => (inflection).trim())
+                                    .map((inflection) => inflection.trim())
                                     .filter(Boolean)
-                            ).filter(hypothesis => hypothesis.length);
+                            )
+                            .filter(hypothesis => hypothesis.length)
+                            .map((hypothesis) => 
+                                hypothesis.map((inflection) => 
+                                    inflection.replace(/\u00A0/g, ' ')
+                                )
+                            );
+
 
                         return hypotheses;
                     });
