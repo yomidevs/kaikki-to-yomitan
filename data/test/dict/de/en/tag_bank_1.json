@@ -96,5 +96,12 @@
     1,
     "rare",
     -1
+  ],
+  [
+    "prep",
+    "partOfSpeech",
+    -1,
+    "preposition",
+    1
   ]
 ]
