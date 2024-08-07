@@ -442,5 +442,53 @@
         ]
       }
     }
+  },
+  "von": {
+    "von": {
+      "prep": {
+        "ipa": [
+          {
+            "ipa": "/fɔn/",
+            "tags": []
+          },
+          {
+            "ipa": "[fɔn]",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "from"
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "of, belonging to (often replacing genitive; see usage note below)"
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "by (with passive voice)"
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "about, of (a topic)"
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "on, with (a resource)"
+            ],
+            "tags": []
+          }
+        ]
+      }
+    }
   }
 }

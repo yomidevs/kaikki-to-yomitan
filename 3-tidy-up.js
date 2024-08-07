@@ -353,11 +353,16 @@ function getCanonicalForm({word, forms}) {
         form.tags &&
         form.tags.includes('canonical')
     );
-    if (canonicalForm) {
+    if (canonicalForm && canonicalForm.form) {
         word = canonicalForm.form;
 
-        if (word && word.includes('{{#ifexist:Wiktionary')) { // TODO: remove once fixed in kaikki
-            word = word.replace(/ {{#if:.+/, '');
+        if (word.includes('{{#ifexist:Wiktionary')) { // TODO: remove once fixed in kaikki
+            word = word.replace(/ {{#if:.+/, '').trim();
+        }
+
+        bracketsRegex = /\[.*\]$/;
+        if (bracketsRegex.test(word)) {
+            word = word.replace(bracketsRegex, '').trim();
         }
     }
     return word;

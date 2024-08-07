@@ -70,5 +70,22 @@
         }
       ]
     }
+  ],
+  [
+    "von",
+    "ipa",
+    {
+      "reading": "von",
+      "transcriptions": [
+        {
+          "ipa": "/fɔn/",
+          "tags": []
+        },
+        {
+          "ipa": "[fɔn]",
+          "tags": []
+        }
+      ]
+    }
   ]
 ]
