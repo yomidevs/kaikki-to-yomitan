@@ -214,15 +214,13 @@ function handleLine(line) {
 
     if (sensesWithoutInflectionGlosses.length === 0) return;
         
-    ensureNestedObject(lemmaDict, [word, reading, pos]).ipa ??= [];
+    const result = initializeWordResult(word, reading, pos);
 
     for (const ipaObj of ipa) {
-        if (!lemmaDict[word][reading][pos].ipa.some(obj => obj.ipa === ipaObj.ipa)) {
-            lemmaDict[word][reading][pos].ipa.push(ipaObj);
+        if (!result.ipa.some(obj => obj.ipa === ipaObj.ipa)) {
+            result.ipa.push(ipaObj);
         }
     }
-
-    ensureNestedObject(lemmaDict, [word, reading, pos]).senses ??= [];
 
     const glossTree = new Map();
     for (const sense of sensesWithoutInflectionGlosses) {
@@ -255,9 +253,16 @@ function handleLine(line) {
         }
 
         if (currSense.glosses.length > 0) {
-            lemmaDict[word][reading][pos].senses.push(currSense);
+            result.senses.push(currSense);
         }
     }
+}
+
+function initializeWordResult(word, reading, pos) {
+    const result = ensureNestedObject(lemmaDict, [word, reading, pos]);
+    result.ipa ??= [];
+    result.senses ??= [];
+    return result;
 }
 
 function processInflectionGlosses(glosses, word, pos) {
