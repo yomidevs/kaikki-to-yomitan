@@ -1,0 +1,234 @@
+[
+  [
+    "楽しい",
+    "たのしい",
+    "adj",
+    "adj",
+    0,
+    [
+      "pleasant, delightful, fun, enjoyable"
+    ],
+    0,
+    ""
+  ],
+  [
+    "好き",
+    "すき",
+    "adj",
+    "adj",
+    0,
+    [
+      "liked, favorite"
+    ],
+    0,
+    ""
+  ],
+  [
+    "狸",
+    "たぬき",
+    "n",
+    "n",
+    0,
+    [
+      "a raccoon dog, Nyctereutes procyonoides"
+    ],
+    0,
+    ""
+  ],
+  [
+    "狸",
+    "たぬき",
+    "n fig",
+    "n",
+    0,
+    [
+      "a person who pretends to be good but in fact is cunning (compare English sly fox)"
+    ],
+    0,
+    ""
+  ],
+  [
+    "狸",
+    "たぬき",
+    "n abbv",
+    "n",
+    0,
+    [
+      "Short for 狸饂飩 (tanuki-udon) and 狸蕎麦 (tanuki-soba): styles of various noodle dishes"
+    ],
+    0,
+    ""
+  ],
+  [
+    "狸",
+    "たぬき",
+    "n abbv rare",
+    "n",
+    0,
+    [
+      "Short for 狸寝入り (tanuki neiri): pretending to be asleep"
+    ],
+    0,
+    ""
+  ],
+  [
+    "狸",
+    "たぬき",
+    "n abbv obs rare",
+    "n",
+    0,
+    [
+      "Short for 狸汁 (tanuki-jiru): a soup made from tanuki meat mixed with daikon, burdock root, etc."
+    ],
+    0,
+    ""
+  ],
+  [
+    "走る",
+    "はしる",
+    "v",
+    "v",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "data": {
+              "listType": "li"
+            },
+            "content": "to run (move fast on foot)"
+          },
+          {
+            "tag": "div",
+            "data": {
+              "listType": "ol"
+            },
+            "style": {
+              "marginLeft": 2
+            },
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "listType": "li"
+                },
+                "content": [
+                  {
+                    "tag": "span",
+                    "data": {
+                      "listType": "number"
+                    },
+                    "content": "1. "
+                  },
+                  "to move forward; (of a machine) to operate, function; (of objects) to move at a high speed (of a vehicle)"
+                ]
+              },
+              {
+                "tag": "div",
+                "data": {
+                  "listType": "li"
+                },
+                "content": [
+                  {
+                    "tag": "span",
+                    "data": {
+                      "listType": "number"
+                    },
+                    "content": "2. "
+                  },
+                  "to flow vigorously (of liquid)"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "to move smoothly; to slide",
+      "to run away, escape",
+      "to rush, hurry around",
+      "to give over oneself to; to commit oneself to (usually something bad)",
+      "to spread out, scatter, splatter, spout",
+      "to lead or extend in a certain direction",
+      "to appear briefly; to flash",
+      "(used with 胸(むね)が (mune ga)) to feel palpitations; to have a sense of unease"
+    ],
+    0,
+    ""
+  ],
+  [
+    "走る",
+    "はしる",
+    "v vt",
+    "v",
+    0,
+    [
+      "to run through some kind of place"
+    ],
+    0,
+    ""
+  ],
+  [
+    "走る",
+    "はしる",
+    "v euph",
+    "v",
+    0,
+    [
+      "to crack"
+    ],
+    0,
+    ""
+  ],
+  [
+    "走る",
+    "はしる",
+    "v music",
+    "v",
+    0,
+    [
+      "Alternative spelling of ハシる"
+    ],
+    0,
+    ""
+  ],
+  [
+    "五色",
+    "ごしき",
+    "n",
+    "n",
+    0,
+    [
+      "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))",
+      "melon, gourd"
+    ],
+    0,
+    ""
+  ],
+  [
+    "五色",
+    "ごしょく",
+    "n",
+    "n",
+    0,
+    [
+      "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))",
+      "melon, gourd"
+    ],
+    0,
+    ""
+  ],
+  [
+    "お腹が空いた",
+    "おなかがすいた",
+    "phrase",
+    "phrase",
+    0,
+    [
+      "[I am / someone is] hungry"
+    ],
+    0,
+    ""
+  ]
+]

@@ -1,0 +1,335 @@
+{
+  "楽しい": {
+    "たのしい": {
+      "adj": {
+        "ipa": [
+          {
+            "ipa": "[ta̠no̞ɕiː]",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "pleasant, delightful, fun, enjoyable"
+            ],
+            "tags": []
+          }
+        ]
+      }
+    }
+  },
+  "好き": {
+    "すき": {
+      "adj": {
+        "ipa": [
+          {
+            "ipa": "[sɨ̥kʲi]",
+            "tags": []
+          },
+          {
+            "ipa": "/su.ki/",
+            "tags": []
+          },
+          {
+            "ipa": "[sɯᵝ˦.ki˨]",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "liked, favorite"
+            ],
+            "tags": []
+          }
+        ]
+      }
+    }
+  },
+  "狸": {
+    "たぬき": {
+      "noun": {
+        "ipa": [
+          {
+            "ipa": "[ta̠nɯ̟kʲi]",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "a raccoon dog, Nyctereutes procyonoides"
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "(figurative) a person who pretends to be good but in fact is cunning (compare English sly fox)"
+            ],
+            "tags": [
+              "figuratively"
+            ]
+          },
+          {
+            "glosses": [
+              "Short for 狸饂飩 (tanuki-udon) and 狸蕎麦 (tanuki-soba): styles of various noodle dishes"
+            ],
+            "tags": [
+              "abbreviation",
+              "alt-of"
+            ]
+          },
+          {
+            "glosses": [
+              "(rare) Short for 狸寝入り (tanuki neiri): pretending to be asleep"
+            ],
+            "tags": [
+              "abbreviation",
+              "alt-of",
+              "rare"
+            ]
+          },
+          {
+            "glosses": [
+              "(rare, obsolete) Short for 狸汁 (tanuki-jiru): a soup made from tanuki meat mixed with daikon, burdock root, etc."
+            ],
+            "tags": [
+              "abbreviation",
+              "alt-of",
+              "obsolete",
+              "rare"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "走る": {
+    "はしる": {
+      "verb": {
+        "ipa": [
+          {
+            "ipa": "[ha̠ɕiɾɯ̟]",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              {
+                "type": "structured-content",
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "listType": "li"
+                    },
+                    "content": "to run (move fast on foot)"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "listType": "ol"
+                    },
+                    "style": {
+                      "marginLeft": 2
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "listType": "li"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "data": {
+                              "listType": "number"
+                            },
+                            "content": "1. "
+                          },
+                          "to move forward; (of a machine) to operate, function; (of objects) to move at a high speed (of a vehicle)"
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "listType": "li"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "data": {
+                              "listType": "number"
+                            },
+                            "content": "2. "
+                          },
+                          "to flow vigorously (of liquid)"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "(transitive) to run through some kind of place"
+            ],
+            "tags": [
+              "transitive"
+            ]
+          },
+          {
+            "glosses": [
+              "to move smoothly; to slide"
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "to run away, escape"
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "to rush, hurry around"
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "to give over oneself to; to commit oneself to (usually something bad)"
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "to spread out, scatter, splatter, spout"
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "to lead or extend in a certain direction"
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "to appear briefly; to flash"
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "(used with 胸(むね)が (mune ga)) to feel palpitations; to have a sense of unease"
+            ],
+            "tags": [
+              "used with 胸(むね)が (mune ga)"
+            ]
+          },
+          {
+            "glosses": [
+              "(euphemistic) to crack"
+            ],
+            "tags": [
+              "euphemistic"
+            ]
+          },
+          {
+            "glosses": [
+              "(music) Alternative spelling of ハシる"
+            ],
+            "tags": [
+              "alt-of",
+              "alternative"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "五色": {
+    "ごしき": {
+      "noun": {
+        "ipa": [
+          {
+            "ipa": "[ɡo̞ɕikʲi]",
+            "tags": []
+          },
+          {
+            "ipa": "[ɡo̞ɕo̞kɯ̟]",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))"
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "melon, gourd"
+            ],
+            "tags": []
+          }
+        ]
+      }
+    },
+    "ごしょく": {
+      "noun": {
+        "ipa": [
+          {
+            "ipa": "[ɡo̞ɕikʲi]",
+            "tags": []
+          },
+          {
+            "ipa": "[ɡo̞ɕo̞kɯ̟]",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))"
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "melon, gourd"
+            ],
+            "tags": []
+          }
+        ]
+      }
+    }
+  },
+  "お腹が空いた": {
+    "おなかがすいた": {
+      "phrase": {
+        "ipa": [
+          {
+            "ipa": "[o̞na̠ka̠ ɡa̠ sɨita̠]",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "[I am / someone is] hungry"
+            ],
+            "tags": []
+          }
+        ]
+      }
+    }
+  }
+}

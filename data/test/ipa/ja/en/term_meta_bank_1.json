@@ -1,0 +1,109 @@
+[
+  [
+    "楽しい",
+    "ipa",
+    {
+      "reading": "たのしい",
+      "transcriptions": [
+        {
+          "ipa": "[ta̠no̞ɕiː]",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  [
+    "好き",
+    "ipa",
+    {
+      "reading": "すき",
+      "transcriptions": [
+        {
+          "ipa": "[sɨ̥kʲi]",
+          "tags": []
+        },
+        {
+          "ipa": "/su.ki/",
+          "tags": []
+        },
+        {
+          "ipa": "[sɯᵝ˦.ki˨]",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  [
+    "狸",
+    "ipa",
+    {
+      "reading": "たぬき",
+      "transcriptions": [
+        {
+          "ipa": "[ta̠nɯ̟kʲi]",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  [
+    "走る",
+    "ipa",
+    {
+      "reading": "はしる",
+      "transcriptions": [
+        {
+          "ipa": "[ha̠ɕiɾɯ̟]",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  [
+    "五色",
+    "ipa",
+    {
+      "reading": "ごしき",
+      "transcriptions": [
+        {
+          "ipa": "[ɡo̞ɕikʲi]",
+          "tags": []
+        },
+        {
+          "ipa": "[ɡo̞ɕo̞kɯ̟]",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  [
+    "五色",
+    "ipa",
+    {
+      "reading": "ごしょく",
+      "transcriptions": [
+        {
+          "ipa": "[ɡo̞ɕikʲi]",
+          "tags": []
+        },
+        {
+          "ipa": "[ɡo̞ɕo̞kɯ̟]",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  [
+    "お腹が空いた",
+    "ipa",
+    {
+      "reading": "おなかがすいた",
+      "transcriptions": [
+        {
+          "ipa": "[o̞na̠ka̠ ɡa̠ sɨita̠]",
+          "tags": []
+        }
+      ]
+    }
+  ]
+]

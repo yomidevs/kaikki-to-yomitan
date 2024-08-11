@@ -141,7 +141,7 @@ function handleLine(line) {
     if(!pos) return;
     const word = getCanonicalForm(parsedLine);
     if (!word) return;
-    const reading = getReading(word, parsedLine);
+    const readings = getReadings(word, parsedLine);
     
     if (forms) {
         forms.forEach((formData) => {
@@ -214,18 +214,11 @@ function handleLine(line) {
 
     if (sensesWithoutInflectionGlosses.length === 0) return;
         
-    lemmaDict[word] ??= {};
-    lemmaDict[word][reading] ??= {};
-    lemmaDict[word][reading][pos] ??= {};
-    lemmaDict[word][reading][pos].ipa ??= [];
+    initializeWordResult(word, readings, pos);
 
     for (const ipaObj of ipa) {
-        if (!lemmaDict[word][reading][pos].ipa.some(obj => obj.ipa === ipaObj.ipa)) {
-            lemmaDict[word][reading][pos].ipa.push(ipaObj);
-        }
+        saveIpaResult(word, readings, pos, ipaObj);
     }
-
-    lemmaDict[word][reading][pos].senses ??= [];
 
     const glossTree = new Map();
     for (const sense of sensesWithoutInflectionGlosses) {
@@ -258,8 +251,31 @@ function handleLine(line) {
         }
 
         if (currSense.glosses.length > 0) {
-            lemmaDict[word][reading][pos].senses.push(currSense);
+            saveSenseResult(word, readings, pos, currSense);
         }
+    }
+}
+
+function saveSenseResult(word, readings, pos, currSense) {
+    for (const reading of readings) {
+        lemmaDict[word][reading][pos].senses.push(currSense);
+    }
+}
+
+function saveIpaResult(word, readings, pos, ipaObj) {
+    for (const reading of readings) {
+        const result = lemmaDict[word][reading][pos];
+        if (!result.ipa.some(obj => obj.ipa === ipaObj.ipa)) {
+            result.ipa.push(ipaObj);
+        }
+    }
+}
+
+function initializeWordResult(word, readings, pos) {
+    for (const reading of readings) {
+        const result = ensureNestedObject(lemmaDict, [word, reading, pos]);
+        result.ipa ??= [];
+        result.senses ??= [];
     }
 }
 
@@ -303,6 +319,14 @@ function processGermanInflectionGlosses(glosses, word, pos) {
     if (inflection && word !== lemma) {
         addDeinflections(word, pos, lemma, [inflection]);
     }
+}
+
+function ensureNestedObject(obj, keys) {
+    for (const key of keys) {
+        obj[key] ??= {};
+        obj = obj[key];
+    }
+    return obj;
 }
 
 function processEnglishInflectionGlosses(glosses, word, pos) {
@@ -368,12 +392,12 @@ function getCanonicalForm({word, forms}) {
     return word;
 }
 
-function getReading(word, line){
+function getReadings(word, line){
     switch(sourceIso){
-        case 'fa':
-            return getPersianReading(word, line);
+        case 'fa': return [getPersianReading(word, line)];
+        case 'ja': return getJapaneseReadings(word, line);
         default:
-            return word;
+            return [word];
     }
 }
 
@@ -382,6 +406,44 @@ function getPersianReading(word, line){
     if(!forms) return word;
     const romanization = forms.find(({form, tags}) => tags && tags.includes('romanization') && tags.length === 1 && form);
     return romanization ? romanization.form : word;
+}
+
+function getJapaneseReadings(word, line){
+    const {head_templates} = line;
+    if(!head_templates) {
+        return [word]; // among others, happens on kanji and alt forms
+    }
+    if(!Array.isArray(head_templates) || head_templates.length === 0) {
+        return [word]; // never happens
+    }
+    const readings = [];
+    for (const template of head_templates) {
+        let reading;
+        switch(template.name) {
+            case 'ja-noun':
+            case 'ja-adj':
+            case 'ja-verb':
+            case 'ja-verb form':
+            case 'ja-verb-form':
+            case 'ja-phrase':
+                reading = template?.args?.[1];
+                break;
+            case 'ja-pos':
+                reading = template?.args?.[2];
+                break;
+            case 'head':
+            case 'ja-def':
+            case 'ja-syllable':
+                continue;
+            default:
+                // console.log('Unknown head_template:', word, head_templates);
+        }
+        if(reading) {
+            readings.push(reading.replace(/\^| /g, ''));
+        }
+    }
+
+    return readings.length > 0 ? readings : [word];
 }
 
 function handleAutomatedForms() {
