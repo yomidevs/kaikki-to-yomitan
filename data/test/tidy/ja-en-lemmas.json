@@ -282,6 +282,34 @@
           }
         ]
       }
+    },
+    "ごしょく": {
+      "noun": {
+        "ipa": [
+          {
+            "ipa": "[ɡo̞ɕikʲi]",
+            "tags": []
+          },
+          {
+            "ipa": "[ɡo̞ɕo̞kɯ̟]",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))"
+            ],
+            "tags": []
+          },
+          {
+            "glosses": [
+              "melon, gourd"
+            ],
+            "tags": []
+          }
+        ]
+      }
     }
   }
 }
