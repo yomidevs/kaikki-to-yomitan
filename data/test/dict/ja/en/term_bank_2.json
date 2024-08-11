@@ -1,34 +1,5 @@
 [
   [
-    "tanoshii",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "楽しい",
-        [
-          "attributive"
-        ]
-      ],
-      [
-        "楽しい",
-        [
-          "romanization"
-        ]
-      ],
-      [
-        "楽しい",
-        [
-          "terminative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
     "楽しく",
     "",
     "non-lemma",
@@ -170,6 +141,29 @@
         "楽しい",
         [
           "stem",
+          "terminative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "tanoshii",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "楽しい",
+        [
+          "attributive"
+        ]
+      ],
+      [
+        "楽しい",
+        [
           "terminative"
         ]
       ]
@@ -916,23 +910,6 @@
         "楽しい",
         [
           "noun-from-adj"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "suki",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "好き",
-        [
-          "romanization"
         ]
       ]
     ],
@@ -2136,40 +2113,6 @@
         "好き",
         [
           "noun-from-adj"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "tanuki",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "狸",
-        [
-          "romanization"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "hashiru",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "走る",
-        [
-          "romanization"
         ]
       ]
     ],
@@ -3506,40 +3449,6 @@
     ""
   ],
   [
-    "goshiki",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "五色",
-        [
-          "romanization"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "gosiki",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "五色",
-        [
-          "romanization"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
     "ごしき",
     "",
     "non-lemma",
@@ -3558,40 +3467,6 @@
     ""
   ],
   [
-    "goshoku",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "五色",
-        [
-          "romanization"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "gosyoku",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "五色",
-        [
-          "romanization"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
     "ごしよく",
     "",
     "non-lemma",
@@ -3603,23 +3478,6 @@
         [
           "hiragana",
           "historical"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "onaka ga suita",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "お腹が空いた",
-        [
-          "romanization"
         ]
       ]
     ],
