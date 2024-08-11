@@ -214,10 +214,7 @@ function handleLine(line) {
 
     if (sensesWithoutInflectionGlosses.length === 0) return;
         
-    lemmaDict[word] ??= {};
-    lemmaDict[word][reading] ??= {};
-    lemmaDict[word][reading][pos] ??= {};
-    lemmaDict[word][reading][pos].ipa ??= [];
+    ensureNestedObject(lemmaDict, [word, reading, pos]).ipa ??= [];
 
     for (const ipaObj of ipa) {
         if (!lemmaDict[word][reading][pos].ipa.some(obj => obj.ipa === ipaObj.ipa)) {
@@ -225,7 +222,7 @@ function handleLine(line) {
         }
     }
 
-    lemmaDict[word][reading][pos].senses ??= [];
+    ensureNestedObject(lemmaDict, [word, reading, pos]).senses ??= [];
 
     const glossTree = new Map();
     for (const sense of sensesWithoutInflectionGlosses) {
@@ -303,6 +300,14 @@ function processGermanInflectionGlosses(glosses, word, pos) {
     if (inflection && word !== lemma) {
         addDeinflections(word, pos, lemma, [inflection]);
     }
+}
+
+function ensureNestedObject(obj, keys) {
+    for (const key of keys) {
+        obj[key] ??= {};
+        obj = obj[key];
+    }
+    return obj;
 }
 
 function processEnglishInflectionGlosses(glosses, word, pos) {
@@ -387,15 +392,13 @@ function getPersianReading(word, line){
 function getJapaneseReading(word, line){
     const {head_templates} = line;
     if(!head_templates) {
-        console.log('No head_templates found for Japanese word:', word);
-        return word;
+        return word; // among others, happens on kanji and alt forms
     }
     if(!Array.isArray(head_templates) || head_templates.length === 0) {
-        // console.log('head_templates is not an array or empty:', word, head_templates);
-        return word;
+        return word; // never happens
     }
     if (head_templates.length > 1) {
-        // console.log('Multiple head_templates found for Japanese word:', word, head_templates);
+        console.log('Multiple head_templates found for Japanese word:', word, head_templates);
     }
     for (const template of head_templates) {
         switch(template.name) {

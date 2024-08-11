@@ -2741,6 +2741,98 @@
           ]
         ]
       }
+    ],
+    [
+      "五色",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "goshiki",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "romanization"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gosiki",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "romanization"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "ごしき",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "hiragana historical"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "goshoku",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "romanization"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gosyoku",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "romanization"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "ごしよく",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "hiragana historical"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
     ]
   ]
 }
