@@ -7,22 +7,6 @@
         "_type": "map",
         "map": [
           [
-            "tanoshii",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "adj",
-                  [
-                    "attributive",
-                    "romanization",
-                    "terminative"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
             "楽しく",
             {
               "_type": "map",
@@ -119,6 +103,21 @@
                   [
                     "attributive stem",
                     "stem terminative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "tanoshii",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "attributive",
+                    "terminative"
                   ]
                 ]
               ]
@@ -720,20 +719,6 @@
       {
         "_type": "map",
         "map": [
-          [
-            "suki",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "adj",
-                  [
-                    "romanization"
-                  ]
-                ]
-              ]
-            }
-          ],
           [
             "好きな",
             {
@@ -1666,46 +1651,10 @@
       }
     ],
     [
-      "狸",
-      {
-        "_type": "map",
-        "map": [
-          [
-            "tanuki",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "noun",
-                  [
-                    "romanization"
-                  ]
-                ]
-              ]
-            }
-          ]
-        ]
-      }
-    ],
-    [
       "走る",
       {
         "_type": "map",
         "map": [
-          [
-            "hashiru",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "romanization"
-                  ]
-                ]
-              ]
-            }
-          ],
           [
             "走り",
             {
@@ -2748,34 +2697,6 @@
         "_type": "map",
         "map": [
           [
-            "goshiki",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "noun",
-                  [
-                    "romanization"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "gosiki",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "noun",
-                  [
-                    "romanization"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
             "ごしき",
             {
               "_type": "map",
@@ -2790,34 +2711,6 @@
             }
           ],
           [
-            "goshoku",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "noun",
-                  [
-                    "romanization"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "gosyoku",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "noun",
-                  [
-                    "romanization"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
             "ごしよく",
             {
               "_type": "map",
@@ -2826,28 +2719,6 @@
                   "noun",
                   [
                     "hiragana historical"
-                  ]
-                ]
-              ]
-            }
-          ]
-        ]
-      }
-    ],
-    [
-      "お腹が空いた",
-      {
-        "_type": "map",
-        "map": [
-          [
-            "onaka ga suita",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "phrase",
-                  [
-                    "romanization"
                   ]
                 ]
               ]
