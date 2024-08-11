@@ -2833,6 +2833,28 @@
           ]
         ]
       }
+    ],
+    [
+      "お腹が空いた",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "onaka ga suita",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "phrase",
+                  [
+                    "romanization"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
     ]
   ]
 }

@@ -416,23 +416,30 @@ function getJapaneseReadings(word, line){
     if(!Array.isArray(head_templates) || head_templates.length === 0) {
         return [word]; // never happens
     }
-    if (head_templates.length > 1) {
-        console.log('Multiple head_templates found for Japanese word:', word, head_templates);
-    }
     const readings = [];
     for (const template of head_templates) {
+        let reading;
         switch(template.name) {
             case 'ja-noun':
             case 'ja-adj':
             case 'ja-verb':
-                const reading = template?.args?.[1];
-                if(!reading) {
-                    console.log('No reading found for Japanese word:', word, template);
-                    continue;
-                }
-                readings.push(reading);
+            case 'ja-verb form':
+            case 'ja-verb-form':
+            case 'ja-phrase':
+                reading = template?.args?.[1];
+                break;
+            case 'ja-pos':
+                reading = template?.args?.[2];
+                break;
+            case 'head':
+            case 'ja-def':
+            case 'ja-syllable':
+                continue;
             default:
                 // console.log('Unknown head_template:', word, head_templates);
+        }
+        if(reading) {
+            readings.push(reading.replace(/\^| /g, ''));
         }
     }
 

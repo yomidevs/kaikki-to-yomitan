@@ -311,5 +311,25 @@
         ]
       }
     }
+  },
+  "お腹が空いた": {
+    "おなかがすいた": {
+      "phrase": {
+        "ipa": [
+          {
+            "ipa": "[o̞na̠ka̠ ɡa̠ sɨita̠]",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "[I am / someone is] hungry"
+            ],
+            "tags": []
+          }
+        ]
+      }
+    }
   }
 }

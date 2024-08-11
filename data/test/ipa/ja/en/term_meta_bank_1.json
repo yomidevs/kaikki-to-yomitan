@@ -92,5 +92,18 @@
         }
       ]
     }
+  ],
+  [
+    "お腹が空いた",
+    "ipa",
+    {
+      "reading": "おなかがすいた",
+      "transcriptions": [
+        {
+          "ipa": "[o̞na̠ka̠ ɡa̠ sɨita̠]",
+          "tags": []
+        }
+      ]
+    }
   ]
 ]

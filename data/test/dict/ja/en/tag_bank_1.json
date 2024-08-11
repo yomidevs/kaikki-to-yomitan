@@ -75,5 +75,12 @@
     0,
     "music",
     0
+  ],
+  [
+    "phrase",
+    "partOfSpeech",
+    -1,
+    "phrase",
+    1
   ]
 ]
