@@ -370,8 +370,8 @@ function getCanonicalForm({word, forms}) {
 
 function getReading(word, line){
     switch(sourceIso){
-        case 'fa':
-            return getPersianReading(word, line);
+        case 'fa': return getPersianReading(word, line);
+        case 'ja': return getJapaneseReading(word, line);
         default:
             return word;
     }
@@ -382,6 +382,34 @@ function getPersianReading(word, line){
     if(!forms) return word;
     const romanization = forms.find(({form, tags}) => tags && tags.includes('romanization') && tags.length === 1 && form);
     return romanization ? romanization.form : word;
+}
+
+function getJapaneseReading(word, line){
+    const {head_templates} = line;
+    if(!head_templates) {
+        console.log('No head_templates found for Japanese word:', word);
+        return word;
+    }
+    if(!Array.isArray(head_templates) || head_templates.length === 0) {
+        // console.log('head_templates is not an array or empty:', word, head_templates);
+        return word;
+    }
+    if (head_templates.length > 1) {
+        // console.log('Multiple head_templates found for Japanese word:', word, head_templates);
+    }
+    for (const template of head_templates) {
+        switch(template.name) {
+            case 'ja-noun':
+            case 'ja-adj':
+            case 'ja-verb':
+                const reading = template?.args?.[1];
+                return reading ? reading : word;
+            default:
+                // console.log('Unknown head_template:', word, head_templates);
+        }
+    }
+
+    return word;
 }
 
 function handleAutomatedForms() {
