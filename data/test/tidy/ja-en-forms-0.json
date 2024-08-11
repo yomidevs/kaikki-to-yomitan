@@ -1,0 +1,2746 @@
+{
+  "_type": "map",
+  "map": [
+    [
+      "楽しい",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "tanoshii",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "attributive",
+                    "romanization",
+                    "terminative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "楽しく",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "adverbial",
+                    "continuative stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "楽しかろ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "imperfective stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "たのしかろ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "imperfective stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "tanoshikaro",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "imperfective"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "たのしく",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "adverbial",
+                    "continuative stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "tanoshiku",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "adverbial",
+                    "continuative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "たのしい",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "attributive stem",
+                    "stem terminative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "楽しけれ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "hypothetical stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "たのしけれ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "hypothetical stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "tanoshikere",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "hypothetical"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "楽しかれ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "imperative stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "たのしかれ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "imperative stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "tanoshikare",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "imperative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "楽しくない",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "たのしくない",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "tanoshiku nai",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "楽しかった",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "たのしかった",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "tanoshikatta",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "楽しくなかった",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal past negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "たのしくなかった",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal past negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "tanoshiku nakatta",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal past negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "楽しいです",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "たのしいです",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "tanoshii desu",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "楽しくないです",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "たのしくないです",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "tanoshiku nai desu",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "楽しかったです",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "たのしかったです",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "tanoshikatta desu",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "楽しくなかったです",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal past negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "たのしくなかったです",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal past negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "tanoshiku nakatta desu",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal past negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "楽しくて",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "conjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "たのしくて",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "conjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "tanoshikute",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "conjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "楽しければ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "たのしければ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "tanoshikereba",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "楽しかったら",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "past conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "たのしかったら",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "past conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "tanoshikattara",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "past conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "楽しかろう",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "volitional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "たのしかろう",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "volitional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "tanoshikarō",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "volitional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "楽しさ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "noun-from-adj"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "たのしさ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "noun-from-adj"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "tanoshisa",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "noun-from-adj"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "好き",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "suki",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "romanization"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きな",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "adnominal",
+                    "attributive stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きに",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "adverbial"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きだろ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "imperfective stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきだろ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "imperfective stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki daro",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "imperfective"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きで",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "conjunctive",
+                    "continuative stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきで",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "conjunctive",
+                    "continuative stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki de",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "conjunctive",
+                    "continuative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きだ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "stem terminative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきだ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "stem terminative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki da",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "terminative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきな",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "attributive stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki na",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "attributive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きなら",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "hypothetical stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきなら",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "hypothetical stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki nara",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "hypothetical"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きであれ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "imperative stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきであれ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "imperative stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki de are",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "imperative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きではない",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きじゃない",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきではない",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきじゃない",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki de wa nai",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki ja nai",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きだった",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきだった",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki datta",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きではなかった",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal past negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きじゃなかった",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal past negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきではなかった",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal past negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきじゃなかった",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal past negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki de wa nakatta",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal past negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki ja nakatta",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "informal past negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きです",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきです",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki desu",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きではありません",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きじゃありません",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきではありません",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきじゃありません",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki de wa arimasen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki ja arimasen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きでした",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきでした",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki deshita",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きではありませんでした",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal past negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きじゃありませんでした",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal past negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきではありませんでした",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal past negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきじゃありませんでした",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal past negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki de wa arimasen deshita",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal past negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki ja arimasen deshita",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "formal past negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きなら（ば）",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきなら（ば）",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki nara (ba)",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きだったら",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "past conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきだったら",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "past conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki dattara",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "past conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きだろう",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "volitional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきだろう",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "volitional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki darō",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "volitional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきに",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "adverbial"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "suki ni",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "adverbial"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "好きさ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "noun-from-adj"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "すきさ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "noun-from-adj"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "sukisa",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "noun-from-adj"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "狸",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "tanuki",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "romanization"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "走る",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "hashiru",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "romanization"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走り",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "stem",
+                    "continuative stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走った",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past",
+                    "perfective"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走られる",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "passive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしられる",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "passive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hashirareru",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "passive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らせる",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "causative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らす",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "causative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしらせる",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "causative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしらす",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "causative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hashiraseru",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "causative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hashirasu",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "causative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走れる",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "potential"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしれる",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "potential"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hashireru",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "potential"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走ろう",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "volitional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしろう",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "volitional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hashirō",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "volitional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らない",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしらない",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hashiranai",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らず",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "negative",
+                    "negative continuative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしらず",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "negative",
+                    "negative continuative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hashirazu",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "negative continuative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走ります",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "formal"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしります",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "formal"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hashirimasu",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "formal"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしった",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfective"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hashitta",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfective"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走って",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "conjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしって",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "conjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hashitte",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "conjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走れば",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "causative",
+                    "conditional hypothetical"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしれば",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "causative",
+                    "conditional hypothetical"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hashireba",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "conditional hypothetical"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走ら",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "irrealis stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしら",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "irrealis stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fasira",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "irrealis"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしり",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "continuative stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fasiri",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "continuative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしる",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "attributive stem",
+                    "stem terminative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fasiru",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "attributive",
+                    "terminative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走れ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "imperative stem",
+                    "realis stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしれ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "imperative stem",
+                    "realis stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fasire",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "imperative",
+                    "realis"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fasirazu",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走れど",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "contrastive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしれど",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "contrastive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fasiredo",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "contrastive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fasireba",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "causative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らば",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしらば",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fasiraba",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走りき",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしりき",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fasiriki",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走りけり",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしりけり",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fasirikeri",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走りつ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしりつ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fasiritu",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走りぬ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしりぬ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fasirinu",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走れり",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect continuative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走りたり",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect continuative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしれり",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect continuative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしりたり",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect continuative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fasireri",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect continuative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fasiritari",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect continuative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らむ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "volitional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "はしらむ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "volitional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "fasiramu",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "volitional"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ]
+}
