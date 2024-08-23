@@ -11,5 +11,18 @@
         }
       ]
     }
+  ],
+  [
+    "wain",
+    "ipa",
+    {
+      "reading": "wain",
+      "transcriptions": [
+        {
+          "ipa": "/weɪn/",
+          "tags": []
+        }
+      ]
+    }
   ]
 ]

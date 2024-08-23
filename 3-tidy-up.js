@@ -140,7 +140,7 @@ function handleLine(line) {
     const parsedLine = JSON.parse(line);
     const { pos, sounds, forms } = parsedLine;
     if(!pos) return;
-    const word = getCanonicalForm(parsedLine);
+    const word = getCanonicalWordForm(parsedLine);
     if (!word) return;
     const readings = getReadings(word, parsedLine);
     
@@ -371,11 +371,26 @@ function processEnglishInflectionGlosses(glosses, word, pos) {
     }
 }
 
-function getCanonicalForm({word, forms}) {
+function getCanonicalWordForm({word, forms}) {
     if(!forms) return word;
 
-    const canonicalForm = forms.find(form => 
-        form.tags &&
+    switch(sourceIso) {
+        case 'ar':
+        case 'fa':
+        case 'la':
+        case 'ru':
+            return getCanonicalForm(word, forms); // canonical form is known to contain accent marks and such
+        case 'de':
+        // case 'fr': // canonical form sometimes just prepends the definite article, but many differ from the word in apostrophe variant. I don't know which is used in practice so leaving it until there's a yomitan preprocessor for french apostrophe usage. 
+        case 'en': 
+            return word; // canonical form is redundant, e.g. just prepends the definite article
+        default:
+            return getCanonicalForm(word, forms); // default could go either way. keeping existing behavior for now
+    }
+}
+
+function getCanonicalForm(word, forms) {
+    const canonicalForm = forms.find(form => form.tags &&
         form.tags.includes('canonical')
     );
     if (canonicalForm && canonicalForm.form) {
