@@ -376,14 +376,16 @@ function getCanonicalWordForm({word, forms}) {
 
     switch(sourceIso) {
         case 'ar':
-        case 'la':
         case 'fa':
+        case 'la':
+        case 'ru':
             return getCanonicalForm(word, forms); // canonical form is known to contain accent marks and such
-        case 'en': 
         case 'de':
+        // case 'fr': // canonical form sometimes just prepends the definite article, but many differ from the word in apostrophe variant. I don't know which is used in practice so leaving it until there's a yomitan preprocessor for french apostrophe usage. 
+        case 'en': 
             return word; // canonical form is redundant, e.g. just prepends the definite article
         default:
-            return getCanonicalForm(word, forms); // keeping as default for now
+            return getCanonicalForm(word, forms); // default could go either way. keeping existing behavior for now
     }
 }
 
@@ -392,9 +394,6 @@ function getCanonicalForm(word, forms) {
         form.tags.includes('canonical')
     );
     if (canonicalForm && canonicalForm.form) {
-        if (word !== canonicalForm.form) {
-            console.log(`Canonical form mismatch: ${word} !== ${canonicalForm.form}`);
-        }
         word = canonicalForm.form;
 
         if (word.includes('{{#ifexist:Wiktionary')) { // TODO: remove once fixed in kaikki
