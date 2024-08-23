@@ -140,7 +140,7 @@ function handleLine(line) {
     const parsedLine = JSON.parse(line);
     const { pos, sounds, forms } = parsedLine;
     if(!pos) return;
-    const word = getCanonicalForm(parsedLine);
+    const word = getCanonicalWordForm(parsedLine);
     if (!word) return;
     const readings = getReadings(word, parsedLine);
     
@@ -371,20 +371,30 @@ function processEnglishInflectionGlosses(glosses, word, pos) {
     }
 }
 
-function getCanonicalForm({word, forms}) {
+function getCanonicalWordForm({word, forms}) {
     if(!forms) return word;
 
     switch(sourceIso) {
-        case 'en': return word;
-        default: return getCanonicalFormDefault(word, forms);
+        case 'ar':
+        case 'la':
+        case 'fa':
+            return getCanonicalForm(word, forms); // canonical form is known to contain accent marks and such
+        case 'en': 
+        case 'de':
+            return word; // canonical form is redundant, e.g. just prepends the definite article
+        default:
+            return getCanonicalForm(word, forms); // keeping as default for now
     }
 }
 
-function getCanonicalFormDefault(word, forms) {
+function getCanonicalForm(word, forms) {
     const canonicalForm = forms.find(form => form.tags &&
         form.tags.includes('canonical')
     );
     if (canonicalForm && canonicalForm.form) {
+        if (word !== canonicalForm.form) {
+            console.log(`Canonical form mismatch: ${word} !== ${canonicalForm.form}`);
+        }
         word = canonicalForm.form;
 
         if (word.includes('{{#ifexist:Wiktionary')) { // TODO: remove once fixed in kaikki
