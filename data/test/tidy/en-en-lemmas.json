@@ -64,5 +64,28 @@
         ]
       }
     }
+  },
+  "wain": {
+    "wain": {
+      "noun": {
+        "ipa": [
+          {
+            "ipa": "/weɪn/",
+            "tags": []
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              "(archaic or literary) A wagon; a four-wheeled cart for hauling loads, usually pulled by horses or oxen."
+            ],
+            "tags": [
+              "archaic",
+              "literary"
+            ]
+          }
+        ]
+      }
+    }
   }
 }

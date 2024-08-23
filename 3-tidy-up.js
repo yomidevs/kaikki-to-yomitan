@@ -374,8 +374,14 @@ function processEnglishInflectionGlosses(glosses, word, pos) {
 function getCanonicalForm({word, forms}) {
     if(!forms) return word;
 
-    const canonicalForm = forms.find(form => 
-        form.tags &&
+    switch(sourceIso) {
+        case 'en': return word;
+        default: return getCanonicalFormDefault(word, forms);
+    }
+}
+
+function getCanonicalFormDefault(word, forms) {
+    const canonicalForm = forms.find(form => form.tags &&
         form.tags.includes('canonical')
     );
     if (canonicalForm && canonicalForm.form) {
