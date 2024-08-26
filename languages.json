@@ -31,6 +31,7 @@
     {"iso": "ro",  "language": "Romanian",       "flag": "🇷🇴"                       },
     {"iso": "ru",  "language": "Russian",        "flag": "🇷🇺",   "hasEdition": true },
     {"iso": "sh",  "language": "Serbo-Croatian", "flag": "🇷🇸🇭🇷"                     },
+    {"iso": "scn", "language": "Sicilian",       "flag": "🍋"                       },
     {"iso": "es",  "language": "Spanish",        "flag": "🇪🇸",   "hasEdition": true },
     {"iso": "sv",  "language": "Swedish",        "flag": "🇸🇪"                       },
     {"iso": "tl",  "language": "Tagalog",        "flag": "🇵🇭"                       },
