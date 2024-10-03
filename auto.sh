@@ -161,7 +161,19 @@ declare -a languages="($(
   jq -r '.[] | @json | @sh' languages.json
 ))"
 
-supported_editions="de en es fr ru zh"
+supported_editions_array=()
+
+# Iterate through languages and check for hasEdition
+for lang in "${languages[@]}"; do
+    # Parse each JSON object and check if hasEdition is true
+    has_edition=$(echo "$lang" | jq -r 'if .hasEdition == true then .iso else empty end')
+    if [ ! -z "$has_edition" ]; then
+        supported_editions_array+=("$has_edition")
+    fi
+done
+
+# Join array elements with spaces
+supported_editions="${supported_editions_array[*]}"
 
 #Iterate over every edition language
 for edition_lang in "${languages[@]}"; do

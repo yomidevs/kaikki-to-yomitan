@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       tag: ${{ steps.tag.outputs.tag }}
-      languages: ${{ steps.load-languages.outputs.languages }}
+      edition_languages: ${{ steps.load-languages.outputs.edition_languages }}
       isos: ${{ steps.load-languages.outputs.isos }}
       calver: ${{ steps.tag.outputs.calver }}
     steps:
@@ -46,8 +46,8 @@ jobs:
       - name: Load Languages
         id: load-languages
         run: |
-          languages=$(jq '[.[] | select(.hasEdition == true) | .language]' languages.json | jq -c 'map(.)')
-          echo "languages=$languages" >> $GITHUB_OUTPUT
+          edition_languages=$(jq '[.[] | select(.hasEdition == true) | .language]' languages.json | jq -c 'map(.)')
+          echo "edition_languages=$edition_languages" >> $GITHUB_OUTPUT
           isos=$(jq -r '.[].iso' languages.json | jq -R -s -c 'split("\n") | map(select(. != ""))')
           echo "isos=$isos" >> $GITHUB_OUTPUT
       
@@ -69,7 +69,7 @@ jobs:
     strategy:
       max-parallel: 1
       matrix:
-        edition_language: ${{fromJson(needs.prepare.outputs.languages)}}
+        edition_language: ${{fromJson(needs.prepare.outputs.edition_languages)}}
     steps:
       - name: Checkout
         uses: actions/checkout@v2

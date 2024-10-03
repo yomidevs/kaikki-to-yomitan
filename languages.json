@@ -16,7 +16,7 @@
     {"iso": "hu",  "language": "Hungarian",      "flag": "🇭🇺"                       },
     {"iso": "id",  "language": "Indonesian",     "flag": "🇮🇩"                       },
     {"iso": "it",  "language": "Italian",        "flag": "🇮🇹"                       },
-    {"iso": "ja",  "language": "Japanese",       "flag": "🇯🇵"                       },
+    {"iso": "ja",  "language": "Japanese",       "flag": "🇯🇵",   "hasEdition": true },
     {"iso": "kn",  "language": "Kannada",        "flag": "🇮🇳"                       },
     {"iso": "km",  "language": "Khmer",          "flag": "🇰🇭"                       },
     {"iso": "ko",  "language": "Korean",         "flag": "🇰🇷"                       },
