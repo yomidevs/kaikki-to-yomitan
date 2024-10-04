@@ -27,7 +27,7 @@
     {"iso": "ang", "language": "Old English",    "flag": "🗡️"                       },
     {"iso": "sga", "language": "Old Irish",      "flag": "🍀"                       },
     {"iso": "fa",  "language": "Persian",        "flag": "🇮🇷"                       },
-    {"iso": "pl",  "language": "Polish",         "flag": "🇵🇱"                       },
+    {"iso": "pl",  "language": "Polish",         "flag": "🇵🇱",   "hasEdition": true },
     {"iso": "pt",  "language": "Portuguese",     "flag": "🇧🇷🇵🇹"                     },
     {"iso": "ro",  "language": "Romanian",       "flag": "🇷🇴"                       },
     {"iso": "ru",  "language": "Russian",        "flag": "🇷🇺",   "hasEdition": true },
