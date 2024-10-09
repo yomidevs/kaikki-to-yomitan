@@ -170,6 +170,9 @@ function handleLine(line) {
             formMap.set(pos, similarSort(mergePersonTags(targetIso, Array.from(tagsSet))));                     
         });
     }
+
+    const {senses} = parsedLine;
+    if (!senses) return;
     
     const ipa = sounds 
         ? sounds
@@ -187,10 +190,6 @@ function handleLine(line) {
             .flatMap(ipaObj => typeof ipaObj.ipa === 'string' ? [ipaObj] : ipaObj.ipa.map(ipa => ({ ipa, tags: ipaObj.tags })) )
             .filter(ipaObj => ipaObj.ipa)
         : [];
-
-    
-    const {senses} = parsedLine;
-    if (!senses) return;
 
     const sensesWithGlosses = senses.filter(sense => sense.glosses || sense.raw_glosses || sense.raw_gloss);
     sensesWithGlosses.map(sense => {
