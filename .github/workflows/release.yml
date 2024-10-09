@@ -145,7 +145,7 @@ jobs:
               if [[ ! "$edition_languages" == *"$target_iso"* ]]; then
                   continue
               fi
-              url="https://github.com/themoeway/kaikki-to-yomitan/releases/download/${{needs.prepare.outputs.tag}}/kty-${source_iso}-${target_iso}-ipa.zip"
+              url="https://github.com/yomidevs/kaikki-to-yomitan/releases/download/${{needs.prepare.outputs.tag}}/kty-${source_iso}-${target_iso}-ipa.zip"
               curl -s -O -f -L "$url" || echo "Skipping $url due to an error."
             done
           done

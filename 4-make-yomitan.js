@@ -13,14 +13,14 @@ const {
     temp_folder: writeFolder
 } = process.env;
 
-const latestDownloadLink = 'https://github.com/themoeway/kaikki-to-yomitan/releases/latest/download/';
+const latestDownloadLink = 'https://github.com/yomidevs/kaikki-to-yomitan/releases/latest/download/';
 
 const indexJson = {
     format: 3,
     revision: currentDate,
     sequenced: true,
     author: 'Kaikki-to-Yomitan contributors',
-    url: 'https://github.com/themoeway/kaikki-to-yomitan',
+    url: 'https://github.com/yomidevs/kaikki-to-yomitan',
     description: 'Dictionaries for various language pairs generated from Wiktionary data, via Kaikki and Kaikki-to-Yomitan.',
     attribution: 'https://kaikki.org/',
     sourceLanguage: source_iso,

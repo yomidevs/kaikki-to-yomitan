@@ -80,7 +80,7 @@ async function main(){
         const globalTagsLength = globalTags.length;
         if(globalTagsLength) console.log("globalTags", globalTagsLength);
         
-        const url = 'https://github.com/themoeway/kaikki-to-yomitan';
+        const url = 'https://github.com/yomidevs/kaikki-to-yomitan';
         const title = `kty-${sourceIso}-ipa`;
         const latestReleaseUrl = `${url}/releases/latest/download/${title}`;
         const globalIndex = {
