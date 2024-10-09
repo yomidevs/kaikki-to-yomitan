@@ -142,34 +142,8 @@ function handleLine(line) {
     if(!pos) return;
     const word = getCanonicalWordForm(parsedLine);
     if (!word) return;
-    const readings = getReadings(word, parsedLine);
     
-    if (forms) {
-        forms.forEach((formData) => {
-            const { form } = formData;
-            let { tags } = formData;
-            if(!form) return;
-            if(!tags) return;
-            if(form === '-') return;
-            tags = tags.filter(tag => !redundantTags.includes(tag));
-            const isBlacklisted = tags.some(value => blacklistedTags.includes(value));
-            if (isBlacklisted) return;
-            const isIdentity = !tags.some(value => !identityTags.includes(value));
-            if (isIdentity) return;
-
-            const wordMap = automatedForms.get(word) || new Map();
-            const formMap = wordMap.get(form) || new Map();
-            formMap.get(pos) || formMap.set(pos, new Set());
-            wordMap.set(form, formMap);
-            automatedForms.set(word, wordMap);
-            
-            const tagsSet = new Set((formMap.get(pos)));
-            
-            tagsSet.add(sortTags(targetIso, tags).join(' '));
-            
-            formMap.set(pos, similarSort(mergePersonTags(targetIso, Array.from(tagsSet))));                     
-        });
-    }
+    processForms(forms, word, pos);
 
     const {senses} = parsedLine;
     if (!senses) return;
@@ -213,7 +187,8 @@ function handleLine(line) {
     });
 
     if (sensesWithoutInflectionGlosses.length === 0) return;
-        
+    
+    const readings = getReadings(word, parsedLine);
     initializeWordResult(word, readings, pos);
 
     for (const ipaObj of ipa) {
@@ -253,6 +228,35 @@ function handleLine(line) {
         if (currSense.glosses.length > 0) {
             saveSenseResult(word, readings, pos, currSense);
         }
+    }
+}
+
+function processForms(forms, word, pos) {
+    if (forms) {
+        forms.forEach((formData) => {
+            const { form } = formData;
+            let { tags } = formData;
+            if (!form) return;
+            if (!tags) return;
+            if (form === '-') return;
+            tags = tags.filter(tag => !redundantTags.includes(tag));
+            const isBlacklisted = tags.some(value => blacklistedTags.includes(value));
+            if (isBlacklisted) return;
+            const isIdentity = !tags.some(value => !identityTags.includes(value));
+            if (isIdentity) return;
+
+            const wordMap = automatedForms.get(word) || new Map();
+            const formMap = wordMap.get(form) || new Map();
+            formMap.get(pos) || formMap.set(pos, new Set());
+            wordMap.set(form, formMap);
+            automatedForms.set(word, wordMap);
+
+            const tagsSet = new Set((formMap.get(pos)));
+
+            tagsSet.add(sortTags(targetIso, tags).join(' '));
+
+            formMap.set(pos, similarSort(mergePersonTags(targetIso, Array.from(tagsSet))));
+        });
     }
 }
 
