@@ -11,5 +11,51 @@
         }
       ]
     }
+  ],
+  [
+    "gjuhë",
+    "ipa",
+    {
+      "reading": "gjuhë",
+      "transcriptions": [
+        {
+          "ipa": "/ˈɟuhə/",
+          "tags": []
+        },
+        {
+          "ipa": "[ˈɡjuː(h)]",
+          "tags": [
+            "Gheg",
+            "Northern"
+          ]
+        },
+        {
+          "ipa": "[ˈɡuː(h)]",
+          "tags": [
+            "Gheg",
+            "Northern"
+          ]
+        },
+        {
+          "ipa": "[ˈɡũː]",
+          "tags": [
+            "Kosovo"
+          ]
+        },
+        {
+          "ipa": "[ˈɡʎuhə]",
+          "tags": [
+            "Arbëresh",
+            "Arvanitika"
+          ]
+        },
+        {
+          "ipa": "[ˈɡʎuɣə]",
+          "tags": [
+            "Calabria"
+          ]
+        }
+      ]
+    }
   ]
 ]
