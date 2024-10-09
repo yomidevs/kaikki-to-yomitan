@@ -2,7 +2,7 @@ first_text="# Downloads
 
 Currently, [Kaikki](https://kaikki.org/dictionary/rawdata.html) supports 8 wiktionary editions (en, zh, fr, de, ja, ru, pl, and es), so only dictionaries including these languages are available.
 
-If the language you want isn't here, or you would like to see an improvement to a dictionary, please [open an issue](https://github.com/themoeway/kaikki-to-yomitan/issues/new).
+If the language you want isn't here, or you would like to see an improvement to a dictionary, please [open an issue](https://github.com/yomidevs/kaikki-to-yomitan/issues/new).
 
 Some of the dictionaries listed here are small; rather than decide on a lower bound for usefulness they are all included here. 
 
@@ -52,7 +52,7 @@ for source_lang in "${languages[@]}"; do
         cell=""
         expected_filename="${source_iso}-${column}"
 
-        cell="$cell [$expected_filename](https://github.com/themoeway/kaikki-to-yomitan/releases/latest/download/kty-$expected_filename.zip) </br>"
+        cell="$cell [$expected_filename](https://github.com/yomidevs/kaikki-to-yomitan/releases/latest/download/kty-$expected_filename.zip) </br>"
 
         row="$row | $cell"
     done
@@ -95,7 +95,7 @@ for source_lang in "${languages[@]}"; do
             expected_filename="${source_iso}-ipa"
             display_filename="${source_iso} merged"
         fi
-        cell="$cell [$display_filename](https://github.com/themoeway/kaikki-to-yomitan/releases/latest/download/kty-$expected_filename.zip) </br>"
+        cell="$cell [$display_filename](https://github.com/yomidevs/kaikki-to-yomitan/releases/latest/download/kty-$expected_filename.zip) </br>"
 
         row="$row | $cell"
     done
@@ -130,7 +130,7 @@ for target_lang in "${languages[@]}"; do
         if [ "$column" != "$target_iso" ]; then
             display_filename="${column}"-"${target_iso}"
             expected_filename="${display_filename}-gloss"
-            cell="$cell [$display_filename](https://github.com/themoeway/kaikki-to-yomitan/releases/latest/download/kty-$expected_filename.zip) </br>"
+            cell="$cell [$display_filename](https://github.com/yomidevs/kaikki-to-yomitan/releases/latest/download/kty-$expected_filename.zip) </br>"
         fi
         row="$row | $cell"
     done

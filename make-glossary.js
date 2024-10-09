@@ -42,7 +42,7 @@ function processTranslations(translations, glosses, senses, sense){
 const partsOfSpeech = loadJsonArray(`data/language/target-language-tags/en/parts_of_speech.json`);
 const skippedPartsOfSpeech = {};
 
-const url = 'https://github.com/themoeway/kaikki-to-yomitan';
+const url = 'https://github.com/yomidevs/kaikki-to-yomitan';
 const latestReleaseUrl = `${url}/releases/latest/download/`;
 const title = `kty-${sourceIso}-${targetIso}-gloss`;
 const indexJson = {
