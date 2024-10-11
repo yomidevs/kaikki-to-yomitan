@@ -195,7 +195,7 @@ function handleLine(parsedLine) {
         : []);
     
     /** @type {TidySense[]} */
-    const sensesWithGlosses = senses
+    const sensesWithGlosses = /** @type {TidySense[]} */ (senses
         .filter(sense => sense.glosses || sense.raw_glosses || sense.raw_gloss)
         .map(sense => {
         const glosses = sense.raw_glosses || sense.raw_gloss || sense.glosses;
@@ -207,7 +207,7 @@ function handleLine(parsedLine) {
         }
 
         return {...sense, glossesArray, tags};
-    });
+    }));
 
     const sensesWithoutInflectionGlosses = sensesWithGlosses.filter(sense => {
         const {glossesArray, form_of, glosses} = sense;
