@@ -96,10 +96,10 @@ function handleNest(glossTree, sense) {
     }
 }
 /**
- * @param {*} form 
+ * @param {string} form 
  * @param {string} pos 
- * @param {*} lemma 
- * @param {*} inflections 
+ * @param {string} lemma 
+ * @param {string[]} inflections 
  */
 function addDeinflections(form, pos, lemma, inflections) {
     if (targetIso === 'fr') {
@@ -176,7 +176,8 @@ function handleLine(parsedLine) {
     const {senses} = parsedLine;
     if (!senses) return;
     
-    const ipa = sounds 
+    /** @type {IpaInfo[]} */
+    const ipa = /** @type {IpaInfo[]} */ (sounds 
         ? sounds
             .filter(sound => sound && sound.ipa)
             .map(({ipa, tags, note}) => {
@@ -189,9 +190,9 @@ function handleLine(parsedLine) {
                 }
                 return ({ipa, tags})
             })
-            .flatMap(ipaObj => typeof ipaObj.ipa === 'string' ? [ipaObj] : ipaObj.ipa.map(ipa => ({ ipa, tags: ipaObj.tags })) )
-            .filter(ipaObj => ipaObj.ipa)
-        : [];
+            .flatMap(ipaObj => typeof ipaObj.ipa === 'string' ? [ipaObj] : ipaObj?.ipa?.map(ipa => ({ ipa, tags: ipaObj.tags })) )
+            .filter(ipaObj => ipaObj?.ipa)
+        : []);
     
     /** @type {TidySense[]} */
     const sensesWithGlosses = senses
@@ -314,7 +315,7 @@ function saveSenseResult(word, readings, pos, currSense) {
  * @param {string} word 
  * @param {string[]} readings 
  * @param {string} pos 
- * @param {*} ipaObj 
+ * @param {IpaInfo} ipaObj 
  */
 function saveIpaResult(word, readings, pos, ipaObj) {
     for (const reading of readings) {
@@ -352,6 +353,9 @@ function processInflectionGlosses(glosses, word, pos) {
             return processEnglishInflectionGlosses(glosses, word, pos);
         case 'fr':
             if(!glosses) return;
+            /**
+             * @type {string|undefined}
+             */
             let inflection, lemma;
 
             const match1 = glosses[0].match(/(.*)du verbe\s+((?:(?!\bdu\b).)*)$/);
@@ -378,12 +382,13 @@ function processInflectionGlosses(glosses, word, pos) {
 }
 
 /**
- * @param {*} glosses 
+ * @param {Glosses|undefined} glosses 
  * @param {string} word 
  * @param {string} pos 
  * @returns 
  */
 function processGermanInflectionGlosses(glosses, word, pos) {
+    if (!glosses || !Array.isArray(glosses)) return;
     const match1 = glosses[0].match(/(.*)des (?:Verbs|Adjektivs|Substantivs|Demonstrativpronomens|Possessivpronomens|Pronomens) (.*)$/);
     if (!match1 || match1.length < 3) return;
     const inflection = match1[1].trim();
@@ -414,7 +419,9 @@ function ensureNestedObject(obj, keys) {
 function processEnglishInflectionGlosses(glosses, word, pos) {
     if(!glosses || !Array.isArray(glosses)) return;
     const glossPieces = glosses.flatMap(gloss => gloss.split('##').map(piece => piece.trim()));
+    /**  @type {Set<string>} */
     const lemmas = new Set();
+    /**  @type {Set<string>} */
     const inflections = new Set();
     for (const piece of glossPieces) {
         const lemmaMatch = piece.match(/of ([^\s]+)\s*$/);

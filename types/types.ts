@@ -21,7 +21,7 @@ declare global {
     }
 
     type Sound = {
-        ipa?: string;
+        ipa?: string|string[];
         tags?: string[];
         note?: string;
     }
@@ -93,7 +93,7 @@ declare global {
     }
 
     type NestedObject = {
-        [key: string]: NestedObject;
+        [key: string]: NestedObject | any;
     }
 }
 
