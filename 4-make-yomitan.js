@@ -11,7 +11,7 @@ const {
     DICT_NAME,
     tidy_folder: readFolder,
     temp_folder: writeFolder
-} = process.env;
+} = /** @type {MakeYomitanEnv} */(process.env);
 
 const latestDownloadLink = 'https://github.com/yomidevs/kaikki-to-yomitan/releases/latest/download/';
 
@@ -60,7 +60,7 @@ const tagModifiers = [
 /**
  * @param {WhitelistedTag[]} tags 
  * @param {string} tag 
- * @returns 
+ * @returns {null|import('types').TagBank.TagInformation}
  */
 function findTag(tags, tag) {
     const fullTag = tags.find((x) => {
@@ -72,13 +72,15 @@ function findTag(tags, tag) {
         return false;
     });
 
-    const result = fullTag ? [...fullTag] : null;
+    if(!fullTag) return null;
+
+    const result = [...fullTag];
     
-    if(result && Array.isArray(result[3])){
-        result[3] = result[3][0];
+    if(Array.isArray(result[3])){
+        result[3] = result[3][0]; // this makes it fit the yomitan tag format
     }
 
-    return result;
+    return /** @type {import('types').TagBank.TagInformation}*/ (result);
 }
 
 /**
@@ -106,8 +108,12 @@ function findModifiedTag(tag){
     return modifiedTag;
 }
 
+/** @type {FormsMap}  */
 const formsMap = new Map();
 
+/**
+ * @type {{ipa: Object<string, import('types').TagBank.TagInformation>, dict: Object<string, import('types').TagBank.TagInformation>}}
+ */
 const ymtTags = {
     ipa: {},
     dict: {}
@@ -124,6 +130,7 @@ let lastTermBankIndex = 0;
 
 {
     const ymtLemmas = [];
+    /** @type {import('types').TermBankMeta.TermPhoneticTranscription[]} */
     const ymtIpa = [];
 
     consoleOverwrite(`4-make-yomitan.js: reading lemmas...`);
@@ -169,6 +176,8 @@ let lastTermBankIndex = 0;
 
                 const lemmaTags = [pos];
                 ipa.push(...info.ipa);
+
+                /** @type {Object<string, import('types').TermBank.TermInformation>} */
                 const entries = {};
 
                 for (const sense of senses) {
@@ -228,6 +237,7 @@ let lastTermBankIndex = 0;
                 }
             }
 
+            /** @type {{ ipa: string; tags?: string[]; }[]} */
             const mergedIpas = ipa.reduce((result, item) => {
                 ipaCount++;
                 item.tags = item.tags
@@ -245,12 +255,16 @@ let lastTermBankIndex = 0;
                 const existingIpa = result.find((x) => x.ipa === item.ipa);
 
                 if (existingIpa) {
-                    existingIpa.tags = [...new Set([...existingIpa.tags, ...item.tags])];
+                    existingIpa.tags = [
+                        ...new Set([
+                            ...(existingIpa.tags || []),
+                            ...item.tags])
+                    ];
                 } else {
                     result.push(item);
                 }
                 return result;
-            }, []);
+            }, /** @type {{ ipa: string; tags?: string[]; }[]} */ ([]));
 
             if (mergedIpas.length) {
                 ymtIpa.push([
@@ -285,12 +299,14 @@ let lastTermBankIndex = 0;
 }
 
 {
+    /** @type {CondensedFormEntries} */
     let ymtFormData = [];
     let formCounter = 0;
 
     consoleOverwrite('4-make-yomitan.js: Processing forms...');
     const formsFiles = readdirSync(readFolder).filter((file) => file.startsWith(`${source_iso}-${target_iso}-forms-`));
     for (const file of formsFiles) {
+        /** @type {FormsMap} */
         const formsPart = JSON.parse(readFileSync(path.resolve(__dirname, readFolder, file), 'utf8'), mapJsonReviver);
         for (const [lemma, forms] of formsPart.entries()) {
             formsMap.set(lemma, forms);
@@ -321,8 +337,9 @@ let lastTermBankIndex = 0;
 
                         // TODO: generalize this
                         if(target_iso === 'en'){
-                            hypotheses = gloss.split(' and ') 
-                            hypotheses = hypotheses.map((hypothesis) => hypothesis.split(' '));
+                            hypotheses = gloss
+                            .split(' and ')
+                            .map((hypothesis) => hypothesis.split(' '));
                         }
 
                         if(target_iso === 'fr'){
@@ -348,6 +365,7 @@ let lastTermBankIndex = 0;
                         return hypotheses;
                     });
 
+                    /** @type {string[][]} */
                     const uniqueHypotheses = [];
 
                     for (const hypothesis of inflectionHypotheses) {
@@ -358,6 +376,7 @@ let lastTermBankIndex = 0;
                         }
                     }
 
+                    /** @type {[ uninflectedTerm: string, inflectionRules: string[]][]} */
                     const deinflectionDefinitions = uniqueHypotheses.map((hypothesis) => [
                         lemma,
                         hypothesis
@@ -412,10 +431,11 @@ writeFileSync(`data/language/${source_iso}/${target_iso}/skippedPartsOfSpeech.js
 console.log('4-make-yomitan.js: Done!')
 
 /**
- * @param {*} ymtFormData 
- * @returns 
+ * @param {CondensedFormEntries} ymtFormData 
+ * @returns {CondensedFormEntries}
  */
 function writeYmtFormData(ymtFormData) {
+    /** @type {import('types').TermBank.TermInformation[]} */
     const ymtForms = ymtFormData.map((form, index) => {
         const [term, reading, definitions] = form;
         return [
@@ -436,9 +456,9 @@ function writeYmtFormData(ymtFormData) {
 }
 
 /**
- * @param {*} folder 
- * @param {*} data 
- * @param {*} bankIndex 
+ * @param {string} folder 
+ * @param {import('types').TermBank.DictionaryTermBankV3 | import('types').TermBankMeta.DictionaryTermMetaBankV3} data 
+ * @param {number} bankIndex
  * @returns 
  */
 function writeBanks(folder, data, bankIndex = 0) {
@@ -456,23 +476,23 @@ function writeBanks(folder, data, bankIndex = 0) {
 }
 
 /**
- * @param {*} folder 
+ * @param {'dict'|'ipa'} folder 
  */
 function writeTags(folder) {
     writeFileSync(`${writeFolder}/${folder}/tag_bank_1.json`, JSON.stringify(Object.values(ymtTags[folder])));
 }
 
 /**
- * @param {*} folder 
- * @param {*} tagStyles 
+ * @param {'dict'|'ipa'} folder 
+ * @param {string} tagStyles 
  */
 function writeStyles(folder, tagStyles){
     writeFileSync(`${writeFolder}/${folder}/styles.css`, tagStyles);
 }
 
 /**
- * @param {*} folder 
- * @returns 
+ * @param {'dict'|'ipa'} folder 
+ * @returns {string}
  */
 function getTagStyles(folder){
     let styles = "";
@@ -507,6 +527,7 @@ function writeIndex(folder) {
  * @returns 
  */
 function processTags(lemmaTags, senseTags, parenthesesTags, pos) {
+    /** @type {string[]} */
     let recognizedTags = [];
 
     const allEntryTags = [...new Set([...lemmaTags, ...senseTags, ...parenthesesTags])];

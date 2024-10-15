@@ -1,4 +1,10 @@
+import * as TermBank from './node_modules/yomichan-dict-builder/src/types/yomitan/termbank';
+import * as TagBank from './node_modules/yomichan-dict-builder/src/types/yomitan/tagbank';
+import * as TermBankMeta from './node_modules/yomichan-dict-builder/src/types/yomitan/termbankmeta';
+
 declare global {
+    // 3-tidy-up.js types:
+
     type TidyEnv = {
         source_iso: string,
         target_iso: string,
@@ -89,24 +95,11 @@ declare global {
     }
 
     type SenseInfo = {
-        glosses: YomitanGloss[],
+        glosses: TermBank.DetailedDefinition[],
         tags: string[],
         examples: Example[],
     }
-
-    type YomitanGloss = string | StructuredGloss
     
-    type StructuredGloss = {
-        type: "structured-content",
-        content: string | StructuredContent[],
-    }
-
-    type StructuredContent = {
-        tag: string,
-        data: string,
-        content: StructuredContent,
-    }
-
     type Lemma = string;
     type Form = string;
     type PoS = string;
@@ -118,6 +111,16 @@ declare global {
     }
 
     // 4-make-yomitan.js types:
+    type MakeYomitanEnv = {
+        source_iso: string,
+        target_iso: string,
+        DEBUG_WORD?: string,
+        DICT_NAME: string,
+        tidy_folder: string,
+        temp_folder: string,
+    }
+
+    type CondensedFormEntries = [string, string, [string, string[]][]][];
 
     type WhitelistedTag = [
         shortTag: string,
@@ -128,4 +131,8 @@ declare global {
     ]
 }
 
-export {} // This is needed to make this file a module
+export {
+    TermBank,
+    TagBank,
+    TermBankMeta
+}

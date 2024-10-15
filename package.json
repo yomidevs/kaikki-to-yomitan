@@ -12,7 +12,8 @@
     "archiver": "^6.0.1",
     "date-and-time": "^2.4.2",
     "line-by-line": "^0.1.6",
-    "node-stream-zip": "^1.15.0"
+    "node-stream-zip": "^1.15.0",
+    "yomichan-dict-builder": "^2.9.1"
   },
   "description": "Converts Kaikki JSON to Yomitan compatible dictionary.",
   "devDependencies": {
