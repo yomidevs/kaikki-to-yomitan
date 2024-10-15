@@ -11,7 +11,41 @@
         "senses": [
           {
             "glosses": [
-              "[1] aussuchen, auswählen, vorziehen, wählen"
+              {
+                "type": "structured-content",
+                "content": [
+                  "[1] aussuchen, auswählen, vorziehen, wählen",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "\"Connolly was chosen for the case by prosecutors because the sheriff and Bristol District Attorney C. Samuel Sutter are “close professional and personal friends,” said Sutter spokesman Gregg Miliote.\""
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [],
             "examples": [

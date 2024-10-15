@@ -31,6 +31,8 @@ if (!existsSync(`data/language/${source_iso}/${target_iso}`)) {
     mkdirSync(`data/language/${source_iso}/${target_iso}`, {recursive: true});
 }
 
+const termDictStyles = readFileSync('data/styles.css', 'utf8');
+
 /** @type {WhitelistedTag[]} */
 const targetLanguageTermTags = loadJsonArray(`data/language/target-language-tags/${target_iso}/tag_bank_term.json`);
 /** @type {WhitelistedTag[]} */
@@ -182,7 +184,7 @@ let lastTermBankIndex = 0;
 
                 for (const sense of senses) {
 
-                    const {glosses, tags} = sense;
+                    const {glosses, tags, examples} = sense;
                     const senseTags = [...lemmaTags, ...tags]
 
                     glosses.forEach((gloss) => {
@@ -284,9 +286,7 @@ let lastTermBankIndex = 0;
     writeIndex('dict');
     writeTags('dict');
     const dictTagStyles = getTagStyles('dict');
-    if(dictTagStyles){
-        writeStyles('dict', dictTagStyles);
-    }
+    writeStyles('dict', dictTagStyles);
     lastTermBankIndex = writeBanks('dict', ymtLemmas, lastTermBankIndex);
     writeIndex('ipa');
     writeTags('ipa');
@@ -484,10 +484,14 @@ function writeTags(folder) {
 
 /**
  * @param {'dict'|'ipa'} folder 
- * @param {string} tagStyles 
+ * @param {string} styles 
  */
-function writeStyles(folder, tagStyles){
-    writeFileSync(`${writeFolder}/${folder}/styles.css`, tagStyles);
+function writeStyles(folder, styles){
+    if(folder === 'dict') {
+        styles = styles + '\n' + termDictStyles;
+    }
+    if(!styles) return;
+    writeFileSync(`${writeFolder}/${folder}/styles.css`, styles);
 }
 
 /**

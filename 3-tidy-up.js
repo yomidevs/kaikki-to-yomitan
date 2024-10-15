@@ -56,9 +56,10 @@ function isInflectionGloss(glosses, formOf) {
 /**
  * @param {GlossTwig} glossTwig
  * @param {number} level
- * @returns {*}
+ * @returns {import('types').TermBank.StructuredContent[]}
  */
 function handleLevel(glossTwig, level) {
+    /** @type {import('types').TermBank.StructuredContent[]} */
     const nestDefs = [];
     let defIndex = 0;
 
@@ -70,6 +71,7 @@ function handleLevel(glossTwig, level) {
             const childDefs = handleLevel(children, nextLevel);
 
             const listType = level === 1 ? "li" : "number";
+            /** @type {import('types').TermBank.StructuredContent} */
             const content = level === 1 ? def : [{ "tag": "span", "data": { "listType": "number" }, "content": `${defIndex}. ` }, def];
 
             nestDefs.push([
@@ -238,7 +240,18 @@ function handleLine(parsedLine) {
         /** @type {SenseInfo} */
         const currSense = { glosses: [], tags, examples };
         if(branches.size === 0) {
-            currSense.glosses.push(gloss);
+            if(examples.length > 0) {
+                currSense.glosses.push({ 
+                    "type": "structured-content", 
+                    "content": [
+                        gloss,
+                        getStructuredExamples(examples)
+                    ]
+                });
+            } else {
+                currSense.glosses.push(gloss);
+            }
+            
         } else {
             /** @type {GlossBranch} */
             const syntheticBranch = new Map();
@@ -253,6 +266,41 @@ function handleLine(parsedLine) {
 }
 
 /**
+ * @param {Example[]} examples 
+ * @returns {import('types').TermBank.StructuredContent[]}
+ */
+function getStructuredExamples(examples) {
+    return examples.map(({text, english}) => {
+        return {
+            "tag": "div",
+            "data": {
+                "content": "extra-info"
+            },
+            "content": {
+                "tag":"div",
+                "data": {
+                    "content": "example-sentence"
+                },
+                "content":[{
+                    "tag": "div",
+                    "data": {
+                        "content": "example-sentence-a",
+                    },
+                    "content": text
+                },
+                {
+                    "tag": "div",
+                    "data": {
+                        "content": "example-sentence-b"
+                    },
+                    "content": english
+                }
+            ]}
+        }
+    });
+}
+
+/**
  * @param {TidySense[]} sensesWithoutInflectionGlosses 
  * @returns {GlossTree}
  */
@@ -262,7 +310,7 @@ function getGlossTree(sensesWithoutInflectionGlosses) {
         const { glossesArray, tags } = sense;
         let { examples = [] } = sense;
         examples = examples
-            .filter(({type}) => type !== 'quotation')
+            .filter(({type}) => !["quotation", "quote"].includes(type || ''))
             .map(({text, english}) => ({text, english}))
 
         let temp = glossTree;

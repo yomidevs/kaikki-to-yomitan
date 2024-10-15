@@ -49,7 +49,7 @@ declare global {
 
     type Example = {
         text?: string;
-        type?: "example" | "quotation";
+        type?: "example" | "quotation" | "quote";
         english?: string;
         roman?: string;
     }
