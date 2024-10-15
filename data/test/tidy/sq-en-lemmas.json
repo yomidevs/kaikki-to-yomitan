@@ -20,5 +20,224 @@
         ]
       }
     }
+  },
+  "gjuhë": {
+    "gjuhë": {
+      "noun": {
+        "ipa": [
+          {
+            "ipa": "/ˈɟuhə/",
+            "tags": []
+          },
+          {
+            "ipa": "[ˈɡjuː(h)]",
+            "tags": [
+              "Gheg",
+              "Northern"
+            ]
+          },
+          {
+            "ipa": "[ˈɡuː(h)]",
+            "tags": [
+              "Gheg",
+              "Northern"
+            ]
+          },
+          {
+            "ipa": "[ˈɡũː]",
+            "tags": [
+              "Kosovo"
+            ]
+          },
+          {
+            "ipa": "[ˈɡʎuhə]",
+            "tags": [
+              "Arbëresh",
+              "Arvanitika"
+            ]
+          },
+          {
+            "ipa": "[ˈɡʎuɣə]",
+            "tags": [
+              "Calabria"
+            ]
+          }
+        ],
+        "senses": [
+          {
+            "glosses": [
+              {
+                "type": "structured-content",
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "listType": "li"
+                    },
+                    "content": "tongue (organ)"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "listType": "ol"
+                    },
+                    "style": {
+                      "marginLeft": 2
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "listType": "li"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "data": {
+                              "listType": "number"
+                            },
+                            "content": "1. "
+                          },
+                          "(figurative) speech, talking"
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "listType": "li"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "data": {
+                              "listType": "number"
+                            },
+                            "content": "2. "
+                          },
+                          "strip of land"
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "listType": "li"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "data": {
+                              "listType": "number"
+                            },
+                            "content": "3. "
+                          },
+                          "bell clapper, clanger, tongue"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "tags": [
+              "feminine"
+            ]
+          },
+          {
+            "glosses": [
+              {
+                "type": "structured-content",
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "listType": "li"
+                    },
+                    "content": "language, tongue"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "listType": "ol"
+                    },
+                    "style": {
+                      "marginLeft": 2
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "listType": "li"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "data": {
+                              "listType": "number"
+                            },
+                            "content": "1. "
+                          },
+                          "register, speech, style"
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "listType": "li"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "data": {
+                              "listType": "number"
+                            },
+                            "content": "2. "
+                          },
+                          "language (generally, any form of communication)"
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "listType": "li"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "data": {
+                              "listType": "number"
+                            },
+                            "content": "3. "
+                          },
+                          "(colloquial) local dialect"
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "listType": "li"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "data": {
+                              "listType": "number"
+                            },
+                            "content": "4. "
+                          },
+                          "(colloquial) Albanian, as a subject in school"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "tags": [
+              "feminine"
+            ]
+          }
+        ]
+      }
+    }
   }
 }

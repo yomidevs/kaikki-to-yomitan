@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "ES2022",
+        "target": "ES2022",
+        "checkJs": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "noImplicitAny": true,
+        "strictPropertyInitialization": true,
+        "suppressImplicitAnyIndexErrors": false
+    },
+    "paths": {
+        "*": ["./types/*"],
+        "ext/json-schema": ["./types/ext/json-schema"]
+    },
+    "exclude": [
+        "node_modules", 
+        "**/node_modules/*"
+    ]
+}
+  

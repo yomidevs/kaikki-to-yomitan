@@ -7,20 +7,34 @@ const {
     target_iso: targetIso,
     kaikki_file: kaikkiFile,
     tidy_folder: writeFolder
-} = process.env;
+} = /** @type {TidyEnv} */ (process.env);
 
 const { sortTags, similarSort, mergePersonTags, consoleOverwrite, clearConsoleLine, logProgress, mapJsonReplacer } = require('./util/util');
 
+/** @type {LemmaDict} */
 const lemmaDict = {};
+
+/** @type {FormsMap} */
 const formsMap = new Map();
+
+/** @type {AutomatedForms} */
 const automatedForms = new Map();
 
+/**
+ * @param {string} string
+ * @returns {string}
+*/
 function escapeRegExp(string) {
     return string.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&');
 }
 
+/**
+ * @param {string[]} glosses 
+ * @param {FormOf[]|undefined} formOf 
+ * @returns {boolean}
+ */
 function isInflectionGloss(glosses, formOf) {
-    glossesString = JSON.stringify(glosses);
+    const glossesString = JSON.stringify(glosses);
     switch (targetIso) {
         case 'de':
             if (glosses.some(gloss => /des (?:Verbs|Adjektivs|Substantivs|Demonstrativpronomens|Possessivpronomens|Pronomens)/.test(gloss))) return true;
@@ -28,6 +42,7 @@ function isInflectionGloss(glosses, formOf) {
             if (glosses.some(gloss => /.*inflection of.*/.test(gloss))) return true;
             if(!Array.isArray(formOf)) return false;
             for (const {word: lemma} of formOf) {
+                if(!lemma) continue;
                 if (glosses.some(gloss => new RegExp(`of ${escapeRegExp(lemma)}$`).test(gloss))) return true;
             }
             
@@ -38,12 +53,16 @@ function isInflectionGloss(glosses, formOf) {
     return false;
 }
 
-
-function handleLevel(nest, level) {
+/**
+ * @param {GlossTree} glossTree
+ * @param {number} level
+ * @returns {*}
+ */
+function handleLevel(glossTree, level) {
     const nestDefs = [];
     let defIndex = 0;
 
-    for (const [def, children] of nest) {
+    for (const [def, children] of glossTree) {
         defIndex += 1;
 
         if(children.size > 0) {
@@ -65,6 +84,10 @@ function handleLevel(nest, level) {
     return nestDefs;
 }
 
+/**
+ * @param {GlossTree} glossTree
+ * @param {SenseInfo} sense
+ */
 function handleNest(glossTree, sense) {
     const nestedGloss = handleLevel(glossTree, 1);
 
@@ -74,15 +97,20 @@ function handleNest(glossTree, sense) {
         }
     }
 }
-
+/**
+ * @param {string} form 
+ * @param {string} pos 
+ * @param {string} lemma 
+ * @param {string[]|Set<string>} inflections 
+ */
 function addDeinflections(form, pos, lemma, inflections) {
     if (targetIso === 'fr') {
         form = form.replace(/(qu\')?(ils\/elles|il\/elle\/on)\s*/, '');
     }
 
-    const lemmaForms = formsMap.get(lemma) || new Map();
+    const lemmaForms = formsMap.get(lemma) || /** @type {Map<Form, Map<PoS, string[]>>} */ (new Map());
     formsMap.set(lemma, lemmaForms);
-    const formPOSs = lemmaForms.get(form) || new Map();
+    const formPOSs = lemmaForms.get(form) || /** @type {Map<PoS, string[]>} */ (new Map());
     lemmaForms.set(form, formPOSs);
     formPOSs.get(pos) || formPOSs.set(pos, []);
 
@@ -132,46 +160,26 @@ lr.on('line', (line) => {
     if (line) {
         lineCount += 1;
         logProgress("Processing lines", lineCount);
-        handleLine(line);
+        handleLine(JSON.parse(line));
     }
 });
 
-function handleLine(line) {
-    const parsedLine = JSON.parse(line);
+/**
+ * @param {KaikkiLine} parsedLine 
+ */
+function handleLine(parsedLine) {
     const { pos, sounds, forms } = parsedLine;
     if(!pos) return;
     const word = getCanonicalWordForm(parsedLine);
     if (!word) return;
-    const readings = getReadings(word, parsedLine);
     
-    if (forms) {
-        forms.forEach((formData) => {
-            const { form } = formData;
-            let { tags } = formData;
-            if(!form) return;
-            if(!tags) return;
-            if(form === '-') return;
-            tags = tags.filter(tag => !redundantTags.includes(tag));
-            const isBlacklisted = tags.some(value => blacklistedTags.includes(value));
-            if (isBlacklisted) return;
-            const isIdentity = !tags.some(value => !identityTags.includes(value));
-            if (isIdentity) return;
+    processForms(forms, word, pos);
 
-            const wordMap = automatedForms.get(word) || new Map();
-            const formMap = wordMap.get(form) || new Map();
-            formMap.get(pos) || formMap.set(pos, new Set());
-            wordMap.set(form, formMap);
-            automatedForms.set(word, wordMap);
-            
-            const tagsSet = new Set((formMap.get(pos)));
-            
-            tagsSet.add(sortTags(targetIso, tags).join(' '));
-            
-            formMap.set(pos, similarSort(mergePersonTags(targetIso, Array.from(tagsSet))));                     
-        });
-    }
+    const {senses} = parsedLine;
+    if (!senses) return;
     
-    const ipa = sounds 
+    /** @type {IpaInfo[]} */
+    const ipa = /** @type {IpaInfo[]} */ (sounds 
         ? sounds
             .filter(sound => sound && sound.ipa)
             .map(({ipa, tags, note}) => {
@@ -184,16 +192,14 @@ function handleLine(line) {
                 }
                 return ({ipa, tags})
             })
-            .flatMap(ipaObj => typeof ipaObj.ipa === 'string' ? [ipaObj] : ipaObj.ipa.map(ipa => ({ ipa, tags: ipaObj.tags })) )
-            .filter(ipaObj => ipaObj.ipa)
-        : [];
-
+            .flatMap(ipaObj => typeof ipaObj.ipa === 'string' ? [ipaObj] : ipaObj?.ipa?.map(ipa => ({ ipa, tags: ipaObj.tags })) )
+            .filter(ipaObj => ipaObj?.ipa)
+        : []);
     
-    const {senses} = parsedLine;
-    if (!senses) return;
-
-    const sensesWithGlosses = senses.filter(sense => sense.glosses || sense.raw_glosses || sense.raw_gloss);
-    sensesWithGlosses.map(sense => {
+    /** @type {TidySense[]} */
+    const sensesWithGlosses = /** @type {TidySense[]} */ (senses
+        .filter(sense => sense.glosses || sense.raw_glosses || sense.raw_gloss)
+        .map(sense => {
         const glosses = sense.raw_glosses || sense.raw_gloss || sense.glosses;
         const glossesArray = Array.isArray(glosses) ? glosses : [glosses];
 
@@ -202,9 +208,8 @@ function handleLine(line) {
             tags.push(...sense.raw_tags);
         }
 
-        sense.glossesArray = glossesArray;
-        sense.tags = tags;
-    });
+        return {...sense, glossesArray, tags};
+    }));
 
     const sensesWithoutInflectionGlosses = sensesWithGlosses.filter(sense => {
         const {glossesArray, form_of, glosses} = sense;
@@ -214,38 +219,44 @@ function handleLine(line) {
     });
 
     if (sensesWithoutInflectionGlosses.length === 0) return;
-        
+    
+    const readings = getReadings(word, parsedLine);
     initializeWordResult(word, readings, pos);
 
     for (const ipaObj of ipa) {
         saveIpaResult(word, readings, pos, ipaObj);
     }
 
+    /** @type {GlossTree} */
     const glossTree = new Map();
     for (const sense of sensesWithoutInflectionGlosses) {
         const { glossesArray, tags } = sense;
         let temp = glossTree;
         for (const [levelIndex, levelGloss] of glossesArray.entries()) {
-            if(!temp.get(levelGloss)) {
-                temp.set(levelGloss, new Map());
+            let curr = temp.get(levelGloss);
+            if(!curr) {
+                curr = new Map();
+                temp.set(levelGloss, curr);
                 if(levelIndex === 0) {
-                    temp.get(levelGloss).set('_tags', tags);
+                    curr.set('_tags', tags);
                 }
             } else if (levelIndex === 0) {
-                temp.get(levelGloss).set('_tags', tags.filter(value => temp.get(levelGloss).get('_tags').includes(value)));
+                curr.set('_tags', tags.filter(value => curr?.get('_tags')?.includes(value)));
             }
-            temp = temp.get(levelGloss);
+            temp = curr;
         }
     }
     
     for (const [gloss, children] of glossTree) {
-        const tags = children.get('_tags');
-        children.delete('_tags');
+        const tags = children.get('_tags') || [];
+        children.delete('_tags');   
 
+        /** @type {SenseInfo} */
         const currSense = { glosses: [], tags };
         if(children.size === 0) {
             currSense.glosses.push(gloss);
         } else {
+            /** @type {GlossTree} */
             const branch = new Map();
             branch.set(gloss, children);
             handleNest(branch, currSense);
@@ -257,12 +268,59 @@ function handleLine(line) {
     }
 }
 
+/**
+ * @param {FormInfo[]|undefined} forms
+ * @param {string} word 
+ * @param {string} pos 
+ */
+function processForms(forms, word, pos) {
+    if(!forms) return;
+    forms.forEach((formData) => {
+        const { form } = formData;
+        let { tags } = formData;
+        if (!form) return;
+        if (!tags) return;
+        if (form === '-') return;
+        tags = tags.filter(tag => !redundantTags.includes(tag));
+        const isBlacklisted = tags.some(value => blacklistedTags.includes(value));
+        if (isBlacklisted) return;
+        const isIdentity = !tags.some(value => !identityTags.includes(value));
+        if (isIdentity) return;
+
+        /** @type {Map<Form, Map<PoS, string[]|Set<string>>>} */
+        const wordMap = automatedForms.get(word) || new Map();
+        /** @type {Map<string, Set<string>|string[]>} */
+        const formMap = wordMap.get(form) || new Map();
+        formMap.get(pos) || formMap.set(pos, new Set());
+        wordMap.set(form, formMap);
+        automatedForms.set(word, wordMap);
+
+        const tagsSet = new Set((formMap.get(pos)));
+
+        tagsSet.add(sortTags(targetIso, tags).join(' '));
+
+        formMap.set(pos, similarSort(mergePersonTags(targetIso, Array.from(tagsSet))));
+    });
+}
+
+/**
+ * @param {string} word 
+ * @param {string[]} readings 
+ * @param {string} pos 
+ * @param {SenseInfo} currSense 
+ */
 function saveSenseResult(word, readings, pos, currSense) {
     for (const reading of readings) {
         lemmaDict[word][reading][pos].senses.push(currSense);
     }
 }
 
+/**
+ * @param {string} word 
+ * @param {string[]} readings 
+ * @param {string} pos 
+ * @param {IpaInfo} ipaObj 
+ */
 function saveIpaResult(word, readings, pos, ipaObj) {
     for (const reading of readings) {
         const result = lemmaDict[word][reading][pos];
@@ -272,6 +330,11 @@ function saveIpaResult(word, readings, pos, ipaObj) {
     }
 }
 
+/**
+ * @param {string} word 
+ * @param {string[]} readings 
+ * @param {string} pos 
+ */
 function initializeWordResult(word, readings, pos) {
     for (const reading of readings) {
         const result = ensureNestedObject(lemmaDict, [word, reading, pos]);
@@ -280,6 +343,12 @@ function initializeWordResult(word, readings, pos) {
     }
 }
 
+/**
+ * @param {Glosses|undefined} glosses
+ * @param {string} word 
+ * @param {string} pos 
+ * @returns 
+ */
 function processInflectionGlosses(glosses, word, pos) {
     switch (targetIso) {
         case 'de':
@@ -287,6 +356,10 @@ function processInflectionGlosses(glosses, word, pos) {
         case 'en':
             return processEnglishInflectionGlosses(glosses, word, pos);
         case 'fr':
+            if(!glosses) return;
+            /**
+             * @type {string|undefined}
+             */
             let inflection, lemma;
 
             const match1 = glosses[0].match(/(.*)du verbe\s+((?:(?!\bdu\b).)*)$/);
@@ -312,7 +385,14 @@ function processInflectionGlosses(glosses, word, pos) {
     }
 }
 
+/**
+ * @param {Glosses|undefined} glosses 
+ * @param {string} word 
+ * @param {string} pos 
+ * @returns 
+ */
 function processGermanInflectionGlosses(glosses, word, pos) {
+    if (!glosses || !Array.isArray(glosses)) return;
     const match1 = glosses[0].match(/(.*)des (?:Verbs|Adjektivs|Substantivs|Demonstrativpronomens|Possessivpronomens|Pronomens) (.*)$/);
     if (!match1 || match1.length < 3) return;
     const inflection = match1[1].trim();
@@ -322,6 +402,11 @@ function processGermanInflectionGlosses(glosses, word, pos) {
     }
 }
 
+/**
+ * @param {NestedObject} obj
+ * @param {string[]} keys 
+ * @returns {NestedObject}
+ */
 function ensureNestedObject(obj, keys) {
     for (const key of keys) {
         obj[key] ??= {};
@@ -330,10 +415,17 @@ function ensureNestedObject(obj, keys) {
     return obj;
 }
 
+/**
+ * @param {Glosses|undefined} glosses
+ * @param {string} word 
+ * @param {string} pos 
+ */
 function processEnglishInflectionGlosses(glosses, word, pos) {
-    if(!glosses) return;
-    glossPieces = glosses.flatMap(gloss => gloss.split('##').map(piece => piece.trim()));
+    if(!glosses || !Array.isArray(glosses)) return;
+    const glossPieces = glosses.flatMap(gloss => gloss.split('##').map(piece => piece.trim()));
+    /**  @type {Set<string>} */
     const lemmas = new Set();
+    /**  @type {Set<string>} */
     const inflections = new Set();
     for (const piece of glossPieces) {
         const lemmaMatch = piece.match(/of ([^\s]+)\s*$/);
@@ -371,6 +463,10 @@ function processEnglishInflectionGlosses(glosses, word, pos) {
     }
 }
 
+/**
+ * @param {KaikkiLine} line
+ * @returns {string|undefined}
+ */
 function getCanonicalWordForm({word, forms}) {
     if(!forms) return word;
 
@@ -389,6 +485,11 @@ function getCanonicalWordForm({word, forms}) {
     }
 }
 
+/**
+ * @param {string|undefined} word 
+ * @param {FormInfo[]} forms 
+ * @returns {string|undefined}
+ */
 function getCanonicalForm(word, forms) {
     const canonicalForm = forms.find(form => form.tags &&
         form.tags.includes('canonical')
@@ -400,7 +501,7 @@ function getCanonicalForm(word, forms) {
             word = word.replace(/ {{#if:.+/, '').trim();
         }
 
-        bracketsRegex = /\[.*\]$/;
+        const bracketsRegex = /\[.*\]$/;
         if (bracketsRegex.test(word)) {
             word = word.replace(bracketsRegex, '').trim();
         }
@@ -408,6 +509,11 @@ function getCanonicalForm(word, forms) {
     return word;
 }
 
+/**
+ * @param {string} word 
+ * @param {KaikkiLine} line 
+ * @returns {string[]}
+ */
 function getReadings(word, line){
     switch(sourceIso){
         case 'fa': return [getPersianReading(word, line)];
@@ -417,13 +523,23 @@ function getReadings(word, line){
     }
 }
 
+/**
+ * @param {string} word 
+ * @param {KaikkiLine} line 
+ * @returns {string}
+ */
 function getPersianReading(word, line){
     const {forms} = line;
     if(!forms) return word;
     const romanization = forms.find(({form, tags}) => tags && tags.includes('romanization') && tags.length === 1 && form);
-    return romanization ? romanization.form : word;
+    return romanization?.form || word;
 }
 
+/**
+ * @param {string} word 
+ * @param {KaikkiLine} line 
+ * @returns {string[]}
+ */
 function getJapaneseReadings(word, line){
     const {head_templates} = line;
     if(!head_templates) {
@@ -507,13 +623,14 @@ lr.on('end', () => {
 
     const formsFilePath = `${writeFolder}/${sourceIso}-${targetIso}-forms.json`;
 
+    /** @type {{[chunkIndex: string]: FormsMap}} */
     const mapChunks = Array.from(formsMap.entries()).reduce((acc, [key, value], index) => {
         logProgress("Chunking form dict", index, formsMap.size);
         const chunkIndex = Math.floor(index / 10000);
         acc[chunkIndex] ??= new Map();
         acc[chunkIndex].set(key, value);
         return acc;
-    }, {});
+    }, /** @type {{[chunkIndex: string]: FormsMap}} */ ({}));
     
     if(!mapChunks['0']) {
         mapChunks['0'] = new Map();

@@ -44,6 +44,132 @@
           ]
         ]
       }
+    ],
+    [
+      "gjuhë",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "gjuhëra／gjuhëna",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "plural dialectal"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gjuha",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "definite",
+                    "nominative singular definite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gjuhët",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative plural definite",
+                    "nominative plural definite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gjuhën",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative singular definite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gjuhe",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "singular indefinite ablative",
+                    "dative singular indefinite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gjuhës",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "singular definite ablative",
+                    "dative singular definite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gjuhëve",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "plural definite ablative",
+                    "dative plural definite",
+                    "dative plural indefinite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gjuhësh",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "plural indefinite ablative"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
     ]
   ]
 }

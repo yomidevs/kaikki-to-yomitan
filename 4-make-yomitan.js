@@ -1,3 +1,4 @@
+//@ts-nocheck
 const path = require('path');
 const { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, unlinkSync } = require('fs');
 const { sortTags, writeInBatches, consoleOverwrite, 
