@@ -15,6 +15,16 @@
             ],
             "tags": [
               "feminine"
+            ],
+            "examples": [
+              {
+                "text": "textová zpráva",
+                "english": "text message"
+              },
+              {
+                "text": "Chcete nechat zprávu?",
+                "english": "Would you like to leave a message?"
+              }
             ]
           },
           {
@@ -23,6 +33,16 @@
             ],
             "tags": [
               "feminine"
+            ],
+            "examples": [
+              {
+                "text": "lékařská zpráva",
+                "english": "medical report"
+              },
+              {
+                "text": "podat zprávu",
+                "english": "to file a report"
+              }
             ]
           }
         ]
@@ -43,7 +63,13 @@
             "glosses": [
               "for"
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "Zabili ho pro peníze.",
+                "english": "They killed him for his money."
+              }
+            ]
           }
         ]
       }
@@ -67,7 +93,8 @@
               "imperfective",
               "reflexive",
               "with se"
-            ]
+            ],
+            "examples": []
           }
         ]
       }

@@ -31,7 +31,8 @@
             ],
             "tags": [
               "Khorasan"
-            ]
+            ],
+            "examples": []
           }
         ]
       }
@@ -80,19 +81,32 @@
             "glosses": [
               "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan)."
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "بَرادَرِ شُوْهَرِش فارْسی بَلَدِه.",
+                "english": "Her husband's brother knows Persian."
+              }
+            ]
           },
           {
             "glosses": [
               "Persian (the language of Ancient Persia)."
             ],
-            "tags": []
+            "tags": [],
+            "examples": []
           },
           {
             "glosses": [
               "Persian, main ethnic group of Iran."
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "فارْسی هَسْتیم.",
+                "english": "We are Persian."
+              }
+            ]
           }
         ]
       }

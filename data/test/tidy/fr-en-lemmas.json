@@ -15,6 +15,12 @@
             ],
             "tags": [
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "prends ma main",
+                "english": "take my hand"
+              }
             ]
           },
           {
@@ -23,6 +29,12 @@
             ],
             "tags": [
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "elle prend un café",
+                "english": "she is drinking a coffee"
+              }
             ]
           },
           {
@@ -31,6 +43,12 @@
             ],
             "tags": [
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "Je vais prendre le plat du jour.",
+                "english": "I'll get the dish of the day."
+              }
             ]
           },
           {
@@ -39,6 +57,12 @@
             ],
             "tags": [
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "prendre quelque chose à quelqu’un",
+                "english": "to take something from someone"
+              }
             ]
           },
           {
@@ -47,6 +71,16 @@
             ],
             "tags": [
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "prendre une décision",
+                "english": "to make a decision"
+              },
+              {
+                "text": "prendre des mesures draconiennes",
+                "english": "to take draconian measures"
+              }
             ]
           },
           {
@@ -55,6 +89,24 @@
             ],
             "tags": [
               "intransitive"
+            ],
+            "examples": [
+              {
+                "text": "le feu ne prend pas",
+                "english": "the fire won't start"
+              },
+              {
+                "text": "la sauce ne prend pas",
+                "english": "the sauce isn't thickening"
+              },
+              {
+                "text": "ma mayonnaise ne prend pas",
+                "english": "my mayonnaise isn't setting"
+              },
+              {
+                "text": "ça ne prend pas avec moi",
+                "english": "that won't wash with me"
+              }
             ]
           },
           {
@@ -63,6 +115,16 @@
             ],
             "tags": [
               "reflexive"
+            ],
+            "examples": [
+              {
+                "text": "je me suis pris la main dans la porte",
+                "english": "I caught my hand in the door"
+              },
+              {
+                "text": "je me suis pris la porte dans la figure",
+                "english": "the door hit me in the face"
+              }
             ]
           },
           {
@@ -111,6 +173,36 @@
               "in various idiomatic expressions",
               "transitive",
               "with à"
+            ],
+            "examples": [
+              {
+                "text": "Qu’est-ce qui t’a pris ? Qu’est-ce qui t’est passé par la tête ?",
+                "english": "What were you thinking? What got into you? What came over you?"
+              },
+              {
+                "text": "Qu’est-ce qui lui a pris ? Quelle mouche l’a piqué ?",
+                "english": "What was he thinking? What got into him?"
+              },
+              {
+                "text": "bien lui en prit",
+                "english": "good for him; it was a good choice (literally, “he took it well”)"
+              },
+              {
+                "text": "mal lui en prit",
+                "english": "too bad for him; it was a bad choice (literally, “he took it badly”)"
+              },
+              {
+                "text": "prendre en aversion",
+                "english": "take an aversion (to)"
+              },
+              {
+                "text": "prendre en grippe",
+                "english": "take a dislike (to)"
+              },
+              {
+                "text": "prendre en dégoût",
+                "english": "become disgusted (by)"
+              }
             ]
           },
           {
@@ -120,6 +212,72 @@
             "tags": [
               "followed by a partitive",
               "in various idiomatic expressions"
+            ],
+            "examples": [
+              {
+                "text": "prendre de la vitesse",
+                "english": "to gain speed"
+              },
+              {
+                "text": "prendre du galon",
+                "english": "to gain a promotion"
+              },
+              {
+                "text": "prendre de l’avance",
+                "english": "to gain ground"
+              },
+              {
+                "text": "prendre du retard",
+                "english": "to fall behind schedule, to run late, to drop behind"
+              },
+              {
+                "text": "prendre de la hauteur",
+                "english": "to gain some perspective"
+              },
+              {
+                "text": "prendre du recul",
+                "english": "to take a step back"
+              },
+              {
+                "text": "prendre de la bouteille",
+                "english": "to gain experience"
+              },
+              {
+                "text": "en prendre de la graine",
+                "english": "to take away a lesson"
+              },
+              {
+                "text": "prendre du poids",
+                "english": "to gain weight"
+              },
+              {
+                "text": "prendre de la masse",
+                "english": "to build muscle"
+              },
+              {
+                "text": "prendre de la brioche, prendre du bide, prendre du ventre",
+                "english": "to get a paunch"
+              },
+              {
+                "text": "prendre du bouchon",
+                "english": "to fail"
+              },
+              {
+                "text": "prendre de l’élan",
+                "english": "to gain momentum"
+              },
+              {
+                "text": "prendre de l’âge",
+                "english": "to get older"
+              },
+              {
+                "text": "prendre de la valeur",
+                "english": "to gain value"
+              },
+              {
+                "text": "prendre de l’importance",
+                "english": "to become important"
+              }
             ]
           },
           {
@@ -129,6 +287,12 @@
             "tags": [
               "colloquial",
               "impersonal"
+            ],
+            "examples": [
+              {
+                "text": "Ça va me prendre au moins deux heures pour le mettre à jour.",
+                "english": "It's going to take me at least two hours to update it."
+              }
             ]
           },
           {
@@ -139,6 +303,12 @@
               "broadly",
               "colloquial",
               "impersonal"
+            ],
+            "examples": [
+              {
+                "text": "Pour finir dans deux heures, ça prend trois personnes.",
+                "english": "To finish in two hours, it'll take three people."
+              }
             ]
           },
           {
@@ -147,6 +317,16 @@
             ],
             "tags": [
               "impersonal"
+            ],
+            "examples": [
+              {
+                "text": "il prend [quelque chose] à [quelqu’un]",
+                "english": "[something] comes over [someone]"
+              },
+              {
+                "text": "Il lui prend une fantaisie de mettre le feu à la maison.",
+                "english": "A fancy comes over him to set fire to the house."
+              }
             ]
           }
         ]
@@ -170,6 +350,12 @@
             "tags": [
               "impersonal",
               "intransitive"
+            ],
+            "examples": [
+              {
+                "text": "Il semblerait qu’il y ait des différences significatives entre les deux groupes.",
+                "english": "There would seem to be significant differences between the two groups."
+              }
             ]
           },
           {
@@ -178,7 +364,8 @@
             ],
             "tags": [
               "intransitive"
-            ]
+            ],
+            "examples": []
           }
         ]
       }
@@ -286,7 +473,8 @@
             ],
             "tags": [
               "feminine"
-            ]
+            ],
+            "examples": []
           }
         ]
       }

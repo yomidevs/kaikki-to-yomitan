@@ -16,6 +16,11 @@
             "tags": [
               "ditransitive",
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "Waiter, please bring me a single malt whiskey."
+              }
             ]
           },
           {
@@ -25,6 +30,11 @@
             "tags": [
               "figuratively",
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "The new company director brought a fresh perspective on sales and marketing."
+              }
             ]
           },
           {
@@ -33,6 +43,11 @@
             ],
             "tags": [
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "The controversial TV broadcast brought a storm of complaints."
+              }
             ]
           },
           {
@@ -41,25 +56,37 @@
             ],
             "tags": [
               "transitive"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
               "To persuade; to induce; to draw; to lead; to guide."
             ],
-            "tags": []
+            "tags": [],
+            "examples": []
           },
           {
             "glosses": [
               "To produce in exchange; to sell for; to fetch."
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "What does coal bring per ton?"
+              }
+            ]
           },
           {
             "glosses": [
               "(baseball) To pitch, often referring to a particularly hard thrown fastball."
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "The closer Jones can really bring it."
+              }
+            ]
           }
         ]
       }
@@ -82,6 +109,11 @@
             "tags": [
               "archaic",
               "literary"
+            ],
+            "examples": [
+              {
+                "text": "\"The Hay Wain\" is a famous painting by John Constable."
+              }
             ]
           }
         ]

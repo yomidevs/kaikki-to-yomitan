@@ -19,7 +19,8 @@
             ],
             "tags": [
               "intransitive"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -27,6 +28,12 @@
             ],
             "tags": [
               "intransitive"
+            ],
+            "examples": [
+              {
+                "text": "Vive de migas, nada más.",
+                "english": "He lives on crumbs, nothing more."
+              }
             ]
           },
           {
@@ -35,6 +42,16 @@
             ],
             "tags": [
               "intransitive"
+            ],
+            "examples": [
+              {
+                "text": "Vive en la casa roja.",
+                "english": "She lives in the red house."
+              },
+              {
+                "text": "La pobrecita vive con dos hermanas crueles.",
+                "english": "The poor girl lives with two cruel sisters."
+              }
             ]
           },
           {
@@ -43,7 +60,8 @@
             ],
             "tags": [
               "transitive"
-            ]
+            ],
+            "examples": []
           }
         ]
       }

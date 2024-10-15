@@ -13,7 +13,8 @@
             "glosses": [
               "pleasant, delightful, fun, enjoyable"
             ],
-            "tags": []
+            "tags": [],
+            "examples": []
           }
         ]
       }
@@ -41,7 +42,24 @@
             "glosses": [
               "liked, favorite"
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "好きな食べ物は？ アイスクリームです。",
+                "english": "What's your favorite food? - It's ice cream."
+              },
+              {
+                "text": "君が好きだからこそこれほど頑張っているんだよ。",
+                "english": "It's precisely because I like you [because of my fondness for you] that I'm working this hard."
+              },
+              {
+                "text": "好きです。\nSuki desu.\n“I like you.” → idiomatically used to express: “I love you.”"
+              },
+              {
+                "text": "どうとも好きにしなさい。",
+                "english": "Feel free to do as you like."
+              }
+            ]
           }
         ]
       }
@@ -61,7 +79,13 @@
             "glosses": [
               "a raccoon dog, Nyctereutes procyonoides"
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "アライグマなら尻尾にシマがある。どう見でもタヌキだ。",
+                "english": "If you're a raccoon, you'd have stripes on your tail. No matter how you look at it, you're a raccoon dog."
+              }
+            ]
           },
           {
             "glosses": [
@@ -69,6 +93,12 @@
             ],
             "tags": [
               "figuratively"
+            ],
+            "examples": [
+              {
+                "text": "やいやい、其処な狸め",
+                "english": "Hey there, you sly dog!"
+              }
             ]
           },
           {
@@ -78,7 +108,8 @@
             "tags": [
               "abbreviation",
               "alt-of"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -88,6 +119,11 @@
               "abbreviation",
               "alt-of",
               "rare"
+            ],
+            "examples": [
+              {
+                "text": "狸を決め込む ― tanuki o kimekomu ― pretend to be a raccoon dog → feign sleep"
+              }
             ]
           },
           {
@@ -99,7 +135,8 @@
               "alt-of",
               "obsolete",
               "rare"
-            ]
+            ],
+            "examples": []
           }
         ]
       }
@@ -173,7 +210,13 @@
                 ]
               }
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "車が走っている。",
+                "english": "A car is running. / Cars are running."
+              }
+            ]
           },
           {
             "glosses": [
@@ -181,49 +224,89 @@
             ],
             "tags": [
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "彼はこの道をよく走る。",
+                "english": "He often runs down this street."
+              }
             ]
           },
           {
             "glosses": [
               "to move smoothly; to slide"
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "刀が鞘から走る。",
+                "english": "The sword slides out of its sheath."
+              }
+            ]
           },
           {
             "glosses": [
               "to run away, escape"
             ],
-            "tags": []
+            "tags": [],
+            "examples": []
           },
           {
             "glosses": [
               "to rush, hurry around"
             ],
-            "tags": []
+            "tags": [],
+            "examples": []
           },
           {
             "glosses": [
               "to give over oneself to; to commit oneself to (usually something bad)"
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "彼は敵に走った。",
+                "english": "He defected to the enemy."
+              },
+              {
+                "text": "立場を忘れて感情に走ってはいけない。",
+                "english": "Don't forget your stance and give in to emotions."
+              }
+            ]
           },
           {
             "glosses": [
               "to spread out, scatter, splatter, spout"
             ],
-            "tags": []
+            "tags": [],
+            "examples": []
           },
           {
             "glosses": [
               "to lead or extend in a certain direction"
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "山脈が南北に走る。\nSanmyaku ga nanboku ni hashiru.\nThe mountain range runs north–south."
+              }
+            ]
           },
           {
             "glosses": [
               "to appear briefly; to flash"
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "稲妻が走る",
+                "english": "lightning flashes by"
+              },
+              {
+                "text": "背中に痛みが走った。",
+                "english": "I felt a brief pain in my back."
+              }
+            ]
           },
           {
             "glosses": [
@@ -231,7 +314,8 @@
             ],
             "tags": [
               "used with 胸(むね)が (mune ga)"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -239,7 +323,8 @@
             ],
             "tags": [
               "euphemistic"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -248,7 +333,8 @@
             "tags": [
               "alt-of",
               "alternative"
-            ]
+            ],
+            "examples": []
           }
         ]
       }
@@ -272,13 +358,15 @@
             "glosses": [
               "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))"
             ],
-            "tags": []
+            "tags": [],
+            "examples": []
           },
           {
             "glosses": [
               "melon, gourd"
             ],
-            "tags": []
+            "tags": [],
+            "examples": []
           }
         ]
       }
@@ -300,13 +388,15 @@
             "glosses": [
               "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))"
             ],
-            "tags": []
+            "tags": [],
+            "examples": []
           },
           {
             "glosses": [
               "melon, gourd"
             ],
-            "tags": []
+            "tags": [],
+            "examples": []
           }
         ]
       }
@@ -326,7 +416,8 @@
             "glosses": [
               "[I am / someone is] hungry"
             ],
-            "tags": []
+            "tags": [],
+            "examples": []
           }
         ]
       }

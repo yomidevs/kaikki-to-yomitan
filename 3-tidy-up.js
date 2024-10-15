@@ -54,15 +54,15 @@ function isInflectionGloss(glosses, formOf) {
 }
 
 /**
- * @param {GlossTree} glossTree
+ * @param {GlossTwig} glossTwig
  * @param {number} level
  * @returns {*}
  */
-function handleLevel(glossTree, level) {
+function handleLevel(glossTwig, level) {
     const nestDefs = [];
     let defIndex = 0;
 
-    for (const [def, children] of glossTree) {
+    for (const [def, children] of glossTwig) {
         defIndex += 1;
 
         if(children.size > 0) {
@@ -85,11 +85,11 @@ function handleLevel(glossTree, level) {
 }
 
 /**
- * @param {GlossTree} glossTree
+ * @param {GlossTwig} glossTwig
  * @param {SenseInfo} sense
  */
-function handleNest(glossTree, sense) {
-    const nestedGloss = handleLevel(glossTree, 1);
+function handleNest(glossTwig, sense) {
+    const nestedGloss = handleLevel(glossTwig, 1);
 
     if (nestedGloss.length > 0) {
         for (const entry of nestedGloss) {
@@ -227,18 +227,53 @@ function handleLine(parsedLine) {
         saveIpaResult(word, readings, pos, ipaObj);
     }
 
-    /** @type {GlossTree} */
+    const glossTree = getGlossTree(sensesWithoutInflectionGlosses);
+    
+    for (const [gloss, branches] of glossTree) {
+        const tags = branches.get('_tags') || [];
+        const examples = branches.get('_examples') || [];
+        branches.delete('_tags');
+        branches.delete('_examples');
+
+        /** @type {SenseInfo} */
+        const currSense = { glosses: [], tags, examples };
+        if(branches.size === 0) {
+            currSense.glosses.push(gloss);
+        } else {
+            /** @type {GlossBranch} */
+            const syntheticBranch = new Map();
+            syntheticBranch.set(gloss, branches);
+            handleNest(syntheticBranch, currSense);
+        }
+
+        if (currSense.glosses.length > 0) {
+            saveSenseResult(word, readings, pos, currSense);
+        }
+    }
+}
+
+/**
+ * @param {TidySense[]} sensesWithoutInflectionGlosses 
+ * @returns {GlossTree}
+ */
+function getGlossTree(sensesWithoutInflectionGlosses) {
     const glossTree = new Map();
     for (const sense of sensesWithoutInflectionGlosses) {
         const { glossesArray, tags } = sense;
+        let { examples = [] } = sense;
+        examples = examples
+            .filter(({type}) => type !== 'quotation')
+            .map(({text, english}) => ({text, english}))
+
         let temp = glossTree;
         for (const [levelIndex, levelGloss] of glossesArray.entries()) {
             let curr = temp.get(levelGloss);
-            if(!curr) {
+            if (!curr) {
                 curr = new Map();
                 temp.set(levelGloss, curr);
-                if(levelIndex === 0) {
+                if (levelIndex === 0) {
                     curr.set('_tags', tags);
+                    curr.set('_examples', examples);
                 }
             } else if (levelIndex === 0) {
                 curr.set('_tags', tags.filter(value => curr?.get('_tags')?.includes(value)));
@@ -246,26 +281,7 @@ function handleLine(parsedLine) {
             temp = curr;
         }
     }
-    
-    for (const [gloss, children] of glossTree) {
-        const tags = children.get('_tags') || [];
-        children.delete('_tags');   
-
-        /** @type {SenseInfo} */
-        const currSense = { glosses: [], tags };
-        if(children.size === 0) {
-            currSense.glosses.push(gloss);
-        } else {
-            /** @type {GlossTree} */
-            const branch = new Map();
-            branch.set(gloss, children);
-            handleNest(branch, currSense);
-        }
-
-        if (currSense.glosses.length > 0) {
-            saveSenseResult(word, readings, pos, currSense);
-        }
-    }
+    return glossTree;
 }
 
 /**

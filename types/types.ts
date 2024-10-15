@@ -32,6 +32,7 @@ declare global {
     }
 
     type KaikkiSense = {
+        examples?: Example[];
         glosses?: Glosses;
         raw_glosses?: Glosses;
         raw_gloss?: Glosses;
@@ -40,16 +41,29 @@ declare global {
         form_of?: FormOf[];
     }
 
+    type Example = {
+        text?: string;
+        type?: "example" | "quotation";
+        english?: string;
+        roman?: string;
+    }
+
     type Glosses = string | string[];
     
     type FormOf = {
         word?: string;
     }
 
-    type GlossTree = Map<string, GlossTree> & {
+    type GlossTree = Map<string, GlossBranch> ;
+
+    type GlossBranch = Map<string, GlossTwig> & {
         get(key: '_tags'): string[] | undefined;
-        set(key: '_tags', value: string[]): GlossTree;
-    };
+        set(key: '_tags', value: string[]): GlossBranch;
+        get(key: '_examples'): Example[] | undefined;
+        set(key: '_examples', value: Example[]): GlossBranch;
+    } ;
+
+    type GlossTwig = Map<string, GlossTwig>;
       
     type TidySense = Omit<KaikkiSense, 'tags'> & {
         tags: string[];
@@ -77,6 +91,7 @@ declare global {
     type SenseInfo = {
         glosses: YomitanGloss[],
         tags: string[],
+        examples: Example[],
     }
 
     type YomitanGloss = string | StructuredGloss

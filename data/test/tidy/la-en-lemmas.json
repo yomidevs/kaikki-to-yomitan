@@ -29,7 +29,8 @@
             ],
             "tags": [
               "declension-1"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -37,6 +38,16 @@
             ],
             "tags": [
               "declension-1"
+            ],
+            "examples": [
+              {
+                "text": "hascine propter rēs maledicās fāmās ferunt.",
+                "english": "Is it on account of these things that they spread slanderous reports?"
+              },
+              {
+                "text": "“Oenōtrī coluēre virī; nunc fāma minōrēs",
+                "english": "“Oenotrian men tilled [the land]; now rumor [has it that their] descendants call the nation ‘Italy’ after the name of its leader, [Italus].”"
+              }
             ]
           },
           {
@@ -45,6 +56,20 @@
             ],
             "tags": [
               "declension-1"
+            ],
+            "examples": [
+              {
+                "text": "Dīmīcantī dē fāmā dēesse.",
+                "english": "To abandon one whose reputation is attacked."
+              },
+              {
+                "text": "Fāma tamen clāra est; et adhūc sine crīmine vīxī.",
+                "english": "My good name is nevertheless unstained; and so far I have lived without blame."
+              },
+              {
+                "text": "Multī fāmam, conscientiam paucī verentur.",
+                "english": "Many fear their reputation, few their conscience."
+              }
             ]
           },
           {
@@ -53,6 +78,11 @@
             ],
             "tags": [
               "declension-1"
+            ],
+            "examples": [
+              {
+                "text": "Extemplō Libyae magnās it Fāma per urbēs —\nFāma, malum quā nōn aliud vēlōcius ūllum.\nStraightaway Rumor runs through the great cities of Libya – Rumor, than whom [there is] not any other evil more swift."
+              }
             ]
           }
         ]
@@ -95,7 +125,8 @@
             ],
             "tags": [
               "conjugation-3"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -103,6 +134,12 @@
             ],
             "tags": [
               "conjugation-3"
+            ],
+            "examples": [
+              {
+                "text": "[…] dum ne quem militem legeret ex eo numero quibus senatus missionem reditumque in patriam negasset ante belli finem.",
+                "english": "[…] provided he did not choose any soldier from those to whom the Senate had refused discharge and a return home before the end of the war"
+              }
             ]
           },
           {
@@ -111,7 +148,8 @@
             ],
             "tags": [
               "conjugation-3"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -119,7 +157,8 @@
             ],
             "tags": [
               "conjugation-3"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -127,7 +166,8 @@
             ],
             "tags": [
               "conjugation-3"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -135,6 +175,24 @@
             ],
             "tags": [
               "conjugation-3"
+            ],
+            "examples": [
+              {
+                "text": "Librōs lege.",
+                "english": "Read books."
+              },
+              {
+                "text": "Lēgistīne hunc librum?",
+                "english": "Have you read this book?"
+              },
+              {
+                "text": "Lingua Graeca est; nōn potest legī.",
+                "english": "It's Greek; it cannot be read."
+              },
+              {
+                "text": "Exigis, ut nostrōs dōnem tibi, Tucca, libellōs.\nNōn faciam: nam vīs vēndere, nōn legere.\nYou demand that I give our [⇒ my] little books to you, Tucca.",
+                "english": "I will not do [it]: for you want to sell [them], not to read [them]."
+              }
             ]
           },
           {
@@ -144,7 +202,8 @@
             "tags": [
               "Medieval-Latin",
               "conjugation-3"
-            ]
+            ],
+            "examples": []
           }
         ]
       }
@@ -186,7 +245,8 @@
             ],
             "tags": [
               "declension-2"
-            ]
+            ],
+            "examples": []
           }
         ]
       }
@@ -240,7 +300,8 @@
             ],
             "tags": [
               "not-comparable"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -248,7 +309,8 @@
             ],
             "tags": [
               "not-comparable"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -256,6 +318,12 @@
             ],
             "tags": [
               "not-comparable"
+            ],
+            "examples": [
+              {
+                "text": "ab ōvō ū̆sque ad māla",
+                "english": "from the beginning to the end\n(literally, “from the egg to the apples”)"
+              }
             ]
           }
         ]
@@ -303,6 +371,12 @@
               "participle",
               "passive",
               "perfect"
+            ],
+            "examples": [
+              {
+                "text": "Quae rectis lineis suos ordines servant",
+                "english": "Which preserve their order in straight lines"
+              }
             ]
           },
           {
@@ -317,7 +391,8 @@
               "passive",
               "perfect",
               "usually"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -331,6 +406,12 @@
               "participle",
               "passive",
               "perfect"
+            ],
+            "examples": [
+              {
+                "text": "Via stultī rēcta in oculīs eius; quī autem sapiēns est audit cōnsilia.",
+                "english": "The way of a fool is right in his own eyes: but he that is wise hearkeneth unto counsels. (Douay-Rheims trans., Challoner rev.: 1752 CE)"
+              }
             ]
           }
         ]
@@ -408,6 +489,20 @@
               "declension-4",
               "feminine",
               "irregular"
+            ],
+            "examples": [
+              {
+                "text": "Deō domuīque",
+                "english": "For God and for home (motto of Methodist Ladies' College, Melbourne)"
+              },
+              {
+                "text": "Stet fortūna domūs",
+                "english": "Let the good fortune of the house stand (motto of Harrow School, England)"
+              },
+              {
+                "text": "nox erat et tōta lūmina nūlla domō",
+                "english": "It was night, and [there were] no lights in the whole house."
+              }
             ]
           },
           {
@@ -419,7 +514,8 @@
               "declension-4",
               "feminine",
               "irregular"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -468,7 +564,8 @@
               "declension-4",
               "feminine",
               "irregular"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -533,7 +630,8 @@
               "declension-4",
               "feminine",
               "irregular"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -545,6 +643,24 @@
               "feminine",
               "idiomatic",
               "irregular"
+            ],
+            "examples": [
+              {
+                "text": "domum trahere",
+                "english": "to drag into one's pocket"
+              },
+              {
+                "text": "Domī versūra fit.",
+                "english": "One is one's own creditor. (proverb)"
+              },
+              {
+                "text": "domō afferre",
+                "english": "to conceive on one's own"
+              },
+              {
+                "text": "id nunc experior domō",
+                "english": "Now I'm learning this first-hand."
+              }
             ]
           },
           {
@@ -558,6 +674,16 @@
               "idiomatic",
               "irregular",
               "in locative case in phrases"
+            ],
+            "examples": [
+              {
+                "text": "bellī domīque; bellō domīque; vel bellī vel domī; domī bellōque; domī mīlitiaeque",
+                "english": "in war and peace"
+              },
+              {
+                "text": "ut non quietior populus domi esset quam militiae",
+                "english": "so that the people should not become lazier in the time of peace than that of war"
+              }
             ]
           }
         ]

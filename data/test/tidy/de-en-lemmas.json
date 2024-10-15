@@ -112,6 +112,16 @@
               "class-4",
               "strong",
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "jemanden gesund pflegen",
+                "english": "to nurse someone back to health"
+              },
+              {
+                "text": "Kranke pflegen",
+                "english": "to care for the sick"
+              }
             ]
           },
           {
@@ -188,7 +198,8 @@
             "tags": [
               "class-4",
               "strong"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -251,6 +262,16 @@
             "tags": [
               "class-4",
               "strong"
+            ],
+            "examples": [
+              {
+                "text": "Umgang pflegen",
+                "english": "to regularly be in contact"
+              },
+              {
+                "text": "Geselligkeit pflegen",
+                "english": "to socialize regularly (literally, “to regularly engage in gregariousness”)"
+              }
             ]
           }
         ]
@@ -274,6 +295,12 @@
             "tags": [
               "masculine",
               "strong"
+            ],
+            "examples": [
+              {
+                "text": "Fuchs, du hast die Gans gestohlen. Gib sie wieder her!",
+                "english": "(line from a popular children’s song)"
+              }
             ]
           },
           {
@@ -284,6 +311,12 @@
               "informal",
               "masculine",
               "strong"
+            ],
+            "examples": [
+              {
+                "text": "Er ist ein ganz schöner Fuchs.",
+                "english": "He is a really handsome fox."
+              }
             ]
           },
           {
@@ -294,6 +327,12 @@
               "informal",
               "masculine",
               "strong"
+            ],
+            "examples": [
+              {
+                "text": "Unser Paul ist ja ein kleiner Fuchs.",
+                "english": "Our Paul is a little redhead."
+              }
             ]
           },
           {
@@ -303,7 +342,8 @@
             "tags": [
               "masculine",
               "strong"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -313,7 +353,8 @@
               "masculine",
               "slang",
               "strong"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -322,6 +363,12 @@
             "tags": [
               "masculine",
               "strong"
+            ],
+            "examples": [
+              {
+                "text": "Ich hatte nur vier Trümpfe und darunter beide Füchse.",
+                "english": "I had only four trumps and among them were both aces of diamonds."
+              }
             ]
           },
           {
@@ -331,7 +378,8 @@
             "tags": [
               "masculine",
               "strong"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -341,7 +389,8 @@
               "archaic",
               "masculine",
               "strong"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -350,7 +399,8 @@
             "tags": [
               "masculine",
               "strong"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -360,7 +410,8 @@
               "masculine",
               "obsolete",
               "strong"
-            ]
+            ],
+            "examples": []
           }
         ]
       }
@@ -392,7 +443,8 @@
               "also",
               "neuter",
               "rare"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -402,7 +454,8 @@
               "also",
               "neuter",
               "rare"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -412,7 +465,8 @@
               "also",
               "neuter",
               "rare"
-            ]
+            ],
+            "examples": []
           }
         ]
       }
@@ -437,7 +491,8 @@
               "form-of",
               "masculine",
               "strong"
-            ]
+            ],
+            "examples": []
           }
         ]
       }
@@ -461,31 +516,69 @@
             "glosses": [
               "from"
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "Ich fahre von Köln nach Hamburg.",
+                "english": "I'm travelling from Cologne to Hamburg."
+              },
+              {
+                "text": "Ich hab’s von meiner Schwester gehört.",
+                "english": "I heard it from my sister."
+              }
+            ]
           },
           {
             "glosses": [
               "of, belonging to (often replacing genitive; see usage note below)"
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "das Auto meines Vaters = das Auto von meinem Vater",
+                "english": "my father’s car / the car of my father"
+              }
+            ]
           },
           {
             "glosses": [
               "by (with passive voice)"
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "Das Hotel wird von der Firma bezahlt.",
+                "english": "The hotel is paid for by the company."
+              }
+            ]
           },
           {
             "glosses": [
               "about, of (a topic)"
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "Er hat von seiner Jugend erzählt.",
+                "english": "He told about his youth."
+              }
+            ]
           },
           {
             "glosses": [
               "on, with (a resource)"
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "Von welchem Geld soll ich als Arbeitsloser in Urlaub fahren?",
+                "english": "Being unemployed, on what money should I go on holidays?"
+              },
+              {
+                "text": "Man kann nicht nur von Luft und Liebe leben.",
+                "english": "You can’t live on air and love alone. (proverb)"
+              }
+            ]
           }
         ]
       }
