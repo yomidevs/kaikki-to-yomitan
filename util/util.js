@@ -1,3 +1,4 @@
+//@ts-nocheck
 const path = require('path');
 const { readFileSync, writeFileSync, existsSync } = require('fs');
 const date = require('date-and-time');
@@ -35,7 +36,10 @@ function sortTags(targetIso, tags) {
 }
 
 // sorts inflection entries to be nearby similar inflections
-
+/**
+ * @param {string[]} tags 
+ * @returns {string[]}
+ */
 function similarSort(tags) {
     return tags.sort((a, b) => {
         const aWords = a.split(' ');
@@ -62,6 +66,11 @@ function similarSort(tags) {
 // input: ['first-person singular present', 'third-person singular present']
 // output: ['first/third-person singular present']
 
+/**
+ * @param {string} targetIso 
+ * @param {string[]} tags 
+ * @returns {string[]}
+ */
 function mergePersonTags(targetIso, tags) {
     const persons = ["first-person", "second-person", "third-person"];
 
@@ -70,7 +79,9 @@ function mergePersonTags(targetIso, tags) {
             return items.sort((a, b) => persons.indexOf(a) - persons.indexOf(b));
         }
 
+        /** @type {string[]} */
         const result = [];
+        /** @type {Object<string, string[]>} */
         const mergeObj = {};
 
         for (const item of tags) {

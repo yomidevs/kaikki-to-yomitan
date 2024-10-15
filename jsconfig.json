@@ -13,6 +13,9 @@
         "*": ["./types/*"],
         "ext/json-schema": ["./types/ext/json-schema"]
     },
-    "exclude": ["node_modules", "**/node_modules/*"]
+    "exclude": [
+        "node_modules", 
+        "**/node_modules/*"
+    ]
 }
   

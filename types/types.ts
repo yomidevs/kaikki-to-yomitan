@@ -11,7 +11,7 @@ declare global {
         word?: string;
         pos?: string;
         sounds?: Sound[];  
-        forms?: Form[];
+        forms?: FormInfo[];
         senses?: KaikkiSense[];
     }
 
@@ -26,7 +26,7 @@ declare global {
         note?: string;
     }
 
-    type Form = {
+    type FormInfo = {
         form?: string;
         tags?: string[];
     }
@@ -91,6 +91,12 @@ declare global {
         data: string,
         content: StructuredContent,
     }
+
+    type Lemma = string;
+    type Form = string;
+    type PoS = string;
+    type FormsMap = Map<Lemma, Map<Form, Map<PoS, string[]>>>;
+    type AutomatedForms = Map<Lemma, Map<Form, Map<PoS, Set<string>|string[]>>>;
 
     type NestedObject = {
         [key: string]: NestedObject | any;

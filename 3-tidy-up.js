@@ -14,7 +14,10 @@ const { sortTags, similarSort, mergePersonTags, consoleOverwrite, clearConsoleLi
 /** @type {LemmaDict} */
 const lemmaDict = {};
 
+/** @type {FormsMap} */
 const formsMap = new Map();
+
+/** @type {AutomatedForms} */
 const automatedForms = new Map();
 
 /**
@@ -67,7 +70,6 @@ function handleLevel(glossTree, level) {
             const childDefs = handleLevel(children, nextLevel);
 
             const listType = level === 1 ? "li" : "number";
-            /** @type {StructuredContent[]} */
             const content = level === 1 ? def : [{ "tag": "span", "data": { "listType": "number" }, "content": `${defIndex}. ` }, def];
 
             nestDefs.push([
@@ -99,16 +101,16 @@ function handleNest(glossTree, sense) {
  * @param {string} form 
  * @param {string} pos 
  * @param {string} lemma 
- * @param {string[]} inflections 
+ * @param {string[]|Set<string>} inflections 
  */
 function addDeinflections(form, pos, lemma, inflections) {
     if (targetIso === 'fr') {
         form = form.replace(/(qu\')?(ils\/elles|il\/elle\/on)\s*/, '');
     }
 
-    const lemmaForms = formsMap.get(lemma) || new Map();
+    const lemmaForms = formsMap.get(lemma) || /** @type {Map<Form, Map<PoS, string[]>>} */ (new Map());
     formsMap.set(lemma, lemmaForms);
-    const formPOSs = lemmaForms.get(form) || new Map();
+    const formPOSs = lemmaForms.get(form) || /** @type {Map<PoS, string[]>} */ (new Map());
     lemmaForms.set(form, formPOSs);
     formPOSs.get(pos) || formPOSs.set(pos, []);
 
@@ -267,7 +269,7 @@ function handleLine(parsedLine) {
 }
 
 /**
- * @param {Form[]|undefined} forms
+ * @param {FormInfo[]|undefined} forms
  * @param {string} word 
  * @param {string} pos 
  */
@@ -285,7 +287,9 @@ function processForms(forms, word, pos) {
         const isIdentity = !tags.some(value => !identityTags.includes(value));
         if (isIdentity) return;
 
+        /** @type {Map<Form, Map<PoS, string[]|Set<string>>>} */
         const wordMap = automatedForms.get(word) || new Map();
+        /** @type {Map<string, Set<string>|string[]>} */
         const formMap = wordMap.get(form) || new Map();
         formMap.get(pos) || formMap.set(pos, new Set());
         wordMap.set(form, formMap);
@@ -483,7 +487,7 @@ function getCanonicalWordForm({word, forms}) {
 
 /**
  * @param {string|undefined} word 
- * @param {Form[]} forms 
+ * @param {FormInfo[]} forms 
  * @returns {string|undefined}
  */
 function getCanonicalForm(word, forms) {
@@ -619,13 +623,14 @@ lr.on('end', () => {
 
     const formsFilePath = `${writeFolder}/${sourceIso}-${targetIso}-forms.json`;
 
+    /** @type {{[chunkIndex: string]: FormsMap}} */
     const mapChunks = Array.from(formsMap.entries()).reduce((acc, [key, value], index) => {
         logProgress("Chunking form dict", index, formsMap.size);
         const chunkIndex = Math.floor(index / 10000);
         acc[chunkIndex] ??= new Map();
         acc[chunkIndex].set(key, value);
         return acc;
-    }, {});
+    }, /** @type {{[chunkIndex: string]: FormsMap}} */ ({}));
     
     if(!mapChunks['0']) {
         mapChunks['0'] = new Map();
