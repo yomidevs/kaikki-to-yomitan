@@ -116,6 +116,16 @@ declare global {
     type NestedObject = {
         [key: string]: NestedObject | any;
     }
+
+    // 4-make-yomitan.js types:
+
+    type WhitelistedTag = [
+        shortTag: string,
+        category: string,
+        sortOrder: number,
+        longTag: string | string[], // if array, first element will be used, others are aliases
+        popularityScore: number,
+    ]
 }
 
 export {} // This is needed to make this file a module

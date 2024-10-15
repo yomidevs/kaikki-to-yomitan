@@ -1,4 +1,3 @@
-//@ts-nocheck
 const path = require('path');
 const { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, unlinkSync } = require('fs');
 const { sortTags, writeInBatches, consoleOverwrite, 
@@ -32,7 +31,9 @@ if (!existsSync(`data/language/${source_iso}/${target_iso}`)) {
     mkdirSync(`data/language/${source_iso}/${target_iso}`, {recursive: true});
 }
 
+/** @type {WhitelistedTag[]} */
 const targetLanguageTermTags = loadJsonArray(`data/language/target-language-tags/${target_iso}/tag_bank_term.json`);
+/** @type {WhitelistedTag[]} */
 const languageTermTags = loadJsonArray(`data/language/${source_iso}/${target_iso}/tag_bank_term.json`);
 const termTags = [...targetLanguageTermTags, ...languageTermTags];
 
@@ -44,7 +45,7 @@ const partsOfSpeech = loadJsonArray(`data/language/target-language-tags/${target
 
 const multiwordInflections = loadJsonArray(`data/language/${source_iso}/${target_iso}/multiword_inflections.json`);
 const tagStylesFile = `data/language/target-language-tags/${target_iso}/tag_styles.json`;
-const tagStyles = existsSync(tagStylesFile) ? JSON.parse(readFileSync(tagStylesFile)) : {};
+const tagStyles = existsSync(tagStylesFile) ? JSON.parse(readFileSync(tagStylesFile, 'utf8')) : {};
 
 const tagModifiers = [
     ['chiefly', 'chief'],
@@ -56,6 +57,11 @@ const tagModifiers = [
     ['slightly', 'sli'],
 ]
 
+/**
+ * @param {WhitelistedTag[]} tags 
+ * @param {string} tag 
+ * @returns 
+ */
 function findTag(tags, tag) {
     const fullTag = tags.find((x) => {
         if (typeof x[3] === 'string') {
@@ -75,12 +81,16 @@ function findTag(tags, tag) {
     return result;
 }
 
+/**
+ * @param {*} tag 
+ * @returns 
+ */
 function findModifiedTag(tag){
     let modifiedTag = null;
     tagModifiers.forEach((modifier) => {
         const regex = new RegExp(`^${modifier[0]} `);
         if (regex.test(tag)){
-            fullTag = findTag(termTags, tag.replace(regex, ''));
+            const fullTag = findTag(termTags, tag.replace(regex, ''));
             if (fullTag){
                 modifiedTag = [
                     `${modifier[1]}-${fullTag[0]}`,
@@ -118,12 +128,13 @@ let lastTermBankIndex = 0;
 
     consoleOverwrite(`4-make-yomitan.js: reading lemmas...`);
     const lemmasFile = `${readFolder}/${source_iso}-${target_iso}-lemmas.json`;
-    const lemmaDict = JSON.parse(readFileSync(path.resolve(__dirname, lemmasFile)));
+    /** @type {LemmaDict} */
+    const lemmaDict = JSON.parse(readFileSync(path.resolve(__dirname, lemmasFile), 'utf8'));
 
     consoleOverwrite('4-make-yomitan.js: processing lemmas...');
     for (const [lemma, readings] of Object.entries(lemmaDict)) {
         for (const [reading, partsOfSpeechOfWord] of Object.entries(readings)) {
-            normalizedLemma = normalizeOrthography(lemma);
+            const normalizedLemma = normalizeOrthography(lemma);
             let term = normalizedLemma;
 
             if(lemma !== normalizedLemma && lemma !== reading){
@@ -140,7 +151,10 @@ let lastTermBankIndex = 0;
                     anyForms.push(message);
                 }
             }
-
+            
+            /**
+             * @param {any} word 
+             */
             function debug(word) {
                 if (normalizedLemma === DEBUG_WORD) {
                     console.log('-------------------');
@@ -153,7 +167,7 @@ let lastTermBankIndex = 0;
             for (const [pos, info] of Object.entries(partsOfSpeechOfWord)) {
                 const {senses} = info;
 
-                const lemmaTags = [pos, ...(info.tags || [])];
+                const lemmaTags = [pos];
                 ipa.push(...info.ipa);
                 const entries = {};
 
@@ -165,6 +179,9 @@ let lastTermBankIndex = 0;
                     glosses.forEach((gloss) => {
                         debug(gloss);
 
+                        /**
+                         * @param {string} joinedTags 
+                         */
                         function addGlossToEntries(joinedTags) {
                             if(!gloss) return;
                             if (entries[joinedTags]) {
@@ -274,7 +291,7 @@ let lastTermBankIndex = 0;
     consoleOverwrite('4-make-yomitan.js: Processing forms...');
     const formsFiles = readdirSync(readFolder).filter((file) => file.startsWith(`${source_iso}-${target_iso}-forms-`));
     for (const file of formsFiles) {
-        const formsPart = JSON.parse(readFileSync(path.resolve(__dirname, readFolder, file)), mapJsonReviver);
+        const formsPart = JSON.parse(readFileSync(path.resolve(__dirname, readFolder, file), 'utf8'), mapJsonReviver);
         for (const [lemma, forms] of formsPart.entries()) {
             formsMap.set(lemma, forms);
         }
@@ -394,6 +411,10 @@ writeFileSync(`data/language/${source_iso}/${target_iso}/skippedPartsOfSpeech.js
 
 console.log('4-make-yomitan.js: Done!')
 
+/**
+ * @param {*} ymtFormData 
+ * @returns 
+ */
 function writeYmtFormData(ymtFormData) {
     const ymtForms = ymtFormData.map((form, index) => {
         const [term, reading, definitions] = form;
@@ -414,6 +435,12 @@ function writeYmtFormData(ymtFormData) {
     return ymtFormData;
 }
 
+/**
+ * @param {*} folder 
+ * @param {*} data 
+ * @param {*} bankIndex 
+ * @returns 
+ */
 function writeBanks(folder, data, bankIndex = 0) {
     if(folder === 'form') folder = 'dict';
 
@@ -428,14 +455,25 @@ function writeBanks(folder, data, bankIndex = 0) {
     return writeInBatches(writeFolder, data, `${folder}/${filename}`, 25000, bankIndex);
 }
 
+/**
+ * @param {*} folder 
+ */
 function writeTags(folder) {
     writeFileSync(`${writeFolder}/${folder}/tag_bank_1.json`, JSON.stringify(Object.values(ymtTags[folder])));
 }
 
+/**
+ * @param {*} folder 
+ * @param {*} tagStyles 
+ */
 function writeStyles(folder, tagStyles){
     writeFileSync(`${writeFolder}/${folder}/styles.css`, tagStyles);
 }
 
+/**
+ * @param {*} folder 
+ * @returns 
+ */
 function getTagStyles(folder){
     let styles = "";
     for (const fullTag of Object.values(ymtTags[folder])) {
@@ -447,6 +485,9 @@ function getTagStyles(folder){
     return styles;
 }
 
+/**
+ * @param {*} folder 
+ */
 function writeIndex(folder) {
     const title = `${DICT_NAME}-${source_iso}-${target_iso}` + (folder === 'dict' ? '' : '-ipa');
     writeFileSync(`${writeFolder}/${folder}/index.json`, JSON.stringify({
@@ -458,13 +499,20 @@ function writeIndex(folder) {
     }));        
 }
 
+/**
+ * @param {*} lemmaTags 
+ * @param {*} senseTags 
+ * @param {*} parenthesesTags 
+ * @param {*} pos 
+ * @returns 
+ */
 function processTags(lemmaTags, senseTags, parenthesesTags, pos) {
     let recognizedTags = [];
 
     const allEntryTags = [...new Set([...lemmaTags, ...senseTags, ...parenthesesTags])];
     termTagCount += allEntryTags.length;
 
-    unrecognizedTags = allEntryTags
+    const unrecognizedTags = allEntryTags
         .map((tag) => {
             const fullTag = findTag(termTags, tag);
 
@@ -487,16 +535,24 @@ function processTags(lemmaTags, senseTags, parenthesesTags, pos) {
         })
         .filter(Boolean);
     
-    leftoverTags = unrecognizedTags.length ? `(${unrecognizedTags.join(', ')}) ` : '';
+    const leftoverTags = unrecognizedTags.length ? `(${unrecognizedTags.join(', ')}) ` : '';
     recognizedTags = [...new Set(recognizedTags)];
 
     return { leftoverTags, recognizedTags };
 }
 
+/**
+ * @param {*} obj 
+ * @returns 
+ */
 function sortBreakdown(obj){
     return Object.fromEntries(Object.entries(obj).sort((a, b) => b[1] - a[1]));
 }
 
+/**
+ * @param {string} term 
+ * @returns {string}
+ */
 function normalizeOrthography(term) {
     switch (source_iso) {
         case 'ar':
