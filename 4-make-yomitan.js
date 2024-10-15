@@ -84,8 +84,8 @@ function findTag(tags, tag) {
 }
 
 /**
- * @param {*} tag 
- * @returns 
+ * @param {string} tag 
+ * @returns {null|import('types').TagBank.TagInformation}
  */
 function findModifiedTag(tag){
     let modifiedTag = null;
@@ -506,7 +506,7 @@ function getTagStyles(folder){
 }
 
 /**
- * @param {*} folder 
+ * @param {'dict'|'ipa'} folder 
  */
 function writeIndex(folder) {
     const title = `${DICT_NAME}-${source_iso}-${target_iso}` + (folder === 'dict' ? '' : '-ipa');
@@ -520,10 +520,10 @@ function writeIndex(folder) {
 }
 
 /**
- * @param {*} lemmaTags 
- * @param {*} senseTags 
- * @param {*} parenthesesTags 
- * @param {*} pos 
+ * @param {string[]} lemmaTags 
+ * @param {string[]} senseTags 
+ * @param {string[]} parenthesesTags 
+ * @param {string} pos 
  * @returns 
  */
 function processTags(lemmaTags, senseTags, parenthesesTags, pos) {
