@@ -7,8 +7,134 @@
     0,
     [
       "fame",
-      "rumour, talk, opinion, report",
-      "reputation",
+      {
+        "type": "structured-content",
+        "content": [
+          "rumour, talk, opinion, report",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "hascine propter rēs maledicās fāmās ferunt."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "Is it on account of these things that they spread slanderous reports?"
+                  }
+                ]
+              }
+            },
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "“Oenōtrī coluēre virī; nunc fāma minōrēs"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "“Oenotrian men tilled [the land]; now rumor [has it that their] descendants call the nation ‘Italy’ after the name of its leader, [Italus].”"
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          "reputation",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Dīmīcantī dē fāmā dēesse."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "To abandon one whose reputation is attacked."
+                  }
+                ]
+              }
+            },
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Fāma tamen clāra est; et adhūc sine crīmine vīxī."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "My good name is nevertheless unstained; and so far I have lived without blame."
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      },
       "Fama, personified as a fast-moving, malicious goddess, the daughter of Terra. From the Greek φήμη, Pheme. Typically translated from the Latin as “Rumor.”"
     ],
     0,
@@ -26,7 +152,70 @@
       "to collect, gather, bring together",
       "to take out, pick out, extract, remove",
       "to take to one's self unjustly, carry off, steal, purloin, plunder, abstract",
-      "to read"
+      {
+        "type": "structured-content",
+        "content": [
+          "to read",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Librōs lege."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "Read books."
+                  }
+                ]
+              }
+            },
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Lēgistīne hunc librum?"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "Have you read this book?"
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      }
     ],
     0,
     ""
@@ -64,7 +253,42 @@
     [
       "all the way",
       "until, up to (sometimes with \"ad\")",
-      "constantly, continuously"
+      {
+        "type": "structured-content",
+        "content": [
+          "constantly, continuously",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "ab ōvō ū̆sque ad māla"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "from the beginning to the end\n(literally, “from the egg to the apples”)"
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      }
     ],
     0,
     ""
@@ -76,9 +300,79 @@
     "v",
     0,
     [
-      "led straight along, drawn in a straight line, straight, upright.",
+      {
+        "type": "structured-content",
+        "content": [
+          "led straight along, drawn in a straight line, straight, upright.",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Quae rectis lineis suos ordines servant"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "Which preserve their order in straight lines"
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      },
       "(in general) right, correct, proper, appropriate, befitting.",
-      "(in particular) morally right, correct, lawful, just, virtuous, noble, good, proper, honest."
+      {
+        "type": "structured-content",
+        "content": [
+          "(in particular) morally right, correct, lawful, just, virtuous, noble, good, proper, honest.",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Via stultī rēcta in oculīs eius; quī autem sapiēns est audit cōnsilia."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "The way of a fool is right in his own eyes: but he that is wise hearkeneth unto counsels. (Douay-Rheims trans., Challoner rev.: 1752 CE)"
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      }
     ],
     0,
     ""
@@ -235,8 +529,106 @@
     "n",
     0,
     [
-      "one's own possessions or resources",
-      "(in locative case in phrases) peace"
+      {
+        "type": "structured-content",
+        "content": [
+          "(idiomatic) one's own possessions or resources",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "domum trahere"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "to drag into one's pocket"
+                  }
+                ]
+              }
+            },
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Domī versūra fit."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "One is one's own creditor. (proverb)"
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          "(in locative case in phrases, idiomatic) peace",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "ut non quietior populus domi esset quam militiae"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "so that the people should not become lazier in the time of peace than that of war"
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      }
     ],
     0,
     ""

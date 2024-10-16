@@ -3,7 +3,7 @@ const path = require('path');
 const { readFileSync, writeFileSync, existsSync } = require('fs');
 const date = require('date-and-time');
 
-const tagOrder = JSON.parse(readFileSync(path.resolve(__dirname, '../data/language/tag_order.json')));
+const tagOrder = JSON.parse(readFileSync(path.resolve(__dirname, '../data/language/tag_order.json'), 'utf-8'));
 
 const tagOrderAll = [];
 
@@ -110,7 +110,6 @@ function mergePersonTags(targetIso, tags) {
         return result;
     } else return tags;
 }
-
 
 function writeInBatches(tempPath, inputArray, filenamePrefix, batchSize = 100000, bankIndex = 0) {
     consoleOverwrite(`Writing ${inputArray.length.toLocaleString()} entries of ${filenamePrefix}...`);

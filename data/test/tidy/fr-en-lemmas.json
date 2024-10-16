@@ -11,58 +11,441 @@
         "senses": [
           {
             "glosses": [
-              "(transitive) to take"
+              {
+                "type": "structured-content",
+                "content": [
+                  "(transitive) to take",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "prends ma main"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "take my hand"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "prends ma main",
+                "english": "take my hand"
+              }
             ]
           },
           {
             "glosses": [
-              "(transitive) to eat; to drink"
+              {
+                "type": "structured-content",
+                "content": [
+                  "(transitive) to eat; to drink",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "elle prend un café"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "she is drinking a coffee"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "elle prend un café",
+                "english": "she is drinking a coffee"
+              }
             ]
           },
           {
             "glosses": [
-              "(transitive) to get; to buy"
+              {
+                "type": "structured-content",
+                "content": [
+                  "(transitive) to get; to buy",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "Je vais prendre le plat du jour."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "I'll get the dish of the day."
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "Je vais prendre le plat du jour.",
+                "english": "I'll get the dish of the day."
+              }
             ]
           },
           {
             "glosses": [
-              "(transitive) to rob; to deprive"
+              {
+                "type": "structured-content",
+                "content": [
+                  "(transitive) to rob; to deprive",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "prendre quelque chose à quelqu’un"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "to take something from someone"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "prendre quelque chose à quelqu’un",
+                "english": "to take something from someone"
+              }
             ]
           },
           {
             "glosses": [
-              "(transitive) to make"
+              {
+                "type": "structured-content",
+                "content": [
+                  "(transitive) to make",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "prendre une décision"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "to make a decision"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "prendre des mesures draconiennes"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "to take draconian measures"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "prendre une décision",
+                "english": "to make a decision"
+              },
+              {
+                "text": "prendre des mesures draconiennes",
+                "english": "to take draconian measures"
+              }
             ]
           },
           {
             "glosses": [
-              "(intransitive) to catch, to work, to start"
+              {
+                "type": "structured-content",
+                "content": [
+                  "(intransitive) to catch, to work, to start",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "le feu ne prend pas"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "the fire won't start"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "la sauce ne prend pas"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "the sauce isn't thickening"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "intransitive"
+            ],
+            "examples": [
+              {
+                "text": "le feu ne prend pas",
+                "english": "the fire won't start"
+              },
+              {
+                "text": "la sauce ne prend pas",
+                "english": "the sauce isn't thickening"
+              }
             ]
           },
           {
             "glosses": [
-              "(reflexive) to get (something) caught (in), to jam"
+              {
+                "type": "structured-content",
+                "content": [
+                  "(reflexive) to get (something) caught (in), to jam",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "je me suis pris la main dans la porte"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "I caught my hand in the door"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "je me suis pris la porte dans la figure"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "the door hit me in the face"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "reflexive"
+            ],
+            "examples": [
+              {
+                "text": "je me suis pris la main dans la porte",
+                "english": "I caught my hand in the door"
+              },
+              {
+                "text": "je me suis pris la porte dans la figure",
+                "english": "the door hit me in the face"
+              }
             ]
           },
           {
@@ -111,42 +494,280 @@
               "in various idiomatic expressions",
               "transitive",
               "with à"
+            ],
+            "examples": [
+              {
+                "text": "Qu’est-ce qui t’a pris ? Qu’est-ce qui t’est passé par la tête ?",
+                "english": "What were you thinking? What got into you? What came over you?"
+              },
+              {
+                "text": "Qu’est-ce qui lui a pris ? Quelle mouche l’a piqué ?",
+                "english": "What was he thinking? What got into him?"
+              }
             ]
           },
           {
             "glosses": [
-              "(followed by a partitive, in various idiomatic expressions) to gain"
+              {
+                "type": "structured-content",
+                "content": [
+                  "(followed by a partitive, in various idiomatic expressions) to gain",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "prendre de la vitesse"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "to gain speed"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "prendre du galon"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "to gain a promotion"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "followed by a partitive",
               "in various idiomatic expressions"
+            ],
+            "examples": [
+              {
+                "text": "prendre de la vitesse",
+                "english": "to gain speed"
+              },
+              {
+                "text": "prendre du galon",
+                "english": "to gain a promotion"
+              }
             ]
           },
           {
             "glosses": [
-              "(colloquial; impersonal) to take (a certain amount of time)"
+              {
+                "type": "structured-content",
+                "content": [
+                  "(colloquial; impersonal) to take (a certain amount of time)",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "Ça va me prendre au moins deux heures pour le mettre à jour."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "It's going to take me at least two hours to update it."
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "colloquial",
               "impersonal"
+            ],
+            "examples": [
+              {
+                "text": "Ça va me prendre au moins deux heures pour le mettre à jour.",
+                "english": "It's going to take me at least two hours to update it."
+              }
             ]
           },
           {
             "glosses": [
-              "(colloquial; impersonal; by extension) to take (a certain number or amount of)"
+              {
+                "type": "structured-content",
+                "content": [
+                  "(colloquial; impersonal; by extension) to take (a certain number or amount of)",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "Pour finir dans deux heures, ça prend trois personnes."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "To finish in two hours, it'll take three people."
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "broadly",
               "colloquial",
               "impersonal"
+            ],
+            "examples": [
+              {
+                "text": "Pour finir dans deux heures, ça prend trois personnes.",
+                "english": "To finish in two hours, it'll take three people."
+              }
             ]
           },
           {
             "glosses": [
-              "(impersonal) to come over (to arise in and gain some control over one's thoughts and/or actions)"
+              {
+                "type": "structured-content",
+                "content": [
+                  "(impersonal) to come over (to arise in and gain some control over one's thoughts and/or actions)",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "il prend [quelque chose] à [quelqu’un]"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "[something] comes over [someone]"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "Il lui prend une fantaisie de mettre le feu à la maison."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "A fancy comes over him to set fire to the house."
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "impersonal"
+            ],
+            "examples": [
+              {
+                "text": "il prend [quelque chose] à [quelqu’un]",
+                "english": "[something] comes over [someone]"
+              },
+              {
+                "text": "Il lui prend une fantaisie de mettre le feu à la maison.",
+                "english": "A fancy comes over him to set fire to the house."
+              }
             ]
           }
         ]
@@ -170,7 +791,8 @@
             "tags": [
               "impersonal",
               "intransitive"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -178,7 +800,8 @@
             ],
             "tags": [
               "intransitive"
-            ]
+            ],
+            "examples": []
           }
         ]
       }
@@ -286,7 +909,8 @@
             ],
             "tags": [
               "feminine"
-            ]
+            ],
+            "examples": []
           }
         ]
       }

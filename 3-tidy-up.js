@@ -54,15 +54,16 @@ function isInflectionGloss(glosses, formOf) {
 }
 
 /**
- * @param {GlossTree} glossTree
+ * @param {GlossTwig} glossTwig
  * @param {number} level
- * @returns {*}
+ * @returns {import('types').TermBank.StructuredContent[]}
  */
-function handleLevel(glossTree, level) {
+function handleLevel(glossTwig, level) {
+    /** @type {import('types').TermBank.StructuredContent[]} */
     const nestDefs = [];
     let defIndex = 0;
 
-    for (const [def, children] of glossTree) {
+    for (const [def, children] of glossTwig) {
         defIndex += 1;
 
         if(children.size > 0) {
@@ -70,6 +71,7 @@ function handleLevel(glossTree, level) {
             const childDefs = handleLevel(children, nextLevel);
 
             const listType = level === 1 ? "li" : "number";
+            /** @type {import('types').TermBank.StructuredContent} */
             const content = level === 1 ? def : [{ "tag": "span", "data": { "listType": "number" }, "content": `${defIndex}. ` }, def];
 
             nestDefs.push([
@@ -85,11 +87,11 @@ function handleLevel(glossTree, level) {
 }
 
 /**
- * @param {GlossTree} glossTree
+ * @param {GlossTwig} glossTwig
  * @param {SenseInfo} sense
  */
-function handleNest(glossTree, sense) {
-    const nestedGloss = handleLevel(glossTree, 1);
+function handleNest(glossTwig, sense) {
+    const nestedGloss = handleLevel(glossTwig, 1);
 
     if (nestedGloss.length > 0) {
         for (const entry of nestedGloss) {
@@ -227,18 +229,108 @@ function handleLine(parsedLine) {
         saveIpaResult(word, readings, pos, ipaObj);
     }
 
-    /** @type {GlossTree} */
+    const glossTree = getGlossTree(sensesWithoutInflectionGlosses);
+    
+    for (const [gloss, branches] of glossTree) {
+        const tags = branches.get('_tags') || [];
+        const examples = branches.get('_examples') || [];
+        branches.delete('_tags');
+        branches.delete('_examples');
+
+        /** @type {SenseInfo} */
+        const currSense = { glosses: [], tags, examples };
+        if(branches.size === 0) {
+            if(examples.length > 0) {
+                currSense.glosses.push({ 
+                    "type": "structured-content", 
+                    "content": [
+                        gloss,
+                        getStructuredExamples(examples)
+                    ]
+                });
+            } else {
+                currSense.glosses.push(gloss);
+            }
+            
+        } else {
+            /** @type {GlossBranch} */
+            const syntheticBranch = new Map();
+            syntheticBranch.set(gloss, branches);
+            handleNest(syntheticBranch, currSense);
+        }
+
+        if (currSense.glosses.length > 0) {
+            saveSenseResult(word, readings, pos, currSense);
+        }
+    }
+}
+
+/**
+ * @param {Example[]} examples 
+ * @returns {import('types').TermBank.StructuredContent[]}
+ */
+function getStructuredExamples(examples) {
+    return examples.map(({text, english}) => {
+        return {
+            "tag": "div",
+            "data": {
+                "content": "extra-info"
+            },
+            "content": {
+                "tag":"div",
+                "data": {
+                    "content": "example-sentence"
+                },
+                "content":[{
+                    "tag": "div",
+                    "data": {
+                        "content": "example-sentence-a",
+                    },
+                    "content": text
+                },
+                {
+                    "tag": "div",
+                    "data": {
+                        "content": "example-sentence-b"
+                    },
+                    "content": english
+                }
+            ]}
+        }
+    });
+}
+
+/**
+ * @param {TidySense[]} sensesWithoutInflectionGlosses 
+ * @returns {GlossTree}
+ */
+function getGlossTree(sensesWithoutInflectionGlosses) {
     const glossTree = new Map();
     for (const sense of sensesWithoutInflectionGlosses) {
         const { glossesArray, tags } = sense;
+        let { examples = [] } = sense;
+        
+        examples = examples
+            .filter(({text, english}) => text && (text.length <= 70 || text.length <= 90 && !english))  // Filter out verbose examples
+            .map((example, index) => ({ ...example, originalIndex: index }))  // Step 1: Decorate with original index
+            .sort(({ english: englishA, originalIndex: indexA }, { english: englishB, originalIndex: indexB }) => {
+                if (englishA && !englishB) return -1;   // English items first
+                if (!englishA && englishB) return 1;    // Non-English items last
+                return indexA - indexB;                 // Step 2: Stable sort by original index if equal
+            })
+            .map(({text, english}) => ({text, english}))  // Step 3: Pick only properties that will be used
+            .slice(0, 2);
+
+
         let temp = glossTree;
         for (const [levelIndex, levelGloss] of glossesArray.entries()) {
             let curr = temp.get(levelGloss);
-            if(!curr) {
+            if (!curr) {
                 curr = new Map();
                 temp.set(levelGloss, curr);
-                if(levelIndex === 0) {
+                if (levelIndex === 0) {
                     curr.set('_tags', tags);
+                    curr.set('_examples', examples);
                 }
             } else if (levelIndex === 0) {
                 curr.set('_tags', tags.filter(value => curr?.get('_tags')?.includes(value)));
@@ -246,26 +338,7 @@ function handleLine(parsedLine) {
             temp = curr;
         }
     }
-    
-    for (const [gloss, children] of glossTree) {
-        const tags = children.get('_tags') || [];
-        children.delete('_tags');   
-
-        /** @type {SenseInfo} */
-        const currSense = { glosses: [], tags };
-        if(children.size === 0) {
-            currSense.glosses.push(gloss);
-        } else {
-            /** @type {GlossTree} */
-            const branch = new Map();
-            branch.set(gloss, children);
-            handleNest(branch, currSense);
-        }
-
-        if (currSense.glosses.length > 0) {
-            saveSenseResult(word, readings, pos, currSense);
-        }
-    }
+    return glossTree;
 }
 
 /**

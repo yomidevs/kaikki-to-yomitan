@@ -1,4 +1,10 @@
+import * as TermBank from './node_modules/yomichan-dict-builder/src/types/yomitan/termbank';
+import * as TagBank from './node_modules/yomichan-dict-builder/src/types/yomitan/tagbank';
+import * as TermBankMeta from './node_modules/yomichan-dict-builder/src/types/yomitan/termbankmeta';
+
 declare global {
+    // 3-tidy-up.js types:
+
     type TidyEnv = {
         source_iso: string,
         target_iso: string,
@@ -32,6 +38,7 @@ declare global {
     }
 
     type KaikkiSense = {
+        examples?: Example[];
         glosses?: Glosses;
         raw_glosses?: Glosses;
         raw_gloss?: Glosses;
@@ -40,16 +47,29 @@ declare global {
         form_of?: FormOf[];
     }
 
+    type Example = {
+        text?: string;
+        type?: "example" | "quotation" | "quote";
+        english?: string;
+        roman?: string;
+    }
+
     type Glosses = string | string[];
     
     type FormOf = {
         word?: string;
     }
 
-    type GlossTree = Map<string, GlossTree> & {
+    type GlossTree = Map<string, GlossBranch> ;
+
+    type GlossBranch = Map<string, GlossTwig> & {
         get(key: '_tags'): string[] | undefined;
-        set(key: '_tags', value: string[]): GlossTree;
-    };
+        set(key: '_tags', value: string[]): GlossBranch;
+        get(key: '_examples'): Example[] | undefined;
+        set(key: '_examples', value: Example[]): GlossBranch;
+    } ;
+
+    type GlossTwig = Map<string, GlossTwig>;
       
     type TidySense = Omit<KaikkiSense, 'tags'> & {
         tags: string[];
@@ -75,23 +95,11 @@ declare global {
     }
 
     type SenseInfo = {
-        glosses: YomitanGloss[],
+        glosses: TermBank.DetailedDefinition[],
         tags: string[],
+        examples: Example[],
     }
-
-    type YomitanGloss = string | StructuredGloss
     
-    type StructuredGloss = {
-        type: "structured-content",
-        content: string | StructuredContent[],
-    }
-
-    type StructuredContent = {
-        tag: string,
-        data: string,
-        content: StructuredContent,
-    }
-
     type Lemma = string;
     type Form = string;
     type PoS = string;
@@ -101,6 +109,30 @@ declare global {
     type NestedObject = {
         [key: string]: NestedObject | any;
     }
+
+    // 4-make-yomitan.js types:
+    type MakeYomitanEnv = {
+        source_iso: string,
+        target_iso: string,
+        DEBUG_WORD?: string,
+        DICT_NAME: string,
+        tidy_folder: string,
+        temp_folder: string,
+    }
+
+    type CondensedFormEntries = [string, string, [string, string[]][]][];
+
+    type WhitelistedTag = [
+        shortTag: string,
+        category: string,
+        sortOrder: number,
+        longTag: string | string[], // if array, first element will be used, others are aliases
+        popularityScore: number,
+    ]
 }
 
-export {} // This is needed to make this file a module
+export {
+    TermBank,
+    TagBank,
+    TermBankMeta
+}

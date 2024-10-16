@@ -63,13 +63,6 @@
     0
   ],
   [
-    "cards",
-    "",
-    0,
-    "card games",
-    0
-  ],
-  [
     "arch",
     "archaism",
     4,
@@ -96,6 +89,13 @@
     1,
     "rare",
     -1
+  ],
+  [
+    "cards",
+    "",
+    0,
+    "card games",
+    0
   ],
   [
     "prep",

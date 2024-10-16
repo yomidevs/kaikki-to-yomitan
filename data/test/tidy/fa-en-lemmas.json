@@ -31,7 +31,8 @@
             ],
             "tags": [
               "Khorasan"
-            ]
+            ],
+            "examples": []
           }
         ]
       }
@@ -78,21 +79,104 @@
         "senses": [
           {
             "glosses": [
-              "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan)."
+              {
+                "type": "structured-content",
+                "content": [
+                  "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan).",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "بَرادَرِ شُوْهَرِش فارْسی بَلَدِه."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "Her husband's brother knows Persian."
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "بَرادَرِ شُوْهَرِش فارْسی بَلَدِه.",
+                "english": "Her husband's brother knows Persian."
+              }
+            ]
           },
           {
             "glosses": [
               "Persian (the language of Ancient Persia)."
             ],
-            "tags": []
+            "tags": [],
+            "examples": []
           },
           {
             "glosses": [
-              "Persian, main ethnic group of Iran."
+              {
+                "type": "structured-content",
+                "content": [
+                  "Persian, main ethnic group of Iran.",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "فارْسی هَسْتیم."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "We are Persian."
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "فارْسی هَسْتیم.",
+                "english": "We are Persian."
+              }
+            ]
           }
         ]
       }

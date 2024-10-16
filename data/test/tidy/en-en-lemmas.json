@@ -11,28 +11,145 @@
         "senses": [
           {
             "glosses": [
-              "(transitive, ditransitive) To transport toward somebody/somewhere."
+              {
+                "type": "structured-content",
+                "content": [
+                  "(transitive, ditransitive) To transport toward somebody/somewhere.",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "Waiter, please bring me a single malt whiskey."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "ditransitive",
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "Waiter, please bring me a single malt whiskey."
+              }
             ]
           },
           {
             "glosses": [
-              "(transitive, figuratively) To supply or contribute."
+              {
+                "type": "structured-content",
+                "content": [
+                  "(transitive, figuratively) To supply or contribute.",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "The new company director brought a fresh perspective on sales and marketing."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "figuratively",
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "The new company director brought a fresh perspective on sales and marketing."
+              }
             ]
           },
           {
             "glosses": [
-              "(transitive) To occasion or bring about."
+              {
+                "type": "structured-content",
+                "content": [
+                  "(transitive) To occasion or bring about.",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "The controversial TV broadcast brought a storm of complaints."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "The controversial TV broadcast brought a storm of complaints."
+              }
             ]
           },
           {
@@ -41,25 +158,105 @@
             ],
             "tags": [
               "transitive"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
               "To persuade; to induce; to draw; to lead; to guide."
             ],
-            "tags": []
+            "tags": [],
+            "examples": []
           },
           {
             "glosses": [
-              "To produce in exchange; to sell for; to fetch."
+              {
+                "type": "structured-content",
+                "content": [
+                  "To produce in exchange; to sell for; to fetch.",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "What does coal bring per ton?"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "What does coal bring per ton?"
+              }
+            ]
           },
           {
             "glosses": [
-              "(baseball) To pitch, often referring to a particularly hard thrown fastball."
+              {
+                "type": "structured-content",
+                "content": [
+                  "(baseball) To pitch, often referring to a particularly hard thrown fastball.",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "The closer Jones can really bring it."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "The closer Jones can really bring it."
+              }
+            ]
           }
         ]
       }
@@ -77,11 +274,50 @@
         "senses": [
           {
             "glosses": [
-              "(archaic or literary) A wagon; a four-wheeled cart for hauling loads, usually pulled by horses or oxen."
+              {
+                "type": "structured-content",
+                "content": [
+                  "(archaic or literary) A wagon; a four-wheeled cart for hauling loads, usually pulled by horses or oxen.",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "\"The Hay Wain\" is a famous painting by John Constable."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "archaic",
               "literary"
+            ],
+            "examples": [
+              {
+                "text": "\"The Hay Wain\" is a famous painting by John Constable."
+              }
             ]
           }
         ]

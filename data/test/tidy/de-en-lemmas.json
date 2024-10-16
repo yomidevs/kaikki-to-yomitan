@@ -112,6 +112,16 @@
               "class-4",
               "strong",
               "transitive"
+            ],
+            "examples": [
+              {
+                "text": "jemanden gesund pflegen",
+                "english": "to nurse someone back to health"
+              },
+              {
+                "text": "Kranke pflegen",
+                "english": "to care for the sick"
+              }
             ]
           },
           {
@@ -188,7 +198,8 @@
             "tags": [
               "class-4",
               "strong"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -251,6 +262,16 @@
             "tags": [
               "class-4",
               "strong"
+            ],
+            "examples": [
+              {
+                "text": "Umgang pflegen",
+                "english": "to regularly be in contact"
+              },
+              {
+                "text": "Geselligkeit pflegen",
+                "english": "to socialize regularly (literally, “to regularly engage in gregariousness”)"
+              }
             ]
           }
         ]
@@ -269,31 +290,154 @@
         "senses": [
           {
             "glosses": [
-              "fox (animal)"
+              {
+                "type": "structured-content",
+                "content": [
+                  "fox (animal)",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "Fuchs, du hast die Gans gestohlen. Gib sie wieder her!"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "(line from a popular children’s song)"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "masculine",
               "strong"
+            ],
+            "examples": [
+              {
+                "text": "Fuchs, du hast die Gans gestohlen. Gib sie wieder her!",
+                "english": "(line from a popular children’s song)"
+              }
             ]
           },
           {
             "glosses": [
-              "(informal) a clever or cunning person"
+              {
+                "type": "structured-content",
+                "content": [
+                  "(informal) a clever or cunning person",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "Er ist ein ganz schöner Fuchs."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "He is a really handsome fox."
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "informal",
               "masculine",
               "strong"
+            ],
+            "examples": [
+              {
+                "text": "Er ist ein ganz schöner Fuchs.",
+                "english": "He is a really handsome fox."
+              }
             ]
           },
           {
             "glosses": [
-              "(informal) a red-haired person or horse."
+              {
+                "type": "structured-content",
+                "content": [
+                  "(informal) a red-haired person or horse.",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "Unser Paul ist ja ein kleiner Fuchs."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "Our Paul is a little redhead."
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "informal",
               "masculine",
               "strong"
+            ],
+            "examples": [
+              {
+                "text": "Unser Paul ist ja ein kleiner Fuchs.",
+                "english": "Our Paul is a little redhead."
+              }
             ]
           },
           {
@@ -303,7 +447,8 @@
             "tags": [
               "masculine",
               "strong"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -313,15 +458,57 @@
               "masculine",
               "slang",
               "strong"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
-              "(card games) In Doppelkopf, the ace of diamonds, which earns a side of players an extra point if they win it from the other side"
+              {
+                "type": "structured-content",
+                "content": [
+                  "(card games) In Doppelkopf, the ace of diamonds, which earns a side of players an extra point if they win it from the other side",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "Ich hatte nur vier Trümpfe und darunter beide Füchse."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "I had only four trumps and among them were both aces of diamonds."
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
             "tags": [
               "masculine",
               "strong"
+            ],
+            "examples": [
+              {
+                "text": "Ich hatte nur vier Trümpfe und darunter beide Füchse.",
+                "english": "I had only four trumps and among them were both aces of diamonds."
+              }
             ]
           },
           {
@@ -331,7 +518,8 @@
             "tags": [
               "masculine",
               "strong"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -341,7 +529,8 @@
               "archaic",
               "masculine",
               "strong"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -350,7 +539,8 @@
             "tags": [
               "masculine",
               "strong"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -360,7 +550,8 @@
               "masculine",
               "obsolete",
               "strong"
-            ]
+            ],
+            "examples": []
           }
         ]
       }
@@ -392,7 +583,8 @@
               "also",
               "neuter",
               "rare"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -402,7 +594,8 @@
               "also",
               "neuter",
               "rare"
-            ]
+            ],
+            "examples": []
           },
           {
             "glosses": [
@@ -412,7 +605,8 @@
               "also",
               "neuter",
               "rare"
-            ]
+            ],
+            "examples": []
           }
         ]
       }
@@ -437,7 +631,8 @@
               "form-of",
               "masculine",
               "strong"
-            ]
+            ],
+            "examples": []
           }
         ]
       }
@@ -459,33 +654,334 @@
         "senses": [
           {
             "glosses": [
-              "from"
+              {
+                "type": "structured-content",
+                "content": [
+                  "from",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "Ich fahre von Köln nach Hamburg."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "I'm travelling from Cologne to Hamburg."
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "Ich hab’s von meiner Schwester gehört."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "I heard it from my sister."
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "Ich fahre von Köln nach Hamburg.",
+                "english": "I'm travelling from Cologne to Hamburg."
+              },
+              {
+                "text": "Ich hab’s von meiner Schwester gehört.",
+                "english": "I heard it from my sister."
+              }
+            ]
           },
           {
             "glosses": [
-              "of, belonging to (often replacing genitive; see usage note below)"
+              {
+                "type": "structured-content",
+                "content": [
+                  "of, belonging to (often replacing genitive; see usage note below)",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "das Auto meines Vaters = das Auto von meinem Vater"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "my father’s car / the car of my father"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "das Auto meines Vaters = das Auto von meinem Vater",
+                "english": "my father’s car / the car of my father"
+              }
+            ]
           },
           {
             "glosses": [
-              "by (with passive voice)"
+              {
+                "type": "structured-content",
+                "content": [
+                  "by (with passive voice)",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "Das Hotel wird von der Firma bezahlt."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "The hotel is paid for by the company."
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "Das Hotel wird von der Firma bezahlt.",
+                "english": "The hotel is paid for by the company."
+              }
+            ]
           },
           {
             "glosses": [
-              "about, of (a topic)"
+              {
+                "type": "structured-content",
+                "content": [
+                  "about, of (a topic)",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "Er hat von seiner Jugend erzählt."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "He told about his youth."
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "Von dem Nomine Substantivo, oder dem Hauptworte."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "About the substantive noun, or the [alternative term]. (headline)"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "Er hat von seiner Jugend erzählt.",
+                "english": "He told about his youth."
+              },
+              {
+                "text": "Von dem Nomine Substantivo, oder dem Hauptworte.",
+                "english": "About the substantive noun, or the [alternative term]. (headline)"
+              }
+            ]
           },
           {
             "glosses": [
-              "on, with (a resource)"
+              {
+                "type": "structured-content",
+                "content": [
+                  "on, with (a resource)",
+                  [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "Von welchem Geld soll ich als Arbeitsloser in Urlaub fahren?"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "Being unemployed, on what money should I go on holidays?"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "Man kann nicht nur von Luft und Liebe leben."
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "You can’t live on air and love alone. (proverb)"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                ]
+              }
             ],
-            "tags": []
+            "tags": [],
+            "examples": [
+              {
+                "text": "Von welchem Geld soll ich als Arbeitsloser in Urlaub fahren?",
+                "english": "Being unemployed, on what money should I go on holidays?"
+              },
+              {
+                "text": "Man kann nicht nur von Luft und Liebe leben.",
+                "english": "You can’t live on air and love alone. (proverb)"
+              }
+            ]
           }
         ]
       }

@@ -18,7 +18,70 @@
     "adj",
     0,
     [
-      "liked, favorite"
+      {
+        "type": "structured-content",
+        "content": [
+          "liked, favorite",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "好きな食べ物は？ アイスクリームです。"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "What's your favorite food? - It's ice cream."
+                  }
+                ]
+              }
+            },
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "君が好きだからこそこれほど頑張っているんだよ。"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "It's precisely because I like you [because of my fondness for you] that I'm working this hard."
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      }
     ],
     0,
     ""
@@ -30,7 +93,42 @@
     "n",
     0,
     [
-      "a raccoon dog, Nyctereutes procyonoides"
+      {
+        "type": "structured-content",
+        "content": [
+          "a raccoon dog, Nyctereutes procyonoides",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "アライグマなら尻尾にシマがある。どう見でもタヌキだ。"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "If you're a raccoon, you'd have stripes on your tail. No matter how you look at it, you're a raccoon dog."
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      }
     ],
     0,
     ""
@@ -42,7 +140,42 @@
     "n",
     0,
     [
-      "a person who pretends to be good but in fact is cunning (compare English sly fox)"
+      {
+        "type": "structured-content",
+        "content": [
+          "(figurative) a person who pretends to be good but in fact is cunning (compare English sly fox)",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "やいやい、其処な狸め"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "Hey there, you sly dog!"
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      }
     ],
     0,
     ""
@@ -66,7 +199,41 @@
     "n",
     0,
     [
-      "Short for 狸寝入り (tanuki neiri): pretending to be asleep"
+      {
+        "type": "structured-content",
+        "content": [
+          "(rare) Short for 狸寝入り (tanuki neiri): pretending to be asleep",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "狸を決め込む ― tanuki o kimekomu ― pretend to be a raccoon dog → feign sleep"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      }
     ],
     0,
     ""
@@ -145,13 +312,208 @@
           }
         ]
       },
-      "to move smoothly; to slide",
+      {
+        "type": "structured-content",
+        "content": [
+          "to move smoothly; to slide",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "刀が鞘から走る。"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "The sword slides out of its sheath."
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      },
       "to run away, escape",
       "to rush, hurry around",
-      "to give over oneself to; to commit oneself to (usually something bad)",
+      {
+        "type": "structured-content",
+        "content": [
+          "to give over oneself to; to commit oneself to (usually something bad)",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "彼は敵に走った。"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "He defected to the enemy."
+                  }
+                ]
+              }
+            },
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "立場を忘れて感情に走ってはいけない。"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "Don't forget your stance and give in to emotions."
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      },
       "to spread out, scatter, splatter, spout",
-      "to lead or extend in a certain direction",
-      "to appear briefly; to flash",
+      {
+        "type": "structured-content",
+        "content": [
+          "to lead or extend in a certain direction",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "山脈が南北に走る。\nSanmyaku ga nanboku ni hashiru.\nThe mountain range runs north–south."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          "to appear briefly; to flash",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "稲妻が走る"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "lightning flashes by"
+                  }
+                ]
+              }
+            },
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "背中に痛みが走った。"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "I felt a brief pain in my back."
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      },
       "(used with 胸(むね)が (mune ga)) to feel palpitations; to have a sense of unease"
     ],
     0,
@@ -164,7 +526,42 @@
     "v",
     0,
     [
-      "to run through some kind of place"
+      {
+        "type": "structured-content",
+        "content": [
+          "(transitive) to run through some kind of place",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "彼はこの道をよく走る。"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "He often runs down this street."
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      }
     ],
     0,
     ""

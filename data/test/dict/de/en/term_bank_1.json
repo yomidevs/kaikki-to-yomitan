@@ -235,8 +235,79 @@
     "n",
     0,
     [
-      "fox (animal)",
+      {
+        "type": "structured-content",
+        "content": [
+          "fox (animal)",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Fuchs, du hast die Gans gestohlen. Gib sie wieder her!"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "(line from a popular children’s song)"
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      },
       "pledge (prospective member of a fraternity)",
+      {
+        "type": "structured-content",
+        "content": [
+          "(card games) In Doppelkopf, the ace of diamonds, which earns a side of players an extra point if they win it from the other side",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Ich hatte nur vier Trümpfe und darunter beide Füchse."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "I had only four trumps and among them were both aces of diamonds."
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      },
       "a fox in radiosport foxhunt"
     ],
     0,
@@ -249,8 +320,78 @@
     "n",
     0,
     [
-      "a clever or cunning person",
-      "a red-haired person or horse."
+      {
+        "type": "structured-content",
+        "content": [
+          "(informal) a clever or cunning person",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Er ist ein ganz schöner Fuchs."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "He is a really handsome fox."
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          "(informal) a red-haired person or horse.",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Unser Paul ist ja ein kleiner Fuchs."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "Our Paul is a little redhead."
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      }
     ],
     0,
     ""
@@ -263,18 +404,6 @@
     0,
     [
       "A new recruit."
-    ],
-    0,
-    ""
-  ],
-  [
-    "Fuchs",
-    "",
-    "n masc strong cards",
-    "n",
-    0,
-    [
-      "In Doppelkopf, the ace of diamonds, which earns a side of players an extra point if they win it from the other side"
     ],
     0,
     ""
@@ -359,11 +488,270 @@
     "prep",
     0,
     [
-      "from",
-      "of, belonging to (often replacing genitive; see usage note below)",
-      "by (with passive voice)",
-      "about, of (a topic)",
-      "on, with (a resource)"
+      {
+        "type": "structured-content",
+        "content": [
+          "from",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Ich fahre von Köln nach Hamburg."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "I'm travelling from Cologne to Hamburg."
+                  }
+                ]
+              }
+            },
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Ich hab’s von meiner Schwester gehört."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "I heard it from my sister."
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          "of, belonging to (often replacing genitive; see usage note below)",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "das Auto meines Vaters = das Auto von meinem Vater"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "my father’s car / the car of my father"
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          "by (with passive voice)",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Das Hotel wird von der Firma bezahlt."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "The hotel is paid for by the company."
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          "about, of (a topic)",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Er hat von seiner Jugend erzählt."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "He told about his youth."
+                  }
+                ]
+              }
+            },
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Von dem Nomine Substantivo, oder dem Hauptworte."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "About the substantive noun, or the [alternative term]. (headline)"
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          "on, with (a resource)",
+          [
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Von welchem Geld soll ich als Arbeitsloser in Urlaub fahren?"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "Being unemployed, on what money should I go on holidays?"
+                  }
+                ]
+              }
+            },
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Man kann nicht nur von Luft und Liebe leben."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "You can’t live on air and love alone. (proverb)"
+                  }
+                ]
+              }
+            }
+          ]
+        ]
+      }
     ],
     0,
     ""

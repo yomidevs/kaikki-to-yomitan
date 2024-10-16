@@ -7,11 +7,7 @@
         "strictNullChecks": true,
         "noImplicitAny": true,
         "strictPropertyInitialization": true,
-        "suppressImplicitAnyIndexErrors": false
-    },
-    "paths": {
-        "*": ["./types/*"],
-        "ext/json-schema": ["./types/ext/json-schema"]
+        "suppressImplicitAnyIndexErrors": false,
     },
     "exclude": [
         "node_modules", 

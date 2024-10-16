@@ -15,7 +15,8 @@
             ],
             "tags": [
               "masculine"
-            ]
+            ],
+            "examples": []
           }
         ]
       }
@@ -140,6 +141,16 @@
             ],
             "tags": [
               "feminine"
+            ],
+            "examples": [
+              {
+                "text": "Mbaje gjuhën!",
+                "english": "Hold your tongue!"
+              },
+              {
+                "text": "E ka gjuhën të gjatë.",
+                "english": "(literally, “She has a long tongue.”)"
+              }
             ]
           },
           {
@@ -234,6 +245,16 @@
             ],
             "tags": [
               "feminine"
+            ],
+            "examples": [
+              {
+                "text": "gjuha e fëmijëve",
+                "english": "children speech"
+              },
+              {
+                "text": "gjuhë e trashë",
+                "english": "foul language"
+              }
             ]
           }
         ]

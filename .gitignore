@@ -17,6 +17,7 @@
 
 *.zip
 data/**/*.css
+!data/styles.css
 
 *.txt
 !instructions.txt
