@@ -3,12 +3,13 @@ name: Create a new release
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+  
 jobs:
   prepare:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
     outputs:
       tag: ${{ steps.tag.outputs.tag }}
       edition_languages: ${{ steps.load-languages.outputs.edition_languages }}
