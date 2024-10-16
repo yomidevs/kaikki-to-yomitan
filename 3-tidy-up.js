@@ -309,9 +309,18 @@ function getGlossTree(sensesWithoutInflectionGlosses) {
     for (const sense of sensesWithoutInflectionGlosses) {
         const { glossesArray, tags } = sense;
         let { examples = [] } = sense;
+        
         examples = examples
-            .filter(({type}) => !["quotation", "quote"].includes(type || ''))
-            .map(({text, english}) => ({text, english}))
+            .filter(({text, english}) => text && (text.length <= 70 || text.length <= 90 && !english))  // Filter out verbose examples
+            .map((example, index) => ({ ...example, originalIndex: index }))  // Step 1: Decorate with original index
+            .sort(({ english: englishA, originalIndex: indexA }, { english: englishB, originalIndex: indexB }) => {
+                if (englishA && !englishB) return -1;   // English items first
+                if (!englishA && englishB) return 1;    // Non-English items last
+                return indexA - indexB;                 // Step 2: Stable sort by original index if equal
+            })
+            .map(({text, english}) => ({text, english}))  // Step 3: Pick only properties that will be used
+            .slice(0, 2);
+
 
         let temp = glossTree;
         for (const [levelIndex, levelGloss] of glossesArray.entries()) {

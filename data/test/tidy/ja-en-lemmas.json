@@ -100,61 +100,6 @@
                           }
                         ]
                       }
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "好きです。\nSuki desu.\n“I like you.” → idiomatically used to express: “I love you.”"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            }
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "どうとも好きにしなさい。"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "Feel free to do as you like."
-                          }
-                        ]
-                      }
                     }
                   ]
                 ]
@@ -169,13 +114,6 @@
               {
                 "text": "君が好きだからこそこれほど頑張っているんだよ。",
                 "english": "It's precisely because I like you [because of my fondness for you] that I'm working this hard."
-              },
-              {
-                "text": "好きです。\nSuki desu.\n“I like you.” → idiomatically used to express: “I love you.”"
-              },
-              {
-                "text": "どうとも好きにしなさい。",
-                "english": "Feel free to do as you like."
               }
             ]
           }

@@ -11,110 +11,12 @@
         "senses": [
           {
             "glosses": [
-              {
-                "type": "structured-content",
-                "content": [
-                  "Dans la religion hindouiste, chacune des incarnations du dieu Vishnou.",
-                  [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "Chenguza est beau comme le grand Avatar, (descendant de Bram) et quoique élevé pour le sacerdoce dans les austérités du cloître, il a l'imagination vive, le désir de s'instruire, et un penchant décidé pour la volupté."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            }
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "Retiré dans les forêts, placé à la tête de nombreux pasteurs , qui ont dû se plaire à grossir sa renommée, et dont les bras l'ont aidé à renverser le tyran, Crichna évidemment dut sortir des Djangles, où il s'était tenu jusque-là dans le mystère , comme un homme environné d'une sorte d'auréole merveilleuse, qui le fit considérer de bonne heure comme un Avatar (incarnation) de la Divinité, caractère religieux et providentiel que l'Inde a toujours accordé à ses grands hommes"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            }
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "Plusieurs passages des Pouranas peuvent aussi servir à prouver que les eaux ont fait éprouver au globe terrestre une grande révolution , et la plupart des avatars ou métamorphoses et incarnations de Vichenou, paraissent avoir trait à ce cataclysme général."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            }
-                          }
-                        ]
-                      }
-                    }
-                  ]
-                ]
-              }
+              "Dans la religion hindouiste, chacune des incarnations du dieu Vishnou."
             ],
             "tags": [
               "Hindouisme"
             ],
-            "examples": [
-              {
-                "text": "Chenguza est beau comme le grand Avatar, (descendant de Bram) et quoique élevé pour le sacerdoce dans les austérités du cloître, il a l'imagination vive, le désir de s'instruire, et un penchant décidé pour la volupté."
-              },
-              {
-                "text": "Retiré dans les forêts, placé à la tête de nombreux pasteurs , qui ont dû se plaire à grossir sa renommée, et dont les bras l'ont aidé à renverser le tyran, Crichna évidemment dut sortir des Djangles, où il s'était tenu jusque-là dans le mystère , comme un homme environné d'une sorte d'auréole merveilleuse, qui le fit considérer de bonne heure comme un Avatar (incarnation) de la Divinité, caractère religieux et providentiel que l'Inde a toujours accordé à ses grands hommes"
-              },
-              {
-                "text": "Plusieurs passages des Pouranas peuvent aussi servir à prouver que les eaux ont fait éprouver au globe terrestre une grande révolution , et la plupart des avatars ou métamorphoses et incarnations de Vichenou, paraissent avoir trait à ce cataclysme général."
-              }
-            ]
+            "examples": []
           },
           {
             "glosses": [
@@ -176,60 +78,6 @@
                           }
                         ]
                       }
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "L’espéranto est l’avatar moderne du sanskrit."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            }
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "Plusieurs passages des Pouranas peuvent aussi servir à prouver que les eaux ont fait éprouver au globe terrestre une grande révolution , et la plupart des avatars ou métamorphoses et incarnations de Vichenou, paraissent avoir trait à ce cataclysme général."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            }
-                          }
-                        ]
-                      }
                     }
                   ]
                 ]
@@ -244,12 +92,6 @@
               },
               {
                 "text": "Batman est l’avatar moderne de Zorro."
-              },
-              {
-                "text": "L’espéranto est l’avatar moderne du sanskrit."
-              },
-              {
-                "text": "Plusieurs passages des Pouranas peuvent aussi servir à prouver que les eaux ont fait éprouver au globe terrestre une grande révolution , et la plupart des avatars ou métamorphoses et incarnations de Vichenou, paraissent avoir trait à ce cataclysme général."
               }
             ]
           },
@@ -276,88 +118,7 @@
                             "data": {
                               "content": "example-sentence-a"
                             },
-                            "content": "Mais la guerre n’en finissait plus et c’est alors que je devins, après bien des démarches, de boulanger, élève-pilote et par la suite pilote aviateur, à ma très grande surprise et sans trop d’avatars."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            }
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "N'avions-nous pas aidé à la constituer, en courant bien des risques et au prix de quelles avatars ! Alors, lui mort, il ne savait plus qu'en faire…."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            }
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
                             "content": "Le service social du travail – Avatars d’une fonction, vicissitudes d’un métier"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            }
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "Compte tenu des divers avatars rencontrés ces dernières années (rouille du mélèze, puceron lanigère, tempêtes…), il n'est plus possible de s’intéresser à la seule productivité, […]."
                           },
                           {
                             "tag": "div",
@@ -378,16 +139,7 @@
             ],
             "examples": [
               {
-                "text": "Mais la guerre n’en finissait plus et c’est alors que je devins, après bien des démarches, de boulanger, élève-pilote et par la suite pilote aviateur, à ma très grande surprise et sans trop d’avatars."
-              },
-              {
-                "text": "N'avions-nous pas aidé à la constituer, en courant bien des risques et au prix de quelles avatars ! Alors, lui mort, il ne savait plus qu'en faire…."
-              },
-              {
                 "text": "Le service social du travail – Avatars d’une fonction, vicissitudes d’un métier"
-              },
-              {
-                "text": "Compte tenu des divers avatars rencontrés ces dernières années (rouille du mélèze, puceron lanigère, tempêtes…), il n'est plus possible de s’intéresser à la seule productivité, […]."
               }
             ]
           }

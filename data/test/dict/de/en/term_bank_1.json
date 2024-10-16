@@ -656,6 +656,34 @@
                   }
                 ]
               }
+            },
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Von dem Nomine Substantivo, oder dem Hauptworte."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "About the substantive noun, or the [alternative term]. (headline)"
+                  }
+                ]
+              }
             }
           ]
         ]
