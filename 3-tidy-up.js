@@ -305,6 +305,7 @@ function getStructuredExamples(examples) {
  * @returns {GlossTree}
  */
 function getGlossTree(sensesWithoutInflectionGlosses) {
+    /** @type {GlossTree} */
     const glossTree = new Map();
     for (const sense of sensesWithoutInflectionGlosses) {
         const { glossesArray, tags } = sense;
@@ -321,7 +322,7 @@ function getGlossTree(sensesWithoutInflectionGlosses) {
             .map(({text, english}) => ({text, english}))  // Step 3: Pick only properties that will be used
             .slice(0, 2);
 
-
+        /** @type {GlossTwig} */
         let temp = glossTree;
         for (const [levelIndex, levelGloss] of glossesArray.entries()) {
             let curr = temp.get(levelGloss);
@@ -329,11 +330,11 @@ function getGlossTree(sensesWithoutInflectionGlosses) {
                 curr = new Map();
                 temp.set(levelGloss, curr);
                 if (levelIndex === 0) {
-                    curr.set('_tags', tags);
-                    curr.set('_examples', examples);
+                    (/** @type {GlossBranch}*/(curr)).set('_tags', tags);
+                    (/** @type {GlossBranch}*/(curr)).set('_examples', examples);
                 }
             } else if (levelIndex === 0) {
-                curr.set('_tags', tags.filter(value => curr?.get('_tags')?.includes(value)));
+                (/** @type {GlossBranch}*/(curr)).set('_tags', tags.filter(value => (/** @type {GlossBranch}*/(curr))?.get('_tags')?.includes(value)));
             }
             temp = curr;
         }

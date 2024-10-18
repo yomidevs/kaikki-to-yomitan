@@ -184,7 +184,7 @@ let lastTermBankIndex = 0;
 
                 for (const sense of senses) {
 
-                    const {glosses, tags, examples} = sense;
+                    const {glosses, tags} = sense;
                     const senseTags = [...lemmaTags, ...tags]
 
                     glosses.forEach((gloss) => {
