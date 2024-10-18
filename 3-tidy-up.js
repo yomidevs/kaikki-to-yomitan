@@ -329,12 +329,14 @@ function getGlossTree(sensesWithoutInflectionGlosses) {
             if (!curr) {
                 curr = new Map();
                 temp.set(levelGloss, curr);
-                if (levelIndex === 0) {
-                    (/** @type {GlossBranch}*/(curr)).set('_tags', tags);
-                    (/** @type {GlossBranch}*/(curr)).set('_examples', examples);
+            }
+            if (levelIndex === 0) {
+                const branch = /** @type {GlossBranch} */ (curr);
+                const filteredTags = curr.get('_tags') ? tags.filter(value => branch.get('_tags')?.includes(value)) : tags;
+                branch.set('_tags', filteredTags);
+                if (!branch.get('_examples')) {
+                    branch.set('_examples', examples);
                 }
-            } else if (levelIndex === 0) {
-                (/** @type {GlossBranch}*/(curr)).set('_tags', tags.filter(value => (/** @type {GlossBranch}*/(curr))?.get('_tags')?.includes(value)));
             }
             temp = curr;
         }
