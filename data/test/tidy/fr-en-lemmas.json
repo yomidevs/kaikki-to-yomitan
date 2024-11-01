@@ -198,19 +198,6 @@
                     ]
                   ],
                   [
-                    "_examples",
-                    [
-                      {
-                        "text": "Qu’est-ce qui t’a pris ? Qu’est-ce qui t’est passé par la tête ?",
-                        "english": "What were you thinking? What got into you? What came over you?"
-                      },
-                      {
-                        "text": "Qu’est-ce qui lui a pris ? Quelle mouche l’a piqué ?",
-                        "english": "What was he thinking? What got into him?"
-                      }
-                    ]
-                  ],
-                  [
                     "(transitive, in various idiomatic expressions) to start having a negative feeling towards someone",
                     {
                       "_type": "map",
@@ -419,10 +406,6 @@
                     [
                       "feminine"
                     ]
-                  ],
-                  [
-                    "_examples",
-                    []
                   ],
                   [
                     "a room.",

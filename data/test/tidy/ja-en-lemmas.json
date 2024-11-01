@@ -229,15 +229,6 @@
                     []
                   ],
                   [
-                    "_examples",
-                    [
-                      {
-                        "text": "車が走っている。",
-                        "english": "A car is running. / Cars are running."
-                      }
-                    ]
-                  ],
-                  [
                     "to move forward; (of a machine) to operate, function; (of objects) to move at a high speed (of a vehicle)",
                     {
                       "_type": "map",
@@ -270,6 +261,15 @@
                         ]
                       ]
                     }
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "マラソン選手が走り出した。",
+                        "english": "Marathon athlete(s) started running."
+                      }
+                    ]
                   ]
                 ]
               }

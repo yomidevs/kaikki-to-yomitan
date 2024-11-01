@@ -224,63 +224,7 @@
         "content": {
           "tag": "div",
           "content": [
-            "(transitive with à) ",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
-                "tag": "div",
-                "data": {
-                  "content": "example-sentence"
-                },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Qu’est-ce qui t’a pris ? Qu’est-ce qui t’est passé par la tête ?"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
-                    },
-                    "content": "What were you thinking? What got into you? What came over you?"
-                  }
-                ]
-              }
-            },
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
-                "tag": "div",
-                "data": {
-                  "content": "example-sentence"
-                },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Qu’est-ce qui lui a pris ? Quelle mouche l’a piqué ?"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
-                    },
-                    "content": "What was he thinking? What got into him?"
-                  }
-                ]
-              }
-            }
+            "(transitive with à) "
           ]
         }
       },

@@ -37,19 +37,6 @@
                     ]
                   ],
                   [
-                    "_examples",
-                    [
-                      {
-                        "text": "jemanden gesund pflegen",
-                        "english": "to nurse someone back to health"
-                      },
-                      {
-                        "text": "Kranke pflegen",
-                        "english": "to care for the sick"
-                      }
-                    ]
-                  ],
-                  [
                     "(transitive, medicine) to nurse; to care for someone in poor health",
                     {
                       "_type": "map",
@@ -177,19 +164,6 @@
                     [
                       "class-4",
                       "strong"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "Umgang pflegen",
-                        "english": "to regularly be in contact"
-                      },
-                      {
-                        "text": "Geselligkeit pflegen",
-                        "english": "to socialize regularly (literally, “to regularly engage in gregariousness”)"
-                      }
                     ]
                   ],
                   [

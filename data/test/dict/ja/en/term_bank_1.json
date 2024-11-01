@@ -307,14 +307,14 @@
                     "data": {
                       "content": "example-sentence-a"
                     },
-                    "content": "車が走っている。"
+                    "content": "マラソン選手が走り出した。"
                   },
                   {
                     "tag": "div",
                     "data": {
                       "content": "example-sentence-b"
                     },
-                    "content": "A car is running. / Cars are running."
+                    "content": "Marathon athlete(s) started running."
                   }
                 ]
               }

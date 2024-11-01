@@ -91,19 +91,6 @@
                     ]
                   ],
                   [
-                    "_examples",
-                    [
-                      {
-                        "text": "Mbaje gjuhën!",
-                        "english": "Hold your tongue!"
-                      },
-                      {
-                        "text": "E ka gjuhën të gjatë.",
-                        "english": "(literally, “She has a long tongue.”)"
-                      }
-                    ]
-                  ],
-                  [
                     "(figurative) speech, talking",
                     {
                       "_type": "map",
@@ -147,6 +134,19 @@
                         ]
                       ]
                     }
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "gjuhë lope e zier",
+                        "english": "boiled beef tongue"
+                      },
+                      {
+                        "text": "Dogji gjuhën.",
+                        "english": "I burned my tongue."
+                      }
+                    ]
                   ]
                 ]
               }
@@ -160,19 +160,6 @@
                     "_tags",
                     [
                       "feminine"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "gjuha e fëmijëve",
-                        "english": "children speech"
-                      },
-                      {
-                        "text": "gjuhë e trashë",
-                        "english": "foul language"
-                      }
                     ]
                   ],
                   [
@@ -240,6 +227,15 @@
                         ]
                       ]
                     }
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "gjuha shqipe",
+                        "english": "the Albanian language"
+                      }
+                    ]
                   ]
                 ]
               }

@@ -225,7 +225,7 @@ function getGlossTree(sensesWithoutInflectionGlosses) {
                 const filteredTags = curr.get('_tags') ? tags.filter(value => branch.get('_tags')?.includes(value)) : tags;
                 branch.set('_tags', filteredTags);   
             }
-            if (!curr.get('_examples')) {
+            if(levelIndex === glossesArray.length - 1) {
                 curr.set('_examples', examples);
             }
             temp = curr;

@@ -11,63 +11,7 @@
         "content": {
           "tag": "div",
           "content": [
-            "Providing care or service for someone/something. [weak verb]",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
-                "tag": "div",
-                "data": {
-                  "content": "example-sentence"
-                },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "jemanden gesund pflegen"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
-                    },
-                    "content": "to nurse someone back to health"
-                  }
-                ]
-              }
-            },
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
-                "tag": "div",
-                "data": {
-                  "content": "example-sentence"
-                },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Kranke pflegen"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
-                    },
-                    "content": "to care for the sick"
-                  }
-                ]
-              }
-            }
+            "Providing care or service for someone/something. [weak verb]"
           ]
         }
       },
@@ -376,63 +320,7 @@
         "content": {
           "tag": "div",
           "content": [
-            "Expressing habituality. [weak or strong verb]",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
-                "tag": "div",
-                "data": {
-                  "content": "example-sentence"
-                },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Umgang pflegen"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
-                    },
-                    "content": "to regularly be in contact"
-                  }
-                ]
-              }
-            },
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
-                "tag": "div",
-                "data": {
-                  "content": "example-sentence"
-                },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Geselligkeit pflegen"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
-                    },
-                    "content": "to socialize regularly (literally, “to regularly engage in gregariousness”)"
-                  }
-                ]
-              }
-            }
+            "Expressing habituality. [weak or strong verb]"
           ]
         }
       },

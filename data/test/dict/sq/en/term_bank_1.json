@@ -48,14 +48,14 @@
                     "data": {
                       "content": "example-sentence-a"
                     },
-                    "content": "Mbaje gjuhën!"
+                    "content": "gjuhë lope e zier"
                   },
                   {
                     "tag": "div",
                     "data": {
                       "content": "example-sentence-b"
                     },
-                    "content": "Hold your tongue!"
+                    "content": "boiled beef tongue"
                   }
                 ]
               }
@@ -76,14 +76,14 @@
                     "data": {
                       "content": "example-sentence-a"
                     },
-                    "content": "E ka gjuhën të gjatë."
+                    "content": "Dogji gjuhën."
                   },
                   {
                     "tag": "div",
                     "data": {
                       "content": "example-sentence-b"
                     },
-                    "content": "(literally, “She has a long tongue.”)"
+                    "content": "I burned my tongue."
                   }
                 ]
               }
@@ -195,42 +195,14 @@
                     "data": {
                       "content": "example-sentence-a"
                     },
-                    "content": "gjuha e fëmijëve"
+                    "content": "gjuha shqipe"
                   },
                   {
                     "tag": "div",
                     "data": {
                       "content": "example-sentence-b"
                     },
-                    "content": "children speech"
-                  }
-                ]
-              }
-            },
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
-                "tag": "div",
-                "data": {
-                  "content": "example-sentence"
-                },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "gjuhë e trashë"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
-                    },
-                    "content": "foul language"
+                    "content": "the Albanian language"
                   }
                 ]
               }
