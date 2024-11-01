@@ -8,133 +8,137 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "message",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "message",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "textová zpráva"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "textová zpráva"
                     },
-                    "content": "text message"
-                  }
-                ]
-              }
-            },
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "text message"
+                    }
+                  ]
+                }
               },
-              "content": {
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Chcete nechat zprávu?"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Chcete nechat zprávu?"
                     },
-                    "content": "Would you like to leave a message?"
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "Would you like to leave a message?"
+                    }
+                  ]
+                }
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "report",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "report",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "lékařská zpráva"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "lékařská zpráva"
                     },
-                    "content": "medical report"
-                  }
-                ]
-              }
-            },
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "medical report"
+                    }
+                  ]
+                }
               },
-              "content": {
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "podat zprávu"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "podat zprávu"
                     },
-                    "content": "to file a report"
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "to file a report"
+                    }
+                  ]
+                }
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -149,40 +153,42 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "for",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "for",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Zabili ho pro peníze."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Zabili ho pro peníze."
                     },
-                    "content": "They killed him for his money."
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "They killed him for his money."
+                    }
+                  ]
+                }
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -197,12 +203,14 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "(reflexive with se) to dispute"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "(reflexive with se) to dispute"
+            ]
+          }
+        ]
       }
     ],
     0,

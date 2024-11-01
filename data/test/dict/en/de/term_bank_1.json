@@ -8,12 +8,14 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "[1] aussuchen, auswählen, vorziehen, wählen"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "[1] aussuchen, auswählen, vorziehen, wählen"
+            ]
+          }
+        ]
       }
     ],
     0,

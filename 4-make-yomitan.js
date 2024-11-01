@@ -202,9 +202,7 @@ function handleNest(glossTwig, senseTags, pos) {
     const {nestDefs: nestedGloss, recognizedTags} = handleLevel(glossTwig, senseTags, pos, 0);
 
     if (nestedGloss.length > 0) {
-        for (const entry of nestedGloss) {
-            glosses.push({ "type": "structured-content", "content": entry });
-        }
+        glosses.push({ "type": "structured-content", "content": nestedGloss });
     }
 
     return {glosses, recognizedTags};

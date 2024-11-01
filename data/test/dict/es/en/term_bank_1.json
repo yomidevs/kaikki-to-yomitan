@@ -8,114 +8,120 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to live; to be alive"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to live; to be alive"
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to make a living, to live on",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to make a living, to live on",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Vive de migas, nada más."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Vive de migas, nada más."
                     },
-                    "content": "He lives on crumbs, nothing more."
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "He lives on crumbs, nothing more."
+                    }
+                  ]
+                }
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to live in, reside, inhabit",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to live in, reside, inhabit",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Vive en la casa roja."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Vive en la casa roja."
                     },
-                    "content": "She lives in the red house."
-                  }
-                ]
-              }
-            },
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "She lives in the red house."
+                    }
+                  ]
+                }
               },
-              "content": {
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "La pobrecita vive con dos hermanas crueles."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "La pobrecita vive con dos hermanas crueles."
                     },
-                    "content": "The poor girl lives with two cruel sisters."
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "The poor girl lives with two cruel sisters."
+                    }
+                  ]
+                }
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -130,12 +136,14 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to experience, to live through"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to experience, to live through"
+            ]
+          }
+        ]
       }
     ],
     0,

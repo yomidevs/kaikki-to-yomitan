@@ -8,12 +8,14 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "Germany (a country in Europe)"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "Germany (a country in Europe)"
+            ]
+          }
+        ]
       }
     ],
     0,

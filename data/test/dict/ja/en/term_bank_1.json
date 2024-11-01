@@ -8,12 +8,14 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "pleasant, delightful, fun, enjoyable"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "pleasant, delightful, fun, enjoyable"
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -28,68 +30,70 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "liked, favorite",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "liked, favorite",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "好きな食べ物は？ アイスクリームです。"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "好きな食べ物は？ アイスクリームです。"
                     },
-                    "content": "What's your favorite food? - It's ice cream."
-                  }
-                ]
-              }
-            },
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "What's your favorite food? - It's ice cream."
+                    }
+                  ]
+                }
               },
-              "content": {
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "君が好きだからこそこれほど頑張っているんだよ。"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "君が好きだからこそこれほど頑張っているんだよ。"
                     },
-                    "content": "It's precisely because I like you [because of my fondness for you] that I'm working this hard."
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "It's precisely because I like you [because of my fondness for you] that I'm working this hard."
+                    }
+                  ]
+                }
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -104,40 +108,42 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "a raccoon dog, Nyctereutes procyonoides",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "a raccoon dog, Nyctereutes procyonoides",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "アライグマなら尻尾にシマがある。どう見でもタヌキだ。"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "アライグマなら尻尾にシマがある。どう見でもタヌキだ。"
                     },
-                    "content": "If you're a raccoon, you'd have stripes on your tail. No matter how you look at it, you're a raccoon dog."
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "If you're a raccoon, you'd have stripes on your tail. No matter how you look at it, you're a raccoon dog."
+                    }
+                  ]
+                }
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -152,40 +158,42 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "a person who pretends to be good but in fact is cunning (compare English sly fox)",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "a person who pretends to be good but in fact is cunning (compare English sly fox)",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "やいやい、其処な狸め"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "やいやい、其処な狸め"
                     },
-                    "content": "Hey there, you sly dog!"
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "Hey there, you sly dog!"
+                    }
+                  ]
+                }
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -200,12 +208,14 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "Short for 狸饂飩 (tanuki-udon) and 狸蕎麦 (tanuki-soba): styles of various noodle dishes"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "Short for 狸饂飩 (tanuki-udon) and 狸蕎麦 (tanuki-soba): styles of various noodle dishes"
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -220,39 +230,41 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "Short for 狸寝入り (tanuki neiri): pretending to be asleep",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "Short for 狸寝入り (tanuki neiri): pretending to be asleep",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "狸を決め込む ― tanuki o kimekomu ― pretend to be a raccoon dog → feign sleep"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "狸を決め込む ― tanuki o kimekomu ― pretend to be a raccoon dog → feign sleep"
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      }
                     }
-                  }
-                ]
+                  ]
+                }
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -267,12 +279,14 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "Short for 狸汁 (tanuki-jiru): a soup made from tanuki meat mixed with daikon, burdock root, etc."
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "Short for 狸汁 (tanuki-jiru): a soup made from tanuki meat mixed with daikon, burdock root, etc."
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -287,355 +301,370 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to run (move fast on foot)",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to run (move fast on foot)",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "マラソン選手が走り出した。"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
-                    },
-                    "content": "Marathon athlete(s) started running."
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      },
-      {
-        "type": "structured-content",
-        "content": {
-          "tag": "ul",
-          "content": [
-            {
-              "tag": "li",
-              "content": [
-                "to move forward; (of a machine) to operate, function; (of objects) to move at a high speed (of a vehicle)",
-                {
+                "content": {
                   "tag": "div",
                   "data": {
-                    "content": "extra-info"
+                    "content": "example-sentence"
                   },
-                  "content": {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence"
-                    },
-                    "content": [
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence-a"
-                        },
-                        "content": "車が走っている。"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
                       },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence-b"
-                        },
-                        "content": "A car is running. / Cars are running."
-                      }
-                    ]
-                  }
-                }
-              ]
-            },
-            {
-              "tag": "li",
-              "content": [
-                "to flow vigorously (of liquid)",
-                {
-                  "tag": "div",
-                  "data": {
-                    "content": "extra-info"
-                  },
-                  "content": {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence"
+                      "content": "マラソン選手が走り出した。"
                     },
-                    "content": [
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence-a"
-                        },
-                        "content": "石の上を水が走る。"
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
                       },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence-b"
-                        },
-                        "content": "The water runs over the stones."
-                      }
-                    ]
-                  }
+                      "content": "Marathon athlete(s) started running."
+                    }
+                  ]
                 }
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to move smoothly; to slide",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
-                "tag": "div",
-                "data": {
-                  "content": "example-sentence"
-                },
+              }
+            ]
+          },
+          {
+            "tag": "ul",
+            "content": [
+              {
+                "tag": "li",
                 "content": [
+                  "to move forward; (of a machine) to operate, function; (of objects) to move at a high speed (of a vehicle)",
                   {
                     "tag": "div",
                     "data": {
-                      "content": "example-sentence-a"
+                      "content": "extra-info"
                     },
-                    "content": "刀が鞘から走る。"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
-                    },
-                    "content": "The sword slides out of its sheath."
+                    "content": {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence"
+                      },
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "車が走っている。"
+                        },
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-b"
+                          },
+                          "content": "A car is running. / Cars are running."
+                        }
+                      ]
+                    }
                   }
                 ]
-              }
-            }
-          ]
-        }
-      },
-      {
-        "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to run away, escape"
-          ]
-        }
-      },
-      {
-        "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to rush, hurry around"
-          ]
-        }
-      },
-      {
-        "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to give over oneself to; to commit oneself to (usually something bad)",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
               },
-              "content": {
-                "tag": "div",
-                "data": {
-                  "content": "example-sentence"
-                },
+              {
+                "tag": "li",
                 "content": [
+                  "to flow vigorously (of liquid)",
                   {
                     "tag": "div",
                     "data": {
-                      "content": "example-sentence-a"
+                      "content": "extra-info"
                     },
-                    "content": "彼は敵に走った。"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
-                    },
-                    "content": "He defected to the enemy."
-                  }
-                ]
-              }
-            },
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
-                "tag": "div",
-                "data": {
-                  "content": "example-sentence"
-                },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "立場を忘れて感情に走ってはいけない。"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
-                    },
-                    "content": "Don't forget your stance and give in to emotions."
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      },
-      {
-        "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to spread out, scatter, splatter, spout"
-          ]
-        }
-      },
-      {
-        "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to lead or extend in a certain direction",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
-                "tag": "div",
-                "data": {
-                  "content": "example-sentence"
-                },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "山脈が南北に走る。\nSanmyaku ga nanboku ni hashiru.\nThe mountain range runs north–south."
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                    "content": {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence"
+                      },
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "石の上を水が走る。"
+                        },
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-b"
+                          },
+                          "content": "The water runs over the stones."
+                        }
+                      ]
                     }
                   }
                 ]
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to appear briefly; to flash",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to move smoothly; to slide",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "稲妻が走る"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "刀が鞘から走る。"
                     },
-                    "content": "lightning flashes by"
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "The sword slides out of its sheath."
+                    }
+                  ]
+                }
               }
-            },
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
-                "tag": "div",
-                "data": {
-                  "content": "example-sentence"
-                },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "背中に痛みが走った。"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
-                    },
-                    "content": "I felt a brief pain in my back."
-                  }
-                ]
-              }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "(used with 胸(むね)が (mune ga)) to feel palpitations; to have a sense of unease"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to run away, escape"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to rush, hurry around"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to give over oneself to; to commit oneself to (usually something bad)",
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "彼は敵に走った。"
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "He defected to the enemy."
+                    }
+                  ]
+                }
+              },
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "立場を忘れて感情に走ってはいけない。"
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "Don't forget your stance and give in to emotions."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to spread out, scatter, splatter, spout"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to lead or extend in a certain direction",
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "山脈が南北に走る。\nSanmyaku ga nanboku ni hashiru.\nThe mountain range runs north–south."
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to appear briefly; to flash",
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "稲妻が走る"
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "lightning flashes by"
+                    }
+                  ]
+                }
+              },
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "背中に痛みが走った。"
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "I felt a brief pain in my back."
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "(used with 胸(むね)が (mune ga)) to feel palpitations; to have a sense of unease"
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -650,40 +679,42 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to run through some kind of place",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to run through some kind of place",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "彼はこの道をよく走る。"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "彼はこの道をよく走る。"
                     },
-                    "content": "He often runs down this street."
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "He often runs down this street."
+                    }
+                  ]
+                }
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -698,12 +729,14 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to crack"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to crack"
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -718,12 +751,14 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "Alternative spelling of ハシる"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "Alternative spelling of ハシる"
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -738,21 +773,25 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))"
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "melon, gourd"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "melon, gourd"
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -767,21 +806,25 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))"
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "melon, gourd"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "melon, gourd"
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -796,12 +839,14 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "[I am / someone is] hungry"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "[I am / someone is] hungry"
+            ]
+          }
+        ]
       }
     ],
     0,

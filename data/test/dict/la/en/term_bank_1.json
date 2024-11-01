@@ -8,151 +8,159 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "fame"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "fame"
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "rumour, talk, opinion, report",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "rumour, talk, opinion, report",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "hascine propter rēs maledicās fāmās ferunt."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "hascine propter rēs maledicās fāmās ferunt."
                     },
-                    "content": "Is it on account of these things that they spread slanderous reports?"
-                  }
-                ]
-              }
-            },
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "Is it on account of these things that they spread slanderous reports?"
+                    }
+                  ]
+                }
               },
-              "content": {
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "“Oenōtrī coluēre virī; nunc fāma minōrēs"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "“Oenōtrī coluēre virī; nunc fāma minōrēs"
                     },
-                    "content": "“Oenotrian men tilled [the land]; now rumor [has it that their] descendants call the nation ‘Italy’ after the name of its leader, [Italus].”"
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "“Oenotrian men tilled [the land]; now rumor [has it that their] descendants call the nation ‘Italy’ after the name of its leader, [Italus].”"
+                    }
+                  ]
+                }
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "reputation",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "reputation",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Dīmīcantī dē fāmā dēesse."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Dīmīcantī dē fāmā dēesse."
                     },
-                    "content": "To abandon one whose reputation is attacked."
-                  }
-                ]
-              }
-            },
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "To abandon one whose reputation is attacked."
+                    }
+                  ]
+                }
               },
-              "content": {
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Fāma tamen clāra est; et adhūc sine crīmine vīxī."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Fāma tamen clāra est; et adhūc sine crīmine vīxī."
                     },
-                    "content": "My good name is nevertheless unstained; and so far I have lived without blame."
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "My good name is nevertheless unstained; and so far I have lived without blame."
+                    }
+                  ]
+                }
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "Fama, personified as a fast-moving, malicious goddess, the daughter of Terra. From the Greek φήμη, Pheme. Typically translated from the Latin as “Rumor.”"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "Fama, personified as a fast-moving, malicious goddess, the daughter of Terra. From the Greek φήμη, Pheme. Typically translated from the Latin as “Rumor.”"
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -167,113 +175,125 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to choose, select"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to choose, select"
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to appoint"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to appoint"
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to collect, gather, bring together"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to collect, gather, bring together"
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to take out, pick out, extract, remove"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to take out, pick out, extract, remove"
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to take to one's self unjustly, carry off, steal, purloin, plunder, abstract"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to take to one's self unjustly, carry off, steal, purloin, plunder, abstract"
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to read",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to read",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Librōs lege."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Librōs lege."
                     },
-                    "content": "Read books."
-                  }
-                ]
-              }
-            },
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "Read books."
+                    }
+                  ]
+                }
               },
-              "content": {
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Lēgistīne hunc librum?"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Lēgistīne hunc librum?"
                     },
-                    "content": "Have you read this book?"
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "Have you read this book?"
+                    }
+                  ]
+                }
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -288,12 +308,14 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "to teach, profess"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to teach, profess"
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -308,12 +330,14 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "a lily"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "a lily"
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -328,58 +352,64 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "all the way"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "all the way"
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "until, up to (sometimes with \"ad\")"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "until, up to (sometimes with \"ad\")"
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "constantly, continuously",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "constantly, continuously",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "ab ōvō ū̆sque ad māla"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "ab ōvō ū̆sque ad māla"
                     },
-                    "content": "from the beginning to the end\n(literally, “from the egg to the apples”)"
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "from the beginning to the end\n(literally, “from the egg to the apples”)"
+                    }
+                  ]
+                }
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -394,86 +424,92 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "led straight along, drawn in a straight line, straight, upright.",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "led straight along, drawn in a straight line, straight, upright.",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Quae rectis lineis suos ordines servant"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Quae rectis lineis suos ordines servant"
                     },
-                    "content": "Which preserve their order in straight lines"
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "Which preserve their order in straight lines"
+                    }
+                  ]
+                }
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "(in general) right, correct, proper, appropriate, befitting."
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "(in general) right, correct, proper, appropriate, befitting."
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "(in particular) morally right, correct, lawful, just, virtuous, noble, good, proper, honest.",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "(in particular) morally right, correct, lawful, just, virtuous, noble, good, proper, honest.",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Via stultī rēcta in oculīs eius; quī autem sapiēns est audit cōnsilia."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Via stultī rēcta in oculīs eius; quī autem sapiēns est audit cōnsilia."
                     },
-                    "content": "The way of a fool is right in his own eyes: but he that is wise hearkeneth unto counsels. (Douay-Rheims trans., Challoner rev.: 1752 CE)"
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "The way of a fool is right in his own eyes: but he that is wise hearkeneth unto counsels. (Douay-Rheims trans., Challoner rev.: 1752 CE)"
+                    }
+                  ]
+                }
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -488,143 +524,142 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "house, home (the building where a person lives)",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "house, home (the building where a person lives)",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Deō domuīque"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Deō domuīque"
                     },
-                    "content": "For God and for home (motto of Methodist Ladies' College, Melbourne)"
-                  }
-                ]
-              }
-            },
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "For God and for home (motto of Methodist Ladies' College, Melbourne)"
+                    }
+                  ]
+                }
               },
-              "content": {
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Stet fortūna domūs"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Stet fortūna domūs"
                     },
-                    "content": "Let the good fortune of the house stand (motto of Harrow School, England)"
-                  }
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "Let the good fortune of the house stand (motto of Harrow School, England)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "tag": "ul",
+            "content": [
+              {
+                "tag": "li",
+                "content": [
+                  "a townhouse"
                 ]
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "ul",
-          "content": [
-            {
-              "tag": "li",
-              "content": [
-                "a townhouse"
-              ]
-            }
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "any dwelling-place or abode (of people or animals)"
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "any dwelling-place or abode (of people or animals)"
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "the place of one's birth or residence, native country, town"
+            ]
+          },
+          {
+            "tag": "ul",
+            "content": [
+              {
+                "tag": "li",
+                "content": [
+                  "(also of the shell of invertebrates, tombs of the dead)"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "the place of one's birth or residence, native country, town"
-          ]
-        }
-      },
-      {
-        "type": "structured-content",
-        "content": {
-          "tag": "ul",
-          "content": [
-            {
-              "tag": "li",
-              "content": [
-                "(also of the shell of invertebrates, tombs of the dead)"
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "household, family (the dependants of the head of a house)"
-          ]
-        }
-      },
-      {
-        "type": "structured-content",
-        "content": {
-          "tag": "ul",
-          "content": [
-            {
-              "tag": "li",
-              "content": [
-                "a group of disciples, school; an intellectual movement"
-              ]
-            },
-            {
-              "tag": "li",
-              "content": [
-                "(monarchy) house, dynasty"
-              ]
-            }
-          ]
-        }
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "household, family (the dependants of the head of a house)"
+            ]
+          },
+          {
+            "tag": "ul",
+            "content": [
+              {
+                "tag": "li",
+                "content": [
+                  "a group of disciples, school; an intellectual movement"
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  "(monarchy) house, dynasty"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     0,
@@ -639,105 +674,109 @@
     [
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "one's own possessions or resources",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "one's own possessions or resources",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "domum trahere"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "domum trahere"
                     },
-                    "content": "to drag into one's pocket"
-                  }
-                ]
-              }
-            },
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "to drag into one's pocket"
+                    }
+                  ]
+                }
               },
-              "content": {
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Domī versūra fit."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Domī versūra fit."
                     },
-                    "content": "One is one's own creditor. (proverb)"
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "One is one's own creditor. (proverb)"
+                    }
+                  ]
+                }
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       },
       {
         "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            "(in locative case in phrases) peace",
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "(in locative case in phrases) peace",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "ut non quietior populus domi esset quam militiae"
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "ut non quietior populus domi esset quam militiae"
                     },
-                    "content": "so that the people should not become lazier in the time of peace than that of war"
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "so that the people should not become lazier in the time of peace than that of war"
+                    }
+                  ]
+                }
               }
-            }
-          ]
-        }
+            ]
+          }
+        ]
       }
     ],
     0,
