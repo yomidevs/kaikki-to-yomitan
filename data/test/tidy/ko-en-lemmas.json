@@ -1,0 +1,40 @@
+{
+  "독일": {
+    "독일": {
+      "name": {
+        "ipa": [
+          {
+            "ipa": "[to̞ɡiɭ]",
+            "tags": [
+              "SK-Standard",
+              "Seoul"
+            ]
+          }
+        ],
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "(South Korea) Germany (a country in Europe)",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "South-Korea"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ]
+          ]
+        }
+      }
+    }
+  }
+}
