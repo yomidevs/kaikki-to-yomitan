@@ -269,18 +269,6 @@ function processForms(forms, word, pos) {
     });
 }
 
-// /**
-//  * @param {string} word 
-//  * @param {string[]} readings 
-//  * @param {string} pos 
-//  * @param {SenseInfo} currSense 
-//  */
-// function saveSenseResult(word, readings, pos, currSense) {
-//     for (const reading of readings) {
-//         lemmaDict[word][reading][pos].senses.push(currSense);
-//     }
-// }
-
 /**
  * @param {string} word 
  * @param {string[]} readings 
