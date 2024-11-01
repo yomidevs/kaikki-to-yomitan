@@ -8,170 +8,65 @@
             "tags": []
           }
         ],
-        "senses": [
-          {
-            "glosses": [
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "message",
               {
-                "type": "structured-content",
-                "content": [
-                  "message",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
+                    "_tags",
+                    [
+                      "feminine"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "textová zpráva",
+                        "english": "text message"
                       },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "textová zpráva"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "text message"
-                          }
-                        ]
+                      {
+                        "text": "Chcete nechat zprávu?",
+                        "english": "Would you like to leave a message?"
                       }
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "Chcete nechat zprávu?"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "Would you like to leave a message?"
-                          }
-                        ]
-                      }
-                    }
+                    ]
                   ]
                 ]
               }
             ],
-            "tags": [
-              "feminine"
-            ],
-            "examples": [
+            [
+              "report",
               {
-                "text": "textová zpráva",
-                "english": "text message"
-              },
-              {
-                "text": "Chcete nechat zprávu?",
-                "english": "Would you like to leave a message?"
-              }
-            ]
-          },
-          {
-            "glosses": [
-              {
-                "type": "structured-content",
-                "content": [
-                  "report",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
+                    "_tags",
+                    [
+                      "feminine"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "lékařská zpráva",
+                        "english": "medical report"
                       },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "lékařská zpráva"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "medical report"
-                          }
-                        ]
+                      {
+                        "text": "podat zprávu",
+                        "english": "to file a report"
                       }
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "podat zprávu"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "to file a report"
-                          }
-                        ]
-                      }
-                    }
+                    ]
                   ]
                 ]
               }
-            ],
-            "tags": [
-              "feminine"
-            ],
-            "examples": [
-              {
-                "text": "lékařská zpráva",
-                "english": "medical report"
-              },
-              {
-                "text": "podat zprávu",
-                "english": "to file a report"
-              }
             ]
-          }
-        ]
+          ]
+        }
       }
     }
   },
@@ -184,55 +79,32 @@
             "tags": []
           }
         ],
-        "senses": [
-          {
-            "glosses": [
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "for",
               {
-                "type": "structured-content",
-                "content": [
-                  "for",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "Zabili ho pro peníze."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "They killed him for his money."
-                          }
-                        ]
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "Zabili ho pro peníze.",
+                        "english": "They killed him for his money."
                       }
-                    }
+                    ]
                   ]
                 ]
               }
-            ],
-            "tags": [],
-            "examples": [
-              {
-                "text": "Zabili ho pro peníze.",
-                "english": "They killed him for his money."
-              }
             ]
-          }
-        ]
+          ]
+        }
       }
     }
   },
@@ -245,19 +117,31 @@
             "tags": []
           }
         ],
-        "senses": [
-          {
-            "glosses": [
-              "(reflexive with se) to dispute"
-            ],
-            "tags": [
-              "imperfective",
-              "reflexive",
-              "with se"
-            ],
-            "examples": []
-          }
-        ]
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "(reflexive with se) to dispute",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "imperfective",
+                      "reflexive",
+                      "with se"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ]
+          ]
+        }
       }
     }
   }

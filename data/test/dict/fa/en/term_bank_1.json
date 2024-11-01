@@ -6,7 +6,15 @@
     "n",
     0,
     [
-      "(Khorasan) a kind of pea"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "(Khorasan) a kind of pea"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -20,9 +28,10 @@
     [
       {
         "type": "structured-content",
-        "content": [
-          "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan).",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan).",
             {
               "tag": "div",
               "data": {
@@ -52,14 +61,23 @@
               }
             }
           ]
-        ]
+        }
       },
-      "Persian (the language of Ancient Persia).",
       {
         "type": "structured-content",
-        "content": [
-          "Persian, main ethnic group of Iran.",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "Persian (the language of Ancient Persia)."
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "Persian, main ethnic group of Iran.",
             {
               "tag": "div",
               "data": {
@@ -89,7 +107,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,

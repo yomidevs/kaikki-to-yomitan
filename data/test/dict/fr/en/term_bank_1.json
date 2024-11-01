@@ -2,15 +2,16 @@
   [
     "prendre",
     "",
-    "v vt",
+    "vt v",
     "v",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          "(transitive) to take",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "to take",
             {
               "tag": "div",
               "data": {
@@ -40,13 +41,14 @@
               }
             }
           ]
-        ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          "(transitive) to eat; to drink",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "to eat; to drink",
             {
               "tag": "div",
               "data": {
@@ -76,13 +78,14 @@
               }
             }
           ]
-        ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          "(transitive) to get; to buy",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "to get; to buy",
             {
               "tag": "div",
               "data": {
@@ -112,13 +115,14 @@
               }
             }
           ]
-        ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          "(transitive) to rob; to deprive",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "to rob; to deprive",
             {
               "tag": "div",
               "data": {
@@ -148,13 +152,14 @@
               }
             }
           ]
-        ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          "(transitive) to make",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "to make",
             {
               "tag": "div",
               "data": {
@@ -212,46 +217,142 @@
               }
             }
           ]
-        ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "data": {
-              "listType": "li"
-            },
-            "content": "(transitive with à)"
-          },
-          {
-            "tag": "div",
-            "data": {
-              "listType": "ol"
-            },
-            "style": {
-              "marginLeft": 2
-            },
-            "content": [
-              {
+        "content": {
+          "tag": "div",
+          "content": [
+            "(transitive with à) ",
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
                 "tag": "div",
                 "data": {
-                  "listType": "li"
+                  "content": "example-sentence"
                 },
                 "content": [
                   {
-                    "tag": "span",
+                    "tag": "div",
                     "data": {
-                      "listType": "number"
+                      "content": "example-sentence-a"
                     },
-                    "content": "1. "
+                    "content": "Qu’est-ce qui t’a pris ? Qu’est-ce qui t’est passé par la tête ?"
                   },
-                  "(transitive, in various idiomatic expressions) to start having a negative feeling towards someone"
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "What were you thinking? What got into you? What came over you?"
+                  }
                 ]
               }
-            ]
-          }
-        ]
+            },
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Qu’est-ce qui lui a pris ? Quelle mouche l’a piqué ?"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "What was he thinking? What got into him?"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "div",
+              "content": [
+                "(transitive, in various idiomatic expressions) to start having a negative feeling towards someone",
+                {
+                  "tag": "div",
+                  "data": {
+                    "content": "extra-info"
+                  },
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "Qu’est-ce qui t’a pris ? Qu’est-ce qui t’est passé par la tête ?"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "What were you thinking? What got into you? What came over you?"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "tag": "div",
+                  "data": {
+                    "content": "extra-info"
+                  },
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "Qu’est-ce qui lui a pris ? Quelle mouche l’a piqué ?"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "What was he thinking? What got into him?"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
       }
     ],
     0,
@@ -260,15 +361,16 @@
   [
     "prendre",
     "",
-    "v vi",
+    "vi v",
     "v",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          "(intransitive) to catch, to work, to start",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "to catch, to work, to start",
             {
               "tag": "div",
               "data": {
@@ -326,7 +428,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -335,15 +437,16 @@
   [
     "prendre",
     "",
-    "v vr",
+    "vr v",
     "v",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          "(reflexive) to get (something) caught (in), to jam",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "to get (something) caught (in), to jam",
             {
               "tag": "div",
               "data": {
@@ -401,7 +504,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -416,9 +519,10 @@
     [
       {
         "type": "structured-content",
-        "content": [
-          "(followed by a partitive, in various idiomatic expressions) to gain",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "(followed by a partitive, in various idiomatic expressions) to gain",
             {
               "tag": "div",
               "data": {
@@ -476,7 +580,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -485,15 +589,16 @@
   [
     "prendre",
     "",
-    "v col impers",
+    "col impers v",
     "v",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          "(colloquial; impersonal) to take (a certain amount of time)",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "(colloquial; impersonal) to take (a certain amount of time)",
             {
               "tag": "div",
               "data": {
@@ -523,13 +628,14 @@
               }
             }
           ]
-        ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          "(colloquial; impersonal; by extension) to take (a certain number or amount of)",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "(colloquial; impersonal; by extension) to take (a certain number or amount of)",
             {
               "tag": "div",
               "data": {
@@ -559,7 +665,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -568,15 +674,16 @@
   [
     "prendre",
     "",
-    "v impers",
+    "impers v",
     "v",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          "(impersonal) to come over (to arise in and gain some control over one's thoughts and/or actions)",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "to come over (to arise in and gain some control over one's thoughts and/or actions)",
             {
               "tag": "div",
               "data": {
@@ -634,7 +741,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -643,11 +750,19 @@
   [
     "sembler",
     "",
-    "v impers vi",
+    "impers vi v",
     "v",
     0,
     [
-      "to seem, to resemble"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "to seem, to resemble"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -655,11 +770,19 @@
   [
     "sembler",
     "",
-    "v vi",
+    "vi v",
     "v",
     0,
     [
-      "to appear"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "to appear"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -667,96 +790,50 @@
   [
     "chambre",
     "",
-    "n fem",
+    "fem n",
     "n",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "data": {
-              "listType": "li"
+        "content": {
+          "tag": "div",
+          "content": [
+            "a chamber in its various senses, including:"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "div",
+              "content": [
+                "a room."
+              ]
             },
-            "content": "a chamber in its various senses, including:"
-          },
-          {
-            "tag": "div",
-            "data": {
-              "listType": "ol"
+            {
+              "tag": "div",
+              "content": [
+                "a hotel room."
+              ]
             },
-            "style": {
-              "marginLeft": 2
+            {
+              "tag": "div",
+              "content": [
+                "a bedroom."
+              ]
             },
-            "content": [
-              {
-                "tag": "div",
-                "data": {
-                  "listType": "li"
-                },
-                "content": [
-                  {
-                    "tag": "span",
-                    "data": {
-                      "listType": "number"
-                    },
-                    "content": "1. "
-                  },
-                  "a room."
-                ]
-              },
-              {
-                "tag": "div",
-                "data": {
-                  "listType": "li"
-                },
-                "content": [
-                  {
-                    "tag": "span",
-                    "data": {
-                      "listType": "number"
-                    },
-                    "content": "2. "
-                  },
-                  "a hotel room."
-                ]
-              },
-              {
-                "tag": "div",
-                "data": {
-                  "listType": "li"
-                },
-                "content": [
-                  {
-                    "tag": "span",
-                    "data": {
-                      "listType": "number"
-                    },
-                    "content": "3. "
-                  },
-                  "a bedroom."
-                ]
-              },
-              {
-                "tag": "div",
-                "data": {
-                  "listType": "li"
-                },
-                "content": [
-                  {
-                    "tag": "span",
-                    "data": {
-                      "listType": "number"
-                    },
-                    "content": "4. "
-                  },
-                  "a house of a parliament."
-                ]
-              }
-            ]
-          }
-        ]
+            {
+              "tag": "div",
+              "content": [
+                "a house of a parliament."
+              ]
+            }
+          ]
+        }
       }
     ],
     0,

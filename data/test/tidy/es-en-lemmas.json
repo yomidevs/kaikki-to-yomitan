@@ -12,156 +12,97 @@
             "tags": []
           }
         ],
-        "senses": [
-          {
-            "glosses": [
-              "(intransitive) to live; to be alive"
-            ],
-            "tags": [
-              "intransitive"
-            ],
-            "examples": []
-          },
-          {
-            "glosses": [
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "(intransitive) to live; to be alive",
               {
-                "type": "structured-content",
-                "content": [
-                  "(intransitive) to make a living, to live on",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "Vive de migas, nada más."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "He lives on crumbs, nothing more."
-                          }
-                        ]
-                      }
-                    }
+                    "_tags",
+                    [
+                      "intransitive"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
                   ]
                 ]
               }
             ],
-            "tags": [
-              "intransitive"
-            ],
-            "examples": [
+            [
+              "(intransitive) to make a living, to live on",
               {
-                "text": "Vive de migas, nada más.",
-                "english": "He lives on crumbs, nothing more."
-              }
-            ]
-          },
-          {
-            "glosses": [
-              {
-                "type": "structured-content",
-                "content": [
-                  "(intransitive) to live in, reside, inhabit",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "Vive en la casa roja."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "She lives in the red house."
-                          }
-                        ]
+                    "_tags",
+                    [
+                      "intransitive"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "Vive de migas, nada más.",
+                        "english": "He lives on crumbs, nothing more."
                       }
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "La pobrecita vive con dos hermanas crueles."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "The poor girl lives with two cruel sisters."
-                          }
-                        ]
-                      }
-                    }
+                    ]
                   ]
                 ]
               }
             ],
-            "tags": [
-              "intransitive"
+            [
+              "(intransitive) to live in, reside, inhabit",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "intransitive"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "Vive en la casa roja.",
+                        "english": "She lives in the red house."
+                      },
+                      {
+                        "text": "La pobrecita vive con dos hermanas crueles.",
+                        "english": "The poor girl lives with two cruel sisters."
+                      }
+                    ]
+                  ]
+                ]
+              }
             ],
-            "examples": [
+            [
+              "(transitive) to experience, to live through",
               {
-                "text": "Vive en la casa roja.",
-                "english": "She lives in the red house."
-              },
-              {
-                "text": "La pobrecita vive con dos hermanas crueles.",
-                "english": "The poor girl lives with two cruel sisters."
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "transitive"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
               }
             ]
-          },
-          {
-            "glosses": [
-              "(transitive) to experience, to live through"
-            ],
-            "tags": [
-              "transitive"
-            ],
-            "examples": []
-          }
-        ]
+          ]
+        }
       }
     }
   }

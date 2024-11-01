@@ -2,16 +2,25 @@
   [
     "fama",
     "fāma",
-    "n decl-1",
+    "decl-1 n",
     "n",
     0,
     [
-      "fame",
       {
         "type": "structured-content",
-        "content": [
-          "rumour, talk, opinion, report",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "fame"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "rumour, talk, opinion, report",
             {
               "tag": "div",
               "data": {
@@ -69,13 +78,14 @@
               }
             }
           ]
-        ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          "reputation",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "reputation",
             {
               "tag": "div",
               "data": {
@@ -133,9 +143,17 @@
               }
             }
           ]
-        ]
+        }
       },
-      "Fama, personified as a fast-moving, malicious goddess, the daughter of Terra. From the Greek φήμη, Pheme. Typically translated from the Latin as “Rumor.”"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "Fama, personified as a fast-moving, malicious goddess, the daughter of Terra. From the Greek φήμη, Pheme. Typically translated from the Latin as “Rumor.”"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -143,20 +161,61 @@
   [
     "lego",
     "legō",
-    "v cnjg-3",
+    "cnjg-3 v",
     "v",
     0,
     [
-      "to choose, select",
-      "to appoint",
-      "to collect, gather, bring together",
-      "to take out, pick out, extract, remove",
-      "to take to one's self unjustly, carry off, steal, purloin, plunder, abstract",
       {
         "type": "structured-content",
-        "content": [
-          "to read",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "to choose, select"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "to appoint"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "to collect, gather, bring together"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "to take out, pick out, extract, remove"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "to take to one's self unjustly, carry off, steal, purloin, plunder, abstract"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "to read",
             {
               "tag": "div",
               "data": {
@@ -214,7 +273,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -223,11 +282,19 @@
   [
     "lego",
     "legō",
-    "v Medieval cnjg-3",
+    "Medieval cnjg-3 v",
     "v",
     0,
     [
-      "to teach, profess"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "to teach, profess"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -235,11 +302,19 @@
   [
     "lilium",
     "līlium",
-    "n decl-2",
+    "decl-2 n",
     "n",
     0,
     [
-      "a lily"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "a lily"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -247,17 +322,34 @@
   [
     "usque",
     "ū̆sque",
-    "adv not-comp",
+    "not-comp adv",
     "adv",
     0,
     [
-      "all the way",
-      "until, up to (sometimes with \"ad\")",
       {
         "type": "structured-content",
-        "content": [
-          "constantly, continuously",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "all the way"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "until, up to (sometimes with \"ad\")"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "constantly, continuously",
             {
               "tag": "div",
               "data": {
@@ -287,7 +379,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -296,15 +388,16 @@
   [
     "rectus",
     "rēctus",
-    "v decl-1 decl-2 ptcpl",
+    "decl-1 decl-2 ptcpl v",
     "v",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          "led straight along, drawn in a straight line, straight, upright.",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "led straight along, drawn in a straight line, straight, upright.",
             {
               "tag": "div",
               "data": {
@@ -334,14 +427,23 @@
               }
             }
           ]
-        ]
+        }
       },
-      "(in general) right, correct, proper, appropriate, befitting.",
       {
         "type": "structured-content",
-        "content": [
-          "(in particular) morally right, correct, lawful, just, virtuous, noble, good, proper, honest.",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "(in general) right, correct, proper, appropriate, befitting."
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "(in particular) morally right, correct, lawful, just, virtuous, noble, good, proper, honest.",
             {
               "tag": "div",
               "data": {
@@ -371,7 +473,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -380,143 +482,149 @@
   [
     "domus",
     "",
-    "n decl-2 decl-4 fem irreg",
+    "decl-2 decl-4 fem irreg n",
     "n",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "data": {
-              "listType": "li"
-            },
-            "content": "house, home (the building where a person lives)"
-          },
-          {
-            "tag": "div",
-            "data": {
-              "listType": "ol"
-            },
-            "style": {
-              "marginLeft": 2
-            },
-            "content": [
-              {
-                "tag": "div",
-                "data": {
-                  "listType": "li"
-                },
-                "content": [
-                  {
-                    "tag": "span",
-                    "data": {
-                      "listType": "number"
-                    },
-                    "content": "1. "
-                  },
-                  "a townhouse"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      "any dwelling-place or abode (of people or animals)",
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "data": {
-              "listType": "li"
-            },
-            "content": "the place of one's birth or residence, native country, town"
-          },
-          {
-            "tag": "div",
-            "data": {
-              "listType": "ol"
-            },
-            "style": {
-              "marginLeft": 2
-            },
-            "content": [
-              {
-                "tag": "div",
-                "data": {
-                  "listType": "li"
-                },
-                "content": [
-                  {
-                    "tag": "span",
-                    "data": {
-                      "listType": "number"
-                    },
-                    "content": "1. "
-                  },
-                  "(also of the shell of invertebrates, tombs of the dead)"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "data": {
-              "listType": "li"
-            },
-            "content": "household, family (the dependants of the head of a house)"
-          },
-          {
-            "tag": "div",
-            "data": {
-              "listType": "ol"
-            },
-            "style": {
-              "marginLeft": 2
-            },
-            "content": [
-              {
-                "tag": "div",
-                "data": {
-                  "listType": "li"
-                },
-                "content": [
-                  {
-                    "tag": "span",
-                    "data": {
-                      "listType": "number"
-                    },
-                    "content": "1. "
-                  },
-                  "a group of disciples, school; an intellectual movement"
-                ]
+        "content": {
+          "tag": "div",
+          "content": [
+            "house, home (the building where a person lives)",
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
               },
-              {
+              "content": {
                 "tag": "div",
                 "data": {
-                  "listType": "li"
+                  "content": "example-sentence"
                 },
                 "content": [
                   {
-                    "tag": "span",
+                    "tag": "div",
                     "data": {
-                      "listType": "number"
+                      "content": "example-sentence-a"
                     },
-                    "content": "2. "
+                    "content": "Deō domuīque"
                   },
-                  "(monarchy) house, dynasty"
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "For God and for home (motto of Methodist Ladies' College, Melbourne)"
+                  }
                 ]
               }
-            ]
-          }
-        ]
+            },
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Stet fortūna domūs"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "Let the good fortune of the house stand (motto of Harrow School, England)"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "div",
+              "content": [
+                "a townhouse"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "any dwelling-place or abode (of people or animals)"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "the place of one's birth or residence, native country, town"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "div",
+              "content": [
+                "(also of the shell of invertebrates, tombs of the dead)"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "household, family (the dependants of the head of a house)"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "div",
+              "content": [
+                "a group of disciples, school; an intellectual movement"
+              ]
+            },
+            {
+              "tag": "div",
+              "content": [
+                "(monarchy) house, dynasty"
+              ]
+            }
+          ]
+        }
       }
     ],
     0,
@@ -525,15 +633,16 @@
   [
     "domus",
     "",
-    "n decl-2 decl-4 fem idio irreg",
+    "decl-2 decl-4 fem idio irreg n",
     "n",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          "(idiomatic) one's own possessions or resources",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "one's own possessions or resources",
             {
               "tag": "div",
               "data": {
@@ -591,13 +700,14 @@
               }
             }
           ]
-        ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          "(in locative case in phrases, idiomatic) peace",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "(in locative case in phrases) peace",
             {
               "tag": "div",
               "data": {
@@ -627,7 +737,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,

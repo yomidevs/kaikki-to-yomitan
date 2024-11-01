@@ -2,15 +2,16 @@
   [
     "bring",
     "",
-    "v vdt vt",
+    "vdt vt v",
     "v",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          "(transitive, ditransitive) To transport toward somebody/somewhere.",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "To transport toward somebody/somewhere.",
             {
               "tag": "div",
               "data": {
@@ -39,7 +40,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -48,15 +49,16 @@
   [
     "bring",
     "",
-    "v fig vt",
+    "fig vt v",
     "v",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          "(transitive, figuratively) To supply or contribute.",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "To supply or contribute.",
             {
               "tag": "div",
               "data": {
@@ -85,7 +87,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -94,15 +96,16 @@
   [
     "bring",
     "",
-    "v vt",
+    "vt v",
     "v",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          "(transitive) To occasion or bring about.",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "To occasion or bring about.",
             {
               "tag": "div",
               "data": {
@@ -131,9 +134,17 @@
               }
             }
           ]
-        ]
+        }
       },
-      "To raise (a lawsuit, charges, etc.) against somebody."
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "To raise (a lawsuit, charges, etc.) against somebody."
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -145,12 +156,21 @@
     "v",
     0,
     [
-      "To persuade; to induce; to draw; to lead; to guide.",
       {
         "type": "structured-content",
-        "content": [
-          "To produce in exchange; to sell for; to fetch.",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "To persuade; to induce; to draw; to lead; to guide."
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "To produce in exchange; to sell for; to fetch.",
             {
               "tag": "div",
               "data": {
@@ -179,13 +199,14 @@
               }
             }
           ]
-        ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          "(baseball) To pitch, often referring to a particularly hard thrown fastball.",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "(baseball) To pitch, often referring to a particularly hard thrown fastball.",
             {
               "tag": "div",
               "data": {
@@ -214,7 +235,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -223,15 +244,16 @@
   [
     "wain",
     "",
-    "n arch ltrry",
+    "arch ltrry n",
     "n",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          "(archaic or literary) A wagon; a four-wheeled cart for hauling loads, usually pulled by horses or oxen.",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "A wagon; a four-wheeled cart for hauling loads, usually pulled by horses or oxen.",
             {
               "tag": "div",
               "data": {
@@ -260,7 +282,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,

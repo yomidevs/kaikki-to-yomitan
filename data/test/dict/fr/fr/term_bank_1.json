@@ -6,12 +6,21 @@
     "noun",
     0,
     [
-      "Dans la religion hindouiste, chacune des incarnations du dieu Vishnou.",
       {
         "type": "structured-content",
-        "content": [
-          "Métamorphose, transformation d’un objet ou d’un individu qui en a déjà subi plusieurs.",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "Dans la religion hindouiste, chacune des incarnations du dieu Vishnou."
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "Métamorphose, transformation d’un objet ou d’un individu qui en a déjà subi plusieurs.",
             {
               "tag": "div",
               "data": {
@@ -67,7 +76,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -82,9 +91,10 @@
     [
       {
         "type": "structured-content",
-        "content": [
-          "Mésaventure, malheur.",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "Mésaventure, malheur.",
             {
               "tag": "div",
               "data": {
@@ -113,7 +123,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,

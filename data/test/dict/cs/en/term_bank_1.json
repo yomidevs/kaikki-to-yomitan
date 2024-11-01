@@ -2,15 +2,16 @@
   [
     "zpráva",
     "",
-    "n fem",
+    "fem n",
     "n",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          "message",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "message",
             {
               "tag": "div",
               "data": {
@@ -68,13 +69,14 @@
               }
             }
           ]
-        ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          "report",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "report",
             {
               "tag": "div",
               "data": {
@@ -132,7 +134,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -147,9 +149,10 @@
     [
       {
         "type": "structured-content",
-        "content": [
-          "for",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "for",
             {
               "tag": "div",
               "data": {
@@ -179,7 +182,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -188,11 +191,19 @@
   [
     "přít",
     "",
-    "v impf vr",
+    "impf vr v",
     "v",
     0,
     [
-      "(reflexive with se) to dispute"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "(reflexive with se) to dispute"
+          ]
+        }
+      }
     ],
     0,
     ""

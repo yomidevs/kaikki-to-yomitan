@@ -2,93 +2,217 @@
   [
     "pflegen",
     "",
-    "v c-4 strong vt",
+    "c-4 strong vt v",
     "v",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "data": {
-              "listType": "li"
-            },
-            "content": "Providing care or service for someone/something. [weak verb]"
-          },
-          {
-            "tag": "div",
-            "data": {
-              "listType": "ol"
-            },
-            "style": {
-              "marginLeft": 2
-            },
-            "content": [
-              {
+        "content": {
+          "tag": "div",
+          "content": [
+            "Providing care or service for someone/something. [weak verb]",
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
                 "tag": "div",
                 "data": {
-                  "listType": "li"
+                  "content": "example-sentence"
                 },
                 "content": [
                   {
-                    "tag": "span",
+                    "tag": "div",
                     "data": {
-                      "listType": "number"
+                      "content": "example-sentence-a"
                     },
-                    "content": "1. "
+                    "content": "jemanden gesund pflegen"
                   },
-                  "(transitive, medicine) to nurse; to care for someone in poor health"
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "to nurse someone back to health"
+                  }
                 ]
+              }
+            },
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
               },
-              [
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Kranke pflegen"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "to care for the sick"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "div",
+              "content": [
+                "(transitive, medicine) to nurse; to care for someone in poor health",
                 {
                   "tag": "div",
                   "data": {
-                    "listType": "number"
+                    "content": "extra-info"
                   },
-                  "content": [
-                    {
-                      "tag": "span",
-                      "data": {
-                        "listType": "number"
-                      },
-                      "content": "2. "
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
                     },
-                    "(transitive) to take care of, to tend to, to maintain"
-                  ]
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "jemanden gesund pflegen"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "to nurse someone back to health"
+                      }
+                    ]
+                  }
                 },
                 {
                   "tag": "div",
                   "data": {
-                    "listType": "ol"
+                    "content": "extra-info"
                   },
-                  "style": {
-                    "marginLeft": 3
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "listType": "li"
-                      },
-                      "content": [
-                        {
-                          "tag": "span",
-                          "data": {
-                            "listType": "number"
-                          },
-                          "content": "1. "
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
                         },
-                        "(intransitive, archaic, with genitive)"
-                      ]
-                    }
+                        "content": "Kranke pflegen"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "to care for the sick"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "content": [
+                "(transitive) to take care of, to tend to, to maintain",
+                {
+                  "tag": "div",
+                  "data": {
+                    "content": "extra-info"
+                  },
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "sein Äußeres pflegen"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "to take care of one's appearance"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "tag": "div",
+                  "data": {
+                    "content": "extra-info"
+                  },
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "die Zähne pflegen"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "to take care of (one's) teeth"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "content": [
+                {
+                  "tag": "div",
+                  "content": [
+                    "(intransitive, archaic, with genitive)"
                   ]
                 }
               ]
-            ]
-          }
-        ]
+            }
+          ]
+        }
       }
     ],
     0,
@@ -97,132 +221,352 @@
   [
     "pflegen",
     "",
-    "v c-4 strong",
+    "c-4 strong v",
     "v",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "data": {
-              "listType": "li"
-            },
-            "content": "To improve or care for something in an intellectual sense. [weak or strong verb]"
-          },
-          {
-            "tag": "div",
-            "data": {
-              "listType": "ol"
-            },
-            "style": {
-              "marginLeft": 2
-            },
-            "content": [
-              [
+        "content": {
+          "tag": "div",
+          "content": [
+            "To improve or care for something in an intellectual sense. [weak or strong verb]"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "div",
+              "content": [
+                "(transitive) to cultivate; to foster; to nurture; to maintain",
                 {
                   "tag": "div",
                   "data": {
-                    "listType": "number"
+                    "content": "extra-info"
                   },
-                  "content": [
-                    {
-                      "tag": "span",
-                      "data": {
-                        "listType": "number"
-                      },
-                      "content": "1. "
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
                     },
-                    "(transitive) to cultivate; to foster; to nurture; to maintain"
-                  ]
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "Freundschaften pflegen"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "to cultivate friendships"
+                      }
+                    ]
+                  }
                 },
                 {
                   "tag": "div",
                   "data": {
-                    "listType": "ol"
+                    "content": "extra-info"
                   },
-                  "style": {
-                    "marginLeft": 3
-                  },
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "Beziehungen pflegen"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "to cultivate relationships"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "content": [
+                {
+                  "tag": "div",
                   "content": [
+                    "(intransitive, higher register or poetic, with genitive)",
                     {
                       "tag": "div",
                       "data": {
-                        "listType": "li"
+                        "content": "extra-info"
                       },
-                      "content": [
-                        {
-                          "tag": "span",
-                          "data": {
-                            "listType": "number"
-                          },
-                          "content": "1. "
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
                         },
-                        "(intransitive, higher register or poetic, with genitive)"
-                      ]
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "der Liebe pflegen"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "to cultivate/nurture love"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "extra-info"
+                      },
+                      "content": {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence"
+                        },
+                        "content": [
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-a"
+                            },
+                            "content": "der Ruhe pflegen"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "example-sentence-b"
+                            },
+                            "content": "to foster tranquility"
+                          }
+                        ]
+                      }
                     }
                   ]
                 }
               ]
-            ]
-          }
-        ]
+            }
+          ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "data": {
-              "listType": "li"
-            },
-            "content": "Expressing habituality. [weak or strong verb]"
-          },
-          {
-            "tag": "div",
-            "data": {
-              "listType": "ol"
-            },
-            "style": {
-              "marginLeft": 2
-            },
-            "content": [
-              {
-                "tag": "div",
-                "data": {
-                  "listType": "li"
-                },
-                "content": [
-                  {
-                    "tag": "span",
-                    "data": {
-                      "listType": "number"
-                    },
-                    "content": "1. "
-                  },
-                  "(transitive) to carry out regularly"
-                ]
+        "content": {
+          "tag": "div",
+          "content": [
+            "Expressing habituality. [weak or strong verb]",
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
               },
-              {
+              "content": {
                 "tag": "div",
                 "data": {
-                  "listType": "li"
+                  "content": "example-sentence"
                 },
                 "content": [
                   {
-                    "tag": "span",
+                    "tag": "div",
                     "data": {
-                      "listType": "number"
+                      "content": "example-sentence-a"
                     },
-                    "content": "2. "
+                    "content": "Umgang pflegen"
                   },
-                  "(intransitive, with “zu” followed by an infinitive verb) to perform habitually; to be accustomed (to doing something); to be in the habit (of doing something)"
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "to regularly be in contact"
+                  }
                 ]
               }
-            ]
-          }
-        ]
+            },
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Geselligkeit pflegen"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "to socialize regularly (literally, “to regularly engage in gregariousness”)"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "div",
+              "content": [
+                "(transitive) to carry out regularly",
+                {
+                  "tag": "div",
+                  "data": {
+                    "content": "extra-info"
+                  },
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "Umgang pflegen"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "to regularly be in contact"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "tag": "div",
+                  "data": {
+                    "content": "extra-info"
+                  },
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "Geselligkeit pflegen"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "to socialize regularly (literally, “to regularly engage in gregariousness”)"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "content": [
+                "(intransitive, with “zu” followed by an infinitive verb) to perform habitually; to be accustomed (to doing something); to be in the habit (of doing something)",
+                {
+                  "tag": "div",
+                  "data": {
+                    "content": "extra-info"
+                  },
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "Ich pflege zu laufen."
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "I usually walk."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "tag": "div",
+                  "data": {
+                    "content": "extra-info"
+                  },
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "Er pflegte zu reisen."
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "He used to travel."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
       }
     ],
     0,
@@ -231,15 +575,16 @@
   [
     "Fuchs",
     "",
-    "n masc strong",
+    "masc strong n",
     "n",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          "fox (animal)",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "fox (animal)",
             {
               "tag": "div",
               "data": {
@@ -269,46 +614,26 @@
               }
             }
           ]
-        ]
+        }
       },
-      "pledge (prospective member of a fraternity)",
       {
         "type": "structured-content",
-        "content": [
-          "(card games) In Doppelkopf, the ace of diamonds, which earns a side of players an extra point if they win it from the other side",
-          [
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
-                "tag": "div",
-                "data": {
-                  "content": "example-sentence"
-                },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Ich hatte nur vier Trümpfe und darunter beide Füchse."
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
-                    },
-                    "content": "I had only four trumps and among them were both aces of diamonds."
-                  }
-                ]
-              }
-            }
+        "content": {
+          "tag": "div",
+          "content": [
+            "pledge (prospective member of a fraternity)"
           ]
-        ]
+        }
       },
-      "a fox in radiosport foxhunt"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "a fox in radiosport foxhunt"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -316,15 +641,16 @@
   [
     "Fuchs",
     "",
-    "n inf masc strong",
+    "inf masc strong n",
     "n",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          "(informal) a clever or cunning person",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "a clever or cunning person",
             {
               "tag": "div",
               "data": {
@@ -354,13 +680,14 @@
               }
             }
           ]
-        ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          "(informal) a red-haired person or horse.",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "a red-haired person or horse.",
             {
               "tag": "div",
               "data": {
@@ -390,7 +717,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -399,11 +726,19 @@
   [
     "Fuchs",
     "",
-    "n masc sl strong mil",
+    "masc sl strong n mil",
     "n",
     0,
     [
-      "A new recruit."
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "A new recruit."
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -411,11 +746,47 @@
   [
     "Fuchs",
     "",
-    "n masc strong mil",
+    "masc strong n cards",
     "n",
     0,
     [
-      "a tank Transportpanzer Fuchs"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "In Doppelkopf, the ace of diamonds, which earns a side of players an extra point if they win it from the other side",
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "Ich hatte nur vier Trümpfe und darunter beide Füchse."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "I had only four trumps and among them were both aces of diamonds."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -423,11 +794,19 @@
   [
     "Fuchs",
     "",
-    "n arch masc strong",
+    "masc strong n mil",
     "n",
     0,
     [
-      "A form of sunscald on hops."
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "a tank Transportpanzer Fuchs"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -435,11 +814,39 @@
   [
     "Fuchs",
     "",
-    "n masc obs strong",
+    "arch masc strong n",
     "n",
     0,
     [
-      "any gold coin"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "A form of sunscald on hops."
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "Fuchs",
+    "",
+    "masc obs strong n",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "any gold coin"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -447,12 +854,28 @@
   [
     "Herz",
     "",
-    "n neut rare",
+    "neut rare n",
     "n",
     0,
     [
-      "heart",
-      "sweetheart, darling"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "heart"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "sweetheart, darling"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -460,11 +883,19 @@
   [
     "Herz",
     "",
-    "n neut rare cards",
+    "neut rare n cards",
     "n",
     0,
     [
-      "hearts"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "hearts"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -472,11 +903,19 @@
   [
     "Fahrer",
     "",
-    "n masc strong",
+    "masc strong n",
     "n",
     0,
     [
-      "agent noun of fahren; driver (person)"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "agent noun of fahren; driver (person)"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -490,9 +929,10 @@
     [
       {
         "type": "structured-content",
-        "content": [
-          "from",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "from",
             {
               "tag": "div",
               "data": {
@@ -550,13 +990,14 @@
               }
             }
           ]
-        ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          "of, belonging to (often replacing genitive; see usage note below)",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "of, belonging to (often replacing genitive; see usage note below)",
             {
               "tag": "div",
               "data": {
@@ -586,13 +1027,14 @@
               }
             }
           ]
-        ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          "by (with passive voice)",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "by (with passive voice)",
             {
               "tag": "div",
               "data": {
@@ -622,13 +1064,14 @@
               }
             }
           ]
-        ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          "about, of (a topic)",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "about, of (a topic)",
             {
               "tag": "div",
               "data": {
@@ -686,13 +1129,14 @@
               }
             }
           ]
-        ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          "on, with (a resource)",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "on, with (a resource)",
             {
               "tag": "div",
               "data": {
@@ -750,7 +1194,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,

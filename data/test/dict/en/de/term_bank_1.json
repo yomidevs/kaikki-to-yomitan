@@ -6,7 +6,15 @@
     "verb",
     0,
     [
-      "[1] aussuchen, auswählen, vorziehen, wählen"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "[1] aussuchen, auswählen, vorziehen, wählen"
+          ]
+        }
+      }
     ],
     0,
     ""

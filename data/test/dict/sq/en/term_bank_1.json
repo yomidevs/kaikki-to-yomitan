@@ -2,11 +2,19 @@
   [
     "akull",
     "",
-    "n masc",
+    "masc n",
     "n",
     0,
     [
-      "ice"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "ice"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -14,167 +22,365 @@
   [
     "gjuhë",
     "",
-    "n fem",
+    "fem n",
     "n",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "data": {
-              "listType": "li"
-            },
-            "content": "tongue (organ)"
-          },
-          {
-            "tag": "div",
-            "data": {
-              "listType": "ol"
-            },
-            "style": {
-              "marginLeft": 2
-            },
-            "content": [
-              {
-                "tag": "div",
-                "data": {
-                  "listType": "li"
-                },
-                "content": [
-                  {
-                    "tag": "span",
-                    "data": {
-                      "listType": "number"
-                    },
-                    "content": "1. "
-                  },
-                  "(figurative) speech, talking"
-                ]
+        "content": {
+          "tag": "div",
+          "content": [
+            "tongue (organ)",
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
               },
-              {
+              "content": {
                 "tag": "div",
                 "data": {
-                  "listType": "li"
+                  "content": "example-sentence"
                 },
                 "content": [
                   {
-                    "tag": "span",
+                    "tag": "div",
                     "data": {
-                      "listType": "number"
+                      "content": "example-sentence-a"
                     },
-                    "content": "2. "
+                    "content": "Mbaje gjuhën!"
                   },
-                  "strip of land"
-                ]
-              },
-              {
-                "tag": "div",
-                "data": {
-                  "listType": "li"
-                },
-                "content": [
                   {
-                    "tag": "span",
+                    "tag": "div",
                     "data": {
-                      "listType": "number"
+                      "content": "example-sentence-b"
                     },
-                    "content": "3. "
-                  },
-                  "bell clapper, clanger, tongue"
+                    "content": "Hold your tongue!"
+                  }
                 ]
               }
-            ]
-          }
-        ]
+            },
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "E ka gjuhën të gjatë."
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "(literally, “She has a long tongue.”)"
+                  }
+                ]
+              }
+            }
+          ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "data": {
-              "listType": "li"
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "div",
+              "content": [
+                "(figurative) speech, talking",
+                {
+                  "tag": "div",
+                  "data": {
+                    "content": "extra-info"
+                  },
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "Mbaje gjuhën!"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "Hold your tongue!"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "tag": "div",
+                  "data": {
+                    "content": "extra-info"
+                  },
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "E ka gjuhën të gjatë."
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "(literally, “She has a long tongue.”)"
+                      }
+                    ]
+                  }
+                }
+              ]
             },
-            "content": "language, tongue"
-          },
-          {
-            "tag": "div",
-            "data": {
-              "listType": "ol"
+            {
+              "tag": "div",
+              "content": [
+                "strip of land"
+              ]
             },
-            "style": {
-              "marginLeft": 2
-            },
-            "content": [
-              {
-                "tag": "div",
-                "data": {
-                  "listType": "li"
-                },
-                "content": [
-                  {
-                    "tag": "span",
-                    "data": {
-                      "listType": "number"
-                    },
-                    "content": "1. "
-                  },
-                  "register, speech, style"
-                ]
+            {
+              "tag": "div",
+              "content": [
+                "bell clapper, clanger, tongue"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "language, tongue",
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
               },
-              {
+              "content": {
                 "tag": "div",
                 "data": {
-                  "listType": "li"
+                  "content": "example-sentence"
                 },
                 "content": [
                   {
-                    "tag": "span",
+                    "tag": "div",
                     "data": {
-                      "listType": "number"
+                      "content": "example-sentence-a"
                     },
-                    "content": "2. "
+                    "content": "gjuha e fëmijëve"
                   },
-                  "language (generally, any form of communication)"
-                ]
-              },
-              {
-                "tag": "div",
-                "data": {
-                  "listType": "li"
-                },
-                "content": [
                   {
-                    "tag": "span",
+                    "tag": "div",
                     "data": {
-                      "listType": "number"
+                      "content": "example-sentence-b"
                     },
-                    "content": "3. "
-                  },
-                  "(colloquial) local dialect"
-                ]
-              },
-              {
-                "tag": "div",
-                "data": {
-                  "listType": "li"
-                },
-                "content": [
-                  {
-                    "tag": "span",
-                    "data": {
-                      "listType": "number"
-                    },
-                    "content": "4. "
-                  },
-                  "(colloquial) Albanian, as a subject in school"
+                    "content": "children speech"
+                  }
                 ]
               }
-            ]
-          }
-        ]
+            },
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
+              },
+              "content": {
+                "tag": "div",
+                "data": {
+                  "content": "example-sentence"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-a"
+                    },
+                    "content": "gjuhë e trashë"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "foul language"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "div",
+              "content": [
+                "register, speech, style",
+                {
+                  "tag": "div",
+                  "data": {
+                    "content": "extra-info"
+                  },
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "gjuha e fëmijëve"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "children speech"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "tag": "div",
+                  "data": {
+                    "content": "extra-info"
+                  },
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "gjuhë e trashë"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "foul language"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "content": [
+                "language (generally, any form of communication)",
+                {
+                  "tag": "div",
+                  "data": {
+                    "content": "extra-info"
+                  },
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "gjuha e muzikës"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "music's language"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "tag": "div",
+                  "data": {
+                    "content": "extra-info"
+                  },
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "gjuha e bletëve"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "bees' language"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "content": [
+                "(colloquial) local dialect"
+              ]
+            },
+            {
+              "tag": "div",
+              "content": [
+                "(colloquial) Albanian, as a subject in school"
+              ]
+            }
+          ]
+        }
       }
     ],
     0,

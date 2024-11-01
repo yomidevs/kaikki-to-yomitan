@@ -2,16 +2,25 @@
   [
     "vivir",
     "",
-    "v vi",
+    "vi v",
     "v",
     0,
     [
-      "to live; to be alive",
       {
         "type": "structured-content",
-        "content": [
-          "(intransitive) to make a living, to live on",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "to live; to be alive"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "to make a living, to live on",
             {
               "tag": "div",
               "data": {
@@ -41,13 +50,14 @@
               }
             }
           ]
-        ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          "(intransitive) to live in, reside, inhabit",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "to live in, reside, inhabit",
             {
               "tag": "div",
               "data": {
@@ -105,7 +115,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -114,11 +124,19 @@
   [
     "vivir",
     "",
-    "v vt",
+    "vt v",
     "v",
     0,
     [
-      "to experience, to live through"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "to experience, to live through"
+          ]
+        }
+      }
     ],
     0,
     ""

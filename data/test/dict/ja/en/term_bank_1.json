@@ -6,7 +6,15 @@
     "adj",
     0,
     [
-      "pleasant, delightful, fun, enjoyable"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "pleasant, delightful, fun, enjoyable"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -20,9 +28,10 @@
     [
       {
         "type": "structured-content",
-        "content": [
-          "liked, favorite",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "liked, favorite",
             {
               "tag": "div",
               "data": {
@@ -80,7 +89,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -95,9 +104,10 @@
     [
       {
         "type": "structured-content",
-        "content": [
-          "a raccoon dog, Nyctereutes procyonoides",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "a raccoon dog, Nyctereutes procyonoides",
             {
               "tag": "div",
               "data": {
@@ -127,7 +137,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -136,15 +146,16 @@
   [
     "狸",
     "たぬき",
-    "n fig",
+    "fig n",
     "n",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          "(figurative) a person who pretends to be good but in fact is cunning (compare English sly fox)",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "a person who pretends to be good but in fact is cunning (compare English sly fox)",
             {
               "tag": "div",
               "data": {
@@ -174,7 +185,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -183,11 +194,19 @@
   [
     "狸",
     "たぬき",
-    "n abbv",
+    "abbv n",
     "n",
     0,
     [
-      "Short for 狸饂飩 (tanuki-udon) and 狸蕎麦 (tanuki-soba): styles of various noodle dishes"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "Short for 狸饂飩 (tanuki-udon) and 狸蕎麦 (tanuki-soba): styles of various noodle dishes"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -195,15 +214,16 @@
   [
     "狸",
     "たぬき",
-    "n abbv rare",
+    "abbv rare n",
     "n",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          "(rare) Short for 狸寝入り (tanuki neiri): pretending to be asleep",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "Short for 狸寝入り (tanuki neiri): pretending to be asleep",
             {
               "tag": "div",
               "data": {
@@ -232,7 +252,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -241,11 +261,19 @@
   [
     "狸",
     "たぬき",
-    "n abbv obs rare",
+    "abbv obs rare n",
     "n",
     0,
     [
-      "Short for 狸汁 (tanuki-jiru): a soup made from tanuki meat mixed with daikon, burdock root, etc."
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "Short for 狸汁 (tanuki-jiru): a soup made from tanuki meat mixed with daikon, burdock root, etc."
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -259,64 +287,123 @@
     [
       {
         "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "data": {
-              "listType": "li"
-            },
-            "content": "to run (move fast on foot)"
-          },
-          {
-            "tag": "div",
-            "data": {
-              "listType": "ol"
-            },
-            "style": {
-              "marginLeft": 2
-            },
-            "content": [
-              {
-                "tag": "div",
-                "data": {
-                  "listType": "li"
-                },
-                "content": [
-                  {
-                    "tag": "span",
-                    "data": {
-                      "listType": "number"
-                    },
-                    "content": "1. "
-                  },
-                  "to move forward; (of a machine) to operate, function; (of objects) to move at a high speed (of a vehicle)"
-                ]
+        "content": {
+          "tag": "div",
+          "content": [
+            "to run (move fast on foot)",
+            {
+              "tag": "div",
+              "data": {
+                "content": "extra-info"
               },
-              {
+              "content": {
                 "tag": "div",
                 "data": {
-                  "listType": "li"
+                  "content": "example-sentence"
                 },
                 "content": [
                   {
-                    "tag": "span",
+                    "tag": "div",
                     "data": {
-                      "listType": "number"
+                      "content": "example-sentence-a"
                     },
-                    "content": "2. "
+                    "content": "車が走っている。"
                   },
-                  "to flow vigorously (of liquid)"
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence-b"
+                    },
+                    "content": "A car is running. / Cars are running."
+                  }
                 ]
               }
-            ]
-          }
-        ]
+            }
+          ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          "to move smoothly; to slide",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "div",
+              "content": [
+                "to move forward; (of a machine) to operate, function; (of objects) to move at a high speed (of a vehicle)",
+                {
+                  "tag": "div",
+                  "data": {
+                    "content": "extra-info"
+                  },
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "車が走っている。"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "A car is running. / Cars are running."
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "content": [
+                "to flow vigorously (of liquid)",
+                {
+                  "tag": "div",
+                  "data": {
+                    "content": "extra-info"
+                  },
+                  "content": {
+                    "tag": "div",
+                    "data": {
+                      "content": "example-sentence"
+                    },
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-a"
+                        },
+                        "content": "石の上を水が走る。"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "example-sentence-b"
+                        },
+                        "content": "The water runs over the stones."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "to move smoothly; to slide",
             {
               "tag": "div",
               "data": {
@@ -346,15 +433,32 @@
               }
             }
           ]
-        ]
+        }
       },
-      "to run away, escape",
-      "to rush, hurry around",
       {
         "type": "structured-content",
-        "content": [
-          "to give over oneself to; to commit oneself to (usually something bad)",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "to run away, escape"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "to rush, hurry around"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "to give over oneself to; to commit oneself to (usually something bad)",
             {
               "tag": "div",
               "data": {
@@ -412,14 +516,23 @@
               }
             }
           ]
-        ]
+        }
       },
-      "to spread out, scatter, splatter, spout",
       {
         "type": "structured-content",
-        "content": [
-          "to lead or extend in a certain direction",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "to spread out, scatter, splatter, spout"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "to lead or extend in a certain direction",
             {
               "tag": "div",
               "data": {
@@ -448,13 +561,14 @@
               }
             }
           ]
-        ]
+        }
       },
       {
         "type": "structured-content",
-        "content": [
-          "to appear briefly; to flash",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "to appear briefly; to flash",
             {
               "tag": "div",
               "data": {
@@ -512,9 +626,17 @@
               }
             }
           ]
-        ]
+        }
       },
-      "(used with 胸(むね)が (mune ga)) to feel palpitations; to have a sense of unease"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "(used with 胸(むね)が (mune ga)) to feel palpitations; to have a sense of unease"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -522,15 +644,16 @@
   [
     "走る",
     "はしる",
-    "v vt",
+    "vt v",
     "v",
     0,
     [
       {
         "type": "structured-content",
-        "content": [
-          "(transitive) to run through some kind of place",
-          [
+        "content": {
+          "tag": "div",
+          "content": [
+            "to run through some kind of place",
             {
               "tag": "div",
               "data": {
@@ -560,7 +683,7 @@
               }
             }
           ]
-        ]
+        }
       }
     ],
     0,
@@ -569,11 +692,19 @@
   [
     "走る",
     "はしる",
-    "v euph",
+    "euph v",
     "v",
     0,
     [
-      "to crack"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "to crack"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -585,7 +716,15 @@
     "v",
     0,
     [
-      "Alternative spelling of ハシる"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "Alternative spelling of ハシる"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -597,8 +736,24 @@
     "n",
     0,
     [
-      "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))",
-      "melon, gourd"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "melon, gourd"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -610,8 +765,24 @@
     "n",
     0,
     [
-      "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))",
-      "melon, gourd"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))"
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "melon, gourd"
+          ]
+        }
+      }
     ],
     0,
     ""
@@ -623,7 +794,15 @@
     "phrase",
     0,
     [
-      "[I am / someone is] hungry"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            "[I am / someone is] hungry"
+          ]
+        }
+      }
     ],
     0,
     ""
