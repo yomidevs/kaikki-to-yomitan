@@ -1,16 +1,16 @@
 [
   [
-    "v",
-    "partOfSpeech",
-    -1,
-    "verb",
-    1
-  ],
-  [
     "vt",
     "partOfSpeech",
     -1,
     "transitive verb",
+    1
+  ],
+  [
+    "v",
+    "partOfSpeech",
+    -1,
+    "verb",
     1
   ],
   [
@@ -42,17 +42,17 @@
     0
   ],
   [
-    "n",
-    "partOfSpeech",
-    -1,
-    "noun",
-    1
-  ],
-  [
     "fem",
     "",
     -1,
     "feminine",
+    1
+  ],
+  [
+    "n",
+    "partOfSpeech",
+    -1,
+    "noun",
     1
   ]
 ]

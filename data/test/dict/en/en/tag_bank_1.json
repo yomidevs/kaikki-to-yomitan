@@ -1,12 +1,5 @@
 [
   [
-    "v",
-    "partOfSpeech",
-    -1,
-    "verb",
-    1
-  ],
-  [
     "vdt",
     "partOfSpeech",
     -1,
@@ -21,18 +14,18 @@
     1
   ],
   [
+    "v",
+    "partOfSpeech",
+    -1,
+    "verb",
+    1
+  ],
+  [
     "fig",
     "",
     0,
     "figuratively",
     0
-  ],
-  [
-    "n",
-    "partOfSpeech",
-    -1,
-    "noun",
-    1
   ],
   [
     "arch",
@@ -47,5 +40,12 @@
     0,
     "literary",
     0
+  ],
+  [
+    "n",
+    "partOfSpeech",
+    -1,
+    "noun",
+    1
   ]
 ]

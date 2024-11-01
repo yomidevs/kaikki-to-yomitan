@@ -8,15 +8,27 @@
             "tags": []
           }
         ],
-        "senses": [
-          {
-            "glosses": [
-              "[1] aussuchen, auswählen, vorziehen, wählen"
-            ],
-            "tags": [],
-            "examples": []
-          }
-        ]
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "[1] aussuchen, auswählen, vorziehen, wählen",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ]
+          ]
+        }
       }
     }
   }

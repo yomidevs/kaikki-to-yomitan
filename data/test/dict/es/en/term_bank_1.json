@@ -2,109 +2,125 @@
   [
     "vivir",
     "",
-    "v vi",
+    "vi v",
     "v",
     0,
     [
-      "to live; to be alive",
       {
         "type": "structured-content",
         "content": [
-          "(intransitive) to make a living, to live on",
-          [
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
-                "tag": "div",
-                "data": {
-                  "content": "example-sentence"
-                },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Vive de migas, nada más."
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
-                    },
-                    "content": "He lives on crumbs, nothing more."
-                  }
-                ]
-              }
-            }
-          ]
+          {
+            "tag": "div",
+            "content": [
+              "to live; to be alive"
+            ]
+          }
         ]
       },
       {
         "type": "structured-content",
         "content": [
-          "(intransitive) to live in, reside, inhabit",
-          [
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+          {
+            "tag": "div",
+            "content": [
+              "to make a living, to live on",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Vive en la casa roja."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Vive de migas, nada más."
                     },
-                    "content": "She lives in the red house."
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "He lives on crumbs, nothing more."
+                    }
+                  ]
+                }
               }
-            },
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to live in, reside, inhabit",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "La pobrecita vive con dos hermanas crueles."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Vive en la casa roja."
                     },
-                    "content": "The poor girl lives with two cruel sisters."
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "She lives in the red house."
+                    }
+                  ]
+                }
+              },
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "La pobrecita vive con dos hermanas crueles."
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "The poor girl lives with two cruel sisters."
+                    }
+                  ]
+                }
               }
-            }
-          ]
+            ]
+          }
         ]
       }
     ],
@@ -114,11 +130,21 @@
   [
     "vivir",
     "",
-    "v vt",
+    "vt v",
     "v",
     0,
     [
-      "to experience, to live through"
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to experience, to live through"
+            ]
+          }
+        ]
+      }
     ],
     0,
     ""

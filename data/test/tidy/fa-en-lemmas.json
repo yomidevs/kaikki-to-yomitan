@@ -24,17 +24,29 @@
             ]
           }
         ],
-        "senses": [
-          {
-            "glosses": [
-              "(Khorasan) a kind of pea"
-            ],
-            "tags": [
-              "Khorasan"
-            ],
-            "examples": []
-          }
-        ]
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "(Khorasan) a kind of pea",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "Khorasan"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ]
+          ]
+        }
       }
     }
   },
@@ -76,109 +88,69 @@
             ]
           }
         ],
-        "senses": [
-          {
-            "glosses": [
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan).",
               {
-                "type": "structured-content",
-                "content": [
-                  "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan).",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "بَرادَرِ شُوْهَرِش فارْسی بَلَدِه."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "Her husband's brother knows Persian."
-                          }
-                        ]
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "بَرادَرِ شُوْهَرِش فارْسی بَلَدِه.",
+                        "english": "Her husband's brother knows Persian."
                       }
-                    }
+                    ]
                   ]
                 ]
               }
             ],
-            "tags": [],
-            "examples": [
+            [
+              "Persian (the language of Ancient Persia).",
               {
-                "text": "بَرادَرِ شُوْهَرِش فارْسی بَلَدِه.",
-                "english": "Her husband's brother knows Persian."
-              }
-            ]
-          },
-          {
-            "glosses": [
-              "Persian (the language of Ancient Persia)."
-            ],
-            "tags": [],
-            "examples": []
-          },
-          {
-            "glosses": [
-              {
-                "type": "structured-content",
-                "content": [
-                  "Persian, main ethnic group of Iran.",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "فارْسی هَسْتیم."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "We are Persian."
-                          }
-                        ]
-                      }
-                    }
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    []
                   ]
                 ]
               }
             ],
-            "tags": [],
-            "examples": [
+            [
+              "Persian, main ethnic group of Iran.",
               {
-                "text": "فارْسی هَسْتیم.",
-                "english": "We are Persian."
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "فارْسی هَسْتیم.",
+                        "english": "We are Persian."
+                      }
+                    ]
+                  ]
+                ]
               }
             ]
-          }
-        ]
+          ]
+        }
       }
     }
   }

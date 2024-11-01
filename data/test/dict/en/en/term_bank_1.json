@@ -2,43 +2,46 @@
   [
     "bring",
     "",
-    "v vdt vt",
+    "vdt vt v",
     "v",
     0,
     [
       {
         "type": "structured-content",
         "content": [
-          "(transitive, ditransitive) To transport toward somebody/somewhere.",
-          [
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+          {
+            "tag": "div",
+            "content": [
+              "To transport toward somebody/somewhere.",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "Waiter, please bring me a single malt whiskey."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Waiter, please bring me a single malt whiskey."
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      }
                     }
-                  }
-                ]
+                  ]
+                }
               }
-            }
-          ]
+            ]
+          }
         ]
       }
     ],
@@ -48,43 +51,46 @@
   [
     "bring",
     "",
-    "v fig vt",
+    "fig vt v",
     "v",
     0,
     [
       {
         "type": "structured-content",
         "content": [
-          "(transitive, figuratively) To supply or contribute.",
-          [
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+          {
+            "tag": "div",
+            "content": [
+              "To supply or contribute.",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "The new company director brought a fresh perspective on sales and marketing."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "The new company director brought a fresh perspective on sales and marketing."
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      }
                     }
-                  }
-                ]
+                  ]
+                }
               }
-            }
-          ]
+            ]
+          }
         ]
       }
     ],
@@ -94,46 +100,59 @@
   [
     "bring",
     "",
-    "v vt",
+    "vt v",
     "v",
     0,
     [
       {
         "type": "structured-content",
         "content": [
-          "(transitive) To occasion or bring about.",
-          [
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+          {
+            "tag": "div",
+            "content": [
+              "To occasion or bring about.",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "The controversial TV broadcast brought a storm of complaints."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "The controversial TV broadcast brought a storm of complaints."
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      }
                     }
-                  }
-                ]
+                  ]
+                }
               }
-            }
-          ]
+            ]
+          }
         ]
       },
-      "To raise (a lawsuit, charges, etc.) against somebody."
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "To raise (a lawsuit, charges, etc.) against somebody."
+            ]
+          }
+        ]
+      }
     ],
     0,
     ""
@@ -145,75 +164,91 @@
     "v",
     0,
     [
-      "To persuade; to induce; to draw; to lead; to guide.",
       {
         "type": "structured-content",
         "content": [
-          "To produce in exchange; to sell for; to fetch.",
-          [
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
-                "tag": "div",
-                "data": {
-                  "content": "example-sentence"
-                },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "What does coal bring per ton?"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
-                    }
-                  }
-                ]
-              }
-            }
-          ]
+          {
+            "tag": "div",
+            "content": [
+              "To persuade; to induce; to draw; to lead; to guide."
+            ]
+          }
         ]
       },
       {
         "type": "structured-content",
         "content": [
-          "(baseball) To pitch, often referring to a particularly hard thrown fastball.",
-          [
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+          {
+            "tag": "div",
+            "content": [
+              "To produce in exchange; to sell for; to fetch.",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "The closer Jones can really bring it."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "What does coal bring per ton?"
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      }
                     }
-                  }
-                ]
+                  ]
+                }
               }
-            }
-          ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "(baseball) To pitch, often referring to a particularly hard thrown fastball.",
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "The closer Jones can really bring it."
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
         ]
       }
     ],
@@ -223,43 +258,46 @@
   [
     "wain",
     "",
-    "n arch ltrry",
+    "arch ltrry n",
     "n",
     0,
     [
       {
         "type": "structured-content",
         "content": [
-          "(archaic or literary) A wagon; a four-wheeled cart for hauling loads, usually pulled by horses or oxen.",
-          [
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+          {
+            "tag": "div",
+            "content": [
+              "A wagon; a four-wheeled cart for hauling loads, usually pulled by horses or oxen.",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "\"The Hay Wain\" is a famous painting by John Constable."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "\"The Hay Wain\" is a famous painting by John Constable."
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      }
                     }
-                  }
-                ]
+                  ]
+                }
               }
-            }
-          ]
+            ]
+          }
         ]
       }
     ],

@@ -1,9 +1,9 @@
 [
   [
-    "choose",
+    "독일",
     "",
-    "",
-    "verb",
+    "🇰🇷 name",
+    "name",
     0,
     [
       {
@@ -12,7 +12,7 @@
           {
             "tag": "div",
             "content": [
-              "[1] aussuchen, auswählen, vorziehen, wählen"
+              "Germany (a country in Europe)"
             ]
           }
         ]

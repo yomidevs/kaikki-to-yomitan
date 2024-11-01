@@ -6,7 +6,17 @@
     "n",
     0,
     [
-      "(Khorasan) a kind of pea"
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "(Khorasan) a kind of pea"
+            ]
+          }
+        ]
+      }
     ],
     0,
     ""
@@ -21,74 +31,90 @@
       {
         "type": "structured-content",
         "content": [
-          "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan).",
-          [
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+          {
+            "tag": "div",
+            "content": [
+              "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan).",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "بَرادَرِ شُوْهَرِش فارْسی بَلَدِه."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "بَرادَرِ شُوْهَرِش فارْسی بَلَدِه."
                     },
-                    "content": "Her husband's brother knows Persian."
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "Her husband's brother knows Persian."
+                    }
+                  ]
+                }
               }
-            }
-          ]
+            ]
+          }
         ]
       },
-      "Persian (the language of Ancient Persia).",
       {
         "type": "structured-content",
         "content": [
-          "Persian, main ethnic group of Iran.",
-          [
-            {
-              "tag": "div",
-              "data": {
-                "content": "extra-info"
-              },
-              "content": {
+          {
+            "tag": "div",
+            "content": [
+              "Persian (the language of Ancient Persia)."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "Persian, main ethnic group of Iran.",
+              {
                 "tag": "div",
                 "data": {
-                  "content": "example-sentence"
+                  "content": "extra-info"
                 },
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-a"
-                    },
-                    "content": "فارْسی هَسْتیم."
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
                   },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "example-sentence-b"
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "فارْسی هَسْتیم."
                     },
-                    "content": "We are Persian."
-                  }
-                ]
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "We are Persian."
+                    }
+                  ]
+                }
               }
-            }
-          ]
+            ]
+          }
         ]
       }
     ],

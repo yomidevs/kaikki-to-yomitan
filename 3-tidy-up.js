@@ -54,52 +54,6 @@ function isInflectionGloss(glosses, formOf) {
 }
 
 /**
- * @param {GlossTwig} glossTwig
- * @param {number} level
- * @returns {import('types').TermBank.StructuredContent[]}
- */
-function handleLevel(glossTwig, level) {
-    /** @type {import('types').TermBank.StructuredContent[]} */
-    const nestDefs = [];
-    let defIndex = 0;
-
-    for (const [def, children] of glossTwig) {
-        defIndex += 1;
-
-        if(children.size > 0) {
-            const nextLevel = level + 1;
-            const childDefs = handleLevel(children, nextLevel);
-
-            const listType = level === 1 ? "li" : "number";
-            /** @type {import('types').TermBank.StructuredContent} */
-            const content = level === 1 ? def : [{ "tag": "span", "data": { "listType": "number" }, "content": `${defIndex}. ` }, def];
-
-            nestDefs.push([
-                { "tag": "div", "data": { "listType": listType }, "content": content },
-                { "tag": "div", "data": { "listType": "ol" }, "style": { "marginLeft": level + 1 }, "content": childDefs }
-            ]);
-        } else {
-            nestDefs.push({ "tag": "div", "data": { "listType": "li" }, "content": [{ "tag": "span", "data": { "listType": "number" }, "content": `${defIndex}. ` }, def] });
-        }
-    }
-
-    return nestDefs;
-}
-
-/**
- * @param {GlossTwig} glossTwig
- * @param {SenseInfo} sense
- */
-function handleNest(glossTwig, sense) {
-    const nestedGloss = handleLevel(glossTwig, 1);
-
-    if (nestedGloss.length > 0) {
-        for (const entry of nestedGloss) {
-            sense.glosses.push({ "type": "structured-content", "content": entry });
-        }
-    }
-}
-/**
  * @param {string} form 
  * @param {string} pos 
  * @param {string} lemma 
@@ -231,73 +185,9 @@ function handleLine(parsedLine) {
 
     const glossTree = getGlossTree(sensesWithoutInflectionGlosses);
     
-    for (const [gloss, branches] of glossTree) {
-        const tags = branches.get('_tags') || [];
-        const examples = branches.get('_examples') || [];
-        branches.delete('_tags');
-        branches.delete('_examples');
-
-        /** @type {SenseInfo} */
-        const currSense = { glosses: [], tags, examples };
-        if(branches.size === 0) {
-            if(examples.length > 0) {
-                currSense.glosses.push({ 
-                    "type": "structured-content", 
-                    "content": [
-                        gloss,
-                        getStructuredExamples(examples)
-                    ]
-                });
-            } else {
-                currSense.glosses.push(gloss);
-            }
-            
-        } else {
-            /** @type {GlossBranch} */
-            const syntheticBranch = new Map();
-            syntheticBranch.set(gloss, branches);
-            handleNest(syntheticBranch, currSense);
-        }
-
-        if (currSense.glosses.length > 0) {
-            saveSenseResult(word, readings, pos, currSense);
-        }
+    for (const reading of readings) {
+        lemmaDict[word][reading][pos].glossTree = glossTree;
     }
-}
-
-/**
- * @param {Example[]} examples 
- * @returns {import('types').TermBank.StructuredContent[]}
- */
-function getStructuredExamples(examples) {
-    return examples.map(({text, english}) => {
-        return {
-            "tag": "div",
-            "data": {
-                "content": "extra-info"
-            },
-            "content": {
-                "tag":"div",
-                "data": {
-                    "content": "example-sentence"
-                },
-                "content":[{
-                    "tag": "div",
-                    "data": {
-                        "content": "example-sentence-a",
-                    },
-                    "content": text
-                },
-                {
-                    "tag": "div",
-                    "data": {
-                        "content": "example-sentence-b"
-                    },
-                    "content": english
-                }
-            ]}
-        }
-    });
 }
 
 /**
@@ -305,6 +195,7 @@ function getStructuredExamples(examples) {
  * @returns {GlossTree}
  */
 function getGlossTree(sensesWithoutInflectionGlosses) {
+    /** @type {GlossTree} */
     const glossTree = new Map();
     for (const sense of sensesWithoutInflectionGlosses) {
         const { glossesArray, tags } = sense;
@@ -321,19 +212,21 @@ function getGlossTree(sensesWithoutInflectionGlosses) {
             .map(({text, english}) => ({text, english}))  // Step 3: Pick only properties that will be used
             .slice(0, 2);
 
-
+        /** @type {GlossTree|GlossBranch} */
         let temp = glossTree;
         for (const [levelIndex, levelGloss] of glossesArray.entries()) {
             let curr = temp.get(levelGloss);
             if (!curr) {
                 curr = new Map();
                 temp.set(levelGloss, curr);
-                if (levelIndex === 0) {
-                    curr.set('_tags', tags);
-                    curr.set('_examples', examples);
-                }
-            } else if (levelIndex === 0) {
-                curr.set('_tags', tags.filter(value => curr?.get('_tags')?.includes(value)));
+            }
+            if (levelIndex === 0) {
+                const branch = /** @type {GlossBranch} */ (curr);
+                const filteredTags = curr.get('_tags') ? tags.filter(value => branch.get('_tags')?.includes(value)) : tags;
+                branch.set('_tags', filteredTags);   
+            }
+            if(levelIndex === glossesArray.length - 1) {
+                curr.set('_examples', examples);
             }
             temp = curr;
         }
@@ -380,18 +273,6 @@ function processForms(forms, word, pos) {
  * @param {string} word 
  * @param {string[]} readings 
  * @param {string} pos 
- * @param {SenseInfo} currSense 
- */
-function saveSenseResult(word, readings, pos, currSense) {
-    for (const reading of readings) {
-        lemmaDict[word][reading][pos].senses.push(currSense);
-    }
-}
-
-/**
- * @param {string} word 
- * @param {string[]} readings 
- * @param {string} pos 
  * @param {IpaInfo} ipaObj 
  */
 function saveIpaResult(word, readings, pos, ipaObj) {
@@ -412,7 +293,7 @@ function initializeWordResult(word, readings, pos) {
     for (const reading of readings) {
         const result = ensureNestedObject(lemmaDict, [word, reading, pos]);
         result.ipa ??= [];
-        result.senses ??= [];
+        result.glossTree ??= new Map();
     }
 }
 
@@ -686,7 +567,7 @@ lr.on('end', () => {
 
     const lemmasFilePath = `${writeFolder}/${sourceIso}-${targetIso}-lemmas.json`;
     consoleOverwrite(`3-tidy-up.js: Writing lemma dict to ${lemmasFilePath}...`);
-    writeFileSync(lemmasFilePath, JSON.stringify(lemmaDict));
+    writeFileSync(lemmasFilePath, JSON.stringify(lemmaDict, mapJsonReplacer));
     
     for (const prop of Object.getOwnPropertyNames(lemmaDict)) {
         delete lemmaDict[prop];

@@ -8,15 +8,27 @@
             "tags": []
           }
         ],
-        "senses": [
-          {
-            "glosses": [
-              "pleasant, delightful, fun, enjoyable"
-            ],
-            "tags": [],
-            "examples": []
-          }
-        ]
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "pleasant, delightful, fun, enjoyable",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ]
+          ]
+        }
       }
     }
   },
@@ -37,87 +49,36 @@
             "tags": []
           }
         ],
-        "senses": [
-          {
-            "glosses": [
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "liked, favorite",
               {
-                "type": "structured-content",
-                "content": [
-                  "liked, favorite",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "好きな食べ物は？ アイスクリームです。",
+                        "english": "What's your favorite food? - It's ice cream."
                       },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "好きな食べ物は？ アイスクリームです。"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "What's your favorite food? - It's ice cream."
-                          }
-                        ]
+                      {
+                        "text": "君が好きだからこそこれほど頑張っているんだよ。",
+                        "english": "It's precisely because I like you [because of my fondness for you] that I'm working this hard."
                       }
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "君が好きだからこそこれほど頑張っているんだよ。"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "It's precisely because I like you [because of my fondness for you] that I'm working this hard."
-                          }
-                        ]
-                      }
-                    }
+                    ]
                   ]
                 ]
               }
-            ],
-            "tags": [],
-            "examples": [
-              {
-                "text": "好きな食べ物は？ アイスクリームです。",
-                "english": "What's your favorite food? - It's ice cream."
-              },
-              {
-                "text": "君が好きだからこそこれほど頑張っているんだよ。",
-                "english": "It's precisely because I like you [because of my fondness for you] that I'm working this hard."
-              }
             ]
-          }
-        ]
+          ]
+        }
       }
     }
   },
@@ -130,175 +91,119 @@
             "tags": []
           }
         ],
-        "senses": [
-          {
-            "glosses": [
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "a raccoon dog, Nyctereutes procyonoides",
               {
-                "type": "structured-content",
-                "content": [
-                  "a raccoon dog, Nyctereutes procyonoides",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "アライグマなら尻尾にシマがある。どう見でもタヌキだ。"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "If you're a raccoon, you'd have stripes on your tail. No matter how you look at it, you're a raccoon dog."
-                          }
-                        ]
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "アライグマなら尻尾にシマがある。どう見でもタヌキだ。",
+                        "english": "If you're a raccoon, you'd have stripes on your tail. No matter how you look at it, you're a raccoon dog."
                       }
-                    }
+                    ]
                   ]
                 ]
               }
             ],
-            "tags": [],
-            "examples": [
+            [
+              "(figurative) a person who pretends to be good but in fact is cunning (compare English sly fox)",
               {
-                "text": "アライグマなら尻尾にシマがある。どう見でもタヌキだ。",
-                "english": "If you're a raccoon, you'd have stripes on your tail. No matter how you look at it, you're a raccoon dog."
-              }
-            ]
-          },
-          {
-            "glosses": [
-              {
-                "type": "structured-content",
-                "content": [
-                  "(figurative) a person who pretends to be good but in fact is cunning (compare English sly fox)",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "やいやい、其処な狸め"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "Hey there, you sly dog!"
-                          }
-                        ]
+                    "_tags",
+                    [
+                      "figuratively"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "やいやい、其処な狸め",
+                        "english": "Hey there, you sly dog!"
                       }
-                    }
+                    ]
                   ]
                 ]
               }
             ],
-            "tags": [
-              "figuratively"
-            ],
-            "examples": [
+            [
+              "Short for 狸饂飩 (tanuki-udon) and 狸蕎麦 (tanuki-soba): styles of various noodle dishes",
               {
-                "text": "やいやい、其処な狸め",
-                "english": "Hey there, you sly dog!"
-              }
-            ]
-          },
-          {
-            "glosses": [
-              "Short for 狸饂飩 (tanuki-udon) and 狸蕎麦 (tanuki-soba): styles of various noodle dishes"
-            ],
-            "tags": [
-              "abbreviation",
-              "alt-of"
-            ],
-            "examples": []
-          },
-          {
-            "glosses": [
-              {
-                "type": "structured-content",
-                "content": [
-                  "(rare) Short for 狸寝入り (tanuki neiri): pretending to be asleep",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "狸を決め込む ― tanuki o kimekomu ― pretend to be a raccoon dog → feign sleep"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            }
-                          }
-                        ]
-                      }
-                    }
+                    "_tags",
+                    [
+                      "abbreviation",
+                      "alt-of"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
                   ]
                 ]
               }
             ],
-            "tags": [
-              "abbreviation",
-              "alt-of",
-              "rare"
-            ],
-            "examples": [
+            [
+              "(rare) Short for 狸寝入り (tanuki neiri): pretending to be asleep",
               {
-                "text": "狸を決め込む ― tanuki o kimekomu ― pretend to be a raccoon dog → feign sleep"
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "abbreviation",
+                      "alt-of",
+                      "rare"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "狸を決め込む ― tanuki o kimekomu ― pretend to be a raccoon dog → feign sleep"
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ],
+            [
+              "(rare, obsolete) Short for 狸汁 (tanuki-jiru): a soup made from tanuki meat mixed with daikon, burdock root, etc.",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "abbreviation",
+                      "alt-of",
+                      "obsolete",
+                      "rare"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
               }
             ]
-          },
-          {
-            "glosses": [
-              "(rare, obsolete) Short for 狸汁 (tanuki-jiru): a soup made from tanuki meat mixed with daikon, burdock root, etc."
-            ],
-            "tags": [
-              "abbreviation",
-              "alt-of",
-              "obsolete",
-              "rare"
-            ],
-            "examples": []
-          }
-        ]
+          ]
+        }
       }
     }
   },
@@ -311,422 +216,283 @@
             "tags": []
           }
         ],
-        "senses": [
-          {
-            "glosses": [
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "to run (move fast on foot)",
               {
-                "type": "structured-content",
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "listType": "li"
-                    },
-                    "content": "to run (move fast on foot)"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "listType": "ol"
-                    },
-                    "style": {
-                      "marginLeft": 2
-                    },
-                    "content": [
-                      {
-                        "tag": "div",
-                        "data": {
-                          "listType": "li"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "data": {
-                              "listType": "number"
-                            },
-                            "content": "1. "
-                          },
-                          "to move forward; (of a machine) to operate, function; (of objects) to move at a high speed (of a vehicle)"
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "to move forward; (of a machine) to operate, function; (of objects) to move at a high speed (of a vehicle)",
+                    {
+                      "_type": "map",
+                      "map": [
+                        [
+                          "_examples",
+                          [
+                            {
+                              "text": "車が走っている。",
+                              "english": "A car is running. / Cars are running."
+                            }
+                          ]
                         ]
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "listType": "li"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "data": {
-                              "listType": "number"
-                            },
-                            "content": "2. "
-                          },
-                          "to flow vigorously (of liquid)"
+                      ]
+                    }
+                  ],
+                  [
+                    "to flow vigorously (of liquid)",
+                    {
+                      "_type": "map",
+                      "map": [
+                        [
+                          "_examples",
+                          [
+                            {
+                              "text": "石の上を水が走る。",
+                              "english": "The water runs over the stones."
+                            }
+                          ]
                         ]
+                      ]
+                    }
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "マラソン選手が走り出した。",
+                        "english": "Marathon athlete(s) started running."
                       }
                     ]
-                  }
-                ]
-              }
-            ],
-            "tags": [],
-            "examples": [
-              {
-                "text": "車が走っている。",
-                "english": "A car is running. / Cars are running."
-              }
-            ]
-          },
-          {
-            "glosses": [
-              {
-                "type": "structured-content",
-                "content": [
-                  "(transitive) to run through some kind of place",
-                  [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "彼はこの道をよく走る。"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "He often runs down this street."
-                          }
-                        ]
-                      }
-                    }
                   ]
                 ]
               }
             ],
-            "tags": [
-              "transitive"
-            ],
-            "examples": [
+            [
+              "(transitive) to run through some kind of place",
               {
-                "text": "彼はこの道をよく走る。",
-                "english": "He often runs down this street."
-              }
-            ]
-          },
-          {
-            "glosses": [
-              {
-                "type": "structured-content",
-                "content": [
-                  "to move smoothly; to slide",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "刀が鞘から走る。"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "The sword slides out of its sheath."
-                          }
-                        ]
+                    "_tags",
+                    [
+                      "transitive"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "彼はこの道をよく走る。",
+                        "english": "He often runs down this street."
                       }
-                    }
+                    ]
                   ]
                 ]
               }
             ],
-            "tags": [],
-            "examples": [
+            [
+              "to move smoothly; to slide",
               {
-                "text": "刀が鞘から走る。",
-                "english": "The sword slides out of its sheath."
-              }
-            ]
-          },
-          {
-            "glosses": [
-              "to run away, escape"
-            ],
-            "tags": [],
-            "examples": []
-          },
-          {
-            "glosses": [
-              "to rush, hurry around"
-            ],
-            "tags": [],
-            "examples": []
-          },
-          {
-            "glosses": [
-              {
-                "type": "structured-content",
-                "content": [
-                  "to give over oneself to; to commit oneself to (usually something bad)",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "彼は敵に走った。"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "He defected to the enemy."
-                          }
-                        ]
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "刀が鞘から走る。",
+                        "english": "The sword slides out of its sheath."
                       }
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "立場を忘れて感情に走ってはいけない。"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "Don't forget your stance and give in to emotions."
-                          }
-                        ]
-                      }
-                    }
+                    ]
                   ]
                 ]
               }
             ],
-            "tags": [],
-            "examples": [
+            [
+              "to run away, escape",
               {
-                "text": "彼は敵に走った。",
-                "english": "He defected to the enemy."
-              },
-              {
-                "text": "立場を忘れて感情に走ってはいけない。",
-                "english": "Don't forget your stance and give in to emotions."
-              }
-            ]
-          },
-          {
-            "glosses": [
-              "to spread out, scatter, splatter, spout"
-            ],
-            "tags": [],
-            "examples": []
-          },
-          {
-            "glosses": [
-              {
-                "type": "structured-content",
-                "content": [
-                  "to lead or extend in a certain direction",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "山脈が南北に走る。\nSanmyaku ga nanboku ni hashiru.\nThe mountain range runs north–south."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            }
-                          }
-                        ]
-                      }
-                    }
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    []
                   ]
                 ]
               }
             ],
-            "tags": [],
-            "examples": [
+            [
+              "to rush, hurry around",
               {
-                "text": "山脈が南北に走る。\nSanmyaku ga nanboku ni hashiru.\nThe mountain range runs north–south."
-              }
-            ]
-          },
-          {
-            "glosses": [
-              {
-                "type": "structured-content",
-                "content": [
-                  "to appear briefly; to flash",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "稲妻が走る"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "lightning flashes by"
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "背中に痛みが走った。"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "I felt a brief pain in my back."
-                          }
-                        ]
-                      }
-                    }
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    []
                   ]
                 ]
               }
             ],
-            "tags": [],
-            "examples": [
+            [
+              "to give over oneself to; to commit oneself to (usually something bad)",
               {
-                "text": "稲妻が走る",
-                "english": "lightning flashes by"
-              },
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "彼は敵に走った。",
+                        "english": "He defected to the enemy."
+                      },
+                      {
+                        "text": "立場を忘れて感情に走ってはいけない。",
+                        "english": "Don't forget your stance and give in to emotions."
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ],
+            [
+              "to spread out, scatter, splatter, spout",
               {
-                "text": "背中に痛みが走った。",
-                "english": "I felt a brief pain in my back."
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ],
+            [
+              "to lead or extend in a certain direction",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "山脈が南北に走る。\nSanmyaku ga nanboku ni hashiru.\nThe mountain range runs north–south."
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ],
+            [
+              "to appear briefly; to flash",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "稲妻が走る",
+                        "english": "lightning flashes by"
+                      },
+                      {
+                        "text": "背中に痛みが走った。",
+                        "english": "I felt a brief pain in my back."
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ],
+            [
+              "(used with 胸(むね)が (mune ga)) to feel palpitations; to have a sense of unease",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "used with 胸(むね)が (mune ga)"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ],
+            [
+              "(euphemistic) to crack",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "euphemistic"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ],
+            [
+              "(music) Alternative spelling of ハシる",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "alt-of",
+                      "alternative"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
               }
             ]
-          },
-          {
-            "glosses": [
-              "(used with 胸(むね)が (mune ga)) to feel palpitations; to have a sense of unease"
-            ],
-            "tags": [
-              "used with 胸(むね)が (mune ga)"
-            ],
-            "examples": []
-          },
-          {
-            "glosses": [
-              "(euphemistic) to crack"
-            ],
-            "tags": [
-              "euphemistic"
-            ],
-            "examples": []
-          },
-          {
-            "glosses": [
-              "(music) Alternative spelling of ハシる"
-            ],
-            "tags": [
-              "alt-of",
-              "alternative"
-            ],
-            "examples": []
-          }
-        ]
+          ]
+        }
       }
     }
   },
@@ -743,22 +509,43 @@
             "tags": []
           }
         ],
-        "senses": [
-          {
-            "glosses": [
-              "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))"
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
             ],
-            "tags": [],
-            "examples": []
-          },
-          {
-            "glosses": [
-              "melon, gourd"
-            ],
-            "tags": [],
-            "examples": []
-          }
-        ]
+            [
+              "melon, gourd",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ]
+          ]
+        }
       }
     },
     "ごしょく": {
@@ -773,22 +560,43 @@
             "tags": []
           }
         ],
-        "senses": [
-          {
-            "glosses": [
-              "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))"
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
             ],
-            "tags": [],
-            "examples": []
-          },
-          {
-            "glosses": [
-              "melon, gourd"
-            ],
-            "tags": [],
-            "examples": []
-          }
-        ]
+            [
+              "melon, gourd",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ]
+          ]
+        }
       }
     }
   },
@@ -801,15 +609,27 @@
             "tags": []
           }
         ],
-        "senses": [
-          {
-            "glosses": [
-              "[I am / someone is] hungry"
-            ],
-            "tags": [],
-            "examples": []
-          }
-        ]
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "[I am / someone is] hungry",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ]
+          ]
+        }
       }
     }
   }

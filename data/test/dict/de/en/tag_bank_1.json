@@ -1,12 +1,5 @@
 [
   [
-    "v",
-    "partOfSpeech",
-    -1,
-    "verb",
-    1
-  ],
-  [
     "c-4",
     "",
     0,
@@ -28,10 +21,10 @@
     1
   ],
   [
-    "n",
+    "v",
     "partOfSpeech",
     -1,
-    "noun",
+    "verb",
     1
   ],
   [
@@ -39,6 +32,13 @@
     "",
     -1,
     "masculine",
+    1
+  ],
+  [
+    "n",
+    "partOfSpeech",
+    -1,
+    "noun",
     1
   ],
   [
@@ -60,6 +60,13 @@
     "",
     0,
     "military",
+    0
+  ],
+  [
+    "cards",
+    "",
+    0,
+    "card games",
     0
   ],
   [
@@ -89,13 +96,6 @@
     1,
     "rare",
     -1
-  ],
-  [
-    "cards",
-    "",
-    0,
-    "card games",
-    0
   ],
   [
     "prep",

@@ -110,6 +110,104 @@ function findModifiedTag(tag){
     return modifiedTag;
 }
 
+/**
+ * @param {Example[]} examples 
+ * @returns {import('types').TermBank.StructuredContent[]}
+ */
+function getStructuredExamples(examples) {
+    return examples.map(({text, english}) => {
+        return {
+            "tag": "div",
+            "data": {
+                "content": "extra-info"
+            },
+            "content": {
+                "tag":"div",
+                "data": {
+                    "content": "example-sentence"
+                },
+                "content":[{
+                    "tag": "div",
+                    "data": {
+                        "content": "example-sentence-a",
+                    },
+                    "content": text
+                },
+                {
+                    "tag": "div",
+                    "data": {
+                        "content": "example-sentence-b"
+                    },
+                    "content": english
+                }
+            ]}
+        }
+    });
+}
+
+/**
+ * @param {GlossTwig} glossTwig
+ * @param {string[]} senseTags
+ * @param {string} pos
+ * @param {number} depth
+ * @returns {{nestDefs: import('types').TermBank.StructuredContent[], recognizedTags: string[]}}
+ */
+function handleLevel(glossTwig, senseTags, pos, depth) {
+    /** @type {import('types').TermBank.StructuredContent[]} */
+    const nestDefs = [];
+    /** @type {string[]} */
+    let tags = [];
+
+    for (const [def, children] of glossTwig) {                      
+        let processedDef = def;
+        
+        if(depth === 0 && glossTwig.size === 1){
+            const {gloss, recognizedTags} = processGlossTags(def, senseTags, pos);
+            processedDef = gloss;
+            tags = recognizedTags;
+        }
+
+        const examples = children.get('_examples') || [];
+        children.delete('_examples');
+
+        const tag = depth === 0 ? 'div' : 'li';
+
+        nestDefs.push({ "tag": tag, "content": [
+            processedDef,
+            ...getStructuredExamples(examples)
+        ] });
+
+        if(children.size > 0) {
+            const {nestDefs: childDefs} = handleLevel(children, senseTags, pos, depth + 1);
+
+            nestDefs.push(
+                { "tag": "ul", "content": childDefs }
+            );
+        }
+    }
+
+    return {nestDefs, recognizedTags: tags};
+}
+
+/**
+ * @param {GlossTwig} glossTwig
+ * @param {string[]} senseTags
+ * @param {string} pos
+ * @returns {{glosses: import('types').TermBank.DetailedDefinition[], recognizedTags: string[]}}
+ */
+function handleNest(glossTwig, senseTags, pos) {
+    /** @type {import('types').TermBank.DetailedDefinition[]} */
+    const glosses = [];
+
+    const {nestDefs: nestedGloss, recognizedTags} = handleLevel(glossTwig, senseTags, pos, 0);
+
+    if (nestedGloss.length > 0) {
+        glosses.push({ "type": "structured-content", "content": nestedGloss });
+    }
+
+    return {glosses, recognizedTags};
+}
+
 /** @type {FormsMap}  */
 const formsMap = new Map();
 
@@ -138,7 +236,7 @@ let lastTermBankIndex = 0;
     consoleOverwrite(`4-make-yomitan.js: reading lemmas...`);
     const lemmasFile = `${readFolder}/${source_iso}-${target_iso}-lemmas.json`;
     /** @type {LemmaDict} */
-    const lemmaDict = JSON.parse(readFileSync(path.resolve(__dirname, lemmasFile), 'utf8'));
+    const lemmaDict = JSON.parse(readFileSync(path.resolve(__dirname, lemmasFile), 'utf8'), mapJsonReviver);
 
     consoleOverwrite('4-make-yomitan.js: processing lemmas...');
     for (const [lemma, readings] of Object.entries(lemmaDict)) {
@@ -174,7 +272,8 @@ let lastTermBankIndex = 0;
             const ipa = [];
 
             for (const [pos, info] of Object.entries(partsOfSpeechOfWord)) {
-                const {senses} = info;
+                const foundPos = findPartOfSpeech(pos, partsOfSpeech, skippedPartsOfSpeech);
+                const {glossTree} = info;
 
                 const lemmaTags = [pos];
                 ipa.push(...info.ipa);
@@ -182,55 +281,35 @@ let lastTermBankIndex = 0;
                 /** @type {Object<string, import('types').TermBank.TermInformation>} */
                 const entries = {};
 
-                for (const sense of senses) {
+                for (const [gloss, branches] of glossTree.entries()) {
+                    const tags = branches.get('_tags') || [];
+                    branches.delete('_tags');
 
-                    const {glosses, tags, examples} = sense;
-                    const senseTags = [...lemmaTags, ...tags]
+                    const senseTags = [...tags, ...lemmaTags];
 
-                    glosses.forEach((gloss) => {
-                        debug(gloss);
-
-                        /**
-                         * @param {string} joinedTags 
-                         */
-                        function addGlossToEntries(joinedTags) {
-                            if(!gloss) return;
-                            if (entries[joinedTags]) {
-                                entries[joinedTags][5].push(gloss);
-                            } else {
-                                entries[joinedTags] = [
-                                    term, // term
-                                    reading !== normalizedLemma ? reading : '', // reading
-                                    joinedTags, // definition_tags
-                                    findPartOfSpeech(pos, partsOfSpeech, skippedPartsOfSpeech), // rules
-                                    0, // frequency
-                                    [gloss], // definitions
-                                    0, // sequence
-                                    '', // term_tags
-                                ];
-                            }
-                        }
-
-                        if (typeof gloss !== 'string') { 
-                            const { leftoverTags, recognizedTags } = processTags(lemmaTags, senseTags, [], pos);
-                            addGlossToEntries(recognizedTags.join(' '));
-                            return; 
-                        }
-
-                        const regex = /^\(([^()]+)\) ?/;
-                        const parenthesesContent = gloss.match(regex)?.[1];
-
-                        const parenthesesTags = parenthesesContent
-                            ? parenthesesContent.replace(/ or /g, ', ').split(', ').filter(Boolean)
-                            : [];
-
-                        const { leftoverTags, recognizedTags } = processTags(lemmaTags, senseTags, parenthesesTags, pos);
-
-                        gloss = gloss.replace(regex, leftoverTags);
-
-                        addGlossToEntries(recognizedTags.join(' '));
-                    });
+                    /** @type {GlossBranch} */
+                    const syntheticBranch = new Map();
+                    syntheticBranch.set(gloss, branches);
+                    const {glosses, recognizedTags} = handleNest(syntheticBranch, senseTags, pos);
+                    const joinedTags = recognizedTags.join(' ');
                     
+                    if(!glosses || !glosses.length) continue;
+
+                    if (entries[joinedTags]) {
+                        // entries[joinedTags][5].push(gloss);
+                        entries[joinedTags][5].push(...glosses);
+                    } else {
+                        entries[joinedTags] = [
+                            term, // term
+                            reading !== normalizedLemma ? reading : '', // reading
+                            joinedTags, // definition_tags
+                            foundPos, // rules
+                            0, // frequency
+                            glosses, // definitions
+                            0, // sequence
+                            '', // term_tags
+                        ];
+                    }
                 }
 
                 debug(entries);
@@ -431,6 +510,32 @@ writeFileSync(`data/language/${source_iso}/${target_iso}/skippedPartsOfSpeech.js
 console.log('4-make-yomitan.js: Done!')
 
 /**
+ * @param {string} gloss 
+ * @param {string[]} senseTags 
+ * @param {string} pos 
+ * @returns {{gloss: string, recognizedTags: string[]}}
+ */
+function processGlossTags(gloss, senseTags, pos) {
+    const regex = /^\(([^()]+)\) ?/;
+    /** @type {string[]} */
+    let parenthesesTags = [];
+
+    if (typeof gloss === 'string') {
+        const parenthesesContent = gloss.match(regex)?.[1];
+
+        parenthesesTags = parenthesesContent
+            ? parenthesesContent.replace(/ or /g, ', ').split(', ').filter(Boolean)
+            : [];
+    }
+
+    const { leftoverTags, recognizedTags } = processTags(senseTags, parenthesesTags, pos);
+
+    gloss = gloss.replace(regex, leftoverTags);
+
+    return {gloss, recognizedTags};
+}
+
+/**
  * @param {CondensedFormEntries} ymtFormData 
  * @returns {CondensedFormEntries}
  */
@@ -464,7 +569,7 @@ function writeYmtFormData(ymtFormData) {
 function writeBanks(folder, data, bankIndex = 0) {
     if(folder === 'form') folder = 'dict';
 
-    if(bankIndex === 0){
+    if(bankIndex === 0) {
         for (const file of readdirSync(`${writeFolder}/${folder}`)) {
             if (file.includes('term_')) { unlinkSync(`${writeFolder}/${folder}/${file}`); }
         }
@@ -524,17 +629,16 @@ function writeIndex(folder) {
 }
 
 /**
- * @param {string[]} lemmaTags 
  * @param {string[]} senseTags 
  * @param {string[]} parenthesesTags 
  * @param {string} pos 
  * @returns 
  */
-function processTags(lemmaTags, senseTags, parenthesesTags, pos) {
+function processTags(senseTags, parenthesesTags, pos) {
     /** @type {string[]} */
     let recognizedTags = [];
 
-    const allEntryTags = [...new Set([...lemmaTags, ...senseTags, ...parenthesesTags])];
+    const allEntryTags = [...new Set([...senseTags, ...parenthesesTags])];
     termTagCount += allEntryTags.length;
 
     const unrecognizedTags = allEntryTags

@@ -22,188 +22,101 @@
             ]
           }
         ],
-        "senses": [
-          {
-            "glosses": [
-              "fame"
-            ],
-            "tags": [
-              "declension-1"
-            ],
-            "examples": []
-          },
-          {
-            "glosses": [
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "fame",
               {
-                "type": "structured-content",
-                "content": [
-                  "rumour, talk, opinion, report",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "hascine propter rēs maledicās fāmās ferunt."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "Is it on account of these things that they spread slanderous reports?"
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "“Oenōtrī coluēre virī; nunc fāma minōrēs"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "“Oenotrian men tilled [the land]; now rumor [has it that their] descendants call the nation ‘Italy’ after the name of its leader, [Italus].”"
-                          }
-                        ]
-                      }
-                    }
+                    "_tags",
+                    [
+                      "declension-1"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
                   ]
                 ]
               }
             ],
-            "tags": [
-              "declension-1"
-            ],
-            "examples": [
+            [
+              "rumour, talk, opinion, report",
               {
-                "text": "hascine propter rēs maledicās fāmās ferunt.",
-                "english": "Is it on account of these things that they spread slanderous reports?"
-              },
-              {
-                "text": "“Oenōtrī coluēre virī; nunc fāma minōrēs",
-                "english": "“Oenotrian men tilled [the land]; now rumor [has it that their] descendants call the nation ‘Italy’ after the name of its leader, [Italus].”"
-              }
-            ]
-          },
-          {
-            "glosses": [
-              {
-                "type": "structured-content",
-                "content": [
-                  "reputation",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
+                    "_tags",
+                    [
+                      "declension-1"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "hascine propter rēs maledicās fāmās ferunt.",
+                        "english": "Is it on account of these things that they spread slanderous reports?"
                       },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "Dīmīcantī dē fāmā dēesse."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "To abandon one whose reputation is attacked."
-                          }
-                        ]
+                      {
+                        "text": "“Oenōtrī coluēre virī; nunc fāma minōrēs",
+                        "english": "“Oenotrian men tilled [the land]; now rumor [has it that their] descendants call the nation ‘Italy’ after the name of its leader, [Italus].”"
                       }
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "Fāma tamen clāra est; et adhūc sine crīmine vīxī."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "My good name is nevertheless unstained; and so far I have lived without blame."
-                          }
-                        ]
-                      }
-                    }
+                    ]
                   ]
                 ]
               }
             ],
-            "tags": [
-              "declension-1"
+            [
+              "reputation",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "declension-1"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "Dīmīcantī dē fāmā dēesse.",
+                        "english": "To abandon one whose reputation is attacked."
+                      },
+                      {
+                        "text": "Fāma tamen clāra est; et adhūc sine crīmine vīxī.",
+                        "english": "My good name is nevertheless unstained; and so far I have lived without blame."
+                      }
+                    ]
+                  ]
+                ]
+              }
             ],
-            "examples": [
+            [
+              "Fama, personified as a fast-moving, malicious goddess, the daughter of Terra. From the Greek φήμη, Pheme. Typically translated from the Latin as “Rumor.”",
               {
-                "text": "Dīmīcantī dē fāmā dēesse.",
-                "english": "To abandon one whose reputation is attacked."
-              },
-              {
-                "text": "Fāma tamen clāra est; et adhūc sine crīmine vīxī.",
-                "english": "My good name is nevertheless unstained; and so far I have lived without blame."
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "declension-1"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
               }
             ]
-          },
-          {
-            "glosses": [
-              "Fama, personified as a fast-moving, malicious goddess, the daughter of Terra. From the Greek φήμη, Pheme. Typically translated from the Latin as “Rumor.”"
-            ],
-            "tags": [
-              "declension-1"
-            ],
-            "examples": []
-          }
-        ]
+          ]
+        }
       }
     }
   },
@@ -236,144 +149,147 @@
             ]
           }
         ],
-        "senses": [
-          {
-            "glosses": [
-              "to choose, select"
-            ],
-            "tags": [
-              "conjugation-3"
-            ],
-            "examples": []
-          },
-          {
-            "glosses": [
-              "to appoint"
-            ],
-            "tags": [
-              "conjugation-3"
-            ],
-            "examples": []
-          },
-          {
-            "glosses": [
-              "to collect, gather, bring together"
-            ],
-            "tags": [
-              "conjugation-3"
-            ],
-            "examples": []
-          },
-          {
-            "glosses": [
-              "to take out, pick out, extract, remove"
-            ],
-            "tags": [
-              "conjugation-3"
-            ],
-            "examples": []
-          },
-          {
-            "glosses": [
-              "to take to one's self unjustly, carry off, steal, purloin, plunder, abstract"
-            ],
-            "tags": [
-              "conjugation-3"
-            ],
-            "examples": []
-          },
-          {
-            "glosses": [
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "to choose, select",
               {
-                "type": "structured-content",
-                "content": [
-                  "to read",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "Librōs lege."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "Read books."
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "Lēgistīne hunc librum?"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "Have you read this book?"
-                          }
-                        ]
-                      }
-                    }
+                    "_tags",
+                    [
+                      "conjugation-3"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
                   ]
                 ]
               }
             ],
-            "tags": [
-              "conjugation-3"
+            [
+              "to appoint",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "conjugation-3"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
             ],
-            "examples": [
+            [
+              "to collect, gather, bring together",
               {
-                "text": "Librōs lege.",
-                "english": "Read books."
-              },
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "conjugation-3"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ],
+            [
+              "to take out, pick out, extract, remove",
               {
-                "text": "Lēgistīne hunc librum?",
-                "english": "Have you read this book?"
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "conjugation-3"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ],
+            [
+              "to take to one's self unjustly, carry off, steal, purloin, plunder, abstract",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "conjugation-3"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ],
+            [
+              "to read",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "conjugation-3"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "Librōs lege.",
+                        "english": "Read books."
+                      },
+                      {
+                        "text": "Lēgistīne hunc librum?",
+                        "english": "Have you read this book?"
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ],
+            [
+              "(Medieval Latin) to teach, profess",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "Medieval-Latin",
+                      "conjugation-3"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
               }
             ]
-          },
-          {
-            "glosses": [
-              "(Medieval Latin) to teach, profess"
-            ],
-            "tags": [
-              "Medieval-Latin",
-              "conjugation-3"
-            ],
-            "examples": []
-          }
-        ]
+          ]
+        }
       }
     }
   },
@@ -406,17 +322,29 @@
             ]
           }
         ],
-        "senses": [
-          {
-            "glosses": [
-              "a lily"
-            ],
-            "tags": [
-              "declension-2"
-            ],
-            "examples": []
-          }
-        ]
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "a lily",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "declension-2"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ]
+          ]
+        }
       }
     }
   },
@@ -461,75 +389,70 @@
             ]
           }
         ],
-        "senses": [
-          {
-            "glosses": [
-              "all the way"
-            ],
-            "tags": [
-              "not-comparable"
-            ],
-            "examples": []
-          },
-          {
-            "glosses": [
-              "until, up to (sometimes with \"ad\")"
-            ],
-            "tags": [
-              "not-comparable"
-            ],
-            "examples": []
-          },
-          {
-            "glosses": [
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "all the way",
               {
-                "type": "structured-content",
-                "content": [
-                  "constantly, continuously",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "ab ōvō ū̆sque ad māla"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "from the beginning to the end\n(literally, “from the egg to the apples”)"
-                          }
-                        ]
-                      }
-                    }
+                    "_tags",
+                    [
+                      "not-comparable"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
                   ]
                 ]
               }
             ],
-            "tags": [
-              "not-comparable"
-            ],
-            "examples": [
+            [
+              "until, up to (sometimes with \"ad\")",
               {
-                "text": "ab ōvō ū̆sque ad māla",
-                "english": "from the beginning to the end\n(literally, “from the egg to the apples”)"
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "not-comparable"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ],
+            [
+              "constantly, continuously",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "not-comparable"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "ab ōvō ū̆sque ad māla",
+                        "english": "from the beginning to the end\n(literally, “from the egg to the apples”)"
+                      }
+                    ]
+                  ]
+                ]
               }
             ]
-          }
-        ]
+          ]
+        }
       }
     }
   },
@@ -562,132 +485,92 @@
             ]
           }
         ],
-        "senses": [
-          {
-            "glosses": [
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "led straight along, drawn in a straight line, straight, upright.",
               {
-                "type": "structured-content",
-                "content": [
-                  "led straight along, drawn in a straight line, straight, upright.",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "Quae rectis lineis suos ordines servant"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "Which preserve their order in straight lines"
-                          }
-                        ]
+                    "_tags",
+                    [
+                      "declension-1",
+                      "declension-2",
+                      "form-of",
+                      "participle",
+                      "passive",
+                      "perfect"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "Quae rectis lineis suos ordines servant",
+                        "english": "Which preserve their order in straight lines"
                       }
-                    }
+                    ]
                   ]
                 ]
               }
             ],
-            "tags": [
-              "declension-1",
-              "declension-2",
-              "form-of",
-              "participle",
-              "passive",
-              "perfect"
-            ],
-            "examples": [
+            [
+              "(in general) right, correct, proper, appropriate, befitting.",
               {
-                "text": "Quae rectis lineis suos ordines servant",
-                "english": "Which preserve their order in straight lines"
-              }
-            ]
-          },
-          {
-            "glosses": [
-              "(in general) right, correct, proper, appropriate, befitting."
-            ],
-            "tags": [
-              "declension-1",
-              "declension-2",
-              "form-of",
-              "participle",
-              "passive",
-              "perfect",
-              "usually"
-            ],
-            "examples": []
-          },
-          {
-            "glosses": [
-              {
-                "type": "structured-content",
-                "content": [
-                  "(in particular) morally right, correct, lawful, just, virtuous, noble, good, proper, honest.",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "Via stultī rēcta in oculīs eius; quī autem sapiēns est audit cōnsilia."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "The way of a fool is right in his own eyes: but he that is wise hearkeneth unto counsels. (Douay-Rheims trans., Challoner rev.: 1752 CE)"
-                          }
-                        ]
-                      }
-                    }
+                    "_tags",
+                    [
+                      "declension-1",
+                      "declension-2",
+                      "form-of",
+                      "participle",
+                      "passive",
+                      "perfect",
+                      "usually"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
                   ]
                 ]
               }
             ],
-            "tags": [
-              "declension-1",
-              "declension-2",
-              "form-of",
-              "in particular",
-              "participle",
-              "passive",
-              "perfect"
-            ],
-            "examples": [
+            [
+              "(in particular) morally right, correct, lawful, just, virtuous, noble, good, proper, honest.",
               {
-                "text": "Via stultī rēcta in oculīs eius; quī autem sapiēns est audit cōnsilia.",
-                "english": "The way of a fool is right in his own eyes: but he that is wise hearkeneth unto counsels. (Douay-Rheims trans., Challoner rev.: 1752 CE)"
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "declension-1",
+                      "declension-2",
+                      "form-of",
+                      "in particular",
+                      "participle",
+                      "passive",
+                      "perfect"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "Via stultī rēcta in oculīs eius; quī autem sapiēns est audit cōnsilia.",
+                        "english": "The way of a fool is right in his own eyes: but he that is wise hearkeneth unto counsels. (Douay-Rheims trans., Challoner rev.: 1752 CE)"
+                      }
+                    ]
+                  ]
+                ]
               }
             ]
-          }
-        ]
+          ]
+        }
       }
     }
   },
@@ -714,334 +597,207 @@
             ]
           }
         ],
-        "senses": [
-          {
-            "glosses": [
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "house, home (the building where a person lives)",
               {
-                "type": "structured-content",
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "listType": "li"
-                    },
-                    "content": "house, home (the building where a person lives)"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "listType": "ol"
-                    },
-                    "style": {
-                      "marginLeft": 2
-                    },
-                    "content": [
-                      {
-                        "tag": "div",
-                        "data": {
-                          "listType": "li"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "data": {
-                              "listType": "number"
-                            },
-                            "content": "1. "
-                          },
-                          "a townhouse"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "tags": [
-              "declension-2",
-              "declension-4",
-              "feminine",
-              "irregular"
-            ],
-            "examples": [
-              {
-                "text": "Deō domuīque",
-                "english": "For God and for home (motto of Methodist Ladies' College, Melbourne)"
-              },
-              {
-                "text": "Stet fortūna domūs",
-                "english": "Let the good fortune of the house stand (motto of Harrow School, England)"
-              }
-            ]
-          },
-          {
-            "glosses": [
-              "any dwelling-place or abode (of people or animals)"
-            ],
-            "tags": [
-              "declension-2",
-              "declension-4",
-              "feminine",
-              "irregular"
-            ],
-            "examples": []
-          },
-          {
-            "glosses": [
-              {
-                "type": "structured-content",
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "listType": "li"
-                    },
-                    "content": "the place of one's birth or residence, native country, town"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "listType": "ol"
-                    },
-                    "style": {
-                      "marginLeft": 2
-                    },
-                    "content": [
-                      {
-                        "tag": "div",
-                        "data": {
-                          "listType": "li"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "data": {
-                              "listType": "number"
-                            },
-                            "content": "1. "
-                          },
-                          "(also of the shell of invertebrates, tombs of the dead)"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "tags": [
-              "declension-2",
-              "declension-4",
-              "feminine",
-              "irregular"
-            ],
-            "examples": []
-          },
-          {
-            "glosses": [
-              {
-                "type": "structured-content",
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "listType": "li"
-                    },
-                    "content": "household, family (the dependants of the head of a house)"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "listType": "ol"
-                    },
-                    "style": {
-                      "marginLeft": 2
-                    },
-                    "content": [
-                      {
-                        "tag": "div",
-                        "data": {
-                          "listType": "li"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "data": {
-                              "listType": "number"
-                            },
-                            "content": "1. "
-                          },
-                          "a group of disciples, school; an intellectual movement"
-                        ]
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "listType": "li"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "data": {
-                              "listType": "number"
-                            },
-                            "content": "2. "
-                          },
-                          "(monarchy) house, dynasty"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "tags": [
-              "declension-2",
-              "declension-4",
-              "feminine",
-              "irregular"
-            ],
-            "examples": []
-          },
-          {
-            "glosses": [
-              {
-                "type": "structured-content",
-                "content": [
-                  "(idiomatic) one's own possessions or resources",
+                "_type": "map",
+                "map": [
                   [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
+                    "_tags",
+                    [
+                      "declension-2",
+                      "declension-4",
+                      "feminine",
+                      "irregular"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "Deō domuīque",
+                        "english": "For God and for home (motto of Methodist Ladies' College, Melbourne)"
                       },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "domum trahere"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "to drag into one's pocket"
-                          }
-                        ]
+                      {
+                        "text": "Stet fortūna domūs",
+                        "english": "Let the good fortune of the house stand (motto of Harrow School, England)"
                       }
-                    },
+                    ]
+                  ],
+                  [
+                    "a townhouse",
                     {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "Domī versūra fit."
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "One is one's own creditor. (proverb)"
-                          }
+                      "_type": "map",
+                      "map": [
+                        [
+                          "_examples",
+                          []
                         ]
-                      }
+                      ]
                     }
                   ]
                 ]
               }
             ],
-            "tags": [
-              "declension-2",
-              "declension-4",
-              "feminine",
-              "idiomatic",
-              "irregular"
-            ],
-            "examples": [
+            [
+              "any dwelling-place or abode (of people or animals)",
               {
-                "text": "domum trahere",
-                "english": "to drag into one's pocket"
-              },
-              {
-                "text": "Domī versūra fit.",
-                "english": "One is one's own creditor. (proverb)"
-              }
-            ]
-          },
-          {
-            "glosses": [
-              {
-                "type": "structured-content",
-                "content": [
-                  "(in locative case in phrases, idiomatic) peace",
+                "_type": "map",
+                "map": [
                   [
+                    "_tags",
+                    [
+                      "declension-2",
+                      "declension-4",
+                      "feminine",
+                      "irregular"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ],
+            [
+              "the place of one's birth or residence, native country, town",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "declension-2",
+                      "declension-4",
+                      "feminine",
+                      "irregular"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ],
+                  [
+                    "(also of the shell of invertebrates, tombs of the dead)",
                     {
-                      "tag": "div",
-                      "data": {
-                        "content": "extra-info"
-                      },
-                      "content": {
-                        "tag": "div",
-                        "data": {
-                          "content": "example-sentence"
-                        },
-                        "content": [
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-a"
-                            },
-                            "content": "ut non quietior populus domi esset quam militiae"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "example-sentence-b"
-                            },
-                            "content": "so that the people should not become lazier in the time of peace than that of war"
-                          }
+                      "_type": "map",
+                      "map": [
+                        [
+                          "_examples",
+                          []
                         ]
-                      }
+                      ]
                     }
                   ]
                 ]
               }
             ],
-            "tags": [
-              "declension-2",
-              "declension-4",
-              "feminine",
-              "idiomatic",
-              "irregular",
-              "in locative case in phrases"
-            ],
-            "examples": [
+            [
+              "household, family (the dependants of the head of a house)",
               {
-                "text": "ut non quietior populus domi esset quam militiae",
-                "english": "so that the people should not become lazier in the time of peace than that of war"
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "declension-2",
+                      "declension-4",
+                      "feminine",
+                      "irregular"
+                    ]
+                  ],
+                  [
+                    "a group of disciples, school; an intellectual movement",
+                    {
+                      "_type": "map",
+                      "map": [
+                        [
+                          "_examples",
+                          []
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    "(monarchy) house, dynasty",
+                    {
+                      "_type": "map",
+                      "map": [
+                        [
+                          "_examples",
+                          []
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              "(idiomatic) one's own possessions or resources",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "declension-2",
+                      "declension-4",
+                      "feminine",
+                      "idiomatic",
+                      "irregular"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "domum trahere",
+                        "english": "to drag into one's pocket"
+                      },
+                      {
+                        "text": "Domī versūra fit.",
+                        "english": "One is one's own creditor. (proverb)"
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ],
+            [
+              "(in locative case in phrases, idiomatic) peace",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "declension-2",
+                      "declension-4",
+                      "feminine",
+                      "idiomatic",
+                      "irregular",
+                      "in locative case in phrases"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "ut non quietior populus domi esset quam militiae",
+                        "english": "so that the people should not become lazier in the time of peace than that of war"
+                      }
+                    ]
+                  ]
+                ]
               }
             ]
-          }
-        ]
+          ]
+        }
       }
     }
   }

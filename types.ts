@@ -62,14 +62,15 @@ declare global {
 
     type GlossTree = Map<string, GlossBranch> ;
 
-    type GlossBranch = Map<string, GlossTwig> & {
+    type GlossBranch = GlossTwig & {
         get(key: '_tags'): string[] | undefined;
         set(key: '_tags', value: string[]): GlossBranch;
-        get(key: '_examples'): Example[] | undefined;
-        set(key: '_examples', value: Example[]): GlossBranch;
     } ;
 
-    type GlossTwig = Map<string, GlossTwig>;
+    type GlossTwig = Map<string, GlossTwig> & {
+        get(key: '_examples'): Example[] | undefined;
+        set(key: '_examples', value: Example[]): GlossTwig;
+    } 
       
     type TidySense = Omit<KaikkiSense, 'tags'> & {
         tags: string[];
@@ -86,7 +87,7 @@ declare global {
 
     type LemmaInfo = {
         ipa: IpaInfo[],
-        senses: SenseInfo[],
+        glossTree: GlossTree,
     }
 
     type IpaInfo = {

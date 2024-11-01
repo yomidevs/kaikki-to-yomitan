@@ -8,17 +8,29 @@
             "tags": []
           }
         ],
-        "senses": [
-          {
-            "glosses": [
-              "ice"
-            ],
-            "tags": [
-              "masculine"
-            ],
-            "examples": []
-          }
-        ]
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "ice",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "masculine"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ]
+          ]
+        }
       }
     }
   },
@@ -64,200 +76,172 @@
             ]
           }
         ],
-        "senses": [
-          {
-            "glosses": [
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "tongue (organ)",
               {
-                "type": "structured-content",
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "listType": "li"
-                    },
-                    "content": "tongue (organ)"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "listType": "ol"
-                    },
-                    "style": {
-                      "marginLeft": 2
-                    },
-                    "content": [
-                      {
-                        "tag": "div",
-                        "data": {
-                          "listType": "li"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "data": {
-                              "listType": "number"
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "feminine"
+                    ]
+                  ],
+                  [
+                    "(figurative) speech, talking",
+                    {
+                      "_type": "map",
+                      "map": [
+                        [
+                          "_examples",
+                          [
+                            {
+                              "text": "Mbaje gjuhën!",
+                              "english": "Hold your tongue!"
                             },
-                            "content": "1. "
-                          },
-                          "(figurative) speech, talking"
+                            {
+                              "text": "E ka gjuhën të gjatë.",
+                              "english": "(literally, “She has a long tongue.”)"
+                            }
+                          ]
                         ]
+                      ]
+                    }
+                  ],
+                  [
+                    "strip of land",
+                    {
+                      "_type": "map",
+                      "map": [
+                        [
+                          "_examples",
+                          []
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    "bell clapper, clanger, tongue",
+                    {
+                      "_type": "map",
+                      "map": [
+                        [
+                          "_examples",
+                          []
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    "_examples",
+                    [
+                      {
+                        "text": "gjuhë lope e zier",
+                        "english": "boiled beef tongue"
                       },
                       {
-                        "tag": "div",
-                        "data": {
-                          "listType": "li"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "data": {
-                              "listType": "number"
-                            },
-                            "content": "2. "
-                          },
-                          "strip of land"
-                        ]
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "listType": "li"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "data": {
-                              "listType": "number"
-                            },
-                            "content": "3. "
-                          },
-                          "bell clapper, clanger, tongue"
-                        ]
+                        "text": "Dogji gjuhën.",
+                        "english": "I burned my tongue."
                       }
                     ]
-                  }
+                  ]
                 ]
               }
             ],
-            "tags": [
-              "feminine"
-            ],
-            "examples": [
+            [
+              "language, tongue",
               {
-                "text": "Mbaje gjuhën!",
-                "english": "Hold your tongue!"
-              },
-              {
-                "text": "E ka gjuhën të gjatë.",
-                "english": "(literally, “She has a long tongue.”)"
-              }
-            ]
-          },
-          {
-            "glosses": [
-              {
-                "type": "structured-content",
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "listType": "li"
-                    },
-                    "content": "language, tongue"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "listType": "ol"
-                    },
-                    "style": {
-                      "marginLeft": 2
-                    },
-                    "content": [
-                      {
-                        "tag": "div",
-                        "data": {
-                          "listType": "li"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "data": {
-                              "listType": "number"
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "feminine"
+                    ]
+                  ],
+                  [
+                    "register, speech, style",
+                    {
+                      "_type": "map",
+                      "map": [
+                        [
+                          "_examples",
+                          [
+                            {
+                              "text": "gjuha e fëmijëve",
+                              "english": "children speech"
                             },
-                            "content": "1. "
-                          },
-                          "register, speech, style"
+                            {
+                              "text": "gjuhë e trashë",
+                              "english": "foul language"
+                            }
+                          ]
                         ]
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "listType": "li"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "data": {
-                              "listType": "number"
+                      ]
+                    }
+                  ],
+                  [
+                    "language (generally, any form of communication)",
+                    {
+                      "_type": "map",
+                      "map": [
+                        [
+                          "_examples",
+                          [
+                            {
+                              "text": "gjuha e muzikës",
+                              "english": "music's language"
                             },
-                            "content": "2. "
-                          },
-                          "language (generally, any form of communication)"
+                            {
+                              "text": "gjuha e bletëve",
+                              "english": "bees' language"
+                            }
+                          ]
                         ]
-                      },
+                      ]
+                    }
+                  ],
+                  [
+                    "(colloquial) local dialect",
+                    {
+                      "_type": "map",
+                      "map": [
+                        [
+                          "_examples",
+                          []
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    "(colloquial) Albanian, as a subject in school",
+                    {
+                      "_type": "map",
+                      "map": [
+                        [
+                          "_examples",
+                          []
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    "_examples",
+                    [
                       {
-                        "tag": "div",
-                        "data": {
-                          "listType": "li"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "data": {
-                              "listType": "number"
-                            },
-                            "content": "3. "
-                          },
-                          "(colloquial) local dialect"
-                        ]
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "listType": "li"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "data": {
-                              "listType": "number"
-                            },
-                            "content": "4. "
-                          },
-                          "(colloquial) Albanian, as a subject in school"
-                        ]
+                        "text": "gjuha shqipe",
+                        "english": "the Albanian language"
                       }
                     ]
-                  }
+                  ]
                 ]
               }
-            ],
-            "tags": [
-              "feminine"
-            ],
-            "examples": [
-              {
-                "text": "gjuha e fëmijëve",
-                "english": "children speech"
-              },
-              {
-                "text": "gjuhë e trashë",
-                "english": "foul language"
-              }
             ]
-          }
-        ]
+          ]
+        }
       }
     }
   }

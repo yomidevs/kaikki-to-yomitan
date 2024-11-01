@@ -169,6 +169,12 @@ function incrementCounter(key, counter) {
     counter[key] = (counter[key] || 0) + 1;
 }
 
+/**
+ * @param {string} pos 
+ * @param {string[][]} partsOfSpeech
+ * @param {*} skippedPartsOfSpeech 
+ * @returns {string}
+ */
 function findPartOfSpeech(pos, partsOfSpeech, skippedPartsOfSpeech) {
     for(const posAliases of partsOfSpeech){
         if (posAliases.includes(pos)){
