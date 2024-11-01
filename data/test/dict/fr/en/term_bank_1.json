@@ -231,10 +231,10 @@
       {
         "type": "structured-content",
         "content": {
-          "tag": "div",
+          "tag": "ul",
           "content": [
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "(transitive, in various idiomatic expressions) to start having a negative feeling towards someone",
                 {
@@ -750,28 +750,28 @@
       {
         "type": "structured-content",
         "content": {
-          "tag": "div",
+          "tag": "ul",
           "content": [
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "a room."
               ]
             },
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "a hotel room."
               ]
             },
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "a bedroom."
               ]
             },
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "a house of a parliament."
               ]

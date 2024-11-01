@@ -554,10 +554,10 @@
       {
         "type": "structured-content",
         "content": {
-          "tag": "div",
+          "tag": "ul",
           "content": [
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "a townhouse"
               ]
@@ -586,10 +586,10 @@
       {
         "type": "structured-content",
         "content": {
-          "tag": "div",
+          "tag": "ul",
           "content": [
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "(also of the shell of invertebrates, tombs of the dead)"
               ]
@@ -609,16 +609,16 @@
       {
         "type": "structured-content",
         "content": {
-          "tag": "div",
+          "tag": "ul",
           "content": [
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "a group of disciples, school; an intellectual movement"
               ]
             },
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "(monarchy) house, dynasty"
               ]

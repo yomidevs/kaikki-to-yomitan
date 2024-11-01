@@ -94,10 +94,10 @@
       {
         "type": "structured-content",
         "content": {
-          "tag": "div",
+          "tag": "ul",
           "content": [
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "(figurative) speech, talking",
                 {
@@ -159,13 +159,13 @@
               ]
             },
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "strip of land"
               ]
             },
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "bell clapper, clanger, tongue"
               ]
@@ -213,10 +213,10 @@
       {
         "type": "structured-content",
         "content": {
-          "tag": "div",
+          "tag": "ul",
           "content": [
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "register, speech, style",
                 {
@@ -278,7 +278,7 @@
               ]
             },
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "language (generally, any form of communication)",
                 {
@@ -340,13 +340,13 @@
               ]
             },
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "(colloquial) local dialect"
               ]
             },
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "(colloquial) Albanian, as a subject in school"
               ]

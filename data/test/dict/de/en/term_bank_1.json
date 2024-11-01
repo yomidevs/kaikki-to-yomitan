@@ -18,10 +18,10 @@
       {
         "type": "structured-content",
         "content": {
-          "tag": "div",
+          "tag": "ul",
           "content": [
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "(transitive, medicine) to nurse; to care for someone in poor health",
                 {
@@ -83,7 +83,7 @@
               ]
             },
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "(transitive) to take care of, to tend to, to maintain",
                 {
@@ -145,10 +145,10 @@
               ]
             },
             {
-              "tag": "div",
+              "tag": "ul",
               "content": [
                 {
-                  "tag": "div",
+                  "tag": "li",
                   "content": [
                     "(intransitive, archaic, with genitive)"
                   ]
@@ -181,10 +181,10 @@
       {
         "type": "structured-content",
         "content": {
-          "tag": "div",
+          "tag": "ul",
           "content": [
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "(transitive) to cultivate; to foster; to nurture; to maintain",
                 {
@@ -246,10 +246,10 @@
               ]
             },
             {
-              "tag": "div",
+              "tag": "ul",
               "content": [
                 {
-                  "tag": "div",
+                  "tag": "li",
                   "content": [
                     "(intransitive, higher register or poetic, with genitive)",
                     {
@@ -327,10 +327,10 @@
       {
         "type": "structured-content",
         "content": {
-          "tag": "div",
+          "tag": "ul",
           "content": [
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "(transitive) to carry out regularly",
                 {
@@ -392,7 +392,7 @@
               ]
             },
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "(intransitive, with “zu” followed by an infinitive verb) to perform habitually; to be accustomed (to doing something); to be in the habit (of doing something)",
                 {

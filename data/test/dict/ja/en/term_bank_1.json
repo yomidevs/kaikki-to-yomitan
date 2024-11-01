@@ -325,10 +325,10 @@
       {
         "type": "structured-content",
         "content": {
-          "tag": "div",
+          "tag": "ul",
           "content": [
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "to move forward; (of a machine) to operate, function; (of objects) to move at a high speed (of a vehicle)",
                 {
@@ -362,7 +362,7 @@
               ]
             },
             {
-              "tag": "div",
+              "tag": "li",
               "content": [
                 "to flow vigorously (of liquid)",
                 {

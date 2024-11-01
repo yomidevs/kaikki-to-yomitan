@@ -170,7 +170,9 @@ function handleLevel(glossTwig, senseTags, pos, depth) {
         const examples = children.get('_examples') || [];
         children.delete('_examples');
 
-        nestDefs.push({ "tag": "div", "content": [
+        const tag = depth === 0 ? 'div' : 'li';
+
+        nestDefs.push({ "tag": tag, "content": [
             processedDef,
             ...getStructuredExamples(examples)
         ] });
@@ -179,7 +181,7 @@ function handleLevel(glossTwig, senseTags, pos, depth) {
             const {nestDefs: childDefs} = handleLevel(children, senseTags, pos, depth + 1);
 
             nestDefs.push(
-                { "tag": "div", "content": childDefs }
+                { "tag": "ul", "content": childDefs }
             );
         }
     }
