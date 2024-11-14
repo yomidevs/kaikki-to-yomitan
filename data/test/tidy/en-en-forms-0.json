@@ -87,6 +87,28 @@
           ]
         ]
       }
+    ],
+    [
+      "falcon",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "falcons",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "plural"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
     ]
   ]
 }

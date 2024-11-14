@@ -278,8 +278,11 @@ function processForms(forms, word, pos) {
 function saveIpaResult(word, readings, pos, ipaObj) {
     for (const reading of readings) {
         const result = lemmaDict[word][reading][pos];
-        if (!result.ipa.some(obj => obj.ipa === ipaObj.ipa)) {
+        const existingIpa = result.ipa.find(obj => obj.ipa === ipaObj.ipa);
+        if (!existingIpa) {
             result.ipa.push(ipaObj);
+        } else {
+            existingIpa.tags = [...new Set([...existingIpa.tags, ...ipaObj.tags])];
         }
     }
 }
