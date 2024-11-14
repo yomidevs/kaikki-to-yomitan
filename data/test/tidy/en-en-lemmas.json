@@ -197,5 +197,106 @@
         }
       }
     }
+  },
+  "falcon": {
+    "falcon": {
+      "noun": {
+        "ipa": [
+          {
+            "ipa": "/ˈfɔː(l)kən/",
+            "tags": [
+              "Received-Pronunciation"
+            ]
+          },
+          {
+            "ipa": "/ˈfɒlkən/",
+            "tags": [
+              "Received-Pronunciation"
+            ]
+          },
+          {
+            "ipa": "/ˈfælkən/",
+            "tags": [
+              "US",
+              "General-Australian"
+            ]
+          },
+          {
+            "ipa": "/ˈfɑːlkən/",
+            "tags": [
+              "US"
+            ]
+          },
+          {
+            "ipa": "/ˈfoːlkən/",
+            "tags": [
+              "General-Australian",
+              "New-Zealand"
+            ]
+          },
+          {
+            "ipa": "/ˈfɛlkən/",
+            "tags": [
+              "New-Zealand"
+            ]
+          }
+        ],
+        "glossTree": {
+          "_type": "map",
+          "map": [
+            [
+              "Any bird of the genus Falco, all of which are birds of prey.",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ],
+            [
+              "(falconry) A female such bird, a male being a tiercel.",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    []
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ],
+            [
+              "(historical) A light cannon used from the 15th to the 17th century; a falconet.",
+              {
+                "_type": "map",
+                "map": [
+                  [
+                    "_tags",
+                    [
+                      "historical"
+                    ]
+                  ],
+                  [
+                    "_examples",
+                    []
+                  ]
+                ]
+              }
+            ]
+          ]
+        }
+      }
+    }
   }
 }

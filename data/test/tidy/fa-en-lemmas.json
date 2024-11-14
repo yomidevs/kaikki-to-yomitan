@@ -6,14 +6,18 @@
           {
             "ipa": "[mulk]",
             "tags": [
-              "Classical-Persian"
+              "Classical-Persian",
+              "Hazaragi",
+              "Tajik",
+              "formal"
             ]
           },
           {
             "ipa": "[mʊlk]",
             "tags": [
               "Dari",
-              "formal"
+              "formal",
+              "Kabuli"
             ]
           },
           {
@@ -64,7 +68,8 @@
             "ipa": "[fɑːɾ.síː]",
             "tags": [
               "Dari",
-              "formal"
+              "formal",
+              "Kabuli"
             ]
           },
           {

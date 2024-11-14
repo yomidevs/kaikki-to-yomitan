@@ -303,5 +303,60 @@
     ],
     0,
     ""
+  ],
+  [
+    "falcon",
+    "",
+    "n",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "Any bird of the genus Falco, all of which are birds of prey."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "(falconry) A female such bird, a male being a tiercel."
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "falcon",
+    "",
+    "hist n",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "A light cannon used from the 15th to the 17th century; a falconet."
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
   ]
 ]
