@@ -2,216 +2,218 @@
   "pflegen": {
     "pflegen": {
       "verb": {
-        "ipa": [
-          {
-            "ipa": "/ˈpfleːɡən/",
-            "tags": []
-          },
-          {
-            "ipa": "[ˈpfleːɡən]",
-            "tags": []
-          },
-          {
-            "ipa": "[ˈpfleːɡŋ̩]",
-            "tags": []
-          },
-          {
-            "ipa": "/ˈfleːɡən/",
-            "tags": []
-          }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "Providing care or service for someone/something. [weak verb]",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
+        "0": {
+          "ipa": [
+            {
+              "ipa": "/ˈpfleːɡən/",
+              "tags": []
+            },
+            {
+              "ipa": "[ˈpfleːɡən]",
+              "tags": []
+            },
+            {
+              "ipa": "[ˈpfleːɡŋ̩]",
+              "tags": []
+            },
+            {
+              "ipa": "/ˈfleːɡən/",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "Providing care or service for someone/something. [weak verb]",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      "class-4",
-                      "strong",
-                      "transitive"
-                    ]
-                  ],
-                  [
-                    "(transitive, medicine) to nurse; to care for someone in poor health",
-                    {
-                      "_type": "map",
-                      "map": [
-                        [
-                          "_examples",
-                          [
-                            {
-                              "text": "jemanden gesund pflegen",
-                              "english": "to nurse someone back to health"
-                            },
-                            {
-                              "text": "Kranke pflegen",
-                              "english": "to care for the sick"
-                            }
-                          ]
-                        ]
+                      "_tags",
+                      [
+                        "class-4",
+                        "strong",
+                        "transitive"
                       ]
-                    }
-                  ],
-                  [
-                    "(transitive) to take care of, to tend to, to maintain",
-                    {
-                      "_type": "map",
-                      "map": [
-                        [
-                          "_examples",
+                    ],
+                    [
+                      "(transitive, medicine) to nurse; to care for someone in poor health",
+                      {
+                        "_type": "map",
+                        "map": [
                           [
-                            {
-                              "text": "sein Äußeres pflegen",
-                              "english": "to take care of one's appearance"
-                            },
-                            {
-                              "text": "die Zähne pflegen",
-                              "english": "to take care of (one's) teeth"
-                            }
-                          ]
-                        ],
-                        [
-                          "(intransitive, archaic, with genitive)",
-                          {
-                            "_type": "map",
-                            "map": [
-                              [
-                                "_examples",
-                                []
-                              ]
+                            "_examples",
+                            [
+                              {
+                                "text": "jemanden gesund pflegen",
+                                "english": "to nurse someone back to health"
+                              },
+                              {
+                                "text": "Kranke pflegen",
+                                "english": "to care for the sick"
+                              }
                             ]
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                ]
-              }
-            ],
-            [
-              "To improve or care for something in an intellectual sense. [weak or strong verb]",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "class-4",
-                      "strong"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ],
-                  [
-                    "(transitive) to cultivate; to foster; to nurture; to maintain",
-                    {
-                      "_type": "map",
-                      "map": [
-                        [
-                          "_examples",
-                          [
-                            {
-                              "text": "Freundschaften pflegen",
-                              "english": "to cultivate friendships"
-                            },
-                            {
-                              "text": "Beziehungen pflegen",
-                              "english": "to cultivate relationships"
-                            }
                           ]
-                        ],
-                        [
-                          "(intransitive, higher register or poetic, with genitive)",
-                          {
-                            "_type": "map",
-                            "map": [
-                              [
-                                "_examples",
+                        ]
+                      }
+                    ],
+                    [
+                      "(transitive) to take care of, to tend to, to maintain",
+                      {
+                        "_type": "map",
+                        "map": [
+                          [
+                            "_examples",
+                            [
+                              {
+                                "text": "sein Äußeres pflegen",
+                                "english": "to take care of one's appearance"
+                              },
+                              {
+                                "text": "die Zähne pflegen",
+                                "english": "to take care of (one's) teeth"
+                              }
+                            ]
+                          ],
+                          [
+                            "(intransitive, archaic, with genitive)",
+                            {
+                              "_type": "map",
+                              "map": [
                                 [
-                                  {
-                                    "text": "der Liebe pflegen",
-                                    "english": "to cultivate/nurture love"
-                                  },
-                                  {
-                                    "text": "der Ruhe pflegen",
-                                    "english": "to foster tranquility"
-                                  }
+                                  "_examples",
+                                  []
                                 ]
                               ]
-                            ]
-                          }
+                            }
+                          ]
                         ]
-                      ]
-                    }
-                  ]
-                ]
-              }
-            ],
-            [
-              "Expressing habituality. [weak or strong verb]",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "class-4",
-                      "strong"
+                      }
                     ]
-                  ],
-                  [
-                    "(transitive) to carry out regularly",
-                    {
-                      "_type": "map",
-                      "map": [
-                        [
-                          "_examples",
-                          [
-                            {
-                              "text": "Umgang pflegen",
-                              "english": "to regularly be in contact"
-                            },
-                            {
-                              "text": "Geselligkeit pflegen",
-                              "english": "to socialize regularly (literally, “to regularly engage in gregariousness”)"
-                            }
-                          ]
-                        ]
-                      ]
-                    }
-                  ],
-                  [
-                    "(intransitive, with “zu” followed by an infinitive verb) to perform habitually; to be accustomed (to doing something); to be in the habit (of doing something)",
-                    {
-                      "_type": "map",
-                      "map": [
-                        [
-                          "_examples",
-                          [
-                            {
-                              "text": "Ich pflege zu laufen.",
-                              "english": "I usually walk."
-                            },
-                            {
-                              "text": "Er pflegte zu reisen.",
-                              "english": "He used to travel."
-                            }
-                          ]
-                        ]
-                      ]
-                    }
                   ]
-                ]
-              }
+                }
+              ],
+              [
+                "To improve or care for something in an intellectual sense. [weak or strong verb]",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "class-4",
+                        "strong"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ],
+                    [
+                      "(transitive) to cultivate; to foster; to nurture; to maintain",
+                      {
+                        "_type": "map",
+                        "map": [
+                          [
+                            "_examples",
+                            [
+                              {
+                                "text": "Freundschaften pflegen",
+                                "english": "to cultivate friendships"
+                              },
+                              {
+                                "text": "Beziehungen pflegen",
+                                "english": "to cultivate relationships"
+                              }
+                            ]
+                          ],
+                          [
+                            "(intransitive, higher register or poetic, with genitive)",
+                            {
+                              "_type": "map",
+                              "map": [
+                                [
+                                  "_examples",
+                                  [
+                                    {
+                                      "text": "der Liebe pflegen",
+                                      "english": "to cultivate/nurture love"
+                                    },
+                                    {
+                                      "text": "der Ruhe pflegen",
+                                      "english": "to foster tranquility"
+                                    }
+                                  ]
+                                ]
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ],
+              [
+                "Expressing habituality. [weak or strong verb]",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "class-4",
+                        "strong"
+                      ]
+                    ],
+                    [
+                      "(transitive) to carry out regularly",
+                      {
+                        "_type": "map",
+                        "map": [
+                          [
+                            "_examples",
+                            [
+                              {
+                                "text": "Umgang pflegen",
+                                "english": "to regularly be in contact"
+                              },
+                              {
+                                "text": "Geselligkeit pflegen",
+                                "english": "to socialize regularly (literally, “to regularly engage in gregariousness”)"
+                              }
+                            ]
+                          ]
+                        ]
+                      }
+                    ],
+                    [
+                      "(intransitive, with “zu” followed by an infinitive verb) to perform habitually; to be accustomed (to doing something); to be in the habit (of doing something)",
+                      {
+                        "_type": "map",
+                        "map": [
+                          [
+                            "_examples",
+                            [
+                              {
+                                "text": "Ich pflege zu laufen.",
+                                "english": "I usually walk."
+                              },
+                              {
+                                "text": "Er pflegte zu reisen.",
+                                "english": "He used to travel."
+                              }
+                            ]
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
             ]
-          ]
+          }
         }
       }
     }
@@ -219,231 +221,233 @@
   "Fuchs": {
     "Fuchs": {
       "noun": {
-        "ipa": [
-          {
-            "ipa": "/fʊks/",
-            "tags": []
-          }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "fox (animal)",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
+        "1": {
+          "ipa": [
+            {
+              "ipa": "/fʊks/",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "fox (animal)",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      "masculine",
-                      "strong"
-                    ]
-                  ],
-                  [
-                    "_examples",
+                      "_tags",
+                      [
+                        "masculine",
+                        "strong"
+                      ]
+                    ],
                     [
-                      {
-                        "text": "Fuchs, du hast die Gans gestohlen. Gib sie wieder her!",
-                        "english": "(line from a popular children’s song)"
-                      }
-                    ]
-                  ]
-                ]
-              }
-            ],
-            [
-              "(informal) a clever or cunning person",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "informal",
-                      "masculine",
-                      "strong"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "Er ist ein ganz schöner Fuchs.",
-                        "english": "He is a really handsome fox."
-                      }
+                      "_examples",
+                      [
+                        {
+                          "text": "Fuchs, du hast die Gans gestohlen. Gib sie wieder her!",
+                          "english": "(line from a popular children’s song)"
+                        }
+                      ]
                     ]
                   ]
-                ]
-              }
-            ],
-            [
-              "(informal) a red-haired person or horse.",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
+                }
+              ],
+              [
+                "(informal) a clever or cunning person",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      "informal",
-                      "masculine",
-                      "strong"
-                    ]
-                  ],
-                  [
-                    "_examples",
+                      "_tags",
+                      [
+                        "informal",
+                        "masculine",
+                        "strong"
+                      ]
+                    ],
                     [
-                      {
-                        "text": "Unser Paul ist ja ein kleiner Fuchs.",
-                        "english": "Our Paul is a little redhead."
-                      }
-                    ]
-                  ]
-                ]
-              }
-            ],
-            [
-              "pledge (prospective member of a fraternity)",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "masculine",
-                      "strong"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "(military, slang) A new recruit.",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "masculine",
-                      "slang",
-                      "strong"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "(card games) In Doppelkopf, the ace of diamonds, which earns a side of players an extra point if they win it from the other side",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "masculine",
-                      "strong"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "Ich hatte nur vier Trümpfe und darunter beide Füchse.",
-                        "english": "I had only four trumps and among them were both aces of diamonds."
-                      }
+                      "_examples",
+                      [
+                        {
+                          "text": "Er ist ein ganz schöner Fuchs.",
+                          "english": "He is a really handsome fox."
+                        }
+                      ]
                     ]
                   ]
-                ]
-              }
-            ],
-            [
-              "(military) a tank Transportpanzer Fuchs",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
+                }
+              ],
+              [
+                "(informal) a red-haired person or horse.",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      "masculine",
-                      "strong"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "(archaic) A form of sunscald on hops.",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
+                      "_tags",
+                      [
+                        "informal",
+                        "masculine",
+                        "strong"
+                      ]
+                    ],
                     [
-                      "archaic",
-                      "masculine",
-                      "strong"
+                      "_examples",
+                      [
+                        {
+                          "text": "Unser Paul ist ja ein kleiner Fuchs.",
+                          "english": "Our Paul is a little redhead."
+                        }
+                      ]
                     ]
-                  ],
-                  [
-                    "_examples",
-                    []
                   ]
-                ]
-              }
-            ],
-            [
-              "a fox in radiosport foxhunt",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
+                }
+              ],
+              [
+                "pledge (prospective member of a fraternity)",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      "masculine",
-                      "strong"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "(obsolete) any gold coin",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
+                      "_tags",
+                      [
+                        "masculine",
+                        "strong"
+                      ]
+                    ],
                     [
-                      "masculine",
-                      "obsolete",
-                      "strong"
+                      "_examples",
+                      []
                     ]
-                  ],
-                  [
-                    "_examples",
-                    []
                   ]
-                ]
-              }
+                }
+              ],
+              [
+                "(military, slang) A new recruit.",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "masculine",
+                        "slang",
+                        "strong"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(card games) In Doppelkopf, the ace of diamonds, which earns a side of players an extra point if they win it from the other side",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "masculine",
+                        "strong"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "Ich hatte nur vier Trümpfe und darunter beide Füchse.",
+                          "english": "I had only four trumps and among them were both aces of diamonds."
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(military) a tank Transportpanzer Fuchs",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "masculine",
+                        "strong"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(archaic) A form of sunscald on hops.",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "archaic",
+                        "masculine",
+                        "strong"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "a fox in radiosport foxhunt",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "masculine",
+                        "strong"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(obsolete) any gold coin",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "masculine",
+                        "obsolete",
+                        "strong"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ]
             ]
-          ]
+          }
         }
       }
     }
@@ -451,84 +455,86 @@
   "Herz": {
     "Herz": {
       "noun": {
-        "ipa": [
-          {
-            "ipa": "/hɛrts/",
-            "tags": []
-          },
-          {
-            "ipa": "[hɛʁt͡s]",
-            "tags": []
-          },
-          {
-            "ipa": "[hɛɐ̯t͡s]",
-            "tags": []
-          }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "heart",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
+        "0": {
+          "ipa": [
+            {
+              "ipa": "/hɛrts/",
+              "tags": []
+            },
+            {
+              "ipa": "[hɛʁt͡s]",
+              "tags": []
+            },
+            {
+              "ipa": "[hɛɐ̯t͡s]",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "heart",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      "also",
-                      "neuter",
-                      "rare"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "(card games) hearts",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
+                      "_tags",
+                      [
+                        "also",
+                        "neuter",
+                        "rare"
+                      ]
+                    ],
                     [
-                      "also",
-                      "neuter",
-                      "rare"
+                      "_examples",
+                      []
                     ]
-                  ],
-                  [
-                    "_examples",
-                    []
                   ]
-                ]
-              }
-            ],
-            [
-              "sweetheart, darling",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
+                }
+              ],
+              [
+                "(card games) hearts",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      "also",
-                      "neuter",
-                      "rare"
+                      "_tags",
+                      [
+                        "also",
+                        "neuter",
+                        "rare"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
                     ]
-                  ],
-                  [
-                    "_examples",
-                    []
                   ]
-                ]
-              }
+                }
+              ],
+              [
+                "sweetheart, darling",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "also",
+                        "neuter",
+                        "rare"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ]
             ]
-          ]
+          }
         }
       }
     }
@@ -536,37 +542,39 @@
   "Fahrer": {
     "Fahrer": {
       "noun": {
-        "ipa": [
-          {
-            "ipa": "/ˈfaːʁɐ/",
-            "tags": []
-          }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "agent noun of fahren; driver (person)",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
+        "0": {
+          "ipa": [
+            {
+              "ipa": "/ˈfaːʁɐ/",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "agent noun of fahren; driver (person)",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      "agent",
-                      "form-of",
-                      "masculine",
-                      "strong"
+                      "_tags",
+                      [
+                        "agent",
+                        "form-of",
+                        "masculine",
+                        "strong"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
                     ]
-                  ],
-                  [
-                    "_examples",
-                    []
                   ]
-                ]
-              }
+                }
+              ]
             ]
-          ]
+          }
         }
       }
     }
@@ -574,137 +582,227 @@
   "von": {
     "von": {
       "prep": {
-        "ipa": [
-          {
-            "ipa": "/fɔn/",
-            "tags": []
-          },
-          {
-            "ipa": "[fɔn]",
-            "tags": []
-          }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "from",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    []
-                  ],
-                  [
-                    "_examples",
+        "0": {
+          "ipa": [
+            {
+              "ipa": "/fɔn/",
+              "tags": []
+            },
+            {
+              "ipa": "[fɔn]",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "from",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      {
-                        "text": "Ich fahre von Köln nach Hamburg.",
-                        "english": "I'm travelling from Cologne to Hamburg."
-                      },
-                      {
-                        "text": "Ich hab’s von meiner Schwester gehört.",
-                        "english": "I heard it from my sister."
-                      }
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "Ich fahre von Köln nach Hamburg.",
+                          "english": "I'm travelling from Cologne to Hamburg."
+                        },
+                        {
+                          "text": "Ich hab’s von meiner Schwester gehört.",
+                          "english": "I heard it from my sister."
+                        }
+                      ]
                     ]
                   ]
-                ]
-              }
-            ],
-            [
-              "of, belonging to (often replacing genitive; see usage note below)",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    []
-                  ],
-                  [
-                    "_examples",
+                }
+              ],
+              [
+                "of, belonging to (often replacing genitive; see usage note below)",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      {
-                        "text": "das Auto meines Vaters = das Auto von meinem Vater",
-                        "english": "my father’s car / the car of my father"
-                      }
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "das Auto meines Vaters = das Auto von meinem Vater",
+                          "english": "my father’s car / the car of my father"
+                        }
+                      ]
                     ]
                   ]
-                ]
-              }
-            ],
-            [
-              "by (with passive voice)",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    []
-                  ],
-                  [
-                    "_examples",
+                }
+              ],
+              [
+                "by (with passive voice)",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      {
-                        "text": "Das Hotel wird von der Firma bezahlt.",
-                        "english": "The hotel is paid for by the company."
-                      }
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "Das Hotel wird von der Firma bezahlt.",
+                          "english": "The hotel is paid for by the company."
+                        }
+                      ]
                     ]
                   ]
-                ]
-              }
-            ],
-            [
-              "about, of (a topic)",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    []
-                  ],
-                  [
-                    "_examples",
+                }
+              ],
+              [
+                "about, of (a topic)",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      {
-                        "text": "Er hat von seiner Jugend erzählt.",
-                        "english": "He told about his youth."
-                      },
-                      {
-                        "text": "Von dem Nomine Substantivo, oder dem Hauptworte.",
-                        "english": "About the substantive noun, or the [alternative term]. (headline)"
-                      }
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "Er hat von seiner Jugend erzählt.",
+                          "english": "He told about his youth."
+                        },
+                        {
+                          "text": "Von dem Nomine Substantivo, oder dem Hauptworte.",
+                          "english": "About the substantive noun, or the [alternative term]. (headline)"
+                        }
+                      ]
                     ]
                   ]
-                ]
-              }
-            ],
-            [
-              "on, with (a resource)",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    []
-                  ],
-                  [
-                    "_examples",
+                }
+              ],
+              [
+                "on, with (a resource)",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      {
-                        "text": "Von welchem Geld soll ich als Arbeitsloser in Urlaub fahren?",
-                        "english": "Being unemployed, on what money should I go on holidays?"
-                      },
-                      {
-                        "text": "Man kann nicht nur von Luft und Liebe leben.",
-                        "english": "You can’t live on air and love alone. (proverb)"
-                      }
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "Von welchem Geld soll ich als Arbeitsloser in Urlaub fahren?",
+                          "english": "Being unemployed, on what money should I go on holidays?"
+                        },
+                        {
+                          "text": "Man kann nicht nur von Luft und Liebe leben.",
+                          "english": "You can’t live on air and love alone. (proverb)"
+                        }
+                      ]
                     ]
                   ]
-                ]
-              }
+                }
+              ]
             ]
-          ]
+          }
+        }
+      }
+    }
+  },
+  "Base": {
+    "Base": {
+      "noun": {
+        "1": {
+          "ipa": [
+            {
+              "ipa": "/ˈbaːzə/",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "(archaic) A female cousin.",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "archaic",
+                        "feminine"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(obsolete) paternal aunt",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "feminine",
+                        "obsolete"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "2": {
+          "ipa": [
+            {
+              "ipa": "/ˈbaːzə/",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "(chemistry) base (compound that will neutralize an acid)",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "feminine"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
         }
       }
     }

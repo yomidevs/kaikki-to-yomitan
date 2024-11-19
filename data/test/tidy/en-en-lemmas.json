@@ -2,158 +2,160 @@
   "bring": {
     "bring": {
       "verb": {
-        "ipa": [
-          {
-            "ipa": "/ˈbɹɪŋ/",
-            "tags": []
-          }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "(transitive, ditransitive) To transport toward somebody/somewhere.",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
+        "1": {
+          "ipa": [
+            {
+              "ipa": "/ˈbɹɪŋ/",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "(transitive, ditransitive) To transport toward somebody/somewhere.",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      "ditransitive",
-                      "transitive"
-                    ]
-                  ],
-                  [
-                    "_examples",
+                      "_tags",
+                      [
+                        "ditransitive",
+                        "transitive"
+                      ]
+                    ],
                     [
-                      {
-                        "text": "Waiter, please bring me a single malt whiskey."
-                      }
-                    ]
-                  ]
-                ]
-              }
-            ],
-            [
-              "(transitive, figuratively) To supply or contribute.",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "figuratively",
-                      "transitive"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "The new company director brought a fresh perspective on sales and marketing."
-                      }
+                      "_examples",
+                      [
+                        {
+                          "text": "Waiter, please bring me a single malt whiskey."
+                        }
+                      ]
                     ]
                   ]
-                ]
-              }
-            ],
-            [
-              "(transitive) To occasion or bring about.",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
+                }
+              ],
+              [
+                "(transitive, figuratively) To supply or contribute.",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      "transitive"
-                    ]
-                  ],
-                  [
-                    "_examples",
+                      "_tags",
+                      [
+                        "figuratively",
+                        "transitive"
+                      ]
+                    ],
                     [
-                      {
-                        "text": "The controversial TV broadcast brought a storm of complaints."
-                      }
-                    ]
-                  ]
-                ]
-              }
-            ],
-            [
-              "(transitive) To raise (a lawsuit, charges, etc.) against somebody.",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "transitive"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "To persuade; to induce; to draw; to lead; to guide.",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    []
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "To produce in exchange; to sell for; to fetch.",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    []
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "What does coal bring per ton?"
-                      }
+                      "_examples",
+                      [
+                        {
+                          "text": "The new company director brought a fresh perspective on sales and marketing."
+                        }
+                      ]
                     ]
                   ]
-                ]
-              }
-            ],
-            [
-              "(baseball) To pitch, often referring to a particularly hard thrown fastball.",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    []
-                  ],
-                  [
-                    "_examples",
+                }
+              ],
+              [
+                "(transitive) To occasion or bring about.",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      {
-                        "text": "The closer Jones can really bring it."
-                      }
+                      "_tags",
+                      [
+                        "transitive"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "The controversial TV broadcast brought a storm of complaints."
+                        }
+                      ]
                     ]
                   ]
-                ]
-              }
+                }
+              ],
+              [
+                "(transitive) To raise (a lawsuit, charges, etc.) against somebody.",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "transitive"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "To persuade; to induce; to draw; to lead; to guide.",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "To produce in exchange; to sell for; to fetch.",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "What does coal bring per ton?"
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(baseball) To pitch, often referring to a particularly hard thrown fastball.",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "The closer Jones can really bring it."
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ]
             ]
-          ]
+          }
         }
       }
     }
@@ -161,39 +163,41 @@
   "wain": {
     "wain": {
       "noun": {
-        "ipa": [
-          {
-            "ipa": "/weɪn/",
-            "tags": []
-          }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "(archaic or literary) A wagon; a four-wheeled cart for hauling loads, usually pulled by horses or oxen.",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
+        "1": {
+          "ipa": [
+            {
+              "ipa": "/weɪn/",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "(archaic or literary) A wagon; a four-wheeled cart for hauling loads, usually pulled by horses or oxen.",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      "archaic",
-                      "literary"
-                    ]
-                  ],
-                  [
-                    "_examples",
+                      "_tags",
+                      [
+                        "archaic",
+                        "literary"
+                      ]
+                    ],
                     [
-                      {
-                        "text": "\"The Hay Wain\" is a famous painting by John Constable."
-                      }
+                      "_examples",
+                      [
+                        {
+                          "text": "\"The Hay Wain\" is a famous painting by John Constable."
+                        }
+                      ]
                     ]
                   ]
-                ]
-              }
+                }
+              ]
             ]
-          ]
+          }
         }
       }
     }
@@ -201,100 +205,102 @@
   "falcon": {
     "falcon": {
       "noun": {
-        "ipa": [
-          {
-            "ipa": "/ˈfɔː(l)kən/",
-            "tags": [
-              "Received-Pronunciation"
-            ]
-          },
-          {
-            "ipa": "/ˈfɒlkən/",
-            "tags": [
-              "Received-Pronunciation"
-            ]
-          },
-          {
-            "ipa": "/ˈfælkən/",
-            "tags": [
-              "US",
-              "General-Australian"
-            ]
-          },
-          {
-            "ipa": "/ˈfɑːlkən/",
-            "tags": [
-              "US"
-            ]
-          },
-          {
-            "ipa": "/ˈfoːlkən/",
-            "tags": [
-              "General-Australian",
-              "New-Zealand"
-            ]
-          },
-          {
-            "ipa": "/ˈfɛlkən/",
-            "tags": [
-              "New-Zealand"
+        "0": {
+          "ipa": [
+            {
+              "ipa": "/ˈfɔː(l)kən/",
+              "tags": [
+                "Received-Pronunciation"
+              ]
+            },
+            {
+              "ipa": "/ˈfɒlkən/",
+              "tags": [
+                "Received-Pronunciation"
+              ]
+            },
+            {
+              "ipa": "/ˈfælkən/",
+              "tags": [
+                "US",
+                "General-Australian"
+              ]
+            },
+            {
+              "ipa": "/ˈfɑːlkən/",
+              "tags": [
+                "US"
+              ]
+            },
+            {
+              "ipa": "/ˈfoːlkən/",
+              "tags": [
+                "General-Australian",
+                "New-Zealand"
+              ]
+            },
+            {
+              "ipa": "/ˈfɛlkən/",
+              "tags": [
+                "New-Zealand"
+              ]
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "Any bird of the genus Falco, all of which are birds of prey.",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(falconry) A female such bird, a male being a tiercel.",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(historical) A light cannon used from the 15th to the 17th century; a falconet.",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "historical"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ]
             ]
           }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "Any bird of the genus Falco, all of which are birds of prey.",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    []
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "(falconry) A female such bird, a male being a tiercel.",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    []
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "(historical) A light cannon used from the 15th to the 17th century; a falconet.",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "historical"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ]
-          ]
         }
       }
     }

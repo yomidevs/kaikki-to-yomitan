@@ -2,70 +2,72 @@
   "zpráva": {
     "zpráva": {
       "noun": {
-        "ipa": [
-          {
-            "ipa": "[ˈspraːva]",
-            "tags": []
-          }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "message",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
+        "0": {
+          "ipa": [
+            {
+              "ipa": "[ˈspraːva]",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "message",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      "feminine"
-                    ]
-                  ],
-                  [
-                    "_examples",
+                      "_tags",
+                      [
+                        "feminine"
+                      ]
+                    ],
                     [
-                      {
-                        "text": "textová zpráva",
-                        "english": "text message"
-                      },
-                      {
-                        "text": "Chcete nechat zprávu?",
-                        "english": "Would you like to leave a message?"
-                      }
-                    ]
-                  ]
-                ]
-              }
-            ],
-            [
-              "report",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "feminine"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "lékařská zpráva",
-                        "english": "medical report"
-                      },
-                      {
-                        "text": "podat zprávu",
-                        "english": "to file a report"
-                      }
+                      "_examples",
+                      [
+                        {
+                          "text": "textová zpráva",
+                          "english": "text message"
+                        },
+                        {
+                          "text": "Chcete nechat zprávu?",
+                          "english": "Would you like to leave a message?"
+                        }
+                      ]
                     ]
                   ]
-                ]
-              }
+                }
+              ],
+              [
+                "report",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "feminine"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "lékařská zpráva",
+                          "english": "medical report"
+                        },
+                        {
+                          "text": "podat zprávu",
+                          "english": "to file a report"
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ]
             ]
-          ]
+          }
         }
       }
     }
@@ -73,37 +75,39 @@
   "pro": {
     "pro": {
       "prep": {
-        "ipa": [
-          {
-            "ipa": "[ˈpro]",
-            "tags": []
-          }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "for",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    []
-                  ],
-                  [
-                    "_examples",
+        "1": {
+          "ipa": [
+            {
+              "ipa": "[ˈpro]",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "for",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      {
-                        "text": "Zabili ho pro peníze.",
-                        "english": "They killed him for his money."
-                      }
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "Zabili ho pro peníze.",
+                          "english": "They killed him for his money."
+                        }
+                      ]
                     ]
                   ]
-                ]
-              }
+                }
+              ]
             ]
-          ]
+          }
         }
       }
     }
@@ -111,36 +115,38 @@
   "přít": {
     "přít": {
       "verb": {
-        "ipa": [
-          {
-            "ipa": "[ˈpr̝̊iːt]",
-            "tags": []
-          }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "(reflexive with se) to dispute",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
+        "0": {
+          "ipa": [
+            {
+              "ipa": "[ˈpr̝̊iːt]",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "(reflexive with se) to dispute",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      "imperfective",
-                      "reflexive",
-                      "with se"
+                      "_tags",
+                      [
+                        "imperfective",
+                        "reflexive",
+                        "with se"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
                     ]
-                  ],
-                  [
-                    "_examples",
-                    []
                   ]
-                ]
-              }
+                }
+              ]
             ]
-          ]
+          }
         }
       }
     }

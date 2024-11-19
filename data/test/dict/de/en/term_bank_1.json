@@ -1122,5 +1122,71 @@
     ],
     0,
     ""
+  ],
+  [
+    "Base",
+    "",
+    "arch fem n",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "A female cousin."
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "Base",
+    "",
+    "fem obs n",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "paternal aunt"
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "Base",
+    "",
+    "fem n chem",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "base (compound that will neutralize an acid)"
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
   ]
 ]

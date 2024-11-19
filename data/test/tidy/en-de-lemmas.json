@@ -2,32 +2,34 @@
   "choose": {
     "choose": {
       "verb": {
-        "ipa": [
-          {
-            "ipa": "tʃuːz",
-            "tags": []
-          }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "[1] aussuchen, auswählen, vorziehen, wählen",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    []
-                  ],
-                  [
-                    "_examples",
-                    []
+        "0": {
+          "ipa": [
+            {
+              "ipa": "tʃuːz",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "[1] aussuchen, auswählen, vorziehen, wählen",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
                   ]
-                ]
-              }
+                }
+              ]
             ]
-          ]
+          }
         }
       }
     }

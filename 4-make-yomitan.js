@@ -271,50 +271,52 @@ let lastTermBankIndex = 0;
 
             const ipa = [];
 
-            for (const [pos, info] of Object.entries(partsOfSpeechOfWord)) {
-                const foundPos = findPartOfSpeech(pos, partsOfSpeech, skippedPartsOfSpeech);
-                const {glossTree} = info;
+            for (const [pos, etyms] of Object.entries(partsOfSpeechOfWord)) {
+                for (const [etym_number, info] of Object.entries(etyms)) {
+                    const foundPos = findPartOfSpeech(pos, partsOfSpeech, skippedPartsOfSpeech);
+                    const {glossTree} = info;
 
-                const lemmaTags = [pos];
-                ipa.push(...info.ipa);
+                    const lemmaTags = [pos];
+                    ipa.push(...info.ipa);
 
-                /** @type {Object<string, import('types').TermBank.TermInformation>} */
-                const entries = {};
+                    /** @type {Object<string, import('types').TermBank.TermInformation>} */
+                    const entries = {};
 
-                for (const [gloss, branches] of glossTree.entries()) {
-                    const tags = branches.get('_tags') || [];
-                    branches.delete('_tags');
+                    for (const [gloss, branches] of glossTree.entries()) {
+                        const tags = branches.get('_tags') || [];
+                        branches.delete('_tags');
 
-                    const senseTags = [...tags, ...lemmaTags];
+                        const senseTags = [...tags, ...lemmaTags];
 
-                    /** @type {GlossBranch} */
-                    const syntheticBranch = new Map();
-                    syntheticBranch.set(gloss, branches);
-                    const {glosses, recognizedTags} = handleNest(syntheticBranch, senseTags, pos);
-                    const joinedTags = recognizedTags.join(' ');
-                    
-                    if(!glosses || !glosses.length) continue;
+                        /** @type {GlossBranch} */
+                        const syntheticBranch = new Map();
+                        syntheticBranch.set(gloss, branches);
+                        const {glosses, recognizedTags} = handleNest(syntheticBranch, senseTags, pos);
+                        const joinedTags = recognizedTags.join(' ');
+                        
+                        if(!glosses || !glosses.length) continue;
 
-                    if (entries[joinedTags]) {
-                        // entries[joinedTags][5].push(gloss);
-                        entries[joinedTags][5].push(...glosses);
-                    } else {
-                        entries[joinedTags] = [
-                            term, // term
-                            reading !== normalizedLemma ? reading : '', // reading
-                            joinedTags, // definition_tags
-                            foundPos, // rules
-                            0, // frequency
-                            glosses, // definitions
-                            0, // sequence
-                            '', // term_tags
-                        ];
+                        if (entries[joinedTags]) {
+                            // entries[joinedTags][5].push(gloss);
+                            entries[joinedTags][5].push(...glosses);
+                        } else {
+                            entries[joinedTags] = [
+                                term, // term
+                                reading !== normalizedLemma ? reading : '', // reading
+                                joinedTags, // definition_tags
+                                foundPos, // rules
+                                0, // frequency
+                                glosses, // definitions
+                                0, // sequence
+                                '', // term_tags
+                            ];
+                        }
                     }
-                }
 
-                debug(entries);
-                for (const [tags, entry] of Object.entries(entries)) {
-                    ymtLemmas.push(entry);
+                    debug(entries);
+                    for (const [tags, entry] of Object.entries(entries)) {
+                        ymtLemmas.push(entry);
+                    }
                 }
             }
 
