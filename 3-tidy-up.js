@@ -124,7 +124,7 @@ lr.on('line', (line) => {
  * @param {KaikkiLine} parsedLine 
  */
 function handleLine(parsedLine) {
-    const { pos, sounds, forms } = parsedLine;
+    const { pos, sounds, forms, etymology_number = 0 } = parsedLine;
     if(!pos) return;
     const word = getCanonicalWordForm(parsedLine);
     if (!word) return;
@@ -177,16 +177,16 @@ function handleLine(parsedLine) {
     if (sensesWithoutInflectionGlosses.length === 0) return;
     
     const readings = getReadings(word, parsedLine);
-    initializeWordResult(word, readings, pos);
+    initializeWordResult(word, readings, pos, String(etymology_number));
 
     for (const ipaObj of ipa) {
-        saveIpaResult(word, readings, pos, ipaObj);
+        saveIpaResult(word, readings, pos, String(etymology_number), ipaObj);
     }
 
     const glossTree = getGlossTree(sensesWithoutInflectionGlosses);
     
     for (const reading of readings) {
-        lemmaDict[word][reading][pos].glossTree = glossTree;
+        lemmaDict[word][reading][pos][String(etymology_number)].glossTree = glossTree;
     }
 }
 
@@ -273,11 +273,12 @@ function processForms(forms, word, pos) {
  * @param {string} word 
  * @param {string[]} readings 
  * @param {string} pos 
+ * @param {string} etymology_number
  * @param {IpaInfo} ipaObj 
  */
-function saveIpaResult(word, readings, pos, ipaObj) {
+function saveIpaResult(word, readings, pos, etymology_number, ipaObj) {
     for (const reading of readings) {
-        const result = lemmaDict[word][reading][pos];
+        const result = lemmaDict[word][reading][pos][etymology_number];
         const existingIpa = result.ipa.find(obj => obj.ipa === ipaObj.ipa);
         if (!existingIpa) {
             result.ipa.push(ipaObj);
@@ -291,10 +292,11 @@ function saveIpaResult(word, readings, pos, ipaObj) {
  * @param {string} word 
  * @param {string[]} readings 
  * @param {string} pos 
+ * @param {string} etymology_number
  */
-function initializeWordResult(word, readings, pos) {
+function initializeWordResult(word, readings, pos, etymology_number) {
     for (const reading of readings) {
-        const result = ensureNestedObject(lemmaDict, [word, reading, pos]);
+        const result = ensureNestedObject(lemmaDict, [word, reading, pos, etymology_number]);
         result.ipa ??= [];
         result.glossTree ??= new Map();
     }

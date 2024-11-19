@@ -2,121 +2,123 @@
   "fāma": {
     "fāma": {
       "noun": {
-        "ipa": [
-          {
-            "ipa": "/ˈfaː.ma/",
-            "tags": [
-              "Classical"
-            ]
-          },
-          {
-            "ipa": "[ˈfäːmä]",
-            "tags": [
-              "Classical",
-              "modern Italianate Ecclesiastical"
-            ]
-          },
-          {
-            "ipa": "/ˈfa.ma/",
-            "tags": [
-              "modern Italianate Ecclesiastical"
+        "0": {
+          "ipa": [
+            {
+              "ipa": "/ˈfaː.ma/",
+              "tags": [
+                "Classical"
+              ]
+            },
+            {
+              "ipa": "[ˈfäːmä]",
+              "tags": [
+                "Classical",
+                "modern Italianate Ecclesiastical"
+              ]
+            },
+            {
+              "ipa": "/ˈfa.ma/",
+              "tags": [
+                "modern Italianate Ecclesiastical"
+              ]
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "fame",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "declension-1"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "rumour, talk, opinion, report",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "declension-1"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "hascine propter rēs maledicās fāmās ferunt.",
+                          "english": "Is it on account of these things that they spread slanderous reports?"
+                        },
+                        {
+                          "text": "“Oenōtrī coluēre virī; nunc fāma minōrēs",
+                          "english": "“Oenotrian men tilled [the land]; now rumor [has it that their] descendants call the nation ‘Italy’ after the name of its leader, [Italus].”"
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ],
+              [
+                "reputation",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "declension-1"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "Dīmīcantī dē fāmā dēesse.",
+                          "english": "To abandon one whose reputation is attacked."
+                        },
+                        {
+                          "text": "Fāma tamen clāra est; et adhūc sine crīmine vīxī.",
+                          "english": "My good name is nevertheless unstained; and so far I have lived without blame."
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ],
+              [
+                "Fama, personified as a fast-moving, malicious goddess, the daughter of Terra. From the Greek φήμη, Pheme. Typically translated from the Latin as “Rumor.”",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "declension-1"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ]
             ]
           }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "fame",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "declension-1"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "rumour, talk, opinion, report",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "declension-1"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "hascine propter rēs maledicās fāmās ferunt.",
-                        "english": "Is it on account of these things that they spread slanderous reports?"
-                      },
-                      {
-                        "text": "“Oenōtrī coluēre virī; nunc fāma minōrēs",
-                        "english": "“Oenotrian men tilled [the land]; now rumor [has it that their] descendants call the nation ‘Italy’ after the name of its leader, [Italus].”"
-                      }
-                    ]
-                  ]
-                ]
-              }
-            ],
-            [
-              "reputation",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "declension-1"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "Dīmīcantī dē fāmā dēesse.",
-                        "english": "To abandon one whose reputation is attacked."
-                      },
-                      {
-                        "text": "Fāma tamen clāra est; et adhūc sine crīmine vīxī.",
-                        "english": "My good name is nevertheless unstained; and so far I have lived without blame."
-                      }
-                    ]
-                  ]
-                ]
-              }
-            ],
-            [
-              "Fama, personified as a fast-moving, malicious goddess, the daughter of Terra. From the Greek φήμη, Pheme. Typically translated from the Latin as “Rumor.”",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "declension-1"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ]
-          ]
         }
       }
     }
@@ -124,172 +126,174 @@
   "legō": {
     "legō": {
       "verb": {
-        "ipa": [
-          {
-            "ipa": "/ˈle.ɡoː/",
-            "tags": [
-              "Classical"
-            ]
-          },
-          {
-            "ipa": "[ˈɫ̪ɛɡoː]",
-            "tags": [
-              "Classical"
-            ]
-          },
-          {
-            "ipa": "/ˈle.ɡo/",
-            "tags": [
-              "modern Italianate Ecclesiastical"
-            ]
-          },
-          {
-            "ipa": "[ˈlɛːɡo]",
-            "tags": [
-              "modern Italianate Ecclesiastical"
+        "1": {
+          "ipa": [
+            {
+              "ipa": "/ˈle.ɡoː/",
+              "tags": [
+                "Classical"
+              ]
+            },
+            {
+              "ipa": "[ˈɫ̪ɛɡoː]",
+              "tags": [
+                "Classical"
+              ]
+            },
+            {
+              "ipa": "/ˈle.ɡo/",
+              "tags": [
+                "modern Italianate Ecclesiastical"
+              ]
+            },
+            {
+              "ipa": "[ˈlɛːɡo]",
+              "tags": [
+                "modern Italianate Ecclesiastical"
+              ]
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "to choose, select",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "conjugation-3"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "to appoint",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "conjugation-3"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "to collect, gather, bring together",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "conjugation-3"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "to take out, pick out, extract, remove",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "conjugation-3"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "to take to one's self unjustly, carry off, steal, purloin, plunder, abstract",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "conjugation-3"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "to read",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "conjugation-3"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "Librōs lege.",
+                          "english": "Read books."
+                        },
+                        {
+                          "text": "Lēgistīne hunc librum?",
+                          "english": "Have you read this book?"
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(Medieval Latin) to teach, profess",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "Medieval-Latin",
+                        "conjugation-3"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ]
             ]
           }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "to choose, select",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "conjugation-3"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "to appoint",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "conjugation-3"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "to collect, gather, bring together",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "conjugation-3"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "to take out, pick out, extract, remove",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "conjugation-3"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "to take to one's self unjustly, carry off, steal, purloin, plunder, abstract",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "conjugation-3"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "to read",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "conjugation-3"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "Librōs lege.",
-                        "english": "Read books."
-                      },
-                      {
-                        "text": "Lēgistīne hunc librum?",
-                        "english": "Have you read this book?"
-                      }
-                    ]
-                  ]
-                ]
-              }
-            ],
-            [
-              "(Medieval Latin) to teach, profess",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "Medieval-Latin",
-                      "conjugation-3"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ]
-          ]
         }
       }
     }
@@ -297,54 +301,56 @@
   "līlium": {
     "līlium": {
       "noun": {
-        "ipa": [
-          {
-            "ipa": "/ˈliː.li.um/",
-            "tags": [
-              "Classical"
-            ]
-          },
-          {
-            "ipa": "[ˈlʲiːlʲiʊ̃ˑ]",
-            "tags": [
-              "Classical"
-            ]
-          },
-          {
-            "ipa": "/ˈli.li.um/",
-            "tags": [
-              "modern Italianate Ecclesiastical"
-            ]
-          },
-          {
-            "ipa": "[ˈliːlium]",
-            "tags": [
-              "modern Italianate Ecclesiastical"
+        "0": {
+          "ipa": [
+            {
+              "ipa": "/ˈliː.li.um/",
+              "tags": [
+                "Classical"
+              ]
+            },
+            {
+              "ipa": "[ˈlʲiːlʲiʊ̃ˑ]",
+              "tags": [
+                "Classical"
+              ]
+            },
+            {
+              "ipa": "/ˈli.li.um/",
+              "tags": [
+                "modern Italianate Ecclesiastical"
+              ]
+            },
+            {
+              "ipa": "[ˈliːlium]",
+              "tags": [
+                "modern Italianate Ecclesiastical"
+              ]
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "a lily",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "declension-2"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ]
             ]
           }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "a lily",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "declension-2"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ]
-          ]
         }
       }
     }
@@ -352,107 +358,109 @@
   "ū̆sque": {
     "ū̆sque": {
       "adv": {
-        "ipa": [
-          {
-            "ipa": "/ˈuːs.kʷe/",
-            "tags": [
-              "Classical"
-            ]
-          },
-          {
-            "ipa": "[ˈuːs̠kʷɛ]",
-            "tags": [
-              "Classical"
-            ]
-          },
-          {
-            "ipa": "/ˈus.kʷe/",
-            "tags": [
-              "Classical"
-            ]
-          },
-          {
-            "ipa": "[ˈʊs̠kʷɛ]",
-            "tags": [
-              "Classical"
-            ]
-          },
-          {
-            "ipa": "/ˈus.kwe/",
-            "tags": [
-              "modern Italianate Ecclesiastical"
-            ]
-          },
-          {
-            "ipa": "[ˈuskwe]",
-            "tags": [
-              "modern Italianate Ecclesiastical"
+        "0": {
+          "ipa": [
+            {
+              "ipa": "/ˈuːs.kʷe/",
+              "tags": [
+                "Classical"
+              ]
+            },
+            {
+              "ipa": "[ˈuːs̠kʷɛ]",
+              "tags": [
+                "Classical"
+              ]
+            },
+            {
+              "ipa": "/ˈus.kʷe/",
+              "tags": [
+                "Classical"
+              ]
+            },
+            {
+              "ipa": "[ˈʊs̠kʷɛ]",
+              "tags": [
+                "Classical"
+              ]
+            },
+            {
+              "ipa": "/ˈus.kwe/",
+              "tags": [
+                "modern Italianate Ecclesiastical"
+              ]
+            },
+            {
+              "ipa": "[ˈuskwe]",
+              "tags": [
+                "modern Italianate Ecclesiastical"
+              ]
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "all the way",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "not-comparable"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "until, up to (sometimes with \"ad\")",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "not-comparable"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "constantly, continuously",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "not-comparable"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "ab ōvō ū̆sque ad māla",
+                          "english": "from the beginning to the end\n(literally, “from the egg to the apples”)"
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ]
             ]
           }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "all the way",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "not-comparable"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "until, up to (sometimes with \"ad\")",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "not-comparable"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "constantly, continuously",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "not-comparable"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "ab ōvō ū̆sque ad māla",
-                        "english": "from the beginning to the end\n(literally, “from the egg to the apples”)"
-                      }
-                    ]
-                  ]
-                ]
-              }
-            ]
-          ]
         }
       }
     }
@@ -460,117 +468,119 @@
   "rēctus": {
     "rēctus": {
       "verb": {
-        "ipa": [
-          {
-            "ipa": "/ˈreːk.tus/",
-            "tags": [
-              "Classical"
-            ]
-          },
-          {
-            "ipa": "[ˈreːkt̪ʊs̠]",
-            "tags": [
-              "Classical"
-            ]
-          },
-          {
-            "ipa": "/ˈrek.tus/",
-            "tags": [
-              "modern Italianate Ecclesiastical"
-            ]
-          },
-          {
-            "ipa": "[ˈrɛkt̪us]",
-            "tags": [
-              "modern Italianate Ecclesiastical"
+        "0": {
+          "ipa": [
+            {
+              "ipa": "/ˈreːk.tus/",
+              "tags": [
+                "Classical"
+              ]
+            },
+            {
+              "ipa": "[ˈreːkt̪ʊs̠]",
+              "tags": [
+                "Classical"
+              ]
+            },
+            {
+              "ipa": "/ˈrek.tus/",
+              "tags": [
+                "modern Italianate Ecclesiastical"
+              ]
+            },
+            {
+              "ipa": "[ˈrɛkt̪us]",
+              "tags": [
+                "modern Italianate Ecclesiastical"
+              ]
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "led straight along, drawn in a straight line, straight, upright.",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "declension-1",
+                        "declension-2",
+                        "form-of",
+                        "participle",
+                        "passive",
+                        "perfect"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "Quae rectis lineis suos ordines servant",
+                          "english": "Which preserve their order in straight lines"
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(in general) right, correct, proper, appropriate, befitting.",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "declension-1",
+                        "declension-2",
+                        "form-of",
+                        "participle",
+                        "passive",
+                        "perfect",
+                        "usually"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(in particular) morally right, correct, lawful, just, virtuous, noble, good, proper, honest.",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "declension-1",
+                        "declension-2",
+                        "form-of",
+                        "in particular",
+                        "participle",
+                        "passive",
+                        "perfect"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "Via stultī rēcta in oculīs eius; quī autem sapiēns est audit cōnsilia.",
+                          "english": "The way of a fool is right in his own eyes: but he that is wise hearkeneth unto counsels. (Douay-Rheims trans., Challoner rev.: 1752 CE)"
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ]
             ]
           }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "led straight along, drawn in a straight line, straight, upright.",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "declension-1",
-                      "declension-2",
-                      "form-of",
-                      "participle",
-                      "passive",
-                      "perfect"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "Quae rectis lineis suos ordines servant",
-                        "english": "Which preserve their order in straight lines"
-                      }
-                    ]
-                  ]
-                ]
-              }
-            ],
-            [
-              "(in general) right, correct, proper, appropriate, befitting.",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "declension-1",
-                      "declension-2",
-                      "form-of",
-                      "participle",
-                      "passive",
-                      "perfect",
-                      "usually"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "(in particular) morally right, correct, lawful, just, virtuous, noble, good, proper, honest.",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "declension-1",
-                      "declension-2",
-                      "form-of",
-                      "in particular",
-                      "participle",
-                      "passive",
-                      "perfect"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "Via stultī rēcta in oculīs eius; quī autem sapiēns est audit cōnsilia.",
-                        "english": "The way of a fool is right in his own eyes: but he that is wise hearkeneth unto counsels. (Douay-Rheims trans., Challoner rev.: 1752 CE)"
-                      }
-                    ]
-                  ]
-                ]
-              }
-            ]
-          ]
         }
       }
     }
@@ -578,227 +588,229 @@
   "domus": {
     "domus": {
       "noun": {
-        "ipa": [
-          {
-            "ipa": "/ˈdo.mus/",
-            "tags": [
-              "Classical",
-              "modern Italianate Ecclesiastical"
-            ]
-          },
-          {
-            "ipa": "[ˈd̪ɔmʊs̠]",
-            "tags": [
-              "Classical"
-            ]
-          },
-          {
-            "ipa": "[ˈd̪ɔːmus]",
-            "tags": [
-              "modern Italianate Ecclesiastical"
+        "0": {
+          "ipa": [
+            {
+              "ipa": "/ˈdo.mus/",
+              "tags": [
+                "Classical",
+                "modern Italianate Ecclesiastical"
+              ]
+            },
+            {
+              "ipa": "[ˈd̪ɔmʊs̠]",
+              "tags": [
+                "Classical"
+              ]
+            },
+            {
+              "ipa": "[ˈd̪ɔːmus]",
+              "tags": [
+                "modern Italianate Ecclesiastical"
+              ]
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "house, home (the building where a person lives)",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "declension-2",
+                        "declension-4",
+                        "feminine",
+                        "irregular"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "Deō domuīque",
+                          "english": "For God and for home (motto of Methodist Ladies' College, Melbourne)"
+                        },
+                        {
+                          "text": "Stet fortūna domūs",
+                          "english": "Let the good fortune of the house stand (motto of Harrow School, England)"
+                        }
+                      ]
+                    ],
+                    [
+                      "a townhouse",
+                      {
+                        "_type": "map",
+                        "map": [
+                          [
+                            "_examples",
+                            []
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ],
+              [
+                "any dwelling-place or abode (of people or animals)",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "declension-2",
+                        "declension-4",
+                        "feminine",
+                        "irregular"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "the place of one's birth or residence, native country, town",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "declension-2",
+                        "declension-4",
+                        "feminine",
+                        "irregular"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ],
+                    [
+                      "(also of the shell of invertebrates, tombs of the dead)",
+                      {
+                        "_type": "map",
+                        "map": [
+                          [
+                            "_examples",
+                            []
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ],
+              [
+                "household, family (the dependants of the head of a house)",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "declension-2",
+                        "declension-4",
+                        "feminine",
+                        "irregular"
+                      ]
+                    ],
+                    [
+                      "a group of disciples, school; an intellectual movement",
+                      {
+                        "_type": "map",
+                        "map": [
+                          [
+                            "_examples",
+                            []
+                          ]
+                        ]
+                      }
+                    ],
+                    [
+                      "(monarchy) house, dynasty",
+                      {
+                        "_type": "map",
+                        "map": [
+                          [
+                            "_examples",
+                            []
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(idiomatic) one's own possessions or resources",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "declension-2",
+                        "declension-4",
+                        "feminine",
+                        "idiomatic",
+                        "irregular"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "domum trahere",
+                          "english": "to drag into one's pocket"
+                        },
+                        {
+                          "text": "Domī versūra fit.",
+                          "english": "One is one's own creditor. (proverb)"
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(in locative case in phrases, idiomatic) peace",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "declension-2",
+                        "declension-4",
+                        "feminine",
+                        "idiomatic",
+                        "irregular",
+                        "in locative case in phrases"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "ut non quietior populus domi esset quam militiae",
+                          "english": "so that the people should not become lazier in the time of peace than that of war"
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ]
             ]
           }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "house, home (the building where a person lives)",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "declension-2",
-                      "declension-4",
-                      "feminine",
-                      "irregular"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "Deō domuīque",
-                        "english": "For God and for home (motto of Methodist Ladies' College, Melbourne)"
-                      },
-                      {
-                        "text": "Stet fortūna domūs",
-                        "english": "Let the good fortune of the house stand (motto of Harrow School, England)"
-                      }
-                    ]
-                  ],
-                  [
-                    "a townhouse",
-                    {
-                      "_type": "map",
-                      "map": [
-                        [
-                          "_examples",
-                          []
-                        ]
-                      ]
-                    }
-                  ]
-                ]
-              }
-            ],
-            [
-              "any dwelling-place or abode (of people or animals)",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "declension-2",
-                      "declension-4",
-                      "feminine",
-                      "irregular"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "the place of one's birth or residence, native country, town",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "declension-2",
-                      "declension-4",
-                      "feminine",
-                      "irregular"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ],
-                  [
-                    "(also of the shell of invertebrates, tombs of the dead)",
-                    {
-                      "_type": "map",
-                      "map": [
-                        [
-                          "_examples",
-                          []
-                        ]
-                      ]
-                    }
-                  ]
-                ]
-              }
-            ],
-            [
-              "household, family (the dependants of the head of a house)",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "declension-2",
-                      "declension-4",
-                      "feminine",
-                      "irregular"
-                    ]
-                  ],
-                  [
-                    "a group of disciples, school; an intellectual movement",
-                    {
-                      "_type": "map",
-                      "map": [
-                        [
-                          "_examples",
-                          []
-                        ]
-                      ]
-                    }
-                  ],
-                  [
-                    "(monarchy) house, dynasty",
-                    {
-                      "_type": "map",
-                      "map": [
-                        [
-                          "_examples",
-                          []
-                        ]
-                      ]
-                    }
-                  ]
-                ]
-              }
-            ],
-            [
-              "(idiomatic) one's own possessions or resources",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "declension-2",
-                      "declension-4",
-                      "feminine",
-                      "idiomatic",
-                      "irregular"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "domum trahere",
-                        "english": "to drag into one's pocket"
-                      },
-                      {
-                        "text": "Domī versūra fit.",
-                        "english": "One is one's own creditor. (proverb)"
-                      }
-                    ]
-                  ]
-                ]
-              }
-            ],
-            [
-              "(in locative case in phrases, idiomatic) peace",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "declension-2",
-                      "declension-4",
-                      "feminine",
-                      "idiomatic",
-                      "irregular",
-                      "in locative case in phrases"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "ut non quietior populus domi esset quam militiae",
-                        "english": "so that the people should not become lazier in the time of peace than that of war"
-                      }
-                    ]
-                  ]
-                ]
-              }
-            ]
-          ]
         }
       }
     }

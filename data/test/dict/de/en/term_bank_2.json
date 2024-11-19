@@ -2317,5 +2317,54 @@
     ],
     0,
     ""
+  ],
+  [
+    "Basen",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "Base",
+        [
+          "plural"
+        ]
+      ],
+      [
+        "Base",
+        [
+          "accusative",
+          "plural",
+          "definite"
+        ]
+      ],
+      [
+        "Base",
+        [
+          "dative",
+          "plural",
+          "definite"
+        ]
+      ],
+      [
+        "Base",
+        [
+          "genitive",
+          "plural",
+          "definite"
+        ]
+      ],
+      [
+        "Base",
+        [
+          "nominative",
+          "plural",
+          "definite"
+        ]
+      ]
+    ],
+    0,
+    ""
   ]
 ]

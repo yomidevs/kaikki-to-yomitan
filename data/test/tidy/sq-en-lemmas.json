@@ -2,34 +2,36 @@
   "akull": {
     "akull": {
       "noun": {
-        "ipa": [
-          {
-            "ipa": "/ˈakuɫ/",
-            "tags": []
-          }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "ice",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
+        "1": {
+          "ipa": [
+            {
+              "ipa": "/ˈakuɫ/",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "ice",
+                {
+                  "_type": "map",
+                  "map": [
                     [
-                      "masculine"
+                      "_tags",
+                      [
+                        "masculine"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
                     ]
-                  ],
-                  [
-                    "_examples",
-                    []
                   ]
-                ]
-              }
+                }
+              ]
             ]
-          ]
+          }
         }
       }
     }
@@ -37,210 +39,212 @@
   "gjuhë": {
     "gjuhë": {
       "noun": {
-        "ipa": [
-          {
-            "ipa": "/ˈɟuhə/",
-            "tags": []
-          },
-          {
-            "ipa": "[ˈɡjuː(h)]",
-            "tags": [
-              "Gheg",
-              "Northern"
-            ]
-          },
-          {
-            "ipa": "[ˈɡuː(h)]",
-            "tags": [
-              "Gheg",
-              "Northern"
-            ]
-          },
-          {
-            "ipa": "[ˈɡũː]",
-            "tags": [
-              "Kosovo"
-            ]
-          },
-          {
-            "ipa": "[ˈɡʎuhə]",
-            "tags": [
-              "Arbëresh",
-              "Arvanitika"
-            ]
-          },
-          {
-            "ipa": "[ˈɡʎuɣə]",
-            "tags": [
-              "Calabria"
+        "0": {
+          "ipa": [
+            {
+              "ipa": "/ˈɟuhə/",
+              "tags": []
+            },
+            {
+              "ipa": "[ˈɡjuː(h)]",
+              "tags": [
+                "Gheg",
+                "Northern"
+              ]
+            },
+            {
+              "ipa": "[ˈɡuː(h)]",
+              "tags": [
+                "Gheg",
+                "Northern"
+              ]
+            },
+            {
+              "ipa": "[ˈɡũː]",
+              "tags": [
+                "Kosovo"
+              ]
+            },
+            {
+              "ipa": "[ˈɡʎuhə]",
+              "tags": [
+                "Arbëresh",
+                "Arvanitika"
+              ]
+            },
+            {
+              "ipa": "[ˈɡʎuɣə]",
+              "tags": [
+                "Calabria"
+              ]
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "tongue (organ)",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "feminine"
+                      ]
+                    ],
+                    [
+                      "(figurative) speech, talking",
+                      {
+                        "_type": "map",
+                        "map": [
+                          [
+                            "_examples",
+                            [
+                              {
+                                "text": "Mbaje gjuhën!",
+                                "english": "Hold your tongue!"
+                              },
+                              {
+                                "text": "E ka gjuhën të gjatë.",
+                                "english": "(literally, “She has a long tongue.”)"
+                              }
+                            ]
+                          ]
+                        ]
+                      }
+                    ],
+                    [
+                      "strip of land",
+                      {
+                        "_type": "map",
+                        "map": [
+                          [
+                            "_examples",
+                            []
+                          ]
+                        ]
+                      }
+                    ],
+                    [
+                      "bell clapper, clanger, tongue",
+                      {
+                        "_type": "map",
+                        "map": [
+                          [
+                            "_examples",
+                            []
+                          ]
+                        ]
+                      }
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "gjuhë lope e zier",
+                          "english": "boiled beef tongue"
+                        },
+                        {
+                          "text": "Dogji gjuhën.",
+                          "english": "I burned my tongue."
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ],
+              [
+                "language, tongue",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "feminine"
+                      ]
+                    ],
+                    [
+                      "register, speech, style",
+                      {
+                        "_type": "map",
+                        "map": [
+                          [
+                            "_examples",
+                            [
+                              {
+                                "text": "gjuha e fëmijëve",
+                                "english": "children speech"
+                              },
+                              {
+                                "text": "gjuhë e trashë",
+                                "english": "foul language"
+                              }
+                            ]
+                          ]
+                        ]
+                      }
+                    ],
+                    [
+                      "language (generally, any form of communication)",
+                      {
+                        "_type": "map",
+                        "map": [
+                          [
+                            "_examples",
+                            [
+                              {
+                                "text": "gjuha e muzikës",
+                                "english": "music's language"
+                              },
+                              {
+                                "text": "gjuha e bletëve",
+                                "english": "bees' language"
+                              }
+                            ]
+                          ]
+                        ]
+                      }
+                    ],
+                    [
+                      "(colloquial) local dialect",
+                      {
+                        "_type": "map",
+                        "map": [
+                          [
+                            "_examples",
+                            []
+                          ]
+                        ]
+                      }
+                    ],
+                    [
+                      "(colloquial) Albanian, as a subject in school",
+                      {
+                        "_type": "map",
+                        "map": [
+                          [
+                            "_examples",
+                            []
+                          ]
+                        ]
+                      }
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "gjuha shqipe",
+                          "english": "the Albanian language"
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ]
             ]
           }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "tongue (organ)",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "feminine"
-                    ]
-                  ],
-                  [
-                    "(figurative) speech, talking",
-                    {
-                      "_type": "map",
-                      "map": [
-                        [
-                          "_examples",
-                          [
-                            {
-                              "text": "Mbaje gjuhën!",
-                              "english": "Hold your tongue!"
-                            },
-                            {
-                              "text": "E ka gjuhën të gjatë.",
-                              "english": "(literally, “She has a long tongue.”)"
-                            }
-                          ]
-                        ]
-                      ]
-                    }
-                  ],
-                  [
-                    "strip of land",
-                    {
-                      "_type": "map",
-                      "map": [
-                        [
-                          "_examples",
-                          []
-                        ]
-                      ]
-                    }
-                  ],
-                  [
-                    "bell clapper, clanger, tongue",
-                    {
-                      "_type": "map",
-                      "map": [
-                        [
-                          "_examples",
-                          []
-                        ]
-                      ]
-                    }
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "gjuhë lope e zier",
-                        "english": "boiled beef tongue"
-                      },
-                      {
-                        "text": "Dogji gjuhën.",
-                        "english": "I burned my tongue."
-                      }
-                    ]
-                  ]
-                ]
-              }
-            ],
-            [
-              "language, tongue",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "feminine"
-                    ]
-                  ],
-                  [
-                    "register, speech, style",
-                    {
-                      "_type": "map",
-                      "map": [
-                        [
-                          "_examples",
-                          [
-                            {
-                              "text": "gjuha e fëmijëve",
-                              "english": "children speech"
-                            },
-                            {
-                              "text": "gjuhë e trashë",
-                              "english": "foul language"
-                            }
-                          ]
-                        ]
-                      ]
-                    }
-                  ],
-                  [
-                    "language (generally, any form of communication)",
-                    {
-                      "_type": "map",
-                      "map": [
-                        [
-                          "_examples",
-                          [
-                            {
-                              "text": "gjuha e muzikës",
-                              "english": "music's language"
-                            },
-                            {
-                              "text": "gjuha e bletëve",
-                              "english": "bees' language"
-                            }
-                          ]
-                        ]
-                      ]
-                    }
-                  ],
-                  [
-                    "(colloquial) local dialect",
-                    {
-                      "_type": "map",
-                      "map": [
-                        [
-                          "_examples",
-                          []
-                        ]
-                      ]
-                    }
-                  ],
-                  [
-                    "(colloquial) Albanian, as a subject in school",
-                    {
-                      "_type": "map",
-                      "map": [
-                        [
-                          "_examples",
-                          []
-                        ]
-                      ]
-                    }
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "gjuha shqipe",
-                        "english": "the Albanian language"
-                      }
-                    ]
-                  ]
-                ]
-              }
-            ]
-          ]
         }
       }
     }

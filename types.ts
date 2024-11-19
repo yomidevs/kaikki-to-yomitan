@@ -16,6 +16,7 @@ declare global {
         head_templates?: HeadTemplate[];
         word?: string;
         pos?: string;
+        etymology_number?: number;
         sounds?: Sound[];  
         forms?: FormInfo[];
         senses?: KaikkiSense[];
@@ -80,7 +81,9 @@ declare global {
     type LemmaDict = {
         [word: string]: {
             [reading: string]: {
-                [pos: string]: LemmaInfo
+                [pos: string]: {
+                    [etymology_number: string]: LemmaInfo
+                }
             }
         }
     }

@@ -2,54 +2,56 @@
   "ملک": {
     "molk": {
       "noun": {
-        "ipa": [
-          {
-            "ipa": "[mulk]",
-            "tags": [
-              "Classical-Persian",
-              "Hazaragi",
-              "Tajik",
-              "formal"
-            ]
-          },
-          {
-            "ipa": "[mʊlk]",
-            "tags": [
-              "Dari",
-              "formal",
-              "Kabuli"
-            ]
-          },
-          {
-            "ipa": "[molkʲ]",
-            "tags": [
-              "Iran",
-              "formal"
+        "5": {
+          "ipa": [
+            {
+              "ipa": "[mulk]",
+              "tags": [
+                "Classical-Persian",
+                "Hazaragi",
+                "Tajik",
+                "formal"
+              ]
+            },
+            {
+              "ipa": "[mʊlk]",
+              "tags": [
+                "Dari",
+                "formal",
+                "Kabuli"
+              ]
+            },
+            {
+              "ipa": "[molkʲ]",
+              "tags": [
+                "Iran",
+                "formal"
+              ]
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "(Khorasan) a kind of pea",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "Khorasan"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ]
             ]
           }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "(Khorasan) a kind of pea",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    [
-                      "Khorasan"
-                    ]
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ]
-          ]
         }
       }
     }
@@ -57,104 +59,106 @@
   "فارْسی": {
     "fârsi": {
       "noun": {
-        "ipa": [
-          {
-            "ipa": "[fɑːɾ.ˈsiː]",
-            "tags": [
-              "Classical-Persian"
-            ]
-          },
-          {
-            "ipa": "[fɑːɾ.síː]",
-            "tags": [
-              "Dari",
-              "formal",
-              "Kabuli"
-            ]
-          },
-          {
-            "ipa": "[fɔːɾ.sí]",
-            "tags": [
-              "Hazaragi"
-            ]
-          },
-          {
-            "ipa": "[fɒːɹ.síː]",
-            "tags": [
-              "Iran",
-              "formal"
-            ]
-          },
-          {
-            "ipa": "[fɔɾ.sí]",
-            "tags": [
-              "Tajik",
-              "formal"
+        "0": {
+          "ipa": [
+            {
+              "ipa": "[fɑːɾ.ˈsiː]",
+              "tags": [
+                "Classical-Persian"
+              ]
+            },
+            {
+              "ipa": "[fɑːɾ.síː]",
+              "tags": [
+                "Dari",
+                "formal",
+                "Kabuli"
+              ]
+            },
+            {
+              "ipa": "[fɔːɾ.sí]",
+              "tags": [
+                "Hazaragi"
+              ]
+            },
+            {
+              "ipa": "[fɒːɹ.síː]",
+              "tags": [
+                "Iran",
+                "formal"
+              ]
+            },
+            {
+              "ipa": "[fɔɾ.sí]",
+              "tags": [
+                "Tajik",
+                "formal"
+              ]
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan).",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "بَرادَرِ شُوْهَرِش فارْسی بَلَدِه.",
+                          "english": "Her husband's brother knows Persian."
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ],
+              [
+                "Persian (the language of Ancient Persia).",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "Persian, main ethnic group of Iran.",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "فارْسی هَسْتیم.",
+                          "english": "We are Persian."
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ]
             ]
           }
-        ],
-        "glossTree": {
-          "_type": "map",
-          "map": [
-            [
-              "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan).",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    []
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "بَرادَرِ شُوْهَرِش فارْسی بَلَدِه.",
-                        "english": "Her husband's brother knows Persian."
-                      }
-                    ]
-                  ]
-                ]
-              }
-            ],
-            [
-              "Persian (the language of Ancient Persia).",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    []
-                  ],
-                  [
-                    "_examples",
-                    []
-                  ]
-                ]
-              }
-            ],
-            [
-              "Persian, main ethnic group of Iran.",
-              {
-                "_type": "map",
-                "map": [
-                  [
-                    "_tags",
-                    []
-                  ],
-                  [
-                    "_examples",
-                    [
-                      {
-                        "text": "فارْسی هَسْتیم.",
-                        "english": "We are Persian."
-                      }
-                    ]
-                  ]
-                ]
-              }
-            ]
-          ]
         }
       }
     }
