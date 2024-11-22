@@ -1,1 +1,76 @@
-{}
+{
+  "Rock": {
+    "Rock": {
+      "noun": {
+        "0": {
+          "ipa": [
+            {
+              "ipa": "ʁɔk",
+              "tags": []
+            },
+            {
+              "ipa": "ɹɔk",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "populäre Musikrichtung, die Anfang der 1950er Jahre in den USA entstand",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "Musik"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "Der Rock ist nicht totzukriegen."
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "1": {
+          "ipa": [
+            {
+              "ipa": "ʁɔk",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "in arabischen Märchen: flugfähiger Vogel in der Größe eines Elefanten",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      }
+    }
+  }
+}
