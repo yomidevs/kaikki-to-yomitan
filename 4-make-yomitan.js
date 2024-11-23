@@ -111,11 +111,11 @@ function findModifiedTag(tag){
 }
 
 /**
- * @param {Example[]} examples 
+ * @param {StandardizedExample[]} examples 
  * @returns {import('types').TermBank.StructuredContent[]}
  */
 function getStructuredExamples(examples) {
-    return examples.map(({text, english}) => {
+    return examples.map(({text, translation}) => {
         return {
             "tag": "div",
             "data": {
@@ -138,7 +138,7 @@ function getStructuredExamples(examples) {
                     "data": {
                         "content": "example-sentence-b"
                     },
-                    "content": english
+                    "content": translation
                 }
             ]}
         }

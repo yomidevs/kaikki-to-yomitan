@@ -28,7 +28,7 @@
                       [
                         {
                           "text": "prends ma main",
-                          "english": "take my hand"
+                          "translation": "take my hand"
                         }
                       ]
                     ]
@@ -51,7 +51,7 @@
                       [
                         {
                           "text": "elle prend un café",
-                          "english": "she is drinking a coffee"
+                          "translation": "she is drinking a coffee"
                         }
                       ]
                     ]
@@ -74,7 +74,7 @@
                       [
                         {
                           "text": "Je vais prendre le plat du jour.",
-                          "english": "I'll get the dish of the day."
+                          "translation": "I'll get the dish of the day."
                         }
                       ]
                     ]
@@ -97,7 +97,7 @@
                       [
                         {
                           "text": "prendre quelque chose à quelqu’un",
-                          "english": "to take something from someone"
+                          "translation": "to take something from someone"
                         }
                       ]
                     ]
@@ -120,11 +120,11 @@
                       [
                         {
                           "text": "prendre une décision",
-                          "english": "to make a decision"
+                          "translation": "to make a decision"
                         },
                         {
                           "text": "prendre des mesures draconiennes",
-                          "english": "to take draconian measures"
+                          "translation": "to take draconian measures"
                         }
                       ]
                     ]
@@ -147,11 +147,11 @@
                       [
                         {
                           "text": "le feu ne prend pas",
-                          "english": "the fire won't start"
+                          "translation": "the fire won't start"
                         },
                         {
                           "text": "la sauce ne prend pas",
-                          "english": "the sauce isn't thickening"
+                          "translation": "the sauce isn't thickening"
                         }
                       ]
                     ]
@@ -174,11 +174,11 @@
                       [
                         {
                           "text": "je me suis pris la main dans la porte",
-                          "english": "I caught my hand in the door"
+                          "translation": "I caught my hand in the door"
                         },
                         {
                           "text": "je me suis pris la porte dans la figure",
-                          "english": "the door hit me in the face"
+                          "translation": "the door hit me in the face"
                         }
                       ]
                     ]
@@ -208,11 +208,11 @@
                             [
                               {
                                 "text": "Qu’est-ce qui t’a pris ? Qu’est-ce qui t’est passé par la tête ?",
-                                "english": "What were you thinking? What got into you? What came over you?"
+                                "translation": "What were you thinking? What got into you? What came over you?"
                               },
                               {
                                 "text": "Qu’est-ce qui lui a pris ? Quelle mouche l’a piqué ?",
-                                "english": "What was he thinking? What got into him?"
+                                "translation": "What was he thinking? What got into him?"
                               }
                             ]
                           ]
@@ -239,11 +239,11 @@
                       [
                         {
                           "text": "prendre de la vitesse",
-                          "english": "to gain speed"
+                          "translation": "to gain speed"
                         },
                         {
                           "text": "prendre du galon",
-                          "english": "to gain a promotion"
+                          "translation": "to gain a promotion"
                         }
                       ]
                     ]
@@ -267,7 +267,7 @@
                       [
                         {
                           "text": "Ça va me prendre au moins deux heures pour le mettre à jour.",
-                          "english": "It's going to take me at least two hours to update it."
+                          "translation": "It's going to take me at least two hours to update it."
                         }
                       ]
                     ]
@@ -292,7 +292,7 @@
                       [
                         {
                           "text": "Pour finir dans deux heures, ça prend trois personnes.",
-                          "english": "To finish in two hours, it'll take three people."
+                          "translation": "To finish in two hours, it'll take three people."
                         }
                       ]
                     ]
@@ -315,11 +315,11 @@
                       [
                         {
                           "text": "il prend [quelque chose] à [quelqu’un]",
-                          "english": "[something] comes over [someone]"
+                          "translation": "[something] comes over [someone]"
                         },
                         {
                           "text": "Il lui prend une fantaisie de mettre le feu à la maison.",
-                          "english": "A fancy comes over him to set fire to the house."
+                          "translation": "A fancy comes over him to set fire to the house."
                         }
                       ]
                     ]

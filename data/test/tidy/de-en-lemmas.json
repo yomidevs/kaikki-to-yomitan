@@ -47,11 +47,11 @@
                             [
                               {
                                 "text": "jemanden gesund pflegen",
-                                "english": "to nurse someone back to health"
+                                "translation": "to nurse someone back to health"
                               },
                               {
                                 "text": "Kranke pflegen",
-                                "english": "to care for the sick"
+                                "translation": "to care for the sick"
                               }
                             ]
                           ]
@@ -68,11 +68,11 @@
                             [
                               {
                                 "text": "sein Äußeres pflegen",
-                                "english": "to take care of one's appearance"
+                                "translation": "to take care of one's appearance"
                               },
                               {
                                 "text": "die Zähne pflegen",
-                                "english": "to take care of (one's) teeth"
+                                "translation": "to take care of (one's) teeth"
                               }
                             ]
                           ],
@@ -120,11 +120,11 @@
                             [
                               {
                                 "text": "Freundschaften pflegen",
-                                "english": "to cultivate friendships"
+                                "translation": "to cultivate friendships"
                               },
                               {
                                 "text": "Beziehungen pflegen",
-                                "english": "to cultivate relationships"
+                                "translation": "to cultivate relationships"
                               }
                             ]
                           ],
@@ -138,11 +138,11 @@
                                   [
                                     {
                                       "text": "der Liebe pflegen",
-                                      "english": "to cultivate/nurture love"
+                                      "translation": "to cultivate/nurture love"
                                     },
                                     {
                                       "text": "der Ruhe pflegen",
-                                      "english": "to foster tranquility"
+                                      "translation": "to foster tranquility"
                                     }
                                   ]
                                 ]
@@ -177,11 +177,11 @@
                             [
                               {
                                 "text": "Umgang pflegen",
-                                "english": "to regularly be in contact"
+                                "translation": "to regularly be in contact"
                               },
                               {
                                 "text": "Geselligkeit pflegen",
-                                "english": "to socialize regularly (literally, “to regularly engage in gregariousness”)"
+                                "translation": "to socialize regularly (literally, “to regularly engage in gregariousness”)"
                               }
                             ]
                           ]
@@ -198,11 +198,11 @@
                             [
                               {
                                 "text": "Ich pflege zu laufen.",
-                                "english": "I usually walk."
+                                "translation": "I usually walk."
                               },
                               {
                                 "text": "Er pflegte zu reisen.",
-                                "english": "He used to travel."
+                                "translation": "He used to travel."
                               }
                             ]
                           ]
@@ -248,7 +248,7 @@
                       [
                         {
                           "text": "Fuchs, du hast die Gans gestohlen. Gib sie wieder her!",
-                          "english": "(line from a popular children’s song)"
+                          "translation": "(line from a popular children’s song)"
                         }
                       ]
                     ]
@@ -273,7 +273,7 @@
                       [
                         {
                           "text": "Er ist ein ganz schöner Fuchs.",
-                          "english": "He is a really handsome fox."
+                          "translation": "He is a really handsome fox."
                         }
                       ]
                     ]
@@ -298,7 +298,7 @@
                       [
                         {
                           "text": "Unser Paul ist ja ein kleiner Fuchs.",
-                          "english": "Our Paul is a little redhead."
+                          "translation": "Our Paul is a little redhead."
                         }
                       ]
                     ]
@@ -361,7 +361,7 @@
                       [
                         {
                           "text": "Ich hatte nur vier Trümpfe und darunter beide Füchse.",
-                          "english": "I had only four trumps and among them were both aces of diamonds."
+                          "translation": "I had only four trumps and among them were both aces of diamonds."
                         }
                       ]
                     ]
@@ -610,11 +610,11 @@
                       [
                         {
                           "text": "Ich fahre von Köln nach Hamburg.",
-                          "english": "I'm travelling from Cologne to Hamburg."
+                          "translation": "I'm travelling from Cologne to Hamburg."
                         },
                         {
                           "text": "Ich hab’s von meiner Schwester gehört.",
-                          "english": "I heard it from my sister."
+                          "translation": "I heard it from my sister."
                         }
                       ]
                     ]
@@ -635,7 +635,7 @@
                       [
                         {
                           "text": "das Auto meines Vaters = das Auto von meinem Vater",
-                          "english": "my father’s car / the car of my father"
+                          "translation": "my father’s car / the car of my father"
                         }
                       ]
                     ]
@@ -656,7 +656,7 @@
                       [
                         {
                           "text": "Das Hotel wird von der Firma bezahlt.",
-                          "english": "The hotel is paid for by the company."
+                          "translation": "The hotel is paid for by the company."
                         }
                       ]
                     ]
@@ -677,11 +677,11 @@
                       [
                         {
                           "text": "Er hat von seiner Jugend erzählt.",
-                          "english": "He told about his youth."
+                          "translation": "He told about his youth."
                         },
                         {
                           "text": "Von dem Nomine Substantivo, oder dem Hauptworte.",
-                          "english": "About the substantive noun, or the [alternative term]. (headline)"
+                          "translation": "About the substantive noun, or the [alternative term]. (headline)"
                         }
                       ]
                     ]
@@ -702,11 +702,11 @@
                       [
                         {
                           "text": "Von welchem Geld soll ich als Arbeitsloser in Urlaub fahren?",
-                          "english": "Being unemployed, on what money should I go on holidays?"
+                          "translation": "Being unemployed, on what money should I go on holidays?"
                         },
                         {
                           "text": "Man kann nicht nur von Luft und Liebe leben.",
-                          "english": "You can’t live on air and love alone. (proverb)"
+                          "translation": "You can’t live on air and love alone. (proverb)"
                         }
                       ]
                     ]

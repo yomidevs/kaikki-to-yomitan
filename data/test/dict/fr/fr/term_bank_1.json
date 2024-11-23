@@ -46,7 +46,8 @@
                       "tag": "div",
                       "data": {
                         "content": "example-sentence-b"
-                      }
+                      },
+                      "content": ""
                     }
                   ]
                 }
@@ -73,7 +74,8 @@
                       "tag": "div",
                       "data": {
                         "content": "example-sentence-b"
-                      }
+                      },
+                      "content": ""
                     }
                   ]
                 }
@@ -122,7 +124,8 @@
                       "tag": "div",
                       "data": {
                         "content": "example-sentence-b"
-                      }
+                      },
+                      "content": ""
                     }
                   ]
                 }

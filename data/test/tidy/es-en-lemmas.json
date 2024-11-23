@@ -50,7 +50,7 @@
                       [
                         {
                           "text": "Vive de migas, nada más.",
-                          "english": "He lives on crumbs, nothing more."
+                          "translation": "He lives on crumbs, nothing more."
                         }
                       ]
                     ]
@@ -73,11 +73,11 @@
                       [
                         {
                           "text": "Vive en la casa roja.",
-                          "english": "She lives in the red house."
+                          "translation": "She lives in the red house."
                         },
                         {
                           "text": "La pobrecita vive con dos hermanas crueles.",
-                          "english": "The poor girl lives with two cruel sisters."
+                          "translation": "The poor girl lives with two cruel sisters."
                         }
                       ]
                     ]

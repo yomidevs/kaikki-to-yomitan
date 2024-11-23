@@ -28,11 +28,11 @@
                       [
                         {
                           "text": "textová zpráva",
-                          "english": "text message"
+                          "translation": "text message"
                         },
                         {
                           "text": "Chcete nechat zprávu?",
-                          "english": "Would you like to leave a message?"
+                          "translation": "Would you like to leave a message?"
                         }
                       ]
                     ]
@@ -55,11 +55,11 @@
                       [
                         {
                           "text": "lékařská zpráva",
-                          "english": "medical report"
+                          "translation": "medical report"
                         },
                         {
                           "text": "podat zprávu",
-                          "english": "to file a report"
+                          "translation": "to file a report"
                         }
                       ]
                     ]
@@ -99,7 +99,7 @@
                       [
                         {
                           "text": "Zabili ho pro peníze.",
-                          "english": "They killed him for his money."
+                          "translation": "They killed him for his money."
                         }
                       ]
                     ]
