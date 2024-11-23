@@ -1,0 +1,27 @@
+{
+  "_type": "map",
+  "map": [
+    [
+      "fast",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "faster fastest",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "comparative"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ]
+}

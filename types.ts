@@ -53,6 +53,12 @@ declare global {
         type?: "example" | "quotation" | "quote";
         english?: string;
         roman?: string;
+        translation?: string;
+    }
+
+    type StandardizedExample = {
+        text: string;
+        translation?: string;
     }
 
     type Glosses = string | string[];
@@ -69,8 +75,8 @@ declare global {
     } ;
 
     type GlossTwig = Map<string, GlossTwig> & {
-        get(key: '_examples'): Example[] | undefined;
-        set(key: '_examples', value: Example[]): GlossTwig;
+        get(key: '_examples'): StandardizedExample[] | undefined;
+        set(key: '_examples', value: StandardizedExample[]): GlossTwig;
     } 
       
     type TidySense = Omit<KaikkiSense, 'tags'> & {

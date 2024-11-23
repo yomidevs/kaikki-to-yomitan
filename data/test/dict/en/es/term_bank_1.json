@@ -1,9 +1,9 @@
 [
   [
-    "Rock",
+    "fast",
     "",
     "",
-    "n",
+    "adj",
     0,
     [
       {
@@ -12,7 +12,18 @@
           {
             "tag": "div",
             "content": [
-              "populäre Musikrichtung, die Anfang der 1950er Jahre in den USA entstand",
+              "Rápido, veloz."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "Adelantado.",
               {
                 "tag": "div",
                 "data": {
@@ -29,14 +40,14 @@
                       "data": {
                         "content": "example-sentence-a"
                       },
-                      "content": "Der Rock ist nicht totzukriegen."
+                      "content": "Your watch is some minutes fast"
                     },
                     {
                       "tag": "div",
                       "data": {
                         "content": "example-sentence-b"
                       },
-                      "content": ""
+                      "content": "→ Tu reloj va algunos minutos adelantado."
                     }
                   ]
                 }
@@ -44,25 +55,25 @@
             ]
           }
         ]
-      }
-    ],
-    0,
-    ""
-  ],
-  [
-    "Rock",
-    "",
-    "",
-    "n",
-    0,
-    [
+      },
       {
         "type": "structured-content",
         "content": [
           {
             "tag": "div",
             "content": [
-              "in arabischen Märchen: flugfähiger Vogel in der Größe eines Elefanten"
+              "Firme, fijo, sólido."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "Cachondo, entregado a los placeres."
             ]
           }
         ]

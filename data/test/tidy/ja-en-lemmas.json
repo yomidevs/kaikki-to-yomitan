@@ -69,11 +69,11 @@
                       [
                         {
                           "text": "好きな食べ物は？ アイスクリームです。",
-                          "english": "What's your favorite food? - It's ice cream."
+                          "translation": "What's your favorite food? - It's ice cream."
                         },
                         {
                           "text": "君が好きだからこそこれほど頑張っているんだよ。",
-                          "english": "It's precisely because I like you [because of my fondness for you] that I'm working this hard."
+                          "translation": "It's precisely because I like you [because of my fondness for you] that I'm working this hard."
                         }
                       ]
                     ]
@@ -113,7 +113,7 @@
                       [
                         {
                           "text": "アライグマなら尻尾にシマがある。どう見でもタヌキだ。",
-                          "english": "If you're a raccoon, you'd have stripes on your tail. No matter how you look at it, you're a raccoon dog."
+                          "translation": "If you're a raccoon, you'd have stripes on your tail. No matter how you look at it, you're a raccoon dog."
                         }
                       ]
                     ]
@@ -136,7 +136,7 @@
                       [
                         {
                           "text": "やいやい、其処な狸め",
-                          "english": "Hey there, you sly dog!"
+                          "translation": "Hey there, you sly dog!"
                         }
                       ]
                     ]
@@ -179,7 +179,8 @@
                       "_examples",
                       [
                         {
-                          "text": "狸を決め込む ― tanuki o kimekomu ― pretend to be a raccoon dog → feign sleep"
+                          "text": "狸を決め込む ― tanuki o kimekomu ― pretend to be a raccoon dog → feign sleep",
+                          "translation": ""
                         }
                       ]
                     ]
@@ -245,7 +246,7 @@
                             [
                               {
                                 "text": "車が走っている。",
-                                "english": "A car is running. / Cars are running."
+                                "translation": "A car is running. / Cars are running."
                               }
                             ]
                           ]
@@ -262,7 +263,7 @@
                             [
                               {
                                 "text": "石の上を水が走る。",
-                                "english": "The water runs over the stones."
+                                "translation": "The water runs over the stones."
                               }
                             ]
                           ]
@@ -274,7 +275,7 @@
                       [
                         {
                           "text": "マラソン選手が走り出した。",
-                          "english": "Marathon athlete(s) started running."
+                          "translation": "Marathon athlete(s) started running."
                         }
                       ]
                     ]
@@ -297,7 +298,7 @@
                       [
                         {
                           "text": "彼はこの道をよく走る。",
-                          "english": "He often runs down this street."
+                          "translation": "He often runs down this street."
                         }
                       ]
                     ]
@@ -318,7 +319,7 @@
                       [
                         {
                           "text": "刀が鞘から走る。",
-                          "english": "The sword slides out of its sheath."
+                          "translation": "The sword slides out of its sheath."
                         }
                       ]
                     ]
@@ -371,11 +372,11 @@
                       [
                         {
                           "text": "彼は敵に走った。",
-                          "english": "He defected to the enemy."
+                          "translation": "He defected to the enemy."
                         },
                         {
                           "text": "立場を忘れて感情に走ってはいけない。",
-                          "english": "Don't forget your stance and give in to emotions."
+                          "translation": "Don't forget your stance and give in to emotions."
                         }
                       ]
                     ]
@@ -411,7 +412,8 @@
                       "_examples",
                       [
                         {
-                          "text": "山脈が南北に走る。\nSanmyaku ga nanboku ni hashiru.\nThe mountain range runs north–south."
+                          "text": "山脈が南北に走る。\nSanmyaku ga nanboku ni hashiru.\nThe mountain range runs north–south.",
+                          "translation": ""
                         }
                       ]
                     ]
@@ -432,11 +434,11 @@
                       [
                         {
                           "text": "稲妻が走る",
-                          "english": "lightning flashes by"
+                          "translation": "lightning flashes by"
                         },
                         {
                           "text": "背中に痛みが走った。",
-                          "english": "I felt a brief pain in my back."
+                          "translation": "I felt a brief pain in my back."
                         }
                       ]
                     ]

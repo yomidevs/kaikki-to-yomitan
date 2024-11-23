@@ -103,11 +103,11 @@
                             [
                               {
                                 "text": "Mbaje gjuhën!",
-                                "english": "Hold your tongue!"
+                                "translation": "Hold your tongue!"
                               },
                               {
                                 "text": "E ka gjuhën të gjatë.",
-                                "english": "(literally, “She has a long tongue.”)"
+                                "translation": "(literally, “She has a long tongue.”)"
                               }
                             ]
                           ]
@@ -143,11 +143,11 @@
                       [
                         {
                           "text": "gjuhë lope e zier",
-                          "english": "boiled beef tongue"
+                          "translation": "boiled beef tongue"
                         },
                         {
                           "text": "Dogji gjuhën.",
-                          "english": "I burned my tongue."
+                          "translation": "I burned my tongue."
                         }
                       ]
                     ]
@@ -175,11 +175,11 @@
                             [
                               {
                                 "text": "gjuha e fëmijëve",
-                                "english": "children speech"
+                                "translation": "children speech"
                               },
                               {
                                 "text": "gjuhë e trashë",
-                                "english": "foul language"
+                                "translation": "foul language"
                               }
                             ]
                           ]
@@ -196,11 +196,11 @@
                             [
                               {
                                 "text": "gjuha e muzikës",
-                                "english": "music's language"
+                                "translation": "music's language"
                               },
                               {
                                 "text": "gjuha e bletëve",
-                                "english": "bees' language"
+                                "translation": "bees' language"
                               }
                             ]
                           ]
@@ -236,7 +236,7 @@
                       [
                         {
                           "text": "gjuha shqipe",
-                          "english": "the Albanian language"
+                          "translation": "the Albanian language"
                         }
                       ]
                     ]

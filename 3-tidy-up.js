@@ -204,6 +204,33 @@ function handleLine(parsedLine) {
 }
 
 /**
+ * @param {Example} example
+ * @returns {StandardizedExample}
+ * */
+function standardizeExample(example) {
+    return { 
+        text: example.text ? example.text.trim() : '',
+        translation: getTranslationFromExample(example),
+    };
+}
+
+/**
+ * @param {Example} example
+ * @returns {string}
+ * */
+function getTranslationFromExample(example) {
+    if(example.translation) {
+        return example.translation;
+    }
+    switch(targetIso) {
+        case 'en':
+            return example.english || example.roman || '';
+        default:
+            return '';
+    }
+}
+
+/**
  * @param {TidySense[]} sensesWithoutInflectionGlosses 
  * @returns {GlossTree}
  */
@@ -215,14 +242,16 @@ function getGlossTree(sensesWithoutInflectionGlosses) {
         let { examples = [] } = sense;
         
         examples = examples
-            .filter(({text, english}) => text && (text.length <= 70 || text.length <= 90 && !english))  // Filter out verbose examples
+            .filter(example => example.text)
+            .map(example => standardizeExample(example))
+            .filter(({text, translation}) => text.length <= 70 || text.length <= 90 && !translation)  // Filter out verbose examples
             .map((example, index) => ({ ...example, originalIndex: index }))  // Step 1: Decorate with original index
-            .sort(({ english: englishA, originalIndex: indexA }, { english: englishB, originalIndex: indexB }) => {
-                if (englishA && !englishB) return -1;   // English items first
-                if (!englishA && englishB) return 1;    // Non-English items last
+            .sort(({ translation: translationA, originalIndex: indexA }, { translation: translationB, originalIndex: indexB }) => {
+                if (translationA && !translationB) return -1;   // translation items first
+                if (!translationA && translationB) return 1;    // Non-translation items last
                 return indexA - indexB;                 // Step 2: Stable sort by original index if equal
             })
-            .map(({text, english}) => ({text, english}))  // Step 3: Pick only properties that will be used
+            .map(({text, translation}) => ({text, translation}))  // Step 3: Pick only properties that will be used
             .slice(0, 2);
 
         /** @type {GlossTree|GlossBranch} */
