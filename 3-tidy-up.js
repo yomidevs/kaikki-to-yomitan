@@ -186,8 +186,21 @@ function handleLine(parsedLine) {
     const glossTree = getGlossTree(sensesWithoutInflectionGlosses);
     
     for (const reading of readings) {
-        lemmaDict[word][reading][pos][String(etymology_number)].glossTree = glossTree;
+        const posDict = lemmaDict[word]?.[reading]?.[pos] || {};
+        let etymNum = etymology_number;
+        let result = posDict[String(etymNum)];
+    
+        while (result?.glossTree?.size > 0) {
+            etymNum += 1;
+            result = posDict[String(etymNum)];
+        }
+    
+        result = /** @type {LemmaInfo} */ (ensureNestedObject(lemmaDict, [word, reading, pos, String(etymNum)]));
+    
+        result.ipa ??= ipa;
+        result.glossTree = glossTree;
     }
+    
 }
 
 /**

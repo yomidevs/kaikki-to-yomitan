@@ -33,6 +33,70 @@
           ]
         ]
       }
+    ],
+    [
+      "Rock",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "des Rock",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "des Rocks",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "dem Rock",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "dative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "den Rock",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative singular"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
     ]
   ]
 }

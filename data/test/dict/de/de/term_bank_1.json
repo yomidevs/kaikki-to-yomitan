@@ -1,83 +1,71 @@
 [
   [
-    "befruchteten",
+    "Rock",
     "",
-    "non-lemma",
     "",
+    "n",
     0,
     [
-      [
-        "befruchtet",
-        [
-          "Genitiv Singular Maskulinum der starken Deklination des Positivs"
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "populäre Musikrichtung, die Anfang der 1950er Jahre in den USA entstand",
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Der Rock ist nicht totzukriegen."
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
         ]
-      ],
-      [
-        "befruchtet",
-        [
-          "Akkusativ Singular Maskulinum der starken Deklination des Positivs"
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "Rock",
+    "",
+    "",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "in arabischen Märchen: flugfähiger Vogel in der Größe eines Elefanten"
+            ]
+          }
         ]
-      ],
-      [
-        "befruchtet",
-        [
-          "Genitiv Singular Neutrum der starken Deklination des Positivs"
-        ]
-      ],
-      [
-        "befruchtet",
-        [
-          "Dativ Plural alle Genera der starken Deklination des Positivs"
-        ]
-      ],
-      [
-        "befruchtet",
-        [
-          "Genitiv Singular alle Genera der schwachen Deklination des Positivs"
-        ]
-      ],
-      [
-        "befruchtet",
-        [
-          "Dativ Singular alle Genera der schwachen Deklination des Positivs"
-        ]
-      ],
-      [
-        "befruchtet",
-        [
-          "Akkusativ Singular Maskulinum der schwachen Deklination des Positivs"
-        ]
-      ],
-      [
-        "befruchtet",
-        [
-          "Alle Kasus Plural alle Genera der schwachen Deklination des Positivs"
-        ]
-      ],
-      [
-        "befruchtet",
-        [
-          "Genitiv Singular alle Genera der gemischten Deklination des Positivs"
-        ]
-      ],
-      [
-        "befruchtet",
-        [
-          "Dativ Singular alle Genera der gemischten Deklination des Positivs"
-        ]
-      ],
-      [
-        "befruchtet",
-        [
-          "Akkusativ Singular Maskulinum der gemischten Deklination des Positivs"
-        ]
-      ],
-      [
-        "befruchtet",
-        [
-          "Alle Kasus Plural alle Genera der gemischten Deklination des Positivs"
-        ]
-      ]
+      }
     ],
     0,
     ""
