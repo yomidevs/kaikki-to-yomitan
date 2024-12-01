@@ -806,5 +806,83 @@
     ],
     0,
     ""
+  ],
+  [
+    "d'accord",
+    "",
+    "adv",
+    "adv",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "in agreement [with avec ‘someone’]",
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Oui, je suis d’accord avec vous."
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "Yes, I agree with you."
+                    }
+                  ]
+                }
+              },
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "tomber d’accord"
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "to reach an agreement, to agree"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
   ]
 ]

@@ -37,5 +37,18 @@
         }
       ]
     }
+  ],
+  [
+    "d'accord",
+    "ipa",
+    {
+      "reading": "d'accord",
+      "transcriptions": [
+        {
+          "ipa": "/d‿a.kɔʁ/",
+          "tags": []
+        }
+      ]
+    }
   ]
 ]

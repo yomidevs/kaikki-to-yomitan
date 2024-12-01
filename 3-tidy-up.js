@@ -478,7 +478,7 @@ function getCanonicalWordForm({word, forms}) {
         case 'ru':
             return getCanonicalForm(word, forms); // canonical form is known to contain accent marks and such
         case 'de':
-        // case 'fr': // canonical form sometimes just prepends the definite article, but many differ from the word in apostrophe variant. I don't know which is used in practice so leaving it until there's a yomitan preprocessor for french apostrophe usage. 
+        case 'fr':
         case 'en': 
             return word; // canonical form is redundant, e.g. just prepends the definite article
         default:

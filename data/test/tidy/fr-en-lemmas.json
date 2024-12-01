@@ -468,5 +468,49 @@
         }
       }
     }
+  },
+  "d'accord": {
+    "d'accord": {
+      "adv": {
+        "0": {
+          "ipa": [
+            {
+              "ipa": "/d‿a.kɔʁ/",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "in agreement [with avec ‘someone’]",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "Oui, je suis d’accord avec vous.",
+                          "translation": "Yes, I agree with you."
+                        },
+                        {
+                          "text": "tomber d’accord",
+                          "translation": "to reach an agreement, to agree"
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      }
+    }
   }
 }
