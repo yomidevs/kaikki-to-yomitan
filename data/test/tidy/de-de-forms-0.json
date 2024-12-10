@@ -97,6 +97,86 @@
           ]
         ]
       }
+    ],
+    [
+      "Garage",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "die Garagen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative plural",
+                    "nominative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "der Garage",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "dative singular",
+                    "genitive singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "der Garagen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "den Garagen",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "dative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "die Garage",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative singular"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
     ]
   ]
 }

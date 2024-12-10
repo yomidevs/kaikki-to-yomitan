@@ -149,5 +149,102 @@
     ],
     0,
     ""
+  ],
+  [
+    "die Garagen",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "Garage",
+        [
+          "accusative plural"
+        ]
+      ],
+      [
+        "Garage",
+        [
+          "nominative plural"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "der Garage",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "Garage",
+        [
+          "dative singular"
+        ]
+      ],
+      [
+        "Garage",
+        [
+          "genitive singular"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "der Garagen",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "Garage",
+        [
+          "genitive plural"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "den Garagen",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "Garage",
+        [
+          "dative plural"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "die Garage",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "Garage",
+        [
+          "accusative singular"
+        ]
+      ]
+    ],
+    0,
+    ""
   ]
 ]

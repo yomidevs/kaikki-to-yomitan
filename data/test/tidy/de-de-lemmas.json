@@ -73,5 +73,139 @@
         }
       }
     }
+  },
+  "Garage": {
+    "Garage": {
+      "noun": {
+        "0": {
+          "ipa": [
+            {
+              "ipa": "ɡaˈʁaːʒə",
+              "tags": [
+                "Germany"
+              ]
+            },
+            {
+              "ipa": "ɡaˈʁaːʃ",
+              "tags": [
+                "Austrian German"
+              ]
+            },
+            {
+              "ipa": "ɡaˈʁaːʃə",
+              "tags": [
+                "Austrian German",
+                "Swiss Standard German"
+              ]
+            },
+            {
+              "ipa": "ˈɡaʁaːʃ",
+              "tags": [
+                "Swiss Standard German"
+              ]
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "Raum zum dauerhaften Ab- und Unterstellen von Kraftfahrzeugen",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "Ich werde das Auto in die Garage schaffen.",
+                          "translation": ""
+                        },
+                        {
+                          "text": "„Ein Mann steht vor seinem Opel allein in einer Garage.“",
+                          "translation": ""
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ],
+              [
+                "Raum zum kurzfristigen Ab- und Unterstellen von Kraftfahrzeugen",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "„Ein Mann steht vor seinem Opel allein in einer Garage.“",
+                          "translation": ""
+                        },
+                        {
+                          "text": "„Leo stand schon draußen vor der Garage und blickte ängstlich auf seine Armbanduhr.“",
+                          "translation": ""
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ],
+              [
+                "auf die Reparatur und Wartung von Automobilen ausgerichtete Werkstatt",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "rare"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "Geschäft, das sowohl als eine auf die Reparatur von Kraftfahrzeugen spezialisierte Werkstatt als auch als Verkaufslokal von Kraftfahrzeugen dient",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "Swiss Standard German",
+                        "Luxemburg",
+                        "Ostbelgien",
+                        "Südtirol"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "„Selbstverständlich werden in der Garage auch künftig Fremdmarken repariert.“",
+                          "translation": ""
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      }
+    }
   }
 }

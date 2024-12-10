@@ -70,5 +70,200 @@
     ],
     0,
     ""
+  ],
+  [
+    "Garage",
+    "",
+    "",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "Raum zum dauerhaften Ab- und Unterstellen von Kraftfahrzeugen",
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Ich werde das Auto in die Garage schaffen."
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": ""
+                    }
+                  ]
+                }
+              },
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "„Ein Mann steht vor seinem Opel allein in einer Garage.“"
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": ""
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "Raum zum kurzfristigen Ab- und Unterstellen von Kraftfahrzeugen",
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "„Ein Mann steht vor seinem Opel allein in einer Garage.“"
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": ""
+                    }
+                  ]
+                }
+              },
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "„Leo stand schon draußen vor der Garage und blickte ängstlich auf seine Armbanduhr.“"
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": ""
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "auf die Reparatur und Wartung von Automobilen ausgerichtete Werkstatt"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "Geschäft, das sowohl als eine auf die Reparatur von Kraftfahrzeugen spezialisierte Werkstatt als auch als Verkaufslokal von Kraftfahrzeugen dient",
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "„Selbstverständlich werden in der Garage auch künftig Fremdmarken repariert.“"
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": ""
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
   ]
 ]
