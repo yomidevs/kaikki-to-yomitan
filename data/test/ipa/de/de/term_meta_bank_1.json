@@ -15,5 +15,39 @@
         }
       ]
     }
+  ],
+  [
+    "Garage",
+    "ipa",
+    {
+      "reading": "Garage",
+      "transcriptions": [
+        {
+          "ipa": "ɡaˈʁaːʒə",
+          "tags": [
+            "Germany"
+          ]
+        },
+        {
+          "ipa": "ɡaˈʁaːʃ",
+          "tags": [
+            "Austrian German"
+          ]
+        },
+        {
+          "ipa": "ɡaˈʁaːʃə",
+          "tags": [
+            "Austrian German",
+            "Swiss Standard German"
+          ]
+        },
+        {
+          "ipa": "ˈɡaʁaːʃ",
+          "tags": [
+            "Swiss Standard German"
+          ]
+        }
+      ]
+    }
   ]
 ]
