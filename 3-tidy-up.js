@@ -43,7 +43,7 @@ function isInflectionGloss(glosses, formOf) {
             if(!Array.isArray(formOf)) return false;
             for (const {word: lemma} of formOf) {
                 if(!lemma) continue;
-                if (glosses.some(gloss => new RegExp(`of ${escapeRegExp(lemma)}$`).test(gloss))) return true;
+                if (glosses.some(gloss => new RegExp(`of ${escapeRegExp(lemma)}($| \(.+?\)$)`).test(gloss))) return true;
             }
             
         case 'fr':
