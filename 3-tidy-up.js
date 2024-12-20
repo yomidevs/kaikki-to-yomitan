@@ -93,7 +93,8 @@ const blacklistedTags = [
     'obsolete',
     'archaic',
     'used-in-the-form',
-    'romanization'
+    'romanization',
+    'dated'
 ];
 
 const identityTags = [

@@ -197,5 +197,77 @@
     ],
     0,
     ""
+  ],
+  [
+    "зимний",
+    "зи́мний",
+    "reltnl adj",
+    "adj",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "winter",
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Зи́мний дворе́ц"
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "Winter palace"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "зимний",
+    "зи́мний",
+    "adj",
+    "adj",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "wintry, hibernal"
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
   ]
 ]

@@ -168,5 +168,63 @@
         }
       }
     }
+  },
+  "зи́мний": {
+    "зи́мний": {
+      "adj": {
+        "0": {
+          "ipa": [
+            {
+              "ipa": "[ˈzʲimnʲɪj]",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "(relational) winter",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "relational"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "Зи́мний дворе́ц",
+                          "translation": "Winter palace"
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ],
+              [
+                "wintry, hibernal",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      }
+    }
   }
 }

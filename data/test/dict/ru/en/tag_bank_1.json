@@ -40,5 +40,19 @@
     0,
     "impersonal",
     0
+  ],
+  [
+    "reltnl",
+    "",
+    0,
+    "relational",
+    0
+  ],
+  [
+    "adj",
+    "partOfSpeech",
+    -1,
+    "adjective",
+    1
   ]
 ]
