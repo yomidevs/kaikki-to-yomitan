@@ -669,6 +669,304 @@
           ]
         ]
       }
+    ],
+    [
+      "се́рый",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "(по)сере́е",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "comparative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "(по)сере́й",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "comparative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "се́ро",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "adverb",
+                    "neuter short-form"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "се́рость",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "abstract-noun"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "се́ренький",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "diminutive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "се́рое",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "accusative neuter",
+                    "nominative neuter"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "се́рая",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "nominative feminine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "се́рые",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "accusative plural inanimate",
+                    "nominative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "се́рого",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "accusative masculine animate",
+                    "genitive masculine neuter"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "се́рой",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "dative feminine",
+                    "genitive feminine",
+                    "instrumental feminine",
+                    "prepositional feminine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "се́рых",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "accusative plural animate",
+                    "genitive plural",
+                    "prepositional plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "се́рому",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "dative masculine neuter"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "се́рым",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "instrumental masculine neuter",
+                    "dative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "се́рую",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "accusative feminine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "се́рою",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "instrumental feminine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "се́рыми",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "instrumental plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "се́ром",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "prepositional masculine neuter"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "сер",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "masculine short-form"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "сера́",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "feminine short-form"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "се́ры",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "plural short-form"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
     ]
   ]
 }

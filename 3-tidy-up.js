@@ -271,6 +271,16 @@ function getGlossTree(sensesWithoutInflectionGlosses) {
             .filter(example => example.text)
             .map(example => standardizeExample(example))
             .filter(({text, translation}) => text.length <= 70 || text.length <= 90 && !translation)  // Filter out verbose examples
+            .filter(({translation}) => {
+                if (targetIso !== sourceIso) {
+                    if (!translation) return false;
+                    if (
+                        translation.includes('please add an English translation') &&
+                        targetIso === 'en'
+                    ) return false;
+                }
+                return true;
+            }) // Filter out examples with no translations
             .map((example, index) => ({ ...example, originalIndex: index }))  // Step 1: Decorate with original index
             .sort(({ translation: translationA, originalIndex: indexA }, { translation: translationB, originalIndex: indexB }) => {
                 if (translationA && !translationB) return -1;   // translation items first
