@@ -1,5 +1,19 @@
 [
   [
+    "masc",
+    "",
+    -1,
+    "masculine",
+    1
+  ],
+  [
+    "inanim",
+    "",
+    0,
+    "inanimate",
+    0
+  ],
+  [
     "n",
     "partOfSpeech",
     -1,
@@ -18,6 +32,13 @@
     "",
     0,
     "slang",
+    0
+  ],
+  [
+    "pf",
+    "",
+    0,
+    "perfective",
     0
   ],
   [
