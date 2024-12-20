@@ -1,0 +1,273 @@
+[
+  [
+    "снег",
+    "",
+    "masc inanim n",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "snow",
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "идёт снег"
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "it is snowing"
+                    }
+                  ]
+                }
+              },
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "мо́крый снег"
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "sleet, wet snow"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "снег",
+    "",
+    "fig masc inanim n",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "snow, the white electrical noise on a TV set when there is no TV signal"
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "снег",
+    "",
+    "sl masc inanim n",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "cocaine"
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "побелеть",
+    "побеле́ть",
+    "pf v",
+    "v",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to turn white, (intransitive) to whiten"
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "побелеть",
+    "побеле́ть",
+    "col pf v",
+    "v",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to turn gray"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to become brighter"
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "побелеть",
+    "побеле́ть",
+    "col impers pf v",
+    "v",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to dawn"
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "зимний",
+    "зи́мний",
+    "reltnl adj",
+    "adj",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "winter",
+              {
+                "tag": "div",
+                "data": {
+                  "content": "extra-info"
+                },
+                "content": {
+                  "tag": "div",
+                  "data": {
+                    "content": "example-sentence"
+                  },
+                  "content": [
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-a"
+                      },
+                      "content": "Зи́мний дворе́ц"
+                    },
+                    {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence-b"
+                      },
+                      "content": "Winter palace"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "зимний",
+    "зи́мний",
+    "adj",
+    "adj",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "wintry, hibernal"
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
+  ]
+]

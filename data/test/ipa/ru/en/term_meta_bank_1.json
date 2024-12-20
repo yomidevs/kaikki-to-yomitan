@@ -1,0 +1,41 @@
+[
+  [
+    "снег",
+    "ipa",
+    {
+      "reading": "снег",
+      "transcriptions": [
+        {
+          "ipa": "[sʲnʲek]",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  [
+    "побелеть",
+    "ipa",
+    {
+      "reading": "побеле́ть",
+      "transcriptions": [
+        {
+          "ipa": "[pəbʲɪˈlʲetʲ]",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  [
+    "зимний",
+    "ipa",
+    {
+      "reading": "зи́мний",
+      "transcriptions": [
+        {
+          "ipa": "[ˈzʲimnʲɪj]",
+          "tags": []
+        }
+      ]
+    }
+  ]
+]

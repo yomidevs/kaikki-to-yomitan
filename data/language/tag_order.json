@@ -10,7 +10,8 @@
         "accusative",
         "vocative",
         "locative",
-        "instrumental"
+        "instrumental",
+        "prepositional"
     ],
     "persons": [
         "first-person",

@@ -1,0 +1,242 @@
+{
+  "снег": {
+    "снег": {
+      "noun": {
+        "0": {
+          "ipa": [
+            {
+              "ipa": "[sʲnʲek]",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "snow",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "masculine",
+                        "inanimate"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "идёт снег",
+                          "translation": "it is snowing"
+                        },
+                        {
+                          "text": "мо́крый снег",
+                          "translation": "sleet, wet snow"
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(figuratively) snow, the white electrical noise on a TV set when there is no TV signal",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "figuratively",
+                        "masculine",
+                        "inanimate"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(slang) cocaine",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "slang",
+                        "masculine",
+                        "inanimate"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  "побеле́ть": {
+    "побеле́ть": {
+      "verb": {
+        "0": {
+          "ipa": [
+            {
+              "ipa": "[pəbʲɪˈlʲetʲ]",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "to turn white, (intransitive) to whiten",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "perfective"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(colloquial) to turn gray",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "colloquial",
+                        "perfective"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(colloquial) to become brighter",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "colloquial",
+                        "perfective"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(colloquial, impersonal) to dawn",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "colloquial",
+                        "impersonal",
+                        "perfective"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      }
+    }
+  },
+  "зи́мний": {
+    "зи́мний": {
+      "adj": {
+        "0": {
+          "ipa": [
+            {
+              "ipa": "[ˈzʲimnʲɪj]",
+              "tags": []
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "(relational) winter",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "relational"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "Зи́мний дворе́ц",
+                          "translation": "Winter palace"
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ],
+              [
+                "wintry, hibernal",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      []
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      }
+    }
+  }
+}

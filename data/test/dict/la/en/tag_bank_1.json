@@ -7,6 +7,13 @@
     0
   ],
   [
+    "fem",
+    "",
+    -1,
+    "feminine",
+    1
+  ],
+  [
     "n",
     "partOfSpeech",
     -1,
@@ -49,6 +56,13 @@
     0
   ],
   [
+    "neut",
+    "",
+    -1,
+    "neuter",
+    1
+  ],
+  [
     "not-comp",
     "",
     0,
@@ -75,13 +89,6 @@
     0,
     "declension-4",
     0
-  ],
-  [
-    "fem",
-    "",
-    -1,
-    "feminine",
-    1
   ],
   [
     "irreg",

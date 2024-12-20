@@ -43,7 +43,7 @@ function isInflectionGloss(glosses, formOf) {
             if(!Array.isArray(formOf)) return false;
             for (const {word: lemma} of formOf) {
                 if(!lemma) continue;
-                if (glosses.some(gloss => new RegExp(`of ${escapeRegExp(lemma)}$`).test(gloss))) return true;
+                if (glosses.some(gloss => new RegExp(`of ${escapeRegExp(lemma)}($| \(.+?\)$)`).test(gloss))) return true;
             }
             
         case 'fr':
@@ -93,7 +93,8 @@ const blacklistedTags = [
     'obsolete',
     'archaic',
     'used-in-the-form',
-    'romanization'
+    'romanization',
+    'dated'
 ];
 
 const identityTags = [
@@ -131,7 +132,7 @@ function handleLine(parsedLine) {
     
     processForms(forms, word, pos);
 
-    const {senses} = parsedLine;
+    const {senses, head_templates} = parsedLine;
     if (!senses) return;
     
     /** @type {IpaInfo[]} */
@@ -162,6 +163,31 @@ function handleLine(parsedLine) {
         const tags = sense.tags || [];
         if(sense.raw_tags && Array.isArray(sense.raw_tags)) {
             tags.push(...sense.raw_tags);
+        }
+
+        if (head_templates && targetIso === 'en') {
+            const tagMatch = [
+                ['pf', 'perfective'],
+                ['impf', 'imperfective'],
+                ['m', 'masculine'],
+                ['f', 'feminine'],
+                ['n', 'neuter'],
+                ['inan', 'inanimate'],
+                ['anim', 'animate'],
+            ];
+
+            for (const entry of head_templates) {
+                if (entry.expansion) {
+                    for (const [match, tag] of tagMatch) {
+                        if (
+                            entry.expansion.replace(/\(.+?\)/g, '').split(' ').includes(match) &&
+                            !tags.includes(tag)
+                        ) {
+                            tags.push(tag);
+                        }
+                    }
+                }
+            }
         }
 
         return {...sense, glossesArray, tags};

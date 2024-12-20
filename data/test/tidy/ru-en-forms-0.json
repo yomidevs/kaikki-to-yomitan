@@ -1,0 +1,674 @@
+{
+  "_type": "map",
+  "map": [
+    [
+      "снег",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "сне́га",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive",
+                    "genitive singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "снега́",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative plural irregular",
+                    "nominative plural",
+                    "nominative plural irregular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "снего́в",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "сне́жный",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "adjective relational"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "снегово́й",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "adjective relational"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "снежо́к",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "diminutive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "сне́гу",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "singular partitive",
+                    "dative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "снега́м",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "dative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "сне́г",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "сне́гом",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "instrumental singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "снега́ми",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "instrumental plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "сне́ге",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "prepositional singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "снега́х",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "prepositional plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "снегу́",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "locative singular"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "побеле́ть",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "беле́ть",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "imperfective"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "побеле́вший",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past active participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "побеле́в",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past participle adverbial"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "побеле́вши",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past participle adverbial"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "побеле́ю",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular future"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "побеле́ешь",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular future"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "побеле́ет",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular future"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "побеле́ем",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural future"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "побеле́ете",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural future"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "побеле́ют",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural future"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "побеле́й",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "singular imperative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "побеле́йте",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "plural imperative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "побеле́л",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "singular masculine past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "побеле́ли",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "plural feminine past",
+                    "plural masculine past",
+                    "plural neuter past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "побеле́ла",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "singular feminine past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "побеле́ло",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "singular neuter past"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "зи́мний",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "зи́мнее",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "accusative neuter",
+                    "nominative neuter"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "зи́мняя",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "nominative feminine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "зи́мние",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "accusative plural inanimate",
+                    "nominative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "зи́мнего",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "accusative masculine animate",
+                    "genitive masculine neuter"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "зи́мней",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "dative feminine",
+                    "genitive feminine",
+                    "instrumental feminine",
+                    "prepositional feminine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "зи́мних",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "accusative plural animate",
+                    "genitive plural",
+                    "prepositional plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "зи́мнему",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "dative masculine neuter"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "зи́мним",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "instrumental masculine neuter",
+                    "dative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "зи́мнюю",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "accusative feminine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "зи́мнею",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "instrumental feminine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "зи́мними",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "instrumental plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "зи́мнем",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "prepositional masculine neuter"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "зи́мне",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "neuter short-form"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "зи́мня",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "feminine short-form"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "зи́мни",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "plural short-form"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ]
+}

@@ -25,6 +25,7 @@ declare global {
     type HeadTemplate = {
         name?: string;
         args?: string[];
+        expansion?: string;
     }
 
     type Sound = {
