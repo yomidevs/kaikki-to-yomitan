@@ -1,4 +1,4 @@
-const { writeFileSync } = require('fs');
+const { writeFileSync, readdirSync, unlinkSync } = require('fs');
 
 const LineByLineReader = require('line-by-line');
 
@@ -125,7 +125,7 @@ lr.on('line', (line) => {
  * @param {KaikkiLine} parsedLine 
  */
 function handleLine(parsedLine) {
-    const { pos, sounds, forms, etymology_number = 0 } = parsedLine;
+    const { pos, sounds, forms, etymology_number = 0, etymology_text } = parsedLine;
     if(!pos) return;
     const word = getCanonicalWordForm(parsedLine);
     if (!word) return;
@@ -209,6 +209,22 @@ function handleLine(parsedLine) {
         saveIpaResult(word, readings, pos, String(etymology_number), ipaObj);
     }
 
+    for (const reading of readings) {
+        if (etymology_text) {
+            const breakdown = breakdownEtymology(etymology_text);
+
+            if (
+                targetIso === 'en' &&
+                breakdown &&
+                breakdown !== etymology_text
+            ) {
+                lemmaDict[word][reading][pos][etymology_number].breakdown_text = breakdown;
+            }
+
+            lemmaDict[word][reading][pos][etymology_number].etymology_text = etymology_text;
+        }
+    }
+
     const glossTree = getGlossTree(sensesWithoutInflectionGlosses);
     
     for (const reading of readings) {
@@ -227,6 +243,22 @@ function handleLine(parsedLine) {
         result.glossTree = glossTree;
     }
     
+}
+
+/**
+ * @param {string} text
+ * @returns {string}
+ * */
+function breakdownEtymology(text) {
+    for (const part of text.split(/;|\.|\*/g).map(item => item.trim())) {
+        if (part.includes(' + ') && !part.includes('Proto')) {
+            return part
+            .replace(/ \([^“"].+?\)+/g, '')
+            .replace('By surface analysis, ', '')
+        }
+    }
+
+    return '';
 }
 
 /**
@@ -637,6 +669,12 @@ function handleAutomatedForms() {
 lr.on('end', () => {
     clearConsoleLine();
     process.stdout.write(`Processed ${lineCount} lines...\n`);
+
+    for (const file of readdirSync(writeFolder)) {
+        if (file.includes(`${sourceIso}-${targetIso}`)) {
+            unlinkSync(`${writeFolder}/${file}`);
+        }
+    }
 
     const lemmasFilePath = `${writeFolder}/${sourceIso}-${targetIso}-lemmas.json`;
     consoleOverwrite(`3-tidy-up.js: Writing lemma dict to ${lemmasFilePath}...`);
