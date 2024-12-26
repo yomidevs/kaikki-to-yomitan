@@ -14,6 +14,19 @@
             "content": [
               "Germany (a country in Europe)"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 Sino-Korean word from 獨逸, an orthographic borrowing from Japanese 獨逸 (Doitsu, “Germany”), from Dutch Duits (“German”)."
+            }
           }
         ]
       }

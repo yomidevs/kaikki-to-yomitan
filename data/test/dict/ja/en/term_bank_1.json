@@ -14,6 +14,48 @@
             "content": [
               "pleasant, delightful, fun, enjoyable"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": [
+                {
+                  "tag": "span",
+                  "data": {
+                    "content": "target-text"
+                  },
+                  "content": "📝 "
+                },
+                {
+                  "tag": "span",
+                  "data": {
+                    "content": "normal-text"
+                  },
+                  "content": "⟨tano₁siki₁⟩ → */tanʷosikʲi/ → /tanoshii/\nFrom Old Japanese. First attested in the Kojiki of 712 CE. No Ryukyuan cognates exist; as as result, further derivation unknown. Theories include:\n* "
+                },
+                {
+                  "tag": "span",
+                  "data": {
+                    "content": "target-text"
+                  },
+                  "content": "A compound of 手 (ta, “hand”, combining form) + 伸す (nosu, “to extend”)"
+                },
+                {
+                  "tag": "span",
+                  "data": {
+                    "content": "normal-text"
+                  },
+                  "content": "\n*: This is problematic, as nosu has first been attested starting from the early 900s, with no A/B distinction (see Jōdai Tokushu Kanazukai for details).\n* From 田神 (tano, literally “rice paddy god”)\n*: No reading of 神 (*no, “god”) exists.\n* A borrowing from an unknown language\n*: No words resemble *tanV meaning \"fun\" or \"to enjoy\"."
+                }
+              ]
+            }
           }
         ]
       }
@@ -92,6 +134,19 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 The 連(れん)用(よう)形(けい) (ren'yōkei, “stem or continuative form”) of the verb 好(す)く (suku, “to like, to be fond of, to enjoy, to feel love for”).\nFirst cited to the late 900s in the 宇津保物語 (Utsubo Monogatari)."
+            }
           }
         ]
       }
@@ -142,6 +197,19 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 According to one theory, derived from 手貫 (tanuki, “arm glove, gauntlet”), which raccoon dog hide was sometimes used for."
+            }
           }
         ]
       }
@@ -192,6 +260,19 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 According to one theory, derived from 手貫 (tanuki, “arm glove, gauntlet”), which raccoon dog hide was sometimes used for."
+            }
           }
         ]
       }
@@ -214,6 +295,19 @@
             "content": [
               "Short for 狸饂飩 (tanuki-udon) and 狸蕎麦 (tanuki-soba): styles of various noodle dishes"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 According to one theory, derived from 手貫 (tanuki, “arm glove, gauntlet”), which raccoon dog hide was sometimes used for."
+            }
           }
         ]
       }
@@ -264,6 +358,19 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 According to one theory, derived from 手貫 (tanuki, “arm glove, gauntlet”), which raccoon dog hide was sometimes used for."
+            }
           }
         ]
       }
@@ -286,6 +393,19 @@
             "content": [
               "Short for 狸汁 (tanuki-jiru): a soup made from tanuki meat mixed with daikon, burdock root, etc."
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 According to one theory, derived from 手貫 (tanuki, “arm glove, gauntlet”), which raccoon dog hide was sometimes used for."
+            }
           }
         ]
       }
@@ -847,6 +967,19 @@
             "content": [
               "[I am / someone is] hungry"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 The perfective form of お腹が空く (onaka ga suku, “to become hungry”, literally “one's stomach becomes empty”)."
+            }
           }
         ]
       }

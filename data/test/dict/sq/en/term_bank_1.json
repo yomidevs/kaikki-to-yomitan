@@ -14,6 +14,19 @@
             "content": [
               "ice"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 Uncertain. Possibly:\n# A derivation from Proto-Indo-European *keHl- whence also Proto-Celtic *kaletos (“hard”), Proto-Slavic *kaliti (“to temper, harden”), Latin callum (“hardened skin”).\n# Borrowed from Germanic, ultimately from Proto-Germanic *jekulaz (“icicle”).\n# Akin Old Armenian ոյծ (oyc, “cold, frost”), suffixed with -ull, though the two terms are phonologically incompatible."
+            }
           }
         ]
       }
@@ -351,6 +364,19 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 Unclear. Akin to Arbëresh glunzë (“voice”). Possibilities include:\n# Inherited from Proto-Indo-European *gol(H)-s-os, via a byform *gl̥(H)-s-ós, whence also Proto-Slavic *golsъ (“voice”), Lithuanian gal̃sas (“voice”), Proto-Germanic *kalz-ōną (“to call”). However the medial -h- instead of expected **-sh- is left unexplained.\n# From a byform *ǵʰnud-sḱ-eh₂, doubly methasised from Proto-Indo-European *dn̥ǵʰwéh₂s ~ *dn̥ǵʰuh₂és (“tongue”). Compare Tocharian B kantwo, also metathised. The outcome gl- (and later gj-) from original *ǵ(ʰ)n- is also attested in gju (“knee”). The usage of the infixed *-sḱ- does not seem have any parallels.\n# A connection with Ancient Greek γλῶσσα (glôssa), itself of unclear origin, cannot be proven."
+            }
           }
         ]
       }

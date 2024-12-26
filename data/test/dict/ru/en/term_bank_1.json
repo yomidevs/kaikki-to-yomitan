@@ -70,6 +70,19 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 Inherited from Proto-Slavic *sněgъ, from Proto-Balto-Slavic *snáigas, from Proto-Indo-European *snóygʷʰos."
+            }
           }
         ]
       }
@@ -92,6 +105,19 @@
             "content": [
               "snow, the white electrical noise on a TV set when there is no TV signal"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 Inherited from Proto-Slavic *sněgъ, from Proto-Balto-Slavic *snáigas, from Proto-Indo-European *snóygʷʰos."
+            }
           }
         ]
       }
@@ -114,6 +140,19 @@
             "content": [
               "cocaine"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 Inherited from Proto-Slavic *sněgъ, from Proto-Balto-Slavic *snáigas, from Proto-Indo-European *snóygʷʰos."
+            }
           }
         ]
       }
@@ -136,6 +175,34 @@
             "content": [
               "to turn white, (intransitive) to whiten"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": [
+                {
+                  "tag": "span",
+                  "data": {
+                    "content": "target-text"
+                  },
+                  "content": "📝 "
+                },
+                {
+                  "tag": "span",
+                  "data": {
+                    "content": "target-text"
+                  },
+                  "content": "по- (po-) + беле́ть (belétʹ)"
+                }
+              ]
+            }
           }
         ]
       }
@@ -169,6 +236,34 @@
             "content": [
               "to become brighter"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": [
+                {
+                  "tag": "span",
+                  "data": {
+                    "content": "target-text"
+                  },
+                  "content": "📝 "
+                },
+                {
+                  "tag": "span",
+                  "data": {
+                    "content": "target-text"
+                  },
+                  "content": "по- (po-) + беле́ть (belétʹ)"
+                }
+              ]
+            }
           }
         ]
       }
@@ -191,6 +286,34 @@
             "content": [
               "to dawn"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": [
+                {
+                  "tag": "span",
+                  "data": {
+                    "content": "target-text"
+                  },
+                  "content": "📝 "
+                },
+                {
+                  "tag": "span",
+                  "data": {
+                    "content": "target-text"
+                  },
+                  "content": "по- (po-) + беле́ть (belétʹ)"
+                }
+              ]
+            }
           }
         ]
       }
@@ -241,6 +364,48 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": [
+                {
+                  "tag": "span",
+                  "data": {
+                    "content": "target-text"
+                  },
+                  "content": "📝 "
+                },
+                {
+                  "tag": "span",
+                  "data": {
+                    "content": "normal-text"
+                  },
+                  "content": "Inherited from Proto-Slavic *zimьnъ. By surface analysis, "
+                },
+                {
+                  "tag": "span",
+                  "data": {
+                    "content": "target-text"
+                  },
+                  "content": "зима́ (zimá) + -ний (-nij)"
+                },
+                {
+                  "tag": "span",
+                  "data": {
+                    "content": "normal-text"
+                  },
+                  "content": "."
+                }
+              ]
+            }
           }
         ]
       }
@@ -263,6 +428,48 @@
             "content": [
               "wintry, hibernal"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": [
+                {
+                  "tag": "span",
+                  "data": {
+                    "content": "target-text"
+                  },
+                  "content": "📝 "
+                },
+                {
+                  "tag": "span",
+                  "data": {
+                    "content": "normal-text"
+                  },
+                  "content": "Inherited from Proto-Slavic *zimьnъ. By surface analysis, "
+                },
+                {
+                  "tag": "span",
+                  "data": {
+                    "content": "target-text"
+                  },
+                  "content": "зима́ (zimá) + -ний (-nij)"
+                },
+                {
+                  "tag": "span",
+                  "data": {
+                    "content": "normal-text"
+                  },
+                  "content": "."
+                }
+              ]
+            }
           }
         ]
       }

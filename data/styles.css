@@ -1,7 +1,8 @@
 div[data-sc-content="extra-info"] {
     margin-left: 0.5em;
 }
-div[data-sc-content="example-sentence"] {
+div[data-sc-content="example-sentence"],
+div[data-sc-content="etymology-entry"] {
     background-color: color-mix(in srgb, var(--text-color, var(--fg, #333)) 5%, transparent);
     border-color: var(--text-color, var(--fg, #333));
     border-style: none none none solid;
@@ -15,6 +16,12 @@ div[data-sc-content="example-sentence-a"] {
     font-size: 1.1em;
     font-style: italic;
 }
-div[data-sc-content="example-sentence-b"] {
+div[data-sc-content="example-sentence-b"],
+div[data-sc-content="etymology-entry"] {
     font-size: 0.8em;
+}
+div[data-sc-content="etymology-entry"] {
+    opacity: 0.8;
+    border-color: #c1c1c1;
+    display: none;
 }

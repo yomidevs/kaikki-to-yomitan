@@ -146,6 +146,61 @@ function getStructuredExamples(examples) {
 }
 
 /**
+ * @param {String} attribute 
+ * @param {import('types').TermBank.StructuredContent} content
+ * @returns {import('types').TermBank.StructuredContent}
+ */
+function getStructuredEtymSpan(attribute, content) {
+    return {
+        "tag": "span",
+        "data": {
+            "content": attribute
+        },
+        "content": content
+    }
+}
+
+/**
+ * @param {String} etymology 
+ * @param {String} breakdown
+ * @returns {import('types').TermBank.StructuredContent}
+ */
+function getStructuredEtym(etymology, breakdown='') {
+    /** @type {import('types').TermBank.StructuredContentNode[]} */
+    const result = [];
+    
+    if (breakdown && etymology.includes(breakdown)) {
+        result.push(getStructuredEtymSpan('target-text', '📝 '));
+
+        if (breakdown === etymology) {
+            result.push(getStructuredEtymSpan('target-text', breakdown));
+        } else {
+            const [before, after] = etymology.split(breakdown);
+
+            if (before) result.push(getStructuredEtymSpan('normal-text', before));
+
+            result.push(getStructuredEtymSpan('target-text', breakdown));
+
+            if (after) result.push(getStructuredEtymSpan('normal-text', after));
+        }
+    }
+
+    return {
+        "tag": "div",
+        "data": {
+            "content": "extra-info"
+        },
+        "content": {
+            "tag":"div",
+            "data": {
+                "content": "etymology-entry"
+            },
+            "content": result.length > 0 ? [...result] : `📝 ${etymology}`
+        }
+    }
+}
+
+/**
  * @param {GlossTwig} glossTwig
  * @param {string[]} senseTags
  * @param {string} pos
@@ -315,6 +370,20 @@ let lastTermBankIndex = 0;
 
                     debug(entries);
                     for (const [tags, entry] of Object.entries(entries)) {
+                        if (info.etymology_text) {
+                            const lastDef = entry[5][entry[5].length -1];
+
+                            if (
+                                lastDef &&
+                                typeof lastDef === 'object' &&
+                                'type' in lastDef &&
+                                lastDef.type === 'structured-content' &&
+                                Array.isArray(lastDef.content)
+                            ) {
+                                lastDef.content.push(getStructuredEtym(info.etymology_text, info.breakdown_text));
+                            }
+                        }
+
                         ymtLemmas.push(entry);
                     }
                 }

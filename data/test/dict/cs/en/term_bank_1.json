@@ -137,6 +137,19 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 Deverbal from zpravit."
+            }
           }
         ]
       }
@@ -187,6 +200,19 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 Inherited from Old Czech pro, from Proto-Slavic *pro."
+            }
           }
         ]
       }
@@ -209,6 +235,19 @@
             "content": [
               "(reflexive with se) to dispute"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 Inherited from Old Czech přieti, from Proto-Slavic *pьrěti."
+            }
           }
         ]
       }

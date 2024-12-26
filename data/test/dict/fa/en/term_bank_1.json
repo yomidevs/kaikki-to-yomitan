@@ -14,6 +14,19 @@
             "content": [
               "(Khorasan) a kind of pea"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 table\nBorrowed from Hindustani مونگ / मूँग (mūṅg)"
+            }
           }
         ]
       }
@@ -114,6 +127,19 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 From Arabic فَارِسِيّ (fārisiyy), from Early New Persian پَارْسِی (pārsī, “Persian, Persic”)."
+            }
           }
         ]
       }

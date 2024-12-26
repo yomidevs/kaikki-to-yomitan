@@ -120,6 +120,19 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 Inherited from Old Spanish bivir, viver, vevir, bevir, from Latin vīvere. Compare Ladino bivir, Portuguese viver."
+            }
           }
         ]
       }
@@ -142,6 +155,19 @@
             "content": [
               "to experience, to live through"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 Inherited from Old Spanish bivir, viver, vevir, bevir, from Latin vīvere. Compare Ladino bivir, Portuguese viver."
+            }
           }
         ]
       }

@@ -42,6 +42,19 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 von arabisch/persisch ruh, roh entlehnt, = arabisch: الرُخّ (ar-ruchch, aus dem Persischen)"
+            }
           }
         ]
       }
@@ -259,6 +272,19 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "extra-info"
+            },
+            "content": {
+              "tag": "div",
+              "data": {
+                "content": "etymology-entry"
+              },
+              "content": "📝 seit dem 20. Jahrhundert bezeugte Entlehnung aus gleichbedeutendem französisch garage ^(→ fr) m, eigentlich „(das) Ausweichen, Ausweichstelle“; dieses ist eine deverbative Ableitung von französisch garer ^(→ fr) „in eine sichere Verwahrstelle bringen; in Sicherheit bringen; ausweichen“, das seinerseits aus okzitanisch garar ^(→ oc) „Acht geben, bewahren“ übernommen wurde; dieses entstammt entweder mit Übergang von w- zu g- der (nicht belegbaren, aber rekonstruierten) germanischen Form *war-ō- „beachten“ (vergleiche »wahren«) oder dem lateinischen varāre ^(→ la) „ausweichen“ (zu lateinisch vārus ^(→ la) „auseinandergebogen“)"
+            }
           }
         ]
       }

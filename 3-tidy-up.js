@@ -214,9 +214,7 @@ function handleLine(parsedLine) {
             const breakdown = breakdownEtymology(etymology_text);
 
             if (
-                targetIso === 'en' &&
-                breakdown &&
-                breakdown !== etymology_text
+                targetIso === 'en' && breakdown
             ) {
                 lemmaDict[word][reading][pos][etymology_number].breakdown_text = breakdown;
             }
@@ -253,7 +251,6 @@ function breakdownEtymology(text) {
     for (const part of text.split(/;|\.|\*/g).map(item => item.trim())) {
         if (part.includes(' + ') && !part.includes('Proto')) {
             return part
-            .replace(/ \([^“"].+?\)+/g, '')
             .replace('By surface analysis, ', '')
         }
     }
