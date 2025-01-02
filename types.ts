@@ -17,6 +17,7 @@ declare global {
         word?: string;
         pos?: string;
         etymology_number?: number;
+        etymology_text?: string;
         sounds?: Sound[];  
         forms?: FormInfo[];
         senses?: KaikkiSense[];
@@ -98,6 +99,9 @@ declare global {
     type LemmaInfo = {
         ipa: IpaInfo[],
         glossTree: GlossTree,
+        etymology_text?: string,
+        morpheme_text?: string,
+        head_info_text?: string,
     }
 
     type IpaInfo = {
