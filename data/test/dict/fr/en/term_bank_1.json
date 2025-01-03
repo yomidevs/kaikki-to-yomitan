@@ -304,6 +304,36 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "Inherited from Middle French prendre, from Old French prendre, prandre, from Latin prēndere, alternative form of prehendere (“to seize”), present active infinitive of prehendō, from prae- (“before”) + *hendō (“to take, seize”) (not attested without prefix), from Proto-Indo-European *gʰed-."
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -380,6 +410,36 @@
                     }
                   ]
                 }
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "Inherited from Middle French prendre, from Old French prendre, prandre, from Latin prēndere, alternative form of prehendere (“to seize”), present active infinitive of prehendō, from prae- (“before”) + *hendō (“to take, seize”) (not attested without prefix), from Proto-Indo-European *gʰed-."
+                  }
+                ]
               }
             ]
           }
@@ -460,6 +520,36 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "Inherited from Middle French prendre, from Old French prendre, prandre, from Latin prēndere, alternative form of prehendere (“to seize”), present active infinitive of prehendō, from prae- (“before”) + *hendō (“to take, seize”) (not attested without prefix), from Proto-Indo-European *gʰed-."
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -536,6 +626,36 @@
                     }
                   ]
                 }
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "Inherited from Middle French prendre, from Old French prendre, prandre, from Latin prēndere, alternative form of prehendere (“to seize”), present active infinitive of prehendō, from prae- (“before”) + *hendō (“to take, seize”) (not attested without prefix), from Proto-Indo-European *gʰed-."
+                  }
+                ]
               }
             ]
           }
@@ -627,6 +747,36 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "Inherited from Middle French prendre, from Old French prendre, prandre, from Latin prēndere, alternative form of prehendere (“to seize”), present active infinitive of prehendō, from prae- (“before”) + *hendō (“to take, seize”) (not attested without prefix), from Proto-Indo-European *gʰed-."
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -705,6 +855,36 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "Inherited from Middle French prendre, from Old French prendre, prandre, from Latin prēndere, alternative form of prehendere (“to seize”), present active infinitive of prehendō, from prae- (“before”) + *hendō (“to take, seize”) (not attested without prefix), from Proto-Indo-European *gʰed-."
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -727,6 +907,36 @@
             "content": [
               "to seem, to resemble"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "Inherited from Middle French sembler, from Old French sembler, from Late Latin similāre, a verb based on Latin similis (“similar”). Doublet of simuler."
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -748,6 +958,36 @@
             "tag": "div",
             "content": [
               "to appear"
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "Inherited from Middle French sembler, from Old French sembler, from Late Latin similāre, a verb based on Latin similis (“similar”). Doublet of simuler."
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -797,6 +1037,58 @@
                 "tag": "li",
                 "content": [
                   "a house of a parliament."
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "Inherited from Old French chambre, cambre, from Latin cambra, Medieval spelling of Latin camera (“room”), from Ancient Greek καμάρα (kamára, “something with an arched cover: a covered wagon, a covered boat, a vaulted chamber”). Doublet of caméra, a borrowing."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "chambre f (plural chambres)"
+                  }
                 ]
               }
             ]
@@ -876,6 +1168,36 @@
                     }
                   ]
                 }
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "Compare Portuguese de acordo."
+                  }
+                ]
               }
             ]
           }

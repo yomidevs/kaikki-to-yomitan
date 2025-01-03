@@ -120,6 +120,58 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "Inherited from Old Spanish bivir, viver, vevir, bevir, from Latin vīvere. Compare Ladino bivir, Portuguese viver."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "vivir (first-person singular present vivo, first-person singular preterite viví, past participle vivido)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -141,6 +193,58 @@
             "tag": "div",
             "content": [
               "to experience, to live through"
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "Inherited from Old Spanish bivir, viver, vevir, bevir, from Latin vīvere. Compare Ladino bivir, Portuguese viver."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "vivir (first-person singular present vivo, first-person singular preterite viví, past participle vivido)"
+                  }
+                ]
+              }
             ]
           }
         ]

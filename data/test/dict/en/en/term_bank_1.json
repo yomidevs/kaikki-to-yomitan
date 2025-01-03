@@ -42,6 +42,58 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle English bryngen, from Old English bringan, from Proto-West Germanic *bringan, from Proto-Germanic *bringaną (“to bring”), from Proto-Indo-European *bʰrenk-, possibly based on *bʰer-.\nCompare West Frisian bringe, Low German bringen, Dutch brengen, German bringen; also Welsh hebrwng (“to bring, lead”), Tocharian B pränk- (“to take away; restrain oneself, hold back”), Latvian brankti (“lying close”), Lithuanian branktas (“whiffletree”)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "bring (third-person singular simple present brings, present participle bringing, simple past brought, past participle brought or (rare, dialectal) broughten)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -90,6 +142,58 @@
                     }
                   ]
                 }
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle English bryngen, from Old English bringan, from Proto-West Germanic *bringan, from Proto-Germanic *bringaną (“to bring”), from Proto-Indo-European *bʰrenk-, possibly based on *bʰer-.\nCompare West Frisian bringe, Low German bringen, Dutch brengen, German bringen; also Welsh hebrwng (“to bring, lead”), Tocharian B pränk- (“to take away; restrain oneself, hold back”), Latvian brankti (“lying close”), Lithuanian branktas (“whiffletree”)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "bring (third-person singular simple present brings, present participle bringing, simple past brought, past participle brought or (rare, dialectal) broughten)"
+                  }
+                ]
               }
             ]
           }
@@ -152,6 +256,58 @@
             "tag": "div",
             "content": [
               "To raise (a lawsuit, charges, etc.) against somebody."
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle English bryngen, from Old English bringan, from Proto-West Germanic *bringan, from Proto-Germanic *bringaną (“to bring”), from Proto-Indo-European *bʰrenk-, possibly based on *bʰer-.\nCompare West Frisian bringe, Low German bringen, Dutch brengen, German bringen; also Welsh hebrwng (“to bring, lead”), Tocharian B pränk- (“to take away; restrain oneself, hold back”), Latvian brankti (“lying close”), Lithuanian branktas (“whiffletree”)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "bring (third-person singular simple present brings, present participle bringing, simple past brought, past participle brought or (rare, dialectal) broughten)"
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -253,6 +409,58 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle English bryngen, from Old English bringan, from Proto-West Germanic *bringan, from Proto-Germanic *bringaną (“to bring”), from Proto-Indo-European *bʰrenk-, possibly based on *bʰer-.\nCompare West Frisian bringe, Low German bringen, Dutch brengen, German bringen; also Welsh hebrwng (“to bring, lead”), Tocharian B pränk- (“to take away; restrain oneself, hold back”), Latvian brankti (“lying close”), Lithuanian branktas (“whiffletree”)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "bring (third-person singular simple present brings, present participle bringing, simple past brought, past participle brought or (rare, dialectal) broughten)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -303,6 +511,58 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle English wayn, from Old English wæġn, from Proto-West Germanic *wagn, from Proto-Germanic *wagnaz, from Proto-Indo-European *woǵʰnos, from *weǵʰ- (“to bring, transport”). Doublet of wagon, borrowed from Middle Dutch.\nCognates\nCognate with West Frisian wein, Dutch wagen, German Wagen, Danish vogn, Norwegian vogn, Swedish vagn. Doublet of wagon, a borrowing from Dutch."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "wain (plural wains)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -336,6 +596,58 @@
             "content": [
               "(falconry) A female such bird, a male being a tiercel."
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle English faucoun, falcon, faulcon, from Old French falcun, from Late Latin falcō (“falcon”), of Germanic origin, probably via Frankish *falkō (“falcon, hawk”), from Proto-Germanic *falkô (“falcon”), from Proto-Indo-European *pol̑- (“pale”), from *pel- (“fallow”).\ncognates\nCognate with Old English *fealca, fealcen (“falcon”), Dutch valk (“falcon, hawk”), German Falke (“falcon, hawk”), Norwegian and Swedish falk (“falcon”), Icelandic fálki (“falcon”), French faucon (“falcon”), Italian falco (“falcon”), Spanish halcón (“falcon”), Portuguese falcão (“falcon”), Latin falco (“falcon”), Lithuanian pálšas (“pale”), Latvian bāls (“pale”), Latgalian buolgs (“pale”). More at fallow."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "falcon (plural falcons)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -357,6 +669,58 @@
             "tag": "div",
             "content": [
               "A light cannon used from the 15th to the 17th century; a falconet."
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle English faucoun, falcon, faulcon, from Old French falcun, from Late Latin falcō (“falcon”), of Germanic origin, probably via Frankish *falkō (“falcon, hawk”), from Proto-Germanic *falkô (“falcon”), from Proto-Indo-European *pol̑- (“pale”), from *pel- (“fallow”).\ncognates\nCognate with Old English *fealca, fealcen (“falcon”), Dutch valk (“falcon, hawk”), German Falke (“falcon, hawk”), Norwegian and Swedish falk (“falcon”), Icelandic fálki (“falcon”), French faucon (“falcon”), Italian falco (“falcon”), Spanish halcón (“falcon”), Portuguese falcão (“falcon”), Latin falco (“falcon”), Lithuanian pálšas (“pale”), Latvian bāls (“pale”), Latgalian buolgs (“pale”). More at fallow."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "falcon (plural falcons)"
+                  }
+                ]
+              }
             ]
           }
         ]

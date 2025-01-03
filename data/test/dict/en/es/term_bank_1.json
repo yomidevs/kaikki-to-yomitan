@@ -75,6 +75,36 @@
             "content": [
               "Cachondo, entregado a los placeres."
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "Del inglés medio fast, del inglés antiguo fæst."
+                  }
+                ]
+              }
+            ]
           }
         ]
       }

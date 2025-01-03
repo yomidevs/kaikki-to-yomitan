@@ -70,6 +70,58 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "Inherited from Proto-Slavic *sněgъ, from Proto-Balto-Slavic *snáigas, from Proto-Indo-European *snóygʷʰos."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "снег • (sneg) m inan (genitive сне́га, nominative plural снега́, genitive plural снего́в, relational adjective сне́жный or снегово́й, diminutive снежо́к)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -91,6 +143,58 @@
             "tag": "div",
             "content": [
               "snow, the white electrical noise on a TV set when there is no TV signal"
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "Inherited from Proto-Slavic *sněgъ, from Proto-Balto-Slavic *snáigas, from Proto-Indo-European *snóygʷʰos."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "снег • (sneg) m inan (genitive сне́га, nominative plural снега́, genitive plural снего́в, relational adjective сне́жный or снегово́й, diminutive снежо́к)"
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -114,6 +218,58 @@
             "content": [
               "cocaine"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "Inherited from Proto-Slavic *sněgъ, from Proto-Balto-Slavic *snáigas, from Proto-Indo-European *snóygʷʰos."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "снег • (sneg) m inan (genitive сне́га, nominative plural снега́, genitive plural снего́в, relational adjective сне́жный or снегово́й, diminutive снежо́к)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -135,6 +291,58 @@
             "tag": "div",
             "content": [
               "to turn white, (intransitive) to whiten"
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-mophemes"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "mophemes"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "mophemes-content"
+                    },
+                    "content": "по- (po-) + беле́ть (belétʹ)"
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "побеле́ть • (pobelétʹ) pf (imperfective беле́ть)"
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -169,6 +377,58 @@
             "content": [
               "to become brighter"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-mophemes"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "mophemes"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "mophemes-content"
+                    },
+                    "content": "по- (po-) + беле́ть (belétʹ)"
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "побеле́ть • (pobelétʹ) pf (imperfective беле́ть)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -190,6 +450,58 @@
             "tag": "div",
             "content": [
               "to dawn"
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-mophemes"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "mophemes"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "mophemes-content"
+                    },
+                    "content": "по- (po-) + беле́ть (belétʹ)"
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "побеле́ть • (pobelétʹ) pf (imperfective беле́ть)"
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -241,6 +553,80 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-mophemes"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "mophemes"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "mophemes-content"
+                    },
+                    "content": "By surface analysis, зима́ (zimá) + -ний (-nij)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "Inherited from Proto-Slavic *zimьnъ. By surface analysis, зима́ (zimá) + -ний (-nij)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "зи́мний • (zímnij)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -262,6 +648,80 @@
             "tag": "div",
             "content": [
               "wintry, hibernal"
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-mophemes"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "mophemes"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "mophemes-content"
+                    },
+                    "content": "By surface analysis, зима́ (zimá) + -ний (-nij)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "Inherited from Proto-Slavic *zimьnъ. By surface analysis, зима́ (zimá) + -ний (-nij)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "зи́мний • (zímnij)"
+                  }
+                ]
+              }
             ]
           }
         ]
