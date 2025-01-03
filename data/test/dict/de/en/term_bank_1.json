@@ -154,6 +154,58 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle High German phlëgen, from Old High German plëgan, from Proto-West Germanic *plehan."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "pflegen (weak, third-person singular present pflegt, past tense pflegte, past participle gepflegt, auxiliary haben)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -450,6 +502,58 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle High German phlëgen, from Old High German plëgan, from Proto-West Germanic *plehan."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "pflegen (weak, third-person singular present pflegt, past tense pflegte, past participle gepflegt, auxiliary haben)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -521,6 +625,58 @@
             "tag": "div",
             "content": [
               "a fox in radiosport foxhunt"
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle High German vuhs, from Old High German fuhs, from Proto-West Germanic *fuhs, from Proto-Germanic *fuhsaz, from Proto-Indo-European *púḱsos (“the tailed one”), from *puḱ- (“tail”). Cognate with English fox, Sanskrit पुच्छ (púccha)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "Fuchs m (strong, genitive Fuchses, plural Füchse, diminutive Füchslein n or Füchschen n, feminine Füchsin)"
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -611,6 +767,58 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle High German vuhs, from Old High German fuhs, from Proto-West Germanic *fuhs, from Proto-Germanic *fuhsaz, from Proto-Indo-European *púḱsos (“the tailed one”), from *puḱ- (“tail”). Cognate with English fox, Sanskrit पुच्छ (púccha)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "Fuchs m (strong, genitive Fuchses, plural Füchse, diminutive Füchslein n or Füchschen n, feminine Füchsin)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -632,6 +840,58 @@
             "tag": "div",
             "content": [
               "A new recruit."
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle High German vuhs, from Old High German fuhs, from Proto-West Germanic *fuhs, from Proto-Germanic *fuhsaz, from Proto-Indo-European *púḱsos (“the tailed one”), from *puḱ- (“tail”). Cognate with English fox, Sanskrit पुच्छ (púccha)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "Fuchs m (strong, genitive Fuchses, plural Füchse, diminutive Füchslein n or Füchschen n, feminine Füchsin)"
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -683,6 +943,58 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle High German vuhs, from Old High German fuhs, from Proto-West Germanic *fuhs, from Proto-Germanic *fuhsaz, from Proto-Indo-European *púḱsos (“the tailed one”), from *puḱ- (“tail”). Cognate with English fox, Sanskrit पुच्छ (púccha)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "Fuchs m (strong, genitive Fuchses, plural Füchse, diminutive Füchslein n or Füchschen n, feminine Füchsin)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -704,6 +1016,58 @@
             "tag": "div",
             "content": [
               "a tank Transportpanzer Fuchs"
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle High German vuhs, from Old High German fuhs, from Proto-West Germanic *fuhs, from Proto-Germanic *fuhsaz, from Proto-Indo-European *púḱsos (“the tailed one”), from *puḱ- (“tail”). Cognate with English fox, Sanskrit पुच्छ (púccha)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "Fuchs m (strong, genitive Fuchses, plural Füchse, diminutive Füchslein n or Füchschen n, feminine Füchsin)"
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -727,6 +1091,58 @@
             "content": [
               "A form of sunscald on hops."
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle High German vuhs, from Old High German fuhs, from Proto-West Germanic *fuhs, from Proto-Germanic *fuhsaz, from Proto-Indo-European *púḱsos (“the tailed one”), from *puḱ- (“tail”). Cognate with English fox, Sanskrit पुच्छ (púccha)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "Fuchs m (strong, genitive Fuchses, plural Füchse, diminutive Füchslein n or Füchschen n, feminine Füchsin)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -748,6 +1164,58 @@
             "tag": "div",
             "content": [
               "any gold coin"
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle High German vuhs, from Old High German fuhs, from Proto-West Germanic *fuhs, from Proto-Germanic *fuhsaz, from Proto-Indo-European *púḱsos (“the tailed one”), from *puḱ- (“tail”). Cognate with English fox, Sanskrit पुच्छ (púccha)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "Fuchs m (strong, genitive Fuchses, plural Füchse, diminutive Füchslein n or Füchschen n, feminine Füchsin)"
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -782,6 +1250,58 @@
             "content": [
               "sweetheart, darling"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle High German herze, from Old High German herza, from Proto-West Germanic *hertā, from Proto-Germanic *hertô (“heart”), from Proto-Indo-European *ḱḗr (“heart”).\nCognate with Dutch hart, English heart, Danish hjerte, Gothic 𐌷𐌰𐌹𐍂𐍄𐍉 (hairtō)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "Herz n (weak, genitive Herzens or (very rare) Herzes, plural Herzen, diminutive Herzchen n or Herzlein n or ((also) Ruhrpöttisch) Herzken n)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -804,6 +1324,58 @@
             "content": [
               "hearts"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle High German herze, from Old High German herza, from Proto-West Germanic *hertā, from Proto-Germanic *hertô (“heart”), from Proto-Indo-European *ḱḗr (“heart”).\nCognate with Dutch hart, English heart, Danish hjerte, Gothic 𐌷𐌰𐌹𐍂𐍄𐍉 (hairtō)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "Herz n (weak, genitive Herzens or (very rare) Herzes, plural Herzen, diminutive Herzchen n or Herzlein n or ((also) Ruhrpöttisch) Herzken n)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -825,6 +1397,58 @@
             "tag": "div",
             "content": [
               "agent noun of fahren; driver (person)"
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-mophemes"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "mophemes"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "mophemes-content"
+                    },
+                    "content": "fahren (“to drive”) + -er"
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "Fahrer m (strong, genitive Fahrers, plural Fahrer, feminine Fahrerin)"
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -1116,6 +1740,36 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle High German von (“from”), from Old High German fon, fona (“from”), from Proto-Germanic *afanē, *fanē, *funē (“from”), compound of *afa (from Proto-Indo-European *h₂epó (“from, off”)) + *ana (from Proto-Indo-European *h₂en- (“on”)). Cognate with Old Saxon fana, fan (“from”), Dutch van (“from; of”), Old Frisian fon (“from”)."
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1137,6 +1791,58 @@
             "tag": "div",
             "content": [
               "A female cousin."
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle High German base, from Old High German basa, from Proto-Germanic *baswǭ (“father's sister; paternal aunt”). Compare Saterland Frisian Bääsje (“grandmother”), Dutch baas (“master; boss”). More at boss."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "Base f (genitive Base, plural Basen)"
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -1160,6 +1866,58 @@
             "content": [
               "paternal aunt"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "From Middle High German base, from Old High German basa, from Proto-Germanic *baswǭ (“father's sister; paternal aunt”). Compare Saterland Frisian Bääsje (“grandmother”), Dutch baas (“master; boss”). More at boss."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "Base f (genitive Base, plural Basen)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -1181,6 +1939,58 @@
             "tag": "div",
             "content": [
               "base (compound that will neutralize an acid)"
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "19th c., backformation from Basen, plural of Basis, from Latin basis, from Ancient Greek βάσις (básis)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "Base f (genitive Base, plural Basen)"
+                  }
+                ]
+              }
             ]
           }
         ]

@@ -14,6 +14,80 @@
             "content": [
               "pleasant, delightful, fun, enjoyable"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-mophemes"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "mophemes"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "mophemes-content"
+                    },
+                    "content": "Theories include:\n* A compound of 手 (ta, “hand”, combining form) + 伸す (nosu, “to extend”)\n*: This is problematic, as nosu has first been attested starting from the early 900s, with no A/B distinction (see Jōdai Tokushu Kanazukai for details)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "⟨tano₁siki₁⟩ → */tanʷosikʲi/ → /tanoshii/\nFrom Old Japanese. First attested in the Kojiki of 712 CE. No Ryukyuan cognates exist; as as result, further derivation unknown. Theories include:\n* A compound of 手 (ta, “hand”, combining form) + 伸す (nosu, “to extend”)\n*: This is problematic, as nosu has first been attested starting from the early 900s, with no A/B distinction (see Jōdai Tokushu Kanazukai for details).\n* From 田神 (tano, literally “rice paddy god”)\n*: No reading of 神 (*no, “god”) exists.\n* A borrowing from an unknown language\n*: No words resemble *tanV meaning \"fun\" or \"to enjoy\"."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "楽(たの)しい • (tanoshii) -i (adverbial 楽(たの)しく (tanoshiku))"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -92,6 +166,58 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "The 連(れん)用(よう)形(けい) (ren'yōkei, “stem or continuative form”) of the verb 好(す)く (suku, “to like, to be fond of, to enjoy, to feel love for”).\nFirst cited to the late 900s in the 宇津保物語 (Utsubo Monogatari)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "好(す)き • (suki) -na (adnominal 好(す)きな (suki na), adverbial 好(す)きに (suki ni))"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -140,6 +266,58 @@
                     }
                   ]
                 }
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "According to one theory, derived from 手貫 (tanuki, “arm glove, gauntlet”), which raccoon dog hide was sometimes used for."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "狸(たぬき) or 狸(タヌキ) • (tanuki)"
+                  }
+                ]
               }
             ]
           }
@@ -192,6 +370,58 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "According to one theory, derived from 手貫 (tanuki, “arm glove, gauntlet”), which raccoon dog hide was sometimes used for."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "狸(たぬき) or 狸(タヌキ) • (tanuki)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -213,6 +443,58 @@
             "tag": "div",
             "content": [
               "Short for 狸饂飩 (tanuki-udon) and 狸蕎麦 (tanuki-soba): styles of various noodle dishes"
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "According to one theory, derived from 手貫 (tanuki, “arm glove, gauntlet”), which raccoon dog hide was sometimes used for."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "狸(たぬき) or 狸(タヌキ) • (tanuki)"
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -264,6 +546,58 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "According to one theory, derived from 手貫 (tanuki, “arm glove, gauntlet”), which raccoon dog hide was sometimes used for."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "狸(たぬき) or 狸(タヌキ) • (tanuki)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -285,6 +619,58 @@
             "tag": "div",
             "content": [
               "Short for 狸汁 (tanuki-jiru): a soup made from tanuki meat mixed with daikon, burdock root, etc."
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "According to one theory, derived from 手貫 (tanuki, “arm glove, gauntlet”), which raccoon dog hide was sometimes used for."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "狸(たぬき) or 狸(タヌキ) • (tanuki)"
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -665,6 +1051,36 @@
             "content": [
               "(used with 胸(むね)が (mune ga)) to feel palpitations; to have a sense of unease"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "走(はし)る • (hashiru) intransitive godan (stem 走(はし)り (hashiri), past 走(はし)った (hashitta))"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -715,6 +1131,36 @@
                 }
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "走(はし)る • (hashiru) intransitive godan (stem 走(はし)り (hashiri), past 走(はし)った (hashitta))"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -737,6 +1183,36 @@
             "content": [
               "to crack"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "走(はし)る • (hashiru) intransitive godan (stem 走(はし)り (hashiri), past 走(はし)った (hashitta))"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -758,6 +1234,36 @@
             "tag": "div",
             "content": [
               "Alternative spelling of ハシる"
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "走(はし)る • (hashiru) intransitive godan (stem 走(はし)り (hashiri), past 走(はし)った (hashitta))"
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -792,6 +1298,36 @@
             "content": [
               "melon, gourd"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "五(ご)色(しき) • (goshiki) ^(←ごしき (gosiki)?)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -825,6 +1361,36 @@
             "content": [
               "melon, gourd"
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "五(ご)色(しき) • (goshiki) ^(←ごしき (gosiki)?)"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -846,6 +1412,58 @@
             "tag": "div",
             "content": [
               "[I am / someone is] hungry"
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "details-section"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "etymology-content"
+                    },
+                    "content": "The perfective form of お腹が空く (onaka ga suku, “to become hungry”, literally “one's stomach becomes empty”)."
+                  }
+                ]
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-head-info"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "head-info"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info-content"
+                    },
+                    "content": "お腹(なか)が空(す)いた • (onaka ga suita)"
+                  }
+                ]
+              }
             ]
           }
         ]

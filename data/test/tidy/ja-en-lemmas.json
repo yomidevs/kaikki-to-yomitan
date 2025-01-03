@@ -29,7 +29,10 @@
                 }
               ]
             ]
-          }
+          },
+          "etymology_text": "⟨tano₁siki₁⟩ → */tanʷosikʲi/ → /tanoshii/\nFrom Old Japanese. First attested in the Kojiki of 712 CE. No Ryukyuan cognates exist; as as result, further derivation unknown. Theories include:\n* A compound of 手 (ta, “hand”, combining form) + 伸す (nosu, “to extend”)\n*: This is problematic, as nosu has first been attested starting from the early 900s, with no A/B distinction (see Jōdai Tokushu Kanazukai for details).\n* From 田神 (tano, literally “rice paddy god”)\n*: No reading of 神 (*no, “god”) exists.\n* A borrowing from an unknown language\n*: No words resemble *tanV meaning \"fun\" or \"to enjoy\".",
+          "morpheme_text": "Theories include:\n* A compound of 手 (ta, “hand”, combining form) + 伸す (nosu, “to extend”)\n*: This is problematic, as nosu has first been attested starting from the early 900s, with no A/B distinction (see Jōdai Tokushu Kanazukai for details).",
+          "head_info_text": "楽(たの)しい • (tanoshii) -i (adverbial 楽(たの)しく (tanoshiku))"
         }
       }
     }
@@ -81,7 +84,9 @@
                 }
               ]
             ]
-          }
+          },
+          "etymology_text": "The 連(れん)用(よう)形(けい) (ren'yōkei, “stem or continuative form”) of the verb 好(す)く (suku, “to like, to be fond of, to enjoy, to feel love for”).\nFirst cited to the late 900s in the 宇津保物語 (Utsubo Monogatari).",
+          "head_info_text": "好(す)き • (suki) -na (adnominal 好(す)きな (suki na), adverbial 好(す)きに (suki ni))"
         }
       }
     }
@@ -209,7 +214,9 @@
                 }
               ]
             ]
-          }
+          },
+          "etymology_text": "According to one theory, derived from 手貫 (tanuki, “arm glove, gauntlet”), which raccoon dog hide was sometimes used for.",
+          "head_info_text": "狸(たぬき) or 狸(タヌキ) • (tanuki)"
         }
       }
     }
@@ -501,7 +508,8 @@
                 }
               ]
             ]
-          }
+          },
+          "head_info_text": "走(はし)る • (hashiru) intransitive godan (stem 走(はし)り (hashiri), past 走(はし)った (hashitta))"
         }
       }
     }
@@ -556,7 +564,8 @@
                 }
               ]
             ]
-          }
+          },
+          "head_info_text": "五(ご)色(しき) • (goshiki) ^(←ごしき (gosiki)?)"
         }
       }
     },
@@ -609,7 +618,8 @@
                 }
               ]
             ]
-          }
+          },
+          "head_info_text": "五(ご)色(しき) • (goshiki) ^(←ごしき (gosiki)?)"
         }
       }
     }
@@ -644,7 +654,9 @@
                 }
               ]
             ]
-          }
+          },
+          "etymology_text": "The perfective form of お腹が空く (onaka ga suku, “to become hungry”, literally “one's stomach becomes empty”).",
+          "head_info_text": "お腹(なか)が空(す)いた • (onaka ga suita)"
         }
       }
     }
