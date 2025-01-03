@@ -16,6 +16,7 @@
 !data/test/ipa/**/*.json
 
 *.zip
+*.gz
 data/**/*.css
 !data/styles.css
 

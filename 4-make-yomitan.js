@@ -146,6 +146,66 @@ function getStructuredExamples(examples) {
 }
 
 /**
+ * @param {string} type
+ * @param {string} content
+ * @returns {import('types').TermBank.StructuredContent}
+ */
+function buildDetailsEntry(type, content) {
+    return {
+        "tag": "details",
+        "data": {
+            "content": `details-entry-${type}`
+        },
+        "content": [
+            {
+                "tag": "summary",
+                "data": {
+                    "content": "summary-entry"
+                },
+                "content": type
+            },
+            {
+                "tag": "div",
+                "data": {
+                    "content": `${type}-content`
+                },
+                "content": content
+            }
+        ]
+    };
+}
+
+/**
+ * @param {LemmaInfo} info 
+ * @returns {import('types').TermBank.StructuredContent}
+ */
+function getStructuredDetails(info) {
+    const result = [];
+
+    const {
+        etymology_text: etymology,
+        morpheme_text: morphemes,
+        head_info_text: headInfo
+    } = info;
+    
+    for (const [title, content] of [
+        ['mophemes', morphemes],
+        ['etymology', etymology],
+        ['head-info', headInfo],
+    ]) {
+        if (title && content) result.push(buildDetailsEntry(title, content));
+    }
+
+    return {
+        "tag": "div",
+        "data": {
+            "content": "details-section"
+        },
+        "content": [...result]
+    };
+}
+
+/**
  * @param {GlossTwig} glossTwig
  * @param {string[]} senseTags
  * @param {string} pos
@@ -315,6 +375,20 @@ let lastTermBankIndex = 0;
 
                     debug(entries);
                     for (const [tags, entry] of Object.entries(entries)) {
+                        if (info.etymology_text || info.head_info_text || info.morpheme_text) {
+                            const lastDef = entry[5][entry[5].length - 1];
+
+                            if (
+                                lastDef &&
+                                typeof lastDef === 'object' &&
+                                'type' in lastDef &&
+                                lastDef.type === 'structured-content' &&
+                                Array.isArray(lastDef.content)
+                            ) {
+                                lastDef.content.push(getStructuredDetails(info));
+                            }
+                        }
+
                         ymtLemmas.push(entry);
                     }
                 }

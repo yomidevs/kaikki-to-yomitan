@@ -261,8 +261,8 @@ function handleLine(parsedLine) {
  * @returns {string}
  * */
 function getMorphemes(text) {
-    for (const part of text.split(/;|(?<=\.)/g).map(item => item.trim())) {
-        if (part.includes(' + ') && !part.includes('Proto')) { return part; }
+    for (const part of text.split(/(?<=\.)/g).map(item => item.trim())) {
+        if (part.includes(' + ') && !/Proto|Inherited from/.test(part)) { return part; }
     }
 
     return '';

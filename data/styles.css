@@ -18,3 +18,31 @@ div[data-sc-content="example-sentence-a"] {
 div[data-sc-content="example-sentence-b"] {
     font-size: 0.8em;
 }
+div[data-sc-content="details-section"] {
+    margin: 0.25em 0;
+}
+details[data-sc-content^="details-entry"] {
+    padding-left: 0;
+}
+summary[data-sc-content="summary-entry"] {
+    user-select: none;
+    width: max-content;
+}
+ul.gloss-list[data-count="1"] summary[data-sc-content="summary-entry"] {
+    list-style-position: inside;
+}
+summary[data-sc-content="summary-entry"]::marker {
+    color: var(--checkbox-disabled-color);
+}
+summary[data-sc-content="summary-entry"] {
+    color: var(--text-color-light4);
+}
+details[data-sc-content^="details-entry"][open=""] summary[data-sc-content="summary-entry"] {
+    color: var(--text-color);
+}
+summary[data-sc-content="summary-entry"]:hover {
+    cursor: pointer;
+}
+summary[data-sc-content="summary-entry"] ~ div {
+    margin: 0.5em 0;
+}
