@@ -249,6 +249,10 @@
                         "_type": "map",
                         "map": [
                           [
+                            "_tags",
+                            []
+                          ],
+                          [
                             "_examples",
                             [
                               {
@@ -265,6 +269,10 @@
                       {
                         "_type": "map",
                         "map": [
+                          [
+                            "_tags",
+                            []
+                          ],
                           [
                             "_examples",
                             [

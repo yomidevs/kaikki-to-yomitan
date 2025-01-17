@@ -101,6 +101,13 @@
                         "_type": "map",
                         "map": [
                           [
+                            "_tags",
+                            [
+                              "feminine",
+                              "figuratively"
+                            ]
+                          ],
+                          [
                             "_examples",
                             [
                               {
@@ -122,6 +129,12 @@
                         "_type": "map",
                         "map": [
                           [
+                            "_tags",
+                            [
+                              "feminine"
+                            ]
+                          ],
+                          [
                             "_examples",
                             []
                           ]
@@ -133,6 +146,12 @@
                       {
                         "_type": "map",
                         "map": [
+                          [
+                            "_tags",
+                            [
+                              "feminine"
+                            ]
+                          ],
                           [
                             "_examples",
                             []
@@ -173,6 +192,12 @@
                         "_type": "map",
                         "map": [
                           [
+                            "_tags",
+                            [
+                              "feminine"
+                            ]
+                          ],
+                          [
                             "_examples",
                             [
                               {
@@ -193,6 +218,12 @@
                       {
                         "_type": "map",
                         "map": [
+                          [
+                            "_tags",
+                            [
+                              "feminine"
+                            ]
+                          ],
                           [
                             "_examples",
                             [
@@ -215,6 +246,13 @@
                         "_type": "map",
                         "map": [
                           [
+                            "_tags",
+                            [
+                              "colloquial",
+                              "feminine"
+                            ]
+                          ],
+                          [
                             "_examples",
                             []
                           ]
@@ -226,6 +264,13 @@
                       {
                         "_type": "map",
                         "map": [
+                          [
+                            "_tags",
+                            [
+                              "colloquial",
+                              "feminine"
+                            ]
+                          ],
                           [
                             "_examples",
                             []

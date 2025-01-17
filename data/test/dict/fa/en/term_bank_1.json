@@ -12,57 +12,52 @@
           {
             "tag": "div",
             "content": [
-              "(Khorasan) a kind of pea"
+              {
+                "tag": "div",
+                "data": {
+                  "content": "preamble"
+                },
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info"
+                    },
+                    "content": "ملک • (molk)"
+                  },
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Etymology"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Etymology"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
+                        },
+                        "content": "table\nBorrowed from Hindustani مونگ / मूँग (mūṅg)"
+                      }
+                    ]
+                  }
+                ]
+              }
             ]
           },
           {
             "tag": "div",
-            "data": {
-              "content": "details-section"
-            },
             "content": [
               {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-etymology"
-                },
+                "tag": "div",
                 "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "etymology"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "etymology-content"
-                    },
-                    "content": "table\nBorrowed from Hindustani مونگ / मूँग (mūṅg)"
-                  }
-                ]
-              },
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-head-info"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "head-info"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "head-info-content"
-                    },
-                    "content": "ملک • (molk)"
-                  }
+                  "(Khorasan) a kind of pea"
                 ]
               }
             ]
@@ -86,134 +81,159 @@
           {
             "tag": "div",
             "content": [
-              "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan).",
               {
                 "tag": "div",
                 "data": {
-                  "content": "extra-info"
+                  "content": "preamble"
                 },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "بَرادَرِ شُوْهَرِش فارْسی بَلَدِه."
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "head-info"
                     },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-b"
-                      },
-                      "content": "Her husband's brother knows Persian."
-                    }
-                  ]
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "Persian (the language of Ancient Persia)."
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "Persian, main ethnic group of Iran.",
-              {
-                "tag": "div",
-                "data": {
-                  "content": "extra-info"
-                },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
+                    "content": "فارْسی • (fârsi)"
                   },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "فارْسی هَسْتیم."
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Etymology"
                     },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-b"
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Etymology"
                       },
-                      "content": "We are Persian."
-                    }
-                  ]
-                }
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
+                        },
+                        "content": "From Arabic فَارِسِيّ (fārisiyy), from Early New Persian پَارْسِی (pārsī, “Persian, Persic”)."
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
           {
             "tag": "div",
-            "data": {
-              "content": "details-section"
-            },
             "content": [
               {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-etymology"
-                },
+                "tag": "div",
                 "content": [
+                  "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan).",
                   {
-                    "tag": "summary",
+                    "tag": "details",
                     "data": {
-                      "content": "summary-entry"
+                      "content": "details-entry-examples"
                     },
-                    "content": "etymology"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "etymology-content"
-                    },
-                    "content": "From Arabic فَارِسِيّ (fārisiyy), from Early New Persian پَارْسِی (pārsī, “Persian, Persic”)."
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "1 example"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence"
+                          },
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "بَرادَرِ شُوْهَرِش فارْسی بَلَدِه."
+                            },
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-b"
+                              },
+                              "content": "Her husband's brother knows Persian."
+                            }
+                          ]
+                        }
+                      }
+                    ]
                   }
                 ]
-              },
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
               {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-head-info"
-                },
+                "tag": "div",
                 "content": [
+                  "Persian (the language of Ancient Persia)."
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "content": [
+                  "Persian, main ethnic group of Iran.",
                   {
-                    "tag": "summary",
+                    "tag": "details",
                     "data": {
-                      "content": "summary-entry"
+                      "content": "details-entry-examples"
                     },
-                    "content": "head-info"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "head-info-content"
-                    },
-                    "content": "فارْسی • (fârsi)"
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "1 example"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence"
+                          },
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "فارْسی هَسْتیم."
+                            },
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-b"
+                              },
+                              "content": "We are Persian."
+                            }
+                          ]
+                        }
+                      }
+                    ]
                   }
                 ]
               }

@@ -12,7 +12,12 @@
           {
             "tag": "div",
             "content": [
-              "[1] aussuchen, auswählen, vorziehen, wählen"
+              {
+                "tag": "div",
+                "content": [
+                  "[1] aussuchen, auswählen, vorziehen, wählen"
+                ]
+              }
             ]
           }
         ]

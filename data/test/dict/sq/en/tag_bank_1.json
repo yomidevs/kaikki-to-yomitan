@@ -1,16 +1,16 @@
 [
   [
-    "masc",
-    "",
-    -1,
-    "masculine",
-    1
-  ],
-  [
     "n",
     "partOfSpeech",
     -1,
     "noun",
+    1
+  ],
+  [
+    "masc",
+    "",
+    -1,
+    "masculine",
     1
   ],
   [
@@ -19,5 +19,26 @@
     -1,
     "feminine",
     1
+  ],
+  [
+    "fig",
+    "",
+    0,
+    "figuratively",
+    0
+  ],
+  [
+    "fig",
+    "",
+    0,
+    "figurative",
+    0
+  ],
+  [
+    "col",
+    "",
+    0,
+    "colloquial",
+    0
   ]
 ]

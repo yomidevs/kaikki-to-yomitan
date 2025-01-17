@@ -111,11 +111,65 @@ function findModifiedTag(tag){
 }
 
 /**
- * @param {StandardizedExample[]} examples 
- * @returns {import('types').TermBank.StructuredContent[]}
+ * @param {import('types').TermBank.StructuredContentNode[]} structuredContent
+ * @param {string[]} tags 
  */
-function getStructuredExamples(examples) {
-    return examples.map(({text, translation}) => {
+function addStructuredTags(structuredContent, tags){
+    if(!tags.length) return;
+
+    /** @type {import('types').TermBank.StructuredContentNode}*/
+    const structuredTags = {
+        "tag": "div",
+        "data": {
+            "content": "tags"
+        },
+        "content": tags.map(tag => {
+            const fullTag = Object.entries(ymtTags.dict).find(([key, tagInfo]) => tagInfo[0] === tag)?.[1];
+
+            return {
+                "tag": "span",
+                "content": tag,
+                "title": fullTag ? fullTag[3] : '',
+                "data": {
+                    "content": "tag",
+                    "category": fullTag ? fullTag[1] : '',
+                }
+            }
+        })
+    }
+
+    structuredContent.unshift(structuredTags);
+}
+
+/**
+ * @param {import('types').TermBank.StructuredContentNode[]} structuredContent
+ * @param {StandardizedExample[]} examples 
+ */
+function addStructuredExamples(structuredContent, examples) {
+    if (examples.length === 0) return;
+
+    /** @type {import('types').TermBank.StructuredContent} */
+    const structuredExamplesContent = examples.map(({text, translation}) => { 
+        
+        /** @type {import('types').TermBank.StructuredContentNode[]} */
+         const structuredExampleContent = [{
+            "tag": "div",
+            "data": {
+                "content": "example-sentence-a",
+            },
+            "content": text
+        }];
+
+        if(translation){
+            structuredExampleContent.push({
+                "tag": "div",
+                "data": {
+                    "content": "example-sentence-b",
+                },
+                "content": translation
+            });
+        }
+
         return {
             "tag": "div",
             "data": {
@@ -126,23 +180,30 @@ function getStructuredExamples(examples) {
                 "data": {
                     "content": "example-sentence"
                 },
-                "content":[{
-                    "tag": "div",
-                    "data": {
-                        "content": "example-sentence-a",
-                    },
-                    "content": text
-                },
-                {
-                    "tag": "div",
-                    "data": {
-                        "content": "example-sentence-b"
-                    },
-                    "content": translation
-                }
-            ]}
+                "content":structuredExampleContent
+            }                          
         }
-    });
+    })
+
+    /** @type {import('types').TermBank.StructuredContentNode}*/
+    const structuredExamples = {
+        "tag": "details",
+        "data": {
+            "content": `details-entry-examples`
+        },
+        "content": [
+            {
+                "tag": "summary",
+                "data": {
+                    "content": `summary-entry`
+                },
+                "content": getLocaleExamplesString(examples.length)
+            },
+            ...structuredExamplesContent
+        ]
+    }
+
+    structuredContent.push(structuredExamples);
 }
 
 /**
@@ -179,66 +240,83 @@ function buildDetailsEntry(type, content) {
  * @param {LemmaInfo} info 
  * @returns {import('types').TermBank.StructuredContent}
  */
-function getStructuredDetails(info) {
-    const result = [];
+function getStructuredPreamble(info) {
 
     const {
-        etymology_text: etymology,
-        morpheme_text: morphemes,
-        head_info_text: headInfo
+        etymology_text,
+        morpheme_text,
+        head_info_text,
     } = info;
+
+    if (!etymology_text && !morpheme_text && !head_info_text) return '';
+
+    /** @type {import('types').TermBank.StructuredContentNode[]} */
+    const preambleContent = [];
+
+    if(head_info_text) {
+        preambleContent.push({
+            "tag": "div",
+            "data": {
+                "content": "head-info"
+            },
+            "content": head_info_text
+        });
+    }
     
-    for (const [title, content] of [
-        ['mophemes', morphemes],
-        ['etymology', etymology],
-        ['head-info', headInfo],
-    ]) {
-        if (title && content) result.push(buildDetailsEntry(title, content));
+    if(morpheme_text) {
+        preambleContent.push(buildDetailsEntry('Morphemes', morpheme_text));
+    }
+
+    if(etymology_text) {
+        preambleContent.push(buildDetailsEntry('Etymology', etymology_text));
     }
 
     return {
         "tag": "div",
         "data": {
-            "content": "details-section"
+            "content": "preamble"
         },
-        "content": [...result]
+        "content": preambleContent
     };
 }
 
 /**
- * @param {GlossTwig} glossTwig
- * @param {string[]} senseTags
+ * @param {GlossBranch} glossBranch
+ * @param {string[]} parentTags
  * @param {string} pos
  * @param {number} depth
- * @returns {{nestDefs: import('types').TermBank.StructuredContent[], recognizedTags: string[]}}
+ * @returns {import('types').TermBank.StructuredContent[]}
  */
-function handleLevel(glossTwig, senseTags, pos, depth) {
+function handleLevel(glossBranch, parentTags, pos, depth) {
+    const htmlTag = depth === 0 ? 'div' : 'li';
+
     /** @type {import('types').TermBank.StructuredContent[]} */
     const nestDefs = [];
-    /** @type {string[]} */
-    let tags = [];
 
-    for (const [def, children] of glossTwig) {                      
+    for (const [def, children] of glossBranch) {                      
         let processedDef = def;
-        
-        if(depth === 0 && glossTwig.size === 1){
-            const {gloss, recognizedTags} = processGlossTags(def, senseTags, pos);
-            processedDef = gloss;
-            tags = recognizedTags;
-        }
 
+        const levelTags = children.get('_tags') || [];
+        children.delete('_tags');
+
+        const {gloss, recognizedTags} = processGlossTags(def, levelTags, pos);
+        const minimalTags = recognizedTags.filter((tag) => !parentTags.includes(tag));
+
+        processedDef = gloss;
+
+        /** @type {import('types').TermBank.StructuredContent} */
+        const levelContent = [processedDef]
+ 
         const examples = children.get('_examples') || [];
         children.delete('_examples');
 
-        const tag = depth === 0 ? 'div' : 'li';
+        addStructuredTags(levelContent, minimalTags);
+        addStructuredExamples(levelContent, examples);
 
-        nestDefs.push({ "tag": tag, "content": [
-            processedDef,
-            ...getStructuredExamples(examples)
-        ] });
+        nestDefs.push({ "tag": htmlTag, "content": levelContent });
 
         if(children.size > 0) {
-            const {nestDefs: childDefs} = handleLevel(children, senseTags, pos, depth + 1);
+            const childDefs = handleLevel(children, [...parentTags, ...minimalTags], pos, depth + 1);
 
             nestDefs.push(
                 { "tag": "ul", "content": childDefs }
@@ -246,26 +324,26 @@ function handleLevel(glossTwig, senseTags, pos, depth) {
         }
     }
 
-    return {nestDefs, recognizedTags: tags};
+    return nestDefs
 }
 
 /**
- * @param {GlossTwig} glossTwig
- * @param {string[]} senseTags
+ * @param {GlossBranch} glossBranch
+ * @param {string[]} lemmaTags
  * @param {string} pos
- * @returns {{glosses: import('types').TermBank.DetailedDefinition[], recognizedTags: string[]}}
+ * @returns {import('types').TermBank.StructuredContentNode[]}
  */
-function handleNest(glossTwig, senseTags, pos) {
-    /** @type {import('types').TermBank.DetailedDefinition[]} */
+function handleNest(glossBranch, lemmaTags, pos) {
+    /** @type {import('types').TermBank.StructuredContentNode[]} */
     const glosses = [];
 
-    const {nestDefs: nestedGloss, recognizedTags} = handleLevel(glossTwig, senseTags, pos, 0);
+    const nestedGloss = handleLevel(glossBranch, lemmaTags, pos, 0);
 
     if (nestedGloss.length > 0) {
-        glosses.push({ "type": "structured-content", "content": nestedGloss });
+        glosses.push({ "tag": "div", "content": nestedGloss });
     }
 
-    return {glosses, recognizedTags};
+    return glosses;
 }
 
 /** @type {FormsMap}  */
@@ -301,7 +379,19 @@ let lastTermBankIndex = 0;
     consoleOverwrite('4-make-yomitan.js: processing lemmas...');
     for (const [lemma, readings] of Object.entries(lemmaDict)) {
         for (const [reading, partsOfSpeechOfWord] of Object.entries(readings)) {
+            
             const normalizedLemma = normalizeOrthography(lemma);
+            
+            /**
+             * @param {any} word 
+             */
+            function debug(word) {
+                if (normalizedLemma === DEBUG_WORD) {
+                    console.log('-------------------');
+                    console.log(word);
+                }
+            }
+
             let term = normalizedLemma;
 
             if(lemma !== normalizedLemma && lemma !== reading){
@@ -318,16 +408,6 @@ let lastTermBankIndex = 0;
                     anyForms.push(message);
                 }
             }
-            
-            /**
-             * @param {any} word 
-             */
-            function debug(word) {
-                if (normalizedLemma === DEBUG_WORD) {
-                    console.log('-------------------');
-                    console.log(word);
-                }
-            }
 
             const ipa = [];
 
@@ -336,61 +416,67 @@ let lastTermBankIndex = 0;
                     const foundPos = findPartOfSpeech(pos, partsOfSpeech, skippedPartsOfSpeech);
                     const {glossTree} = info;
 
-                    const lemmaTags = [pos];
+                    /** @type {import('types').TermBank.StructuredContent}*/
+                    const entryContent = [];
+
                     ipa.push(...info.ipa);
 
-                    /** @type {Object<string, import('types').TermBank.TermInformation>} */
-                    const entries = {};
+                    let commonTags = null;
+                    for (const [gloss, branches] of glossTree.entries()) {
+                        const branchTags = branches.get('_tags');
+                        if(!branchTags) continue;
+                        if(!commonTags){
+                            commonTags = branchTags;
+                        } else {
+                            commonTags = commonTags.filter(tag => branchTags.includes(tag));
+                        }
+                    }
+                    commonTags = processTags([pos, ...(commonTags || [])], [], pos).recognizedTags;
 
                     for (const [gloss, branches] of glossTree.entries()) {
-                        const tags = branches.get('_tags') || [];
-                        branches.delete('_tags');
-
-                        const senseTags = [...tags, ...lemmaTags];
 
                         /** @type {GlossBranch} */
                         const syntheticBranch = new Map();
                         syntheticBranch.set(gloss, branches);
-                        const {glosses, recognizedTags} = handleNest(syntheticBranch, senseTags, pos);
-                        const joinedTags = recognizedTags.join(' ');
+                        const glosses = handleNest(syntheticBranch, commonTags, pos);
                         
-                        if(!glosses || !glosses.length) continue;
-
-                        if (entries[joinedTags]) {
-                            // entries[joinedTags][5].push(gloss);
-                            entries[joinedTags][5].push(...glosses);
-                        } else {
-                            entries[joinedTags] = [
-                                term, // term
-                                reading !== normalizedLemma ? reading : '', // reading
-                                joinedTags, // definition_tags
-                                foundPos, // rules
-                                0, // frequency
-                                glosses, // definitions
-                                0, // sequence
-                                '', // term_tags
-                            ];
-                        }
+                        if(glosses && glosses.length) {
+                            entryContent.push(...glosses);
+                        };
+                    }
+                    
+                    if (!entryContent.length) {
+                        continue;
                     }
 
-                    debug(entries);
-                    for (const [tags, entry] of Object.entries(entries)) {
-                        if (info.etymology_text || info.head_info_text || info.morpheme_text) {
-                            const lastDef = entry[5][entry[5].length - 1];
-
-                            if (
-                                lastDef &&
-                                typeof lastDef === 'object' &&
-                                'type' in lastDef &&
-                                lastDef.type === 'structured-content' &&
-                                Array.isArray(lastDef.content)
-                            ) {
-                                lastDef.content.push(getStructuredDetails(info));
-                            }
-                        }
-
-                        ymtLemmas.push(entry);
+                    if (info.etymology_text || info.head_info_text || info.morpheme_text) {
+                        const preamble = getStructuredPreamble(info);
+                        entryContent.unshift({
+                            "tag": "div",
+                            content: [preamble]
+                        });
                     }
+
+                    /** @type {import('types').TermBank.DetailedDefinition}*/
+                    const structuredEntry = {
+                        "type": "structured-content",
+                        "content": entryContent
+                    }
+
+                    /** @type {import('types').TermBank.TermInformation} */
+                    const entry = [
+                        term, // term
+                        reading !== normalizedLemma ? reading : '', // reading
+                        commonTags.join(' '), // definition_tags
+                        foundPos, // rules
+                        0, // frequency
+                        [structuredEntry], // definitions
+                        0, // sequence
+                        '', // term_tags
+                    ];
+
+                    ymtLemmas.push(entry);
+
                 }
             }
 
@@ -803,3 +889,32 @@ function normalizeOrthography(term) {
     }
 }
 
+/**
+ * @param {number} n 
+ * @returns {string}
+ */
+function getLocaleExamplesString(n) {
+    switch (target_iso) {
+        case 'fr':
+            return n === 1 ? '1 exemple' : `${n} exemples`;
+        case 'de':
+            return n === 1 ? '1 Beispiel' : `${n} Beispiele`;
+        case 'es':
+            return n === 1 ? '1 ejemplo' : `${n} ejemplos`;
+        case 'ru':
+            return n === 1 ? '1 пример' : `${n} примеры`;
+        case 'zh':
+            return `${n} 例`;
+        case 'ja':
+            return `${n} 例`;
+        case 'ko':
+            return `${n} 예`;
+        case 'nl':
+            return n === 1 ? '1 voorbeeld' : `${n} voorbeelden`;
+        case 'pl':
+            return n === 1 ? '1 przykład' : `${n} przykłady`;
+        case 'en':
+        default:
+            return n === 1 ? '1 example' : `${n} examples`;
+    }
+}

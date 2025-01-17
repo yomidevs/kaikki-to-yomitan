@@ -71,15 +71,12 @@ declare global {
 
     type GlossTree = Map<string, GlossBranch> ;
 
-    type GlossBranch = GlossTwig & {
+    type GlossBranch = Map<string, GlossBranch> & {
+        get(key: '_examples'): StandardizedExample[] | undefined;
+        set(key: '_examples', value: StandardizedExample[]): GlossBranch;
         get(key: '_tags'): string[] | undefined;
         set(key: '_tags', value: string[]): GlossBranch;
     } ;
-
-    type GlossTwig = Map<string, GlossTwig> & {
-        get(key: '_examples'): StandardizedExample[] | undefined;
-        set(key: '_examples', value: StandardizedExample[]): GlossTwig;
-    } 
       
     type TidySense = Omit<KaikkiSense, 'tags'> & {
         tags: string[];

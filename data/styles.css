@@ -1,3 +1,15 @@
+div[data-sc-content="tags"] span {
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 0.2em 0.3em;
+    word-break: keep-all;
+    border-radius: 0.3em;
+    vertical-align: text-bottom;
+    background-color: #565656;
+    color: white;
+    cursor: help;
+    margin-right: 0.25em;
+}
 div[data-sc-content="extra-info"] {
     margin-left: 0.5em;
 }
@@ -18,15 +30,13 @@ div[data-sc-content="example-sentence-a"] {
 div[data-sc-content="example-sentence-b"] {
     font-size: 0.8em;
 }
-div[data-sc-content="details-section"] {
-    margin: 0.25em 0;
-}
 details[data-sc-content^="details-entry"] {
     padding-left: 0;
 }
 summary[data-sc-content="summary-entry"] {
     user-select: none;
     width: max-content;
+    padding: 0.1em 0.2em;
 }
 ul.gloss-list[data-count="1"] summary[data-sc-content="summary-entry"] {
     list-style-position: inside;
@@ -37,11 +47,22 @@ summary[data-sc-content="summary-entry"]::marker {
 summary[data-sc-content="summary-entry"] {
     color: var(--text-color-light4);
 }
+details[data-sc-content^="details-entry-Etymology"] summary[data-sc-content="summary-entry"],
+details[data-sc-content^="details-entry-Morphemes"] summary[data-sc-content="summary-entry"] {
+    font-weight: bold;
+}
+
 details[data-sc-content^="details-entry"][open=""] summary[data-sc-content="summary-entry"] {
     color: var(--text-color);
 }
+details[data-sc-content^="details-entry"][open=""] summary[data-sc-content="summary-entry"]::marker {
+    color: var(--text-color);
+}
 summary[data-sc-content="summary-entry"]:hover {
+    border-radius: 0.4em;
+    background-color: var(--notification-background-color-lighter);
     cursor: pointer;
+    color: var(--text-color);
 }
 summary[data-sc-content="summary-entry"] ~ div {
     margin: 0.5em 0;
