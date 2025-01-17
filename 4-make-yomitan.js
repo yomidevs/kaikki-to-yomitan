@@ -254,15 +254,9 @@ function getStructuredPreamble(info) {
     const preambleContent = [];
 
     if(head_info_text) {
-        preambleContent.push({
-            "tag": "div",
-            "data": {
-                "content": "head-info"
-            },
-            "content": head_info_text
-        });
+        preambleContent.push(buildDetailsEntry('Grammar', head_info_text));
     }
-    
+
     if(morpheme_text) {
         preambleContent.push(buildDetailsEntry('Morphemes', morpheme_text));
     }
@@ -340,7 +334,7 @@ function handleNest(glossBranch, lemmaTags, pos) {
     const nestedGloss = handleLevel(glossBranch, lemmaTags, pos, 0);
 
     if (nestedGloss.length > 0) {
-        glosses.push({ "tag": "div", "content": nestedGloss });
+        glosses.push({ "tag": "li", "content": nestedGloss });
     }
 
     return glosses;
@@ -416,9 +410,6 @@ let lastTermBankIndex = 0;
                     const foundPos = findPartOfSpeech(pos, partsOfSpeech, skippedPartsOfSpeech);
                     const {glossTree} = info;
 
-                    /** @type {import('types').TermBank.StructuredContent}*/
-                    const entryContent = [];
-
                     ipa.push(...info.ipa);
 
                     let commonTags = null;
@@ -433,6 +424,9 @@ let lastTermBankIndex = 0;
                     }
                     commonTags = processTags([pos, ...(commonTags || [])], [], pos).recognizedTags;
 
+                    /** @type {import('types').TermBank.StructuredContent}*/
+                    const glossContent = [];
+
                     for (const [gloss, branches] of glossTree.entries()) {
 
                         /** @type {GlossBranch} */
@@ -441,13 +435,22 @@ let lastTermBankIndex = 0;
                         const glosses = handleNest(syntheticBranch, commonTags, pos);
                         
                         if(glosses && glosses.length) {
-                            entryContent.push(...glosses);
+                            glossContent.push(...glosses);
                         };
                     }
                     
-                    if (!entryContent.length) {
+                    if (!glossContent.length) {
                         continue;
                     }
+
+                    /** @type {import('types').TermBank.StructuredContent}*/
+                    const entryContent = [{
+                        "tag": "ol",
+                        "data" : {
+                            "content": "glosses"
+                        },
+                        "content": glossContent
+                    }]
 
                     if (info.etymology_text || info.head_info_text || info.morpheme_text) {
                         const preamble = getStructuredPreamble(info);

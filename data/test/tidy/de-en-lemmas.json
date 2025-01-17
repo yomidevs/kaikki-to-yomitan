@@ -89,6 +89,22 @@
                               {
                                 "text": "die Zähne pflegen",
                                 "translation": "to take care of (one's) teeth"
+                              },
+                              {
+                                "text": "Der Gärtner pflegt den Garten.",
+                                "translation": "The gardener tends to the garden."
+                              },
+                              {
+                                "text": "Sie hat sich stets sehr gepflegt.",
+                                "translation": "She has always taken care of her appearance. (literally, “She has always taken care of herself.”)"
+                              },
+                              {
+                                "text": "Er setzte sich faul hin und pflegte sich.",
+                                "translation": "He sat down lazily and went easy on himself. (literally, “He sat down lazily and looked after himself.”)"
+                              },
+                              {
+                                "text": "Daten pflegen",
+                                "translation": "to maintain data (keep up-to-date)"
                               }
                             ]
                           ],
@@ -160,6 +176,10 @@
                               {
                                 "text": "Beziehungen pflegen",
                                 "translation": "to cultivate relationships"
+                              },
+                              {
+                                "text": "Künste und Wissenschaften pflegen",
+                                "translation": "to advance/promote the arts and sciences"
                               }
                             ]
                           ],

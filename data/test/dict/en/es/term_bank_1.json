@@ -45,88 +45,96 @@
             ]
           },
           {
-            "tag": "div",
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
             "content": [
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
-                  "Rápido, veloz."
-                ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
-              {
-                "tag": "div",
-                "content": [
-                  "Adelantado.",
                   {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-examples"
-                    },
+                    "tag": "div",
                     "content": [
+                      "Rápido, veloz."
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "Adelantado.",
                       {
-                        "tag": "summary",
+                        "tag": "details",
                         "data": {
-                          "content": "summary-entry"
+                          "content": "details-entry-examples"
                         },
-                        "content": "1 ejemplo"
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "extra-info"
-                        },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
-                          },
-                          "content": [
-                            {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence-a"
-                              },
-                              "content": "Your watch is some minutes fast"
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
                             },
-                            {
+                            "content": "1 ejemplo"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
                               "tag": "div",
                               "data": {
-                                "content": "example-sentence-b"
+                                "content": "example-sentence"
                               },
-                              "content": "→ Tu reloj va algunos minutos adelantado."
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Your watch is some minutes fast"
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "→ Tu reloj va algunos minutos adelantado."
+                                }
+                              ]
                             }
-                          ]
-                        }
+                          }
+                        ]
                       }
                     ]
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
+              },
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
-                  "Firme, fijo, sólido."
+                  {
+                    "tag": "div",
+                    "content": [
+                      "Firme, fijo, sólido."
+                    ]
+                  }
                 ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
+              },
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
-                  "Cachondo, entregado a los placeres."
+                  {
+                    "tag": "div",
+                    "content": [
+                      "Cachondo, entregado a los placeres."
+                    ]
+                  }
                 ]
               }
             ]

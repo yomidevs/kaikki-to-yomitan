@@ -10,12 +10,20 @@
         "type": "structured-content",
         "content": [
           {
-            "tag": "div",
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
             "content": [
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
-                  "[1] aussuchen, auswählen, vorziehen, wählen"
+                  {
+                    "tag": "div",
+                    "content": [
+                      "[1] aussuchen, auswählen, vorziehen, wählen"
+                    ]
+                  }
                 ]
               }
             ]

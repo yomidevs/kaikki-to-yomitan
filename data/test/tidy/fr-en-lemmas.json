@@ -152,6 +152,14 @@
                         {
                           "text": "la sauce ne prend pas",
                           "translation": "the sauce isn't thickening"
+                        },
+                        {
+                          "text": "ma mayonnaise ne prend pas",
+                          "translation": "my mayonnaise isn't setting"
+                        },
+                        {
+                          "text": "ça ne prend pas avec moi",
+                          "translation": "that won't wash with me"
                         }
                       ]
                     ]
@@ -221,6 +229,26 @@
                               {
                                 "text": "Qu’est-ce qui lui a pris ? Quelle mouche l’a piqué ?",
                                 "translation": "What was he thinking? What got into him?"
+                              },
+                              {
+                                "text": "bien lui en prit",
+                                "translation": "good for him; it was a good choice (literally, “he took it well”)"
+                              },
+                              {
+                                "text": "mal lui en prit",
+                                "translation": "too bad for him; it was a bad choice (literally, “he took it badly”)"
+                              },
+                              {
+                                "text": "prendre en aversion",
+                                "translation": "take an aversion (to)"
+                              },
+                              {
+                                "text": "prendre en grippe",
+                                "translation": "take a dislike (to)"
+                              },
+                              {
+                                "text": "prendre en dégoût",
+                                "translation": "become disgusted (by)"
                               }
                             ]
                           ]
@@ -252,6 +280,62 @@
                         {
                           "text": "prendre du galon",
                           "translation": "to gain a promotion"
+                        },
+                        {
+                          "text": "prendre de l’avance",
+                          "translation": "to gain ground"
+                        },
+                        {
+                          "text": "prendre du retard",
+                          "translation": "to fall behind schedule, to run late, to drop behind"
+                        },
+                        {
+                          "text": "prendre de la hauteur",
+                          "translation": "to gain some perspective"
+                        },
+                        {
+                          "text": "prendre du recul",
+                          "translation": "to take a step back"
+                        },
+                        {
+                          "text": "prendre de la bouteille",
+                          "translation": "to gain experience"
+                        },
+                        {
+                          "text": "en prendre de la graine",
+                          "translation": "to take away a lesson"
+                        },
+                        {
+                          "text": "prendre du poids",
+                          "translation": "to gain weight"
+                        },
+                        {
+                          "text": "prendre de la masse",
+                          "translation": "to build muscle"
+                        },
+                        {
+                          "text": "prendre de la brioche, prendre du bide, prendre du ventre",
+                          "translation": "to get a paunch"
+                        },
+                        {
+                          "text": "prendre du bouchon",
+                          "translation": "to fail"
+                        },
+                        {
+                          "text": "prendre de l’élan",
+                          "translation": "to gain momentum"
+                        },
+                        {
+                          "text": "prendre de l’âge",
+                          "translation": "to get older"
+                        },
+                        {
+                          "text": "prendre de la valeur",
+                          "translation": "to gain value"
+                        },
+                        {
+                          "text": "prendre de l’importance",
+                          "translation": "to become important"
                         }
                       ]
                     ]
@@ -328,6 +412,10 @@
                         {
                           "text": "Il lui prend une fantaisie de mettre le feu à la maison.",
                           "translation": "A fancy comes over him to set fire to the house."
+                        },
+                        {
+                          "text": "Et s’il me prend l’envie d’ m’en aller, enferme-moi et jette la clé.",
+                          "translation": "And if I feel like leaving, lock me up and throw away the key."
                         }
                       ]
                     ]
@@ -368,7 +456,12 @@
                     ],
                     [
                       "_examples",
-                      []
+                      [
+                        {
+                          "text": "Il semblerait qu’il y ait des différences significatives entre les deux groupes.",
+                          "translation": "There would seem to be significant differences between the two groups."
+                        }
+                      ]
                     ]
                   ]
                 }

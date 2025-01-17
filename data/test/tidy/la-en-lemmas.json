@@ -96,6 +96,10 @@
                         {
                           "text": "Fāma tamen clāra est; et adhūc sine crīmine vīxī.",
                           "translation": "My good name is nevertheless unstained; and so far I have lived without blame."
+                        },
+                        {
+                          "text": "Multī fāmam, conscientiam paucī verentur.",
+                          "translation": "Many fear their reputation, few their conscience."
                         }
                       ]
                     ]
@@ -193,7 +197,12 @@
                     ],
                     [
                       "_examples",
-                      []
+                      [
+                        {
+                          "text": "[…] dum ne quem militem legeret ex eo numero quibus senatus missionem reditumque in patriam negasset ante belli finem.",
+                          "translation": "[…] provided he did not choose any soldier from those to whom the Senate had refused discharge and a return home before the end of the war"
+                        }
+                      ]
                     ]
                   ]
                 }
@@ -273,6 +282,10 @@
                         {
                           "text": "Lēgistīne hunc librum?",
                           "translation": "Have you read this book?"
+                        },
+                        {
+                          "text": "Lingua Graeca est; nōn potest legī.",
+                          "translation": "It's Greek; it cannot be read."
                         }
                       ]
                     ]
@@ -442,7 +455,12 @@
                     ],
                     [
                       "_examples",
-                      []
+                      [
+                        {
+                          "text": ", Latin Vulgate translation of Psalm 71:8;Canadian national motto\nĀ marī ū̆sque ad mare.",
+                          "translation": "From sea unto sea."
+                        }
+                      ]
                     ]
                   ]
                 }
@@ -652,6 +670,10 @@
                         {
                           "text": "Stet fortūna domūs",
                           "translation": "Let the good fortune of the house stand (motto of Harrow School, England)"
+                        },
+                        {
+                          "text": "nox erat et tōta lūmina nūlla domō",
+                          "translation": "It was night, and [there were] no lights in the whole house."
                         }
                       ]
                     ],
@@ -828,6 +850,14 @@
                         {
                           "text": "Domī versūra fit.",
                           "translation": "One is one's own creditor. (proverb)"
+                        },
+                        {
+                          "text": "domō afferre",
+                          "translation": "to conceive on one's own"
+                        },
+                        {
+                          "text": "id nunc experior domō",
+                          "translation": "Now I'm learning this first-hand."
                         }
                       ]
                     ]
@@ -853,6 +883,10 @@
                     [
                       "_examples",
                       [
+                        {
+                          "text": "bellī domīque; bellō domīque; vel bellī vel domī; domī bellōque; domī mīlitiaeque",
+                          "translation": "in war and peace"
+                        },
                         {
                           "text": "ut non quietior populus domi esset quam militiae",
                           "translation": "so that the people should not become lazier in the time of peace than that of war"

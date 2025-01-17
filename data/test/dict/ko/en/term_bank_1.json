@@ -19,11 +19,26 @@
                 },
                 "content": [
                   {
-                    "tag": "div",
+                    "tag": "details",
                     "data": {
-                      "content": "head-info"
+                      "content": "details-entry-Grammar"
                     },
-                    "content": "독일 • (Dogil) (hanja 獨逸)"
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Grammar"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Grammar-content"
+                        },
+                        "content": "독일 • (Dogil) (hanja 獨逸)"
+                      }
+                    ]
                   },
                   {
                     "tag": "details",
@@ -52,12 +67,20 @@
             ]
           },
           {
-            "tag": "div",
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
             "content": [
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
-                  "Germany (a country in Europe)"
+                  {
+                    "tag": "div",
+                    "content": [
+                      "Germany (a country in Europe)"
+                    ]
+                  }
                 ]
               }
             ]

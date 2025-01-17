@@ -19,11 +19,26 @@
                 },
                 "content": [
                   {
-                    "tag": "div",
+                    "tag": "details",
                     "data": {
-                      "content": "head-info"
+                      "content": "details-entry-Grammar"
                     },
-                    "content": "bring (third-person singular simple present brings, present participle bringing, simple past brought, past participle brought or (rare, dialectal) broughten)"
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Grammar"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Grammar-content"
+                        },
+                        "content": "bring (third-person singular simple present brings, present participle bringing, simple past brought, past participle brought or (rare, dialectal) broughten)"
+                      }
+                    ]
                   },
                   {
                     "tag": "details",
@@ -52,341 +67,349 @@
             ]
           },
           {
-            "tag": "div",
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
             "content": [
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
                   {
                     "tag": "div",
-                    "data": {
-                      "content": "tags"
-                    },
                     "content": [
-                      {
-                        "tag": "span",
-                        "content": "vdt",
-                        "title": "ditransitive verb",
-                        "data": {
-                          "content": "tag",
-                          "category": "partOfSpeech"
-                        }
-                      },
-                      {
-                        "tag": "span",
-                        "content": "vt",
-                        "title": "transitive verb",
-                        "data": {
-                          "content": "tag",
-                          "category": "partOfSpeech"
-                        }
-                      }
-                    ]
-                  },
-                  "To transport toward somebody/somewhere.",
-                  {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-examples"
-                    },
-                    "content": [
-                      {
-                        "tag": "summary",
-                        "data": {
-                          "content": "summary-entry"
-                        },
-                        "content": "1 example"
-                      },
                       {
                         "tag": "div",
                         "data": {
-                          "content": "extra-info"
+                          "content": "tags"
                         },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "vdt",
+                            "title": "ditransitive verb",
+                            "data": {
+                              "content": "tag",
+                              "category": "partOfSpeech"
+                            }
                           },
-                          "content": [
-                            {
+                          {
+                            "tag": "span",
+                            "content": "vt",
+                            "title": "transitive verb",
+                            "data": {
+                              "content": "tag",
+                              "category": "partOfSpeech"
+                            }
+                          }
+                        ]
+                      },
+                      "To transport toward somebody/somewhere.",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 example"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
                               "tag": "div",
                               "data": {
-                                "content": "example-sentence-a"
+                                "content": "example-sentence"
                               },
-                              "content": "Waiter, please bring me a single malt whiskey."
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Waiter, please bring me a single malt whiskey."
+                                }
+                              ]
                             }
-                          ]
-                        }
+                          }
+                        ]
                       }
                     ]
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
+              },
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
                   {
                     "tag": "div",
-                    "data": {
-                      "content": "tags"
-                    },
                     "content": [
-                      {
-                        "tag": "span",
-                        "content": "fig",
-                        "title": "figuratively",
-                        "data": {
-                          "content": "tag",
-                          "category": ""
-                        }
-                      },
-                      {
-                        "tag": "span",
-                        "content": "vt",
-                        "title": "transitive verb",
-                        "data": {
-                          "content": "tag",
-                          "category": "partOfSpeech"
-                        }
-                      }
-                    ]
-                  },
-                  "To supply or contribute.",
-                  {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-examples"
-                    },
-                    "content": [
-                      {
-                        "tag": "summary",
-                        "data": {
-                          "content": "summary-entry"
-                        },
-                        "content": "1 example"
-                      },
                       {
                         "tag": "div",
                         "data": {
-                          "content": "extra-info"
+                          "content": "tags"
                         },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "fig",
+                            "title": "figuratively",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            }
                           },
-                          "content": [
-                            {
+                          {
+                            "tag": "span",
+                            "content": "vt",
+                            "title": "transitive verb",
+                            "data": {
+                              "content": "tag",
+                              "category": "partOfSpeech"
+                            }
+                          }
+                        ]
+                      },
+                      "To supply or contribute.",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 example"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
                               "tag": "div",
                               "data": {
-                                "content": "example-sentence-a"
+                                "content": "example-sentence"
                               },
-                              "content": "The new company director brought a fresh perspective on sales and marketing."
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "The new company director brought a fresh perspective on sales and marketing."
+                                }
+                              ]
                             }
-                          ]
-                        }
+                          }
+                        ]
                       }
                     ]
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
+              },
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
                   {
                     "tag": "div",
-                    "data": {
-                      "content": "tags"
-                    },
                     "content": [
-                      {
-                        "tag": "span",
-                        "content": "vt",
-                        "title": "transitive verb",
-                        "data": {
-                          "content": "tag",
-                          "category": "partOfSpeech"
-                        }
-                      }
-                    ]
-                  },
-                  "To occasion or bring about.",
-                  {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-examples"
-                    },
-                    "content": [
-                      {
-                        "tag": "summary",
-                        "data": {
-                          "content": "summary-entry"
-                        },
-                        "content": "1 example"
-                      },
                       {
                         "tag": "div",
                         "data": {
-                          "content": "extra-info"
+                          "content": "tags"
                         },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "vt",
+                            "title": "transitive verb",
+                            "data": {
+                              "content": "tag",
+                              "category": "partOfSpeech"
+                            }
+                          }
+                        ]
+                      },
+                      "To occasion or bring about.",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 example"
                           },
-                          "content": [
-                            {
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
                               "tag": "div",
                               "data": {
-                                "content": "example-sentence-a"
+                                "content": "example-sentence"
                               },
-                              "content": "The controversial TV broadcast brought a storm of complaints."
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "The controversial TV broadcast brought a storm of complaints."
+                                }
+                              ]
                             }
-                          ]
-                        }
+                          }
+                        ]
                       }
                     ]
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
+              },
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
                   {
                     "tag": "div",
-                    "data": {
-                      "content": "tags"
-                    },
                     "content": [
-                      {
-                        "tag": "span",
-                        "content": "vt",
-                        "title": "transitive verb",
-                        "data": {
-                          "content": "tag",
-                          "category": "partOfSpeech"
-                        }
-                      }
-                    ]
-                  },
-                  "To raise (a lawsuit, charges, etc.) against somebody."
-                ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
-              {
-                "tag": "div",
-                "content": [
-                  "To persuade; to induce; to draw; to lead; to guide."
-                ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
-              {
-                "tag": "div",
-                "content": [
-                  "To produce in exchange; to sell for; to fetch.",
-                  {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-examples"
-                    },
-                    "content": [
-                      {
-                        "tag": "summary",
-                        "data": {
-                          "content": "summary-entry"
-                        },
-                        "content": "1 example"
-                      },
                       {
                         "tag": "div",
                         "data": {
-                          "content": "extra-info"
+                          "content": "tags"
                         },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "vt",
+                            "title": "transitive verb",
+                            "data": {
+                              "content": "tag",
+                              "category": "partOfSpeech"
+                            }
+                          }
+                        ]
+                      },
+                      "To raise (a lawsuit, charges, etc.) against somebody."
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "To persuade; to induce; to draw; to lead; to guide."
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "To produce in exchange; to sell for; to fetch.",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 example"
                           },
-                          "content": [
-                            {
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
                               "tag": "div",
                               "data": {
-                                "content": "example-sentence-a"
+                                "content": "example-sentence"
                               },
-                              "content": "What does coal bring per ton?"
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "What does coal bring per ton?"
+                                }
+                              ]
                             }
-                          ]
-                        }
+                          }
+                        ]
                       }
                     ]
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
+              },
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
-                  "(baseball) To pitch, often referring to a particularly hard thrown fastball.",
                   {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-examples"
-                    },
+                    "tag": "div",
                     "content": [
+                      "(baseball) To pitch, often referring to a particularly hard thrown fastball.",
                       {
-                        "tag": "summary",
+                        "tag": "details",
                         "data": {
-                          "content": "summary-entry"
+                          "content": "details-entry-examples"
                         },
-                        "content": "1 example"
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "extra-info"
-                        },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 example"
                           },
-                          "content": [
-                            {
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
                               "tag": "div",
                               "data": {
-                                "content": "example-sentence-a"
+                                "content": "example-sentence"
                               },
-                              "content": "The closer Jones can really bring it."
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "The closer Jones can really bring it."
+                                }
+                              ]
                             }
-                          ]
-                        }
+                          }
+                        ]
                       }
                     ]
                   }
@@ -420,11 +443,26 @@
                 },
                 "content": [
                   {
-                    "tag": "div",
+                    "tag": "details",
                     "data": {
-                      "content": "head-info"
+                      "content": "details-entry-Grammar"
                     },
-                    "content": "wain (plural wains)"
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Grammar"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Grammar-content"
+                        },
+                        "content": "wain (plural wains)"
+                      }
+                    ]
                   },
                   {
                     "tag": "details",
@@ -453,45 +491,53 @@
             ]
           },
           {
-            "tag": "div",
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
             "content": [
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
-                  "A wagon; a four-wheeled cart for hauling loads, usually pulled by horses or oxen.",
                   {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-examples"
-                    },
+                    "tag": "div",
                     "content": [
+                      "A wagon; a four-wheeled cart for hauling loads, usually pulled by horses or oxen.",
                       {
-                        "tag": "summary",
+                        "tag": "details",
                         "data": {
-                          "content": "summary-entry"
+                          "content": "details-entry-examples"
                         },
-                        "content": "1 example"
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "extra-info"
-                        },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 example"
                           },
-                          "content": [
-                            {
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
                               "tag": "div",
                               "data": {
-                                "content": "example-sentence-a"
+                                "content": "example-sentence"
                               },
-                              "content": "\"The Hay Wain\" is a famous painting by John Constable."
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "\"The Hay Wain\" is a famous painting by John Constable."
+                                }
+                              ]
                             }
-                          ]
-                        }
+                          }
+                        ]
                       }
                     ]
                   }
@@ -525,11 +571,26 @@
                 },
                 "content": [
                   {
-                    "tag": "div",
+                    "tag": "details",
                     "data": {
-                      "content": "head-info"
+                      "content": "details-entry-Grammar"
                     },
-                    "content": "falcon (plural falcons)"
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Grammar"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Grammar-content"
+                        },
+                        "content": "falcon (plural falcons)"
+                      }
+                    ]
                   },
                   {
                     "tag": "details",
@@ -558,51 +619,59 @@
             ]
           },
           {
-            "tag": "div",
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
             "content": [
               {
-                "tag": "div",
-                "content": [
-                  "Any bird of the genus Falco, all of which are birds of prey."
-                ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
-              {
-                "tag": "div",
-                "content": [
-                  "(falconry) A female such bird, a male being a tiercel."
-                ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
-              {
-                "tag": "div",
+                "tag": "li",
                 "content": [
                   {
                     "tag": "div",
-                    "data": {
-                      "content": "tags"
-                    },
+                    "content": [
+                      "Any bird of the genus Falco, all of which are birds of prey."
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "(falconry) A female such bird, a male being a tiercel."
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
                     "content": [
                       {
-                        "tag": "span",
-                        "content": "hist",
-                        "title": "historical",
+                        "tag": "div",
                         "data": {
-                          "content": "tag",
-                          "category": ""
-                        }
-                      }
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "hist",
+                            "title": "historical",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            }
+                          }
+                        ]
+                      },
+                      "A light cannon used from the 15th to the 17th century; a falconet."
                     ]
-                  },
-                  "A light cannon used from the 15th to the 17th century; a falconet."
+                  }
                 ]
               }
             ]

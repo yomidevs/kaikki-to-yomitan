@@ -45,45 +45,74 @@
             ]
           },
           {
-            "tag": "div",
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
             "content": [
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
-                  "populäre Musikrichtung, die Anfang der 1950er Jahre in den USA entstand",
                   {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-examples"
-                    },
+                    "tag": "div",
                     "content": [
+                      "populäre Musikrichtung, die Anfang der 1950er Jahre in den USA entstand",
                       {
-                        "tag": "summary",
+                        "tag": "details",
                         "data": {
-                          "content": "summary-entry"
+                          "content": "details-entry-examples"
                         },
-                        "content": "1 Beispiel"
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "extra-info"
-                        },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "2 Beispiele"
                           },
-                          "content": [
-                            {
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
                               "tag": "div",
                               "data": {
-                                "content": "example-sentence-a"
+                                "content": "example-sentence"
                               },
-                              "content": "Der Rock ist nicht totzukriegen."
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Der Rock ist nicht totzukriegen."
+                                }
+                              ]
                             }
-                          ]
-                        }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Sindbad band sich, um seinem Schicksal auf einer abgelegenen Insel zu entkommen, an ein Bein des Vogels Rock."
+                                }
+                              ]
+                            }
+                          }
+                        ]
                       }
                     ]
                   }
@@ -108,12 +137,56 @@
         "type": "structured-content",
         "content": [
           {
-            "tag": "div",
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
             "content": [
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
-                  "in arabischen Märchen: flugfähiger Vogel in der Größe eines Elefanten"
+                  {
+                    "tag": "div",
+                    "content": [
+                      "in arabischen Märchen: flugfähiger Vogel in der Größe eines Elefanten",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 Beispiel"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Sindbad band sich, um seinem Schicksal auf einer abgelegenen Insel zu entkommen, an ein Bein des Vogels Rock."
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
                 ]
               }
             ]
@@ -170,192 +243,305 @@
             ]
           },
           {
-            "tag": "div",
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
             "content": [
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
-                  "Raum zum dauerhaften Ab- und Unterstellen von Kraftfahrzeugen",
                   {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-examples"
-                    },
+                    "tag": "div",
                     "content": [
+                      "Raum zum dauerhaften Ab- und Unterstellen von Kraftfahrzeugen",
                       {
-                        "tag": "summary",
+                        "tag": "details",
                         "data": {
-                          "content": "summary-entry"
+                          "content": "details-entry-examples"
                         },
-                        "content": "2 Beispiele"
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "extra-info"
-                        },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "5 Beispiele"
                           },
-                          "content": [
-                            {
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
                               "tag": "div",
                               "data": {
-                                "content": "example-sentence-a"
+                                "content": "example-sentence"
                               },
-                              "content": "Ich werde das Auto in die Garage schaffen."
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Ich werde das Auto in die Garage schaffen."
+                                }
+                              ]
                             }
-                          ]
-                        }
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "extra-info"
-                        },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
                           },
-                          "content": [
-                            {
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
                               "tag": "div",
                               "data": {
-                                "content": "example-sentence-a"
+                                "content": "example-sentence"
                               },
-                              "content": "„Ein Mann steht vor seinem Opel allein in einer Garage.“"
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "„Ein Mann steht vor seinem Opel allein in einer Garage.“"
+                                }
+                              ]
                             }
-                          ]
-                        }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "„Leo stand schon draußen vor der Garage und blickte ängstlich auf seine Armbanduhr.“"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "„Als ich zur Garage gehe, sehe ich die Post auf dem Wohnzimmertisch.“"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "„Er ging zur Garage, um nach Guiseppe zu sehen.“"
+                                }
+                              ]
+                            }
+                          }
+                        ]
                       }
                     ]
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
+              },
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
-                  "Raum zum kurzfristigen Ab- und Unterstellen von Kraftfahrzeugen",
                   {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-examples"
-                    },
+                    "tag": "div",
                     "content": [
+                      "Raum zum kurzfristigen Ab- und Unterstellen von Kraftfahrzeugen",
                       {
-                        "tag": "summary",
+                        "tag": "details",
                         "data": {
-                          "content": "summary-entry"
+                          "content": "details-entry-examples"
                         },
-                        "content": "2 Beispiele"
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "extra-info"
-                        },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "4 Beispiele"
                           },
-                          "content": [
-                            {
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
                               "tag": "div",
                               "data": {
-                                "content": "example-sentence-a"
+                                "content": "example-sentence"
                               },
-                              "content": "„Ein Mann steht vor seinem Opel allein in einer Garage.“"
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "„Ein Mann steht vor seinem Opel allein in einer Garage.“"
+                                }
+                              ]
                             }
-                          ]
-                        }
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "extra-info"
-                        },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
                           },
-                          "content": [
-                            {
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
                               "tag": "div",
                               "data": {
-                                "content": "example-sentence-a"
+                                "content": "example-sentence"
                               },
-                              "content": "„Leo stand schon draußen vor der Garage und blickte ängstlich auf seine Armbanduhr.“"
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "„Leo stand schon draußen vor der Garage und blickte ängstlich auf seine Armbanduhr.“"
+                                }
+                              ]
                             }
-                          ]
-                        }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "„Als ich zur Garage gehe, sehe ich die Post auf dem Wohnzimmertisch.“"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "„Er ging zur Garage, um nach Guiseppe zu sehen.“"
+                                }
+                              ]
+                            }
+                          }
+                        ]
                       }
                     ]
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
+              },
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
-                  "auf die Reparatur und Wartung von Automobilen ausgerichtete Werkstatt"
-                ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
-              {
-                "tag": "div",
-                "content": [
-                  "Geschäft, das sowohl als eine auf die Reparatur von Kraftfahrzeugen spezialisierte Werkstatt als auch als Verkaufslokal von Kraftfahrzeugen dient",
                   {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-examples"
-                    },
+                    "tag": "div",
                     "content": [
+                      "auf die Reparatur und Wartung von Automobilen ausgerichtete Werkstatt"
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "Geschäft, das sowohl als eine auf die Reparatur von Kraftfahrzeugen spezialisierte Werkstatt als auch als Verkaufslokal von Kraftfahrzeugen dient",
                       {
-                        "tag": "summary",
+                        "tag": "details",
                         "data": {
-                          "content": "summary-entry"
+                          "content": "details-entry-examples"
                         },
-                        "content": "1 Beispiel"
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "extra-info"
-                        },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 Beispiel"
                           },
-                          "content": [
-                            {
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
                               "tag": "div",
                               "data": {
-                                "content": "example-sentence-a"
+                                "content": "example-sentence"
                               },
-                              "content": "„Selbstverständlich werden in der Garage auch künftig Fremdmarken repariert.“"
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "„Selbstverständlich werden in der Garage auch künftig Fremdmarken repariert.“"
+                                }
+                              ]
                             }
-                          ]
-                        }
+                          }
+                        ]
                       }
                     ]
                   }

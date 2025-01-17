@@ -38,15 +38,17 @@ summary[data-sc-content="summary-entry"] {
     width: max-content;
     padding: 0.1em 0.2em;
 }
-ul.gloss-list[data-count="1"] summary[data-sc-content="summary-entry"] {
-    list-style-position: inside;
+ol[data-sc-content="glosses"] {
+    list-style-type: upper-roman;
 }
-summary[data-sc-content="summary-entry"]::marker {
+[data-sc-content="summary-entry"]::marker {
     color: var(--checkbox-disabled-color);
 }
 summary[data-sc-content="summary-entry"] {
+    list-style-position: inside;
     color: var(--text-color-light4);
 }
+details[data-sc-content^="details-entry-Grammar"] summary[data-sc-content="summary-entry"],
 details[data-sc-content^="details-entry-Etymology"] summary[data-sc-content="summary-entry"],
 details[data-sc-content^="details-entry-Morphemes"] summary[data-sc-content="summary-entry"] {
     font-weight: bold;

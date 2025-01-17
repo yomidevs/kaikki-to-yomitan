@@ -19,11 +19,26 @@
                 },
                 "content": [
                   {
-                    "tag": "div",
+                    "tag": "details",
                     "data": {
-                      "content": "head-info"
+                      "content": "details-entry-Grammar"
                     },
-                    "content": "снег • (sneg) m inan (genitive сне́га, nominative plural снега́, genitive plural снего́в, relational adjective сне́жный or снегово́й, diminutive снежо́к)"
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Grammar"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Grammar-content"
+                        },
+                        "content": "снег • (sneg) m inan (genitive сне́га, nominative plural снега́, genitive plural снего́в, relational adjective сне́жный or снегово́й, diminutive снежо́к)"
+                      }
+                    ]
                   },
                   {
                     "tag": "details",
@@ -52,139 +67,231 @@
             ]
           },
           {
-            "tag": "div",
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
             "content": [
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
-                  "snow",
                   {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-examples"
-                    },
+                    "tag": "div",
                     "content": [
+                      "snow",
                       {
-                        "tag": "summary",
+                        "tag": "details",
                         "data": {
-                          "content": "summary-entry"
+                          "content": "details-entry-examples"
                         },
-                        "content": "2 examples"
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "extra-info"
-                        },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
-                          },
-                          "content": [
-                            {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence-a"
-                              },
-                              "content": "идёт снег"
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
                             },
-                            {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence-b"
-                              },
-                              "content": "it is snowing"
-                            }
-                          ]
-                        }
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "extra-info"
-                        },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
+                            "content": "5 examples"
                           },
-                          "content": [
-                            {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence-a"
-                              },
-                              "content": "мо́крый снег"
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
                             },
-                            {
+                            "content": {
                               "tag": "div",
                               "data": {
-                                "content": "example-sentence-b"
+                                "content": "example-sentence"
                               },
-                              "content": "sleet, wet snow"
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "идёт снег"
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "it is snowing"
+                                }
+                              ]
                             }
-                          ]
-                        }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "мо́крый снег"
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "sleet, wet snow"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "пе́рвый снег"
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "the first snow"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "ски́дывать/ски́нуть снег с кры́ши"
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "to throw the snow off the roof"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Дава́й поваля́емся в снегу́!"
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "Let's roll in the snow!"
+                                }
+                              ]
+                            }
+                          }
+                        ]
                       }
                     ]
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
+              },
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
                   {
                     "tag": "div",
-                    "data": {
-                      "content": "tags"
-                    },
                     "content": [
                       {
-                        "tag": "span",
-                        "content": "fig",
-                        "title": "figuratively",
+                        "tag": "div",
                         "data": {
-                          "content": "tag",
-                          "category": ""
-                        }
-                      }
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "fig",
+                            "title": "figuratively",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            }
+                          }
+                        ]
+                      },
+                      "snow, the white electrical noise on a TV set when there is no TV signal"
                     ]
-                  },
-                  "snow, the white electrical noise on a TV set when there is no TV signal"
+                  }
                 ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
+              },
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
                   {
                     "tag": "div",
-                    "data": {
-                      "content": "tags"
-                    },
                     "content": [
                       {
-                        "tag": "span",
-                        "content": "sl",
-                        "title": "slang",
+                        "tag": "div",
                         "data": {
-                          "content": "tag",
-                          "category": ""
-                        }
-                      }
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "sl",
+                            "title": "slang",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            }
+                          }
+                        ]
+                      },
+                      "cocaine"
                     ]
-                  },
-                  "cocaine"
+                  }
                 ]
               }
             ]
@@ -215,11 +322,26 @@
                 },
                 "content": [
                   {
-                    "tag": "div",
+                    "tag": "details",
                     "data": {
-                      "content": "head-info"
+                      "content": "details-entry-Grammar"
                     },
-                    "content": "побеле́ть • (pobelétʹ) pf (imperfective беле́ть)"
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Grammar"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Grammar-content"
+                        },
+                        "content": "побеле́ть • (pobelétʹ) pf (imperfective беле́ть)"
+                      }
+                    ]
                   },
                   {
                     "tag": "details",
@@ -248,105 +370,113 @@
             ]
           },
           {
-            "tag": "div",
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
             "content": [
               {
-                "tag": "div",
-                "content": [
-                  "to turn white, (intransitive) to whiten"
-                ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
-              {
-                "tag": "div",
+                "tag": "li",
                 "content": [
                   {
                     "tag": "div",
-                    "data": {
-                      "content": "tags"
-                    },
                     "content": [
-                      {
-                        "tag": "span",
-                        "content": "col",
-                        "title": "colloquial",
-                        "data": {
-                          "content": "tag",
-                          "category": ""
-                        }
-                      }
+                      "to turn white, (intransitive) to whiten"
                     ]
-                  },
-                  "to turn gray"
+                  }
                 ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
+              },
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
                   {
                     "tag": "div",
-                    "data": {
-                      "content": "tags"
-                    },
                     "content": [
                       {
-                        "tag": "span",
-                        "content": "col",
-                        "title": "colloquial",
+                        "tag": "div",
                         "data": {
-                          "content": "tag",
-                          "category": ""
-                        }
-                      }
-                    ]
-                  },
-                  "to become brighter"
-                ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
-              {
-                "tag": "div",
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "tags"
-                    },
-                    "content": [
-                      {
-                        "tag": "span",
-                        "content": "col",
-                        "title": "colloquial",
-                        "data": {
-                          "content": "tag",
-                          "category": ""
-                        }
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "col",
+                            "title": "colloquial",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            }
+                          }
+                        ]
                       },
-                      {
-                        "tag": "span",
-                        "content": "impers",
-                        "title": "impersonal",
-                        "data": {
-                          "content": "tag",
-                          "category": ""
-                        }
-                      }
+                      "to turn gray"
                     ]
-                  },
-                  "to dawn"
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "col",
+                            "title": "colloquial",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            }
+                          }
+                        ]
+                      },
+                      "to become brighter"
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "col",
+                            "title": "colloquial",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            }
+                          },
+                          {
+                            "tag": "span",
+                            "content": "impers",
+                            "title": "impersonal",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            }
+                          }
+                        ]
+                      },
+                      "to dawn"
+                    ]
+                  }
                 ]
               }
             ]
@@ -377,11 +507,26 @@
                 },
                 "content": [
                   {
-                    "tag": "div",
+                    "tag": "details",
                     "data": {
-                      "content": "head-info"
+                      "content": "details-entry-Grammar"
                     },
-                    "content": "зи́мний • (zímnij)"
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Grammar"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Grammar-content"
+                        },
+                        "content": "зи́мний • (zímnij)"
+                      }
+                    ]
                   },
                   {
                     "tag": "details",
@@ -432,83 +577,91 @@
             ]
           },
           {
-            "tag": "div",
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
             "content": [
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
                   {
                     "tag": "div",
-                    "data": {
-                      "content": "tags"
-                    },
                     "content": [
-                      {
-                        "tag": "span",
-                        "content": "reltnl",
-                        "title": "relational",
-                        "data": {
-                          "content": "tag",
-                          "category": ""
-                        }
-                      }
-                    ]
-                  },
-                  "winter",
-                  {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-examples"
-                    },
-                    "content": [
-                      {
-                        "tag": "summary",
-                        "data": {
-                          "content": "summary-entry"
-                        },
-                        "content": "1 example"
-                      },
                       {
                         "tag": "div",
                         "data": {
-                          "content": "extra-info"
+                          "content": "tags"
                         },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
-                          },
-                          "content": [
-                            {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence-a"
-                              },
-                              "content": "Зи́мний дворе́ц"
-                            },
-                            {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence-b"
-                              },
-                              "content": "Winter palace"
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "reltnl",
+                            "title": "relational",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
                             }
-                          ]
-                        }
+                          }
+                        ]
+                      },
+                      "winter",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 example"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Зи́мний дворе́ц"
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "Winter palace"
+                                }
+                              ]
+                            }
+                          }
+                        ]
                       }
                     ]
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
+              },
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
-                  "wintry, hibernal"
+                  {
+                    "tag": "div",
+                    "content": [
+                      "wintry, hibernal"
+                    ]
+                  }
                 ]
               }
             ]
