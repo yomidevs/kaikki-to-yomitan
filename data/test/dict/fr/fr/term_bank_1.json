@@ -10,141 +10,170 @@
         "type": "structured-content",
         "content": [
           {
-            "tag": "div",
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
             "content": [
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
-                  "Dans la religion hindouiste, chacune des incarnations du dieu Vishnou."
-                ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
-              {
-                "tag": "div",
-                "content": [
-                  "Métamorphose, transformation d’un objet ou d’un individu qui en a déjà subi plusieurs.",
                   {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-examples"
-                    },
+                    "tag": "div",
                     "content": [
+                      "Dans la religion hindouiste, chacune des incarnations du dieu Vishnou."
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "Métamorphose, transformation d’un objet ou d’un individu qui en a déjà subi plusieurs.",
                       {
-                        "tag": "summary",
+                        "tag": "details",
                         "data": {
-                          "content": "summary-entry"
+                          "content": "details-entry-examples"
                         },
-                        "content": "2 exemples"
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "extra-info"
-                        },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "3 exemples"
                           },
-                          "content": [
-                            {
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
                               "tag": "div",
                               "data": {
-                                "content": "example-sentence-a"
+                                "content": "example-sentence"
                               },
-                              "content": "Que d’avatars dans la vie politique de cet homme d’État !"
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Que d’avatars dans la vie politique de cet homme d’État !"
+                                }
+                              ]
                             }
-                          ]
-                        }
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "extra-info"
-                        },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
                           },
-                          "content": [
-                            {
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
                               "tag": "div",
                               "data": {
-                                "content": "example-sentence-a"
+                                "content": "example-sentence"
                               },
-                              "content": "Batman est l’avatar moderne de Zorro."
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Batman est l’avatar moderne de Zorro."
+                                }
+                              ]
                             }
-                          ]
-                        }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "L’espéranto est l’avatar moderne du sanskrit."
+                                }
+                              ]
+                            }
+                          }
+                        ]
                       }
                     ]
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
+              },
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
                   {
                     "tag": "div",
-                    "data": {
-                      "content": "tags"
-                    },
                     "content": [
-                      {
-                        "tag": "span",
-                        "content": "tort",
-                        "title": "Utilisé à tort",
-                        "data": {
-                          "content": "tag",
-                          "category": ""
-                        }
-                      }
-                    ]
-                  },
-                  "Mésaventure, malheur.",
-                  {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-examples"
-                    },
-                    "content": [
-                      {
-                        "tag": "summary",
-                        "data": {
-                          "content": "summary-entry"
-                        },
-                        "content": "1 exemple"
-                      },
                       {
                         "tag": "div",
                         "data": {
-                          "content": "extra-info"
+                          "content": "tags"
                         },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "tort",
+                            "title": "Utilisé à tort",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            }
+                          }
+                        ]
+                      },
+                      "Mésaventure, malheur.",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 exemple"
                           },
-                          "content": [
-                            {
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
                               "tag": "div",
                               "data": {
-                                "content": "example-sentence-a"
+                                "content": "example-sentence"
                               },
-                              "content": "Le service social du travail – Avatars d’une fonction, vicissitudes d’un métier"
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Le service social du travail – Avatars d’une fonction, vicissitudes d’un métier"
+                                }
+                              ]
                             }
-                          ]
-                        }
+                          }
+                        ]
                       }
                     ]
                   }

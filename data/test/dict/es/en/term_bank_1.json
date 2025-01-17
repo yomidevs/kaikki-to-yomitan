@@ -19,11 +19,26 @@
                 },
                 "content": [
                   {
-                    "tag": "div",
+                    "tag": "details",
                     "data": {
-                      "content": "head-info"
+                      "content": "details-entry-Grammar"
                     },
-                    "content": "vivir (first-person singular present vivo, first-person singular preterite viví, past participle vivido)"
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Grammar"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Grammar-content"
+                        },
+                        "content": "vivir (first-person singular present vivo, first-person singular preterite viví, past participle vivido)"
+                      }
+                    ]
                   },
                   {
                     "tag": "details",
@@ -52,227 +67,235 @@
             ]
           },
           {
-            "tag": "div",
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
             "content": [
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
                   {
                     "tag": "div",
-                    "data": {
-                      "content": "tags"
-                    },
                     "content": [
-                      {
-                        "tag": "span",
-                        "content": "vi",
-                        "title": "intransitive verb",
-                        "data": {
-                          "content": "tag",
-                          "category": "partOfSpeech"
-                        }
-                      }
-                    ]
-                  },
-                  "to live; to be alive"
-                ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
-              {
-                "tag": "div",
-                "content": [
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "tags"
-                    },
-                    "content": [
-                      {
-                        "tag": "span",
-                        "content": "vi",
-                        "title": "intransitive verb",
-                        "data": {
-                          "content": "tag",
-                          "category": "partOfSpeech"
-                        }
-                      }
-                    ]
-                  },
-                  "to make a living, to live on",
-                  {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-examples"
-                    },
-                    "content": [
-                      {
-                        "tag": "summary",
-                        "data": {
-                          "content": "summary-entry"
-                        },
-                        "content": "1 example"
-                      },
                       {
                         "tag": "div",
                         "data": {
-                          "content": "extra-info"
+                          "content": "tags"
                         },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
-                          },
-                          "content": [
-                            {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence-a"
-                              },
-                              "content": "Vive de migas, nada más."
-                            },
-                            {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence-b"
-                              },
-                              "content": "He lives on crumbs, nothing more."
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "vi",
+                            "title": "intransitive verb",
+                            "data": {
+                              "content": "tag",
+                              "category": "partOfSpeech"
                             }
-                          ]
-                        }
+                          }
+                        ]
+                      },
+                      "to live; to be alive"
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "vi",
+                            "title": "intransitive verb",
+                            "data": {
+                              "content": "tag",
+                              "category": "partOfSpeech"
+                            }
+                          }
+                        ]
+                      },
+                      "to make a living, to live on",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 example"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Vive de migas, nada más."
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "He lives on crumbs, nothing more."
+                                }
+                              ]
+                            }
+                          }
+                        ]
                       }
                     ]
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
+              },
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
                   {
                     "tag": "div",
-                    "data": {
-                      "content": "tags"
-                    },
                     "content": [
-                      {
-                        "tag": "span",
-                        "content": "vi",
-                        "title": "intransitive verb",
-                        "data": {
-                          "content": "tag",
-                          "category": "partOfSpeech"
-                        }
-                      }
-                    ]
-                  },
-                  "to live in, reside, inhabit",
-                  {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-examples"
-                    },
-                    "content": [
-                      {
-                        "tag": "summary",
-                        "data": {
-                          "content": "summary-entry"
-                        },
-                        "content": "2 examples"
-                      },
                       {
                         "tag": "div",
                         "data": {
-                          "content": "extra-info"
+                          "content": "tags"
                         },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
-                          },
-                          "content": [
-                            {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence-a"
-                              },
-                              "content": "Vive en la casa roja."
-                            },
-                            {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence-b"
-                              },
-                              "content": "She lives in the red house."
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "vi",
+                            "title": "intransitive verb",
+                            "data": {
+                              "content": "tag",
+                              "category": "partOfSpeech"
                             }
-                          ]
-                        }
+                          }
+                        ]
                       },
+                      "to live in, reside, inhabit",
                       {
-                        "tag": "div",
+                        "tag": "details",
                         "data": {
-                          "content": "extra-info"
+                          "content": "details-entry-examples"
                         },
-                        "content": {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence"
-                          },
-                          "content": [
-                            {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence-a"
-                              },
-                              "content": "La pobrecita vive con dos hermanas crueles."
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
                             },
-                            {
+                            "content": "2 examples"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
                               "tag": "div",
                               "data": {
-                                "content": "example-sentence-b"
+                                "content": "example-sentence"
                               },
-                              "content": "The poor girl lives with two cruel sisters."
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Vive en la casa roja."
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "She lives in the red house."
+                                }
+                              ]
                             }
-                          ]
-                        }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "La pobrecita vive con dos hermanas crueles."
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "The poor girl lives with two cruel sisters."
+                                }
+                              ]
+                            }
+                          }
+                        ]
                       }
                     ]
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "content": [
+              },
               {
-                "tag": "div",
+                "tag": "li",
                 "content": [
                   {
                     "tag": "div",
-                    "data": {
-                      "content": "tags"
-                    },
                     "content": [
                       {
-                        "tag": "span",
-                        "content": "vt",
-                        "title": "transitive verb",
+                        "tag": "div",
                         "data": {
-                          "content": "tag",
-                          "category": "partOfSpeech"
-                        }
-                      }
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "vt",
+                            "title": "transitive verb",
+                            "data": {
+                              "content": "tag",
+                              "category": "partOfSpeech"
+                            }
+                          }
+                        ]
+                      },
+                      "to experience, to live through"
                     ]
-                  },
-                  "to experience, to live through"
+                  }
                 ]
               }
             ]

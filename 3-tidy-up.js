@@ -323,7 +323,7 @@ function getGlossTree(sensesWithoutInflectionGlosses) {
         examples = examples
             .filter(example => example.text)
             .map(example => standardizeExample(example))
-            .filter(({text, translation}) => text.length <= 70 || text.length <= 90 && !translation)  // Filter out verbose examples
+            .filter(({text}) => text.length <= 120)  // Filter out verbose examples
             .map((example, index) => ({ ...example, originalIndex: index }))  // Step 1: Decorate with original index
             .sort(({ translation: translationA, originalIndex: indexA }, { translation: translationB, originalIndex: indexB }) => {
                 if (translationA && !translationB) return -1;   // translation items first
@@ -331,7 +331,6 @@ function getGlossTree(sensesWithoutInflectionGlosses) {
                 return indexA - indexB;                 // Step 2: Stable sort by original index if equal
             })
             .map(({text, translation}) => ({text, translation}))  // Step 3: Pick only properties that will be used
-            .slice(0, 2);
 
         /** @type {GlossTree|GlossBranch} */
         let temp = glossTree;
