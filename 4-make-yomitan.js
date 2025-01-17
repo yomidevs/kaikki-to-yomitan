@@ -124,10 +124,16 @@ function addStructuredTags(structuredContent, tags){
             "content": "tags"
         },
         "content": tags.map(tag => {
+            const fullTag = Object.entries(ymtTags.dict).find(([key, tagInfo]) => tagInfo[0] === tag)?.[1];
+
             return {
                 "tag": "span",
                 "content": tag,
-                // "title" 
+                "title": fullTag ? fullTag[3] : '',
+                "data": {
+                    "content": "tag",
+                    "category": fullTag ? fullTag[1] : '',
+                }
             }
         })
     }
@@ -325,16 +331,16 @@ function handleLevel(glossBranch, parentTags, pos, depth) {
  * @param {GlossBranch} glossBranch
  * @param {string[]} lemmaTags
  * @param {string} pos
- * @returns {import('types').TermBank.DetailedDefinition[]}
+ * @returns {import('types').TermBank.StructuredContentNode[]}
  */
 function handleNest(glossBranch, lemmaTags, pos) {
-    /** @type {import('types').TermBank.DetailedDefinition[]} */
+    /** @type {import('types').TermBank.StructuredContentNode[]} */
     const glosses = [];
 
     const nestedGloss = handleLevel(glossBranch, lemmaTags, pos, 0);
 
     if (nestedGloss.length > 0) {
-        glosses.push({ "type": "structured-content", "content": nestedGloss });
+        glosses.push({ "tag": "div", "content": nestedGloss });
     }
 
     return glosses;
@@ -410,8 +416,8 @@ let lastTermBankIndex = 0;
                     const foundPos = findPartOfSpeech(pos, partsOfSpeech, skippedPartsOfSpeech);
                     const {glossTree} = info;
 
-                    /** @type {import('types').TermBank.DetailedDefinition[]} */
-                    const entryGlosses = [];
+                    /** @type {import('types').TermBank.StructuredContent}*/
+                    const entryContent = [];
 
                     ipa.push(...info.ipa);
 
@@ -435,12 +441,26 @@ let lastTermBankIndex = 0;
                         const glosses = handleNest(syntheticBranch, commonTags, pos);
                         
                         if(glosses && glosses.length) {
-                            entryGlosses.push(...glosses);
+                            entryContent.push(...glosses);
                         };
                     }
                     
-                    if (!entryGlosses.length) {
+                    if (!entryContent.length) {
                         continue;
+                    }
+
+                    if (info.etymology_text || info.head_info_text || info.morpheme_text) {
+                        const preamble = getStructuredPreamble(info);
+                        entryContent.unshift({
+                            "tag": "div",
+                            content: [preamble]
+                        });
+                    }
+
+                    /** @type {import('types').TermBank.DetailedDefinition}*/
+                    const structuredEntry = {
+                        "type": "structured-content",
+                        "content": entryContent
                     }
 
                     /** @type {import('types').TermBank.TermInformation} */
@@ -450,18 +470,10 @@ let lastTermBankIndex = 0;
                         commonTags.join(' '), // definition_tags
                         foundPos, // rules
                         0, // frequency
-                        entryGlosses, // definitions
+                        [structuredEntry], // definitions
                         0, // sequence
                         '', // term_tags
                     ];
-
-                    if (info.etymology_text || info.head_info_text || info.morpheme_text) {
-                        const preamble = getStructuredPreamble(info);
-                        entry[5].unshift({
-                            type: 'structured-content',
-                            content: [preamble]
-                        });
-                    }
 
                     ymtLemmas.push(entry);
 

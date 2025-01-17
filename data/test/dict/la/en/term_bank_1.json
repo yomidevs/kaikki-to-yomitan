@@ -11,225 +11,230 @@
         "content": [
           {
             "tag": "div",
-            "data": {
-              "content": "preamble"
-            },
             "content": [
               {
                 "tag": "div",
                 "data": {
-                  "content": "head-info"
-                },
-                "content": "fāma f (genitive fāmae); first declension"
-              },
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-Etymology"
+                  "content": "preamble"
                 },
                 "content": [
                   {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "Etymology"
-                  },
-                  {
                     "tag": "div",
                     "data": {
-                      "content": "Etymology-content"
+                      "content": "head-info"
                     },
-                    "content": "From Proto-Italic *fāmā, from Proto-Indo-European *bʰéh₂meh₂, from *bʰeh₂- (“to speak”). Cognate to Ancient Greek φήμη (phḗmē, “talk”)."
+                    "content": "fāma f (genitive fāmae); first declension"
+                  },
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Etymology"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Etymology"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
+                        },
+                        "content": "From Proto-Italic *fāmā, from Proto-Indo-European *bʰéh₂meh₂, from *bʰeh₂- (“to speak”). Cognate to Ancient Greek φήμη (phḗmē, “talk”)."
+                      }
+                    ]
                   }
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
+          },
           {
             "tag": "div",
             "content": [
-              "fame"
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "rumour, talk, opinion, report",
               {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-examples"
-                },
+                "tag": "div",
                 "content": [
+                  "fame"
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "content": [
+                  "rumour, talk, opinion, report",
                   {
-                    "tag": "summary",
+                    "tag": "details",
                     "data": {
-                      "content": "summary-entry"
+                      "content": "details-entry-examples"
                     },
-                    "content": "2 examples"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "extra-info"
-                    },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
-                      },
-                      "content": [
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-a"
-                          },
-                          "content": "hascine propter rēs maledicās fāmās ferunt."
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
                         },
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-b"
-                          },
-                          "content": "Is it on account of these things that they spread slanderous reports?"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "extra-info"
-                    },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
+                        "content": "2 examples"
                       },
-                      "content": [
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-a"
-                          },
-                          "content": "“Oenōtrī coluēre virī; nunc fāma minōrēs"
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
                         },
-                        {
+                        "content": {
                           "tag": "div",
                           "data": {
-                            "content": "example-sentence-b"
+                            "content": "example-sentence"
                           },
-                          "content": "“Oenotrian men tilled [the land]; now rumor [has it that their] descendants call the nation ‘Italy’ after the name of its leader, [Italus].”"
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "hascine propter rēs maledicās fāmās ferunt."
+                            },
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-b"
+                              },
+                              "content": "Is it on account of these things that they spread slanderous reports?"
+                            }
+                          ]
                         }
-                      ]
-                    }
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence"
+                          },
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "“Oenōtrī coluēre virī; nunc fāma minōrēs"
+                            },
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-b"
+                              },
+                              "content": "“Oenotrian men tilled [the land]; now rumor [has it that their] descendants call the nation ‘Italy’ after the name of its leader, [Italus].”"
+                            }
+                          ]
+                        }
+                      }
+                    ]
                   }
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
+          },
           {
             "tag": "div",
             "content": [
-              "reputation",
               {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-examples"
-                },
+                "tag": "div",
                 "content": [
+                  "reputation",
                   {
-                    "tag": "summary",
+                    "tag": "details",
                     "data": {
-                      "content": "summary-entry"
+                      "content": "details-entry-examples"
                     },
-                    "content": "2 examples"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "extra-info"
-                    },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
-                      },
-                      "content": [
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-a"
-                          },
-                          "content": "Dīmīcantī dē fāmā dēesse."
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
                         },
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-b"
-                          },
-                          "content": "To abandon one whose reputation is attacked."
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "extra-info"
-                    },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
+                        "content": "2 examples"
                       },
-                      "content": [
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-a"
-                          },
-                          "content": "Fāma tamen clāra est; et adhūc sine crīmine vīxī."
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
                         },
-                        {
+                        "content": {
                           "tag": "div",
                           "data": {
-                            "content": "example-sentence-b"
+                            "content": "example-sentence"
                           },
-                          "content": "My good name is nevertheless unstained; and so far I have lived without blame."
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "Dīmīcantī dē fāmā dēesse."
+                            },
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-b"
+                              },
+                              "content": "To abandon one whose reputation is attacked."
+                            }
+                          ]
                         }
-                      ]
-                    }
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence"
+                          },
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "Fāma tamen clāra est; et adhūc sine crīmine vīxī."
+                            },
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-b"
+                              },
+                              "content": "My good name is nevertheless unstained; and so far I have lived without blame."
+                            }
+                          ]
+                        }
+                      }
+                    ]
                   }
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
+          },
           {
             "tag": "div",
             "content": [
-              "Fama, personified as a fast-moving, malicious goddess, the daughter of Terra. From the Greek φήμη, Pheme. Typically translated from the Latin as “Rumor.”"
+              {
+                "tag": "div",
+                "content": [
+                  "Fama, personified as a fast-moving, malicious goddess, the daughter of Terra. From the Greek φήμη, Pheme. Typically translated from the Latin as “Rumor.”"
+                ]
+              }
             ]
           }
         ]
@@ -250,199 +255,209 @@
         "content": [
           {
             "tag": "div",
-            "data": {
-              "content": "preamble"
-            },
             "content": [
               {
                 "tag": "div",
                 "data": {
-                  "content": "head-info"
-                },
-                "content": "legō (present infinitive legere, perfect active lēgī, supine lēctum); third conjugation"
-              },
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-Etymology"
+                  "content": "preamble"
                 },
                 "content": [
                   {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "Etymology"
-                  },
-                  {
                     "tag": "div",
                     "data": {
-                      "content": "Etymology-content"
+                      "content": "head-info"
                     },
-                    "content": "From Proto-Italic *legō, from Proto-Indo-European *leǵ-. Cognates include Ancient Greek λέγω (légō, “I speak, I choose, I mean”) and Albanian mbledh. May be related to lēx."
+                    "content": "legō (present infinitive legere, perfect active lēgī, supine lēctum); third conjugation"
+                  },
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Etymology"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Etymology"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
+                        },
+                        "content": "From Proto-Italic *legō, from Proto-Indo-European *leǵ-. Cognates include Ancient Greek λέγω (légō, “I speak, I choose, I mean”) and Albanian mbledh. May be related to lēx."
+                      }
+                    ]
                   }
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "to choose, select"
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "to appoint"
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "to collect, gather, bring together"
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "to take out, pick out, extract, remove"
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "to take to one's self unjustly, carry off, steal, purloin, plunder, abstract"
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "to read",
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-examples"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "2 examples"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "extra-info"
-                    },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
-                      },
-                      "content": [
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-a"
-                          },
-                          "content": "Librōs lege."
-                        },
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-b"
-                          },
-                          "content": "Read books."
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "extra-info"
-                    },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
-                      },
-                      "content": [
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-a"
-                          },
-                          "content": "Lēgistīne hunc librum?"
-                        },
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-b"
-                          },
-                          "content": "Have you read this book?"
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
+          },
           {
             "tag": "div",
             "content": [
               {
                 "tag": "div",
-                "data": {
-                  "content": "tags"
-                },
                 "content": [
+                  "to choose, select"
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "content": [
+                  "to appoint"
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "content": [
+                  "to collect, gather, bring together"
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "content": [
+                  "to take out, pick out, extract, remove"
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "content": [
+                  "to take to one's self unjustly, carry off, steal, purloin, plunder, abstract"
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "content": [
+                  "to read",
                   {
-                    "tag": "span",
-                    "content": "Medieval"
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-examples"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "2 examples"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence"
+                          },
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "Librōs lege."
+                            },
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-b"
+                              },
+                              "content": "Read books."
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence"
+                          },
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "Lēgistīne hunc librum?"
+                            },
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-b"
+                              },
+                              "content": "Have you read this book?"
+                            }
+                          ]
+                        }
+                      }
+                    ]
                   }
                 ]
-              },
-              "to teach, profess"
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "tags"
+                    },
+                    "content": [
+                      {
+                        "tag": "span",
+                        "content": "Medieval",
+                        "title": "Medieval Latin",
+                        "data": {
+                          "content": "tag",
+                          "category": ""
+                        }
+                      }
+                    ]
+                  },
+                  "to teach, profess"
+                ]
+              }
             ]
           }
         ]
@@ -463,50 +478,55 @@
         "content": [
           {
             "tag": "div",
-            "data": {
-              "content": "preamble"
-            },
             "content": [
               {
                 "tag": "div",
                 "data": {
-                  "content": "head-info"
-                },
-                "content": "līlium n (genitive līliī or līlī); second declension"
-              },
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-Etymology"
+                  "content": "preamble"
                 },
                 "content": [
                   {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "Etymology"
-                  },
-                  {
                     "tag": "div",
                     "data": {
-                      "content": "Etymology-content"
+                      "content": "head-info"
                     },
-                    "content": "From Ancient Greek λείριον (leírion), from Fayyumic Coptic ϩⲗⲏⲣⲓ (hlēri), from Demotic (ḥrry), from Egyptian D2:D21-D21:X1-M2 (ḥrrt, “flower”).\nPerhaps also the root of Sanskrit हली (halī), हलिनी (halinī, “lily”)."
+                    "content": "līlium n (genitive līliī or līlī); second declension"
+                  },
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Etymology"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Etymology"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
+                        },
+                        "content": "From Ancient Greek λείριον (leírion), from Fayyumic Coptic ϩⲗⲏⲣⲓ (hlēri), from Demotic (ḥrry), from Egyptian D2:D21-D21:X1-M2 (ḥrrt, “flower”).\nPerhaps also the root of Sanskrit हली (halī), हलिनी (halinī, “lily”)."
+                      }
+                    ]
                   }
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
+          },
           {
             "tag": "div",
             "content": [
-              "a lily"
+              {
+                "tag": "div",
+                "content": [
+                  "a lily"
+                ]
+              }
             ]
           }
         ]
@@ -527,112 +547,117 @@
         "content": [
           {
             "tag": "div",
-            "data": {
-              "content": "preamble"
-            },
             "content": [
               {
                 "tag": "div",
                 "data": {
-                  "content": "head-info"
-                },
-                "content": "ū̆sque (not comparable)"
-              },
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-Etymology"
+                  "content": "preamble"
                 },
                 "content": [
                   {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "Etymology"
-                  },
-                  {
                     "tag": "div",
                     "data": {
-                      "content": "Etymology-content"
+                      "content": "head-info"
                     },
-                    "content": "From Proto-Italic *ū̆skʷe, from Proto-Indo-European *úds-kʷe, from *úd-s (“out, outward”, genitive) + *-kʷe (“and”). Cognate with Sanskrit उच्चा (uccā́), Younger Avestan 𐬎𐬯𐬗𐬀 (usca, “up, out”), Russian вы- (vy-, “out from”), Proto-Germanic *ūt, English out."
+                    "content": "ū̆sque (not comparable)"
+                  },
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Etymology"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Etymology"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
+                        },
+                        "content": "From Proto-Italic *ū̆skʷe, from Proto-Indo-European *úds-kʷe, from *úd-s (“out, outward”, genitive) + *-kʷe (“and”). Cognate with Sanskrit उच्चा (uccā́), Younger Avestan 𐬎𐬯𐬗𐬀 (usca, “up, out”), Russian вы- (vy-, “out from”), Proto-Germanic *ūt, English out."
+                      }
+                    ]
                   }
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
+          },
           {
             "tag": "div",
             "content": [
-              "all the way"
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "until, up to (sometimes with \"ad\")"
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "constantly, continuously",
               {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-examples"
-                },
+                "tag": "div",
                 "content": [
+                  "all the way"
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "content": [
+                  "until, up to (sometimes with \"ad\")"
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "content": [
+                  "constantly, continuously",
                   {
-                    "tag": "summary",
+                    "tag": "details",
                     "data": {
-                      "content": "summary-entry"
+                      "content": "details-entry-examples"
                     },
-                    "content": "1 example"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "extra-info"
-                    },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
-                      },
-                      "content": [
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-a"
-                          },
-                          "content": "ab ōvō ū̆sque ad māla"
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
                         },
-                        {
+                        "content": "1 example"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
                           "tag": "div",
                           "data": {
-                            "content": "example-sentence-b"
+                            "content": "example-sentence"
                           },
-                          "content": "from the beginning to the end\n(literally, “from the egg to the apples”)"
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "ab ōvō ū̆sque ad māla"
+                            },
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-b"
+                              },
+                              "content": "from the beginning to the end\n(literally, “from the egg to the apples”)"
+                            }
+                          ]
                         }
-                      ]
-                    }
+                      }
+                    ]
                   }
                 ]
               }
@@ -656,155 +681,160 @@
         "content": [
           {
             "tag": "div",
-            "data": {
-              "content": "preamble"
-            },
             "content": [
               {
                 "tag": "div",
                 "data": {
-                  "content": "head-info"
-                },
-                "content": "rēctus (feminine rēcta, neuter rēctum, comparative rēctior, superlative rēctissimus, adverb rēctē); first/second-declension participle"
-              },
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-Etymology"
+                  "content": "preamble"
                 },
                 "content": [
                   {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "Etymology"
-                  },
-                  {
                     "tag": "div",
                     "data": {
-                      "content": "Etymology-content"
+                      "content": "head-info"
                     },
-                    "content": "Perfect passive participle of regō (“to keep or lead straight, to guide”). Corresponds to Proto-Indo-European *h₃reǵtós (“having moved in a straight line”), from Proto-Indo-European *h₃reǵ- (“to straighten, direct”)."
+                    "content": "rēctus (feminine rēcta, neuter rēctum, comparative rēctior, superlative rēctissimus, adverb rēctē); first/second-declension participle"
+                  },
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Etymology"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Etymology"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
+                        },
+                        "content": "Perfect passive participle of regō (“to keep or lead straight, to guide”). Corresponds to Proto-Indo-European *h₃reǵtós (“having moved in a straight line”), from Proto-Indo-European *h₃reǵ- (“to straighten, direct”)."
+                      }
+                    ]
                   }
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
+          },
           {
             "tag": "div",
             "content": [
-              "led straight along, drawn in a straight line, straight, upright.",
               {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-examples"
-                },
+                "tag": "div",
                 "content": [
+                  "led straight along, drawn in a straight line, straight, upright.",
                   {
-                    "tag": "summary",
+                    "tag": "details",
                     "data": {
-                      "content": "summary-entry"
+                      "content": "details-entry-examples"
                     },
-                    "content": "1 example"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "extra-info"
-                    },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
-                      },
-                      "content": [
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-a"
-                          },
-                          "content": "Quae rectis lineis suos ordines servant"
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
                         },
-                        {
+                        "content": "1 example"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
                           "tag": "div",
                           "data": {
-                            "content": "example-sentence-b"
+                            "content": "example-sentence"
                           },
-                          "content": "Which preserve their order in straight lines"
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "Quae rectis lineis suos ordines servant"
+                            },
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-b"
+                              },
+                              "content": "Which preserve their order in straight lines"
+                            }
+                          ]
                         }
-                      ]
-                    }
+                      }
+                    ]
                   }
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
+          },
           {
             "tag": "div",
             "content": [
-              "(in general) right, correct, proper, appropriate, befitting."
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "(in particular) morally right, correct, lawful, just, virtuous, noble, good, proper, honest.",
               {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-examples"
-                },
+                "tag": "div",
                 "content": [
+                  "(in general) right, correct, proper, appropriate, befitting."
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "content": [
+                  "(in particular) morally right, correct, lawful, just, virtuous, noble, good, proper, honest.",
                   {
-                    "tag": "summary",
+                    "tag": "details",
                     "data": {
-                      "content": "summary-entry"
+                      "content": "details-entry-examples"
                     },
-                    "content": "1 example"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "extra-info"
-                    },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
-                      },
-                      "content": [
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-a"
-                          },
-                          "content": "Via stultī rēcta in oculīs eius; quī autem sapiēns est audit cōnsilia."
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
                         },
-                        {
+                        "content": "1 example"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
                           "tag": "div",
                           "data": {
-                            "content": "example-sentence-b"
+                            "content": "example-sentence"
                           },
-                          "content": "The way of a fool is right in his own eyes: but he that is wise hearkeneth unto counsels. (Douay-Rheims trans., Challoner rev.: 1752 CE)"
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "Via stultī rēcta in oculīs eius; quī autem sapiēns est audit cōnsilia."
+                            },
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-b"
+                              },
+                              "content": "The way of a fool is right in his own eyes: but he that is wise hearkeneth unto counsels. (Douay-Rheims trans., Challoner rev.: 1752 CE)"
+                            }
+                          ]
                         }
-                      ]
-                    }
+                      }
+                    ]
                   }
                 ]
               }
@@ -828,350 +858,365 @@
         "content": [
           {
             "tag": "div",
-            "data": {
-              "content": "preamble"
-            },
             "content": [
               {
                 "tag": "div",
                 "data": {
-                  "content": "head-info"
-                },
-                "content": "domus f (irregular, variously declined, genitive domūs or domī); fourth declension, second declension"
-              },
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-Etymology"
+                  "content": "preamble"
                 },
                 "content": [
                   {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "Etymology"
-                  },
-                  {
                     "tag": "div",
                     "data": {
-                      "content": "Etymology-content"
+                      "content": "head-info"
                     },
-                    "content": "For Proto-Italic *domos, from Proto-Indo-European *dṓm (“house, home”), from root *dem- (“to build”). Cognates include Ancient Greek δόμος (dómos), Albanian dhomë (“a chamber, a room”), Avestan 𐬛𐬀𐬨- (dam-) Sanskrit दम (dáma), Proto-Slavic *domъ and further to English timber. At least indirectly cognate to Latin dominus.\nThe feminine gender is probably due to the original root noun; attempts to transfer it to the 4th declension are due to 2nd declension feminines being unusual outside of tree names. Some manuscripts of Plautus show forms in dem-; De Vaan (2008) doubts their authenticity."
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "house, home (the building where a person lives)",
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-examples"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "2 examples"
+                    "content": "domus f (irregular, variously declined, genitive domūs or domī); fourth declension, second declension"
                   },
                   {
-                    "tag": "div",
+                    "tag": "details",
                     "data": {
-                      "content": "extra-info"
+                      "content": "details-entry-Etymology"
                     },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
-                      },
-                      "content": [
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-a"
-                          },
-                          "content": "Deō domuīque"
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
                         },
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-b"
-                          },
-                          "content": "For God and for home (motto of Methodist Ladies' College, Melbourne)"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "extra-info"
-                    },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
+                        "content": "Etymology"
                       },
-                      "content": [
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-a"
-                          },
-                          "content": "Stet fortūna domūs"
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
                         },
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-b"
-                          },
-                          "content": "Let the good fortune of the house stand (motto of Harrow School, England)"
-                        }
-                      ]
-                    }
+                        "content": "For Proto-Italic *domos, from Proto-Indo-European *dṓm (“house, home”), from root *dem- (“to build”). Cognates include Ancient Greek δόμος (dómos), Albanian dhomë (“a chamber, a room”), Avestan 𐬛𐬀𐬨- (dam-) Sanskrit दम (dáma), Proto-Slavic *domъ and further to English timber. At least indirectly cognate to Latin dominus.\nThe feminine gender is probably due to the original root noun; attempts to transfer it to the 4th declension are due to 2nd declension feminines being unusual outside of tree names. Some manuscripts of Plautus show forms in dem-; De Vaan (2008) doubts their authenticity."
+                      }
+                    ]
                   }
                 ]
               }
             ]
           },
           {
-            "tag": "ul",
-            "content": [
-              {
-                "tag": "li",
-                "content": [
-                  "a townhouse"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
             "tag": "div",
             "content": [
-              "any dwelling-place or abode (of people or animals)"
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "the place of one's birth or residence, native country, town"
-            ]
-          },
-          {
-            "tag": "ul",
-            "content": [
               {
-                "tag": "li",
+                "tag": "div",
                 "content": [
-                  "(also of the shell of invertebrates, tombs of the dead) "
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "household, family (the dependants of the head of a house)"
-            ]
-          },
-          {
-            "tag": "ul",
-            "content": [
-              {
-                "tag": "li",
-                "content": [
-                  "a group of disciples, school; an intellectual movement"
+                  "house, home (the building where a person lives)",
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-examples"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "2 examples"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence"
+                          },
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "Deō domuīque"
+                            },
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-b"
+                              },
+                              "content": "For God and for home (motto of Methodist Ladies' College, Melbourne)"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence"
+                          },
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "Stet fortūna domūs"
+                            },
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-b"
+                              },
+                              "content": "Let the good fortune of the house stand (motto of Harrow School, England)"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
                 ]
               },
               {
-                "tag": "li",
+                "tag": "ul",
                 "content": [
-                  "(monarchy) house, dynasty"
+                  {
+                    "tag": "li",
+                    "content": [
+                      "a townhouse"
+                    ]
+                  }
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
+          },
           {
             "tag": "div",
             "content": [
               {
                 "tag": "div",
-                "data": {
-                  "content": "tags"
-                },
                 "content": [
-                  {
-                    "tag": "span",
-                    "content": "idio"
-                  }
-                ]
-              },
-              "one's own possessions or resources",
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-examples"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "2 examples"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "extra-info"
-                    },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
-                      },
-                      "content": [
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-a"
-                          },
-                          "content": "domum trahere"
-                        },
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-b"
-                          },
-                          "content": "to drag into one's pocket"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "extra-info"
-                    },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
-                      },
-                      "content": [
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-a"
-                          },
-                          "content": "Domī versūra fit."
-                        },
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-b"
-                          },
-                          "content": "One is one's own creditor. (proverb)"
-                        }
-                      ]
-                    }
-                  }
+                  "any dwelling-place or abode (of people or animals)"
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
+          },
           {
             "tag": "div",
             "content": [
               {
                 "tag": "div",
-                "data": {
-                  "content": "tags"
-                },
                 "content": [
-                  {
-                    "tag": "span",
-                    "content": "idio"
-                  }
+                  "the place of one's birth or residence, native country, town"
                 ]
               },
-              "(in locative case in phrases) peace",
               {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-examples"
-                },
+                "tag": "ul",
                 "content": [
                   {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "1 example"
+                    "tag": "li",
+                    "content": [
+                      "(also of the shell of invertebrates, tombs of the dead) "
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "content": [
+                  "household, family (the dependants of the head of a house)"
+                ]
+              },
+              {
+                "tag": "ul",
+                "content": [
+                  {
+                    "tag": "li",
+                    "content": [
+                      "a group of disciples, school; an intellectual movement"
+                    ]
                   },
+                  {
+                    "tag": "li",
+                    "content": [
+                      "(monarchy) house, dynasty"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "content": [
                   {
                     "tag": "div",
                     "data": {
-                      "content": "extra-info"
+                      "content": "tags"
                     },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
-                      },
-                      "content": [
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-a"
-                          },
-                          "content": "ut non quietior populus domi esset quam militiae"
-                        },
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-b"
-                          },
-                          "content": "so that the people should not become lazier in the time of peace than that of war"
+                    "content": [
+                      {
+                        "tag": "span",
+                        "content": "idio",
+                        "title": "idiomatic",
+                        "data": {
+                          "content": "tag",
+                          "category": ""
                         }
-                      ]
-                    }
+                      }
+                    ]
+                  },
+                  "one's own possessions or resources",
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-examples"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "2 examples"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence"
+                          },
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "domum trahere"
+                            },
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-b"
+                              },
+                              "content": "to drag into one's pocket"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence"
+                          },
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "Domī versūra fit."
+                            },
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-b"
+                              },
+                              "content": "One is one's own creditor. (proverb)"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "content": [
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "tags"
+                    },
+                    "content": [
+                      {
+                        "tag": "span",
+                        "content": "idio",
+                        "title": "idiomatic",
+                        "data": {
+                          "content": "tag",
+                          "category": ""
+                        }
+                      }
+                    ]
+                  },
+                  "(in locative case in phrases) peace",
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-examples"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "1 example"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence"
+                          },
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "ut non quietior populus domi esset quam militiae"
+                            },
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-b"
+                              },
+                              "content": "so that the people should not become lazier in the time of peace than that of war"
+                            }
+                          ]
+                        }
+                      }
+                    ]
                   }
                 ]
               }

@@ -11,349 +11,384 @@
         "content": [
           {
             "tag": "div",
-            "data": {
-              "content": "preamble"
-            },
             "content": [
               {
                 "tag": "div",
                 "data": {
-                  "content": "head-info"
-                },
-                "content": "bring (third-person singular simple present brings, present participle bringing, simple past brought, past participle brought or (rare, dialectal) broughten)"
-              },
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-Etymology"
+                  "content": "preamble"
                 },
                 "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "Etymology"
-                  },
                   {
                     "tag": "div",
                     "data": {
-                      "content": "Etymology-content"
+                      "content": "head-info"
                     },
-                    "content": "From Middle English bryngen, from Old English bringan, from Proto-West Germanic *bringan, from Proto-Germanic *bringaną (“to bring”), from Proto-Indo-European *bʰrenk-, possibly based on *bʰer-.\nCompare West Frisian bringe, Low German bringen, Dutch brengen, German bringen; also Welsh hebrwng (“to bring, lead”), Tocharian B pränk- (“to take away; restrain oneself, hold back”), Latvian brankti (“lying close”), Lithuanian branktas (“whiffletree”)."
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              {
-                "tag": "div",
-                "data": {
-                  "content": "tags"
-                },
-                "content": [
-                  {
-                    "tag": "span",
-                    "content": "vdt"
+                    "content": "bring (third-person singular simple present brings, present participle bringing, simple past brought, past participle brought or (rare, dialectal) broughten)"
                   },
                   {
-                    "tag": "span",
-                    "content": "vt"
-                  }
-                ]
-              },
-              "To transport toward somebody/somewhere.",
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-examples"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
+                    "tag": "details",
                     "data": {
-                      "content": "summary-entry"
+                      "content": "details-entry-Etymology"
                     },
-                    "content": "1 example"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "extra-info"
-                    },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Etymology"
                       },
-                      "content": [
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-a"
-                          },
-                          "content": "Waiter, please bring me a single malt whiskey."
-                        }
-                      ]
-                    }
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
+                        },
+                        "content": "From Middle English bryngen, from Old English bringan, from Proto-West Germanic *bringan, from Proto-Germanic *bringaną (“to bring”), from Proto-Indo-European *bʰrenk-, possibly based on *bʰer-.\nCompare West Frisian bringe, Low German bringen, Dutch brengen, German bringen; also Welsh hebrwng (“to bring, lead”), Tocharian B pränk- (“to take away; restrain oneself, hold back”), Latvian brankti (“lying close”), Lithuanian branktas (“whiffletree”)."
+                      }
+                    ]
                   }
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
+          },
           {
             "tag": "div",
             "content": [
               {
                 "tag": "div",
-                "data": {
-                  "content": "tags"
-                },
                 "content": [
-                  {
-                    "tag": "span",
-                    "content": "fig"
-                  },
-                  {
-                    "tag": "span",
-                    "content": "vt"
-                  }
-                ]
-              },
-              "To supply or contribute.",
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-examples"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "1 example"
-                  },
                   {
                     "tag": "div",
                     "data": {
-                      "content": "extra-info"
+                      "content": "tags"
                     },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
+                    "content": [
+                      {
+                        "tag": "span",
+                        "content": "vdt",
+                        "title": "ditransitive verb",
+                        "data": {
+                          "content": "tag",
+                          "category": "partOfSpeech"
+                        }
                       },
-                      "content": [
-                        {
+                      {
+                        "tag": "span",
+                        "content": "vt",
+                        "title": "transitive verb",
+                        "data": {
+                          "content": "tag",
+                          "category": "partOfSpeech"
+                        }
+                      }
+                    ]
+                  },
+                  "To transport toward somebody/somewhere.",
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-examples"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "1 example"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
                           "tag": "div",
                           "data": {
-                            "content": "example-sentence-a"
+                            "content": "example-sentence"
                           },
-                          "content": "The new company director brought a fresh perspective on sales and marketing."
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "Waiter, please bring me a single malt whiskey."
+                            }
+                          ]
                         }
-                      ]
-                    }
+                      }
+                    ]
                   }
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
+          },
           {
             "tag": "div",
             "content": [
               {
                 "tag": "div",
-                "data": {
-                  "content": "tags"
-                },
                 "content": [
-                  {
-                    "tag": "span",
-                    "content": "vt"
-                  }
-                ]
-              },
-              "To occasion or bring about.",
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-examples"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "1 example"
-                  },
                   {
                     "tag": "div",
                     "data": {
-                      "content": "extra-info"
+                      "content": "tags"
                     },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
+                    "content": [
+                      {
+                        "tag": "span",
+                        "content": "fig",
+                        "title": "figuratively",
+                        "data": {
+                          "content": "tag",
+                          "category": ""
+                        }
                       },
-                      "content": [
-                        {
+                      {
+                        "tag": "span",
+                        "content": "vt",
+                        "title": "transitive verb",
+                        "data": {
+                          "content": "tag",
+                          "category": "partOfSpeech"
+                        }
+                      }
+                    ]
+                  },
+                  "To supply or contribute.",
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-examples"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "1 example"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
                           "tag": "div",
                           "data": {
-                            "content": "example-sentence-a"
+                            "content": "example-sentence"
                           },
-                          "content": "The controversial TV broadcast brought a storm of complaints."
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "The new company director brought a fresh perspective on sales and marketing."
+                            }
+                          ]
                         }
-                      ]
-                    }
+                      }
+                    ]
                   }
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
+          },
           {
             "tag": "div",
             "content": [
               {
                 "tag": "div",
-                "data": {
-                  "content": "tags"
-                },
                 "content": [
-                  {
-                    "tag": "span",
-                    "content": "vt"
-                  }
-                ]
-              },
-              "To raise (a lawsuit, charges, etc.) against somebody."
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "To persuade; to induce; to draw; to lead; to guide."
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "To produce in exchange; to sell for; to fetch.",
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-examples"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "1 example"
-                  },
                   {
                     "tag": "div",
                     "data": {
-                      "content": "extra-info"
+                      "content": "tags"
                     },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
+                    "content": [
+                      {
+                        "tag": "span",
+                        "content": "vt",
+                        "title": "transitive verb",
+                        "data": {
+                          "content": "tag",
+                          "category": "partOfSpeech"
+                        }
+                      }
+                    ]
+                  },
+                  "To occasion or bring about.",
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-examples"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "1 example"
                       },
-                      "content": [
-                        {
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
                           "tag": "div",
                           "data": {
-                            "content": "example-sentence-a"
+                            "content": "example-sentence"
                           },
-                          "content": "What does coal bring per ton?"
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "The controversial TV broadcast brought a storm of complaints."
+                            }
+                          ]
                         }
-                      ]
-                    }
+                      }
+                    ]
                   }
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
+          },
           {
             "tag": "div",
             "content": [
-              "(baseball) To pitch, often referring to a particularly hard thrown fastball.",
               {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-examples"
-                },
+                "tag": "div",
                 "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "1 example"
-                  },
                   {
                     "tag": "div",
                     "data": {
-                      "content": "extra-info"
+                      "content": "tags"
                     },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
+                    "content": [
+                      {
+                        "tag": "span",
+                        "content": "vt",
+                        "title": "transitive verb",
+                        "data": {
+                          "content": "tag",
+                          "category": "partOfSpeech"
+                        }
+                      }
+                    ]
+                  },
+                  "To raise (a lawsuit, charges, etc.) against somebody."
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "content": [
+                  "To persuade; to induce; to draw; to lead; to guide."
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "content": [
+                  "To produce in exchange; to sell for; to fetch.",
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-examples"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "1 example"
                       },
-                      "content": [
-                        {
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
                           "tag": "div",
                           "data": {
-                            "content": "example-sentence-a"
+                            "content": "example-sentence"
                           },
-                          "content": "The closer Jones can really bring it."
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "What does coal bring per ton?"
+                            }
+                          ]
                         }
-                      ]
-                    }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "content": [
+                  "(baseball) To pitch, often referring to a particularly hard thrown fastball.",
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-examples"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "1 example"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence"
+                          },
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "The closer Jones can really bring it."
+                            }
+                          ]
+                        }
+                      }
+                    ]
                   }
                 ]
               }
@@ -377,83 +412,88 @@
         "content": [
           {
             "tag": "div",
-            "data": {
-              "content": "preamble"
-            },
             "content": [
               {
                 "tag": "div",
                 "data": {
-                  "content": "head-info"
-                },
-                "content": "wain (plural wains)"
-              },
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-Etymology"
+                  "content": "preamble"
                 },
                 "content": [
                   {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "Etymology"
-                  },
-                  {
                     "tag": "div",
                     "data": {
-                      "content": "Etymology-content"
+                      "content": "head-info"
                     },
-                    "content": "From Middle English wayn, from Old English wæġn, from Proto-West Germanic *wagn, from Proto-Germanic *wagnaz, from Proto-Indo-European *woǵʰnos, from *weǵʰ- (“to bring, transport”). Doublet of wagon, borrowed from Middle Dutch.\nCognates\nCognate with West Frisian wein, Dutch wagen, German Wagen, Danish vogn, Norwegian vogn, Swedish vagn. Doublet of wagon, a borrowing from Dutch."
+                    "content": "wain (plural wains)"
+                  },
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Etymology"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Etymology"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
+                        },
+                        "content": "From Middle English wayn, from Old English wæġn, from Proto-West Germanic *wagn, from Proto-Germanic *wagnaz, from Proto-Indo-European *woǵʰnos, from *weǵʰ- (“to bring, transport”). Doublet of wagon, borrowed from Middle Dutch.\nCognates\nCognate with West Frisian wein, Dutch wagen, German Wagen, Danish vogn, Norwegian vogn, Swedish vagn. Doublet of wagon, a borrowing from Dutch."
+                      }
+                    ]
                   }
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
+          },
           {
             "tag": "div",
             "content": [
-              "A wagon; a four-wheeled cart for hauling loads, usually pulled by horses or oxen.",
               {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-examples"
-                },
+                "tag": "div",
                 "content": [
+                  "A wagon; a four-wheeled cart for hauling loads, usually pulled by horses or oxen.",
                   {
-                    "tag": "summary",
+                    "tag": "details",
                     "data": {
-                      "content": "summary-entry"
+                      "content": "details-entry-examples"
                     },
-                    "content": "1 example"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "extra-info"
-                    },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "1 example"
                       },
-                      "content": [
-                        {
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
                           "tag": "div",
                           "data": {
-                            "content": "example-sentence-a"
+                            "content": "example-sentence"
                           },
-                          "content": "\"The Hay Wain\" is a famous painting by John Constable."
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "\"The Hay Wain\" is a famous painting by John Constable."
+                            }
+                          ]
                         }
-                      ]
-                    }
+                      }
+                    ]
                   }
                 ]
               }
@@ -477,84 +517,94 @@
         "content": [
           {
             "tag": "div",
-            "data": {
-              "content": "preamble"
-            },
             "content": [
               {
                 "tag": "div",
                 "data": {
-                  "content": "head-info"
-                },
-                "content": "falcon (plural falcons)"
-              },
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-Etymology"
+                  "content": "preamble"
                 },
                 "content": [
                   {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "Etymology"
-                  },
-                  {
                     "tag": "div",
                     "data": {
-                      "content": "Etymology-content"
+                      "content": "head-info"
                     },
-                    "content": "From Middle English faucoun, falcon, faulcon, from Old French falcun, from Late Latin falcō (“falcon”), of Germanic origin, probably via Frankish *falkō (“falcon, hawk”), from Proto-Germanic *falkô (“falcon”), from Proto-Indo-European *pol̑- (“pale”), from *pel- (“fallow”).\ncognates\nCognate with Old English *fealca, fealcen (“falcon”), Dutch valk (“falcon, hawk”), German Falke (“falcon, hawk”), Norwegian and Swedish falk (“falcon”), Icelandic fálki (“falcon”), French faucon (“falcon”), Italian falco (“falcon”), Spanish halcón (“falcon”), Portuguese falcão (“falcon”), Latin falco (“falcon”), Lithuanian pálšas (“pale”), Latvian bāls (“pale”), Latgalian buolgs (“pale”). More at fallow."
+                    "content": "falcon (plural falcons)"
+                  },
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Etymology"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Etymology"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
+                        },
+                        "content": "From Middle English faucoun, falcon, faulcon, from Old French falcun, from Late Latin falcō (“falcon”), of Germanic origin, probably via Frankish *falkō (“falcon, hawk”), from Proto-Germanic *falkô (“falcon”), from Proto-Indo-European *pol̑- (“pale”), from *pel- (“fallow”).\ncognates\nCognate with Old English *fealca, fealcen (“falcon”), Dutch valk (“falcon, hawk”), German Falke (“falcon, hawk”), Norwegian and Swedish falk (“falcon”), Icelandic fálki (“falcon”), French faucon (“falcon”), Italian falco (“falcon”), Spanish halcón (“falcon”), Portuguese falcão (“falcon”), Latin falco (“falcon”), Lithuanian pálšas (“pale”), Latvian bāls (“pale”), Latgalian buolgs (“pale”). More at fallow."
+                      }
+                    ]
                   }
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "Any bird of the genus Falco, all of which are birds of prey."
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
-              "(falconry) A female such bird, a male being a tiercel."
-            ]
-          }
-        ]
-      },
-      {
-        "type": "structured-content",
-        "content": [
+          },
           {
             "tag": "div",
             "content": [
               {
                 "tag": "div",
-                "data": {
-                  "content": "tags"
-                },
+                "content": [
+                  "Any bird of the genus Falco, all of which are birds of prey."
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "content": [
+                  "(falconry) A female such bird, a male being a tiercel."
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
                 "content": [
                   {
-                    "tag": "span",
-                    "content": "hist"
-                  }
+                    "tag": "div",
+                    "data": {
+                      "content": "tags"
+                    },
+                    "content": [
+                      {
+                        "tag": "span",
+                        "content": "hist",
+                        "title": "historical",
+                        "data": {
+                          "content": "tag",
+                          "category": ""
+                        }
+                      }
+                    ]
+                  },
+                  "A light cannon used from the 15th to the 17th century; a falconet."
                 ]
-              },
-              "A light cannon used from the 15th to the 17th century; a falconet."
+              }
             ]
           }
         ]

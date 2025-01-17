@@ -30,8 +30,8 @@ div[data-sc-content="example-sentence-a"] {
 div[data-sc-content="example-sentence-b"] {
     font-size: 0.8em;
 }
-div[data-sc-content="details-section"] {
-    margin: 0.25em 0;
+details[data-sc-content^="details-entry"] {
+    padding-left: 0;
 }
 summary[data-sc-content="summary-entry"] {
     user-select: none;
@@ -47,6 +47,11 @@ summary[data-sc-content="summary-entry"]::marker {
 summary[data-sc-content="summary-entry"] {
     color: var(--text-color-light4);
 }
+details[data-sc-content^="details-entry-Etymology"] summary[data-sc-content="summary-entry"],
+details[data-sc-content^="details-entry-Morphemes"] summary[data-sc-content="summary-entry"] {
+    font-weight: bold;
+}
+
 details[data-sc-content^="details-entry"][open=""] summary[data-sc-content="summary-entry"] {
     color: var(--text-color);
 }
