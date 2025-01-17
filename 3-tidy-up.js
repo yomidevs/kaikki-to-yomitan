@@ -341,11 +341,11 @@ function getGlossTree(sensesWithoutInflectionGlosses) {
                 curr = new Map();
                 temp.set(levelGloss, curr);
             }
-            if (levelIndex === 0) {
-                const branch = /** @type {GlossBranch} */ (curr);
-                const filteredTags = curr.get('_tags') ? tags.filter(value => branch.get('_tags')?.includes(value)) : tags;
-                branch.set('_tags', filteredTags);   
-            }
+            
+            const branch = /** @type {GlossBranch} */ (curr);
+            const filteredTags = curr.get('_tags') ? tags.filter(value => branch.get('_tags')?.includes(value)) : tags;
+            branch.set('_tags', filteredTags);   
+            
             if(levelIndex === glossesArray.length - 1) {
                 curr.set('_examples', examples);
             }

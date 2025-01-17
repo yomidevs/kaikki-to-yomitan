@@ -661,6 +661,15 @@
                         "_type": "map",
                         "map": [
                           [
+                            "_tags",
+                            [
+                              "declension-2",
+                              "declension-4",
+                              "feminine",
+                              "irregular"
+                            ]
+                          ],
+                          [
                             "_examples",
                             []
                           ]
@@ -715,6 +724,17 @@
                         "_type": "map",
                         "map": [
                           [
+                            "_tags",
+                            [
+                              "also",
+                              "declension-2",
+                              "declension-4",
+                              "feminine",
+                              "irregular",
+                              "of the shell of invertebrates"
+                            ]
+                          ],
+                          [
                             "_examples",
                             []
                           ]
@@ -744,6 +764,15 @@
                         "_type": "map",
                         "map": [
                           [
+                            "_tags",
+                            [
+                              "declension-2",
+                              "declension-4",
+                              "feminine",
+                              "irregular"
+                            ]
+                          ],
+                          [
                             "_examples",
                             []
                           ]
@@ -755,6 +784,15 @@
                       {
                         "_type": "map",
                         "map": [
+                          [
+                            "_tags",
+                            [
+                              "declension-2",
+                              "declension-4",
+                              "feminine",
+                              "irregular"
+                            ]
+                          ],
                           [
                             "_examples",
                             []

@@ -43,6 +43,14 @@
                         "_type": "map",
                         "map": [
                           [
+                            "_tags",
+                            [
+                              "class-4",
+                              "strong",
+                              "transitive"
+                            ]
+                          ],
+                          [
                             "_examples",
                             [
                               {
@@ -64,6 +72,14 @@
                         "_type": "map",
                         "map": [
                           [
+                            "_tags",
+                            [
+                              "class-4",
+                              "strong",
+                              "transitive"
+                            ]
+                          ],
+                          [
                             "_examples",
                             [
                               {
@@ -81,6 +97,17 @@
                             {
                               "_type": "map",
                               "map": [
+                                [
+                                  "_tags",
+                                  [
+                                    "archaic",
+                                    "class-4",
+                                    "intransitive",
+                                    "strong",
+                                    "transitive",
+                                    "with-genitive"
+                                  ]
+                                ],
                                 [
                                   "_examples",
                                   []
@@ -116,6 +143,14 @@
                         "_type": "map",
                         "map": [
                           [
+                            "_tags",
+                            [
+                              "class-4",
+                              "strong",
+                              "transitive"
+                            ]
+                          ],
+                          [
                             "_examples",
                             [
                               {
@@ -133,6 +168,16 @@
                             {
                               "_type": "map",
                               "map": [
+                                [
+                                  "_tags",
+                                  [
+                                    "class-4",
+                                    "intransitive",
+                                    "strong",
+                                    "transitive",
+                                    "with-genitive"
+                                  ]
+                                ],
                                 [
                                   "_examples",
                                   [
@@ -173,6 +218,14 @@
                         "_type": "map",
                         "map": [
                           [
+                            "_tags",
+                            [
+                              "class-4",
+                              "strong",
+                              "transitive"
+                            ]
+                          ],
+                          [
                             "_examples",
                             [
                               {
@@ -193,6 +246,15 @@
                       {
                         "_type": "map",
                         "map": [
+                          [
+                            "_tags",
+                            [
+                              "class-4",
+                              "intransitive",
+                              "strong",
+                              "with “zu” followed by an infinitive verb"
+                            ]
+                          ],
                           [
                             "_examples",
                             [

@@ -1,5 +1,12 @@
 [
   [
+    "n",
+    "partOfSpeech",
+    -1,
+    "noun",
+    1
+  ],
+  [
     "masc",
     "",
     -1,
@@ -12,13 +19,6 @@
     0,
     "inanimate",
     0
-  ],
-  [
-    "n",
-    "partOfSpeech",
-    -1,
-    "noun",
-    1
   ],
   [
     "fig",
@@ -35,18 +35,18 @@
     0
   ],
   [
-    "pf",
-    "",
-    0,
-    "perfective",
-    0
-  ],
-  [
     "v",
     "partOfSpeech",
     -1,
     "verb",
     1
+  ],
+  [
+    "pf",
+    "",
+    0,
+    "perfective",
+    0
   ],
   [
     "col",
@@ -63,17 +63,17 @@
     0
   ],
   [
-    "reltnl",
-    "",
-    0,
-    "relational",
-    0
-  ],
-  [
     "adj",
     "partOfSpeech",
     -1,
     "adjective",
     1
+  ],
+  [
+    "reltnl",
+    "",
+    0,
+    "relational",
+    0
   ]
 ]

@@ -1,5 +1,12 @@
 [
   [
+    "n",
+    "partOfSpeech",
+    -1,
+    "noun",
+    1
+  ],
+  [
     "decl-1",
     "",
     0,
@@ -14,10 +21,10 @@
     1
   ],
   [
-    "n",
+    "v",
     "partOfSpeech",
     -1,
-    "noun",
+    "verb",
     1
   ],
   [
@@ -26,13 +33,6 @@
     0,
     "conjugation-3",
     0
-  ],
-  [
-    "v",
-    "partOfSpeech",
-    -1,
-    "verb",
-    1
   ],
   [
     "Medieval",
@@ -63,18 +63,18 @@
     1
   ],
   [
-    "not-comp",
-    "",
-    0,
-    "not comparable",
-    0
-  ],
-  [
     "adv",
     "partOfSpeech",
     -1,
     "adverb",
     1
+  ],
+  [
+    "not-comp",
+    "",
+    0,
+    "not comparable",
+    0
   ],
   [
     "ptcpl",

@@ -2,7 +2,7 @@
   [
     "zpráva",
     "",
-    "fem n",
+    "n fem",
     "n",
     0,
     [
@@ -11,63 +11,113 @@
         "content": [
           {
             "tag": "div",
+            "data": {
+              "content": "preamble"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-Etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "Etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "Etymology-content"
+                    },
+                    "content": "Deverbal from zpravit."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
             "content": [
               "message",
               {
-                "tag": "div",
+                "tag": "details",
                 "data": {
-                  "content": "extra-info"
+                  "content": "details-entry-examples"
                 },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "textová zpráva"
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
                     },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-b"
-                      },
-                      "content": "text message"
-                    }
-                  ]
-                }
-              },
-              {
-                "tag": "div",
-                "data": {
-                  "content": "extra-info"
-                },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
+                    "content": "2 examples"
                   },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "Chcete nechat zprávu?"
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
                     },
-                    {
+                    "content": {
                       "tag": "div",
                       "data": {
-                        "content": "example-sentence-b"
+                        "content": "example-sentence"
                       },
-                      "content": "Would you like to leave a message?"
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "textová zpráva"
+                        },
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-b"
+                          },
+                          "content": "text message"
+                        }
+                      ]
                     }
-                  ]
-                }
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
+                    },
+                    "content": {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence"
+                      },
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "Chcete nechat zprávu?"
+                        },
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-b"
+                          },
+                          "content": "Would you like to leave a message?"
+                        }
+                      ]
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -81,73 +131,9 @@
             "content": [
               "report",
               {
-                "tag": "div",
-                "data": {
-                  "content": "extra-info"
-                },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "lékařská zpráva"
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-b"
-                      },
-                      "content": "medical report"
-                    }
-                  ]
-                }
-              },
-              {
-                "tag": "div",
-                "data": {
-                  "content": "extra-info"
-                },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "podat zprávu"
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-b"
-                      },
-                      "content": "to file a report"
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "data": {
-              "content": "details-section"
-            },
-            "content": [
-              {
                 "tag": "details",
                 "data": {
-                  "content": "details-entry-etymology"
+                  "content": "details-entry-examples"
                 },
                 "content": [
                   {
@@ -155,14 +141,63 @@
                     "data": {
                       "content": "summary-entry"
                     },
-                    "content": "etymology"
+                    "content": "2 examples"
                   },
                   {
                     "tag": "div",
                     "data": {
-                      "content": "etymology-content"
+                      "content": "extra-info"
                     },
-                    "content": "Deverbal from zpravit."
+                    "content": {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence"
+                      },
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "lékařská zpráva"
+                        },
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-b"
+                          },
+                          "content": "medical report"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
+                    },
+                    "content": {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence"
+                      },
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "podat zprávu"
+                        },
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-b"
+                          },
+                          "content": "to file a report"
+                        }
+                      ]
+                    }
                   }
                 ]
               }
@@ -186,48 +221,14 @@
         "content": [
           {
             "tag": "div",
-            "content": [
-              "for",
-              {
-                "tag": "div",
-                "data": {
-                  "content": "extra-info"
-                },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "Zabili ho pro peníze."
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-b"
-                      },
-                      "content": "They killed him for his money."
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          {
-            "tag": "div",
             "data": {
-              "content": "details-section"
+              "content": "preamble"
             },
             "content": [
               {
                 "tag": "details",
                 "data": {
-                  "content": "details-entry-etymology"
+                  "content": "details-entry-Etymology"
                 },
                 "content": [
                   {
@@ -235,14 +236,68 @@
                     "data": {
                       "content": "summary-entry"
                     },
-                    "content": "etymology"
+                    "content": "Etymology"
                   },
                   {
                     "tag": "div",
                     "data": {
-                      "content": "etymology-content"
+                      "content": "Etymology-content"
                     },
                     "content": "Inherited from Old Czech pro, from Proto-Slavic *pro."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "for",
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-examples"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "1 example"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
+                    },
+                    "content": {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence"
+                      },
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "Zabili ho pro peníze."
+                        },
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-b"
+                          },
+                          "content": "They killed him for his money."
+                        }
+                      ]
+                    }
                   }
                 ]
               }
@@ -257,7 +312,7 @@
   [
     "přít",
     "",
-    "impf vr v",
+    "v impf vr",
     "v",
     0,
     [
@@ -266,20 +321,14 @@
         "content": [
           {
             "tag": "div",
-            "content": [
-              "(reflexive with se) to dispute"
-            ]
-          },
-          {
-            "tag": "div",
             "data": {
-              "content": "details-section"
+              "content": "preamble"
             },
             "content": [
               {
                 "tag": "details",
                 "data": {
-                  "content": "details-entry-etymology"
+                  "content": "details-entry-Etymology"
                 },
                 "content": [
                   {
@@ -287,17 +336,28 @@
                     "data": {
                       "content": "summary-entry"
                     },
-                    "content": "etymology"
+                    "content": "Etymology"
                   },
                   {
                     "tag": "div",
                     "data": {
-                      "content": "etymology-content"
+                      "content": "Etymology-content"
                     },
                     "content": "Inherited from Old Czech přieti, from Proto-Slavic *pьrěti."
                   }
                 ]
               }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "(reflexive with se) to dispute"
             ]
           }
         ]

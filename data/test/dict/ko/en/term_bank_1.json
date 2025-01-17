@@ -2,7 +2,7 @@
   [
     "독일",
     "",
-    "🇰🇷 name",
+    "name 🇰🇷",
     "name",
     0,
     [
@@ -11,42 +11,21 @@
         "content": [
           {
             "tag": "div",
-            "content": [
-              "Germany (a country in Europe)"
-            ]
-          },
-          {
-            "tag": "div",
             "data": {
-              "content": "details-section"
+              "content": "preamble"
             },
             "content": [
               {
-                "tag": "details",
+                "tag": "div",
                 "data": {
-                  "content": "details-entry-etymology"
+                  "content": "head-info"
                 },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "etymology"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "etymology-content"
-                    },
-                    "content": "Sino-Korean word from 獨逸, an orthographic borrowing from Japanese 獨逸 (Doitsu, “Germany”), from Dutch Duits (“German”)."
-                  }
-                ]
+                "content": "독일 • (Dogil) (hanja 獨逸)"
               },
               {
                 "tag": "details",
                 "data": {
-                  "content": "details-entry-head-info"
+                  "content": "details-entry-Etymology"
                 },
                 "content": [
                   {
@@ -54,17 +33,28 @@
                     "data": {
                       "content": "summary-entry"
                     },
-                    "content": "head-info"
+                    "content": "Etymology"
                   },
                   {
                     "tag": "div",
                     "data": {
-                      "content": "head-info-content"
+                      "content": "Etymology-content"
                     },
-                    "content": "독일 • (Dogil) (hanja 獨逸)"
+                    "content": "Sino-Korean word from 獨逸, an orthographic borrowing from Japanese 獨逸 (Doitsu, “Germany”), from Dutch Duits (“German”)."
                   }
                 ]
               }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "Germany (a country in Europe)"
             ]
           }
         ]

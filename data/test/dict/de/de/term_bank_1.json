@@ -11,48 +11,14 @@
         "content": [
           {
             "tag": "div",
-            "content": [
-              "populäre Musikrichtung, die Anfang der 1950er Jahre in den USA entstand",
-              {
-                "tag": "div",
-                "data": {
-                  "content": "extra-info"
-                },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "Der Rock ist nicht totzukriegen."
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-b"
-                      },
-                      "content": ""
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          {
-            "tag": "div",
             "data": {
-              "content": "details-section"
+              "content": "preamble"
             },
             "content": [
               {
                 "tag": "details",
                 "data": {
-                  "content": "details-entry-etymology"
+                  "content": "details-entry-Etymology"
                 },
                 "content": [
                   {
@@ -60,14 +26,61 @@
                     "data": {
                       "content": "summary-entry"
                     },
-                    "content": "etymology"
+                    "content": "Etymology"
                   },
                   {
                     "tag": "div",
                     "data": {
-                      "content": "etymology-content"
+                      "content": "Etymology-content"
                     },
                     "content": "von arabisch/persisch ruh, roh entlehnt, = arabisch: الرُخّ (ar-ruchch, aus dem Persischen)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "populäre Musikrichtung, die Anfang der 1950er Jahre in den USA entstand",
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-examples"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "1 Beispiel"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
+                    },
+                    "content": {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence"
+                      },
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "Der Rock ist nicht totzukriegen."
+                        }
+                      ]
+                    }
                   }
                 ]
               }
@@ -113,63 +126,99 @@
         "content": [
           {
             "tag": "div",
+            "data": {
+              "content": "preamble"
+            },
+            "content": [
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-Etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "Etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "Etymology-content"
+                    },
+                    "content": "seit dem 20. Jahrhundert bezeugte Entlehnung aus gleichbedeutendem französisch garage ^(→ fr) m, eigentlich „(das) Ausweichen, Ausweichstelle“; dieses ist eine deverbative Ableitung von französisch garer ^(→ fr) „in eine sichere Verwahrstelle bringen; in Sicherheit bringen; ausweichen“, das seinerseits aus okzitanisch garar ^(→ oc) „Acht geben, bewahren“ übernommen wurde; dieses entstammt entweder mit Übergang von w- zu g- der (nicht belegbaren, aber rekonstruierten) germanischen Form *war-ō- „beachten“ (vergleiche »wahren«) oder dem lateinischen varāre ^(→ la) „ausweichen“ (zu lateinisch vārus ^(→ la) „auseinandergebogen“)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
             "content": [
               "Raum zum dauerhaften Ab- und Unterstellen von Kraftfahrzeugen",
               {
-                "tag": "div",
+                "tag": "details",
                 "data": {
-                  "content": "extra-info"
+                  "content": "details-entry-examples"
                 },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "Ich werde das Auto in die Garage schaffen."
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
                     },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-b"
-                      },
-                      "content": ""
-                    }
-                  ]
-                }
-              },
-              {
-                "tag": "div",
-                "data": {
-                  "content": "extra-info"
-                },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
+                    "content": "2 Beispiele"
                   },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "„Ein Mann steht vor seinem Opel allein in einer Garage.“"
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
                     },
-                    {
+                    "content": {
                       "tag": "div",
                       "data": {
-                        "content": "example-sentence-b"
+                        "content": "example-sentence"
                       },
-                      "content": ""
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "Ich werde das Auto in die Garage schaffen."
+                        }
+                      ]
                     }
-                  ]
-                }
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
+                    },
+                    "content": {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence"
+                      },
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "„Ein Mann steht vor seinem Opel allein in einer Garage.“"
+                        }
+                      ]
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -183,60 +232,61 @@
             "content": [
               "Raum zum kurzfristigen Ab- und Unterstellen von Kraftfahrzeugen",
               {
-                "tag": "div",
+                "tag": "details",
                 "data": {
-                  "content": "extra-info"
+                  "content": "details-entry-examples"
                 },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "„Ein Mann steht vor seinem Opel allein in einer Garage.“"
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
                     },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-b"
-                      },
-                      "content": ""
-                    }
-                  ]
-                }
-              },
-              {
-                "tag": "div",
-                "data": {
-                  "content": "extra-info"
-                },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
+                    "content": "2 Beispiele"
                   },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "„Leo stand schon draußen vor der Garage und blickte ängstlich auf seine Armbanduhr.“"
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
                     },
-                    {
+                    "content": {
                       "tag": "div",
                       "data": {
-                        "content": "example-sentence-b"
+                        "content": "example-sentence"
                       },
-                      "content": ""
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "„Ein Mann steht vor seinem Opel allein in einer Garage.“"
+                        }
+                      ]
                     }
-                  ]
-                }
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
+                    },
+                    "content": {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence"
+                      },
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "„Leo stand schon draußen vor der Garage und blickte ängstlich auf seine Armbanduhr.“"
+                        }
+                      ]
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -261,45 +311,9 @@
             "content": [
               "Geschäft, das sowohl als eine auf die Reparatur von Kraftfahrzeugen spezialisierte Werkstatt als auch als Verkaufslokal von Kraftfahrzeugen dient",
               {
-                "tag": "div",
-                "data": {
-                  "content": "extra-info"
-                },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "„Selbstverständlich werden in der Garage auch künftig Fremdmarken repariert.“"
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-b"
-                      },
-                      "content": ""
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "data": {
-              "content": "details-section"
-            },
-            "content": [
-              {
                 "tag": "details",
                 "data": {
-                  "content": "details-entry-etymology"
+                  "content": "details-entry-examples"
                 },
                 "content": [
                   {
@@ -307,14 +321,28 @@
                     "data": {
                       "content": "summary-entry"
                     },
-                    "content": "etymology"
+                    "content": "1 Beispiel"
                   },
                   {
                     "tag": "div",
                     "data": {
-                      "content": "etymology-content"
+                      "content": "extra-info"
                     },
-                    "content": "seit dem 20. Jahrhundert bezeugte Entlehnung aus gleichbedeutendem französisch garage ^(→ fr) m, eigentlich „(das) Ausweichen, Ausweichstelle“; dieses ist eine deverbative Ableitung von französisch garer ^(→ fr) „in eine sichere Verwahrstelle bringen; in Sicherheit bringen; ausweichen“, das seinerseits aus okzitanisch garar ^(→ oc) „Acht geben, bewahren“ übernommen wurde; dieses entstammt entweder mit Übergang von w- zu g- der (nicht belegbaren, aber rekonstruierten) germanischen Form *war-ō- „beachten“ (vergleiche »wahren«) oder dem lateinischen varāre ^(→ la) „ausweichen“ (zu lateinisch vārus ^(→ la) „auseinandergebogen“)"
+                    "content": {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence"
+                      },
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "„Selbstverständlich werden in der Garage auch künftig Fremdmarken repariert.“"
+                        }
+                      ]
+                    }
                   }
                 ]
               }

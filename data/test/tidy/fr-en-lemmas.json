@@ -204,6 +204,14 @@
                         "_type": "map",
                         "map": [
                           [
+                            "_tags",
+                            [
+                              "in various idiomatic expressions",
+                              "transitive",
+                              "with à"
+                            ]
+                          ],
+                          [
                             "_examples",
                             [
                               {
@@ -420,6 +428,12 @@
                         "_type": "map",
                         "map": [
                           [
+                            "_tags",
+                            [
+                              "feminine"
+                            ]
+                          ],
+                          [
                             "_examples",
                             []
                           ]
@@ -431,6 +445,12 @@
                       {
                         "_type": "map",
                         "map": [
+                          [
+                            "_tags",
+                            [
+                              "feminine"
+                            ]
+                          ],
                           [
                             "_examples",
                             []
@@ -444,6 +464,12 @@
                         "_type": "map",
                         "map": [
                           [
+                            "_tags",
+                            [
+                              "feminine"
+                            ]
+                          ],
+                          [
                             "_examples",
                             []
                           ]
@@ -455,6 +481,12 @@
                       {
                         "_type": "map",
                         "map": [
+                          [
+                            "_tags",
+                            [
+                              "feminine"
+                            ]
+                          ],
                           [
                             "_examples",
                             []

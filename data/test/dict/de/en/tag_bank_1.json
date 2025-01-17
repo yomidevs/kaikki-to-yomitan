@@ -1,5 +1,12 @@
 [
   [
+    "v",
+    "partOfSpeech",
+    -1,
+    "verb",
+    1
+  ],
+  [
     "c-4",
     "",
     0,
@@ -21,10 +28,45 @@
     1
   ],
   [
-    "v",
+    "med",
+    "",
+    0,
+    "medicine",
+    0
+  ],
+  [
+    "arch",
+    "archaism",
+    4,
+    "archaic",
+    -4
+  ],
+  [
+    "vi",
     "partOfSpeech",
     -1,
-    "verb",
+    "intransitive verb",
+    1
+  ],
+  [
+    "high-reg",
+    "",
+    0,
+    "higher register",
+    0
+  ],
+  [
+    "poet",
+    "",
+    0,
+    "poetic",
+    0
+  ],
+  [
+    "n",
+    "partOfSpeech",
+    -1,
+    "noun",
     1
   ],
   [
@@ -32,13 +74,6 @@
     "",
     -1,
     "masculine",
-    1
-  ],
-  [
-    "n",
-    "partOfSpeech",
-    -1,
-    "noun",
     1
   ],
   [
@@ -68,13 +103,6 @@
     0,
     "card games",
     0
-  ],
-  [
-    "arch",
-    "archaism",
-    4,
-    "archaic",
-    -4
   ],
   [
     "obs",

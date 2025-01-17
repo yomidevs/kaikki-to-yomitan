@@ -11,20 +11,21 @@
         "content": [
           {
             "tag": "div",
-            "content": [
-              "pleasant, delightful, fun, enjoyable"
-            ]
-          },
-          {
-            "tag": "div",
             "data": {
-              "content": "details-section"
+              "content": "preamble"
             },
             "content": [
               {
+                "tag": "div",
+                "data": {
+                  "content": "head-info"
+                },
+                "content": "楽(たの)しい • (tanoshii) -i (adverbial 楽(たの)しく (tanoshiku))"
+              },
+              {
                 "tag": "details",
                 "data": {
-                  "content": "details-entry-mophemes"
+                  "content": "details-entry-Morphemes"
                 },
                 "content": [
                   {
@@ -32,12 +33,12 @@
                     "data": {
                       "content": "summary-entry"
                     },
-                    "content": "mophemes"
+                    "content": "Morphemes"
                   },
                   {
                     "tag": "div",
                     "data": {
-                      "content": "mophemes-content"
+                      "content": "Morphemes-content"
                     },
                     "content": "Theories include:\n* A compound of 手 (ta, “hand”, combining form) + 伸す (nosu, “to extend”)\n*: This is problematic, as nosu has first been attested starting from the early 900s, with no A/B distinction (see Jōdai Tokushu Kanazukai for details)."
                   }
@@ -46,7 +47,7 @@
               {
                 "tag": "details",
                 "data": {
-                  "content": "details-entry-etymology"
+                  "content": "details-entry-Etymology"
                 },
                 "content": [
                   {
@@ -54,39 +55,28 @@
                     "data": {
                       "content": "summary-entry"
                     },
-                    "content": "etymology"
+                    "content": "Etymology"
                   },
                   {
                     "tag": "div",
                     "data": {
-                      "content": "etymology-content"
+                      "content": "Etymology-content"
                     },
                     "content": "⟨tano₁siki₁⟩ → */tanʷosikʲi/ → /tanoshii/\nFrom Old Japanese. First attested in the Kojiki of 712 CE. No Ryukyuan cognates exist; as as result, further derivation unknown. Theories include:\n* A compound of 手 (ta, “hand”, combining form) + 伸す (nosu, “to extend”)\n*: This is problematic, as nosu has first been attested starting from the early 900s, with no A/B distinction (see Jōdai Tokushu Kanazukai for details).\n* From 田神 (tano, literally “rice paddy god”)\n*: No reading of 神 (*no, “god”) exists.\n* A borrowing from an unknown language\n*: No words resemble *tanV meaning \"fun\" or \"to enjoy\"."
                   }
                 ]
-              },
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-head-info"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "head-info"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "head-info-content"
-                    },
-                    "content": "楽(たの)しい • (tanoshii) -i (adverbial 楽(たの)しく (tanoshiku))"
-                  }
-                ]
               }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "pleasant, delightful, fun, enjoyable"
             ]
           }
         ]
@@ -107,76 +97,21 @@
         "content": [
           {
             "tag": "div",
-            "content": [
-              "liked, favorite",
-              {
-                "tag": "div",
-                "data": {
-                  "content": "extra-info"
-                },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "好きな食べ物は？ アイスクリームです。"
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-b"
-                      },
-                      "content": "What's your favorite food? - It's ice cream."
-                    }
-                  ]
-                }
-              },
-              {
-                "tag": "div",
-                "data": {
-                  "content": "extra-info"
-                },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "君が好きだからこそこれほど頑張っているんだよ。"
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-b"
-                      },
-                      "content": "It's precisely because I like you [because of my fondness for you] that I'm working this hard."
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          {
-            "tag": "div",
             "data": {
-              "content": "details-section"
+              "content": "preamble"
             },
             "content": [
               {
+                "tag": "div",
+                "data": {
+                  "content": "head-info"
+                },
+                "content": "好(す)き • (suki) -na (adnominal 好(す)きな (suki na), adverbial 好(す)きに (suki ni))"
+              },
+              {
                 "tag": "details",
                 "data": {
-                  "content": "details-entry-etymology"
+                  "content": "details-entry-Etymology"
                 },
                 "content": [
                   {
@@ -184,21 +119,32 @@
                     "data": {
                       "content": "summary-entry"
                     },
-                    "content": "etymology"
+                    "content": "Etymology"
                   },
                   {
                     "tag": "div",
                     "data": {
-                      "content": "etymology-content"
+                      "content": "Etymology-content"
                     },
                     "content": "The 連(れん)用(よう)形(けい) (ren'yōkei, “stem or continuative form”) of the verb 好(す)く (suku, “to like, to be fond of, to enjoy, to feel love for”).\nFirst cited to the late 900s in the 宇津保物語 (Utsubo Monogatari)."
                   }
                 ]
-              },
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "liked, favorite",
               {
                 "tag": "details",
                 "data": {
-                  "content": "details-entry-head-info"
+                  "content": "details-entry-examples"
                 },
                 "content": [
                   {
@@ -206,14 +152,63 @@
                     "data": {
                       "content": "summary-entry"
                     },
-                    "content": "head-info"
+                    "content": "2 examples"
                   },
                   {
                     "tag": "div",
                     "data": {
-                      "content": "head-info-content"
+                      "content": "extra-info"
                     },
-                    "content": "好(す)き • (suki) -na (adnominal 好(す)きな (suki na), adverbial 好(す)きに (suki ni))"
+                    "content": {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence"
+                      },
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "好きな食べ物は？ アイスクリームです。"
+                        },
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-b"
+                          },
+                          "content": "What's your favorite food? - It's ice cream."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
+                    },
+                    "content": {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence"
+                      },
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "君が好きだからこそこれほど頑張っているんだよ。"
+                        },
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-b"
+                          },
+                          "content": "It's precisely because I like you [because of my fondness for you] that I'm working this hard."
+                        }
+                      ]
+                    }
                   }
                 ]
               }
@@ -232,6 +227,48 @@
     "n",
     0,
     [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "data": {
+              "content": "preamble"
+            },
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "head-info"
+                },
+                "content": "狸(たぬき) or 狸(タヌキ) • (tanuki)"
+              },
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-Etymology"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "Etymology"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "Etymology-content"
+                    },
+                    "content": "According to one theory, derived from 手貫 (tanuki, “arm glove, gauntlet”), which raccoon dog hide was sometimes used for."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
       {
         "type": "structured-content",
         "content": [
@@ -240,345 +277,168 @@
             "content": [
               "a raccoon dog, Nyctereutes procyonoides",
               {
-                "tag": "div",
+                "tag": "details",
                 "data": {
-                  "content": "extra-info"
+                  "content": "details-entry-examples"
                 },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "アライグマなら尻尾にシマがある。どう見でもタヌキだ。"
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
                     },
-                    {
+                    "content": "1 example"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
+                    },
+                    "content": {
                       "tag": "div",
                       "data": {
-                        "content": "example-sentence-b"
+                        "content": "example-sentence"
                       },
-                      "content": "If you're a raccoon, you'd have stripes on your tail. No matter how you look at it, you're a raccoon dog."
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "アライグマなら尻尾にシマがある。どう見でもタヌキだ。"
+                        },
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-b"
+                          },
+                          "content": "If you're a raccoon, you'd have stripes on your tail. No matter how you look at it, you're a raccoon dog."
+                        }
+                      ]
                     }
-                  ]
-                }
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "data": {
-              "content": "details-section"
-            },
-            "content": [
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-etymology"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "etymology"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "etymology-content"
-                    },
-                    "content": "According to one theory, derived from 手貫 (tanuki, “arm glove, gauntlet”), which raccoon dog hide was sometimes used for."
-                  }
-                ]
-              },
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-head-info"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "head-info"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "head-info-content"
-                    },
-                    "content": "狸(たぬき) or 狸(タヌキ) • (tanuki)"
                   }
                 ]
               }
             ]
           }
         ]
-      }
-    ],
-    0,
-    ""
-  ],
-  [
-    "狸",
-    "たぬき",
-    "fig n",
-    "n",
-    0,
-    [
+      },
       {
         "type": "structured-content",
         "content": [
           {
             "tag": "div",
             "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "tags"
+                },
+                "content": [
+                  {
+                    "tag": "span",
+                    "content": "fig"
+                  }
+                ]
+              },
               "a person who pretends to be good but in fact is cunning (compare English sly fox)",
               {
-                "tag": "div",
+                "tag": "details",
                 "data": {
-                  "content": "extra-info"
+                  "content": "details-entry-examples"
                 },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "やいやい、其処な狸め"
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
                     },
-                    {
+                    "content": "1 example"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
+                    },
+                    "content": {
                       "tag": "div",
                       "data": {
-                        "content": "example-sentence-b"
+                        "content": "example-sentence"
                       },
-                      "content": "Hey there, you sly dog!"
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "やいやい、其処な狸め"
+                        },
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-b"
+                          },
+                          "content": "Hey there, you sly dog!"
+                        }
+                      ]
                     }
-                  ]
-                }
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "data": {
-              "content": "details-section"
-            },
-            "content": [
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-etymology"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "etymology"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "etymology-content"
-                    },
-                    "content": "According to one theory, derived from 手貫 (tanuki, “arm glove, gauntlet”), which raccoon dog hide was sometimes used for."
-                  }
-                ]
-              },
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-head-info"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "head-info"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "head-info-content"
-                    },
-                    "content": "狸(たぬき) or 狸(タヌキ) • (tanuki)"
                   }
                 ]
               }
             ]
           }
         ]
-      }
-    ],
-    0,
-    ""
-  ],
-  [
-    "狸",
-    "たぬき",
-    "abbv n",
-    "n",
-    0,
-    [
+      },
       {
         "type": "structured-content",
         "content": [
           {
             "tag": "div",
             "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "tags"
+                },
+                "content": [
+                  {
+                    "tag": "span",
+                    "content": "abbv"
+                  }
+                ]
+              },
               "Short for 狸饂飩 (tanuki-udon) and 狸蕎麦 (tanuki-soba): styles of various noodle dishes"
             ]
-          },
-          {
-            "tag": "div",
-            "data": {
-              "content": "details-section"
-            },
-            "content": [
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-etymology"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "etymology"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "etymology-content"
-                    },
-                    "content": "According to one theory, derived from 手貫 (tanuki, “arm glove, gauntlet”), which raccoon dog hide was sometimes used for."
-                  }
-                ]
-              },
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-head-info"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "head-info"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "head-info-content"
-                    },
-                    "content": "狸(たぬき) or 狸(タヌキ) • (tanuki)"
-                  }
-                ]
-              }
-            ]
           }
         ]
-      }
-    ],
-    0,
-    ""
-  ],
-  [
-    "狸",
-    "たぬき",
-    "abbv rare n",
-    "n",
-    0,
-    [
+      },
       {
         "type": "structured-content",
         "content": [
           {
             "tag": "div",
             "content": [
-              "Short for 狸寝入り (tanuki neiri): pretending to be asleep",
               {
                 "tag": "div",
                 "data": {
-                  "content": "extra-info"
-                },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "狸を決め込む ― tanuki o kimekomu ― pretend to be a raccoon dog → feign sleep"
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-b"
-                      },
-                      "content": ""
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "data": {
-              "content": "details-section"
-            },
-            "content": [
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-etymology"
+                  "content": "tags"
                 },
                 "content": [
                   {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "etymology"
+                    "tag": "span",
+                    "content": "abbv"
                   },
                   {
-                    "tag": "div",
-                    "data": {
-                      "content": "etymology-content"
-                    },
-                    "content": "According to one theory, derived from 手貫 (tanuki, “arm glove, gauntlet”), which raccoon dog hide was sometimes used for."
+                    "tag": "span",
+                    "content": "rare"
                   }
                 ]
               },
+              "Short for 狸寝入り (tanuki neiri): pretending to be asleep",
               {
                 "tag": "details",
                 "data": {
-                  "content": "details-entry-head-info"
+                  "content": "details-entry-examples"
                 },
                 "content": [
                   {
@@ -586,91 +446,62 @@
                     "data": {
                       "content": "summary-entry"
                     },
-                    "content": "head-info"
+                    "content": "1 example"
                   },
                   {
                     "tag": "div",
                     "data": {
-                      "content": "head-info-content"
+                      "content": "extra-info"
                     },
-                    "content": "狸(たぬき) or 狸(タヌキ) • (tanuki)"
+                    "content": {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence"
+                      },
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "狸を決め込む ― tanuki o kimekomu ― pretend to be a raccoon dog → feign sleep"
+                        }
+                      ]
+                    }
                   }
                 ]
               }
             ]
           }
         ]
-      }
-    ],
-    0,
-    ""
-  ],
-  [
-    "狸",
-    "たぬき",
-    "abbv obs rare n",
-    "n",
-    0,
-    [
+      },
       {
         "type": "structured-content",
         "content": [
           {
             "tag": "div",
             "content": [
-              "Short for 狸汁 (tanuki-jiru): a soup made from tanuki meat mixed with daikon, burdock root, etc."
-            ]
-          },
-          {
-            "tag": "div",
-            "data": {
-              "content": "details-section"
-            },
-            "content": [
               {
-                "tag": "details",
+                "tag": "div",
                 "data": {
-                  "content": "details-entry-etymology"
+                  "content": "tags"
                 },
                 "content": [
                   {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "etymology"
+                    "tag": "span",
+                    "content": "abbv"
                   },
                   {
-                    "tag": "div",
-                    "data": {
-                      "content": "etymology-content"
-                    },
-                    "content": "According to one theory, derived from 手貫 (tanuki, “arm glove, gauntlet”), which raccoon dog hide was sometimes used for."
+                    "tag": "span",
+                    "content": "obs"
+                  },
+                  {
+                    "tag": "span",
+                    "content": "rare"
                   }
                 ]
               },
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-head-info"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "head-info"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "head-info-content"
-                    },
-                    "content": "狸(たぬき) or 狸(タヌキ) • (tanuki)"
-                  }
-                ]
-              }
+              "Short for 狸汁 (tanuki-jiru): a soup made from tanuki meat mixed with daikon, burdock root, etc."
             ]
           }
         ]
@@ -691,35 +522,70 @@
         "content": [
           {
             "tag": "div",
+            "data": {
+              "content": "preamble"
+            },
             "content": [
-              "to run (move fast on foot)",
               {
                 "tag": "div",
                 "data": {
-                  "content": "extra-info"
+                  "content": "head-info"
                 },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "マラソン選手が走り出した。"
+                "content": "走(はし)る • (hashiru) intransitive godan (stem 走(はし)り (hashiri), past 走(はし)った (hashitta))"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "to run (move fast on foot)",
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-examples"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
                     },
-                    {
+                    "content": "1 example"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
+                    },
+                    "content": {
                       "tag": "div",
                       "data": {
-                        "content": "example-sentence-b"
+                        "content": "example-sentence"
                       },
-                      "content": "Marathon athlete(s) started running."
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "マラソン選手が走り出した。"
+                        },
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-b"
+                          },
+                          "content": "Marathon athlete(s) started running."
+                        }
+                      ]
                     }
-                  ]
-                }
+                  }
+                ]
               }
             ]
           },
@@ -731,32 +597,47 @@
                 "content": [
                   "to move forward; (of a machine) to operate, function; (of objects) to move at a high speed (of a vehicle)",
                   {
-                    "tag": "div",
+                    "tag": "details",
                     "data": {
-                      "content": "extra-info"
+                      "content": "details-entry-examples"
                     },
-                    "content": {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence"
-                      },
-                      "content": [
-                        {
-                          "tag": "div",
-                          "data": {
-                            "content": "example-sentence-a"
-                          },
-                          "content": "車が走っている。"
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
                         },
-                        {
+                        "content": "1 example"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
                           "tag": "div",
                           "data": {
-                            "content": "example-sentence-b"
+                            "content": "example-sentence"
                           },
-                          "content": "A car is running. / Cars are running."
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "車が走っている。"
+                            },
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-b"
+                              },
+                              "content": "A car is running. / Cars are running."
+                            }
+                          ]
                         }
-                      ]
-                    }
+                      }
+                    ]
                   }
                 ]
               },
@@ -764,6 +645,87 @@
                 "tag": "li",
                 "content": [
                   "to flow vigorously (of liquid)",
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-examples"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "1 example"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "extra-info"
+                        },
+                        "content": {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence"
+                          },
+                          "content": [
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-a"
+                              },
+                              "content": "石の上を水が走る。"
+                            },
+                            {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence-b"
+                              },
+                              "content": "The water runs over the stones."
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "tags"
+                },
+                "content": [
+                  {
+                    "tag": "span",
+                    "content": "vt"
+                  }
+                ]
+              },
+              "to run through some kind of place",
+              {
+                "tag": "details",
+                "data": {
+                  "content": "details-entry-examples"
+                },
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
+                    },
+                    "content": "1 example"
+                  },
                   {
                     "tag": "div",
                     "data": {
@@ -780,14 +742,14 @@
                           "data": {
                             "content": "example-sentence-a"
                           },
-                          "content": "石の上を水が走る。"
+                          "content": "彼はこの道をよく走る。"
                         },
                         {
                           "tag": "div",
                           "data": {
                             "content": "example-sentence-b"
                           },
-                          "content": "The water runs over the stones."
+                          "content": "He often runs down this street."
                         }
                       ]
                     }
@@ -806,32 +768,47 @@
             "content": [
               "to move smoothly; to slide",
               {
-                "tag": "div",
+                "tag": "details",
                 "data": {
-                  "content": "extra-info"
+                  "content": "details-entry-examples"
                 },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "刀が鞘から走る。"
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
                     },
-                    {
+                    "content": "1 example"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
+                    },
+                    "content": {
                       "tag": "div",
                       "data": {
-                        "content": "example-sentence-b"
+                        "content": "example-sentence"
                       },
-                      "content": "The sword slides out of its sheath."
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "刀が鞘から走る。"
+                        },
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-b"
+                          },
+                          "content": "The sword slides out of its sheath."
+                        }
+                      ]
                     }
-                  ]
-                }
+                  }
+                ]
               }
             ]
           }
@@ -867,60 +844,75 @@
             "content": [
               "to give over oneself to; to commit oneself to (usually something bad)",
               {
-                "tag": "div",
+                "tag": "details",
                 "data": {
-                  "content": "extra-info"
+                  "content": "details-entry-examples"
                 },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "彼は敵に走った。"
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
                     },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-b"
-                      },
-                      "content": "He defected to the enemy."
-                    }
-                  ]
-                }
-              },
-              {
-                "tag": "div",
-                "data": {
-                  "content": "extra-info"
-                },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
+                    "content": "2 examples"
                   },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "立場を忘れて感情に走ってはいけない。"
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
                     },
-                    {
+                    "content": {
                       "tag": "div",
                       "data": {
-                        "content": "example-sentence-b"
+                        "content": "example-sentence"
                       },
-                      "content": "Don't forget your stance and give in to emotions."
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "彼は敵に走った。"
+                        },
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-b"
+                          },
+                          "content": "He defected to the enemy."
+                        }
+                      ]
                     }
-                  ]
-                }
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
+                    },
+                    "content": {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence"
+                      },
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "立場を忘れて感情に走ってはいけない。"
+                        },
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-b"
+                          },
+                          "content": "Don't forget your stance and give in to emotions."
+                        }
+                      ]
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -945,32 +937,40 @@
             "content": [
               "to lead or extend in a certain direction",
               {
-                "tag": "div",
+                "tag": "details",
                 "data": {
-                  "content": "extra-info"
+                  "content": "details-entry-examples"
                 },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "山脈が南北に走る。\nSanmyaku ga nanboku ni hashiru.\nThe mountain range runs north–south."
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
                     },
-                    {
+                    "content": "1 example"
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
+                    },
+                    "content": {
                       "tag": "div",
                       "data": {
-                        "content": "example-sentence-b"
+                        "content": "example-sentence"
                       },
-                      "content": ""
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "山脈が南北に走る。\nSanmyaku ga nanboku ni hashiru.\nThe mountain range runs north–south."
+                        }
+                      ]
                     }
-                  ]
-                }
+                  }
+                ]
               }
             ]
           }
@@ -984,60 +984,75 @@
             "content": [
               "to appear briefly; to flash",
               {
-                "tag": "div",
+                "tag": "details",
                 "data": {
-                  "content": "extra-info"
+                  "content": "details-entry-examples"
                 },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "稲妻が走る"
+                "content": [
+                  {
+                    "tag": "summary",
+                    "data": {
+                      "content": "summary-entry"
                     },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-b"
-                      },
-                      "content": "lightning flashes by"
-                    }
-                  ]
-                }
-              },
-              {
-                "tag": "div",
-                "data": {
-                  "content": "extra-info"
-                },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
+                    "content": "2 examples"
                   },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "背中に痛みが走った。"
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
                     },
-                    {
+                    "content": {
                       "tag": "div",
                       "data": {
-                        "content": "example-sentence-b"
+                        "content": "example-sentence"
                       },
-                      "content": "I felt a brief pain in my back."
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "稲妻が走る"
+                        },
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-b"
+                          },
+                          "content": "lightning flashes by"
+                        }
+                      ]
                     }
-                  ]
-                }
+                  },
+                  {
+                    "tag": "div",
+                    "data": {
+                      "content": "extra-info"
+                    },
+                    "content": {
+                      "tag": "div",
+                      "data": {
+                        "content": "example-sentence"
+                      },
+                      "content": [
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-a"
+                          },
+                          "content": "背中に痛みが走った。"
+                        },
+                        {
+                          "tag": "div",
+                          "data": {
+                            "content": "example-sentence-b"
+                          },
+                          "content": "I felt a brief pain in my back."
+                        }
+                      ]
+                    }
+                  }
+                ]
               }
             ]
           }
@@ -1051,219 +1066,51 @@
             "content": [
               "(used with 胸(むね)が (mune ga)) to feel palpitations; to have a sense of unease"
             ]
-          },
-          {
-            "tag": "div",
-            "data": {
-              "content": "details-section"
-            },
-            "content": [
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-head-info"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "head-info"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "head-info-content"
-                    },
-                    "content": "走(はし)る • (hashiru) intransitive godan (stem 走(はし)り (hashiri), past 走(はし)った (hashitta))"
-                  }
-                ]
-              }
-            ]
           }
         ]
-      }
-    ],
-    0,
-    ""
-  ],
-  [
-    "走る",
-    "はしる",
-    "vt v",
-    "v",
-    0,
-    [
+      },
       {
         "type": "structured-content",
         "content": [
           {
             "tag": "div",
             "content": [
-              "to run through some kind of place",
               {
                 "tag": "div",
                 "data": {
-                  "content": "extra-info"
-                },
-                "content": {
-                  "tag": "div",
-                  "data": {
-                    "content": "example-sentence"
-                  },
-                  "content": [
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-a"
-                      },
-                      "content": "彼はこの道をよく走る。"
-                    },
-                    {
-                      "tag": "div",
-                      "data": {
-                        "content": "example-sentence-b"
-                      },
-                      "content": "He often runs down this street."
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "data": {
-              "content": "details-section"
-            },
-            "content": [
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-head-info"
+                  "content": "tags"
                 },
                 "content": [
                   {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "head-info"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "head-info-content"
-                    },
-                    "content": "走(はし)る • (hashiru) intransitive godan (stem 走(はし)り (hashiri), past 走(はし)った (hashitta))"
+                    "tag": "span",
+                    "content": "euph"
                   }
                 ]
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    0,
-    ""
-  ],
-  [
-    "走る",
-    "はしる",
-    "euph v",
-    "v",
-    0,
-    [
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "div",
-            "content": [
+              },
               "to crack"
             ]
-          },
-          {
-            "tag": "div",
-            "data": {
-              "content": "details-section"
-            },
-            "content": [
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-head-info"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "head-info"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "head-info-content"
-                    },
-                    "content": "走(はし)る • (hashiru) intransitive godan (stem 走(はし)り (hashiri), past 走(はし)った (hashitta))"
-                  }
-                ]
-              }
-            ]
           }
         ]
-      }
-    ],
-    0,
-    ""
-  ],
-  [
-    "走る",
-    "はしる",
-    "v music",
-    "v",
-    0,
-    [
+      },
       {
         "type": "structured-content",
         "content": [
           {
             "tag": "div",
             "content": [
-              "Alternative spelling of ハシる"
-            ]
-          },
-          {
-            "tag": "div",
-            "data": {
-              "content": "details-section"
-            },
-            "content": [
               {
-                "tag": "details",
+                "tag": "div",
                 "data": {
-                  "content": "details-entry-head-info"
+                  "content": "tags"
                 },
                 "content": [
                   {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "head-info"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "head-info-content"
-                    },
-                    "content": "走(はし)る • (hashiru) intransitive godan (stem 走(はし)り (hashiri), past 走(はし)った (hashitta))"
+                    "tag": "span",
+                    "content": "music"
                   }
                 ]
-              }
+              },
+              "Alternative spelling of ハシる"
             ]
           }
         ]
@@ -1284,6 +1131,26 @@
         "content": [
           {
             "tag": "div",
+            "data": {
+              "content": "preamble"
+            },
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "head-info"
+                },
+                "content": "五(ご)色(しき) • (goshiki) ^(←ごしき (gosiki)?)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
             "content": [
               "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))"
             ]
@@ -1297,36 +1164,6 @@
             "tag": "div",
             "content": [
               "melon, gourd"
-            ]
-          },
-          {
-            "tag": "div",
-            "data": {
-              "content": "details-section"
-            },
-            "content": [
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-head-info"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "head-info"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "head-info-content"
-                    },
-                    "content": "五(ご)色(しき) • (goshiki) ^(←ごしき (gosiki)?)"
-                  }
-                ]
-              }
             ]
           }
         ]
@@ -1347,6 +1184,26 @@
         "content": [
           {
             "tag": "div",
+            "data": {
+              "content": "preamble"
+            },
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "head-info"
+                },
+                "content": "五(ご)色(しき) • (goshiki) ^(←ごしき (gosiki)?)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
             "content": [
               "five colors (usu. red (赤), blue (青), yellow (黄), white (白) and black (黒))"
             ]
@@ -1360,36 +1217,6 @@
             "tag": "div",
             "content": [
               "melon, gourd"
-            ]
-          },
-          {
-            "tag": "div",
-            "data": {
-              "content": "details-section"
-            },
-            "content": [
-              {
-                "tag": "details",
-                "data": {
-                  "content": "details-entry-head-info"
-                },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "head-info"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "head-info-content"
-                    },
-                    "content": "五(ご)色(しき) • (goshiki) ^(←ごしき (gosiki)?)"
-                  }
-                ]
-              }
             ]
           }
         ]
@@ -1410,42 +1237,21 @@
         "content": [
           {
             "tag": "div",
-            "content": [
-              "[I am / someone is] hungry"
-            ]
-          },
-          {
-            "tag": "div",
             "data": {
-              "content": "details-section"
+              "content": "preamble"
             },
             "content": [
               {
-                "tag": "details",
+                "tag": "div",
                 "data": {
-                  "content": "details-entry-etymology"
+                  "content": "head-info"
                 },
-                "content": [
-                  {
-                    "tag": "summary",
-                    "data": {
-                      "content": "summary-entry"
-                    },
-                    "content": "etymology"
-                  },
-                  {
-                    "tag": "div",
-                    "data": {
-                      "content": "etymology-content"
-                    },
-                    "content": "The perfective form of お腹が空く (onaka ga suku, “to become hungry”, literally “one's stomach becomes empty”)."
-                  }
-                ]
+                "content": "お腹(なか)が空(す)いた • (onaka ga suita)"
               },
               {
                 "tag": "details",
                 "data": {
-                  "content": "details-entry-head-info"
+                  "content": "details-entry-Etymology"
                 },
                 "content": [
                   {
@@ -1453,17 +1259,28 @@
                     "data": {
                       "content": "summary-entry"
                     },
-                    "content": "head-info"
+                    "content": "Etymology"
                   },
                   {
                     "tag": "div",
                     "data": {
-                      "content": "head-info-content"
+                      "content": "Etymology-content"
                     },
-                    "content": "お腹(なか)が空(す)いた • (onaka ga suita)"
+                    "content": "The perfective form of お腹が空く (onaka ga suku, “to become hungry”, literally “one's stomach becomes empty”)."
                   }
                 ]
               }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              "[I am / someone is] hungry"
             ]
           }
         ]
