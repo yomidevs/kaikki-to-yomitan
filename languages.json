@@ -25,6 +25,7 @@
     {"iso": "lv",  "language": "Latvian",           "flag": "🇱🇻"                       },
     {"iso": "enm", "language": "Middle English",    "flag": "🏰"                       },
     {"iso": "mn",  "language": "Mongolian",         "flag": "🇲🇳"                       },
+    {"iso": "mt",  "language": "Maltese",           "flag": "🇲🇹"                       },
     {"iso": "nb",  "language": "Norwegian Bokmål",  "flag": "🇳🇴🏙️"                     },
     {"iso": "nn",  "language": "Norwegian Nynorsk", "flag": "🇳🇴🌲"                     },
     {"iso": "ang", "language": "Old English",       "flag": "🗡️"                       },
