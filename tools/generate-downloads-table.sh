@@ -28,11 +28,11 @@ columns=()
 header="| |"
 divider="|---|"
 for language in "${languages[@]}"; do
-    language_name=$(echo "${language}" | jq -r '.language')
+    flag=$(echo "${language}" | jq -r '.flag')
     iso=$(echo "${language}" | jq -r '.iso')
     hasEdition=$(echo "${language}" | jq -r '.hasEdition')
     if [ "$hasEdition" = "true" ]; then
-        header="$header $language_name ($iso) |"
+        header="$header $iso $flag |"
         divider="$divider---|"
         columns+=("$iso")
     fi
