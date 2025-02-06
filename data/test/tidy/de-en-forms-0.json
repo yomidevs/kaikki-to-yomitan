@@ -54,20 +54,6 @@
             }
           ],
           [
-            "haben",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "auxiliary"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
             "pflog",
             {
               "_type": "map",
