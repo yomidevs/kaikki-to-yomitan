@@ -12,7 +12,7 @@ for (const dir of ["./data/test/dict", "./data/test/tidy", "./data/test/temp", "
 const languages = JSON.parse(readFileSync('languages.json', 'utf8'));
 
 
-for (const {iso: sourceIso} of languages){
+for (const {iso: sourceIso, language: sourceLanguage} of languages){
     for (const {iso: targetIso} of languages){
         const tidyLemmas = `data/test/tidy/${sourceIso}-${targetIso}-lemmas.json`;
         const tidyForms = `data/test/tidy/${sourceIso}-${targetIso}-forms-0.json`;
@@ -27,6 +27,7 @@ for (const {iso: sourceIso} of languages){
                 env:{
                     ...process.env, 
                     source_iso: sourceIso,
+                    source_language: sourceLanguage,
                     target_iso: targetIso,
                     DICT_NAME: 'test',
                     tidy_folder: `./data/test/tidy`,
