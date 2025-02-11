@@ -1,0 +1,62 @@
+{
+  "ἀγρός": {
+    "ἀγρός": {
+      "noun": {
+        "0": {
+          "ipa": [
+            {
+              "ipa": "/a.ɡrós/",
+              "tags": [
+                "5ᵗʰ BCE Attic"
+              ]
+            },
+            {
+              "ipa": "/aˈɣros/",
+              "tags": [
+                "4ᵗʰ CE Koine",
+                "10ᵗʰ CE Byzantine",
+                "15ᵗʰ CE Constantinopolitan"
+              ]
+            },
+            {
+              "ipa": "/aˈɡros/",
+              "tags": [
+                "1ˢᵗ CE Egyptian"
+              ]
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "field, land, countryside",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "Attic",
+                        "Doric",
+                        "Epic",
+                        "Ionic",
+                        "Koine",
+                        "masculine"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          "etymology_text": "From Proto-Hellenic *agrós, from Proto-Indo-European *h₂éǵros. Cognates include Mycenaean Greek 𐀀𐀒𐀫 (a-ko-ro), Latin ager, Sanskrit अज्र (ájra) and Old English æcer (English acre).",
+          "head_info_text": "ᾰ̓γρός • (ăgrós) m (genitive ᾰ̓γροῦ); second declension"
+        }
+      }
+    }
+  }
+}
