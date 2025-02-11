@@ -9,7 +9,7 @@ for( const dir of ["./data/test/kaikki", "./data/test/tidy", "./data/test/temp/d
     }
 }
 
-for (const {iso: sourceIso} of languages){
+for (const {iso: sourceIso, language: sourceLanguage} of languages){
     for (const {iso: targetIso} of languages){
         const kaikkiFile = `data/test/kaikki/${sourceIso}-${targetIso}.json`;
         
@@ -44,6 +44,7 @@ for (const {iso: sourceIso} of languages){
                     ...process.env, 
                     source_iso: sourceIso,
                     target_iso: targetIso,
+                    source_language: sourceLanguage,
                     DICT_NAME: 'test',
                     tidy_folder: `./data/test/tidy`,
                     temp_folder: `./data/test/temp`
@@ -57,7 +58,7 @@ for (const {iso: sourceIso} of languages){
         const dictFiles = readdirSync(`data/test/temp/dict`);
         for(const file of dictFiles){
             if(file === `tag_bank_1.json` || /^term_bank_\d+\.json$/.test(file)){
-                outputFile = `data/test/dict/${sourceIso}/${targetIso}/${file}`;
+                const outputFile = `data/test/dict/${sourceIso}/${targetIso}/${file}`;
                 execSync(`mv data/test/temp/dict/${file} ${outputFile}`);
                 prettifyFile(outputFile);
             }
@@ -66,7 +67,7 @@ for (const {iso: sourceIso} of languages){
         const ipaFiles = readdirSync(`data/test/temp/ipa`);
         for(const file of ipaFiles){
             if(file === `tag_bank_1.json` || file === 'term_meta_bank_1.json'){
-                outputFile = `data/test/ipa/${sourceIso}/${targetIso}/${file}`;
+                const outputFile = `data/test/ipa/${sourceIso}/${targetIso}/${file}`;
                 execSync(`mv data/test/temp/ipa/${file} ${outputFile}`);
                 prettifyFile(outputFile);
             }

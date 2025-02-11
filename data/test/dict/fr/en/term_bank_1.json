@@ -1699,6 +1699,19 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/prendre#French",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }
@@ -1840,6 +1853,19 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/sembler#French",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }
@@ -1959,6 +1985,19 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/chambre#French",
+                "content": "Wiktionary"
               }
             ]
           }
@@ -2100,6 +2139,19 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/d'accord#French",
+                "content": "Wiktionary"
               }
             ]
           }

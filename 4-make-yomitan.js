@@ -6,6 +6,7 @@ const { sortTags, writeInBatches, consoleOverwrite,
 
 const {
     source_iso,
+    source_language,
     target_iso,
     DEBUG_WORD,
     DICT_NAME,
@@ -274,6 +275,18 @@ function getStructuredPreamble(info) {
     };
 }
 
+/**string
+ * @param {string} backlinkWord 
+ * @returns {import('types').TermBank.StructuredContent}
+ */
+function getStructuredBacklink(backlinkWord) {
+    return {
+        "tag": "a",
+        "href": `https://${target_iso}.wiktionary.org/wiki/${backlinkWord}#${source_language}`,
+        "content": "Wiktionary",
+    }
+}
+
 /**
  * @param {GlossBranch} glossBranch
  * @param {string[]} parentTags
@@ -457,6 +470,17 @@ let lastTermBankIndex = 0;
                         entryContent.unshift({
                             "tag": "div",
                             content: [preamble]
+                        });
+                    }
+
+                    if (info.backlink) {
+                        const backlink = getStructuredBacklink(info.backlink);
+                        entryContent.push({
+                            "tag": "div",
+                            "data": {
+                                "content": "backlink"
+                            },
+                            content: [backlink]
                         });
                     }
 

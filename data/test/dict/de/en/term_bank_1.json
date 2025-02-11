@@ -885,6 +885,19 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/pflegen#German",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }
@@ -1376,6 +1389,19 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/Fuchs#German",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }
@@ -1507,6 +1533,19 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/Herz#German",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }
@@ -1597,6 +1636,19 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/Fahrer#German",
+                "content": "Wiktionary"
               }
             ]
           }
@@ -2012,6 +2064,19 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/von#German",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }
@@ -2149,6 +2214,19 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/Base#German",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }
@@ -2256,6 +2334,19 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/Base#German",
+                "content": "Wiktionary"
               }
             ]
           }

@@ -27,6 +27,19 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://de.wiktionary.org/wiki/choose#English",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }

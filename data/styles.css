@@ -69,3 +69,7 @@ summary[data-sc-content="summary-entry"]:hover {
 summary[data-sc-content="summary-entry"] ~ div {
     margin: 0.5em 0;
 }
+div[data-sc-content="backlink"] {
+    font-size: 0.7em;
+    text-align: right;
+}

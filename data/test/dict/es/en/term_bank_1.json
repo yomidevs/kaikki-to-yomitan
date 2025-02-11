@@ -299,6 +299,19 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/vivir#Spanish",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }

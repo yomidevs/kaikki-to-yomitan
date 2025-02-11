@@ -84,6 +84,19 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/ملک#Persian",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }
@@ -282,6 +295,19 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/فارسی#Persian",
+                "content": "Wiktionary"
               }
             ]
           }

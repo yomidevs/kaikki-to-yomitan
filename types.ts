@@ -96,6 +96,7 @@ declare global {
     type LemmaInfo = {
         ipa: IpaInfo[],
         glossTree: GlossTree,
+        backlink?: string,
         etymology_text?: string,
         morpheme_text?: string,
         head_info_text?: string,
@@ -125,6 +126,7 @@ declare global {
     // 4-make-yomitan.js types:
     type MakeYomitanEnv = {
         source_iso: string,
+        source_language: string,
         target_iso: string,
         DEBUG_WORD?: string,
         DICT_NAME: string,

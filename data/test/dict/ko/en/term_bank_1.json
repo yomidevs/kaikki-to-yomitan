@@ -84,6 +84,19 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/독일#Korean",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }

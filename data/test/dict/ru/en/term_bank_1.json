@@ -295,6 +295,19 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/снег#Russian",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }
@@ -480,6 +493,19 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/побелеть#Russian",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }
@@ -663,6 +689,19 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/зимний#Russian",
+                "content": "Wiktionary"
               }
             ]
           }
