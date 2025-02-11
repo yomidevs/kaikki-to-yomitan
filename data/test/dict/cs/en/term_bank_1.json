@@ -215,6 +215,16 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/zpráva#Czech",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }
@@ -328,6 +338,16 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/pro#Czech",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }
@@ -396,6 +416,16 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/přít#Czech",
+                "content": "Wiktionary"
               }
             ]
           }

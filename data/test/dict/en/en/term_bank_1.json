@@ -416,6 +416,16 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/bring#English",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }
@@ -542,6 +552,16 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/wain#English",
+                "content": "Wiktionary"
               }
             ]
           }
@@ -673,6 +693,16 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/falcon#English",
+                "content": "Wiktionary"
               }
             ]
           }

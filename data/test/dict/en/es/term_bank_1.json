@@ -138,6 +138,16 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://es.wiktionary.org/wiki/fast#English",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }

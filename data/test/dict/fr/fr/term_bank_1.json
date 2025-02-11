@@ -180,6 +180,16 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://fr.wiktionary.org/wiki/avatar#French",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }

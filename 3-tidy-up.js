@@ -126,7 +126,7 @@ lr.on('line', (line) => {
  * @param {KaikkiLine} parsedLine 
  */
 function handleLine(parsedLine) {
-    const { pos, sounds, forms, etymology_number = 0, etymology_text} = parsedLine;
+    const { pos, sounds, forms, etymology_number = 0, etymology_text, word: backlink} = parsedLine;
     if(!pos) return;
     const word = getCanonicalWordForm(parsedLine);
     if (!word) return;
@@ -253,6 +253,7 @@ function handleLine(parsedLine) {
     
         result.ipa ??= ipa;
         result.glossTree = glossTree;
+        result.backlink = backlink;
     }
     
 }

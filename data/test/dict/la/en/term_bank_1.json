@@ -287,6 +287,16 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/fama#Latin",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }
@@ -604,6 +614,16 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/lego#Latin",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }
@@ -694,6 +714,16 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/lilium#Latin",
+                "content": "Wiktionary"
               }
             ]
           }
@@ -896,6 +926,16 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/usque#Latin",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }
@@ -1094,6 +1134,16 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/rectus#Latin",
+                "content": "Wiktionary"
               }
             ]
           }
@@ -1611,6 +1661,16 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/domus#Latin",
+                "content": "Wiktionary"
               }
             ]
           }

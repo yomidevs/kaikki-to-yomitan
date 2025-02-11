@@ -95,7 +95,8 @@
             ]
           },
           "etymology_text": "Inherited from Proto-Slavic *sněgъ, from Proto-Balto-Slavic *snáigas, from Proto-Indo-European *snóygʷʰos.",
-          "head_info_text": "снег • (sneg) m inan (genitive сне́га, nominative plural снега́, genitive plural снего́в, relational adjective сне́жный or снегово́й, diminutive снежо́к)"
+          "head_info_text": "снег • (sneg) m inan (genitive сне́га, nominative plural снега́, genitive plural снего́в, relational adjective сне́жный or снегово́й, diminutive снежо́к)",
+          "backlink": "снег"
         }
       }
     }
@@ -192,7 +193,8 @@
             ]
           },
           "morpheme_text": "по- (po-) + беле́ть (belétʹ)",
-          "head_info_text": "побеле́ть • (pobelétʹ) pf (imperfective беле́ть)"
+          "head_info_text": "побеле́ть • (pobelétʹ) pf (imperfective беле́ть)",
+          "backlink": "побелеть"
         }
       }
     }
@@ -253,7 +255,8 @@
           },
           "etymology_text": "Inherited from Proto-Slavic *zimьnъ. By surface analysis, зима́ (zimá) + -ний (-nij).",
           "morpheme_text": "By surface analysis, зима́ (zimá) + -ний (-nij).",
-          "head_info_text": "зи́мний • (zímnij)"
+          "head_info_text": "зи́мний • (zímnij)",
+          "backlink": "зимний"
         }
       }
     }

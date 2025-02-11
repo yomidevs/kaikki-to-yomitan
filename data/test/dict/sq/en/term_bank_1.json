@@ -84,6 +84,16 @@
                 ]
               }
             ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/akull#Albanian",
+                "content": "Wiktionary"
+              }
+            ]
           }
         ]
       }
@@ -621,6 +631,16 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/gjuhë#Albanian",
+                "content": "Wiktionary"
               }
             ]
           }
