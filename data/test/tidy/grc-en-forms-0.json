@@ -1,0 +1,197 @@
+{
+  "_type": "map",
+  "map": [
+    [
+      "ἀγρός",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "ᾰ̓γροῦ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "τὼ ᾰ̓γρώ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative dual",
+                    "nominative dual"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "οἱ ᾰ̓γροί",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "nominative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "τοῦ ᾰ̓γροῦ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "τοῖν ᾰ̓γροῖν",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "dative dual",
+                    "genitive dual"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "τῶν ᾰ̓γρῶν",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "τῷ ᾰ̓γρῷ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "dative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "τοῖς ᾰ̓γροῖς",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "dative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "τὸν ᾰ̓γρόν",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "τοὺς ᾰ̓γρούς",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "ᾰ̓γρέ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "vocative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "ᾰ̓γρώ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "vocative dual"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "ᾰ̓γροί",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "vocative plural"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ]
+}

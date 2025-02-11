@@ -1,0 +1,31 @@
+[
+  [
+    "αγρος",
+    "ipa",
+    {
+      "reading": "ἀγρός",
+      "transcriptions": [
+        {
+          "ipa": "/a.ɡrós/",
+          "tags": [
+            "5ᵗʰ BCE Attic"
+          ]
+        },
+        {
+          "ipa": "/aˈɣros/",
+          "tags": [
+            "4ᵗʰ CE Koine",
+            "10ᵗʰ CE Byzantine",
+            "15ᵗʰ CE Constantinopolitan"
+          ]
+        },
+        {
+          "ipa": "/aˈɡros/",
+          "tags": [
+            "1ˢᵗ CE Egyptian"
+          ]
+        }
+      ]
+    }
+  ]
+]

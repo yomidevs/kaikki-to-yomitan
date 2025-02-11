@@ -556,6 +556,7 @@ function getCanonicalWordForm({word, forms}) {
         case 'la':
         case 'ru':
             return getCanonicalForm(word, forms); // canonical form is known to contain accent marks and such
+        case 'grc': // the accent marks in the canonical form are not commonly used
         case 'de':
         case 'fr':
         case 'en': 
