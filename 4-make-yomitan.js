@@ -477,6 +477,9 @@ let lastTermBankIndex = 0;
                         const backlink = getStructuredBacklink(info.backlink);
                         entryContent.push({
                             "tag": "div",
+                            "data": {
+                                "content": "backlink"
+                            },
                             content: [backlink]
                         });
                     }
