@@ -165,7 +165,7 @@ function handleLine(parsedLine) {
         if(sense.raw_tags && Array.isArray(sense.raw_tags)) {
             glossTags.push(...sense.raw_tags);
         }
-        if (tags && Array.isArray(tags)) {
+        if (targetIso === 'ru' && tags && Array.isArray(tags)) {
             glossTags.push(...tags);
         }
 
