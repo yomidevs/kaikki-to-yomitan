@@ -1,0 +1,565 @@
+[
+  [
+    "снег",
+    "",
+    "n inanim masc",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "preamble"
+                },
+                "content": [
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Etymology"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Etymology"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
+                        },
+                        "content": "Происходит от праслав. *sněgъ, от кот. в числе прочего произошли: др.-русск., ст.-слав. снѣгъ (др.-греч. χιών, χειμών), русск., белор. снег, укр. сніг, болг. сняг, сербохорв. сни̏jег, местн. ед. сниjѐгу, словенск. snẹ̑g (род. п. snẹgȃ), чешск. sníh, словацк. sneh, польск. śnieg, в.-луж. sněh, н.-луж. sněg, полабск. snẹg. Родственно др.-прусск. snaygis «снег», лит. sniẽgas — то же, snaĩgala «снежинка», латышск. snìegs «снег», готск. snaiws — то же, греч. νείφει «идет снег», лат. nīvit, др.-в.-нем. sni^wit, лит. sniẽga, авест. snaēžaiti — то же, наряду с лит. snìgti, sniñgа «идет снег», латышск. snigt, лат. ninguit «идет снег», niх (род. п. nivis) «снег», греч. νίφα (вин. ед.) «снег», νιφάδες «хлопья снега», др.-ирл. snigid «идет дождь, снег», др.-инд. sníhyati «мокнет, становится клейким, прилипает, ощущает склонность», прич. snigdhás, кауз. snēháyati.Использованы данные словаря М. Фасмера. См. Список литературы.\nОт праиндоевр. корня *sniegwh-/*snoigwho- также произошли:\n* протогерм. *snaiwaz (англ. snow, нем. Schnee, нид. sneeuw, дат. sne и т. п.)\n* лат. nix (исп. nieve, итал./порт. neve, фр. neige)\n* греч. nipha\n* лит. sniegas\n* староирл. snechta\n* санскр. snihyati"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
+            "content": [
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "uncount",
+                            "title": "uncountable",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            }
+                          }
+                        ]
+                      },
+                      "метеорол. неисч. вид атмосферных осадков в виде небольших хлопьев застывшей воды (снежинок) в форме шестиугольных пластинок и шестилучевых звёздочек; выпадает из облаков при температуре воздуха ниже 0 °C",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "5 примеры"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Едва успел я накинуть бурку, как повалил снег."
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "К утру выпал снег и, не тая, пролежал до полудня."
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "В воздухе тихо кружились хлопья мокрого снега…"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Снег бил в окна и клочьями прилипал к стёклам."
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Мелькает, вьётся первый снег, звездами падая на брег."
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "count",
+                            "title": "countable",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            }
+                          }
+                        ]
+                      },
+                      "исч. масса выпавших снежинок, образующая рыхлый, не очень плотный белый слой",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "5 примеры"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Не цвести цветам зимой по снегу!"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Между тем зима установилась. Густые снега завалили сугробами ущелья."
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Сани заскрипели по снегу, а на дворе ещё было темно."
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Глубокий снег лежит на улицах и через белые, как сахар, пласты его, прочные и крепкие, протоптаны узкие дорожки."
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "За окнами чернота и белизна ― сплошные чёрные леса в белых глубоких снегах."
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "col",
+                            "title": "colloquial",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            }
+                          },
+                          {
+                            "tag": "span",
+                            "content": "fig",
+                            "title": "figuratively",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            }
+                          }
+                        ]
+                      },
+                      "перен., разг. помехи",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 пример"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "Экран на пару секунд покрылся снегом, затем на нём показалось новое действующее лицо."
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "sl",
+                            "title": "slang",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            }
+                          }
+                        ]
+                      },
+                      "жарг. нарк. то же, что кокаин"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://ru.wiktionary.org/wiki/снег#Russian",
+                "content": "Wiktionary"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "продолжать",
+    "",
+    "v impf vt",
+    "v",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "preamble"
+                },
+                "content": [
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Etymology"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Etymology"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
+                        },
+                        "content": "Образовано из про- + долгий, далее от от праслав. *dьlgъ, от кот. в числе прочего произошли: ст.-слав. длъгъ (др.-греч. μακρός). русск. долгий, укр. до́вгий, белор. до́ўгi, болг. дъ́лI(ъ)г\\, сербохорв. ду̏г, словенск. dȏłg, ж. dółga, чешск. dlouhý, словацк. dlhý, польск. długi, в.-луж. dołhi, н.-луж. диал. długi «длинный, долгий»; восходит к праиндоевр. *dolǝgh-/*delegh- «длинный». Родственно лит. ìlgas, латышск. il̃gs «длинный, долгий», др.-инд. dīrghás, авест. darǝɣa-, др.-перс. darga-, греч. δολιχός, лат. indulgēre «быть снисходительным, иметь склонность», хеттск. daluga- «длинный», др.-инд., сравн. степ. drā́ghīyān, превосх. drā́ghiṣṭas, авест. drāǰyō «далее», drāǰištǝm «длиннее, дольше всего». Далее, сюда же относят лат. longus, готск. laggs «длинный» из *dlongos. Отсюда до́лгий «леший» — табуистическое название, потому что, по поверью, он длинный, как деревья. В балт. языках наиболее близка слав. слову, вероятно, ятвяжская форма, следы которой обнаруживаются в гидронимах Литвы Dùlgas, Dulgẽlė. Использованы данные словаря М. Фасмера с комментариями О. Н. Трубачёва. См. Список литературы."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
+            "content": [
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "делать начатое раньше в течение более длительного времени, не прекращая"
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "делать что-либо более длительным или длинным"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://ru.wiktionary.org/wiki/продолжать#Russian",
+                "content": "Wiktionary"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
+  ]
+]

@@ -1,0 +1,434 @@
+{
+  "_type": "map",
+  "map": [
+    [
+      "снег",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "снега́",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative plural",
+                    "nominative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "сне́га",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "снего́в",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "genitive plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "сне́гу",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "dative singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "снега́м",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "dative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "сне́гом",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "instrumental singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "снега́ми",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "instrumental plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "сне́ге",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "prepositional singular"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "снега́х",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "prepositional plural"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "продолжать",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "продолжа́ю",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular present"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́л",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular past",
+                    "second-person singular past",
+                    "third-person singular past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́ла",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person singular past",
+                    "second-person singular past",
+                    "third-person singular past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́ешь",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular present"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́й",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person singular imperative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́ет",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular present"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́ло",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person singular past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́ем",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural present"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́ли",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "first-person plural past",
+                    "second-person plural past",
+                    "third-person plural past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́ете",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural present"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́йте",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "second-person plural imperative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́ют",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "third-person plural present"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́ющий",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "active present"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́вший",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "active past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́я",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "adverbial present"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́в",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "adverbial past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́вши",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "adverbial past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́емый",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "passive present"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "буду/будешь… продолжа́ть",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "future"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжить",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfective"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ]
+}

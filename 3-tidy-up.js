@@ -133,7 +133,7 @@ function handleLine(parsedLine) {
     
     processForms(forms, word, pos);
 
-    const {senses, head_templates} = parsedLine;
+    const {senses, head_templates, tags} = parsedLine;
     if (!senses) return;
     
     /** @type {IpaInfo[]} */
@@ -161,9 +161,12 @@ function handleLine(parsedLine) {
         const glosses = sense.raw_glosses || sense.raw_gloss || sense.glosses;
         const glossesArray = Array.isArray(glosses) ? glosses : [glosses];
 
-        const tags = sense.tags || [];
+        const glossTags = sense.tags || [];
         if(sense.raw_tags && Array.isArray(sense.raw_tags)) {
-            tags.push(...sense.raw_tags);
+            glossTags.push(...sense.raw_tags);
+        }
+        if (targetIso === 'ru' && tags && Array.isArray(tags)) {
+            glossTags.push(...tags);
         }
 
         if (head_templates && targetIso === 'en') {
@@ -182,16 +185,16 @@ function handleLine(parsedLine) {
                     for (const [match, tag] of tagMatch) {
                         if (
                             entry.expansion.replace(/\(.+?\)/g, '').split(' ').includes(match) &&
-                            !tags.includes(tag)
+                            !glossTags.includes(tag)
                         ) {
-                            tags.push(tag);
+                            glossTags.push(tag);
                         }
                     }
                 }
             }
         }
 
-        return {...sense, glossesArray, tags};
+        return {...sense, glossesArray, 'tags': glossTags};
     }));
 
     const sensesWithoutInflectionGlosses = sensesWithGlosses.filter(sense => {
