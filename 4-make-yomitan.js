@@ -63,7 +63,7 @@ const tagModifiers = [
 /**
  * @param {WhitelistedTag[]} tags 
  * @param {string} tag 
- * @returns {null|import('types').TagBank.TagInformation}
+ * @returns {null|import('./types').TagBank.TagInformation}
  */
 function findTag(tags, tag) {
     const fullTag = tags.find((x) => {
@@ -83,12 +83,12 @@ function findTag(tags, tag) {
         result[3] = result[3][0]; // this makes it fit the yomitan tag format
     }
 
-    return /** @type {import('types').TagBank.TagInformation}*/ (result);
+    return /** @type {import('./types').TagBank.TagInformation}*/ (result);
 }
 
 /**
  * @param {string} tag 
- * @returns {null|import('types').TagBank.TagInformation}
+ * @returns {null|import('./types').TagBank.TagInformation}
  */
 function findModifiedTag(tag){
     let modifiedTag = null;
@@ -112,13 +112,13 @@ function findModifiedTag(tag){
 }
 
 /**
- * @param {import('types').TermBank.StructuredContentNode[]} structuredContent
+ * @param {import('./types').TermBank.StructuredContentNode[]} structuredContent
  * @param {string[]} tags 
  */
 function addStructuredTags(structuredContent, tags){
     if(!tags.length) return;
 
-    /** @type {import('types').TermBank.StructuredContentNode}*/
+    /** @type {import('./types').TermBank.StructuredContentNode}*/
     const structuredTags = {
         "tag": "div",
         "data": {
@@ -143,16 +143,16 @@ function addStructuredTags(structuredContent, tags){
 }
 
 /**
- * @param {import('types').TermBank.StructuredContentNode[]} structuredContent
+ * @param {import('./types').TermBank.StructuredContentNode[]} structuredContent
  * @param {StandardizedExample[]} examples 
  */
 function addStructuredExamples(structuredContent, examples) {
     if (examples.length === 0) return;
 
-    /** @type {import('types').TermBank.StructuredContent} */
+    /** @type {import('./types').TermBank.StructuredContent} */
     const structuredExamplesContent = examples.map(({text, translation}) => { 
         
-        /** @type {import('types').TermBank.StructuredContentNode[]} */
+        /** @type {import('./types').TermBank.StructuredContentNode[]} */
          const structuredExampleContent = [{
             "tag": "div",
             "data": {
@@ -186,7 +186,7 @@ function addStructuredExamples(structuredContent, examples) {
         }
     })
 
-    /** @type {import('types').TermBank.StructuredContentNode}*/
+    /** @type {import('./types').TermBank.StructuredContentNode}*/
     const structuredExamples = {
         "tag": "details",
         "data": {
@@ -210,7 +210,7 @@ function addStructuredExamples(structuredContent, examples) {
 /**
  * @param {string} type
  * @param {string} content
- * @returns {import('types').TermBank.StructuredContent}
+ * @returns {import('./types').TermBank.StructuredContent}
  */
 function buildDetailsEntry(type, content) {
     return {
@@ -239,7 +239,7 @@ function buildDetailsEntry(type, content) {
 
 /**
  * @param {LemmaInfo} info 
- * @returns {import('types').TermBank.StructuredContent}
+ * @returns {import('./types').TermBank.StructuredContent}
  */
 function getStructuredPreamble(info) {
 
@@ -251,7 +251,7 @@ function getStructuredPreamble(info) {
 
     if (!etymology_text && !morpheme_text && !head_info_text) return '';
 
-    /** @type {import('types').TermBank.StructuredContentNode[]} */
+    /** @type {import('./types').TermBank.StructuredContentNode[]} */
     const preambleContent = [];
 
     if(head_info_text) {
@@ -277,7 +277,7 @@ function getStructuredPreamble(info) {
 
 /**string
  * @param {string} backlinkWord 
- * @returns {import('types').TermBank.StructuredContent}
+ * @returns {import('./types').TermBank.StructuredContent}
  */
 function getStructuredBacklink(backlinkWord) {
     return {
@@ -292,12 +292,12 @@ function getStructuredBacklink(backlinkWord) {
  * @param {string[]} parentTags
  * @param {string} pos
  * @param {number} depth
- * @returns {import('types').TermBank.StructuredContent[]}
+ * @returns {import('./types').TermBank.StructuredContent[]}
  */
 function handleLevel(glossBranch, parentTags, pos, depth) {
     const htmlTag = depth === 0 ? 'div' : 'li';
 
-    /** @type {import('types').TermBank.StructuredContent[]} */
+    /** @type {import('./types').TermBank.StructuredContent[]} */
     const nestDefs = [];
 
     for (const [def, children] of glossBranch) {                      
@@ -311,7 +311,7 @@ function handleLevel(glossBranch, parentTags, pos, depth) {
 
         processedDef = gloss;
 
-        /** @type {import('types').TermBank.StructuredContent} */
+        /** @type {import('./types').TermBank.StructuredContent} */
         const levelContent = [processedDef]
  
         const examples = children.get('_examples') || [];
@@ -338,10 +338,10 @@ function handleLevel(glossBranch, parentTags, pos, depth) {
  * @param {GlossBranch} glossBranch
  * @param {string[]} lemmaTags
  * @param {string} pos
- * @returns {import('types').TermBank.StructuredContentNode[]}
+ * @returns {import('./types').TermBank.StructuredContentNode[]}
  */
 function handleNest(glossBranch, lemmaTags, pos) {
-    /** @type {import('types').TermBank.StructuredContentNode[]} */
+    /** @type {import('./types').TermBank.StructuredContentNode[]} */
     const glosses = [];
 
     const nestedGloss = handleLevel(glossBranch, lemmaTags, pos, 0);
@@ -357,7 +357,7 @@ function handleNest(glossBranch, lemmaTags, pos) {
 const formsMap = new Map();
 
 /**
- * @type {{ipa: Object<string, import('types').TagBank.TagInformation>, dict: Object<string, import('types').TagBank.TagInformation>}}
+ * @type {{ipa: Object<string, import('./types').TagBank.TagInformation>, dict: Object<string, import('./types').TagBank.TagInformation>}}
  */
 const ymtTags = {
     ipa: {},
@@ -375,7 +375,7 @@ let lastTermBankIndex = 0;
 
 {
     const ymtLemmas = [];
-    /** @type {import('types').TermBankMeta.TermPhoneticTranscription[]} */
+    /** @type {import('./types').TermBankMeta.TermPhoneticTranscription[]} */
     const ymtIpa = [];
 
     consoleOverwrite(`4-make-yomitan.js: reading lemmas...`);
@@ -437,7 +437,7 @@ let lastTermBankIndex = 0;
                     }
                     commonTags = processTags([pos, ...(commonTags || [])], [], pos).recognizedTags;
 
-                    /** @type {import('types').TermBank.StructuredContent}*/
+                    /** @type {import('./types').TermBank.StructuredContent}*/
                     const glossContent = [];
 
                     for (const [gloss, branches] of glossTree.entries()) {
@@ -456,7 +456,7 @@ let lastTermBankIndex = 0;
                         continue;
                     }
 
-                    /** @type {import('types').TermBank.StructuredContent}*/
+                    /** @type {import('./types').TermBank.StructuredContent}*/
                     const entryContent = [{
                         "tag": "ol",
                         "data" : {
@@ -484,13 +484,13 @@ let lastTermBankIndex = 0;
                         });
                     }
 
-                    /** @type {import('types').TermBank.DetailedDefinition}*/
+                    /** @type {import('./types').TermBank.DetailedDefinition}*/
                     const structuredEntry = {
                         "type": "structured-content",
                         "content": entryContent
                     }
 
-                    /** @type {import('types').TermBank.TermInformation} */
+                    /** @type {import('./types').TermBank.TermInformation} */
                     const entry = [
                         term, // term
                         reading !== normalizedLemma ? reading : '', // reading
@@ -729,7 +729,7 @@ function processGlossTags(gloss, senseTags, pos) {
  * @returns {CondensedFormEntries}
  */
 function writeYmtFormData(ymtFormData) {
-    /** @type {import('types').TermBank.TermInformation[]} */
+    /** @type {import('./types').TermBank.TermInformation[]} */
     const ymtForms = ymtFormData.map((form, index) => {
         const [term, reading, definitions] = form;
         return [
@@ -751,7 +751,7 @@ function writeYmtFormData(ymtFormData) {
 
 /**
  * @param {string} folder 
- * @param {import('types').TermBank.DictionaryTermBankV3 | import('types').TermBankMeta.DictionaryTermMetaBankV3} data 
+ * @param {import('./types').TermBank.DictionaryTermBankV3 | import('./types').TermBankMeta.DictionaryTermMetaBankV3} data 
  * @param {number} bankIndex
  * @returns 
  */

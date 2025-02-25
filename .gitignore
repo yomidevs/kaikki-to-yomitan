@@ -1,6 +1,7 @@
 *.json
 *.jsonl
 !jsconfig.json
+!tsconfig.json
 !.vscode/settings.json
 !tag_bank_term.json
 !tag_bank_ipa.json

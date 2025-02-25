@@ -2,6 +2,50 @@
   "_type": "map",
   "map": [
     [
+      "возни́кнуть",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "возни́к",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "short masculine singular past indicative perfective"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "простыня́",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "простынёй",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "instrumental singular"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
       "снег",
       {
         "_type": "map",
