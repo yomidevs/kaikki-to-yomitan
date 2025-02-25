@@ -92,7 +92,7 @@ function handleLine(line) {
         processTranslations(translations, glosses, senses, sense);
     }
 
-    if (glosses.length === 0) return;
+    if (glosses.size === 0) return;
     
     const processedPoS = findPartOfSpeech(pos, partsOfSpeech, skippedPartsOfSpeech);
     const definitions = [];
