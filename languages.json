@@ -5,6 +5,7 @@
     {"iso": "aii", "language": "Assyrian Neo-Aramaic", "flag": "🌞"                       },
     {"iso": "zh",  "language": "Chinese",              "flag": "🇨🇳",   "hasEdition": true },
     {"iso": "cs",  "language": "Czech",                "flag": "🇨🇿"                       },
+    {"iso": "da",  "language": "Danish",               "flag": "🇩🇰"                       },
     {"iso": "nl",  "language": "Dutch",                "flag": "🇳🇱",   "hasEdition": true },
     {"iso": "en",  "language": "English",              "flag": "🇺🇸🇬🇧", "hasEdition": true },
     {"iso": "eo",  "language": "Esperanto",            "flag": "🌍"                       },
