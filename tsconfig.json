@@ -5,7 +5,11 @@
       "checkJs": true,
       "noEmit": true,
       "moduleResolution": "nodenext",
-      "module": "NodeNext"
+      "module": "NodeNext",
+      "types": [
+          "jest",
+          "mocha"
+      ]
     },
     "exclude": [
       "node_modules",

@@ -12,7 +12,7 @@ declare global {
         tidy_folder: string,
     }
 
-     type KaikkiLine = {
+    type KaikkiLine = {
         head_templates?: HeadTemplate[];
         word?: string;
         pos?: string;
@@ -21,6 +21,7 @@ declare global {
         sounds?: Sound[];  
         forms?: FormInfo[];
         senses?: KaikkiSense[];
+        tags?: string;
     }
 
     type HeadTemplate = {
