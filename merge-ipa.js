@@ -26,12 +26,12 @@ async function main(){
                 for (const file of files) {
                     if(file.startsWith("term_meta_bank_")){
                         const data = await zip.entryData(file);
-                        const json = JSON.parse(data);
+                        const json = JSON.parse(data.toString());
                         localIpa = localIpa.concat(json);
                     }
                     if(file.startsWith("tag_bank_")){
                         const data = await zip.entryData(file);
-                        const json = JSON.parse(data);
+                        const json = JSON.parse(data.toString());
                         localTags = localTags.concat(json);
                     }
                 }
@@ -105,7 +105,7 @@ async function main(){
             writeInBatches(tempFolder, Object.values(globalIpa), 'term_meta_bank_', 500000);
             writeInBatches(tempFolder, globalTags, 'tag_bank_', 50000);
             
-            outputFolder = `data/language/${sourceIso}/`;
+            const outputFolder = `data/language/${sourceIso}/`;
             mkdirSync(outputFolder, { recursive: true });
             execSync(`zip -j ${outputFolder}/${title}.zip ${tempFolder}/*`);
             writeFileSync(`${outputFolder}/${title}-index.json`, JSON.stringify(globalIndex, null, 4));
