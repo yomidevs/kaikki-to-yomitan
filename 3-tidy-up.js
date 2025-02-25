@@ -509,7 +509,7 @@ function processEnglishInflectionGlosses(glosses, word, pos) {
     /**  @type {Set<string>} */
     const inflections = new Set();
     for (const piece of glossPieces) {
-        const lemmaMatch = piece.match(/of ([^\s]+)\s*$/);
+        const lemmaMatch = piece.match(/of ([^\s]+)\s*(\(.+?\))?$/);
         if (lemmaMatch) {
             lemmas.add(lemmaMatch[1].replace(/:/g, '').trim());
         }
@@ -531,6 +531,7 @@ function processEnglishInflectionGlosses(glosses, word, pos) {
             .replace(new RegExp(`${escapedLemma}`), '')
             .replace(new RegExp(`\\s+`), ' ')
             .replace(/:/g, '')
+            .replace(/\s*\(.+?\)$/, '')
             .trim();
 
         inflections.add(inflection); 
@@ -686,7 +687,7 @@ function handleAutomatedForms() {
         automatedForms.delete(lemma);
     }
 
-    console.log(`There were ${missingForms} missing forms that have now been automatically populated.`);
+    console.log(`\nThere were ${missingForms} missing forms that have now been automatically populated.`);
 }
 
 lr.on('end', () => {
