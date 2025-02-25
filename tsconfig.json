@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "skipLibCheck": true,
+      "allowJs": true,
+      "checkJs": true,
+      "noEmit": true,
+      "moduleResolution": "nodenext",
+      "module": "NodeNext"
+    },
+    "exclude": [
+      "node_modules",
+      "**/node_modules/**/*"
+    ]
+  }
+  
