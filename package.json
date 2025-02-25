@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "create-folders.js",
   "scripts": {
-    "test": "jest",
+    "test": "npm run test:ts && npm run test:unit",
+    "test:unit": "jest",
+    "test:ts": "tsc --noEmit",
     "test-write": "node write-tests.js"
   },
   "keywords": [],
