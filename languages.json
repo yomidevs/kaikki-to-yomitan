@@ -22,7 +22,7 @@
     {"iso": "kn",  "language": "Kannada",              "flag": "🇮🇳"                       },
     {"iso": "kk",  "language": "Kazakh",               "flag": "🇰🇿"                       },
     {"iso": "km",  "language": "Khmer",                "flag": "🇰🇭"                       },
-    {"iso": "ku",  "language": "Kurdish",              "flag": "🇮🇶"                       },
+    {"iso": "ku",  "language": "Kurdish",              "flag": "🇮🇶",   "hasEdition": true },
     {"iso": "ko",  "language": "Korean",               "flag": "🇰🇷",   "hasEdition": true },
     {"iso": "la",  "language": "Latin",                "flag": "🏛"                       },
     {"iso": "lv",  "language": "Latvian",              "flag": "🇱🇻"                       },
