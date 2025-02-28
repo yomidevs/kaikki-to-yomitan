@@ -693,6 +693,49 @@ function handleAutomatedForms() {
     console.log(`\nThere were ${missingForms} missing forms that have now been automatically populated.`);
 }
 
+/**
+ * @param {Map<string, Array<{lemma: string, pos: string, glosses: string[]}>>} formPointer
+ * @param {string} originalForm
+ * @param {string} originalLemma
+ * @param {string} form
+ * @param {string} pos
+ * @param {string[]} glosses
+ */
+function handleRecursiveForms(formPointer, originalForm, originalLemma, form, pos, glosses, level = 1, visited = new Set()) {
+    if (visited.has(form)) return;
+
+    visited.add(form);
+
+    if (lemmaDict[form] && originalForm !== form) {
+        if (level > 1) {
+            const lemma = form;
+
+            if (!formsMap.has(lemma)) {
+                formsMap.set(lemma, new Map());
+            }
+
+            if (!formsMap.get(lemma).has(originalForm)) {
+                formsMap.get(lemma).set(originalForm, new Map());
+            }
+
+            formsMap.get(lemma).get(originalForm).set(pos, glosses);
+
+            formsMap.get(originalLemma)?.delete(originalForm);
+        }
+    }
+
+    if (!lemmaDict[form] && formPointer.has(form)) {
+        for (const { lemma, pos: subPos, glosses: subGlosses } of formPointer.get(form)) {
+            if (level < 5) {
+                if (pos === subPos) {
+                    glosses.push(...subGlosses);
+                    handleRecursiveForms(formPointer, originalForm, originalLemma, lemma, subPos, glosses, level + 1, visited);
+                }
+            }
+        }
+    }
+}
+
 lr.on('end', () => {
     clearConsoleLine();
     process.stdout.write(`Processed ${lineCount} lines...\n`);
@@ -706,12 +749,35 @@ lr.on('end', () => {
     const lemmasFilePath = `${writeFolder}/${sourceIso}-${targetIso}-lemmas.json`;
     consoleOverwrite(`3-tidy-up.js: Writing lemma dict to ${lemmasFilePath}...`);
     writeFileSync(lemmasFilePath, JSON.stringify(lemmaDict, mapJsonReplacer));
-    
+
+    handleAutomatedForms();
+
+    consoleOverwrite('Handling recursive forms...');
+
+    /** @type {Map<string, Array<{lemma: string, pos: string, glosses: string[]}>>} */
+    const formPointer = new Map();
+
+    for (const [lemma, formMap] of formsMap.entries()) {
+        for (const [form, formInfo] of formMap.entries()) {
+            for (const [pos, glosses] of formInfo.entries()) {
+                if (!formPointer.has(form)) {
+                    formPointer.set(form, []);
+                }
+
+                formPointer.get(form).push({ lemma, pos, glosses });
+            }
+        }
+    }
+
+    for (const [form, entries] of formPointer.entries()) {
+        for (const { lemma, pos, glosses } of entries) {
+            handleRecursiveForms(formPointer, form, lemma, lemma, pos, [...glosses]);
+        }
+    }
+
     for (const prop of Object.getOwnPropertyNames(lemmaDict)) {
         delete lemmaDict[prop];
     }
-
-    handleAutomatedForms();
 
     const formsFilePath = `${writeFolder}/${sourceIso}-${targetIso}-forms.json`;
 
