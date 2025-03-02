@@ -9,18 +9,13 @@
       [
         "démarcher",
         [
-          "first/third-person",
-          "singular",
-          "present",
-          "indicative/subjunctive"
+          "first/third-person singular present indicative/subjunctive"
         ]
       ],
       [
         "démarcher",
         [
-          "second-person",
-          "singular",
-          "imperative"
+          "second-person singular imperative"
         ]
       ]
     ],
@@ -37,9 +32,7 @@
       [
         "prendre",
         [
-          "present",
-          "gerund",
-          "participle"
+          "present gerund participle"
         ]
       ]
     ],
@@ -56,9 +49,7 @@
       [
         "prendre",
         [
-          "present",
-          "gerund",
-          "participle"
+          "present gerund participle"
         ]
       ]
     ],
@@ -75,18 +66,13 @@
       [
         "prendre",
         [
-          "past",
-          "participle"
+          "past participle"
         ]
       ],
       [
         "prendre",
         [
-          "first/second-person",
-          "singular",
-          "past",
-          "indicative",
-          "historic"
+          "first/second-person singular past indicative historic"
         ]
       ]
     ],
@@ -103,18 +89,13 @@
       [
         "prendre",
         [
-          "first/second-person",
-          "singular",
-          "present",
-          "indicative"
+          "first/second-person singular present indicative"
         ]
       ],
       [
         "prendre",
         [
-          "second-person",
-          "singular",
-          "imperative"
+          "second-person singular imperative"
         ]
       ]
     ],
@@ -131,10 +112,7 @@
       [
         "prendre",
         [
-          "third-person",
-          "singular",
-          "present",
-          "indicative"
+          "third-person singular present indicative"
         ]
       ]
     ],
@@ -151,18 +129,13 @@
       [
         "prendre",
         [
-          "first-person",
-          "plural",
-          "imperative"
+          "first-person plural imperative"
         ]
       ],
       [
         "prendre",
         [
-          "first-person",
-          "plural",
-          "present",
-          "indicative"
+          "first-person plural present indicative"
         ]
       ]
     ],
@@ -179,18 +152,13 @@
       [
         "prendre",
         [
-          "second-person",
-          "plural",
-          "imperative"
+          "second-person plural imperative"
         ]
       ],
       [
         "prendre",
         [
-          "second-person",
-          "plural",
-          "present",
-          "indicative"
+          "second-person plural present indicative"
         ]
       ]
     ],
@@ -207,19 +175,13 @@
       [
         "prendre",
         [
-          "third-person",
-          "plural",
-          "present",
-          "indicative"
+          "third-person plural present indicative"
         ]
       ],
       [
         "prendre",
         [
-          "third-person",
-          "plural",
-          "present",
-          "subjunctive"
+          "third-person plural present subjunctive"
         ]
       ]
     ],
@@ -236,10 +198,7 @@
       [
         "prendre",
         [
-          "first/second-person",
-          "singular",
-          "imperfect",
-          "indicative"
+          "first/second-person singular imperfect indicative"
         ]
       ]
     ],
@@ -256,10 +215,7 @@
       [
         "prendre",
         [
-          "third-person",
-          "singular",
-          "imperfect",
-          "indicative"
+          "third-person singular imperfect indicative"
         ]
       ]
     ],
@@ -276,19 +232,13 @@
       [
         "prendre",
         [
-          "first-person",
-          "plural",
-          "imperfect",
-          "indicative"
+          "first-person plural imperfect indicative"
         ]
       ],
       [
         "prendre",
         [
-          "first-person",
-          "plural",
-          "present",
-          "subjunctive"
+          "first-person plural present subjunctive"
         ]
       ]
     ],
@@ -305,19 +255,13 @@
       [
         "prendre",
         [
-          "second-person",
-          "plural",
-          "imperfect",
-          "indicative"
+          "second-person plural imperfect indicative"
         ]
       ],
       [
         "prendre",
         [
-          "second-person",
-          "plural",
-          "present",
-          "subjunctive"
+          "second-person plural present subjunctive"
         ]
       ]
     ],
@@ -334,10 +278,7 @@
       [
         "prendre",
         [
-          "third-person",
-          "plural",
-          "imperfect",
-          "indicative"
+          "third-person plural imperfect indicative"
         ]
       ]
     ],
@@ -354,11 +295,7 @@
       [
         "prendre",
         [
-          "third-person",
-          "singular",
-          "past",
-          "indicative",
-          "historic"
+          "third-person singular past indicative historic"
         ]
       ]
     ],
@@ -375,11 +312,7 @@
       [
         "prendre",
         [
-          "first-person",
-          "plural",
-          "past",
-          "indicative",
-          "historic"
+          "first-person plural past indicative historic"
         ]
       ]
     ],
@@ -396,11 +329,7 @@
       [
         "prendre",
         [
-          "second-person",
-          "plural",
-          "past",
-          "indicative",
-          "historic"
+          "second-person plural past indicative historic"
         ]
       ]
     ],
@@ -417,11 +346,7 @@
       [
         "prendre",
         [
-          "third-person",
-          "plural",
-          "past",
-          "indicative",
-          "historic"
+          "third-person plural past indicative historic"
         ]
       ]
     ],
@@ -438,10 +363,7 @@
       [
         "prendre",
         [
-          "first-person",
-          "singular",
-          "future",
-          "indicative"
+          "first-person singular future indicative"
         ]
       ]
     ],
@@ -458,10 +380,7 @@
       [
         "prendre",
         [
-          "second-person",
-          "singular",
-          "future",
-          "indicative"
+          "second-person singular future indicative"
         ]
       ]
     ],
@@ -478,10 +397,7 @@
       [
         "prendre",
         [
-          "third-person",
-          "singular",
-          "future",
-          "indicative"
+          "third-person singular future indicative"
         ]
       ]
     ],
@@ -498,10 +414,7 @@
       [
         "prendre",
         [
-          "first-person",
-          "plural",
-          "future",
-          "indicative"
+          "first-person plural future indicative"
         ]
       ]
     ],
@@ -518,10 +431,7 @@
       [
         "prendre",
         [
-          "second-person",
-          "plural",
-          "future",
-          "indicative"
+          "second-person plural future indicative"
         ]
       ]
     ],
@@ -538,10 +448,7 @@
       [
         "prendre",
         [
-          "third-person",
-          "plural",
-          "future",
-          "indicative"
+          "third-person plural future indicative"
         ]
       ]
     ],
@@ -558,9 +465,7 @@
       [
         "prendre",
         [
-          "first/second-person",
-          "singular",
-          "conditional"
+          "first/second-person singular conditional"
         ]
       ]
     ],
@@ -577,9 +482,7 @@
       [
         "prendre",
         [
-          "third-person",
-          "singular",
-          "conditional"
+          "third-person singular conditional"
         ]
       ]
     ],
@@ -596,9 +499,7 @@
       [
         "prendre",
         [
-          "first-person",
-          "plural",
-          "conditional"
+          "first-person plural conditional"
         ]
       ]
     ],
@@ -615,9 +516,7 @@
       [
         "prendre",
         [
-          "second-person",
-          "plural",
-          "conditional"
+          "second-person plural conditional"
         ]
       ]
     ],
@@ -634,9 +533,7 @@
       [
         "prendre",
         [
-          "third-person",
-          "plural",
-          "conditional"
+          "third-person plural conditional"
         ]
       ]
     ],
@@ -653,9 +550,7 @@
       [
         "prendre",
         [
-          "present",
-          "perfect",
-          "indicative"
+          "present perfect indicative"
         ]
       ]
     ],
@@ -672,8 +567,7 @@
       [
         "prendre",
         [
-          "pluperfect",
-          "indicative"
+          "pluperfect indicative"
         ]
       ]
     ],
@@ -690,9 +584,7 @@
       [
         "prendre",
         [
-          "past",
-          "indicative",
-          "anterior"
+          "past indicative anterior"
         ]
       ]
     ],
@@ -709,9 +601,7 @@
       [
         "prendre",
         [
-          "future",
-          "perfect",
-          "indicative"
+          "future perfect indicative"
         ]
       ]
     ],
@@ -728,8 +618,7 @@
       [
         "prendre",
         [
-          "perfect",
-          "conditional"
+          "perfect conditional"
         ]
       ]
     ],
@@ -746,10 +635,7 @@
       [
         "prendre",
         [
-          "first/third-person",
-          "singular",
-          "present",
-          "subjunctive"
+          "first/third-person singular present subjunctive"
         ]
       ]
     ],
@@ -766,10 +652,7 @@
       [
         "prendre",
         [
-          "second-person",
-          "singular",
-          "present",
-          "subjunctive"
+          "second-person singular present subjunctive"
         ]
       ]
     ],
@@ -786,10 +669,7 @@
       [
         "prendre",
         [
-          "first-person",
-          "singular",
-          "imperfect",
-          "subjunctive"
+          "first-person singular imperfect subjunctive"
         ]
       ]
     ],
@@ -806,10 +686,7 @@
       [
         "prendre",
         [
-          "second-person",
-          "singular",
-          "imperfect",
-          "subjunctive"
+          "second-person singular imperfect subjunctive"
         ]
       ]
     ],
@@ -826,10 +703,7 @@
       [
         "prendre",
         [
-          "third-person",
-          "singular",
-          "imperfect",
-          "subjunctive"
+          "third-person singular imperfect subjunctive"
         ]
       ]
     ],
@@ -846,10 +720,7 @@
       [
         "prendre",
         [
-          "first-person",
-          "plural",
-          "imperfect",
-          "subjunctive"
+          "first-person plural imperfect subjunctive"
         ]
       ]
     ],
@@ -866,10 +737,7 @@
       [
         "prendre",
         [
-          "second-person",
-          "plural",
-          "imperfect",
-          "subjunctive"
+          "second-person plural imperfect subjunctive"
         ]
       ]
     ],
@@ -886,10 +754,7 @@
       [
         "prendre",
         [
-          "third-person",
-          "plural",
-          "imperfect",
-          "subjunctive"
+          "third-person plural imperfect subjunctive"
         ]
       ]
     ],
@@ -906,8 +771,7 @@
       [
         "prendre",
         [
-          "past",
-          "subjunctive"
+          "past subjunctive"
         ]
       ]
     ],
@@ -924,8 +788,7 @@
       [
         "prendre",
         [
-          "pluperfect",
-          "subjunctive"
+          "pluperfect subjunctive"
         ]
       ]
     ],
@@ -942,17 +805,13 @@
       [
         "prendre",
         [
-          "first/second-person",
-          "plural",
-          "imperative"
+          "first/second-person plural imperative"
         ]
       ],
       [
         "prendre",
         [
-          "second-person",
-          "singular",
-          "imperative"
+          "second-person singular imperative"
         ]
       ]
     ],
@@ -969,9 +828,7 @@
       [
         "sembler",
         [
-          "present",
-          "gerund",
-          "participle"
+          "present gerund participle"
         ]
       ]
     ],
@@ -988,9 +845,7 @@
       [
         "sembler",
         [
-          "present",
-          "gerund",
-          "participle"
+          "present gerund participle"
         ]
       ]
     ],
@@ -1007,8 +862,7 @@
       [
         "sembler",
         [
-          "past",
-          "participle"
+          "past participle"
         ]
       ]
     ],
@@ -1025,27 +879,19 @@
       [
         "sembler",
         [
-          "first/third-person",
-          "singular",
-          "present",
-          "indicative"
+          "first/third-person singular present indicative"
         ]
       ],
       [
         "sembler",
         [
-          "first/third-person",
-          "singular",
-          "present",
-          "subjunctive"
+          "first/third-person singular present subjunctive"
         ]
       ],
       [
         "sembler",
         [
-          "second-person",
-          "singular",
-          "imperative"
+          "second-person singular imperative"
         ]
       ]
     ],
@@ -1062,19 +908,13 @@
       [
         "sembler",
         [
-          "second-person",
-          "singular",
-          "present",
-          "indicative"
+          "second-person singular present indicative"
         ]
       ],
       [
         "sembler",
         [
-          "second-person",
-          "singular",
-          "present",
-          "subjunctive"
+          "second-person singular present subjunctive"
         ]
       ]
     ],
@@ -1091,18 +931,13 @@
       [
         "sembler",
         [
-          "first-person",
-          "plural",
-          "imperative"
+          "first-person plural imperative"
         ]
       ],
       [
         "sembler",
         [
-          "first-person",
-          "plural",
-          "present",
-          "indicative"
+          "first-person plural present indicative"
         ]
       ]
     ],
@@ -1119,18 +954,13 @@
       [
         "sembler",
         [
-          "second-person",
-          "plural",
-          "imperative"
+          "second-person plural imperative"
         ]
       ],
       [
         "sembler",
         [
-          "second-person",
-          "plural",
-          "present",
-          "indicative"
+          "second-person plural present indicative"
         ]
       ]
     ],
@@ -1147,19 +977,13 @@
       [
         "sembler",
         [
-          "third-person",
-          "plural",
-          "present",
-          "indicative"
+          "third-person plural present indicative"
         ]
       ],
       [
         "sembler",
         [
-          "third-person",
-          "plural",
-          "present",
-          "subjunctive"
+          "third-person plural present subjunctive"
         ]
       ]
     ],
@@ -1176,10 +1000,7 @@
       [
         "sembler",
         [
-          "first/second-person",
-          "singular",
-          "imperfect",
-          "indicative"
+          "first/second-person singular imperfect indicative"
         ]
       ]
     ],
@@ -1196,10 +1017,7 @@
       [
         "sembler",
         [
-          "third-person",
-          "singular",
-          "imperfect",
-          "indicative"
+          "third-person singular imperfect indicative"
         ]
       ]
     ],
@@ -1216,19 +1034,13 @@
       [
         "sembler",
         [
-          "first-person",
-          "plural",
-          "imperfect",
-          "indicative"
+          "first-person plural imperfect indicative"
         ]
       ],
       [
         "sembler",
         [
-          "first-person",
-          "plural",
-          "present",
-          "subjunctive"
+          "first-person plural present subjunctive"
         ]
       ]
     ],
@@ -1245,19 +1057,13 @@
       [
         "sembler",
         [
-          "second-person",
-          "plural",
-          "imperfect",
-          "indicative"
+          "second-person plural imperfect indicative"
         ]
       ],
       [
         "sembler",
         [
-          "second-person",
-          "plural",
-          "present",
-          "subjunctive"
+          "second-person plural present subjunctive"
         ]
       ]
     ],
@@ -1274,10 +1080,7 @@
       [
         "sembler",
         [
-          "third-person",
-          "plural",
-          "imperfect",
-          "indicative"
+          "third-person plural imperfect indicative"
         ]
       ]
     ],
@@ -1294,11 +1097,7 @@
       [
         "sembler",
         [
-          "first-person",
-          "singular",
-          "past",
-          "indicative",
-          "historic"
+          "first-person singular past indicative historic"
         ]
       ]
     ],
@@ -1315,11 +1114,7 @@
       [
         "sembler",
         [
-          "second-person",
-          "singular",
-          "past",
-          "indicative",
-          "historic"
+          "second-person singular past indicative historic"
         ]
       ]
     ],
@@ -1336,11 +1131,7 @@
       [
         "sembler",
         [
-          "third-person",
-          "singular",
-          "past",
-          "indicative",
-          "historic"
+          "third-person singular past indicative historic"
         ]
       ]
     ],
@@ -1357,11 +1148,7 @@
       [
         "sembler",
         [
-          "first-person",
-          "plural",
-          "past",
-          "indicative",
-          "historic"
+          "first-person plural past indicative historic"
         ]
       ]
     ],
@@ -1378,11 +1165,7 @@
       [
         "sembler",
         [
-          "second-person",
-          "plural",
-          "past",
-          "indicative",
-          "historic"
+          "second-person plural past indicative historic"
         ]
       ]
     ],
@@ -1399,11 +1182,7 @@
       [
         "sembler",
         [
-          "third-person",
-          "plural",
-          "past",
-          "indicative",
-          "historic"
+          "third-person plural past indicative historic"
         ]
       ]
     ],
@@ -1420,10 +1199,7 @@
       [
         "sembler",
         [
-          "first-person",
-          "singular",
-          "future",
-          "indicative"
+          "first-person singular future indicative"
         ]
       ]
     ],
@@ -1440,10 +1216,7 @@
       [
         "sembler",
         [
-          "second-person",
-          "singular",
-          "future",
-          "indicative"
+          "second-person singular future indicative"
         ]
       ]
     ],
@@ -1460,10 +1233,7 @@
       [
         "sembler",
         [
-          "third-person",
-          "singular",
-          "future",
-          "indicative"
+          "third-person singular future indicative"
         ]
       ]
     ],
@@ -1480,10 +1250,7 @@
       [
         "sembler",
         [
-          "first-person",
-          "plural",
-          "future",
-          "indicative"
+          "first-person plural future indicative"
         ]
       ]
     ],
@@ -1500,10 +1267,7 @@
       [
         "sembler",
         [
-          "second-person",
-          "plural",
-          "future",
-          "indicative"
+          "second-person plural future indicative"
         ]
       ]
     ],
@@ -1520,10 +1284,7 @@
       [
         "sembler",
         [
-          "third-person",
-          "plural",
-          "future",
-          "indicative"
+          "third-person plural future indicative"
         ]
       ]
     ],
@@ -1540,9 +1301,7 @@
       [
         "sembler",
         [
-          "first/second-person",
-          "singular",
-          "conditional"
+          "first/second-person singular conditional"
         ]
       ]
     ],
@@ -1559,9 +1318,7 @@
       [
         "sembler",
         [
-          "third-person",
-          "singular",
-          "conditional"
+          "third-person singular conditional"
         ]
       ]
     ],
@@ -1578,9 +1335,7 @@
       [
         "sembler",
         [
-          "first-person",
-          "plural",
-          "conditional"
+          "first-person plural conditional"
         ]
       ]
     ],
@@ -1597,9 +1352,7 @@
       [
         "sembler",
         [
-          "second-person",
-          "plural",
-          "conditional"
+          "second-person plural conditional"
         ]
       ]
     ],
@@ -1616,9 +1369,7 @@
       [
         "sembler",
         [
-          "third-person",
-          "plural",
-          "conditional"
+          "third-person plural conditional"
         ]
       ]
     ],
@@ -1635,9 +1386,7 @@
       [
         "sembler",
         [
-          "present",
-          "perfect",
-          "indicative"
+          "present perfect indicative"
         ]
       ]
     ],
@@ -1654,8 +1403,7 @@
       [
         "sembler",
         [
-          "pluperfect",
-          "indicative"
+          "pluperfect indicative"
         ]
       ]
     ],
@@ -1672,9 +1420,7 @@
       [
         "sembler",
         [
-          "past",
-          "indicative",
-          "anterior"
+          "past indicative anterior"
         ]
       ]
     ],
@@ -1691,9 +1437,7 @@
       [
         "sembler",
         [
-          "future",
-          "perfect",
-          "indicative"
+          "future perfect indicative"
         ]
       ]
     ],
@@ -1710,8 +1454,7 @@
       [
         "sembler",
         [
-          "perfect",
-          "conditional"
+          "perfect conditional"
         ]
       ]
     ],
@@ -1728,10 +1471,7 @@
       [
         "sembler",
         [
-          "first-person",
-          "singular",
-          "imperfect",
-          "subjunctive"
+          "first-person singular imperfect subjunctive"
         ]
       ]
     ],
@@ -1748,10 +1488,7 @@
       [
         "sembler",
         [
-          "second-person",
-          "singular",
-          "imperfect",
-          "subjunctive"
+          "second-person singular imperfect subjunctive"
         ]
       ]
     ],
@@ -1768,10 +1505,7 @@
       [
         "sembler",
         [
-          "third-person",
-          "singular",
-          "imperfect",
-          "subjunctive"
+          "third-person singular imperfect subjunctive"
         ]
       ]
     ],
@@ -1788,10 +1522,7 @@
       [
         "sembler",
         [
-          "first-person",
-          "plural",
-          "imperfect",
-          "subjunctive"
+          "first-person plural imperfect subjunctive"
         ]
       ]
     ],
@@ -1808,10 +1539,7 @@
       [
         "sembler",
         [
-          "second-person",
-          "plural",
-          "imperfect",
-          "subjunctive"
+          "second-person plural imperfect subjunctive"
         ]
       ]
     ],
@@ -1828,10 +1556,7 @@
       [
         "sembler",
         [
-          "third-person",
-          "plural",
-          "imperfect",
-          "subjunctive"
+          "third-person plural imperfect subjunctive"
         ]
       ]
     ],
@@ -1848,8 +1573,7 @@
       [
         "sembler",
         [
-          "past",
-          "subjunctive"
+          "past subjunctive"
         ]
       ]
     ],
@@ -1866,8 +1590,7 @@
       [
         "sembler",
         [
-          "pluperfect",
-          "subjunctive"
+          "pluperfect subjunctive"
         ]
       ]
     ],
@@ -1884,17 +1607,13 @@
       [
         "sembler",
         [
-          "first/second-person",
-          "plural",
-          "imperative"
+          "first/second-person plural imperative"
         ]
       ],
       [
         "sembler",
         [
-          "second-person",
-          "singular",
-          "imperative"
+          "second-person singular imperative"
         ]
       ]
     ],
