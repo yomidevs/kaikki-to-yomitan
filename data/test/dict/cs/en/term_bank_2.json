@@ -9,17 +9,13 @@
       [
         "přít",
         [
-          "singular",
-          "feminine",
-          "past active participle"
+          "feminine singular past active participle"
         ]
       ],
       [
         "přít",
         [
-          "plural",
-          "neuter",
-          "past active participle"
+          "neuter plural past active participle"
         ]
       ]
     ],
@@ -36,9 +32,7 @@
       [
         "přít",
         [
-          "first-person",
-          "singular",
-          "present indicative"
+          "first-person singular present indicative"
         ]
       ]
     ],
@@ -55,18 +49,13 @@
       [
         "přít",
         [
-          "first-person",
-          "plural",
-          "present",
-          "imperative"
+          "first-person plural present imperative"
         ]
       ],
       [
         "přít",
         [
-          "first-person",
-          "plural",
-          "present indicative"
+          "first-person plural present indicative"
         ]
       ]
     ],
@@ -83,9 +72,7 @@
       [
         "přít",
         [
-          "second-person",
-          "singular",
-          "present indicative"
+          "second-person singular present indicative"
         ]
       ]
     ],
@@ -102,18 +89,13 @@
       [
         "přít",
         [
-          "second-person",
-          "plural",
-          "present",
-          "imperative"
+          "second-person plural present imperative"
         ]
       ],
       [
         "přít",
         [
-          "second-person",
-          "plural",
-          "present indicative"
+          "second-person plural present indicative"
         ]
       ]
     ],
@@ -130,10 +112,7 @@
       [
         "přít",
         [
-          "second-person",
-          "singular",
-          "present",
-          "imperative"
+          "second-person singular present imperative"
         ]
       ]
     ],
@@ -150,17 +129,13 @@
       [
         "přít",
         [
-          "singular",
-          "masculine",
-          "present transgressive"
+          "singular masculine present transgressive"
         ]
       ],
       [
         "přít",
         [
-          "third-person",
-          "singular",
-          "present indicative"
+          "third-person singular present indicative"
         ]
       ]
     ],
@@ -177,9 +152,7 @@
       [
         "přít",
         [
-          "third-person",
-          "plural",
-          "present indicative"
+          "third-person plural present indicative"
         ]
       ]
     ],
@@ -196,19 +169,13 @@
       [
         "přít",
         [
-          "singular",
-          "past",
-          "participle",
-          "masculine animate"
+          "singular masculine animate past participle"
         ]
       ],
       [
         "přít",
         [
-          "singular",
-          "past",
-          "participle",
-          "masculine inanimate"
+          "singular masculine inanimate past participle"
         ]
       ]
     ],
@@ -225,10 +192,7 @@
       [
         "přít",
         [
-          "plural",
-          "past",
-          "participle",
-          "masculine animate"
+          "plural masculine animate past participle"
         ]
       ]
     ],
@@ -245,19 +209,13 @@
       [
         "přít",
         [
-          "plural",
-          "feminine",
-          "past",
-          "participle"
+          "plural feminine past participle"
         ]
       ],
       [
         "přít",
         [
-          "plural",
-          "past",
-          "participle",
-          "masculine inanimate"
+          "plural masculine inanimate past participle"
         ]
       ]
     ],
@@ -274,10 +232,7 @@
       [
         "přít",
         [
-          "singular",
-          "neuter",
-          "past",
-          "participle"
+          "singular neuter past participle"
         ]
       ]
     ],
@@ -294,9 +249,7 @@
       [
         "přít",
         [
-          "singular",
-          "masculine",
-          "present transgressive"
+          "singular masculine present transgressive"
         ]
       ]
     ],
@@ -313,10 +266,7 @@
       [
         "přít",
         [
-          "singular",
-          "feminine",
-          "neuter",
-          "present transgressive"
+          "singular feminine neuter present transgressive"
         ]
       ]
     ],
@@ -333,10 +283,7 @@
       [
         "přít",
         [
-          "singular",
-          "feminine",
-          "neuter",
-          "present transgressive"
+          "singular feminine neuter present transgressive"
         ]
       ]
     ],
@@ -353,8 +300,7 @@
       [
         "přít",
         [
-          "plural",
-          "present transgressive"
+          "plural present transgressive"
         ]
       ]
     ],
@@ -371,8 +317,7 @@
       [
         "přít",
         [
-          "plural",
-          "present transgressive"
+          "plural present transgressive"
         ]
       ]
     ],
@@ -389,29 +334,25 @@
       [
         "zpráva",
         [
-          "accusative",
-          "plural"
+          "accusative plural"
         ]
       ],
       [
         "zpráva",
         [
-          "nominative",
-          "plural"
+          "nominative plural"
         ]
       ],
       [
         "zpráva",
         [
-          "vocative",
-          "plural"
+          "vocative plural"
         ]
       ],
       [
         "zpráva",
         [
-          "genitive",
-          "singular"
+          "genitive singular"
         ]
       ]
     ],
@@ -428,8 +369,7 @@
       [
         "zpráva",
         [
-          "genitive",
-          "plural"
+          "genitive plural"
         ]
       ]
     ],
@@ -446,15 +386,13 @@
       [
         "zpráva",
         [
-          "dative",
-          "singular"
+          "dative singular"
         ]
       ],
       [
         "zpráva",
         [
-          "locative",
-          "singular"
+          "locative singular"
         ]
       ]
     ],
@@ -471,8 +409,7 @@
       [
         "zpráva",
         [
-          "dative",
-          "plural"
+          "dative plural"
         ]
       ]
     ],
@@ -489,8 +426,7 @@
       [
         "zpráva",
         [
-          "accusative",
-          "singular"
+          "accusative singular"
         ]
       ]
     ],
@@ -507,8 +443,7 @@
       [
         "zpráva",
         [
-          "vocative",
-          "singular"
+          "vocative singular"
         ]
       ]
     ],
@@ -525,8 +460,7 @@
       [
         "zpráva",
         [
-          "locative",
-          "plural"
+          "locative plural"
         ]
       ]
     ],
@@ -543,8 +477,7 @@
       [
         "zpráva",
         [
-          "instrumental",
-          "singular"
+          "instrumental singular"
         ]
       ]
     ],
@@ -561,8 +494,7 @@
       [
         "zpráva",
         [
-          "instrumental",
-          "plural"
+          "instrumental plural"
         ]
       ]
     ],

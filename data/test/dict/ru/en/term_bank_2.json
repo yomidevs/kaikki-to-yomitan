@@ -9,12 +9,7 @@
       [
         "возни́кнуть",
         [
-          "singular",
-          "masculine",
-          "past",
-          "perfective",
-          "indicative",
-          "short"
+          "short masculine singular past indicative perfective"
         ]
       ]
     ],
@@ -31,8 +26,7 @@
       [
         "простыня́",
         [
-          "instrumental",
-          "singular"
+          "instrumental singular"
         ]
       ]
     ],
@@ -55,8 +49,7 @@
       [
         "снег",
         [
-          "genitive",
-          "singular"
+          "genitive singular"
         ]
       ]
     ],
@@ -73,24 +66,19 @@
       [
         "снег",
         [
-          "accusative",
-          "plural",
-          "irregular"
+          "accusative plural irregular"
         ]
       ],
       [
         "снег",
         [
-          "nominative",
-          "plural"
+          "nominative plural"
         ]
       ],
       [
         "снег",
         [
-          "nominative",
-          "plural",
-          "irregular"
+          "nominative plural irregular"
         ]
       ]
     ],
@@ -107,8 +95,7 @@
       [
         "снег",
         [
-          "genitive",
-          "plural"
+          "genitive plural"
         ]
       ]
     ],
@@ -125,8 +112,7 @@
       [
         "снег",
         [
-          "adjective",
-          "relational"
+          "adjective relational"
         ]
       ]
     ],
@@ -143,8 +129,7 @@
       [
         "снег",
         [
-          "adjective",
-          "relational"
+          "adjective relational"
         ]
       ]
     ],
@@ -178,15 +163,13 @@
       [
         "снег",
         [
-          "singular",
-          "partitive"
+          "singular partitive"
         ]
       ],
       [
         "снег",
         [
-          "dative",
-          "singular"
+          "dative singular"
         ]
       ]
     ],
@@ -203,8 +186,7 @@
       [
         "снег",
         [
-          "dative",
-          "plural"
+          "dative plural"
         ]
       ]
     ],
@@ -221,8 +203,7 @@
       [
         "снег",
         [
-          "accusative",
-          "singular"
+          "accusative singular"
         ]
       ]
     ],
@@ -239,8 +220,7 @@
       [
         "снег",
         [
-          "instrumental",
-          "singular"
+          "instrumental singular"
         ]
       ]
     ],
@@ -257,8 +237,7 @@
       [
         "снег",
         [
-          "instrumental",
-          "plural"
+          "instrumental plural"
         ]
       ]
     ],
@@ -275,8 +254,7 @@
       [
         "снег",
         [
-          "prepositional",
-          "singular"
+          "prepositional singular"
         ]
       ]
     ],
@@ -293,8 +271,7 @@
       [
         "снег",
         [
-          "prepositional",
-          "plural"
+          "prepositional plural"
         ]
       ]
     ],
@@ -311,8 +288,7 @@
       [
         "снег",
         [
-          "locative",
-          "singular"
+          "locative singular"
         ]
       ]
     ],
@@ -346,9 +322,7 @@
       [
         "побеле́ть",
         [
-          "past",
-          "active",
-          "participle"
+          "past active participle"
         ]
       ]
     ],
@@ -365,9 +339,7 @@
       [
         "побеле́ть",
         [
-          "past",
-          "participle",
-          "adverbial"
+          "past participle adverbial"
         ]
       ]
     ],
@@ -384,9 +356,7 @@
       [
         "побеле́ть",
         [
-          "past",
-          "participle",
-          "adverbial"
+          "past participle adverbial"
         ]
       ]
     ],
@@ -403,9 +373,7 @@
       [
         "побеле́ть",
         [
-          "first-person",
-          "singular",
-          "future"
+          "first-person singular future"
         ]
       ]
     ],
@@ -422,9 +390,7 @@
       [
         "побеле́ть",
         [
-          "second-person",
-          "singular",
-          "future"
+          "second-person singular future"
         ]
       ]
     ],
@@ -441,9 +407,7 @@
       [
         "побеле́ть",
         [
-          "third-person",
-          "singular",
-          "future"
+          "third-person singular future"
         ]
       ]
     ],
@@ -460,9 +424,7 @@
       [
         "побеле́ть",
         [
-          "first-person",
-          "plural",
-          "future"
+          "first-person plural future"
         ]
       ]
     ],
@@ -479,9 +441,7 @@
       [
         "побеле́ть",
         [
-          "second-person",
-          "plural",
-          "future"
+          "second-person plural future"
         ]
       ]
     ],
@@ -498,9 +458,7 @@
       [
         "побеле́ть",
         [
-          "third-person",
-          "plural",
-          "future"
+          "third-person plural future"
         ]
       ]
     ],
@@ -517,8 +475,7 @@
       [
         "побеле́ть",
         [
-          "singular",
-          "imperative"
+          "singular imperative"
         ]
       ]
     ],
@@ -535,8 +492,7 @@
       [
         "побеле́ть",
         [
-          "plural",
-          "imperative"
+          "plural imperative"
         ]
       ]
     ],
@@ -553,9 +509,7 @@
       [
         "побеле́ть",
         [
-          "singular",
-          "masculine",
-          "past"
+          "singular masculine past"
         ]
       ]
     ],
@@ -572,25 +526,19 @@
       [
         "побеле́ть",
         [
-          "plural",
-          "feminine",
-          "past"
+          "plural feminine past"
         ]
       ],
       [
         "побеле́ть",
         [
-          "plural",
-          "masculine",
-          "past"
+          "plural masculine past"
         ]
       ],
       [
         "побеле́ть",
         [
-          "plural",
-          "neuter",
-          "past"
+          "plural neuter past"
         ]
       ]
     ],
@@ -607,9 +555,7 @@
       [
         "побеле́ть",
         [
-          "singular",
-          "feminine",
-          "past"
+          "singular feminine past"
         ]
       ]
     ],
@@ -626,9 +572,7 @@
       [
         "побеле́ть",
         [
-          "singular",
-          "neuter",
-          "past"
+          "singular neuter past"
         ]
       ]
     ],
@@ -645,15 +589,13 @@
       [
         "зи́мний",
         [
-          "accusative",
-          "neuter"
+          "accusative neuter"
         ]
       ],
       [
         "зи́мний",
         [
-          "nominative",
-          "neuter"
+          "nominative neuter"
         ]
       ]
     ],
@@ -670,8 +612,7 @@
       [
         "зи́мний",
         [
-          "nominative",
-          "feminine"
+          "nominative feminine"
         ]
       ]
     ],
@@ -688,16 +629,13 @@
       [
         "зи́мний",
         [
-          "accusative",
-          "plural",
-          "inanimate"
+          "accusative plural inanimate"
         ]
       ],
       [
         "зи́мний",
         [
-          "nominative",
-          "plural"
+          "nominative plural"
         ]
       ]
     ],
@@ -714,17 +652,13 @@
       [
         "зи́мний",
         [
-          "accusative",
-          "masculine",
-          "animate"
+          "accusative masculine animate"
         ]
       ],
       [
         "зи́мний",
         [
-          "genitive",
-          "masculine",
-          "neuter"
+          "genitive masculine neuter"
         ]
       ]
     ],
@@ -741,29 +675,25 @@
       [
         "зи́мний",
         [
-          "dative",
-          "feminine"
+          "dative feminine"
         ]
       ],
       [
         "зи́мний",
         [
-          "genitive",
-          "feminine"
+          "genitive feminine"
         ]
       ],
       [
         "зи́мний",
         [
-          "instrumental",
-          "feminine"
+          "instrumental feminine"
         ]
       ],
       [
         "зи́мний",
         [
-          "prepositional",
-          "feminine"
+          "prepositional feminine"
         ]
       ]
     ],
@@ -780,23 +710,19 @@
       [
         "зи́мний",
         [
-          "accusative",
-          "plural",
-          "animate"
+          "accusative plural animate"
         ]
       ],
       [
         "зи́мний",
         [
-          "genitive",
-          "plural"
+          "genitive plural"
         ]
       ],
       [
         "зи́мний",
         [
-          "prepositional",
-          "plural"
+          "prepositional plural"
         ]
       ]
     ],
@@ -813,9 +739,7 @@
       [
         "зи́мний",
         [
-          "dative",
-          "masculine",
-          "neuter"
+          "dative masculine neuter"
         ]
       ]
     ],
@@ -832,16 +756,13 @@
       [
         "зи́мний",
         [
-          "instrumental",
-          "masculine",
-          "neuter"
+          "instrumental masculine neuter"
         ]
       ],
       [
         "зи́мний",
         [
-          "dative",
-          "plural"
+          "dative plural"
         ]
       ]
     ],
@@ -858,8 +779,7 @@
       [
         "зи́мний",
         [
-          "accusative",
-          "feminine"
+          "accusative feminine"
         ]
       ]
     ],
@@ -876,8 +796,7 @@
       [
         "зи́мний",
         [
-          "instrumental",
-          "feminine"
+          "instrumental feminine"
         ]
       ]
     ],
@@ -894,8 +813,7 @@
       [
         "зи́мний",
         [
-          "instrumental",
-          "plural"
+          "instrumental plural"
         ]
       ]
     ],
@@ -912,9 +830,7 @@
       [
         "зи́мний",
         [
-          "prepositional",
-          "masculine",
-          "neuter"
+          "prepositional masculine neuter"
         ]
       ]
     ],
@@ -931,8 +847,7 @@
       [
         "зи́мний",
         [
-          "neuter",
-          "short-form"
+          "neuter short-form"
         ]
       ]
     ],
@@ -949,8 +864,7 @@
       [
         "зи́мний",
         [
-          "feminine",
-          "short-form"
+          "feminine short-form"
         ]
       ]
     ],
@@ -967,8 +881,7 @@
       [
         "зи́мний",
         [
-          "plural",
-          "short-form"
+          "plural short-form"
         ]
       ]
     ],
