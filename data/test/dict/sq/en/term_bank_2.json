@@ -9,9 +9,7 @@
       [
         "iki",
         [
-          "second-person",
-          "singular",
-          "imperative"
+          "second-person singular imperative"
         ]
       ]
     ],
@@ -45,8 +43,7 @@
       [
         "gjuhë",
         [
-          "plural",
-          "dialectal"
+          "plural dialectal"
         ]
       ]
     ],
@@ -69,9 +66,7 @@
       [
         "gjuhë",
         [
-          "nominative",
-          "singular",
-          "definite"
+          "nominative singular definite"
         ]
       ]
     ],
@@ -88,17 +83,13 @@
       [
         "gjuhë",
         [
-          "accusative",
-          "plural",
-          "definite"
+          "accusative plural definite"
         ]
       ],
       [
         "gjuhë",
         [
-          "nominative",
-          "plural",
-          "definite"
+          "nominative plural definite"
         ]
       ]
     ],
@@ -115,9 +106,7 @@
       [
         "gjuhë",
         [
-          "accusative",
-          "singular",
-          "definite"
+          "accusative singular definite"
         ]
       ]
     ],
@@ -134,17 +123,13 @@
       [
         "gjuhë",
         [
-          "singular",
-          "indefinite",
-          "ablative"
+          "singular indefinite ablative"
         ]
       ],
       [
         "gjuhë",
         [
-          "dative",
-          "singular",
-          "indefinite"
+          "dative singular indefinite"
         ]
       ]
     ],
@@ -161,17 +146,13 @@
       [
         "gjuhë",
         [
-          "singular",
-          "definite",
-          "ablative"
+          "singular definite ablative"
         ]
       ],
       [
         "gjuhë",
         [
-          "dative",
-          "singular",
-          "definite"
+          "dative singular definite"
         ]
       ]
     ],
@@ -188,25 +169,19 @@
       [
         "gjuhë",
         [
-          "plural",
-          "definite",
-          "ablative"
+          "plural definite ablative"
         ]
       ],
       [
         "gjuhë",
         [
-          "dative",
-          "plural",
-          "definite"
+          "dative plural definite"
         ]
       ],
       [
         "gjuhë",
         [
-          "dative",
-          "plural",
-          "indefinite"
+          "dative plural indefinite"
         ]
       ]
     ],
@@ -223,9 +198,7 @@
       [
         "gjuhë",
         [
-          "plural",
-          "indefinite",
-          "ablative"
+          "plural indefinite ablative"
         ]
       ]
     ],

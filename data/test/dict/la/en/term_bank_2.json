@@ -15,29 +15,25 @@
       [
         "fāma",
         [
-          "nominative",
-          "plural"
+          "nominative plural"
         ]
       ],
       [
         "fāma",
         [
-          "vocative",
-          "plural"
+          "vocative plural"
         ]
       ],
       [
         "fāma",
         [
-          "dative",
-          "singular"
+          "dative singular"
         ]
       ],
       [
         "fāma",
         [
-          "genitive",
-          "singular"
+          "genitive singular"
         ]
       ]
     ],
@@ -54,8 +50,7 @@
       [
         "fāma",
         [
-          "genitive",
-          "plural"
+          "genitive plural"
         ]
       ]
     ],
@@ -72,15 +67,13 @@
       [
         "fāma",
         [
-          "plural",
-          "ablative"
+          "plural ablative"
         ]
       ],
       [
         "fāma",
         [
-          "dative",
-          "plural"
+          "dative plural"
         ]
       ]
     ],
@@ -97,8 +90,7 @@
       [
         "fāma",
         [
-          "accusative",
-          "singular"
+          "accusative singular"
         ]
       ]
     ],
@@ -115,8 +107,7 @@
       [
         "fāma",
         [
-          "accusative",
-          "plural"
+          "accusative plural"
         ]
       ]
     ],
@@ -133,8 +124,7 @@
       [
         "fāma",
         [
-          "singular",
-          "ablative"
+          "singular ablative"
         ]
       ]
     ],
@@ -151,36 +141,25 @@
       [
         "legō",
         [
-          "present",
-          "active",
-          "infinitive"
+          "present active infinitive"
         ]
       ],
       [
         "legō",
         [
-          "present",
-          "infinitive"
+          "present infinitive"
         ]
       ],
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "present",
-          "imperative",
-          "passive"
+          "second-person singular present imperative passive"
         ]
       ],
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "present",
-          "passive",
-          "indicative"
+          "second-person singular present passive indicative"
         ]
       ]
     ],
@@ -197,18 +176,13 @@
       [
         "legō",
         [
-          "perfect",
-          "active"
+          "perfect active"
         ]
       ],
       [
         "legō",
         [
-          "first-person",
-          "singular",
-          "perfect",
-          "active",
-          "indicative"
+          "first-person singular perfect active indicative"
         ]
       ]
     ],
@@ -231,9 +205,7 @@
       [
         "legō",
         [
-          "accusative",
-          "noun-from-verb",
-          "supine"
+          "accusative noun-from-verb supine"
         ]
       ]
     ],
@@ -250,11 +222,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "present",
-          "active",
-          "indicative"
+          "second-person singular present active indicative"
         ]
       ]
     ],
@@ -271,11 +239,7 @@
       [
         "legō",
         [
-          "third-person",
-          "singular",
-          "present",
-          "active",
-          "indicative"
+          "third-person singular present active indicative"
         ]
       ]
     ],
@@ -292,11 +256,7 @@
       [
         "legō",
         [
-          "first-person",
-          "plural",
-          "present",
-          "active",
-          "indicative"
+          "first-person plural present active indicative"
         ]
       ]
     ],
@@ -313,11 +273,7 @@
       [
         "legō",
         [
-          "second-person",
-          "plural",
-          "present",
-          "active",
-          "indicative"
+          "second-person plural present active indicative"
         ]
       ]
     ],
@@ -334,11 +290,7 @@
       [
         "legō",
         [
-          "third-person",
-          "plural",
-          "present",
-          "active",
-          "indicative"
+          "third-person plural present active indicative"
         ]
       ]
     ],
@@ -355,11 +307,7 @@
       [
         "legō",
         [
-          "first-person",
-          "singular",
-          "imperfect",
-          "active",
-          "indicative"
+          "first-person singular imperfect active indicative"
         ]
       ]
     ],
@@ -376,11 +324,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "imperfect",
-          "active",
-          "indicative"
+          "second-person singular imperfect active indicative"
         ]
       ]
     ],
@@ -397,11 +341,7 @@
       [
         "legō",
         [
-          "third-person",
-          "singular",
-          "imperfect",
-          "active",
-          "indicative"
+          "third-person singular imperfect active indicative"
         ]
       ]
     ],
@@ -418,11 +358,7 @@
       [
         "legō",
         [
-          "first-person",
-          "plural",
-          "imperfect",
-          "active",
-          "indicative"
+          "first-person plural imperfect active indicative"
         ]
       ]
     ],
@@ -439,11 +375,7 @@
       [
         "legō",
         [
-          "second-person",
-          "plural",
-          "imperfect",
-          "active",
-          "indicative"
+          "second-person plural imperfect active indicative"
         ]
       ]
     ],
@@ -460,11 +392,7 @@
       [
         "legō",
         [
-          "third-person",
-          "plural",
-          "imperfect",
-          "active",
-          "indicative"
+          "third-person plural imperfect active indicative"
         ]
       ]
     ],
@@ -481,21 +409,13 @@
       [
         "legō",
         [
-          "first-person",
-          "singular",
-          "future",
-          "active",
-          "indicative"
+          "first-person singular future active indicative"
         ]
       ],
       [
         "legō",
         [
-          "first-person",
-          "singular",
-          "present",
-          "active",
-          "subjunctive"
+          "first-person singular present active subjunctive"
         ]
       ]
     ],
@@ -512,11 +432,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "future",
-          "active",
-          "indicative"
+          "second-person singular future active indicative"
         ]
       ]
     ],
@@ -533,11 +449,7 @@
       [
         "legō",
         [
-          "third-person",
-          "singular",
-          "future",
-          "active",
-          "indicative"
+          "third-person singular future active indicative"
         ]
       ]
     ],
@@ -554,11 +466,7 @@
       [
         "legō",
         [
-          "first-person",
-          "plural",
-          "future",
-          "active",
-          "indicative"
+          "first-person plural future active indicative"
         ]
       ]
     ],
@@ -575,11 +483,7 @@
       [
         "legō",
         [
-          "second-person",
-          "plural",
-          "future",
-          "active",
-          "indicative"
+          "second-person plural future active indicative"
         ]
       ]
     ],
@@ -596,11 +500,7 @@
       [
         "legō",
         [
-          "third-person",
-          "plural",
-          "future",
-          "active",
-          "indicative"
+          "third-person plural future active indicative"
         ]
       ]
     ],
@@ -617,11 +517,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "perfect",
-          "active",
-          "indicative"
+          "second-person singular perfect active indicative"
         ]
       ]
     ],
@@ -638,11 +534,7 @@
       [
         "legō",
         [
-          "third-person",
-          "singular",
-          "perfect",
-          "active",
-          "indicative"
+          "third-person singular perfect active indicative"
         ]
       ]
     ],
@@ -659,11 +551,7 @@
       [
         "legō",
         [
-          "first-person",
-          "plural",
-          "perfect",
-          "active",
-          "indicative"
+          "first-person plural perfect active indicative"
         ]
       ]
     ],
@@ -680,11 +568,7 @@
       [
         "legō",
         [
-          "second-person",
-          "plural",
-          "perfect",
-          "active",
-          "indicative"
+          "second-person plural perfect active indicative"
         ]
       ]
     ],
@@ -701,11 +585,7 @@
       [
         "legō",
         [
-          "third-person",
-          "plural",
-          "perfect",
-          "active",
-          "indicative"
+          "third-person plural perfect active indicative"
         ]
       ]
     ],
@@ -722,11 +602,7 @@
       [
         "legō",
         [
-          "third-person",
-          "plural",
-          "perfect",
-          "active",
-          "indicative"
+          "third-person plural perfect active indicative"
         ]
       ]
     ],
@@ -743,11 +619,7 @@
       [
         "legō",
         [
-          "first-person",
-          "singular",
-          "pluperfect",
-          "active",
-          "indicative"
+          "first-person singular pluperfect active indicative"
         ]
       ]
     ],
@@ -764,11 +636,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "pluperfect",
-          "active",
-          "indicative"
+          "second-person singular pluperfect active indicative"
         ]
       ]
     ],
@@ -785,11 +653,7 @@
       [
         "legō",
         [
-          "third-person",
-          "singular",
-          "pluperfect",
-          "active",
-          "indicative"
+          "third-person singular pluperfect active indicative"
         ]
       ]
     ],
@@ -806,11 +670,7 @@
       [
         "legō",
         [
-          "first-person",
-          "plural",
-          "pluperfect",
-          "active",
-          "indicative"
+          "first-person plural pluperfect active indicative"
         ]
       ]
     ],
@@ -827,11 +687,7 @@
       [
         "legō",
         [
-          "second-person",
-          "plural",
-          "pluperfect",
-          "active",
-          "indicative"
+          "second-person plural pluperfect active indicative"
         ]
       ]
     ],
@@ -848,11 +704,7 @@
       [
         "legō",
         [
-          "third-person",
-          "plural",
-          "pluperfect",
-          "active",
-          "indicative"
+          "third-person plural pluperfect active indicative"
         ]
       ]
     ],
@@ -869,12 +721,7 @@
       [
         "legō",
         [
-          "first-person",
-          "singular",
-          "future",
-          "perfect",
-          "active",
-          "indicative"
+          "first-person singular future perfect active indicative"
         ]
       ]
     ],
@@ -891,12 +738,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "future",
-          "perfect",
-          "active",
-          "indicative"
+          "second-person singular future perfect active indicative"
         ]
       ]
     ],
@@ -913,22 +755,13 @@
       [
         "legō",
         [
-          "third-person",
-          "singular",
-          "future",
-          "perfect",
-          "active",
-          "indicative"
+          "third-person singular future perfect active indicative"
         ]
       ],
       [
         "legō",
         [
-          "third-person",
-          "singular",
-          "perfect",
-          "active",
-          "subjunctive"
+          "third-person singular perfect active subjunctive"
         ]
       ]
     ],
@@ -945,12 +778,7 @@
       [
         "legō",
         [
-          "first-person",
-          "plural",
-          "future",
-          "perfect",
-          "active",
-          "indicative"
+          "first-person plural future perfect active indicative"
         ]
       ]
     ],
@@ -967,12 +795,7 @@
       [
         "legō",
         [
-          "second-person",
-          "plural",
-          "future",
-          "perfect",
-          "active",
-          "indicative"
+          "second-person plural future perfect active indicative"
         ]
       ]
     ],
@@ -989,22 +812,13 @@
       [
         "legō",
         [
-          "third-person",
-          "plural",
-          "future",
-          "perfect",
-          "active",
-          "indicative"
+          "third-person plural future perfect active indicative"
         ]
       ],
       [
         "legō",
         [
-          "third-person",
-          "plural",
-          "perfect",
-          "active",
-          "subjunctive"
+          "third-person plural perfect active subjunctive"
         ]
       ]
     ],
@@ -1021,11 +835,7 @@
       [
         "legō",
         [
-          "first-person",
-          "singular",
-          "present",
-          "passive",
-          "indicative"
+          "first-person singular present passive indicative"
         ]
       ]
     ],
@@ -1042,11 +852,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "present",
-          "passive",
-          "indicative"
+          "second-person singular present passive indicative"
         ]
       ]
     ],
@@ -1063,11 +869,7 @@
       [
         "legō",
         [
-          "third-person",
-          "singular",
-          "present",
-          "passive",
-          "indicative"
+          "third-person singular present passive indicative"
         ]
       ]
     ],
@@ -1084,11 +886,7 @@
       [
         "legō",
         [
-          "first-person",
-          "plural",
-          "present",
-          "passive",
-          "indicative"
+          "first-person plural present passive indicative"
         ]
       ]
     ],
@@ -1105,21 +903,13 @@
       [
         "legō",
         [
-          "second-person",
-          "plural",
-          "present",
-          "imperative",
-          "passive"
+          "second-person plural present imperative passive"
         ]
       ],
       [
         "legō",
         [
-          "second-person",
-          "plural",
-          "present",
-          "passive",
-          "indicative"
+          "second-person plural present passive indicative"
         ]
       ]
     ],
@@ -1136,11 +926,7 @@
       [
         "legō",
         [
-          "third-person",
-          "plural",
-          "present",
-          "passive",
-          "indicative"
+          "third-person plural present passive indicative"
         ]
       ]
     ],
@@ -1157,11 +943,7 @@
       [
         "legō",
         [
-          "first-person",
-          "singular",
-          "imperfect",
-          "passive",
-          "indicative"
+          "first-person singular imperfect passive indicative"
         ]
       ]
     ],
@@ -1178,11 +960,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "imperfect",
-          "passive",
-          "indicative"
+          "second-person singular imperfect passive indicative"
         ]
       ]
     ],
@@ -1199,11 +977,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "imperfect",
-          "passive",
-          "indicative"
+          "second-person singular imperfect passive indicative"
         ]
       ]
     ],
@@ -1220,11 +994,7 @@
       [
         "legō",
         [
-          "third-person",
-          "singular",
-          "imperfect",
-          "passive",
-          "indicative"
+          "third-person singular imperfect passive indicative"
         ]
       ]
     ],
@@ -1241,11 +1011,7 @@
       [
         "legō",
         [
-          "first-person",
-          "plural",
-          "imperfect",
-          "passive",
-          "indicative"
+          "first-person plural imperfect passive indicative"
         ]
       ]
     ],
@@ -1262,11 +1028,7 @@
       [
         "legō",
         [
-          "second-person",
-          "plural",
-          "imperfect",
-          "passive",
-          "indicative"
+          "second-person plural imperfect passive indicative"
         ]
       ]
     ],
@@ -1283,11 +1045,7 @@
       [
         "legō",
         [
-          "third-person",
-          "plural",
-          "imperfect",
-          "passive",
-          "indicative"
+          "third-person plural imperfect passive indicative"
         ]
       ]
     ],
@@ -1304,21 +1062,13 @@
       [
         "legō",
         [
-          "first-person",
-          "singular",
-          "future",
-          "passive",
-          "indicative"
+          "first-person singular future passive indicative"
         ]
       ],
       [
         "legō",
         [
-          "first-person",
-          "singular",
-          "present",
-          "passive",
-          "subjunctive"
+          "first-person singular present passive subjunctive"
         ]
       ]
     ],
@@ -1335,11 +1085,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "future",
-          "passive",
-          "indicative"
+          "second-person singular future passive indicative"
         ]
       ]
     ],
@@ -1356,11 +1102,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "future",
-          "passive",
-          "indicative"
+          "second-person singular future passive indicative"
         ]
       ]
     ],
@@ -1377,11 +1119,7 @@
       [
         "legō",
         [
-          "third-person",
-          "singular",
-          "future",
-          "passive",
-          "indicative"
+          "third-person singular future passive indicative"
         ]
       ]
     ],
@@ -1398,11 +1136,7 @@
       [
         "legō",
         [
-          "first-person",
-          "plural",
-          "future",
-          "passive",
-          "indicative"
+          "first-person plural future passive indicative"
         ]
       ]
     ],
@@ -1419,11 +1153,7 @@
       [
         "legō",
         [
-          "second-person",
-          "plural",
-          "future",
-          "passive",
-          "indicative"
+          "second-person plural future passive indicative"
         ]
       ]
     ],
@@ -1440,11 +1170,7 @@
       [
         "legō",
         [
-          "third-person",
-          "plural",
-          "future",
-          "passive",
-          "indicative"
+          "third-person plural future passive indicative"
         ]
       ]
     ],
@@ -1461,9 +1187,7 @@
       [
         "legō",
         [
-          "perfect",
-          "passive",
-          "indicative"
+          "perfect passive indicative"
         ]
       ]
     ],
@@ -1480,9 +1204,7 @@
       [
         "legō",
         [
-          "pluperfect",
-          "passive",
-          "indicative"
+          "pluperfect passive indicative"
         ]
       ]
     ],
@@ -1499,10 +1221,7 @@
       [
         "legō",
         [
-          "future",
-          "perfect",
-          "passive",
-          "indicative"
+          "future perfect passive indicative"
         ]
       ]
     ],
@@ -1519,11 +1238,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "present",
-          "active",
-          "subjunctive"
+          "second-person singular present active subjunctive"
         ]
       ]
     ],
@@ -1540,11 +1255,7 @@
       [
         "legō",
         [
-          "third-person",
-          "singular",
-          "present",
-          "active",
-          "subjunctive"
+          "third-person singular present active subjunctive"
         ]
       ]
     ],
@@ -1561,11 +1272,7 @@
       [
         "legō",
         [
-          "first-person",
-          "plural",
-          "present",
-          "active",
-          "subjunctive"
+          "first-person plural present active subjunctive"
         ]
       ]
     ],
@@ -1582,11 +1289,7 @@
       [
         "legō",
         [
-          "second-person",
-          "plural",
-          "present",
-          "active",
-          "subjunctive"
+          "second-person plural present active subjunctive"
         ]
       ]
     ],
@@ -1603,11 +1306,7 @@
       [
         "legō",
         [
-          "third-person",
-          "plural",
-          "present",
-          "active",
-          "subjunctive"
+          "third-person plural present active subjunctive"
         ]
       ]
     ],
@@ -1624,11 +1323,7 @@
       [
         "legō",
         [
-          "first-person",
-          "singular",
-          "imperfect",
-          "active",
-          "subjunctive"
+          "first-person singular imperfect active subjunctive"
         ]
       ]
     ],
@@ -1645,11 +1340,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "imperfect",
-          "active",
-          "subjunctive"
+          "second-person singular imperfect active subjunctive"
         ]
       ]
     ],
@@ -1666,11 +1357,7 @@
       [
         "legō",
         [
-          "third-person",
-          "singular",
-          "imperfect",
-          "active",
-          "subjunctive"
+          "third-person singular imperfect active subjunctive"
         ]
       ]
     ],
@@ -1687,11 +1374,7 @@
       [
         "legō",
         [
-          "first-person",
-          "plural",
-          "imperfect",
-          "active",
-          "subjunctive"
+          "first-person plural imperfect active subjunctive"
         ]
       ]
     ],
@@ -1708,11 +1391,7 @@
       [
         "legō",
         [
-          "second-person",
-          "plural",
-          "imperfect",
-          "active",
-          "subjunctive"
+          "second-person plural imperfect active subjunctive"
         ]
       ]
     ],
@@ -1729,11 +1408,7 @@
       [
         "legō",
         [
-          "third-person",
-          "plural",
-          "imperfect",
-          "active",
-          "subjunctive"
+          "third-person plural imperfect active subjunctive"
         ]
       ]
     ],
@@ -1750,11 +1425,7 @@
       [
         "legō",
         [
-          "first-person",
-          "singular",
-          "perfect",
-          "active",
-          "subjunctive"
+          "first-person singular perfect active subjunctive"
         ]
       ]
     ],
@@ -1771,11 +1442,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "perfect",
-          "active",
-          "subjunctive"
+          "second-person singular perfect active subjunctive"
         ]
       ]
     ],
@@ -1792,11 +1459,7 @@
       [
         "legō",
         [
-          "first-person",
-          "plural",
-          "perfect",
-          "active",
-          "subjunctive"
+          "first-person plural perfect active subjunctive"
         ]
       ]
     ],
@@ -1813,11 +1476,7 @@
       [
         "legō",
         [
-          "second-person",
-          "plural",
-          "perfect",
-          "active",
-          "subjunctive"
+          "second-person plural perfect active subjunctive"
         ]
       ]
     ],
@@ -1834,11 +1493,7 @@
       [
         "legō",
         [
-          "first-person",
-          "singular",
-          "pluperfect",
-          "active",
-          "subjunctive"
+          "first-person singular pluperfect active subjunctive"
         ]
       ]
     ],
@@ -1855,11 +1510,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "pluperfect",
-          "active",
-          "subjunctive"
+          "second-person singular pluperfect active subjunctive"
         ]
       ]
     ],
@@ -1876,11 +1527,7 @@
       [
         "legō",
         [
-          "third-person",
-          "singular",
-          "pluperfect",
-          "active",
-          "subjunctive"
+          "third-person singular pluperfect active subjunctive"
         ]
       ]
     ],
@@ -1897,11 +1544,7 @@
       [
         "legō",
         [
-          "first-person",
-          "plural",
-          "pluperfect",
-          "active",
-          "subjunctive"
+          "first-person plural pluperfect active subjunctive"
         ]
       ]
     ],
@@ -1918,11 +1561,7 @@
       [
         "legō",
         [
-          "second-person",
-          "plural",
-          "pluperfect",
-          "active",
-          "subjunctive"
+          "second-person plural pluperfect active subjunctive"
         ]
       ]
     ],
@@ -1939,11 +1578,7 @@
       [
         "legō",
         [
-          "third-person",
-          "plural",
-          "pluperfect",
-          "active",
-          "subjunctive"
+          "third-person plural pluperfect active subjunctive"
         ]
       ]
     ],
@@ -1960,11 +1595,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "present",
-          "passive",
-          "subjunctive"
+          "second-person singular present passive subjunctive"
         ]
       ]
     ],
@@ -1981,11 +1612,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "present",
-          "passive",
-          "subjunctive"
+          "second-person singular present passive subjunctive"
         ]
       ]
     ],
@@ -2002,11 +1629,7 @@
       [
         "legō",
         [
-          "third-person",
-          "singular",
-          "present",
-          "passive",
-          "subjunctive"
+          "third-person singular present passive subjunctive"
         ]
       ]
     ],
@@ -2023,11 +1646,7 @@
       [
         "legō",
         [
-          "first-person",
-          "plural",
-          "present",
-          "passive",
-          "subjunctive"
+          "first-person plural present passive subjunctive"
         ]
       ]
     ],
@@ -2044,11 +1663,7 @@
       [
         "legō",
         [
-          "second-person",
-          "plural",
-          "present",
-          "passive",
-          "subjunctive"
+          "second-person plural present passive subjunctive"
         ]
       ]
     ],
@@ -2065,11 +1680,7 @@
       [
         "legō",
         [
-          "third-person",
-          "plural",
-          "present",
-          "passive",
-          "subjunctive"
+          "third-person plural present passive subjunctive"
         ]
       ]
     ],
@@ -2086,11 +1697,7 @@
       [
         "legō",
         [
-          "first-person",
-          "singular",
-          "imperfect",
-          "passive",
-          "subjunctive"
+          "first-person singular imperfect passive subjunctive"
         ]
       ]
     ],
@@ -2107,11 +1714,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "imperfect",
-          "passive",
-          "subjunctive"
+          "second-person singular imperfect passive subjunctive"
         ]
       ]
     ],
@@ -2128,11 +1731,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "imperfect",
-          "passive",
-          "subjunctive"
+          "second-person singular imperfect passive subjunctive"
         ]
       ]
     ],
@@ -2149,11 +1748,7 @@
       [
         "legō",
         [
-          "third-person",
-          "singular",
-          "imperfect",
-          "passive",
-          "subjunctive"
+          "third-person singular imperfect passive subjunctive"
         ]
       ]
     ],
@@ -2170,11 +1765,7 @@
       [
         "legō",
         [
-          "first-person",
-          "plural",
-          "imperfect",
-          "passive",
-          "subjunctive"
+          "first-person plural imperfect passive subjunctive"
         ]
       ]
     ],
@@ -2191,11 +1782,7 @@
       [
         "legō",
         [
-          "second-person",
-          "plural",
-          "imperfect",
-          "passive",
-          "subjunctive"
+          "second-person plural imperfect passive subjunctive"
         ]
       ]
     ],
@@ -2212,11 +1799,7 @@
       [
         "legō",
         [
-          "third-person",
-          "plural",
-          "imperfect",
-          "passive",
-          "subjunctive"
+          "third-person plural imperfect passive subjunctive"
         ]
       ]
     ],
@@ -2233,9 +1816,7 @@
       [
         "legō",
         [
-          "perfect",
-          "passive",
-          "subjunctive"
+          "perfect passive subjunctive"
         ]
       ]
     ],
@@ -2252,9 +1833,7 @@
       [
         "legō",
         [
-          "pluperfect",
-          "passive",
-          "subjunctive"
+          "pluperfect passive subjunctive"
         ]
       ]
     ],
@@ -2271,11 +1850,7 @@
       [
         "legō",
         [
-          "second-person",
-          "singular",
-          "present",
-          "imperative",
-          "active"
+          "second-person singular present imperative active"
         ]
       ]
     ],
@@ -2292,11 +1867,7 @@
       [
         "legō",
         [
-          "second-person",
-          "plural",
-          "present",
-          "imperative",
-          "active"
+          "second-person plural present imperative active"
         ]
       ]
     ],
@@ -2313,11 +1884,7 @@
       [
         "legō",
         [
-          "singular",
-          "future",
-          "imperative",
-          "active",
-          "second/third-person"
+          "singular future imperative active second/third-person"
         ]
       ]
     ],
@@ -2334,11 +1901,7 @@
       [
         "legō",
         [
-          "second-person",
-          "plural",
-          "future",
-          "imperative",
-          "active"
+          "second-person plural future imperative active"
         ]
       ]
     ],
@@ -2355,11 +1918,7 @@
       [
         "legō",
         [
-          "third-person",
-          "plural",
-          "future",
-          "imperative",
-          "active"
+          "third-person plural future imperative active"
         ]
       ]
     ],
@@ -2376,11 +1935,7 @@
       [
         "legō",
         [
-          "singular",
-          "future",
-          "imperative",
-          "passive",
-          "second/third-person"
+          "singular future imperative passive second/third-person"
         ]
       ]
     ],
@@ -2397,11 +1952,7 @@
       [
         "legō",
         [
-          "third-person",
-          "plural",
-          "future",
-          "imperative",
-          "passive"
+          "third-person plural future imperative passive"
         ]
       ]
     ],
@@ -2418,9 +1969,7 @@
       [
         "legō",
         [
-          "perfect",
-          "active",
-          "infinitive"
+          "perfect active infinitive"
         ]
       ]
     ],
@@ -2437,9 +1986,7 @@
       [
         "legō",
         [
-          "future",
-          "active",
-          "infinitive"
+          "future active infinitive"
         ]
       ]
     ],
@@ -2456,9 +2003,7 @@
       [
         "legō",
         [
-          "present",
-          "passive",
-          "infinitive"
+          "present passive infinitive"
         ]
       ]
     ],
@@ -2475,9 +2020,7 @@
       [
         "legō",
         [
-          "perfect",
-          "passive",
-          "infinitive"
+          "perfect passive infinitive"
         ]
       ]
     ],
@@ -2494,9 +2037,7 @@
       [
         "legō",
         [
-          "future",
-          "passive",
-          "infinitive"
+          "future passive infinitive"
         ]
       ]
     ],
@@ -2513,9 +2054,7 @@
       [
         "legō",
         [
-          "present",
-          "active",
-          "participle"
+          "present active participle"
         ]
       ]
     ],
@@ -2532,9 +2071,7 @@
       [
         "legō",
         [
-          "future",
-          "active",
-          "participle"
+          "future active participle"
         ]
       ]
     ],
@@ -2568,9 +2105,7 @@
       [
         "legō",
         [
-          "future",
-          "passive",
-          "participle"
+          "future passive participle"
         ]
       ]
     ],
@@ -2587,9 +2122,7 @@
       [
         "legō",
         [
-          "future",
-          "passive",
-          "participle"
+          "future passive participle"
         ]
       ]
     ],
@@ -2606,9 +2139,7 @@
       [
         "legō",
         [
-          "genitive",
-          "gerund",
-          "noun-from-verb"
+          "genitive gerund noun-from-verb"
         ]
       ]
     ],
@@ -2625,17 +2156,13 @@
       [
         "legō",
         [
-          "dative",
-          "gerund",
-          "noun-from-verb"
+          "dative gerund noun-from-verb"
         ]
       ],
       [
         "legō",
         [
-          "gerund",
-          "noun-from-verb",
-          "ablative"
+          "gerund noun-from-verb ablative"
         ]
       ]
     ],
@@ -2652,9 +2179,7 @@
       [
         "legō",
         [
-          "accusative",
-          "gerund",
-          "noun-from-verb"
+          "accusative gerund noun-from-verb"
         ]
       ]
     ],
@@ -2671,9 +2196,7 @@
       [
         "legō",
         [
-          "noun-from-verb",
-          "ablative",
-          "supine"
+          "noun-from-verb ablative supine"
         ]
       ]
     ],
@@ -2696,8 +2219,7 @@
       [
         "līlium",
         [
-          "genitive",
-          "singular"
+          "genitive singular"
         ]
       ]
     ],
@@ -2720,8 +2242,7 @@
       [
         "līlium",
         [
-          "genitive",
-          "singular"
+          "genitive singular"
         ]
       ]
     ],
@@ -2738,22 +2259,19 @@
       [
         "līlium",
         [
-          "accusative",
-          "plural"
+          "accusative plural"
         ]
       ],
       [
         "līlium",
         [
-          "nominative",
-          "plural"
+          "nominative plural"
         ]
       ],
       [
         "līlium",
         [
-          "vocative",
-          "plural"
+          "vocative plural"
         ]
       ]
     ],
@@ -2770,8 +2288,7 @@
       [
         "līlium",
         [
-          "genitive",
-          "plural"
+          "genitive plural"
         ]
       ]
     ],
@@ -2788,15 +2305,13 @@
       [
         "līlium",
         [
-          "singular",
-          "ablative"
+          "singular ablative"
         ]
       ],
       [
         "līlium",
         [
-          "dative",
-          "singular"
+          "dative singular"
         ]
       ]
     ],
@@ -2813,15 +2328,13 @@
       [
         "līlium",
         [
-          "plural",
-          "ablative"
+          "plural ablative"
         ]
       ],
       [
         "līlium",
         [
-          "dative",
-          "plural"
+          "dative plural"
         ]
       ]
     ],
@@ -2844,41 +2357,31 @@
       [
         "rēctus",
         [
-          "accusative",
-          "plural",
-          "neuter"
+          "accusative plural neuter"
         ]
       ],
       [
         "rēctus",
         [
-          "nominative",
-          "plural",
-          "neuter"
+          "nominative plural neuter"
         ]
       ],
       [
         "rēctus",
         [
-          "vocative",
-          "plural",
-          "neuter"
+          "vocative plural neuter"
         ]
       ],
       [
         "rēctus",
         [
-          "nominative",
-          "singular",
-          "feminine"
+          "nominative singular feminine"
         ]
       ],
       [
         "rēctus",
         [
-          "vocative",
-          "singular",
-          "feminine"
+          "vocative singular feminine"
         ]
       ]
     ],
@@ -2901,33 +2404,25 @@
       [
         "rēctus",
         [
-          "accusative",
-          "singular",
-          "masculine"
+          "accusative singular masculine"
         ]
       ],
       [
         "rēctus",
         [
-          "accusative",
-          "singular",
-          "neuter"
+          "accusative singular neuter"
         ]
       ],
       [
         "rēctus",
         [
-          "nominative",
-          "singular",
-          "neuter"
+          "nominative singular neuter"
         ]
       ],
       [
         "rēctus",
         [
-          "vocative",
-          "singular",
-          "neuter"
+          "vocative singular neuter"
         ]
       ]
     ],
@@ -2995,33 +2490,25 @@
       [
         "rēctus",
         [
-          "nominative",
-          "plural",
-          "masculine"
+          "nominative plural masculine"
         ]
       ],
       [
         "rēctus",
         [
-          "vocative",
-          "plural",
-          "masculine"
+          "vocative plural masculine"
         ]
       ],
       [
         "rēctus",
         [
-          "genitive",
-          "singular",
-          "masculine"
+          "genitive singular masculine"
         ]
       ],
       [
         "rēctus",
         [
-          "genitive",
-          "singular",
-          "neuter"
+          "genitive singular neuter"
         ]
       ]
     ],
@@ -3038,33 +2525,25 @@
       [
         "rēctus",
         [
-          "nominative",
-          "plural",
-          "feminine"
+          "nominative plural feminine"
         ]
       ],
       [
         "rēctus",
         [
-          "vocative",
-          "plural",
-          "feminine"
+          "vocative plural feminine"
         ]
       ],
       [
         "rēctus",
         [
-          "dative",
-          "singular",
-          "feminine"
+          "dative singular feminine"
         ]
       ],
       [
         "rēctus",
         [
-          "genitive",
-          "singular",
-          "feminine"
+          "genitive singular feminine"
         ]
       ]
     ],
@@ -3081,17 +2560,13 @@
       [
         "rēctus",
         [
-          "genitive",
-          "plural",
-          "masculine"
+          "genitive plural masculine"
         ]
       ],
       [
         "rēctus",
         [
-          "genitive",
-          "plural",
-          "neuter"
+          "genitive plural neuter"
         ]
       ]
     ],
@@ -3108,9 +2583,7 @@
       [
         "rēctus",
         [
-          "genitive",
-          "plural",
-          "feminine"
+          "genitive plural feminine"
         ]
       ]
     ],
@@ -3127,33 +2600,25 @@
       [
         "rēctus",
         [
-          "singular",
-          "masculine",
-          "ablative"
+          "singular masculine ablative"
         ]
       ],
       [
         "rēctus",
         [
-          "singular",
-          "neuter",
-          "ablative"
+          "singular neuter ablative"
         ]
       ],
       [
         "rēctus",
         [
-          "dative",
-          "singular",
-          "masculine"
+          "dative singular masculine"
         ]
       ],
       [
         "rēctus",
         [
-          "dative",
-          "singular",
-          "neuter"
+          "dative singular neuter"
         ]
       ]
     ],
@@ -3170,21 +2635,13 @@
       [
         "rēctus",
         [
-          "plural",
-          "masculine",
-          "feminine",
-          "neuter",
-          "ablative"
+          "plural masculine feminine neuter ablative"
         ]
       ],
       [
         "rēctus",
         [
-          "dative",
-          "plural",
-          "masculine",
-          "feminine",
-          "neuter"
+          "dative plural masculine feminine neuter"
         ]
       ]
     ],
@@ -3201,9 +2658,7 @@
       [
         "rēctus",
         [
-          "accusative",
-          "singular",
-          "feminine"
+          "accusative singular feminine"
         ]
       ]
     ],
@@ -3220,9 +2675,7 @@
       [
         "rēctus",
         [
-          "accusative",
-          "plural",
-          "masculine"
+          "accusative plural masculine"
         ]
       ]
     ],
@@ -3239,9 +2692,7 @@
       [
         "rēctus",
         [
-          "accusative",
-          "plural",
-          "feminine"
+          "accusative plural feminine"
         ]
       ]
     ],
@@ -3258,9 +2709,7 @@
       [
         "rēctus",
         [
-          "singular",
-          "feminine",
-          "ablative"
+          "singular feminine ablative"
         ]
       ]
     ],
@@ -3277,9 +2726,7 @@
       [
         "rēctus",
         [
-          "vocative",
-          "singular",
-          "masculine"
+          "vocative singular masculine"
         ]
       ]
     ],
@@ -3302,29 +2749,25 @@
       [
         "domus",
         [
-          "accusative",
-          "plural"
+          "accusative plural"
         ]
       ],
       [
         "domus",
         [
-          "nominative",
-          "plural"
+          "nominative plural"
         ]
       ],
       [
         "domus",
         [
-          "vocative",
-          "plural"
+          "vocative plural"
         ]
       ],
       [
         "domus",
         [
-          "genitive",
-          "singular"
+          "genitive singular"
         ]
       ]
     ],
@@ -3347,15 +2790,13 @@
       [
         "domus",
         [
-          "genitive",
-          "singular"
+          "genitive singular"
         ]
       ],
       [
         "domus",
         [
-          "locative",
-          "singular"
+          "locative singular"
         ]
       ]
     ],
@@ -3372,8 +2813,7 @@
       [
         "domus",
         [
-          "genitive",
-          "plural"
+          "genitive plural"
         ]
       ]
     ],
@@ -3390,8 +2830,7 @@
       [
         "domus",
         [
-          "genitive",
-          "plural"
+          "genitive plural"
         ]
       ]
     ],
@@ -3408,8 +2847,7 @@
       [
         "domus",
         [
-          "dative",
-          "singular"
+          "dative singular"
         ]
       ]
     ],
@@ -3426,15 +2864,13 @@
       [
         "domus",
         [
-          "singular",
-          "ablative"
+          "singular ablative"
         ]
       ],
       [
         "domus",
         [
-          "dative",
-          "singular"
+          "dative singular"
         ]
       ]
     ],
@@ -3451,15 +2887,13 @@
       [
         "domus",
         [
-          "singular",
-          "ablative"
+          "singular ablative"
         ]
       ],
       [
         "domus",
         [
-          "dative",
-          "singular"
+          "dative singular"
         ]
       ]
     ],
@@ -3476,22 +2910,19 @@
       [
         "domus",
         [
-          "plural",
-          "ablative"
+          "plural ablative"
         ]
       ],
       [
         "domus",
         [
-          "dative",
-          "plural"
+          "dative plural"
         ]
       ],
       [
         "domus",
         [
-          "locative",
-          "plural"
+          "locative plural"
         ]
       ]
     ],
@@ -3508,8 +2939,7 @@
       [
         "domus",
         [
-          "accusative",
-          "singular"
+          "accusative singular"
         ]
       ]
     ],
@@ -3526,8 +2956,7 @@
       [
         "domus",
         [
-          "accusative",
-          "plural"
+          "accusative plural"
         ]
       ]
     ],

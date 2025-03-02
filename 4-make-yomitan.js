@@ -607,7 +607,7 @@ let lastTermBankIndex = 0;
                         if(target_iso === 'en'){
                             hypotheses = gloss
                             .split(' and ')
-                            .map((hypothesis) => hypothesis.split(' '));
+                            .map((hypothesis) => [hypothesis]);
                         }
 
                         if(target_iso === 'fr'){
