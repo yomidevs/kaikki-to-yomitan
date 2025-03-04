@@ -60,14 +60,13 @@ function isInflectionGloss(glosses, formOf) {
  * @param {string[]|Set<string>} inflections 
  */
 function addDeinflections(form, pos, lemma, inflections) {
-    if (targetIso === 'fr') {
-        form = form.replace(/(qu\')?(ils\/elles|il\/elle\/on)\s*/, '');
-    }
+    const {inflected, uninflected} = normalizeInflectionPair(form, lemma);
+    if (inflected === uninflected) return;
 
-    const lemmaForms = formsMap.get(lemma) || /** @type {Map<Form, Map<PoS, string[]>>} */ (new Map());
-    formsMap.set(lemma, lemmaForms);
-    const formPOSs = lemmaForms.get(form) || /** @type {Map<PoS, string[]>} */ (new Map());
-    lemmaForms.set(form, formPOSs);
+    const lemmaForms = formsMap.get(uninflected) || /** @type {Map<Form, Map<PoS, string[]>>} */ (new Map());
+    formsMap.set(uninflected, lemmaForms);
+    const formPOSs = lemmaForms.get(inflected) || /** @type {Map<PoS, string[]>} */ (new Map());
+    lemmaForms.set(inflected, formPOSs);
     formPOSs.get(pos) || formPOSs.set(pos, []);
 
     try {
@@ -541,10 +540,53 @@ function processEnglishInflectionGlosses(glosses, word, pos) {
     }
     
     const lemma = lemmas.values().next().value;
-    if (word !== lemma) {
-        for (const inflection of [...inflections].filter(Boolean)) {
-            addDeinflections(word, pos, lemma, [inflection]);
+    
+    for (const inflection of [...inflections].filter(Boolean)) {
+        addDeinflections(word, pos, lemma, [inflection]);
+    }
+}
+
+/**
+ * @param {string} inflected
+ * @param {string} uninflected
+ * @returns {{inflected: string, uninflected: string}}
+ */
+function normalizeInflectionPair(inflected, uninflected) {
+    switch(targetIso){
+        case 'fr':
+            inflected = inflected.replace(/(qu\')?(ils\/elles|il\/elle\/on)\s*/, '');
+            break;
+        default:
+            break;
+    }
+
+    switch(sourceIso){
+        case 'grc': {
+            const articles = [ 
+                "ὁ", "ἡ", "τό", "τώ", "τὼ", "οἱ", "αἱ", "τᾰ",
+                "τόν", "τήν", "τούς", "τᾱ́ς",
+                "τοῦ", "τῆς", "τοῦ", "τοῖν", "τῶν",
+                "τῷ", "τῇ", "τῷ", "τοῖς", "ταῖς", "τοῖς"
+            ];
+            for (const article of articles) {
+                const diacriticTest = new RegExp(`^${article}\\s`);
+                const noDiacriticTest = new RegExp(`^${article.normalize('NFD').replace(/[\u0300-\u036f]/g, '')}\\s`);
+
+                if (diacriticTest.test(inflected)){
+                    inflected = inflected.replace(diacriticTest, '');
+                } else if (noDiacriticTest.test(inflected)){
+                    inflected = inflected.replace(noDiacriticTest, '');
+                }
+                if (diacriticTest.test(uninflected)){
+                    uninflected = uninflected.replace(diacriticTest, '');
+                } else if (noDiacriticTest.test(uninflected)){
+                    uninflected = uninflected.replace(noDiacriticTest, '');
+                }
+            }
+            return {inflected, uninflected};
         }
+        default:
+            return {inflected, uninflected};
     }
 }
 
@@ -667,30 +709,20 @@ function getJapaneseReadings(word, line){
 function handleAutomatedForms() {
     consoleOverwrite('3-tidy-up.js: Handling automated forms...');
 
-    let counter = 0;
-    let total = [...automatedForms.entries()].reduce((acc, [_, formInfo]) => acc + formInfo.size, 0);
-    let missingForms = 0;
-
     for (const [lemma, formInfo] of automatedForms.entries()) {
         for (const [form, posInfo] of formInfo.entries()) {
-            counter += 1;
-            logProgress("Processing automated forms", counter, total);
-            if (!formsMap.get(lemma)?.get(form)) {
-                missingForms += 1;  
-                for (const [pos, glosses] of posInfo.entries()) {
-            
-                    if (form !== lemma) {
-                        addDeinflections(form, pos, lemma, glosses);
-                    }
-                    posInfo.delete(pos);
-                }
+            for (const [pos, glosses] of posInfo.entries()) {
+                addDeinflections(form, pos, lemma, glosses);
+                
+                posInfo.delete(pos);
             }
+            
             formInfo.delete(form);
         }
         automatedForms.delete(lemma);
     }
 
-    console.log(`\nThere were ${missingForms} missing forms that have now been automatically populated.`);
+    consoleOverwrite('3-tidy-up.js: Handled automated forms...');
 }
 
 /**
