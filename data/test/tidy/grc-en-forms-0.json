@@ -14,49 +14,7 @@
                 [
                   "noun",
                   [
-                    "genitive"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "τὼ ᾰ̓γρώ",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "noun",
-                  [
-                    "accusative dual",
-                    "nominative dual"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "οἱ ᾰ̓γροί",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "noun",
-                  [
-                    "nominative plural"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "τοῦ ᾰ̓γροῦ",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "noun",
-                  [
+                    "genitive",
                     "genitive singular"
                   ]
                 ]
@@ -64,7 +22,38 @@
             }
           ],
           [
-            "τοῖν ᾰ̓γροῖν",
+            "ᾰ̓γρώ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative dual",
+                    "nominative dual",
+                    "vocative dual"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "ᾰ̓γροί",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "nominative plural",
+                    "vocative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "ᾰ̓γροῖν",
             {
               "_type": "map",
               "map": [
@@ -79,7 +68,7 @@
             }
           ],
           [
-            "τῶν ᾰ̓γρῶν",
+            "ᾰ̓γρῶν",
             {
               "_type": "map",
               "map": [
@@ -93,7 +82,7 @@
             }
           ],
           [
-            "τῷ ᾰ̓γρῷ",
+            "ᾰ̓γρῷ",
             {
               "_type": "map",
               "map": [
@@ -107,7 +96,7 @@
             }
           ],
           [
-            "τοῖς ᾰ̓γροῖς",
+            "ᾰ̓γροῖς",
             {
               "_type": "map",
               "map": [
@@ -157,34 +146,6 @@
                   "noun",
                   [
                     "vocative singular"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "ᾰ̓γρώ",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "noun",
-                  [
-                    "vocative dual"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "ᾰ̓γροί",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "noun",
-                  [
-                    "vocative plural"
                   ]
                 ]
               ]
