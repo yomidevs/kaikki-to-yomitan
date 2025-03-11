@@ -274,7 +274,7 @@ function getPhoneticTranscriptions(sounds) {
                     ipaInfosWithStringIpa.push(/** @type {IpaInfo} */ (ipaObj));
                 } else if (Array.isArray(ipaObj.ipa)) {
                     for (const ipa of ipaObj.ipa) {
-                        ipaInfosWithStringIpa.push({ ipa, tags: ipaObj.tags, zh_pron: ipaObj.zh_pron });
+                        ipaInfosWithStringIpa.push({ ipa, tags: ipaObj.tags });
                     }
                 } else if (ipaObj.zh_pron) {
                     ipaInfosWithStringIpa.push({ ipa: ipaObj.zh_pron, tags: ipaObj.tags });
