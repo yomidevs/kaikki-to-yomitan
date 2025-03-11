@@ -105,7 +105,8 @@ declare global {
     }
 
     type IpaInfo = {
-        ipa: string,
+        ipa?: string,
+        zh_pron?: string,
         tags: string[],
     }
 

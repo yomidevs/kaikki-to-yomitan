@@ -5,6 +5,40 @@
         "2": {
           "ipa": [
             {
+              "ipa": "châing",
+              "tags": [
+                "Jian'ou",
+                "Kienning-Colloquial-Romanized"
+              ]
+            },
+            {
+              "ipa": "chèng",
+              "tags": [
+                "Foochow-Romanized",
+                "Fuzhou"
+              ]
+            },
+            {
+              "ipa": "ceng²",
+              "tags": [
+                "Puxian-Min"
+              ]
+            },
+            {
+              "ipa": "chhân",
+              "tags": [
+                "Hokkien",
+                "POJ"
+              ]
+            },
+            {
+              "ipa": "cang⁵",
+              "tags": [
+                "Peng'im",
+                "Teochew"
+              ]
+            },
+            {
               "ipa": "/t͡sʰaiŋ³³/",
               "tags": [
                 "Jian'ou",
@@ -19,10 +53,30 @@
               ]
             },
             {
+              "ipa": "chéng",
+              "tags": [
+                "Puxian-Min"
+              ]
+            },
+            {
               "ipa": "/t͡sʰɛŋ¹³/",
               "tags": [
                 "Puxian-Min",
                 "Sinological-IPA"
+              ]
+            },
+            {
+              "ipa": "tshân",
+              "tags": [
+                "Hokkien",
+                "Tai-lo"
+              ]
+            },
+            {
+              "ipa": "zhaan",
+              "tags": [
+                "Hokkien",
+                "Phofsit-Daibuun"
               ]
             },
             {
@@ -49,6 +103,13 @@
               "tags": [
                 "Hokkien",
                 "Kaohsiung"
+              ]
+            },
+            {
+              "ipa": "tshâng",
+              "tags": [
+                "POJ",
+                "Teochew"
               ]
             },
             {
