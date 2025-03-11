@@ -32,7 +32,7 @@ declare global {
 
     type Sound = {
         ipa?: string|string[];
-        'zh-pron': string;
+        'zh-pron'?: string;
         tags?: string[];
         note?: string;
     }
