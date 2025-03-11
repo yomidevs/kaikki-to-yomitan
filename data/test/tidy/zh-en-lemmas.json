@@ -1,0 +1,110 @@
+{
+  "田": {
+    "田": {
+      "character": {
+        "2": {
+          "ipa": [
+            {
+              "ipa": "/t͡sʰaiŋ³³/",
+              "tags": [
+                "Jian'ou",
+                "Sinological-IPA"
+              ]
+            },
+            {
+              "ipa": "/t͡sʰɛiŋ⁵³/",
+              "tags": [
+                "Fuzhou",
+                "Sinological-IPA"
+              ]
+            },
+            {
+              "ipa": "/t͡sʰɛŋ¹³/",
+              "tags": [
+                "Puxian-Min",
+                "Sinological-IPA"
+              ]
+            },
+            {
+              "ipa": "/t͡sʰan²⁴/",
+              "tags": [
+                "Changtai",
+                "Hokkien",
+                "Jinjiang",
+                "Quanzhou",
+                "Singapore",
+                "Taipei",
+                "Xiamen"
+              ]
+            },
+            {
+              "ipa": "/t͡sʰan¹³/",
+              "tags": [
+                "Hokkien",
+                "Zhangzhou"
+              ]
+            },
+            {
+              "ipa": "/t͡sʰan²³/",
+              "tags": [
+                "Hokkien",
+                "Kaohsiung"
+              ]
+            },
+            {
+              "ipa": "/t͡sʰaŋ⁵⁵/",
+              "tags": [
+                "Sinological-IPA",
+                "Teochew"
+              ]
+            }
+          ],
+          "glossTree": {
+            "_type": "map",
+            "map": [
+              [
+                "paddy field; wet field (Classifier: 坵 mn)",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "Min"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "farmland in general; field (Classifier: 坵 mn)",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "Min"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          "etymology_text": "The Min native word for “paddy field; field”.\nEtymology unknown. Chinese scholars identify 塍 (OC *ɦljɯŋ, “raised path between fields”) as the etymological character (本字), although Norman proposes that this is related to 層 (OC *zɯːŋ, “layer”), reflecting the terraced fields commonly found in Fujian (Schuessler, 2007). Compare also 㽪 (“wet field”).",
+          "head_info_text": "(Min)",
+          "backlink": "田"
+        }
+      }
+    }
+  }
+}

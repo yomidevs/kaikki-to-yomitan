@@ -1,0 +1,65 @@
+[
+  [
+    "田",
+    "ipa",
+    {
+      "reading": "田",
+      "transcriptions": [
+        {
+          "ipa": "/t͡sʰaiŋ³³/",
+          "tags": [
+            "Jian'ou",
+            "Sinological-IPA"
+          ]
+        },
+        {
+          "ipa": "/t͡sʰɛiŋ⁵³/",
+          "tags": [
+            "Fuzhou",
+            "Sinological-IPA"
+          ]
+        },
+        {
+          "ipa": "/t͡sʰɛŋ¹³/",
+          "tags": [
+            "Puxian-Min",
+            "Sinological-IPA"
+          ]
+        },
+        {
+          "ipa": "/t͡sʰan²⁴/",
+          "tags": [
+            "Changtai",
+            "Hokkien",
+            "Jinjiang",
+            "Quanzhou",
+            "Singapore",
+            "Taipei",
+            "Xiamen"
+          ]
+        },
+        {
+          "ipa": "/t͡sʰan¹³/",
+          "tags": [
+            "Hokkien",
+            "Zhangzhou"
+          ]
+        },
+        {
+          "ipa": "/t͡sʰan²³/",
+          "tags": [
+            "Hokkien",
+            "Kaohsiung"
+          ]
+        },
+        {
+          "ipa": "/t͡sʰaŋ⁵⁵/",
+          "tags": [
+            "Sinological-IPA",
+            "Teochew"
+          ]
+        }
+      ]
+    }
+  ]
+]
