@@ -135,23 +135,7 @@ function handleLine(parsedLine) {
     const {senses, head_templates, tags} = parsedLine;
     if (!senses) return;
     
-    /** @type {IpaInfo[]} */
-    const ipa = /** @type {IpaInfo[]} */ (sounds 
-        ? sounds
-            .filter(sound => sound && sound.ipa)
-            .map(({ipa, tags, note}) => {
-                if(!tags) {
-                    if (note) {
-                        tags = [note];
-                    } else {
-                        tags = [];
-                    }
-                }
-                return ({ipa, tags})
-            })
-            .flatMap(ipaObj => typeof ipaObj.ipa === 'string' ? [ipaObj] : ipaObj?.ipa?.map(ipa => ({ ipa, tags: ipaObj.tags })) )
-            .filter(ipaObj => ipaObj?.ipa)
-        : []);
+    const ipa = getPhoneticTranscriptions(sounds);
     
     /** @type {TidySense[]} */
     const sensesWithGlosses = /** @type {TidySense[]} */ (senses
@@ -258,6 +242,68 @@ function handleLine(parsedLine) {
         result.backlink = backlink;
     }
     
+}
+/**
+ * @param {Sound[]} sounds 
+ * @returns {IpaInfo[]}
+ */
+function getPhoneticTranscriptions(sounds) {
+    if(!sounds) return [];
+    switch(sourceIso) {
+        case 'zh': {
+            const ipaInfos = sounds.filter(sound => {
+                if (!sound) return false;
+                return sound.ipa || sound['zh-pron'];
+            })
+            .map(({ ipa, tags, note, 'zh-pron': zh_pron }) => {
+                if (!tags) {
+                    if (note) {
+                        tags = [note];
+                    } else {
+                        tags = [];
+                    }
+                }
+                return ({ ipa, tags, zh_pron });
+            })
+            
+            /** @type {IpaInfo[]} */
+            const ipaInfosWithStringIpa = []
+
+            for (const ipaObj of ipaInfos) {
+                if (typeof ipaObj.ipa === 'string') {
+                    ipaInfosWithStringIpa.push(/** @type {IpaInfo} */ (ipaObj));
+                } else if (Array.isArray(ipaObj.ipa)) {
+                    for (const ipa of ipaObj.ipa) {
+                        ipaInfosWithStringIpa.push({ ipa, tags: ipaObj.tags });
+                    }
+                } else if (ipaObj.zh_pron) {
+                    ipaInfosWithStringIpa.push({ ipa: ipaObj.zh_pron, tags: ipaObj.tags });
+                }
+            }
+
+            return ipaInfosWithStringIpa;
+        }
+        default: {
+            const ipaInfos = sounds.filter(sound => {
+                if (!sound) return false;
+                return !!sound.ipa;
+            })
+            .map(({ ipa, tags, note }) => {
+                if (!tags) {
+                    if (note) {
+                        tags = [note];
+                    } else {
+                        tags = [];
+                    }
+                }
+                return ({ ipa, tags });
+            })
+
+            const ipaInfosWithStringIpa = /** @type {IpaInfo[]}*/ (ipaInfos.flatMap(ipaObj => typeof ipaObj.ipa === 'string' ? [ipaObj] : ipaObj?.ipa?.map(ipa => ({ ipa, tags: ipaObj.tags }))));
+            
+            return ipaInfosWithStringIpa;
+        }
+    }
 }
 
 /**
