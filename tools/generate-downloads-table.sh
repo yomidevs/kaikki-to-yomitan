@@ -1,6 +1,6 @@
 first_text="# Downloads
 
-Currently, [Kaikki](https://kaikki.org/dictionary/rawdata.html) supports 14 wiktionary editions (en, zh, nl, fr, de, it, ja, ko, ku, ru, pl, pt, es, and th), so only dictionaries including these languages are available.
+Currently, [Kaikki](https://kaikki.org/dictionary/rawdata.html) supports 15 wiktionary editions (en, zh, nl, fr, el, de, it, ja, ko, ku, ru, pl, pt, es, and th), so only dictionaries including these languages are available.
 
 If the language you want isn't here, or you would like to see an improvement to a dictionary, please [open an issue](https://github.com/yomidevs/kaikki-to-yomitan/issues/new).
 

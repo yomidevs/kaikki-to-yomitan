@@ -12,7 +12,7 @@
     {"iso": "fi",  "language": "Finnish",              "flag": "🇫🇮"                       },
     {"iso": "fr",  "language": "French",               "flag": "🇫🇷",   "hasEdition": true },
     {"iso": "de",  "language": "German",               "flag": "🇩🇪",   "hasEdition": true },
-    {"iso": "el",  "language": "Greek",                "flag": "🇬🇷"                       },
+    {"iso": "el",  "language": "Greek",                "flag": "🇬🇷",   "hasEdition": true },
     {"iso": "afb", "language": "Gulf Arabic",          "flag": "🇦🇪"                       },
     {"iso": "he",  "language": "Hebrew",               "flag": "🇮🇱"                       },
     {"iso": "hi",  "language": "Hindi",                "flag": "🇮🇳"                       },
