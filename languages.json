@@ -14,6 +14,7 @@
     {"iso": "de",  "language": "German",               "flag": "🇩🇪",   "hasEdition": true },
     {"iso": "el",  "language": "Greek",                "flag": "🇬🇷"                       },
     {"iso": "afb", "language": "Gulf Arabic",          "flag": "🇦🇪"                       },
+    {"iso": "he",  "language": "Hebrew",               "flag": "🇮🇱"                       },
     {"iso": "hi",  "language": "Hindi",                "flag": "🇮🇳"                       },
     {"iso": "hu",  "language": "Hungarian",            "flag": "🇭🇺"                       },
     {"iso": "id",  "language": "Indonesian",           "flag": "🇮🇩"                       },
