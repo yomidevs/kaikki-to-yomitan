@@ -1,6 +1,6 @@
 first_text="# Downloads
 
-Currently, [Kaikki](https://kaikki.org/dictionary/rawdata.html) supports 14 wiktionary editions (en, zh, nl, fr, de, it, ja, ko, ku, ru, pl, pt, es, and th), so only dictionaries including these languages are available.
+Currently, [Kaikki](https://kaikki.org/dictionary/rawdata.html) supports 15 wiktionary editions (en, zh, nl, fr, el, de, it, ja, ko, ku, ru, pl, pt, es, and th), so only dictionaries including these languages are available.
 
 If the language you want isn't here, or you would like to see an improvement to a dictionary, please [open an issue](https://github.com/yomidevs/kaikki-to-yomitan/issues/new).
 
@@ -32,7 +32,7 @@ for language in "${languages[@]}"; do
     iso=$(echo "${language}" | jq -r '.iso')
     hasEdition=$(echo "${language}" | jq -r '.hasEdition')
     if [ "$hasEdition" = "true" ]; then
-        header="$header $iso $flag |"
+        header="$header $flag </br> $iso |"
         divider="$divider---|"
         columns+=("$iso")
     fi
@@ -46,7 +46,7 @@ for source_lang in "${languages[@]}"; do
     source_language_name=$(echo "${source_lang}" | jq -r '.language')
     flag=$(echo "${source_lang}" | jq -r '.flag')
         
-    row="| $flag </br> $source_language_name ($source_iso)"
+    row="| $flag ($source_iso) </br> $source_language_name "
 
     for column in "${columns[@]}"; do
         cell=""
