@@ -177,3 +177,11 @@ jobs:
       #     prerelease: true
       #     generate_release_notes: true
       #     files: "data/language/**/*-index.json"
+      # - name: Upload index.json files
+      #   uses: softprops/action-gh-release@v2
+      #   with:
+      #     name: ${{ needs.prepare.outputs.calver }}
+      #     tag_name: ${{ needs.prepare.outputs.tag }}
+      #     prerelease: true
+      #     generate_release_notes: true
+      #     files: "data/language/**/*-index.json"
