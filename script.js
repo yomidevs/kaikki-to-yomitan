@@ -145,7 +145,6 @@ function makeTable(id, glosses, type = 'main', isIPA = false) {
 }
 
 
-
 $(document).ready(function () {
     setupDropdowns('main', 'main')
     setupDropdowns('ipa', 'ipa', true)
