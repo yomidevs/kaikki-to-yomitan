@@ -1,0 +1,111 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+select {
+  margin: 0 5px;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.toggle-table {
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 0.95em;
+  padding: 6px 12px;
+}
+
+.small {
+  font-size: 80%;
+  font-style: italic;
+}
+
+h1 {
+  background: linear-gradient(to right, #bc00ff, #00eeff);
+  background-clip: text;
+  width: fit-content;
+  height: fit-content;
+  color: transparent;
+}
+
+#main-download,
+#ipa-download,
+#trans-download {
+  padding: .625em 2em;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: .1rem;
+  border: .1rem solid;
+  background-color: #8560f5;
+  border-color: #8560f5;
+  color: white;
+  font-family: 'Arimo';
+  transition: color 125ms, background-color 125ms, border-color 125ms;
+}
+
+#main-download:hover,
+#ipa-download:hover,
+#trans-download:hover {
+  background-color: #526cfe;
+  border-color: #526cfe;
+  color: white;
+}
+
+select {
+  cursor: pointer;
+  font-weight: 700;
+  background-color: white;
+  padding: .3rem;
+  border-color: #8560f5;
+  border-radius: .1em;
+  color: #8560f5;
+}
+
+a {
+  text-decoration: none;
+  color: #8560f5;
+  transition: color 125ms;
+}
+
+a:hover {
+  color: #526cfe;
+}
+
+button {
+  border: .1rem solid;
+  border-radius: .1rem;
+  color: #8560f5;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: white;
+  border-color: #8560f5;
+  transition: color 125ms, background-color 125ms, border-color 125ms;
+}
+
+button:hover {
+  background-color: #526cfe;
+  color: white;
+  border-color: #526cfe;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 1.6em 0 .8em;
+  color: gray;
+  font-style: italic;
+}
+
+.noscript--warning {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 1.6em 0 .8em;
+  color: gray;
+  font-style: italic;
+  text-align: center;
+}
