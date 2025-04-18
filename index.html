@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kaikki to Yomitan</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://yomitan.wiki/assets/icon/yomitan-icon64.png">
+</head>
+
+<body>
+  <noscript>
+    <div class="noscript--warning">
+      <p>
+        It seems like you have JavaScript disabled.
+      </p>
+      <p>
+        This site requires JavaScript to function properly. Please enable it either in a browser add-on (uBlock Origin, uMatix, NoScript) or in your browser. You can see the site's source code on <a href="https://github.com/yomidevs/kaikki-to-yomitan">Github</a>.
+      </p>
+      <p>
+        In order to see the non-JS markdown tables, refer <a href="https://github.com/yomidevs/kaikki-to-yomitan/blob/master/downloads.md">here</a>.
+      </p>
+    </div>
+  </noscript>
+  <h1>Downloads</h1>
+  <p>Currently, <a href="https://kaikki.org/dictionary/rawdata.html">Kaikki</a> supports 15 wiktionary editions (en, zh, nl, fr, el, de, it, ja, ko, ku, ru, pl, pt, es, and th),
+    so only dictionaries including these languages are available.</p>
+  <p>If the language you want isn't here, or you would like to see an improvement to a dictionary, please <a href="https://github.com/yomidevs/kaikki-to-yomitan/issues/new">open an issue</a>.
+  </p>
+  <p>Some of the dictionaries listed here are small; rather than decide on a lower bound for usefulness they are all
+    included here.</p>
+  <p class="small">Languages are referred to by their shortest ISO code (<a href="https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes">ISO 639-1</a> where available, <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-3_codes">ISO 639-3</a> where not)
+  </p>
+  <div class="section" id="main-section">
+    <h3>Main Dictionaries</h3>
+    <p>This table contains the main dictionaries:</p>
+    <ol>
+      <li>Bilingual dictionaries,
+      </li>
+      <li>Monolingual dictionaries. These have good coverage, but tend to be verbose.</li>
+    </ol>
+    <p>
+      Download a dictionary of
+      <select id="main-target"></select>
+      with glosses in
+      <select id="main-gloss"></select>
+    <div class="download"><a id="main-download" href="#" target="_blank">Download</a></div>
+    </p>
+    <button class="toggle-table" data-target="#mainTable-wrapper">Show Table</button>
+    <div id="mainTable-wrapper" style="display: none;">
+      <table id="mainTable" class="display"></table>
+    </div>
+  </div>
+
+  <div class="section" id="ipa-section">
+    <h3>IPA Dictionaries</h3>
+    <p>These dictionaries contain the International Phonetic Alphabet (IPA) transcriptions for the headwords. There are
+      two types of IPA dictionaries:</p>
+    <ol>
+      <li>IPA dictionaries from a single wiktionary edition - e.g. en-de contains IPA transcriptions for English
+        headwords from the German wiktionary edition,</li>
+      <li>Merged IPA dictionaries from all 15 supported editions. These have more terms covered but not
+        all the entries might be formatted the same way.</li>
+    </ol>
+    <p>
+      Download an IPA dictionary of
+      <select id="ipa-target"></select>
+      with data from
+      <select id="ipa-gloss"></select>
+      Wiktionary
+    <div class="download"><a id="ipa-download" href="#" target="_blank">Download</a></div>
+    </p>
+    <button class="toggle-table" data-target="#ipaTable-wrapper">Show Table</button>
+    <div id="ipaTable-wrapper" style="display: none;">
+      <table id="ipaTable" class="display"></table>
+    </div>
+  </div>
+  <div class="section" id="translations-section">
+    <h3>Translations</h3>
+    <p>These dictionaries are made from the Translations section in a Wiktionary entry. The entries are shorter and
+      there is fewer of them compared to the main dictionaries, but they are available in some unique language pairs.
+    </p>
+    <p>
+      Get translations from
+      <select id="trans-target"></select>
+      to
+      <select id="trans-gloss"></select>
+    <div class="download"><a id="trans-download" href="#" target="_blank">Download</a></div>
+    </p>
+    <button class="toggle-table" data-target="#translationTable-wrapper">Show Table</button>
+    <div id="translationTable-wrapper" style="display: none;">
+      <p>⚠️ This table is orientated opposite to the main dictionaries, with the source language in the columns and the target language in the rows.</p>
+      <table id="translationTable" class="display"></table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
