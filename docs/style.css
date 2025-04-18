@@ -109,3 +109,13 @@ h3 {
   font-style: italic;
   text-align: center;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1e2129;
+    color: #bfc1c7;
+  }
+  button, select {
+    background-color: #1e2129;
+  }
+}
