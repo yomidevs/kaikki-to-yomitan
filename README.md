@@ -1,6 +1,6 @@
-[DOWNLOADS](./downloads.md)
+[DOWNLOADS](https://yomidevs.github.io/kaikki-to-yomitan/)
 
-Converts wiktionary data from https://kaikki.org/ to yomitan-compatible dictionaries. Converted dictionaries can be found in the [Downloads](./downloads.md) section.
+Converts wiktionary data from https://kaikki.org/ to yomitan-compatible dictionaries. Converted dictionaries can be found on the [Downloads](https://yomidevs.github.io/kaikki-to-yomitan/) page.
 
 # Instructions
 
