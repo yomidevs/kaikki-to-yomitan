@@ -1,59 +1,33 @@
-const languages = [
-    { "iso": "sq", "language": "Albanian", "flag": "🇦🇱" },
-    { "iso": "grc", "language": "Ancient Greek", "flag": "🏺" },
-    { "iso": "ar", "language": "Arabic", "flag": "🟩" },
-    { "iso": "aii", "language": "Assyrian Neo-Aramaic", "flag": "🌞" },
-    { "iso": "zh", "language": "Chinese", "flag": "🇨🇳", "hasEdition": true },
-    { "iso": "cs", "language": "Czech", "flag": "🇨🇿" },
-    { "iso": "da", "language": "Danish", "flag": "🇩🇰" },
-    { "iso": "nl", "language": "Dutch", "flag": "🇳🇱", "hasEdition": true },
-    { "iso": "en", "language": "English", "flag": "🇬🇧", "hasEdition": true },
-    { "iso": "eo", "language": "Esperanto", "flag": "🌍" },
-    { "iso": "fi", "language": "Finnish", "flag": "🇫🇮" },
-    { "iso": "fr", "language": "French", "flag": "🇫🇷", "hasEdition": true },
-    { "iso": "de", "language": "German", "flag": "🇩🇪", "hasEdition": true },
-    { "iso": "el", "language": "Greek", "flag": "🇬🇷", "hasEdition": true },
-    { "iso": "afb", "language": "Gulf Arabic", "flag": "🇦🇪" },
-    { "iso": "he", "language": "Hebrew", "flag": "🇮🇱" },
-    { "iso": "hi", "language": "Hindi", "flag": "🇮🇳" },
-    { "iso": "hu", "language": "Hungarian", "flag": "🇭🇺" },
-    { "iso": "id", "language": "Indonesian", "flag": "🇮🇩" },
-    { "iso": "ga", "language": "Irish", "flag": "🇮🇪" },
-    { "iso": "it", "language": "Italian", "flag": "🇮🇹", "hasEdition": true },
-    { "iso": "ja", "language": "Japanese", "flag": "🇯🇵", "hasEdition": true },
-    { "iso": "kn", "language": "Kannada", "flag": "🇮🇳" },
-    { "iso": "kk", "language": "Kazakh", "flag": "🇰🇿" },
-    { "iso": "km", "language": "Khmer", "flag": "🇰🇭" },
-    { "iso": "ku", "language": "Kurdish", "flag": "🇮🇶", "hasEdition": true },
-    { "iso": "ko", "language": "Korean", "flag": "🇰🇷", "hasEdition": true },
-    { "iso": "la", "language": "Latin", "flag": "🏛" },
-    { "iso": "lv", "language": "Latvian", "flag": "🇱🇻" },
-    { "iso": "enm", "language": "Middle English", "flag": "🏰" },
-    { "iso": "mn", "language": "Mongolian", "flag": "🇲🇳" },
-    { "iso": "mt", "language": "Maltese", "flag": "🇲🇹" },
-    { "iso": "nb", "language": "Norwegian Bokmål", "flag": "🇳🇴🏙️" },
-    { "iso": "nn", "language": "Norwegian Nynorsk", "flag": "🇳🇴🌲" },
-    { "iso": "ang", "language": "Old English", "flag": "🗡️" },
-    { "iso": "sga", "language": "Old Irish", "flag": "🍀" },
-    { "iso": "fa", "language": "Persian", "flag": "🇮🇷" },
-    { "iso": "pl", "language": "Polish", "flag": "🇵🇱", "hasEdition": true },
-    { "iso": "pt", "language": "Portuguese", "flag": "🇵🇹", "hasEdition": true },
-    { "iso": "ro", "language": "Romanian", "flag": "🇷🇴" },
-    { "iso": "ru", "language": "Russian", "flag": "🇷🇺", "hasEdition": true },
-    { "iso": "sh", "language": "Serbo-Croatian", "flag": "🇷🇸🇭🇷" },
-    { "iso": "scn", "language": "Sicilian", "flag": "🍋" },
-    { "iso": "es", "language": "Spanish", "flag": "🇪🇸", "hasEdition": true },
-    { "iso": "sv", "language": "Swedish", "flag": "🇸🇪" },
-    { "iso": "tl", "language": "Tagalog", "flag": "🇵🇭" },
-    { "iso": "th", "language": "Thai", "flag": "🇹🇭", "hasEdition": true },
-    { "iso": "tr", "language": "Turkish", "flag": "🇹🇷" },
-    { "iso": "uk", "language": "Ukrainian", "flag": "🇺🇦" },
-    { "iso": "vi", "language": "Vietnamese", "flag": "🇻🇳" }
-]
+const languages = []
 
-const allLangs = languages.filter(l => l.language)
-const glossLangs = languages.filter(l => l.hasEdition)
-const langMap = Object.fromEntries(allLangs.map(l => [l.iso, l]))
+async function fetchLanguages() {
+    try {
+        const response = await fetch('https://raw.githubusercontent.com/yomidevs/kaikki-to-yomitan/refs/heads/master/languages.json')
+        if (!response.ok) {
+            throw new Error('Failed to fetch languages')
+        }
+        const data = await response.json()
+        languages.push(...data)
+        return data
+    } catch (error) {
+        console.error('Error fetching languages:', error)
+        throw error
+    }
+}
+
+const allLangs = []
+const glossLangs = []
+const langMap = {}
+
+function updateLanguageData() {
+    allLangs.length = 0
+    glossLangs.length = 0
+    Object.keys(langMap).forEach(key => delete langMap[key])
+    
+    allLangs.push(...languages.filter(l => l.language))
+    glossLangs.push(...languages.filter(l => l.hasEdition))
+    Object.assign(langMap, Object.fromEntries(allLangs.map(l => [l.iso, l])))
+}
 
 const dropdownOption = ({ iso, language, flag }) => `<option value="${iso}">${flag} ${language}</option>`
 
@@ -145,25 +119,32 @@ function makeTable(id, glosses, type = 'main', isIPA = false) {
 }
 
 
-$(document).ready(function () {
-    setupDropdowns('main', 'main')
-    setupDropdowns('ipa', 'ipa', true)
-    populateDropdown('#trans-target', glossLangs)
-    populateDropdown('#trans-gloss', allLangs)
-    updateDownloadLink('#trans-target', '#trans-gloss', '#trans-download', 'translations')
-    $('#trans-target, #trans-gloss').on('change', () =>
+$(document).ready(async function () {
+    try {
+        await fetchLanguages()
+        updateLanguageData()
+        
+        setupDropdowns('main', 'main')
+        setupDropdowns('ipa', 'ipa', true)
+        populateDropdown('#trans-target', glossLangs)
+        populateDropdown('#trans-gloss', allLangs)
         updateDownloadLink('#trans-target', '#trans-gloss', '#trans-download', 'translations')
-    )
+        $('#trans-target, #trans-gloss').on('change', () =>
+            updateDownloadLink('#trans-target', '#trans-gloss', '#trans-download', 'translations')
+        )
 
-    makeTable('mainTable', glossLangs, 'main')
-    makeTable('ipaTable', [...glossLangs, { iso: 'merged', language: 'Merged', flag: '🧬' }], 'ipa', true)
-    makeTable('translationTable', glossLangs, 'translations')
+        makeTable('mainTable', glossLangs, 'main')
+        makeTable('ipaTable', [...glossLangs, { iso: 'merged', language: 'Merged', flag: '🧬' }], 'ipa', true)
+        makeTable('translationTable', glossLangs, 'translations')
 
-    $('.toggle-table').on('click', function () {
-        const targetId = $(this).data('target')
-        const isVisible = $(targetId).is(':visible')
-        $(targetId).slideToggle(200)
-        $(this).text(isVisible ? 'Show Table' : 'Hide Table')
-    })
-
+        $('.toggle-table').on('click', function () {
+            const targetId = $(this).data('target')
+            const isVisible = $(targetId).is(':visible')
+            $(targetId).slideToggle(200)
+            $(this).text(isVisible ? 'Show Table' : 'Hide Table')
+        })
+    } catch (error) {
+        console.error('Error initializing page:', error)
+        // You might want to show an error message to the user here
+    }
 })
