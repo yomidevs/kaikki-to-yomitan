@@ -903,6 +903,7 @@ function normalizeOrthography(term) {
         case 'grc':
         case 'ro':
         case 'it':
+        case 'id':
             return term.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
         case 'tl':
             return term.normalize('NFD').replace(/[\u0300-\u036f\-']/g, '');
