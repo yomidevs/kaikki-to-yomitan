@@ -1,6 +1,6 @@
 first_text="# Downloads
 
-Currently, [Kaikki](https://kaikki.org/dictionary/rawdata.html) supports 15 wiktionary editions (en, zh, nl, fr, el, de, it, ja, ko, ku, ru, pl, pt, es, and th), so only dictionaries including these languages are available.
+Currently, [Kaikki](https://kaikki.org/dictionary/rawdata.html) supports 18 wiktionary editions (en, zh, nl, fr, el, de, id, it, ja, ko, ku, ms, ru, pl, pt, es, th and tu), so only dictionaries including these languages are available.
 
 If the language you want isn't here, or you would like to see an improvement to a dictionary, please [open an issue](https://github.com/yomidevs/kaikki-to-yomitan/issues/new).
 
@@ -66,7 +66,7 @@ rm main-table.md
 second_text="## IPA Dictionaries
 These dictionaries contain the International Phonetic Alphabet (IPA) transcriptions for the headwords. There are two types of IPA dictionaries:
 1. IPA dictionaries from a single wiktionary edition - e.g. \`en-de\` contains IPA transcriptions for English headwords from the German wiktionary edition.
-2. Merged IPA dictionaries from all 8 supported editions - e.g. \`en merged\`. These have more terms covered but not all the entries might be formatted the same way.
+2. Merged IPA dictionaries from all 18 supported editions - e.g. \`en merged\`. These have more terms covered but not all the entries might be formatted the same way.
 "
 
 {
