@@ -102,14 +102,32 @@ jobs:
       - name: Run auto.sh script
         run: ./auto.sh "${{ matrix.edition_language }}" ? ?
 
-      - name: Upload dictionary files
+      - name: Upload main dictionary files
         uses: softprops/action-gh-release@v2
         with:
           name: ${{ needs.prepare.outputs.calver }}
           tag_name: ${{ needs.prepare.outputs.tag }}
           prerelease: true
           generate_release_notes: true
-          files: "data/language/**/*.zip"
+          files: "data/language/**/kty-{[a-z][a-z],[a-z][a-z][a-z]}-{[a-z][a-z],[a-z][a-z][a-z]}.zip"
+      
+      - name: Upload ipa dictionary files
+        uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ needs.prepare.outputs.calver }}
+          tag_name: ${{ needs.prepare.outputs.tag }}
+          prerelease: true
+          generate_release_notes: true
+          files: "data/language/**/kty-{[a-z][a-z],[a-z][a-z][a-z]}-{[a-z][a-z],[a-z][a-z][a-z]}-ipa.zip"
+
+      - name: Upload gloss dictionary files
+        uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ needs.prepare.outputs.calver }}
+          tag_name: ${{ needs.prepare.outputs.tag }}
+          prerelease: true
+          generate_release_notes: true
+          files: "data/language/**/kty-{[a-z][a-z],[a-z][a-z][a-z]}-{[a-z][a-z],[a-z][a-z][a-z]}-gloss.zip"
 
       - name: Upload index.json files
         uses: softprops/action-gh-release@v2
@@ -160,7 +178,7 @@ jobs:
       - name: Delete downloaded IPA files
         run: rm *.zip
       
-      - name: Upload dictionary files
+      - name: Upload merged IPA dictionary files
         uses: softprops/action-gh-release@v2
         with:
           name: ${{ needs.prepare.outputs.calver }}
