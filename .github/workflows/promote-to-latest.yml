@@ -49,25 +49,26 @@ jobs:
           
           echo "Release $RELEASE_VERSION found. Promoting to latest..."
           
-          # First, delete the current penultimate folder if it exists
-          echo "Deleting current penultimate folder..."
-          if aws s3 ls s3://$R2_BUCKET_NAME/releases/penultimate/ --endpoint-url $R2_ENDPOINT --region auto > /dev/null 2>&1; then
-            aws s3 rm s3://$R2_BUCKET_NAME/releases/penultimate/ --recursive --endpoint-url $R2_ENDPOINT --region auto
-            echo "Current penultimate folder deleted"
+          # First, delete the current backup folder if it exists
+          echo "Deleting current backup folder..."
+          if aws s3 ls s3://$R2_BUCKET_NAME/releases/backup/ --endpoint-url $R2_ENDPOINT --region auto > /dev/null 2>&1; then
+            aws s3 rm s3://$R2_BUCKET_NAME/releases/backup/ --recursive --endpoint-url $R2_ENDPOINT --region auto
+            echo "Current backup folder deleted"
           else
-            echo "No current penultimate folder found, skipping deletion"
+            echo "No current backup folder found, skipping deletion"
           fi
           
-          # First, rename current latest folder to penultimate (if it exists)
-          echo "Renaming current latest folder to penultimate..."
+          # First, rename current latest folder to backup (if it exists)
+          echo "Renaming current latest folder to backup..."
           if aws s3 ls s3://$R2_BUCKET_NAME/releases/latest/ --endpoint-url $R2_ENDPOINT --region auto > /dev/null 2>&1; then
-            aws s3 mv s3://$R2_BUCKET_NAME/releases/latest/ s3://$R2_BUCKET_NAME/releases/penultimate/ \
+            aws s3 mv s3://$R2_BUCKET_NAME/releases/latest/ s3://$R2_BUCKET_NAME/releases/backup/ \
               --recursive \
               --endpoint-url $R2_ENDPOINT \
-              --region auto
-            echo "Current latest folder renamed to penultimate"
+              --region auto \
+              --debug
+            echo "Current latest folder renamed to backup"
           else
-            echo "No current latest folder found, skipping rename to penultimate"
+            echo "No current latest folder found, skipping rename to backup"
           fi
           
           # Now rename the target release to latest
@@ -75,7 +76,8 @@ jobs:
           aws s3 mv s3://$R2_BUCKET_NAME/releases/$RELEASE_VERSION/ s3://$R2_BUCKET_NAME/releases/latest/ \
             --recursive \
             --endpoint-url $R2_ENDPOINT \
-            --region auto
+            --region auto \
+            --debug
           
           # Check if rename was successful
           RENAME_EXIT_CODE=$?
