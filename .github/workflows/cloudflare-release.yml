@@ -109,46 +109,49 @@ jobs:
       - name: Run auto.sh script
         run: ./auto.sh "${{ matrix.edition_language }}" ? ?
 
-      - name: Upload main dictionary files to R2
+      - name: Upload dictionary files to R2
         run: |
-          # Install AWS CLI for S3-compatible operations
+          # Install/Update AWS CLI for S3-compatible operations
           curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-          unzip awscliv2.zip
-          sudo ./aws/install
+          unzip -o awscliv2.zip
+          sudo ./aws/install --update || sudo ./aws/install
           
-          # Upload main dictionary files
-          find data/language -name "kty-{[a-z][a-z],[a-z][a-z][a-z]}-{[a-z][a-z],[a-z][a-z][a-z]}.zip" -exec \
+          # Set AWS credentials for AWS CLI
+          export AWS_ACCESS_KEY_ID=$R2_ACCESS_KEY_ID
+          export AWS_SECRET_ACCESS_KEY=$R2_SECRET_ACCESS_KEY
+          export AWS_DEFAULT_REGION=auto
+          
+          # Upload dictionary files
+          echo "Finding dictionary files..."
+          find data/language -regex '.*kty.*\.zip' -exec \
             aws s3 cp {} s3://$R2_BUCKET_NAME/releases/${{ needs.prepare.outputs.calver }}/ \
             --endpoint-url $R2_ENDPOINT \
             --region auto \
             --acl public-read \;
-      
-      - name: Upload ipa dictionary files to R2
-        run: |
-          # Upload IPA dictionary files
-          find data/language -name "kty-{[a-z][a-z],[a-z][a-z][a-z]}-{[a-z][a-z],[a-z][a-z][a-z]}-ipa.zip" -exec \
-            aws s3 cp {} s3://$R2_BUCKET_NAME/releases/${{ needs.prepare.outputs.calver }}/ \
-            --endpoint-url $R2_ENDPOINT \
-            --region auto \
-            --acl public-read \;
-
-      - name: Upload gloss dictionary files to R2
-        run: |
-          # Upload gloss dictionary files
-          find data/language -name "kty-{[a-z][a-z],[a-z][a-z][a-z]}-{[a-z][a-z],[a-z][a-z][a-z]}-gloss.zip" -exec \
-            aws s3 cp {} s3://$R2_BUCKET_NAME/releases/${{ needs.prepare.outputs.calver }}/ \
-            --endpoint-url $R2_ENDPOINT \
-            --region auto \
-            --acl public-read \;
+          
+          echo "Found main dictionary files:"
+          find data/language -regex '.*kty.*\.zip' -exec echo "  {}" \;
 
       - name: Upload index.json files to R2
         run: |
+          # Set AWS credentials for AWS CLI
+          export AWS_ACCESS_KEY_ID=$R2_ACCESS_KEY_ID
+          export AWS_SECRET_ACCESS_KEY=$R2_SECRET_ACCESS_KEY
+          export AWS_DEFAULT_REGION=auto
+          
           # Upload index.json files
-          find data/language -name "kty-{[a-z][a-z],[a-z][a-z][a-z]}-{[a-z][a-z],[a-z][a-z][a-z]}-index.json" -exec \
+          echo "Finding index.json files..."
+          find data/language -regex '.*kty.*-index\.json' -exec \
             aws s3 cp {} s3://$R2_BUCKET_NAME/releases/${{ needs.prepare.outputs.calver }}/ \
             --endpoint-url $R2_ENDPOINT \
             --region auto \
             --acl public-read \;
+          
+          echo "Found index.json files:"
+          find data/language -regex '.*kty.*-index\.json' -exec echo "  {}" \;
+
+      - name: Clean up
+        run: rm -rf awscliv2.zip aws/
 
   merge-ipa:
     needs: ["prepare", "convert"]
@@ -167,10 +170,15 @@ jobs:
       
       - name: Download IPA dicts from R2
         run: |
-          # Install AWS CLI for S3-compatible operations
+          # Install/Update AWS CLI for S3-compatible operations
           curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-          unzip awscliv2.zip
-          sudo ./aws/install
+          unzip -o awscliv2.zip
+          sudo ./aws/install --update || sudo ./aws/install
+          
+          # Set AWS credentials for AWS CLI
+          export AWS_ACCESS_KEY_ID=$R2_ACCESS_KEY_ID
+          export AWS_SECRET_ACCESS_KEY=$R2_SECRET_ACCESS_KEY
+          export AWS_DEFAULT_REGION=auto
           
           mapfile -t iso_array < <(printf '%s' '${{needs.prepare.outputs.isos}}' | jq -r '.[]')
           edition_languages=$(printf '%s' '${{needs.prepare.outputs.edition_languages}}' | jq -r 'join(" ")')
@@ -200,10 +208,21 @@ jobs:
       
       - name: Upload merged IPA dictionary files to R2
         run: |
+          # Set AWS credentials for AWS CLI
+          export AWS_ACCESS_KEY_ID=$R2_ACCESS_KEY_ID
+          export AWS_SECRET_ACCESS_KEY=$R2_SECRET_ACCESS_KEY
+          export AWS_DEFAULT_REGION=auto
+          
           # Upload merged IPA dictionary files
+          echo "Finding merged IPA dictionary files..."
           find data/language -name "*.zip" -exec \
             aws s3 cp {} s3://$R2_BUCKET_NAME/releases/${{ needs.prepare.outputs.calver }}/ \
             --endpoint-url $R2_ENDPOINT \
             --region auto \
             --acl public-read \;
+          
+          echo "Found merged IPA dictionary files:"
+          find data/language -name "*.zip" -exec echo "  {}" \;
 
+      - name: Clean up
+        run: rm -rf awscliv2.zip aws/
