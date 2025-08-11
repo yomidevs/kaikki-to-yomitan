@@ -118,7 +118,7 @@ jobs:
           
           # Upload dictionary files
           echo "Finding dictionary files..."
-          find data/language -regex '.*kty-[a-z]\{2,3\}-[a-z]\{2,3\}\.zip' -exec \
+          find data/language -regex '.*kty.*\.zip' -exec \
             aws s3 cp {} s3://$R2_BUCKET_NAME/releases/${{ needs.prepare.outputs.calver }}/ \
             --endpoint-url $R2_ENDPOINT \
             --region auto \
@@ -131,7 +131,7 @@ jobs:
         run: |
           # Upload index.json files
           echo "Finding index.json files..."
-          find data/language -regex '.*kty-[a-z]\{2,3\}-[a-z]\{2,3\}-index\.json' -exec \
+          find data/language -regex '.*kty.*-index\.json' -exec \
             aws s3 cp {} s3://$R2_BUCKET_NAME/releases/${{ needs.prepare.outputs.calver }}/ \
             --endpoint-url $R2_ENDPOINT \
             --region auto \
