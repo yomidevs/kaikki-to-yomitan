@@ -109,15 +109,15 @@ jobs:
       - name: Run auto.sh script
         run: ./auto.sh "${{ matrix.edition_language }}" ? ?
 
-      - name: Upload main dictionary files to R2
+      - name: Upload dictionary files to R2
         run: |
           # Install/Update AWS CLI for S3-compatible operations
           curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
           unzip -o awscliv2.zip
           sudo ./aws/install --update || sudo ./aws/install
           
-          # Upload main dictionary files
-          echo "Finding main dictionary files..."
+          # Upload dictionary files
+          echo "Finding dictionary files..."
           find data/language -regex '.*kty-[a-z]\{2,3\}-[a-z]\{2,3\}\.zip' -exec \
             aws s3 cp {} s3://$R2_BUCKET_NAME/releases/${{ needs.prepare.outputs.calver }}/ \
             --endpoint-url $R2_ENDPOINT \
@@ -125,33 +125,7 @@ jobs:
             --acl public-read \;
           
           echo "Found main dictionary files:"
-          find data/language -regex '.*kty-[a-z]\{2,3\}-[a-z]\{2,3\}\.zip' -exec echo "  {}" \;
-      
-      - name: Upload ipa dictionary files to R2
-        run: |
-          # Upload IPA dictionary files
-          echo "Finding IPA dictionary files..."
-          find data/language -regex '.*kty-[a-z]\{2,3\}-[a-z]\{2,3\}-ipa\.zip' -exec \
-            aws s3 cp {} s3://$R2_BUCKET_NAME/releases/${{ needs.prepare.outputs.calver }}/ \
-            --endpoint-url $R2_ENDPOINT \
-            --region auto \
-            --acl public-read \;
-          
-          echo "Found IPA dictionary files:"
-          find data/language -regex '.*kty-[a-z]\{2,3\}-[a-z]\{2,3\}-ipa\.zip' -exec echo "  {}" \;
-
-      - name: Upload gloss dictionary files to R2
-        run: |
-          # Upload gloss dictionary files
-          echo "Finding gloss dictionary files..."
-          find data/language -regex '.*kty-[a-z]\{2,3\}-[a-z]\{2,3\}-gloss\.zip' -exec \
-            aws s3 cp {} s3://$R2_BUCKET_NAME/releases/${{ needs.prepare.outputs.calver }}/ \
-            --endpoint-url $R2_ENDPOINT \
-            --region auto \
-            --acl public-read \;
-          
-          echo "Found gloss dictionary files:"
-          find data/language -regex '.*kty-[a-z]\{2,3\}-[a-z]\{2,3\}-gloss\.zip' -exec echo "  {}" \;
+          find data/language -regex '.*kty.*\.zip' -exec echo "  {}" \;
 
       - name: Upload index.json files to R2
         run: |
@@ -164,7 +138,7 @@ jobs:
             --acl public-read \;
           
           echo "Found index.json files:"
-          find data/language -regex '.*kty-[a-z]\{2,3\}-[a-z]\{2,3\}-index\.json' -exec echo "  {}" \;
+          find data/language -regex '.*kty.*-index\.json' -exec echo "  {}" \;
 
       - name: Clean up
         run: rm -rf awscliv2.zip aws/
