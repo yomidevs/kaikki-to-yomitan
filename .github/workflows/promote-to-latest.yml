@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Install AWS CLI
         run: |
@@ -55,13 +55,21 @@ jobs:
           
           # Copy all files from the specified release to latest
           echo "Promoting release $RELEASE_VERSION to latest..."
-          aws s3 cp s3://$R2_BUCKET_NAME/releases/$RELEASE_VERSION/ s3://$R2_BUCKET_NAME/latest/ \
-            --recursive \
+          
+          # Use sync instead of cp for better reliability
+          aws s3 sync s3://$R2_BUCKET_NAME/releases/$RELEASE_VERSION/ s3://$R2_BUCKET_NAME/latest/ \
             --endpoint-url $R2_ENDPOINT \
             --region auto \
-            --acl public-read
+            --acl public-read \
+            --delete
           
-          echo "Successfully promoted release $RELEASE_VERSION to latest folder"
+          # Check if sync was successful
+          if [ $? -eq 0 ]; then
+            echo "Successfully promoted release $RELEASE_VERSION to latest folder"
+          else
+            echo "Error: Failed to promote release to latest folder"
+            exit 1
+          fi
           
           # List what's now in the latest folder
           echo "Contents of latest folder:"
