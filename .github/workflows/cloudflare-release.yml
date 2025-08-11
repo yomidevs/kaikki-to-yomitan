@@ -1,0 +1,209 @@
+name: Create a new Cloudflare R2 release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  
+env:
+  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+  R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME }}
+  R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ steps.tag.outputs.tag }}
+      edition_languages: ${{ steps.load-languages.outputs.edition_languages }}
+      isos: ${{ steps.load-languages.outputs.isos }}
+      calver: ${{ steps.tag.outputs.calver }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      - name: Install npm dependencies
+        run: npm install
+
+      - name: Configure git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Tag the repository
+        id: tag
+        run: |
+          # See https://docs.github.com/en/get-started/using-git/dealing-with-special-characters-in-branch-and-tag-names
+          TAG=v$(date -Iseconds | sed 's/[T:\+]/-/g')
+          CALVER=$(date +'%y.%m.%d.%H')
+          echo "$TAG"
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "calver=$CALVER" >> $GITHUB_OUTPUT
+          git tag -a $TAG -m "Published version $TAG" ${GITHUB_SHA}
+          git push origin $TAG
+
+      - name: Load Languages
+        id: load-languages
+        run: |
+          edition_languages=$(jq '[.[] | select(.hasEdition == true) | .language]' languages.json | jq -c 'map(.)')
+          echo "edition_languages=$edition_languages" >> $GITHUB_OUTPUT
+          isos=$(jq -r '.[].iso' languages.json | jq -R -s -c 'split("\n") | map(select(. != ""))')
+          echo "isos=$isos" >> $GITHUB_OUTPUT
+      
+      - name: Generate markdown table
+        id: generate_markdown
+        run: |
+          ./tools/generate-downloads-table.sh
+
+      - name: Create pull request if necessary
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          title: "Update downloads.md with list of .zip files"
+          body: "This PR updates the downloads.md file with a table listing all .zip files."  
+
+  convert:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 1
+      matrix:
+        edition_language: ${{fromJson(needs.prepare.outputs.edition_languages)}}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+    
+      - name: Create .env file
+        run: |
+          cp .env.example .env
+          sed -i 's/^DICT_NAME=.*/DICT_NAME=kty/' .env
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      - name: Install gzip
+        run: sudo apt-get install -y gzip
+      
+      - name: Run auto.sh script
+        run: ./auto.sh "${{ matrix.edition_language }}" ? ?
+
+      - name: Upload main dictionary files to R2
+        run: |
+          # Install AWS CLI for S3-compatible operations
+          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+          unzip awscliv2.zip
+          sudo ./aws/install
+          
+          # Upload main dictionary files
+          find data/language -name "kty-{[a-z][a-z],[a-z][a-z][a-z]}-{[a-z][a-z],[a-z][a-z][a-z]}.zip" -exec \
+            aws s3 cp {} s3://$R2_BUCKET_NAME/releases/${{ needs.prepare.outputs.calver }}/ \
+            --endpoint-url $R2_ENDPOINT \
+            --region auto \
+            --acl public-read \;
+      
+      - name: Upload ipa dictionary files to R2
+        run: |
+          # Upload IPA dictionary files
+          find data/language -name "kty-{[a-z][a-z],[a-z][a-z][a-z]}-{[a-z][a-z],[a-z][a-z][a-z]}-ipa.zip" -exec \
+            aws s3 cp {} s3://$R2_BUCKET_NAME/releases/${{ needs.prepare.outputs.calver }}/ \
+            --endpoint-url $R2_ENDPOINT \
+            --region auto \
+            --acl public-read \;
+
+      - name: Upload gloss dictionary files to R2
+        run: |
+          # Upload gloss dictionary files
+          find data/language -name "kty-{[a-z][a-z],[a-z][a-z][a-z]}-{[a-z][a-z],[a-z][a-z][a-z]}-gloss.zip" -exec \
+            aws s3 cp {} s3://$R2_BUCKET_NAME/releases/${{ needs.prepare.outputs.calver }}/ \
+            --endpoint-url $R2_ENDPOINT \
+            --region auto \
+            --acl public-read \;
+
+      - name: Upload index.json files to R2
+        run: |
+          # Upload index.json files
+          find data/language -name "kty-{[a-z][a-z],[a-z][a-z][a-z]}-{[a-z][a-z],[a-z][a-z][a-z]}-index.json" -exec \
+            aws s3 cp {} s3://$R2_BUCKET_NAME/releases/${{ needs.prepare.outputs.calver }}/ \
+            --endpoint-url $R2_ENDPOINT \
+            --region auto \
+            --acl public-read \;
+
+  merge-ipa:
+    needs: ["prepare", "convert"]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install npm dependencies
+        run: npm install
+      
+      - name: Download IPA dicts from R2
+        run: |
+          # Install AWS CLI for S3-compatible operations
+          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+          unzip awscliv2.zip
+          sudo ./aws/install
+          
+          mapfile -t iso_array < <(printf '%s' '${{needs.prepare.outputs.isos}}' | jq -r '.[]')
+          edition_languages=$(printf '%s' '${{needs.prepare.outputs.edition_languages}}' | jq -r 'join(" ")')
+          for source_iso in "${iso_array[@]}"; do
+            for target_iso in "${iso_array[@]}"; do
+              filename="kty-${source_iso}-${target_iso}-ipa.zip"
+              if [ -f "$filename" ]; then
+                  continue
+              fi
+
+              if [[ ! "$edition_languages" == *"$target_iso"* ]]; then
+                  continue
+              fi
+              
+              # Download from R2 instead of GitHub releases
+              aws s3 cp s3://$R2_BUCKET_NAME/releases/${{needs.prepare.outputs.calver}}/kty-${source_iso}-${target_iso}-ipa.zip . \
+                --endpoint-url $R2_ENDPOINT \
+                --region auto || echo "Skipping kty-${source_iso}-${target_iso}-ipa.zip due to an error."
+            done
+          done
+
+      - name: Run merge-ipa
+        run: node merge-ipa.js
+
+      - name: Delete downloaded IPA files
+        run: rm *.zip
+      
+      - name: Upload merged IPA dictionary files to R2
+        run: |
+          # Upload merged IPA dictionary files
+          find data/language -name "*.zip" -exec \
+            aws s3 cp {} s3://$R2_BUCKET_NAME/releases/${{ needs.prepare.outputs.calver }}/ \
+            --endpoint-url $R2_ENDPOINT \
+            --region auto \
+            --acl public-read \;
+
