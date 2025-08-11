@@ -1,5 +1,4 @@
 [
-    {"iso": "en", "language": "English", "flag": "🇬🇧", "hasEdition": true},
-    {"iso": "de", "language": "German", "flag": "🇩🇪", "hasEdition": true},
-    {"iso": "es", "language": "Spanish", "flag": "🇪🇸", "hasEdition": true}
-] 
+    {"iso": "de",  "language": "German",               "flag": "🇩🇪",   "hasEdition": true },
+    {"iso": "ja",  "language": "Japanese",             "flag": "🇯🇵",   "hasEdition": true }
+]

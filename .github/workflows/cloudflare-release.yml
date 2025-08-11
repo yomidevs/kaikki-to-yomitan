@@ -111,10 +111,10 @@ jobs:
 
       - name: Upload main dictionary files to R2
         run: |
-          # Install AWS CLI for S3-compatible operations
+          # Install/Update AWS CLI for S3-compatible operations
           curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-          unzip awscliv2.zip
-          sudo ./aws/install
+          unzip -o awscliv2.zip
+          sudo ./aws/install --update || sudo ./aws/install
           
           # Upload main dictionary files
           find data/language -name "kty-{[a-z][a-z],[a-z][a-z][a-z]}-{[a-z][a-z],[a-z][a-z][a-z]}.zip" -exec \
@@ -150,6 +150,9 @@ jobs:
             --region auto \
             --acl public-read \;
 
+      - name: Clean up
+        run: rm -rf awscliv2.zip aws/
+
   merge-ipa:
     needs: ["prepare", "convert"]
     runs-on: ubuntu-latest
@@ -167,10 +170,10 @@ jobs:
       
       - name: Download IPA dicts from R2
         run: |
-          # Install AWS CLI for S3-compatible operations
+          # Install/Update AWS CLI for S3-compatible operations
           curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-          unzip awscliv2.zip
-          sudo ./aws/install
+          unzip -o awscliv2.zip
+          sudo ./aws/install --update || sudo ./aws/install
           
           mapfile -t iso_array < <(printf '%s' '${{needs.prepare.outputs.isos}}' | jq -r '.[]')
           edition_languages=$(printf '%s' '${{needs.prepare.outputs.edition_languages}}' | jq -r 'join(" ")')
@@ -207,3 +210,5 @@ jobs:
             --region auto \
             --acl public-read \;
 
+      - name: Clean up
+        run: rm -rf awscliv2.zip aws/
