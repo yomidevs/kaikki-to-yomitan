@@ -49,6 +49,15 @@ jobs:
           
           echo "Release $RELEASE_VERSION found. Promoting to latest..."
           
+          # First, delete the current penultimate folder if it exists
+          echo "Deleting current penultimate folder..."
+          if aws s3 ls s3://$R2_BUCKET_NAME/releases/penultimate/ --endpoint-url $R2_ENDPOINT --region auto > /dev/null 2>&1; then
+            aws s3 rm s3://$R2_BUCKET_NAME/releases/penultimate/ --recursive --endpoint-url $R2_ENDPOINT --region auto
+            echo "Current penultimate folder deleted"
+          else
+            echo "No current penultimate folder found, skipping deletion"
+          fi
+          
           # First, rename current latest folder to penultimate (if it exists)
           echo "Renaming current latest folder to penultimate..."
           if aws s3 ls s3://$R2_BUCKET_NAME/releases/latest/ --endpoint-url $R2_ENDPOINT --region auto > /dev/null 2>&1; then
