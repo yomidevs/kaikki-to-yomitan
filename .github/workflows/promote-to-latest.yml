@@ -60,8 +60,7 @@ jobs:
           aws s3 sync s3://$R2_BUCKET_NAME/releases/$RELEASE_VERSION/ s3://$R2_BUCKET_NAME/latest/ \
             --endpoint-url $R2_ENDPOINT \
             --region auto \
-            --acl public-read \
-            --delete
+            --acl public-read
           
           # Check if sync was successful
           if [ $? -eq 0 ]; then
