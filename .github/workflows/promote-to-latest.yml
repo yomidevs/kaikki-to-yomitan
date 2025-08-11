@@ -49,22 +49,30 @@ jobs:
           
           echo "Release $RELEASE_VERSION found. Promoting to latest..."
           
-          # First, remove all existing files from latest folder
-          echo "Clearing latest folder..."
-          aws s3 rm s3://$R2_BUCKET_NAME/latest/ --recursive --endpoint-url $R2_ENDPOINT --region auto || echo "Latest folder was empty or didn't exist"
+          # First, rename current latest folder to penultimate (if it exists)
+          echo "Renaming current latest folder to penultimate..."
+          if aws s3 ls s3://$R2_BUCKET_NAME/releases/latest/ --endpoint-url $R2_ENDPOINT --region auto > /dev/null 2>&1; then
+            aws s3 mv s3://$R2_BUCKET_NAME/releases/latest/ s3://$R2_BUCKET_NAME/releases/penultimate/ \
+              --recursive \
+              --endpoint-url $R2_ENDPOINT \
+              --region auto
+            echo "Current latest folder renamed to penultimate"
+          else
+            echo "No current latest folder found, skipping rename to penultimate"
+          fi
           
-          # Copy all files from the specified release to latest
-          echo "Promoting release $RELEASE_VERSION to latest..."
-          
-          # Use sync instead of cp for better reliability
-          aws s3 sync s3://$R2_BUCKET_NAME/releases/$RELEASE_VERSION/ s3://$R2_BUCKET_NAME/latest/ \
+          # Now rename the target release to latest
+          echo "Renaming release $RELEASE_VERSION to latest..."
+          aws s3 mv s3://$R2_BUCKET_NAME/releases/$RELEASE_VERSION/ s3://$R2_BUCKET_NAME/releases/latest/ \
+            --recursive \
             --endpoint-url $R2_ENDPOINT \
-            --region auto \
-            --acl public-read \
-            --debug
+            --region auto
           
-          # Check if sync was successful
-          if [ $? -eq 0 ]; then
+          # Check if rename was successful
+          RENAME_EXIT_CODE=$?
+          echo "Rename operation exit code: $RENAME_EXIT_CODE"
+          
+          if [ $RENAME_EXIT_CODE -eq 0 ]; then
             echo "Successfully promoted release $RELEASE_VERSION to latest folder"
           else
             echo "Error: Failed to promote release to latest folder"
@@ -73,7 +81,7 @@ jobs:
           
           # List what's now in the latest folder
           echo "Contents of latest folder:"
-          aws s3 ls s3://$R2_BUCKET_NAME/latest/ --endpoint-url $R2_ENDPOINT --region auto
+          aws s3 ls s3://$R2_BUCKET_NAME/releases/latest/ --endpoint-url $R2_ENDPOINT --region auto
 
       - name: Clean up
         run: rm -rf awscliv2.zip aws/ 
