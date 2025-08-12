@@ -15,19 +15,17 @@ async function promoteReleaseToLatest(releaseVersion) {
   try {
     console.log(`Checking if release ${releaseVersion} exists...`);
     
-    // Verify the release exists
-    try {
-      await s3.headObject({
-        Bucket: bucketName,
-        Key: `releases/${releaseVersion}/`
-      }).promise();
-      console.log(`Release ${releaseVersion} found. Promoting to latest...`);
-    } catch (error) {
-      if (error.code === 'NotFound' || error.statusCode === 404) {
-        throw new Error(`Release ${releaseVersion} not found in R2 bucket`);
-      }
-      throw error;
+    // Verify the release exists by checking if there are objects with that prefix
+    const releaseObjects = await s3.listObjectsV2({
+      Bucket: bucketName,
+      Prefix: `releases/${releaseVersion}/`
+    }).promise();
+    
+    if (!releaseObjects.Contents || releaseObjects.Contents.length === 0) {
+      throw new Error(`Release ${releaseVersion} not found in R2 bucket`);
     }
+    
+    console.log(`Release ${releaseVersion} found with ${releaseObjects.Contents.length} objects. Promoting to latest...`);
     
     // Delete current backup folder if it exists
     console.log('Deleting current backup folder...');
@@ -90,37 +88,21 @@ async function promoteReleaseToLatest(releaseVersion) {
       // Continue with the process even if backup rename fails
     }
     
-    // Now rename the target release to latest
-    console.log(`Renaming release ${releaseVersion} to latest...`);
-    const releaseObjects = await s3.listObjectsV2({
-      Bucket: bucketName,
-      Prefix: `releases/${releaseVersion}/`
-    }).promise();
+    // Now copy the target release to latest
+    console.log(`Copying release ${releaseVersion} to latest...`);
     
-    if (releaseObjects.Contents && releaseObjects.Contents.length > 0) {
-      // Copy objects from release to latest
-      for (const obj of releaseObjects.Contents) {
-        const newKey = obj.Key.replace(`releases/${releaseVersion}/`, 'releases/latest/');
-        await s3.copyObject({
-          Bucket: bucketName,
-          CopySource: `${bucketName}/${obj.Key}`,
-          Key: newKey
-        }).promise();
-      }
-      
-      // Delete objects from original release folder
-      const deleteParams = {
+    // Copy objects from release to latest
+    for (const obj of releaseObjects.Contents) {
+      const newKey = obj.Key.replace(`releases/${releaseVersion}/`, 'releases/latest/');
+      console.log(`  Copying ${obj.Key} to ${newKey}`);
+      await s3.copyObject({
         Bucket: bucketName,
-        Delete: {
-          Objects: releaseObjects.Contents.map(obj => ({ Key: obj.Key }))
-        }
-      };
-      await s3.deleteObjects(deleteParams).promise();
-      
-      console.log(`Successfully promoted release ${releaseVersion} to latest folder`);
-    } else {
-      throw new Error(`No objects found in release ${releaseVersion}`);
+        CopySource: `${bucketName}/${obj.Key}`,
+        Key: newKey
+      }).promise();
     }
+    
+    console.log(`Successfully promoted release ${releaseVersion} to latest folder`);
     
     // List what's now in the latest folder
     console.log('Contents of latest folder:');
