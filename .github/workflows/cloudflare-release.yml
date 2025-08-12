@@ -109,49 +109,14 @@ jobs:
       - name: Run auto.sh script
         run: ./auto.sh "${{ matrix.edition_language }}" ? ?
 
+      - name: Install AWS SDK
+        run: npm install aws-sdk
+
       - name: Upload dictionary files to R2
-        run: |
-          # Install/Update AWS CLI for S3-compatible operations
-          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-          unzip -o awscliv2.zip
-          sudo ./aws/install --update || sudo ./aws/install
-          
-          # Set AWS credentials for AWS CLI
-          export AWS_ACCESS_KEY_ID=$R2_ACCESS_KEY_ID
-          export AWS_SECRET_ACCESS_KEY=$R2_SECRET_ACCESS_KEY
-          export AWS_DEFAULT_REGION=auto
-          
-          # Upload dictionary files
-          echo "Finding dictionary files..."
-          find data/language -regex '.*kty.*\.zip' -exec \
-            aws s3 cp {} s3://$R2_BUCKET_NAME/releases/${{ needs.prepare.outputs.calver }}/ \
-            --endpoint-url $R2_ENDPOINT \
-            --region auto \
-            --acl public-read \;
-          
-          echo "Found main dictionary files:"
-          find data/language -regex '.*kty.*\.zip' -exec echo "  {}" \;
+        run: node .github/workflows/upload-files.js dict ${{ needs.prepare.outputs.calver }}
 
       - name: Upload index.json files to R2
-        run: |
-          # Set AWS credentials for AWS CLI
-          export AWS_ACCESS_KEY_ID=$R2_ACCESS_KEY_ID
-          export AWS_SECRET_ACCESS_KEY=$R2_SECRET_ACCESS_KEY
-          export AWS_DEFAULT_REGION=auto
-          
-          # Upload index.json files
-          echo "Finding index.json files..."
-          find data/language -regex '.*kty.*-index\.json' -exec \
-            aws s3 cp {} s3://$R2_BUCKET_NAME/releases/${{ needs.prepare.outputs.calver }}/ \
-            --endpoint-url $R2_ENDPOINT \
-            --region auto \
-            --acl public-read \;
-          
-          echo "Found index.json files:"
-          find data/language -regex '.*kty.*-index\.json' -exec echo "  {}" \;
-
-      - name: Clean up
-        run: rm -rf awscliv2.zip aws/
+        run: node .github/workflows/upload-files.js index ${{ needs.prepare.outputs.calver }}
 
   merge-ipa:
     needs: ["prepare", "convert"]
@@ -168,37 +133,11 @@ jobs:
       - name: Install npm dependencies
         run: npm install
       
+      - name: Install AWS SDK
+        run: npm install aws-sdk
+      
       - name: Download IPA dicts from R2
-        run: |
-          # Install/Update AWS CLI for S3-compatible operations
-          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-          unzip -o awscliv2.zip
-          sudo ./aws/install --update || sudo ./aws/install
-          
-          # Set AWS credentials for AWS CLI
-          export AWS_ACCESS_KEY_ID=$R2_ACCESS_KEY_ID
-          export AWS_SECRET_ACCESS_KEY=$R2_SECRET_ACCESS_KEY
-          export AWS_DEFAULT_REGION=auto
-          
-          mapfile -t iso_array < <(printf '%s' '${{needs.prepare.outputs.isos}}' | jq -r '.[]')
-          edition_languages=$(printf '%s' '${{needs.prepare.outputs.edition_languages}}' | jq -r 'join(" ")')
-          for source_iso in "${iso_array[@]}"; do
-            for target_iso in "${iso_array[@]}"; do
-              filename="kty-${source_iso}-${target_iso}-ipa.zip"
-              if [ -f "$filename" ]; then
-                  continue
-              fi
-
-              if [[ ! "$edition_languages" == *"$target_iso"* ]]; then
-                  continue
-              fi
-              
-              # Download from R2 instead of GitHub releases
-              aws s3 cp s3://$R2_BUCKET_NAME/releases/${{needs.prepare.outputs.calver}}/kty-${source_iso}-${target_iso}-ipa.zip . \
-                --endpoint-url $R2_ENDPOINT \
-                --region auto || echo "Skipping kty-${source_iso}-${target_iso}-ipa.zip due to an error."
-            done
-          done
+        run: node .github/workflows/download-ipa.js '${{ needs.prepare.outputs.calver }}'
 
       - name: Run merge-ipa
         run: node merge-ipa.js
@@ -207,22 +146,4 @@ jobs:
         run: rm *.zip
       
       - name: Upload merged IPA dictionary files to R2
-        run: |
-          # Set AWS credentials for AWS CLI
-          export AWS_ACCESS_KEY_ID=$R2_ACCESS_KEY_ID
-          export AWS_SECRET_ACCESS_KEY=$R2_SECRET_ACCESS_KEY
-          export AWS_DEFAULT_REGION=auto
-          
-          # Upload merged IPA dictionary files
-          echo "Finding merged IPA dictionary files..."
-          find data/language -name "*.zip" -exec \
-            aws s3 cp {} s3://$R2_BUCKET_NAME/releases/${{ needs.prepare.outputs.calver }}/ \
-            --endpoint-url $R2_ENDPOINT \
-            --region auto \
-            --acl public-read \;
-          
-          echo "Found merged IPA dictionary files:"
-          find data/language -name "*.zip" -exec echo "  {}" \;
-
-      - name: Clean up
-        run: rm -rf awscliv2.zip aws/
+        run: node .github/workflows/upload-files.js merged ${{ needs.prepare.outputs.calver }}

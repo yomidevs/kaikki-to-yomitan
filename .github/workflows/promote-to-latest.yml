@@ -23,49 +23,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      - name: Install AWS CLI
-        run: |
-          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-          unzip -o awscliv2.zip
-          sudo ./aws/install --update || sudo ./aws/install
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install aws-sdk
 
       - name: Promote release to latest
-        run: |
-          # Set AWS credentials for AWS CLI
-          export AWS_ACCESS_KEY_ID=$R2_ACCESS_KEY_ID
-          export AWS_SECRET_ACCESS_KEY=$R2_SECRET_ACCESS_KEY
-          export AWS_DEFAULT_REGION=auto
-          
-          RELEASE_VERSION="${{ github.event.inputs.release_version }}"
-          
-          # Verify the release exists
-          echo "Checking if release $RELEASE_VERSION exists..."
-          if ! aws s3 ls s3://$R2_BUCKET_NAME/releases/$RELEASE_VERSION/ --endpoint-url $R2_ENDPOINT --region auto > /dev/null 2>&1; then
-            echo "Error: Release $RELEASE_VERSION not found in R2 bucket"
-            exit 1
-          fi
-          
-          echo "Release $RELEASE_VERSION found. Promoting to latest..."
-          
-          # First, remove all existing files from latest folder
-          echo "Clearing latest folder..."
-          aws s3 rm s3://$R2_BUCKET_NAME/latest/ --recursive --endpoint-url $R2_ENDPOINT --region auto || echo "Latest folder was empty or didn't exist"
-          
-          # Copy all files from the specified release to latest
-          echo "Promoting release $RELEASE_VERSION to latest..."
-          aws s3 cp s3://$R2_BUCKET_NAME/releases/$RELEASE_VERSION/ s3://$R2_BUCKET_NAME/latest/ \
-            --recursive \
-            --endpoint-url $R2_ENDPOINT \
-            --region auto \
-            --acl public-read
-          
-          echo "Successfully promoted release $RELEASE_VERSION to latest folder"
-          
-          # List what's now in the latest folder
-          echo "Contents of latest folder:"
-          aws s3 ls s3://$R2_BUCKET_NAME/latest/ --endpoint-url $R2_ENDPOINT --region auto
-
-      - name: Clean up
-        run: rm -rf awscliv2.zip aws/ 
+        run: node .github/workflows/promote-to-latest.js ${{ github.event.inputs.release_version }} 
