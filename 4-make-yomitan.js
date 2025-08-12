@@ -14,7 +14,7 @@ const {
     temp_folder: writeFolder
 } = /** @type {MakeYomitanEnv} */(process.env);
 
-const latestDownloadLink = 'https://github.com/yomidevs/kaikki-to-yomitan/releases/latest/download/';
+const latestDownloadLink = 'https://pub-c3d38cca4dc2403b88934c56748f5144.r2.dev/releases/latest/';
 
 const indexJson = {
     format: 3,

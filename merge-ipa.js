@@ -82,7 +82,7 @@ async function main(){
         
         const url = 'https://github.com/yomidevs/kaikki-to-yomitan';
         const title = `kty-${sourceIso}-ipa`;
-        const latestReleaseUrl = `${url}/releases/latest/download/${title}`;
+        const latestReleaseUrl = `https://pub-c3d38cca4dc2403b88934c56748f5144.r2.dev/releases/latest/${title}`;
         const globalIndex = {
             "format": 3,
             "revision": date.format(now, 'YYYY.MM.DD'),
