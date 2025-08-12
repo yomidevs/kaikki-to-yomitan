@@ -139,11 +139,25 @@ async function promoteReleaseToLatest(releaseVersion) {
     // List what's now in the latest folder
     console.log('Contents of latest folder:');
     const newLatestObjects = await getAllObjectsWithPrefix(bucketName, 'releases/latest/');
-    
-    if (newLatestObjects.length > 0) {
-      newLatestObjects.forEach(obj => {
-        console.log(`  ${obj.Key}`);
-      });
+    console.log(`Latest folder now has ${newLatestObjects.length} objects`);
+
+    // get all files, delete those not in latest or backup
+    const allFiles = await getAllObjectsWithPrefix(bucketName, '');
+    const filesToDelete = allFiles.filter(file =>
+      file.Key.startsWith('releases/') &&
+      !file.Key.startsWith('releases/latest/') && 
+      !file.Key.startsWith('releases/backup/'));
+
+    console.log(`Found ${filesToDelete.length} files to delete`);
+    if(filesToDelete.length > 0) {
+        const deleteParams = {
+            Bucket: bucketName,
+            Delete: {
+                Objects: filesToDelete.map(obj => ({ Key: obj.Key }))
+            }
+        };
+        await s3.deleteObjects(deleteParams).promise();
+        console.log('Deleted files not in latest or backup');
     }
     
   } catch (error) {
