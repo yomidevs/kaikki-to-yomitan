@@ -36,6 +36,28 @@ async function getAllObjectsWithPrefix(bucketName, prefix) {
   return allObjects;
 }
 
+async function deleteObjectsInBatches(s3, bucketName, objectsToDelete, operationName = 'objects') {
+  if (objectsToDelete.length === 0) {
+    console.log(`No ${operationName} to delete`);
+    return;
+  }
+  
+  // Delete objects in batches of 1000 (AWS S3 limit)
+  const batchSize = 1000;
+  for (let i = 0; i < objectsToDelete.length; i += batchSize) {
+    const batch = objectsToDelete.slice(i, i + batchSize);
+    const deleteParams = {
+      Bucket: bucketName,
+      Delete: {
+        Objects: batch.map(obj => ({ Key: obj.Key }))
+      }
+    };
+    await s3.deleteObjects(deleteParams).promise();
+    console.log(`Deleted ${operationName} batch ${Math.floor(i/batchSize) + 1}/${Math.ceil(objectsToDelete.length/batchSize)} (${batch.length} files)`);
+  }
+  console.log(`Deleted all ${operationName} (${objectsToDelete.length} total)`);
+}
+
 async function promoteReleaseToLatest(releaseVersion) {
   const bucketName = process.env.R2_BUCKET_NAME;
   
@@ -57,14 +79,7 @@ async function promoteReleaseToLatest(releaseVersion) {
         const backupObjects = await getAllObjectsWithPrefix(bucketName, 'releases/backup/');
         
         if (backupObjects.length > 0) {
-            const deleteParams = {
-            Bucket: bucketName,
-            Delete: {
-                Objects: backupObjects.map(obj => ({ Key: obj.Key }))
-            }
-            };
-            await s3.deleteObjects(deleteParams).promise();
-            console.log('Current backup folder deleted');
+            await deleteObjectsInBatches(s3, bucketName, backupObjects, 'backup folder files');
         } else {
             console.log('No current backup folder found, skipping deletion');
         }
@@ -97,13 +112,7 @@ async function promoteReleaseToLatest(releaseVersion) {
             }
             
             // Delete objects from latest
-            const deleteParams = {
-                Bucket: bucketName,
-                Delete: {
-                    Objects: latestObjects.map(obj => ({ Key: obj.Key }))
-                }
-            };
-            await s3.deleteObjects(deleteParams).promise();
+            await deleteObjectsInBatches(s3, bucketName, latestObjects, 'latest folder files');
             console.log('Current latest folder renamed to backup');
         } else {
             console.log('No current latest folder found, skipping rename to backup');
@@ -150,14 +159,7 @@ async function promoteReleaseToLatest(releaseVersion) {
 
     console.log(`Found ${filesToDelete.length} files to delete`);
     if(filesToDelete.length > 0) {
-        const deleteParams = {
-            Bucket: bucketName,
-            Delete: {
-                Objects: filesToDelete.map(obj => ({ Key: obj.Key }))
-            }
-        };
-        await s3.deleteObjects(deleteParams).promise();
-        console.log('Deleted files not in latest or backup');
+        await deleteObjectsInBatches(s3, bucketName, filesToDelete, 'files not in latest or backup');
     }
     
   } catch (error) {
