@@ -1,4 +1,5 @@
 const languages = []
+const latestUrl = 'https://pub-c3d38cca4dc2403b88934c56748f5144.r2.dev/releases/latest/'
 
 async function fetchLanguages() {
     try {
@@ -44,13 +45,13 @@ function updateDownloadLink(tgtSel, glossSel, linkSel, type) {
     const gloss = $(glossSel).val()
     let url
     if (type === 'main') {
-        url = `https://github.com/yomidevs/kaikki-to-yomitan/releases/latest/download/kty-${tgt}-${gloss}.zip`
+        url = `${latestUrl}kty-${tgt}-${gloss}.zip`
     } else if (type === 'ipa') {
         url = gloss === 'merged'
-            ? `https://github.com/yomidevs/kaikki-to-yomitan/releases/latest/download/kty-${tgt}-ipa.zip`
-            : `https://github.com/yomidevs/kaikki-to-yomitan/releases/latest/download/kty-${tgt}-${gloss}-ipa.zip`
+            ? `${latestUrl}kty-${tgt}-ipa.zip`
+            : `${latestUrl}kty-${tgt}-${gloss}-ipa.zip`
     } else if (type === 'translations') {
-        url = `https://github.com/yomidevs/kaikki-to-yomitan/releases/latest/download/kty-${tgt}-${gloss}-gloss.zip`
+        url = `${latestUrl}kty-${tgt}-${gloss}-gloss.zip`
     }
     $(linkSel).attr('href', url)
 }
@@ -74,7 +75,7 @@ function makeTable(id, glosses, type = 'main', isIPA = false) {
                 if (fromLang.iso === toLang.iso) {
                     row.push('')  // skip monolingual entries
                 } else {
-                    const url = `https://github.com/yomidevs/kaikki-to-yomitan/releases/latest/download/kty-${fromLang.iso}-${toLang.iso}-gloss.zip`
+                    const url = `${latestUrl}kty-${fromLang.iso}-${toLang.iso}-gloss.zip`
                     row.push(`<a href="${url}" target="_blank">📥</a>`)
                 }
             }
@@ -97,13 +98,13 @@ function makeTable(id, glosses, type = 'main', isIPA = false) {
             let glossIso = gloss.iso
 
             if (glossIso === 'merged' && type === 'ipa') {
-                const url = `https://github.com/yomidevs/kaikki-to-yomitan/releases/latest/download/kty-${rowLang.iso}-ipa.zip`
+                const url = `${latestUrl}kty-${rowLang.iso}-ipa.zip`
                 row.push(`<a href="${url}" target="_blank">📥</a>`)
             } else if (type === 'ipa') {
-                const url = `https://github.com/yomidevs/kaikki-to-yomitan/releases/latest/download/kty-${rowLang.iso}-${glossIso}-ipa.zip`
+                const url = `${latestUrl}kty-${rowLang.iso}-${glossIso}-ipa.zip`
                 row.push(`<a href="${url}" target="_blank">📥</a>`)
             } else {
-                const url = `https://github.com/yomidevs/kaikki-to-yomitan/releases/latest/download/kty-${rowLang.iso}-${glossIso}.zip`
+                const url = `${latestUrl}kty-${rowLang.iso}-${glossIso}.zip`
                 row.push(`<a href="${url}" target="_blank">📥</a>`)
             }
         }
