@@ -137,11 +137,7 @@ jobs:
         run: npm install aws-sdk
       
       - name: Download IPA dicts from R2
-        run: |
-          node .github/workflows/download-ipa.js \
-            '${{ needs.prepare.outputs.calver }}' \
-            '${{ needs.prepare.outputs.isos }}' \
-            '${{ needs.prepare.outputs.edition_languages }}'
+        run: node .github/workflows/download-ipa.js '${{ needs.prepare.outputs.calver }}'
 
       - name: Run merge-ipa
         run: node merge-ipa.js

@@ -10,33 +10,42 @@ const s3 = new AWS.S3({
   s3ForcePathStyle: true
 });
 
-export async function downloadIPAFiles(calver, isos, editionLanguages) {
+// Load languages.json to get edition languages and all ISOs
+function loadLanguages() {
+  try {
+    const languagesData = fs.readFileSync('languages.json', 'utf8');
+    return JSON.parse(languagesData);
+  } catch (error) {
+    console.error('Error loading languages.json:', error.message);
+    return [];
+  }
+}
+
+export async function downloadIPAFiles(calver) {
   const bucketName = process.env.R2_BUCKET_NAME;
   
   try {
     console.log('Downloading IPA dictionaries from R2...');
     console.log(`Calver: ${calver}`);
-    console.log(`ISOs: ${isos.join(', ')}`);
-    console.log(`Edition languages: ${editionLanguages.join(', ')}`);
-    
+
+    const languages = loadLanguages();
+        
     let downloadedCount = 0;
     let skippedCount = 0;
     
     // Download IPA files for each source-target combination
-    for (const sourceIso of isos) {
-      for (const targetIso of isos) {
+    for (const sourceLanguage of languages) {
+      const sourceIso = sourceLanguage.iso;
+      for (const targetLanguage of languages) {
+        if(!targetLanguage.hasEdition) {
+          continue;
+        }
+        const targetIso = targetLanguage.iso;
         const filename = `kty-${sourceIso}-${targetIso}-ipa.zip`;
         
         // Skip if file already exists locally
         if (fs.existsSync(filename)) {
           console.log(`Skipping ${filename} - already exists locally`);
-          skippedCount++;
-          continue;
-        }
-        
-        // Skip if target language doesn't have an edition
-        if (!editionLanguages.includes(targetIso)) {
-          console.log(`Skipping ${filename} - ${targetIso} is not an edition language`);
           skippedCount++;
           continue;
         }
@@ -86,38 +95,18 @@ export async function downloadIPAFiles(calver, isos, editionLanguages) {
   }
 }
 
-// Helper function to parse JSON arrays from environment variables
-function parseJsonArray(jsonString) {
-  try {
-    return JSON.parse(jsonString);
-  } catch (error) {
-    console.error('Error parsing JSON array:', error.message);
-    return [];
-  }
-}
-
 // Main execution
 if (import.meta.url === `file://${process.argv[1]}`) {
   const calver = process.argv[2];
-  const isosJson = process.argv[3];
-  const editionLanguagesJson = process.argv[4];
   
-  if (!calver || !isosJson || !editionLanguagesJson) {
-    console.error('Usage: node download-ipa.js <calver> <isos_json> <edition_languages_json>');
-    console.error('Example: node download-ipa.js 25.08.11.18 \'["en","de","ja"]\' \'["en","de"]\'');
+  if (!calver) {
+    console.error('Usage: node download-ipa.js <calver>');
+    console.error('Example: node download-ipa.js 25.08.11.18');
     process.exit(1);
   }
   
   try {
-    const isos = parseJsonArray(isosJson);
-    const editionLanguages = parseJsonArray(editionLanguagesJson);
-    
-    if (isos.length === 0 || editionLanguages.length === 0) {
-      console.error('Error: Invalid ISO or edition languages arrays');
-      process.exit(1);
-    }
-    
-    downloadIPAFiles(calver, isos, editionLanguages);
+    downloadIPAFiles(calver);
   } catch (error) {
     console.error('Download failed:', error.message);
     process.exit(1);
