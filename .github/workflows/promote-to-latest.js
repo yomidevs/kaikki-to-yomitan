@@ -27,65 +27,66 @@ async function promoteReleaseToLatest(releaseVersion) {
     
     console.log(`Release ${releaseVersion} found with ${releaseObjects.Contents.length} objects. Promoting to latest...`);
     
-    // Delete current backup folder if it exists
-    console.log('Deleting current backup folder...');
-    try {
-      const backupObjects = await s3.listObjectsV2({
-        Bucket: bucketName,
-        Prefix: 'releases/backup/'
-      }).promise();
-      
-      if (backupObjects.Contents && backupObjects.Contents.length > 0) {
-        const deleteParams = {
-          Bucket: bucketName,
-          Delete: {
-            Objects: backupObjects.Contents.map(obj => ({ Key: obj.Key }))
-          }
-        };
-        await s3.deleteObjects(deleteParams).promise();
-        console.log('Current backup folder deleted');
-      } else {
-        console.log('No current backup folder found, skipping deletion');
-      }
-    } catch (error) {
-      console.log('Error deleting backup folder:', error.message);
-      // Continue with the process even if backup deletion fails
-    }
-    
-    // Rename current latest folder to backup (if it exists)
-    console.log('Renaming current latest folder to backup...');
-    try {
-      const latestObjects = await s3.listObjectsV2({
-        Bucket: bucketName,
-        Prefix: 'releases/latest/'
-      }).promise();
-      
-      if (latestObjects.Contents && latestObjects.Contents.length > 0) {
-        // Copy objects from latest to backup
-        for (const obj of latestObjects.Contents) {
-          const newKey = obj.Key.replace('releases/latest/', 'releases/backup/');
-          await s3.copyObject({
+    if(releaseVersion !== 'backup') {
+        console.log('Deleting current backup folder...');
+        try {
+        const backupObjects = await s3.listObjectsV2({
             Bucket: bucketName,
-            CopySource: `${bucketName}/${obj.Key}`,
-            Key: newKey
-          }).promise();
+            Prefix: 'releases/backup/'
+        }).promise();
+        
+        if (backupObjects.Contents && backupObjects.Contents.length > 0) {
+            const deleteParams = {
+            Bucket: bucketName,
+            Delete: {
+                Objects: backupObjects.Contents.map(obj => ({ Key: obj.Key }))
+            }
+            };
+            await s3.deleteObjects(deleteParams).promise();
+            console.log('Current backup folder deleted');
+        } else {
+            console.log('No current backup folder found, skipping deletion');
+        }
+        } catch (error) {
+        console.log('Error deleting backup folder:', error.message);
+        // Continue with the process even if backup deletion fails
         }
         
-        // Delete objects from latest
-        const deleteParams = {
-          Bucket: bucketName,
-          Delete: {
-            Objects: latestObjects.Contents.map(obj => ({ Key: obj.Key }))
-          }
-        };
-        await s3.deleteObjects(deleteParams).promise();
-        console.log('Current latest folder renamed to backup');
-      } else {
-        console.log('No current latest folder found, skipping rename to backup');
-      }
-    } catch (error) {
-      console.log('Error renaming latest to backup:', error.message);
-      // Continue with the process even if backup rename fails
+        // Rename current latest folder to backup (if it exists)
+        console.log('Renaming current latest folder to backup...');
+        try {
+        const latestObjects = await s3.listObjectsV2({
+            Bucket: bucketName,
+            Prefix: 'releases/latest/'
+        }).promise();
+        
+        if (latestObjects.Contents && latestObjects.Contents.length > 0) {
+            // Copy objects from latest to backup
+            for (const obj of latestObjects.Contents) {
+            const newKey = obj.Key.replace('releases/latest/', 'releases/backup/');
+            await s3.copyObject({
+                Bucket: bucketName,
+                CopySource: `${bucketName}/${obj.Key}`,
+                Key: newKey
+            }).promise();
+            }
+            
+            // Delete objects from latest
+            const deleteParams = {
+            Bucket: bucketName,
+            Delete: {
+                Objects: latestObjects.Contents.map(obj => ({ Key: obj.Key }))
+            }
+            };
+            await s3.deleteObjects(deleteParams).promise();
+            console.log('Current latest folder renamed to backup');
+        } else {
+            console.log('No current latest folder found, skipping rename to backup');
+        }
+        } catch (error) {
+        console.log('Error renaming latest to backup:', error.message);
+        // Continue with the process even if backup rename fails
+        }
     }
     
     // Now copy the target release to latest
