@@ -58,6 +58,38 @@ async function deleteObjectsInBatches(s3, bucketName, objectsToDelete, operation
   console.log(`Deleted all ${operationName} (${objectsToDelete.length} total)`);
 }
 
+async function copyObjectsInBatches(s3, bucketName, sourceObjects, sourcePrefix, targetPrefix, operationName = 'objects') {
+  if (sourceObjects.length === 0) {
+    console.log(`No ${operationName} to copy`);
+    return;
+  }
+  
+  // Copy objects in batches
+  const batchSize = 200;
+  for (let i = 0; i < sourceObjects.length; i += batchSize) {
+    const batch = sourceObjects.slice(i, i + batchSize);
+    const copyPromises = batch.map(obj => {
+      const newKey = obj.Key.replace(sourcePrefix, targetPrefix);
+      return s3.copyObject({
+        Bucket: bucketName,
+        CopySource: `${bucketName}/${obj.Key}`,
+        Key: newKey
+      }).promise();
+    });
+    
+    // Add generous timeout to prevent hanging
+    const timeoutMs = 5 * 60 * 1000; // 5 minutes per batch
+    await Promise.race([
+      Promise.all(copyPromises),
+      new Promise((_, reject) => 
+        setTimeout(() => reject(new Error(`Copy batch ${Math.floor(i/batchSize) + 1} timed out after ${timeoutMs/1000}s`)), timeoutMs)
+      )
+    ]);
+    console.log(`Copied ${operationName} batch ${Math.floor(i/batchSize) + 1}/${Math.ceil(sourceObjects.length/batchSize)} (${batch.length} files)`);
+  }
+  console.log(`Copied all ${operationName} (${sourceObjects.length} total)`);
+}
+
 async function promoteReleaseToLatest(releaseVersion) {
   const bucketName = process.env.R2_BUCKET_NAME;
   
@@ -95,21 +127,7 @@ async function promoteReleaseToLatest(releaseVersion) {
         
         if (latestObjects.length > 0) {
             // Copy objects from latest to backup concurrently in batches
-            const batchSize = 100; // Process 100 files at a time
-            for (let i = 0; i < latestObjects.length; i += batchSize) {
-                const batch = latestObjects.slice(i, i + batchSize);
-                const copyPromises = batch.map(obj => {
-                    const newKey = obj.Key.replace('releases/latest/', 'releases/backup/');
-                    return s3.copyObject({
-                        Bucket: bucketName,
-                        CopySource: `${bucketName}/${obj.Key}`,
-                        Key: newKey
-                    }).promise();
-                });
-                
-                await Promise.all(copyPromises);
-                console.log(`Copied batch ${Math.floor(i/batchSize) + 1}/${Math.ceil(latestObjects.length/batchSize)}`);
-            }
+            await copyObjectsInBatches(s3, bucketName, latestObjects, 'releases/latest/', 'releases/backup/', 'latest to backup files');
             
             // Delete objects from latest
             await deleteObjectsInBatches(s3, bucketName, latestObjects, 'latest folder files');
@@ -127,21 +145,7 @@ async function promoteReleaseToLatest(releaseVersion) {
     console.log(`Copying release ${releaseVersion} to latest...`);
     
     // Copy objects from release to latest in batches
-    const batchSize = 100;
-    for (let i = 0; i < releaseObjects.length; i += batchSize) {
-      const batch = releaseObjects.slice(i, i + batchSize);
-      const copyPromises = batch.map(obj => {
-        const newKey = obj.Key.replace(`releases/${releaseVersion}/`, 'releases/latest/');
-        return s3.copyObject({
-          Bucket: bucketName,
-          CopySource: `${bucketName}/${obj.Key}`,
-          Key: newKey
-        }).promise();
-      });
-      
-      await Promise.all(copyPromises);
-      console.log(`Copied batch ${Math.floor(i/batchSize) + 1}/${Math.ceil(releaseObjects.length/batchSize)}`);
-    }
+    await copyObjectsInBatches(s3, bucketName, releaseObjects, `releases/${releaseVersion}/`, 'releases/latest/', 'release to latest files');
     
     console.log(`Successfully promoted release ${releaseVersion} to latest folder`);
     
