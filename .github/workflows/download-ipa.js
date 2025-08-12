@@ -1,5 +1,5 @@
-const AWS = require('aws-sdk');
-const fs = require('fs');
+import AWS from 'aws-sdk';
+import fs from 'fs';
 
 // Configure AWS SDK for Cloudflare R2
 const s3 = new AWS.S3({
@@ -10,7 +10,7 @@ const s3 = new AWS.S3({
   s3ForcePathStyle: true
 });
 
-async function downloadIPAFiles(calver, isos, editionLanguages) {
+export async function downloadIPAFiles(calver, isos, editionLanguages) {
   const bucketName = process.env.R2_BUCKET_NAME;
   
   try {
@@ -97,7 +97,7 @@ function parseJsonArray(jsonString) {
 }
 
 // Main execution
-if (require.main === module) {
+if (import.meta.url === `file://${process.argv[1]}`) {
   const calver = process.argv[2];
   const isosJson = process.argv[3];
   const editionLanguagesJson = process.argv[4];
@@ -122,6 +122,4 @@ if (require.main === module) {
     console.error('Download failed:', error.message);
     process.exit(1);
   }
-}
-
-module.exports = { downloadIPAFiles }; 
+} 

@@ -1,6 +1,6 @@
-const AWS = require('aws-sdk');
-const fs = require('fs');
-const path = require('path');
+import AWS from 'aws-sdk';
+import fs from 'fs';
+import path from 'path';
 
 // Configure AWS SDK for Cloudflare R2
 const s3 = new AWS.S3({
@@ -11,7 +11,7 @@ const s3 = new AWS.S3({
   s3ForcePathStyle: true
 });
 
-async function uploadFiles(calver, filePattern, description) {
+export async function uploadFiles(calver, filePattern, description) {
   const bucketName = process.env.R2_BUCKET_NAME;
   
   try {
@@ -91,20 +91,20 @@ function getContentType(fileName) {
   return 'application/octet-stream';
 }
 
-async function uploadDictionaryFiles(calver) {
+export async function uploadDictionaryFiles(calver) {
   await uploadFiles(calver, /.*kty.*\.zip$/, 'dictionary files');
 }
 
-async function uploadIndexFiles(calver) {
+export async function uploadIndexFiles(calver) {
   await uploadFiles(calver, /.*kty.*-index\.json$/, 'index.json files');
 }
 
-async function uploadMergedFiles(calver) {
+export async function uploadMergedFiles(calver) {
   await uploadFiles(calver, /.*\.zip$/, 'merged dictionary files');
 }
 
 // Main execution
-if (require.main === module) {
+if (import.meta.url === `file://${process.argv[1]}`) {
   const command = process.argv[2];
   const calver = process.argv[3];
   
@@ -134,10 +134,4 @@ if (require.main === module) {
     console.error('Upload failed:', error.message);
     process.exit(1);
   }
-}
-
-module.exports = {
-  uploadDictionaryFiles,
-  uploadIndexFiles,
-  uploadMergedFiles
-}; 
+} 
