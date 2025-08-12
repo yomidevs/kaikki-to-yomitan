@@ -43,7 +43,7 @@ const partsOfSpeech = loadJsonArray(`data/language/target-language-tags/en/parts
 const skippedPartsOfSpeech = {};
 
 const url = 'https://github.com/yomidevs/kaikki-to-yomitan';
-const latestReleaseUrl = `${url}/releases/latest/download/`;
+const latestReleaseUrl = 'https://pub-c3d38cca4dc2403b88934c56748f5144.r2.dev/releases/latest/';
 const title = `kty-${sourceIso}-${targetIso}-gloss`;
 const indexJson = {
     title: title,
