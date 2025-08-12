@@ -166,7 +166,6 @@ async function promoteReleaseToLatest(releaseVersion) {
     console.log(`Found ${filesToDelete.length} files to delete`);
     if(filesToDelete.length > 0) {
         await deleteObjectsInBatches(s3, bucketName, filesToDelete, 'files not in latest or backup');
-        await deleteObjectsInBatches(s3, bucketName, filesToDelete, 'files not in latest or backup');
     }
     
   } catch (error) {
