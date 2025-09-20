@@ -52,7 +52,7 @@ for source_lang in "${languages[@]}"; do
         cell=""
         expected_filename="${source_iso}-${column}"
 
-        cell="$cell [$expected_filename](https://github.com/yomidevs/kaikki-to-yomitan/releases/latest/download/kty-$expected_filename.zip) </br>"
+        cell="$cell [$expected_filename]('https://pub-c3d38cca4dc2403b88934c56748f5144.r2.dev/releases/latest/'/download/kty-$expected_filename.zip) </br>"
 
         row="$row | $cell"
     done
@@ -95,7 +95,7 @@ for source_lang in "${languages[@]}"; do
             expected_filename="${source_iso}-ipa"
             display_filename="${source_iso} merged"
         fi
-        cell="$cell [$display_filename](https://github.com/yomidevs/kaikki-to-yomitan/releases/latest/download/kty-$expected_filename.zip) </br>"
+        cell="$cell [$display_filename]('https://pub-c3d38cca4dc2403b88934c56748f5144.r2.dev/releases/latest/'/download/kty-$expected_filename.zip) </br>"
 
         row="$row | $cell"
     done
@@ -130,7 +130,7 @@ for target_lang in "${languages[@]}"; do
         if [ "$column" != "$target_iso" ]; then
             display_filename="${column}"-"${target_iso}"
             expected_filename="${display_filename}-gloss"
-            cell="$cell [$display_filename](https://github.com/yomidevs/kaikki-to-yomitan/releases/latest/download/kty-$expected_filename.zip) </br>"
+            cell="$cell [$display_filename]('https://pub-c3d38cca4dc2403b88934c56748f5144.r2.dev/releases/latest/'/download/kty-$expected_filename.zip) </br>"
         fi
         row="$row | $cell"
     done

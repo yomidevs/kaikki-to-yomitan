@@ -1,0 +1,37 @@
+name: Promote Newest Release to Latest
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_version:
+        description: 'Release version to promote (e.g., 24.12.19.15)'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  
+env:
+  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+  R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME }}
+  R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install aws-sdk
+
+      - name: Promote release to latest
+        run: node .github/workflows/promote-to-latest.js ${{ github.event.inputs.release_version }} 

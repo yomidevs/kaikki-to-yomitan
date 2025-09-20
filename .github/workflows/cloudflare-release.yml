@@ -1,0 +1,149 @@
+name: Create a new Cloudflare R2 release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  
+env:
+  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+  R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME }}
+  R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ steps.tag.outputs.tag }}
+      edition_languages: ${{ steps.load-languages.outputs.edition_languages }}
+      isos: ${{ steps.load-languages.outputs.isos }}
+      calver: ${{ steps.tag.outputs.calver }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      - name: Install npm dependencies
+        run: npm install
+
+      - name: Configure git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Tag the repository
+        id: tag
+        run: |
+          # See https://docs.github.com/en/get-started/using-git/dealing-with-special-characters-in-branch-and-tag-names
+          TAG=v$(date -Iseconds | sed 's/[T:\+]/-/g')
+          CALVER=$(date +'%y.%m.%d.%H')
+          echo "$TAG"
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "calver=$CALVER" >> $GITHUB_OUTPUT
+          git tag -a $TAG -m "Published version $TAG" ${GITHUB_SHA}
+          git push origin $TAG
+
+      - name: Load Languages
+        id: load-languages
+        run: |
+          edition_languages=$(jq '[.[] | select(.hasEdition == true) | .language]' languages.json | jq -c 'map(.)')
+          echo "edition_languages=$edition_languages" >> $GITHUB_OUTPUT
+          isos=$(jq -r '.[].iso' languages.json | jq -R -s -c 'split("\n") | map(select(. != ""))')
+          echo "isos=$isos" >> $GITHUB_OUTPUT
+      
+      - name: Generate markdown table
+        id: generate_markdown
+        run: |
+          ./tools/generate-downloads-table.sh
+
+      - name: Create pull request if necessary
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          title: "Update downloads.md with list of .zip files"
+          body: "This PR updates the downloads.md file with a table listing all .zip files."  
+
+  convert:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 1
+      matrix:
+        edition_language: ${{fromJson(needs.prepare.outputs.edition_languages)}}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+    
+      - name: Create .env file
+        run: |
+          cp .env.example .env
+          sed -i 's/^DICT_NAME=.*/DICT_NAME=kty/' .env
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      - name: Install gzip
+        run: sudo apt-get install -y gzip
+      
+      - name: Run auto.sh script
+        run: ./auto.sh "${{ matrix.edition_language }}" ? ?
+
+      - name: Install AWS SDK
+        run: npm install aws-sdk
+
+      - name: Upload dictionary files to R2
+        run: node .github/workflows/upload-files.js dict ${{ needs.prepare.outputs.calver }}
+
+      - name: Upload index.json files to R2
+        run: node .github/workflows/upload-files.js index ${{ needs.prepare.outputs.calver }}
+
+  merge-ipa:
+    needs: ["prepare", "convert"]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install npm dependencies
+        run: npm install
+      
+      - name: Install AWS SDK
+        run: npm install aws-sdk
+      
+      - name: Download IPA dicts from R2
+        run: node .github/workflows/download-ipa.js '${{ needs.prepare.outputs.calver }}'
+
+      - name: Run merge-ipa
+        run: node merge-ipa.js
+
+      - name: Delete downloaded IPA files
+        run: rm *.zip
+      
+      - name: Upload merged IPA dictionary files to R2
+        run: node .github/workflows/upload-files.js merged ${{ needs.prepare.outputs.calver }}
