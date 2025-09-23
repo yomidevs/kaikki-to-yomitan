@@ -45,7 +45,12 @@ function isInflectionGloss(glosses, formOf) {
                 if(!lemma) continue;
                 if (glosses.some(gloss => new RegExp(`of ${escapeRegExp(lemma)}($| \(.+?\)$)`).test(gloss))) return true;
             }
-            
+        case 'el':
+            if (!Array.isArray(formOf)) return false;
+            for (const { word: lemma } of formOf) {
+                if (!lemma) continue;
+                if (glosses.some(gloss => /του/.test(gloss))) return true;
+            }
         case 'fr':
             if (/.*du verbe\s+((?:(?!\bdu\b).)*)$/.test(glossesString)) return true;
             if (/((?:(?:Masculin|Féminin)\s)?(?:(?:p|P)luriel|(?:s|S)ingulier)) de ([^\s]+)/.test(glossesString)) return true;
@@ -183,7 +188,7 @@ function handleLine(parsedLine) {
     const sensesWithoutInflectionGlosses = sensesWithGlosses.filter(sense => {
         const {glossesArray, form_of, glosses} = sense;
         if(!isInflectionGloss(glossesArray, form_of)) return true;
-        processInflectionGlosses(glosses, word, pos);
+        processInflectionGlosses(glosses, word, pos, form_of, sense.tags);
         return false;
     });
 
@@ -476,14 +481,29 @@ function initializeWordResult(word, readings, pos, etymology_number) {
  * @param {Glosses|undefined} glosses
  * @param {string} word 
  * @param {string} pos 
+ * @param {FormOf[]} form_of
+ * @param {string[]} senseTags
  * @returns 
  */
-function processInflectionGlosses(glosses, word, pos) {
+function processInflectionGlosses(glosses, word, pos, form_of, senseTags) {
     switch (targetIso) {
         case 'de':
             return processGermanInflectionGlosses(glosses, word, pos);
         case 'en':
             return processEnglishInflectionGlosses(glosses, word, pos);
+        case 'el':
+            // There can be multiple lemmas. Εχ. ήλιο from ήλιο (helium) / ήλιος (sun)
+            const validTags = [
+                "masculine", "feminine", "neuter",
+                "singular", "plural",
+                "nominative", "accusative", "genitive", "vocative"
+            ];
+            for (const { word: lemma } of form_of) {
+                if (word === lemma) continue;
+                let deinflections = senseTags.filter(tag => validTags.includes(tag));
+                if (deinflections.length === 0) deinflections = [`από ${word}`];
+                addDeinflections(word, pos, lemma, deinflections);
+            }
         case 'fr':
             if(!glosses) return;
             /**

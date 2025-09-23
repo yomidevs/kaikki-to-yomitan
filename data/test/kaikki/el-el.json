@@ -1,0 +1,6 @@
+{"word": "κόρφος", "forms": [{"form": "κόρφος", "raw_tags": ["αρσενικό"]}], "lang_code": "el", "lang": "Greek", "pos": "noun", "senses": [{"glosses": ["η αγκαλιά, ο κόλπος, το μέρος του σώματος ανάμεσα στους βραχίονες και το στήθος"], "raw_tags": ["λαϊκότροπο"], "categories": ["Λαϊκότροποι όροι (νέα ελληνικά)"], "examples": [{"text": "αποκοιμήθηκε στον κόρφο της μάνας του"}]}]}
+{"word": "κόρφο", "forms": [{"form": "κόρφο", "raw_tags": ["αρσενικό"]}], "lang_code": "el", "lang": "Greek", "pos": "noun", "senses": [{"glosses": ["αιτιατική ενικού του κόρφος"], "tags": ["accusative", "singular"], "form_of": [{"word": "κόρφος"}]}]}
+{"word":"αζωικός","lang_code":"el","lang":"Greek","pos":"adj","etymology_text":": αζωικός < (λόγιο δάνειο) γαλλική azoïque < αρχαία ελληνική ἀ- + ζωικός < ζῷον","senses":[{"glosses":["που δεν εμφανίζει ίχνη ζωής"]}]}
+{"word":"αζωικό","lang_code":"el","lang":"Greek","pos":"adj","senses":[{"glosses":["αιτιατική ενικού του αζωικός"],"tags":["accusative","singular"],"form_of":[{"word":"αζωικός"}]},{"glosses":["ονομαστική, αιτιατική και κλητική ενικού, ουδέτερου γένους του αζωικός"],"tags":["accusative","neuter","nominative","singular","vocative"],"form_of":[{"word":"αζωικός"}]}]}
+{"word":"foo","pos":"noun"}
+{"word":"fooInflected","pos":"noun","senses":[{"glosses":["του foo"],"form_of":[{"word":"foo"}]}]}

@@ -1,0 +1,76 @@
+{
+  "_type": "map",
+  "map": [
+    [
+      "κόρφος",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "κόρφο",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "accusative",
+                    "singular"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "αζωικός",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "αζωικό",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "accusative",
+                    "singular",
+                    "neuter",
+                    "nominative",
+                    "vocative"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "foo",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "fooInflected",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "από fooInflected"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ]
+}
