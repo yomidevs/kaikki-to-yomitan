@@ -491,19 +491,7 @@ function processInflectionGlosses(glosses, word, pos, form_of) {
         case 'en':
             return processEnglishInflectionGlosses(glosses, word, pos);
         case 'el':
-            // This approach works in that it shows redirections (it will show the entry
-            // for κόρφος when hovering κόρφο) but it comes with the price of filling the
-            // inflectionTags with just the lemma, because:
-            // 1. Not calling addDeinflections will not create a redirection.
-            // 2. Calling addDeinflections(word, pos, lemma, []) will not create a redirection.
-            // 3. Kaikki's tag parsing for Greek is very basic as of now, and we can not infer
-            // the proper inflectionTags (for instance, when it comes to adjectives, kaikki
-            // will tell us "feminine, nominative, accusative, singular, plural", from which we
-            // can not know which combination is correct - (feminine, nominative, singular) but
-            // not (feminine, nominative, plural)?)
-            //
-            // Note also that we can have multiple lemmas for a word.
-            // Εχ. ήλιο can come from ήλιο (helium), but also ήλιος (sun)
+            // There can be multiple lemmas. Εχ. ήλιο from ήλιο (helium) / ήλιος (sun)
             for (const { word: lemma } of form_of) {
                 if (word !== lemma) {
                     addDeinflections(word, pos, lemma, [lemma]);
