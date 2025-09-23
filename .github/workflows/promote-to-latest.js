@@ -112,7 +112,6 @@ async function promoteReleaseToLatest(releaseVersion) {
         
         if (backupObjects.length > 0) {
             await deleteObjectsInBatches(s3, bucketName, backupObjects, 'backup folder files');
-            await deleteObjectsInBatches(s3, bucketName, backupObjects, 'backup folder files');
         } else {
             console.log('No current backup folder found, skipping deletion');
         }
@@ -131,7 +130,6 @@ async function promoteReleaseToLatest(releaseVersion) {
             await copyObjectsInBatches(s3, bucketName, latestObjects, 'releases/latest/', 'releases/backup/', 'latest to backup files');
             
             // Delete objects from latest
-            await deleteObjectsInBatches(s3, bucketName, latestObjects, 'latest folder files');
             await deleteObjectsInBatches(s3, bucketName, latestObjects, 'latest folder files');
             console.log('Current latest folder renamed to backup');
         } else {
