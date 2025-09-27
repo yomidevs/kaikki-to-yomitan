@@ -100,6 +100,10 @@ export DEBUG_WORD
 export DICT_NAME
 max_memory_mb=${MAX_MEMORY_MB:-8192}
 
+if [[ -z "$DICT_NAME" ]]; then
+  echo "Error: DICT_NAME is empty or not set"
+  exit 1
+fi
 
 # Check for the source_language and target_language arguments
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]; then
