@@ -4,3 +4,4 @@
 {"word":"αζωικό","lang_code":"el","lang":"Greek","pos":"adj","senses":[{"glosses":["αιτιατική ενικού του αζωικός"],"tags":["accusative","singular"],"form_of":[{"word":"αζωικός"}]},{"glosses":["ονομαστική, αιτιατική και κλητική ενικού, ουδέτερου γένους του αζωικός"],"tags":["accusative","neuter","nominative","singular","vocative"],"form_of":[{"word":"αζωικός"}]}]}
 {"word":"foo","pos":"noun"}
 {"word":"fooInflected","pos":"noun","senses":[{"glosses":["του foo"],"form_of":[{"word":"foo"}]}]}
+{"word":"εκφρασμένος","pos":"verb","etymology_text":"εκφρασμένος < μετοχή παθητικού παρακειμένου εκφράζω","senses":[{"tags":["no-gloss"],"related":[{"word":"εκφράζω"}]}],"categories":["Μετοχές παθητικού παρακειμένου (νέα ελληνικά)"],"form_of":[{"word":"εκφράζω"}]}

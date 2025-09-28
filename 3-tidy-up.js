@@ -192,6 +192,17 @@ function handleLine(parsedLine) {
         return false;
     });
 
+    // Support redirection for Greek participles that have form_of but no glosses
+    if (
+        targetIso === "el" &&
+        sensesWithGlosses.length === 0 &&
+        pos === "verb" &&
+        parsedLine.form_of !== undefined
+    ) {
+        const lemma = parsedLine.form_of[0].word;
+        addDeinflections(word, pos, lemma, [`από ${word}`]);
+    }
+
     if (sensesWithoutInflectionGlosses.length === 0) return;
     
     const readings = getReadings(word, parsedLine);
