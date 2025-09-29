@@ -13,6 +13,7 @@ declare global {
     }
 
     type KaikkiLine = {
+        categories?: string[],
         head_templates?: HeadTemplate[];
         word?: string;
         pos?: string;

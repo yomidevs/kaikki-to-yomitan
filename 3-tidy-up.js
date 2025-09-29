@@ -192,12 +192,12 @@ function handleLine(parsedLine) {
         return false;
     });
 
-    // Support redirection for Greek participles that have form_of but no glosses
+    // Support redirection for some Greek participles (μετοχές)
     if (
         targetIso === "el" &&
-        sensesWithGlosses.length === 0 &&
         pos === "verb" &&
-        parsedLine.form_of !== undefined
+        parsedLine.form_of?.length > 0 &&
+        parsedLine.categories?.some(cat => cat.startsWith("Μετοχές"))
     ) {
         const lemma = parsedLine.form_of[0].word;
         addDeinflections(word, pos, lemma, [`από ${word}`]);
