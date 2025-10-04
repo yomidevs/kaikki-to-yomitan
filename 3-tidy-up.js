@@ -192,6 +192,17 @@ function handleLine(parsedLine) {
         return false;
     });
 
+    // Support redirection for some Greek participles (μετοχές)
+    if (
+        targetIso === "el" &&
+        pos === "verb" &&
+        parsedLine.form_of?.length > 0 &&
+        parsedLine.categories?.some(cat => cat.startsWith("Μετοχές"))
+    ) {
+        const lemma = parsedLine.form_of[0].word;
+        addDeinflections(word, pos, lemma, [`από ${word}`]);
+    }
+
     if (sensesWithoutInflectionGlosses.length === 0) return;
     
     const readings = getReadings(word, parsedLine);

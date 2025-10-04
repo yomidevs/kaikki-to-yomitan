@@ -13,12 +13,14 @@ declare global {
     }
 
     type KaikkiLine = {
+        categories?: string[],
         head_templates?: HeadTemplate[];
         word?: string;
         pos?: string;
         etymology_number?: number;
         etymology_text?: string;
         sounds?: Sound[];  
+        form_of?: FormOf[];
         forms?: FormInfo[];
         senses?: KaikkiSense[];
         tags?: string;
