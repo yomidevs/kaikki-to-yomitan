@@ -3,16 +3,14 @@ const latestUrl = 'https://pub-c3d38cca4dc2403b88934c56748f5144.r2.dev/releases/
 
 async function fetchLanguages() {
     try {
-        const response = await fetch('https://raw.githubusercontent.com/yomidevs/kaikki-to-yomitan/refs/heads/master/languages.json')
-        if (!response.ok) {
-            throw new Error('Failed to fetch languages')
-        }
-        const data = await response.json()
+        const resp = await fetch('https://raw.githubusercontent.com/yomidevs/kaikki-to-yomitan/refs/heads/master/languages.json')
+        if (!resp.ok) throw new Error('Failed to fetch languages')
+        const data = await resp.json()
         languages.push(...data)
         return data
-    } catch (error) {
-        console.error('Error fetching languages:', error)
-        throw error
+    } catch (err) {
+        console.error('Error fetching languages:', err)
+        throw err
     }
 }
 
@@ -23,27 +21,36 @@ const langMap = {}
 function updateLanguageData() {
     allLangs.length = 0
     glossLangs.length = 0
-    Object.keys(langMap).forEach(key => delete langMap[key])
-    
+    for (const k in langMap) delete langMap[k]
+
     allLangs.push(...languages.filter(l => l.language))
     glossLangs.push(...languages.filter(l => l.hasEdition))
-    Object.assign(langMap, Object.fromEntries(allLangs.map(l => [l.iso, l])))
+    for (const l of allLangs) langMap[l.iso] = l
 }
 
-const dropdownOption = ({ iso, language, flag }) => `<option value="${iso}">${flag} ${language}</option>`
+function dropdownOptionNode({ iso, language, flag }) {
+    const opt = document.createElement('option')
+    opt.value = iso
+    opt.textContent = `${flag} ${language}`
+    return opt
+}
 
 function populateDropdown(selector, items, includeMerged = false) {
-    const options = [...items]
-    if (includeMerged) {
-        options.unshift({ iso: 'merged', language: 'Merged', flag: '🧬' })
-    }
-    $(selector).html(options.map(dropdownOption).join(''))
+    const el = document.querySelector(selector)
+    if (!el) return
+    el.innerHTML = ''
+    const list = includeMerged ? [{ iso: 'merged', language: 'Merged', flag: '🧬' }, ...items] : items
+    for (const item of list) el.appendChild(dropdownOptionNode(item))
 }
 
 function updateDownloadLink(tgtSel, glossSel, linkSel, type) {
-    const tgt = $(tgtSel).val()
-    const gloss = $(glossSel).val()
-    let url
+    const tgtEl = document.querySelector(tgtSel)
+    const glossEl = document.querySelector(glossSel)
+    const linkEl = document.querySelector(linkSel)
+    if (!tgtEl || !glossEl || !linkEl) return
+    const tgt = tgtEl.value
+    const gloss = glossEl.value
+    let url = ''
     if (type === 'main') {
         url = `${latestUrl}kty-${tgt}-${gloss}.zip`
     } else if (type === 'ipa') {
@@ -53,99 +60,71 @@ function updateDownloadLink(tgtSel, glossSel, linkSel, type) {
     } else if (type === 'translations') {
         url = `${latestUrl}kty-${tgt}-${gloss}-gloss.zip`
     }
-    $(linkSel).attr('href', url)
+    linkEl.setAttribute('href', url)
 }
-
 
 function setupDropdowns(sectionPrefix, type, isIPA = false) {
     populateDropdown(`#${sectionPrefix}-target`, allLangs)
     populateDropdown(`#${sectionPrefix}-gloss`, glossLangs, isIPA)
     updateDownloadLink(`#${sectionPrefix}-target`, `#${sectionPrefix}-gloss`, `#${sectionPrefix}-download`, type)
-    $(`#${sectionPrefix}-target, #${sectionPrefix}-gloss`).on('change', () =>
-        updateDownloadLink(`#${sectionPrefix}-target`, `#${sectionPrefix}-gloss`, `#${sectionPrefix}-download`, type)
-    )
+
+    const tgt = document.querySelector(`#${sectionPrefix}-target`)
+    const gloss = document.querySelector(`#${sectionPrefix}-gloss`)
+    if (tgt) tgt.addEventListener('change', () => updateDownloadLink(`#${sectionPrefix}-target`, `#${sectionPrefix}-gloss`, `#${sectionPrefix}-download`, type))
+    if (gloss) gloss.addEventListener('change', () => updateDownloadLink(`#${sectionPrefix}-target`, `#${sectionPrefix}-gloss`, `#${sectionPrefix}-download`, type))
 }
 
-function makeTable(id, glosses, type = 'main', isIPA = false) {
-    if (type === 'translations') {
-        const headers = ['To \\ From', ...glosses.map(g => `${g.flag} ${g.language}`)]  // glosses = "from"
-        const rows = allLangs.map(toLang => {  // allLangs = "to"
-            const row = [`${toLang.flag} ${toLang.language}`]
-            for (const fromLang of glosses) {
-                if (fromLang.iso === toLang.iso) {
-                    row.push('')  // skip monolingual entries
-                } else {
-                    const url = `${latestUrl}kty-${fromLang.iso}-${toLang.iso}-gloss.zip`
-                    row.push(`<a href="${url}" target="_blank">📥</a>`)
-                }
-            }
-            return row
-        })
+function validateTranslationsDropdowns() {
 
-        $(`#${id}`).DataTable({
-            data: rows,
-            columns: headers.map(h => ({ title: h })),
-            paging: false,
-            searching: true,
-        })
-        return
+    /** @type {HTMLSelectElement | null} */
+    const targetEl = document.querySelector('#trans-target');
+    /** @type {HTMLSelectElement | null} */
+    const glossEl = document.querySelector('#trans-gloss');
+
+    if (!targetEl || !glossEl) return;
+
+    const targetValue = targetEl.value;
+    const glossValue = glossEl.value;
+
+    if (targetValue === glossValue) {
+        const availableGloss = allLangs.find(lang => lang.iso !== targetValue);
+        if (availableGloss) {
+            glossEl.value = availableGloss.iso;
+        }
     }
 
-    const headers = ['Target \\ Gloss', ...glosses.map(g => `${g.flag} ${g.language}`)]
-    const rows = allLangs.map(rowLang => {
-        const row = [`${langMap[rowLang.iso].flag} ${rowLang.language}`]
-        for (const gloss of glosses) {
-            let glossIso = gloss.iso
-
-            if (glossIso === 'merged' && type === 'ipa') {
-                const url = `${latestUrl}kty-${rowLang.iso}-ipa.zip`
-                row.push(`<a href="${url}" target="_blank">📥</a>`)
-            } else if (type === 'ipa') {
-                const url = `${latestUrl}kty-${rowLang.iso}-${glossIso}-ipa.zip`
-                row.push(`<a href="${url}" target="_blank">📥</a>`)
-            } else {
-                const url = `${latestUrl}kty-${rowLang.iso}-${glossIso}.zip`
-                row.push(`<a href="${url}" target="_blank">📥</a>`)
-            }
-        }
-        return row
-    })
-
-    $(`#${id}`).DataTable({
-        data: rows,
-        columns: headers.map(h => ({ title: h })),
-        paging: false,
-        searching: true,
-    })
+    updateDownloadLink('#trans-target', '#trans-gloss', '#trans-download', 'translations');
 }
 
-
-$(document).ready(async function () {
+document.addEventListener('DOMContentLoaded', async () => {
     try {
         await fetchLanguages()
         updateLanguageData()
-        
+
         setupDropdowns('main', 'main')
         setupDropdowns('ipa', 'ipa', true)
+
         populateDropdown('#trans-target', glossLangs)
         populateDropdown('#trans-gloss', allLangs)
-        updateDownloadLink('#trans-target', '#trans-gloss', '#trans-download', 'translations')
-        $('#trans-target, #trans-gloss').on('change', () =>
-            updateDownloadLink('#trans-target', '#trans-gloss', '#trans-download', 'translations')
-        )
 
-        makeTable('mainTable', glossLangs, 'main')
-        makeTable('ipaTable', [...glossLangs, { iso: 'merged', language: 'Merged', flag: '🧬' }], 'ipa', true)
-        makeTable('translationTable', glossLangs, 'translations')
+        validateTranslationsDropdowns();
 
-        $('.toggle-table').on('click', function () {
-            const targetId = $(this).data('target')
-            const isVisible = $(targetId).is(':visible')
-            $(targetId).slideToggle(200)
-            $(this).text(isVisible ? 'Show Table' : 'Hide Table')
-        })
-    } catch (error) {
-        console.error('Error initializing page:', error)
-        // You might want to show an error message to the user here
+        const transTarget = document.querySelector('#trans-target')
+        const transGloss = document.querySelector('#trans-gloss')
+
+        if (transTarget) {
+            transTarget.addEventListener('change', () => {
+                validateTranslationsDropdowns();
+            });
+        }
+
+        if (transGloss) {
+            transGloss.addEventListener('change', () => {
+                validateTranslationsDropdowns();
+            });
+        }
+
+    } catch (err) {
+        console.error('Error initializing page:', err)
     }
 })
