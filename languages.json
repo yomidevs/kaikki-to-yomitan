@@ -5,7 +5,7 @@
     {"iso": "aii", "language": "Assyrian Neo-Aramaic", "flag": "🌞"                       },
     {"iso": "bn",  "language": "Bengali",              "flag": "🇧🇩"                       },
     {"iso": "zh",  "language": "Chinese",              "flag": "🇨🇳",   "hasEdition": true },
-    {"iso": "cs",  "language": "Czech",                "flag": "🇨🇿"                       },
+    {"iso": "cs",  "language": "Czech",                "flag": "🇨🇿",   "hasEdition": true },
     {"iso": "da",  "language": "Danish",               "flag": "🇩🇰"                       },
     {"iso": "nl",  "language": "Dutch",                "flag": "🇳🇱",   "hasEdition": true },
     {"iso": "en",  "language": "English",              "flag": "🇬🇧",   "hasEdition": true },
@@ -53,5 +53,5 @@
     {"iso": "tr",  "language": "Turkish",              "flag": "🇹🇷",   "hasEdition": true },
     {"iso": "uk",  "language": "Ukrainian",            "flag": "🇺🇦"                       },
     {"iso": "ur",  "language": "Urdu",                 "flag": "🇵🇰"                       },
-    {"iso": "vi",  "language": "Vietnamese",           "flag": "🇻🇳"                       }
+    {"iso": "vi",  "language": "Vietnamese",           "flag": "🇻🇳",   "hasEdition": true }
 ]
