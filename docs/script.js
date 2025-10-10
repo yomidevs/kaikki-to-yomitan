@@ -75,7 +75,10 @@ function setupDropdowns(sectionPrefix, type, isIPA = false) {
 }
 
 function validateTranslationsDropdowns() {
+
+    /** @type {HTMLSelectElement | null} */
     const targetEl = document.querySelector('#trans-target');
+    /** @type {HTMLSelectElement | null} */
     const glossEl = document.querySelector('#trans-gloss');
 
     if (!targetEl || !glossEl) return;
