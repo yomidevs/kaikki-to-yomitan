@@ -248,9 +248,9 @@ for edition_lang in "${languages[@]}"; do
       edition_extract_path="data/kaikki/$edition_extract"
 
       if [ ! -f "$edition_extract_path" ] || [ "$redownload" = true ] && [ "$downloaded_edition_extract" = false ]; then
-        url="https://kaikki.org/dictionary/downloads/$edition_iso/$edition_extract.gz"
+        url="https://kaikki.org/${edition_iso}wiktionary/raw-wiktextract-data.jsonl.gz"
         echo "Downloading $edition_extract from $url"
-        wget -nv "$url" -O "$edition_extract_path".gz 
+        wget -nv "$url" -O "$edition_extract_path".gz
         echo "Extracting $edition_extract"
         gunzip -f "$edition_extract_path".gz
         downloaded_edition_extract=true
