@@ -28,10 +28,10 @@ function updateLanguageData() {
     for (const l of allLangs) langMap[l.iso] = l
 }
 
-function dropdownOptionNode({ iso, language, flag }) {
+function dropdownOptionNode({ iso, language, displayName, flag }) {
     const opt = document.createElement('option')
     opt.value = iso
-    opt.textContent = `${flag} ${language}`
+    opt.textContent = `${flag} ${displayName || language}`
     return opt
 }
 
@@ -39,7 +39,12 @@ function populateDropdown(selector, items, includeMerged = false) {
     const el = document.querySelector(selector)
     if (!el) return
     el.innerHTML = ''
-    const list = includeMerged ? [{ iso: 'merged', language: 'Merged', flag: '🧬' }, ...items] : items
+    const sorted = [...items].sort((a, b) => {
+        const nameA = a.displayName || a.language
+        const nameB = b.displayName || b.language
+        return nameA.localeCompare(nameB)
+    })
+    const list = includeMerged ? [{ iso: 'merged', language: 'Merged', displayName: 'Merged', flag: '🧬' }, ...sorted] : sorted
     for (const item of list) el.appendChild(dropdownOptionNode(item))
 }
 
