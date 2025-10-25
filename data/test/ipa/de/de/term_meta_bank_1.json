@@ -6,11 +6,11 @@
       "reading": "Rock",
       "transcriptions": [
         {
-          "ipa": "ʁɔk",
+          "ipa": "[ʁɔk]",
           "tags": []
         },
         {
-          "ipa": "ɹɔk",
+          "ipa": "[ɹɔk]",
           "tags": []
         }
       ]
@@ -23,29 +23,26 @@
       "reading": "Garage",
       "transcriptions": [
         {
-          "ipa": "ɡaˈʁaːʒə",
+          "ipa": "[ɡaˈʁaːʒə]",
           "tags": [
             "Germany"
           ]
         },
         {
-          "ipa": "ɡaˈʁaːʃ",
+          "ipa": "[ɡaˈʁaːʃ]",
           "tags": [
             "Austrian German"
           ]
         },
         {
-          "ipa": "ɡaˈʁaːʃə",
+          "ipa": "[ɡaˈʁaːʃə]",
           "tags": [
-            "Austrian German",
             "Swiss Standard German"
           ]
         },
         {
-          "ipa": "ˈɡaʁaːʃ",
-          "tags": [
-            "Swiss Standard German"
-          ]
+          "ipa": "[ˈɡaʁaːʃ]",
+          "tags": []
         }
       ]
     }

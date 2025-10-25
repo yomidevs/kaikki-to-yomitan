@@ -29,14 +29,28 @@
         "_type": "map",
         "map": [
           [
-            "akuj",
+            "akëll",
             {
               "_type": "map",
               "map": [
                 [
-                  "noun",
+                  "adv",
                   [
-                    "plural"
+                    "alternative dialectal"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "hakull",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adv",
+                  [
+                    "alternative dialectal"
                   ]
                 ]
               ]
@@ -51,7 +65,21 @@
         "_type": "map",
         "map": [
           [
-            "gjuhëra／gjuhëna",
+            "gjuhëra",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "plural dialectal"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gjuhëna",
             {
               "_type": "map",
               "map": [
@@ -163,6 +191,118 @@
                   "noun",
                   [
                     "plural indefinite ablative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gjuhunë",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "alternative Gheg"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gjuhënë",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "alternative Gheg"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "guhë",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "alternative Gheg Northern"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gû",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "alternative Kosovo dialectal"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gju",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "alternative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gëluhë",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "alternative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "gjufë",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "alternative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "glufë",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "alternative"
                   ]
                 ]
               ]

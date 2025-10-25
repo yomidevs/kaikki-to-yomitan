@@ -20,7 +20,15 @@
       "transcriptions": [
         {
           "ipa": "/ˈɟuhə/",
-          "tags": []
+          "tags": [
+            "northern Tosk, Lab"
+          ]
+        },
+        {
+          "ipa": "[ˈɟuh]",
+          "tags": [
+            "southern Gheg, central Gheg"
+          ]
         },
         {
           "ipa": "[ˈɡjuː(h)]",
@@ -46,7 +54,8 @@
           "ipa": "[ˈɡʎuhə]",
           "tags": [
             "Arbëresh",
-            "Arvanitika"
+            "Arvanitika",
+            "Cham"
           ]
         },
         {

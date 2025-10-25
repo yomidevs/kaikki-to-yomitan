@@ -2,8 +2,8 @@
   [
     "akull",
     "",
-    "n masc",
-    "n",
+    "adv",
+    "adv",
     0,
     [
       {
@@ -18,28 +18,6 @@
                   "content": "preamble"
                 },
                 "content": [
-                  {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-Grammar"
-                    },
-                    "content": [
-                      {
-                        "tag": "summary",
-                        "data": {
-                          "content": "summary-entry"
-                        },
-                        "content": "Grammar"
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "Grammar-content"
-                        },
-                        "content": "akull m (plural akuj)"
-                      }
-                    ]
-                  },
                   {
                     "tag": "details",
                     "data": {
@@ -78,7 +56,7 @@
                   {
                     "tag": "div",
                     "content": [
-                      "ice"
+                      "very"
                     ]
                   }
                 ]
@@ -141,7 +119,7 @@
                         "data": {
                           "content": "Etymology-content"
                         },
-                        "content": "Unclear. Akin to Arbëresh glunzë (“voice”). Possibilities include:\n# Inherited from Proto-Indo-European *gol(H)-s-os, via a byform *gl̥(H)-s-ós, whence also Proto-Slavic *golsъ (“voice”), Lithuanian gal̃sas (“voice”), Proto-Germanic *kalz-ōną (“to call”). However the medial -h- instead of expected **-sh- is left unexplained.\n# From a byform *ǵʰnud-sḱ-eh₂, doubly methasised from Proto-Indo-European *dn̥ǵʰwéh₂s ~ *dn̥ǵʰuh₂és (“tongue”). Compare Tocharian B kantwo, also metathised. The outcome gl- (and later gj-) from original *ǵ(ʰ)n- is also attested in gju (“knee”). The usage of the infixed *-sḱ- does not seem have any parallels.\n# A connection with Ancient Greek γλῶσσα (glôssa), itself of unclear origin, cannot be proven."
+                        "content": "Unclear. Akin to Arbëresh Albanian glunzë (“voice”). Possibilities include:\n# Inherited from Proto-Indo-European *gol(H)-s-os, via a byform *gl̥(H)-s-ós, whence also Proto-Slavic *golsъ (“voice”), Lithuanian gal̃sas (“voice”), Proto-Germanic *kalz-ōną (“to call”). However the medial -h- instead of expected **-sh- is left unexplained.\n# From a byform *ǵʰnud-sḱ-eh₂, doubly methasised from Proto-Indo-European *dn̥ǵʰwéh₂s ~ *dn̥ǵʰuh₂és (“tongue”). Compare Tocharian B kantwo, also metathised. The outcome gl- (and later gj-) from original *ǵ(ʰ)n- is also attested in gju (“knee”). The usage of the infixed *-sḱ- does not seem have any parallels.\n# A connection with Ancient Greek γλῶσσα (glôssa), itself of unclear origin, cannot be proven."
                       }
                     ]
                   }
@@ -226,7 +204,7 @@
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "I burned my tongue."
+                                  "content": "Burned its tongue."
                                 }
                               ]
                             }
@@ -323,7 +301,7 @@
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "(literally, “She has a long tongue.”)"
+                                      "content": "She is very talkative."
                                     }
                                   ]
                                 }

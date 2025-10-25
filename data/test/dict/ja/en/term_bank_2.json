@@ -7,13 +7,13 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "adverbial"
         ]
       ],
       [
-        "楽しい",
+        "楽しい -i",
         [
           "continuative stem"
         ]
@@ -30,7 +30,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "imperfective stem"
         ]
@@ -47,7 +47,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "imperfective stem"
         ]
@@ -64,9 +64,9 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
-          "imperfective"
+          "imperfective stem"
         ]
       ]
     ],
@@ -81,13 +81,13 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "adverbial"
         ]
       ],
       [
-        "楽しい",
+        "楽しい -i",
         [
           "continuative stem"
         ]
@@ -104,15 +104,38 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "adverbial"
         ]
       ],
       [
-        "楽しい",
+        "楽しい -i",
         [
-          "continuative"
+          "continuative stem"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "楽しい",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "楽しい -i",
+        [
+          "attributive stem"
+        ]
+      ],
+      [
+        "楽しい -i",
+        [
+          "stem terminative"
         ]
       ]
     ],
@@ -127,13 +150,13 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "attributive stem"
         ]
       ],
       [
-        "楽しい",
+        "楽しい -i",
         [
           "stem terminative"
         ]
@@ -150,15 +173,15 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
-          "attributive"
+          "attributive stem"
         ]
       ],
       [
-        "楽しい",
+        "楽しい -i",
         [
-          "terminative"
+          "stem terminative"
         ]
       ]
     ],
@@ -173,7 +196,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "hypothetical stem"
         ]
@@ -190,7 +213,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "hypothetical stem"
         ]
@@ -207,9 +230,9 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
-          "hypothetical"
+          "hypothetical stem"
         ]
       ]
     ],
@@ -224,7 +247,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "imperative stem"
         ]
@@ -241,7 +264,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "imperative stem"
         ]
@@ -258,9 +281,9 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
-          "imperative"
+          "imperative stem"
         ]
       ]
     ],
@@ -275,7 +298,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "informal negative"
         ]
@@ -292,7 +315,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "informal negative"
         ]
@@ -309,7 +332,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "informal negative"
         ]
@@ -326,7 +349,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "informal past"
         ]
@@ -343,7 +366,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "informal past"
         ]
@@ -360,7 +383,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "informal past"
         ]
@@ -377,7 +400,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "informal past negative"
         ]
@@ -394,7 +417,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "informal past negative"
         ]
@@ -411,7 +434,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "informal past negative"
         ]
@@ -428,7 +451,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "formal"
         ]
@@ -445,7 +468,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "formal"
         ]
@@ -462,7 +485,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "formal"
         ]
@@ -479,7 +502,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "formal negative"
         ]
@@ -496,7 +519,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "formal negative"
         ]
@@ -513,7 +536,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "formal negative"
         ]
@@ -530,7 +553,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "formal past"
         ]
@@ -547,7 +570,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "formal past"
         ]
@@ -564,7 +587,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "formal past"
         ]
@@ -581,7 +604,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "formal past negative"
         ]
@@ -598,7 +621,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "formal past negative"
         ]
@@ -615,7 +638,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "formal past negative"
         ]
@@ -632,7 +655,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "conjunctive"
         ]
@@ -649,7 +672,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "conjunctive"
         ]
@@ -666,7 +689,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "conjunctive"
         ]
@@ -683,7 +706,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "conditional"
         ]
@@ -700,7 +723,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "conditional"
         ]
@@ -717,7 +740,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "conditional"
         ]
@@ -734,7 +757,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "past conditional"
         ]
@@ -751,7 +774,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "past conditional"
         ]
@@ -768,7 +791,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "past conditional"
         ]
@@ -785,7 +808,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "volitional"
         ]
@@ -802,7 +825,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "volitional"
         ]
@@ -819,7 +842,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "volitional"
         ]
@@ -836,7 +859,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "noun-from-adj"
         ]
@@ -853,7 +876,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "noun-from-adj"
         ]
@@ -870,7 +893,7 @@
     0,
     [
       [
-        "楽しい",
+        "楽しい -i",
         [
           "noun-from-adj"
         ]
@@ -887,13 +910,13 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "adnominal"
         ]
       ],
       [
-        "好き",
+        "好き -na",
         [
           "attributive stem"
         ]
@@ -910,7 +933,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "adverbial"
         ]
@@ -927,7 +950,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "imperfective stem"
         ]
@@ -944,7 +967,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "imperfective stem"
         ]
@@ -961,9 +984,9 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
-          "imperfective"
+          "imperfective stem"
         ]
       ]
     ],
@@ -978,13 +1001,13 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "conjunctive"
         ]
       ],
       [
-        "好き",
+        "好き -na",
         [
           "continuative stem"
         ]
@@ -1001,13 +1024,13 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "conjunctive"
         ]
       ],
       [
-        "好き",
+        "好き -na",
         [
           "continuative stem"
         ]
@@ -1024,15 +1047,15 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "conjunctive"
         ]
       ],
       [
-        "好き",
+        "好き -na",
         [
-          "continuative"
+          "continuative stem"
         ]
       ]
     ],
@@ -1047,7 +1070,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "stem terminative"
         ]
@@ -1064,7 +1087,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "stem terminative"
         ]
@@ -1081,9 +1104,9 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
-          "terminative"
+          "stem terminative"
         ]
       ]
     ],
@@ -1098,7 +1121,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "attributive stem"
         ]
@@ -1115,9 +1138,9 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
-          "attributive"
+          "attributive stem"
         ]
       ]
     ],
@@ -1132,7 +1155,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "hypothetical stem"
         ]
@@ -1149,7 +1172,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "hypothetical stem"
         ]
@@ -1166,9 +1189,9 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
-          "hypothetical"
+          "hypothetical stem"
         ]
       ]
     ],
@@ -1183,7 +1206,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "imperative stem"
         ]
@@ -1200,7 +1223,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "imperative stem"
         ]
@@ -1217,9 +1240,9 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
-          "imperative"
+          "imperative stem"
         ]
       ]
     ],
@@ -1234,7 +1257,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "informal negative"
         ]
@@ -1251,7 +1274,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "informal negative"
         ]
@@ -1268,7 +1291,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "informal negative"
         ]
@@ -1285,7 +1308,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "informal negative"
         ]
@@ -1302,7 +1325,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "informal negative"
         ]
@@ -1319,7 +1342,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "informal negative"
         ]
@@ -1336,7 +1359,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "informal past"
         ]
@@ -1353,7 +1376,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "informal past"
         ]
@@ -1370,7 +1393,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "informal past"
         ]
@@ -1387,7 +1410,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "informal past negative"
         ]
@@ -1404,7 +1427,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "informal past negative"
         ]
@@ -1421,7 +1444,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "informal past negative"
         ]
@@ -1438,7 +1461,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "informal past negative"
         ]
@@ -1455,7 +1478,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "informal past negative"
         ]
@@ -1472,7 +1495,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "informal past negative"
         ]
@@ -1489,7 +1512,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "formal"
         ]
@@ -1506,7 +1529,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "formal"
         ]
@@ -1523,7 +1546,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "formal"
         ]
@@ -1540,7 +1563,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "formal negative"
         ]
@@ -1557,7 +1580,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "formal negative"
         ]
@@ -1574,7 +1597,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "formal negative"
         ]
@@ -1591,7 +1614,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "formal negative"
         ]
@@ -1608,7 +1631,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "formal negative"
         ]
@@ -1625,7 +1648,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "formal negative"
         ]
@@ -1642,7 +1665,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "formal past"
         ]
@@ -1659,7 +1682,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "formal past"
         ]
@@ -1676,7 +1699,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "formal past"
         ]
@@ -1693,7 +1716,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "formal past negative"
         ]
@@ -1710,7 +1733,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "formal past negative"
         ]
@@ -1727,7 +1750,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "formal past negative"
         ]
@@ -1744,7 +1767,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "formal past negative"
         ]
@@ -1761,7 +1784,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "formal past negative"
         ]
@@ -1778,7 +1801,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "formal past negative"
         ]
@@ -1795,7 +1818,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "conditional"
         ]
@@ -1812,7 +1835,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "conditional"
         ]
@@ -1829,7 +1852,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "conditional"
         ]
@@ -1846,7 +1869,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "past conditional"
         ]
@@ -1863,7 +1886,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "past conditional"
         ]
@@ -1880,7 +1903,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "past conditional"
         ]
@@ -1897,7 +1920,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "volitional"
         ]
@@ -1914,7 +1937,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "volitional"
         ]
@@ -1931,7 +1954,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "volitional"
         ]
@@ -1948,7 +1971,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "adverbial"
         ]
@@ -1965,7 +1988,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "adverbial"
         ]
@@ -1982,7 +2005,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "noun-from-adj"
         ]
@@ -1999,7 +2022,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "noun-from-adj"
         ]
@@ -2016,7 +2039,7 @@
     0,
     [
       [
-        "好き",
+        "好き -na",
         [
           "noun-from-adj"
         ]
@@ -2033,13 +2056,13 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "stem"
         ]
       ],
       [
-        "走る",
+        "走る intransitive godan",
         [
           "continuative stem"
         ]
@@ -2056,13 +2079,13 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "past"
         ]
       ],
       [
-        "走る",
+        "走る intransitive godan",
         [
           "perfective"
         ]
@@ -2079,7 +2102,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "passive"
         ]
@@ -2096,7 +2119,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "passive"
         ]
@@ -2113,7 +2136,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "passive"
         ]
@@ -2130,7 +2153,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "causative"
         ]
@@ -2147,7 +2170,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "causative"
         ]
@@ -2164,7 +2187,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "causative"
         ]
@@ -2181,7 +2204,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "causative"
         ]
@@ -2198,7 +2221,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "causative"
         ]
@@ -2215,7 +2238,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "causative"
         ]
@@ -2232,7 +2255,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "potential"
         ]
@@ -2249,7 +2272,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "potential"
         ]
@@ -2266,7 +2289,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "potential"
         ]
@@ -2283,7 +2306,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "volitional"
         ]
@@ -2300,7 +2323,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "volitional"
         ]
@@ -2317,7 +2340,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "volitional"
         ]
@@ -2334,7 +2357,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "negative"
         ]
@@ -2351,7 +2374,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "negative"
         ]
@@ -2368,7 +2391,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "negative"
         ]
@@ -2385,13 +2408,13 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "negative"
         ]
       ],
       [
-        "走る",
+        "走る intransitive godan",
         [
           "negative continuative"
         ]
@@ -2408,13 +2431,13 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "negative"
         ]
       ],
       [
-        "走る",
+        "走る intransitive godan",
         [
           "negative continuative"
         ]
@@ -2431,7 +2454,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "negative continuative"
         ]
@@ -2448,7 +2471,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "formal"
         ]
@@ -2465,7 +2488,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "formal"
         ]
@@ -2482,7 +2505,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "formal"
         ]
@@ -2499,7 +2522,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "perfective"
         ]
@@ -2516,7 +2539,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "perfective"
         ]
@@ -2533,7 +2556,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "conjunctive"
         ]
@@ -2550,7 +2573,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "conjunctive"
         ]
@@ -2567,7 +2590,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "conjunctive"
         ]
@@ -2584,13 +2607,13 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "causative"
         ]
       ],
       [
-        "走る",
+        "走る intransitive godan",
         [
           "conditional hypothetical"
         ]
@@ -2607,13 +2630,13 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "causative"
         ]
       ],
       [
-        "走る",
+        "走る intransitive godan",
         [
           "conditional hypothetical"
         ]
@@ -2630,7 +2653,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "conditional hypothetical"
         ]
@@ -2647,7 +2670,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "irrealis stem"
         ]
@@ -2664,7 +2687,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "irrealis stem"
         ]
@@ -2681,9 +2704,9 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
-          "irrealis"
+          "irrealis stem"
         ]
       ]
     ],
@@ -2698,7 +2721,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "continuative stem"
         ]
@@ -2715,9 +2738,32 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
-          "continuative"
+          "continuative stem"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走る",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "attributive stem"
+        ]
+      ],
+      [
+        "走る intransitive godan",
+        [
+          "stem terminative"
         ]
       ]
     ],
@@ -2732,13 +2778,13 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "attributive stem"
         ]
       ],
       [
-        "走る",
+        "走る intransitive godan",
         [
           "stem terminative"
         ]
@@ -2755,15 +2801,15 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
-          "attributive"
+          "attributive stem"
         ]
       ],
       [
-        "走る",
+        "走る intransitive godan",
         [
-          "terminative"
+          "stem terminative"
         ]
       ]
     ],
@@ -2778,13 +2824,13 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "imperative stem"
         ]
       ],
       [
-        "走る",
+        "走る intransitive godan",
         [
           "realis stem"
         ]
@@ -2801,13 +2847,13 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "imperative stem"
         ]
       ],
       [
-        "走る",
+        "走る intransitive godan",
         [
           "realis stem"
         ]
@@ -2824,15 +2870,15 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
-          "imperative"
+          "imperative stem"
         ]
       ],
       [
-        "走る",
+        "走る intransitive godan",
         [
-          "realis"
+          "realis stem"
         ]
       ]
     ],
@@ -2847,7 +2893,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "negative"
         ]
@@ -2864,7 +2910,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "contrastive"
         ]
@@ -2881,7 +2927,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "contrastive"
         ]
@@ -2898,7 +2944,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "contrastive"
         ]
@@ -2915,7 +2961,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "causative"
         ]
@@ -2932,7 +2978,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "conditional"
         ]
@@ -2949,7 +2995,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "conditional"
         ]
@@ -2966,7 +3012,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "conditional"
         ]
@@ -2983,7 +3029,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "past"
         ]
@@ -3000,7 +3046,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "past"
         ]
@@ -3017,7 +3063,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "past"
         ]
@@ -3034,7 +3080,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "past"
         ]
@@ -3051,7 +3097,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "past"
         ]
@@ -3068,7 +3114,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "past"
         ]
@@ -3085,7 +3131,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "perfect"
         ]
@@ -3102,7 +3148,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "perfect"
         ]
@@ -3119,7 +3165,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "perfect"
         ]
@@ -3136,7 +3182,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "perfect"
         ]
@@ -3153,7 +3199,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "perfect"
         ]
@@ -3170,7 +3216,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "perfect"
         ]
@@ -3187,7 +3233,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "perfect continuative"
         ]
@@ -3204,7 +3250,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "perfect continuative"
         ]
@@ -3221,7 +3267,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "perfect continuative"
         ]
@@ -3238,7 +3284,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "perfect continuative"
         ]
@@ -3255,7 +3301,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "perfect continuative"
         ]
@@ -3272,7 +3318,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "perfect continuative"
         ]
@@ -3289,7 +3335,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "volitional"
         ]
@@ -3306,7 +3352,7 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "volitional"
         ]
@@ -3323,9 +3369,587 @@
     0,
     [
       [
-        "走る",
+        "走る intransitive godan",
         [
           "volitional"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走って [hashitte]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "conjunctive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走らないで [hashiranai de]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "negative conjunctive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走らなくて [hashiranakute]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "negative conjunctive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走ります [hashirimasu]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "polite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走りません [hashirimasen]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "negative polite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走りました [hashirimashita]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "polite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走りませんでした [hashirimasen deshita]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "negative polite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走られます [hashiraremasu]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "passive polite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走られません [hashiraremasen]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "passive negative polite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走られた [hashirareta]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "past passive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走られなかった [hashirarenakatta]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "past passive negative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走らせます [hashirasemasu]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "causative polite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走らせません [hashirasemasen]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "negative causative polite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走らせた [hashiraseta]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "past causative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走らせなかった [hashirasenakatta]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "past negative causative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走れます [hashiremasu]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "polite potential"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走れません [hashiremasen]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "negative polite potential"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走れた [hashireta]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "past potential"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走れなかった [hashirenakatta]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "past negative potential"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走りましょう [hashirimashō]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "imperative polite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走らせられます [hashiraseraremasu]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "conditional polite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走らされます [hashirasaremasu]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "conditional polite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走らせられません [hashiraseraremasen]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "conditional negative polite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走らされません [hashirasaremasen]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "conditional negative polite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走らせられた [hashiraserareta]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "past conditional"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走らされた [hashirasareta]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "past conditional"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走らせられなかった [hashiraserarenakatta]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "past conditional negative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走らされなかった [hashirasarenakatta]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "past conditional negative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "For other desiderative forms",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "desiderative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走っています [hashitte imasu]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "desiderative polite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走っていません [hashitte imasen]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "negative desiderative polite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走っていた [hashitte ita]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "past desiderative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走っていなかった [hashitte inakatta]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "past negative desiderative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "走らず [hashirazu]",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "走る intransitive godan",
+        [
+          "negative continuative"
         ]
       ]
     ],
@@ -3340,7 +3964,7 @@
     0,
     [
       [
-        "五色",
+        "五色 ^",
         [
           "hiragana historical"
         ]
@@ -3357,7 +3981,7 @@
     0,
     [
       [
-        "五色",
+        "五色 ^",
         [
           "hiragana historical"
         ]

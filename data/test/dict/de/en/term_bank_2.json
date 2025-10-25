@@ -50,13 +50,13 @@
       [
         "pflegen",
         [
-          "first/third-person singular indicative preterite"
+          "formal first/third-person singular subjunctive rare subjunctive-ii"
         ]
       ],
       [
         "pflegen",
         [
-          "first/third-person singular subjunctive subjunctive-ii"
+          "first/third-person singular indicative preterite"
         ]
       ]
     ],
@@ -130,7 +130,7 @@
       [
         "pflegen",
         [
-          "first/third-person singular subjunctive subjunctive-ii"
+          "formal first/third-person singular subjunctive rare subjunctive-ii"
         ]
       ],
       [
@@ -250,13 +250,13 @@
       [
         "pflegen",
         [
-          "first/third-person plural indicative preterite"
+          "formal first/third-person plural subjunctive rare subjunctive-ii"
         ]
       ],
       [
         "pflegen",
         [
-          "first/third-person plural subjunctive subjunctive-ii"
+          "first/third-person plural indicative preterite"
         ]
       ]
     ],
@@ -273,13 +273,13 @@
       [
         "pflegen",
         [
-          "second-person singular indicative preterite"
+          "formal second-person singular subjunctive rare subjunctive-ii"
         ]
       ],
       [
         "pflegen",
         [
-          "second-person singular subjunctive subjunctive-ii"
+          "second-person singular indicative preterite"
         ]
       ]
     ],
@@ -302,7 +302,7 @@
       [
         "pflegen",
         [
-          "second-person plural subjunctive subjunctive-ii"
+          "formal second-person plural subjunctive rare subjunctive-ii"
         ]
       ]
     ],
@@ -1030,7 +1030,7 @@
       [
         "pflegen",
         [
-          "first/third-person plural subjunctive subjunctive-ii"
+          "formal first/third-person plural subjunctive rare subjunctive-ii"
         ]
       ]
     ],
@@ -1081,7 +1081,7 @@
       [
         "pflegen",
         [
-          "second-person singular subjunctive subjunctive-ii"
+          "formal second-person singular subjunctive rare subjunctive-ii"
         ]
       ]
     ],
@@ -1098,7 +1098,7 @@
       [
         "pflegen",
         [
-          "second-person singular subjunctive subjunctive-ii"
+          "formal second-person singular subjunctive rare subjunctive-ii"
         ]
       ]
     ],
@@ -1115,7 +1115,7 @@
       [
         "pflegen",
         [
-          "second-person plural subjunctive subjunctive-ii"
+          "formal second-person plural subjunctive rare subjunctive-ii"
         ]
       ]
     ],
@@ -1132,7 +1132,7 @@
       [
         "pflegen",
         [
-          "second-person plural subjunctive subjunctive-ii"
+          "formal second-person plural subjunctive rare subjunctive-ii"
         ]
       ]
     ],
@@ -1839,7 +1839,7 @@
       [
         "Herz",
         [
-          "genitive singular"
+          "genitive singular rare"
         ]
       ]
     ],
@@ -1897,6 +1897,23 @@
         "Fahrer",
         [
           "dative plural definite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "v.",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "von",
+        [
+          "alternative abbreviation"
         ]
       ]
     ],

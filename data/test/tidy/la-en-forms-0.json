@@ -1570,34 +1570,6 @@
             }
           ],
           [
-            "lēgisse",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "perfect active infinitive"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "lēctūrum esse",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "future active infinitive"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
             "legī",
             {
               "_type": "map",
@@ -1606,34 +1578,6 @@
                   "verb",
                   [
                     "present passive infinitive"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "lēctum esse",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "perfect passive infinitive"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "lēctum īrī",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "future passive infinitive"
                   ]
                 ]
               ]
@@ -1654,6 +1598,34 @@
             }
           ],
           [
+            "lēctūrum esse",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "future active infinitive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctum īrī",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "future passive infinitive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
             "lēctūrus",
             {
               "_type": "map",
@@ -1662,20 +1634,6 @@
                   "verb",
                   [
                     "future active participle"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "lēctus",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "perfect passive participle"
                   ]
                 ]
               ]
@@ -1704,6 +1662,76 @@
                   "verb",
                   [
                     "future passive participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēgisse",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect active infinitive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctum esse",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect passive infinitive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctus",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect passive participle"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctum fore",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "future perfect passive infinitive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "lēctūrum fuisse",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "perfect active infinitive potential"
                   ]
                 ]
               ]
@@ -2239,8 +2267,7 @@
                   "noun",
                   [
                     "plural ablative",
-                    "dative plural",
-                    "locative plural"
+                    "dative plural"
                   ]
                 ]
               ]
@@ -2269,6 +2296,20 @@
                   "noun",
                   [
                     "accusative plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "demus",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "alternative"
                   ]
                 ]
               ]

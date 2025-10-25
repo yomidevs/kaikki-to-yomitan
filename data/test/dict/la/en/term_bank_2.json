@@ -1960,40 +1960,6 @@
     ""
   ],
   [
-    "legisse",
-    "lēgisse",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "legō",
-        [
-          "perfect active infinitive"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "lecturum esse",
-    "lēctūrum esse",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "legō",
-        [
-          "future active infinitive"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
     "legi",
     "legī",
     "non-lemma",
@@ -2004,40 +1970,6 @@
         "legō",
         [
           "present passive infinitive"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "lectum esse",
-    "lēctum esse",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "legō",
-        [
-          "perfect passive infinitive"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "lectum iri",
-    "lēctum īrī",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "legō",
-        [
-          "future passive infinitive"
         ]
       ]
     ],
@@ -2062,6 +1994,40 @@
     ""
   ],
   [
+    "lecturum esse",
+    "lēctūrum esse",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "future active infinitive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "lectum iri",
+    "lēctum īrī",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "future passive infinitive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
     "lecturus",
     "lēctūrus",
     "non-lemma",
@@ -2072,23 +2038,6 @@
         "legō",
         [
           "future active participle"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "lectus",
-    "lēctus",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "legō",
-        [
-          "perfect passive participle"
         ]
       ]
     ],
@@ -2123,6 +2072,91 @@
         "legō",
         [
           "future passive participle"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "legisse",
+    "lēgisse",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "perfect active infinitive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "lectum esse",
+    "lēctum esse",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "perfect passive infinitive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "lectus",
+    "lēctus",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "perfect passive participle"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "lectum fore",
+    "lēctum fore",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "future perfect passive infinitive"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "lecturum fuisse",
+    "lēctūrum fuisse",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "legō",
+        [
+          "perfect active infinitive potential"
         ]
       ]
     ],
@@ -2918,12 +2952,6 @@
         [
           "dative plural"
         ]
-      ],
-      [
-        "domus",
-        [
-          "locative plural"
-        ]
       ]
     ],
     0,
@@ -2957,6 +2985,23 @@
         "domus",
         [
           "accusative plural"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "demus",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "domus",
+        [
+          "alternative"
         ]
       ]
     ],

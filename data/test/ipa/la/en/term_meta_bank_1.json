@@ -6,21 +6,9 @@
       "reading": "fāma",
       "transcriptions": [
         {
-          "ipa": "/ˈfaː.ma/",
+          "ipa": "[ˈfaː.ma]",
           "tags": [
-            "Classical"
-          ]
-        },
-        {
-          "ipa": "[ˈfäːmä]",
-          "tags": [
-            "Classical",
-            "✝️"
-          ]
-        },
-        {
-          "ipa": "/ˈfa.ma/",
-          "tags": [
+            "Classical-Latin",
             "✝️"
           ]
         }
@@ -34,25 +22,13 @@
       "reading": "legō",
       "transcriptions": [
         {
-          "ipa": "/ˈle.ɡoː/",
+          "ipa": "[ˈɫɛ.ɡoː]",
           "tags": [
-            "Classical"
+            "Classical-Latin"
           ]
         },
         {
-          "ipa": "[ˈɫ̪ɛɡoː]",
-          "tags": [
-            "Classical"
-          ]
-        },
-        {
-          "ipa": "/ˈle.ɡo/",
-          "tags": [
-            "✝️"
-          ]
-        },
-        {
-          "ipa": "[ˈlɛːɡo]",
+          "ipa": "[ˈlɛː.ɡo]",
           "tags": [
             "✝️"
           ]
@@ -67,25 +43,13 @@
       "reading": "līlium",
       "transcriptions": [
         {
-          "ipa": "/ˈliː.li.um/",
+          "ipa": "[ˈliː.li.ũː]",
           "tags": [
-            "Classical"
+            "Classical-Latin"
           ]
         },
         {
-          "ipa": "[ˈlʲiːlʲiʊ̃ˑ]",
-          "tags": [
-            "Classical"
-          ]
-        },
-        {
-          "ipa": "/ˈli.li.um/",
-          "tags": [
-            "✝️"
-          ]
-        },
-        {
-          "ipa": "[ˈliːlium]",
+          "ipa": "[ˈliː.li.um]",
           "tags": [
             "✝️"
           ]
@@ -97,40 +61,16 @@
     "usque",
     "ipa",
     {
-      "reading": "ū̆sque",
+      "reading": "usque",
       "transcriptions": [
         {
-          "ipa": "/ˈuːs.kʷe/",
+          "ipa": "[ˈʊs.kʷɛ]",
           "tags": [
-            "Classical"
+            "Classical-Latin"
           ]
         },
         {
-          "ipa": "[ˈuːs̠kʷɛ]",
-          "tags": [
-            "Classical"
-          ]
-        },
-        {
-          "ipa": "/ˈus.kʷe/",
-          "tags": [
-            "Classical"
-          ]
-        },
-        {
-          "ipa": "[ˈʊs̠kʷɛ]",
-          "tags": [
-            "Classical"
-          ]
-        },
-        {
-          "ipa": "/ˈus.kwe/",
-          "tags": [
-            "✝️"
-          ]
-        },
-        {
-          "ipa": "[ˈuskwe]",
+          "ipa": "[ˈus.kʷe]",
           "tags": [
             "✝️"
           ]
@@ -145,25 +85,13 @@
       "reading": "rēctus",
       "transcriptions": [
         {
-          "ipa": "/ˈreːk.tus/",
+          "ipa": "[ˈreːk.tʊs]",
           "tags": [
-            "Classical"
+            "Classical-Latin"
           ]
         },
         {
-          "ipa": "[ˈreːkt̪ʊs̠]",
-          "tags": [
-            "Classical"
-          ]
-        },
-        {
-          "ipa": "/ˈrek.tus/",
-          "tags": [
-            "✝️"
-          ]
-        },
-        {
-          "ipa": "[ˈrɛkt̪us]",
+          "ipa": "[ˈrɛk.t̪us]",
           "tags": [
             "✝️"
           ]
@@ -178,20 +106,13 @@
       "reading": "domus",
       "transcriptions": [
         {
-          "ipa": "/ˈdo.mus/",
+          "ipa": "[ˈdɔ.mʊs]",
           "tags": [
-            "Classical",
-            "✝️"
+            "Classical-Latin"
           ]
         },
         {
-          "ipa": "[ˈd̪ɔmʊs̠]",
-          "tags": [
-            "Classical"
-          ]
-        },
-        {
-          "ipa": "[ˈd̪ɔːmus]",
+          "ipa": "[ˈd̪ɔː.mus]",
           "tags": [
             "✝️"
           ]

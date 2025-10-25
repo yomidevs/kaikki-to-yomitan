@@ -2,7 +2,7 @@
   "_type": "map",
   "map": [
     [
-      "楽しい",
+      "楽しい -i",
       {
         "_type": "map",
         "map": [
@@ -57,7 +57,7 @@
                 [
                   "adj",
                   [
-                    "imperfective"
+                    "imperfective stem"
                   ]
                 ]
               ]
@@ -87,7 +87,22 @@
                   "adj",
                   [
                     "adverbial",
-                    "continuative"
+                    "continuative stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "楽しい",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "attributive stem",
+                    "stem terminative"
                   ]
                 ]
               ]
@@ -116,8 +131,8 @@
                 [
                   "adj",
                   [
-                    "attributive",
-                    "terminative"
+                    "attributive stem",
+                    "stem terminative"
                   ]
                 ]
               ]
@@ -159,7 +174,7 @@
                 [
                   "adj",
                   [
-                    "hypothetical"
+                    "hypothetical stem"
                   ]
                 ]
               ]
@@ -201,7 +216,7 @@
                 [
                   "adj",
                   [
-                    "imperative"
+                    "imperative stem"
                   ]
                 ]
               ]
@@ -715,7 +730,7 @@
       }
     ],
     [
-      "好き",
+      "好き -na",
       {
         "_type": "map",
         "map": [
@@ -784,7 +799,7 @@
                 [
                   "adj",
                   [
-                    "imperfective"
+                    "imperfective stem"
                   ]
                 ]
               ]
@@ -829,7 +844,7 @@
                   "adj",
                   [
                     "conjunctive",
-                    "continuative"
+                    "continuative stem"
                   ]
                 ]
               ]
@@ -871,7 +886,7 @@
                 [
                   "adj",
                   [
-                    "terminative"
+                    "stem terminative"
                   ]
                 ]
               ]
@@ -899,7 +914,7 @@
                 [
                   "adj",
                   [
-                    "attributive"
+                    "attributive stem"
                   ]
                 ]
               ]
@@ -941,7 +956,7 @@
                 [
                   "adj",
                   [
-                    "hypothetical"
+                    "hypothetical stem"
                   ]
                 ]
               ]
@@ -983,7 +998,7 @@
                 [
                   "adj",
                   [
-                    "imperative"
+                    "imperative stem"
                   ]
                 ]
               ]
@@ -1651,7 +1666,7 @@
       }
     ],
     [
-      "走る",
+      "走る intransitive godan",
       {
         "_type": "map",
         "map": [
@@ -2173,7 +2188,7 @@
                 [
                   "verb",
                   [
-                    "irrealis"
+                    "irrealis stem"
                   ]
                 ]
               ]
@@ -2201,7 +2216,22 @@
                 [
                   "verb",
                   [
-                    "continuative"
+                    "continuative stem"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走る",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "attributive stem",
+                    "stem terminative"
                   ]
                 ]
               ]
@@ -2230,8 +2260,8 @@
                 [
                   "verb",
                   [
-                    "attributive",
-                    "terminative"
+                    "attributive stem",
+                    "stem terminative"
                   ]
                 ]
               ]
@@ -2275,8 +2305,8 @@
                 [
                   "verb",
                   [
-                    "imperative",
-                    "realis"
+                    "imperative stem",
+                    "realis stem"
                   ]
                 ]
               ]
@@ -2687,12 +2717,488 @@
                 ]
               ]
             }
+          ],
+          [
+            "走って [hashitte]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "conjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らないで [hashiranai de]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "negative conjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らなくて [hashiranakute]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "negative conjunctive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走ります [hashirimasu]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "polite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走りません [hashirimasen]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "negative polite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走りました [hashirimashita]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "polite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走りませんでした [hashirimasen deshita]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "negative polite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走られます [hashiraremasu]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "passive polite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走られません [hashiraremasen]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "passive negative polite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走られた [hashirareta]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past passive"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走られなかった [hashirarenakatta]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past passive negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らせます [hashirasemasu]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "causative polite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らせません [hashirasemasen]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "negative causative polite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らせた [hashiraseta]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past causative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らせなかった [hashirasenakatta]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past negative causative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走れます [hashiremasu]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "polite potential"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走れません [hashiremasen]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "negative polite potential"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走れた [hashireta]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past potential"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走れなかった [hashirenakatta]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past negative potential"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走りましょう [hashirimashō]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "imperative polite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らせられます [hashiraseraremasu]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "conditional polite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らされます [hashirasaremasu]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "conditional polite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らせられません [hashiraseraremasen]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "conditional negative polite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らされません [hashirasaremasen]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "conditional negative polite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らせられた [hashiraserareta]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らされた [hashirasareta]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past conditional"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らせられなかった [hashiraserarenakatta]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past conditional negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らされなかった [hashirasarenakatta]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past conditional negative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "For other desiderative forms",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "desiderative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走っています [hashitte imasu]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "desiderative polite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走っていません [hashitte imasen]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "negative desiderative polite"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走っていた [hashitte ita]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past desiderative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走っていなかった [hashitte inakatta]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past negative desiderative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "走らず [hashirazu]",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "negative continuative"
+                  ]
+                ]
+              ]
+            }
           ]
         ]
       }
     ],
     [
-      "五色",
+      "五色 ^",
       {
         "_type": "map",
         "map": [

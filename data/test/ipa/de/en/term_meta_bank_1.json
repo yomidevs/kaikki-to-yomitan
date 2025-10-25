@@ -15,11 +15,15 @@
         },
         {
           "ipa": "[ˈpfleːɡŋ̩]",
-          "tags": []
+          "tags": [
+            "std"
+          ]
         },
         {
           "ipa": "/ˈfleːɡən/",
-          "tags": []
+          "tags": [
+            "most speakers in northern and central Germany"
+          ]
         }
       ]
     }

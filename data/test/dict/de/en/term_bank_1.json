@@ -2,7 +2,7 @@
   [
     "pflegen",
     "",
-    "v c-4 strong",
+    "v c-4 strong weak",
     "v",
     0,
     [
@@ -95,7 +95,7 @@
                           }
                         ]
                       },
-                      "Providing care or service for someone/something. [weak verb]"
+                      "providing care or service for someone/something [weak verb]"
                     ]
                   },
                   {
@@ -319,7 +319,7 @@
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "She has always taken care of her appearance. (literally, “She has always taken care of herself.”)"
+                                      "content": "She has always taken care of her appearance."
                                     }
                                   ]
                                 }
@@ -347,7 +347,7 @@
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "He sat down lazily and went easy on himself. (literally, “He sat down lazily and looked after himself.”)"
+                                      "content": "He sat down lazily and went easy on himself."
                                     }
                                   ]
                                 }
@@ -416,7 +416,7 @@
                                   }
                                 ]
                               },
-                              "(with genitive) "
+                              "[with genitive ‘something/someone’]"
                             ]
                           }
                         ]
@@ -431,7 +431,7 @@
                   {
                     "tag": "div",
                     "content": [
-                      "To improve or care for something in an intellectual sense. [weak or strong verb]"
+                      "to improve or care for something in an intellectual sense [weak or strong verb]"
                     ]
                   },
                   {
@@ -600,7 +600,7 @@
                                   }
                                 ]
                               },
-                              "(with genitive) ",
+                              "[with genitive ‘something’]",
                               {
                                 "tag": "details",
                                 "data": {
@@ -686,7 +686,7 @@
                   {
                     "tag": "div",
                     "content": [
-                      "Expressing habituality. [weak or strong verb]"
+                      "expressing habituality [weak or strong verb]"
                     ]
                   },
                   {
@@ -777,7 +777,7 @@
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "to socialize regularly (literally, “to regularly engage in gregariousness”)"
+                                      "content": "to socialize regularly"
                                     }
                                   ]
                                 }
@@ -806,7 +806,7 @@
                               }
                             ]
                           },
-                          "(with “zu” followed by an infinitive verb) to perform habitually; to be accustomed (to doing something); to be in the habit (of doing something)",
+                          "to perform habitually; to be accustomed (to); to be in the habit (of) [with zu (+ infinitive) ‘doing something’]",
                           {
                             "tag": "details",
                             "data": {
@@ -1021,7 +1021,7 @@
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "(line from a popular children’s song)"
+                                  "content": "Fox, you've stolen the goose. Give it back here!"
                                 }
                               ]
                             }
@@ -1055,7 +1055,7 @@
                           }
                         ]
                       },
-                      "a clever or cunning person",
+                      "a clever or cunning person, sly fox",
                       {
                         "tag": "details",
                         "data": {
@@ -1092,7 +1092,7 @@
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "He is a really handsome fox."
+                                  "content": "He is quite the sly fox."
                                 }
                               ]
                             }
@@ -1126,7 +1126,7 @@
                           }
                         ]
                       },
-                      "a red-haired person or horse.",
+                      "a red-haired person or horse",
                       {
                         "tag": "details",
                         "data": {
@@ -1217,7 +1217,7 @@
                           }
                         ]
                       },
-                      "A new recruit."
+                      "a new recruit"
                     ]
                   }
                 ]
@@ -1245,7 +1245,7 @@
                           }
                         ]
                       },
-                      "In Doppelkopf, the ace of diamonds, which earns a side of players an extra point if they win it from the other side",
+                      "the ace of diamonds in Doppelkopf, where it earns a side of players an extra point if they win it from the other side",
                       {
                         "tag": "details",
                         "data": {
@@ -1344,7 +1344,7 @@
                           }
                         ]
                       },
-                      "A form of sunscald on hops."
+                      "a form of sunscald on hops"
                     ]
                   }
                 ]
@@ -1384,6 +1384,34 @@
                         ]
                       },
                       "any gold coin"
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "content": "entom",
+                            "title": "entomology",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            }
+                          }
+                        ]
+                      },
+                      "tortoiseshell"
                     ]
                   }
                 ]
@@ -1468,7 +1496,7 @@
                         "data": {
                           "content": "Etymology-content"
                         },
-                        "content": "From Middle High German herze, from Old High German herza, from Proto-West Germanic *hertā, from Proto-Germanic *hertô (“heart”), from Proto-Indo-European *ḱḗr (“heart”).\nCognate with Dutch hart, English heart, Danish hjerte, Gothic 𐌷𐌰𐌹𐍂𐍄𐍉 (hairtō)."
+                        "content": "From Middle High German hërze, from Old High German hërza, from Proto-West Germanic *hertā, from Proto-Germanic *hertô (“heart”), from Proto-Indo-European *ḱḗr (“heart”).\nCognate with Dutch hart, English heart, Danish hjerte, Gothic 𐌷𐌰𐌹𐍂𐍄𐍉 (hairtō)."
                       }
                     ]
                   }
@@ -1695,7 +1723,7 @@
                         "data": {
                           "content": "Etymology-content"
                         },
-                        "content": "From Middle High German von (“from”), from Old High German fon, fona (“from”), from Proto-Germanic *afanē, *fanē, *funē (“from”), compound of *afa (from Proto-Indo-European *h₂epó (“from, off”)) + *ana (from Proto-Indo-European *h₂en- (“on”)). Cognate with Old Saxon fana, fan (“from”), Dutch van (“from; of”), Old Frisian fon (“from”)."
+                        "content": "From Middle High German von (“from”), from Old High German fon, fona (“from”), from Proto-West Germanic *fanā, from Proto-Germanic *afanē, *fanē, *funē (“from”), compound of *afa (from Proto-Indo-European *h₂epó (“from, off”)) + *ana (from Proto-Indo-European *h₂en- (“on”)).\nCognate with Old Saxon fana, fan (“from”), Dutch van (“from; of”), Old Frisian fon (“from”)."
                       }
                     ]
                   }
@@ -1752,7 +1780,7 @@
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "I'm travelling from Cologne to Hamburg."
+                                  "content": "I’m travelling from Cologne to Hamburg."
                                 }
                               ]
                             }
@@ -1809,7 +1837,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "1 example"
+                            "content": "2 examples"
                           },
                           {
                             "tag": "div",
@@ -1827,7 +1855,7 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "das Auto meines Vaters = das Auto von meinem Vater"
+                                  "content": "das Auto von meinem Vater"
                                 },
                                 {
                                   "tag": "div",
@@ -1835,6 +1863,27 @@
                                     "content": "example-sentence-b"
                                   },
                                   "content": "my father’s car / the car of my father"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "das Auto meines Vaters"
                                 }
                               ]
                             }
@@ -2143,7 +2192,7 @@
                         "data": {
                           "content": "Etymology-content"
                         },
-                        "content": "From Middle High German base, from Old High German basa, from Proto-Germanic *baswǭ (“father's sister; paternal aunt”). Compare Saterland Frisian Bääsje (“grandmother”), Dutch baas (“master; boss”). More at boss."
+                        "content": "From Middle High German base, from Old High German basa, from Proto-West Germanic *baswā, from Proto-Germanic *baswǭ (“father's sister; paternal aunt”). Compare Saterland Frisian Bääsje (“grandmother”), Dutch baas (“master; boss”). More at boss."
                       }
                     ]
                   }

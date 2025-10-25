@@ -94,6 +94,48 @@
                 ]
               ]
             }
+          ],
+          [
+            "Roc",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "alternative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "Roch",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "alternative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "Ruc",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "alternative"
+                  ]
+                ]
+              ]
+            }
           ]
         ]
       }

@@ -121,23 +121,6 @@
                   {
                     "tag": "div",
                     "content": [
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "tags"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "content": "tort",
-                            "title": "Utilisé à tort",
-                            "data": {
-                              "content": "tag",
-                              "category": ""
-                            }
-                          }
-                        ]
-                      },
                       "Mésaventure, malheur.",
                       {
                         "tag": "details",

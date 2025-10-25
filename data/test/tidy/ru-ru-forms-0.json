@@ -132,6 +132,20 @@
                 ]
               ]
             }
+          ],
+          [
+            "(в, на) снегу́",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "locative singular"
+                  ]
+                ]
+              ]
+            }
           ]
         ]
       }
@@ -149,95 +163,7 @@
                 [
                   "verb",
                   [
-                    "first-person singular present"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "продолжа́л",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "first-person singular past",
-                    "second-person singular past",
-                    "third-person singular past"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "продолжа́ла",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "first-person singular past",
-                    "second-person singular past",
-                    "third-person singular past"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "продолжа́ешь",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "second-person singular present"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "продолжа́й",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "second-person singular imperative"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "продолжа́ет",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "third-person singular present"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "продолжа́ло",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "third-person singular past"
+                    "present singular first-person"
                   ]
                 ]
               ]
@@ -251,23 +177,21 @@
                 [
                   "verb",
                   [
-                    "first-person plural present"
+                    "present plural first-person"
                   ]
                 ]
               ]
             }
           ],
           [
-            "продолжа́ли",
+            "продолжа́ешь",
             {
               "_type": "map",
               "map": [
                 [
                   "verb",
                   [
-                    "first-person plural past",
-                    "second-person plural past",
-                    "third-person plural past"
+                    "present singular second-person"
                   ]
                 ]
               ]
@@ -281,21 +205,21 @@
                 [
                   "verb",
                   [
-                    "second-person plural present"
+                    "present plural second-person"
                   ]
                 ]
               ]
             }
           ],
           [
-            "продолжа́йте",
+            "продолжа́ет",
             {
               "_type": "map",
               "map": [
                 [
                   "verb",
                   [
-                    "second-person plural imperative"
+                    "present singular third-person"
                   ]
                 ]
               ]
@@ -309,7 +233,91 @@
                 [
                   "verb",
                   [
-                    "third-person plural present"
+                    "present plural third-person"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́л",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past masculine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́ли",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past masculine feminine neuter"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́ла",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past feminine"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́ло",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past neuter"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́й",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "imperative second-person"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́йте",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "imperative second-person"
                   ]
                 ]
               ]
@@ -323,7 +331,7 @@
                 [
                   "verb",
                   [
-                    "active present"
+                    "participle active present"
                   ]
                 ]
               ]
@@ -337,49 +345,7 @@
                 [
                   "verb",
                   [
-                    "active past"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "продолжа́я",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "adverbial present"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "продолжа́в",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "adverbial past"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "продолжа́вши",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "adverbial past"
+                    "participle active past"
                   ]
                 ]
               ]
@@ -393,7 +359,49 @@
                 [
                   "verb",
                   [
-                    "passive present"
+                    "participle passive present"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́я",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "adverbial participle present"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́в",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "adverbial participle past"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "продолжа́вши",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "adverbial participle past"
                   ]
                 ]
               ]
@@ -408,20 +416,6 @@
                   "verb",
                   [
                     "future"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "продолжить",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "perfective"
                   ]
                 ]
               ]

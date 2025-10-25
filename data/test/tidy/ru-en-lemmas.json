@@ -20,8 +20,8 @@
                     [
                       "_tags",
                       [
-                        "masculine",
-                        "inanimate"
+                        "inanimate",
+                        "masculine"
                       ]
                     ],
                     [
@@ -44,6 +44,18 @@
                           "translation": "to throw the snow off the roof"
                         },
                         {
+                          "text": "как снег на́ голову",
+                          "translation": "like a bolt from the blue (unexpectedly, suddenly)"
+                        },
+                        {
+                          "text": "что́-либо ну́жно, как прошлого́дний снег",
+                          "translation": "something is not needed in the least"
+                        },
+                        {
+                          "text": "зимо́й сне́га не вы́просить",
+                          "translation": "(said about someone mean, stingy)"
+                        },
+                        {
                           "text": "Дава́й поваля́емся в снегу́!",
                           "translation": "Let's roll in the snow!"
                         }
@@ -61,8 +73,8 @@
                       "_tags",
                       [
                         "figuratively",
-                        "masculine",
-                        "inanimate"
+                        "inanimate",
+                        "masculine"
                       ]
                     ],
                     [
@@ -80,9 +92,9 @@
                     [
                       "_tags",
                       [
-                        "slang",
+                        "inanimate",
                         "masculine",
-                        "inanimate"
+                        "slang"
                       ]
                     ],
                     [
@@ -205,7 +217,7 @@
         "0": {
           "ipa": [
             {
-              "ipa": "[ˈzʲimnʲɪj]",
+              "ipa": "[ˈzɪmnei̯]",
               "tags": []
             }
           ],
@@ -213,30 +225,7 @@
             "_type": "map",
             "map": [
               [
-                "(relational) winter",
-                {
-                  "_type": "map",
-                  "map": [
-                    [
-                      "_tags",
-                      [
-                        "relational"
-                      ]
-                    ],
-                    [
-                      "_examples",
-                      [
-                        {
-                          "text": "Зи́мний дворе́ц",
-                          "translation": "Winter palace"
-                        }
-                      ]
-                    ]
-                  ]
-                }
-              ],
-              [
-                "wintry, hibernal",
+                "cold",
                 {
                   "_type": "map",
                   "map": [
@@ -253,9 +242,9 @@
               ]
             ]
           },
-          "etymology_text": "Inherited from Proto-Slavic *zimьnъ. By surface analysis, зима́ (zimá) + -ний (-nij).",
-          "morpheme_text": "By surface analysis, зима́ (zimá) + -ний (-nij).",
-          "head_info_text": "зи́мний • (zímnij)",
+          "etymology_text": "From Proto-Slavic *zimьnъ. Morphologically, from зима́ (zymá) + -ний (-nyj).\nRelated to зи́мній (zýmnij).",
+          "morpheme_text": "Morphologically, from зима́ (zymá) + -ний (-nyj).",
+          "head_info_text": "зи́мний • (zýmnyj)",
           "backlink": "зимний"
         }
       }

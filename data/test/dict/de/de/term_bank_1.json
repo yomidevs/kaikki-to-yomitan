@@ -10,41 +10,6 @@
         "type": "structured-content",
         "content": [
           {
-            "tag": "div",
-            "content": [
-              {
-                "tag": "div",
-                "data": {
-                  "content": "preamble"
-                },
-                "content": [
-                  {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-Etymology"
-                    },
-                    "content": [
-                      {
-                        "tag": "summary",
-                        "data": {
-                          "content": "summary-entry"
-                        },
-                        "content": "Etymology"
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "Etymology-content"
-                        },
-                        "content": "von arabisch/persisch ruh, roh entlehnt, = arabisch: الرُخّ (ar-ruchch, aus dem Persischen)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "tag": "ol",
             "data": {
               "content": "glosses"
@@ -68,7 +33,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "2 Beispiele"
+                            "content": "1 Beispiel"
                           },
                           {
                             "tag": "div",
@@ -87,27 +52,6 @@
                                     "content": "example-sentence-a"
                                   },
                                   "content": "Der Rock ist nicht totzukriegen."
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": "Sindbad band sich, um seinem Schicksal auf einer abgelegenen Insel zu entkommen, an ein Bein des Vogels Rock."
                                 }
                               ]
                             }
@@ -233,41 +177,6 @@
       {
         "type": "structured-content",
         "content": [
-          {
-            "tag": "div",
-            "content": [
-              {
-                "tag": "div",
-                "data": {
-                  "content": "preamble"
-                },
-                "content": [
-                  {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-Etymology"
-                    },
-                    "content": [
-                      {
-                        "tag": "summary",
-                        "data": {
-                          "content": "summary-entry"
-                        },
-                        "content": "Etymology"
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "Etymology-content"
-                        },
-                        "content": "seit dem 20. Jahrhundert bezeugte Entlehnung aus gleichbedeutendem französisch garage ^(→ fr) m, eigentlich „(das) Ausweichen, Ausweichstelle“; dieses ist eine deverbative Ableitung von französisch garer ^(→ fr) „in eine sichere Verwahrstelle bringen; in Sicherheit bringen; ausweichen“, das seinerseits aus okzitanisch garar ^(→ oc) „Acht geben, bewahren“ übernommen wurde; dieses entstammt entweder mit Übergang von w- zu g- der (nicht belegbaren, aber rekonstruierten) germanischen Form *war-ō- „beachten“ (vergleiche »wahren«) oder dem lateinischen varāre ^(→ la) „ausweichen“ (zu lateinisch vārus ^(→ la) „auseinandergebogen“)"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
           {
             "tag": "ol",
             "data": {

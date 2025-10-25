@@ -5,21 +5,9 @@
         "0": {
           "ipa": [
             {
-              "ipa": "/ˈfaː.ma/",
+              "ipa": "[ˈfaː.ma]",
               "tags": [
-                "Classical"
-              ]
-            },
-            {
-              "ipa": "[ˈfäːmä]",
-              "tags": [
-                "Classical",
-                "modern Italianate Ecclesiastical"
-              ]
-            },
-            {
-              "ipa": "/ˈfa.ma/",
-              "tags": [
+                "Classical-Latin",
                 "modern Italianate Ecclesiastical"
               ]
             }
@@ -140,25 +128,13 @@
         "1": {
           "ipa": [
             {
-              "ipa": "/ˈle.ɡoː/",
+              "ipa": "[ˈɫɛ.ɡoː]",
               "tags": [
-                "Classical"
+                "Classical-Latin"
               ]
             },
             {
-              "ipa": "[ˈɫ̪ɛɡoː]",
-              "tags": [
-                "Classical"
-              ]
-            },
-            {
-              "ipa": "/ˈle.ɡo/",
-              "tags": [
-                "modern Italianate Ecclesiastical"
-              ]
-            },
-            {
-              "ipa": "[ˈlɛːɡo]",
+              "ipa": "[ˈlɛː.ɡo]",
               "tags": [
                 "modern Italianate Ecclesiastical"
               ]
@@ -209,7 +185,7 @@
                 }
               ],
               [
-                "to collect, gather, bring together",
+                "to collect, gather, bring together, catch",
                 {
                   "_type": "map",
                   "map": [
@@ -221,7 +197,12 @@
                     ],
                     [
                       "_examples",
-                      []
+                      [
+                        {
+                          "text": "“… Date volnera lymphīs / abluam, et, extrēmus sī quis super hālitus errat, / ōre legam.” …",
+                          "translation": "“Grant that I may wash her wounds with water, and, if any last breath wanders over her, I will gather it with my lips.”"
+                        }
+                      ]
                     ]
                   ]
                 }
@@ -311,10 +292,28 @@
                     ]
                   ]
                 }
+              ],
+              [
+                "to be bound, fettered, detained",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "conjugation-3"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
               ]
             ]
           },
-          "etymology_text": "From Proto-Italic *legō, from Proto-Indo-European *leǵ-. Cognates include Ancient Greek λέγω (légō, “I speak, I choose, I mean”) and Albanian mbledh. May be related to lēx.",
+          "etymology_text": "Etymology tree\nProto-Indo-European *leǵ-der.\nProto-Italic *legōder.\nLatin lego\nFrom Proto-Italic *legō, from Proto-Indo-European *léǵeti, from *leǵ-. Cognates include Ancient Greek λέγω (légō, “I speak, I choose, I mean”) and Albanian mbledh. May be related to lēx.",
           "head_info_text": "legō (present infinitive legere, perfect active lēgī, supine lēctum); third conjugation",
           "backlink": "lego"
         }
@@ -327,25 +326,13 @@
         "0": {
           "ipa": [
             {
-              "ipa": "/ˈliː.li.um/",
+              "ipa": "[ˈliː.li.ũː]",
               "tags": [
-                "Classical"
+                "Classical-Latin"
               ]
             },
             {
-              "ipa": "[ˈlʲiːlʲiʊ̃ˑ]",
-              "tags": [
-                "Classical"
-              ]
-            },
-            {
-              "ipa": "/ˈli.li.um/",
-              "tags": [
-                "modern Italianate Ecclesiastical"
-              ]
-            },
-            {
-              "ipa": "[ˈliːlium]",
+              "ipa": "[ˈliː.li.um]",
               "tags": [
                 "modern Italianate Ecclesiastical"
               ]
@@ -375,50 +362,26 @@
               ]
             ]
           },
-          "etymology_text": "From Ancient Greek λείριον (leírion), from Fayyumic Coptic ϩⲗⲏⲣⲓ (hlēri), from Demotic (ḥrry), from Egyptian D2:D21-D21:X1-M2 (ḥrrt, “flower”).\nPerhaps also the root of Sanskrit हली (halī), हलिनी (halinī, “lily”).",
+          "etymology_text": "Borrowed from Ancient Greek λείριον (leírion). See there for more.",
           "head_info_text": "līlium n (genitive līliī or līlī); second declension",
           "backlink": "lilium"
         }
       }
     }
   },
-  "ū̆sque": {
-    "ū̆sque": {
+  "usque": {
+    "usque": {
       "adv": {
         "0": {
           "ipa": [
             {
-              "ipa": "/ˈuːs.kʷe/",
+              "ipa": "[ˈʊs.kʷɛ]",
               "tags": [
-                "Classical"
+                "Classical-Latin"
               ]
             },
             {
-              "ipa": "[ˈuːs̠kʷɛ]",
-              "tags": [
-                "Classical"
-              ]
-            },
-            {
-              "ipa": "/ˈus.kʷe/",
-              "tags": [
-                "Classical"
-              ]
-            },
-            {
-              "ipa": "[ˈʊs̠kʷɛ]",
-              "tags": [
-                "Classical"
-              ]
-            },
-            {
-              "ipa": "/ˈus.kwe/",
-              "tags": [
-                "modern Italianate Ecclesiastical"
-              ]
-            },
-            {
-              "ipa": "[ˈuskwe]",
+              "ipa": "[ˈus.kʷe]",
               "tags": [
                 "modern Italianate Ecclesiastical"
               ]
@@ -428,7 +391,7 @@
             "_type": "map",
             "map": [
               [
-                "all the way",
+                "constantly, continuously",
                 {
                   "_type": "map",
                   "map": [
@@ -446,44 +409,26 @@
                 }
               ],
               [
-                "until, up to (sometimes with \"ad\")",
+                "(used with ab (“from”) or ad (“to”)) as far as, up to, right until, all the way",
                 {
                   "_type": "map",
                   "map": [
                     [
                       "_tags",
                       [
-                        "not-comparable"
+                        "not-comparable",
+                        "used with ab (“from”) or ad (“to”)"
                       ]
                     ],
                     [
                       "_examples",
                       [
                         {
-                          "text": ", Latin Vulgate translation of Psalm 71:8;Canadian national motto\nĀ marī ū̆sque ad mare.",
+                          "text": ", Latin Vulgate translation of Psalm 71:8; Canadian national motto\nĀ marī usque ad mare.",
                           "translation": "From sea unto sea."
-                        }
-                      ]
-                    ]
-                  ]
-                }
-              ],
-              [
-                "constantly, continuously",
-                {
-                  "_type": "map",
-                  "map": [
-                    [
-                      "_tags",
-                      [
-                        "not-comparable"
-                      ]
-                    ],
-                    [
-                      "_examples",
-                      [
+                        },
                         {
-                          "text": "ab ōvō ū̆sque ad māla",
+                          "text": "ab ōvō usque ad māla",
                           "translation": "from the beginning to the end\n(literally, “from the egg to the apples”)"
                         }
                       ]
@@ -493,8 +438,8 @@
               ]
             ]
           },
-          "etymology_text": "From Proto-Italic *ū̆skʷe, from Proto-Indo-European *úds-kʷe, from *úd-s (“out, outward”, genitive) + *-kʷe (“and”). Cognate with Sanskrit उच्चा (uccā́), Younger Avestan 𐬎𐬯𐬗𐬀 (usca, “up, out”), Russian вы- (vy-, “out from”), Proto-Germanic *ūt, English out.",
-          "head_info_text": "ū̆sque (not comparable)",
+          "etymology_text": "From Proto-Italic *ū̆skʷe, from Proto-Indo-European *úds-kʷe, from *úd-s (“out, outward”, genitive) + *-kʷe (“and”). Cognate with Sanskrit उच्चा (uccā́), Younger Avestan 𐬎𐬯𐬗𐬀 (usca, “up, out”), Russian вы- (vy-, “out from”), Proto-Germanic *ūt, English out.\nHowever, cf. Lewis & Short, which says: usquĕ, adv. [us- for ubs-, from ubi with locative s; and que for qued, old abl. of quis; v. Corss. Ausspr. 2, 471; 838; cf.: quisque, usquam].",
+          "head_info_text": "usque (not comparable)",
           "backlink": "usque"
         }
       }
@@ -506,25 +451,13 @@
         "0": {
           "ipa": [
             {
-              "ipa": "/ˈreːk.tus/",
+              "ipa": "[ˈreːk.tʊs]",
               "tags": [
-                "Classical"
+                "Classical-Latin"
               ]
             },
             {
-              "ipa": "[ˈreːkt̪ʊs̠]",
-              "tags": [
-                "Classical"
-              ]
-            },
-            {
-              "ipa": "/ˈrek.tus/",
-              "tags": [
-                "modern Italianate Ecclesiastical"
-              ]
-            },
-            {
-              "ipa": "[ˈrɛkt̪us]",
+              "ipa": "[ˈrɛk.t̪us]",
               "tags": [
                 "modern Italianate Ecclesiastical"
               ]
@@ -596,10 +529,10 @@
                         "declension-1",
                         "declension-2",
                         "form-of",
-                        "in particular",
                         "participle",
                         "passive",
-                        "perfect"
+                        "perfect",
+                        "in particular"
                       ]
                     ],
                     [
@@ -616,7 +549,7 @@
               ]
             ]
           },
-          "etymology_text": "Perfect passive participle of regō (“to keep or lead straight, to guide”). Corresponds to Proto-Indo-European *h₃reǵtós (“having moved in a straight line”), from Proto-Indo-European *h₃reǵ- (“to straighten, direct”).",
+          "etymology_text": "Perfect passive participle of regō (“to keep or lead straight, to guide”). Inherited from Proto-Italic *rektos, corresponding to Proto-Indo-European *h₃reǵtós (“having moved in a straight line”), from Proto-Indo-European *h₃reǵ- (“to straighten, direct”).",
           "head_info_text": "rēctus (feminine rēcta, neuter rēctum, comparative rēctior, superlative rēctissimus, adverb rēctē); first/second-declension participle",
           "backlink": "rectus"
         }
@@ -629,20 +562,13 @@
         "0": {
           "ipa": [
             {
-              "ipa": "/ˈdo.mus/",
+              "ipa": "[ˈdɔ.mʊs]",
               "tags": [
-                "Classical",
-                "modern Italianate Ecclesiastical"
+                "Classical-Latin"
               ]
             },
             {
-              "ipa": "[ˈd̪ɔmʊs̠]",
-              "tags": [
-                "Classical"
-              ]
-            },
-            {
-              "ipa": "[ˈd̪ɔːmus]",
+              "ipa": "[ˈd̪ɔː.mus]",
               "tags": [
                 "modern Italianate Ecclesiastical"
               ]
@@ -661,8 +587,8 @@
                       [
                         "declension-2",
                         "declension-4",
-                        "feminine",
-                        "irregular"
+                        "irregular",
+                        "feminine"
                       ]
                     ],
                     [
@@ -692,8 +618,8 @@
                             [
                               "declension-2",
                               "declension-4",
-                              "feminine",
-                              "irregular"
+                              "irregular",
+                              "feminine"
                             ]
                           ],
                           [
@@ -716,8 +642,8 @@
                       [
                         "declension-2",
                         "declension-4",
-                        "feminine",
-                        "irregular"
+                        "irregular",
+                        "feminine"
                       ]
                     ],
                     [
@@ -737,8 +663,8 @@
                       [
                         "declension-2",
                         "declension-4",
-                        "feminine",
-                        "irregular"
+                        "irregular",
+                        "feminine"
                       ]
                     ],
                     [
@@ -756,9 +682,9 @@
                               "also",
                               "declension-2",
                               "declension-4",
-                              "feminine",
                               "irregular",
-                              "of the shell of invertebrates"
+                              "of the shell of invertebrates",
+                              "feminine"
                             ]
                           ],
                           [
@@ -781,8 +707,8 @@
                       [
                         "declension-2",
                         "declension-4",
-                        "feminine",
-                        "irregular"
+                        "irregular",
+                        "feminine"
                       ]
                     ],
                     [
@@ -795,8 +721,8 @@
                             [
                               "declension-2",
                               "declension-4",
-                              "feminine",
-                              "irregular"
+                              "irregular",
+                              "feminine"
                             ]
                           ],
                           [
@@ -816,8 +742,8 @@
                             [
                               "declension-2",
                               "declension-4",
-                              "feminine",
-                              "irregular"
+                              "irregular",
+                              "feminine"
                             ]
                           ],
                           [
@@ -840,9 +766,9 @@
                       [
                         "declension-2",
                         "declension-4",
-                        "feminine",
                         "idiomatic",
-                        "irregular"
+                        "irregular",
+                        "feminine"
                       ]
                     ],
                     [
@@ -879,10 +805,10 @@
                       [
                         "declension-2",
                         "declension-4",
-                        "feminine",
                         "idiomatic",
                         "irregular",
-                        "in locative case in phrases"
+                        "in locative case in phrases",
+                        "feminine"
                       ]
                     ],
                     [
@@ -904,7 +830,7 @@
             ]
           },
           "etymology_text": "For Proto-Italic *domos, from Proto-Indo-European *dṓm (“house, home”), from root *dem- (“to build”). Cognates include Ancient Greek δόμος (dómos), Albanian dhomë (“a chamber, a room”), Avestan 𐬛𐬀𐬨- (dam-) Sanskrit दम (dáma), Proto-Slavic *domъ and further to English timber. At least indirectly cognate to Latin dominus.\nThe feminine gender is probably due to the original root noun; attempts to transfer it to the 4th declension are due to 2nd declension feminines being unusual outside of tree names. Some manuscripts of Plautus show forms in dem-; De Vaan (2008) doubts their authenticity.",
-          "head_info_text": "domus f (irregular, variously declined, genitive domūs or domī); fourth declension, second declension",
+          "head_info_text": "domus f (genitive domūs or domī); irregular, variously declined, fourth declension, second declension",
           "backlink": "domus"
         }
       }

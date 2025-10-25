@@ -15,6 +15,7 @@
 !data/test/tidy/*.json
 !data/test/dict/**/*.json
 !data/test/ipa/**/*.json
+!registry.json
 
 *.zip
 *.gz
