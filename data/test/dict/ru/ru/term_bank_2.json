@@ -159,6 +159,23 @@
     ""
   ],
   [
+    "(в, на) снегу",
+    "(в, на) снегу́",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "снег",
+        [
+          "locative singular"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
     "продолжаю",
     "продолжа́ю",
     "non-lemma",
@@ -168,133 +185,7 @@
       [
         "продолжать",
         [
-          "first-person singular present"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "продолжал",
-    "продолжа́л",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "продолжать",
-        [
-          "first-person singular past"
-        ]
-      ],
-      [
-        "продолжать",
-        [
-          "second-person singular past"
-        ]
-      ],
-      [
-        "продолжать",
-        [
-          "third-person singular past"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "продолжала",
-    "продолжа́ла",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "продолжать",
-        [
-          "first-person singular past"
-        ]
-      ],
-      [
-        "продолжать",
-        [
-          "second-person singular past"
-        ]
-      ],
-      [
-        "продолжать",
-        [
-          "third-person singular past"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "продолжаешь",
-    "продолжа́ешь",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "продолжать",
-        [
-          "second-person singular present"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "продолжай",
-    "продолжа́й",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "продолжать",
-        [
-          "second-person singular imperative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "продолжает",
-    "продолжа́ет",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "продолжать",
-        [
-          "third-person singular present"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "продолжало",
-    "продолжа́ло",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "продолжать",
-        [
-          "third-person singular past"
+          "present singular first-person"
         ]
       ]
     ],
@@ -311,7 +202,7 @@
       [
         "продолжать",
         [
-          "first-person plural present"
+          "present plural first-person"
         ]
       ]
     ],
@@ -319,8 +210,8 @@
     ""
   ],
   [
-    "продолжали",
-    "продолжа́ли",
+    "продолжаешь",
+    "продолжа́ешь",
     "non-lemma",
     "",
     0,
@@ -328,19 +219,7 @@
       [
         "продолжать",
         [
-          "first-person plural past"
-        ]
-      ],
-      [
-        "продолжать",
-        [
-          "second-person plural past"
-        ]
-      ],
-      [
-        "продолжать",
-        [
-          "third-person plural past"
+          "present singular second-person"
         ]
       ]
     ],
@@ -357,7 +236,7 @@
       [
         "продолжать",
         [
-          "second-person plural present"
+          "present plural second-person"
         ]
       ]
     ],
@@ -365,8 +244,8 @@
     ""
   ],
   [
-    "продолжайте",
-    "продолжа́йте",
+    "продолжает",
+    "продолжа́ет",
     "non-lemma",
     "",
     0,
@@ -374,7 +253,7 @@
       [
         "продолжать",
         [
-          "second-person plural imperative"
+          "present singular third-person"
         ]
       ]
     ],
@@ -391,7 +270,109 @@
       [
         "продолжать",
         [
-          "third-person plural present"
+          "present plural third-person"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "продолжал",
+    "продолжа́л",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "продолжать",
+        [
+          "past masculine"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "продолжали",
+    "продолжа́ли",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "продолжать",
+        [
+          "past masculine feminine neuter"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "продолжала",
+    "продолжа́ла",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "продолжать",
+        [
+          "past feminine"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "продолжало",
+    "продолжа́ло",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "продолжать",
+        [
+          "past neuter"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "продолжай",
+    "продолжа́й",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "продолжать",
+        [
+          "imperative second-person"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "продолжайте",
+    "продолжа́йте",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "продолжать",
+        [
+          "imperative second-person"
         ]
       ]
     ],
@@ -408,7 +389,7 @@
       [
         "продолжать",
         [
-          "active present"
+          "participle active present"
         ]
       ]
     ],
@@ -425,58 +406,7 @@
       [
         "продолжать",
         [
-          "active past"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "продолжая",
-    "продолжа́я",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "продолжать",
-        [
-          "adverbial present"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "продолжав",
-    "продолжа́в",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "продолжать",
-        [
-          "adverbial past"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "продолжавши",
-    "продолжа́вши",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "продолжать",
-        [
-          "adverbial past"
+          "participle active past"
         ]
       ]
     ],
@@ -493,7 +423,58 @@
       [
         "продолжать",
         [
-          "passive present"
+          "participle passive present"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "продолжая",
+    "продолжа́я",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "продолжать",
+        [
+          "adverbial participle present"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "продолжав",
+    "продолжа́в",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "продолжать",
+        [
+          "adverbial participle past"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "продолжавши",
+    "продолжа́вши",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "продолжать",
+        [
+          "adverbial participle past"
         ]
       ]
     ],
@@ -511,23 +492,6 @@
         "продолжать",
         [
           "future"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "продолжить",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "продолжать",
-        [
-          "perfective"
         ]
       ]
     ],

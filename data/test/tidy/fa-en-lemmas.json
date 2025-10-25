@@ -1,28 +1,27 @@
 {
   "ملک": {
-    "molk": {
+    "malak": {
       "noun": {
-        "5": {
+        "1": {
           "ipa": [
             {
-              "ipa": "[mulk]",
+              "ipa": "/ma.ˈlak/",
               "tags": [
-                "Classical-Persian",
-                "Hazaragi",
-                "Tajik",
-                "formal"
+                "Classical-Persian"
               ]
             },
             {
-              "ipa": "[mʊlk]",
+              "ipa": "[mä.lák]",
               "tags": [
                 "Dari",
                 "formal",
-                "Kabuli"
+                "Kabuli",
+                "Hazaragi",
+                "Tajik"
               ]
             },
             {
-              "ipa": "[molkʲ]",
+              "ipa": "[mæ.lǽkʲ]",
               "tags": [
                 "Iran",
                 "formal"
@@ -33,27 +32,30 @@
             "_type": "map",
             "map": [
               [
-                "(Khorasan) a kind of pea",
+                "angel",
                 {
                   "_type": "map",
                   "map": [
                     [
                       "_tags",
-                      [
-                        "Khorasan"
-                      ]
+                      []
                     ],
                     [
                       "_examples",
-                      []
+                      [
+                        {
+                          "text": "روز چرا چو آید کاعمال من بپرسد\nگرید ملک بصد درد از سوزهای هویم",
+                          "translation": "When the Day [of Judgment] when he inquires my deeds arrives, why\nDoes the angel weep from my laments' anguish with a hundredfold pain?"
+                        }
+                      ]
                     ]
                   ]
                 }
               ]
             ]
           },
-          "etymology_text": "table\nBorrowed from Hindustani مونگ / मूँग (mūṅg)",
-          "head_info_text": "ملک • (molk)",
+          "etymology_text": "Borrowed from Arabic مَلَك (malak, “angel”).",
+          "head_info_text": "ملک • (malak) (plural ملائک (malâ'ek), Tajik spelling малак)",
           "backlink": "ملک"
         }
       }
@@ -65,7 +67,7 @@
         "0": {
           "ipa": [
             {
-              "ipa": "[fɑːɾ.ˈsiː]",
+              "ipa": "/faːr.ˈsiː/",
               "tags": [
                 "Classical-Persian"
               ]

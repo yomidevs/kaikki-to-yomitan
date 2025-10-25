@@ -3,27 +3,26 @@
     "ملک",
     "ipa",
     {
-      "reading": "molk",
+      "reading": "malak",
       "transcriptions": [
         {
-          "ipa": "[mulk]",
+          "ipa": "/ma.ˈlak/",
           "tags": [
-            "classic",
-            "Hazaragi",
-            "🇹🇯",
-            "frm"
+            "classic"
           ]
         },
         {
-          "ipa": "[mʊlk]",
+          "ipa": "[mä.lák]",
           "tags": [
             "🇦🇫",
             "frm",
-            "🇦🇫KA"
+            "🇦🇫KA",
+            "Hazaragi",
+            "🇹🇯"
           ]
         },
         {
-          "ipa": "[molkʲ]",
+          "ipa": "[mæ.lǽkʲ]",
           "tags": [
             "🇮🇷",
             "frm"
@@ -39,7 +38,7 @@
       "reading": "fârsi",
       "transcriptions": [
         {
-          "ipa": "[fɑːɾ.ˈsiː]",
+          "ipa": "/faːr.ˈsiː/",
           "tags": [
             "classic"
           ]

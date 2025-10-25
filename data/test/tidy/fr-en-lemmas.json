@@ -5,7 +5,7 @@
         "0": {
           "ipa": [
             {
-              "ipa": "/pʁɑ̃dʁ/",
+              "ipa": "/pʁɑ̃.dʁə/",
               "tags": []
             }
           ],
@@ -96,7 +96,7 @@
                       "_examples",
                       [
                         {
-                          "text": "prendre quelque chose à quelqu’un",
+                          "text": "prendre quelque chose à quelqu'un",
                           "translation": "to take something from someone"
                         }
                       ]
@@ -194,66 +194,68 @@
                 }
               ],
               [
-                "(transitive with à)",
+                "(intransitive) to get into, to come over (to cause to behave uncharacteristically, to affect in a surprising manner, to possess) [with à ‘someone’]",
                 {
                   "_type": "map",
                   "map": [
                     [
                       "_tags",
                       [
-                        "in various idiomatic expressions",
-                        "transitive",
-                        "with à"
+                        "intransitive"
                       ]
                     ],
                     [
-                      "(transitive, in various idiomatic expressions) to start having a negative feeling towards someone",
-                      {
-                        "_type": "map",
-                        "map": [
-                          [
-                            "_tags",
-                            [
-                              "in various idiomatic expressions",
-                              "transitive",
-                              "with à"
-                            ]
-                          ],
-                          [
-                            "_examples",
-                            [
-                              {
-                                "text": "Qu’est-ce qui t’a pris ? Qu’est-ce qui t’est passé par la tête ?",
-                                "translation": "What were you thinking? What got into you? What came over you?"
-                              },
-                              {
-                                "text": "Qu’est-ce qui lui a pris ? Quelle mouche l’a piqué ?",
-                                "translation": "What was he thinking? What got into him?"
-                              },
-                              {
-                                "text": "bien lui en prit",
-                                "translation": "good for him; it was a good choice (literally, “he took it well”)"
-                              },
-                              {
-                                "text": "mal lui en prit",
-                                "translation": "too bad for him; it was a bad choice (literally, “he took it badly”)"
-                              },
-                              {
-                                "text": "prendre en aversion",
-                                "translation": "take an aversion (to)"
-                              },
-                              {
-                                "text": "prendre en grippe",
-                                "translation": "take a dislike (to)"
-                              },
-                              {
-                                "text": "prendre en dégoût",
-                                "translation": "become disgusted (by)"
-                              }
-                            ]
-                          ]
-                        ]
-                      }
+                      "_examples",
+                      [
+                        {
+                          "text": "Qu'est-ce qui t'a pris ? Qu'est-ce qui t'est passé par la tête ?",
+                          "translation": "What were you thinking? What got into you? What came over you?"
+                        },
+                        {
+                          "text": "Qu'est-ce qui lui a pris ? Quelle mouche l'a piqué ?",
+                          "translation": "What was he thinking? What got into him?"
+                        },
+                        {
+                          "text": "bien lui en prit",
+                          "translation": "good for him; it was a good choice"
+                        },
+                        {
+                          "text": "mal lui en prit",
+                          "translation": "too bad for him; it was a bad choice"
+                        }
+                      ]
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(transitive, in various idiomatic expressions) to start having a negative feeling towards someone",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "transitive",
+                        "in various idiomatic expressions"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "prendre en aversion",
+                          "translation": "take an aversion (to)"
+                        },
+                        {
+                          "text": "prendre en grippe",
+                          "translation": "take a dislike (to)"
+                        },
+                        {
+                          "text": "prendre en dégoût",
+                          "translation": "become disgusted (by)"
+                        }
+                      ]
                     ]
                   ]
                 }
@@ -282,7 +284,7 @@
                           "translation": "to gain a promotion"
                         },
                         {
-                          "text": "prendre de l’avance",
+                          "text": "prendre de l'avance",
                           "translation": "to gain ground"
                         },
                         {
@@ -322,11 +324,11 @@
                           "translation": "to fail"
                         },
                         {
-                          "text": "prendre de l’élan",
+                          "text": "prendre de l'élan",
                           "translation": "to gain momentum"
                         },
                         {
-                          "text": "prendre de l’âge",
+                          "text": "prendre de l'âge",
                           "translation": "to get older"
                         },
                         {
@@ -334,7 +336,7 @@
                           "translation": "to gain value"
                         },
                         {
-                          "text": "prendre de l’importance",
+                          "text": "prendre de l'importance",
                           "translation": "to become important"
                         }
                       ]
@@ -406,7 +408,7 @@
                       "_examples",
                       [
                         {
-                          "text": "il prend [quelque chose] à [quelqu’un]",
+                          "text": "il prend [quelque chose] à [quelqu'un]",
                           "translation": "[something] comes over [someone]"
                         },
                         {
@@ -414,7 +416,7 @@
                           "translation": "A fancy comes over him to set fire to the house."
                         },
                         {
-                          "text": "Et s’il me prend l’envie d’ m’en aller, enferme-moi et jette la clé.",
+                          "text": "Et s'il me prend l'envie d' m'en aller, enferme-moi et jette la clé.",
                           "translation": "And if I feel like leaving, lock me up and throw away the key."
                         }
                       ]
@@ -424,7 +426,7 @@
               ]
             ]
           },
-          "etymology_text": "Inherited from Middle French prendre, from Old French prendre, prandre, from Latin prēndere, alternative form of prehendere (“to seize”), present active infinitive of prehendō, from prae- (“before”) + *hendō (“to take, seize”) (not attested without prefix), from Proto-Indo-European *gʰed-.",
+          "etymology_text": "Inherited from Middle French prendre, from Old French prendre, prandre, from Latin prēndere, alternative form of prehendere (“to seize”), from prae- (“before”) + *hendō (“to take, seize”) (not attested without prefix), from Proto-Indo-European *gʰed-.",
           "backlink": "prendre"
         }
       }
@@ -459,7 +461,7 @@
                       "_examples",
                       [
                         {
-                          "text": "Il semblerait qu’il y ait des différences significatives entre les deux groupes.",
+                          "text": "Il semblerait qu'il y ait des différences significatives entre les deux groupes.",
                           "translation": "There would seem to be significant differences between the two groups."
                         }
                       ]
@@ -631,7 +633,7 @@
                           "translation": "Yes, I agree with you."
                         },
                         {
-                          "text": "tomber d’accord",
+                          "text": "tomber d'accord",
                           "translation": "to reach an agreement, to agree"
                         }
                       ]

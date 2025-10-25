@@ -17,7 +17,7 @@
     ""
   ],
   [
-    "akuj",
+    "akëll",
     "",
     "non-lemma",
     "",
@@ -26,7 +26,7 @@
       [
         "akull",
         [
-          "plural"
+          "alternative dialectal"
         ]
       ]
     ],
@@ -34,7 +34,41 @@
     ""
   ],
   [
-    "gjuhëra／gjuhëna",
+    "hakull",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "akull",
+        [
+          "alternative dialectal"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "gjuhëra",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "gjuhë",
+        [
+          "plural dialectal"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "gjuhëna",
     "",
     "non-lemma",
     "",
@@ -199,6 +233,142 @@
         "gjuhë",
         [
           "plural indefinite ablative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "gjuhunë",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "gjuhë",
+        [
+          "alternative Gheg"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "gjuhënë",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "gjuhë",
+        [
+          "alternative Gheg"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "guhë",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "gjuhë",
+        [
+          "alternative Gheg Northern"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "gû",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "gjuhë",
+        [
+          "alternative Kosovo dialectal"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "gju",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "gjuhë",
+        [
+          "alternative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "gëluhë",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "gjuhë",
+        [
+          "alternative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "gjufë",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "gjuhë",
+        [
+          "alternative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "glufë",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "gjuhë",
+        [
+          "alternative"
         ]
       ]
     ],

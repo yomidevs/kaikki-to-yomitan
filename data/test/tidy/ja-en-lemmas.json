@@ -1,5 +1,5 @@
 {
-  "楽しい": {
+  "楽しい -i": {
     "たのしい": {
       "adj": {
         "0": {
@@ -30,7 +30,7 @@
               ]
             ]
           },
-          "etymology_text": "⟨tano₁siki₁⟩ → */tanʷosikʲi/ → /tanoshii/\nFrom Old Japanese. First attested in the Kojiki of 712 CE. No Ryukyuan cognates exist; as as result, further derivation unknown. Theories include:\n* A compound of 手 (ta, “hand”, combining form) + 伸す (nosu, “to extend”)\n*: This is problematic, as nosu has first been attested starting from the early 900s, with no A/B distinction (see Jōdai Tokushu Kanazukai for details).\n* From 田神 (tano, literally “rice paddy god”)\n*: No reading of 神 (*no, “god”) exists.\n* A borrowing from an unknown language\n*: No words resemble *tanV meaning \"fun\" or \"to enjoy\".",
+          "etymology_text": "⟨tano₁siki₁⟩ → */tanʷosikʲi/ → /tanoshii/\nFrom Old Japanese. First attested in the Kojiki of 712 CE. No Ryukyuan cognates exist; as a result, further derivation unknown. Theories include:\n* A compound of 手 (ta, “hand”, combining form) + 伸す (nosu, “to extend”)\n*: This is problematic, as nosu has first been attested starting from the early 900s, with no A/B distinction (see Jōdai Tokushu Kanazukai for details).\n* From 田神 (tano, literally “rice paddy god”)\n*: No reading of 神 (*no, “god”) exists.\n* A borrowing from an unknown language\n*: No words resemble *tanV meaning \"fun\" or \"to enjoy\".",
           "morpheme_text": "Theories include:\n* A compound of 手 (ta, “hand”, combining form) + 伸す (nosu, “to extend”)\n*: This is problematic, as nosu has first been attested starting from the early 900s, with no A/B distinction (see Jōdai Tokushu Kanazukai for details).",
           "head_info_text": "楽(たの)しい • (tanoshii) -i (adverbial 楽(たの)しく (tanoshiku))",
           "backlink": "楽しい"
@@ -38,7 +38,7 @@
       }
     }
   },
-  "好き": {
+  "好き -na": {
     "すき": {
       "adj": {
         "1": {
@@ -46,21 +46,13 @@
             {
               "ipa": "[sɨ̥kʲi]",
               "tags": []
-            },
-            {
-              "ipa": "/su.ki/",
-              "tags": []
-            },
-            {
-              "ipa": "[sɯᵝ˦.ki˨]",
-              "tags": []
             }
           ],
           "glossTree": {
             "_type": "map",
             "map": [
               [
-                "liked, favorite",
+                "liked, likable",
                 {
                   "_type": "map",
                   "map": [
@@ -80,12 +72,12 @@
                           "translation": "It's precisely because I like you [because of my fondness for you] that I'm working this hard."
                         },
                         {
-                          "text": "どうとも好きにしなさい。",
-                          "translation": "Feel free to do as you like."
+                          "text": "好きです。",
+                          "translation": "“I like you.” → idiomatically used to express: “I love you.”"
                         },
                         {
-                          "text": "好きです。\nSuki desu.\n“I like you.” → idiomatically used to express: “I love you.”",
-                          "translation": ""
+                          "text": "どうとも好きにしなさい。",
+                          "translation": "Feel free to do as you like."
                         }
                       ]
                     ]
@@ -127,6 +119,10 @@
                       "_examples",
                       [
                         {
+                          "text": "狸 兼名苑云狸［音𨤲和名太奴木］摶鳥為粮者也",
+                          "translation": "Raccoon dog: According to Jian Ming Yuan (兼名苑), raccoon dogs [read as 𨤲 (ri), native Japanese 太奴木 (tanuki)] always prey on birds."
+                        },
+                        {
                           "text": "アライグマなら尻尾にシマがある。どう見でもタヌキだ。",
                           "translation": "If you're a raccoon, you'd have stripes on your tail. No matter how you look at it, you're a raccoon dog."
                         }
@@ -159,7 +155,7 @@
                 }
               ],
               [
-                "Short for 狸饂飩 (tanuki-udon) and 狸蕎麦 (tanuki-soba): styles of various noodle dishes",
+                "short for 狸饂飩 (tanuki-udon) and 狸蕎麦 (tanuki-soba): styles of various noodle dishes",
                 {
                   "_type": "map",
                   "map": [
@@ -178,7 +174,7 @@
                 }
               ],
               [
-                "(rare) Short for 狸寝入り (tanuki neiri): pretending to be asleep",
+                "(rare) short for 狸寝入り (tanuki neiri): pretending to be asleep",
                 {
                   "_type": "map",
                   "map": [
@@ -203,7 +199,7 @@
                 }
               ],
               [
-                "(rare, obsolete) Short for 狸汁 (tanuki-jiru): a soup made from tanuki meat mixed with daikon, burdock root, etc.",
+                "(rare, obsolete) short for 狸汁 (tanuki-jiru): a soup made from tanuki meat mixed with daikon, burdock root, etc.",
                 {
                   "_type": "map",
                   "map": [
@@ -232,7 +228,7 @@
       }
     }
   },
-  "走る": {
+  "走る intransitive godan": {
     "はしる": {
       "verb": {
         "0": {
@@ -253,6 +249,15 @@
                     [
                       "_tags",
                       []
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "マラソン選手が走り出した。",
+                          "translation": "Marathon athlete(s) started running."
+                        }
+                      ]
                     ],
                     [
                       "to move forward; (of a machine) to operate, function; (of objects) to move at a high speed (of a vehicle)",
@@ -295,15 +300,6 @@
                           ]
                         ]
                       }
-                    ],
-                    [
-                      "_examples",
-                      [
-                        {
-                          "text": "マラソン選手が走り出した。",
-                          "translation": "Marathon athlete(s) started running."
-                        }
-                      ]
                     ]
                   ]
                 }
@@ -438,8 +434,12 @@
                       "_examples",
                       [
                         {
-                          "text": "山脈が南北に走る。\nSanmyaku ga nanboku ni hashiru.\nThe mountain range runs north–south.",
-                          "translation": ""
+                          "text": "山脈が南北に走る。",
+                          "translation": "The mountain range runs north–south."
+                        },
+                        {
+                          "text": "社会に亀裂が走る",
+                          "translation": "a crack (division) spreads in society"
                         }
                       ]
                     ]
@@ -508,7 +508,7 @@
                 }
               ],
               [
-                "(music) Alternative spelling of ハシる",
+                "(music) alternative spelling of ハシる",
                 {
                   "_type": "map",
                   "map": [
@@ -534,7 +534,7 @@
       }
     }
   },
-  "五色": {
+  "五色 ^": {
     "ごしき": {
       "noun": {
         "0": {
@@ -568,7 +568,7 @@
                 }
               ],
               [
-                "melon, gourd",
+                "synonym of 瓜 (uri, “melon, gourd”)",
                 {
                   "_type": "map",
                   "map": [
@@ -623,7 +623,7 @@
                 }
               ],
               [
-                "melon, gourd",
+                "synonym of 瓜 (uri, “melon, gourd”)",
                 {
                   "_type": "map",
                   "map": [

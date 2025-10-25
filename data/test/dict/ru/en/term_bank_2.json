@@ -296,6 +296,23 @@
     ""
   ],
   [
+    "снѣгъ",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "снег",
+        [
+          "alternative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
     "белеть",
     "беле́ть",
     "non-lemma",
@@ -475,7 +492,7 @@
       [
         "побеле́ть",
         [
-          "singular imperative"
+          "second-person singular imperative"
         ]
       ]
     ],
@@ -492,7 +509,7 @@
       [
         "побеле́ть",
         [
-          "plural imperative"
+          "second-person plural imperative"
         ]
       ]
     ],
@@ -580,8 +597,8 @@
     ""
   ],
   [
-    "зимнее",
-    "зи́мнее",
+    "зимне",
+    "зи́мне",
     "non-lemma",
     "",
     0,
@@ -589,13 +606,19 @@
       [
         "зи́мний",
         [
-          "accusative neuter"
+          "accusative singular neuter"
         ]
       ],
       [
         "зи́мний",
         [
-          "nominative neuter"
+          "nominative singular neuter"
+        ]
+      ],
+      [
+        "зи́мний",
+        [
+          "vocative singular neuter"
         ]
       ]
     ],
@@ -603,8 +626,8 @@
     ""
   ],
   [
-    "зимняя",
-    "зи́мняя",
+    "зимна",
+    "зи́мна",
     "non-lemma",
     "",
     0,
@@ -612,7 +635,13 @@
       [
         "зи́мний",
         [
-          "nominative feminine"
+          "nominative singular feminine"
+        ]
+      ],
+      [
+        "зи́мний",
+        [
+          "vocative singular feminine"
         ]
       ]
     ],
@@ -620,8 +649,8 @@
     ""
   ],
   [
-    "зимние",
-    "зи́мние",
+    "зимні",
+    "зи́мні",
     "non-lemma",
     "",
     0,
@@ -637,28 +666,11 @@
         [
           "nominative plural"
         ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "зимнего",
-    "зи́мнего",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "зи́мний",
-        [
-          "accusative masculine animate"
-        ]
       ],
       [
         "зи́мний",
         [
-          "genitive masculine neuter"
+          "vocative plural"
         ]
       ]
     ],
@@ -666,8 +678,8 @@
     ""
   ],
   [
-    "зимней",
-    "зи́мней",
+    "зимного",
+    "зи́много",
     "non-lemma",
     "",
     0,
@@ -675,25 +687,30 @@
       [
         "зи́мний",
         [
-          "dative feminine"
+          "accusative singular masculine animate"
         ]
       ],
       [
         "зи́мний",
         [
-          "genitive feminine"
+          "genitive singular masculine neuter"
         ]
-      ],
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "зимної",
+    "зи́мної",
+    "non-lemma",
+    "",
+    0,
+    [
       [
         "зи́мний",
         [
-          "instrumental feminine"
-        ]
-      ],
-      [
-        "зи́мний",
-        [
-          "prepositional feminine"
+          "genitive singular feminine"
         ]
       ]
     ],
@@ -722,7 +739,7 @@
       [
         "зи́мний",
         [
-          "prepositional plural"
+          "locative plural"
         ]
       ]
     ],
@@ -730,8 +747,8 @@
     ""
   ],
   [
-    "зимнему",
-    "зи́мнему",
+    "зимному",
+    "зи́мному",
     "non-lemma",
     "",
     0,
@@ -739,7 +756,36 @@
       [
         "зи́мний",
         [
-          "dative masculine neuter"
+          "dative singular masculine neuter"
+        ]
+      ],
+      [
+        "зи́мний",
+        [
+          "locative singular masculine neuter"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "зимній",
+    "зи́мній",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "зи́мний",
+        [
+          "dative singular feminine"
+        ]
+      ],
+      [
+        "зи́мний",
+        [
+          "locative singular feminine"
         ]
       ]
     ],
@@ -756,13 +802,13 @@
       [
         "зи́мний",
         [
-          "instrumental masculine neuter"
+          "dative plural"
         ]
       ],
       [
         "зи́мний",
         [
-          "dative plural"
+          "instrumental singular masculine neuter"
         ]
       ]
     ],
@@ -770,8 +816,8 @@
     ""
   ],
   [
-    "зимнюю",
-    "зи́мнюю",
+    "зимну",
+    "зи́мну",
     "non-lemma",
     "",
     0,
@@ -779,7 +825,7 @@
       [
         "зи́мний",
         [
-          "accusative feminine"
+          "accusative singular feminine"
         ]
       ]
     ],
@@ -787,8 +833,8 @@
     ""
   ],
   [
-    "зимнею",
-    "зи́мнею",
+    "зимною",
+    "зи́мною",
     "non-lemma",
     "",
     0,
@@ -796,7 +842,7 @@
       [
         "зи́мний",
         [
-          "instrumental feminine"
+          "instrumental singular feminine"
         ]
       ]
     ],
@@ -821,8 +867,8 @@
     ""
   ],
   [
-    "зимнем",
-    "зи́мнем",
+    "зимнім",
+    "зи́мнім",
     "non-lemma",
     "",
     0,
@@ -830,58 +876,7 @@
       [
         "зи́мний",
         [
-          "prepositional masculine neuter"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "зимне",
-    "зи́мне",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "зи́мний",
-        [
-          "neuter short-form"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "зимня",
-    "зи́мня",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "зи́мний",
-        [
-          "feminine short-form"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "зимни",
-    "зи́мни",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "зи́мний",
-        [
-          "plural short-form"
+          "locative singular masculine neuter"
         ]
       ]
     ],

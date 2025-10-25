@@ -249,6 +249,20 @@
                 ]
               ]
             }
+          ],
+          [
+            "снѣгъ",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "alternative"
+                  ]
+                ]
+              ]
+            }
           ]
         ]
       }
@@ -406,7 +420,7 @@
                 [
                   "verb",
                   [
-                    "singular imperative"
+                    "second-person singular imperative"
                   ]
                 ]
               ]
@@ -420,7 +434,7 @@
                 [
                   "verb",
                   [
-                    "plural imperative"
+                    "second-person plural imperative"
                   ]
                 ]
               ]
@@ -493,36 +507,38 @@
         "_type": "map",
         "map": [
           [
-            "зи́мнее",
+            "зи́мне",
             {
               "_type": "map",
               "map": [
                 [
                   "adj",
                   [
-                    "accusative neuter",
-                    "nominative neuter"
+                    "accusative singular neuter",
+                    "nominative singular neuter",
+                    "vocative singular neuter"
                   ]
                 ]
               ]
             }
           ],
           [
-            "зи́мняя",
+            "зи́мна",
             {
               "_type": "map",
               "map": [
                 [
                   "adj",
                   [
-                    "nominative feminine"
+                    "nominative singular feminine",
+                    "vocative singular feminine"
                   ]
                 ]
               ]
             }
           ],
           [
-            "зи́мние",
+            "зи́мні",
             {
               "_type": "map",
               "map": [
@@ -530,39 +546,37 @@
                   "adj",
                   [
                     "accusative plural inanimate",
-                    "nominative plural"
+                    "nominative plural",
+                    "vocative plural"
                   ]
                 ]
               ]
             }
           ],
           [
-            "зи́мнего",
+            "зи́много",
             {
               "_type": "map",
               "map": [
                 [
                   "adj",
                   [
-                    "accusative masculine animate",
-                    "genitive masculine neuter"
+                    "accusative singular masculine animate",
+                    "genitive singular masculine neuter"
                   ]
                 ]
               ]
             }
           ],
           [
-            "зи́мней",
+            "зи́мної",
             {
               "_type": "map",
               "map": [
                 [
                   "adj",
                   [
-                    "dative feminine",
-                    "genitive feminine",
-                    "instrumental feminine",
-                    "prepositional feminine"
+                    "genitive singular feminine"
                   ]
                 ]
               ]
@@ -578,21 +592,37 @@
                   [
                     "accusative plural animate",
                     "genitive plural",
-                    "prepositional plural"
+                    "locative plural"
                   ]
                 ]
               ]
             }
           ],
           [
-            "зи́мнему",
+            "зи́мному",
             {
               "_type": "map",
               "map": [
                 [
                   "adj",
                   [
-                    "dative masculine neuter"
+                    "dative singular masculine neuter",
+                    "locative singular masculine neuter"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "зи́мній",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "adj",
+                  [
+                    "dative singular feminine",
+                    "locative singular feminine"
                   ]
                 ]
               ]
@@ -606,36 +636,36 @@
                 [
                   "adj",
                   [
-                    "instrumental masculine neuter",
-                    "dative plural"
+                    "dative plural",
+                    "instrumental singular masculine neuter"
                   ]
                 ]
               ]
             }
           ],
           [
-            "зи́мнюю",
+            "зи́мну",
             {
               "_type": "map",
               "map": [
                 [
                   "adj",
                   [
-                    "accusative feminine"
+                    "accusative singular feminine"
                   ]
                 ]
               ]
             }
           ],
           [
-            "зи́мнею",
+            "зи́мною",
             {
               "_type": "map",
               "map": [
                 [
                   "adj",
                   [
-                    "instrumental feminine"
+                    "instrumental singular feminine"
                   ]
                 ]
               ]
@@ -656,56 +686,14 @@
             }
           ],
           [
-            "зи́мнем",
+            "зи́мнім",
             {
               "_type": "map",
               "map": [
                 [
                   "adj",
                   [
-                    "prepositional masculine neuter"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "зи́мне",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "adj",
-                  [
-                    "neuter short-form"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "зи́мня",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "adj",
-                  [
-                    "feminine short-form"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "зи́мни",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "adj",
-                  [
-                    "plural short-form"
+                    "locative singular masculine neuter"
                   ]
                 ]
               ]

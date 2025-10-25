@@ -1,7 +1,7 @@
 {
   "akull": {
     "akull": {
-      "noun": {
+      "adv": {
         "1": {
           "ipa": [
             {
@@ -13,15 +13,13 @@
             "_type": "map",
             "map": [
               [
-                "ice",
+                "very",
                 {
                   "_type": "map",
                   "map": [
                     [
                       "_tags",
-                      [
-                        "masculine"
-                      ]
+                      []
                     ],
                     [
                       "_examples",
@@ -33,7 +31,6 @@
             ]
           },
           "etymology_text": "Uncertain. Possibly:\n# A derivation from Proto-Indo-European *keHl- whence also Proto-Celtic *kaletos (“hard”), Proto-Slavic *kaliti (“to temper, harden”), Latin callum (“hardened skin”).\n# Borrowed from Germanic, ultimately from Proto-Germanic *jekulaz (“icicle”).\n# Akin Old Armenian ոյծ (oyc, “cold, frost”), suffixed with -ull, though the two terms are phonologically incompatible.",
-          "head_info_text": "akull m (plural akuj)",
           "backlink": "akull"
         }
       }
@@ -46,7 +43,15 @@
           "ipa": [
             {
               "ipa": "/ˈɟuhə/",
-              "tags": []
+              "tags": [
+                "northern Tosk, Lab"
+              ]
+            },
+            {
+              "ipa": "[ˈɟuh]",
+              "tags": [
+                "southern Gheg, central Gheg"
+              ]
             },
             {
               "ipa": "[ˈɡjuː(h)]",
@@ -72,7 +77,8 @@
               "ipa": "[ˈɡʎuhə]",
               "tags": [
                 "Arbëresh",
-                "Arvanitika"
+                "Arvanitika",
+                "Cham"
               ]
             },
             {
@@ -97,6 +103,19 @@
                       ]
                     ],
                     [
+                      "_examples",
+                      [
+                        {
+                          "text": "gjuhë lope e zier",
+                          "translation": "boiled beef tongue"
+                        },
+                        {
+                          "text": "Dogji gjuhën.",
+                          "translation": "Burned its tongue."
+                        }
+                      ]
+                    ],
+                    [
                       "(figurative) speech, talking",
                       {
                         "_type": "map",
@@ -117,7 +136,7 @@
                               },
                               {
                                 "text": "E ka gjuhën të gjatë.",
-                                "translation": "(literally, “She has a long tongue.”)"
+                                "translation": "She is very talkative."
                               }
                             ]
                           ]
@@ -159,19 +178,6 @@
                           ]
                         ]
                       }
-                    ],
-                    [
-                      "_examples",
-                      [
-                        {
-                          "text": "gjuhë lope e zier",
-                          "translation": "boiled beef tongue"
-                        },
-                        {
-                          "text": "Dogji gjuhën.",
-                          "translation": "I burned my tongue."
-                        }
-                      ]
                     ]
                   ]
                 }
@@ -185,6 +191,15 @@
                       "_tags",
                       [
                         "feminine"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      [
+                        {
+                          "text": "gjuha shqipe",
+                          "translation": "the Albanian language"
+                        }
                       ]
                     ],
                     [
@@ -282,22 +297,13 @@
                           ]
                         ]
                       }
-                    ],
-                    [
-                      "_examples",
-                      [
-                        {
-                          "text": "gjuha shqipe",
-                          "translation": "the Albanian language"
-                        }
-                      ]
                     ]
                   ]
                 }
               ]
             ]
           },
-          "etymology_text": "Unclear. Akin to Arbëresh glunzë (“voice”). Possibilities include:\n# Inherited from Proto-Indo-European *gol(H)-s-os, via a byform *gl̥(H)-s-ós, whence also Proto-Slavic *golsъ (“voice”), Lithuanian gal̃sas (“voice”), Proto-Germanic *kalz-ōną (“to call”). However the medial -h- instead of expected **-sh- is left unexplained.\n# From a byform *ǵʰnud-sḱ-eh₂, doubly methasised from Proto-Indo-European *dn̥ǵʰwéh₂s ~ *dn̥ǵʰuh₂és (“tongue”). Compare Tocharian B kantwo, also metathised. The outcome gl- (and later gj-) from original *ǵ(ʰ)n- is also attested in gju (“knee”). The usage of the infixed *-sḱ- does not seem have any parallels.\n# A connection with Ancient Greek γλῶσσα (glôssa), itself of unclear origin, cannot be proven.",
+          "etymology_text": "Unclear. Akin to Arbëresh Albanian glunzë (“voice”). Possibilities include:\n# Inherited from Proto-Indo-European *gol(H)-s-os, via a byform *gl̥(H)-s-ós, whence also Proto-Slavic *golsъ (“voice”), Lithuanian gal̃sas (“voice”), Proto-Germanic *kalz-ōną (“to call”). However the medial -h- instead of expected **-sh- is left unexplained.\n# From a byform *ǵʰnud-sḱ-eh₂, doubly methasised from Proto-Indo-European *dn̥ǵʰwéh₂s ~ *dn̥ǵʰuh₂és (“tongue”). Compare Tocharian B kantwo, also metathised. The outcome gl- (and later gj-) from original *ǵ(ʰ)n- is also attested in gju (“knee”). The usage of the infixed *-sḱ- does not seem have any parallels.\n# A connection with Ancient Greek γλῶσσα (glôssa), itself of unclear origin, cannot be proven.",
           "backlink": "gjuhë"
         }
       }

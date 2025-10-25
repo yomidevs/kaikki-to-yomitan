@@ -1,6 +1,6 @@
 [
   [
-    "楽しい",
+    "楽しい -i",
     "たのしい",
     "adj",
     "adj",
@@ -80,7 +80,7 @@
                         "data": {
                           "content": "Etymology-content"
                         },
-                        "content": "⟨tano₁siki₁⟩ → */tanʷosikʲi/ → /tanoshii/\nFrom Old Japanese. First attested in the Kojiki of 712 CE. No Ryukyuan cognates exist; as as result, further derivation unknown. Theories include:\n* A compound of 手 (ta, “hand”, combining form) + 伸す (nosu, “to extend”)\n*: This is problematic, as nosu has first been attested starting from the early 900s, with no A/B distinction (see Jōdai Tokushu Kanazukai for details).\n* From 田神 (tano, literally “rice paddy god”)\n*: No reading of 神 (*no, “god”) exists.\n* A borrowing from an unknown language\n*: No words resemble *tanV meaning \"fun\" or \"to enjoy\"."
+                        "content": "⟨tano₁siki₁⟩ → */tanʷosikʲi/ → /tanoshii/\nFrom Old Japanese. First attested in the Kojiki of 712 CE. No Ryukyuan cognates exist; as a result, further derivation unknown. Theories include:\n* A compound of 手 (ta, “hand”, combining form) + 伸す (nosu, “to extend”)\n*: This is problematic, as nosu has first been attested starting from the early 900s, with no A/B distinction (see Jōdai Tokushu Kanazukai for details).\n* From 田神 (tano, literally “rice paddy god”)\n*: No reading of 神 (*no, “god”) exists.\n* A borrowing from an unknown language\n*: No words resemble *tanV meaning \"fun\" or \"to enjoy\"."
                       }
                     ]
                   }
@@ -127,7 +127,7 @@
     ""
   ],
   [
-    "好き",
+    "好き -na",
     "すき",
     "adj",
     "adj",
@@ -205,7 +205,7 @@
                   {
                     "tag": "div",
                     "content": [
-                      "liked, favorite",
+                      "liked, likable",
                       {
                         "tag": "details",
                         "data": {
@@ -291,14 +291,14 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "どうとも好きにしなさい。"
+                                  "content": "好きです。"
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Feel free to do as you like."
+                                  "content": "“I like you.” → idiomatically used to express: “I love you.”"
                                 }
                               ]
                             }
@@ -319,7 +319,14 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "好きです。\nSuki desu.\n“I like you.” → idiomatically used to express: “I love you.”"
+                                  "content": "どうとも好きにしなさい。"
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "Feel free to do as you like."
                                 }
                               ]
                             }
@@ -442,7 +449,35 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "1 example"
+                            "content": "2 examples"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "狸 兼名苑云狸［音𨤲和名太奴木］摶鳥為粮者也"
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "Raccoon dog: According to Jian Ming Yuan (兼名苑), raccoon dogs [read as 𨤲 (ri), native Japanese 太奴木 (tanuki)] always prey on birds."
+                                }
+                              ]
+                            }
                           },
                           {
                             "tag": "div",
@@ -572,7 +607,7 @@
                           }
                         ]
                       },
-                      "Short for 狸饂飩 (tanuki-udon) and 狸蕎麦 (tanuki-soba): styles of various noodle dishes"
+                      "short for 狸饂飩 (tanuki-udon) and 狸蕎麦 (tanuki-soba): styles of various noodle dishes"
                     ]
                   }
                 ]
@@ -609,7 +644,7 @@
                           }
                         ]
                       },
-                      "Short for 狸寝入り (tanuki neiri): pretending to be asleep",
+                      "short for 狸寝入り (tanuki neiri): pretending to be asleep",
                       {
                         "tag": "details",
                         "data": {
@@ -691,7 +726,7 @@
                           }
                         ]
                       },
-                      "Short for 狸汁 (tanuki-jiru): a soup made from tanuki meat mixed with daikon, burdock root, etc."
+                      "short for 狸汁 (tanuki-jiru): a soup made from tanuki meat mixed with daikon, burdock root, etc."
                     ]
                   }
                 ]
@@ -718,7 +753,7 @@
     ""
   ],
   [
-    "走る",
+    "走る intransitive godan",
     "はしる",
     "v",
     "v",
@@ -1183,7 +1218,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "1 example"
+                            "content": "2 examples"
                           },
                           {
                             "tag": "div",
@@ -1201,7 +1236,42 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "山脈が南北に走る。\nSanmyaku ga nanboku ni hashiru.\nThe mountain range runs north–south."
+                                  "content": "山脈が南北に走る。"
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "The mountain range runs north–south."
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "社会に亀裂が走る"
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "a crack (division) spreads in society"
                                 }
                               ]
                             }
@@ -1356,7 +1426,7 @@
                           }
                         ]
                       },
-                      "Alternative spelling of ハシる"
+                      "alternative spelling of ハシる"
                     ]
                   }
                 ]
@@ -1383,7 +1453,7 @@
     ""
   ],
   [
-    "五色",
+    "五色 ^",
     "ごしき",
     "n",
     "n",
@@ -1450,7 +1520,7 @@
                   {
                     "tag": "div",
                     "content": [
-                      "melon, gourd"
+                      "synonym of 瓜 (uri, “melon, gourd”)"
                     ]
                   }
                 ]
@@ -1477,7 +1547,7 @@
     ""
   ],
   [
-    "五色",
+    "五色 ^",
     "ごしょく",
     "n",
     "n",
@@ -1544,7 +1614,7 @@
                   {
                     "tag": "div",
                     "content": [
-                      "melon, gourd"
+                      "synonym of 瓜 (uri, “melon, gourd”)"
                     ]
                   }
                 ]

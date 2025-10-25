@@ -366,7 +366,7 @@
                         "data": {
                           "content": "Etymology-content"
                         },
-                        "content": "From Proto-Italic *legō, from Proto-Indo-European *leǵ-. Cognates include Ancient Greek λέγω (légō, “I speak, I choose, I mean”) and Albanian mbledh. May be related to lēx."
+                        "content": "Etymology tree\nProto-Indo-European *leǵ-der.\nProto-Italic *legōder.\nLatin lego\nFrom Proto-Italic *legō, from Proto-Indo-European *léǵeti, from *leǵ-. Cognates include Ancient Greek λέγω (légō, “I speak, I choose, I mean”) and Albanian mbledh. May be related to lēx."
                       }
                     ]
                   }
@@ -451,7 +451,50 @@
                   {
                     "tag": "div",
                     "content": [
-                      "to collect, gather, bring together"
+                      "to collect, gather, bring together, catch",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 example"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "“… Date volnera lymphīs / abluam, et, extrēmus sī quis super hālitus errat, / ōre legam.” …"
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "“Grant that I may wash her wounds with water, and, if any last breath wanders over her, I will gather it with my lips.”"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
                     ]
                   }
                 ]
@@ -615,6 +658,17 @@
                     ]
                   }
                 ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "to be bound, fettered, detained"
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -696,7 +750,7 @@
                         "data": {
                           "content": "Etymology-content"
                         },
-                        "content": "From Ancient Greek λείριον (leírion), from Fayyumic Coptic ϩⲗⲏⲣⲓ (hlēri), from Demotic (ḥrry), from Egyptian D2:D21-D21:X1-M2 (ḥrrt, “flower”).\nPerhaps also the root of Sanskrit हली (halī), हलिनी (halinī, “lily”)."
+                        "content": "Borrowed from Ancient Greek λείριον (leírion). See there for more."
                       }
                     ]
                   }
@@ -744,7 +798,7 @@
   ],
   [
     "usque",
-    "ū̆sque",
+    "",
     "adv not-comp",
     "adv",
     0,
@@ -779,7 +833,7 @@
                         "data": {
                           "content": "Grammar-content"
                         },
-                        "content": "ū̆sque (not comparable)"
+                        "content": "usque (not comparable)"
                       }
                     ]
                   },
@@ -801,7 +855,7 @@
                         "data": {
                           "content": "Etymology-content"
                         },
-                        "content": "From Proto-Italic *ū̆skʷe, from Proto-Indo-European *úds-kʷe, from *úd-s (“out, outward”, genitive) + *-kʷe (“and”). Cognate with Sanskrit उच्चा (uccā́), Younger Avestan 𐬎𐬯𐬗𐬀 (usca, “up, out”), Russian вы- (vy-, “out from”), Proto-Germanic *ūt, English out."
+                        "content": "From Proto-Italic *ū̆skʷe, from Proto-Indo-European *úds-kʷe, from *úd-s (“out, outward”, genitive) + *-kʷe (“and”). Cognate with Sanskrit उच्चा (uccā́), Younger Avestan 𐬎𐬯𐬗𐬀 (usca, “up, out”), Russian вы- (vy-, “out from”), Proto-Germanic *ūt, English out.\nHowever, cf. Lewis & Short, which says: usquĕ, adv. [us- for ubs-, from ubi with locative s; and que for qued, old abl. of quis; v. Corss. Ausspr. 2, 471; 838; cf.: quisque, usquam]."
                       }
                     ]
                   }
@@ -821,7 +875,7 @@
                   {
                     "tag": "div",
                     "content": [
-                      "all the way"
+                      "constantly, continuously"
                     ]
                   }
                 ]
@@ -832,7 +886,7 @@
                   {
                     "tag": "div",
                     "content": [
-                      "until, up to (sometimes with \"ad\")",
+                      "(used with ab (“from”) or ad (“to”)) as far as, up to, right until, all the way",
                       {
                         "tag": "details",
                         "data": {
@@ -844,7 +898,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "1 example"
+                            "content": "2 examples"
                           },
                           {
                             "tag": "div",
@@ -862,7 +916,7 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": ", Latin Vulgate translation of Psalm 71:8;Canadian national motto\nĀ marī ū̆sque ad mare."
+                                  "content": ", Latin Vulgate translation of Psalm 71:8; Canadian national motto\nĀ marī usque ad mare."
                                 },
                                 {
                                   "tag": "div",
@@ -873,32 +927,6 @@
                                 }
                               ]
                             }
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "tag": "li",
-                "content": [
-                  {
-                    "tag": "div",
-                    "content": [
-                      "constantly, continuously",
-                      {
-                        "tag": "details",
-                        "data": {
-                          "content": "details-entry-examples"
-                        },
-                        "content": [
-                          {
-                            "tag": "summary",
-                            "data": {
-                              "content": "summary-entry"
-                            },
-                            "content": "1 example"
                           },
                           {
                             "tag": "div",
@@ -916,7 +944,7 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "ab ōvō ū̆sque ad māla"
+                                  "content": "ab ōvō usque ad māla"
                                 },
                                 {
                                   "tag": "div",
@@ -1014,7 +1042,7 @@
                         "data": {
                           "content": "Etymology-content"
                         },
-                        "content": "Perfect passive participle of regō (“to keep or lead straight, to guide”). Corresponds to Proto-Indo-European *h₃reǵtós (“having moved in a straight line”), from Proto-Indo-European *h₃reǵ- (“to straighten, direct”)."
+                        "content": "Perfect passive participle of regō (“to keep or lead straight, to guide”). Inherited from Proto-Italic *rektos, corresponding to Proto-Indo-European *h₃reǵtós (“having moved in a straight line”), from Proto-Indo-European *h₃reǵ- (“to straighten, direct”)."
                       }
                     ]
                   }
@@ -1171,7 +1199,7 @@
   [
     "domus",
     "",
-    "n decl-2 decl-4 fem irreg",
+    "n decl-2 decl-4 irreg fem",
     "n",
     0,
     [
@@ -1205,7 +1233,7 @@
                         "data": {
                           "content": "Grammar-content"
                         },
-                        "content": "domus f (irregular, variously declined, genitive domūs or domī); fourth declension, second declension"
+                        "content": "domus f (genitive domūs or domī); irregular, variously declined, fourth declension, second declension"
                       }
                     ]
                   },

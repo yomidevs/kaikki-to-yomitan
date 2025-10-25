@@ -16,14 +16,15 @@
             "_type": "map",
             "map": [
               [
-                "(South Korea) Germany (a country in Europe)",
+                "(South Korea, Yanbian) Germany (a country in Central Europe, formed in 1949 as West Germany, with its provisional capital Bonn until 1990, when it incorporated East Germany)",
                 {
                   "_type": "map",
                   "map": [
                     [
                       "_tags",
                       [
-                        "South-Korea"
+                        "South-Korea",
+                        "Yanbian"
                       ]
                     ],
                     [

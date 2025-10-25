@@ -1,4 +1,41 @@
 {
   "_type": "map",
-  "map": []
+  "map": [
+    [
+      "田",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "塍",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "character",
+                  [
+                    "alternative"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "堘",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "character",
+                  [
+                    "alternative"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ]
 }

@@ -43,7 +43,11 @@
                   "verb",
                   [
                     "past",
-                    "past participle"
+                    "past participle",
+                    "plural past",
+                    "first/second-person singular past",
+                    "third-person singular past",
+                    "past subjunctive"
                   ]
                 ]
               ]
@@ -57,7 +61,61 @@
                 [
                   "verb",
                   [
+                    "past participle dialectal",
                     "past participle rare dialectal"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "brang",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "plural past dialectal",
+                    "first/second-person singular past dialectal",
+                    "third-person singular past dialectal",
+                    "past subjunctive dialectal"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "brung",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past participle dialectal",
+                    "plural past nonstandard",
+                    "first/second-person singular past nonstandard",
+                    "third-person singular past nonstandard",
+                    "past subjunctive nonstandard"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "bringed",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "verb",
+                  [
+                    "past participle nonstandard",
+                    "plural past nonstandard",
+                    "first/second-person singular past nonstandard",
+                    "third-person singular past nonstandard",
+                    "past subjunctive nonstandard"
                   ]
                 ]
               ]

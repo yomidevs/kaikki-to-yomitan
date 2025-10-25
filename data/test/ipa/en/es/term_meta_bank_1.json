@@ -7,11 +7,19 @@
       "transcriptions": [
         {
           "ipa": "/fɑːst/",
-          "tags": []
+          "tags": [
+            "Australia",
+            "New-Zealand",
+            "London",
+            "Received-Pronunciation"
+          ]
         },
         {
           "ipa": "/fæst/",
-          "tags": []
+          "tags": [
+            "US",
+            "UK"
+          ]
         }
       ]
     }

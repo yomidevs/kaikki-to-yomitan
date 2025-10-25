@@ -21,6 +21,13 @@
     0
   ],
   [
+    "weak",
+    "",
+    0,
+    "weak",
+    0
+  ],
+  [
     "vt",
     "partOfSpeech",
     -1,
@@ -109,6 +116,13 @@
     "archaism",
     0,
     "obsolete",
+    0
+  ],
+  [
+    "entom",
+    "",
+    0,
+    "entomology",
     0
   ],
   [

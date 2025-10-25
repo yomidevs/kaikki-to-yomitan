@@ -7,18 +7,18 @@
     1
   ],
   [
-    "masc",
-    "",
-    -1,
-    "masculine",
-    1
-  ],
-  [
     "inanim",
     "",
     0,
     "inanimate",
     0
+  ],
+  [
+    "masc",
+    "",
+    -1,
+    "masculine",
+    1
   ],
   [
     "fig",
@@ -68,12 +68,5 @@
     -1,
     "adjective",
     1
-  ],
-  [
-    "reltnl",
-    "",
-    0,
-    "relational",
-    0
   ]
 ]

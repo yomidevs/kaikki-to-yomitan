@@ -2,7 +2,7 @@
   [
     "снег",
     "",
-    "n masc inanim",
+    "n inanim masc",
     "n",
     0,
     [
@@ -90,7 +90,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "5 examples"
+                            "content": "8 examples"
                           },
                           {
                             "tag": "div",
@@ -200,6 +200,90 @@
                                     "content": "example-sentence-b"
                                   },
                                   "content": "to throw the snow off the roof"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "как снег на́ голову"
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "like a bolt from the blue (unexpectedly, suddenly)"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "что́-либо ну́жно, как прошлого́дний снег"
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "something is not needed in the least"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "зимо́й сне́га не вы́просить"
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "(said about someone mean, stingy)"
                                 }
                               ]
                             }
@@ -550,7 +634,7 @@
                         "data": {
                           "content": "Grammar-content"
                         },
-                        "content": "зи́мний • (zímnij)"
+                        "content": "зи́мний • (zýmnyj)"
                       }
                     ]
                   },
@@ -572,7 +656,7 @@
                         "data": {
                           "content": "Morphemes-content"
                         },
-                        "content": "By surface analysis, зима́ (zimá) + -ний (-nij)."
+                        "content": "Morphologically, from зима́ (zymá) + -ний (-nyj)."
                       }
                     ]
                   },
@@ -594,7 +678,7 @@
                         "data": {
                           "content": "Etymology-content"
                         },
-                        "content": "Inherited from Proto-Slavic *zimьnъ. By surface analysis, зима́ (zimá) + -ний (-nij)."
+                        "content": "From Proto-Slavic *zimьnъ. Morphologically, from зима́ (zymá) + -ний (-nyj).\nRelated to зи́мній (zýmnij)."
                       }
                     ]
                   }
@@ -614,78 +698,7 @@
                   {
                     "tag": "div",
                     "content": [
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "tags"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "content": "reltnl",
-                            "title": "relational",
-                            "data": {
-                              "content": "tag",
-                              "category": ""
-                            }
-                          }
-                        ]
-                      },
-                      "winter",
-                      {
-                        "tag": "details",
-                        "data": {
-                          "content": "details-entry-examples"
-                        },
-                        "content": [
-                          {
-                            "tag": "summary",
-                            "data": {
-                              "content": "summary-entry"
-                            },
-                            "content": "1 example"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": "Зи́мний дворе́ц"
-                                },
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-b"
-                                  },
-                                  "content": "Winter palace"
-                                }
-                              ]
-                            }
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "tag": "li",
-                "content": [
-                  {
-                    "tag": "div",
-                    "content": [
-                      "wintry, hibernal"
+                      "cold"
                     ]
                   }
                 ]

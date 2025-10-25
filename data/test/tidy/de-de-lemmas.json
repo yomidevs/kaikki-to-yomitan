@@ -5,11 +5,11 @@
         "0": {
           "ipa": [
             {
-              "ipa": "ʁɔk",
+              "ipa": "[ʁɔk]",
               "tags": []
             },
             {
-              "ipa": "ɹɔk",
+              "ipa": "[ɹɔk]",
               "tags": []
             }
           ],
@@ -33,10 +33,6 @@
                         {
                           "text": "Der Rock ist nicht totzukriegen.",
                           "translation": ""
-                        },
-                        {
-                          "text": "Sindbad band sich, um seinem Schicksal auf einer abgelegenen Insel zu entkommen, an ein Bein des Vogels Rock.",
-                          "translation": ""
                         }
                       ]
                     ]
@@ -45,13 +41,12 @@
               ]
             ]
           },
-          "etymology_text": "von arabisch/persisch ruh, roh entlehnt, = arabisch: الرُخّ (ar-ruchch, aus dem Persischen)",
           "backlink": "Rock"
         },
         "1": {
           "ipa": [
             {
-              "ipa": "ʁɔk",
+              "ipa": "[ʁɔk]",
               "tags": []
             }
           ],
@@ -92,29 +87,26 @@
         "0": {
           "ipa": [
             {
-              "ipa": "ɡaˈʁaːʒə",
+              "ipa": "[ɡaˈʁaːʒə]",
               "tags": [
                 "Germany"
               ]
             },
             {
-              "ipa": "ɡaˈʁaːʃ",
+              "ipa": "[ɡaˈʁaːʃ]",
               "tags": [
                 "Austrian German"
               ]
             },
             {
-              "ipa": "ɡaˈʁaːʃə",
+              "ipa": "[ɡaˈʁaːʃə]",
               "tags": [
-                "Austrian German",
                 "Swiss Standard German"
               ]
             },
             {
-              "ipa": "ˈɡaʁaːʃ",
-              "tags": [
-                "Swiss Standard German"
-              ]
+              "ipa": "[ˈɡaʁaːʃ]",
+              "tags": []
             }
           ],
           "glossTree": {
@@ -236,7 +228,6 @@
               ]
             ]
           },
-          "etymology_text": "seit dem 20. Jahrhundert bezeugte Entlehnung aus gleichbedeutendem französisch garage ^(→ fr) m, eigentlich „(das) Ausweichen, Ausweichstelle“; dieses ist eine deverbative Ableitung von französisch garer ^(→ fr) „in eine sichere Verwahrstelle bringen; in Sicherheit bringen; ausweichen“, das seinerseits aus okzitanisch garar ^(→ oc) „Acht geben, bewahren“ übernommen wurde; dieses entstammt entweder mit Übergang von w- zu g- der (nicht belegbaren, aber rekonstruierten) germanischen Form *war-ō- „beachten“ (vergleiche »wahren«) oder dem lateinischen varāre ^(→ la) „ausweichen“ (zu lateinisch vārus ^(→ la) „auseinandergebogen“)",
           "backlink": "Garage"
         }
       }

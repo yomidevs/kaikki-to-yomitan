@@ -14,18 +14,22 @@
             },
             {
               "ipa": "[ˈpfleːɡŋ̩]",
-              "tags": []
+              "tags": [
+                "standard"
+              ]
             },
             {
               "ipa": "/ˈfleːɡən/",
-              "tags": []
+              "tags": [
+                "most speakers in northern and central Germany"
+              ]
             }
           ],
           "glossTree": {
             "_type": "map",
             "map": [
               [
-                "Providing care or service for someone/something. [weak verb]",
+                "providing care or service for someone/something [weak verb]",
                 {
                   "_type": "map",
                   "map": [
@@ -34,7 +38,8 @@
                       [
                         "class-4",
                         "strong",
-                        "transitive"
+                        "transitive",
+                        "weak"
                       ]
                     ],
                     [
@@ -47,7 +52,8 @@
                             [
                               "class-4",
                               "strong",
-                              "transitive"
+                              "transitive",
+                              "weak"
                             ]
                           ],
                           [
@@ -76,7 +82,8 @@
                             [
                               "class-4",
                               "strong",
-                              "transitive"
+                              "transitive",
+                              "weak"
                             ]
                           ],
                           [
@@ -96,11 +103,11 @@
                               },
                               {
                                 "text": "Sie hat sich stets sehr gepflegt.",
-                                "translation": "She has always taken care of her appearance. (literally, “She has always taken care of herself.”)"
+                                "translation": "She has always taken care of her appearance."
                               },
                               {
                                 "text": "Er setzte sich faul hin und pflegte sich.",
-                                "translation": "He sat down lazily and went easy on himself. (literally, “He sat down lazily and looked after himself.”)"
+                                "translation": "He sat down lazily and went easy on himself."
                               },
                               {
                                 "text": "Daten pflegen",
@@ -109,7 +116,7 @@
                             ]
                           ],
                           [
-                            "(intransitive, archaic, with genitive)",
+                            "(intransitive, archaic) [with genitive ‘something/someone’]",
                             {
                               "_type": "map",
                               "map": [
@@ -121,7 +128,7 @@
                                     "intransitive",
                                     "strong",
                                     "transitive",
-                                    "with-genitive"
+                                    "weak"
                                   ]
                                 ],
                                 [
@@ -138,7 +145,7 @@
                 }
               ],
               [
-                "To improve or care for something in an intellectual sense. [weak or strong verb]",
+                "to improve or care for something in an intellectual sense [weak or strong verb]",
                 {
                   "_type": "map",
                   "map": [
@@ -146,7 +153,8 @@
                       "_tags",
                       [
                         "class-4",
-                        "strong"
+                        "strong",
+                        "weak"
                       ]
                     ],
                     [
@@ -163,7 +171,8 @@
                             [
                               "class-4",
                               "strong",
-                              "transitive"
+                              "transitive",
+                              "weak"
                             ]
                           ],
                           [
@@ -184,7 +193,7 @@
                             ]
                           ],
                           [
-                            "(intransitive, higher register or poetic, with genitive)",
+                            "(intransitive, higher register or poetic) [with genitive ‘something’]",
                             {
                               "_type": "map",
                               "map": [
@@ -195,7 +204,7 @@
                                     "intransitive",
                                     "strong",
                                     "transitive",
-                                    "with-genitive"
+                                    "weak"
                                   ]
                                 ],
                                 [
@@ -221,7 +230,7 @@
                 }
               ],
               [
-                "Expressing habituality. [weak or strong verb]",
+                "expressing habituality [weak or strong verb]",
                 {
                   "_type": "map",
                   "map": [
@@ -229,7 +238,8 @@
                       "_tags",
                       [
                         "class-4",
-                        "strong"
+                        "strong",
+                        "weak"
                       ]
                     ],
                     [
@@ -242,7 +252,8 @@
                             [
                               "class-4",
                               "strong",
-                              "transitive"
+                              "transitive",
+                              "weak"
                             ]
                           ],
                           [
@@ -254,7 +265,7 @@
                               },
                               {
                                 "text": "Geselligkeit pflegen",
-                                "translation": "to socialize regularly (literally, “to regularly engage in gregariousness”)"
+                                "translation": "to socialize regularly"
                               }
                             ]
                           ]
@@ -262,7 +273,7 @@
                       }
                     ],
                     [
-                      "(intransitive, with “zu” followed by an infinitive verb) to perform habitually; to be accustomed (to doing something); to be in the habit (of doing something)",
+                      "(intransitive) to perform habitually; to be accustomed (to); to be in the habit (of) [with zu (+ infinitive) ‘doing something’]",
                       {
                         "_type": "map",
                         "map": [
@@ -272,7 +283,7 @@
                               "class-4",
                               "intransitive",
                               "strong",
-                              "with “zu” followed by an infinitive verb"
+                              "weak"
                             ]
                           ],
                           [
@@ -333,7 +344,7 @@
                       [
                         {
                           "text": "Fuchs, du hast die Gans gestohlen. Gib sie wieder her!",
-                          "translation": "(line from a popular children’s song)"
+                          "translation": "Fox, you've stolen the goose. Give it back here!"
                         }
                       ]
                     ]
@@ -341,7 +352,7 @@
                 }
               ],
               [
-                "(informal) a clever or cunning person",
+                "(informal) a clever or cunning person, sly fox",
                 {
                   "_type": "map",
                   "map": [
@@ -358,7 +369,7 @@
                       [
                         {
                           "text": "Er ist ein ganz schöner Fuchs.",
-                          "translation": "He is a really handsome fox."
+                          "translation": "He is quite the sly fox."
                         }
                       ]
                     ]
@@ -366,7 +377,7 @@
                 }
               ],
               [
-                "(informal) a red-haired person or horse.",
+                "(informal) a red-haired person or horse",
                 {
                   "_type": "map",
                   "map": [
@@ -410,7 +421,7 @@
                 }
               ],
               [
-                "(military, slang) A new recruit.",
+                "(military, slang) a new recruit",
                 {
                   "_type": "map",
                   "map": [
@@ -430,7 +441,7 @@
                 }
               ],
               [
-                "(card games) In Doppelkopf, the ace of diamonds, which earns a side of players an extra point if they win it from the other side",
+                "(card games) the ace of diamonds in Doppelkopf, where it earns a side of players an extra point if they win it from the other side",
                 {
                   "_type": "map",
                   "map": [
@@ -473,7 +484,7 @@
                 }
               ],
               [
-                "(archaic) A form of sunscald on hops.",
+                "(archaic) a form of sunscald on hops",
                 {
                   "_type": "map",
                   "map": [
@@ -521,6 +532,25 @@
                       [
                         "masculine",
                         "obsolete",
+                        "strong"
+                      ]
+                    ],
+                    [
+                      "_examples",
+                      []
+                    ]
+                  ]
+                }
+              ],
+              [
+                "(entomology) tortoiseshell",
+                {
+                  "_type": "map",
+                  "map": [
+                    [
+                      "_tags",
+                      [
+                        "masculine",
                         "strong"
                       ]
                     ],
@@ -623,7 +653,7 @@
               ]
             ]
           },
-          "etymology_text": "From Middle High German herze, from Old High German herza, from Proto-West Germanic *hertā, from Proto-Germanic *hertô (“heart”), from Proto-Indo-European *ḱḗr (“heart”).\nCognate with Dutch hart, English heart, Danish hjerte, Gothic 𐌷𐌰𐌹𐍂𐍄𐍉 (hairtō).",
+          "etymology_text": "From Middle High German hërze, from Old High German hërza, from Proto-West Germanic *hertā, from Proto-Germanic *hertô (“heart”), from Proto-Indo-European *ḱḗr (“heart”).\nCognate with Dutch hart, English heart, Danish hjerte, Gothic 𐌷𐌰𐌹𐍂𐍄𐍉 (hairtō).",
           "head_info_text": "Herz n (weak, genitive Herzens or (very rare) Herzes, plural Herzen, diminutive Herzchen n or Herzlein n or ((also) Ruhrpöttisch) Herzken n)",
           "backlink": "Herz"
         }
@@ -704,7 +734,7 @@
                       [
                         {
                           "text": "Ich fahre von Köln nach Hamburg.",
-                          "translation": "I'm travelling from Cologne to Hamburg."
+                          "translation": "I’m travelling from Cologne to Hamburg."
                         },
                         {
                           "text": "Ich hab’s von meiner Schwester gehört.",
@@ -728,8 +758,12 @@
                       "_examples",
                       [
                         {
-                          "text": "das Auto meines Vaters = das Auto von meinem Vater",
+                          "text": "das Auto von meinem Vater",
                           "translation": "my father’s car / the car of my father"
+                        },
+                        {
+                          "text": "das Auto meines Vaters",
+                          "translation": ""
                         }
                       ]
                     ]
@@ -809,7 +843,7 @@
               ]
             ]
           },
-          "etymology_text": "From Middle High German von (“from”), from Old High German fon, fona (“from”), from Proto-Germanic *afanē, *fanē, *funē (“from”), compound of *afa (from Proto-Indo-European *h₂epó (“from, off”)) + *ana (from Proto-Indo-European *h₂en- (“on”)). Cognate with Old Saxon fana, fan (“from”), Dutch van (“from; of”), Old Frisian fon (“from”).",
+          "etymology_text": "From Middle High German von (“from”), from Old High German fon, fona (“from”), from Proto-West Germanic *fanā, from Proto-Germanic *afanē, *fanē, *funē (“from”), compound of *afa (from Proto-Indo-European *h₂epó (“from, off”)) + *ana (from Proto-Indo-European *h₂en- (“on”)).\nCognate with Old Saxon fana, fan (“from”), Dutch van (“from; of”), Old Frisian fon (“from”).",
           "backlink": "von"
         }
       }
@@ -868,7 +902,7 @@
               ]
             ]
           },
-          "etymology_text": "From Middle High German base, from Old High German basa, from Proto-Germanic *baswǭ (“father's sister; paternal aunt”). Compare Saterland Frisian Bääsje (“grandmother”), Dutch baas (“master; boss”). More at boss.",
+          "etymology_text": "From Middle High German base, from Old High German basa, from Proto-West Germanic *baswā, from Proto-Germanic *baswǭ (“father's sister; paternal aunt”). Compare Saterland Frisian Bääsje (“grandmother”), Dutch baas (“master; boss”). More at boss.",
           "head_info_text": "Base f (genitive Base, plural Basen)",
           "backlink": "Base"
         },

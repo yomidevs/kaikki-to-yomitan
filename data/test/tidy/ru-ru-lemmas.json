@@ -5,13 +5,13 @@
         "0": {
           "ipa": [
             {
-              "ipa": "sʲnʲek",
+              "ipa": "[sʲnʲek]",
               "tags": [
                 "singular"
               ]
             },
             {
-              "ipa": "sʲnʲɪˈɡa",
+              "ipa": "[sʲnʲɪˈɡa]",
               "tags": [
                 "plural"
               ]
@@ -28,7 +28,6 @@
                     [
                       "_tags",
                       [
-                        "uncountable",
                         "declension-2",
                         "inanimate",
                         "masculine"
@@ -70,7 +69,6 @@
                     [
                       "_tags",
                       [
-                        "countable",
                         "declension-2",
                         "inanimate",
                         "masculine"
@@ -112,8 +110,6 @@
                     [
                       "_tags",
                       [
-                        "colloquial",
-                        "figuratively",
                         "declension-2",
                         "inanimate",
                         "masculine"
@@ -139,7 +135,6 @@
                     [
                       "_tags",
                       [
-                        "slang",
                         "declension-2",
                         "inanimate",
                         "masculine"
@@ -166,7 +161,7 @@
         "0": {
           "ipa": [
             {
-              "ipa": "prədɐɫˈʐatʲ",
+              "ipa": "[prədɐɫˈʐatʲ]",
               "tags": []
             }
           ],

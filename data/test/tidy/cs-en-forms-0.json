@@ -15,9 +15,7 @@
                   "verb",
                   [
                     "feminine singular past active participle",
-                    "neuter plural past active participle",
-                    "singular feminine past participle",
-                    "plural neuter past participle"
+                    "neuter plural past active participle"
                   ]
                 ]
               ]
@@ -31,7 +29,7 @@
                 [
                   "verb",
                   [
-                    "first-person singular present indicative"
+                    "first-person singular indicative"
                   ]
                 ]
               ]
@@ -45,8 +43,8 @@
                 [
                   "verb",
                   [
-                    "first-person plural present imperative",
-                    "first-person plural present indicative"
+                    "first-person plural imperative",
+                    "first-person plural indicative"
                   ]
                 ]
               ]
@@ -60,7 +58,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular present indicative"
+                    "second-person singular indicative"
                   ]
                 ]
               ]
@@ -74,8 +72,8 @@
                 [
                   "verb",
                   [
-                    "second-person plural present imperative",
-                    "second-person plural present indicative"
+                    "second-person plural imperative",
+                    "second-person plural indicative"
                   ]
                 ]
               ]
@@ -89,7 +87,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular present imperative"
+                    "second-person singular imperative"
                   ]
                 ]
               ]
@@ -103,8 +101,8 @@
                 [
                   "verb",
                   [
-                    "singular masculine present transgressive",
-                    "third-person singular present indicative"
+                    "singular masculine present",
+                    "third-person singular indicative"
                   ]
                 ]
               ]
@@ -118,65 +116,7 @@
                 [
                   "verb",
                   [
-                    "third-person plural present indicative"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "přel",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "singular masculine animate past participle",
-                    "singular masculine inanimate past participle"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "přeli",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "plural masculine animate past participle"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "přely",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "plural feminine past participle",
-                    "plural masculine inanimate past participle"
-                  ]
-                ]
-              ]
-            }
-          ],
-          [
-            "přelo",
-            {
-              "_type": "map",
-              "map": [
-                [
-                  "verb",
-                  [
-                    "singular neuter past participle"
+                    "third-person plural indicative"
                   ]
                 ]
               ]
@@ -190,7 +130,7 @@
                 [
                   "verb",
                   [
-                    "singular masculine present transgressive"
+                    "singular masculine present"
                   ]
                 ]
               ]
@@ -204,7 +144,7 @@
                 [
                   "verb",
                   [
-                    "singular feminine neuter present transgressive"
+                    "singular feminine neuter present"
                   ]
                 ]
               ]
@@ -218,7 +158,7 @@
                 [
                   "verb",
                   [
-                    "singular feminine neuter present transgressive"
+                    "singular feminine neuter present"
                   ]
                 ]
               ]
@@ -232,7 +172,7 @@
                 [
                   "verb",
                   [
-                    "plural present transgressive"
+                    "plural present"
                   ]
                 ]
               ]
@@ -246,7 +186,7 @@
                 [
                   "verb",
                   [
-                    "plural present transgressive"
+                    "plural present"
                   ]
                 ]
               ]
@@ -260,6 +200,20 @@
       {
         "_type": "map",
         "map": [
+          [
+            "zprávička",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "diminutive"
+                  ]
+                ]
+              ]
+            }
+          ],
           [
             "zprávy",
             {

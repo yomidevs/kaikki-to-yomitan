@@ -56,23 +56,6 @@
                   {
                     "tag": "div",
                     "content": [
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "tags"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "content": "uncount",
-                            "title": "uncountable",
-                            "data": {
-                              "content": "tag",
-                              "category": ""
-                            }
-                          }
-                        ]
-                      },
                       "метеорол. неисч. вид атмосферных осадков в виде небольших хлопьев застывшей воды (снежинок) в форме шестиугольных пластинок и шестилучевых звёздочек; выпадает из облаков при температуре воздуха ниже 0 °C",
                       {
                         "tag": "details",
@@ -204,23 +187,6 @@
                   {
                     "tag": "div",
                     "content": [
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "tags"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "content": "count",
-                            "title": "countable",
-                            "data": {
-                              "content": "tag",
-                              "category": ""
-                            }
-                          }
-                        ]
-                      },
                       "исч. масса выпавших снежинок, образующая рыхлый, не очень плотный белый слой",
                       {
                         "tag": "details",
@@ -352,32 +318,6 @@
                   {
                     "tag": "div",
                     "content": [
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "tags"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "content": "col",
-                            "title": "colloquial",
-                            "data": {
-                              "content": "tag",
-                              "category": ""
-                            }
-                          },
-                          {
-                            "tag": "span",
-                            "content": "fig",
-                            "title": "figuratively",
-                            "data": {
-                              "content": "tag",
-                              "category": ""
-                            }
-                          }
-                        ]
-                      },
                       "перен., разг. помехи",
                       {
                         "tag": "details",
@@ -425,23 +365,6 @@
                   {
                     "tag": "div",
                     "content": [
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "tags"
-                        },
-                        "content": [
-                          {
-                            "tag": "span",
-                            "content": "sl",
-                            "title": "slang",
-                            "data": {
-                              "content": "tag",
-                              "category": ""
-                            }
-                          }
-                        ]
-                      },
                       "жарг. нарк. то же, что кокаин"
                     ]
                   }

@@ -51,6 +51,30 @@
         [
           "past participle"
         ]
+      ],
+      [
+        "bring",
+        [
+          "plural past"
+        ]
+      ],
+      [
+        "bring",
+        [
+          "first/second-person singular past"
+        ]
+      ],
+      [
+        "bring",
+        [
+          "third-person singular past"
+        ]
+      ],
+      [
+        "bring",
+        [
+          "past subjunctive"
+        ]
       ]
     ],
     0,
@@ -66,7 +90,130 @@
       [
         "bring",
         [
+          "past participle dialectal"
+        ]
+      ],
+      [
+        "bring",
+        [
           "past participle rare dialectal"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "brang",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "bring",
+        [
+          "plural past dialectal"
+        ]
+      ],
+      [
+        "bring",
+        [
+          "first/second-person singular past dialectal"
+        ]
+      ],
+      [
+        "bring",
+        [
+          "third-person singular past dialectal"
+        ]
+      ],
+      [
+        "bring",
+        [
+          "past subjunctive dialectal"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "brung",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "bring",
+        [
+          "past participle dialectal"
+        ]
+      ],
+      [
+        "bring",
+        [
+          "plural past nonstandard"
+        ]
+      ],
+      [
+        "bring",
+        [
+          "first/second-person singular past nonstandard"
+        ]
+      ],
+      [
+        "bring",
+        [
+          "third-person singular past nonstandard"
+        ]
+      ],
+      [
+        "bring",
+        [
+          "past subjunctive nonstandard"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "bringed",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "bring",
+        [
+          "past participle nonstandard"
+        ]
+      ],
+      [
+        "bring",
+        [
+          "plural past nonstandard"
+        ]
+      ],
+      [
+        "bring",
+        [
+          "first/second-person singular past nonstandard"
+        ]
+      ],
+      [
+        "bring",
+        [
+          "third-person singular past nonstandard"
+        ]
+      ],
+      [
+        "bring",
+        [
+          "past subjunctive nonstandard"
         ]
       ]
     ],

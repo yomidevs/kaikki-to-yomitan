@@ -21,6 +21,28 @@
                   {
                     "tag": "details",
                     "data": {
+                      "content": "details-entry-Grammar"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Grammar"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Grammar-content"
+                        },
+                        "content": "zpráva f (diminutive zprávička)"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "details",
+                    "data": {
                       "content": "details-entry-Etymology"
                     },
                     "content": [

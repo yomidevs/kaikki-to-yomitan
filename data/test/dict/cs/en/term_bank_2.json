@@ -17,18 +17,6 @@
         [
           "neuter plural past active participle"
         ]
-      ],
-      [
-        "přít",
-        [
-          "singular feminine past participle"
-        ]
-      ],
-      [
-        "přít",
-        [
-          "plural neuter past participle"
-        ]
       ]
     ],
     0,
@@ -44,7 +32,7 @@
       [
         "přít",
         [
-          "first-person singular present indicative"
+          "first-person singular indicative"
         ]
       ]
     ],
@@ -61,13 +49,13 @@
       [
         "přít",
         [
-          "first-person plural present imperative"
+          "first-person plural imperative"
         ]
       ],
       [
         "přít",
         [
-          "first-person plural present indicative"
+          "first-person plural indicative"
         ]
       ]
     ],
@@ -84,7 +72,7 @@
       [
         "přít",
         [
-          "second-person singular present indicative"
+          "second-person singular indicative"
         ]
       ]
     ],
@@ -101,13 +89,13 @@
       [
         "přít",
         [
-          "second-person plural present imperative"
+          "second-person plural imperative"
         ]
       ],
       [
         "přít",
         [
-          "second-person plural present indicative"
+          "second-person plural indicative"
         ]
       ]
     ],
@@ -124,7 +112,7 @@
       [
         "přít",
         [
-          "second-person singular present imperative"
+          "second-person singular imperative"
         ]
       ]
     ],
@@ -141,13 +129,13 @@
       [
         "přít",
         [
-          "singular masculine present transgressive"
+          "singular masculine present"
         ]
       ],
       [
         "přít",
         [
-          "third-person singular present indicative"
+          "third-person singular indicative"
         ]
       ]
     ],
@@ -164,87 +152,7 @@
       [
         "přít",
         [
-          "third-person plural present indicative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "přel",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "přít",
-        [
-          "singular masculine animate past participle"
-        ]
-      ],
-      [
-        "přít",
-        [
-          "singular masculine inanimate past participle"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "přeli",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "přít",
-        [
-          "plural masculine animate past participle"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "přely",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "přít",
-        [
-          "plural feminine past participle"
-        ]
-      ],
-      [
-        "přít",
-        [
-          "plural masculine inanimate past participle"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "přelo",
-    "",
-    "non-lemma",
-    "",
-    0,
-    [
-      [
-        "přít",
-        [
-          "singular neuter past participle"
+          "third-person plural indicative"
         ]
       ]
     ],
@@ -261,7 +169,7 @@
       [
         "přít",
         [
-          "singular masculine present transgressive"
+          "singular masculine present"
         ]
       ]
     ],
@@ -278,7 +186,7 @@
       [
         "přít",
         [
-          "singular feminine neuter present transgressive"
+          "singular feminine neuter present"
         ]
       ]
     ],
@@ -295,7 +203,7 @@
       [
         "přít",
         [
-          "singular feminine neuter present transgressive"
+          "singular feminine neuter present"
         ]
       ]
     ],
@@ -312,7 +220,7 @@
       [
         "přít",
         [
-          "plural present transgressive"
+          "plural present"
         ]
       ]
     ],
@@ -329,7 +237,24 @@
       [
         "přít",
         [
-          "plural present transgressive"
+          "plural present"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zprávička",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "zpráva",
+        [
+          "diminutive"
         ]
       ]
     ],

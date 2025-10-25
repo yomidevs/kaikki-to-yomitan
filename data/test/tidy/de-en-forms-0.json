@@ -32,8 +32,8 @@
                   "verb",
                   [
                     "past",
-                    "first/third-person singular indicative preterite",
-                    "first/third-person singular subjunctive subjunctive-ii"
+                    "formal first/third-person singular subjunctive rare subjunctive-ii",
+                    "first/third-person singular indicative preterite"
                   ]
                 ]
               ]
@@ -90,7 +90,7 @@
                 [
                   "verb",
                   [
-                    "first/third-person singular subjunctive subjunctive-ii",
+                    "formal first/third-person singular subjunctive rare subjunctive-ii",
                     "past subjunctive"
                   ]
                 ]
@@ -177,8 +177,8 @@
                 [
                   "verb",
                   [
-                    "first/third-person plural indicative preterite",
-                    "first/third-person plural subjunctive subjunctive-ii"
+                    "formal first/third-person plural subjunctive rare subjunctive-ii",
+                    "first/third-person plural indicative preterite"
                   ]
                 ]
               ]
@@ -192,8 +192,8 @@
                 [
                   "verb",
                   [
-                    "second-person singular indicative preterite",
-                    "second-person singular subjunctive subjunctive-ii"
+                    "formal second-person singular subjunctive rare subjunctive-ii",
+                    "second-person singular indicative preterite"
                   ]
                 ]
               ]
@@ -208,7 +208,7 @@
                   "verb",
                   [
                     "second-person plural indicative preterite",
-                    "second-person plural subjunctive subjunctive-ii"
+                    "formal second-person plural subjunctive rare subjunctive-ii"
                   ]
                 ]
               ]
@@ -776,7 +776,7 @@
                 [
                   "verb",
                   [
-                    "first/third-person plural subjunctive subjunctive-ii"
+                    "formal first/third-person plural subjunctive rare subjunctive-ii"
                   ]
                 ]
               ]
@@ -818,7 +818,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular subjunctive subjunctive-ii"
+                    "formal second-person singular subjunctive rare subjunctive-ii"
                   ]
                 ]
               ]
@@ -832,7 +832,7 @@
                 [
                   "verb",
                   [
-                    "second-person singular subjunctive subjunctive-ii"
+                    "formal second-person singular subjunctive rare subjunctive-ii"
                   ]
                 ]
               ]
@@ -846,7 +846,7 @@
                 [
                   "verb",
                   [
-                    "second-person plural subjunctive subjunctive-ii"
+                    "formal second-person plural subjunctive rare subjunctive-ii"
                   ]
                 ]
               ]
@@ -860,7 +860,7 @@
                 [
                   "verb",
                   [
-                    "second-person plural subjunctive subjunctive-ii"
+                    "formal second-person plural subjunctive rare subjunctive-ii"
                   ]
                 ]
               ]
@@ -1407,7 +1407,7 @@
                 [
                   "noun",
                   [
-                    "genitive singular"
+                    "genitive singular rare"
                   ]
                 ]
               ]
@@ -1459,6 +1459,28 @@
                   "noun",
                   [
                     "dative plural definite"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "von",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "v.",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "prep",
+                  [
+                    "alternative abbreviation"
                   ]
                 ]
               ]

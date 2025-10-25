@@ -6,11 +6,19 @@
           "ipa": [
             {
               "ipa": "/fɑːst/",
-              "tags": []
+              "tags": [
+                "Australia",
+                "New-Zealand",
+                "London",
+                "Received-Pronunciation"
+              ]
             },
             {
               "ipa": "/fæst/",
-              "tags": []
+              "tags": [
+                "US",
+                "UK"
+              ]
             }
           ],
           "glossTree": {
@@ -48,7 +56,7 @@
                       [
                         {
                           "text": "Your watch is some minutes fast",
-                          "translation": "→ Tu reloj va algunos minutos adelantado."
+                          "translation": "Tu reloj va algunos minutos adelantado."
                         }
                       ]
                     ]

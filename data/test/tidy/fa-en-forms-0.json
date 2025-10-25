@@ -1,4 +1,63 @@
 {
   "_type": "map",
-  "map": []
+  "map": [
+    [
+      "ملک",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "ملائک",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "plural"
+                  ]
+                ]
+              ]
+            }
+          ],
+          [
+            "spelling малак",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "Tajik"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "فارْسی",
+      {
+        "_type": "map",
+        "map": [
+          [
+            "پارْسی",
+            {
+              "_type": "map",
+              "map": [
+                [
+                  "noun",
+                  [
+                    "alternative"
+                  ]
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ]
 }
