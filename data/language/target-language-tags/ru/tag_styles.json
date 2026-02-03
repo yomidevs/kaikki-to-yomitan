@@ -1,0 +1,5 @@
+{
+    "masc": ".tag[data-details='masculine'] .tag-label{background-color: #4d82e8;}",
+    "fem": ".tag[data-details='feminine'] .tag-label{background-color: #ca4d93;}",
+    "neut": ".tag[data-details='neuter'] .tag-label{background-color: #40ac65;}"
+}

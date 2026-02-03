@@ -1,0 +1,11 @@
+[
+    ["🏴󠁧󠁢󠁥󠁮󠁧󠁿", "dialect", 0, "Received-Pronunciation", 0],
+    ["🇬🇧", "dialect", 0, ["UK", "London"], 0],
+    ["🇺🇸", "dialect", 0, ["US", "General-American", "United States", "California"], 0],
+    ["🇦🇺", "dialect", 0, "Australia", 0],
+    ["🇳🇿", "dialect", 0, "New-Zealand", 0],
+    ["🇨🇦", "dialect", 0, ["Canada", "Standard-Canadian"], 0],
+    ["🏴󠁧󠁢󠁳󠁣󠁴󠁿", "dialect", 0, ["Scotland", "Scottish"], 0],
+    ["🇮🇪", "dialect", 0, "Ireland", 0],
+    ["ccm", "dialect", 0, "cot-caught-merger", 0]
+]  
