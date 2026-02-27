@@ -77040,5 +77040,2743 @@
         }
       }
     ]
+  },
+  "ar": {
+    "en": [
+      {
+        "url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/ق/قد/قدم.html",
+        "download_url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/ق/قد/قدم.jsonl",
+        "json": {
+          "word": "قدم",
+          "pos": "verb",
+          "senses": [
+            {
+              "categories": [
+                "Arabic transitive verbs"
+              ],
+              "links": [
+                [
+                  "precede",
+                  "precede"
+                ]
+              ],
+              "raw_glosses": [
+                "(transitive) to precede"
+              ],
+              "glosses": [
+                "to precede"
+              ],
+              "tags": [
+                "transitive"
+              ]
+            }
+          ],
+          "head_templates": [
+            {
+              "name": "ar-verb",
+              "args": {
+                "1": "I/a~u.pass.vn:قَدْم,قُدُوم"
+              },
+              "expansion": "قَدَمَ • (qadama) I (non-past يَقْدُمُ (yaqdumu), verbal noun قَدْم (qadm) or قُدُوم (qudūm))"
+            }
+          ],
+          "categories": [
+            "Arabic 2-syllable words",
+            "Arabic 3-syllable words",
+            "Arabic adverbs",
+            "Arabic entries with incorrect language header",
+            "Arabic form-I verbs",
+            "Arabic form-I verbs with past vowel a and non-past vowel u",
+            "Arabic lemmas",
+            "Arabic sound form-I verbs",
+            "Arabic terms belonging to the root ق د م",
+            "Arabic terms derived from Proto-Semitic",
+            "Arabic terms inherited from Proto-Semitic",
+            "Arabic terms with IPA pronunciation",
+            "Arabic verbs",
+            "Arabic verbs with full passive",
+            "Pages with 8 entries",
+            "Pages with entries"
+          ],
+          "forms": [
+            {
+              "form": "قَدَمَ",
+              "tags": [
+                "canonical",
+                "form-i"
+              ]
+            },
+            {
+              "form": "qadama",
+              "tags": [
+                "romanization"
+              ]
+            },
+            {
+              "form": "يَقْدُمُ",
+              "roman": "yaqdumu",
+              "tags": [
+                "non-past"
+              ]
+            },
+            {
+              "form": "قَدْم",
+              "roman": "qadm",
+              "tags": [
+                "noun-from-verb"
+              ]
+            },
+            {
+              "form": "قُدُوم",
+              "roman": "qudūm",
+              "tags": [
+                "noun-from-verb"
+              ]
+            },
+            {
+              "form": "no-table-tags",
+              "source": "conjugation",
+              "tags": [
+                "table-tags"
+              ]
+            },
+            {
+              "form": "ar-conj",
+              "source": "conjugation",
+              "tags": [
+                "inflection-template"
+              ]
+            },
+            {
+              "form": "قَدْم",
+              "tags": [
+                "noun-from-verb"
+              ],
+              "source": "conjugation",
+              "roman": "qadm"
+            },
+            {
+              "form": "قُدُوم",
+              "tags": [
+                "noun-from-verb"
+              ],
+              "source": "conjugation",
+              "roman": "qudūm"
+            },
+            {
+              "form": "قَادِم",
+              "tags": [
+                "active",
+                "participle"
+              ],
+              "source": "conjugation",
+              "roman": "qādim"
+            },
+            {
+              "form": "مَقْدُوم",
+              "tags": [
+                "participle",
+                "passive"
+              ],
+              "source": "conjugation",
+              "roman": "maqdūm"
+            },
+            {
+              "form": "قَدَمْتُ",
+              "tags": [
+                "active",
+                "first-person",
+                "indicative",
+                "masculine",
+                "past",
+                "perfective",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "qadamtu"
+            },
+            {
+              "form": "قَدَمْتَ",
+              "tags": [
+                "active",
+                "indicative",
+                "masculine",
+                "past",
+                "perfective",
+                "second-person",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "qadamta"
+            },
+            {
+              "form": "قَدَمَ",
+              "tags": [
+                "active",
+                "indicative",
+                "masculine",
+                "past",
+                "perfective",
+                "singular",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "qadama"
+            },
+            {
+              "form": "قَدَمْتُمَا",
+              "tags": [
+                "active",
+                "dual",
+                "indicative",
+                "masculine",
+                "past",
+                "perfective",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "qadamtumā"
+            },
+            {
+              "form": "قَدَمَا",
+              "tags": [
+                "active",
+                "dual",
+                "indicative",
+                "masculine",
+                "past",
+                "perfective",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "qadamā"
+            },
+            {
+              "form": "قَدَمْنَا",
+              "tags": [
+                "active",
+                "first-person",
+                "indicative",
+                "masculine",
+                "past",
+                "perfective",
+                "plural"
+              ],
+              "source": "conjugation",
+              "roman": "qadamnā"
+            },
+            {
+              "form": "قَدَمْتُمْ",
+              "tags": [
+                "active",
+                "indicative",
+                "masculine",
+                "past",
+                "perfective",
+                "plural",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "qadamtum"
+            },
+            {
+              "form": "قَدَمُوا",
+              "tags": [
+                "active",
+                "indicative",
+                "masculine",
+                "past",
+                "perfective",
+                "plural",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "qadamū"
+            },
+            {
+              "form": "قَدَمْتُ",
+              "tags": [
+                "active",
+                "feminine",
+                "first-person",
+                "indicative",
+                "past",
+                "perfective",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "qadamtu"
+            },
+            {
+              "form": "قَدَمْتِ",
+              "tags": [
+                "active",
+                "feminine",
+                "indicative",
+                "past",
+                "perfective",
+                "second-person",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "qadamti"
+            },
+            {
+              "form": "قَدَمَتْ",
+              "tags": [
+                "active",
+                "feminine",
+                "indicative",
+                "past",
+                "perfective",
+                "singular",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "qadamat"
+            },
+            {
+              "form": "قَدَمْتُمَا",
+              "tags": [
+                "active",
+                "dual",
+                "feminine",
+                "indicative",
+                "past",
+                "perfective",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "qadamtumā"
+            },
+            {
+              "form": "قَدَمَتَا",
+              "tags": [
+                "active",
+                "dual",
+                "feminine",
+                "indicative",
+                "past",
+                "perfective",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "qadamatā"
+            },
+            {
+              "form": "قَدَمْنَا",
+              "tags": [
+                "active",
+                "feminine",
+                "first-person",
+                "indicative",
+                "past",
+                "perfective",
+                "plural"
+              ],
+              "source": "conjugation",
+              "roman": "qadamnā"
+            },
+            {
+              "form": "قَدَمْتُنَّ",
+              "tags": [
+                "active",
+                "feminine",
+                "indicative",
+                "past",
+                "perfective",
+                "plural",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "qadamtunna"
+            },
+            {
+              "form": "قَدَمْنَ",
+              "tags": [
+                "active",
+                "feminine",
+                "indicative",
+                "past",
+                "perfective",
+                "plural",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "qadamna"
+            },
+            {
+              "form": "أَقْدُمُ",
+              "tags": [
+                "active",
+                "first-person",
+                "imperfective",
+                "indicative",
+                "masculine",
+                "non-past",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "ʔaqdumu"
+            },
+            {
+              "form": "تَقْدُمُ",
+              "tags": [
+                "active",
+                "imperfective",
+                "indicative",
+                "masculine",
+                "non-past",
+                "second-person",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumu"
+            },
+            {
+              "form": "يَقْدُمُ",
+              "tags": [
+                "active",
+                "imperfective",
+                "indicative",
+                "masculine",
+                "non-past",
+                "singular",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yaqdumu"
+            },
+            {
+              "form": "تَقْدُمَانِ",
+              "tags": [
+                "active",
+                "dual",
+                "imperfective",
+                "indicative",
+                "masculine",
+                "non-past",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumāni"
+            },
+            {
+              "form": "يَقْدُمَانِ",
+              "tags": [
+                "active",
+                "dual",
+                "imperfective",
+                "indicative",
+                "masculine",
+                "non-past",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yaqdumāni"
+            },
+            {
+              "form": "نَقْدُمُ",
+              "tags": [
+                "active",
+                "first-person",
+                "imperfective",
+                "indicative",
+                "masculine",
+                "non-past",
+                "plural"
+              ],
+              "source": "conjugation",
+              "roman": "naqdumu"
+            },
+            {
+              "form": "تَقْدُمُونَ",
+              "tags": [
+                "active",
+                "imperfective",
+                "indicative",
+                "masculine",
+                "non-past",
+                "plural",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumūna"
+            },
+            {
+              "form": "يَقْدُمُونَ",
+              "tags": [
+                "active",
+                "imperfective",
+                "indicative",
+                "masculine",
+                "non-past",
+                "plural",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yaqdumūna"
+            },
+            {
+              "form": "أَقْدُمُ",
+              "tags": [
+                "active",
+                "feminine",
+                "first-person",
+                "imperfective",
+                "indicative",
+                "non-past",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "ʔaqdumu"
+            },
+            {
+              "form": "تَقْدُمِينَ",
+              "tags": [
+                "active",
+                "feminine",
+                "imperfective",
+                "indicative",
+                "non-past",
+                "second-person",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumīna"
+            },
+            {
+              "form": "تَقْدُمُ",
+              "tags": [
+                "active",
+                "feminine",
+                "imperfective",
+                "indicative",
+                "non-past",
+                "singular",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumu"
+            },
+            {
+              "form": "تَقْدُمَانِ",
+              "tags": [
+                "active",
+                "dual",
+                "feminine",
+                "imperfective",
+                "indicative",
+                "non-past",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumāni"
+            },
+            {
+              "form": "تَقْدُمَانِ",
+              "tags": [
+                "active",
+                "dual",
+                "feminine",
+                "imperfective",
+                "indicative",
+                "non-past",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumāni"
+            },
+            {
+              "form": "نَقْدُمُ",
+              "tags": [
+                "active",
+                "feminine",
+                "first-person",
+                "imperfective",
+                "indicative",
+                "non-past",
+                "plural"
+              ],
+              "source": "conjugation",
+              "roman": "naqdumu"
+            },
+            {
+              "form": "تَقْدُمْنَ",
+              "tags": [
+                "active",
+                "feminine",
+                "imperfective",
+                "indicative",
+                "non-past",
+                "plural",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumna"
+            },
+            {
+              "form": "يَقْدُمْنَ",
+              "tags": [
+                "active",
+                "feminine",
+                "imperfective",
+                "indicative",
+                "non-past",
+                "plural",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yaqdumna"
+            },
+            {
+              "form": "أَقْدُمَ",
+              "tags": [
+                "active",
+                "first-person",
+                "masculine",
+                "singular",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "ʔaqduma"
+            },
+            {
+              "form": "تَقْدُمَ",
+              "tags": [
+                "active",
+                "masculine",
+                "second-person",
+                "singular",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "taqduma"
+            },
+            {
+              "form": "يَقْدُمَ",
+              "tags": [
+                "active",
+                "masculine",
+                "singular",
+                "subjunctive",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yaqduma"
+            },
+            {
+              "form": "تَقْدُمَا",
+              "tags": [
+                "active",
+                "dual",
+                "masculine",
+                "second-person",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumā"
+            },
+            {
+              "form": "يَقْدُمَا",
+              "tags": [
+                "active",
+                "dual",
+                "masculine",
+                "subjunctive",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yaqdumā"
+            },
+            {
+              "form": "نَقْدُمَ",
+              "tags": [
+                "active",
+                "first-person",
+                "masculine",
+                "plural",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "naqduma"
+            },
+            {
+              "form": "تَقْدُمُوا",
+              "tags": [
+                "active",
+                "masculine",
+                "plural",
+                "second-person",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumū"
+            },
+            {
+              "form": "يَقْدُمُوا",
+              "tags": [
+                "active",
+                "masculine",
+                "plural",
+                "subjunctive",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yaqdumū"
+            },
+            {
+              "form": "أَقْدُمَ",
+              "tags": [
+                "active",
+                "feminine",
+                "first-person",
+                "singular",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "ʔaqduma"
+            },
+            {
+              "form": "تَقْدُمِي",
+              "tags": [
+                "active",
+                "feminine",
+                "second-person",
+                "singular",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumī"
+            },
+            {
+              "form": "تَقْدُمَ",
+              "tags": [
+                "active",
+                "feminine",
+                "singular",
+                "subjunctive",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "taqduma"
+            },
+            {
+              "form": "تَقْدُمَا",
+              "tags": [
+                "active",
+                "dual",
+                "feminine",
+                "second-person",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumā"
+            },
+            {
+              "form": "تَقْدُمَا",
+              "tags": [
+                "active",
+                "dual",
+                "feminine",
+                "subjunctive",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumā"
+            },
+            {
+              "form": "نَقْدُمَ",
+              "tags": [
+                "active",
+                "feminine",
+                "first-person",
+                "plural",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "naqduma"
+            },
+            {
+              "form": "تَقْدُمْنَ",
+              "tags": [
+                "active",
+                "feminine",
+                "plural",
+                "second-person",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumna"
+            },
+            {
+              "form": "يَقْدُمْنَ",
+              "tags": [
+                "active",
+                "feminine",
+                "plural",
+                "subjunctive",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yaqdumna"
+            },
+            {
+              "form": "أَقْدُمْ",
+              "tags": [
+                "active",
+                "first-person",
+                "jussive",
+                "masculine",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "ʔaqdum"
+            },
+            {
+              "form": "تَقْدُمْ",
+              "tags": [
+                "active",
+                "jussive",
+                "masculine",
+                "second-person",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "taqdum"
+            },
+            {
+              "form": "يَقْدُمْ",
+              "tags": [
+                "active",
+                "jussive",
+                "masculine",
+                "singular",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yaqdum"
+            },
+            {
+              "form": "تَقْدُمَا",
+              "tags": [
+                "active",
+                "dual",
+                "jussive",
+                "masculine",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumā"
+            },
+            {
+              "form": "يَقْدُمَا",
+              "tags": [
+                "active",
+                "dual",
+                "jussive",
+                "masculine",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yaqdumā"
+            },
+            {
+              "form": "نَقْدُمْ",
+              "tags": [
+                "active",
+                "first-person",
+                "jussive",
+                "masculine",
+                "plural"
+              ],
+              "source": "conjugation",
+              "roman": "naqdum"
+            },
+            {
+              "form": "تَقْدُمُوا",
+              "tags": [
+                "active",
+                "jussive",
+                "masculine",
+                "plural",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumū"
+            },
+            {
+              "form": "يَقْدُمُوا",
+              "tags": [
+                "active",
+                "jussive",
+                "masculine",
+                "plural",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yaqdumū"
+            },
+            {
+              "form": "أَقْدُمْ",
+              "tags": [
+                "active",
+                "feminine",
+                "first-person",
+                "jussive",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "ʔaqdum"
+            },
+            {
+              "form": "تَقْدُمِي",
+              "tags": [
+                "active",
+                "feminine",
+                "jussive",
+                "second-person",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumī"
+            },
+            {
+              "form": "تَقْدُمْ",
+              "tags": [
+                "active",
+                "feminine",
+                "jussive",
+                "singular",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "taqdum"
+            },
+            {
+              "form": "تَقْدُمَا",
+              "tags": [
+                "active",
+                "dual",
+                "feminine",
+                "jussive",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumā"
+            },
+            {
+              "form": "تَقْدُمَا",
+              "tags": [
+                "active",
+                "dual",
+                "feminine",
+                "jussive",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumā"
+            },
+            {
+              "form": "نَقْدُمْ",
+              "tags": [
+                "active",
+                "feminine",
+                "first-person",
+                "jussive",
+                "plural"
+              ],
+              "source": "conjugation",
+              "roman": "naqdum"
+            },
+            {
+              "form": "تَقْدُمْنَ",
+              "tags": [
+                "active",
+                "feminine",
+                "jussive",
+                "plural",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "taqdumna"
+            },
+            {
+              "form": "يَقْدُمْنَ",
+              "tags": [
+                "active",
+                "feminine",
+                "jussive",
+                "plural",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yaqdumna"
+            },
+            {
+              "form": "اُقْدُمْ",
+              "tags": [
+                "active",
+                "imperative",
+                "masculine",
+                "second-person",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "uqdum"
+            },
+            {
+              "form": "اُقْدُمَا",
+              "tags": [
+                "active",
+                "dual",
+                "imperative",
+                "masculine",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "uqdumā"
+            },
+            {
+              "form": "اُقْدُمُوا",
+              "tags": [
+                "active",
+                "imperative",
+                "masculine",
+                "plural",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "uqdumū"
+            },
+            {
+              "form": "اُقْدُمِي",
+              "tags": [
+                "active",
+                "feminine",
+                "imperative",
+                "second-person",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "uqdumī"
+            },
+            {
+              "form": "اُقْدُمَا",
+              "tags": [
+                "active",
+                "dual",
+                "feminine",
+                "imperative",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "uqdumā"
+            },
+            {
+              "form": "اُقْدُمْنَ",
+              "tags": [
+                "active",
+                "feminine",
+                "imperative",
+                "plural",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "uqdumna"
+            },
+            {
+              "form": "قُدِمْتُ",
+              "tags": [
+                "first-person",
+                "indicative",
+                "masculine",
+                "passive",
+                "past",
+                "perfective",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "qudimtu"
+            },
+            {
+              "form": "قُدِمْتَ",
+              "tags": [
+                "indicative",
+                "masculine",
+                "passive",
+                "past",
+                "perfective",
+                "second-person",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "qudimta"
+            },
+            {
+              "form": "قُدِمَ",
+              "tags": [
+                "indicative",
+                "masculine",
+                "passive",
+                "past",
+                "perfective",
+                "singular",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "qudima"
+            },
+            {
+              "form": "قُدِمْتُمَا",
+              "tags": [
+                "dual",
+                "indicative",
+                "masculine",
+                "passive",
+                "past",
+                "perfective",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "qudimtumā"
+            },
+            {
+              "form": "قُدِمَا",
+              "tags": [
+                "dual",
+                "indicative",
+                "masculine",
+                "passive",
+                "past",
+                "perfective",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "qudimā"
+            },
+            {
+              "form": "قُدِمْنَا",
+              "tags": [
+                "first-person",
+                "indicative",
+                "masculine",
+                "passive",
+                "past",
+                "perfective",
+                "plural"
+              ],
+              "source": "conjugation",
+              "roman": "qudimnā"
+            },
+            {
+              "form": "قُدِمْتُمْ",
+              "tags": [
+                "indicative",
+                "masculine",
+                "passive",
+                "past",
+                "perfective",
+                "plural",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "qudimtum"
+            },
+            {
+              "form": "قُدِمُوا",
+              "tags": [
+                "indicative",
+                "masculine",
+                "passive",
+                "past",
+                "perfective",
+                "plural",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "qudimū"
+            },
+            {
+              "form": "قُدِمْتُ",
+              "tags": [
+                "feminine",
+                "first-person",
+                "indicative",
+                "passive",
+                "past",
+                "perfective",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "qudimtu"
+            },
+            {
+              "form": "قُدِمْتِ",
+              "tags": [
+                "feminine",
+                "indicative",
+                "passive",
+                "past",
+                "perfective",
+                "second-person",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "qudimti"
+            },
+            {
+              "form": "قُدِمَتْ",
+              "tags": [
+                "feminine",
+                "indicative",
+                "passive",
+                "past",
+                "perfective",
+                "singular",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "qudimat"
+            },
+            {
+              "form": "قُدِمْتُمَا",
+              "tags": [
+                "dual",
+                "feminine",
+                "indicative",
+                "passive",
+                "past",
+                "perfective",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "qudimtumā"
+            },
+            {
+              "form": "قُدِمَتَا",
+              "tags": [
+                "dual",
+                "feminine",
+                "indicative",
+                "passive",
+                "past",
+                "perfective",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "qudimatā"
+            },
+            {
+              "form": "قُدِمْنَا",
+              "tags": [
+                "feminine",
+                "first-person",
+                "indicative",
+                "passive",
+                "past",
+                "perfective",
+                "plural"
+              ],
+              "source": "conjugation",
+              "roman": "qudimnā"
+            },
+            {
+              "form": "قُدِمْتُنَّ",
+              "tags": [
+                "feminine",
+                "indicative",
+                "passive",
+                "past",
+                "perfective",
+                "plural",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "qudimtunna"
+            },
+            {
+              "form": "قُدِمْنَ",
+              "tags": [
+                "feminine",
+                "indicative",
+                "passive",
+                "past",
+                "perfective",
+                "plural",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "qudimna"
+            },
+            {
+              "form": "أُقْدَمُ",
+              "tags": [
+                "first-person",
+                "imperfective",
+                "indicative",
+                "masculine",
+                "non-past",
+                "passive",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "ʔuqdamu"
+            },
+            {
+              "form": "تُقْدَمُ",
+              "tags": [
+                "imperfective",
+                "indicative",
+                "masculine",
+                "non-past",
+                "passive",
+                "second-person",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamu"
+            },
+            {
+              "form": "يُقْدَمُ",
+              "tags": [
+                "imperfective",
+                "indicative",
+                "masculine",
+                "non-past",
+                "passive",
+                "singular",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yuqdamu"
+            },
+            {
+              "form": "تُقْدَمَانِ",
+              "tags": [
+                "dual",
+                "imperfective",
+                "indicative",
+                "masculine",
+                "non-past",
+                "passive",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamāni"
+            },
+            {
+              "form": "يُقْدَمَانِ",
+              "tags": [
+                "dual",
+                "imperfective",
+                "indicative",
+                "masculine",
+                "non-past",
+                "passive",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yuqdamāni"
+            },
+            {
+              "form": "نُقْدَمُ",
+              "tags": [
+                "first-person",
+                "imperfective",
+                "indicative",
+                "masculine",
+                "non-past",
+                "passive",
+                "plural"
+              ],
+              "source": "conjugation",
+              "roman": "nuqdamu"
+            },
+            {
+              "form": "تُقْدَمُونَ",
+              "tags": [
+                "imperfective",
+                "indicative",
+                "masculine",
+                "non-past",
+                "passive",
+                "plural",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamūna"
+            },
+            {
+              "form": "يُقْدَمُونَ",
+              "tags": [
+                "imperfective",
+                "indicative",
+                "masculine",
+                "non-past",
+                "passive",
+                "plural",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yuqdamūna"
+            },
+            {
+              "form": "أُقْدَمُ",
+              "tags": [
+                "feminine",
+                "first-person",
+                "imperfective",
+                "indicative",
+                "non-past",
+                "passive",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "ʔuqdamu"
+            },
+            {
+              "form": "تُقْدَمِينَ",
+              "tags": [
+                "feminine",
+                "imperfective",
+                "indicative",
+                "non-past",
+                "passive",
+                "second-person",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamīna"
+            },
+            {
+              "form": "تُقْدَمُ",
+              "tags": [
+                "feminine",
+                "imperfective",
+                "indicative",
+                "non-past",
+                "passive",
+                "singular",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamu"
+            },
+            {
+              "form": "تُقْدَمَانِ",
+              "tags": [
+                "dual",
+                "feminine",
+                "imperfective",
+                "indicative",
+                "non-past",
+                "passive",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamāni"
+            },
+            {
+              "form": "تُقْدَمَانِ",
+              "tags": [
+                "dual",
+                "feminine",
+                "imperfective",
+                "indicative",
+                "non-past",
+                "passive",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamāni"
+            },
+            {
+              "form": "نُقْدَمُ",
+              "tags": [
+                "feminine",
+                "first-person",
+                "imperfective",
+                "indicative",
+                "non-past",
+                "passive",
+                "plural"
+              ],
+              "source": "conjugation",
+              "roman": "nuqdamu"
+            },
+            {
+              "form": "تُقْدَمْنَ",
+              "tags": [
+                "feminine",
+                "imperfective",
+                "indicative",
+                "non-past",
+                "passive",
+                "plural",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamna"
+            },
+            {
+              "form": "يُقْدَمْنَ",
+              "tags": [
+                "feminine",
+                "imperfective",
+                "indicative",
+                "non-past",
+                "passive",
+                "plural",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yuqdamna"
+            },
+            {
+              "form": "أُقْدَمَ",
+              "tags": [
+                "first-person",
+                "masculine",
+                "passive",
+                "singular",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "ʔuqdama"
+            },
+            {
+              "form": "تُقْدَمَ",
+              "tags": [
+                "masculine",
+                "passive",
+                "second-person",
+                "singular",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdama"
+            },
+            {
+              "form": "يُقْدَمَ",
+              "tags": [
+                "masculine",
+                "passive",
+                "singular",
+                "subjunctive",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yuqdama"
+            },
+            {
+              "form": "تُقْدَمَا",
+              "tags": [
+                "dual",
+                "masculine",
+                "passive",
+                "second-person",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamā"
+            },
+            {
+              "form": "يُقْدَمَا",
+              "tags": [
+                "dual",
+                "masculine",
+                "passive",
+                "subjunctive",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yuqdamā"
+            },
+            {
+              "form": "نُقْدَمَ",
+              "tags": [
+                "first-person",
+                "masculine",
+                "passive",
+                "plural",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "nuqdama"
+            },
+            {
+              "form": "تُقْدَمُوا",
+              "tags": [
+                "masculine",
+                "passive",
+                "plural",
+                "second-person",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamū"
+            },
+            {
+              "form": "يُقْدَمُوا",
+              "tags": [
+                "masculine",
+                "passive",
+                "plural",
+                "subjunctive",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yuqdamū"
+            },
+            {
+              "form": "أُقْدَمَ",
+              "tags": [
+                "feminine",
+                "first-person",
+                "passive",
+                "singular",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "ʔuqdama"
+            },
+            {
+              "form": "تُقْدَمِي",
+              "tags": [
+                "feminine",
+                "passive",
+                "second-person",
+                "singular",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamī"
+            },
+            {
+              "form": "تُقْدَمَ",
+              "tags": [
+                "feminine",
+                "passive",
+                "singular",
+                "subjunctive",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdama"
+            },
+            {
+              "form": "تُقْدَمَا",
+              "tags": [
+                "dual",
+                "feminine",
+                "passive",
+                "second-person",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamā"
+            },
+            {
+              "form": "تُقْدَمَا",
+              "tags": [
+                "dual",
+                "feminine",
+                "passive",
+                "subjunctive",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamā"
+            },
+            {
+              "form": "نُقْدَمَ",
+              "tags": [
+                "feminine",
+                "first-person",
+                "passive",
+                "plural",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "nuqdama"
+            },
+            {
+              "form": "تُقْدَمْنَ",
+              "tags": [
+                "feminine",
+                "passive",
+                "plural",
+                "second-person",
+                "subjunctive"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamna"
+            },
+            {
+              "form": "يُقْدَمْنَ",
+              "tags": [
+                "feminine",
+                "passive",
+                "plural",
+                "subjunctive",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yuqdamna"
+            },
+            {
+              "form": "أُقْدَمْ",
+              "tags": [
+                "first-person",
+                "jussive",
+                "masculine",
+                "passive",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "ʔuqdam"
+            },
+            {
+              "form": "تُقْدَمْ",
+              "tags": [
+                "jussive",
+                "masculine",
+                "passive",
+                "second-person",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdam"
+            },
+            {
+              "form": "يُقْدَمْ",
+              "tags": [
+                "jussive",
+                "masculine",
+                "passive",
+                "singular",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yuqdam"
+            },
+            {
+              "form": "تُقْدَمَا",
+              "tags": [
+                "dual",
+                "jussive",
+                "masculine",
+                "passive",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamā"
+            },
+            {
+              "form": "يُقْدَمَا",
+              "tags": [
+                "dual",
+                "jussive",
+                "masculine",
+                "passive",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yuqdamā"
+            },
+            {
+              "form": "نُقْدَمْ",
+              "tags": [
+                "first-person",
+                "jussive",
+                "masculine",
+                "passive",
+                "plural"
+              ],
+              "source": "conjugation",
+              "roman": "nuqdam"
+            },
+            {
+              "form": "تُقْدَمُوا",
+              "tags": [
+                "jussive",
+                "masculine",
+                "passive",
+                "plural",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamū"
+            },
+            {
+              "form": "يُقْدَمُوا",
+              "tags": [
+                "jussive",
+                "masculine",
+                "passive",
+                "plural",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yuqdamū"
+            },
+            {
+              "form": "أُقْدَمْ",
+              "tags": [
+                "feminine",
+                "first-person",
+                "jussive",
+                "passive",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "ʔuqdam"
+            },
+            {
+              "form": "تُقْدَمِي",
+              "tags": [
+                "feminine",
+                "jussive",
+                "passive",
+                "second-person",
+                "singular"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamī"
+            },
+            {
+              "form": "تُقْدَمْ",
+              "tags": [
+                "feminine",
+                "jussive",
+                "passive",
+                "singular",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdam"
+            },
+            {
+              "form": "تُقْدَمَا",
+              "tags": [
+                "dual",
+                "feminine",
+                "jussive",
+                "passive",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamā"
+            },
+            {
+              "form": "تُقْدَمَا",
+              "tags": [
+                "dual",
+                "feminine",
+                "jussive",
+                "passive",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamā"
+            },
+            {
+              "form": "نُقْدَمْ",
+              "tags": [
+                "feminine",
+                "first-person",
+                "jussive",
+                "passive",
+                "plural"
+              ],
+              "source": "conjugation",
+              "roman": "nuqdam"
+            },
+            {
+              "form": "تُقْدَمْنَ",
+              "tags": [
+                "feminine",
+                "jussive",
+                "passive",
+                "plural",
+                "second-person"
+              ],
+              "source": "conjugation",
+              "roman": "tuqdamna"
+            },
+            {
+              "form": "يُقْدَمْنَ",
+              "tags": [
+                "feminine",
+                "jussive",
+                "passive",
+                "plural",
+                "third-person"
+              ],
+              "source": "conjugation",
+              "roman": "yuqdamna"
+            }
+          ],
+          "inflection_templates": [
+            {
+              "name": "ar-conj",
+              "args": {
+                "1": "I/a~u.pass.vn:قَدْم,قُدُوم"
+              }
+            }
+          ],
+          "etymology_number": 1,
+          "etymology_text": "From Proto-Semitic *q-d-m (“to precede, come before”). Compare Hebrew קדם and Classical Syriac ܩܕܡ.",
+          "etymology_templates": [
+            {
+              "name": "ar-rootbox",
+              "args": {
+                "1": "ق د م"
+              },
+              "expansion": ""
+            },
+            {
+              "name": "inh",
+              "args": {
+                "1": "ar",
+                "2": "sem-pro",
+                "3": "*q-d-m",
+                "4": "",
+                "5": "to precede, come before"
+              },
+              "expansion": "Proto-Semitic *q-d-m (“to precede, come before”)"
+            },
+            {
+              "name": "cog",
+              "args": {
+                "1": "he",
+                "2": "קדם"
+              },
+              "expansion": "Hebrew קדם"
+            },
+            {
+              "name": "cog",
+              "args": {
+                "1": "syc",
+                "2": "ܩܕܡ"
+              },
+              "expansion": "Classical Syriac ܩܕܡ"
+            }
+          ],
+          "sounds": [
+            {
+              "ipa": "/qa.da.ma/"
+            }
+          ],
+          "lang": "Arabic",
+          "lang_code": "ar"
+        }
+      },
+      {
+        "url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/ق/قد/قدم.html",
+        "download_url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/ق/قد/قدم.jsonl",
+        "json": {
+          "word": "قدم",
+          "pos": "noun",
+          "senses": [
+            {
+              "links": [
+                [
+                  "foot",
+                  "foot"
+                ]
+              ],
+              "glosses": [
+                "foot"
+              ]
+            },
+            {
+              "links": [
+                [
+                  "foot",
+                  "foot"
+                ]
+              ],
+              "glosses": [
+                "foot (a measure)"
+              ]
+            },
+            {
+              "links": [
+                [
+                  "step",
+                  "step"
+                ]
+              ],
+              "glosses": [
+                "step"
+              ]
+            }
+          ],
+          "head_templates": [
+            {
+              "name": "ar-noun",
+              "args": {
+                "1": "قَدَم",
+                "2": "f",
+                "pl": "أَقْدَام"
+              },
+              "expansion": "قَدَم • (qadam) f (plural أَقْدَام (ʔaqdām))"
+            }
+          ],
+          "categories": [
+            "Arabic 2-syllable words",
+            "Arabic adverbs",
+            "Arabic entries with incorrect language header",
+            "Arabic feminine nouns",
+            "Arabic feminine terms lacking feminine ending",
+            "Arabic lemmas",
+            "Arabic nouns",
+            "Arabic nouns with basic triptote broken plural",
+            "Arabic nouns with basic triptote singular",
+            "Arabic nouns with broken plural",
+            "Arabic terms with IPA pronunciation",
+            "Pages with 8 entries",
+            "Pages with entries"
+          ],
+          "forms": [
+            {
+              "form": "قَدَم",
+              "tags": [
+                "canonical",
+                "feminine"
+              ]
+            },
+            {
+              "form": "qadam",
+              "tags": [
+                "romanization"
+              ]
+            },
+            {
+              "form": "أَقْدَام",
+              "roman": "ʔaqdām",
+              "tags": [
+                "plural"
+              ]
+            },
+            {
+              "form": "no-table-tags",
+              "source": "declension",
+              "tags": [
+                "table-tags"
+              ]
+            },
+            {
+              "form": "ar-decl-noun",
+              "source": "declension",
+              "tags": [
+                "inflection-template"
+              ]
+            },
+            {
+              "form": "قَدَم",
+              "tags": [
+                "indefinite",
+                "informal",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "qadam"
+            },
+            {
+              "form": "الْقَدَم",
+              "tags": [
+                "definite",
+                "informal",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "al-qadam"
+            },
+            {
+              "form": "قَدَم",
+              "tags": [
+                "construct",
+                "informal",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "qadam"
+            },
+            {
+              "form": "قَدَمٌ",
+              "tags": [
+                "indefinite",
+                "nominative",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "qadamun"
+            },
+            {
+              "form": "الْقَدَمُ",
+              "tags": [
+                "definite",
+                "nominative",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "al-qadamu"
+            },
+            {
+              "form": "قَدَمُ",
+              "tags": [
+                "construct",
+                "nominative",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "qadamu"
+            },
+            {
+              "form": "قَدَمًا",
+              "tags": [
+                "accusative",
+                "indefinite",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "qadaman"
+            },
+            {
+              "form": "الْقَدَمَ",
+              "tags": [
+                "accusative",
+                "definite",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "al-qadama"
+            },
+            {
+              "form": "قَدَمَ",
+              "tags": [
+                "accusative",
+                "construct",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "qadama"
+            },
+            {
+              "form": "قَدَمٍ",
+              "tags": [
+                "genitive",
+                "indefinite",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "qadamin"
+            },
+            {
+              "form": "الْقَدَمِ",
+              "tags": [
+                "definite",
+                "genitive",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "al-qadami"
+            },
+            {
+              "form": "قَدَمِ",
+              "tags": [
+                "construct",
+                "genitive",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "qadami"
+            },
+            {
+              "form": "قَدَمَيْن",
+              "tags": [
+                "dual",
+                "indefinite",
+                "informal",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "qadamayn"
+            },
+            {
+              "form": "الْقَدَمَيْن",
+              "tags": [
+                "definite",
+                "dual",
+                "informal",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "al-qadamayn"
+            },
+            {
+              "form": "قَدَمَيْ",
+              "tags": [
+                "construct",
+                "dual",
+                "informal",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "qadamay"
+            },
+            {
+              "form": "قَدَمَانِ",
+              "tags": [
+                "dual",
+                "indefinite",
+                "nominative",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "qadamāni"
+            },
+            {
+              "form": "الْقَدَمَانِ",
+              "tags": [
+                "definite",
+                "dual",
+                "nominative",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "al-qadamāni"
+            },
+            {
+              "form": "قَدَمَا",
+              "tags": [
+                "construct",
+                "dual",
+                "nominative",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "qadamā"
+            },
+            {
+              "form": "قَدَمَيْنِ",
+              "tags": [
+                "accusative",
+                "dual",
+                "indefinite",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "qadamayni"
+            },
+            {
+              "form": "الْقَدَمَيْنِ",
+              "tags": [
+                "accusative",
+                "definite",
+                "dual",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "al-qadamayni"
+            },
+            {
+              "form": "قَدَمَيْ",
+              "tags": [
+                "accusative",
+                "construct",
+                "dual",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "qadamay"
+            },
+            {
+              "form": "قَدَمَيْنِ",
+              "tags": [
+                "dual",
+                "genitive",
+                "indefinite",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "qadamayni"
+            },
+            {
+              "form": "الْقَدَمَيْنِ",
+              "tags": [
+                "definite",
+                "dual",
+                "genitive",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "al-qadamayni"
+            },
+            {
+              "form": "قَدَمَيْ",
+              "tags": [
+                "construct",
+                "dual",
+                "genitive",
+                "singular",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "qadamay"
+            },
+            {
+              "form": "أَقْدَام",
+              "tags": [
+                "broken-form",
+                "indefinite",
+                "informal",
+                "plural",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "ʔaqdām"
+            },
+            {
+              "form": "الْأَقْدَام",
+              "tags": [
+                "broken-form",
+                "definite",
+                "informal",
+                "plural",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "al-ʔaqdām"
+            },
+            {
+              "form": "أَقْدَام",
+              "tags": [
+                "broken-form",
+                "construct",
+                "informal",
+                "plural",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "ʔaqdām"
+            },
+            {
+              "form": "أَقْدَامٌ",
+              "tags": [
+                "broken-form",
+                "indefinite",
+                "nominative",
+                "plural",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "ʔaqdāmun"
+            },
+            {
+              "form": "الْأَقْدَامُ",
+              "tags": [
+                "broken-form",
+                "definite",
+                "nominative",
+                "plural",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "al-ʔaqdāmu"
+            },
+            {
+              "form": "أَقْدَامُ",
+              "tags": [
+                "broken-form",
+                "construct",
+                "nominative",
+                "plural",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "ʔaqdāmu"
+            },
+            {
+              "form": "أَقْدَامًا",
+              "tags": [
+                "accusative",
+                "broken-form",
+                "indefinite",
+                "plural",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "ʔaqdāman"
+            },
+            {
+              "form": "الْأَقْدَامَ",
+              "tags": [
+                "accusative",
+                "broken-form",
+                "definite",
+                "plural",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "al-ʔaqdāma"
+            },
+            {
+              "form": "أَقْدَامَ",
+              "tags": [
+                "accusative",
+                "broken-form",
+                "construct",
+                "plural",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "ʔaqdāma"
+            },
+            {
+              "form": "أَقْدَامٍ",
+              "tags": [
+                "broken-form",
+                "genitive",
+                "indefinite",
+                "plural",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "ʔaqdāmin"
+            },
+            {
+              "form": "الْأَقْدَامِ",
+              "tags": [
+                "broken-form",
+                "definite",
+                "genitive",
+                "plural",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "al-ʔaqdāmi"
+            },
+            {
+              "form": "أَقْدَامِ",
+              "tags": [
+                "broken-form",
+                "construct",
+                "genitive",
+                "plural",
+                "triptote"
+              ],
+              "source": "declension",
+              "roman": "ʔaqdāmi"
+            }
+          ],
+          "inflection_templates": [
+            {
+              "name": "ar-decl-noun",
+              "args": {
+                "1": "قَدَم",
+                "pl": "أَقْدَام"
+              }
+            }
+          ],
+          "derived": [
+            {
+              "roman": "kurat al-qadam",
+              "english": "football",
+              "translation": "football",
+              "word": "كُرَة اَلْقَدَم"
+            }
+          ],
+          "descendants": [
+            {
+              "lang": "Baluchi",
+              "lang_code": "bal",
+              "word": "قدم",
+              "raw_tags": [
+                "borrowed"
+              ],
+              "roman": "qadam"
+            },
+            {
+              "lang": "Classical Persian",
+              "lang_code": "fa",
+              "word": "قَدَم",
+              "raw_tags": [
+                "borrowed"
+              ],
+              "roman": "qadam",
+              "descendants": [
+                {
+                  "lang": "Bengali",
+                  "lang_code": "bn",
+                  "word": "কদম",
+                  "raw_tags": [
+                    "borrowed"
+                  ],
+                  "roman": "kodom"
+                },
+                {
+                  "lang": "Chagatai",
+                  "lang_code": "chg",
+                  "word": "قدم",
+                  "raw_tags": [
+                    "borrowed"
+                  ],
+                  "roman": "qdm",
+                  "descendants": [
+                    {
+                      "lang": "Uyghur",
+                      "lang_code": "ug",
+                      "word": "قەدەم",
+                      "roman": "qedem"
+                    },
+                    {
+                      "lang": "Uzbek",
+                      "lang_code": "uz",
+                      "word": "qadam"
+                    }
+                  ]
+                },
+                {
+                  "lang": "Kazakh",
+                  "lang_code": "kk",
+                  "word": "қадам",
+                  "raw_tags": [
+                    "borrowed"
+                  ],
+                  "roman": "qadam"
+                },
+                {
+                  "lang": "Kyrgyz",
+                  "lang_code": "ky",
+                  "word": "кадам",
+                  "raw_tags": [
+                    "borrowed"
+                  ],
+                  "roman": "kadam"
+                },
+                {
+                  "lang": "Nepali",
+                  "lang_code": "ne",
+                  "word": "कदम",
+                  "raw_tags": [
+                    "borrowed"
+                  ],
+                  "roman": "kadam"
+                },
+                {
+                  "lang": "Turkmen",
+                  "lang_code": "tk",
+                  "word": "gadam",
+                  "raw_tags": [
+                    "borrowed"
+                  ]
+                }
+              ]
+            },
+            {
+              "lang": "English",
+              "lang_code": "en",
+              "word": "kadam",
+              "raw_tags": [
+                "borrowed",
+                "via a language of India"
+              ]
+            },
+            {
+              "lang": "Northern Kurdish",
+              "lang_code": "kmr",
+              "word": "qedûm",
+              "raw_tags": [
+                "borrowed"
+              ],
+              "descendants": [
+                {
+                  "lang": "Armenian",
+                  "lang_code": "hy",
+                  "word": "ղուդում",
+                  "raw_tags": [
+                    "borrowed"
+                  ],
+                  "roman": "ġudum"
+                }
+              ]
+            },
+            {
+              "lang": "Northern Kurdish",
+              "lang_code": "kmr",
+              "word": "qidûm",
+              "raw_tags": [
+                "borrowed"
+              ],
+              "descendants": [
+                {
+                  "lang": "Armenian",
+                  "lang_code": "hy",
+                  "word": "ղուդում",
+                  "raw_tags": [
+                    "borrowed"
+                  ],
+                  "roman": "ġudum"
+                }
+              ]
+            },
+            {
+              "lang": "Northern Kurdish",
+              "lang_code": "kmr",
+              "word": "qudum",
+              "raw_tags": [
+                "borrowed"
+              ],
+              "descendants": [
+                {
+                  "lang": "Armenian",
+                  "lang_code": "hy",
+                  "word": "ղուդում",
+                  "raw_tags": [
+                    "borrowed"
+                  ],
+                  "roman": "ġudum"
+                }
+              ]
+            },
+            {
+              "lang": "Northern Kurdish",
+              "lang_code": "kmr",
+              "word": "qudûm",
+              "raw_tags": [
+                "borrowed"
+              ],
+              "descendants": [
+                {
+                  "lang": "Armenian",
+                  "lang_code": "hy",
+                  "word": "ղուդում",
+                  "raw_tags": [
+                    "borrowed"
+                  ],
+                  "roman": "ġudum"
+                }
+              ]
+            },
+            {
+              "lang": "Northern Kurdish",
+              "lang_code": "kmr",
+              "word": "qedem",
+              "raw_tags": [
+                "borrowed"
+              ],
+              "descendants": [
+                {
+                  "lang": "Armenian",
+                  "lang_code": "hy",
+                  "word": "ղուդում",
+                  "raw_tags": [
+                    "borrowed"
+                  ],
+                  "roman": "ġudum"
+                }
+              ]
+            },
+            {
+              "lang": "Old Anatolian Turkish",
+              "lang_code": "trk-oat",
+              "word": "قَدَم",
+              "raw_tags": [
+                "borrowed"
+              ],
+              "roman": "qedem",
+              "descendants": [
+                {
+                  "lang": "Azerbaijani",
+                  "lang_code": "az",
+                  "word": "qədəm"
+                },
+                {
+                  "lang": "Ottoman Turkish",
+                  "lang_code": "ota",
+                  "word": "قدم",
+                  "roman": "kadem",
+                  "descendants": [
+                    {
+                      "lang": "Turkish",
+                      "lang_code": "tr",
+                      "word": "kadem"
+                    },
+                    {
+                      "lang": "Armenian",
+                      "lang_code": "hy",
+                      "word": "խատէմ",
+                      "raw_tags": [
+                        "borrowed"
+                      ],
+                      "roman": "xatēm"
+                    },
+                    {
+                      "lang": "Bulgarian",
+                      "lang_code": "bg",
+                      "word": "кадем",
+                      "raw_tags": [
+                        "borrowed"
+                      ],
+                      "roman": "kadem"
+                    },
+                    {
+                      "lang": "Bulgarian",
+                      "lang_code": "bg",
+                      "word": "Кадемов",
+                      "raw_tags": [
+                        "borrowed",
+                        "reshaped by analogy or addition of morphemes"
+                      ],
+                      "roman": "Kademov"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "etymology_number": 5,
+          "sounds": [
+            {
+              "ipa": "/qa.dam/"
+            },
+            {
+              "audio": "Ar-قدم.ogg",
+              "ogg_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Ar-%D9%82%D8%AF%D9%85.ogg",
+              "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a8/Ar-%D9%82%D8%AF%D9%85.ogg/Ar-%D9%82%D8%AF%D9%85.ogg.mp3"
+            }
+          ],
+          "lang": "Arabic",
+          "lang_code": "ar"
+        }
+      }
+    ]
   }
 }

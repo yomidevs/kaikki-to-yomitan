@@ -1,0 +1,82 @@
+[
+  [
+    "bring",
+    "bring",
+    "v",
+    "v",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "to transport toward somebody/somewhere"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "أَحْضَرَ"
+                },
+                {
+                  "tag": "li",
+                  "content": "جَاءَ بِـ"
+                },
+                {
+                  "tag": "li",
+                  "content": "أَتَى بِـ"
+                },
+                {
+                  "tag": "li",
+                  "content": "جَلَبَ"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "falcon",
+    "falcon",
+    "n",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "bird of the genus Falco"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "صَقْر"
+                },
+                {
+                  "tag": "li",
+                  "content": "شَاهِين"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ]
+]

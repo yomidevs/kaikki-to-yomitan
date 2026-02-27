@@ -982,7 +982,9 @@ pub fn get_reading(edition: Edition, source: Lang, entry: &WordEntry) -> Option<
 /// this will return fāma).
 fn get_canonical_word(source: Lang, entry: &WordEntry) -> Option<String> {
     match source {
-        Lang::La | Lang::Ru | Lang::Grc => entry.canonical_form().map(|f| f.form.to_string()),
+        Lang::La | Lang::Ru | Lang::Grc | Lang::Ar | Lang::Fa => {
+            entry.canonical_form().map(|f| f.form.to_string())
+        }
         _ => None,
     }
 }

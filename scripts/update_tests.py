@@ -21,6 +21,7 @@ PATH_REGISTRY = PATH_TESTS_DIR / "registry.json"
 PATH_REGISTRY_TIMESTAMPS = PATH_TESTS_DIR / "registry_timestamps.json"
 
 L = Literal[
+    "ar",
     "cs",
     "de",
     "el",

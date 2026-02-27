@@ -1,0 +1,959 @@
+{
+  "قدم": {
+    "يَقْدُمُ": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular masculine imperfective active indicative non-past"
+        ]
+      ]
+    },
+    "قَدْم": {
+      "verb": [
+        "extracted",
+        [
+          "noun-from-verb"
+        ]
+      ]
+    },
+    "قُدُوم": {
+      "verb": [
+        "extracted",
+        [
+          "noun-from-verb"
+        ]
+      ]
+    },
+    "قَادِم": {
+      "verb": [
+        "extracted",
+        [
+          "active participle"
+        ]
+      ]
+    },
+    "مَقْدُوم": {
+      "verb": [
+        "extracted",
+        [
+          "passive participle"
+        ]
+      ]
+    },
+    "قَدَمْتُ": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular feminine past perfective active indicative",
+          "first-person singular masculine past perfective active indicative"
+        ]
+      ]
+    },
+    "قَدَمْتَ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular masculine past perfective active indicative"
+        ]
+      ]
+    },
+    "قَدَمَ": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular masculine past perfective active indicative"
+        ]
+      ],
+      "noun": [
+        "extracted",
+        [
+          "accusative singular construct triptote"
+        ]
+      ]
+    },
+    "قَدَمْتُمَا": {
+      "verb": [
+        "extracted",
+        [
+          "second-person feminine past perfective active indicative dual",
+          "second-person masculine past perfective active indicative dual"
+        ]
+      ]
+    },
+    "قَدَمَا": {
+      "verb": [
+        "extracted",
+        [
+          "third-person masculine past perfective active indicative dual"
+        ]
+      ],
+      "noun": [
+        "extracted",
+        [
+          "nominative singular construct dual triptote"
+        ]
+      ]
+    },
+    "قَدَمْنَا": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural feminine past perfective active indicative",
+          "first-person plural masculine past perfective active indicative"
+        ]
+      ]
+    },
+    "قَدَمْتُمْ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural masculine past perfective active indicative"
+        ]
+      ]
+    },
+    "قَدَمُوا": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural masculine past perfective active indicative"
+        ]
+      ]
+    },
+    "قَدَمْتِ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular feminine past perfective active indicative"
+        ]
+      ]
+    },
+    "قَدَمَتْ": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular feminine past perfective active indicative"
+        ]
+      ]
+    },
+    "قَدَمَتَا": {
+      "verb": [
+        "extracted",
+        [
+          "third-person feminine past perfective active indicative dual"
+        ]
+      ]
+    },
+    "قَدَمْتُنَّ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural feminine past perfective active indicative"
+        ]
+      ]
+    },
+    "قَدَمْنَ": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural feminine past perfective active indicative"
+        ]
+      ]
+    },
+    "أَقْدُمُ": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular feminine imperfective active indicative non-past",
+          "first-person singular masculine imperfective active indicative non-past"
+        ]
+      ]
+    },
+    "تَقْدُمُ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular masculine imperfective active indicative non-past",
+          "third-person singular feminine imperfective active indicative non-past"
+        ]
+      ]
+    },
+    "تَقْدُمَانِ": {
+      "verb": [
+        "extracted",
+        [
+          "feminine imperfective active indicative dual non-past second/third-person",
+          "second-person masculine imperfective active indicative dual non-past"
+        ]
+      ]
+    },
+    "يَقْدُمَانِ": {
+      "verb": [
+        "extracted",
+        [
+          "third-person masculine imperfective active indicative dual non-past"
+        ]
+      ]
+    },
+    "نَقْدُمُ": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural feminine imperfective active indicative non-past",
+          "first-person plural masculine imperfective active indicative non-past"
+        ]
+      ]
+    },
+    "تَقْدُمُونَ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural masculine imperfective active indicative non-past"
+        ]
+      ]
+    },
+    "يَقْدُمُونَ": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural masculine imperfective active indicative non-past"
+        ]
+      ]
+    },
+    "تَقْدُمِينَ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular feminine imperfective active indicative non-past"
+        ]
+      ]
+    },
+    "تَقْدُمْنَ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural feminine active jussive",
+          "second-person plural feminine active subjunctive",
+          "second-person plural feminine imperfective active indicative non-past"
+        ]
+      ]
+    },
+    "يَقْدُمْنَ": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural feminine active jussive",
+          "third-person plural feminine active subjunctive",
+          "third-person plural feminine imperfective active indicative non-past"
+        ]
+      ]
+    },
+    "أَقْدُمَ": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular feminine active subjunctive",
+          "first-person singular masculine active subjunctive"
+        ]
+      ]
+    },
+    "تَقْدُمَ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular masculine active subjunctive",
+          "third-person singular feminine active subjunctive"
+        ]
+      ]
+    },
+    "يَقْدُمَ": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular masculine active subjunctive"
+        ]
+      ]
+    },
+    "تَقْدُمَا": {
+      "verb": [
+        "extracted",
+        [
+          "feminine active dual jussive second/third-person",
+          "feminine active subjunctive dual second/third-person",
+          "second-person masculine active dual jussive",
+          "second-person masculine active subjunctive dual"
+        ]
+      ]
+    },
+    "يَقْدُمَا": {
+      "verb": [
+        "extracted",
+        [
+          "third-person masculine active dual jussive",
+          "third-person masculine active subjunctive dual"
+        ]
+      ]
+    },
+    "نَقْدُمَ": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural feminine active subjunctive",
+          "first-person plural masculine active subjunctive"
+        ]
+      ]
+    },
+    "تَقْدُمُوا": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural masculine active jussive",
+          "second-person plural masculine active subjunctive"
+        ]
+      ]
+    },
+    "يَقْدُمُوا": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural masculine active jussive",
+          "third-person plural masculine active subjunctive"
+        ]
+      ]
+    },
+    "تَقْدُمِي": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular feminine active jussive",
+          "second-person singular feminine active subjunctive"
+        ]
+      ]
+    },
+    "أَقْدُمْ": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular feminine active jussive",
+          "first-person singular masculine active jussive"
+        ]
+      ]
+    },
+    "تَقْدُمْ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular masculine active jussive",
+          "third-person singular feminine active jussive"
+        ]
+      ]
+    },
+    "يَقْدُمْ": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular masculine active jussive"
+        ]
+      ]
+    },
+    "نَقْدُمْ": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural feminine active jussive",
+          "first-person plural masculine active jussive"
+        ]
+      ]
+    },
+    "اُقْدُمْ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular masculine imperative active"
+        ]
+      ]
+    },
+    "اُقْدُمَا": {
+      "verb": [
+        "extracted",
+        [
+          "second-person feminine imperative active dual",
+          "second-person masculine imperative active dual"
+        ]
+      ]
+    },
+    "اُقْدُمُوا": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural masculine imperative active"
+        ]
+      ]
+    },
+    "اُقْدُمِي": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular feminine imperative active"
+        ]
+      ]
+    },
+    "اُقْدُمْنَ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural feminine imperative active"
+        ]
+      ]
+    },
+    "قُدِمْتُ": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular feminine past perfective passive indicative",
+          "first-person singular masculine past perfective passive indicative"
+        ]
+      ]
+    },
+    "قُدِمْتَ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular masculine past perfective passive indicative"
+        ]
+      ]
+    },
+    "قُدِمَ": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular masculine past perfective passive indicative"
+        ]
+      ]
+    },
+    "قُدِمْتُمَا": {
+      "verb": [
+        "extracted",
+        [
+          "second-person feminine past perfective passive indicative dual",
+          "second-person masculine past perfective passive indicative dual"
+        ]
+      ]
+    },
+    "قُدِمَا": {
+      "verb": [
+        "extracted",
+        [
+          "third-person masculine past perfective passive indicative dual"
+        ]
+      ]
+    },
+    "قُدِمْنَا": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural feminine past perfective passive indicative",
+          "first-person plural masculine past perfective passive indicative"
+        ]
+      ]
+    },
+    "قُدِمْتُمْ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural masculine past perfective passive indicative"
+        ]
+      ]
+    },
+    "قُدِمُوا": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural masculine past perfective passive indicative"
+        ]
+      ]
+    },
+    "قُدِمْتِ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular feminine past perfective passive indicative"
+        ]
+      ]
+    },
+    "قُدِمَتْ": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular feminine past perfective passive indicative"
+        ]
+      ]
+    },
+    "قُدِمَتَا": {
+      "verb": [
+        "extracted",
+        [
+          "third-person feminine past perfective passive indicative dual"
+        ]
+      ]
+    },
+    "قُدِمْتُنَّ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural feminine past perfective passive indicative"
+        ]
+      ]
+    },
+    "قُدِمْنَ": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural feminine past perfective passive indicative"
+        ]
+      ]
+    },
+    "أُقْدَمُ": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular feminine imperfective passive indicative non-past",
+          "first-person singular masculine imperfective passive indicative non-past"
+        ]
+      ]
+    },
+    "تُقْدَمُ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular masculine imperfective passive indicative non-past",
+          "third-person singular feminine imperfective passive indicative non-past"
+        ]
+      ]
+    },
+    "يُقْدَمُ": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular masculine imperfective passive indicative non-past"
+        ]
+      ]
+    },
+    "تُقْدَمَانِ": {
+      "verb": [
+        "extracted",
+        [
+          "feminine imperfective passive indicative dual non-past second/third-person",
+          "second-person masculine imperfective passive indicative dual non-past"
+        ]
+      ]
+    },
+    "يُقْدَمَانِ": {
+      "verb": [
+        "extracted",
+        [
+          "third-person masculine imperfective passive indicative dual non-past"
+        ]
+      ]
+    },
+    "نُقْدَمُ": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural feminine imperfective passive indicative non-past",
+          "first-person plural masculine imperfective passive indicative non-past"
+        ]
+      ]
+    },
+    "تُقْدَمُونَ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural masculine imperfective passive indicative non-past"
+        ]
+      ]
+    },
+    "يُقْدَمُونَ": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural masculine imperfective passive indicative non-past"
+        ]
+      ]
+    },
+    "تُقْدَمِينَ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular feminine imperfective passive indicative non-past"
+        ]
+      ]
+    },
+    "تُقْدَمْنَ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural feminine imperfective passive indicative non-past",
+          "second-person plural feminine passive jussive",
+          "second-person plural feminine passive subjunctive"
+        ]
+      ]
+    },
+    "يُقْدَمْنَ": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural feminine imperfective passive indicative non-past",
+          "third-person plural feminine passive jussive",
+          "third-person plural feminine passive subjunctive"
+        ]
+      ]
+    },
+    "أُقْدَمَ": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular feminine passive subjunctive",
+          "first-person singular masculine passive subjunctive"
+        ]
+      ]
+    },
+    "تُقْدَمَ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular masculine passive subjunctive",
+          "third-person singular feminine passive subjunctive"
+        ]
+      ]
+    },
+    "يُقْدَمَ": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular masculine passive subjunctive"
+        ]
+      ]
+    },
+    "تُقْدَمَا": {
+      "verb": [
+        "extracted",
+        [
+          "feminine passive dual jussive second/third-person",
+          "feminine passive subjunctive dual second/third-person",
+          "second-person masculine passive dual jussive",
+          "second-person masculine passive subjunctive dual"
+        ]
+      ]
+    },
+    "يُقْدَمَا": {
+      "verb": [
+        "extracted",
+        [
+          "third-person masculine passive dual jussive",
+          "third-person masculine passive subjunctive dual"
+        ]
+      ]
+    },
+    "نُقْدَمَ": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural feminine passive subjunctive",
+          "first-person plural masculine passive subjunctive"
+        ]
+      ]
+    },
+    "تُقْدَمُوا": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural masculine passive jussive",
+          "second-person plural masculine passive subjunctive"
+        ]
+      ]
+    },
+    "يُقْدَمُوا": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural masculine passive jussive",
+          "third-person plural masculine passive subjunctive"
+        ]
+      ]
+    },
+    "تُقْدَمِي": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular feminine passive jussive",
+          "second-person singular feminine passive subjunctive"
+        ]
+      ]
+    },
+    "أُقْدَمْ": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular feminine passive jussive",
+          "first-person singular masculine passive jussive"
+        ]
+      ]
+    },
+    "تُقْدَمْ": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular masculine passive jussive",
+          "third-person singular feminine passive jussive"
+        ]
+      ]
+    },
+    "يُقْدَمْ": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular masculine passive jussive"
+        ]
+      ]
+    },
+    "نُقْدَمْ": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural feminine passive jussive",
+          "first-person plural masculine passive jussive"
+        ]
+      ]
+    },
+    "أَقْدَام": {
+      "noun": [
+        "extracted",
+        [
+          "informal plural broken-form construct triptote",
+          "informal plural indefinite broken-form triptote"
+        ]
+      ]
+    },
+    "قَدَم": {
+      "noun": [
+        "extracted",
+        [
+          "informal singular construct triptote",
+          "informal singular indefinite triptote"
+        ]
+      ]
+    },
+    "الْقَدَم": {
+      "noun": [
+        "extracted",
+        [
+          "informal singular definite triptote"
+        ]
+      ]
+    },
+    "قَدَمٌ": {
+      "noun": [
+        "extracted",
+        [
+          "nominative singular indefinite triptote"
+        ]
+      ]
+    },
+    "الْقَدَمُ": {
+      "noun": [
+        "extracted",
+        [
+          "nominative singular definite triptote"
+        ]
+      ]
+    },
+    "قَدَمُ": {
+      "noun": [
+        "extracted",
+        [
+          "nominative singular construct triptote"
+        ]
+      ]
+    },
+    "قَدَمًا": {
+      "noun": [
+        "extracted",
+        [
+          "accusative singular indefinite triptote"
+        ]
+      ]
+    },
+    "الْقَدَمَ": {
+      "noun": [
+        "extracted",
+        [
+          "accusative singular definite triptote"
+        ]
+      ]
+    },
+    "قَدَمٍ": {
+      "noun": [
+        "extracted",
+        [
+          "genitive singular indefinite triptote"
+        ]
+      ]
+    },
+    "الْقَدَمِ": {
+      "noun": [
+        "extracted",
+        [
+          "genitive singular definite triptote"
+        ]
+      ]
+    },
+    "قَدَمِ": {
+      "noun": [
+        "extracted",
+        [
+          "genitive singular construct triptote"
+        ]
+      ]
+    },
+    "قَدَمَيْن": {
+      "noun": [
+        "extracted",
+        [
+          "informal singular indefinite dual triptote"
+        ]
+      ]
+    },
+    "الْقَدَمَيْن": {
+      "noun": [
+        "extracted",
+        [
+          "informal singular definite dual triptote"
+        ]
+      ]
+    },
+    "قَدَمَيْ": {
+      "noun": [
+        "extracted",
+        [
+          "accusative singular construct dual triptote",
+          "genitive singular construct dual triptote",
+          "informal singular construct dual triptote"
+        ]
+      ]
+    },
+    "قَدَمَانِ": {
+      "noun": [
+        "extracted",
+        [
+          "nominative singular indefinite dual triptote"
+        ]
+      ]
+    },
+    "الْقَدَمَانِ": {
+      "noun": [
+        "extracted",
+        [
+          "nominative singular definite dual triptote"
+        ]
+      ]
+    },
+    "قَدَمَيْنِ": {
+      "noun": [
+        "extracted",
+        [
+          "accusative singular indefinite dual triptote",
+          "genitive singular indefinite dual triptote"
+        ]
+      ]
+    },
+    "الْقَدَمَيْنِ": {
+      "noun": [
+        "extracted",
+        [
+          "accusative singular definite dual triptote",
+          "genitive singular definite dual triptote"
+        ]
+      ]
+    },
+    "الْأَقْدَام": {
+      "noun": [
+        "extracted",
+        [
+          "informal plural definite broken-form triptote"
+        ]
+      ]
+    },
+    "أَقْدَامٌ": {
+      "noun": [
+        "extracted",
+        [
+          "nominative plural indefinite broken-form triptote"
+        ]
+      ]
+    },
+    "الْأَقْدَامُ": {
+      "noun": [
+        "extracted",
+        [
+          "nominative plural definite broken-form triptote"
+        ]
+      ]
+    },
+    "أَقْدَامُ": {
+      "noun": [
+        "extracted",
+        [
+          "nominative plural broken-form construct triptote"
+        ]
+      ]
+    },
+    "أَقْدَامًا": {
+      "noun": [
+        "extracted",
+        [
+          "accusative plural indefinite broken-form triptote"
+        ]
+      ]
+    },
+    "الْأَقْدَامَ": {
+      "noun": [
+        "extracted",
+        [
+          "accusative plural definite broken-form triptote"
+        ]
+      ]
+    },
+    "أَقْدَامَ": {
+      "noun": [
+        "extracted",
+        [
+          "accusative plural broken-form construct triptote"
+        ]
+      ]
+    },
+    "أَقْدَامٍ": {
+      "noun": [
+        "extracted",
+        [
+          "genitive plural indefinite broken-form triptote"
+        ]
+      ]
+    },
+    "الْأَقْدَامِ": {
+      "noun": [
+        "extracted",
+        [
+          "genitive plural definite broken-form triptote"
+        ]
+      ]
+    },
+    "أَقْدَامِ": {
+      "noun": [
+        "extracted",
+        [
+          "genitive plural broken-form construct triptote"
+        ]
+      ]
+    }
+  }
+}

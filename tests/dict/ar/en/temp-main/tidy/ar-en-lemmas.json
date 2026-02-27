@@ -1,0 +1,48 @@
+{
+  "قدم": {
+    "قَدَمَ": {
+      "verb": [
+        {
+          "gloss_tree": {
+            "to precede": {
+              "tags": [
+                "transitive",
+                "form-i"
+              ]
+            }
+          },
+          "etymology_text": "From Proto-Semitic *q-d-m (“to precede, come before”). Compare Hebrew קדם and Classical Syriac ܩܕܡ.",
+          "head_info_text": "قَدَمَ • (qadama) I (non-past يَقْدُمُ (yaqdumu), verbal noun قَدْم (qadm) or قُدُوم (qudūm))",
+          "wlink": "https://en.wiktionary.org/wiki/قدم#Arabic",
+          "klink": "https://kaikki.org/dictionary/Arabic/meaning/ق/قد/قدم.html"
+        }
+      ]
+    },
+    "قَدَم": {
+      "noun": [
+        {
+          "gloss_tree": {
+            "foot": {
+              "tags": [
+                "feminine"
+              ]
+            },
+            "foot (a measure)": {
+              "tags": [
+                "feminine"
+              ]
+            },
+            "step": {
+              "tags": [
+                "feminine"
+              ]
+            }
+          },
+          "head_info_text": "قَدَم • (qadam) f (plural أَقْدَام (ʔaqdām))",
+          "wlink": "https://en.wiktionary.org/wiki/قدم#Arabic",
+          "klink": "https://kaikki.org/dictionary/Arabic/meaning/ق/قد/قدم.html"
+        }
+      ]
+    }
+  }
+}
