@@ -316,6 +316,11 @@ pub fn make_dict<D: Dictionary + AggregationKey>(dict: D, raw_args: D::A) -> Res
 
             line_count += 1;
 
+            if !opts.quiet && line_count % CONSOLE_PRINT_INTERVAL == 0 {
+                print!("Processed {line_count} lines...\r");
+                std::io::stdout().flush()?;
+            }
+
             if dict.supports_probe() {
                 let probe: LangCodeProbe = serde_json::from_slice(&line)
                     .with_context(|| "Error decoding JSON @ make_dict (lang_code prefilter)")?;
@@ -326,11 +331,6 @@ pub fn make_dict<D: Dictionary + AggregationKey>(dict: D, raw_args: D::A) -> Res
 
             let mut entry: WordEntry =
                 serde_json::from_slice(&line).with_context(|| "Error decoding JSON @ make_dict")?;
-
-            if !opts.quiet && line_count % CONSOLE_PRINT_INTERVAL == 0 {
-                print!("Processed {line_count} lines...\r");
-                std::io::stdout().flush()?;
-            }
 
             if rejected(&entry, opts) {
                 continue;
