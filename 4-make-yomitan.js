@@ -14,7 +14,7 @@ const {
     temp_folder: writeFolder
 } = /** @type {MakeYomitanEnv} */(process.env);
 
-const latestDownloadLink = 'https://pub-c3d38cca4dc2403b88934c56748f5144.r2.dev/releases/latest/';
+const latestDownloadLink = 'https://huggingface.co/datasets/daxida/wty-release/resolve/main/latest';
 
 const indexJson = {
     format: 3,
@@ -807,13 +807,14 @@ function getTagStyles(folder){
  * @param {'dict'|'ipa'} folder 
  */
 function writeIndex(folder) {
-    const title = `${DICT_NAME}-${source_iso}-${target_iso}` + (folder === 'dict' ? '' : '-ipa');
+    const uid = `${source_iso}-${target_iso}` + (folder === 'dict' ? '' : '-ipa');
+
     writeFileSync(`${writeFolder}/${folder}/index.json`, JSON.stringify({
         ...indexJson,
-        title,
+        title: `kty-${uid}`,
         isUpdatable: true,
-        indexUrl: `${latestDownloadLink}${title}-index.json`,
-        downloadUrl: `${latestDownloadLink}${title}.zip`,
+        indexUrl: `${latestDownloadLink}/index/wty-${uid}-index.json`,
+        downloadUrl: `${latestDownloadLink}/dict/${source_iso}/${target_iso}/wty-${uid}.zip`,
     }));        
 }
 
