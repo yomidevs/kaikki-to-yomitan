@@ -24,10 +24,7 @@ fn fixture_options(fixture_dir: &Path) -> Options {
 
 fn fixture_main_args(source: Lang, target: Edition, fixture_path: &Path) -> MainArgs {
     MainArgs {
-        langs: MainLangs {
-            source: source,
-            target: target,
-        },
+        langs: MainLangs { source, target },
         dict_name: DictName::default(),
         options: fixture_options(fixture_path),
     }

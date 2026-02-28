@@ -52,10 +52,7 @@ fn fixture_options(fixture_dir: &Path) -> Options {
 
 fn fixture_main_args(source: Lang, target: Edition, fixture_dir: &Path) -> MainArgs {
     MainArgs {
-        langs: MainLangs {
-            source: source,
-            target: target,
-        },
+        langs: MainLangs { source, target },
         dict_name: DictName::default(),
         options: fixture_options(fixture_dir),
     }
@@ -63,10 +60,7 @@ fn fixture_main_args(source: Lang, target: Edition, fixture_dir: &Path) -> MainA
 
 fn fixture_ipa_args(source: Lang, target: Edition, fixture_dir: &Path) -> IpaArgs {
     IpaArgs {
-        langs: MainLangs {
-            source: source,
-            target: target,
-        },
+        langs: MainLangs { source, target },
         dict_name: DictName::default(),
         options: fixture_options(fixture_dir),
     }
@@ -74,10 +68,7 @@ fn fixture_ipa_args(source: Lang, target: Edition, fixture_dir: &Path) -> IpaArg
 
 fn fixture_glossary_args(source: Edition, target: Lang, fixture_dir: &Path) -> GlossaryArgs {
     GlossaryArgs {
-        langs: GlossaryLangs {
-            source: source,
-            target: target,
-        },
+        langs: GlossaryLangs { source, target },
         dict_name: DictName::default(),
         options: fixture_options(fixture_dir),
     }

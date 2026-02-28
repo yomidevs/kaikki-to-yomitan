@@ -279,7 +279,7 @@ struct LangCodeProbe<'a> {
     lang_code: Cow<'a, str>,
 }
 
-impl<'a> Default for LangCodeProbe<'a> {
+impl Default for LangCodeProbe<'_> {
     fn default() -> Self {
         Self {
             lang_code: Cow::Borrowed(""),
