@@ -19,15 +19,13 @@ use rkyv::Archived;
 use rusqlite::{Connection, params};
 
 use crate::{
-    Map,
     cli::{
         DictName, GlossaryArgs, GlossaryExtendedArgs, GlossaryExtendedLangs, GlossaryLangs,
         IpaArgs, IpaMergedArgs, IpaMergedLangs, MainArgs, MainLangs, Options,
     },
     dict::{
-        AggregationKey, DGlossary, DGlossaryExtended, DIpa, DIpaMerged, DMain, Dictionary,
-        Intermediate, Langs, LangsKey, find_or_download_jsonl, iter_datasets,
-        writer::write_yomitan,
+        DGlossary, DGlossaryExtended, DIpa, DIpaMerged, DMain, Dictionary, Intermediate, Langs,
+        find_or_download_jsonl, iter_datasets, writer::write_yomitan,
     },
     lang::{Edition, EditionSpec, Lang},
     models::kaikki::WordEntry,
@@ -367,17 +365,15 @@ impl WiktextractDb {
     }
 }
 
-fn make_dict<D: Dictionary + AggregationKey + EditionFrom>(dict: D, raw_args: D::A) -> Result<()> {
+fn make_dict<D: Dictionary + EditionFrom>(dict: D, raw_args: D::A) -> Result<()> {
     let pm: &PathManager = &raw_args.try_into()?;
-    let (_, source_pm, target_pm) = pm.langs();
+    let (edition_pm, source_pm, target_pm) = pm.langs();
     let opts = &pm.opts;
     pm.setup_dirs()?;
 
     tracing::trace!("{pm:#?}");
 
-    // (source, target) -> D::I
-    // TODO: Do we stil need a map instead of a raw vector?
-    let mut irs_map: Map<LangsKey, D::I> = Map::default();
+    let mut irs = D::I::default();
 
     for pair in iter_datasets(pm) {
         let (edition, _path_jsonl) = pair?;
@@ -405,51 +401,36 @@ fn make_dict<D: Dictionary + AggregationKey + EditionFrom>(dict: D, raw_args: D:
             let blob: &[u8] = row.get_ref(0)?.as_blob()?;
             let mut entry = WiktextractDb::blob_to_word_entry(blob)?;
 
-            let key = dict.langs_to_key(langs);
-            let irs = irs_map.entry(key).or_default();
-            dict.preprocess(langs, &mut entry, opts, irs);
-            dict.process(langs, &entry, irs);
+            dict.preprocess(langs, &mut entry, opts, &mut irs);
+            dict.process(langs, &entry, &mut irs);
         }
     }
 
-    if irs_map.len() > 1 {
-        tracing::debug!("Matrix ({}): {:?}", irs_map.len(), irs_map.keys());
+    if !opts.quiet {
+        dict.found_ir_message(&irs);
     }
 
-    for (key, mut irs) in irs_map {
-        if !opts.quiet {
-            dict.found_ir_message(&key, &irs);
-        }
-        if irs.is_empty() {
-            continue;
-        }
-        dict.postprocess(&mut irs);
-        if opts.save_temps && dict.write_ir() {
-            irs.write(pm)?;
-        }
-        if opts.skip_yomitan {
-            continue;
-        }
+    if irs.is_empty() {
+        return Ok(());
+    }
 
-        let mut pm2 = pm.clone();
-        let source = key.source;
-        let target = key.target;
-        pm2.set_source(source);
-        pm2.set_target(target);
-        pm2.setup_dirs()?;
-        tracing::trace!("calling to_yomitan with (source={source}, target={target})",);
-        let labelled_entries = match key.edition {
-            EditionSpec::All => {
-                let langs = Langs::new(Edition::Zh, key.source, key.target);
-                dict.to_yomitan(langs, irs)
-            }
-            EditionSpec::One(edition) => {
-                let langs = Langs::new(edition, key.source, key.target);
-                dict.to_yomitan(langs, irs)
-            }
+    dict.postprocess(&mut irs);
+
+    if opts.save_temps && dict.write_ir() {
+        irs.write(pm)?;
+    }
+
+    if !opts.skip_yomitan {
+        let edition = match edition_pm {
+            // dummy, should not matter, but to_yomitan expects a "langs"
+            EditionSpec::All => Edition::Zh,
+            EditionSpec::One(ed) => ed,
         };
-        write_yomitan(source, target, opts, &pm2, labelled_entries)?;
+        let langs = Langs::new(edition, source_pm, target_pm);
+        let labelled_entries = dict.to_yomitan(langs, irs);
+        write_yomitan(source_pm, target_pm, opts, &pm, labelled_entries)?;
     }
+
     Ok(())
 }
 

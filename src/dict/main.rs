@@ -10,8 +10,7 @@ use crate::{
     Map, Set,
     cli::{MainArgs, Options},
     dict::{
-        Dictionary, Intermediate, LabelledYomitanEntry, Langs, LangsKey,
-        locale::localize_examples_string,
+        Dictionary, Intermediate, LabelledYomitanEntry, Langs, locale::localize_examples_string,
     },
     lang::{Edition, Lang},
     models::{
@@ -296,7 +295,7 @@ impl Dictionary for DMain {
         process_main(langs.edition, langs.source, entry, irs);
     }
 
-    fn found_ir_message(&self, key: &LangsKey, irs: &Self::I) {
+    fn found_ir_message(&self, irs: &Self::I) {
         let n_lemmas = irs.lemma_map.len();
         let n_forms = irs.form_map.len();
         let n_irs = n_lemmas + n_forms;
@@ -317,16 +316,14 @@ impl Dictionary for DMain {
         let form_heap_msg = crate::utils::human_size(form_heap);
         let irs_heap_msg = crate::utils::human_size(irs_heap);
 
-        let prefix = format!("[{}-{}]", key.source, key.target);
-
         //         println!(
-        //             "{prefix} Found {n_irs} irs: {n_lemmas} lemmas, {n_forms} forms \
+        //             "Found {n_irs} irs: {n_lemmas} lemmas, {n_forms} forms \
         // ({n_forms_inflection} inflections, {n_forms_extracted} extracted, {n_forms_alt_of} alt_of)"
         //         );
 
         const MB: f64 = 1024.0 * 1024.0;
         if irs_heap > 500.0 * MB {
-            tracing::debug!("{prefix} Found {} irs ({})", n_irs, irs_heap_msg,);
+            tracing::debug!("Found {} irs ({})", n_irs, irs_heap_msg,);
             tracing::debug!("├─ lemmas: {} ({})", n_lemmas, lemma_heap_msg,);
             tracing::debug!(
                 "└─ forms : {} ({}) [infl {}, extr {}, alt {}]",

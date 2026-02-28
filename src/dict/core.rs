@@ -7,7 +7,6 @@ use std::fs::File;
 use std::io::{BufRead, BufReader, BufWriter, Write};
 use std::path::PathBuf;
 
-use crate::Map;
 use crate::cli::Options;
 use crate::dict::writer::write_yomitan;
 use crate::lang::{Edition, EditionSpec, Lang};
@@ -111,8 +110,7 @@ pub trait Dictionary {
     fn process(&self, langs: Langs, entry: &WordEntry, irs: &mut Self::I);
 
     /// Console message for found irs. It is customized for the main dictionary.
-    #[allow(unused_variables)]
-    fn found_ir_message(&self, key: &LangsKey, irs: &Self::I) {
+    fn found_ir_message(&self, irs: &Self::I) {
         println!("Found {} irs", irs.len());
     }
 
@@ -139,54 +137,6 @@ pub trait Dictionary {
 fn rejected(entry: &WordEntry, opts: &Options) -> bool {
     opts.reject.iter().any(|(k, v)| k.field_value(entry) == v)
         || !opts.filter.iter().all(|(k, v)| k.field_value(entry) == v)
-}
-
-use crate::dict::{DGlossary, DGlossaryExtended, DIpa, DIpaMerged, DMain};
-
-#[derive(Debug, PartialEq, Eq, Hash)]
-pub struct LangsKey {
-    pub edition: EditionSpec,
-    pub source: Lang,
-    pub target: Lang,
-}
-
-/// Maps an iteration Langs to its aggregation key.
-///
-/// Used by merged dictionaries to combine data across editions.
-pub trait AggregationKey {
-    fn langs_to_key(&self, langs: Langs) -> LangsKey {
-        LangsKey {
-            edition: EditionSpec::One(langs.edition),
-            source: langs.source,
-            target: langs.target,
-        }
-    }
-}
-
-impl AggregationKey for DMain {}
-impl AggregationKey for DIpa {}
-impl AggregationKey for DGlossary {}
-
-impl AggregationKey for DIpaMerged {
-    // Collapse all editions into one logical key
-    fn langs_to_key(&self, langs: Langs) -> LangsKey {
-        LangsKey {
-            edition: EditionSpec::All,
-            source: langs.source,
-            target: langs.target,
-        }
-    }
-}
-
-impl AggregationKey for DGlossaryExtended {
-    // Collapse all editions into one logical key
-    fn langs_to_key(&self, langs: Langs) -> LangsKey {
-        LangsKey {
-            edition: EditionSpec::All,
-            source: langs.source,
-            target: langs.target,
-        }
-    }
 }
 
 #[derive(Clone, Copy, PartialEq, Eq, Hash)]
@@ -287,17 +237,16 @@ impl Default for LangCodeProbe<'_> {
     }
 }
 
-pub fn make_dict<D: Dictionary + AggregationKey>(dict: D, raw_args: D::A) -> Result<()> {
+pub fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
     let pm: &PathManager = &raw_args.try_into()?;
-    let (_, source_pm, target_pm) = pm.langs();
+    let (edition_pm, source_pm, target_pm) = pm.langs();
     let opts = &pm.opts;
 
     pm.setup_dirs()?;
 
     let capacity = 256 * (1 << 10); // default is 8 * (1 << 10) := 8KB
     let mut line = Vec::with_capacity(1 << 10);
-    // (source, target) -> D::I
-    let mut irs_map: Map<LangsKey, D::I> = Map::default();
+    let mut irs = D::I::default();
 
     for pair in iter_datasets(pm) {
         let (edition, path_jsonl) = pair?;
@@ -348,64 +297,39 @@ pub fn make_dict<D: Dictionary + AggregationKey>(dict: D, raw_args: D::A) -> Res
             };
 
             if dict.keep_if(langs.source, &entry) {
-                let key = dict.langs_to_key(langs);
-                let irs = irs_map.entry(key).or_default();
-                dict.preprocess(langs, &mut entry, opts, irs);
-                dict.process(langs, &entry, irs);
+                dict.preprocess(langs, &mut entry, opts, &mut irs);
+                dict.process(langs, &entry, &mut irs);
             }
         }
 
         if !opts.quiet {
             println!("Processed {line_count} lines. Accepted {accepted_count} lines.");
         }
-
-        // tracing::debug!(
-        //     "After {edition}: irs_map has {} keys, {} total entries",
-        //     irs_map.len(),
-        //     irs_map.values().map(|ir| ir.len()).sum::<usize>()
-        // );
     }
 
-    if irs_map.len() > 1 {
-        tracing::debug!("Matrix ({}): {:?}", irs_map.len(), irs_map.keys());
+    if !opts.quiet {
+        dict.found_ir_message(&irs);
     }
 
-    for (key, mut irs) in irs_map {
-        if !opts.quiet {
-            dict.found_ir_message(&key, &irs);
-        }
+    if irs.is_empty() {
+        return Ok(());
+    }
 
-        if irs.is_empty() {
-            continue;
-        }
+    dict.postprocess(&mut irs);
 
-        dict.postprocess(&mut irs);
+    if opts.save_temps && dict.write_ir() {
+        irs.write(pm)?;
+    }
 
-        if opts.save_temps && dict.write_ir() {
-            irs.write(pm)?;
-        }
-
-        if !opts.skip_yomitan {
-            let mut pm2 = pm.clone();
-            let source = key.source;
-            let target = key.target;
-            pm2.set_source(source);
-            pm2.set_target(target);
-            pm2.setup_dirs()?;
-            tracing::trace!("calling to_yomitan with (source={source}, target={target})",);
-            let labelled_entries = match key.edition {
-                EditionSpec::All => {
-                    // HACK: we don't use the edition for IpaMerged: use a dummy for now
-                    let langs = Langs::new(Edition::Zh, key.source, key.target);
-                    dict.to_yomitan(langs, irs)
-                }
-                EditionSpec::One(edition) => {
-                    let langs = Langs::new(edition, key.source, key.target);
-                    dict.to_yomitan(langs, irs)
-                }
-            };
-            write_yomitan(source, target, opts, &pm2, labelled_entries)?;
-        }
+    if !opts.skip_yomitan {
+        let edition = match edition_pm {
+            // dummy, should not matter, but to_yomitan expects a "langs"
+            EditionSpec::All => Edition::Zh,
+            EditionSpec::One(ed) => ed,
+        };
+        let langs = Langs::new(edition, source_pm, target_pm);
+        let labelled_entries = dict.to_yomitan(langs, irs);
+        write_yomitan(source_pm, target_pm, opts, &pm, labelled_entries)?;
     }
 
     Ok(())
