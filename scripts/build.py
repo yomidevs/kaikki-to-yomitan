@@ -51,6 +51,7 @@ def generate_tags_rs(
 
     # Not sure why all of this was done in the original, it makes almost no sense
 
+    w("#[rustfmt::skip]\n")
     w(
         f"pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); {len(whitelisted_tags)}] = [\n"
     )
@@ -78,7 +79,7 @@ def generate_tags_rs(
     w(f"pub const POSES: [(&str, &str); {len(wts_pos)}] = [\n")
     for long, short in wts_pos:
         w(f'{idt}("{long}", "{short}"),\n')
-    w("];\n\n")
+    w("];\n")
 
 
 def generate_lang_rs(langs: list[Lang], f) -> None:

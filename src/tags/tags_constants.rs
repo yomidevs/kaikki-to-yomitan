@@ -80,6 +80,7 @@ pub const TAG_ORDER: [&str; 76] = [
     "combined-form",
 ];
 
+#[rustfmt::skip]
 pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 241] = [
     ("non-lemma", "", 10, &["non-lemma"], -10),
     ("r", "partOfSpeech", -1, &["root"], 1),
@@ -367,4 +368,3 @@ pub const POSES: [(&str, &str); 41] = [
     ("ditransitive verb", "vdt"),
     ("ditransitive", "vdt"),
 ];
-
