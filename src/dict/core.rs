@@ -7,9 +7,9 @@ use std::fs::File;
 use std::io::{BufRead, BufReader, BufWriter, Write};
 use std::path::PathBuf;
 
-use crate::cli::Options;
+use crate::cli::{LangSpecs, Options};
 use crate::dict::writer::write_yomitan;
-use crate::lang::{Edition, EditionSpec, Lang};
+use crate::lang::{Edition, Lang};
 use crate::models::kaikki::WordEntry;
 use crate::models::yomitan::YomitanEntry;
 use crate::path::{PathKind, PathManager};
@@ -131,7 +131,7 @@ pub trait Dictionary {
     fn postprocess(&self, irs: &mut Self::I) {}
 
     /// How to convert `Self::I` into one or more yomitan entries.
-    fn to_yomitan(&self, langs: Langs, irs: Self::I) -> Vec<LabelledYomitanEntry>;
+    fn to_yomitan(&self, langs: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntry>;
 }
 
 fn rejected(entry: &WordEntry, opts: &Options) -> bool {
@@ -239,7 +239,7 @@ impl Default for LangCodeProbe<'_> {
 
 pub fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
     let pm: &PathManager = &raw_args.try_into()?;
-    let (edition_pm, source_pm, target_pm) = pm.langs();
+    let (_, source_pm, target_pm) = pm.langs();
     let opts = &pm.opts;
 
     pm.setup_dirs()?;
@@ -272,7 +272,7 @@ pub fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
 
             if dict.supports_probe() {
                 let probe: LangCodeProbe = serde_json::from_slice(&line)
-                    .with_context(|| "Error decoding JSON @ make_dict (lang_code prefilter)")?;
+                    .with_context(|| "Error decoding JSON @ make_dict")?;
                 if source_pm.as_ref() != probe.lang_code.as_ref() {
                     continue;
                 }
@@ -322,16 +322,9 @@ pub fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
     }
 
     if !opts.skip_yomitan {
-        let edition = match edition_pm {
-            // dummy, should not matter, but to_yomitan expects a "langs"
-            EditionSpec::All => Edition::Zh,
-            EditionSpec::One(ed) => ed,
-        };
-        let langs = Langs::new(edition, source_pm, target_pm);
-        let labelled_entries = dict.to_yomitan(langs, irs);
+        let labelled_entries = dict.to_yomitan(pm.langs, irs);
         write_yomitan(source_pm, target_pm, opts, &pm, labelled_entries)?;
     }
 
     Ok(())
 }
-// TODO: rename this to make_dicts when done, and keep the original

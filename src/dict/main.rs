@@ -8,7 +8,7 @@ use unicode_normalization::UnicodeNormalization;
 
 use crate::{
     Map, Set,
-    cli::{MainArgs, Options},
+    cli::{LangSpecs, MainArgs, Options},
     dict::{
         Dictionary, Intermediate, LabelledYomitanEntry, Langs, locale::localize_examples_string,
     },
@@ -344,7 +344,7 @@ impl Dictionary for DMain {
         postprocess_forms(&mut irs.form_map);
     }
 
-    fn to_yomitan(&self, langs: Langs, irs: Self::I) -> Vec<LabelledYomitanEntry> {
+    fn to_yomitan(&self, langs: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntry> {
         vec![
             LabelledYomitanEntry::new("lemma", to_yomitan_lemmas(langs.target, irs.lemma_map)),
             LabelledYomitanEntry::new("form", to_yomitan_forms(langs.source, irs.form_map)),

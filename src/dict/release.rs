@@ -33,8 +33,6 @@ use crate::{
 };
 
 pub fn release() -> Result<()> {
-    let start = Instant::now();
-
     // let editions = [Edition::En, Edition::De, Edition::Fr];
 
     let mut editions = Edition::all();
@@ -47,7 +45,7 @@ pub fn release() -> Result<()> {
         "- {}",
         editions
             .iter()
-            .map(std::string::ToString::to_string)
+            .map(ToString::to_string)
             .collect::<Vec<_>>()
             .join(", ")
     );
@@ -55,28 +53,7 @@ pub fn release() -> Result<()> {
     // First, download all jsonlines to prevent races when creating databases.
     //
     // NOTE: For some reason this takes time even when db are init, why?
-    editions.par_iter().for_each(|edition| {
-        let now = Instant::now();
-        let lang: Lang = (*edition).into();
-        let args = MainArgs {
-            langs: MainLangs {
-                source: lang,
-                target: (*edition),
-            },
-            dict_name: DictName::default(),
-            options: Options {
-                quiet: false,
-                root_dir: "data".into(),
-                ..Default::default()
-            },
-        };
-        let pm: &PathManager = &args.try_into().unwrap();
-        let path_jsonl = find_or_download_jsonl(*edition, None, pm).unwrap();
-        println!("Finished download for {edition} ({:.2?})", now.elapsed());
-        let _ = WiktextractDb::create(*edition, path_jsonl).unwrap();
-        println!("Finished database for {edition} ({:.2?})", now.elapsed());
-    });
-    println!("Finished download & db creation in {:.2?}", start.elapsed());
+    download_and_create_db(&editions);
 
     let start = Instant::now();
 
@@ -99,6 +76,33 @@ pub fn release() -> Result<()> {
     Ok(())
 }
 
+fn download_and_create_db(editions: &[Edition]) {
+    let start = Instant::now();
+
+    editions.par_iter().for_each(|edition| {
+        let now = Instant::now();
+        let args = MainArgs {
+            langs: MainLangs {
+                source: (*edition).into(),
+                target: *edition,
+            },
+            dict_name: DictName::default(),
+            options: Options {
+                quiet: false,
+                root_dir: "data".into(),
+                ..Default::default()
+            },
+        };
+        let pm: &PathManager = &args.try_into().unwrap();
+        let path_jsonl = find_or_download_jsonl(*edition, None, pm).unwrap();
+        println!("Finished download for {edition} ({:.2?})", now.elapsed());
+        let _ = WiktextractDb::create(*edition, path_jsonl).unwrap();
+        println!("Finished database for {edition} ({:.2?})", now.elapsed());
+    });
+
+    println!("Finished download & db creation in {:.2?}", start.elapsed());
+}
+
 // Pretty print utility
 fn pp(dict_name: &str, first_lang: Lang, second_lang: Lang, time: Instant) {
     // Printing sizes requires a PM
@@ -106,7 +110,6 @@ fn pp(dict_name: &str, first_lang: Lang, second_lang: Lang, time: Instant) {
     eprintln!("{label:<20} done in {:.2?}", time.elapsed());
 }
 
-// runs main source all
 fn release_main(edition: Edition) {
     // Limit only this workload (as opposed to the full logic. IPA and glossaries are completely
     // fine and will never OOM).
@@ -367,7 +370,7 @@ impl WiktextractDb {
 
 fn make_dict<D: Dictionary + EditionFrom>(dict: D, raw_args: D::A) -> Result<()> {
     let pm: &PathManager = &raw_args.try_into()?;
-    let (edition_pm, source_pm, target_pm) = pm.langs();
+    let (_, source_pm, target_pm) = pm.langs();
     let opts = &pm.opts;
     pm.setup_dirs()?;
 
@@ -421,13 +424,7 @@ fn make_dict<D: Dictionary + EditionFrom>(dict: D, raw_args: D::A) -> Result<()>
     }
 
     if !opts.skip_yomitan {
-        let edition = match edition_pm {
-            // dummy, should not matter, but to_yomitan expects a "langs"
-            EditionSpec::All => Edition::Zh,
-            EditionSpec::One(ed) => ed,
-        };
-        let langs = Langs::new(edition, source_pm, target_pm);
-        let labelled_entries = dict.to_yomitan(langs, irs);
+        let labelled_entries = dict.to_yomitan(pm.langs, irs);
         write_yomitan(source_pm, target_pm, opts, &pm, labelled_entries)?;
     }
 
