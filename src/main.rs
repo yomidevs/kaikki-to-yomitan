@@ -2,12 +2,15 @@ use anyhow::Result;
 use tracing_subscriber::EnvFilter;
 use tracing_subscriber::fmt::format::FmtSpan;
 
-use wty::cli::{Cli, Command, LangSpecs};
-use wty::dict::{
-    DGlossary, DGlossaryExtended, DIpa, DIpaMerged, DMain, find_or_download_jsonl, make_dict,
+use wty::{
+    cli::{Cli, Command, LangSpecs},
+    dict::{
+        DGlossary, DGlossaryExtended, DIpa, DIpaMerged, DMain, find_or_download_jsonl, make_dict,
+        release::release,
+    },
+    lang::{Edition, Lang},
+    path::PathManager,
 };
-use wty::lang::{Edition, Lang};
-use wty::path::PathManager;
 
 fn init_logger(verbose: bool) {
     let filter = EnvFilter::try_from_default_env().unwrap_or_else(|_| {
@@ -58,7 +61,7 @@ fn run(cmd: Command) -> Result<()> {
             }
             Ok(())
         }
-        Command::Release => wty::dict::release::release(),
+        Command::Release(args) => release(args),
     }
 }
 

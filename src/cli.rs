@@ -46,7 +46,8 @@ pub enum Command {
     /// Show supported iso codes, with coloured editions
     Iso(IsoArgs),
 
-    Release,
+    /// Build a release with all dictionaries
+    Release(ReleaseArgs),
 }
 
 #[derive(Parser, Debug, Clone)]
@@ -112,6 +113,13 @@ pub struct IpaMergedArgs {
 
     #[command(flatten)]
     pub options: Options,
+}
+
+#[derive(Parser, Debug)]
+pub struct ReleaseArgs {
+    /// Change the root directory
+    #[arg(long, default_value = "data")]
+    pub root_dir: PathBuf,
 }
 
 #[derive(Parser, Debug, Default)]

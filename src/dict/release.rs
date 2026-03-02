@@ -21,7 +21,7 @@ use rusqlite::{Connection, params};
 use crate::{
     cli::{
         DictName, GlossaryArgs, GlossaryExtendedArgs, GlossaryExtendedLangs, GlossaryLangs,
-        IpaArgs, IpaMergedArgs, IpaMergedLangs, MainArgs, MainLangs, Options,
+        IpaArgs, IpaMergedArgs, IpaMergedLangs, MainArgs, MainLangs, Options, ReleaseArgs,
     },
     dict::{
         DGlossary, DGlossaryExtended, DIpa, DIpaMerged, DMain, Dictionary, Intermediate, Langs,
@@ -32,7 +32,7 @@ use crate::{
     path::PathManager,
 };
 
-pub fn release() -> Result<()> {
+pub fn release(rargs: ReleaseArgs) -> Result<()> {
     // let editions = [Edition::En, Edition::De, Edition::Fr];
 
     let mut editions = Edition::all();
@@ -40,6 +40,7 @@ pub fn release() -> Result<()> {
     // with English dictionaries should make things faster. This puts English first.
     editions.sort_by_key(|ed| i32::from(*ed != Edition::En));
 
+    println!("rargs: {:?}", &rargs);
     println!("Making release with {} editions", editions.len());
     println!(
         "- {}",
@@ -53,15 +54,16 @@ pub fn release() -> Result<()> {
     // First, download all jsonlines to prevent races when creating databases.
     //
     // NOTE: For some reason this takes time even when db are init, why?
-    download_and_create_db(&editions);
+    let _ = std::fs::create_dir(&rargs.root_dir);
+    download_and_create_db(&rargs, &editions);
 
     let start = Instant::now();
 
     editions.par_iter().for_each(|edition| {
-        release_main(*edition);
-        release_ipa(*edition);
-        release_ipa_merged(*edition);
-        release_glossary(*edition);
+        release_main(&rargs, *edition);
+        release_ipa(&rargs, *edition);
+        release_ipa_merged(&rargs, *edition);
+        release_glossary(&rargs, *edition);
     });
 
     // let sources = Lang::all();
@@ -76,8 +78,11 @@ pub fn release() -> Result<()> {
     Ok(())
 }
 
-fn download_and_create_db(editions: &[Edition]) {
+fn download_and_create_db(rargs: &ReleaseArgs, editions: &[Edition]) {
     let start = Instant::now();
+
+    let dir_kaik = rargs.root_dir.join("kaikki"); // cf. same function @ path.rs
+    let _ = std::fs::create_dir(dir_kaik);
 
     editions.par_iter().for_each(|edition| {
         let now = Instant::now();
@@ -89,14 +94,14 @@ fn download_and_create_db(editions: &[Edition]) {
             dict_name: DictName::default(),
             options: Options {
                 quiet: false,
-                root_dir: "data".into(),
+                root_dir: rargs.root_dir.clone(),
                 ..Default::default()
             },
         };
         let pm: &PathManager = &args.try_into().unwrap();
         let path_jsonl = find_or_download_jsonl(*edition, None, pm).unwrap();
         println!("Finished download for {edition} ({:.2?})", now.elapsed());
-        let _ = WiktextractDb::create(*edition, path_jsonl).unwrap();
+        let _ = WiktextractDb::create(rargs.root_dir.clone(), *edition, path_jsonl).unwrap();
         println!("Finished database for {edition} ({:.2?})", now.elapsed());
     });
 
@@ -110,7 +115,7 @@ fn pp(dict_name: &str, first_lang: Lang, second_lang: Lang, time: Instant) {
     eprintln!("{label:<20} done in {:.2?}", time.elapsed());
 }
 
-fn release_main(edition: Edition) {
+fn release_main(rargs: &ReleaseArgs, edition: Edition) {
     // Limit only this workload (as opposed to the full logic. IPA and glossaries are completely
     // fine and will never OOM).
     let pool = ThreadPoolBuilder::new()
@@ -141,7 +146,7 @@ fn release_main(edition: Edition) {
                 dict_name: DictName::default(),
                 options: Options {
                     quiet: true,
-                    root_dir: "data".into(),
+                    root_dir: rargs.root_dir.clone(),
                     ..Default::default()
                 },
             };
@@ -154,7 +159,7 @@ fn release_main(edition: Edition) {
     });
 }
 
-fn release_ipa(edition: Edition) {
+fn release_ipa(rargs: &ReleaseArgs, edition: Edition) {
     Lang::all().par_iter().for_each(|source| {
         let start = Instant::now();
 
@@ -175,7 +180,7 @@ fn release_ipa(edition: Edition) {
             dict_name: DictName::default(),
             options: Options {
                 quiet: true,
-                root_dir: "data".into(),
+                root_dir: rargs.root_dir.clone(),
                 ..Default::default()
             },
         };
@@ -187,7 +192,7 @@ fn release_ipa(edition: Edition) {
     });
 }
 
-fn release_ipa_merged(edition: Edition) {
+fn release_ipa_merged(rargs: &ReleaseArgs, edition: Edition) {
     let start = Instant::now();
 
     let langs = match edition {
@@ -202,7 +207,7 @@ fn release_ipa_merged(edition: Edition) {
         dict_name: DictName::default(),
         options: Options {
             quiet: true,
-            root_dir: "data".into(),
+            root_dir: rargs.root_dir.clone(),
             ..Default::default()
         },
     };
@@ -214,7 +219,7 @@ fn release_ipa_merged(edition: Edition) {
     }
 }
 
-fn release_glossary(edition: Edition) {
+fn release_glossary(rargs: &ReleaseArgs, edition: Edition) {
     Lang::all().par_iter().for_each(|target| {
         let start = Instant::now();
 
@@ -232,7 +237,7 @@ fn release_glossary(edition: Edition) {
             dict_name: DictName::default(),
             options: Options {
                 quiet: true,
-                root_dir: "data".into(),
+                root_dir: rargs.root_dir.clone(),
                 ..Default::default()
             },
         };
@@ -282,24 +287,38 @@ pub struct WiktextractDb {
 }
 
 impl WiktextractDb {
-    // TODO: hardcoded at the moment, should require a PathManager
-    fn db_path_for(edition: Edition) -> String {
-        format!("data/db/wiktextract_{edition}.db")
+    /// Path to the folder that contains the databases for all editions.
+    fn db_folder<P>(root_dir: P) -> PathBuf
+    where
+        P: AsRef<Path>,
+    {
+        root_dir.as_ref().join("db")
     }
 
-    pub fn open(edition: Edition) -> Result<Self> {
-        let db_path = Self::db_path_for(edition);
+    /// Path for the database of this edition.
+    fn db_path_for<P>(root_dir: P, edition: Edition) -> PathBuf
+    where
+        P: AsRef<Path>,
+    {
+        Self::db_folder(root_dir).join(format!("wiktextract_{edition}.db"))
+    }
+
+    pub fn open<P>(root_dir: P, edition: Edition) -> Result<Self>
+    where
+        P: AsRef<Path>,
+    {
+        let db_path = Self::db_path_for(root_dir, edition);
         let conn = Connection::open(&db_path)?;
         Ok(Self { conn })
     }
 
-    pub fn create(edition: Edition, path_jsonl: PathBuf) -> Result<Self> {
-        let db_path = Self::db_path_for(edition);
+    pub fn create<P>(root_dir: P, edition: Edition, path_jsonl: PathBuf) -> Result<Self>
+    where
+        P: AsRef<Path>,
+    {
+        let _ = std::fs::create_dir(Self::db_folder(&root_dir));
 
-        if let Some(parent) = Path::new(&db_path).parent() {
-            std::fs::create_dir_all(parent)?;
-        }
-
+        let db_path = Self::db_path_for(&root_dir, edition);
         let conn = Connection::open(&db_path)?;
 
         conn.execute_batch(
@@ -381,7 +400,7 @@ fn make_dict<D: Dictionary + EditionFrom>(dict: D, raw_args: D::A) -> Result<()>
     for pair in iter_datasets(pm) {
         let (edition, _path_jsonl) = pair?;
 
-        let db = WiktextractDb::open(edition)?;
+        let db = WiktextractDb::open(&opts.root_dir, edition)?;
         let langs = Langs {
             edition,
             source: source_pm,
