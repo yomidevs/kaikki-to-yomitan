@@ -6,6 +6,7 @@
     {"iso": "apc", "language": "North Levantine Arabic", "displayName": "Arabic, North Levantine",  "flag": "🇱🇧"                       },
     {"iso": "ajp", "language": "South Levantine Arabic", "displayName": "Arabic, South Levantine",  "flag": "🇯🇴"                       },
     {"iso": "aii", "language": "Assyrian Neo-Aramaic",   "displayName": "Assyrian Neo-Aramaic",     "flag": "🌞"                       },
+    {"iso": "be",  "language": "Belarusian",             "displayName": "Belarusian",               "flag": "🇧🇾"                       },
     {"iso": "bn",  "language": "Bengali",                "displayName": "Bengali",                  "flag": "🇧🇩"                       },
     {"iso": "bg",  "language": "Bulgarian",              "displayName": "Bulgarian",                "flag": "🇧🇬"                       },
     {"iso": "yue", "language": "Cantonese",              "displayName": "Cantonese",                "flag": "🏳️"                       },
