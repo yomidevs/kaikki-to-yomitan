@@ -4,6 +4,7 @@
 
 import argparse
 import json
+import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -385,9 +386,8 @@ def sort_languages_json(path: Path) -> None:
 def check_yomitan_langs(langs: list[Lang]) -> None:
     """Check if we support at least what is supported by yomitan.
 
-    Since it sends a request to github, it is gated under the --check-yomitan flag.
+    Since it sends a request, it is gated under the --check-yomitan flag.
     """
-    import re
     import requests
 
     url = "https://raw.githubusercontent.com/yomidevs/yomitan/master/ext/js/language/language-descriptors.js"
@@ -454,11 +454,47 @@ def check_yomitan_langs(langs: list[Lang]) -> None:
             print(f"✓ No {label}")
 
 
+def check_kaikki_langs(langs: list[Lang]) -> None:
+    """Check for unsupported (by us) languages in https://kaikki.org/dictionary/
+
+    Since it sends a request, it is gated under the --check-kaikki flag.
+    """
+    import requests
+
+    url = "https://kaikki.org/dictionary/"
+    response = requests.get(url)
+    response.raise_for_status()
+    response.encoding = "utf-8"
+    text = response.text
+
+    supported = {lang.language for lang in langs}
+    upto = 50
+
+    # Get names (isos are not in the website)
+    matches = re.findall(
+        r"<li><a href=\"[^/]+/index\.html\">([^<]+) \((\d+) senses\)</a></li>",
+        text,
+        re.DOTALL,
+    )
+
+    for lang, num_senses in matches[:upto]:
+        if lang in (
+            "All languages combined",
+            "Translingual",
+            "Mandarin",  # We call it Chinese
+        ):
+            continue
+        if lang not in supported:
+            print(f"[missing from English kaikki ({upto})] {lang}, {num_senses}")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("-c", "--check-yomitan", action="store_true")
+    parser.add_argument("--check-yomitan", action="store_true")
+    parser.add_argument("--check-kaikki", action="store_true")
     args = parser.parse_args()
     check_yomitan = args.check_yomitan
+    check_kaikki = args.check_kaikki
 
     src = Path("src")
     path_lang_rs = src / "lang.rs"
@@ -480,6 +516,9 @@ def main() -> None:
     sort_languages_json(path_languages_json)
 
     langs = load_langs(path_languages_json)
+
+    if check_kaikki:
+        check_kaikki_langs(langs)
 
     if check_yomitan:
         check_yomitan_langs(langs)
