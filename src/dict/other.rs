@@ -10,7 +10,7 @@ use crate::{
             TermPhoneticTranscription, YomitanEntry, wrap,
         },
     },
-    tags::find_short_pos_or_default,
+    tags::{find_short_pos_or_default, find_tag_in_bank},
 };
 
 #[derive(Debug, Clone, Copy)]
@@ -279,10 +279,19 @@ pub fn get_ipas(entry: &WordEntry) -> Vec<Ipa> {
 type IIpa = (String, PhoneticTranscription);
 
 fn process_ipa(edition: Edition, source: Lang, entry: &WordEntry, irs: &mut Vec<IIpa>) {
-    let ipas = get_ipas(entry);
+    let mut ipas = get_ipas(entry);
 
     if ipas.is_empty() {
         return;
+    }
+
+    // This replacing with the short tag will still show the long version on hover.
+    for ipa in &mut ipas {
+        for tag in &mut ipa.tags {
+            if let Some(tag_info) = find_tag_in_bank(&tag) {
+                *tag = (*tag_info.short_tag).to_string();
+            }
+        }
     }
 
     let phonetic_transcription = PhoneticTranscription {
@@ -367,16 +376,20 @@ mod tests {
 
         dict.postprocess(&mut irs);
         assert_eq!(irs.len(), 2);
-
-        // let labelled_entries =
-        //     dict.to_yomitan(langs, &Options::default(), &mut Diagnostics::default(), irs);
-        // assert_eq!(labelled_entries[0].entries.len(), 2);
     }
 
     impl Sound {
         fn new(ipa: &str) -> Self {
             Self {
                 ipa: ipa.into(),
+                ..Default::default()
+            }
+        }
+
+        fn with_tag(ipa: &str, tag: &str) -> Self {
+            Self {
+                ipa: ipa.into(),
+                tags: vec![tag.into()],
                 ..Default::default()
             }
         }
@@ -402,9 +415,34 @@ mod tests {
 
         dict.postprocess(&mut irs);
         assert_eq!(irs[0].1.transcriptions.len(), 2);
+    }
 
-        // let labelled_entries =
-        //     dict.to_yomitan(langs, &Options::default(), &mut Diagnostics::default(), irs);
-        // assert_eq!(labelled_entries[0].entries.count(), 1);
+    #[test]
+    fn process_ipa_tag() {
+        let dict = DIpa;
+        let langs = Langs::new(Edition::En, Lang::La, Lang::La); // irrelevant
+        let mut entry = WordEntry::default();
+        entry.sounds = vec![
+            Sound::with_tag("ipa1", "tag1"),
+            Sound::with_tag("ipa2", "modern Italianate Ecclesiastical"),
+        ];
+
+        let mut irs = Vec::new();
+        dict.process(langs, &entry, &mut irs);
+
+        assert_eq!(irs.len(), 1);
+
+        let transcriptions = &irs[0].1.transcriptions;
+        assert_eq!(transcriptions.len(), 2);
+
+        assert_eq!(&transcriptions[0].ipa, "ipa1");
+        assert_eq!(&transcriptions[1].ipa, "ipa2");
+
+        // Check that tags are properly simplified
+        assert_eq!(&transcriptions[0].tags[0], "tag1");
+        assert_eq!(&transcriptions[1].tags[0], "✝\u{fe0f}");
+
+        dict.postprocess(&mut irs);
+        assert_eq!(irs[0].1.transcriptions.len(), 2);
     }
 }
