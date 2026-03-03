@@ -440,7 +440,7 @@ mod tests {
 
         // Check that tags are properly simplified
         assert_eq!(&transcriptions[0].tags[0], "tag1");
-        assert_eq!(&transcriptions[1].tags[0], "✝\u{fe0f}");
+        assert_eq!(&transcriptions[1].tags[0], "⛪");
 
         dict.postprocess(&mut irs);
         assert_eq!(irs[0].1.transcriptions.len(), 2);

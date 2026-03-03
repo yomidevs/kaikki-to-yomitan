@@ -36,17 +36,32 @@ def write_warning(f) -> None:
 
 
 def generate_tags_rs(
-    tags: list[str],
+    tag_order: list[str],
     whitelisted_tags: list[WhitelistedTag],
     f,
 ) -> None:
+    # SAFETY: because the IPA dictionary uses only short tags and relies on yomitan
+    # to complete the long version on hover based on tag_bank_*.json, it is important to
+    # not have short tag duplicates, unless the meaning of the long version are the same.
+    seen = {}
+    for wt in whitelisted_tags:
+        st = wt.short_tag
+        if st in ("fig", "dialect"):
+            # These are ok, since the long versions are the same (figurative, figuratively)
+            continue
+        if st in seen:
+            old = seen[st]
+            print(f"WARN: duplicated short tag\n{wt}\n{old}")
+        else:
+            seen[st] = wt
+
     idt = " " * 4
     w = f.write  # shorthand
 
     write_warning(f)
 
-    w(f"pub const TAG_ORDER: [&str; {len(tags)}] = [\n")
-    for tag in tags:
+    w(f"pub const TAG_ORDER: [&str; {len(tag_order)}] = [\n")
+    for tag in tag_order:
         w(f'{idt}"{tag}",\n')
     w("];\n\n")
 
