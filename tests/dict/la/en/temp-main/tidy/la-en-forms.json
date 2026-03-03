@@ -1354,5 +1354,1201 @@
         ]
       ]
     }
+  },
+  "cogito": {
+    "cōgitāre": {
+      "verb": [
+        "extracted",
+        [
+          "present active infinitive",
+          "second-person singular present imperative passive",
+          "second-person singular present passive indicative"
+        ]
+      ]
+    },
+    "cōgitāvī": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular perfect active indicative"
+        ]
+      ]
+    },
+    "cōgitātum": {
+      "verb": [
+        "extracted",
+        [
+          "accusative noun-from-verb supine"
+        ]
+      ]
+    },
+    "cōgitō": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular present active indicative"
+        ]
+      ]
+    },
+    "cōgitās": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present active indicative"
+        ]
+      ]
+    },
+    "cōgitat": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular present active indicative"
+        ]
+      ]
+    },
+    "cōgitāmus": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural perfect active indicative",
+          "first-person plural present active indicative"
+        ]
+      ]
+    },
+    "cōgitātis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present active indicative"
+        ]
+      ]
+    },
+    "cōgitant": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural present active indicative"
+        ]
+      ]
+    },
+    "cōgitābam": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular imperfect active indicative"
+        ]
+      ]
+    },
+    "cōgitābās": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular imperfect active indicative"
+        ]
+      ]
+    },
+    "cōgitābat": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular imperfect active indicative"
+        ]
+      ]
+    },
+    "cōgitābāmus": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural imperfect active indicative"
+        ]
+      ]
+    },
+    "cōgitābātis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural imperfect active indicative"
+        ]
+      ]
+    },
+    "cōgitābant": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural imperfect active indicative"
+        ]
+      ]
+    },
+    "cōgitābō": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular future active indicative"
+        ]
+      ]
+    },
+    "cōgitābis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular future active indicative"
+        ]
+      ]
+    },
+    "cōgitābit": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular future active indicative"
+        ]
+      ]
+    },
+    "cōgitābimus": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural future active indicative"
+        ]
+      ]
+    },
+    "cōgitābitis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural future active indicative"
+        ]
+      ]
+    },
+    "cōgitābunt": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural future active indicative"
+        ]
+      ]
+    },
+    "cōgitāvistī": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular perfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāstī": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular perfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāvit": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular perfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāt": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular perfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāvimus": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural perfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāvistis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural perfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāstis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural perfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāvērunt": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural perfect active indicative"
+        ]
+      ]
+    },
+    "cōgitārunt": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural perfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāvēre": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural perfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāveram": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular pluperfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāram": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular pluperfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāverās": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular pluperfect active indicative"
+        ]
+      ]
+    },
+    "cōgitārās": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular pluperfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāverat": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular pluperfect active indicative"
+        ]
+      ]
+    },
+    "cōgitārat": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular pluperfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāverāmus": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural pluperfect active indicative"
+        ]
+      ]
+    },
+    "cōgitārāmus": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural pluperfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāverātis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural pluperfect active indicative"
+        ]
+      ]
+    },
+    "cōgitārātis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural pluperfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāverant": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural pluperfect active indicative"
+        ]
+      ]
+    },
+    "cōgitārant": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural pluperfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāverō": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular future perfect active indicative"
+        ]
+      ]
+    },
+    "cōgitārō": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular future perfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāveris": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular future perfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāris": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular future perfect active indicative",
+          "second-person singular present passive indicative"
+        ]
+      ]
+    },
+    "cōgitāverit": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular future perfect active indicative",
+          "third-person singular perfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitārit": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular future perfect active indicative",
+          "third-person singular perfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitāverimus": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural future perfect active indicative"
+        ]
+      ]
+    },
+    "cōgitārimus": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural future perfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāveritis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural future perfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāritis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural future perfect active indicative"
+        ]
+      ]
+    },
+    "cōgitāverint": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural future perfect active indicative",
+          "third-person plural perfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitārint": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural future perfect active indicative",
+          "third-person plural perfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitor": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular present passive indicative"
+        ]
+      ]
+    },
+    "cōgitātur": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular present passive indicative"
+        ]
+      ]
+    },
+    "cōgitāmur": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural present passive indicative"
+        ]
+      ]
+    },
+    "cōgitāminī": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present imperative passive",
+          "second-person plural present passive indicative"
+        ]
+      ]
+    },
+    "cōgitantur": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural present passive indicative"
+        ]
+      ]
+    },
+    "cōgitābar": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular imperfect passive indicative"
+        ]
+      ]
+    },
+    "cōgitābāris": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular imperfect passive indicative"
+        ]
+      ]
+    },
+    "cōgitābāre": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular imperfect passive indicative"
+        ]
+      ]
+    },
+    "cōgitābātur": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular imperfect passive indicative"
+        ]
+      ]
+    },
+    "cōgitābāmur": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural imperfect passive indicative"
+        ]
+      ]
+    },
+    "cōgitābāminī": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural imperfect passive indicative"
+        ]
+      ]
+    },
+    "cōgitābantur": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural imperfect passive indicative"
+        ]
+      ]
+    },
+    "cōgitābor": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular future passive indicative"
+        ]
+      ]
+    },
+    "cōgitāberis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular future passive indicative"
+        ]
+      ]
+    },
+    "cōgitābere": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular future passive indicative"
+        ]
+      ]
+    },
+    "cōgitābitur": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular future passive indicative"
+        ]
+      ]
+    },
+    "cōgitābimur": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural future passive indicative"
+        ]
+      ]
+    },
+    "cōgitābiminī": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural future passive indicative"
+        ]
+      ]
+    },
+    "cōgitābuntur": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural future passive indicative"
+        ]
+      ]
+    },
+    "cōgitātus + present active indicative of sum": {
+      "verb": [
+        "extracted",
+        [
+          "perfect passive indicative"
+        ]
+      ]
+    },
+    "cōgitātus + imperfect active indicative of sum": {
+      "verb": [
+        "extracted",
+        [
+          "pluperfect passive indicative"
+        ]
+      ]
+    },
+    "cōgitātus + future active indicative of sum": {
+      "verb": [
+        "extracted",
+        [
+          "future perfect passive indicative"
+        ]
+      ]
+    },
+    "cōgitem": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular present active subjunctive"
+        ]
+      ]
+    },
+    "cōgitēs": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present active subjunctive"
+        ]
+      ]
+    },
+    "cōgitet": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular present active subjunctive"
+        ]
+      ]
+    },
+    "cōgitēmus": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural present active subjunctive"
+        ]
+      ]
+    },
+    "cōgitētis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present active subjunctive"
+        ]
+      ]
+    },
+    "cōgitent": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural present active subjunctive"
+        ]
+      ]
+    },
+    "cōgitārem": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular imperfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitārēs": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular imperfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitāret": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular imperfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitārēmus": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural imperfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitārētis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural imperfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitārent": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural imperfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitāverim": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular perfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitārim": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular perfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitāverīs": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular perfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitārīs": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular perfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitāverīmus": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural perfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitārīmus": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural perfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitāverītis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural perfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitārītis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural perfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitāvissem": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular pluperfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitāssem": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular pluperfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitāvissēs": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular pluperfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitāssēs": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular pluperfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitāvisset": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular pluperfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitāsset": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular pluperfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitāvissēmus": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural pluperfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitāssēmus": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural pluperfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitāvissētis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural pluperfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitāssētis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural pluperfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitāvissent": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural pluperfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgitāssent": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural pluperfect active subjunctive"
+        ]
+      ]
+    },
+    "cōgiter": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular present passive subjunctive"
+        ]
+      ]
+    },
+    "cōgitēris": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present passive subjunctive"
+        ]
+      ]
+    },
+    "cōgitēre": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present passive subjunctive"
+        ]
+      ]
+    },
+    "cōgitētur": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular present passive subjunctive"
+        ]
+      ]
+    },
+    "cōgitēmur": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural present passive subjunctive"
+        ]
+      ]
+    },
+    "cōgitēminī": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present passive subjunctive"
+        ]
+      ]
+    },
+    "cōgitentur": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural present passive subjunctive"
+        ]
+      ]
+    },
+    "cōgitārer": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular imperfect passive subjunctive"
+        ]
+      ]
+    },
+    "cōgitārēris": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular imperfect passive subjunctive"
+        ]
+      ]
+    },
+    "cōgitārēre": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular imperfect passive subjunctive"
+        ]
+      ]
+    },
+    "cōgitārētur": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular imperfect passive subjunctive"
+        ]
+      ]
+    },
+    "cōgitārēmur": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural imperfect passive subjunctive"
+        ]
+      ]
+    },
+    "cōgitārēminī": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural imperfect passive subjunctive"
+        ]
+      ]
+    },
+    "cōgitārentur": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural imperfect passive subjunctive"
+        ]
+      ]
+    },
+    "cōgitātus + present active subjunctive of sum": {
+      "verb": [
+        "extracted",
+        [
+          "perfect passive subjunctive"
+        ]
+      ]
+    },
+    "cōgitātus + imperfect active subjunctive of sum": {
+      "verb": [
+        "extracted",
+        [
+          "pluperfect passive subjunctive"
+        ]
+      ]
+    },
+    "cōgitā": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present imperative active"
+        ]
+      ]
+    },
+    "cōgitāte": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present imperative active"
+        ]
+      ]
+    },
+    "cōgitātō": {
+      "verb": [
+        "extracted",
+        [
+          "singular future imperative active second/third-person"
+        ]
+      ]
+    },
+    "cōgitātōte": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural future imperative active"
+        ]
+      ]
+    },
+    "cōgitantō": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural future imperative active"
+        ]
+      ]
+    },
+    "cōgitātor": {
+      "verb": [
+        "extracted",
+        [
+          "singular future imperative passive second/third-person"
+        ]
+      ]
+    },
+    "cōgitantor": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural future imperative passive"
+        ]
+      ]
+    },
+    "cōgitārī": {
+      "verb": [
+        "extracted",
+        [
+          "present passive infinitive"
+        ]
+      ]
+    },
+    "cōgitāns": {
+      "verb": [
+        "extracted",
+        [
+          "present active participle"
+        ]
+      ]
+    },
+    "cōgitātūrum esse": {
+      "verb": [
+        "extracted",
+        [
+          "future active infinitive"
+        ]
+      ]
+    },
+    "cōgitātum īrī": {
+      "verb": [
+        "extracted",
+        [
+          "future passive infinitive"
+        ]
+      ]
+    },
+    "cōgitātūrus": {
+      "verb": [
+        "extracted",
+        [
+          "future active participle"
+        ]
+      ]
+    },
+    "cōgitandus": {
+      "verb": [
+        "extracted",
+        [
+          "future passive participle"
+        ]
+      ]
+    },
+    "cōgitāvisse": {
+      "verb": [
+        "extracted",
+        [
+          "perfect active infinitive"
+        ]
+      ]
+    },
+    "cōgitāsse": {
+      "verb": [
+        "extracted",
+        [
+          "perfect active infinitive"
+        ]
+      ]
+    },
+    "cōgitātum esse": {
+      "verb": [
+        "extracted",
+        [
+          "perfect passive infinitive"
+        ]
+      ]
+    },
+    "cōgitātus": {
+      "verb": [
+        "extracted",
+        [
+          "perfect passive participle"
+        ]
+      ]
+    },
+    "cōgitātum fore": {
+      "verb": [
+        "extracted",
+        [
+          "future perfect passive infinitive"
+        ]
+      ]
+    },
+    "cōgitātūrum fuisse": {
+      "verb": [
+        "extracted",
+        [
+          "perfect active infinitive potential"
+        ]
+      ]
+    },
+    "cōgitandī": {
+      "verb": [
+        "extracted",
+        [
+          "genitive gerund noun-from-verb"
+        ]
+      ]
+    },
+    "cōgitandō": {
+      "verb": [
+        "extracted",
+        [
+          "ablative gerund noun-from-verb",
+          "dative gerund noun-from-verb"
+        ]
+      ]
+    },
+    "cōgitandum": {
+      "verb": [
+        "extracted",
+        [
+          "accusative gerund noun-from-verb"
+        ]
+      ]
+    },
+    "cōgitātū": {
+      "verb": [
+        "extracted",
+        [
+          "ablative noun-from-verb supine"
+        ]
+      ]
+    }
   }
 }

@@ -125,5 +125,26 @@
         }
       ]
     }
+  ],
+  [
+    "cogito",
+    "ipa",
+    {
+      "reading": "cōgitō",
+      "transcriptions": [
+        {
+          "ipa": "[ˈkoː.ɡɪ.toː]",
+          "tags": [
+            "Classical-Latin"
+          ]
+        },
+        {
+          "ipa": "[ˈkɔː.d͡ʒi.to]",
+          "tags": [
+            "modern Italianate Ecclesiastical"
+          ]
+        }
+      ]
+    }
   ]
 ]

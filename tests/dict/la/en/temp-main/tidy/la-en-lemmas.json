@@ -402,5 +402,41 @@
         }
       ]
     }
+  },
+  "cogito": {
+    "cōgitō": {
+      "verb": [
+        {
+          "gloss_tree": {
+            "to think": {
+              "tags": [
+                "conjugation-1"
+              ],
+              "examples": [
+                {
+                  "text": "Nihil agis, nihil moliris, nihil cogitas quod non ego non modo audiam sed etiam videam planeque sentiam.",
+                  "translation": "You do nothing, you plan nothing, you think of nothing which I not only do not hear, but which I do not see and know every particular of.",
+                  "ref": "63 BCE, Cicero, Catiline Orations:"
+                }
+              ]
+            },
+            "to ponder, meditate, reflect, consider (i.e. think of, about, over)": {
+              "tags": [
+                "conjugation-1"
+              ]
+            },
+            "to intend, design, purpose, plan, devise (i.e. have in mind)": {
+              "tags": [
+                "conjugation-1"
+              ]
+            }
+          },
+          "etymology_text": "From con- + agitō.",
+          "head_info_text": "cōgitō (present infinitive cōgitāre, perfect active cōgitāvī, supine cōgitātum); first conjugation",
+          "wlink": "https://en.wiktionary.org/wiki/cogito#Latin",
+          "klink": "https://kaikki.org/dictionary/Latin/meaning/c/co/cogito.html"
+        }
+      ]
+    }
   }
 }
