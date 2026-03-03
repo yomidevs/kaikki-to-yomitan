@@ -86,6 +86,10 @@ impl Dictionary for DIpa {
         entry.lang_code == source.as_ref()
     }
 
+    fn supports_probe(&self) -> bool {
+        true
+    }
+
     fn process(&self, langs: Langs, entry: &WordEntry, irs: &mut Self::I) {
         process_ipa(langs.edition, langs.source, entry, irs);
     }
