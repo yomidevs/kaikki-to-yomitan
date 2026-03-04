@@ -1,5 +1,5 @@
-build:
-  python3 scripts/build.py
+build *args:
+  python3 scripts/build.py {{args}}
 
 cov:
   cargo llvm-cov --open
@@ -26,15 +26,9 @@ docs-publish:
 # Add a word to the testsuite
 add fr to word:
   @cargo run --release -- download {{fr}} {{to}}
-  @sh -c 'if [ "{{to}}" != "en" ]; then \
-    rg "\"word\": \"{{word}}\"" "data/kaikki/{{to}}-extract.jsonl" -N | \
-    jq -c "select(.word == \"{{word}}\")" \
-    >> "tests/kaikki/{{fr}}-{{to}}-extract.jsonl"; \
-  else \
-    rg "\"word\": \"{{word}}\"" "data/kaikki/{{fr}}-{{to}}-extract.jsonl" -N | \
-    jq -c "select(.word == \"{{word}}\")" \
-    >> "tests/kaikki/{{fr}}-{{to}}-extract.jsonl"; \
-  fi'
+  rg "\"word\": \"{{word}}\"" "data/kaikki/{{to}}-extract.jsonl" -N | \
+  jq -c "select(.word == \"{{word}}\")" \
+  >> "tests/kaikki/{{fr}}-{{to}}-extract.jsonl"; \
 
 flamegraph:
   cargo flamegraph -r -- main el el -vq --skip-yomitan
