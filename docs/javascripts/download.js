@@ -11,7 +11,7 @@ function buildUrl(type, source, target) {
             return `${BASE_URL}/${source}/${target}/wty-${source}-${target}-ipa.zip`;
 
         case "ipa-merged":
-            return `${BASE_URL}/${target}/all/wty-${target}-ipa.zip`;
+            return `${BASE_URL}/all/${target}/wty-${target}-ipa.zip`;
 
         case "glossary":
             return `${BASE_URL}/${source}/${target}/wty-${source}-${target}-gloss.zip`;
