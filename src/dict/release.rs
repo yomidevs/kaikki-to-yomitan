@@ -62,15 +62,16 @@ pub fn release(rargs: ReleaseArgs) -> Result<()> {
     editions.par_iter().for_each(|edition| {
         release_main(&rargs, *edition);
         release_ipa(&rargs, *edition);
-        release_ipa_merged(&rargs, *edition);
         release_glossary(&rargs, *edition);
     });
 
-    // let sources = Lang::all();
-    // let sources = [Lang::Afb];
-    // sources.par_iter().for_each(|source| {
-    //     release_glossary_extended(*source);
-    // });
+    let targets = Lang::all();
+    // let targets = [Lang::Afb];
+    // let targets: Vec<Lang> = editions.iter().map(|ed| (*ed).into()).collect();
+    targets.par_iter().for_each(|target| {
+        release_ipa_merged(&rargs, *target);
+        // release_glossary_extended(*target);
+    });
 
     let elapsed = start.elapsed();
     println!("Finished dictionaries in {elapsed:.2?}");
@@ -192,14 +193,12 @@ fn release_ipa(rargs: &ReleaseArgs, edition: Edition) {
     });
 }
 
-fn release_ipa_merged(rargs: &ReleaseArgs, edition: Edition) {
+fn release_ipa_merged(rargs: &ReleaseArgs, target: Lang) {
     let start = Instant::now();
 
-    let langs = match edition {
-        Edition::Simple => return,
-        _ => IpaMergedLangs {
-            target: edition.into(),
-        },
+    let langs = match target {
+        Lang::Simple => return,
+        _ => IpaMergedLangs { target },
     };
 
     let args = IpaMergedArgs {
@@ -213,9 +212,9 @@ fn release_ipa_merged(rargs: &ReleaseArgs, edition: Edition) {
     };
 
     match make_dict(DIpaMerged, args) {
-        // Lang::Sq is a filler, doesn't exist
-        Ok(()) => pp("gloss", Lang::Sq, edition.into(), start),
-        Err(err) => tracing::error!("[ipa-merged--{edition}] ERROR: {err:?}"),
+        // Lang::Sq is a filler, it should be EditionSpec::All
+        Ok(()) => pp("ipa-merged", target, Lang::Sq, start),
+        Err(err) => tracing::error!("[ipa-merged-{target}] ERROR: {err:?}"),
     }
 }
 
@@ -276,7 +275,7 @@ fn release_glossary_extended(source: Lang) {
         };
 
         match make_dict(DGlossaryExtended, args) {
-            Ok(()) => pp("gloss", source, *target, start),
+            Ok(()) => pp("gloss-all", source, *target, start),
             Err(err) => tracing::error!("[gloss-all-{source}-{target}] ERROR: {err:?}"),
         }
     });
