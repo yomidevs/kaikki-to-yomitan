@@ -1,0 +1,36 @@
+{
+  "็": {
+    "็": {
+      "character": [
+        {
+          "gloss_tree": {
+            "It is a Thai symbol that is called Mai Taikhu (ไม้ไต่คู้). It is used to shorten the written form of the vowel เ-ะ to เ-็. The word that has the form initial consonant + เ ะ + end consonant will be shortened to เ-็X.": {
+              "tags": [
+                "letter"
+              ]
+            },
+            "It is a Thai symbol that is called Mai Taikhu (ไม้ไต่คู้). It is used to shorten the written form of the vowel เ-ะ to เ-็. The word that has the form initial consonant + เ ะ + end consonant will be shortened to เ-็X.\nFor example:\nเป็น is the shortened form of เปะน.": {
+              "tags": [
+                "letter"
+              ],
+              "children": {
+                "For example": {
+                  "tags": [
+                    "letter"
+                  ]
+                },
+                "เป็น is the shortened form of เปะน.": {
+                  "tags": [
+                    "letter"
+                  ]
+                }
+              }
+            }
+          },
+          "wlink": "https://en.wiktionary.org/wiki/็#Thai",
+          "klink": "https://kaikki.org/dictionary/Thai/meaning/็/็/็.html"
+        }
+      ]
+    }
+  }
+}
