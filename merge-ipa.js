@@ -81,8 +81,9 @@ async function main(){
         if(globalTagsLength) console.log("globalTags", globalTagsLength);
         
         const url = 'https://github.com/yomidevs/kaikki-to-yomitan';
-        const title = `kty-${sourceIso}-ipa`;
-        const latestReleaseUrl = `https://pub-c3d38cca4dc2403b88934c56748f5144.r2.dev/releases/latest/${title}`;
+        const latestDownloadLink = 'https://huggingface.co/datasets/daxida/wty-release/resolve/main/latest';
+        const uid = `${sourceIso}-ipa`;
+        const title = `kty-${uid}`;
         const globalIndex = {
             "format": 3,
             "revision": date.format(now, 'YYYY.MM.DD'),
@@ -90,8 +91,8 @@ async function main(){
             title,
             url,
             "isUpdatable": true,
-            "indexUrl": `${latestReleaseUrl}-index.json`,
-            "downloadUrl": `${latestReleaseUrl}.zip`,
+            "indexUrl": `${latestDownloadLink}/index/wty-${uid}-index.json`,
+            "downloadUrl": `${latestDownloadLink}/dict/all/${sourceIso}/wty-${uid}.zip`,
         }
 
         if(globalIpaLength){

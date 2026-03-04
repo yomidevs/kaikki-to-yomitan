@@ -43,8 +43,9 @@ const partsOfSpeech = loadJsonArray(`data/language/target-language-tags/en/parts
 const skippedPartsOfSpeech = {};
 
 const url = 'https://github.com/yomidevs/kaikki-to-yomitan';
-const latestReleaseUrl = 'https://pub-c3d38cca4dc2403b88934c56748f5144.r2.dev/releases/latest/';
-const title = `kty-${sourceIso}-${targetIso}-gloss`;
+const latestDownloadLink = 'https://huggingface.co/datasets/daxida/wty-release/resolve/main/latest';
+const uid = `${sourceIso}-${targetIso}-gloss`;
+const title = `kty-${uid}`;
 const indexJson = {
     title: title,
     format: 3,
@@ -57,8 +58,8 @@ const indexJson = {
     sourceLanguage: sourceIso,
     targetLanguage: targetIso,
     isUpdatable: true,
-    indexUrl: `${latestReleaseUrl}${title}-index.json`,
-    downloadUrl: `${latestReleaseUrl}${title}.zip`,
+    indexUrl: `${latestDownloadLink}/index/wty-${uid}-index.json`,
+    downloadUrl: `${latestDownloadLink}/dict/${sourceIso}/${targetIso}/wty-${uid}.zip`,
 };
 
 const ymtLemmas = [];
