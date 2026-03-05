@@ -1,13 +1,28 @@
-use crate::lang::Lang;
+use crate::{lang::Lang, path::DictionaryType};
 
 const BASE_URL: &str = "https://huggingface.co/datasets/daxida/wty-release/resolve/main/latest";
+
+// Helper function to sync index with the file tree.
+// It is sort of a kludge due to the fact that write_yomitan expects a source: Lang
+fn source_str<'a>(dict_ty: DictionaryType, source: &'a Lang) -> &'a str {
+    match dict_ty {
+        DictionaryType::Main | DictionaryType::Ipa | DictionaryType::Glossary => source.as_ref(),
+        DictionaryType::IpaMerged => "all",
+        _ => unimplemented!(),
+    }
+}
 
 /// The url to download this dictionary.
 ///
 /// See: docs/javascripts/download.js (keep in sync)
-fn download_url(dict_name_expanded: &str, source: Lang, target: Lang) -> String {
-    // WARN: not sure if this works for dictionaries that don't follow source/target
-    format!("{BASE_URL}/dict/{source}/{target}/{dict_name_expanded}.zip?download=true")
+fn download_url(
+    dict_ty: DictionaryType,
+    dict_name_expanded: &str,
+    source: Lang,
+    target: Lang,
+) -> String {
+    let source_str = source_str(dict_ty, &source);
+    format!("{BASE_URL}/dict/{source_str}/{target}/{dict_name_expanded}.zip?download=true")
 }
 
 /// The url of the cloned index of this dictionary.
@@ -36,10 +51,17 @@ fn index_url(dict_name_expanded: &str) -> String {
 /// downloadUrl points to the download link in the download repository.
 ///
 /// <https://github.com/yomidevs/yomitan/blob/master/ext/data/schemas/dictionary-index-schema.json>
-pub fn get_index(dict_name_expanded: &str, source: Lang, target: Lang) -> String {
+pub fn get_index(
+    dict_ty: DictionaryType,
+    dict_name_expanded: &str,
+    source: Lang,
+    target: Lang,
+) -> String {
     let current_date = chrono::Utc::now().format("%Y.%m.%d"); // needs to be dot separated
     let index_url = index_url(dict_name_expanded);
-    let download_url = download_url(dict_name_expanded, source, target);
+    let download_url = download_url(dict_ty, dict_name_expanded, source, target);
+    let source_str = source_str(dict_ty, &source);
+
     format!(
         r#"{{
   "title": "{dict_name_expanded}",
@@ -50,7 +72,7 @@ pub fn get_index(dict_name_expanded: &str, source: Lang, target: Lang) -> String
   "url": "https://github.com/daxida/wty",
   "description": "Dictionaries for various language pairs generated from Wiktionary data, via Kaikki and wty.",
   "attribution": "https://kaikki.org/",
-  "sourceLanguage": "{source}",
+  "sourceLanguage": "{source_str}",
   "targetLanguage": "{target}",
   "isUpdatable": true,
   "indexUrl": "{index_url}",
@@ -64,10 +86,18 @@ mod tests {
     use super::*;
 
     #[test]
-    fn url_download() {
+    fn url_download_ipa() {
         assert_eq!(
-            download_url("wty-afb-en-ipa", Lang::Afb, Lang::En),
+            download_url(DictionaryType::Ipa, "wty-afb-en-ipa", Lang::Afb, Lang::En),
             "https://huggingface.co/datasets/daxida/wty-release/resolve/main/latest/dict/afb/en/wty-afb-en-ipa.zip?download=true"
+        );
+    }
+
+    #[test]
+    fn url_download_ipa_merged() {
+        assert_eq!(
+            download_url(DictionaryType::IpaMerged, "wty-en-ipa", Lang::Afb, Lang::En),
+            "https://huggingface.co/datasets/daxida/wty-release/resolve/main/latest/dict/all/en/wty-en-ipa.zip?download=true"
         );
     }
 

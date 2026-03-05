@@ -78,7 +78,7 @@ pub fn write_yomitan(
         SimpleFileOptions::default().compression_method(zip::CompressionMethod::Deflated);
 
     // Zip index.json
-    let index_string = get_index(&pm.dict_name_expanded(), source, target);
+    let index_string = get_index(pm.dict_ty, &pm.dict_name_expanded(), source, target);
     zip.start_file("index.json", zip_opts)?;
     zip.write_all(index_string.as_bytes())?;
 
