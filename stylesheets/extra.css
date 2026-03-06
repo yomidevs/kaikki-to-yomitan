@@ -1,0 +1,81 @@
+/* Hide content until ready to prevent FOUC */
+.download-table {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.download-table.loaded {
+  opacity: 1;
+}
+
+.download-table {
+  border-collapse: separate;
+  border-spacing: 0 8px; /* spacing between rows */
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+.download-table th,
+.download-table td {
+  vertical-align: middle;
+  padding: 6px 12px;
+}
+
+.download-table th {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.download-table tr td:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.download-table tr td:nth-last-child(2) {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.download-table select {
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  background: var(--md-default-bg-color);
+  min-width: 160px;
+  cursor: pointer;
+}
+
+.download-table select:focus {
+  outline: 2px solid var(--md-primary-fg-color);
+  outline-offset: 2px;
+}
+
+.dl-btn {
+  padding: 7px 16px;
+  border-radius: 6px;
+  border: none;
+  background: var(--md-primary-fg-color);
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dl-btn:hover {
+  background: var(--md-accent-fg-color);
+  transform: translateY(-1px);
+}
+
+.dl-btn:disabled {
+  background: var(--md-default-fg-color--lighter);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.dl-info {
+  font-size: 13px;
+  color: var(--md-default-fg-color--light);
+  white-space: nowrap;
+}
