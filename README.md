@@ -1,6 +1,6 @@
 ## wiktionary to yomitan (wty)
 
-[![Build status](https://github.com/yomidedvs/wiktionary-to-yomitan/workflows/ci/badge.svg)](https://github.com/yomidedvs/wiktionary-to-yomitan/actions)
+[![Build status](https://github.com/yomidevs/wiktionary-to-yomitan/workflows/ci/badge.svg)](https://github.com/yomidevs/wiktionary-to-yomitan/actions)
 
 Converts wiktionary data from [kaikki](https://kaikki.org/) ([wiktextract](https://github.com/tatuylonen/wiktextract)) to [yomitan](https://github.com/yomidevs/yomitan)-compatible dictionaries.
 
