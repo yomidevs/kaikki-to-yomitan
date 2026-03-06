@@ -4,7 +4,7 @@
 
 Converts wiktionary data from [kaikki](https://kaikki.org/) ([wiktextract](https://github.com/tatuylonen/wiktextract)) to [yomitan](https://github.com/yomidevs/yomitan)-compatible dictionaries.
 
-This is a port of [kaikki-to-yomitan](https://github.com/yomidevs/kaikki-to-yomitan).
+This is a port of [kaikki-to-yomitan](https://github.com/yomidevs/wiktionary-to-yomitan/tree/old-master).
 
 Converted dictionaries can be found on the [downloads](https://daxida.github.io/wty/download) page.
 
