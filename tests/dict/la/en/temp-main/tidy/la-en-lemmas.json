@@ -438,5 +438,124 @@
         }
       ]
     }
+  },
+  "in": {
+    "in": {
+      "prep": [
+        {
+          "gloss_tree": {
+            "in, at, on, upon, from (space)": {
+              "tags": [
+                "with-ablative"
+              ],
+              "examples": [
+                {
+                  "text": "Seneca",
+                  "translation": "Poison is drunk from a gold cup."
+                }
+              ]
+            },
+            "under, within, in": {
+              "tags": [
+                "with-ablative"
+              ],
+              "examples": [
+                {
+                  "text": "lentus in umbrā",
+                  "translation": "sluggish under the shade",
+                  "ref": "c. 41 BCE – 39 BCE, Vergilius, Eclogues 1.4"
+                }
+              ]
+            },
+            "during, within, while in (time)": {
+              "tags": [
+                "with-ablative"
+              ]
+            },
+            "about, respecting, concerning (of reference)": {
+              "tags": [
+                "with-ablative"
+              ]
+            },
+            "among": {
+              "tags": [
+                "with-ablative"
+              ],
+              "examples": [
+                {
+                  "text": "Et Verbum caro factum est, et habitavit in nobis :",
+                  "translation": "And the Word was made flesh, and dwelt among us,",
+                  "ref": "Vulgate, Gospel of St. John 1:14"
+                },
+                {
+                  "text": "Et ingressus angelus ad eam dixit : Ave gratia plena : Dominus tecum : benedicta tu in mulieribus.",
+                  "translation": "And the angel being come in, said unto her: Hail, full of grace, the Lord is with thee: blessed art thou among women.",
+                  "ref": "Vulgate, Gospel of St. Luke 1:28"
+                }
+              ]
+            },
+            "into, to": {
+              "tags": [
+                "with-accusative"
+              ],
+              "examples": [
+                {
+                  "text": "De introductione religionis Christianæ in Islandiam.",
+                  "translation": "On the introduction of Christianity to Iceland.",
+                  "ref": "1774, Finnur Jónsson, Historia Ecclesiastica Islandiæ 1"
+                }
+              ]
+            },
+            "toward, towards, against, at": {
+              "tags": [
+                "with-accusative"
+              ],
+              "examples": [
+                {
+                  "text": "Gallī in Rōmānōs incurrunt.",
+                  "translation": "The Gauls are rushing against the Romans."
+                },
+                {
+                  "text": "Scelera in se fratris",
+                  "translation": "The brother’s crimes against himself",
+                  "ref": "27 BCE – 25 BCE, Titus Livius, Ab Urbe Condita I.6"
+                },
+                {
+                  "text": "in adversum Romani subiere",
+                  "translation": "The Romans marched against their enemy",
+                  "ref": "27 BCE – 25 BCE, Titus Livius, Ab Urbe Condita I.12"
+                }
+              ]
+            },
+            "until, for": {
+              "tags": [
+                "with-accusative"
+              ]
+            },
+            "about": {
+              "tags": [
+                "with-accusative"
+              ]
+            },
+            "according to": {
+              "tags": [
+                "with-accusative"
+              ],
+              "examples": [
+                {
+                  "text": "generatimque distributi in civitates",
+                  "translation": "and being distributed in tribes according to their respective nations",
+                  "ref": "c. 52 BCE, Julius Caesar, Commentarii de Bello Gallico VII.19"
+                }
+              ]
+            }
+          },
+          "etymology_text": "From earlier en, from Proto-Italic *en, from Proto-Indo-European *h₁én (“in”). Cognates include English in, Ancient Greek ἐν (en).\nThe ablative is from the locative, and the accusative is from the directional.",
+          "head_info_text": "in (+ ablative)",
+          "wlink": "https://en.wiktionary.org/wiki/in#Latin",
+          "klink": "https://kaikki.org/dictionary/Latin/meaning/i/in/in.html"
+        }
+      ]
+    }
   }
 }

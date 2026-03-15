@@ -2550,5 +2550,31 @@
         ]
       ]
     }
+  },
+  "in": {
+    "en": {
+      "prep": [
+        "extracted",
+        [
+          "alternative Old-Latin"
+        ]
+      ]
+    },
+    "endo": {
+      "prep": [
+        "extracted",
+        [
+          "alternative Old-Latin"
+        ]
+      ]
+    },
+    "indu": {
+      "prep": [
+        "extracted",
+        [
+          "alternative Old-Latin"
+        ]
+      ]
+    }
   }
 }
