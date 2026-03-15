@@ -36,7 +36,39 @@
   border-bottom-right-radius: 8px;
 }
 
-.download-table select {
+/* Combobox */
+.dl-target-combobox,
+.dl-source-combobox {
+  position: relative;
+}
+
+.dl-target-dropdown,
+.dl-source-dropdown {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+/* Options shown in the combobox dropdown */
+.dl-target-dropdown div,
+.dl-source-dropdown div {
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.dl-target-dropdown div:hover,
+.dl-source-dropdown div:hover {
+  background: var(--md-accent-fg-color--transparent);
+}
+
+.dl-target-search,
+.dl-source-search {
   padding: 6px 10px;
   font-size: 14px;
   border-radius: 6px;
@@ -44,13 +76,16 @@
   background: var(--md-default-bg-color);
   min-width: 160px;
   cursor: pointer;
+  width: 100%;
 }
 
-.download-table select:focus {
+.dl-target-search:focus,
+.dl-source-search:focus {
   outline: 2px solid var(--md-primary-fg-color);
   outline-offset: 2px;
 }
 
+/* Download button */
 .dl-btn {
   padding: 7px 16px;
   border-radius: 6px;
