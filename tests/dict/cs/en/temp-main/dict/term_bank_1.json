@@ -108,14 +108,32 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "textová zpráva"
+                                  "content": [
+                                    "textová ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "zpráva"
+                                    }
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "text message"
+                                  "content": [
+                                    "text ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "message"
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -136,14 +154,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Chcete nechat zprávu?"
+                                  "content": [
+                                    "Chcete nechat ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "zprávu"
+                                    },
+                                    "?"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Would you like to leave a message?"
+                                  "content": [
+                                    "Would you like to leave a ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "message"
+                                    },
+                                    "?"
+                                  ]
                                 }
                               ]
                             }
@@ -190,14 +228,32 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "lékařská zpráva"
+                                  "content": [
+                                    "lékařská ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "zpráva"
+                                    }
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "medical report"
+                                  "content": [
+                                    "medical ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "report"
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -218,14 +274,32 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "podat zprávu"
+                                  "content": [
+                                    "podat ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "zprávu"
+                                    }
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "to file a report"
+                                  "content": [
+                                    "to file a ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "report"
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -350,14 +424,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Zabili ho pro peníze."
+                                  "content": [
+                                    "Zabili ho ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "pro"
+                                    },
+                                    " peníze."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "They killed him for his money."
+                                  "content": [
+                                    "They killed him ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "for"
+                                    },
+                                    " his money."
+                                  ]
                                 }
                               ]
                             }

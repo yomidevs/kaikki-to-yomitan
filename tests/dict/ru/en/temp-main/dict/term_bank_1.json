@@ -108,7 +108,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "идёт снег"
+                                  "content": [
+                                    "идёт ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "снег"
+                                    }
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -136,7 +145,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "мо́крый снег"
+                                  "content": [
+                                    "мо́крый ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "снег"
+                                    }
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -164,7 +182,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "пе́рвый снег"
+                                  "content": [
+                                    "пе́рвый ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "снег"
+                                    }
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -192,14 +219,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "ски́дывать/ски́нуть снег с кры́ши"
+                                  "content": [
+                                    "ски́дывать/ски́нуть ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "снег"
+                                    },
+                                    " с кры́ши"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "to throw the snow off the roof"
+                                  "content": [
+                                    "to throw ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "the snow"
+                                    },
+                                    " off the roof"
+                                  ]
                                 }
                               ]
                             }
@@ -220,7 +267,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "как снег на́ голову"
+                                  "content": [
+                                    "как ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "снег"
+                                    },
+                                    " на́ голову"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -248,7 +305,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "что́-либо ну́жно, как прошлого́дний снег"
+                                  "content": [
+                                    "что́-либо ну́жно, как прошлого́дний ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "снег"
+                                    }
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -276,7 +342,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "зимо́й сне́га не вы́просить"
+                                  "content": [
+                                    "зимо́й ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "сне́га"
+                                    },
+                                    " не вы́просить"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -304,7 +380,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Дава́й поваля́емся в снегу́!"
+                                  "content": [
+                                    "Дава́й поваля́емся в ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "снегу́"
+                                    },
+                                    "!"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -735,14 +821,32 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Зи́мний дворе́ц"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Зи́мний"
+                                    },
+                                    " дворе́ц"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Winter palace"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Winter"
+                                    },
+                                    " palace"
+                                  ]
                                 }
                               ]
                             }

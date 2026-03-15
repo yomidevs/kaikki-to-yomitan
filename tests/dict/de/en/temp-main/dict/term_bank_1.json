@@ -143,14 +143,33 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "jemanden gesund pflegen"
+                                      "content": [
+                                        "jemanden gesund ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "pflegen"
+                                        }
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "to nurse someone back to health"
+                                      "content": [
+                                        "to ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "nurse"
+                                        },
+                                        " someone back to health"
+                                      ]
                                     }
                                   ]
                                 }
@@ -171,14 +190,33 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "Kranke pflegen"
+                                      "content": [
+                                        "Kranke ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "pflegen"
+                                        }
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "to care for the sick"
+                                      "content": [
+                                        "to ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "care for"
+                                        },
+                                        " the sick"
+                                      ]
                                     }
                                   ]
                                 }
@@ -220,14 +258,33 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "sein Äußeres pflegen"
+                                      "content": [
+                                        "sein Äußeres ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "pflegen"
+                                        }
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "to take care of one's appearance"
+                                      "content": [
+                                        "to ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "take care of"
+                                        },
+                                        " one's appearance"
+                                      ]
                                     }
                                   ]
                                 }
@@ -248,14 +305,33 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "die Zähne pflegen"
+                                      "content": [
+                                        "die Zähne ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "pflegen"
+                                        }
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "to take care of (one's) teeth"
+                                      "content": [
+                                        "to ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "take care of"
+                                        },
+                                        " (one's) teeth"
+                                      ]
                                     }
                                   ]
                                 }
@@ -276,14 +352,34 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "Der Gärtner pflegt den Garten."
+                                      "content": [
+                                        "Der Gärtner ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "pflegt"
+                                        },
+                                        " den Garten."
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "The gardener tends to the garden."
+                                      "content": [
+                                        "The gardener ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "tends"
+                                        },
+                                        " to the garden."
+                                      ]
                                     }
                                   ]
                                 }
@@ -304,14 +400,34 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "Sie hat sich stets sehr gepflegt."
+                                      "content": [
+                                        "Sie hat sich stets sehr ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "gepflegt"
+                                        },
+                                        "."
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "She has always taken care of her appearance."
+                                      "content": [
+                                        "She has always ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "taken care of"
+                                        },
+                                        " her appearance."
+                                      ]
                                     }
                                   ]
                                 }
@@ -332,14 +448,34 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "Er setzte sich faul hin und pflegte sich."
+                                      "content": [
+                                        "Er setzte sich faul hin und ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "pflegte"
+                                        },
+                                        " sich."
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "He sat down lazily and went easy on himself."
+                                      "content": [
+                                        "He sat down lazily and ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "went easy on"
+                                        },
+                                        " himself."
+                                      ]
                                     }
                                   ]
                                 }
@@ -360,14 +496,33 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "Daten pflegen"
+                                      "content": [
+                                        "Daten ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "pflegen"
+                                        }
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "to maintain data (keep up-to-date)"
+                                      "content": [
+                                        "to ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "maintain"
+                                        },
+                                        " data (keep up-to-date)"
+                                      ]
                                     }
                                   ]
                                 }
@@ -479,14 +634,33 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "Freundschaften pflegen"
+                                      "content": [
+                                        "Freundschaften ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "pflegen"
+                                        }
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "to cultivate friendships"
+                                      "content": [
+                                        "to ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "cultivate"
+                                        },
+                                        " friendships"
+                                      ]
                                     }
                                   ]
                                 }
@@ -507,14 +681,33 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "Beziehungen pflegen"
+                                      "content": [
+                                        "Beziehungen ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "pflegen"
+                                        }
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "to cultivate relationships"
+                                      "content": [
+                                        "to ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "cultivate"
+                                        },
+                                        " relationships"
+                                      ]
                                     }
                                   ]
                                 }
@@ -535,14 +728,41 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "Künste und Wissenschaften pflegen"
+                                      "content": [
+                                        "Künste und Wissenschaften ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "pflegen"
+                                        }
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "to advance/promote the arts and sciences"
+                                      "content": [
+                                        "to ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "advance"
+                                        },
+                                        "/",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "promote"
+                                        },
+                                        " the arts and sciences"
+                                      ]
                                     }
                                   ]
                                 }
@@ -604,14 +824,41 @@
                                           "data": {
                                             "content": "example-sentence-a"
                                           },
-                                          "content": "der Liebe pflegen"
+                                          "content": [
+                                            "der Liebe ",
+                                            {
+                                              "tag": "span",
+                                              "data": {
+                                                "content": "bold-text"
+                                              },
+                                              "content": "pflegen"
+                                            }
+                                          ]
                                         },
                                         {
                                           "tag": "div",
                                           "data": {
                                             "content": "example-sentence-b"
                                           },
-                                          "content": "to cultivate/nurture love"
+                                          "content": [
+                                            "to ",
+                                            {
+                                              "tag": "span",
+                                              "data": {
+                                                "content": "bold-text"
+                                              },
+                                              "content": "cultivate"
+                                            },
+                                            "/",
+                                            {
+                                              "tag": "span",
+                                              "data": {
+                                                "content": "bold-text"
+                                              },
+                                              "content": "nurture"
+                                            },
+                                            " love"
+                                          ]
                                         }
                                       ]
                                     }
@@ -632,14 +879,33 @@
                                           "data": {
                                             "content": "example-sentence-a"
                                           },
-                                          "content": "der Ruhe pflegen"
+                                          "content": [
+                                            "der Ruhe ",
+                                            {
+                                              "tag": "span",
+                                              "data": {
+                                                "content": "bold-text"
+                                              },
+                                              "content": "pflegen"
+                                            }
+                                          ]
                                         },
                                         {
                                           "tag": "div",
                                           "data": {
                                             "content": "example-sentence-b"
                                           },
-                                          "content": "to foster tranquility"
+                                          "content": [
+                                            "to ",
+                                            {
+                                              "tag": "span",
+                                              "data": {
+                                                "content": "bold-text"
+                                              },
+                                              "content": "foster"
+                                            },
+                                            " tranquility"
+                                          ]
                                         }
                                       ]
                                     }
@@ -716,14 +982,33 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "Umgang pflegen"
+                                      "content": [
+                                        "Umgang ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "pflegen"
+                                        }
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "to regularly be in contact"
+                                      "content": [
+                                        "to ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "regularly be in"
+                                        },
+                                        " contact"
+                                      ]
                                     }
                                   ]
                                 }
@@ -744,14 +1029,32 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "Geselligkeit pflegen"
+                                      "content": [
+                                        "Geselligkeit ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "pflegen"
+                                        }
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "to socialize regularly"
+                                      "content": [
+                                        "to socialize ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "regularly"
+                                        }
+                                      ]
                                     }
                                   ]
                                 }
@@ -810,14 +1113,34 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "Ich pflege zu laufen."
+                                      "content": [
+                                        "Ich ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "pflege"
+                                        },
+                                        " zu laufen."
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "I usually walk."
+                                      "content": [
+                                        "I ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "usually"
+                                        },
+                                        " walk."
+                                      ]
                                     }
                                   ]
                                 }
@@ -838,14 +1161,34 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "Er pflegte zu reisen."
+                                      "content": [
+                                        "Er ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "pflegte"
+                                        },
+                                        " zu reisen."
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "He used to travel."
+                                      "content": [
+                                        "He ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "used to"
+                                        },
+                                        " travel."
+                                      ]
                                     }
                                   ]
                                 }
@@ -994,14 +1337,32 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Fuchs, du hast die Gans gestohlen. Gib sie wieder her!"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Fuchs"
+                                    },
+                                    ", du hast die Gans gestohlen. Gib sie wieder her!"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Fox, you've stolen the goose. Give it back here!"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Fox"
+                                    },
+                                    ", you've stolen the goose. Give it back here!"
+                                  ]
                                 }
                               ]
                             }
@@ -1065,14 +1426,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Er ist ein ganz schöner Fuchs."
+                                  "content": [
+                                    "Er ist ein ganz schöner ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Fuchs"
+                                    },
+                                    "."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "He is quite the sly fox."
+                                  "content": [
+                                    "He is quite the ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "sly fox"
+                                    },
+                                    "."
+                                  ]
                                 }
                               ]
                             }
@@ -1136,14 +1517,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Unser Paul ist ja ein kleiner Fuchs."
+                                  "content": [
+                                    "Unser Paul ist ja ein kleiner ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Fuchs"
+                                    },
+                                    "."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Our Paul is a little redhead."
+                                  "content": [
+                                    "Our Paul is a little ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "redhead"
+                                    },
+                                    "."
+                                  ]
                                 }
                               ]
                             }
@@ -1247,14 +1648,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Ich hatte nur vier Trümpfe und darunter beide Füchse."
+                                  "content": [
+                                    "Ich hatte nur vier Trümpfe und darunter beide ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Füchse"
+                                    },
+                                    "."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "I had only four trumps and among them were both aces of diamonds."
+                                  "content": [
+                                    "I had only four trumps and among them were both ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "aces of diamonds"
+                                    },
+                                    "."
+                                  ]
                                 }
                               ]
                             }
@@ -1764,14 +2185,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Ich fahre von Köln nach Hamburg."
+                                  "content": [
+                                    "Ich fahre ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "von"
+                                    },
+                                    " Köln nach Hamburg."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "I’m travelling from Cologne to Hamburg."
+                                  "content": [
+                                    "I’m travelling ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "from"
+                                    },
+                                    " Cologne to Hamburg."
+                                  ]
                                 }
                               ]
                             }
@@ -1792,14 +2233,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Ich hab’s von meiner Schwester gehört."
+                                  "content": [
+                                    "Ich hab’s ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "von"
+                                    },
+                                    " meiner Schwester gehört."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "I heard it from my sister."
+                                  "content": [
+                                    "I heard it ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "from"
+                                    },
+                                    " my sister."
+                                  ]
                                 }
                               ]
                             }
@@ -1846,14 +2307,42 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "das Auto von meinem Vater"
+                                  "content": [
+                                    "das Auto ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "von"
+                                    },
+                                    " meinem Vater"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "my father’s car / the car of my father"
+                                  "content": [
+                                    "my father",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "’s"
+                                    },
+                                    " car / the car ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "of"
+                                    },
+                                    " my father"
+                                  ]
                                 }
                               ]
                             }
@@ -1921,14 +2410,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Das Hotel wird von der Firma bezahlt."
+                                  "content": [
+                                    "Das Hotel wird ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "von"
+                                    },
+                                    " der Firma bezahlt."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "The hotel is paid for by the company."
+                                  "content": [
+                                    "The hotel is paid for ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "by"
+                                    },
+                                    " the company."
+                                  ]
                                 }
                               ]
                             }
@@ -1975,14 +2484,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Er hat von seiner Jugend erzählt."
+                                  "content": [
+                                    "Er hat ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "von"
+                                    },
+                                    " seiner Jugend erzählt."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "He told about his youth."
+                                  "content": [
+                                    "He told ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "about"
+                                    },
+                                    " his youth."
+                                  ]
                                 }
                               ]
                             }
@@ -2003,14 +2532,32 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Von dem Nomine Substantivo, oder dem Hauptworte."
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Von"
+                                    },
+                                    " dem Nomine Substantivo, oder dem Hauptworte."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "About the substantive noun, or the [alternative term]. (headline)"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "About"
+                                    },
+                                    " the substantive noun, or the [alternative term]. (headline)"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -2064,14 +2611,49 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Von welchem Geld soll ich als Arbeitsloser in Urlaub fahren?"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Von"
+                                    },
+                                    " welchem Geld soll ich als Arbeitsloser in Urlaub fahren?"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Being unemployed, on what money should I go on holidays?"
+                                  "content": [
+                                    "Being unemployed, ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "on"
+                                    },
+                                    " what m",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "on"
+                                    },
+                                    "ey should I go ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "on"
+                                    },
+                                    " holidays?"
+                                  ]
                                 }
                               ]
                             }
@@ -2092,14 +2674,42 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Man kann nicht nur von Luft und Liebe leben."
+                                  "content": [
+                                    "Man kann nicht nur ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "von"
+                                    },
+                                    " Luft und Liebe leben."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "You can’t live on air and love alone. (proverb)"
+                                  "content": [
+                                    "You can’t live ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "on"
+                                    },
+                                    " air and love al",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "on"
+                                    },
+                                    "e. (proverb)"
+                                  ]
                                 }
                               ]
                             }
@@ -2519,14 +3129,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Schlecht gezahlt, bin ich doch freigebig und hilfsbereit gegenüber den Armen."
+                                  "content": [
+                                    "Schlecht gezahlt, bin ich doch freigebig und hilfsbereit ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "gegenüber"
+                                    },
+                                    " den Armen."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Badly paid, I am still generous and helpful toward the poor."
+                                  "content": [
+                                    "Badly paid, I am still generous and helpful ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "toward"
+                                    },
+                                    " the poor."
+                                  ]
                                 },
                                 {
                                   "tag": "div",

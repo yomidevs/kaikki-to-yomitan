@@ -7,7 +7,13 @@
             "complesso maniacale che qualcuno appunto ha perché cerca complicazione in quasi tutti rapporti sociali per non sentirsi all'altezza e, per esempio, pensando continuamente che gli altri siano perennemente in malafede per escluderlo": {
               "examples": [
                 {
-                  "text": "Disse la povera madre ormai stremata: \"Eh, ma... non è possibile: le fisse c'hai!\""
+                  "text": "Disse la povera madre ormai stremata: \"Eh, ma... non è possibile: le fisse c'hai!\"",
+                  "bold_text_offsets": [
+                    [
+                      69,
+                      74
+                    ]
+                  ]
                 }
               ]
             },
@@ -38,7 +44,13 @@
             "terapia medica al fine di ottenere una guarigione o la guarigione stessa": {
               "examples": [
                 {
-                  "text": "più cure assieme qualche volta si equilibrano vicendevolmente"
+                  "text": "più cure assieme qualche volta si equilibrano vicendevolmente",
+                  "bold_text_offsets": [
+                    [
+                      4,
+                      8
+                    ]
+                  ]
                 }
               ]
             }

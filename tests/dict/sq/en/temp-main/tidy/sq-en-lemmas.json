@@ -25,11 +25,35 @@
               "examples": [
                 {
                   "text": "gjuhë lope e zier",
-                  "translation": "boiled beef tongue"
+                  "translation": "boiled beef tongue",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      5
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      12,
+                      18
+                    ]
+                  ]
                 },
                 {
                   "text": "Dogji gjuhën.",
-                  "translation": "Burned its tongue."
+                  "translation": "Burned its tongue.",
+                  "bold_text_offsets": [
+                    [
+                      6,
+                      12
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      11,
+                      17
+                    ]
+                  ]
                 }
               ],
               "children": {
@@ -41,11 +65,29 @@
                   "examples": [
                     {
                       "text": "Mbaje gjuhën!",
-                      "translation": "Hold your tongue!"
+                      "translation": "Hold your tongue!",
+                      "bold_text_offsets": [
+                        [
+                          6,
+                          12
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          10,
+                          16
+                        ]
+                      ]
                     },
                     {
                       "text": "E ka gjuhën të gjatë.",
-                      "translation": "She is very talkative."
+                      "translation": "She is very talkative.",
+                      "bold_text_offsets": [
+                        [
+                          5,
+                          11
+                        ]
+                      ]
                     }
                   ]
                 },
@@ -68,7 +110,19 @@
               "examples": [
                 {
                   "text": "gjuha shqipe",
-                  "translation": "the Albanian language"
+                  "translation": "the Albanian language",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      5
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      13,
+                      21
+                    ]
+                  ]
                 }
               ],
               "children": {
@@ -79,15 +133,51 @@
                   "examples": [
                     {
                       "text": "gjuha e fëmijëve",
-                      "translation": "children speech"
+                      "translation": "children speech",
+                      "bold_text_offsets": [
+                        [
+                          0,
+                          5
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          9,
+                          15
+                        ]
+                      ]
                     },
                     {
                       "text": "gjuhë e trashë",
-                      "translation": "foul language"
+                      "translation": "foul language",
+                      "bold_text_offsets": [
+                        [
+                          0,
+                          5
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          5,
+                          13
+                        ]
+                      ]
                     },
                     {
                       "text": "gjuha e shkrimtarit",
-                      "translation": "the author's style"
+                      "translation": "the author's style",
+                      "bold_text_offsets": [
+                        [
+                          0,
+                          5
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          13,
+                          18
+                        ]
+                      ]
                     }
                   ]
                 },
@@ -98,11 +188,35 @@
                   "examples": [
                     {
                       "text": "gjuha e muzikës",
-                      "translation": "music's language"
+                      "translation": "music's language",
+                      "bold_text_offsets": [
+                        [
+                          0,
+                          5
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          8,
+                          16
+                        ]
+                      ]
                     },
                     {
                       "text": "gjuha e bletëve",
-                      "translation": "bees' language"
+                      "translation": "bees' language",
+                      "bold_text_offsets": [
+                        [
+                          0,
+                          5
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          6,
+                          14
+                        ]
+                      ]
                     }
                   ]
                 },

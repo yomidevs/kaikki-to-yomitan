@@ -11,11 +11,35 @@
               "examples": [
                 {
                   "text": "textová zpráva",
-                  "translation": "text message"
+                  "translation": "text message",
+                  "bold_text_offsets": [
+                    [
+                      8,
+                      14
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      5,
+                      12
+                    ]
+                  ]
                 },
                 {
                   "text": "Chcete nechat zprávu?",
-                  "translation": "Would you like to leave a message?"
+                  "translation": "Would you like to leave a message?",
+                  "bold_text_offsets": [
+                    [
+                      14,
+                      20
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      26,
+                      33
+                    ]
+                  ]
                 }
               ]
             },
@@ -26,11 +50,35 @@
               "examples": [
                 {
                   "text": "lékařská zpráva",
-                  "translation": "medical report"
+                  "translation": "medical report",
+                  "bold_text_offsets": [
+                    [
+                      9,
+                      15
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      8,
+                      14
+                    ]
+                  ]
                 },
                 {
                   "text": "podat zprávu",
-                  "translation": "to file a report"
+                  "translation": "to file a report",
+                  "bold_text_offsets": [
+                    [
+                      6,
+                      12
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      10,
+                      16
+                    ]
+                  ]
                 }
               ]
             }
@@ -52,7 +100,19 @@
               "examples": [
                 {
                   "text": "Zabili ho pro peníze.",
-                  "translation": "They killed him for his money."
+                  "translation": "They killed him for his money.",
+                  "bold_text_offsets": [
+                    [
+                      10,
+                      13
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      16,
+                      19
+                    ]
+                  ]
                 }
               ]
             }

@@ -215,14 +215,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Dīmīcantī dē fāmā dēesse."
+                                  "content": [
+                                    "Dīmīcantī dē ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "fāmā"
+                                    },
+                                    " dēesse."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "To abandon one whose reputation is attacked."
+                                  "content": [
+                                    "To abandon one whose ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "reputation"
+                                    },
+                                    " is attacked."
+                                  ]
                                 }
                               ]
                             }
@@ -594,14 +614,33 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Librōs lege."
+                                  "content": [
+                                    "Librōs ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "lege"
+                                    },
+                                    "."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Read books."
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Read"
+                                    },
+                                    " books."
+                                  ]
                                 }
                               ]
                             }
@@ -622,14 +661,33 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Lēgistīne hunc librum?"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Lēgistī"
+                                    },
+                                    "ne hunc librum?"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Have you read this book?"
+                                  "content": [
+                                    "Have you ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "read"
+                                    },
+                                    " this book?"
+                                  ]
                                 }
                               ]
                             }
@@ -650,14 +708,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Graecum est; nōn legitur."
+                                  "content": [
+                                    "Graecum est; nōn ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "legitur"
+                                    },
+                                    "."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "It's Greek; it cannot be read."
+                                  "content": [
+                                    "It's Greek; it cannot be ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "read"
+                                    },
+                                    "."
+                                  ]
                                 }
                               ]
                             }
@@ -1405,14 +1483,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Deō domuīque"
+                                  "content": [
+                                    "Deō ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "domuī"
+                                    },
+                                    "que"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "For God and for home (motto of Methodist Ladies' College, Melbourne)"
+                                  "content": [
+                                    "For God and for ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "home"
+                                    },
+                                    " (motto of Methodist Ladies' College, Melbourne)"
+                                  ]
                                 }
                               ]
                             }
@@ -1433,14 +1531,33 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Stet fortūna domūs"
+                                  "content": [
+                                    "Stet fortūna ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "domūs"
+                                    }
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Let the good fortune of the house stand (motto of Harrow School, England)"
+                                  "content": [
+                                    "Let the good fortune of the ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "house"
+                                    },
+                                    " stand (motto of Harrow School, England)"
+                                  ]
                                 }
                               ]
                             }
@@ -1617,14 +1734,32 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "domum trahere"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "domum"
+                                    },
+                                    " trahere"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "to drag into one's pocket"
+                                  "content": [
+                                    "to drag ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "into one's pocket"
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -1645,14 +1780,33 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Domī versūra fit."
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Domī"
+                                    },
+                                    " versūra fit."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "One is one's own creditor. (proverb)"
+                                  "content": [
+                                    "One is ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "one's own"
+                                    },
+                                    " creditor. (proverb)"
+                                  ]
                                 }
                               ]
                             }
@@ -1673,14 +1827,32 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "domō afferre"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "domō"
+                                    },
+                                    " afferre"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "to conceive on one's own"
+                                  "content": [
+                                    "to conceive ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "on one's own"
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -1779,14 +1951,65 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "bellī domīque; bellō domīque; vel bellī vel domī; domī bellōque; domī mīlitiaeque"
+                                  "content": [
+                                    "bellī ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "domī"
+                                    },
+                                    "que; bellō ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "domī"
+                                    },
+                                    "que; vel bellī vel ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "domī"
+                                    },
+                                    "; ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "domī"
+                                    },
+                                    " bellōque; ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "domī"
+                                    },
+                                    " mīlitiaeque"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "in war and peace"
+                                  "content": [
+                                    "in war and ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "peace"
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -1968,14 +2191,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Nihil agis, nihil moliris, nihil cogitas quod non ego non modo audiam sed etiam videam planeque sentiam."
+                                  "content": [
+                                    "Nihil agis, nihil moliris, nihil ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "cogitas"
+                                    },
+                                    " quod non ego non modo audiam sed etiam videam planeque sentiam."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "You do nothing, you plan nothing, you think of nothing which I not only do not hear, but which I do not see and know every particular of."
+                                  "content": [
+                                    "You do nothing, you plan nothing, you ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "think"
+                                    },
+                                    " of nothing which I not only do not hear, but which I do not see and know every particular of."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -2445,14 +2688,42 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Gallī in Rōmānōs incurrunt."
+                                  "content": [
+                                    "Gallī ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "in"
+                                    },
+                                    " Rōmānōs ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "in"
+                                    },
+                                    "currunt."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "The Gauls are rushing against the Romans."
+                                  "content": [
+                                    "The Gauls are rushing ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "against"
+                                    },
+                                    " the Romans."
+                                  ]
                                 }
                               ]
                             }
@@ -2752,14 +3023,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Marcus ad arborem lentē ambulat."
+                                  "content": [
+                                    "Marcus ad arborem ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "lentē"
+                                    },
+                                    " ambulat."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Marcus walks slowly to the tree."
+                                  "content": [
+                                    "Marcus walks ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "slowly"
+                                    },
+                                    " to the tree."
+                                  ]
                                 }
                               ]
                             }

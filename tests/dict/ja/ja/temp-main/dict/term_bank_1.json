@@ -122,7 +122,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "一体生徒が全然悪るいです。"
+                                  "content": [
+                                    "一体生徒が",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "全然"
+                                    },
+                                    "悪るいです。"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -150,7 +160,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "この老婆の生死が、全然、自分の意志に支配されていると云う事を意識した。"
+                                  "content": [
+                                    "この老婆の生死が、",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "全然"
+                                    },
+                                    "、自分の意志に支配されていると云う事を意識した。"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -204,7 +224,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "この犯人の当てっこをやって私が驚いたのは、日本の作家の作品には、このゲームに適する作品が全然ないということだった。"
+                                  "content": [
+                                    "この犯人の当てっこをやって私が驚いたのは、日本の作家の作品には、このゲームに適する作品が",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "全然"
+                                    },
+                                    "ないということだった。"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -232,7 +262,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "自分は或る對象を、思考とか言語などをもつて、順序立てて取扱ふことが全然出來なくなつてしまつたのです。"
+                                  "content": [
+                                    "自分は或る對象を、思考とか言語などをもつて、順序立てて取扱ふことが",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "全然"
+                                    },
+                                    "出來なくなつてしまつたのです。"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -260,7 +300,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "その上、我々の収入の性質が実業家の収入などとは、全然違つてゐる。"
+                                  "content": [
+                                    "その上、我々の収入の性質が実業家の収入などとは、",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "全然"
+                                    },
+                                    "違つてゐる。"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -408,7 +458,17 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "アプレゲールは全然エライよ。"
+                                      "content": [
+                                        "アプレゲールは",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "全然"
+                                        },
+                                        "エライよ。"
+                                      ]
                                     },
                                     {
                                       "tag": "div",
@@ -436,7 +496,17 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "「大丈夫？」「全然平気だよ」"
+                                      "content": [
+                                        "「大丈夫？」「",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "全然"
+                                        },
+                                        "平気だよ」"
+                                      ]
                                     }
                                   ]
                                 }
@@ -457,7 +527,25 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "「あんまりおいしくないけどよかったらどうぞ」「全然おいしいじゃない。全然いけるよ」"
+                                      "content": [
+                                        "「あんまりおいしくないけどよかったらどうぞ」「",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "全然"
+                                        },
+                                        "おいしいじゃない。",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "全然"
+                                        },
+                                        "いけるよ」"
+                                      ]
                                     }
                                   ]
                                 }
@@ -499,7 +587,17 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "こっちのほうが全然いいと思うよ。"
+                                      "content": [
+                                        "こっちのほうが",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "全然"
+                                        },
+                                        "いいと思うよ。"
+                                      ]
                                     }
                                   ]
                                 }
@@ -541,7 +639,17 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "これでは全然負けだと思った。"
+                                      "content": [
+                                        "これでは",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "全然"
+                                        },
+                                        "負けだと思った。"
+                                      ]
                                     }
                                   ]
                                 }
@@ -562,7 +670,17 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "そんなの全然無理無理。"
+                                      "content": [
+                                        "そんなの",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "全然"
+                                        },
+                                        "無理無理。"
+                                      ]
                                     }
                                   ]
                                 }
@@ -583,7 +701,17 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "このチームはまだまだ全然弱い。"
+                                      "content": [
+                                        "このチームはまだまだ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "全然"
+                                        },
+                                        "弱い。"
+                                      ]
                                     }
                                   ]
                                 }

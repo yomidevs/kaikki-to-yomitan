@@ -86,7 +86,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Disse la povera madre ormai stremata: \"Eh, ma... non è possibile: le fisse c'hai!\""
+                                  "content": [
+                                    "Disse la povera madre ormai stremata: \"Eh, ma... non è possibile: le ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "fisse"
+                                    },
+                                    " c'hai!\""
+                                  ]
                                 }
                               ]
                             }
@@ -286,7 +296,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "più cure assieme qualche volta si equilibrano vicendevolmente"
+                                  "content": [
+                                    "più ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "cure"
+                                    },
+                                    " assieme qualche volta si equilibrano vicendevolmente"
+                                  ]
                                 }
                               ]
                             }

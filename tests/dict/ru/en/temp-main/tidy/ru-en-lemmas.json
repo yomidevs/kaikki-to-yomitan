@@ -12,35 +12,89 @@
               "examples": [
                 {
                   "text": "идёт снег",
-                  "translation": "it is snowing"
+                  "translation": "it is snowing",
+                  "bold_text_offsets": [
+                    [
+                      5,
+                      9
+                    ]
+                  ]
                 },
                 {
                   "text": "мо́крый снег",
-                  "translation": "sleet, wet snow"
+                  "translation": "sleet, wet snow",
+                  "bold_text_offsets": [
+                    [
+                      8,
+                      12
+                    ]
+                  ]
                 },
                 {
                   "text": "пе́рвый снег",
-                  "translation": "the first snow"
+                  "translation": "the first snow",
+                  "bold_text_offsets": [
+                    [
+                      8,
+                      12
+                    ]
+                  ]
                 },
                 {
                   "text": "ски́дывать/ски́нуть снег с кры́ши",
-                  "translation": "to throw the snow off the roof"
+                  "translation": "to throw the snow off the roof",
+                  "bold_text_offsets": [
+                    [
+                      20,
+                      24
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      9,
+                      17
+                    ]
+                  ]
                 },
                 {
                   "text": "как снег на́ голову",
-                  "translation": "like a bolt from the blue (unexpectedly, suddenly)"
+                  "translation": "like a bolt from the blue (unexpectedly, suddenly)",
+                  "bold_text_offsets": [
+                    [
+                      4,
+                      8
+                    ]
+                  ]
                 },
                 {
                   "text": "что́-либо ну́жно, как прошлого́дний снег",
-                  "translation": "something is not needed in the least"
+                  "translation": "something is not needed in the least",
+                  "bold_text_offsets": [
+                    [
+                      36,
+                      40
+                    ]
+                  ]
                 },
                 {
                   "text": "зимо́й сне́га не вы́просить",
-                  "translation": "(said about someone mean, stingy)"
+                  "translation": "(said about someone mean, stingy)",
+                  "bold_text_offsets": [
+                    [
+                      7,
+                      13
+                    ]
+                  ]
                 },
                 {
                   "text": "Дава́й поваля́емся в снегу́!",
-                  "translation": "Let's roll in the snow!"
+                  "translation": "Let's roll in the snow!",
+                  "bold_text_offsets": [
+                    [
+                      21,
+                      27
+                    ]
+                  ]
                 }
               ]
             },
@@ -117,7 +171,19 @@
               "examples": [
                 {
                   "text": "Зи́мний дворе́ц",
-                  "translation": "Winter palace"
+                  "translation": "Winter palace",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      7
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      0,
+                      6
+                    ]
+                  ]
                 }
               ]
             },

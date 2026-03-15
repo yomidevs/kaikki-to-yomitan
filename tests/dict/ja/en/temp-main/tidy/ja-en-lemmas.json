@@ -23,19 +23,61 @@
               "examples": [
                 {
                   "text": "好きな食べ物は？ アイスクリームです。",
-                  "translation": "What's your favorite food? - It's ice cream."
+                  "translation": "What's your favorite food? - It's ice cream.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      12,
+                      20
+                    ]
+                  ]
                 },
                 {
                   "text": "君が好きだからこそこれほど頑張っているんだよ。",
-                  "translation": "It's precisely because I like you [because of my fondness for you] that I'm working this hard."
+                  "translation": "It's precisely because I like you [because of my fondness for you] that I'm working this hard.",
+                  "bold_text_offsets": [
+                    [
+                      2,
+                      4
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      49,
+                      57
+                    ]
+                  ]
                 },
                 {
                   "text": "好きです。",
-                  "translation": "“I like you.” → idiomatically used to express: “I love you.”"
+                  "translation": "“I like you.” → idiomatically used to express: “I love you.”",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ]
+                  ]
                 },
                 {
                   "text": "どうとも好きにしなさい。",
-                  "translation": "Feel free to do as you like."
+                  "translation": "Feel free to do as you like.",
+                  "bold_text_offsets": [
+                    [
+                      4,
+                      6
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      23,
+                      27
+                    ]
+                  ]
                 }
               ]
             }
@@ -58,12 +100,40 @@
                 {
                   "text": "狸 兼名苑云狸［音𨤲和名太奴木］摶鳥為粮者也",
                   "translation": "Raccoon dog: According to Jian Ming Yuan (兼名苑), raccoon dogs [read as 𨤲 (ri), native Japanese 太奴木 (tanuki)] always prey on birds.",
-                  "ref": "938, Minamoto no Shitagō, Wamyō Ruijushō:"
+                  "ref": "938, Minamoto no Shitagō, Wamyō Ruijushō:",
+                  "bold_text_offsets": [
+                    [
+                      12,
+                      15
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      94,
+                      97
+                    ],
+                    [
+                      99,
+                      105
+                    ]
+                  ]
                 },
                 {
                   "text": "アライグマなら尻尾にシマがある。どう見でもタヌキだ。",
                   "translation": "If you're a raccoon, you'd have stripes on your tail. No matter how you look at it, you're a raccoon dog.",
-                  "ref": "2020 March 21, Kazuki Nakashima, “Rabbit Town”, in BNA ビー・エヌ・エー [BNA], episode 2, spoken by Shirou Ogami (Yoshimasa Hosoya), Toho/Netflix:"
+                  "ref": "2020 March 21, Kazuki Nakashima, “Rabbit Town”, in BNA ビー・エヌ・エー [BNA], episode 2, spoken by Shirou Ogami (Yoshimasa Hosoya), Toho/Netflix:",
+                  "bold_text_offsets": [
+                    [
+                      21,
+                      24
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      93,
+                      104
+                    ]
+                  ]
                 }
               ]
             },
@@ -123,7 +193,19 @@
               "examples": [
                 {
                   "text": "マラソン選手が走り出した。",
-                  "translation": "Marathon athlete(s) started running."
+                  "translation": "Marathon athlete(s) started running.",
+                  "bold_text_offsets": [
+                    [
+                      7,
+                      9
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      28,
+                      31
+                    ]
+                  ]
                 }
               ],
               "children": {
@@ -131,7 +213,23 @@
                   "examples": [
                     {
                       "text": "車が走っている。",
-                      "translation": "A car is running. / Cars are running."
+                      "translation": "A car is running. / Cars are running.",
+                      "bold_text_offsets": [
+                        [
+                          2,
+                          5
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          9,
+                          12
+                        ],
+                        [
+                          29,
+                          32
+                        ]
+                      ]
                     }
                   ]
                 },
@@ -139,7 +237,19 @@
                   "examples": [
                     {
                       "text": "石の上を水が走る。",
-                      "translation": "The water runs over the stones."
+                      "translation": "The water runs over the stones.",
+                      "bold_text_offsets": [
+                        [
+                          6,
+                          8
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          10,
+                          14
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -152,7 +262,19 @@
               "examples": [
                 {
                   "text": "彼はこの道をよく走る。",
-                  "translation": "He often runs down this street."
+                  "translation": "He often runs down this street.",
+                  "bold_text_offsets": [
+                    [
+                      8,
+                      10
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      9,
+                      13
+                    ]
+                  ]
                 }
               ]
             },
@@ -160,7 +282,19 @@
               "examples": [
                 {
                   "text": "刀が鞘から走る。",
-                  "translation": "The sword slides out of its sheath."
+                  "translation": "The sword slides out of its sheath.",
+                  "bold_text_offsets": [
+                    [
+                      5,
+                      7
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      10,
+                      16
+                    ]
+                  ]
                 }
               ]
             },
@@ -170,11 +304,35 @@
               "examples": [
                 {
                   "text": "彼は敵に走った。",
-                  "translation": "He defected to the enemy."
+                  "translation": "He defected to the enemy.",
+                  "bold_text_offsets": [
+                    [
+                      4,
+                      7
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      3,
+                      11
+                    ]
+                  ]
                 },
                 {
                   "text": "立場を忘れて感情に走ってはいけない。",
-                  "translation": "Don't forget your stance and give in to emotions."
+                  "translation": "Don't forget your stance and give in to emotions.",
+                  "bold_text_offsets": [
+                    [
+                      9,
+                      12
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      29,
+                      36
+                    ]
+                  ]
                 }
               ]
             },
@@ -183,11 +341,35 @@
               "examples": [
                 {
                   "text": "山脈が南北に走る。",
-                  "translation": "The mountain range runs north–south."
+                  "translation": "The mountain range runs north–south.",
+                  "bold_text_offsets": [
+                    [
+                      6,
+                      8
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      19,
+                      23
+                    ]
+                  ]
                 },
                 {
                   "text": "社会に亀裂が走る",
-                  "translation": "a crack (division) spreads in society"
+                  "translation": "a crack (division) spreads in society",
+                  "bold_text_offsets": [
+                    [
+                      6,
+                      8
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      19,
+                      26
+                    ]
+                  ]
                 }
               ]
             },
@@ -195,11 +377,29 @@
               "examples": [
                 {
                   "text": "稲妻が走る",
-                  "translation": "lightning flashes by"
+                  "translation": "lightning flashes by",
+                  "bold_text_offsets": [
+                    [
+                      3,
+                      5
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      10,
+                      20
+                    ]
+                  ]
                 },
                 {
                   "text": "背中に痛みが走った。",
-                  "translation": "I felt a brief pain in my back."
+                  "translation": "I felt a brief pain in my back.",
+                  "bold_text_offsets": [
+                    [
+                      6,
+                      9
+                    ]
+                  ]
                 }
               ]
             },
@@ -267,12 +467,36 @@
               "examples": [
                 {
                   "text": "梓弓をして春雨けふ降りぬあすさへ降らば若菜つみてん",
-                  "translation": "Today fell spring rain, recalling catalpa bows that one bends to string. If it but falls tomorrow, we will be picking young greens."
+                  "translation": "Today fell spring rain, recalling catalpa bows that one bends to string. If it but falls tomorrow, we will be picking young greens.",
+                  "bold_text_offsets": [
+                    [
+                      7,
+                      9
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      0,
+                      5
+                    ]
+                  ]
                 },
                 {
                   "text": "今日がスーパーの特売日じゃねーか",
                   "translation": "Isn't today the supermarket’s special sale day?!",
-                  "ref": "2013 April 7 [2012 December 9], ONE with Murata, Yusuke, “11(じゅういち)撃(げき)目(め) 強(つ)さの秘(ひ)訣(けつ) [11th Hit: Key to Power]”, in [ONEPUNCH-MAN](【ワンパンマン】) [ONE-PUNCH MAN], 6th edition, volume 2 (fiction), Tokyo: Shueisha, →ISBN, page 86:"
+                  "ref": "2013 April 7 [2012 December 9], ONE with Murata, Yusuke, “11(じゅういち)撃(げき)目(め) 強(つ)さの秘(ひ)訣(けつ) [11th Hit: Key to Power]”, in [ONEPUNCH-MAN](【ワンパンマン】) [ONE-PUNCH MAN], 6th edition, volume 2 (fiction), Tokyo: Shueisha, →ISBN, page 86:",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      6,
+                      11
+                    ]
+                  ]
                 }
               ]
             }

@@ -108,14 +108,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Την είδα να έρχεται στην κατεύθυνσή μου."
+                                  "content": [
+                                    "Την είδα να ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "έρχεται"
+                                    },
+                                    " στην κατεύθυνσή μου."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "I saw her coming in my direction."
+                                  "content": [
+                                    "I saw her ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "coming"
+                                    },
+                                    " in my direction."
+                                  ]
                                 }
                               ]
                             }
@@ -136,14 +156,33 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Ήρθε ακόμα ο γιατρός;"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Ήρθε"
+                                    },
+                                    " ακόμα ο γιατρός;"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Has the doctor come yet?"
+                                  "content": [
+                                    "Has the doctor ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "come"
+                                    },
+                                    " yet?"
+                                  ]
                                 }
                               ]
                             }
@@ -164,14 +203,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Ο χειμώνας έρχεται."
+                                  "content": [
+                                    "Ο χειμώνας ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "έρχεται"
+                                    },
+                                    "."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Winter is coming."
+                                  "content": [
+                                    "Winter is ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "coming"
+                                    },
+                                    "."
+                                  ]
                                 }
                               ]
                             }
@@ -192,14 +251,33 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Ήρθα πρώτος στο αγώνισμα."
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Ήρθα"
+                                    },
+                                    " πρώτος στο αγώνισμα."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "I came first in the competition."
+                                  "content": [
+                                    "I ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "came"
+                                    },
+                                    " first in the competition."
+                                  ]
                                 }
                               ]
                             }
@@ -246,14 +324,42 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Πόσο έρχεται αυτό το αμάξι;"
+                                  "content": [
+                                    "Πόσο ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "έρχεται"
+                                    },
+                                    " αυτό το αμάξι;"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "How much is this car?"
+                                  "content": [
+                                    "How much ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "is"
+                                    },
+                                    " th",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "is"
+                                    },
+                                    " car?"
+                                  ]
                                 }
                               ]
                             }
@@ -300,14 +406,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Τελικά, οι δυό τους ήρθαν στα χέρια."
+                                  "content": [
+                                    "Τελικά, οι δυό τους ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "ήρθαν"
+                                    },
+                                    " στα χέρια."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "In the end, they came to blows."
+                                  "content": [
+                                    "In the end, they ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "came"
+                                    },
+                                    " to blows."
+                                  ]
                                 }
                               ]
                             }
@@ -328,14 +454,42 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Θα έρθουν πολλά πράγματα στο φως όταν βγει το νέο βιβλίο."
+                                  "content": [
+                                    "Θα ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "έρθουν"
+                                    },
+                                    " πολλά πράγματα στο φως όταν βγει το νέο βιβλίο."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "A lot of things will come to light when the new book comes out."
+                                  "content": [
+                                    "A lot of things will ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "come"
+                                    },
+                                    " to light when the new book ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "come"
+                                    },
+                                    "s out."
+                                  ]
                                 }
                               ]
                             }
@@ -356,14 +510,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Οι αρχηγοί των κομμάτων της βουλής ήρθαν σε συμφωνία."
+                                  "content": [
+                                    "Οι αρχηγοί των κομμάτων της βουλής ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "ήρθαν"
+                                    },
+                                    " σε συμφωνία."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "The party leaders in parliament came to an agreement."
+                                  "content": [
+                                    "The party leaders in parliament ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "came"
+                                    },
+                                    " to an agreement."
+                                  ]
                                 }
                               ]
                             }
@@ -410,14 +584,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Αυτό το φόρεμα δε σου ήρθε καλά."
+                                  "content": [
+                                    "Αυτό το φόρεμα δε σου ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "ήρθε"
+                                    },
+                                    " καλά."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "That dress doesn't suit you."
+                                  "content": [
+                                    "That dress doesn't ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "suit"
+                                    },
+                                    " you."
+                                  ]
                                 }
                               ]
                             }
@@ -481,14 +675,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Πώς σου ήρθε να φορέσεις τόσο άσχημο παλτό;"
+                                  "content": [
+                                    "Πώς σου ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "ήρθε"
+                                    },
+                                    " να φορέσεις τόσο άσχημο παλτό;"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "What possessed you to wear that ugly coat?"
+                                  "content": [
+                                    "What ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "possessed"
+                                    },
+                                    " you to wear that ugly coat?"
+                                  ]
                                 }
                               ]
                             }
@@ -509,14 +723,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Κάθε φορά που τον βλέπω, μου έρχεται να τον σπάσω στο ξύλο."
+                                  "content": [
+                                    "Κάθε φορά που τον βλέπω, μου ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "έρχεται"
+                                    },
+                                    " να τον σπάσω στο ξύλο."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Every time I see him, I get the urge to beat him up."
+                                  "content": [
+                                    "Every time I see him, I ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "get the urge"
+                                    },
+                                    " to beat him up."
+                                  ]
                                 }
                               ]
                             }
@@ -537,14 +771,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Η ταινία ήταν τόσο βαρετή που μου ήρθε να σηκωθώ και να φύγω."
+                                  "content": [
+                                    "Η ταινία ήταν τόσο βαρετή που μου ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "ήρθε"
+                                    },
+                                    " να σηκωθώ και να φύγω."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "The film was so boring that I felt like getting up and leaving."
+                                  "content": [
+                                    "The film was so boring that I ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "felt like"
+                                    },
+                                    " getting up and leaving."
+                                  ]
                                 }
                               ]
                             }

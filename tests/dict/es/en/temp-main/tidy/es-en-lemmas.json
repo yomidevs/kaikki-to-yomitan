@@ -16,7 +16,19 @@
               "examples": [
                 {
                   "text": "Vive de migas, nada más.",
-                  "translation": "He/she lives on crumbs, nothing more."
+                  "translation": "He/she lives on crumbs, nothing more.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      4
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      7,
+                      15
+                    ]
+                  ]
                 }
               ]
             },
@@ -27,11 +39,35 @@
               "examples": [
                 {
                   "text": "Vive en la casa roja.",
-                  "translation": "He/she lives in the red house."
+                  "translation": "He/she lives in the red house.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      4
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      7,
+                      15
+                    ]
+                  ]
                 },
                 {
                   "text": "La pobrecita vive con dos hermanas crueles.",
-                  "translation": "The poor girl lives with two cruel sisters."
+                  "translation": "The poor girl lives with two cruel sisters.",
+                  "bold_text_offsets": [
+                    [
+                      13,
+                      17
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      14,
+                      19
+                    ]
+                  ]
                 }
               ]
             },

@@ -219,14 +219,33 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "好きな食べ物は？ アイスクリームです。"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "好き"
+                                    },
+                                    "な食べ物は？ アイスクリームです。"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "What's your favorite food? - It's ice cream."
+                                  "content": [
+                                    "What's your ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "favorite"
+                                    },
+                                    " food? - It's ice cream."
+                                  ]
                                 }
                               ]
                             }
@@ -247,14 +266,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "君が好きだからこそこれほど頑張っているんだよ。"
+                                  "content": [
+                                    "君が",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "好き"
+                                    },
+                                    "だからこそこれほど頑張っているんだよ。"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "It's precisely because I like you [because of my fondness for you] that I'm working this hard."
+                                  "content": [
+                                    "It's precisely because I like you [because of my ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "fondness"
+                                    },
+                                    " for you] that I'm working this hard."
+                                  ]
                                 }
                               ]
                             }
@@ -275,7 +314,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "好きです。"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "好き"
+                                    },
+                                    "です。"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -303,14 +351,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "どうとも好きにしなさい。"
+                                  "content": [
+                                    "どうとも",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "好き"
+                                    },
+                                    "にしなさい。"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Feel free to do as you like."
+                                  "content": [
+                                    "Feel free to do as you ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "like"
+                                    },
+                                    "."
+                                  ]
                                 }
                               ]
                             }
@@ -457,14 +525,42 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "狸 兼名苑云狸［音𨤲和名太奴木］摶鳥為粮者也"
+                                  "content": [
+                                    "狸 兼名苑云狸［音𨤲和名",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "太奴木"
+                                    },
+                                    "］摶鳥為粮者也"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Raccoon dog: According to Jian Ming Yuan (兼名苑), raccoon dogs [read as 𨤲 (ri), native Japanese 太奴木 (tanuki)] always prey on birds."
+                                  "content": [
+                                    "Raccoon dog: According to Jian Ming Yuan (兼名苑), raccoon dogs [read as 𨤲 (ri), native Japanese ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "太奴木"
+                                    },
+                                    " (",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "tanuki"
+                                    },
+                                    ")] always prey on birds."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -492,14 +588,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "アライグマなら尻尾にシマがある。どう見でもタヌキだ。"
+                                  "content": [
+                                    "アライグマなら尻尾にシマがある。どう見でも",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "タヌキ"
+                                    },
+                                    "だ。"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "If you're a raccoon, you'd have stripes on your tail. No matter how you look at it, you're a raccoon dog."
+                                  "content": [
+                                    "If you're a raccoon, you'd have stripes on your tail. No matter how you look at it, you're a ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "raccoon dog"
+                                    },
+                                    "."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -856,14 +972,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "マラソン選手が走り出した。"
+                                  "content": [
+                                    "マラソン選手が",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "走り"
+                                    },
+                                    "出した。"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Marathon athlete(s) started running."
+                                  "content": [
+                                    "Marathon athlete(s) started ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "run"
+                                    },
+                                    "ning."
+                                  ]
                                 }
                               ]
                             }
@@ -908,14 +1044,42 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "車が走っている。"
+                                      "content": [
+                                        "車が",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "走って"
+                                        },
+                                        "いる。"
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "A car is running. / Cars are running."
+                                      "content": [
+                                        "A car is ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "run"
+                                        },
+                                        "ning. / Cars are ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "run"
+                                        },
+                                        "ning."
+                                      ]
                                     }
                                   ]
                                 }
@@ -957,14 +1121,34 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "石の上を水が走る。"
+                                      "content": [
+                                        "石の上を水が",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "走る"
+                                        },
+                                        "。"
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "The water runs over the stones."
+                                      "content": [
+                                        "The water ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "runs"
+                                        },
+                                        " over the stones."
+                                      ]
                                     }
                                   ]
                                 }
@@ -1030,14 +1214,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "彼はこの道をよく走る。"
+                                  "content": [
+                                    "彼はこの道をよく",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "走る"
+                                    },
+                                    "。"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "He often runs down this street."
+                                  "content": [
+                                    "He often ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "runs"
+                                    },
+                                    " down this street."
+                                  ]
                                 }
                               ]
                             }
@@ -1084,14 +1288,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "刀が鞘から走る。"
+                                  "content": [
+                                    "刀が鞘から",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "走る"
+                                    },
+                                    "。"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "The sword slides out of its sheath."
+                                  "content": [
+                                    "The sword ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "slides"
+                                    },
+                                    " out of its sheath."
+                                  ]
                                 }
                               ]
                             }
@@ -1160,14 +1384,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "彼は敵に走った。"
+                                  "content": [
+                                    "彼は敵に",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "走った"
+                                    },
+                                    "。"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "He defected to the enemy."
+                                  "content": [
+                                    "He ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "defected"
+                                    },
+                                    " to the enemy."
+                                  ]
                                 }
                               ]
                             }
@@ -1188,14 +1432,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "立場を忘れて感情に走ってはいけない。"
+                                  "content": [
+                                    "立場を忘れて感情に",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "走って"
+                                    },
+                                    "はいけない。"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Don't forget your stance and give in to emotions."
+                                  "content": [
+                                    "Don't forget your stance and ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "give in"
+                                    },
+                                    " to emotions."
+                                  ]
                                 }
                               ]
                             }
@@ -1253,14 +1517,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "山脈が南北に走る。"
+                                  "content": [
+                                    "山脈が南北に",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "走る"
+                                    },
+                                    "。"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "The mountain range runs north–south."
+                                  "content": [
+                                    "The mountain range ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "runs"
+                                    },
+                                    " north–south."
+                                  ]
                                 }
                               ]
                             }
@@ -1281,14 +1565,33 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "社会に亀裂が走る"
+                                  "content": [
+                                    "社会に亀裂が",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "走る"
+                                    }
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "a crack (division) spreads in society"
+                                  "content": [
+                                    "a crack (division) ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "spreads"
+                                    },
+                                    " in society"
+                                  ]
                                 }
                               ]
                             }
@@ -1335,14 +1638,32 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "稲妻が走る"
+                                  "content": [
+                                    "稲妻が",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "走る"
+                                    }
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "lightning flashes by"
+                                  "content": [
+                                    "lightning ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "flashes by"
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -1363,7 +1684,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "背中に痛みが走った。"
+                                  "content": [
+                                    "背中に痛みが",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "走った"
+                                    },
+                                    "。"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -1795,14 +2126,33 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "梓弓をして春雨けふ降りぬあすさへ降らば若菜つみてん"
+                                  "content": [
+                                    "梓弓をして春雨",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "けふ"
+                                    },
+                                    "降りぬあすさへ降らば若菜つみてん"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Today fell spring rain, recalling catalpa bows that one bends to string. If it but falls tomorrow, we will be picking young greens."
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Today"
+                                    },
+                                    " fell spring rain, recalling catalpa bows that one bends to string. If it but falls tomorrow, we will be picking young greens."
+                                  ]
                                 }
                               ]
                             }
@@ -1823,14 +2173,33 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "今日がスーパーの特売日じゃねーか"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "今日"
+                                    },
+                                    "がスーパーの特売日じゃねーか"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Isn't today the supermarket’s special sale day?!"
+                                  "content": [
+                                    "Isn't ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "today"
+                                    },
+                                    " the supermarket’s special sale day?!"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
