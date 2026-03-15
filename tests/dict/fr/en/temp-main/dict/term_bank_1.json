@@ -1767,7 +1767,7 @@
   [
     "sembler",
     "",
-    "v vi",
+    "v",
     "v",
     0,
     [
@@ -1835,10 +1835,19 @@
                               "category": ""
                             },
                             "content": "impers"
+                          },
+                          {
+                            "tag": "span",
+                            "title": "intransitive verb",
+                            "data": {
+                              "content": "tag",
+                              "category": "partOfSpeech"
+                            },
+                            "content": "vi"
                           }
                         ]
                       },
-                      "to seem, to resemble",
+                      "to seem, to resemble, to look like",
                       {
                         "tag": "details",
                         "data": {
@@ -1892,7 +1901,24 @@
                   {
                     "tag": "div",
                     "content": [
-                      "to appear"
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "title": "copulative",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            },
+                            "content": "cop"
+                          }
+                        ]
+                      },
+                      "to appear, to seem, to look"
                     ]
                   }
                 ]

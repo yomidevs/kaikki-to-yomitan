@@ -168,7 +168,7 @@
                                   "data": {
                                     "content": "example-sentence-c"
                                   },
-                                  "content": "29 BCE – 19 BCE, Virgil, Aeneid 1.532–533"
+                                  "content": "29 BCE – 19 BCE, Vergilius, Aeneid 1.532–533"
                                 }
                               ]
                             }
@@ -257,7 +257,7 @@
                                   "data": {
                                     "content": "example-sentence-c"
                                   },
-                                  "content": "43 BCE – c. 17 CE, Ovid, The Heroines 17.17, (translation Benham's Book of Quotations 1948)"
+                                  "content": "43 BCE – c. 17 CE, Ovidius, The Heroines 17.17, (translation Benham's Book of Quotations 1948)"
                                 }
                               ]
                             }
@@ -292,7 +292,7 @@
                                   "data": {
                                     "content": "example-sentence-c"
                                   },
-                                  "content": "61 CE – c. 112 CE, Pliny the Younger, Epistulae 3.20.9"
+                                  "content": "61 CE – c. 112 CE, Plinius Minor, Epistulae 3.20.9"
                                 }
                               ]
                             }
@@ -389,7 +389,7 @@
                         "data": {
                           "content": "Etymology-content"
                         },
-                        "content": "Etymology tree\nProto-Indo-European *leǵ-der.\nProto-Italic *legōder.\nLatin lego\nFrom Proto-Italic *legō, from Proto-Indo-European *léǵeti, from *leǵ-. Cognates include Ancient Greek λέγω (légō, “I speak, I choose, I mean”) and Albanian mbledh. May be related to lēx."
+                        "content": "Etymology tree\nProto-Indo-European *leǵ-der.\nProto-Italic *legōder.\nLatin lego\nFrom Proto-Italic *legō, from Proto-Indo-European *léǵeti, from *leǵ-. Cognates include Ancient Greek λέγω (légō, “I speak, I choose, I mean”) and Albanian mbledh. May be related to lēx.\n(to read): Compare typologically разбира́ть (razbirátʹ), разбира́ться (razbirátʹsja) (< брать (bratʹ)), разбо́рчивый (razbórčivyj) (по́черк (póčerk))."
                       }
                     ]
                   }
@@ -403,6 +403,67 @@
               "content": "glosses"
             },
             "content": [
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "to collect, gather, bring together, catch",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 example"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "“… Date volnera lymphīs / abluam, et, extrēmus sī quis super hālitus errat, / ōre legam.” …"
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "“Grant that I may wash her wounds with water, and, if any last breath wanders over her, I will gather it with my lips.”"
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-c"
+                                  },
+                                  "content": "29 BCE – 19 BCE, Vergilius, Aeneid 4.683-685"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
               {
                 "tag": "li",
                 "content": [
@@ -465,67 +526,6 @@
                                     "content": "example-sentence-c"
                                   },
                                   "content": "27 BCE – 25 BCE, Titus Livius, Ab Urbe Condita 26.1"
-                                }
-                              ]
-                            }
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "tag": "li",
-                "content": [
-                  {
-                    "tag": "div",
-                    "content": [
-                      "to collect, gather, bring together, catch",
-                      {
-                        "tag": "details",
-                        "data": {
-                          "content": "details-entry-examples"
-                        },
-                        "content": [
-                          {
-                            "tag": "summary",
-                            "data": {
-                              "content": "summary-entry"
-                            },
-                            "content": "1 example"
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": "“… Date volnera lymphīs / abluam, et, extrēmus sī quis super hālitus errat, / ōre legam.” …"
-                                },
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-b"
-                                  },
-                                  "content": "“Grant that I may wash her wounds with water, and, if any last breath wanders over her, I will gather it with my lips.”"
-                                },
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-c"
-                                  },
-                                  "content": "29 BCE – 19 BCE, Virgil, Aeneid 4.683-685"
                                 }
                               ]
                             }
@@ -1258,7 +1258,7 @@
                                   "data": {
                                     "content": "example-sentence-c"
                                   },
-                                  "content": "405 CE, Jerome, Vulgate Proverbs.12.15"
+                                  "content": "405 CE, Hieronymus, Vulgate Proverbs.12.15"
                                 }
                               ]
                             }
@@ -1475,7 +1475,7 @@
                                   "data": {
                                     "content": "example-sentence-c"
                                   },
-                                  "content": "8 CE, Ovid, Fasti 2.792"
+                                  "content": "8 CE, Ovidius, Fasti 2.792"
                                 }
                               ]
                             }

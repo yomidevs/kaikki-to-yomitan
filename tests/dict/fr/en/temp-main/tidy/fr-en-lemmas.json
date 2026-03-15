@@ -269,7 +269,7 @@
       "verb": [
         {
           "gloss_tree": {
-            "to seem, to resemble": {
+            "to seem, to resemble, to look like": {
               "tags": [
                 "impersonal",
                 "intransitive"
@@ -281,9 +281,9 @@
                 }
               ]
             },
-            "to appear": {
+            "to appear, to seem, to look": {
               "tags": [
-                "intransitive"
+                "copulative"
               ]
             }
           },

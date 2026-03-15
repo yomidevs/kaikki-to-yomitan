@@ -24,7 +24,7 @@
                 {
                   "text": "“Oenōtrī coluēre virī; nunc fāma minōrēs",
                   "translation": "“Oenotrian men tilled [the land]; now rumor [has it that their] descendants call the nation ‘Italy’ after the name of its leader, [Italus].”",
-                  "ref": "29 BCE – 19 BCE, Virgil, Aeneid 1.532–533"
+                  "ref": "29 BCE – 19 BCE, Vergilius, Aeneid 1.532–533"
                 }
               ]
             },
@@ -41,12 +41,12 @@
                 {
                   "text": "Fāma tamen clāra est; et adhūc sine crīmine vīxī.",
                   "translation": "My good name is nevertheless unstained; and so far I have lived without blame.",
-                  "ref": "43 BCE – c. 17 CE, Ovid, The Heroines 17.17, (translation Benham's Book of Quotations 1948)"
+                  "ref": "43 BCE – c. 17 CE, Ovidius, The Heroines 17.17, (translation Benham's Book of Quotations 1948)"
                 },
                 {
                   "text": "Multī fāmam, conscientiam paucī verentur.",
                   "translation": "Many fear their reputation, few their conscience.",
-                  "ref": "61 CE – c. 112 CE, Pliny the Younger, Epistulae 3.20.9"
+                  "ref": "61 CE – c. 112 CE, Plinius Minor, Epistulae 3.20.9"
                 }
               ]
             }
@@ -64,6 +64,18 @@
       "verb": [
         {
           "gloss_tree": {
+            "to collect, gather, bring together, catch": {
+              "tags": [
+                "conjugation-3"
+              ],
+              "examples": [
+                {
+                  "text": "“… Date volnera lymphīs / abluam, et, extrēmus sī quis super hālitus errat, / ōre legam.” …",
+                  "translation": "“Grant that I may wash her wounds with water, and, if any last breath wanders over her, I will gather it with my lips.”",
+                  "ref": "29 BCE – 19 BCE, Vergilius, Aeneid 4.683-685"
+                }
+              ]
+            },
             "to choose, select": {
               "tags": [
                 "conjugation-3"
@@ -78,18 +90,6 @@
                   "text": "[…] dum ne quem militem legeret ex eo numero quibus senatus missionem reditumque in patriam negasset ante belli finem.",
                   "translation": "[…] provided he did not choose any soldier from those to whom the Senate had refused discharge and a return home before the end of the war",
                   "ref": "27 BCE – 25 BCE, Titus Livius, Ab Urbe Condita 26.1"
-                }
-              ]
-            },
-            "to collect, gather, bring together, catch": {
-              "tags": [
-                "conjugation-3"
-              ],
-              "examples": [
-                {
-                  "text": "“… Date volnera lymphīs / abluam, et, extrēmus sī quis super hālitus errat, / ōre legam.” …",
-                  "translation": "“Grant that I may wash her wounds with water, and, if any last breath wanders over her, I will gather it with my lips.”",
-                  "ref": "29 BCE – 19 BCE, Virgil, Aeneid 4.683-685"
                 }
               ]
             },
@@ -134,7 +134,7 @@
               ]
             }
           },
-          "etymology_text": "Etymology tree\nProto-Indo-European *leǵ-der.\nProto-Italic *legōder.\nLatin lego\nFrom Proto-Italic *legō, from Proto-Indo-European *léǵeti, from *leǵ-. Cognates include Ancient Greek λέγω (légō, “I speak, I choose, I mean”) and Albanian mbledh. May be related to lēx.",
+          "etymology_text": "Etymology tree\nProto-Indo-European *leǵ-der.\nProto-Italic *legōder.\nLatin lego\nFrom Proto-Italic *legō, from Proto-Indo-European *léǵeti, from *leǵ-. Cognates include Ancient Greek λέγω (légō, “I speak, I choose, I mean”) and Albanian mbledh. May be related to lēx.\n(to read): Compare typologically разбира́ть (razbirátʹ), разбира́ться (razbirátʹsja) (< брать (bratʹ)), разбо́рчивый (razbórčivyj) (по́черк (póčerk)).",
           "head_info_text": "legō (present infinitive legere, perfect active lēgī, supine lēctum); third conjugation",
           "wlink": "https://en.wiktionary.org/wiki/lego#Latin",
           "klink": "https://kaikki.org/dictionary/Latin/meaning/l/le/lego.html"
@@ -248,7 +248,7 @@
                 {
                   "text": "Via stultī rēcta in oculīs eius; quī autem sapiēns est audit cōnsilia.",
                   "translation": "The way of a fool is right in his own eyes: but he that is wise hearkeneth unto counsels. (Douay-Rheims trans., Challoner rev.: 1752 CE)",
-                  "ref": "405 CE, Jerome, Vulgate Proverbs.12.15"
+                  "ref": "405 CE, Hieronymus, Vulgate Proverbs.12.15"
                 }
               ]
             }
@@ -285,7 +285,7 @@
                 {
                   "text": "nox erat et tōta lūmina nūlla domō",
                   "translation": "It was night, and [there were] no lights in the whole house.",
-                  "ref": "8 CE, Ovid, Fasti 2.792"
+                  "ref": "8 CE, Ovidius, Fasti 2.792"
                 }
               ],
               "children": {

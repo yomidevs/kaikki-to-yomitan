@@ -7,6 +7,14 @@
       "transcriptions": [
         {
           "ipa": "/ˈbɹɪŋ/"
+        },
+        {
+          "ipa": "/ˈbɹɪŋɡ/",
+          "tags": [
+            "Midlands",
+            "Northern-England",
+            "without the NG-coalescence"
+          ]
         }
       ]
     }
