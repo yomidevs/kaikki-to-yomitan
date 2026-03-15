@@ -167,5 +167,26 @@
         }
       ]
     }
+  ],
+  [
+    "lente",
+    "ipa",
+    {
+      "reading": "lentē",
+      "transcriptions": [
+        {
+          "ipa": "[ˈɫɛn.teː]",
+          "tags": [
+            "Classical-Latin"
+          ]
+        },
+        {
+          "ipa": "[ˈlɛn.te]",
+          "tags": [
+            "⛪"
+          ]
+        }
+      ]
+    }
   ]
 ]

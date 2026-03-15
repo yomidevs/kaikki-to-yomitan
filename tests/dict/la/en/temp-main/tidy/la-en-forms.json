@@ -2576,5 +2576,23 @@
         ]
       ]
     }
+  },
+  "lente": {
+    "lentius": {
+      "adv": [
+        "extracted",
+        [
+          "comparative"
+        ]
+      ]
+    },
+    "lentissimē": {
+      "adv": [
+        "extracted",
+        [
+          "superlative"
+        ]
+      ]
+    }
   }
 }

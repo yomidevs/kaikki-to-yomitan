@@ -557,5 +557,27 @@
         }
       ]
     }
+  },
+  "lente": {
+    "lentē": {
+      "adv": [
+        {
+          "gloss_tree": {
+            "slowly": {
+              "examples": [
+                {
+                  "text": "Marcus ad arborem lentē ambulat.",
+                  "translation": "Marcus walks slowly to the tree."
+                }
+              ]
+            }
+          },
+          "etymology_text": "From lentus (“slow”) + -ē.",
+          "head_info_text": "lentē (comparative lentius, superlative lentissimē)",
+          "wlink": "https://en.wiktionary.org/wiki/lente#Latin",
+          "klink": "https://kaikki.org/dictionary/Latin/meaning/l/le/lente.html"
+        }
+      ]
+    }
   }
 }

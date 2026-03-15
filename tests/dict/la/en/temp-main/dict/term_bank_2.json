@@ -5648,5 +5648,39 @@
     ],
     0,
     ""
+  ],
+  [
+    "lentius",
+    "",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "lente",
+        [
+          "comparative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "lentissime",
+    "lentissimē",
+    "non-lemma",
+    "",
+    0,
+    [
+      [
+        "lente",
+        [
+          "superlative"
+        ]
+      ]
+    ],
+    0,
+    ""
   ]
 ]
