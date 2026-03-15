@@ -40,78 +40,58 @@ def load_langs(path: Path) -> list[Lang]:
     return [load_lang(item) for item in data]
 
 
-def render_line(
-    label: str, dtype: str, target_options: str, source_options: str | None = None
-) -> str:
-    line_class = "download-line"
-    if source_options is None:
-        line_class += " no-source"
+def render_dropdown_options(langs: list[Lang]) -> str:
+    return "\n".join(
+        f'  <option value="{lang.iso}">{lang.display_name}</option>' for lang in langs
+    ).strip()
 
-    source_html = ""
-    if source_options:
-        source_html = f"""
-      <select class="dl-source">
-        <option value="" selected disabled>Select a source...</option>
-          {source_options}
-      </select>
-        """
+
+def render_combobox(cl: str, placeholder: str, langs: list[Lang]) -> str:
+    assert cl in ("dl-source", "dl-target")
+    return f"""
+<div class="{cl}-combobox">
+  <input class="{cl}-search" placeholder="{placeholder}" autocomplete="off">
+  <div class="{cl}-dropdown">
+    {render_dropdown_options(langs)}
+  </div>
+  <input type="hidden" class="{cl}">
+</div>""".strip()
+
+
+def render_line(
+    label: str,
+    dtype: str,
+    target_langs: list[Lang],
+    source_langs: list[Lang] | None = None,
+) -> str:
+    if source_langs:
+        source_html = render_combobox("dl-source", "Search source...", source_langs)
+        line_class = "download-line"
+    else:
+        source_html = ""
+        line_class = "download-line no source"
 
     return f"""
 <tr data-type="{dtype}" class="{line_class}">
   <th>{label}</th>
   <td>{source_html}</td>
-  <td>
-    <select class="dl-target">
-      <option value="" selected disabled>Select a target...</option>
-        {target_options}
-    </select>
-  </td>
-  <td>
-    <button class="dl-btn">📥</button>
-  </td>
+  <td>{render_combobox("dl-target", "Search target...", target_langs)}</td>
+  <td><button class="dl-btn">📥</button></td>
   <td class="dl-info"></td>
-</tr>
-""".strip()
-
-
-def render_dropdown_options(indent: str, langs: list[Lang]) -> str:
-    return "\n".join(
-        f'{indent}<option value="{lang.iso}">{lang.flag} {lang.display_name}</option>'
-        for lang in langs
-    ).strip()
+</tr>""".strip()
 
 
 def generate_downloads_page(all_langs: list[Lang], editions: list[Lang]) -> str:
-    indent4 = "  " * 4
-    indent5 = "  " * 5
-
-    target_options = render_dropdown_options(indent4, all_langs)
-    edition_options = render_dropdown_options(indent5, editions)
-
-    target_options_no_simple_english = render_dropdown_options(
-        indent4, [lang for lang in all_langs if lang.iso != "simple"]
-    )
-    edition_options_no_simple_english = render_dropdown_options(
-        indent5, [lang for lang in editions if lang.iso != "simple"]
-    )
+    all_langs_no_simple = [lang for lang in all_langs if lang.iso != "simple"]
+    editions_no_simple = [lang for lang in editions if lang.iso != "simple"]
 
     table_html = "\n".join(
         [
-            render_line("📘 Main", "main", edition_options, target_options),
+            render_line("📘 Main", "main", editions, all_langs),
+            render_line("🔤 IPA", "ipa", editions_no_simple, all_langs_no_simple),
+            render_line("🧬 IPA merged", "ipa-merged", all_langs_no_simple),
             render_line(
-                "🔤 IPA",
-                "ipa",
-                edition_options_no_simple_english,
-                target_options_no_simple_english,
-            ),
-            render_line(
-                "🧬 IPA merged", "ipa-merged", target_options_no_simple_english
-            ),
-            render_line(
-                "🌍 Glossary",
-                "glossary",
-                target_options_no_simple_english,
-                target_options_no_simple_english,
+                "🌍 Glossary", "glossary", all_langs_no_simple, all_langs_no_simple
             ),
         ]
     )
