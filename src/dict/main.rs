@@ -14,7 +14,7 @@ use crate::{
     },
     lang::{Edition, Lang},
     models::{
-        kaikki::{Example, Form, HeadTemplate, Pos, Sense, Tag, WordEntry},
+        kaikki::{Example, Form, HeadTemplate, Offset, Pos, Sense, Tag, WordEntry},
         yomitan::{
             BacklinkContent, BacklinkContentKind, DetailedDefinition, GenericNode, NTag, Node,
             NodeData, TermBank, TermBankSimplified, YomitanEntry, wrap,
@@ -1632,51 +1632,104 @@ fn structured_tags(tags: &[Tag], common_short_tags_found: &[Tag]) -> Option<Node
 fn structured_examples(target: Lang, examples: &[Example]) -> Node {
     debug_assert!(!examples.is_empty());
 
-    let mut structured_examples_content = wrap(
+    let localized_label = wrap(
         NTag::Summary,
         "summary-entry",
         Node::Text(localize_examples_string(target, examples.len())),
-    )
-    .into_array_node();
-
-    for example in examples {
-        let mut structured_example_content = wrap(
-            NTag::Div,
-            "example-sentence-a",
-            Node::Text(example.text.clone()),
-        )
-        .into_array_node();
-        if !example.translation.is_empty() {
-            structured_example_content.push(wrap(
-                NTag::Div,
-                "example-sentence-b",
-                Node::Text(example.translation.clone()),
-            ));
-        }
-        if !example.reference.is_empty() {
-            let reference = example
-                .reference
-                .strip_suffix(':')
-                .unwrap_or(&example.reference)
-                .to_string();
-            structured_example_content.push(wrap(
-                NTag::Div,
-                "example-sentence-c",
-                Node::Text(reference),
-            ));
-        }
-        structured_examples_content.push(wrap(
-            NTag::Div,
-            "extra-info",
-            wrap(NTag::Div, "example-sentence", structured_example_content),
-        ));
-    }
+    );
 
     wrap(
         NTag::Details,
         "details-entry-examples",
-        structured_examples_content,
+        Node::Array(
+            std::iter::once(localized_label)
+                .chain(examples.iter().map(structured_example))
+                .collect(),
+        ),
     )
+}
+
+// TODO: change a-b-c into a more descriptive name: text/translation/ref
+fn structured_example(example: &Example) -> Node {
+    let mut structured_example_content = wrap(
+        NTag::Div,
+        "example-sentence-a",
+        structured_example_text(&example.text, &example.bold_text_offsets),
+    )
+    .into_array_node();
+
+    if !example.translation.is_empty() {
+        structured_example_content.push(wrap(
+            NTag::Div,
+            "example-sentence-b",
+            structured_example_text(&example.translation, &example.bold_translation_offsets),
+        ));
+    }
+
+    if !example.reference.is_empty() {
+        let reference = example
+            .reference
+            .strip_suffix(':')
+            .unwrap_or(&example.reference)
+            .to_string();
+        structured_example_content.push(wrap(
+            NTag::Div,
+            "example-sentence-c",
+            Node::Text(reference),
+        ));
+    }
+
+    wrap(
+        NTag::Div,
+        "extra-info",
+        wrap(NTag::Div, "example-sentence", structured_example_content),
+    )
+}
+
+/// Wraps in NTag::Span bold ranges if there are any.
+///
+/// Note that wiktextract only extracts bold offsets for Examples.
+fn structured_example_text(text: &str, bold_text_offsets: &[Offset]) -> Node {
+    if bold_text_offsets.is_empty() {
+        return Node::Text(text.to_string());
+    }
+
+    let chars: Vec<_> = text.chars().collect();
+    let upto = chars.len();
+    let mut content = Node::new_array();
+    let mut last = 0;
+
+    for (start, end) in bold_text_offsets {
+        debug_assert!(start < end);
+
+        // Error in wiktextract: the bold range is not valid
+        if *end > upto {
+            tracing::trace!(
+                "Skipping invalid bold offset ({start}..{end}) for text of length {upto}: {text:?}"
+            );
+            continue;
+        }
+
+        // Push what comes before the bold offset
+        if last < *start {
+            content.push(Node::Text(chars[last..*start].iter().collect()));
+        }
+
+        // Push the bold offset
+        content.push(wrap(
+            NTag::Span,
+            "bold-text",
+            Node::Text(chars[*start..*end].iter().collect()),
+        ));
+
+        last = *end;
+    }
+
+    if last < chars.len() {
+        content.push(Node::Text(chars[last..].iter().collect()));
+    }
+
+    content
 }
 
 #[tracing::instrument(skip_all, level = "trace")]
