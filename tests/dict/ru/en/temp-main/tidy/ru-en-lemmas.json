@@ -130,5 +130,26 @@
         }
       ]
     }
+  },
+  "Шевченко": {
+    "Шевче́нко": {
+      "name": [
+        {
+          "gloss_tree": {
+            "a surname, Shevchenko, from Ukrainian": {
+              "tags": [
+                "indeclinable",
+                "by-personal-gender",
+                "feminine",
+                "masculine"
+              ]
+            }
+          },
+          "head_info_text": "Шевче́нко • (Ševčénko) m anim or f anim by sense (indeclinable)",
+          "wlink": "https://en.wiktionary.org/wiki/Шевченко#Russian",
+          "klink": "https://kaikki.org/dictionary/Russian/meaning/Ш/Ше/Шевченко.html"
+        }
+      ]
+    }
   }
 }
