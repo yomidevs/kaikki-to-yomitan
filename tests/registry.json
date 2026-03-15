@@ -66364,6 +66364,676 @@
           "lang": "Latin",
           "lang_code": "la"
         }
+      },
+      {
+        "url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/i/in/in.html",
+        "download_url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/i/in/in.jsonl",
+        "json": {
+          "word": "in",
+          "pos": "prep",
+          "senses": [
+            {
+              "examples": [
+                {
+                  "text": "29 bc. Vergil. Georgics, III\nomne adeo genvs in terris hominvmqve ferarvmqve\net genvs æqvorevm pecvdes pictæqve volvcres\nin fvrias ignemqve rvvnt\nSo far does every species on earth of man and beast,\nwhether the aquatic species, livestock, or painted-winged,\ncollapse into the frenzies and the fire."
+                },
+                {
+                  "text": "Seneca",
+                  "english": "Poison is drunk from a gold cup.",
+                  "translation": "Poison is drunk from a gold cup.",
+                  "roman": "venenum in auro bibitur"
+                }
+              ],
+              "head_nr": 1,
+              "info_templates": [
+                {
+                  "args": {
+                    "1": "la",
+                    "2": "abl"
+                  },
+                  "name": "+obj",
+                  "extra_data": {
+                    "tags": [
+                      "ablative"
+                    ]
+                  },
+                  "expansion": "[with ablative]"
+                }
+              ],
+              "links": [
+                [
+                  "in",
+                  "#English"
+                ],
+                [
+                  "at",
+                  "at"
+                ],
+                [
+                  "on",
+                  "on"
+                ],
+                [
+                  "upon",
+                  "upon"
+                ],
+                [
+                  "from",
+                  "from"
+                ]
+              ],
+              "raw_glosses": [
+                "in, at, on, upon, from (space) [with ablative]"
+              ],
+              "glosses": [
+                "in, at, on, upon, from (space)"
+              ],
+              "tags": [
+                "with-ablative"
+              ]
+            },
+            {
+              "examples": [
+                {
+                  "text": "lentus in umbrā",
+                  "ref": "c. 41 BCE – 39 BCE, Vergilius, Eclogues 1.4",
+                  "english": "sluggish under the shade",
+                  "translation": "sluggish under the shade",
+                  "type": "quotation"
+                }
+              ],
+              "head_nr": 1,
+              "info_templates": [
+                {
+                  "args": {
+                    "1": "la",
+                    "2": "abl"
+                  },
+                  "name": "+obj",
+                  "extra_data": {
+                    "tags": [
+                      "ablative"
+                    ]
+                  },
+                  "expansion": "[with ablative]"
+                }
+              ],
+              "links": [
+                [
+                  "under",
+                  "under"
+                ],
+                [
+                  "within",
+                  "within"
+                ]
+              ],
+              "categories": [
+                "Latin terms with quotations"
+              ],
+              "raw_glosses": [
+                "under, within, in [with ablative]"
+              ],
+              "glosses": [
+                "under, within, in"
+              ],
+              "tags": [
+                "with-ablative"
+              ]
+            },
+            {
+              "head_nr": 1,
+              "info_templates": [
+                {
+                  "args": {
+                    "1": "la",
+                    "2": "abl"
+                  },
+                  "name": "+obj",
+                  "extra_data": {
+                    "tags": [
+                      "ablative"
+                    ]
+                  },
+                  "expansion": "[with ablative]"
+                }
+              ],
+              "links": [
+                [
+                  "during",
+                  "during"
+                ],
+                [
+                  "within",
+                  "within"
+                ],
+                [
+                  "while",
+                  "while"
+                ]
+              ],
+              "raw_glosses": [
+                "during, within, while in (time) [with ablative]"
+              ],
+              "glosses": [
+                "during, within, while in (time)"
+              ],
+              "tags": [
+                "with-ablative"
+              ]
+            },
+            {
+              "head_nr": 1,
+              "info_templates": [
+                {
+                  "args": {
+                    "1": "la",
+                    "2": "abl"
+                  },
+                  "name": "+obj",
+                  "extra_data": {
+                    "tags": [
+                      "ablative"
+                    ]
+                  },
+                  "expansion": "[with ablative]"
+                }
+              ],
+              "links": [
+                [
+                  "about",
+                  "about"
+                ],
+                [
+                  "respecting",
+                  "respecting"
+                ],
+                [
+                  "concerning",
+                  "concerning"
+                ]
+              ],
+              "raw_glosses": [
+                "about, respecting, concerning (of reference) [with ablative]"
+              ],
+              "glosses": [
+                "about, respecting, concerning (of reference)"
+              ],
+              "tags": [
+                "with-ablative"
+              ]
+            },
+            {
+              "examples": [
+                {
+                  "text": "Et Verbum caro factum est, et habitavit in nobis :",
+                  "ref": "Vulgate, Gospel of St. John 1:14",
+                  "english": "And the Word was made flesh, and dwelt among us,",
+                  "translation": "And the Word was made flesh, and dwelt among us,",
+                  "type": "quotation"
+                },
+                {
+                  "text": "Et ingressus angelus ad eam dixit : Ave gratia plena : Dominus tecum : benedicta tu in mulieribus.",
+                  "ref": "Vulgate, Gospel of St. Luke 1:28",
+                  "english": "And the angel being come in, said unto her: Hail, full of grace, the Lord is with thee: blessed art thou among women.",
+                  "translation": "And the angel being come in, said unto her: Hail, full of grace, the Lord is with thee: blessed art thou among women.",
+                  "type": "quotation"
+                }
+              ],
+              "head_nr": 1,
+              "info_templates": [
+                {
+                  "args": {
+                    "1": "la",
+                    "2": "abl"
+                  },
+                  "name": "+obj",
+                  "extra_data": {
+                    "tags": [
+                      "ablative"
+                    ]
+                  },
+                  "expansion": "[with ablative]"
+                }
+              ],
+              "links": [
+                [
+                  "among",
+                  "among"
+                ]
+              ],
+              "categories": [
+                "Latin terms with quotations"
+              ],
+              "raw_glosses": [
+                "among [with ablative]"
+              ],
+              "glosses": [
+                "among"
+              ],
+              "tags": [
+                "with-ablative"
+              ]
+            },
+            {
+              "examples": [
+                {
+                  "text": "29 bc. Vergil. Georgics, III\nomne adeo genvs in terris hominvmqve ferarvmqve\net genvs æqvorevm pecvdes pictæqve volvcres\nin fvrias ignemqve rvvnt\nSo far does every species on earth of man and beast,\nwhether the aquatic species, livestock, or painted-winged,\ncollapse into the frenzies and the fire."
+                },
+                {
+                  "text": "De introductione religionis Christianæ in Islandiam.",
+                  "ref": "1774, Finnur Jónsson, Historia Ecclesiastica Islandiæ 1",
+                  "english": "On the introduction of Christianity to Iceland.",
+                  "translation": "On the introduction of Christianity to Iceland.",
+                  "type": "quotation"
+                }
+              ],
+              "head_nr": 2,
+              "info_templates": [
+                {
+                  "args": {
+                    "1": "la",
+                    "2": "acc"
+                  },
+                  "name": "+obj",
+                  "extra_data": {
+                    "tags": [
+                      "accusative"
+                    ]
+                  },
+                  "expansion": "[with accusative]"
+                }
+              ],
+              "links": [
+                [
+                  "into",
+                  "into"
+                ],
+                [
+                  "to",
+                  "to"
+                ]
+              ],
+              "categories": [
+                "Latin terms with quotations"
+              ],
+              "raw_glosses": [
+                "into, to [with accusative]"
+              ],
+              "glosses": [
+                "into, to"
+              ],
+              "tags": [
+                "with-accusative"
+              ]
+            },
+            {
+              "examples": [
+                {
+                  "text": "Gallī in Rōmānōs incurrunt.",
+                  "bold_text_offsets": [
+                    [
+                      6,
+                      8
+                    ],
+                    [
+                      17,
+                      19
+                    ]
+                  ],
+                  "translation": "The Gauls are rushing against the Romans.",
+                  "english": "The Gauls are rushing against the Romans.",
+                  "bold_translation_offsets": [
+                    [
+                      22,
+                      29
+                    ]
+                  ],
+                  "type": "example"
+                },
+                {
+                  "text": "Scelera in se fratris",
+                  "ref": "27 BCE – 25 BCE, Titus Livius, Ab Urbe Condita I.6",
+                  "english": "The brother’s crimes against himself",
+                  "translation": "The brother’s crimes against himself",
+                  "type": "quotation"
+                },
+                {
+                  "text": "in adversum Romani subiere",
+                  "ref": "27 BCE – 25 BCE, Titus Livius, Ab Urbe Condita I.12",
+                  "english": "The Romans marched against their enemy",
+                  "translation": "The Romans marched against their enemy",
+                  "type": "quotation"
+                }
+              ],
+              "head_nr": 2,
+              "info_templates": [
+                {
+                  "args": {
+                    "1": "la",
+                    "2": "acc"
+                  },
+                  "name": "+obj",
+                  "extra_data": {
+                    "tags": [
+                      "accusative"
+                    ]
+                  },
+                  "expansion": "[with accusative]"
+                }
+              ],
+              "links": [
+                [
+                  "toward",
+                  "toward"
+                ],
+                [
+                  "towards",
+                  "towards"
+                ],
+                [
+                  "against",
+                  "against"
+                ],
+                [
+                  "at",
+                  "at"
+                ]
+              ],
+              "categories": [
+                "Latin terms with quotations",
+                "Latin terms with usage examples"
+              ],
+              "raw_glosses": [
+                "toward, towards, against, at [with accusative]"
+              ],
+              "glosses": [
+                "toward, towards, against, at"
+              ],
+              "tags": [
+                "with-accusative"
+              ]
+            },
+            {
+              "head_nr": 2,
+              "info_templates": [
+                {
+                  "args": {
+                    "1": "la",
+                    "2": "acc"
+                  },
+                  "name": "+obj",
+                  "extra_data": {
+                    "tags": [
+                      "accusative"
+                    ]
+                  },
+                  "expansion": "[with accusative]"
+                }
+              ],
+              "links": [
+                [
+                  "until",
+                  "until"
+                ],
+                [
+                  "for",
+                  "for"
+                ]
+              ],
+              "raw_glosses": [
+                "until, for [with accusative]"
+              ],
+              "glosses": [
+                "until, for"
+              ],
+              "tags": [
+                "with-accusative"
+              ]
+            },
+            {
+              "head_nr": 2,
+              "info_templates": [
+                {
+                  "args": {
+                    "1": "la",
+                    "2": "acc"
+                  },
+                  "name": "+obj",
+                  "extra_data": {
+                    "tags": [
+                      "accusative"
+                    ]
+                  },
+                  "expansion": "[with accusative]"
+                }
+              ],
+              "links": [
+                [
+                  "about",
+                  "about"
+                ]
+              ],
+              "raw_glosses": [
+                "about [with accusative]"
+              ],
+              "glosses": [
+                "about"
+              ],
+              "tags": [
+                "with-accusative"
+              ]
+            },
+            {
+              "examples": [
+                {
+                  "text": "generatimque distributi in civitates",
+                  "ref": "c. 52 BCE, Julius Caesar, Commentarii de Bello Gallico VII.19",
+                  "english": "and being distributed in tribes according to their respective nations",
+                  "translation": "and being distributed in tribes according to their respective nations",
+                  "type": "quotation"
+                }
+              ],
+              "head_nr": 2,
+              "info_templates": [
+                {
+                  "args": {
+                    "1": "la",
+                    "2": "acc"
+                  },
+                  "name": "+obj",
+                  "extra_data": {
+                    "tags": [
+                      "accusative"
+                    ]
+                  },
+                  "expansion": "[with accusative]"
+                }
+              ],
+              "links": [
+                [
+                  "according",
+                  "according"
+                ]
+              ],
+              "categories": [
+                "Latin terms with quotations"
+              ],
+              "raw_glosses": [
+                "according to [with accusative]"
+              ],
+              "glosses": [
+                "according to"
+              ],
+              "tags": [
+                "with-accusative"
+              ]
+            }
+          ],
+          "head_templates": [
+            {
+              "name": "la-prep",
+              "args": {
+                "1": "in",
+                "2": "ablative"
+              },
+              "expansion": "in (+ ablative)"
+            },
+            {
+              "name": "la-prep",
+              "args": {
+                "1": "in",
+                "2": "accusative"
+              },
+              "expansion": "in (+ accusative)"
+            }
+          ],
+          "categories": [
+            "Latin 1-syllable words",
+            "Latin ablative prepositions",
+            "Latin accusative prepositions",
+            "Latin entries with incorrect language header",
+            "Latin lemmas",
+            "Latin prepositions",
+            "Latin terms derived from Old Latin",
+            "Latin terms derived from Proto-Indo-European",
+            "Latin terms derived from Proto-Italic",
+            "Latin terms inherited from Proto-Indo-European",
+            "Latin terms inherited from Proto-Italic",
+            "Latin terms with IPA pronunciation",
+            "Pages with 70 entries",
+            "Pages with entries"
+          ],
+          "antonyms": [
+            {
+              "word": "ex"
+            }
+          ],
+          "derived": [
+            {
+              "word": "asinus in tegulis"
+            },
+            {
+              "word": "in cassum"
+            },
+            {
+              "word": "in nuce"
+            },
+            {
+              "word": "in unguem"
+            },
+            {
+              "word": "in-"
+            },
+            {
+              "word": "inter"
+            },
+            {
+              "word": "intra"
+            },
+            {
+              "word": "intus"
+            },
+            {
+              "word": "lupus in fabula"
+            },
+            {
+              "word": "lupus in sermone"
+            }
+          ],
+          "etymology_text": "From earlier en, from Proto-Italic *en, from Proto-Indo-European *h₁én (“in”). Cognates include English in, Ancient Greek ἐν (en).\nThe ablative is from the locative, and the accusative is from the directional.",
+          "etymology_templates": [
+            {
+              "name": "etymon",
+              "args": {
+                "1": "la",
+                "id": "preposition",
+                "2": "itc-ola:en<id:in>"
+              },
+              "expansion": ""
+            },
+            {
+              "name": "from",
+              "args": {
+                "1": "la",
+                "2": "en"
+              },
+              "expansion": "en"
+            },
+            {
+              "name": "inh",
+              "args": {
+                "1": "la",
+                "2": "itc-pro",
+                "3": "*en"
+              },
+              "expansion": "Proto-Italic *en"
+            },
+            {
+              "name": "inh",
+              "args": {
+                "1": "la",
+                "2": "ine-pro",
+                "3": "*h₁én",
+                "t": "in"
+              },
+              "expansion": "Proto-Indo-European *h₁én (“in”)"
+            },
+            {
+              "name": "cog",
+              "args": {
+                "1": "en",
+                "2": "in"
+              },
+              "expansion": "English in"
+            },
+            {
+              "name": "cog",
+              "args": {
+                "1": "grc",
+                "2": "ἐν"
+              },
+              "expansion": "Ancient Greek ἐν (en)"
+            }
+          ],
+          "sounds": [
+            {
+              "tags": [
+                "Classical-Latin"
+              ],
+              "ipa": "[ˈɪn]"
+            },
+            {
+              "note": "modern Italianate Ecclesiastical",
+              "ipa": "[ˈin]"
+            }
+          ],
+          "lang": "Latin",
+          "lang_code": "la",
+          "forms": [
+            {
+              "form": "en",
+              "tags": [
+                "alternative",
+                "Old-Latin"
+              ]
+            },
+            {
+              "form": "endo",
+              "tags": [
+                "alternative",
+                "Old-Latin"
+              ]
+            },
+            {
+              "form": "indu",
+              "tags": [
+                "alternative",
+                "Old-Latin"
+              ]
+            }
+          ]
+        }
       }
     ]
   },

@@ -146,5 +146,26 @@
         }
       ]
     }
+  ],
+  [
+    "in",
+    "ipa",
+    {
+      "reading": "in",
+      "transcriptions": [
+        {
+          "ipa": "[ˈɪn]",
+          "tags": [
+            "Classical-Latin"
+          ]
+        },
+        {
+          "ipa": "[ˈin]",
+          "tags": [
+            "⛪"
+          ]
+        }
+      ]
+    }
   ]
 ]
