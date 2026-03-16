@@ -134,7 +134,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Waiter, please bring me a single malt whiskey."
+                                  "content": [
+                                    "Waiter, please ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "bring"
+                                    },
+                                    " me a single malt whiskey."
+                                  ]
                                 }
                               ]
                             }
@@ -207,7 +217,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "The new company director brought a fresh perspective on sales and marketing."
+                                  "content": [
+                                    "The new company director ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "brought"
+                                    },
+                                    " a fresh perspective on sales and marketing."
+                                  ]
                                 }
                               ]
                             }
@@ -271,7 +291,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Let's bring our differences to an issue."
+                                  "content": [
+                                    "Let's ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "bring"
+                                    },
+                                    " our differences to an issue."
+                                  ]
                                 }
                               ]
                             }
@@ -292,7 +322,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "The controversial TV broadcast brought a storm of complaints."
+                                  "content": [
+                                    "The controversial TV broadcast ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "brought"
+                                    },
+                                    " a storm of complaints."
+                                  ]
                                 }
                               ]
                             }
@@ -313,7 +353,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Seeing her brought the memories flooding back and tears to my eyes."
+                                  "content": [
+                                    "Seeing her ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "brought"
+                                    },
+                                    " the memories flooding back and tears to my eyes."
+                                  ]
                                 }
                               ]
                             }
@@ -388,7 +438,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "It seems so preposterous a thing[…]that they do not easily bring themselves to it."
+                                  "content": [
+                                    "It seems so preposterous a thing[…]that they do not easily ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "bring"
+                                    },
+                                    " themselves to it."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -442,7 +502,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "What does coal bring per ton?"
+                                  "content": [
+                                    "What does coal ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "bring"
+                                    },
+                                    " per ton?"
+                                  ]
                                 }
                               ]
                             }
@@ -506,7 +576,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "The closer Jones can really bring it."
+                                  "content": [
+                                    "The closer Jones can really ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "bring"
+                                    },
+                                    " it."
+                                  ]
                                 }
                               ]
                             }
@@ -570,7 +650,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "You want to bring the rook and then start pushing your pawns."
+                                  "content": [
+                                    "You want to ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "bring"
+                                    },
+                                    " the rook and then start pushing your pawns."
+                                  ]
                                 }
                               ]
                             }
@@ -717,7 +807,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "\"The Hay Wain\" is a famous painting by John Constable."
+                                  "content": [
+                                    "\"The Hay ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Wain"
+                                    },
+                                    "\" is a famous painting by John Constable."
+                                  ]
                                 }
                               ]
                             }

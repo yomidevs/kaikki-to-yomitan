@@ -103,7 +103,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Wczoraj spadł pierwszy śnieg tej zimy."
+                                  "content": [
+                                    "Wczoraj spadł pierwszy ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "śnieg"
+                                    },
+                                    " tej zimy."
+                                  ]
                                 }
                               ]
                             }
@@ -150,7 +160,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Obiecałaś matce, że jej pomożesz w odgarnięciu śniegu."
+                                  "content": [
+                                    "Obiecałaś matce, że jej pomożesz w odgarnięciu ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "śniegu"
+                                    },
+                                    "."
+                                  ]
                                 }
                               ]
                             }
@@ -223,7 +243,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Obudziło go mruganie śniegu na ekranie telewizora."
+                                  "content": [
+                                    "Obudziło go mruganie ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "śniegu"
+                                    },
+                                    " na ekranie telewizora."
+                                  ]
                                 }
                               ]
                             }

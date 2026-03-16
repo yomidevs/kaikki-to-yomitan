@@ -27,6 +27,9 @@ div[data-sc-content="example-sentence"] {
     margin-bottom: 0.5rem;
     padding: 0.1rem 0.5rem;
 }
+span[data-sc-content="bold-text"] {
+    font-weight: bold;
+}
 div[data-sc-content="example-sentence-a"] {
     font-size: 1.1em;
     font-style: italic;

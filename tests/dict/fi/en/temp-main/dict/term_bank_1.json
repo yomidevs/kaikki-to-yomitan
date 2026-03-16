@@ -108,14 +108,32 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "isoympyrä"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "iso"
+                                    },
+                                    "ympyrä"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "great circle"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "great"
+                                    },
+                                    " circle"
+                                  ]
                                 }
                               ]
                             }
@@ -162,14 +180,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "olet jo iso poika"
+                                  "content": [
+                                    "olet jo ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "iso"
+                                    },
+                                    " poika"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "you're a big boy already"
+                                  "content": [
+                                    "you're a ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "big"
+                                    },
+                                    " boy already"
+                                  ]
                                 }
                               ]
                             }
@@ -216,14 +254,32 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Iso-Britannia"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Iso"
+                                    },
+                                    "-Britannia"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Great Britain"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Great"
+                                    },
+                                    " Britain"
+                                  ]
                                 }
                               ]
                             }
@@ -270,14 +326,32 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "isoisä"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "iso"
+                                    },
+                                    "isä"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "grandfather"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "grand"
+                                    },
+                                    "father"
+                                  ]
                                 }
                               ]
                             }
@@ -298,14 +372,32 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "isoäiti"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "iso"
+                                    },
+                                    "äiti"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "grandmother"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "grand"
+                                    },
+                                    "mother"
+                                  ]
                                 }
                               ]
                             }
@@ -352,14 +444,32 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "iso kirjain"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "iso"
+                                    },
+                                    " kirjain"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "capital letter"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "capital"
+                                    },
+                                    " letter"
+                                  ]
                                 }
                               ]
                             }
@@ -484,14 +594,33 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "ahtaa päähänsä"
+                                  "content": [
+                                    "ahtaa ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "päähänsä"
+                                    }
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "to cram (information) into one's head, to study hard"
+                                  "content": [
+                                    "to cram (information) ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "into one's head"
+                                    },
+                                    ", to study hard"
+                                  ]
                                 }
                               ]
                             }
@@ -607,14 +736,32 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "hyvällä päällä"
+                                  "content": [
+                                    "hyvällä ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "päällä"
+                                    }
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "in a good mood"
+                                  "content": [
+                                    "in a good ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "mood"
+                                    }
+                                  ]
                                 }
                               ]
                             }

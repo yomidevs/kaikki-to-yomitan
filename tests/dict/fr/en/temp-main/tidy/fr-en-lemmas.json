@@ -11,7 +11,13 @@
               "examples": [
                 {
                   "text": "prends ma main",
-                  "translation": "take my hand"
+                  "translation": "take my hand",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      6
+                    ]
+                  ]
                 }
               ]
             },
@@ -22,7 +28,13 @@
               "examples": [
                 {
                   "text": "elle prend un café",
-                  "translation": "she is drinking a coffee"
+                  "translation": "she is drinking a coffee",
+                  "bold_text_offsets": [
+                    [
+                      5,
+                      10
+                    ]
+                  ]
                 }
               ]
             },
@@ -33,7 +45,19 @@
               "examples": [
                 {
                   "text": "Je vais prendre le plat du jour.",
-                  "translation": "I'll get the dish of the day."
+                  "translation": "I'll get the dish of the day.",
+                  "bold_text_offsets": [
+                    [
+                      8,
+                      15
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      5,
+                      8
+                    ]
+                  ]
                 }
               ]
             },
@@ -44,7 +68,19 @@
               "examples": [
                 {
                   "text": "prendre quelque chose à quelqu'un",
-                  "translation": "to take something from someone"
+                  "translation": "to take something from someone",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      7
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      3,
+                      7
+                    ]
+                  ]
                 }
               ]
             },
@@ -55,11 +91,23 @@
               "examples": [
                 {
                   "text": "prendre une décision",
-                  "translation": "to make a decision"
+                  "translation": "to make a decision",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      7
+                    ]
+                  ]
                 },
                 {
                   "text": "prendre des mesures draconiennes",
-                  "translation": "to take draconian measures"
+                  "translation": "to take draconian measures",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      7
+                    ]
+                  ]
                 }
               ]
             },
@@ -70,19 +118,43 @@
               "examples": [
                 {
                   "text": "le feu ne prend pas",
-                  "translation": "the fire won't start"
+                  "translation": "the fire won't start",
+                  "bold_text_offsets": [
+                    [
+                      10,
+                      15
+                    ]
+                  ]
                 },
                 {
                   "text": "la sauce ne prend pas",
-                  "translation": "the sauce isn't thickening"
+                  "translation": "the sauce isn't thickening",
+                  "bold_text_offsets": [
+                    [
+                      12,
+                      17
+                    ]
+                  ]
                 },
                 {
                   "text": "ma mayonnaise ne prend pas",
-                  "translation": "my mayonnaise isn't setting"
+                  "translation": "my mayonnaise isn't setting",
+                  "bold_text_offsets": [
+                    [
+                      17,
+                      22
+                    ]
+                  ]
                 },
                 {
                   "text": "ça ne prend pas avec moi",
-                  "translation": "that won't wash with me"
+                  "translation": "that won't wash with me",
+                  "bold_text_offsets": [
+                    [
+                      6,
+                      11
+                    ]
+                  ]
                 }
               ]
             },
@@ -93,11 +165,23 @@
               "examples": [
                 {
                   "text": "je me suis pris la main dans la porte",
-                  "translation": "I caught my hand in the door"
+                  "translation": "I caught my hand in the door",
+                  "bold_text_offsets": [
+                    [
+                      11,
+                      15
+                    ]
+                  ]
                 },
                 {
                   "text": "je me suis pris la porte dans la figure",
-                  "translation": "the door hit me in the face"
+                  "translation": "the door hit me in the face",
+                  "bold_text_offsets": [
+                    [
+                      11,
+                      15
+                    ]
+                  ]
                 }
               ]
             },
@@ -108,11 +192,23 @@
               "examples": [
                 {
                   "text": "Qu'est-ce qui t'a pris ? Qu'est-ce qui t'est passé par la tête ?",
-                  "translation": "What were you thinking? What got into you? What came over you?"
+                  "translation": "What were you thinking? What got into you? What came over you?",
+                  "bold_text_offsets": [
+                    [
+                      18,
+                      22
+                    ]
+                  ]
                 },
                 {
                   "text": "Qu'est-ce qui lui a pris ? Quelle mouche l'a piqué ?",
-                  "translation": "What was he thinking? What got into him?"
+                  "translation": "What was he thinking? What got into him?",
+                  "bold_text_offsets": [
+                    [
+                      20,
+                      24
+                    ]
+                  ]
                 },
                 {
                   "text": "bien lui en prit",
@@ -232,7 +328,19 @@
               "examples": [
                 {
                   "text": "Pour finir dans deux heures, ça prend trois personnes.",
-                  "translation": "To finish in two hours, it'll take three people."
+                  "translation": "To finish in two hours, it'll take three people.",
+                  "bold_text_offsets": [
+                    [
+                      29,
+                      37
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      30,
+                      34
+                    ]
+                  ]
                 }
               ]
             },
@@ -243,7 +351,19 @@
               "examples": [
                 {
                   "text": "il prend [quelque chose] à [quelqu'un]",
-                  "translation": "[something] comes over [someone]"
+                  "translation": "[something] comes over [someone]",
+                  "bold_text_offsets": [
+                    [
+                      53,
+                      63
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      12,
+                      22
+                    ]
+                  ]
                 },
                 {
                   "text": "Il lui prend une fantaisie de mettre le feu à la maison.",
@@ -252,7 +372,19 @@
                 {
                   "text": "Et s'il me prend l'envie d' m'en aller, enferme-moi et jette la clé.",
                   "translation": "And if I feel like leaving, lock me up and throw away the key.",
-                  "ref": "2015, Zaz, Si jamais j'oublie:"
+                  "ref": "2015, Zaz, Si jamais j'oublie:",
+                  "bold_text_offsets": [
+                    [
+                      11,
+                      16
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      9,
+                      18
+                    ]
+                  ]
                 }
               ]
             }
@@ -277,7 +409,19 @@
               "examples": [
                 {
                   "text": "Il semblerait qu'il y ait des différences significatives entre les deux groupes.",
-                  "translation": "There would seem to be significant differences between the two groups."
+                  "translation": "There would seem to be significant differences between the two groups.",
+                  "bold_text_offsets": [
+                    [
+                      3,
+                      13
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      6,
+                      16
+                    ]
+                  ]
                 }
               ]
             },
@@ -344,11 +488,29 @@
               "examples": [
                 {
                   "text": "Oui, je suis d’accord avec vous.",
-                  "translation": "Yes, I agree with you."
+                  "translation": "Yes, I agree with you.",
+                  "bold_text_offsets": [
+                    [
+                      13,
+                      21
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      7,
+                      12
+                    ]
+                  ]
                 },
                 {
                   "text": "tomber d'accord",
-                  "translation": "to reach an agreement, to agree"
+                  "translation": "to reach an agreement, to agree",
+                  "bold_text_offsets": [
+                    [
+                      7,
+                      15
+                    ]
+                  ]
                 }
               ]
             }

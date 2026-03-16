@@ -30,11 +30,35 @@
                   "examples": [
                     {
                       "text": "jemanden gesund pflegen",
-                      "translation": "to nurse someone back to health"
+                      "translation": "to nurse someone back to health",
+                      "bold_text_offsets": [
+                        [
+                          16,
+                          23
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          3,
+                          8
+                        ]
+                      ]
                     },
                     {
                       "text": "Kranke pflegen",
-                      "translation": "to care for the sick"
+                      "translation": "to care for the sick",
+                      "bold_text_offsets": [
+                        [
+                          7,
+                          14
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          3,
+                          11
+                        ]
+                      ]
                     }
                   ]
                 },
@@ -48,27 +72,99 @@
                   "examples": [
                     {
                       "text": "sein Äußeres pflegen",
-                      "translation": "to take care of one's appearance"
+                      "translation": "to take care of one's appearance",
+                      "bold_text_offsets": [
+                        [
+                          13,
+                          20
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          3,
+                          15
+                        ]
+                      ]
                     },
                     {
                       "text": "die Zähne pflegen",
-                      "translation": "to take care of (one's) teeth"
+                      "translation": "to take care of (one's) teeth",
+                      "bold_text_offsets": [
+                        [
+                          10,
+                          17
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          3,
+                          15
+                        ]
+                      ]
                     },
                     {
                       "text": "Der Gärtner pflegt den Garten.",
-                      "translation": "The gardener tends to the garden."
+                      "translation": "The gardener tends to the garden.",
+                      "bold_text_offsets": [
+                        [
+                          12,
+                          18
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          13,
+                          18
+                        ]
+                      ]
                     },
                     {
                       "text": "Sie hat sich stets sehr gepflegt.",
-                      "translation": "She has always taken care of her appearance."
+                      "translation": "She has always taken care of her appearance.",
+                      "bold_text_offsets": [
+                        [
+                          24,
+                          32
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          15,
+                          28
+                        ]
+                      ]
                     },
                     {
                       "text": "Er setzte sich faul hin und pflegte sich.",
-                      "translation": "He sat down lazily and went easy on himself."
+                      "translation": "He sat down lazily and went easy on himself.",
+                      "bold_text_offsets": [
+                        [
+                          28,
+                          35
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          23,
+                          35
+                        ]
+                      ]
                     },
                     {
                       "text": "Daten pflegen",
-                      "translation": "to maintain data (keep up-to-date)"
+                      "translation": "to maintain data (keep up-to-date)",
+                      "bold_text_offsets": [
+                        [
+                          6,
+                          13
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          3,
+                          11
+                        ]
+                      ]
                     }
                   ],
                   "children": {
@@ -103,15 +199,55 @@
                   "examples": [
                     {
                       "text": "Freundschaften pflegen",
-                      "translation": "to cultivate friendships"
+                      "translation": "to cultivate friendships",
+                      "bold_text_offsets": [
+                        [
+                          15,
+                          22
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          3,
+                          12
+                        ]
+                      ]
                     },
                     {
                       "text": "Beziehungen pflegen",
-                      "translation": "to cultivate relationships"
+                      "translation": "to cultivate relationships",
+                      "bold_text_offsets": [
+                        [
+                          12,
+                          19
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          3,
+                          12
+                        ]
+                      ]
                     },
                     {
                       "text": "Künste und Wissenschaften pflegen",
-                      "translation": "to advance/promote the arts and sciences"
+                      "translation": "to advance/promote the arts and sciences",
+                      "bold_text_offsets": [
+                        [
+                          26,
+                          33
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          3,
+                          10
+                        ],
+                        [
+                          11,
+                          18
+                        ]
+                      ]
                     }
                   ],
                   "children": {
@@ -126,11 +262,39 @@
                       "examples": [
                         {
                           "text": "der Liebe pflegen",
-                          "translation": "to cultivate/nurture love"
+                          "translation": "to cultivate/nurture love",
+                          "bold_text_offsets": [
+                            [
+                              10,
+                              17
+                            ]
+                          ],
+                          "bold_translation_offsets": [
+                            [
+                              3,
+                              12
+                            ],
+                            [
+                              13,
+                              20
+                            ]
+                          ]
                         },
                         {
                           "text": "der Ruhe pflegen",
-                          "translation": "to foster tranquility"
+                          "translation": "to foster tranquility",
+                          "bold_text_offsets": [
+                            [
+                              9,
+                              16
+                            ]
+                          ],
+                          "bold_translation_offsets": [
+                            [
+                              3,
+                              9
+                            ]
+                          ]
                         }
                       ]
                     }
@@ -155,11 +319,35 @@
                   "examples": [
                     {
                       "text": "Umgang pflegen",
-                      "translation": "to regularly be in contact"
+                      "translation": "to regularly be in contact",
+                      "bold_text_offsets": [
+                        [
+                          7,
+                          14
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          3,
+                          18
+                        ]
+                      ]
                     },
                     {
                       "text": "Geselligkeit pflegen",
-                      "translation": "to socialize regularly"
+                      "translation": "to socialize regularly",
+                      "bold_text_offsets": [
+                        [
+                          13,
+                          20
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          13,
+                          22
+                        ]
+                      ]
                     }
                   ]
                 },
@@ -173,11 +361,35 @@
                   "examples": [
                     {
                       "text": "Ich pflege zu laufen.",
-                      "translation": "I usually walk."
+                      "translation": "I usually walk.",
+                      "bold_text_offsets": [
+                        [
+                          4,
+                          10
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          2,
+                          9
+                        ]
+                      ]
                     },
                     {
                       "text": "Er pflegte zu reisen.",
-                      "translation": "He used to travel."
+                      "translation": "He used to travel.",
+                      "bold_text_offsets": [
+                        [
+                          3,
+                          10
+                        ]
+                      ],
+                      "bold_translation_offsets": [
+                        [
+                          3,
+                          10
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -205,7 +417,19 @@
               "examples": [
                 {
                   "text": "Fuchs, du hast die Gans gestohlen. Gib sie wieder her!",
-                  "translation": "Fox, you've stolen the goose. Give it back here!"
+                  "translation": "Fox, you've stolen the goose. Give it back here!",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      5
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      0,
+                      3
+                    ]
+                  ]
                 }
               ]
             },
@@ -218,7 +442,19 @@
               "examples": [
                 {
                   "text": "Er ist ein ganz schöner Fuchs.",
-                  "translation": "He is quite the sly fox."
+                  "translation": "He is quite the sly fox.",
+                  "bold_text_offsets": [
+                    [
+                      24,
+                      29
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      16,
+                      23
+                    ]
+                  ]
                 }
               ]
             },
@@ -231,7 +467,19 @@
               "examples": [
                 {
                   "text": "Unser Paul ist ja ein kleiner Fuchs.",
-                  "translation": "Our Paul is a little redhead."
+                  "translation": "Our Paul is a little redhead.",
+                  "bold_text_offsets": [
+                    [
+                      30,
+                      35
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      21,
+                      28
+                    ]
+                  ]
                 }
               ]
             },
@@ -266,7 +514,19 @@
               "examples": [
                 {
                   "text": "Ich hatte nur vier Trümpfe und darunter beide Füchse.",
-                  "translation": "I had only four trumps and among them were both aces of diamonds."
+                  "translation": "I had only four trumps and among them were both aces of diamonds.",
+                  "bold_text_offsets": [
+                    [
+                      46,
+                      52
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      48,
+                      64
+                    ]
+                  ]
                 }
               ]
             },
@@ -392,11 +652,35 @@
               "examples": [
                 {
                   "text": "Ich fahre von Köln nach Hamburg.",
-                  "translation": "I’m travelling from Cologne to Hamburg."
+                  "translation": "I’m travelling from Cologne to Hamburg.",
+                  "bold_text_offsets": [
+                    [
+                      10,
+                      13
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      15,
+                      19
+                    ]
+                  ]
                 },
                 {
                   "text": "Ich hab’s von meiner Schwester gehört.",
-                  "translation": "I heard it from my sister."
+                  "translation": "I heard it from my sister.",
+                  "bold_text_offsets": [
+                    [
+                      10,
+                      13
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      11,
+                      15
+                    ]
+                  ]
                 }
               ]
             },
@@ -404,7 +688,23 @@
               "examples": [
                 {
                   "text": "das Auto von meinem Vater",
-                  "translation": "my father’s car / the car of my father"
+                  "translation": "my father’s car / the car of my father",
+                  "bold_text_offsets": [
+                    [
+                      9,
+                      12
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      9,
+                      11
+                    ],
+                    [
+                      26,
+                      28
+                    ]
+                  ]
                 },
                 {
                   "text": "das Auto meines Vaters"
@@ -415,7 +715,19 @@
               "examples": [
                 {
                   "text": "Das Hotel wird von der Firma bezahlt.",
-                  "translation": "The hotel is paid for by the company."
+                  "translation": "The hotel is paid for by the company.",
+                  "bold_text_offsets": [
+                    [
+                      15,
+                      18
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      22,
+                      24
+                    ]
+                  ]
                 }
               ]
             },
@@ -423,12 +735,36 @@
               "examples": [
                 {
                   "text": "Er hat von seiner Jugend erzählt.",
-                  "translation": "He told about his youth."
+                  "translation": "He told about his youth.",
+                  "bold_text_offsets": [
+                    [
+                      7,
+                      10
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      8,
+                      13
+                    ]
+                  ]
                 },
                 {
                   "text": "Von dem Nomine Substantivo, oder dem Hauptworte.",
                   "translation": "About the substantive noun, or the [alternative term]. (headline)",
-                  "ref": "1796, Abraham Sahlstedt, Schwedische Grammatik nach dem Sprachgebrauch unserer Zeiten, Lübeck & Leipzig, page 259:"
+                  "ref": "1796, Abraham Sahlstedt, Schwedische Grammatik nach dem Sprachgebrauch unserer Zeiten, Lübeck & Leipzig, page 259:",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      3
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      0,
+                      5
+                    ]
+                  ]
                 }
               ]
             },
@@ -436,11 +772,47 @@
               "examples": [
                 {
                   "text": "Von welchem Geld soll ich als Arbeitsloser in Urlaub fahren?",
-                  "translation": "Being unemployed, on what money should I go on holidays?"
+                  "translation": "Being unemployed, on what money should I go on holidays?",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      3
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      18,
+                      20
+                    ],
+                    [
+                      27,
+                      29
+                    ],
+                    [
+                      44,
+                      46
+                    ]
+                  ]
                 },
                 {
                   "text": "Man kann nicht nur von Luft und Liebe leben.",
-                  "translation": "You can’t live on air and love alone. (proverb)"
+                  "translation": "You can’t live on air and love alone. (proverb)",
+                  "bold_text_offsets": [
+                    [
+                      19,
+                      22
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      15,
+                      17
+                    ],
+                    [
+                      33,
+                      35
+                    ]
+                  ]
                 }
               ]
             }
@@ -507,7 +879,19 @@
                 {
                   "text": "Schlecht gezahlt, bin ich doch freigebig und hilfsbereit gegenüber den Armen.",
                   "translation": "Badly paid, I am still generous and helpful toward the poor.",
-                  "ref": "1917, Franz Kafka, Ein Landarzt, page 21:"
+                  "ref": "1917, Franz Kafka, Ein Landarzt, page 21:",
+                  "bold_text_offsets": [
+                    [
+                      57,
+                      66
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      44,
+                      50
+                    ]
+                  ]
                 }
               ]
             },

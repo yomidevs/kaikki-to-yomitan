@@ -103,7 +103,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "prends ma main"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "prends"
+                                    },
+                                    " ma main"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -174,7 +183,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "elle prend un café"
+                                  "content": [
+                                    "elle ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "prend"
+                                    },
+                                    " un café"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -245,14 +264,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Je vais prendre le plat du jour."
+                                  "content": [
+                                    "Je vais ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "prendre"
+                                    },
+                                    " le plat du jour."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "I'll get the dish of the day."
+                                  "content": [
+                                    "I'll ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "get"
+                                    },
+                                    " the dish of the day."
+                                  ]
                                 }
                               ]
                             }
@@ -316,14 +355,33 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "prendre quelque chose à quelqu'un"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "prendre"
+                                    },
+                                    " quelque chose à quelqu'un"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "to take something from someone"
+                                  "content": [
+                                    "to ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "take"
+                                    },
+                                    " something from someone"
+                                  ]
                                 }
                               ]
                             }
@@ -387,7 +445,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "prendre une décision"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "prendre"
+                                    },
+                                    " une décision"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -415,7 +482,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "prendre des mesures draconiennes"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "prendre"
+                                    },
+                                    " des mesures draconiennes"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -486,7 +562,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "le feu ne prend pas"
+                                  "content": [
+                                    "le feu ne ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "prend"
+                                    },
+                                    " pas"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -514,7 +600,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "la sauce ne prend pas"
+                                  "content": [
+                                    "la sauce ne ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "prend"
+                                    },
+                                    " pas"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -542,7 +638,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "ma mayonnaise ne prend pas"
+                                  "content": [
+                                    "ma mayonnaise ne ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "prend"
+                                    },
+                                    " pas"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -570,7 +676,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "ça ne prend pas avec moi"
+                                  "content": [
+                                    "ça ne ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "prend"
+                                    },
+                                    " pas avec moi"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -641,7 +757,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "je me suis pris la main dans la porte"
+                                  "content": [
+                                    "je me suis ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "pris"
+                                    },
+                                    " la main dans la porte"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -669,7 +795,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "je me suis pris la porte dans la figure"
+                                  "content": [
+                                    "je me suis ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "pris"
+                                    },
+                                    " la porte dans la figure"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -740,7 +876,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Qu'est-ce qui t'a pris ? Qu'est-ce qui t'est passé par la tête ?"
+                                  "content": [
+                                    "Qu'est-ce qui t'a ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "pris"
+                                    },
+                                    " ? Qu'est-ce qui t'est passé par la tête ?"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -768,7 +914,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Qu'est-ce qui lui a pris ? Quelle mouche l'a piqué ?"
+                                  "content": [
+                                    "Qu'est-ce qui lui a ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "pris"
+                                    },
+                                    " ? Quelle mouche l'a piqué ?"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -1585,14 +1741,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Pour finir dans deux heures, ça prend trois personnes."
+                                  "content": [
+                                    "Pour finir dans deux heures, ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "ça prend"
+                                    },
+                                    " trois personnes."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "To finish in two hours, it'll take three people."
+                                  "content": [
+                                    "To finish in two hours, it'll ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "take"
+                                    },
+                                    " three people."
+                                  ]
                                 }
                               ]
                             }
@@ -1663,7 +1839,17 @@
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "[something] comes over [someone]"
+                                  "content": [
+                                    "[something] ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "comes over"
+                                    },
+                                    " [someone]"
+                                  ]
                                 }
                               ]
                             }
@@ -1712,14 +1898,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Et s'il me prend l'envie d' m'en aller, enferme-moi et jette la clé."
+                                  "content": [
+                                    "Et s'il me ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "prend"
+                                    },
+                                    " l'envie d' m'en aller, enferme-moi et jette la clé."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "And if I feel like leaving, lock me up and throw away the key."
+                                  "content": [
+                                    "And if I ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "feel like"
+                                    },
+                                    " leaving, lock me up and throw away the key."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -1877,14 +2083,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Il semblerait qu'il y ait des différences significatives entre les deux groupes."
+                                  "content": [
+                                    "Il ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "semblerait"
+                                    },
+                                    " qu'il y ait des différences significatives entre les deux groupes."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "There would seem to be significant differences between the two groups."
+                                  "content": [
+                                    "There ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "would seem"
+                                    },
+                                    " to be significant differences between the two groups."
+                                  ]
                                 }
                               ]
                             }
@@ -2177,14 +2403,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Oui, je suis d’accord avec vous."
+                                  "content": [
+                                    "Oui, je suis ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "d’accord"
+                                    },
+                                    " avec vous."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Yes, I agree with you."
+                                  "content": [
+                                    "Yes, I ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "agree"
+                                    },
+                                    " with you."
+                                  ]
                                 }
                               ]
                             }
@@ -2205,7 +2451,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "tomber d'accord"
+                                  "content": [
+                                    "tomber ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "d'accord"
+                                    }
+                                  ]
                                 },
                                 {
                                   "tag": "div",

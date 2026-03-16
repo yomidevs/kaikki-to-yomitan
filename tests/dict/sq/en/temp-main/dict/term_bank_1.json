@@ -175,14 +175,32 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "gjuhë lope e zier"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "gjuhë"
+                                    },
+                                    " lope e zier"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "boiled beef tongue"
+                                  "content": [
+                                    "boiled beef ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "tongue"
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -203,14 +221,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Dogji gjuhën."
+                                  "content": [
+                                    "Dogji ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "gjuhën"
+                                    },
+                                    "."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "Burned its tongue."
+                                  "content": [
+                                    "Burned its ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "tongue"
+                                    },
+                                    "."
+                                  ]
                                 }
                               ]
                             }
@@ -272,14 +310,34 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "Mbaje gjuhën!"
+                                      "content": [
+                                        "Mbaje ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "gjuhën"
+                                        },
+                                        "!"
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "Hold your tongue!"
+                                      "content": [
+                                        "Hold your ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "tongue"
+                                        },
+                                        "!"
+                                      ]
                                     }
                                   ]
                                 }
@@ -300,7 +358,17 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "E ka gjuhën të gjatë."
+                                      "content": [
+                                        "E ka ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "gjuhën"
+                                        },
+                                        " të gjatë."
+                                      ]
                                     },
                                     {
                                       "tag": "div",
@@ -368,14 +436,32 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "gjuha shqipe"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "gjuha"
+                                    },
+                                    " shqipe"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "the Albanian language"
+                                  "content": [
+                                    "the Albanian ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "language"
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -420,14 +506,32 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "gjuha e fëmijëve"
+                                      "content": [
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "gjuha"
+                                        },
+                                        " e fëmijëve"
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "children speech"
+                                      "content": [
+                                        "children ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "speech"
+                                        }
+                                      ]
                                     }
                                   ]
                                 }
@@ -448,14 +552,32 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "gjuhë e trashë"
+                                      "content": [
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "gjuhë"
+                                        },
+                                        " e trashë"
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "foul language"
+                                      "content": [
+                                        "foul ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "language"
+                                        }
+                                      ]
                                     }
                                   ]
                                 }
@@ -476,14 +598,32 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "gjuha e shkrimtarit"
+                                      "content": [
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "gjuha"
+                                        },
+                                        " e shkrimtarit"
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "the author's style"
+                                      "content": [
+                                        "the author's ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "style"
+                                        }
+                                      ]
                                     }
                                   ]
                                 }
@@ -525,14 +665,32 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "gjuha e muzikës"
+                                      "content": [
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "gjuha"
+                                        },
+                                        " e muzikës"
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "music's language"
+                                      "content": [
+                                        "music's ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "language"
+                                        }
+                                      ]
                                     }
                                   ]
                                 }
@@ -553,14 +711,32 @@
                                       "data": {
                                         "content": "example-sentence-a"
                                       },
-                                      "content": "gjuha e bletëve"
+                                      "content": [
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "gjuha"
+                                        },
+                                        " e bletëve"
+                                      ]
                                     },
                                     {
                                       "tag": "div",
                                       "data": {
                                         "content": "example-sentence-b"
                                       },
-                                      "content": "bees' language"
+                                      "content": [
+                                        "bees' ",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "language"
+                                        }
+                                      ]
                                     }
                                   ]
                                 }

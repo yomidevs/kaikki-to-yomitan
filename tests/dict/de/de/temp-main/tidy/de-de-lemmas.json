@@ -7,7 +7,13 @@
             "populäre Musikrichtung, die Anfang der 1950er Jahre in den USA entstand": {
               "examples": [
                 {
-                  "text": "Der Rock ist nicht totzukriegen."
+                  "text": "Der Rock ist nicht totzukriegen.",
+                  "bold_text_offsets": [
+                    [
+                      4,
+                      8
+                    ]
+                  ]
                 }
               ]
             }
@@ -21,7 +27,13 @@
             "in arabischen Märchen: flugfähiger Vogel in der Größe eines Elefanten": {
               "examples": [
                 {
-                  "text": "Sindbad band sich, um seinem Schicksal auf einer abgelegenen Insel zu entkommen, an ein Bein des Vogels Rock."
+                  "text": "Sindbad band sich, um seinem Schicksal auf einer abgelegenen Insel zu entkommen, an ein Bein des Vogels Rock.",
+                  "bold_text_offsets": [
+                    [
+                      104,
+                      109
+                    ]
+                  ]
                 }
               ]
             }
@@ -41,23 +53,53 @@
             "Raum zum dauerhaften Ab- und Unterstellen von Kraftfahrzeugen": {
               "examples": [
                 {
-                  "text": "Ich werde das Auto in die Garage schaffen."
+                  "text": "Ich werde das Auto in die Garage schaffen.",
+                  "bold_text_offsets": [
+                    [
+                      26,
+                      32
+                    ]
+                  ]
                 },
                 {
                   "text": "„Ein Mann steht vor seinem Opel allein in einer Garage.“",
-                  "ref": "Björn Kuhligk, Tom Schulz: Rheinfahrt. Ein Fluss. Seine Menschen. Seine Geschichten. Orell Füssli, Zürich 2017, , Seite 90."
+                  "ref": "Björn Kuhligk, Tom Schulz: Rheinfahrt. Ein Fluss. Seine Menschen. Seine Geschichten. Orell Füssli, Zürich 2017, , Seite 90.",
+                  "bold_text_offsets": [
+                    [
+                      48,
+                      54
+                    ]
+                  ]
                 },
                 {
                   "text": "„Leo stand schon draußen vor der Garage und blickte ängstlich auf seine Armbanduhr.“",
-                  "ref": "Heinrich Böll: Ansichten eines Clowns. Roman. Insel, Leipzig 1990, , Seite 68."
+                  "ref": "Heinrich Böll: Ansichten eines Clowns. Roman. Insel, Leipzig 1990, , Seite 68.",
+                  "bold_text_offsets": [
+                    [
+                      33,
+                      39
+                    ]
+                  ]
                 },
                 {
                   "text": "„Als ich zur Garage gehe, sehe ich die Post auf dem Wohnzimmertisch.“",
-                  "ref": "Rolf W. Brednich: www.worldwidewitz.com. Humor im Cyberspace. Herder, Freiburg/Basel/Wien 2005, , Seite 145."
+                  "ref": "Rolf W. Brednich: www.worldwidewitz.com. Humor im Cyberspace. Herder, Freiburg/Basel/Wien 2005, , Seite 145.",
+                  "bold_text_offsets": [
+                    [
+                      13,
+                      19
+                    ]
+                  ]
                 },
                 {
                   "text": "„Er ging zur Garage, um nach Guiseppe zu sehen.“",
-                  "ref": "Erich Maria Remarque: Der Himmel kennt keine Günstlinge. Roman. 1. Auflage. Kiepenheuer & Witsch, Köln 2018, , Seite 51. Zuerst 1961."
+                  "ref": "Erich Maria Remarque: Der Himmel kennt keine Günstlinge. Roman. 1. Auflage. Kiepenheuer & Witsch, Köln 2018, , Seite 51. Zuerst 1961.",
+                  "bold_text_offsets": [
+                    [
+                      13,
+                      19
+                    ]
+                  ]
                 }
               ]
             },
@@ -65,19 +107,43 @@
               "examples": [
                 {
                   "text": "„Ein Mann steht vor seinem Opel allein in einer Garage.“",
-                  "ref": "Björn Kuhligk, Tom Schulz: Rheinfahrt. Ein Fluss. Seine Menschen. Seine Geschichten. Orell Füssli, Zürich 2017, , Seite 90."
+                  "ref": "Björn Kuhligk, Tom Schulz: Rheinfahrt. Ein Fluss. Seine Menschen. Seine Geschichten. Orell Füssli, Zürich 2017, , Seite 90.",
+                  "bold_text_offsets": [
+                    [
+                      48,
+                      54
+                    ]
+                  ]
                 },
                 {
                   "text": "„Leo stand schon draußen vor der Garage und blickte ängstlich auf seine Armbanduhr.“",
-                  "ref": "Heinrich Böll: Ansichten eines Clowns. Roman. Insel, Leipzig 1990, , Seite 68."
+                  "ref": "Heinrich Böll: Ansichten eines Clowns. Roman. Insel, Leipzig 1990, , Seite 68.",
+                  "bold_text_offsets": [
+                    [
+                      33,
+                      39
+                    ]
+                  ]
                 },
                 {
                   "text": "„Als ich zur Garage gehe, sehe ich die Post auf dem Wohnzimmertisch.“",
-                  "ref": "Rolf W. Brednich: www.worldwidewitz.com. Humor im Cyberspace. Herder, Freiburg/Basel/Wien 2005, , Seite 145."
+                  "ref": "Rolf W. Brednich: www.worldwidewitz.com. Humor im Cyberspace. Herder, Freiburg/Basel/Wien 2005, , Seite 145.",
+                  "bold_text_offsets": [
+                    [
+                      13,
+                      19
+                    ]
+                  ]
                 },
                 {
                   "text": "„Er ging zur Garage, um nach Guiseppe zu sehen.“",
-                  "ref": "Erich Maria Remarque: Der Himmel kennt keine Günstlinge. Roman. 1. Auflage. Kiepenheuer & Witsch, Köln 2018, , Seite 51. Zuerst 1961."
+                  "ref": "Erich Maria Remarque: Der Himmel kennt keine Günstlinge. Roman. 1. Auflage. Kiepenheuer & Witsch, Köln 2018, , Seite 51. Zuerst 1961.",
+                  "bold_text_offsets": [
+                    [
+                      13,
+                      19
+                    ]
+                  ]
                 }
               ]
             },
@@ -93,7 +159,13 @@
               "examples": [
                 {
                   "text": "„Selbstverständlich werden in der Garage auch künftig Fremdmarken repariert.“",
-                  "ref": "Online-Ausgabe der Jungfrau Zeitung, Lernen Sie das neue Team kennen, 03.07.2009"
+                  "ref": "Online-Ausgabe der Jungfrau Zeitung, Lernen Sie das neue Team kennen, 03.07.2009",
+                  "bold_text_offsets": [
+                    [
+                      34,
+                      40
+                    ]
+                  ]
                 }
               ]
             }
@@ -113,80 +185,200 @@
             "ein Gerät (Lampe, Heizung, Elektrogerät etc.) abschalten, ein Feuer löschen": {
               "examples": [
                 {
-                  "text": "Er macht den Fernseher aus."
+                  "text": "Er macht den Fernseher aus.",
+                  "bold_text_offsets": [
+                    [
+                      3,
+                      8
+                    ],
+                    [
+                      23,
+                      27
+                    ]
+                  ]
                 },
                 {
-                  "text": "Hast du die Heizung ausgemacht?"
+                  "text": "Hast du die Heizung ausgemacht?",
+                  "bold_text_offsets": [
+                    [
+                      20,
+                      31
+                    ]
+                  ]
                 },
                 {
-                  "text": "Ich mache die Kerze aus."
+                  "text": "Ich mache die Kerze aus.",
+                  "bold_text_offsets": [
+                    [
+                      4,
+                      9
+                    ],
+                    [
+                      20,
+                      24
+                    ]
+                  ]
                 }
               ]
             },
             "eine Vereinbarung treffen; einen Termin festsetzen": {
               "examples": [
                 {
-                  "text": "Es war ausgemacht, im Anzug zu erscheinen."
+                  "text": "Es war ausgemacht, im Anzug zu erscheinen.",
+                  "bold_text_offsets": [
+                    [
+                      7,
+                      18
+                    ]
+                  ]
                 },
                 {
                   "text": "„Sie war Trudis Vorschlag gefolgt und hatte einen Termin beim Friseur Riss ausgemacht.“",
-                  "ref": "Katharina Adler: Ida. Roman. 1. Auflage. Rowohlt Verlag, Reinbek bei Hamburg 2018, , Seite 384 ."
+                  "ref": "Katharina Adler: Ida. Roman. 1. Auflage. Rowohlt Verlag, Reinbek bei Hamburg 2018, , Seite 384 .",
+                  "bold_text_offsets": [
+                    [
+                      38,
+                      43
+                    ],
+                    [
+                      75,
+                      86
+                    ]
+                  ]
                 }
               ]
             },
             "ein Spiel mit finalen Zug oder eine Angelegenheit beenden": {
               "examples": [
                 {
-                  "text": "Wenn man mit einem Buben ausmacht, sagt man Maumau."
+                  "text": "Wenn man mit einem Buben ausmacht, sagt man Maumau.",
+                  "bold_text_offsets": [
+                    [
+                      25,
+                      34
+                    ]
+                  ]
                 },
                 {
-                  "text": "Sie machten den Streit schließlich doch vor Gericht aus."
+                  "text": "Sie machten den Streit schließlich doch vor Gericht aus.",
+                  "bold_text_offsets": [
+                    [
+                      4,
+                      11
+                    ],
+                    [
+                      52,
+                      56
+                    ]
+                  ]
                 }
               ]
             },
             "das Wesentliche an etwas sein": {
               "examples": [
                 {
-                  "text": "Was unsere Freundschaft ausmachte? Dass wir immer für einander da waren!"
+                  "text": "Was unsere Freundschaft ausmachte? Dass wir immer für einander da waren!",
+                  "bold_text_offsets": [
+                    [
+                      24,
+                      34
+                    ]
+                  ]
                 }
               ]
             },
             "eine bestimmte Menge darstellen": {
               "examples": [
                 {
-                  "text": "Kinder machen nur einen geringen Anteil der deutschen Bevölkerung aus."
+                  "text": "Kinder machen nur einen geringen Anteil der deutschen Bevölkerung aus.",
+                  "bold_text_offsets": [
+                    [
+                      7,
+                      13
+                    ],
+                    [
+                      66,
+                      70
+                    ]
+                  ]
                 }
               ]
             },
             "mit Dativ-Objekt: durch etwas gestört werden, jemandem etwas bedeuten": {
               "examples": [
                 {
-                  "text": "Es macht mir überhaupt nichts aus, dass es heute regnet."
+                  "text": "Es macht mir überhaupt nichts aus, dass es heute regnet.",
+                  "bold_text_offsets": [
+                    [
+                      3,
+                      8
+                    ],
+                    [
+                      30,
+                      34
+                    ]
+                  ]
                 }
               ]
             },
             "etwas entfernt liegendes erkennen": {
               "examples": [
                 {
-                  "text": "Am anderen Ufer konnte der Forscher eine Gruppe Krokodile ausmachen."
+                  "text": "Am anderen Ufer konnte der Forscher eine Gruppe Krokodile ausmachen.",
+                  "bold_text_offsets": [
+                    [
+                      58,
+                      68
+                    ]
+                  ]
                 }
               ]
             },
             "veraltet, ostmitteldeutsch: etwas herausnehmen, meist aus der Erde": {
               "examples": [
                 {
-                  "text": "Die Bauern machten nun wie jedes Jahr die Kartoffeln aus."
+                  "text": "Die Bauern machten nun wie jedes Jahr die Kartoffeln aus.",
+                  "bold_text_offsets": [
+                    [
+                      11,
+                      18
+                    ],
+                    [
+                      53,
+                      57
+                    ]
+                  ]
                 },
                 {
                   "text": "„Beim nächsten Haus war ein Gemüsegarten. Ein junges Mädchen machte Unkraut aus, …“",
-                  "ref": "Ursula Wölfel: Die grauen und die grünen Felder. Wahre Geschichten. Neithard Anrich Verlag, Mühlheim an der Ruhr 1970, Die anderen Kinder, Seite 8, DNB 458688606"
+                  "ref": "Ursula Wölfel: Die grauen und die grünen Felder. Wahre Geschichten. Neithard Anrich Verlag, Mühlheim an der Ruhr 1970, Die anderen Kinder, Seite 8, DNB 458688606",
+                  "bold_text_offsets": [
+                    [
+                      16,
+                      19
+                    ],
+                    [
+                      61,
+                      67
+                    ],
+                    [
+                      76,
+                      79
+                    ]
+                  ]
                 }
               ]
             },
             "etwas austragen, abmachen": {
               "examples": [
                 {
-                  "text": "Das muss er mit seinem Gewissen ausmachen."
+                  "text": "Das muss er mit seinem Gewissen ausmachen.",
+                  "bold_text_offsets": [
+                    [
+                      32,
+                      41
+                    ]
+                  ]
                 }
               ]
             }
@@ -206,16 +398,40 @@
             "männlicher Vorname": {
               "examples": [
                 {
-                  "text": "Anna und Peter haben sieben Kinder."
+                  "text": "Anna und Peter haben sieben Kinder.",
+                  "bold_text_offsets": [
+                    [
+                      9,
+                      14
+                    ]
+                  ]
                 },
                 {
-                  "text": "Peter spielt gern."
+                  "text": "Peter spielt gern.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      5
+                    ]
+                  ]
                 },
                 {
-                  "text": "Peter Müller wollte uns kein Interview geben."
+                  "text": "Peter Müller wollte uns kein Interview geben.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      5
+                    ]
+                  ]
                 },
                 {
-                  "text": "Kennen sie den Vornamen Peter?"
+                  "text": "Kennen sie den Vornamen Peter?",
+                  "bold_text_offsets": [
+                    [
+                      24,
+                      29
+                    ]
+                  ]
                 }
               ]
             }
@@ -235,24 +451,48 @@
             "zu diesem Zeitpunkt, zum jetzigen Zeitpunkt, in dem Moment": {
               "examples": [
                 {
-                  "text": "„Was haben wir nun?“"
+                  "text": "„Was haben wir nun?“",
+                  "bold_text_offsets": [
+                    [
+                      15,
+                      19
+                    ]
+                  ]
                 },
                 {
-                  "text": "Nun ziehen Sie die Schraube fest."
+                  "text": "Nun ziehen Sie die Schraube fest.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      3
+                    ]
+                  ]
                 }
               ]
             },
             "in unmittelbarere Zukunft": {
               "examples": [
                 {
-                  "text": "„Was wird nun geschehen?“"
+                  "text": "„Was wird nun geschehen?“",
+                  "bold_text_offsets": [
+                    [
+                      10,
+                      13
+                    ]
+                  ]
                 }
               ]
             },
             "in unmittelbarer Vergangenheit": {
               "examples": [
                 {
-                  "text": "Das ist nun geschehen."
+                  "text": "Das ist nun geschehen.",
+                  "bold_text_offsets": [
+                    [
+                      8,
+                      11
+                    ]
+                  ]
                 }
               ]
             },
@@ -260,14 +500,26 @@
             "Im Satzanfang, elliptisch, zur Bezeichnung eines Ruhepunktes in der Rede, einer Folgerung, Einwendung oder Einräumung.": {
               "examples": [
                 {
-                  "text": "Nun… es ist wahr."
+                  "text": "Nun… es ist wahr.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      3
+                    ]
+                  ]
                 }
               ]
             },
             "Im Satzanfang, zur Einleitung einer Frage": {
               "examples": [
                 {
-                  "text": "Nun, was ist deine Entscheidung?"
+                  "text": "Nun, was ist deine Entscheidung?",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      3
+                    ]
+                  ]
                 }
               ]
             }

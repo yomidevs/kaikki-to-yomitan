@@ -81,6 +81,8 @@ pub struct Sense {
     pub topics: Vec<Tag>,
 }
 
+pub type Offset = (usize, usize);
+
 #[derive(Debug, Serialize, Deserialize, Default, Clone)]
 #[serde(default)]
 #[derive(rkyv::Archive, rkyv::Deserialize, rkyv::Serialize)]
@@ -91,6 +93,10 @@ pub struct Example {
     #[serde(skip_serializing_if = "String::is_empty")]
     #[serde(rename = "ref")]
     pub reference: String, // Reference of a quotation example
+    #[serde(skip_serializing_if = "Vec::is_empty")]
+    pub bold_text_offsets: Vec<Offset>,
+    #[serde(skip_serializing_if = "Vec::is_empty")]
+    pub bold_translation_offsets: Vec<Offset>, // [en]
 }
 
 #[derive(Debug, Deserialize, Serialize, Default)]

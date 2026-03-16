@@ -8,19 +8,67 @@
               "examples": [
                 {
                   "text": "Την είδα να έρχεται στην κατεύθυνσή μου.",
-                  "translation": "I saw her coming in my direction."
+                  "translation": "I saw her coming in my direction.",
+                  "bold_text_offsets": [
+                    [
+                      12,
+                      19
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      10,
+                      16
+                    ]
+                  ]
                 },
                 {
                   "text": "Ήρθε ακόμα ο γιατρός;",
-                  "translation": "Has the doctor come yet?"
+                  "translation": "Has the doctor come yet?",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      4
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      15,
+                      19
+                    ]
+                  ]
                 },
                 {
                   "text": "Ο χειμώνας έρχεται.",
-                  "translation": "Winter is coming."
+                  "translation": "Winter is coming.",
+                  "bold_text_offsets": [
+                    [
+                      11,
+                      18
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      10,
+                      16
+                    ]
+                  ]
                 },
                 {
                   "text": "Ήρθα πρώτος στο αγώνισμα.",
-                  "translation": "I came first in the competition."
+                  "translation": "I came first in the competition.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      4
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      2,
+                      6
+                    ]
+                  ]
                 }
               ]
             },
@@ -28,7 +76,23 @@
               "examples": [
                 {
                   "text": "Πόσο έρχεται αυτό το αμάξι;",
-                  "translation": "How much is this car?"
+                  "translation": "How much is this car?",
+                  "bold_text_offsets": [
+                    [
+                      5,
+                      12
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      9,
+                      11
+                    ],
+                    [
+                      14,
+                      16
+                    ]
+                  ]
                 }
               ]
             },
@@ -36,15 +100,55 @@
               "examples": [
                 {
                   "text": "Τελικά, οι δυό τους ήρθαν στα χέρια.",
-                  "translation": "In the end, they came to blows."
+                  "translation": "In the end, they came to blows.",
+                  "bold_text_offsets": [
+                    [
+                      20,
+                      25
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      17,
+                      21
+                    ]
+                  ]
                 },
                 {
                   "text": "Θα έρθουν πολλά πράγματα στο φως όταν βγει το νέο βιβλίο.",
-                  "translation": "A lot of things will come to light when the new book comes out."
+                  "translation": "A lot of things will come to light when the new book comes out.",
+                  "bold_text_offsets": [
+                    [
+                      3,
+                      9
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      21,
+                      25
+                    ],
+                    [
+                      53,
+                      57
+                    ]
+                  ]
                 },
                 {
                   "text": "Οι αρχηγοί των κομμάτων της βουλής ήρθαν σε συμφωνία.",
-                  "translation": "The party leaders in parliament came to an agreement."
+                  "translation": "The party leaders in parliament came to an agreement.",
+                  "bold_text_offsets": [
+                    [
+                      35,
+                      40
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      32,
+                      36
+                    ]
+                  ]
                 }
               ]
             },
@@ -52,7 +156,19 @@
               "examples": [
                 {
                   "text": "Αυτό το φόρεμα δε σου ήρθε καλά.",
-                  "translation": "That dress doesn't suit you."
+                  "translation": "That dress doesn't suit you.",
+                  "bold_text_offsets": [
+                    [
+                      22,
+                      26
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      19,
+                      23
+                    ]
+                  ]
                 }
               ]
             },
@@ -65,15 +181,51 @@
               "examples": [
                 {
                   "text": "Πώς σου ήρθε να φορέσεις τόσο άσχημο παλτό;",
-                  "translation": "What possessed you to wear that ugly coat?"
+                  "translation": "What possessed you to wear that ugly coat?",
+                  "bold_text_offsets": [
+                    [
+                      8,
+                      12
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      5,
+                      14
+                    ]
+                  ]
                 },
                 {
                   "text": "Κάθε φορά που τον βλέπω, μου έρχεται να τον σπάσω στο ξύλο.",
-                  "translation": "Every time I see him, I get the urge to beat him up."
+                  "translation": "Every time I see him, I get the urge to beat him up.",
+                  "bold_text_offsets": [
+                    [
+                      29,
+                      36
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      24,
+                      36
+                    ]
+                  ]
                 },
                 {
                   "text": "Η ταινία ήταν τόσο βαρετή που μου ήρθε να σηκωθώ και να φύγω.",
-                  "translation": "The film was so boring that I felt like getting up and leaving."
+                  "translation": "The film was so boring that I felt like getting up and leaving.",
+                  "bold_text_offsets": [
+                    [
+                      34,
+                      38
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      30,
+                      39
+                    ]
+                  ]
                 }
               ]
             }

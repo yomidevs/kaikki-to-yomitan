@@ -131,7 +131,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Que d’avatars dans la vie politique de cet homme d’État !"
+                                  "content": [
+                                    "Que d’",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "avatars"
+                                    },
+                                    " dans la vie politique de cet homme d’État !"
+                                  ]
                                 }
                               ]
                             }
@@ -152,7 +162,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Batman est l’avatar moderne de Zorro."
+                                  "content": [
+                                    "Batman est l’",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "avatar"
+                                    },
+                                    " moderne de Zorro."
+                                  ]
                                 }
                               ]
                             }
@@ -173,7 +193,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "L’espéranto est l’avatar moderne du sanskrit."
+                                  "content": [
+                                    "L’espéranto est l’",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "avatar"
+                                    },
+                                    " moderne du sanskrit."
+                                  ]
                                 }
                               ]
                             }
@@ -220,7 +250,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Le service social du travail – Avatars d’une fonction, vicissitudes d’un métier"
+                                  "content": [
+                                    "Le service social du travail – ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Avatars"
+                                    },
+                                    " d’une fonction, vicissitudes d’un métier"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -352,7 +392,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Mangez donc, lui dit la jeune fille en lui servant un morceau de la hure d’un sanglier."
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Mangez"
+                                    },
+                                    " donc, lui dit la jeune fille en lui servant un morceau de la hure d’un sanglier."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -380,7 +429,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Mangez légèrement."
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Mangez"
+                                    },
+                                    " légèrement."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -408,7 +466,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Il mange lentement, handicapé par une mastication pénible, ne dit pas un mot, rit niaisement de loin en loin."
+                                  "content": [
+                                    "Il ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "mange"
+                                    },
+                                    " lentement, handicapé par une mastication pénible, ne dit pas un mot, rit niaisement de loin en loin."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -436,7 +504,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "J’avais neuf ans et j’attrapais avec mon frère des sauterelles que nous faisions griller dans le jardin pour les manger."
+                                  "content": [
+                                    "J’avais neuf ans et j’attrapais avec mon frère des sauterelles que nous faisions griller dans le jardin pour les ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "manger"
+                                    },
+                                    "."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -464,7 +542,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Il mangea quelques mûres qu’il trouva dans les ronces de la lisière, après quoi il chercha à s’orienter."
+                                  "content": [
+                                    "Il ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "mangea"
+                                    },
+                                    " quelques mûres qu’il trouva dans les ronces de la lisière, après quoi il chercha à s’orienter."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -535,7 +623,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Aussi nous ne mangions pas tous les jours parce qu’il fallait d’abord que le père malade ne manquât de rien."
+                                  "content": [
+                                    "Aussi nous ne ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "mangions"
+                                    },
+                                    " pas tous les jours parce qu’il fallait d’abord que le père malade ne manquât de rien."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -606,7 +704,25 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "En quelques années il a mangé tout son patrimoine. - Il a mangé beaucoup d’argent."
+                                  "content": [
+                                    "En quelques années il ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "a mangé"
+                                    },
+                                    " tout son patrimoine. - Il ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "a mangé"
+                                    },
+                                    " beaucoup d’argent."
+                                  ]
                                 }
                               ]
                             }
@@ -670,7 +786,33 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Ce poêle mange bien du charbon. Le soleil mange les couleurs. La rouille mange le fer."
+                                  "content": [
+                                    "Ce poêle ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "mange"
+                                    },
+                                    " bien du charbon. Le soleil ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "mange"
+                                    },
+                                    " les couleurs. La rouille ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "mange"
+                                    },
+                                    " le fer."
+                                  ]
                                 }
                               ]
                             }
@@ -717,7 +859,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "À l'en croire, il mangeait du prêtre sans remords."
+                                  "content": [
+                                    "À l'en croire, il ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "mangeait"
+                                    },
+                                    " du prêtre sans remords."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -771,7 +923,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Un muret éboulé, la rivière, trois planches mangées de mousse qui esquissent un pont, et c’est déjà la forêt."
+                                  "content": [
+                                    "Un muret éboulé, la rivière, trois planches ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "mangées"
+                                    },
+                                    " de mousse qui esquissent un pont, et c’est déjà la forêt."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -858,7 +1020,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Heureusement que la pauvre madame n’est plus là pour se faire du mauvais sang, elle se serait mangée…"
+                                  "content": [
+                                    "Heureusement que la pauvre madame n’est plus là pour se faire du mauvais sang, elle ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "se serait mangée"
+                                    },
+                                    "…"
+                                  ]
                                 },
                                 {
                                   "tag": "div",

@@ -27,7 +27,13 @@
               "examples": [
                 {
                   "text": "El lugar permanecía incomunicado por la nieve, pero podría ir andando por la senda que serpenteaba junto a un arroyo",
-                  "ref": "Calderón Samaniego. Elegía con pétalos de rosa. 2008. ISBN: 9788461284030."
+                  "ref": "Calderón Samaniego. Elegía con pétalos de rosa. 2008. ISBN: 9788461284030.",
+                  "bold_text_offsets": [
+                    [
+                      40,
+                      45
+                    ]
+                  ]
                 }
               ]
             },

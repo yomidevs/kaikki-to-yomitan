@@ -14,7 +14,13 @@
               ],
               "examples": [
                 {
-                  "text": "Wczoraj spadł pierwszy śnieg tej zimy."
+                  "text": "Wczoraj spadł pierwszy śnieg tej zimy.",
+                  "bold_text_offsets": [
+                    [
+                      23,
+                      28
+                    ]
+                  ]
                 }
               ]
             },
@@ -25,7 +31,13 @@
               ],
               "examples": [
                 {
-                  "text": "Obiecałaś matce, że jej pomożesz w odgarnięciu śniegu."
+                  "text": "Obiecałaś matce, że jej pomożesz w odgarnięciu śniegu.",
+                  "bold_text_offsets": [
+                    [
+                      47,
+                      53
+                    ]
+                  ]
                 }
               ]
             },
@@ -41,7 +53,13 @@
               ],
               "examples": [
                 {
-                  "text": "Obudziło go mruganie śniegu na ekranie telewizora."
+                  "text": "Obudziło go mruganie śniegu na ekranie telewizora.",
+                  "bold_text_offsets": [
+                    [
+                      21,
+                      27
+                    ]
+                  ]
                 }
               ]
             },

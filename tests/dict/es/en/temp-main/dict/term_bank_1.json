@@ -153,14 +153,33 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Vive de migas, nada más."
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Vive"
+                                    },
+                                    " de migas, nada más."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "He/she lives on crumbs, nothing more."
+                                  "content": [
+                                    "He/she ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "lives on"
+                                    },
+                                    " crumbs, nothing more."
+                                  ]
                                 }
                               ]
                             }
@@ -224,14 +243,33 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Vive en la casa roja."
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Vive"
+                                    },
+                                    " en la casa roja."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "He/she lives in the red house."
+                                  "content": [
+                                    "He/she ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "lives in"
+                                    },
+                                    " the red house."
+                                  ]
                                 }
                               ]
                             }
@@ -252,14 +290,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "La pobrecita vive con dos hermanas crueles."
+                                  "content": [
+                                    "La pobrecita ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "vive"
+                                    },
+                                    " con dos hermanas crueles."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "The poor girl lives with two cruel sisters."
+                                  "content": [
+                                    "The poor girl ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "lives"
+                                    },
+                                    " with two cruel sisters."
+                                  ]
                                 }
                               ]
                             }

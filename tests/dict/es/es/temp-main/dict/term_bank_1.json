@@ -142,7 +142,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "El lugar permanecía incomunicado por la nieve, pero podría ir andando por la senda que serpenteaba junto a un arroyo"
+                                  "content": [
+                                    "El lugar permanecía incomunicado por la ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "nieve"
+                                    },
+                                    ", pero podría ir andando por la senda que serpenteaba junto a un arroyo"
+                                  ]
                                 },
                                 {
                                   "tag": "div",

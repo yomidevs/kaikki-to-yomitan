@@ -11,7 +11,13 @@
               ],
               "examples": [
                 {
-                  "text": "Waiter, please bring me a single malt whiskey."
+                  "text": "Waiter, please bring me a single malt whiskey.",
+                  "bold_text_offsets": [
+                    [
+                      15,
+                      20
+                    ]
+                  ]
                 }
               ]
             },
@@ -22,7 +28,13 @@
               ],
               "examples": [
                 {
-                  "text": "The new company director brought a fresh perspective on sales and marketing."
+                  "text": "The new company director brought a fresh perspective on sales and marketing.",
+                  "bold_text_offsets": [
+                    [
+                      25,
+                      32
+                    ]
+                  ]
                 }
               ]
             },
@@ -32,13 +44,31 @@
               ],
               "examples": [
                 {
-                  "text": "Let's bring our differences to an issue."
+                  "text": "Let's bring our differences to an issue.",
+                  "bold_text_offsets": [
+                    [
+                      6,
+                      11
+                    ]
+                  ]
                 },
                 {
-                  "text": "The controversial TV broadcast brought a storm of complaints."
+                  "text": "The controversial TV broadcast brought a storm of complaints.",
+                  "bold_text_offsets": [
+                    [
+                      31,
+                      38
+                    ]
+                  ]
                 },
                 {
-                  "text": "Seeing her brought the memories flooding back and tears to my eyes."
+                  "text": "Seeing her brought the memories flooding back and tears to my eyes.",
+                  "bold_text_offsets": [
+                    [
+                      11,
+                      18
+                    ]
+                  ]
                 }
               ]
             },
@@ -51,14 +81,26 @@
               "examples": [
                 {
                   "text": "It seems so preposterous a thing[…]that they do not easily bring themselves to it.",
-                  "ref": "1689 (indicated as 1690), [John Locke], chapter 2, in An Essay Concerning Humane Understanding. […], London: […] Eliz[abeth] Holt, for Thomas Basset, […], →OCLC, book I, page 11:"
+                  "ref": "1689 (indicated as 1690), [John Locke], chapter 2, in An Essay Concerning Humane Understanding. […], London: […] Eliz[abeth] Holt, for Thomas Basset, […], →OCLC, book I, page 11:",
+                  "bold_text_offsets": [
+                    [
+                      59,
+                      64
+                    ]
+                  ]
                 }
               ]
             },
             "To produce in exchange; to sell for; to fetch.": {
               "examples": [
                 {
-                  "text": "What does coal bring per ton?"
+                  "text": "What does coal bring per ton?",
+                  "bold_text_offsets": [
+                    [
+                      15,
+                      20
+                    ]
+                  ]
                 }
               ]
             },
@@ -73,7 +115,13 @@
               ],
               "examples": [
                 {
-                  "text": "The closer Jones can really bring it."
+                  "text": "The closer Jones can really bring it.",
+                  "bold_text_offsets": [
+                    [
+                      28,
+                      33
+                    ]
+                  ]
                 }
               ]
             },
@@ -85,7 +133,13 @@
               ],
               "examples": [
                 {
-                  "text": "You want to bring the rook and then start pushing your pawns."
+                  "text": "You want to bring the rook and then start pushing your pawns.",
+                  "bold_text_offsets": [
+                    [
+                      12,
+                      17
+                    ]
+                  ]
                 }
               ]
             }
@@ -110,7 +164,13 @@
               ],
               "examples": [
                 {
-                  "text": "\"The Hay Wain\" is a famous painting by John Constable."
+                  "text": "\"The Hay Wain\" is a famous painting by John Constable.",
+                  "bold_text_offsets": [
+                    [
+                      9,
+                      13
+                    ]
+                  ]
                 }
               ]
             }

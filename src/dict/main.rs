@@ -14,7 +14,7 @@ use crate::{
     },
     lang::{Edition, Lang},
     models::{
-        kaikki::{Example, Form, HeadTemplate, Pos, Sense, Tag, WordEntry},
+        kaikki::{Example, Form, HeadTemplate, Offset, Pos, Sense, Tag, WordEntry},
         yomitan::{
             BacklinkContent, BacklinkContentKind, DetailedDefinition, GenericNode, NTag, Node,
             NodeData, TermBank, TermBankSimplified, YomitanEntry, wrap,
@@ -1632,51 +1632,123 @@ fn structured_tags(tags: &[Tag], common_short_tags_found: &[Tag]) -> Option<Node
 fn structured_examples(target: Lang, examples: &[Example]) -> Node {
     debug_assert!(!examples.is_empty());
 
-    let mut structured_examples_content = wrap(
+    let localized_label = wrap(
         NTag::Summary,
         "summary-entry",
         Node::Text(localize_examples_string(target, examples.len())),
-    )
-    .into_array_node();
-
-    for example in examples {
-        let mut structured_example_content = wrap(
-            NTag::Div,
-            "example-sentence-a",
-            Node::Text(example.text.clone()),
-        )
-        .into_array_node();
-        if !example.translation.is_empty() {
-            structured_example_content.push(wrap(
-                NTag::Div,
-                "example-sentence-b",
-                Node::Text(example.translation.clone()),
-            ));
-        }
-        if !example.reference.is_empty() {
-            let reference = example
-                .reference
-                .strip_suffix(':')
-                .unwrap_or(&example.reference)
-                .to_string();
-            structured_example_content.push(wrap(
-                NTag::Div,
-                "example-sentence-c",
-                Node::Text(reference),
-            ));
-        }
-        structured_examples_content.push(wrap(
-            NTag::Div,
-            "extra-info",
-            wrap(NTag::Div, "example-sentence", structured_example_content),
-        ));
-    }
+    );
 
     wrap(
         NTag::Details,
         "details-entry-examples",
-        structured_examples_content,
+        Node::Array(
+            std::iter::once(localized_label)
+                .chain(examples.iter().map(structured_example))
+                .collect(),
+        ),
     )
+}
+
+// TODO: change a-b-c into a more descriptive name: text/translation/ref
+fn structured_example(example: &Example) -> Node {
+    let mut structured_example_content = wrap(
+        NTag::Div,
+        "example-sentence-a",
+        structured_example_text(&example.text, &example.bold_text_offsets),
+    )
+    .into_array_node();
+
+    if !example.translation.is_empty() {
+        structured_example_content.push(wrap(
+            NTag::Div,
+            "example-sentence-b",
+            structured_example_text(&example.translation, &example.bold_translation_offsets),
+        ));
+    }
+
+    if !example.reference.is_empty() {
+        let reference = example
+            .reference
+            .strip_suffix(':')
+            .unwrap_or(&example.reference)
+            .to_string();
+        structured_example_content.push(wrap(
+            NTag::Div,
+            "example-sentence-c",
+            Node::Text(reference),
+        ));
+    }
+
+    wrap(
+        NTag::Div,
+        "extra-info",
+        wrap(NTag::Div, "example-sentence", structured_example_content),
+    )
+}
+
+/// Wraps in NTag::Span bold ranges if there are any.
+///
+/// Note that wiktextract only extracts bold offsets for Examples.
+fn structured_example_text(text: &str, offsets: &[Offset]) -> Node {
+    if offsets.is_empty() {
+        return Node::Text(text.to_string());
+    }
+
+    let chars: Vec<_> = text.chars().collect();
+    let upto = chars.len();
+
+    let offsets = sanitize_offsets(offsets, upto);
+    if offsets.is_empty() {
+        return Node::Text(text.to_string());
+    }
+
+    let mut content = Node::new_array();
+    let mut last = 0;
+
+    for (start, end) in offsets {
+        // Push what comes before the bold offset
+        if last < start {
+            content.push(Node::Text(chars[last..start].iter().collect()));
+        }
+
+        // Push the bold offset
+        content.push(wrap(
+            NTag::Span,
+            "bold-text",
+            Node::Text(chars[start..end].iter().collect()),
+        ));
+
+        last = end;
+    }
+
+    if last < chars.len() {
+        content.push(Node::Text(chars[last..].iter().collect()));
+    }
+
+    content
+}
+
+/// Returns only valid, non-overlapping offsets within bounds of `upto`.
+///
+/// We ASSUME that offsets are sorted by start. That is, given [O1, O2, ...] with
+/// O1 = (a, b) and O2 = (c, d), we assume a <= c etc.
+///
+/// Merges offsets with a non-trivial intersection. That is, if O1 and O2 overlap, we merge into
+/// O3 = (a, max(b, d)).
+fn sanitize_offsets(offsets: &[Offset], upto: usize) -> Vec<Offset> {
+    let mut sanitized: Vec<Offset> = Vec::new();
+    for &(start, end) in offsets {
+        debug_assert!(start < end);
+        if end > upto {
+            // Out of bound offset: skip
+            continue;
+        }
+        match sanitized.last_mut() {
+            Some(prev) if start < prev.1 => prev.1 = prev.1.max(end),
+            _ => sanitized.push((start, end)),
+        }
+    }
+    sanitized
 }
 
 #[tracing::instrument(skip_all, level = "trace")]
@@ -1707,4 +1779,44 @@ fn to_yomitan_forms(source: Lang, form_map: FormMap) -> Vec<YomitanEntry> {
             ))
         })
         .collect()
+}
+
+#[cfg(test)]
+mod tests {
+    use super::sanitize_offsets;
+
+    #[test]
+    fn offset_base() {
+        assert_eq!(sanitize_offsets(&[], 10), vec![]);
+        assert_eq!(
+            sanitize_offsets(&[(0, 2), (3, 5)], 10),
+            vec![(0, 2), (3, 5)]
+        );
+    }
+
+    #[test]
+    fn offset_out_of_bounds() {
+        assert_eq!(sanitize_offsets(&[(0, 2), (3, 20)], 10), vec![(0, 2)]);
+    }
+
+    #[test]
+    fn offset_overlap() {
+        // 1. b == c, treated as non-overlapping
+        assert_eq!(
+            sanitize_offsets(&[(0, 2), (2, 4)], 10),
+            vec![(0, 2), (2, 4)]
+        );
+
+        // 2. a == c, keep larger
+        assert_eq!(sanitize_offsets(&[(10, 12), (10, 13)], 20), vec![(10, 13)]);
+
+        // 3. b == d, keep larger
+        assert_eq!(sanitize_offsets(&[(10, 12), (11, 12)], 20), vec![(10, 12)]);
+
+        // 4. Inner is smaller - discard it
+        assert_eq!(sanitize_offsets(&[(0, 10), (2, 5)], 20), vec![(0, 10)]);
+
+        // 5. a < c < b < d - merge into (a, d)
+        assert_eq!(sanitize_offsets(&[(0, 5), (3, 8)], 20), vec![(0, 8)]);
+    }
 }

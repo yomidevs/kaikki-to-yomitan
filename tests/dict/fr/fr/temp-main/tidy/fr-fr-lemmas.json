@@ -15,13 +15,31 @@
               ],
               "examples": [
                 {
-                  "text": "Que d’avatars dans la vie politique de cet homme d’État !"
+                  "text": "Que d’avatars dans la vie politique de cet homme d’État !",
+                  "bold_text_offsets": [
+                    [
+                      6,
+                      13
+                    ]
+                  ]
                 },
                 {
-                  "text": "Batman est l’avatar moderne de Zorro."
+                  "text": "Batman est l’avatar moderne de Zorro.",
+                  "bold_text_offsets": [
+                    [
+                      13,
+                      19
+                    ]
+                  ]
                 },
                 {
-                  "text": "L’espéranto est l’avatar moderne du sanskrit."
+                  "text": "L’espéranto est l’avatar moderne du sanskrit.",
+                  "bold_text_offsets": [
+                    [
+                      18,
+                      24
+                    ]
+                  ]
                 }
               ]
             },
@@ -32,7 +50,13 @@
               "examples": [
                 {
                   "text": "Le service social du travail – Avatars d’une fonction, vicissitudes d’un métier",
-                  "ref": "titre d’un livre de François Aballéa et Charlotte Simon, 2004"
+                  "ref": "titre d’un livre de François Aballéa et Charlotte Simon, 2004",
+                  "bold_text_offsets": [
+                    [
+                      31,
+                      38
+                    ]
+                  ]
                 }
               ]
             }
@@ -53,23 +77,53 @@
               "examples": [
                 {
                   "text": "Mangez donc, lui dit la jeune fille en lui servant un morceau de la hure d’un sanglier.",
-                  "ref": "Alexandre Dumas, Othon l’archer, 1839"
+                  "ref": "Alexandre Dumas, Othon l’archer, 1839",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      6
+                    ]
+                  ]
                 },
                 {
                   "text": "Mangez légèrement.",
-                  "ref": "journal Sud-Ouest, édition Charente-Maritime / Charente, 20 août 2022, page 36"
+                  "ref": "journal Sud-Ouest, édition Charente-Maritime / Charente, 20 août 2022, page 36",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      6
+                    ]
+                  ]
                 },
                 {
                   "text": "Il mange lentement, handicapé par une mastication pénible, ne dit pas un mot, rit niaisement de loin en loin.",
-                  "ref": "Victor Méric, Les Compagnons de l’Escopette, Éditions de l’Épi, Paris, 1930, page 213"
+                  "ref": "Victor Méric, Les Compagnons de l’Escopette, Éditions de l’Épi, Paris, 1930, page 213",
+                  "bold_text_offsets": [
+                    [
+                      3,
+                      8
+                    ]
+                  ]
                 },
                 {
                   "text": "J’avais neuf ans et j’attrapais avec mon frère des sauterelles que nous faisions griller dans le jardin pour les manger.",
-                  "ref": "Francis Carco, Maman Petitdoigt, La Revue de Paris, 1920"
+                  "ref": "Francis Carco, Maman Petitdoigt, La Revue de Paris, 1920",
+                  "bold_text_offsets": [
+                    [
+                      113,
+                      119
+                    ]
+                  ]
                 },
                 {
                   "text": "Il mangea quelques mûres qu’il trouva dans les ronces de la lisière, après quoi il chercha à s’orienter.",
-                  "ref": "André Dhôtel, Le Pays où l’on n’arrive jamais, 1955"
+                  "ref": "André Dhôtel, Le Pays où l’on n’arrive jamais, 1955",
+                  "bold_text_offsets": [
+                    [
+                      3,
+                      9
+                    ]
+                  ]
                 }
               ]
             },
@@ -81,7 +135,13 @@
               "examples": [
                 {
                   "text": "Aussi nous ne mangions pas tous les jours parce qu’il fallait d’abord que le père malade ne manquât de rien.",
-                  "ref": "Octave Mirbeau, La Bonne, dans Lettres de ma chaumière, 1885"
+                  "ref": "Octave Mirbeau, La Bonne, dans Lettres de ma chaumière, 1885",
+                  "bold_text_offsets": [
+                    [
+                      14,
+                      22
+                    ]
+                  ]
                 }
               ]
             },
@@ -91,7 +151,17 @@
               ],
               "examples": [
                 {
-                  "text": "En quelques années il a mangé tout son patrimoine. - Il a mangé beaucoup d’argent."
+                  "text": "En quelques années il a mangé tout son patrimoine. - Il a mangé beaucoup d’argent.",
+                  "bold_text_offsets": [
+                    [
+                      22,
+                      29
+                    ],
+                    [
+                      56,
+                      63
+                    ]
+                  ]
                 }
               ]
             },
@@ -101,7 +171,21 @@
               ],
               "examples": [
                 {
-                  "text": "Ce poêle mange bien du charbon. Le soleil mange les couleurs. La rouille mange le fer."
+                  "text": "Ce poêle mange bien du charbon. Le soleil mange les couleurs. La rouille mange le fer.",
+                  "bold_text_offsets": [
+                    [
+                      9,
+                      14
+                    ],
+                    [
+                      42,
+                      47
+                    ],
+                    [
+                      73,
+                      78
+                    ]
+                  ]
                 }
               ]
             },
@@ -112,7 +196,13 @@
               "examples": [
                 {
                   "text": "À l'en croire, il mangeait du prêtre sans remords.",
-                  "ref": "Camille de Cordemoy, Au Chili, 1896"
+                  "ref": "Camille de Cordemoy, Au Chili, 1896",
+                  "bold_text_offsets": [
+                    [
+                      18,
+                      26
+                    ]
+                  ]
                 }
               ]
             },
@@ -123,7 +213,13 @@
               "examples": [
                 {
                   "text": "Un muret éboulé, la rivière, trois planches mangées de mousse qui esquissent un pont, et c’est déjà la forêt.",
-                  "ref": "Florence Aubenas, Dans les Cévennes, sur les traces de la femme des bois, Le Monde. Mis en ligne le 30 avril 2021"
+                  "ref": "Florence Aubenas, Dans les Cévennes, sur les traces de la femme des bois, Le Monde. Mis en ligne le 30 avril 2021",
+                  "bold_text_offsets": [
+                    [
+                      44,
+                      51
+                    ]
+                  ]
                 }
               ]
             },
@@ -150,7 +246,13 @@
               "examples": [
                 {
                   "text": "Heureusement que la pauvre madame n’est plus là pour se faire du mauvais sang, elle se serait mangée…",
-                  "ref": "François Mauriac, Le Mystère Frontenac, 1933, réédition Le Livre de Poche, page 204"
+                  "ref": "François Mauriac, Le Mystère Frontenac, 1933, réédition Le Livre de Poche, page 204",
+                  "bold_text_offsets": [
+                    [
+                      84,
+                      100
+                    ]
+                  ]
                 }
               ]
             },

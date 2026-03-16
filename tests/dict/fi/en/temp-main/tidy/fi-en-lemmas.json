@@ -8,7 +8,19 @@
               "examples": [
                 {
                   "text": "isoympyrä",
-                  "translation": "great circle"
+                  "translation": "great circle",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      3
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      0,
+                      5
+                    ]
+                  ]
                 }
               ]
             },
@@ -16,7 +28,19 @@
               "examples": [
                 {
                   "text": "olet jo iso poika",
-                  "translation": "you're a big boy already"
+                  "translation": "you're a big boy already",
+                  "bold_text_offsets": [
+                    [
+                      8,
+                      11
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      9,
+                      12
+                    ]
+                  ]
                 }
               ]
             },
@@ -24,7 +48,19 @@
               "examples": [
                 {
                   "text": "Iso-Britannia",
-                  "translation": "Great Britain"
+                  "translation": "Great Britain",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      3
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      0,
+                      5
+                    ]
+                  ]
                 }
               ]
             },
@@ -32,11 +68,35 @@
               "examples": [
                 {
                   "text": "isoisä",
-                  "translation": "grandfather"
+                  "translation": "grandfather",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      3
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      0,
+                      5
+                    ]
+                  ]
                 },
                 {
                   "text": "isoäiti",
-                  "translation": "grandmother"
+                  "translation": "grandmother",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      3
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      0,
+                      5
+                    ]
+                  ]
                 }
               ]
             },
@@ -49,7 +109,19 @@
               "examples": [
                 {
                   "text": "iso kirjain",
-                  "translation": "capital letter"
+                  "translation": "capital letter",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      3
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      0,
+                      7
+                    ]
+                  ]
                 }
               ]
             }
@@ -71,7 +143,19 @@
               "examples": [
                 {
                   "text": "ahtaa päähänsä",
-                  "translation": "to cram (information) into one's head, to study hard"
+                  "translation": "to cram (information) into one's head, to study hard",
+                  "bold_text_offsets": [
+                    [
+                      6,
+                      14
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      22,
+                      37
+                    ]
+                  ]
                 }
               ]
             },
@@ -88,7 +172,19 @@
               "examples": [
                 {
                   "text": "hyvällä päällä",
-                  "translation": "in a good mood"
+                  "translation": "in a good mood",
+                  "bold_text_offsets": [
+                    [
+                      8,
+                      14
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      10,
+                      14
+                    ]
+                  ]
                 }
               ]
             }

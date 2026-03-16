@@ -86,7 +86,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Der Rock ist nicht totzukriegen."
+                                  "content": [
+                                    "Der ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Rock"
+                                    },
+                                    " ist nicht totzukriegen."
+                                  ]
                                 }
                               ]
                             }
@@ -211,7 +221,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Sindbad band sich, um seinem Schicksal auf einer abgelegenen Insel zu entkommen, an ein Bein des Vogels Rock."
+                                  "content": [
+                                    "Sindbad band sich, um seinem Schicksal auf einer abgelegenen Insel zu entkommen, an ein Bein des Vogels ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Rock."
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -336,7 +355,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Ich werde das Auto in die Garage schaffen."
+                                  "content": [
+                                    "Ich werde das Auto in die ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Garage"
+                                    },
+                                    " schaffen."
+                                  ]
                                 }
                               ]
                             }
@@ -357,7 +386,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "„Ein Mann steht vor seinem Opel allein in einer Garage.“"
+                                  "content": [
+                                    "„Ein Mann steht vor seinem Opel allein in einer ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Garage"
+                                    },
+                                    ".“"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -385,7 +424,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "„Leo stand schon draußen vor der Garage und blickte ängstlich auf seine Armbanduhr.“"
+                                  "content": [
+                                    "„Leo stand schon draußen vor der ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Garage"
+                                    },
+                                    " und blickte ängstlich auf seine Armbanduhr.“"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -413,7 +462,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "„Als ich zur Garage gehe, sehe ich die Post auf dem Wohnzimmertisch.“"
+                                  "content": [
+                                    "„Als ich zur ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Garage"
+                                    },
+                                    " gehe, sehe ich die Post auf dem Wohnzimmertisch.“"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -441,7 +500,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "„Er ging zur Garage, um nach Guiseppe zu sehen.“"
+                                  "content": [
+                                    "„Er ging zur ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Garage"
+                                    },
+                                    ", um nach Guiseppe zu sehen.“"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -495,7 +564,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "„Ein Mann steht vor seinem Opel allein in einer Garage.“"
+                                  "content": [
+                                    "„Ein Mann steht vor seinem Opel allein in einer ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Garage"
+                                    },
+                                    ".“"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -523,7 +602,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "„Leo stand schon draußen vor der Garage und blickte ängstlich auf seine Armbanduhr.“"
+                                  "content": [
+                                    "„Leo stand schon draußen vor der ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Garage"
+                                    },
+                                    " und blickte ängstlich auf seine Armbanduhr.“"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -551,7 +640,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "„Als ich zur Garage gehe, sehe ich die Post auf dem Wohnzimmertisch.“"
+                                  "content": [
+                                    "„Als ich zur ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Garage"
+                                    },
+                                    " gehe, sehe ich die Post auf dem Wohnzimmertisch.“"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -579,7 +678,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "„Er ging zur Garage, um nach Guiseppe zu sehen.“"
+                                  "content": [
+                                    "„Er ging zur ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Garage"
+                                    },
+                                    ", um nach Guiseppe zu sehen.“"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -661,7 +770,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "„Selbstverständlich werden in der Garage auch künftig Fremdmarken repariert.“"
+                                  "content": [
+                                    "„Selbstverständlich werden in der ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Garage"
+                                    },
+                                    " auch künftig Fremdmarken repariert.“"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -793,7 +912,24 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Er macht den Fernseher aus."
+                                  "content": [
+                                    "Er ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "macht"
+                                    },
+                                    " den Fernseher ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "aus."
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -814,7 +950,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Hast du die Heizung ausgemacht?"
+                                  "content": [
+                                    "Hast du die Heizung ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "ausgemacht?"
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -835,7 +980,24 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Ich mache die Kerze aus."
+                                  "content": [
+                                    "Ich ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "mache"
+                                    },
+                                    " die Kerze ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "aus."
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -882,7 +1044,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Es war ausgemacht, im Anzug zu erscheinen."
+                                  "content": [
+                                    "Es war ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "ausgemacht,"
+                                    },
+                                    " im Anzug zu erscheinen."
+                                  ]
                                 }
                               ]
                             }
@@ -903,7 +1075,25 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "„Sie war Trudis Vorschlag gefolgt und hatte einen Termin beim Friseur Riss ausgemacht.“"
+                                  "content": [
+                                    "„Sie war Trudis Vorschlag gefolgt und ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "hatte"
+                                    },
+                                    " einen Termin beim Friseur Riss ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "ausgemacht."
+                                    },
+                                    "“"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -957,7 +1147,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Wenn man mit einem Buben ausmacht, sagt man Maumau."
+                                  "content": [
+                                    "Wenn man mit einem Buben ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "ausmacht,"
+                                    },
+                                    " sagt man Maumau."
+                                  ]
                                 }
                               ]
                             }
@@ -978,7 +1178,24 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Sie machten den Streit schließlich doch vor Gericht aus."
+                                  "content": [
+                                    "Sie ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "machten"
+                                    },
+                                    " den Streit schließlich doch vor Gericht ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "aus."
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -1025,7 +1242,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Was unsere Freundschaft ausmachte? Dass wir immer für einander da waren!"
+                                  "content": [
+                                    "Was unsere Freundschaft ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "ausmachte?"
+                                    },
+                                    " Dass wir immer für einander da waren!"
+                                  ]
                                 }
                               ]
                             }
@@ -1072,7 +1299,24 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Kinder machen nur einen geringen Anteil der deutschen Bevölkerung aus."
+                                  "content": [
+                                    "Kinder ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "machen"
+                                    },
+                                    " nur einen geringen Anteil der deutschen Bevölkerung ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "aus."
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -1119,7 +1363,25 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Es macht mir überhaupt nichts aus, dass es heute regnet."
+                                  "content": [
+                                    "Es ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "macht"
+                                    },
+                                    " mir überhaupt nichts ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "aus,"
+                                    },
+                                    " dass es heute regnet."
+                                  ]
                                 }
                               ]
                             }
@@ -1166,7 +1428,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Am anderen Ufer konnte der Forscher eine Gruppe Krokodile ausmachen."
+                                  "content": [
+                                    "Am anderen Ufer konnte der Forscher eine Gruppe Krokodile ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "ausmachen."
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -1213,7 +1484,24 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Die Bauern machten nun wie jedes Jahr die Kartoffeln aus."
+                                  "content": [
+                                    "Die Bauern ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "machten"
+                                    },
+                                    " nun wie jedes Jahr die Kartoffeln ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "aus."
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -1234,7 +1522,33 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "„Beim nächsten Haus war ein Gemüsegarten. Ein junges Mädchen machte Unkraut aus, …“"
+                                  "content": [
+                                    "„Beim nächsten H",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "aus"
+                                    },
+                                    " war ein Gemüsegarten. Ein junges Mädchen ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "machte"
+                                    },
+                                    " Unkraut ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "aus"
+                                    },
+                                    ", …“"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -1288,7 +1602,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Das muss er mit seinem Gewissen ausmachen."
+                                  "content": [
+                                    "Das muss er mit seinem Gewissen ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "ausmachen"
+                                    },
+                                    "."
+                                  ]
                                 }
                               ]
                             }
@@ -1413,7 +1737,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Anna und Peter haben sieben Kinder."
+                                  "content": [
+                                    "Anna und ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Peter"
+                                    },
+                                    " haben sieben Kinder."
+                                  ]
                                 }
                               ]
                             }
@@ -1434,7 +1768,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Peter spielt gern."
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Peter"
+                                    },
+                                    " spielt gern."
+                                  ]
                                 }
                               ]
                             }
@@ -1455,7 +1798,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Peter Müller wollte uns kein Interview geben."
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Peter"
+                                    },
+                                    " Müller wollte uns kein Interview geben."
+                                  ]
                                 }
                               ]
                             }
@@ -1476,7 +1828,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Kennen sie den Vornamen Peter?"
+                                  "content": [
+                                    "Kennen sie den Vornamen ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Peter"
+                                    },
+                                    "?"
+                                  ]
                                 }
                               ]
                             }
@@ -1601,7 +1963,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "„Was haben wir nun?“"
+                                  "content": [
+                                    "„Was haben wir ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "nun?"
+                                    },
+                                    "“"
+                                  ]
                                 }
                               ]
                             }
@@ -1622,7 +1994,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Nun ziehen Sie die Schraube fest."
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Nun"
+                                    },
+                                    " ziehen Sie die Schraube fest."
+                                  ]
                                 }
                               ]
                             }
@@ -1669,7 +2050,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "„Was wird nun geschehen?“"
+                                  "content": [
+                                    "„Was wird ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "nun"
+                                    },
+                                    " geschehen?“"
+                                  ]
                                 }
                               ]
                             }
@@ -1716,7 +2107,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Das ist nun geschehen."
+                                  "content": [
+                                    "Das ist ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "nun"
+                                    },
+                                    " geschehen."
+                                  ]
                                 }
                               ]
                             }
@@ -1774,7 +2175,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Nun… es ist wahr."
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Nun"
+                                    },
+                                    "… es ist wahr."
+                                  ]
                                 }
                               ]
                             }
@@ -1821,7 +2231,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "Nun, was ist deine Entscheidung?"
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "Nun"
+                                    },
+                                    ", was ist deine Entscheidung?"
+                                  ]
                                 }
                               ]
                             }

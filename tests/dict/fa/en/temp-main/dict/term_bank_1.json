@@ -108,14 +108,34 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "روز چرا چو آید کاعمال من بپرسد\nگرید ملک بصد درد از سوزهای هویم"
+                                  "content": [
+                                    "روز چرا چو آید کاعمال من بپرسد\nگرید ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "ملک"
+                                    },
+                                    " بصد درد از سوزهای هویم"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
                                   "data": {
                                     "content": "example-sentence-b"
                                   },
-                                  "content": "When the Day [of Judgment] when he inquires my deeds arrives, why\nDoes the angel weep from my laments' anguish with a hundredfold pain?"
+                                  "content": [
+                                    "When the Day [of Judgment] when he inquires my deeds arrives, why\nDoes the ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "angel"
+                                    },
+                                    " weep from my laments' anguish with a hundredfold pain?"
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -269,7 +289,17 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "بَرادَرِ شُوْهَرِش فارْسی بَلَدِه."
+                                  "content": [
+                                    "بَرادَرِ شُوْهَرِش ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "فارْسی"
+                                    },
+                                    " بَلَدِه."
+                                  ]
                                 },
                                 {
                                   "tag": "div",
@@ -334,7 +364,16 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": "فارْسی هَسْتیم."
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "فارْسی"
+                                    },
+                                    " هَسْتیم."
+                                  ]
                                 },
                                 {
                                   "tag": "div",

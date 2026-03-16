@@ -36,7 +36,19 @@
               "examples": [
                 {
                   "text": "Dīmīcantī dē fāmā dēesse.",
-                  "translation": "To abandon one whose reputation is attacked."
+                  "translation": "To abandon one whose reputation is attacked.",
+                  "bold_text_offsets": [
+                    [
+                      13,
+                      17
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      21,
+                      31
+                    ]
+                  ]
                 },
                 {
                   "text": "Fāma tamen clāra est; et adhūc sine crīmine vīxī.",
@@ -110,15 +122,51 @@
               "examples": [
                 {
                   "text": "Librōs lege.",
-                  "translation": "Read books."
+                  "translation": "Read books.",
+                  "bold_text_offsets": [
+                    [
+                      7,
+                      11
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      0,
+                      4
+                    ]
+                  ]
                 },
                 {
                   "text": "Lēgistīne hunc librum?",
-                  "translation": "Have you read this book?"
+                  "translation": "Have you read this book?",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      7
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      9,
+                      13
+                    ]
+                  ]
                 },
                 {
                   "text": "Graecum est; nōn legitur.",
-                  "translation": "It's Greek; it cannot be read."
+                  "translation": "It's Greek; it cannot be read.",
+                  "bold_text_offsets": [
+                    [
+                      17,
+                      24
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      25,
+                      29
+                    ]
+                  ]
                 }
               ]
             },
@@ -276,11 +324,35 @@
               "examples": [
                 {
                   "text": "Deō domuīque",
-                  "translation": "For God and for home (motto of Methodist Ladies' College, Melbourne)"
+                  "translation": "For God and for home (motto of Methodist Ladies' College, Melbourne)",
+                  "bold_text_offsets": [
+                    [
+                      4,
+                      9
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      16,
+                      20
+                    ]
+                  ]
                 },
                 {
                   "text": "Stet fortūna domūs",
-                  "translation": "Let the good fortune of the house stand (motto of Harrow School, England)"
+                  "translation": "Let the good fortune of the house stand (motto of Harrow School, England)",
+                  "bold_text_offsets": [
+                    [
+                      13,
+                      18
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      28,
+                      33
+                    ]
+                  ]
                 },
                 {
                   "text": "nox erat et tōta lūmina nūlla domō",
@@ -357,15 +429,51 @@
               "examples": [
                 {
                   "text": "domum trahere",
-                  "translation": "to drag into one's pocket"
+                  "translation": "to drag into one's pocket",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      5
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      8,
+                      25
+                    ]
+                  ]
                 },
                 {
                   "text": "Domī versūra fit.",
-                  "translation": "One is one's own creditor. (proverb)"
+                  "translation": "One is one's own creditor. (proverb)",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      4
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      7,
+                      16
+                    ]
+                  ]
                 },
                 {
                   "text": "domō afferre",
-                  "translation": "to conceive on one's own"
+                  "translation": "to conceive on one's own",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      4
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      12,
+                      24
+                    ]
+                  ]
                 },
                 {
                   "text": "id nunc experior domō",
@@ -385,7 +493,35 @@
               "examples": [
                 {
                   "text": "bellī domīque; bellō domīque; vel bellī vel domī; domī bellōque; domī mīlitiaeque",
-                  "translation": "in war and peace"
+                  "translation": "in war and peace",
+                  "bold_text_offsets": [
+                    [
+                      6,
+                      10
+                    ],
+                    [
+                      21,
+                      25
+                    ],
+                    [
+                      44,
+                      48
+                    ],
+                    [
+                      50,
+                      54
+                    ],
+                    [
+                      65,
+                      69
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      11,
+                      16
+                    ]
+                  ]
                 },
                 {
                   "text": "ut non quietior populus domi esset quam militiae",
@@ -416,7 +552,19 @@
                 {
                   "text": "Nihil agis, nihil moliris, nihil cogitas quod non ego non modo audiam sed etiam videam planeque sentiam.",
                   "translation": "You do nothing, you plan nothing, you think of nothing which I not only do not hear, but which I do not see and know every particular of.",
-                  "ref": "63 BCE, Cicero, Catiline Orations:"
+                  "ref": "63 BCE, Cicero, Catiline Orations:",
+                  "bold_text_offsets": [
+                    [
+                      33,
+                      40
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      38,
+                      43
+                    ]
+                  ]
                 }
               ]
             },
@@ -513,7 +661,23 @@
               "examples": [
                 {
                   "text": "Gallī in Rōmānōs incurrunt.",
-                  "translation": "The Gauls are rushing against the Romans."
+                  "translation": "The Gauls are rushing against the Romans.",
+                  "bold_text_offsets": [
+                    [
+                      6,
+                      8
+                    ],
+                    [
+                      17,
+                      19
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      22,
+                      29
+                    ]
+                  ]
                 },
                 {
                   "text": "Scelera in se fratris",
@@ -554,6 +718,40 @@
           "head_info_text": "in (+ ablative)",
           "wlink": "https://en.wiktionary.org/wiki/in#Latin",
           "klink": "https://kaikki.org/dictionary/Latin/meaning/i/in/in.html"
+        }
+      ]
+    }
+  },
+  "lente": {
+    "lentē": {
+      "adv": [
+        {
+          "gloss_tree": {
+            "slowly": {
+              "examples": [
+                {
+                  "text": "Marcus ad arborem lentē ambulat.",
+                  "translation": "Marcus walks slowly to the tree.",
+                  "bold_text_offsets": [
+                    [
+                      18,
+                      23
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      13,
+                      19
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "etymology_text": "From lentus (“slow”) + -ē.",
+          "head_info_text": "lentē (comparative lentius, superlative lentissimē)",
+          "wlink": "https://en.wiktionary.org/wiki/lente#Latin",
+          "klink": "https://kaikki.org/dictionary/Latin/meaning/l/le/lente.html"
         }
       ]
     }
