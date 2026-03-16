@@ -126,7 +126,7 @@ For a list of supported languages by Yomitan, see [here](https://yomitan.wiki/su
 
 `Simple English` is made from the [Simple English Wiktionary](https://simple.wiktionary.org/wiki/Main_Page), and contains only English glosses for English words. It is referred to by the made-up iso `simple`, and can only be used as a monolingual main or IPA dictionary.
 
-!!! tip "Missing a language? Please **open an [issue](https://github.com/daxida/wty/issues/new)**."
+!!! tip "Missing a language? Please **open an [issue](https://github.com/yomidevs/wiktionary-to-yomitan/issues/new)**."
 
 ---
 
