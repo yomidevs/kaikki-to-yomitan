@@ -195,5 +195,76 @@
         }
       ]
     }
+  },
+  "水流": {
+    "水流": {
+      "name": [
+        {
+          "gloss_tree": {
+            "地名、又はその一部。": {
+              "examples": [
+                {
+                  "text": "川水流(かわずる)、下水流(しもずる)",
+                  "bold_text_offsets": [
+                    [
+                      1,
+                      3
+                    ],
+                    [
+                      6,
+                      7
+                    ],
+                    [
+                      6,
+                      8
+                    ],
+                    [
+                      11,
+                      13
+                    ],
+                    [
+                      16,
+                      17
+                    ],
+                    [
+                      16,
+                      18
+                    ]
+                  ]
+                }
+              ]
+            },
+            "姓、又はその一部。": {
+              "examples": [
+                {
+                  "text": "水流雄一朗(つる ゆういちろう)、西水流優一",
+                  "ref": "（にしずる ゆういち)",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ],
+                    [
+                      6,
+                      8
+                    ],
+                    [
+                      18,
+                      20
+                    ],
+                    [
+                      25,
+                      27
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "wlink": "https://ja.wiktionary.org/wiki/水流#Japanese",
+          "klink": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/水/水流/水流.html"
+        }
+      ]
+    }
   }
 }
