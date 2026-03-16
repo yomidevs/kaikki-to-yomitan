@@ -4,7 +4,7 @@ For a list of **targets** supported by the English edition, see [here](https://k
 
 For a list of supported languages by Yomitan, see [here](https://yomitan.wiki/supported-languages/). If it is outdated, refer to [here](https://raw.githubusercontent.com/yomidevs/yomitan/master/ext/js/language/language-descriptors.js).
 
-`Simple English` is made from the [Simple English Wiktionary](https://simple.wiktionary.org/wiki/Main_Page), and contains only English glosses for English words. It is referred to by the made-up iso `simple`, and can only be used as a monolingual main dictionary.
+`Simple English` is made from the [Simple English Wiktionary](https://simple.wiktionary.org/wiki/Main_Page), and contains only English glosses for English words. It is referred to by the made-up iso `simple`, and can only be used as a monolingual main or IPA dictionary.
 
 !!! tip "Missing a language? Please **open an [issue](https://github.com/daxida/wty/issues/new)**."
 

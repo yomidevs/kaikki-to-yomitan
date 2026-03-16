@@ -416,7 +416,7 @@ fn make_dict<D: Dictionary + EditionFrom>(dict: D, raw_args: D::A) -> Result<()>
         let mut stmt = db
             .conn
             .prepare("SELECT entry FROM wiktextract WHERE lang = ?")?;
-        let mut rows = stmt.query([other.as_ref()])?;
+        let mut rows = stmt.query([other.iso()])?;
 
         while let Some(row) = rows.next()? {
             let blob: &[u8] = row.get_ref(0)?.as_blob()?;

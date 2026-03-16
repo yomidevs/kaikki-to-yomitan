@@ -155,6 +155,9 @@ fn snapshot() {
             if Lang::from(source) == *possible_target {
                 continue;
             }
+            if source == Edition::Simple || *possible_target == Lang::Simple {
+                continue;
+            }
             let args = fixture_glossary_args(source, *possible_target, &fixture_dir);
             make_dict(DGlossary, args).unwrap();
         }

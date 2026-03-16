@@ -30,7 +30,7 @@ impl Dictionary for DGlossary {
     type A = GlossaryArgs;
 
     fn keep_if(&self, source: Lang, entry: &WordEntry) -> bool {
-        entry.lang_code == source.as_ref()
+        entry.lang_code == source.iso()
     }
 
     fn process(&self, langs: Langs, entry: &WordEntry, irs: &mut Self::I) {
@@ -83,7 +83,7 @@ impl Dictionary for DIpa {
     type A = IpaArgs;
 
     fn keep_if(&self, source: Lang, entry: &WordEntry) -> bool {
-        entry.lang_code == source.as_ref()
+        entry.lang_code == source.iso()
     }
 
     fn supports_probe(&self) -> bool {
@@ -104,7 +104,7 @@ impl Dictionary for DIpaMerged {
     type A = IpaMergedArgs;
 
     fn keep_if(&self, source: Lang, entry: &WordEntry) -> bool {
-        entry.lang_code == source.as_ref()
+        entry.lang_code == source.iso()
     }
 
     fn process(&self, langs: Langs, entry: &WordEntry, irs: &mut Self::I) {
@@ -127,7 +127,7 @@ impl Dictionary for DIpaMerged {
 fn process_glossary(source: Edition, target: Lang, entry: &WordEntry, irs: &mut Vec<YomitanEntry>) {
     let mut translations: Map<&str, Vec<String>> = Map::default();
     for translation in entry.non_trivial_translations() {
-        if translation.lang_code == target.as_ref() {
+        if translation.lang_code == target.iso() {
             translations
                 .entry(&translation.sense)
                 .or_default()
@@ -189,7 +189,7 @@ fn process_glossary_extended(
     let mut translations: Map<&str, (Vec<&str>, Vec<&str>)> = Map::default();
 
     for translation in entry.non_trivial_translations() {
-        if translation.lang_code == target.as_ref() {
+        if translation.lang_code == target.iso() {
             translations
                 .entry(&translation.sense)
                 .or_default()
@@ -197,7 +197,7 @@ fn process_glossary_extended(
                 .push(&translation.word);
         }
 
-        if translation.lang_code == source.as_ref() {
+        if translation.lang_code == source.iso() {
             translations
                 .entry(&translation.sense)
                 .or_default()

@@ -232,6 +232,16 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
     w(f"{idt}}}\n")
     w("}\n\n")
 
+    # Lang: iso - to separate lang_code filtering from json path fetching logic
+    w("impl Lang {\n")
+    w(f"{idt}pub fn iso(&self) -> &str {{\n")
+    w(f"{idt * 2}match self {{\n")
+    w(f'{idt * 3}Self::Simple => "en",\n')
+    w(f"{idt * 3}_ => self.as_ref(),\n")
+    w(f"{idt * 2}}}\n")
+    w(f"{idt}}}\n")
+    w("}\n\n")
+
     # Lang: Display
     w("impl Display for Lang {\n")
     w(f"{idt}fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {{\n")
@@ -348,6 +358,16 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
     for lang in langs:
         if lang.has_edition:
             w(f'{idt * 3}Self::{lang.iso.title()} => "{lang.iso.lower()}",\n')
+    w(f"{idt * 2}}}\n")
+    w(f"{idt}}}\n")
+    w("}\n\n")
+
+    # Edition: iso - to separate lang_code filtering from json path fetching logic
+    w("impl Edition {\n")
+    w(f"{idt}pub fn iso(&self) -> &str {{\n")
+    w(f"{idt * 2}match self {{\n")
+    w(f'{idt * 3}Self::Simple => "en",\n')
+    w(f"{idt * 3}_ => self.as_ref(),\n")
     w(f"{idt * 2}}}\n")
     w(f"{idt}}}\n")
     w("}\n\n")

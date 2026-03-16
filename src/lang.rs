@@ -594,6 +594,15 @@ impl AsRef<str> for Lang {
     }
 }
 
+impl Lang {
+    pub fn iso(&self) -> &str {
+        match self {
+            Self::Simple => "en",
+            _ => self.as_ref(),
+        }
+    }
+}
+
 impl Display for Lang {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         f.write_str(self.as_ref())
@@ -789,6 +798,15 @@ impl AsRef<str> for Edition {
             Self::Th => "th",
             Self::Tr => "tr",
             Self::Vi => "vi",
+        }
+    }
+}
+
+impl Edition {
+    pub fn iso(&self) -> &str {
+        match self {
+            Self::Simple => "en",
+            _ => self.as_ref(),
         }
     }
 }

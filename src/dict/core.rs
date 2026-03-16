@@ -273,7 +273,7 @@ pub fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
             if dict.supports_probe() {
                 let probe: LangCodeProbe = serde_json::from_slice(&line)
                     .with_context(|| "Error decoding JSON @ make_dict")?;
-                if source_pm.as_ref() != probe.lang_code.as_ref() {
+                if probe.lang_code.as_ref() != source_pm.iso() {
                     continue;
                 }
             }
@@ -282,6 +282,10 @@ pub fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
                 serde_json::from_slice(&line).with_context(|| "Error decoding JSON @ make_dict")?;
 
             if rejected(&entry, opts) {
+                continue;
+            }
+
+            if !dict.keep_if(source_pm, &entry) {
                 continue;
             }
 
@@ -296,10 +300,8 @@ pub fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
                 target: target_pm,
             };
 
-            if dict.keep_if(langs.source, &entry) {
-                dict.preprocess(langs, &mut entry, opts, &mut irs);
-                dict.process(langs, &entry, &mut irs);
-            }
+            dict.preprocess(langs, &mut entry, opts, &mut irs);
+            dict.process(langs, &entry, &mut irs);
         }
 
         if !opts.quiet {

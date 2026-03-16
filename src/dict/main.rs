@@ -280,7 +280,7 @@ impl Dictionary for DMain {
     type A = MainArgs;
 
     fn keep_if(&self, source: Lang, entry: &WordEntry) -> bool {
-        entry.lang_code == source.as_ref()
+        entry.lang_code == source.iso()
     }
 
     fn supports_probe(&self) -> bool {
