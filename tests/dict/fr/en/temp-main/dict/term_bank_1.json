@@ -1832,9 +1832,7 @@
                                   "data": {
                                     "content": "example-sentence-a"
                                   },
-                                  "content": [
-                                    "il prend [quelque chose] à [quelqu'un]"
-                                  ]
+                                  "content": "il prend [quelque chose] à [quelqu'un]"
                                 },
                                 {
                                   "tag": "div",

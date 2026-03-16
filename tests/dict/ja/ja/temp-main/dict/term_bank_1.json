@@ -894,13 +894,6 @@
                                       "data": {
                                         "content": "bold-text"
                                       },
-                                      "content": "ず"
-                                    },
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
                                       "content": "ずる"
                                     },
                                     ")、下",
@@ -912,13 +905,6 @@
                                       "content": "水流"
                                     },
                                     "(しも",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "ず"
-                                    },
                                     {
                                       "tag": "span",
                                       "data": {
