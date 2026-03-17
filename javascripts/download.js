@@ -220,7 +220,7 @@ function setupRow(row, metadata) {
     update();
 }
 
-const metadataPromise = fetch("/release_metadata.json")
+const metadataPromise = fetch("release_metadata.json")
     .then(res => res.json())
     .then(json => json["dicts"]);
 
