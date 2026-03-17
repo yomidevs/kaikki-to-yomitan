@@ -11,16 +11,16 @@ use anyhow::Result;
 use rayon::ThreadPoolBuilder;
 use rayon::prelude::*;
 
-use crate::dict::release::index::extract_indexes;
 use crate::{
     cli::{
         DictName, GlossaryArgs, GlossaryExtendedArgs, GlossaryExtendedLangs, GlossaryLangs,
         IpaArgs, IpaMergedArgs, IpaMergedLangs, MainArgs, MainLangs, Options, ReleaseArgs,
     },
-    dict::release::db::WiktextractDb,
     dict::{
         DGlossary, DGlossaryExtended, DIpa, DIpaMerged, DMain, Dictionary, Intermediate, Langs,
-        find_or_download_jsonl, iter_datasets, writer::write_yomitan,
+        find_or_download_jsonl, iter_datasets,
+        release::{db::WiktextractDb, index::extract_indexes, metadata::write_dict_metadata},
+        writer::write_yomitan,
     },
     lang::{Edition, EditionSpec, Lang},
     path::PathManager,
@@ -71,6 +71,10 @@ pub fn release(rargs: ReleaseArgs) -> Result<()> {
     println!("Finished dictionaries in {elapsed:.2?}");
 
     extract_indexes(&rargs)?;
+
+    write_dict_metadata(&rargs.root_dir)?;
+
+    // TODO: move things around to comply with python publish logic
 
     Ok(())
 }
@@ -240,9 +244,9 @@ fn release_glossary(rargs: &ReleaseArgs, edition: Edition) {
         };
 
         match make_dict(DGlossary, args) {
-            // Order may be wrong
-            Ok(()) => pp("gloss", *target, Some(edition.into()), start),
-            Err(err) => tracing::error!("[gloss-{target}-{edition}] ERROR: {err:?}"),
+            // Reverse order of main/ipa
+            Ok(()) => pp("gloss", edition.into(), Some(*target), start),
+            Err(err) => tracing::error!("[gloss-{edition}-{target}] ERROR: {err:?}"),
         }
     });
 }
@@ -279,7 +283,7 @@ fn release_glossary_extended(source: Lang) {
     });
 }
 
-fn make_dict<D: Dictionary + EditionFrom>(dict: D, raw_args: D::A) -> Result<()> {
+fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
     let pm: &PathManager = &raw_args.try_into()?;
     let (_, source_pm, target_pm) = pm.langs();
     let opts = &pm.opts;
@@ -299,17 +303,10 @@ fn make_dict<D: Dictionary + EditionFrom>(dict: D, raw_args: D::A) -> Result<()>
             target: target_pm,
         };
 
-        let other = match dict.edition_is() {
-            EditionIs::Target => source_pm,
-            EditionIs::Source => target_pm,
-            EditionIs::All => target_pm,
-        };
-        tracing::trace!("Opened db for {edition} edition, selecting lang {other}...");
-
         let mut stmt = db
             .conn
             .prepare("SELECT entry FROM wiktextract WHERE lang = ?")?;
-        let mut rows = stmt.query([other.iso()])?;
+        let mut rows = stmt.query([source_pm.iso()])?;
 
         while let Some(row) = rows.next()? {
             let blob: &[u8] = row.get_ref(0)?.as_blob()?;
@@ -340,45 +337,4 @@ fn make_dict<D: Dictionary + EditionFrom>(dict: D, raw_args: D::A) -> Result<()>
     }
 
     Ok(())
-}
-
-enum EditionIs {
-    Target,
-    Source,
-    All,
-}
-
-trait EditionFrom {
-    fn edition_is(&self) -> EditionIs;
-}
-
-impl EditionFrom for DMain {
-    fn edition_is(&self) -> EditionIs {
-        EditionIs::Target
-    }
-}
-
-impl EditionFrom for DIpa {
-    fn edition_is(&self) -> EditionIs {
-        EditionIs::Target
-    }
-}
-
-impl EditionFrom for DGlossary {
-    fn edition_is(&self) -> EditionIs {
-        EditionIs::Source
-    }
-}
-
-impl EditionFrom for DIpaMerged {
-    fn edition_is(&self) -> EditionIs {
-        // Does not really matter since for this dict source == target
-        EditionIs::Source
-    }
-}
-
-impl EditionFrom for DGlossaryExtended {
-    fn edition_is(&self) -> EditionIs {
-        EditionIs::All
-    }
 }
