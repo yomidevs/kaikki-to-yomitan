@@ -104,7 +104,7 @@ def generate_downloads_page(all_langs: list[Lang], editions: list[Lang]) -> str:
   </tbody>
 </table>
 
-!!! warning "If you get an "Entry not found" error, there was not enough data to create the dictionary."
+!!! warning "If you get an "Entry not found" error, please **open an [issue](https://github.com/yomidevs/wiktionary-to-yomitan/issues/new)**."
 
 !!! tip "You can import a dictionary directly to Yomitan by pasting the URL into "Import from URLs""
 
