@@ -610,7 +610,7 @@ def build_release(args: Args) -> None:
 
 def parse_args() -> tuple[str, Args]:
     parser = argparse.ArgumentParser()
-    parser.add_argument("command", choices=["build", "publish", "index"])
+    parser.add_argument("command", choices=["build", "publish"])
     parser.add_argument("-v", "--verbose", action="count", default=0)
     parser.add_argument("-n", "--dry-run", action="store_true")
     parser.add_argument("-j", "--jobs", type=int, default=8)
