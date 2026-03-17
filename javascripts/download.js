@@ -221,7 +221,10 @@ function setupRow(row, metadata) {
 }
 
 // Mojo so that fetching works both locally and in a project repo
-const base = document.querySelector('base')?.href || './';
+// There MUST be a better way to do this...
+const REPO_NAME = "wiktionary-to-yomitan";
+const BRANCH = "gh-pages"; // branch that serves the site
+const base = document.querySelector('base')?.href || `https://yomidevs.github.io/${REPO_NAME}/`;
 const metadataPromise = fetch(base + "release_metadata.json")
     .then(res => res.json())
     .then(json => json["dicts"]);
