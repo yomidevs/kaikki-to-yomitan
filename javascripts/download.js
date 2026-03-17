@@ -41,8 +41,10 @@ function availableSources(metadata, type, target) {
 
 function filterDropdown(box, allowed) {
     const set = new Set(allowed);
+    // We set matchesFilter and read matchesSearch from setupCombobox
     box.querySelectorAll("div[data-value]").forEach(div => {
-        div.style.display = set.has(div.dataset.value) ? "" : "none";
+        div.dataset.matchesFilter = set.has(div.dataset.value) ? "1" : "0";
+        div.style.display = (div.dataset.matchesFilter === "1" && div.dataset.matchesSearch !== "0") ? "" : "none";
     });
 }
 
@@ -72,21 +74,10 @@ function buildUrl(type, source, target) {
 // Replaces <option> tags with clickable <div>s and wires up filtering on input.
 function setupCombobox(box) {
     if (!box) return;
-    const search = box.querySelector(
-        "input[type=text], input:not([type=hidden])",
-    );
+    const search = box.querySelector("input:not([type=hidden])");
     const dropdown = box.querySelector(".dl-source-dropdown, .dl-target-dropdown");
     const hidden = box.querySelector("input[type=hidden]");
     const items = Array.from(dropdown.querySelectorAll("option"));
-
-    function clearSelection() {
-        hidden.value = "";
-        // Reset dropdown (show everything again)
-        dropdown.querySelectorAll("div").forEach(div => {
-            div.style.display = "";
-        });
-        hidden.dispatchEvent(new Event("change", { bubbles: true }));
-    }
 
     // Render items as divs for clicking
     dropdown.innerHTML = "";
@@ -104,6 +95,11 @@ function setupCombobox(box) {
         dropdown.appendChild(div);
     });
 
+    function clearSelection() {
+        hidden.value = "";
+        hidden.dispatchEvent(new Event("change", { bubbles: true }));
+    }
+
     search.addEventListener("focus", () => (dropdown.style.display = "block"));
     search.addEventListener("blur", () =>
         setTimeout(() => (dropdown.style.display = "none"), 150),
@@ -112,10 +108,10 @@ function setupCombobox(box) {
         const q = search.value.toLowerCase();
         dropdown.style.display = "block";
 
+        // We set matchesSearch and read matchesFilter from filterDropdown
         dropdown.querySelectorAll("div").forEach((div) => {
-            div.style.display = div.textContent.toLowerCase().includes(q)
-                ? ""
-                : "none";
+            div.dataset.matchesSearch = div.textContent.toLowerCase().includes(q) ? "1" : "0";
+            div.style.display = (div.dataset.matchesFilter !== "0" && div.dataset.matchesSearch === "1") ? "" : "none";
         });
 
         // Clear selection if user edits away from selected label
@@ -123,32 +119,25 @@ function setupCombobox(box) {
             clearSelection();
         }
 
-        if (!q) {
-            clearSelection();
-        }
+        if (!q) clearSelection();
     });
 
     // Complete with first match when clicking the "Enter" key
     search.addEventListener("keydown", (e) => {
-        if (e.key === "Enter") {
-            e.preventDefault();
+        if (e.key !== "Enter") return;
+        e.preventDefault();
 
-            const firstVisible = Array.from(
-                dropdown.querySelectorAll("div")
-            ).find(div => div.style.display !== "none");
+        const firstVisible = Array.from(
+            dropdown.querySelectorAll("div")
+        ).find(div => div.style.display !== "none");
+        if (!firstVisible) return;
 
-            if (firstVisible) {
-                search.value = firstVisible.textContent;
-                hidden.value = firstVisible.dataset.value;
-                dropdown.style.display = "none";
-
-                hidden.dispatchEvent(new Event("change", { bubbles: true }));
-            } 
-        }
+        search.value = firstVisible.textContent;
+        hidden.value = firstVisible.dataset.value;
+        dropdown.style.display = "none";
+        hidden.dispatchEvent(new Event("change", { bubbles: true }));
     });
 }
-
-
 
 // Wires up a table row: initialises its comboboxes, listens for selections,
 // and enables the download / copy-URL buttons when both languages are chosen.
@@ -229,7 +218,7 @@ function setupRow(row, metadata) {
 const REPO_NAME = "wiktionary-to-yomitan";
 const BRANCH = "gh-pages"; // branch that serves the site
 const base = document.querySelector('base')?.href || `https://yomidevs.github.io/${REPO_NAME}/`;
-const metadataPromise = fetch(base + "release_metadata.json")
+const metadataPromise = fetch(`${base}release_metadata.json`)
     .then(res => res.json())
     .then(json => json["dicts"]);
 
