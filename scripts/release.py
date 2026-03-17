@@ -227,14 +227,17 @@ def upload_to_huggingface() -> None:
         )
         print(f"Uploaded README @ {folder_in_repo or 'root'}")
 
-        api.upload_file(
-            path_or_fileobj=str(PM.log),
-            path_in_repo=f"{folder_in_repo}/log.txt",
-            repo_id=REPO_ID_HF,
-            repo_type="dataset",
-            commit_message=f"[{version}] update logs",
-        )
-        print(f"Uploaded logs @ {folder_in_repo or 'root'}")
+        # TODO: Logs are outdated and should be removed.
+        # The only reason we don't delete it is in case we replace it with rust metadata
+        if PM.log.exists():
+            api.upload_file(
+                path_or_fileobj=str(PM.log),
+                path_in_repo=f"{folder_in_repo}/log.txt",
+                repo_id=REPO_ID_HF,
+                repo_type="dataset",
+                commit_message=f"[{version}] update logs",
+            )
+            print(f"Uploaded logs @ {folder_in_repo or 'root'}")
 
 
 def update_readme_local(readme_path: Path, commit_sha: str, version: str) -> None:
