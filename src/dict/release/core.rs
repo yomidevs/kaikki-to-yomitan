@@ -1,34 +1,28 @@
 //! Build a dictionary release.
 //!
-//! Index extracting and publishing are done in python via release.py.
+//! Publishing is done in python via release.py.
 //!
 //! Command to limit memory usage (linux):
 //! systemd-run --user --scope -p MemoryMax=24G -p MemoryHigh=24G cargo run -r -- release -v
 
-use std::{
-    fs::File,
-    io::{BufRead, BufReader},
-    path::{Path, PathBuf},
-    time::Instant,
-};
+use std::time::Instant;
 
 use anyhow::Result;
 use rayon::ThreadPoolBuilder;
 use rayon::prelude::*;
-use rkyv::Archived;
-use rusqlite::{Connection, params};
 
+use crate::dict::release::index::extract_indexes;
 use crate::{
     cli::{
         DictName, GlossaryArgs, GlossaryExtendedArgs, GlossaryExtendedLangs, GlossaryLangs,
         IpaArgs, IpaMergedArgs, IpaMergedLangs, MainArgs, MainLangs, Options, ReleaseArgs,
     },
+    dict::release::db::WiktextractDb,
     dict::{
         DGlossary, DGlossaryExtended, DIpa, DIpaMerged, DMain, Dictionary, Intermediate, Langs,
         find_or_download_jsonl, iter_datasets, writer::write_yomitan,
     },
     lang::{Edition, EditionSpec, Lang},
-    models::kaikki::WordEntry,
     path::PathManager,
 };
 
@@ -76,6 +70,8 @@ pub fn release(rargs: ReleaseArgs) -> Result<()> {
     let elapsed = start.elapsed();
     println!("Finished dictionaries in {elapsed:.2?}");
 
+    extract_indexes(&rargs)?;
+
     Ok(())
 }
 
@@ -110,9 +106,12 @@ fn download_and_create_db(rargs: &ReleaseArgs, editions: &[Edition]) {
 }
 
 // Pretty print utility
-fn pp(dict_name: &str, first_lang: Lang, second_lang: Lang, time: Instant) {
+fn pp(dict_name: &str, first_lang: Lang, second_lang: Option<Lang>, time: Instant) {
     // Printing sizes requires a PM
-    let label = format!("[{dict_name}-{first_lang}-{second_lang}]");
+    let label = match second_lang {
+        Some(second_lang) => format!("[{dict_name}-{first_lang}-{second_lang}]"),
+        None => format!("[{dict_name}-{first_lang}]"), // ipa-merged
+    };
     eprintln!("{label:<20} done in {:.2?}", time.elapsed());
 }
 
@@ -153,7 +152,7 @@ fn release_main(rargs: &ReleaseArgs, edition: Edition) {
             };
 
             match make_dict(DMain, args) {
-                Ok(()) => pp("main", *source, edition.into(), start),
+                Ok(()) => pp("main", *source, Some(edition.into()), start),
                 Err(err) => tracing::error!("[main-{source}-{edition}] ERROR: {err:?}"),
             }
         });
@@ -187,7 +186,7 @@ fn release_ipa(rargs: &ReleaseArgs, edition: Edition) {
         };
 
         match make_dict(DIpa, args) {
-            Ok(()) => pp("ipa", *source, edition.into(), start),
+            Ok(()) => pp("ipa", *source, Some(edition.into()), start),
             Err(err) => tracing::error!("[ipa-{source}-{edition}] ERROR: {err:?}"),
         }
     });
@@ -212,8 +211,7 @@ fn release_ipa_merged(rargs: &ReleaseArgs, target: Lang) {
     };
 
     match make_dict(DIpaMerged, args) {
-        // Lang::Sq is a filler, it should be EditionSpec::All
-        Ok(()) => pp("ipa-merged", target, Lang::Sq, start),
+        Ok(()) => pp("ipa-merged", target, None, start),
         Err(err) => tracing::error!("[ipa-merged-{target}] ERROR: {err:?}"),
     }
 }
@@ -243,7 +241,7 @@ fn release_glossary(rargs: &ReleaseArgs, edition: Edition) {
 
         match make_dict(DGlossary, args) {
             // Order may be wrong
-            Ok(()) => pp("gloss", *target, edition.into(), start),
+            Ok(()) => pp("gloss", *target, Some(edition.into()), start),
             Err(err) => tracing::error!("[gloss-{target}-{edition}] ERROR: {err:?}"),
         }
     });
@@ -275,115 +273,10 @@ fn release_glossary_extended(source: Lang) {
         };
 
         match make_dict(DGlossaryExtended, args) {
-            Ok(()) => pp("gloss-all", source, *target, start),
+            Ok(()) => pp("gloss-all", source, Some(*target), start),
             Err(err) => tracing::error!("[gloss-all-{source}-{target}] ERROR: {err:?}"),
         }
     });
-}
-
-pub struct WiktextractDb {
-    pub conn: Connection,
-}
-
-impl WiktextractDb {
-    /// Path to the folder that contains the databases for all editions.
-    fn db_folder<P>(root_dir: P) -> PathBuf
-    where
-        P: AsRef<Path>,
-    {
-        root_dir.as_ref().join("db")
-    }
-
-    /// Path for the database of this edition.
-    fn db_path_for<P>(root_dir: P, edition: Edition) -> PathBuf
-    where
-        P: AsRef<Path>,
-    {
-        Self::db_folder(root_dir).join(format!("wiktextract_{edition}.db"))
-    }
-
-    pub fn open<P>(root_dir: P, edition: Edition) -> Result<Self>
-    where
-        P: AsRef<Path>,
-    {
-        let db_path = Self::db_path_for(root_dir, edition);
-        let conn = Connection::open(&db_path)?;
-        Ok(Self { conn })
-    }
-
-    pub fn create<P>(root_dir: P, edition: Edition, path_jsonl: PathBuf) -> Result<Self>
-    where
-        P: AsRef<Path>,
-    {
-        let _ = std::fs::create_dir(Self::db_folder(&root_dir));
-
-        let db_path = Self::db_path_for(&root_dir, edition);
-        let conn = Connection::open(&db_path)?;
-
-        conn.execute_batch(
-            r"
-            CREATE TABLE IF NOT EXISTS wiktextract (
-                id INTEGER PRIMARY KEY,
-                lang TEXT NOT NULL,
-                entry BLOB NOT NULL
-            );
-
-            CREATE INDEX IF NOT EXISTS idx_wiktextract_lang
-            ON wiktextract(lang);
-            ",
-        )?;
-
-        let mut db = Self { conn };
-
-        // NOTE: Not sure if we need to check that we init the db beforehand
-        let count: i64 = db
-            .conn
-            .query_row("SELECT COUNT(*) FROM wiktextract", [], |row| row.get(0))?;
-
-        if count == 0 {
-            tracing::info!("DB empty for {edition}, importing JSONL...");
-            db.import_jsonl(path_jsonl)?;
-        } else {
-            tracing::trace!("DB already initialized for {edition} ({count} rows)");
-        }
-
-        Ok(db)
-    }
-
-    #[tracing::instrument(skip_all, level = "debug")]
-    pub fn import_jsonl<P: AsRef<Path>>(&mut self, jsonl_path: P) -> Result<()> {
-        let start = Instant::now();
-        let file = File::open(&jsonl_path)?;
-        let reader = BufReader::new(file);
-
-        let tx = self.conn.transaction()?;
-        {
-            let mut stmt = tx.prepare("INSERT INTO wiktextract (lang, entry) VALUES (?, ?)")?;
-
-            for line in reader.lines() {
-                let line = line?;
-                let word_entry: WordEntry = serde_json::from_str(&line)?;
-                let bytes = rkyv::to_bytes::<rkyv::rancor::Error>(&word_entry)?;
-
-                stmt.execute(params![word_entry.lang_code, bytes.as_ref()])?;
-            }
-        }
-        tx.commit()?;
-        tracing::debug!(
-            "Making db took {:.3} ms",
-            start.elapsed().as_secs_f64() * 1000.0
-        );
-
-        Ok(())
-    }
-
-    pub fn blob_to_word_entry(blob: &[u8]) -> Result<WordEntry> {
-        let archived: &Archived<WordEntry> =
-            rkyv::access::<Archived<WordEntry>, rkyv::rancor::Error>(blob).unwrap();
-        let word_entry: WordEntry =
-            rkyv::deserialize::<WordEntry, rkyv::rancor::Error>(archived).unwrap();
-        Ok(word_entry)
-    }
 }
 
 fn make_dict<D: Dictionary + EditionFrom>(dict: D, raw_args: D::A) -> Result<()> {

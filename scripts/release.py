@@ -28,7 +28,6 @@ import re
 import shutil
 import subprocess
 import time
-import zipfile
 from collections.abc import Callable
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
@@ -413,6 +412,7 @@ def pattern(dict_ty: DictTy, sources: list[str], targets: list[str]) -> str:
     return fp
 
 
+# TODO: delete, this is done in rust
 def run_matrix(langs: list[Lang], args: Args) -> None:
     start = time.perf_counter()
 
@@ -605,43 +605,6 @@ def build_release(args: Args) -> None:
     run_matrix(langs, args)
 
 
-def extract_indexes() -> None:
-    """Extract indexes in some folder to support dictionary updates.
-
-    Paths looks like:
-        data/release/dict/nb/ru/wty-nb-ru.zip
-               {dict_dir}/nb/ru/wty-nb-ru.zip
-
-    And we want to clone to:
-        data/release/index/wty-nb-ru-index.json
-               {index_dir}/wty-nb-ru-index.json
-
-    Note: we don't need the nb/ru folders anymore, since these indexes are only intended
-          to be used as direct URLs for the Yomitan upgrade machinery.
-    """
-    PM.check_dict_dir()
-    PM.index.mkdir(exist_ok=True)
-
-    log("index", "Extracting indexes...")
-    n_indexes = 0
-
-    for zip_path in PM.dictionary.rglob("*.zip"):
-        index_path = PM.index / f"{zip_path.stem}-index.json"
-
-        with zipfile.ZipFile(zip_path) as zf:
-            index_names = [name for name in zf.namelist() if name == "index.json"]
-            assert len(index_names) == 1, (
-                f"There should be exactly one index @ {zip_path}"
-            )
-
-            index_name = index_names[0]
-            with zf.open(index_name) as src, index_path.open("wb") as dst:
-                n_indexes += 1
-                dst.write(src.read())
-
-    log("index", f"Extracted {n_indexes} indexes")
-
-
 def parse_args() -> tuple[str, Args]:
     parser = argparse.ArgumentParser()
     parser.add_argument("command", choices=["build", "publish", "index"])
@@ -668,11 +631,8 @@ def main() -> None:
     match cmd:
         case "build":
             build_release(args)
-            extract_indexes()
         case "publish":
             upload_to_huggingface()
-        case "index":
-            extract_indexes()
         case _:
             print(f"Unknown cmd: {cmd}")
 
