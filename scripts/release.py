@@ -28,7 +28,6 @@ import re
 import shutil
 import subprocess
 import time
-import zipfile
 from collections.abc import Callable
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
@@ -228,14 +227,17 @@ def upload_to_huggingface() -> None:
         )
         print(f"Uploaded README @ {folder_in_repo or 'root'}")
 
-        api.upload_file(
-            path_or_fileobj=str(PM.log),
-            path_in_repo=f"{folder_in_repo}/log.txt",
-            repo_id=REPO_ID_HF,
-            repo_type="dataset",
-            commit_message=f"[{version}] update logs",
-        )
-        print(f"Uploaded logs @ {folder_in_repo or 'root'}")
+        # TODO: Logs are outdated and should be removed.
+        # The only reason we don't delete it is in case we replace it with rust metadata
+        if PM.log.exists():
+            api.upload_file(
+                path_or_fileobj=str(PM.log),
+                path_in_repo=f"{folder_in_repo}/log.txt",
+                repo_id=REPO_ID_HF,
+                repo_type="dataset",
+                commit_message=f"[{version}] update logs",
+            )
+            print(f"Uploaded logs @ {folder_in_repo or 'root'}")
 
 
 def update_readme_local(readme_path: Path, commit_sha: str, version: str) -> None:
@@ -413,6 +415,7 @@ def pattern(dict_ty: DictTy, sources: list[str], targets: list[str]) -> str:
     return fp
 
 
+# TODO: delete, this is done in rust
 def run_matrix(langs: list[Lang], args: Args) -> None:
     start = time.perf_counter()
 
@@ -605,46 +608,9 @@ def build_release(args: Args) -> None:
     run_matrix(langs, args)
 
 
-def extract_indexes() -> None:
-    """Extract indexes in some folder to support dictionary updates.
-
-    Paths looks like:
-        data/release/dict/nb/ru/wty-nb-ru.zip
-               {dict_dir}/nb/ru/wty-nb-ru.zip
-
-    And we want to clone to:
-        data/release/index/wty-nb-ru-index.json
-               {index_dir}/wty-nb-ru-index.json
-
-    Note: we don't need the nb/ru folders anymore, since these indexes are only intended
-          to be used as direct URLs for the Yomitan upgrade machinery.
-    """
-    PM.check_dict_dir()
-    PM.index.mkdir(exist_ok=True)
-
-    log("index", "Extracting indexes...")
-    n_indexes = 0
-
-    for zip_path in PM.dictionary.rglob("*.zip"):
-        index_path = PM.index / f"{zip_path.stem}-index.json"
-
-        with zipfile.ZipFile(zip_path) as zf:
-            index_names = [name for name in zf.namelist() if name == "index.json"]
-            assert len(index_names) == 1, (
-                f"There should be exactly one index @ {zip_path}"
-            )
-
-            index_name = index_names[0]
-            with zf.open(index_name) as src, index_path.open("wb") as dst:
-                n_indexes += 1
-                dst.write(src.read())
-
-    log("index", f"Extracted {n_indexes} indexes")
-
-
 def parse_args() -> tuple[str, Args]:
     parser = argparse.ArgumentParser()
-    parser.add_argument("command", choices=["build", "publish", "index"])
+    parser.add_argument("command", choices=["build", "publish"])
     parser.add_argument("-v", "--verbose", action="count", default=0)
     parser.add_argument("-n", "--dry-run", action="store_true")
     parser.add_argument("-j", "--jobs", type=int, default=8)
@@ -668,11 +634,8 @@ def main() -> None:
     match cmd:
         case "build":
             build_release(args)
-            extract_indexes()
         case "publish":
             upload_to_huggingface()
-        case "index":
-            extract_indexes()
         case _:
             print(f"Unknown cmd: {cmd}")
 

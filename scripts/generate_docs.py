@@ -61,8 +61,8 @@ def render_combobox(cl: str, placeholder: str, langs: list[Lang]) -> str:
 def render_line(
     label: str,
     dtype: str,
+    source_langs: list[Lang],
     target_langs: list[Lang],
-    source_langs: list[Lang] | None = None,
 ) -> str:
     if source_langs:
         source_html = render_combobox("dl-source", "Search source...", source_langs)
@@ -87,11 +87,11 @@ def generate_downloads_page(all_langs: list[Lang], editions: list[Lang]) -> str:
 
     table_html = "\n".join(
         [
-            render_line("📘 Main", "main", editions, all_langs),
-            render_line("🔤 IPA", "ipa", editions_no_simple, all_langs_no_simple),
-            render_line("🧬 IPA merged", "ipa-merged", all_langs_no_simple),
+            render_line("📘 Main", "main", all_langs, editions),
+            render_line("🔤 IPA", "ipa", all_langs_no_simple, editions_no_simple),
+            render_line("🧬 IPA merged", "ipa-merged", [], all_langs_no_simple),
             render_line(
-                "🌍 Glossary", "glossary", all_langs_no_simple, all_langs_no_simple
+                "🌍 Glossary", "glossary", editions_no_simple, all_langs_no_simple
             ),
         ]
     )
@@ -104,7 +104,7 @@ def generate_downloads_page(all_langs: list[Lang], editions: list[Lang]) -> str:
   </tbody>
 </table>
 
-!!! warning "If you get an "Entry not found" error, there was not enough data to create the dictionary."
+!!! warning "If you get an "Entry not found" error, please **open an [issue](https://github.com/yomidevs/wiktionary-to-yomitan/issues/new)**."
 
 !!! tip "You can import a dictionary directly to Yomitan by pasting the URL into "Import from URLs""
 

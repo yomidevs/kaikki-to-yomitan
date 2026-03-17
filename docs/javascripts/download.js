@@ -1,5 +1,53 @@
 // Simple javascript script to generate the download urls from the language selection.
 
+function _availableTargets(metadata, type, source) {
+    return Object.keys(metadata[type]?.sources?.[source]?.targets ?? {});
+}
+
+// group by sources containing this target
+function _availableSources(metadata, type, target) {
+    const sources = metadata[type]?.sources ?? {};
+
+    return Object.keys(sources).filter(source =>
+        Object.keys(sources[source]?.targets ?? {}).includes(target)
+    );
+}
+
+function availableTargets(metadata, type, source) {
+    switch (type) {
+        case "main":
+        case "ipa":
+        case "glossary":
+            return _availableTargets(metadata, type, source);
+        case "ipa-merged":
+            console.warn(`availableTargets called for ipa-merged with source=${source}`);
+        default:
+            return null;
+    }
+}
+
+function availableSources(metadata, type, target) {
+    switch (type) {
+        case "main":
+        case "ipa":
+        case "glossary":
+            return _availableSources(metadata, type, target);
+        case "ipa-merged":
+            console.warn(`availableSources called for ipa-merged with target=${target}`);
+        default:
+            return null;
+    }
+}
+
+function filterDropdown(box, allowed) {
+    const set = new Set(allowed);
+    // We set matchesFilter and read matchesSearch from setupCombobox
+    box.querySelectorAll("div[data-value]").forEach(div => {
+        div.dataset.matchesFilter = set.has(div.dataset.value) ? "1" : "0";
+        div.style.display = (div.dataset.matchesFilter === "1" && div.dataset.matchesSearch !== "0") ? "" : "none";
+    });
+}
+
 // Cf. src/path.rs::dict_name_expanded
 function buildUrl(type, source, target) {
     const BASE_URL =
@@ -26,9 +74,7 @@ function buildUrl(type, source, target) {
 // Replaces <option> tags with clickable <div>s and wires up filtering on input.
 function setupCombobox(box) {
     if (!box) return;
-    const search = box.querySelector(
-        "input[type=text], input:not([type=hidden])",
-    );
+    const search = box.querySelector("input:not([type=hidden])");
     const dropdown = box.querySelector(".dl-source-dropdown, .dl-target-dropdown");
     const hidden = box.querySelector("input[type=hidden]");
     const items = Array.from(dropdown.querySelectorAll("option"));
@@ -42,11 +88,17 @@ function setupCombobox(box) {
         div.addEventListener("mousedown", () => {
             search.value = opt.textContent;
             hidden.value = opt.value;
+            hidden.dataset.label = opt.textContent;
             dropdown.style.display = "none";
             hidden.dispatchEvent(new Event("change", { bubbles: true }));
         });
         dropdown.appendChild(div);
     });
+
+    function clearSelection() {
+        hidden.value = "";
+        hidden.dispatchEvent(new Event("change", { bubbles: true }));
+    }
 
     search.addEventListener("focus", () => (dropdown.style.display = "block"));
     search.addEventListener("blur", () =>
@@ -55,18 +107,41 @@ function setupCombobox(box) {
     search.addEventListener("input", () => {
         const q = search.value.toLowerCase();
         dropdown.style.display = "block";
-        hidden.value = "";
+
+        // We set matchesSearch and read matchesFilter from filterDropdown
         dropdown.querySelectorAll("div").forEach((div) => {
-            div.style.display = div.textContent.toLowerCase().includes(q)
-                ? ""
-                : "none";
+            div.dataset.matchesSearch = div.textContent.toLowerCase().includes(q) ? "1" : "0";
+            div.style.display = (div.dataset.matchesFilter !== "0" && div.dataset.matchesSearch === "1") ? "" : "none";
         });
+
+        // Clear selection if user edits away from selected label
+        if (hidden.value && search.value !== hidden.dataset.label) {
+            clearSelection();
+        }
+
+        if (!q) clearSelection();
+    });
+
+    // Complete with first match when clicking the "Enter" key
+    search.addEventListener("keydown", (e) => {
+        if (e.key !== "Enter") return;
+        e.preventDefault();
+
+        const firstVisible = Array.from(
+            dropdown.querySelectorAll("div")
+        ).find(div => div.style.display !== "none");
+        if (!firstVisible) return;
+
+        search.value = firstVisible.textContent;
+        hidden.value = firstVisible.dataset.value;
+        dropdown.style.display = "none";
+        hidden.dispatchEvent(new Event("change", { bubbles: true }));
     });
 }
 
 // Wires up a table row: initialises its comboboxes, listens for selections,
 // and enables the download / copy-URL buttons when both languages are chosen.
-function setupRow(row) {
+function setupRow(row, metadata) {
     const type = row.dataset.type;
     const sourceHidden = row.querySelector(".dl-source");
     const targetHidden = row.querySelector(".dl-target");
@@ -81,25 +156,29 @@ function setupRow(row) {
         const source = sourceHidden?.value;
         const target = targetHidden?.value;
 
+        // console.log(`[download-${type}] source=${source} target=${target}`);
+
+        // Filter targets based on selected source
+        if (source) {
+            const allowedTargets = availableTargets(metadata, type, source);
+            filterDropdown(row.querySelector(".dl-target-combobox"), allowedTargets);
+        }
+
+        // Filter sources based on selected target
+        if (target && type !== "ipa-merged") {
+            const allowedSources = availableSources(metadata, type, target);
+            filterDropdown(row.querySelector(".dl-source-combobox"), allowedSources);
+        }
+
+        // Can't do (!target || !source) because of ipa-merged
         if (!target || (sourceHidden && !source)) {
             btn.disabled = true;
             info.textContent = "Select the language(s)";
             return;
         }
 
-        // Glossary constraint
-        if (type === "glossary" && target === source) {
-            btn.disabled = true;
-            info.textContent = "⚠️ Target and source must be different";
-            return;
-        }
-
         const url = buildUrl(type, source, target);
-        if (!url) {
-            btn.disabled = true;
-            info.textContent = "";
-            return;
-        }
+        if (!url) return;
 
         const downloadUrl = `${url}?download=true`;
 
@@ -134,17 +213,28 @@ function setupRow(row) {
     update();
 }
 
+// Mojo so that fetching works both locally and in a project repo
+// There MUST be a better way to do this...
+const REPO_NAME = "wiktionary-to-yomitan";
+const BRANCH = "gh-pages"; // branch that serves the site
+const base = document.querySelector('base')?.href || `https://yomidevs.github.io/${REPO_NAME}/`;
+const metadataPromise = fetch(`${base}release_metadata.json`)
+    .then(res => res.json())
+    .then(json => json["dicts"]);
+
 // I don't think this is ideal (it is called on every tab switch, and not only on the download's one),
 // but it's the only thing I got working...
 // cf. https://github.com/squidfunk/mkdocs-material/discussions/6788#discussioncomment-8498415
 document$.subscribe(function () {
-    // Mark table as loaded to fade it in
-    const table = document.querySelector(".download-table");
-    if (table) {
-        table.classList.add("loaded");
-    }
+    metadataPromise.then((metadata) => {
+        const table = document.querySelector(".download-table");
+        if (!table) return;
 
-    document
-        .querySelectorAll(".download-table tr[data-type]")
-        .forEach(setupRow);
+        // Mark table as loaded to fade it in
+        table.classList.add("loaded");
+
+        table.querySelectorAll("tr[data-type]").forEach(row => {
+            setupRow(row, metadata);
+        });
+    });
 });
