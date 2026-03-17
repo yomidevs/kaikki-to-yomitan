@@ -220,7 +220,9 @@ function setupRow(row, metadata) {
     update();
 }
 
-const metadataPromise = fetch("release_metadata.json")
+// Mojo so that fetching works both locally and in a project repo
+const base = document.querySelector('base')?.href || './';
+const metadataPromise = fetch(base + "release_metadata.json")
     .then(res => res.json())
     .then(json => json["dicts"]);
 
