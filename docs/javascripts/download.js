@@ -17,9 +17,8 @@ function availableTargets(metadata, type, source) {
     switch (type) {
         case "main":
         case "ipa":
-            return _availableTargets(metadata, type, source);
         case "glossary":
-            return _availableSources(metadata, type, source);
+            return _availableTargets(metadata, type, source);
         case "ipa-merged":
             console.warn(`availableTargets called for ipa-merged with source=${source}`);
         default:
@@ -31,9 +30,8 @@ function availableSources(metadata, type, target) {
     switch (type) {
         case "main":
         case "ipa":
-            return _availableSources(metadata, type, target);
         case "glossary":
-            return _availableTargets(metadata, type, target);
+            return _availableSources(metadata, type, target);
         case "ipa-merged":
             console.warn(`availableSources called for ipa-merged with target=${target}`);
         default:
@@ -99,6 +97,7 @@ function setupCombobox(box) {
         div.addEventListener("mousedown", () => {
             search.value = opt.textContent;
             hidden.value = opt.value;
+            hidden.dataset.label = opt.textContent;
             dropdown.style.display = "none";
             hidden.dispatchEvent(new Event("change", { bubbles: true }));
         });
@@ -118,6 +117,11 @@ function setupCombobox(box) {
                 ? ""
                 : "none";
         });
+
+        // Clear selection if user edits away from selected label
+        if (hidden.value && search.value !== hidden.dataset.label) {
+            clearSelection();
+        }
 
         if (!q) {
             clearSelection();
