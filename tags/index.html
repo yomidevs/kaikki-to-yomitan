@@ -577,11 +577,28 @@
 
   <h1>Tags</h1>
 
-<p>Everything here only concerns the main dictionary.</p>
+<p>The mental model for tag extraction is as follows:
+<div class="highlight"><pre><span></span><code>Wiktionary
+  │
+  │ (wiktextract)
+  │
+  ├─&gt; raw_tags
+  │     ↓
+  └─&gt; tags
+        ↓
+   tag filtering (which tags to keep, and their short forms)
+        ↓
+   tag formatting (global css)
+        ↓
+   (optional, custom css in yomitan)
+        ↓
+   shown tag in yomitan
+</code></pre></div></p>
+<hr />
 <p>There are (at least) three cases in which one may want to modify tags:</p>
-<p>1 - <strong>Tag order</strong>: rules the order in which tags are displayed.<br />
-2 - <strong>Tag filtering</strong>: rules abbreviations and which tags are displayed.<br />
-3 - <strong>Extraction logic</strong>: rules where to extract tags from wiktionary data.</p>
+<p>1 - <strong>Tag order</strong>: the order in which tags are displayed.<br />
+2 - <strong>Tag filtering</strong>: abbreviations and which tags are displayed.<br />
+3 - <strong>Extraction logic</strong>: where to extract tags from wiktionary data.</p>
 <p>Tag postprocessing is done after building the whole intermediate representation, to only sort once with every extracted tag. The relevant function is <code>src/dict/main.rs::postprocess_forms</code>.</p>
 <h3 id="tag-order">Tag order<a class="headerlink" href="#tag-order" title="Permanent link">&para;</a></h3>
 <p>Tag order is recorded in <code>assets/tag_order.json</code>. While this file has categories (formatility, cases etc.), those are later strip and serve only as visual help. The sorting is done with the flattened list.</p>
@@ -598,13 +615,15 @@
 <span class="w">  </span><span class="nx">popularityScore</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span>
 <span class="p">];</span>
 </code></pre></div>
-<p>where <code>notes</code> is replaced with either a string, or a list of strings representing aliases, the first one being shown when hovering the tag.</p>
-<p>Here is an example of a simple <a href="https://github.com/daxida/wty/commit/00c69daa89344d971978d905897aa19e7c1ae619">commit</a> to add the "Buddhism" tag, that modifies the JSON, then runs the build script.</p>
+<p>where <code>notes</code> is replaced with either a string, or a list of strings representing aliases, the <strong>first</strong> one being shown when hovering the tag.</p>
+<p>Here is an example of a simple <a href="https://github.com/yomidevs/wiktionary-to-yomitan/commit/00c69daa89344d971978d905897aa19e7c1ae619">commit</a> to add the "Buddhism" tag, that modifies the JSON, then runs the build script to update the rust code. Other example adding multiple tags <a href="https://github.com/yomidevs/wiktionary-to-yomitan/commit/0b8013b0fe01f17a543a840200733a431bc1187b">here</a>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Run the build script after any modification to update the rust code: either <code>just build</code> or <code>python3 scripts/build.py</code></p>
 </div>
 <h3 id="extraction-logic">Extraction logic<a class="headerlink" href="#extraction-logic" title="Permanent link">&para;</a></h3>
-<p>This requires some knowledge of kaikki internals and how they extract tags. TODO</p>
+<p>This requires some knowledge of kaikki internals and how they extract tags.</p>
+<p>We only use the normalized, english <code>tags</code>, as opposed to <code>raw_tags</code>, which are the tags you may see in Wiktionary, in the edition language. Therefore, if kaikki hasn't gone through the work of translating the tag, it will not appear in the dictionary. If that is your case, see this <a href="https://github.com/yomidevs/wiktionary-to-yomitan/issues/84">issue</a>, and the associated <a href="https://github.com/tatuylonen/wiktextract/pull/997">PR</a> in kaikki to have a grasp on how to request/add translations.</p>
+<p>It can also happen that kaikki doesn't extract tags from certain templates. In that case, again, it may be worth reporting the issue to them.</p>
 
 
 
