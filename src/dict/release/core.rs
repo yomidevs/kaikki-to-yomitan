@@ -8,8 +8,8 @@
 use std::time::Instant;
 
 use anyhow::Result;
-use rayon::ThreadPoolBuilder;
 use rayon::prelude::*;
+use rayon::ThreadPoolBuilder;
 
 use crate::{
     cli::{
@@ -17,10 +17,10 @@ use crate::{
         IpaArgs, IpaMergedArgs, IpaMergedLangs, MainArgs, MainLangs, Options, ReleaseArgs,
     },
     dict::{
-        DGlossary, DGlossaryExtended, DIpa, DIpaMerged, DMain, Dictionary, Intermediate, Langs,
         find_or_download_jsonl, iter_datasets,
         release::{db::WiktextractDb, index::extract_indexes, metadata::write_dict_metadata},
         writer::write_yomitan,
+        DGlossary, DGlossaryExtended, DIpa, DIpaMerged, DMain, Dictionary, Intermediate, Langs,
     },
     lang::{Edition, EditionSpec, Lang},
     path::PathManager,
@@ -73,8 +73,6 @@ pub fn release(rargs: ReleaseArgs) -> Result<()> {
     extract_indexes(&rargs)?;
 
     write_dict_metadata(&rargs.root_dir)?;
-
-    // TODO: move things around to comply with python publish logic
 
     Ok(())
 }
