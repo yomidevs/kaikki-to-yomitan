@@ -325,7 +325,7 @@ pub fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
 
     if !opts.skip_yomitan {
         let labelled_entries = dict.to_yomitan(pm.langs, irs);
-        write_yomitan(source_pm, target_pm, opts, &pm, labelled_entries)?;
+        write_yomitan(source_pm, target_pm, opts, pm, labelled_entries)?;
     }
 
     Ok(())

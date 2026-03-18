@@ -44,13 +44,12 @@ fn run(cmd: Command) -> Result<()> {
         Command::Download(args) => {
             // NOTE: uses MainArgs, so it expects two language codes.
             let langs: LangSpecs = args.langs.clone().try_into()?;
-            let source: Lang = langs.source.try_into().unwrap();
             let edition: Edition = langs.edition.try_into().unwrap();
             let pm = PathManager::try_from(args)?;
 
             let _ = std::fs::create_dir(pm.dir_kaik());
 
-            let _ = find_or_download_jsonl(edition, Some(source), &pm)?;
+            let _ = find_or_download_jsonl(edition, Some(langs.source), &pm)?;
             Ok(())
         }
         Command::Iso(args) => {

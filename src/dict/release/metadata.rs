@@ -94,7 +94,7 @@ fn scan_and_group(root_dir: &Path) -> Result<Metadata> {
     for entry in walkdir::WalkDir::new(root_dir)
         .into_iter()
         .filter_map(|e| e.ok())
-        .filter(|e| e.path().extension().map_or(false, |x| x == "zip"))
+        .filter(|e| e.path().extension().is_some_and(|x| x == "zip"))
     {
         let path = entry.path();
 
@@ -134,7 +134,7 @@ pub fn write_dict_metadata(root_dir: &Path) -> Result<()> {
     let metadata = scan_and_group(&dict_dir)?;
     let json = serde_json::to_string_pretty(&metadata)?;
     let out_path = Path::new("docs/release_metadata.json");
-    std::fs::write(&out_path, &json)?;
+    std::fs::write(out_path, &json)?;
     println!("[meta] Dict metadata written to {}", out_path.display());
     Ok(())
 }

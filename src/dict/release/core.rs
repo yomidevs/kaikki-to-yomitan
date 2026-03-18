@@ -8,8 +8,8 @@
 use std::time::Instant;
 
 use anyhow::Result;
-use rayon::prelude::*;
 use rayon::ThreadPoolBuilder;
+use rayon::prelude::*;
 
 use crate::{
     cli::{
@@ -17,10 +17,10 @@ use crate::{
         IpaArgs, IpaMergedArgs, IpaMergedLangs, MainArgs, MainLangs, Options, ReleaseArgs,
     },
     dict::{
+        DGlossary, DGlossaryExtended, DIpa, DIpaMerged, DMain, Dictionary, Intermediate, Langs,
         find_or_download_jsonl, iter_datasets,
         release::{db::WiktextractDb, index::extract_indexes, metadata::write_dict_metadata},
         writer::write_yomitan,
-        DGlossary, DGlossaryExtended, DIpa, DIpaMerged, DMain, Dictionary, Intermediate, Langs,
     },
     lang::{Edition, EditionSpec, Lang},
     path::PathManager,
@@ -331,7 +331,7 @@ fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
 
     if !opts.skip_yomitan {
         let labelled_entries = dict.to_yomitan(pm.langs, irs);
-        write_yomitan(source_pm, target_pm, opts, &pm, labelled_entries)?;
+        write_yomitan(source_pm, target_pm, opts, pm, labelled_entries)?;
     }
 
     Ok(())

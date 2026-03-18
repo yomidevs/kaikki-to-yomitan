@@ -288,7 +288,7 @@ fn process_ipa(edition: Edition, source: Lang, entry: &WordEntry, irs: &mut Vec<
     // This replacing with the short tag will still show the long version on hover.
     for ipa in &mut ipas {
         for tag in &mut ipa.tags {
-            if let Some(tag_info) = find_tag_in_bank(&tag) {
+            if let Some(tag_info) = find_tag_in_bank(tag) {
                 *tag = (*tag_info.short_tag).to_string();
             }
         }

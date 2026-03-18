@@ -421,6 +421,7 @@ impl Serialize for FormMap {
     where
         S: serde::Serializer,
     {
+        #[expect(clippy::type_complexity)]
         let mut nested: Map<&str, Map<&str, Map<&str, &(FormSource, Vec<String>)>>> =
             Map::default();
 
@@ -936,6 +937,7 @@ fn process_alt_forms(entry: &WordEntry, irs: &mut Tidy) {
 }
 
 /// Process "no-gloss" word entries for alternative ways of adding lemmas/forms.
+#[expect(clippy::single_match)]
 fn process_no_gloss(edition: Edition, entry: &WordEntry, irs: &mut Tidy) {
     match edition {
         // Unfortunately we are in the same A from B, B from C situation discussed in
