@@ -7,8 +7,8 @@ cov:
 update *args:
   python3 scripts/update_tests.py {{args}}
 
-# Usage: `just release {build|publish} [-v] [-n] [-j JOBS] [-t {main|ipa|ipa-merged}]`
-release *args:
+# Publish a release made with release.rs to hugging face
+publish *args:
   python3 scripts/release.py {{args}}
 
 # Scan the release dictionaries for size information
