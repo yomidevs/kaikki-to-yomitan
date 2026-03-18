@@ -530,5 +530,296 @@
         }
       ]
     }
+  },
+  "in": {
+    "in": {
+      "prep": [
+        {
+          "gloss_tree": {
+            "Angabe eines Ortes, innerhalb dessen sich etwas befindet oder tut; Bestandteil einer Antwort auf die Frage mit „wo“": {
+              "tags": [
+                "prepositional",
+                "regional",
+                "with-dative"
+              ],
+              "examples": [
+                {
+                  "text": "In den Alpen findet man herrliche Landschaftsmotive.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                },
+                {
+                  "text": "In der Schachtel ist eine Überraschung verborgen.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                },
+                {
+                  "text": "Vormittags sollten die Schüler in der Schule sein.",
+                  "bold_text_offsets": [
+                    [
+                      31,
+                      33
+                    ],
+                    [
+                      47,
+                      49
+                    ]
+                  ]
+                },
+                {
+                  "text": "Wenn du eine Frage hast, so schlage in einem Lexikon nach.",
+                  "bold_text_offsets": [
+                    [
+                      9,
+                      11
+                    ],
+                    [
+                      36,
+                      38
+                    ],
+                    [
+                      40,
+                      42
+                    ]
+                  ]
+                },
+                {
+                  "text": "Was trägst du denn alles in der Hosentasche mit dir herum?",
+                  "bold_text_offsets": [
+                    [
+                      25,
+                      27
+                    ]
+                  ]
+                },
+                {
+                  "text": "Wir saßen in Decken gehüllt und frierend in einem ungeheizten Zimmer.",
+                  "bold_text_offsets": [
+                    [
+                      10,
+                      12
+                    ],
+                    [
+                      41,
+                      43
+                    ],
+                    [
+                      45,
+                      47
+                    ]
+                  ]
+                },
+                {
+                  "text": "„Sie wirkten Wundertaten nachmals in König Etzels Land“. (Nibelungenlied)",
+                  "bold_text_offsets": [
+                    [
+                      34,
+                      36
+                    ]
+                  ]
+                }
+              ]
+            },
+            "Angabe einer Richtung in etwas hinein; Bestandteil einer Antwort auf die Frage mit „wohin“": {
+              "tags": [
+                "prepositional",
+                "regional",
+                "with-accusative"
+              ],
+              "examples": [
+                {
+                  "text": "Ab morgen gehst du in die Schule hinein.",
+                  "bold_text_offsets": [
+                    [
+                      19,
+                      21
+                    ],
+                    [
+                      34,
+                      36
+                    ],
+                    [
+                      37,
+                      39
+                    ]
+                  ]
+                },
+                {
+                  "text": "Im Winter fahren wir in die Berge in den Urlaub.",
+                  "bold_text_offsets": [
+                    [
+                      4,
+                      6
+                    ],
+                    [
+                      21,
+                      23
+                    ],
+                    [
+                      34,
+                      36
+                    ]
+                  ]
+                }
+              ]
+            },
+            "Beschreibung einer Zeitspanne, auf einen bestimmten Zeitpunkt, eine bestimmte Zeitspanne hin, Bestandteil einer Antwort auf die Frage mit „wann“": {
+              "tags": [
+                "temporal"
+              ],
+              "examples": [
+                {
+                  "text": "Im Winter fahren wir in die Berge in den Urlaub.",
+                  "bold_text_offsets": [
+                    [
+                      4,
+                      6
+                    ],
+                    [
+                      21,
+                      23
+                    ],
+                    [
+                      34,
+                      36
+                    ]
+                  ]
+                },
+                {
+                  "text": "In drei Minuten fährt der Bus.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                },
+                {
+                  "text": "Ich will in einem Jahr Marathon laufen.",
+                  "bold_text_offsets": [
+                    [
+                      9,
+                      11
+                    ],
+                    [
+                      13,
+                      15
+                    ]
+                  ]
+                },
+                {
+                  "text": "Die bunt gefärbten Blätter gehören in die Herbstzeit.",
+                  "bold_text_offsets": [
+                    [
+                      35,
+                      37
+                    ]
+                  ]
+                },
+                {
+                  "text": "In der Kinderzeit ist es wichtig, unbeschwert heranzuwachsen.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                }
+              ]
+            },
+            "Beschreibung einer bestimmten Art und Weise, eines bestimmten Zustandes, eines bestimmten Verhaltens": {
+              "examples": [
+                {
+                  "text": "In der Kinderzeit ist es wichtig, unbeschwert heranzuwachsen.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                },
+                {
+                  "text": "In Groll verließ er das Haus.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                },
+                {
+                  "text": "Halloweenscherze versetzen keinen mehr in Angst und in Schrecken.",
+                  "bold_text_offsets": [
+                    [
+                      29,
+                      31
+                    ],
+                    [
+                      39,
+                      41
+                    ],
+                    [
+                      52,
+                      54
+                    ]
+                  ]
+                },
+                {
+                  "text": "Das Wochenende begannen wir in guter Stimmung und in allerbester Laune.",
+                  "bold_text_offsets": [
+                    [
+                      28,
+                      30
+                    ],
+                    [
+                      50,
+                      52
+                    ]
+                  ]
+                },
+                {
+                  "text": "In rasender Fahrt ging es nach Hause.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                },
+                {
+                  "text": "Wer lebt schon in Saus und Braus?",
+                  "bold_text_offsets": [
+                    [
+                      15,
+                      17
+                    ]
+                  ]
+                },
+                {
+                  "text": "Dieser Text ist in deutscher Sprache geschrieben.",
+                  "bold_text_offsets": [
+                    [
+                      16,
+                      18
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "etymology_text": "mittelhochdeutsch in, althochdeutsch in, belegt seit dem 8. Jahrhundert, geht auf germanisch *in zurück",
+          "wlink": "https://de.wiktionary.org/wiki/in#German",
+          "klink": "https://kaikki.org/dewiktionary/All%20languages%20combined/meaning/i/in/in.html"
+        }
+      ]
+    }
   }
 }

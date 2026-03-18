@@ -1546,5 +1546,15 @@
         ]
       ]
     }
+  },
+  "in": {
+    "i.": {
+      "prep": [
+        "extracted",
+        [
+          "abbreviation"
+        ]
+      ]
+    }
   }
 }
