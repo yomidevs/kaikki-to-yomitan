@@ -2349,6 +2349,15 @@
                               "category": ""
                             },
                             "content": "regio"
+                          },
+                          {
+                            "tag": "span",
+                            "title": "with-dative",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            },
+                            "content": "dat"
                           }
                         ]
                       },
@@ -2647,6 +2656,15 @@
                               "category": ""
                             },
                             "content": "regio"
+                          },
+                          {
+                            "tag": "span",
+                            "title": "with-accusative",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            },
+                            "content": "acc"
                           }
                         ]
                       },

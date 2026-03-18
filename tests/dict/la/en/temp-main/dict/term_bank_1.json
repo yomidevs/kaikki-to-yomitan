@@ -2597,6 +2597,23 @@
                   {
                     "tag": "div",
                     "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "title": "with-accusative",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            },
+                            "content": "acc"
+                          }
+                        ]
+                      },
                       "into, to",
                       {
                         "tag": "details",
@@ -2658,6 +2675,23 @@
                   {
                     "tag": "div",
                     "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "title": "with-accusative",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            },
+                            "content": "acc"
+                          }
+                        ]
+                      },
                       "toward, towards, against, at",
                       {
                         "tag": "details",
@@ -2810,6 +2844,23 @@
                   {
                     "tag": "div",
                     "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "title": "with-accusative",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            },
+                            "content": "acc"
+                          }
+                        ]
+                      },
                       "until, for"
                     ]
                   }
@@ -2821,6 +2872,23 @@
                   {
                     "tag": "div",
                     "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "title": "with-accusative",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            },
+                            "content": "acc"
+                          }
+                        ]
+                      },
                       "about"
                     ]
                   }
@@ -2832,6 +2900,23 @@
                   {
                     "tag": "div",
                     "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "title": "with-accusative",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            },
+                            "content": "acc"
+                          }
+                        ]
+                      },
                       "according to",
                       {
                         "tag": "details",

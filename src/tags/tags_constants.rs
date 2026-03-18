@@ -81,7 +81,7 @@ pub const TAG_ORDER: [&str; 76] = [
 ];
 
 #[rustfmt::skip]
-pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 247] = [
+pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 249] = [
     ("non-lemma", "", 10, &["non-lemma"], -10),
     ("r", "partOfSpeech", -1, &["root"], 1),
     ("pos-r", "partOfSpeech", -1, &["pos-root"], 1),
@@ -116,6 +116,8 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 247] = [
     ("vr", "partOfSpeech", -1, &["reflexive verb", "reflexive"], 1),
     ("vdt", "partOfSpeech", -1, &["ditransitive verb", "ditransitive"], 1),
     ("ref-pron", "", 0, &["takes a reflexive pronoun"], 0),
+    ("dat", "", 0, &["with-dative"], 0),
+    ("acc", "", 0, &["with-accusative"], 0),
     ("pl-only", "", 0, &["plural only", "plural-only"], 0),
     ("pl", "", 0, &["plural"], 0),
     ("no-pl", "", 0, &["no-plural"], 0),
