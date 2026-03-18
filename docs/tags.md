@@ -1,10 +1,29 @@
-Everything here only concerns the main dictionary.
+The mental model for tag extraction is as follows:
+```
+Wiktionary
+  │
+  │ (wiktextract)
+  │
+  ├─> raw_tags
+  │     ↓
+  └─> tags
+        ↓
+   tag filtering (which tags to keep, and their short forms)
+        ↓
+   tag formatting (global css)
+        ↓
+   (optional, custom css in yomitan)
+        ↓
+   shown tag in yomitan
+```
+
+---
 
 There are (at least) three cases in which one may want to modify tags:
 
-1 - **Tag order**: rules the order in which tags are displayed.  
-2 - **Tag filtering**: rules abbreviations and which tags are displayed.  
-3 - **Extraction logic**: rules where to extract tags from wiktionary data.
+1 - **Tag order**: the order in which tags are displayed.  
+2 - **Tag filtering**: abbreviations and which tags are displayed.  
+3 - **Extraction logic**: where to extract tags from wiktionary data.
 
 Tag postprocessing is done after building the whole intermediate representation, to only sort once with every extracted tag. The relevant function is `src/dict/main.rs::postprocess_forms`.
 
@@ -28,12 +47,17 @@ type TagInformation = [
 ];
 ```
 
-where `notes` is replaced with either a string, or a list of strings representing aliases, the first one being shown when hovering the tag.
+where `notes` is replaced with either a string, or a list of strings representing aliases, the **first** one being shown when hovering the tag.
 
-Here is an example of a simple [commit](https://github.com/daxida/wty/commit/00c69daa89344d971978d905897aa19e7c1ae619) to add the "Buddhism" tag, that modifies the JSON, then runs the build script.
+Here is an example of a simple [commit](https://github.com/yomidevs/wiktionary-to-yomitan/commit/00c69daa89344d971978d905897aa19e7c1ae619) to add the "Buddhism" tag, that modifies the JSON, then runs the build script to update the rust code. Other example adding multiple tags [here](https://github.com/yomidevs/wiktionary-to-yomitan/commit/0b8013b0fe01f17a543a840200733a431bc1187b).
 
 !!! warning "Run the build script after any modification to update the rust code: either `just build` or `python3 scripts/build.py`"
 
 ### Extraction logic
 
-This requires some knowledge of kaikki internals and how they extract tags. TODO
+This requires some knowledge of kaikki internals and how they extract tags.
+
+We only use the normalized, english `tags`, as opposed to `raw_tags`, which are the tags you may see in Wiktionary, in the edition language. Therefore, if kaikki hasn't gone through the work of translating the tag, it will not appear in the dictionary. If that is your case, see this [issue](https://github.com/yomidevs/wiktionary-to-yomitan/issues/84), and the associated [PR](https://github.com/tatuylonen/wiktextract/pull/997) in kaikki to have a grasp on how to request/add translations.
+
+It can also happen that kaikki doesn't extract tags from certain templates. In that case, again, it may be worth reporting the issue to them.
+
