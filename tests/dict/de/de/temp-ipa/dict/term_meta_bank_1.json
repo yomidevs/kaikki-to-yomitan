@@ -103,5 +103,17 @@
         }
       ]
     }
+  ],
+  [
+    "in",
+    "ipa",
+    {
+      "reading": "in",
+      "transcriptions": [
+        {
+          "ipa": "[ɪn]"
+        }
+      ]
+    }
   ]
 ]
