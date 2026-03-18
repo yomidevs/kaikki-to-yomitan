@@ -81,7 +81,7 @@ pub const TAG_ORDER: [&str; 76] = [
 ];
 
 #[rustfmt::skip]
-pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 242] = [
+pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 247] = [
     ("non-lemma", "", 10, &["non-lemma"], -10),
     ("r", "partOfSpeech", -1, &["root"], 1),
     ("pos-r", "partOfSpeech", -1, &["pos-root"], 1),
@@ -134,6 +134,7 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 242] = [
     ("poss", "", 0, &["possessive"], 0),
     ("hypo", "", 0, &["hypocoristic"], 0),
     ("aux", "", 0, &["auxiliary"], 0),
+    ("aux-v", "", 0, &["auxiliary verb"], 0),
     ("char", "", 0, &["character"], 0),
     ("punct", "", 0, &["punct"], 0),
     ("interfix", "", 0, &["interfix"], 0),
@@ -164,6 +165,7 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 242] = [
     ("vern", "", 0, &["vernacular"], 0),
     ("dated", "archaism", 0, &["dated"], 0),
     ("obs", "archaism", 0, &["obsolete"], 0),
+    ("out", "archaism", 0, &["outdated"], 0),
     ("med", "", 0, &["medicine"], 0),
     ("fig", "", 0, &["figuratively"], 0),
     ("fig", "", 0, &["figurative"], 0),
@@ -173,6 +175,8 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 242] = [
     ("physics", "", 0, &["physics"], 0),
     ("path", "", 0, &["pathology"], 0),
     ("derog", "", 0, &["derogatory"], 0),
+    ("pej", "", 0, &["pejorative"], 0),
+    ("imp", "", 0, &["impolite"], 0),
     ("gramm", "", 0, &["grammar"], 0),
     ("count", "", 0, &["countable"], 0),
     ("uncount", "", 0, &["uncountable"], 0),
@@ -186,6 +190,7 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 242] = [
     ("🛐", "", 0, &["religion"], 0),
     ("⛪", "", 0, &["modern Italianate Ecclesiastical"], 0),
     ("vulg", "", 0, &["vulgar"], 0),
+    ("jar", "", 0, &["jargon"], 0),
     ("sl", "", 0, &["slang"], 0),
     ("net-sl", "", 0, &["Internet slang"], 0),
     ("crim-sl", "", 0, &["criminal slang"], 0),
@@ -210,7 +215,7 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 242] = [
     ("econ", "", 0, &["economics"], 0),
     ("geom", "", 0, &["geometry"], 0),
     ("bible", "", 0, &["biblical"], 0),
-    ("humor", "", 0, &["humorous"], 0),
+    ("humor", "", 0, &["humorous", "jocular"], 0),
     ("uncmmn", "", 0, &["uncommon"], 0),
     ("geol", "", 0, &["geology"], 0),
     ("⚽", "", 0, &["soccer"], 0),
@@ -319,7 +324,7 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 242] = [
     ("📐trig", "", 0, &["trigonometry"], 0),
     ("bank", "", 0, &["banking"], 0),
     ("reltv", "", 0, &["relative"], 0),
-    ("abbv", "", 0, &["abbreviation"], 0),
+    ("abbv", "", 0, &["abbreviation", "abbrev"], 0),
     ("irreg", "", 0, &["irregular"], 0),
     ("indecl", "", 0, &["indeclinable"], 0),
     ("not-comp", "", 0, &["not comparable", "not-comparable"], 0),

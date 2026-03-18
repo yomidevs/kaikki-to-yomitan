@@ -415,6 +415,13 @@
         0
     ],
     [
+        "aux-v",
+        "",
+        0,
+        "auxiliary verb",
+        0
+    ],
+    [
         "char",
         "",
         0,
@@ -625,6 +632,13 @@
         0
     ],
     [
+        "out",
+        "archaism",
+        0,
+        "outdated",
+        0
+    ],
+    [
         "med",
         "",
         0,
@@ -685,6 +699,20 @@
         "",
         0,
         "derogatory",
+        0
+    ],
+    [
+        "pej",
+        "",
+        0,
+        "pejorative",
+        0
+    ],
+    [
+        "imp",
+        "",
+        0,
+        "impolite",
         0
     ],
     [
@@ -776,6 +804,13 @@
         "",
         0,
         "vulgar",
+        0
+    ],
+    [
+        "jar",
+        "",
+        0,
+        "jargon",
         0
     ],
     [
@@ -950,7 +985,10 @@
         "humor",
         "",
         0,
-        "humorous",
+        [
+            "humorous",
+            "jocular"
+        ],
         0
     ],
     [
@@ -1713,7 +1751,10 @@
         "abbv",
         "",
         0,
-        "abbreviation",
+        [
+            "abbreviation",
+            "abbrev"
+        ],
         0
     ],
     [
