@@ -503,7 +503,7 @@ def check_kaikki_langs(langs: list[Lang]) -> None:
     text = response.text
 
     supported = {lang.language for lang in langs}
-    upto = 50
+    upto = 80
 
     # Get names (isos are not in the website)
     matches = re.findall(

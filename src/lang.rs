@@ -30,16 +30,26 @@ pub enum Lang {
     Apc,
     /// South Levantine Arabic
     Ajp,
+    /// Armenian
+    Hy,
+    /// Old Armenian
+    Xcl,
     /// Assyrian Neo-Aramaic
     Aii,
     /// Asturian
     Ast,
+    /// Azerbaijani
+    Az,
+    /// Basque
+    Eu,
     /// Belarusian
     Be,
     /// Bengali
     Bn,
     /// Bulgarian
     Bg,
+    /// Burmese
+    My,
     /// Cantonese
     Yue,
     /// Catalan
@@ -76,6 +86,8 @@ pub enum Lang {
     Ka,
     /// German
     De,
+    /// Gothic
+    Got,
     /// Greek
     El,
     /// Ancient Greek
@@ -90,6 +102,8 @@ pub enum Lang {
     Hu,
     /// Icelandic
     Is,
+    /// Ido
+    Io,
     /// Indonesian
     Id,
     /// Irish
@@ -122,42 +136,60 @@ pub enum Lang {
     Mk,
     /// Malay
     Ms,
+    /// Malayalam
+    Ml,
     /// Maltese
     Mt,
     /// Marathi
     Mr,
     /// Mongolian
     Mn,
+    /// Navajo
+    Nv,
     /// Norwegian
     No,
     /// Norwegian Bokmål
     Nb,
     /// Norwegian Nynorsk
     Nn,
+    /// Old Norse
+    Non,
+    /// Pali
+    Pi,
     /// Persian
     Fa,
     /// Polish
     Pl,
     /// Portuguese
     Pt,
+    /// Punjabi
+    Pa,
     /// Romanian
     Ro,
     /// Russian
     Ru,
     /// Sanskrit
     Sa,
+    /// Scottish Gaelic
+    Gd,
     /// Serbo-Croatian
     Sh,
     /// Sicilian
     Scn,
+    /// Slovak
+    Sk,
     /// Slovene
     Sl,
     /// Spanish
     Es,
+    /// Swahili
+    Sw,
     /// Swedish
     Sv,
     /// Tagalog
     Tl,
+    /// Tamil
+    Ta,
     /// Telugu
     Te,
     /// Thai
@@ -166,6 +198,8 @@ pub enum Lang {
     Tok,
     /// Turkish
     Tr,
+    /// Ottoman Turkish
+    Ota,
     /// Ukrainian
     Uk,
     /// Urdu
@@ -208,11 +242,11 @@ impl From<Edition> for Lang {
 
 impl Lang {
     pub const fn help_isos() -> &'static str {
-        "Supported isos: sq | arz | afb | ar | apc | ajp | aii | ast | be | bn | bg | yue | ca | ceb | zh | cs | da | nl | en | enm | ang | simple | eo | et | fi | fr | gl | ka | de | el | grc | haw | he | hi | hu | is | id | ga | sga | it | ja | kn | kk | km | ko | ku | lo | la | lv | lt | mk | ms | mt | mr | mn | no | nb | nn | fa | pl | pt | ro | ru | sa | sh | scn | sl | es | sv | tl | te | th | tok | tr | uk | ur | vi | cy | yi"
+        "Supported isos: sq | arz | afb | ar | apc | ajp | hy | xcl | aii | ast | az | eu | be | bn | bg | my | yue | ca | ceb | zh | cs | da | nl | en | enm | ang | simple | eo | et | fi | fr | gl | ka | de | got | el | grc | haw | he | hi | hu | is | io | id | ga | sga | it | ja | kn | kk | km | ko | ku | lo | la | lv | lt | mk | ms | ml | mt | mr | mn | nv | no | nb | nn | non | pi | fa | pl | pt | pa | ro | ru | sa | gd | sh | scn | sk | sl | es | sw | sv | tl | ta | te | th | tok | tr | ota | uk | ur | vi | cy | yi"
     }
 
     pub const fn help_isos_coloured() -> &'static str {
-        "Supported isos: sq | arz | afb | ar | apc | ajp | aii | ast | be | bn | bg | yue | ca | ceb | [32mzh[0m | [32mcs[0m | da | [32mnl[0m | [32men[0m | enm | ang | [32msimple[0m | eo | et | fi | [32mfr[0m | gl | ka | [32mde[0m | [32mel[0m | grc | haw | he | hi | hu | is | [32mid[0m | ga | sga | [32mit[0m | [32mja[0m | kn | kk | km | [32mko[0m | [32mku[0m | lo | la | lv | lt | mk | [32mms[0m | mt | mr | mn | no | nb | nn | fa | [32mpl[0m | [32mpt[0m | ro | [32mru[0m | sa | sh | scn | sl | [32mes[0m | sv | tl | te | [32mth[0m | tok | [32mtr[0m | uk | ur | [32mvi[0m | cy | yi"
+        "Supported isos: sq | arz | afb | ar | apc | ajp | hy | xcl | aii | ast | az | eu | be | bn | bg | my | yue | ca | ceb | [32mzh[0m | [32mcs[0m | da | [32mnl[0m | [32men[0m | enm | ang | [32msimple[0m | eo | et | fi | [32mfr[0m | gl | ka | [32mde[0m | got | [32mel[0m | grc | haw | he | hi | hu | is | io | [32mid[0m | ga | sga | [32mit[0m | [32mja[0m | kn | kk | km | [32mko[0m | [32mku[0m | lo | la | lv | lt | mk | [32mms[0m | ml | mt | mr | mn | nv | no | nb | nn | non | pi | fa | [32mpl[0m | [32mpt[0m | pa | ro | [32mru[0m | sa | gd | sh | scn | sk | sl | [32mes[0m | sw | sv | tl | ta | te | [32mth[0m | tok | [32mtr[0m | ota | uk | ur | [32mvi[0m | cy | yi"
     }
 
     pub const fn help_editions() -> &'static str {
@@ -227,11 +261,16 @@ impl Lang {
             Self::Ar => "Arabic",
             Self::Apc => "North Levantine Arabic",
             Self::Ajp => "South Levantine Arabic",
+            Self::Hy => "Armenian",
+            Self::Xcl => "Old Armenian",
             Self::Aii => "Assyrian Neo-Aramaic",
             Self::Ast => "Asturian",
+            Self::Az => "Azerbaijani",
+            Self::Eu => "Basque",
             Self::Be => "Belarusian",
             Self::Bn => "Bengali",
             Self::Bg => "Bulgarian",
+            Self::My => "Burmese",
             Self::Yue => "Cantonese",
             Self::Ca => "Catalan",
             Self::Ceb => "Cebuano",
@@ -250,6 +289,7 @@ impl Lang {
             Self::Gl => "Galician",
             Self::Ka => "Georgian",
             Self::De => "German",
+            Self::Got => "Gothic",
             Self::El => "Greek",
             Self::Grc => "Ancient Greek",
             Self::Haw => "Hawaiian",
@@ -257,6 +297,7 @@ impl Lang {
             Self::Hi => "Hindi",
             Self::Hu => "Hungarian",
             Self::Is => "Icelandic",
+            Self::Io => "Ido",
             Self::Id => "Indonesian",
             Self::Ga => "Irish",
             Self::Sga => "Old Irish",
@@ -273,28 +314,38 @@ impl Lang {
             Self::Lt => "Lithuanian",
             Self::Mk => "Macedonian",
             Self::Ms => "Malay",
+            Self::Ml => "Malayalam",
             Self::Mt => "Maltese",
             Self::Mr => "Marathi",
             Self::Mn => "Mongolian",
+            Self::Nv => "Navajo",
             Self::No => "Norwegian",
             Self::Nb => "Norwegian Bokmål",
             Self::Nn => "Norwegian Nynorsk",
+            Self::Non => "Old Norse",
+            Self::Pi => "Pali",
             Self::Fa => "Persian",
             Self::Pl => "Polish",
             Self::Pt => "Portuguese",
+            Self::Pa => "Punjabi",
             Self::Ro => "Romanian",
             Self::Ru => "Russian",
             Self::Sa => "Sanskrit",
+            Self::Gd => "Scottish Gaelic",
             Self::Sh => "Serbo-Croatian",
             Self::Scn => "Sicilian",
+            Self::Sk => "Slovak",
             Self::Sl => "Slovene",
             Self::Es => "Spanish",
+            Self::Sw => "Swahili",
             Self::Sv => "Swedish",
             Self::Tl => "Tagalog",
+            Self::Ta => "Tamil",
             Self::Te => "Telugu",
             Self::Th => "Thai",
             Self::Tok => "Toki Pona",
             Self::Tr => "Turkish",
+            Self::Ota => "Ottoman Turkish",
             Self::Uk => "Ukrainian",
             Self::Ur => "Urdu",
             Self::Vi => "Vietnamese",
@@ -311,11 +362,16 @@ impl Lang {
             Self::Ar,
             Self::Apc,
             Self::Ajp,
+            Self::Hy,
+            Self::Xcl,
             Self::Aii,
             Self::Ast,
+            Self::Az,
+            Self::Eu,
             Self::Be,
             Self::Bn,
             Self::Bg,
+            Self::My,
             Self::Yue,
             Self::Ca,
             Self::Ceb,
@@ -334,6 +390,7 @@ impl Lang {
             Self::Gl,
             Self::Ka,
             Self::De,
+            Self::Got,
             Self::El,
             Self::Grc,
             Self::Haw,
@@ -341,6 +398,7 @@ impl Lang {
             Self::Hi,
             Self::Hu,
             Self::Is,
+            Self::Io,
             Self::Id,
             Self::Ga,
             Self::Sga,
@@ -357,28 +415,38 @@ impl Lang {
             Self::Lt,
             Self::Mk,
             Self::Ms,
+            Self::Ml,
             Self::Mt,
             Self::Mr,
             Self::Mn,
+            Self::Nv,
             Self::No,
             Self::Nb,
             Self::Nn,
+            Self::Non,
+            Self::Pi,
             Self::Fa,
             Self::Pl,
             Self::Pt,
+            Self::Pa,
             Self::Ro,
             Self::Ru,
             Self::Sa,
+            Self::Gd,
             Self::Sh,
             Self::Scn,
+            Self::Sk,
             Self::Sl,
             Self::Es,
+            Self::Sw,
             Self::Sv,
             Self::Tl,
+            Self::Ta,
             Self::Te,
             Self::Th,
             Self::Tok,
             Self::Tr,
+            Self::Ota,
             Self::Uk,
             Self::Ur,
             Self::Vi,
@@ -430,11 +498,16 @@ impl FromStr for Lang {
             "ar" => Ok(Self::Ar),
             "apc" => Ok(Self::Apc),
             "ajp" => Ok(Self::Ajp),
+            "hy" => Ok(Self::Hy),
+            "xcl" => Ok(Self::Xcl),
             "aii" => Ok(Self::Aii),
             "ast" => Ok(Self::Ast),
+            "az" => Ok(Self::Az),
+            "eu" => Ok(Self::Eu),
             "be" => Ok(Self::Be),
             "bn" => Ok(Self::Bn),
             "bg" => Ok(Self::Bg),
+            "my" => Ok(Self::My),
             "yue" => Ok(Self::Yue),
             "ca" => Ok(Self::Ca),
             "ceb" => Ok(Self::Ceb),
@@ -453,6 +526,7 @@ impl FromStr for Lang {
             "gl" => Ok(Self::Gl),
             "ka" => Ok(Self::Ka),
             "de" => Ok(Self::De),
+            "got" => Ok(Self::Got),
             "el" => Ok(Self::El),
             "grc" => Ok(Self::Grc),
             "haw" => Ok(Self::Haw),
@@ -460,6 +534,7 @@ impl FromStr for Lang {
             "hi" => Ok(Self::Hi),
             "hu" => Ok(Self::Hu),
             "is" => Ok(Self::Is),
+            "io" => Ok(Self::Io),
             "id" => Ok(Self::Id),
             "ga" => Ok(Self::Ga),
             "sga" => Ok(Self::Sga),
@@ -476,28 +551,38 @@ impl FromStr for Lang {
             "lt" => Ok(Self::Lt),
             "mk" => Ok(Self::Mk),
             "ms" => Ok(Self::Ms),
+            "ml" => Ok(Self::Ml),
             "mt" => Ok(Self::Mt),
             "mr" => Ok(Self::Mr),
             "mn" => Ok(Self::Mn),
+            "nv" => Ok(Self::Nv),
             "no" => Ok(Self::No),
             "nb" => Ok(Self::Nb),
             "nn" => Ok(Self::Nn),
+            "non" => Ok(Self::Non),
+            "pi" => Ok(Self::Pi),
             "fa" => Ok(Self::Fa),
             "pl" => Ok(Self::Pl),
             "pt" => Ok(Self::Pt),
+            "pa" => Ok(Self::Pa),
             "ro" => Ok(Self::Ro),
             "ru" => Ok(Self::Ru),
             "sa" => Ok(Self::Sa),
+            "gd" => Ok(Self::Gd),
             "sh" => Ok(Self::Sh),
             "scn" => Ok(Self::Scn),
+            "sk" => Ok(Self::Sk),
             "sl" => Ok(Self::Sl),
             "es" => Ok(Self::Es),
+            "sw" => Ok(Self::Sw),
             "sv" => Ok(Self::Sv),
             "tl" => Ok(Self::Tl),
+            "ta" => Ok(Self::Ta),
             "te" => Ok(Self::Te),
             "th" => Ok(Self::Th),
             "tok" => Ok(Self::Tok),
             "tr" => Ok(Self::Tr),
+            "ota" => Ok(Self::Ota),
             "uk" => Ok(Self::Uk),
             "ur" => Ok(Self::Ur),
             "vi" => Ok(Self::Vi),
@@ -517,11 +602,16 @@ impl AsRef<str> for Lang {
             Self::Ar => "ar",
             Self::Apc => "apc",
             Self::Ajp => "ajp",
+            Self::Hy => "hy",
+            Self::Xcl => "xcl",
             Self::Aii => "aii",
             Self::Ast => "ast",
+            Self::Az => "az",
+            Self::Eu => "eu",
             Self::Be => "be",
             Self::Bn => "bn",
             Self::Bg => "bg",
+            Self::My => "my",
             Self::Yue => "yue",
             Self::Ca => "ca",
             Self::Ceb => "ceb",
@@ -540,6 +630,7 @@ impl AsRef<str> for Lang {
             Self::Gl => "gl",
             Self::Ka => "ka",
             Self::De => "de",
+            Self::Got => "got",
             Self::El => "el",
             Self::Grc => "grc",
             Self::Haw => "haw",
@@ -547,6 +638,7 @@ impl AsRef<str> for Lang {
             Self::Hi => "hi",
             Self::Hu => "hu",
             Self::Is => "is",
+            Self::Io => "io",
             Self::Id => "id",
             Self::Ga => "ga",
             Self::Sga => "sga",
@@ -563,28 +655,38 @@ impl AsRef<str> for Lang {
             Self::Lt => "lt",
             Self::Mk => "mk",
             Self::Ms => "ms",
+            Self::Ml => "ml",
             Self::Mt => "mt",
             Self::Mr => "mr",
             Self::Mn => "mn",
+            Self::Nv => "nv",
             Self::No => "no",
             Self::Nb => "nb",
             Self::Nn => "nn",
+            Self::Non => "non",
+            Self::Pi => "pi",
             Self::Fa => "fa",
             Self::Pl => "pl",
             Self::Pt => "pt",
+            Self::Pa => "pa",
             Self::Ro => "ro",
             Self::Ru => "ru",
             Self::Sa => "sa",
+            Self::Gd => "gd",
             Self::Sh => "sh",
             Self::Scn => "scn",
+            Self::Sk => "sk",
             Self::Sl => "sl",
             Self::Es => "es",
+            Self::Sw => "sw",
             Self::Sv => "sv",
             Self::Tl => "tl",
+            Self::Ta => "ta",
             Self::Te => "te",
             Self::Th => "th",
             Self::Tok => "tok",
             Self::Tr => "tr",
+            Self::Ota => "ota",
             Self::Uk => "uk",
             Self::Ur => "ur",
             Self::Vi => "vi",
