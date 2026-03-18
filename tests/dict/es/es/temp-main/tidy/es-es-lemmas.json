@@ -5,25 +5,16 @@
         {
           "gloss_tree": {
             "Precipitación atmosférica constituida por hielo cristalizado.": {
-              "tags": [
-                "feminine"
-              ],
               "topics": [
                 "meteorology"
               ]
             },
             "Hielo cristalizado en su mayor parte con forma de estrellas hexagonales, ramificadas con características fractales, pero frecuentemente mezcladas con simples cristales. Estos cristales se aglomeran dando lugar a los copos de nieve.": {
-              "tags": [
-                "feminine"
-              ],
               "topics": [
                 "meteorology"
               ]
             },
             "Manto blanco de estos cristales de hielo, que cubre las superficies bajo el efecto de una nevada.": {
-              "tags": [
-                "feminine"
-              ],
               "examples": [
                 {
                   "text": "El lugar permanecía incomunicado por la nieve, pero podría ir andando por la senda que serpenteaba junto a un arroyo",
@@ -37,39 +28,28 @@
                 }
               ]
             },
-            "Época del año en la que nieva mucho.": {
-              "tags": [
-                "feminine"
-              ]
-            },
+            "Época del año en la que nieva mucho.": {},
             "Tipo de helado preparado a base de agua congelada y sabor artificial.": {
               "tags": [
                 "Guatemala",
                 "Mexico",
-                "Puerto-Rico",
-                "feminine"
+                "Puerto-Rico"
               ],
               "topics": [
                 "food"
               ]
             },
-            "Cocaína.": {
-              "tags": [
-                "feminine"
-              ]
-            },
+            "Cocaína.": {},
             "Color muy blanco.": {
               "tags": [
-                "literary",
-                "feminine"
+                "literary"
               ]
             },
-            "En un aparato de televisión o en algún receptor análogo, imagen que recuerda a la nieve que cae, por efecto de una interferencia electromagnética.": {
-              "tags": [
-                "feminine"
-              ]
-            }
+            "En un aparato de televisión o en algún receptor análogo, imagen que recuerda a la nieve que cae, por efecto de una interferencia electromagnética.": {}
           },
+          "tags": [
+            "feminine"
+          ],
           "etymology_text": "Del latín nivem.",
           "wlink": "https://es.wiktionary.org/wiki/nieve#Spanish",
           "klink": "https://kaikki.org/eswiktionary/All%20languages%20combined/meaning/n/ni/nieve.html"

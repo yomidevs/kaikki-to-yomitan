@@ -5,10 +5,6 @@
         {
           "gloss_tree": {
             "opad w postaci kryształków lodu": {
-              "tags": [
-                "inanimate",
-                "masculine"
-              ],
               "topics": [
                 "meteorology"
               ],
@@ -25,10 +21,6 @@
               ]
             },
             "śnieg (1.1) leżący na ziemi, przedmiotach": {
-              "tags": [
-                "inanimate",
-                "masculine"
-              ],
               "examples": [
                 {
                   "text": "Obiecałaś matce, że jej pomożesz w odgarnięciu śniegu.",
@@ -44,9 +36,7 @@
             "zły obraz na ekranie telewizora": {
               "tags": [
                 "colloquial",
-                "metaphoric",
-                "inanimate",
-                "masculine"
+                "metaphoric"
               ],
               "topics": [
                 "technology"
@@ -66,12 +56,14 @@
             "kokaina": {
               "tags": [
                 "dated",
-                "metaphoric",
-                "inanimate",
-                "masculine"
+                "metaphoric"
               ]
             }
           },
+          "tags": [
+            "inanimate",
+            "masculine"
+          ],
           "etymology_text": "prasł. *sněgъ < praindoeur. *snóygʷʰos < praindoeur. *sneygʷʰ- → śnieżyć\nod",
           "wlink": "https://pl.wiktionary.org/wiki/śnieg#Polish",
           "klink": "https://kaikki.org/plwiktionary/All%20languages%20combined/meaning/ś/śn/śnieg.html"

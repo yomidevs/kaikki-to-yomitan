@@ -190,6 +190,10 @@
             "国などの行政機関が法律を実施するため、命じることやその内容。": {},
             "コンピューターに指示して処理をさせるための文字列。コマンド。": {}
           },
+          "tags": [
+            "irregular",
+            "sa-row"
+          ],
           "wlink": "https://ja.wiktionary.org/wiki/命令#Japanese",
           "klink": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/命/命令/命令.html"
         }

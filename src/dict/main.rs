@@ -516,6 +516,9 @@ enum FormSource {
 struct LemmaInfo {
     gloss_tree: GlossTree,
 
+    #[serde(skip_serializing_if = "Vec::is_empty")]
+    tags: Vec<Tag>,
+
     #[serde(skip_serializing_if = "Option::is_none")]
     etymology_text: Option<String>,
 
@@ -727,16 +730,6 @@ fn preprocess_main(
                                 sense.tags.push(tag.into());
                             }
                         }
-                    }
-                }
-            }
-        }
-        Edition::Ru | Edition::Es | Edition::Pl => {
-            // Propagate entry.tags to sense.tags
-            for sense in &mut entry.senses {
-                for tag in &entry.tags {
-                    if !sense.tags.contains(tag) {
-                        sense.tags.push(tag.into());
                     }
                 }
             }
@@ -1054,6 +1047,7 @@ fn get_japanese_reading(entry: &WordEntry) -> Option<String> {
 fn process_entry(edition: Edition, source: Lang, entry: &WordEntry) -> LemmaInfo {
     LemmaInfo {
         gloss_tree: get_gloss_tree(entry),
+        tags: entry.tags.clone(),
         etymology_text: entry
             .etymology_texts()
             .map(|etymology_text| etymology_text.join("\n")),
@@ -1413,7 +1407,7 @@ fn to_yomitan_lemma(
 
     let yomitan_reading = if *reading == *lemma { "" } else { reading };
 
-    let common_short_tags_found = get_found_tags(pos, &info.gloss_tree);
+    let common_short_tags_found = get_found_tags(pos, &info);
 
     let mut detailed_definition_content = Node::new_array();
 
@@ -1441,33 +1435,36 @@ fn to_yomitan_lemma(
     ))
 }
 
-fn get_found_tags(pos: &Pos, gloss_tree: &GlossTree) -> Vec<Tag> {
-    // Common tags to all glosses (this is an English edition reasoning really...)
-    // it should also support tags at the WordEntry level
-    let common_tags_iter = gloss_tree
+/// Extracts and normalizes tags associated with a lemma.
+///
+/// This function collects tags from three sources:
+/// 1. The provided part-of-speech (`pos`) - always included first
+/// 2. Top-level tags from `LemmaInfo` (`info.tags`) - usu. non-En edition
+/// 3. Tags common to all senses in `info.gloss_tree` - usu. En edition
+///
+/// For sense-level tags, only those present in *every* gloss are kept
+/// (set intersection across all gloss entries).
+fn get_found_tags(pos: &Pos, info: &LemmaInfo) -> Vec<Tag> {
+    let common_tags_iter = info
+        .gloss_tree
         .values()
         .map(|g| Set::from_iter(g.tags.iter().cloned()))
         .reduce(|acc, set| acc.intersection(&set).cloned().collect::<Set<Tag>>())
         .unwrap() // a non-empty gloss_tree has at least one gloss
         .into_iter();
 
-    // rg: processtags process_tags
-    let mut common_short_tags_found: Vec<Tag> = Vec::new();
-
-    // we add pos (at index 0) for this search!
-    for tag in std::iter::once(pos.to_string()).chain(common_tags_iter) {
-        match find_tag_in_bank(&tag) {
+    std::iter::once(pos.to_string())
+        .chain(info.tags.clone()) // top level tags (the non-En preferred way)
+        .chain(common_tags_iter)
+        .filter_map(|tag| match find_tag_in_bank(&tag) {
+            Some(res) => Some(res.short_tag),
             None => {
                 // log skipped tags
                 // tracing::debug!("{}", tag);
+                None
             }
-            Some(res) => {
-                common_short_tags_found.push(res.short_tag);
-            }
-        }
-    }
-
-    common_short_tags_found
+        })
+        .collect()
 }
 
 fn build_details_entry(ty: &str, content: String) -> Node {
