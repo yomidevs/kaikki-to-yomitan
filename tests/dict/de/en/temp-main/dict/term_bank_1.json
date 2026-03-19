@@ -98,7 +98,7 @@
                             "title": "medicine",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "topic"
                             },
                             "content": "med"
                           }
@@ -1390,7 +1390,7 @@
                             "title": "informal",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "register"
                             },
                             "content": "inf"
                           }
@@ -1481,7 +1481,7 @@
                             "title": "informal",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "register"
                             },
                             "content": "inf"
                           }
@@ -1583,7 +1583,7 @@
                             "title": "slang",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "register"
                             },
                             "content": "sl"
                           },
@@ -1592,7 +1592,7 @@
                             "title": "military",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "topic"
                             },
                             "content": "mil"
                           },
@@ -1601,7 +1601,7 @@
                             "title": "politics",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "topic"
                             },
                             "content": "polit"
                           }
@@ -1703,7 +1703,7 @@
                             "title": "military",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "topic"
                             },
                             "content": "mil"
                           },
@@ -1712,7 +1712,7 @@
                             "title": "politics",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "topic"
                             },
                             "content": "polit"
                           }
@@ -1807,7 +1807,7 @@
                             "title": "biology",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "topic"
                             },
                             "content": "biol"
                           },
@@ -1816,7 +1816,7 @@
                             "title": "entomology",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "topic"
                             },
                             "content": "entom"
                           }
@@ -2993,7 +2993,7 @@
                             "title": "chemistry",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "topic"
                             },
                             "content": "chem"
                           }

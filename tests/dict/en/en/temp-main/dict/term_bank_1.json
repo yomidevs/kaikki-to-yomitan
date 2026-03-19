@@ -172,7 +172,7 @@
                             "title": "figuratively",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "usage"
                             },
                             "content": "fig"
                           },
@@ -540,7 +540,7 @@
                             "title": "sports",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "topic"
                             },
                             "content": "sports"
                           }
@@ -614,7 +614,7 @@
                             "title": "chess",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "topic"
                             },
                             "content": "chess"
                           }
@@ -967,7 +967,7 @@
                             "title": "hunting",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "topic"
                             },
                             "content": "hunt"
                           }
@@ -995,7 +995,7 @@
                             "title": "historical",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "topic"
                             },
                             "content": "hist"
                           }

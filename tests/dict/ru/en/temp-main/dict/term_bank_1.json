@@ -425,7 +425,7 @@
                             "title": "figuratively",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "usage"
                             },
                             "content": "fig"
                           }
@@ -453,7 +453,7 @@
                             "title": "slang",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "register"
                             },
                             "content": "sl"
                           }
@@ -592,7 +592,7 @@
                             "title": "colloquial",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "register"
                             },
                             "content": "col"
                           }
@@ -620,7 +620,7 @@
                             "title": "colloquial",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "register"
                             },
                             "content": "col"
                           }
@@ -648,7 +648,7 @@
                             "title": "colloquial",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "register"
                             },
                             "content": "col"
                           },
@@ -657,7 +657,7 @@
                             "title": "impersonal",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "transitivity"
                             },
                             "content": "impers"
                           }
@@ -785,7 +785,7 @@
                             "title": "relational",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "grammar"
                             },
                             "content": "reltnl"
                           }

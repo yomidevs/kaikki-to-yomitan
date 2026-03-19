@@ -650,7 +650,7 @@
                             "title": "figuratively",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "usage"
                             },
                             "content": "fig"
                           }
@@ -728,7 +728,7 @@
                             "title": "abbreviation",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "morphology"
                             },
                             "content": "abbv"
                           }
@@ -756,7 +756,7 @@
                             "title": "abbreviation",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "morphology"
                             },
                             "content": "abbv"
                           },
@@ -765,7 +765,7 @@
                             "title": "rare",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "usage"
                             },
                             "content": "rare"
                           }
@@ -829,7 +829,7 @@
                             "title": "abbreviation",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "morphology"
                             },
                             "content": "abbv"
                           },
@@ -847,7 +847,7 @@
                             "title": "rare",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "usage"
                             },
                             "content": "rare"
                           }
@@ -1740,7 +1740,7 @@
                             "title": "euphemistic",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "usage"
                             },
                             "content": "euph"
                           }
@@ -1768,7 +1768,7 @@
                             "title": "music",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "topic"
                             },
                             "content": "music"
                           }

@@ -274,7 +274,7 @@
                                 "title": "figuratively",
                                 "data": {
                                   "content": "tag",
-                                  "category": ""
+                                  "category": "usage"
                                 },
                                 "content": "fig"
                               }
@@ -759,7 +759,7 @@
                                 "title": "colloquial",
                                 "data": {
                                   "content": "tag",
-                                  "category": ""
+                                  "category": "register"
                                 },
                                 "content": "col"
                               }
@@ -782,7 +782,7 @@
                                 "title": "colloquial",
                                 "data": {
                                   "content": "tag",
-                                  "category": ""
+                                  "category": "register"
                                 },
                                 "content": "col"
                               }

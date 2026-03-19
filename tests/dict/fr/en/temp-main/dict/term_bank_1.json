@@ -1616,7 +1616,7 @@
                             "title": "colloquial",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "register"
                             },
                             "content": "col"
                           },
@@ -1625,7 +1625,7 @@
                             "title": "impersonal",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "transitivity"
                             },
                             "content": "impers"
                           }
@@ -1696,7 +1696,7 @@
                             "title": "colloquial",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "register"
                             },
                             "content": "col"
                           },
@@ -1705,7 +1705,7 @@
                             "title": "impersonal",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "transitivity"
                             },
                             "content": "impers"
                           }
@@ -1796,7 +1796,7 @@
                             "title": "impersonal",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "transitivity"
                             },
                             "content": "impers"
                           }
@@ -2038,7 +2038,7 @@
                             "title": "impersonal",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "transitivity"
                             },
                             "content": "impers"
                           },
@@ -2138,7 +2138,7 @@
                             "title": "copulative",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "transitivity"
                             },
                             "content": "cop"
                           }

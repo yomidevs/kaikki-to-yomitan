@@ -67,7 +67,7 @@
                             "title": "Hinduism",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "topic"
                             },
                             "content": "Hind🛕"
                           }
@@ -95,7 +95,7 @@
                             "title": "figuratively",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "usage"
                             },
                             "content": "fig"
                           }
@@ -668,7 +668,7 @@
                             "title": "figuratively",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "usage"
                             },
                             "content": "fig"
                           }
@@ -750,7 +750,7 @@
                             "title": "figuratively",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "usage"
                             },
                             "content": "fig"
                           }
@@ -1065,7 +1065,7 @@
                             "title": "figuratively",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "usage"
                             },
                             "content": "fig"
                           }
