@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tag-order" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -461,6 +461,34 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tag-order" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -472,10 +500,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tag-filtering" class="md-nav__link">
+  <a href="#tag-processing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tag filtering
+        Tag processing
       
     </span>
   </a>
@@ -483,10 +511,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#extraction-logic" class="md-nav__link">
+  <a href="#debugging" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Extraction logic
+        Debugging
       
     </span>
   </a>
@@ -582,9 +610,9 @@
   │
   │ (wiktextract)
   │
-  ├─&gt; raw_tags
-  │     ↓
-  └─&gt; tags
+  ├─&gt;   raw_tags
+  │     ↓      ↓
+  └─&gt; tags / topics
         ↓
    tag filtering (which tags to keep, and their short forms)
         ↓
@@ -595,18 +623,46 @@
    shown tag in yomitan
 </code></pre></div></p>
 <hr />
-<p>There are (at least) three cases in which one may want to modify tags:</p>
-<p>1 - <strong>Tag order</strong>: the order in which tags are displayed.<br />
-2 - <strong>Tag filtering</strong>: abbreviations and which tags are displayed.<br />
-3 - <strong>Extraction logic</strong>: where to extract tags from wiktionary data.</p>
-<p>Tag postprocessing is done after building the whole intermediate representation, to only sort once with every extracted tag. The relevant function is <code>src/dict/main.rs::postprocess_forms</code>.</p>
-<h3 id="tag-order">Tag order<a class="headerlink" href="#tag-order" title="Permanent link">&para;</a></h3>
-<p>Tag order is recorded in <code>assets/tag_order.json</code>. While this file has categories (formatility, cases etc.), those are later strip and serve only as visual help. The sorting is done with the flattened list.</p>
-<div class="admonition warning">
-<p class="admonition-title">Run the build script after any modification to update the rust code: either <code>just build</code> or <code>python3 scripts/build.py</code></p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p><a href="https://github.com/tatuylonen/wiktextract">Wiktextract</a> extracts three <em>types</em> of tags:</p>
+<ol>
+<li><code>raw_tags</code>: original language tags as they appear on Wiktionary (e.g. αρσενικό)</li>
+<li><code>tags</code>: normalized, English-translated tags (e.g. masculine)</li>
+<li><code>topics</code>: normalized, English-translated tags (e.g. Music), conerning general activities.</li>
+</ol>
+<p><code>raw_tags</code> are converted to <code>tags</code> and <code>topics</code> by wiktextract. We don't use the <code>raw_tags</code> directly, because they basically can be anything, including wiktionary editors mistakes. Working only with <code>tags</code> is the more reliable choice.</p>
+<p>Wiktextract <code>tags</code> and <code>topics</code> can end up in multiple parts of a yomitan entry:</p>
+<div align="center">
+  <img src="../assets/screenshot_tags_edited.png" width="50%">
 </div>
-<h3 id="tag-filtering">Tag filtering<a class="headerlink" href="#tag-filtering" title="Permanent link">&para;</a></h3>
-<p>Tag filtering is recorded in <code>assets/tag_bank_term.json</code>. The items of this JSON list are a custom version of:</p>
+
+<p>Even though <code>topics</code> happen almost exclusively as inner tags, a wiktextract tag can be used as any of the three.</p>
+<h3 id="css">CSS<a class="headerlink" href="#css" title="Permanent link">&para;</a></h3>
+<p>TODO: should this be in the css page?</p>
+<p>Here is a basic example on how to handle these tags with your custom css.</p>
+<div class="highlight"><pre><span></span><code><span class="c">/* Hide inflections (~book icon, inflection tags) */</span>
+<span class="p">.</span><span class="nc">inflection-rule-chains</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="c">/* Hide dictionary name (top-level tag) */</span>
+<span class="o">[</span><span class="nt">data-category</span><span class="o">=</span><span class="s2">&quot;dictionary&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="c">/* Hide gender tags (top-level tag) */</span>
+<span class="o">[</span><span class="nt">data-category</span><span class="o">=</span><span class="s2">&quot;gender&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="c">/* Hide inner topic tags (note the -sc-) */</span>
+<span class="o">[</span><span class="nt">data-sc-category</span><span class="o">=</span><span class="s2">&quot;topic&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="tag-order">Tag order<a class="headerlink" href="#tag-order" title="Permanent link">&para;</a></h2>
+<p>In the main dictionary, tag order depends on its type:</p>
+<ol>
+<li><strong>Inflection tags</strong>: we sort them ourselves when building the dictionary, using <code>assets/tag_order.json</code>. While this file has categories (formatility, cases etc.), those are later strip and serve only as visual help. The sorting is done with the flattened list.
+Tag postprocessing is only done for <em>forms</em> after building the whole intermediate representation, to only sort once with every extracted tag. The relevant function is <code>src/dict/main.rs::postprocess_forms</code>.
+They appear in the order they are in the dictionary.</li>
+<li><strong>Top-level tags</strong>: are sorted by Yomitan based on <code>sortingOrder</code> of the <code>tag_bank_term_1.json</code> shipped with the dictionary. They may <strong>NOT</strong> appear in the order they are in the dictionary.</li>
+<li><strong>Inner tags</strong>: they appear in the order they are in the dictionary.</li>
+</ol>
+<h2 id="tag-processing">Tag processing<a class="headerlink" href="#tag-processing" title="Permanent link">&para;</a></h2>
+<p>Tag processing is ruled by <code>assets/tag_bank_term.json</code>. The items of this JSON list are a custom version of:</p>
 <div class="highlight"><pre><span></span><code><span class="kr">type</span><span class="w"> </span><span class="nx">TagInformation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
 <span class="w">  </span><span class="nx">tagName</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span>
 <span class="w">  </span><span class="nx">category</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span>
@@ -628,16 +684,20 @@
 <span class="w">    </span><span class="mi">0</span>
 <span class="p">]</span>
 </code></pre></div>
-<p>will convert both the kaikki tags <code>abbreviation</code> and <code>abbrev</code> into <code>abbv</code>, and show <code>abbreviation</code> when hovered in yomitan.</p>
+<p>will convert both the wiktextract tags <code>abbreviation</code> and <code>abbrev</code> into <code>abbv</code>, and show <code>abbreviation</code> when hovered in yomitan.</p>
 <p>Here is an example of a simple <a href="https://github.com/yomidevs/wiktionary-to-yomitan/commit/00c69daa89344d971978d905897aa19e7c1ae619">commit</a> to add the "Buddhism" tag, that modifies the JSON, then runs the build script to update the rust code. Other example adding multiple tags <a href="https://github.com/yomidevs/wiktionary-to-yomitan/commit/0b8013b0fe01f17a543a840200733a431bc1187b">here</a>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Run the build script after any modification to update the rust code: either <code>just build</code> or <code>python3 scripts/build.py</code></p>
 </div>
-<h3 id="extraction-logic">Extraction logic<a class="headerlink" href="#extraction-logic" title="Permanent link">&para;</a></h3>
-<p>This requires some knowledge of kaikki internals and how they extract tags.</p>
-<p>We only use the normalized, english <code>tags</code>, as opposed to <code>raw_tags</code>, which are the tags you may see in Wiktionary, in the edition language. Therefore, if kaikki hasn't gone through the work of translating the tag, it will not appear in the dictionary. If that is your case, see this <a href="https://github.com/yomidevs/wiktionary-to-yomitan/issues/84">issue</a>, and the associated <a href="https://github.com/tatuylonen/wiktextract/pull/997">PR</a> in kaikki to have a grasp on how to request/add translations.</p>
-<p>It can also happen that kaikki doesn't extract tags from certain templates. In that case, again, it may be worth reporting the issue to them.</p>
-<p>TODO: explain tags at top level / sense level, why this can make some tags to not appear and the hack we do for Greek, Russian etc.</p>
+<h2 id="debugging">Debugging<a class="headerlink" href="#debugging" title="Permanent link">&para;</a></h2>
+<p>These are some steps to debug why a Wiktionary tag may not appear in Yomitan:</p>
+<ol>
+<li><strong>Is the Wiktionary tag really a tag?</strong> Sometimes badly formatted text, or a wrong template may <strong>look</strong> like a tag but it is not.</li>
+<li><strong>Is the Wiktionary tag being extracted by wiktextract?</strong> Check the Kaikki link on the popup bottom-left to confirm.</li>
+<li><strong>Is the Wiktionary tag being extracted as a <code>raw_tag</code>?</strong> If it doesn't, see this <a href="https://github.com/yomidevs/wiktionary-to-yomitan/issues/84">issue</a>, and the associated <a href="https://github.com/tatuylonen/wiktextract/pull/997">PR</a> in wiktextract to have a grasp on how to request/add translations.</li>
+<li><strong>The tag is in wiktextract, but not in the dictionary?</strong> Check if the tag is whitelisted in <code>assets/tag_bank_term.json</code>.</li>
+<li><strong>The tag is whitelisted, but not in the dictionary?</strong> Finally our problem, please open an <a href="https://github.com/yomidevs/wiktionary-to-yomitan/issues/new">issue</a>.</li>
+</ol>
 
 
 
