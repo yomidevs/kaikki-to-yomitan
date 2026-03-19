@@ -4,9 +4,9 @@ Wiktionary
   │
   │ (wiktextract)
   │
-  ├─> raw_tags
-  │     ↓
-  └─> tags
+  ├─>   raw_tags
+  │     ↓      ↓
+  └─> tags / topics
         ↓
    tag filtering (which tags to keep, and their short forms)
         ↓
@@ -19,23 +19,58 @@ Wiktionary
 
 ---
 
-There are (at least) three cases in which one may want to modify tags:
+## Overview
 
-1 - **Tag order**: the order in which tags are displayed.  
-2 - **Tag filtering**: abbreviations and which tags are displayed.  
-3 - **Extraction logic**: where to extract tags from wiktionary data.
+[Wiktextract](https://github.com/tatuylonen/wiktextract) extracts three _types_ of tags:
 
-Tag postprocessing is done after building the whole intermediate representation, to only sort once with every extracted tag. The relevant function is `src/dict/main.rs::postprocess_forms`.
+1. `raw_tags`: original language tags as they appear on Wiktionary (e.g. αρσενικό)
+2. `tags`: normalized, English-translated tags (e.g. masculine)
+3. `topics`: normalized, English-translated tags (e.g. Music), conerning general activities.
 
-### Tag order
+`raw_tags` are converted to `tags` and `topics` by wiktextract. We don't use the `raw_tags` directly, because they basically can be anything, including wiktionary editors mistakes. Working only with `tags` is the more reliable choice.
 
-Tag order is recorded in `assets/tag_order.json`. While this file has categories (formatility, cases etc.), those are later strip and serve only as visual help. The sorting is done with the flattened list.
+Wiktextract `tags` and `topics` can end up in multiple parts of a yomitan entry:
 
-!!! warning "Run the build script after any modification to update the rust code: either `just build` or `python3 scripts/build.py`"
+<div align="center">
+  <img src="../assets/screenshot_tags_edited.png" width="50%">
+</div>
 
-### Tag filtering
+Even though `topics` happen almost exclusively as inner tags, a wiktextract tag can be used as any of the three.
 
-Tag filtering is recorded in `assets/tag_bank_term.json`. The items of this JSON list are a custom version of:
+### CSS
+
+TODO: should this be in the css page?
+
+Here is a basic example on how to handle these tags with your custom css.
+
+```css
+/* Hide inflections (~book icon, inflection tags) */
+.inflection-rule-chains { display: none !important; }
+
+/* Hide dictionary name (top-level tag) */
+[data-category="dictionary"] { display: none !important; }
+/* Hide gender tags (top-level tag) */
+[data-category="gender"] { display: none !important; }
+
+/* Hide inner topic tags (note the -sc-) */
+[data-sc-category="topic"] { display: none !important; }
+```
+
+---
+
+## Tag order
+
+In the main dictionary, tag order depends on its type:
+
+1. **Inflection tags**: we sort them ourselves when building the dictionary, using `assets/tag_order.json`. While this file has categories (formatility, cases etc.), those are later strip and serve only as visual help. The sorting is done with the flattened list.
+Tag postprocessing is only done for _forms_ after building the whole intermediate representation, to only sort once with every extracted tag. The relevant function is `src/dict/main.rs::postprocess_forms`.
+They appear in the order they are in the dictionary.
+2. **Top-level tags**: are sorted by Yomitan based on `sortingOrder` of the `tag_bank_term_1.json` shipped with the dictionary. They may **NOT** appear in the order they are in the dictionary.
+3. **Inner tags**: they appear in the order they are in the dictionary.
+
+## Tag processing
+
+Tag processing is ruled by `assets/tag_bank_term.json`. The items of this JSON list are a custom version of:
 
 ```typescript
 type TagInformation = [
@@ -64,19 +99,19 @@ For example, this tag information:
 ]
 ```
 
-will convert both the kaikki tags `abbreviation` and `abbrev` into `abbv`, and show `abbreviation` when hovered in yomitan.
+will convert both the wiktextract tags `abbreviation` and `abbrev` into `abbv`, and show `abbreviation` when hovered in yomitan.
 
 Here is an example of a simple [commit](https://github.com/yomidevs/wiktionary-to-yomitan/commit/00c69daa89344d971978d905897aa19e7c1ae619) to add the "Buddhism" tag, that modifies the JSON, then runs the build script to update the rust code. Other example adding multiple tags [here](https://github.com/yomidevs/wiktionary-to-yomitan/commit/0b8013b0fe01f17a543a840200733a431bc1187b).
 
 !!! warning "Run the build script after any modification to update the rust code: either `just build` or `python3 scripts/build.py`"
 
-### Extraction logic
+## Debugging
 
-This requires some knowledge of kaikki internals and how they extract tags.
+These are some steps to debug why a Wiktionary tag may not appear in Yomitan:
 
-We only use the normalized, english `tags`, as opposed to `raw_tags`, which are the tags you may see in Wiktionary, in the edition language. Therefore, if kaikki hasn't gone through the work of translating the tag, it will not appear in the dictionary. If that is your case, see this [issue](https://github.com/yomidevs/wiktionary-to-yomitan/issues/84), and the associated [PR](https://github.com/tatuylonen/wiktextract/pull/997) in kaikki to have a grasp on how to request/add translations.
-
-It can also happen that kaikki doesn't extract tags from certain templates. In that case, again, it may be worth reporting the issue to them.
-
-TODO: explain tags at top level / sense level, why this can make some tags to not appear and the hack we do for Greek, Russian etc.
+1. **Is the Wiktionary tag really a tag?** Sometimes badly formatted text, or a wrong template may **look** like a tag but it is not.
+2. **Is the Wiktionary tag being extracted by wiktextract?** Check the Kaikki link on the popup bottom-left to confirm.
+3. **Is the Wiktionary tag being extracted as a `raw_tag`?** If it doesn't, see this [issue](https://github.com/yomidevs/wiktionary-to-yomitan/issues/84), and the associated [PR](https://github.com/tatuylonen/wiktextract/pull/997) in wiktextract to have a grasp on how to request/add translations.
+4. **The tag is in wiktextract, but not in the dictionary?** Check if the tag is whitelisted in `assets/tag_bank_term.json`.
+5. **The tag is whitelisted, but not in the dictionary?** Finally our problem, please open an [issue](https://github.com/yomidevs/wiktionary-to-yomitan/issues/new).
 
