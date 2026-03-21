@@ -740,6 +740,23 @@
                   {
                     "tag": "div",
                     "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "title": "Swiss Standard German",
+                            "data": {
+                              "content": "tag",
+                              "category": "variety"
+                            },
+                            "content": "Swiss Standard German"
+                          }
+                        ]
+                      },
                       "Geschäft, das sowohl als eine auf die Reparatur von Kraftfahrzeugen spezialisierte Werkstatt als auch als Verkaufslokal von Kraftfahrzeugen dient",
                       {
                         "tag": "details",

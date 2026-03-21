@@ -81,7 +81,7 @@ pub const TAG_ORDER: [&str; 76] = [
 ];
 
 #[rustfmt::skip]
-pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 249] = [
+pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 257] = [
     ("animate", "animacy", 0, &["animate"], 0),
     ("inanim", "animacy", 0, &["inanimate"], 0),
     ("dated", "archaism", 0, &["dated"], 0),
@@ -327,6 +327,14 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 249] = [
     ("regio", "usage", 0, &["regional"], 0),
     ("uncmmn", "usage", 0, &["uncommon"], 0),
     ("rare", "usage", 1, &["rare"], -1),
+    ("Alemannic", "variety", 0, &["Alemannic"], 0),
+    ("Austrian German", "variety", 0, &["Austrian German"], 0),
+    ("Bavarian", "variety", 0, &["Bavarian"], 0),
+    ("Germany", "variety", 0, &["Germany"], 0),
+    ("North German", "variety", 0, &["North German"], 0),
+    ("South German", "variety", 0, &["South German", "South-German"], 0),
+    ("Swabian", "variety", 0, &["Swabian"], 0),
+    ("Swiss Standard German", "variety", 0, &["Swiss Standard German"], 0),
     ("char", "", 0, &["character"], 0),
     ("punct", "", 0, &["punct"], 0),
     ("symb", "", 0, &["symbol"], 0),
