@@ -614,7 +614,9 @@
   │     ↓      ↓
   └─&gt; tags / topics
         ↓
-   tag filtering (which tags to keep, and their short forms)
+   tag processing (which tags to keep, their short forms etc.)
+        ↓
+   tag sorting (only for inflection tags)
         ↓
    tag formatting (global css)
         ↓
@@ -628,10 +630,10 @@
 <ol>
 <li><code>raw_tags</code>: original language tags as they appear on Wiktionary (e.g. αρσενικό)</li>
 <li><code>tags</code>: normalized, English-translated tags (e.g. masculine)</li>
-<li><code>topics</code>: normalized, English-translated tags (e.g. Music), conerning general activities.</li>
+<li><code>topics</code>: normalized, English-translated tags (e.g. Music), concerning general activities.</li>
 </ol>
 <p><code>raw_tags</code> are converted to <code>tags</code> and <code>topics</code> by wiktextract. We don't use the <code>raw_tags</code> directly, because they basically can be anything, including wiktionary editors mistakes. Working only with <code>tags</code> is the more reliable choice.</p>
-<p>Wiktextract <code>tags</code> and <code>topics</code> can end up in multiple parts of a yomitan entry:</p>
+<p>Wiktextract <code>tags</code> and <code>topics</code> can end up in multiple parts of a main dictionary entry:</p>
 <div align="center">
   <img src="../assets/screenshot_tags_edited.png" width="50%">
 </div>
@@ -658,7 +660,7 @@
 <li><strong>Inflection tags</strong>: we sort them ourselves when building the dictionary, using <code>assets/tag_order.json</code>. While this file has categories (formatility, cases etc.), those are later strip and serve only as visual help. The sorting is done with the flattened list.
 Tag postprocessing is only done for <em>forms</em> after building the whole intermediate representation, to only sort once with every extracted tag. The relevant function is <code>src/dict/main.rs::postprocess_forms</code>.
 They appear in the order they are in the dictionary.</li>
-<li><strong>Top-level tags</strong>: are sorted by Yomitan based on <code>sortingOrder</code> of the <code>tag_bank_term_1.json</code> shipped with the dictionary. They may <strong>NOT</strong> appear in the order they are in the dictionary.</li>
+<li><strong>Top-level tags</strong>: are sorted by yomitan based on <code>sortingOrder</code> of the <code>tag_bank_term_1.json</code> shipped with the dictionary. They may <strong>NOT</strong> appear in the order they are in the dictionary.</li>
 <li><strong>Inner tags</strong>: they appear in the order they are in the dictionary.</li>
 </ol>
 <h2 id="tag-processing">Tag processing<a class="headerlink" href="#tag-processing" title="Permanent link">&para;</a></h2>
@@ -690,7 +692,7 @@ They appear in the order they are in the dictionary.</li>
 <p class="admonition-title">Run the build script after any modification to update the rust code: either <code>just build</code> or <code>python3 scripts/build.py</code></p>
 </div>
 <h2 id="debugging">Debugging<a class="headerlink" href="#debugging" title="Permanent link">&para;</a></h2>
-<p>These are some steps to debug why a Wiktionary tag may not appear in Yomitan:</p>
+<p>These are some steps to debug why a Wiktionary tag may not appear in yomitan:</p>
 <ol>
 <li><strong>Is the Wiktionary tag really a tag?</strong> Sometimes badly formatted text, or a wrong template may <strong>look</strong> like a tag but it is not.</li>
 <li><strong>Is the Wiktionary tag being extracted by wiktextract?</strong> Check the Kaikki link on the popup bottom-left to confirm.</li>
