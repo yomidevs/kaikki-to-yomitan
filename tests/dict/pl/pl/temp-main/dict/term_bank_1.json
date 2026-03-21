@@ -67,7 +67,7 @@
                             "title": "meteorology",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "topic"
                             },
                             "content": "meteo"
                           }
@@ -198,7 +198,7 @@
                             "title": "colloquial",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "register"
                             },
                             "content": "col"
                           },
@@ -207,7 +207,7 @@
                             "title": "technology",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "topic"
                             },
                             "content": "tech"
                           }

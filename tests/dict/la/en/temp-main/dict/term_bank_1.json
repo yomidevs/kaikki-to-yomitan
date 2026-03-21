@@ -1668,7 +1668,7 @@
                                 "title": "politics",
                                 "data": {
                                   "content": "tag",
-                                  "category": ""
+                                  "category": "topic"
                                 },
                                 "content": "polit"
                               }
@@ -1698,7 +1698,7 @@
                             "title": "idiomatic",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "usage"
                             },
                             "content": "idio"
                           }
@@ -1915,7 +1915,7 @@
                             "title": "idiomatic",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "usage"
                             },
                             "content": "idio"
                           }
@@ -2608,7 +2608,7 @@
                             "title": "with-accusative",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "case"
                             },
                             "content": "acc"
                           }
@@ -2686,7 +2686,7 @@
                             "title": "with-accusative",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "case"
                             },
                             "content": "acc"
                           }
@@ -2855,7 +2855,7 @@
                             "title": "with-accusative",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "case"
                             },
                             "content": "acc"
                           }
@@ -2883,7 +2883,7 @@
                             "title": "with-accusative",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "case"
                             },
                             "content": "acc"
                           }
@@ -2911,7 +2911,7 @@
                             "title": "with-accusative",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "case"
                             },
                             "content": "acc"
                           }

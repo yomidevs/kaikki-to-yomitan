@@ -723,7 +723,7 @@
                             "title": "rare",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "usage"
                             },
                             "content": "rare"
                           }
@@ -2346,7 +2346,7 @@
                             "title": "regional",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "usage"
                             },
                             "content": "regio"
                           },
@@ -2355,7 +2355,7 @@
                             "title": "with-dative",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "case"
                             },
                             "content": "dat"
                           }
@@ -2653,7 +2653,7 @@
                             "title": "regional",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "usage"
                             },
                             "content": "regio"
                           },
@@ -2662,7 +2662,7 @@
                             "title": "with-accusative",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "case"
                             },
                             "content": "acc"
                           }

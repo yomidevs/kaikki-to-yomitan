@@ -67,7 +67,7 @@
                             "title": "vulgar",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "register"
                             },
                             "content": "vulg"
                           }
@@ -131,7 +131,7 @@
                             "title": "vulgar",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "register"
                             },
                             "content": "vulg"
                           }
@@ -391,7 +391,7 @@
                             "title": "figuratively",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "usage"
                             },
                             "content": "fig"
                           }

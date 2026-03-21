@@ -67,7 +67,7 @@
                             "title": "meteorology",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "topic"
                             },
                             "content": "meteo"
                           }
@@ -95,7 +95,7 @@
                             "title": "meteorology",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "topic"
                             },
                             "content": "meteo"
                           }
@@ -220,7 +220,7 @@
                             "title": "literary",
                             "data": {
                               "content": "tag",
-                              "category": ""
+                              "category": "register"
                             },
                             "content": "ltrry"
                           }

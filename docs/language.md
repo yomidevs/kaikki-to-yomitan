@@ -4,7 +4,7 @@ For a list of **targets** supported by the English edition, see [here](https://k
 
 For a list of supported languages by Yomitan, see [here](https://yomitan.wiki/supported-languages/). If it is outdated, refer to [here](https://raw.githubusercontent.com/yomidevs/yomitan/master/ext/js/language/language-descriptors.js).
 
-If a language supported by us is not supported by Yomitan, you can still make use of it by selecting one with a similar script. Additionally, you can add basic Yomitan support by submitting a pull request to Yomitan, similar to [this](https://github.com/yomidevs/yomitan/commit/c0abb9e98a15aeb6b6f8f6e2d91fe5e54240b54a).
+If a language supported by us is not supported by Yomitan, you can add basic Yomitan support by submitting a pull request to Yomitan, similar to [this](https://github.com/yomidevs/yomitan/commit/c0abb9e98a15aeb6b6f8f6e2d91fe5e54240b54a). A more detailed guide can be found [here](https://github.com/yomidevs/yomitan/blob/master/docs/development/language-features.md).
 
 `Simple English` is made from the [Simple English Wiktionary](https://simple.wiktionary.org/wiki/Main_Page), and contains only English glosses for English words. It is referred to by the made-up iso `simple`, and can only be used as a monolingual main or IPA dictionary.
 

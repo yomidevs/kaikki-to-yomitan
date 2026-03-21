@@ -5,7 +5,7 @@
 import argparse
 import json
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, astuple
 from pathlib import Path
 from typing import Any
 
@@ -24,7 +24,7 @@ class Lang:
 class WhitelistedTag:
     short_tag: str
     category: str
-    sort_order: str
+    sort_order: int
     # if array, first element will be used, others are aliases
     long_tag_aliases: str | list[str]
     popularity_score: int
@@ -569,9 +569,19 @@ def main() -> None:
     with path_tag_bank_json.open() as f:
         data = json.load(f)
     whitelisted_tags = [WhitelistedTag(*row) for row in data]
-    # Overwrite to ensure formatting
+    # Overwrite to ensure formatting and sort
+    whitelisted_tags.sort(
+        key=lambda wt: (
+            wt.category == "",  # No category goes at the bottom
+            wt.category,
+            wt.sort_order,
+            wt.short_tag,
+        )
+    )
     with path_tag_bank_json.open("w") as f:
-        json.dump(data, f, indent=4, ensure_ascii=False)
+        json.dump(
+            [astuple(wt) for wt in whitelisted_tags], f, indent=4, ensure_ascii=False
+        )
 
     # import sys
     # generate_lang_rs(langs, sys.stdout)
