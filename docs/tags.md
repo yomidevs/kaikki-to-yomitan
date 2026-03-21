@@ -8,7 +8,9 @@ Wiktionary
   │     ↓      ↓
   └─> tags / topics
         ↓
-   tag filtering (which tags to keep, and their short forms)
+   tag processing (which tags to keep, their short forms etc.)
+        ↓
+   tag sorting (only for inflection tags)
         ↓
    tag formatting (global css)
         ↓
@@ -25,11 +27,11 @@ Wiktionary
 
 1. `raw_tags`: original language tags as they appear on Wiktionary (e.g. αρσενικό)
 2. `tags`: normalized, English-translated tags (e.g. masculine)
-3. `topics`: normalized, English-translated tags (e.g. Music), conerning general activities.
+3. `topics`: normalized, English-translated tags (e.g. Music), concerning general activities.
 
 `raw_tags` are converted to `tags` and `topics` by wiktextract. We don't use the `raw_tags` directly, because they basically can be anything, including wiktionary editors mistakes. Working only with `tags` is the more reliable choice.
 
-Wiktextract `tags` and `topics` can end up in multiple parts of a yomitan entry:
+Wiktextract `tags` and `topics` can end up in multiple parts of a main dictionary entry:
 
 <div align="center">
   <img src="../assets/screenshot_tags_edited.png" width="50%">
@@ -65,7 +67,7 @@ In the main dictionary, tag order depends on its type:
 1. **Inflection tags**: we sort them ourselves when building the dictionary, using `assets/tag_order.json`. While this file has categories (formatility, cases etc.), those are later strip and serve only as visual help. The sorting is done with the flattened list.
 Tag postprocessing is only done for _forms_ after building the whole intermediate representation, to only sort once with every extracted tag. The relevant function is `src/dict/main.rs::postprocess_forms`.
 They appear in the order they are in the dictionary.
-2. **Top-level tags**: are sorted by Yomitan based on `sortingOrder` of the `tag_bank_term_1.json` shipped with the dictionary. They may **NOT** appear in the order they are in the dictionary.
+2. **Top-level tags**: are sorted by yomitan based on `sortingOrder` of the `tag_bank_term_1.json` shipped with the dictionary. They may **NOT** appear in the order they are in the dictionary.
 3. **Inner tags**: they appear in the order they are in the dictionary.
 
 ## Tag processing
@@ -107,7 +109,7 @@ Here is an example of a simple [commit](https://github.com/yomidevs/wiktionary-t
 
 ## Debugging
 
-These are some steps to debug why a Wiktionary tag may not appear in Yomitan:
+These are some steps to debug why a Wiktionary tag may not appear in yomitan:
 
 1. **Is the Wiktionary tag really a tag?** Sometimes badly formatted text, or a wrong template may **look** like a tag but it is not.
 2. **Is the Wiktionary tag being extracted by wiktextract?** Check the Kaikki link on the popup bottom-left to confirm.
