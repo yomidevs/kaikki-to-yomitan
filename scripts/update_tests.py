@@ -39,6 +39,7 @@ L = Literal[
     "pl",
     "ru",
     "sq",
+    "simple",
     "th",
     "zh",
 ]
