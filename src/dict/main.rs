@@ -1358,7 +1358,7 @@ fn normalize_orthography(source: Lang, word: &str) -> String {
             .chars()
             .filter(|c| !ARABIC_DIACRITICS.contains(c))
             .collect(),
-        Lang::La | Lang::Ang | Lang::Sga | Lang::Grc | Lang::Ro | Lang::It | Lang::Id => word
+        Lang::La | Lang::Ang | Lang::Sga | Lang::Grc | Lang::Ro | Lang::Id => word
             .nfd()
             .filter(|c| !('\u{0300}'..='\u{036F}').contains(c))
             .nfc()
