@@ -569,6 +569,12 @@ def main() -> None:
     with path_tag_bank_json.open() as f:
         data = json.load(f)
     whitelisted_tags = [WhitelistedTag(*row) for row in data]
+    for wtag in whitelisted_tags:
+        if " " in wtag.short_tag:
+            # This is an issue because yomitan will treat them as separate tags.
+            print(
+                f"WARN: space detected in short tag: {wtag.short_tag}. Use an hyphen instead."
+            )
     # Overwrite to ensure formatting and sort
     whitelisted_tags.sort(
         key=lambda wt: (
