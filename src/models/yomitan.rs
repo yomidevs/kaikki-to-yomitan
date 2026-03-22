@@ -33,7 +33,7 @@ pub struct TermBank(
     pub String,                  // term
     pub String,                  // reading
     pub String,                  // definition_tags
-    pub String,                  // rules
+    pub String,                  // space-separated rules
     pub Vec<DetailedDefinition>, // definitions
 );
 
@@ -61,6 +61,7 @@ impl Serialize for TermBank {
 pub struct TermBankSimplified(
     pub String,                  // term
     pub String,                  // reading
+    pub String,                  // space-separated rules
     pub Vec<DetailedDefinition>, // definitions
 );
 
@@ -73,9 +74,9 @@ impl Serialize for TermBankSimplified {
         tup.serialize_element(&self.0)?;
         tup.serialize_element(&self.1)?;
         tup.serialize_element(&"non-lemma")?;
-        tup.serialize_element(&"")?;
-        tup.serialize_element(&0u8)?;
         tup.serialize_element(&self.2)?;
+        tup.serialize_element(&0u8)?;
+        tup.serialize_element(&self.3)?;
         tup.serialize_element(&0u8)?;
         tup.serialize_element(&"")?;
         tup.end()

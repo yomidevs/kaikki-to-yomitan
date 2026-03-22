@@ -3,7 +3,7 @@
     "befruchteten",
     "",
     "non-lemma",
-    "",
+    "adj",
     0,
     [
       [
@@ -86,7 +86,7 @@
     "Rocks",
     "",
     "non-lemma",
-    "",
+    "n",
     0,
     [
       [
@@ -103,7 +103,7 @@
     "Roc",
     "",
     "non-lemma",
-    "",
+    "n",
     0,
     [
       [
@@ -120,7 +120,7 @@
     "Roch",
     "",
     "non-lemma",
-    "",
+    "n",
     0,
     [
       [
@@ -137,7 +137,7 @@
     "Ruc",
     "",
     "non-lemma",
-    "",
+    "n",
     0,
     [
       [
@@ -154,7 +154,7 @@
     "Garagen",
     "",
     "non-lemma",
-    "",
+    "n",
     0,
     [
       [
@@ -189,7 +189,7 @@
     "mache aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -206,7 +206,7 @@
     "machst aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -223,7 +223,7 @@
     "macht aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -240,7 +240,7 @@
     "machte aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -263,7 +263,7 @@
     "mach aus!",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -280,7 +280,7 @@
     "macht aus!",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -297,7 +297,7 @@
     "ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -320,7 +320,7 @@
     "ausgemacht haben",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -337,7 +337,7 @@
     "ausgemacht werden",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -354,7 +354,7 @@
     "ausgemacht worden sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -371,7 +371,7 @@
     "ausgemacht sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -388,7 +388,7 @@
     "ausgemacht gewesen sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -405,7 +405,7 @@
     "auszumachen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -422,7 +422,7 @@
     "ausgemacht zu haben",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -439,7 +439,7 @@
     "ausgemacht zu werden",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -456,7 +456,7 @@
     "ausgemacht worden zu sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -473,7 +473,7 @@
     "ausgemacht zu sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -490,7 +490,7 @@
     "ausgemacht gewesen zu sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -507,7 +507,7 @@
     "ausmachend",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -524,7 +524,7 @@
     "auszumachender",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -541,7 +541,7 @@
     "auszumachende",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -558,7 +558,7 @@
     "auszumachendes …",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -575,7 +575,7 @@
     "mache aus!",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -592,7 +592,7 @@
     "habe ausgemacht!",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -609,7 +609,7 @@
     "habt ausgemacht!",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -626,7 +626,7 @@
     "machen Sie aus!",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -643,7 +643,7 @@
     "haben Sie ausgemacht!",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -660,7 +660,7 @@
     "ich mache aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -683,7 +683,7 @@
     "ich ausmache",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -706,7 +706,7 @@
     "du machst aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -723,7 +723,7 @@
     "du machest aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -740,7 +740,7 @@
     "du ausmachst",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -757,7 +757,7 @@
     "du ausmachest",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -774,7 +774,7 @@
     "er/sie/es macht aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -791,7 +791,7 @@
     "er/sie/es mache aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -808,7 +808,7 @@
     "er/sie/es ausmacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -825,7 +825,7 @@
     "er/sie/es ausmache",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -842,7 +842,7 @@
     "er/sie/es wird ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -859,7 +859,7 @@
     "er/sie/es werde ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -876,7 +876,7 @@
     "er/sie/es ist ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -893,7 +893,7 @@
     "er/sie/es sei ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -910,7 +910,7 @@
     "wir machen aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -933,7 +933,7 @@
     "wir ausmachen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -956,7 +956,7 @@
     "ihr macht aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -973,7 +973,7 @@
     "ihr machet aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -990,7 +990,7 @@
     "ihr ausmacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1007,7 +1007,7 @@
     "ihr ausmachet",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1024,7 +1024,7 @@
     "sie machen aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1047,7 +1047,7 @@
     "sie ausmachen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1070,7 +1070,7 @@
     "sie werden ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1093,7 +1093,7 @@
     "sie sind ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1110,7 +1110,7 @@
     "sie seien ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1127,7 +1127,7 @@
     "ich machte aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1150,7 +1150,7 @@
     "ich ausmachte",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1173,7 +1173,7 @@
     "du machtest aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1196,7 +1196,7 @@
     "du ausmachtest",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1219,7 +1219,7 @@
     "er/sie/es machte aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1242,7 +1242,7 @@
     "er/sie/es ausmachte",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1265,7 +1265,7 @@
     "er/sie/es wurde ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1282,7 +1282,7 @@
     "er/sie/es würde ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1299,7 +1299,7 @@
     "er/sie/es war ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1316,7 +1316,7 @@
     "er/sie/es wäre ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1333,7 +1333,7 @@
     "wir machten aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1356,7 +1356,7 @@
     "wir ausmachten",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1379,7 +1379,7 @@
     "ihr machtet aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1402,7 +1402,7 @@
     "ihr ausmachtet",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1425,7 +1425,7 @@
     "sie machten aus",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1448,7 +1448,7 @@
     "sie ausmachten",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1471,7 +1471,7 @@
     "sie wurden ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1488,7 +1488,7 @@
     "sie würden ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1505,7 +1505,7 @@
     "sie waren ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1522,7 +1522,7 @@
     "sie wären ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1539,7 +1539,7 @@
     "ich habe ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1562,7 +1562,7 @@
     "du hast ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1579,7 +1579,7 @@
     "du habest ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1596,7 +1596,7 @@
     "er/sie/es hat ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1613,7 +1613,7 @@
     "er/sie/es habe ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1630,7 +1630,7 @@
     "er/sie/es ist ausgemacht worden",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1647,7 +1647,7 @@
     "er/sie/es sei ausgemacht worden",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1664,7 +1664,7 @@
     "er/sie/es ist ausgemacht gewesen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1681,7 +1681,7 @@
     "er/sie/es sei ausgemacht gewesen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1698,7 +1698,7 @@
     "wir haben ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1721,7 +1721,7 @@
     "ihr habt ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1738,7 +1738,7 @@
     "ihr habet ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1755,7 +1755,7 @@
     "sie haben ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1778,7 +1778,7 @@
     "sie sind ausgemacht worden",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1795,7 +1795,7 @@
     "sie seien ausgemacht worden",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1812,7 +1812,7 @@
     "sie sind ausgemacht gewesen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1829,7 +1829,7 @@
     "sie seien ausgemacht gewesen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1846,7 +1846,7 @@
     "ich hatte ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1863,7 +1863,7 @@
     "ich hätte ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1880,7 +1880,7 @@
     "du hattest ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1897,7 +1897,7 @@
     "du hättest ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1914,7 +1914,7 @@
     "er/sie/es hatte ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1931,7 +1931,7 @@
     "er/sie/es hätte ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1948,7 +1948,7 @@
     "er/sie/es war ausgemacht worden",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1965,7 +1965,7 @@
     "er/sie/es wäre ausgemacht worden",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1982,7 +1982,7 @@
     "er/sie/es war ausgemacht gewesen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -1999,7 +1999,7 @@
     "er/sie/es wäre ausgemacht gewesen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2016,7 +2016,7 @@
     "wir hatten ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2033,7 +2033,7 @@
     "wir hätten ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2050,7 +2050,7 @@
     "ihr hattet ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2067,7 +2067,7 @@
     "ihr hättet ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2084,7 +2084,7 @@
     "sie hatten ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2101,7 +2101,7 @@
     "sie hätten ausgemacht",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2118,7 +2118,7 @@
     "sie waren ausgemacht worden",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2135,7 +2135,7 @@
     "sie wären ausgemacht worden",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2152,7 +2152,7 @@
     "sie waren ausgemacht gewesen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2169,7 +2169,7 @@
     "sie wären ausgemacht gewesen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2186,7 +2186,7 @@
     "ich werde ausmachen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2209,7 +2209,7 @@
     "ich würde ausmachen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2226,7 +2226,7 @@
     "du wirst ausmachen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2243,7 +2243,7 @@
     "du werdest ausmachen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2260,7 +2260,7 @@
     "du würdest ausmachen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2277,7 +2277,7 @@
     "er/sie/es wird ausmachen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2294,7 +2294,7 @@
     "er/sie/es werde ausmachen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2311,7 +2311,7 @@
     "er/sie/es würde ausmachen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2328,7 +2328,7 @@
     "er/sie/es wird ausgemacht werden",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2345,7 +2345,7 @@
     "er/sie/es werde ausgemacht werden",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2362,7 +2362,7 @@
     "er/sie/es würde ausgemacht werden",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2379,7 +2379,7 @@
     "er/sie/es wird ausgemacht sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2396,7 +2396,7 @@
     "er/sie/es werde ausgemacht sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2413,7 +2413,7 @@
     "er/sie/es würde ausgemacht sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2430,7 +2430,7 @@
     "wir werden ausmachen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2453,7 +2453,7 @@
     "wir würden ausmachen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2470,7 +2470,7 @@
     "ihr werdet ausmachen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2493,7 +2493,7 @@
     "ihr würdet ausmachen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2510,7 +2510,7 @@
     "sie werden ausmachen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2533,7 +2533,7 @@
     "sie würden ausmachen",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2550,7 +2550,7 @@
     "sie werden ausgemacht werden",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2573,7 +2573,7 @@
     "sie würden ausgemacht werden",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2590,7 +2590,7 @@
     "sie werden ausgemacht sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2613,7 +2613,7 @@
     "sie würden ausgemacht sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2630,7 +2630,7 @@
     "ich werde ausgemacht haben",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2653,7 +2653,7 @@
     "ich würde ausgemacht haben",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2670,7 +2670,7 @@
     "du wirst ausgemacht haben",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2687,7 +2687,7 @@
     "du werdest ausgemacht haben",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2704,7 +2704,7 @@
     "du würdest ausgemacht haben",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2721,7 +2721,7 @@
     "er/sie/es wird ausgemacht haben",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2738,7 +2738,7 @@
     "er/sie/es werde ausgemacht haben",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2755,7 +2755,7 @@
     "er/sie/es würde ausgemacht haben",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2772,7 +2772,7 @@
     "er/sie/es wird ausgemacht worden sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2789,7 +2789,7 @@
     "er/sie/es werde ausgemacht worden sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2806,7 +2806,7 @@
     "er/sie/es würde ausgemacht worden sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2823,7 +2823,7 @@
     "er/sie/es wird ausgemacht gewesen sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2840,7 +2840,7 @@
     "er/sie/es werde ausgemacht gewesen sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2857,7 +2857,7 @@
     "er/sie/es würde ausgemacht gewesen sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2874,7 +2874,7 @@
     "wir werden ausgemacht haben",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2897,7 +2897,7 @@
     "wir würden ausgemacht haben",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2914,7 +2914,7 @@
     "ihr werdet ausgemacht haben",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2937,7 +2937,7 @@
     "ihr würdet ausgemacht haben",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2954,7 +2954,7 @@
     "sie werden ausgemacht haben",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2977,7 +2977,7 @@
     "sie würden ausgemacht haben",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -2994,7 +2994,7 @@
     "sie werden ausgemacht worden sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -3017,7 +3017,7 @@
     "sie würden ausgemacht worden sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -3034,7 +3034,7 @@
     "sie werden ausgemacht gewesen sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -3057,7 +3057,7 @@
     "sie würden ausgemacht gewesen sein",
     "",
     "non-lemma",
-    "",
+    "v",
     0,
     [
       [
@@ -3074,7 +3074,7 @@
     "P.",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3091,7 +3091,7 @@
     "Peet",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3108,7 +3108,7 @@
     "Peeke",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3125,7 +3125,7 @@
     "Peterchen",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3142,7 +3142,7 @@
     "Peterle",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3159,7 +3159,7 @@
     "Pete",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3176,7 +3176,7 @@
     "Petschke",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3193,7 +3193,7 @@
     "Petz",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3210,7 +3210,7 @@
     "Pidda",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3227,7 +3227,7 @@
     "Piet",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3244,7 +3244,7 @@
     "Pietsch",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3261,7 +3261,7 @@
     "Pit",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3278,7 +3278,7 @@
     "Pitter",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3295,7 +3295,7 @@
     "Pitz",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3312,7 +3312,7 @@
     "Petrus",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3329,7 +3329,7 @@
     "Pidder",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3346,7 +3346,7 @@
     "Petra",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3363,7 +3363,7 @@
     "Petrine",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3380,7 +3380,7 @@
     "Peters",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3421,7 +3421,7 @@
     "Petern",
     "",
     "non-lemma",
-    "",
+    "name",
     0,
     [
       [
@@ -3438,7 +3438,7 @@
     "nu",
     "",
     "non-lemma",
-    "",
+    "adv",
     0,
     [
       [
@@ -3455,7 +3455,7 @@
     "karitativ",
     "",
     "non-lemma",
-    "",
+    "unknown",
     0,
     [
       [
@@ -3472,7 +3472,7 @@
     "i.",
     "",
     "non-lemma",
-    "",
+    "prep",
     0,
     [
       [

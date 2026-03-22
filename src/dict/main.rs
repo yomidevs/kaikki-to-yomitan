@@ -1444,7 +1444,7 @@ fn to_yomitan_lemma(
         lemma.to_string(),
         yomitan_reading.to_string(),
         common_short_tags_found.join(" "),
-        short_pos.to_string(),
+        get_rule_identifier(short_pos),
         vec![DetailedDefinition::structured(detailed_definition_content)],
     ))
 }
@@ -1479,6 +1479,15 @@ fn get_found_tags(pos: &Pos, info: &LemmaInfo) -> Vec<Tag> {
             }
         })
         .collect()
+}
+
+// There could be multiple identifiers, but let's start with one.
+//
+// This function is trivial at the moment, but could be worked on to validate identifiers,
+// add multiple identifiers, merge tags into more useful identifiers (verb: v, transitive: t > vt),
+// remove unused identifiers etc.
+fn get_rule_identifier(short_pos: &str) -> String {
+    short_pos.to_string()
 }
 
 fn build_details_entry(ty: &str, content: String) -> Node {
@@ -1768,7 +1777,7 @@ fn sanitize_offsets(offsets: &[Offset], upto: usize) -> Vec<Offset> {
 fn to_yomitan_forms(source: Lang, form_map: FormMap) -> Vec<YomitanEntry> {
     form_map
         .into_flat_iter()
-        .map(move |(uninflected, inflected, _, _, tags)| {
+        .map(move |(uninflected, inflected, pos, _, tags)| {
             // There needs to be DetailedDefinition per tag because yomitan reads
             // multiple tags in a single Inflection as a causal inflection chain.
             let deinflection_definitions: Vec<_> = tags
@@ -1785,9 +1794,12 @@ fn to_yomitan_forms(source: Lang, form_map: FormMap) -> Vec<YomitanEntry> {
                 inflected
             };
 
+            let short_pos = find_short_pos_or_default(&pos);
+
             YomitanEntry::TermBankSimplified(TermBankSimplified(
                 normalized_inflected,
                 reading,
+                get_rule_identifier(&short_pos),
                 deinflection_definitions,
             ))
         })
