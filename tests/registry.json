@@ -12413,6 +12413,1075 @@
             "siehe auch"
           ]
         }
+      },
+      {
+        "url": "https://kaikki.org/dewiktionary/All%20languages%20combined/meaning/i/in/in.html",
+        "download_url": "https://kaikki.org/dewiktionary/All%20languages%20combined/meaning/i/in/in.jsonl",
+        "json": {
+          "word": "in",
+          "pos": "prep",
+          "pos_title": "Präposition",
+          "lang_code": "de",
+          "lang": "Deutsch",
+          "senses": [
+            {
+              "glosses": [
+                "Angabe eines Ortes, innerhalb dessen sich etwas befindet oder tut; Bestandteil einer Antwort auf die Frage mit „wo“"
+              ],
+              "tags": [
+                "prepositional",
+                "regional",
+                "with-dative"
+              ],
+              "examples": [
+                {
+                  "text": "In den Alpen findet man herrliche Landschaftsmotive.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                },
+                {
+                  "text": "In der Schachtel ist eine Überraschung verborgen.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                },
+                {
+                  "text": "Vormittags sollten die Schüler in der Schule sein.",
+                  "bold_text_offsets": [
+                    [
+                      31,
+                      33
+                    ],
+                    [
+                      47,
+                      49
+                    ]
+                  ]
+                },
+                {
+                  "text": "Wenn du eine Frage hast, so schlage in einem Lexikon nach.",
+                  "bold_text_offsets": [
+                    [
+                      9,
+                      11
+                    ],
+                    [
+                      36,
+                      38
+                    ],
+                    [
+                      40,
+                      42
+                    ]
+                  ]
+                },
+                {
+                  "text": "Was trägst du denn alles in der Hosentasche mit dir herum?",
+                  "bold_text_offsets": [
+                    [
+                      25,
+                      27
+                    ]
+                  ]
+                },
+                {
+                  "text": "Wir saßen in Decken gehüllt und frierend in einem ungeheizten Zimmer.",
+                  "bold_text_offsets": [
+                    [
+                      10,
+                      12
+                    ],
+                    [
+                      41,
+                      43
+                    ],
+                    [
+                      45,
+                      47
+                    ]
+                  ]
+                },
+                {
+                  "text": "„Sie wirkten Wundertaten nachmals in König Etzels Land“. (Nibelungenlied)",
+                  "bold_text_offsets": [
+                    [
+                      34,
+                      36
+                    ]
+                  ]
+                }
+              ],
+              "sense_index": "1"
+            },
+            {
+              "glosses": [
+                "Angabe einer Richtung in etwas hinein; Bestandteil einer Antwort auf die Frage mit „wohin“"
+              ],
+              "tags": [
+                "prepositional",
+                "regional",
+                "with-accusative"
+              ],
+              "examples": [
+                {
+                  "text": "Ab morgen gehst du in die Schule hinein.",
+                  "bold_text_offsets": [
+                    [
+                      19,
+                      21
+                    ],
+                    [
+                      34,
+                      36
+                    ],
+                    [
+                      37,
+                      39
+                    ]
+                  ]
+                },
+                {
+                  "text": "„Und wie sie so nähte und nach dem Schnee aufblickte, stach sie sich mit der Nadel in den Finger, und es fielen drei Tropfen Blut in den Schnee.“ (Schneewittchen, Brüder Grimm)",
+                  "bold_text_offsets": [
+                    [
+                      83,
+                      85
+                    ],
+                    [
+                      91,
+                      93
+                    ],
+                    [
+                      130,
+                      132
+                    ]
+                  ]
+                },
+                {
+                  "text": "Im Winter fahren wir in die Berge in den Urlaub.",
+                  "bold_text_offsets": [
+                    [
+                      4,
+                      6
+                    ],
+                    [
+                      21,
+                      23
+                    ],
+                    [
+                      34,
+                      36
+                    ]
+                  ]
+                },
+                {
+                  "text": "„Da ging das Mädchen zu dem Brunnen zurück und wußte nicht, was es anfangen sollte; und in seiner Herzensangst sprang es in den Brunnen hinein, um die Spule zu holen.“ (Frau Holle, Brüder Grimm)",
+                  "bold_text_offsets": [
+                    [
+                      5,
+                      7
+                    ],
+                    [
+                      88,
+                      90
+                    ],
+                    [
+                      93,
+                      95
+                    ],
+                    [
+                      121,
+                      123
+                    ],
+                    [
+                      137,
+                      139
+                    ],
+                    [
+                      140,
+                      142
+                    ]
+                  ]
+                }
+              ],
+              "sense_index": "2"
+            },
+            {
+              "glosses": [
+                "Beschreibung einer Zeitspanne, auf einen bestimmten Zeitpunkt, eine bestimmte Zeitspanne hin, Bestandteil einer Antwort auf die Frage mit „wann“"
+              ],
+              "tags": [
+                "temporal"
+              ],
+              "examples": [
+                {
+                  "text": "Im Winter fahren wir in die Berge in den Urlaub.",
+                  "bold_text_offsets": [
+                    [
+                      4,
+                      6
+                    ],
+                    [
+                      21,
+                      23
+                    ],
+                    [
+                      34,
+                      36
+                    ]
+                  ]
+                },
+                {
+                  "text": "In drei Minuten fährt der Bus.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                },
+                {
+                  "text": "Ich will in einem Jahr Marathon laufen.",
+                  "bold_text_offsets": [
+                    [
+                      9,
+                      11
+                    ],
+                    [
+                      13,
+                      15
+                    ]
+                  ]
+                },
+                {
+                  "text": "Die bunt gefärbten Blätter gehören in die Herbstzeit.",
+                  "bold_text_offsets": [
+                    [
+                      35,
+                      37
+                    ]
+                  ]
+                },
+                {
+                  "text": "In der Kinderzeit ist es wichtig, unbeschwert heranzuwachsen.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                }
+              ],
+              "sense_index": "3"
+            },
+            {
+              "glosses": [
+                "Beschreibung einer bestimmten Art und Weise, eines bestimmten Zustandes, eines bestimmten Verhaltens"
+              ],
+              "examples": [
+                {
+                  "text": "„Da ging das Mädchen zu dem Brunnen zurück und wußte nicht, was es anfangen sollte; und in seiner Herzensangst sprang es in den Brunnen hinein, um die Spule zu holen.“ (Frau Holle, Brüder Grimm)",
+                  "bold_text_offsets": [
+                    [
+                      5,
+                      7
+                    ],
+                    [
+                      88,
+                      90
+                    ],
+                    [
+                      93,
+                      95
+                    ],
+                    [
+                      121,
+                      123
+                    ],
+                    [
+                      137,
+                      139
+                    ],
+                    [
+                      140,
+                      142
+                    ]
+                  ]
+                },
+                {
+                  "text": "In der Kinderzeit ist es wichtig, unbeschwert heranzuwachsen.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                },
+                {
+                  "text": "In Groll verließ er das Haus.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                },
+                {
+                  "text": "Halloweenscherze versetzen keinen mehr in Angst und in Schrecken.",
+                  "bold_text_offsets": [
+                    [
+                      29,
+                      31
+                    ],
+                    [
+                      39,
+                      41
+                    ],
+                    [
+                      52,
+                      54
+                    ]
+                  ]
+                },
+                {
+                  "text": "Das Wochenende begannen wir in guter Stimmung und in allerbester Laune.",
+                  "bold_text_offsets": [
+                    [
+                      28,
+                      30
+                    ],
+                    [
+                      50,
+                      52
+                    ]
+                  ]
+                },
+                {
+                  "text": "In rasender Fahrt ging es nach Hause.",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ]
+                  ]
+                },
+                {
+                  "text": "Wer lebt schon in Saus und Braus?",
+                  "bold_text_offsets": [
+                    [
+                      15,
+                      17
+                    ]
+                  ]
+                },
+                {
+                  "text": "Dieser Text ist in deutscher Sprache geschrieben.",
+                  "bold_text_offsets": [
+                    [
+                      16,
+                      18
+                    ]
+                  ]
+                }
+              ],
+              "sense_index": "4"
+            }
+          ],
+          "translations": [
+            {
+              "word": "ἐν",
+              "lang_code": "grc",
+              "lang": "Altgriechisch",
+              "roman": "en",
+              "sense_index": "1"
+            },
+            {
+              "word": "في",
+              "lang_code": "ar",
+              "lang": "Arabisch",
+              "roman": "fī",
+              "sense_index": "1"
+            },
+            {
+              "word": "у",
+              "lang_code": "bg",
+              "lang": "Bulgarisch",
+              "sense_index": "1"
+            },
+            {
+              "word": "在",
+              "lang_code": "zh",
+              "lang": "Chinesisch",
+              "roman": "zài",
+              "sense_index": "1"
+            },
+            {
+              "word": "i",
+              "lang_code": "da",
+              "lang": "Dänisch",
+              "sense_index": "1"
+            },
+            {
+              "word": "in",
+              "lang_code": "en",
+              "lang": "Englisch",
+              "sense_index": "1"
+            },
+            {
+              "word": "en",
+              "lang_code": "eo",
+              "lang": "Esperanto",
+              "sense_index": "1"
+            },
+            {
+              "word": "í",
+              "lang_code": "fo",
+              "lang": "Färöisch",
+              "sense_index": "1"
+            },
+            {
+              "word": "dans",
+              "lang_code": "fr",
+              "lang": "Französisch",
+              "sense_index": "1"
+            },
+            {
+              "word": "en",
+              "lang_code": "fr",
+              "lang": "Französisch",
+              "sense_index": "1"
+            },
+            {
+              "word": "à",
+              "lang_code": "fr",
+              "lang": "Französisch",
+              "sense_index": "1"
+            },
+            {
+              "word": "-ში",
+              "lang_code": "ka",
+              "lang": "Georgisch",
+              "roman": "-schi",
+              "sense_index": "1"
+            },
+            {
+              "word": "σε",
+              "lang_code": "el",
+              "lang": "Griechisch (Neu-)",
+              "roman": "se",
+              "sense_index": "1"
+            },
+            {
+              "word": "di",
+              "lang_code": "id",
+              "lang": "Indonesisch",
+              "sense_index": "1"
+            },
+            {
+              "word": "in",
+              "lang_code": "ia",
+              "lang": "Interlingua",
+              "sense_index": "1"
+            },
+            {
+              "word": "í",
+              "lang_code": "is",
+              "lang": "Isländisch",
+              "sense_index": "1"
+            },
+            {
+              "word": "i",
+              "lang_code": "no",
+              "lang": "Norwegisch",
+              "sense_index": "1"
+            },
+            {
+              "word": "کښې",
+              "lang_code": "ps",
+              "lang": "Paschtu",
+              "sense_index": "1"
+            },
+            {
+              "word": "em",
+              "lang_code": "pt",
+              "lang": "Portugiesisch",
+              "sense_index": "1"
+            },
+            {
+              "word": "în",
+              "lang_code": "ro",
+              "lang": "Rumänisch",
+              "sense_index": "1"
+            },
+            {
+              "word": "в",
+              "lang_code": "ru",
+              "lang": "Russisch",
+              "roman": "v",
+              "sense_index": "1"
+            },
+            {
+              "word": "i",
+              "lang_code": "sv",
+              "lang": "Schwedisch",
+              "sense_index": "1"
+            },
+            {
+              "word": "у",
+              "lang_code": "sr",
+              "lang": "Serbisch",
+              "roman": "u",
+              "sense_index": "1"
+            },
+            {
+              "word": "۾",
+              "lang_code": "sd",
+              "lang": "Sindhi",
+              "sense_index": "1"
+            },
+            {
+              "word": "v",
+              "lang_code": "sk",
+              "lang": "Slowakisch",
+              "sense_index": "1"
+            },
+            {
+              "word": "en",
+              "lang_code": "es",
+              "lang": "Spanisch",
+              "sense_index": "1"
+            },
+            {
+              "word": "dentro de",
+              "lang_code": "es",
+              "lang": "Spanisch",
+              "sense_index": "1"
+            },
+            {
+              "word": "v",
+              "lang_code": "cs",
+              "lang": "Tschechisch",
+              "sense_index": "1"
+            },
+            {
+              "word": "εἰς",
+              "lang_code": "grc",
+              "lang": "Altgriechisch",
+              "roman": "eis",
+              "sense_index": "2"
+            },
+            {
+              "word": "в",
+              "lang_code": "bg",
+              "lang": "Bulgarisch",
+              "roman": "v",
+              "sense_index": "2"
+            },
+            {
+              "word": "into",
+              "lang_code": "en",
+              "lang": "Englisch",
+              "sense_index": "2"
+            },
+            {
+              "word": "en",
+              "lang_code": "eo",
+              "lang": "Esperanto",
+              "sense_index": "2"
+            },
+            {
+              "word": "í",
+              "lang_code": "fo",
+              "lang": "Färöisch",
+              "sense_index": "2"
+            },
+            {
+              "word": "dans",
+              "lang_code": "fr",
+              "lang": "Französisch",
+              "sense_index": "2"
+            },
+            {
+              "word": "en",
+              "lang_code": "fr",
+              "lang": "Französisch",
+              "sense_index": "2"
+            },
+            {
+              "word": "à",
+              "lang_code": "fr",
+              "lang": "Französisch",
+              "sense_index": "2"
+            },
+            {
+              "word": "σε",
+              "lang_code": "el",
+              "lang": "Griechisch (Neu-)",
+              "roman": "se",
+              "sense_index": "2"
+            },
+            {
+              "word": "í",
+              "lang_code": "is",
+              "lang": "Isländisch",
+              "sense_index": "2"
+            },
+            {
+              "word": "på",
+              "lang_code": "no",
+              "lang": "Norwegisch",
+              "sense_index": "2"
+            },
+            {
+              "word": "inn i",
+              "lang_code": "no",
+              "lang": "Norwegisch",
+              "sense_index": "2"
+            },
+            {
+              "word": "para",
+              "lang_code": "pt",
+              "lang": "Portugiesisch",
+              "sense_index": "2"
+            },
+            {
+              "word": "în",
+              "lang_code": "ro",
+              "lang": "Rumänisch",
+              "sense_index": "2"
+            },
+            {
+              "word": "в",
+              "lang_code": "ru",
+              "lang": "Russisch",
+              "roman": "v",
+              "sense_index": "2"
+            },
+            {
+              "word": "i",
+              "lang_code": "sv",
+              "lang": "Schwedisch",
+              "sense_index": "2"
+            },
+            {
+              "word": "till",
+              "lang_code": "sv",
+              "lang": "Schwedisch",
+              "sense_index": "2"
+            },
+            {
+              "word": "do",
+              "lang_code": "sk",
+              "lang": "Slowakisch",
+              "sense_index": "2"
+            },
+            {
+              "word": "en",
+              "lang_code": "es",
+              "lang": "Spanisch",
+              "sense_index": "2"
+            },
+            {
+              "word": "a",
+              "lang_code": "es",
+              "lang": "Spanisch",
+              "sense_index": "2"
+            },
+            {
+              "word": "dovnitř",
+              "lang_code": "cs",
+              "lang": "Tschechisch",
+              "sense_index": "2"
+            },
+            {
+              "word": "in",
+              "lang_code": "en",
+              "lang": "Englisch",
+              "sense_index": "3"
+            },
+            {
+              "word": "dans",
+              "lang_code": "fr",
+              "lang": "Französisch",
+              "sense_index": "3"
+            },
+            {
+              "word": "en",
+              "lang_code": "fr",
+              "lang": "Französisch",
+              "sense_index": "3"
+            },
+            {
+              "word": "pendant",
+              "lang_code": "fr",
+              "lang": "Französisch",
+              "sense_index": "3"
+            },
+            {
+              "word": "σε",
+              "lang_code": "el",
+              "lang": "Griechisch (Neu-)",
+              "roman": "se",
+              "sense_index": "3"
+            },
+            {
+              "word": "í",
+              "lang_code": "is",
+              "lang": "Isländisch",
+              "sense_index": "3"
+            },
+            {
+              "word": "om",
+              "lang_code": "no",
+              "lang": "Norwegisch",
+              "sense_index": "3"
+            },
+            {
+              "word": "i",
+              "lang_code": "no",
+              "lang": "Norwegisch",
+              "sense_index": "3"
+            },
+            {
+              "word": "em",
+              "lang_code": "pt",
+              "lang": "Portugiesisch",
+              "sense_index": "3"
+            },
+            {
+              "word": "în",
+              "lang_code": "ro",
+              "lang": "Rumänisch",
+              "sense_index": "3"
+            },
+            {
+              "word": "в",
+              "lang_code": "ru",
+              "lang": "Russisch",
+              "roman": "v",
+              "sense_index": "3"
+            },
+            {
+              "word": "om",
+              "lang_code": "sv",
+              "lang": "Schwedisch",
+              "sense_index": "3"
+            },
+            {
+              "word": "på",
+              "lang_code": "sv",
+              "lang": "Schwedisch",
+              "sense_index": "3"
+            },
+            {
+              "word": "inom",
+              "lang_code": "sv",
+              "lang": "Schwedisch",
+              "sense_index": "3"
+            },
+            {
+              "word": "v",
+              "lang_code": "sk",
+              "lang": "Slowakisch",
+              "sense_index": "3"
+            },
+            {
+              "word": "za",
+              "lang_code": "sk",
+              "lang": "Slowakisch",
+              "sense_index": "3"
+            },
+            {
+              "word": "en",
+              "lang_code": "es",
+              "lang": "Spanisch",
+              "sense_index": "3"
+            },
+            {
+              "word": "dentro de",
+              "lang_code": "es",
+              "lang": "Spanisch",
+              "sense_index": "3"
+            },
+            {
+              "word": "za",
+              "lang_code": "cs",
+              "lang": "Tschechisch",
+              "sense_index": "3"
+            },
+            {
+              "word": "in",
+              "lang_code": "en",
+              "lang": "Englisch",
+              "sense_index": "4",
+              "tags": [
+                "usually"
+              ]
+            },
+            {
+              "word": "dans",
+              "lang_code": "fr",
+              "lang": "Französisch",
+              "sense_index": "4"
+            },
+            {
+              "word": "en",
+              "lang_code": "fr",
+              "lang": "Französisch",
+              "sense_index": "4"
+            },
+            {
+              "word": "à",
+              "lang_code": "fr",
+              "lang": "Französisch",
+              "sense_index": "4"
+            },
+            {
+              "word": "σε",
+              "lang_code": "el",
+              "lang": "Griechisch (Neu-)",
+              "roman": "se",
+              "sense_index": "4"
+            },
+            {
+              "word": "í",
+              "lang_code": "is",
+              "lang": "Isländisch",
+              "sense_index": "4"
+            },
+            {
+              "word": "i",
+              "lang_code": "no",
+              "lang": "Norwegisch",
+              "sense_index": "4"
+            },
+            {
+              "word": "på",
+              "lang_code": "no",
+              "lang": "Norwegisch",
+              "sense_index": "4",
+              "raw_tags": [
+                "(Sprachen)"
+              ]
+            },
+            {
+              "word": "em",
+              "lang_code": "pt",
+              "lang": "Portugiesisch",
+              "sense_index": "4"
+            },
+            {
+              "word": "în",
+              "lang_code": "ro",
+              "lang": "Rumänisch",
+              "sense_index": "4"
+            },
+            {
+              "word": "i",
+              "lang_code": "sv",
+              "lang": "Schwedisch",
+              "sense_index": "4"
+            },
+            {
+              "word": "en",
+              "lang_code": "es",
+              "lang": "Spanisch",
+              "sense_index": "4"
+            }
+          ],
+          "sounds": [
+            {
+              "ipa": "[ɪn]"
+            },
+            {
+              "audio": "De-in.ogg",
+              "ogg_url": "https://commons.wikimedia.org/wiki/Special:FilePath/De-in.ogg",
+              "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e0/De-in.ogg/De-in.ogg.mp3"
+            },
+            {
+              "audio": "De-in2.ogg",
+              "ogg_url": "https://commons.wikimedia.org/wiki/Special:FilePath/De-in2.ogg",
+              "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/0/03/De-in2.ogg/De-in2.ogg.mp3"
+            },
+            {
+              "rhymes": "ɪn"
+            }
+          ],
+          "derived": [
+            {
+              "word": "im"
+            },
+            {
+              "word": "ins"
+            },
+            {
+              "word": "binnen",
+              "sense_index": "1"
+            },
+            {
+              "word": "indessen",
+              "sense_index": "1"
+            },
+            {
+              "word": "darin",
+              "sense_index": "2"
+            },
+            {
+              "word": "drinnen",
+              "sense_index": "2"
+            },
+            {
+              "word": "Inbegriff",
+              "sense_index": "2"
+            },
+            {
+              "word": "Inhalt",
+              "sense_index": "2"
+            },
+            {
+              "word": "innen",
+              "sense_index": "2"
+            },
+            {
+              "word": "innerhalb",
+              "sense_index": "2"
+            },
+            {
+              "word": "innig",
+              "sense_index": "2"
+            },
+            {
+              "word": "Innung",
+              "sense_index": "2"
+            },
+            {
+              "word": "inwendig",
+              "sense_index": "2"
+            },
+            {
+              "word": "ein-",
+              "sense_index": "3"
+            },
+            {
+              "word": "darein",
+              "sense_index": "3"
+            },
+            {
+              "word": "drein-",
+              "sense_index": "3"
+            },
+            {
+              "word": "herein",
+              "sense_index": "3"
+            },
+            {
+              "word": "hinein",
+              "sense_index": "3"
+            },
+            {
+              "word": "indem",
+              "sense_index": "4"
+            },
+            {
+              "word": "insbesondere",
+              "sense_index": "4"
+            },
+            {
+              "word": "insgeheim",
+              "sense_index": "4"
+            },
+            {
+              "word": "insgesamt",
+              "sense_index": "4"
+            },
+            {
+              "word": "inwieweit",
+              "sense_index": "4"
+            }
+          ],
+          "expressions": [
+            {
+              "word": "in Brot und Arbeit sein",
+              "note": "genügend zu essen und zu leben haben; ein Auskommen haben"
+            },
+            {
+              "word": "im Großen und Ganzen",
+              "note": "generell gesehen"
+            },
+            {
+              "word": "in Harnisch kommen"
+            },
+            {
+              "word": "in Harnisch geraten"
+            },
+            {
+              "word": "in Rage kommen"
+            },
+            {
+              "word": "in Rage geraten"
+            }
+          ],
+          "synonyms": [
+            {
+              "word": "an",
+              "sense_index": "1, 2"
+            },
+            {
+              "word": "auf",
+              "sense_index": "1, 2"
+            },
+            {
+              "word": "nach",
+              "sense_index": "2"
+            },
+            {
+              "word": "zu",
+              "sense_index": "2"
+            },
+            {
+              "word": "zu",
+              "sense_index": "3"
+            }
+          ],
+          "categories": [
+            "Anagramm sortiert (Deutsch)",
+            "Deutsch",
+            "Einträge mit Endreim (Deutsch)",
+            "Grundformeintrag (Deutsch)",
+            "Präposition (Deutsch)",
+            "Roter Audiolink",
+            "Rückläufige Wörterliste (Deutsch)",
+            "Rückläufige Wörterliste Grundformeintrag (Deutsch)",
+            "Wiktionary:Audio-Datei",
+            "siehe auch"
+          ],
+          "etymology_texts": [
+            "mittelhochdeutsch in, althochdeutsch in, belegt seit dem 8. Jahrhundert, geht auf germanisch *in zurück"
+          ],
+          "forms": [
+            {
+              "form": "i.",
+              "tags": [
+                "abbreviation"
+              ],
+              "sense_index": "1–4"
+            }
+          ],
+          "hyphenations": [
+            {
+              "parts": [
+                "in"
+              ]
+            }
+          ]
+        }
       }
     ],
     "en": [
@@ -58193,6 +59262,106 @@
             }
           ]
         }
+      },
+      {
+        "url": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/水/水流/水流.html",
+        "download_url": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/水/水流/水流.jsonl",
+        "json": {
+          "word": "水流",
+          "pos": "name",
+          "lang_code": "ja",
+          "lang": "日本語",
+          "pos_title": "人名",
+          "senses": [
+            {
+              "glosses": [
+                "地名、又はその一部。"
+              ],
+              "examples": [
+                {
+                  "text": "川水流(かわずる)、下水流(しもずる)",
+                  "bold_text_offsets": [
+                    [
+                      1,
+                      3
+                    ],
+                    [
+                      6,
+                      7
+                    ],
+                    [
+                      6,
+                      8
+                    ],
+                    [
+                      11,
+                      13
+                    ],
+                    [
+                      16,
+                      17
+                    ],
+                    [
+                      16,
+                      18
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "glosses": [
+                "姓、又はその一部。"
+              ],
+              "examples": [
+                {
+                  "text": "水流雄一朗(つる ゆういちろう)、西水流優一",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      2
+                    ],
+                    [
+                      6,
+                      8
+                    ],
+                    [
+                      18,
+                      20
+                    ],
+                    [
+                      25,
+                      27
+                    ]
+                  ],
+                  "ref": "（にしずる ゆういち)"
+                }
+              ]
+            }
+          ],
+          "categories": [
+            "日本語",
+            "日本語 人名",
+            "日本語 地名"
+          ],
+          "forms": [
+            {
+              "form": "つる"
+            },
+            {
+              "form": "づる",
+              "raw_tags": [
+                "語の一部となり連濁して"
+              ]
+            },
+            {
+              "form": "ずる",
+              "raw_tags": [
+                "語の一部となり連濁して"
+              ]
+            }
+          ]
+        }
       }
     ]
   },
@@ -67034,6 +68203,140 @@
             }
           ]
         }
+      },
+      {
+        "url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/l/le/lente.html",
+        "download_url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/l/le/lente.jsonl",
+        "json": {
+          "word": "lente",
+          "pos": "adv",
+          "senses": [
+            {
+              "examples": [
+                {
+                  "text": "Marcus ad arborem lentē ambulat.",
+                  "bold_text_offsets": [
+                    [
+                      18,
+                      23
+                    ]
+                  ],
+                  "translation": "Marcus walks slowly to the tree.",
+                  "english": "Marcus walks slowly to the tree.",
+                  "bold_translation_offsets": [
+                    [
+                      13,
+                      19
+                    ]
+                  ],
+                  "type": "example"
+                }
+              ],
+              "links": [
+                [
+                  "slowly",
+                  "slowly"
+                ]
+              ],
+              "synonyms": [
+                {
+                  "word": "tardē"
+                }
+              ],
+              "glosses": [
+                "slowly"
+              ],
+              "categories": [
+                "Latin 2-syllable words",
+                "Latin adverbs",
+                "Latin entries with incorrect language header",
+                "Latin lemmas",
+                "Latin terms suffixed with -e",
+                "Latin terms with IPA pronunciation",
+                "Latin terms with usage examples",
+                "Pages with 16 entries",
+                "Pages with entries"
+              ]
+            }
+          ],
+          "head_templates": [
+            {
+              "name": "la-adv",
+              "args": {
+                "1": "lentē"
+              },
+              "expansion": "lentē (comparative lentius, superlative lentissimē)"
+            }
+          ],
+          "forms": [
+            {
+              "form": "lentē",
+              "tags": [
+                "canonical"
+              ]
+            },
+            {
+              "form": "lentius",
+              "tags": [
+                "comparative"
+              ]
+            },
+            {
+              "form": "lentissimē",
+              "tags": [
+                "superlative"
+              ]
+            }
+          ],
+          "related": [
+            {
+              "word": "lentēscō"
+            },
+            {
+              "word": "lentitūdō"
+            },
+            {
+              "word": "lentulus"
+            },
+            {
+              "word": "lentus"
+            },
+            {
+              "word": "festīnā lentē"
+            }
+          ],
+          "etymology_text": "From lentus (“slow”) + -ē.",
+          "etymology_templates": [
+            {
+              "name": "suf",
+              "args": {
+                "1": "la",
+                "2": "lentus",
+                "3": "ē",
+                "gloss1": "slow"
+              },
+              "expansion": "lentus (“slow”) + -ē"
+            }
+          ],
+          "sounds": [
+            {
+              "tags": [
+                "Classical-Latin"
+              ],
+              "ipa": "[ˈɫɛn.teː]"
+            },
+            {
+              "note": "modern Italianate Ecclesiastical",
+              "ipa": "[ˈlɛn.te]"
+            }
+          ],
+          "lang": "Latin",
+          "lang_code": "la",
+          "categories": [
+            "Pages with 16 entries",
+            "Pages with entries"
+          ]
+        }
       }
     ]
   },
@@ -75183,6 +76486,74 @@
                 "дол",
                 "жа́ть"
               ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "simple": {
+    "simple": [
+      {
+        "url": "https://kaikki.org/simplewiktionary/All%20languages%20combined/meaning/a/am/amount.html",
+        "download_url": "https://kaikki.org/simplewiktionary/All%20languages%20combined/meaning/a/am/amount.jsonl",
+        "json": {
+          "word": "amount",
+          "pos": "noun",
+          "forms": [
+            {
+              "form": "amount",
+              "raw_tags": [
+                "Singular"
+              ]
+            },
+            {
+              "form": "amounts",
+              "tags": [
+                "plural"
+              ]
+            }
+          ],
+          "lang_code": "en",
+          "lang": "English",
+          "senses": [
+            {
+              "glosses": [
+                "A total of things; a measure of how much."
+              ],
+              "examples": [
+                {
+                  "text": "Pour a small amount of water into the dish."
+                }
+              ]
+            },
+            {
+              "glosses": [
+                "The full effect or value."
+              ]
+            }
+          ],
+          "sounds": [
+            {
+              "enpr": "/ə.mount'/"
+            },
+            {
+              "ipa": "/eˈmaʊnt/"
+            },
+            {
+              "sampa": "/@\"maUnt/"
+            },
+            {
+              "audio": "en-us-amount.ogg",
+              "tags": [
+                "US"
+              ]
+            }
+          ],
+          "head_templates": [
+            {
+              "name": "noun",
+              "expansion": "[POS TABLE]"
             }
           ]
         }
