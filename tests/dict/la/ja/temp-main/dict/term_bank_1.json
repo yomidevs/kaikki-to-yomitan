@@ -2,53 +2,16 @@
   [
     "appellantur",
     "",
-    "v",
-    "v",
+    "non-lemma",
+    "",
     0,
     [
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "ol",
-            "data": {
-              "content": "glosses"
-            },
-            "content": [
-              {
-                "tag": "li",
-                "content": [
-                  {
-                    "tag": "div",
-                    "content": [
-                      "appellāreの直説法所相現在第三人称複数形。"
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "data": {
-              "content": "backlink"
-            },
-            "content": [
-              {
-                "tag": "a",
-                "href": "https://ja.wiktionary.org/wiki/appellantur#Latin",
-                "content": "Wiktionary"
-              },
-              " | ",
-              {
-                "tag": "a",
-                "href": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/a/ap/appellantur.html",
-                "content": "Kaikki"
-              }
-            ]
-          }
+      [
+        "appellare",
+        [
+          "redirected from appellantur"
         ]
-      }
+      ]
     ],
     0,
     ""

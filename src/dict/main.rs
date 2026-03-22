@@ -1181,7 +1181,7 @@ fn is_inflection_sense(edition: Edition, sense: &Sense) -> bool {
                 false
             })
         }
-        Edition::Fr | Edition::It => {
+        Edition::Fr | Edition::It | Edition::Ja => {
             // Cf. https://kaikki.org/itwiktionary/Italiano/meaning/s/sc/scorrevo.html
             //
             // This is the most generic way of dealing with inflection, but assumes that the
@@ -1270,7 +1270,7 @@ fn handle_inflection_sense(
             }
         }
         Edition::En => handle_inflection_sense_en(source, entry, sense, irs),
-        Edition::Fr | Edition::It => {
+        Edition::Fr | Edition::It | Edition::Ja => {
             // One could use sense::glosses as tags, and while they carry important information
             // they are obscenely verbose.
             match sense.form_of.as_slice() {
@@ -1287,8 +1287,11 @@ fn handle_inflection_sense(
                     } else {
                         allowed_tags
                     };
+                    // We need to normalize, for instance, for the la-ja, so that appellantur redirects to
+                    // appellare and not to appellāre (since only appellare appears as lemma)
+                    let norm_form_of_word = normalize_orthography(source, &form_of.word);
                     irs.insert_form(
-                        &form_of.word,
+                        &norm_form_of_word,
                         &entry.word,
                         &entry.pos,
                         FormSource::Inflection,
