@@ -1051,7 +1051,8 @@ fn process_entry(edition: Edition, source: Lang, entry: &WordEntry) -> LemmaInfo
         etymology_text: entry
             .etymology_texts()
             .map(|etymology_text| etymology_text.join("\n")),
-        head_info_text: get_head_info(&entry.head_templates).map(String::from),
+        head_info_text: get_head_info(&entry.head_templates)
+            .map(|head_info_text| head_info_text.join("\n")),
         link_wiktionary: link_wiktionary(edition, source, &entry.word),
         link_kaikki: link_kaikki(edition, source, &entry.word),
     }
@@ -1060,14 +1061,24 @@ fn process_entry(edition: Edition, source: Lang, entry: &WordEntry) -> LemmaInfo
 static PARENS_RE: LazyLock<Regex> = LazyLock::new(|| Regex::new(r"\(.+?\)").unwrap());
 
 // rg: getheadinfo
-fn get_head_info(head_templates: &[HeadTemplate]) -> Option<&str> {
-    head_templates.iter().find_map(|head_template| {
-        if PARENS_RE.is_match(&head_template.expansion) {
-            Some(head_template.expansion.as_str())
-        } else {
-            None
-        }
-    })
+// For consistency, it's better if this function shares return type with .etymology_texts()
+fn get_head_info(head_templates: &[HeadTemplate]) -> Option<Vec<&str>> {
+    let result: Vec<_> = head_templates
+        .iter()
+        .filter_map(|head_template| {
+            if PARENS_RE.is_match(&head_template.expansion) {
+                Some(head_template.expansion.as_str())
+            } else {
+                None
+            }
+        })
+        .collect();
+
+    if result.is_empty() {
+        None
+    } else {
+        Some(result)
+    }
 }
 
 fn get_gloss_tree(entry: &WordEntry) -> GlossTree {
