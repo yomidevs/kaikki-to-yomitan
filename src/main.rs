@@ -47,7 +47,7 @@ fn run(cmd: Command) -> Result<()> {
             let edition: Edition = langs.edition.try_into().unwrap();
             let pm = PathManager::try_from(args)?;
 
-            let _ = std::fs::create_dir(pm.dir_kaik());
+            let _ = std::fs::create_dir_all(pm.dir_kaik());
 
             let _ = find_or_download_jsonl(edition, Some(langs.source), &pm)?;
             Ok(())
