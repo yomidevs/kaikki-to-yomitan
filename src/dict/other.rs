@@ -289,11 +289,15 @@ fn process_ipa(edition: Edition, source: Lang, entry: &WordEntry, irs: &mut Vec<
         return;
     }
 
-    // This replacing with the short tag will still show the long version on hover.
+    // This replacing with the short tag will still show the long version on hover,
+    // even though they are not really top-level tags (in the sense of the main dict)
     for ipa in &mut ipas {
         for tag in &mut ipa.tags {
             if let Some(tag_info) = find_tag_in_bank(tag) {
-                *tag = (*tag_info.short_tag).to_string();
+                *tag = match localize_tag(edition.into(), &tag_info.short_tag) {
+                    Some((short, _)) => short.to_string(),
+                    None => (*tag_info.short_tag).to_string(),
+                }
             }
         }
     }
