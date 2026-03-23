@@ -10,7 +10,7 @@ use crate::{
             TermPhoneticTranscription, YomitanEntry, wrap,
         },
     },
-    tags::{find_short_pos_or_default, find_tag_in_bank},
+    tags::{find_short_pos_or_default, find_tag_in_bank, tags_localization::localize_tag},
 };
 
 #[derive(Debug, Clone, Copy)]
@@ -167,11 +167,15 @@ fn process_glossary(source: Edition, target: Lang, entry: &WordEntry, irs: &mut 
 
     let reading = get_reading(source, target, entry).unwrap_or_else(|| entry.word.clone());
     let short_pos = find_short_pos_or_default(&entry.pos);
+    let loc_short_pos = match localize_tag(target, &short_pos) {
+        Some((short, _)) => short,
+        None => short_pos,
+    };
 
     irs.push(YomitanEntry::TermBank(TermBank(
         entry.word.clone(),
         reading,
-        short_pos.to_string(),
+        loc_short_pos.to_string(),
         short_pos.to_string(),
         definitions,
     )));
