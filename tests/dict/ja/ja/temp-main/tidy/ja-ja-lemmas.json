@@ -270,5 +270,34 @@
         }
       ]
     }
+  },
+  "日本国": {
+    "日本国": {
+      "noun": [
+        {
+          "gloss_tree": {
+            "女陰。": {
+              "tags": [
+                "slang"
+              ],
+              "examples": [
+                {
+                  "text": "旦那様に日本国を撫られて",
+                  "ref": "――『太平楽』鈴木勝忠〈未刊雑俳資料21期14〉、1963年6月、11頁。",
+                  "bold_text_offsets": [
+                    [
+                      4,
+                      7
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "wlink": "https://ja.wiktionary.org/wiki/日本国#Japanese",
+          "klink": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/日/日本/日本国.html"
+        }
+      ]
+    }
   }
 }
