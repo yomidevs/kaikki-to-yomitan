@@ -31,22 +31,55 @@ class WhitelistedTag:
     long_tag_aliases: str | list[str]
     popularity_score: int
 
-    def long_tag(self) -> str:
+    def __post_init__(self) -> None:
+        check_valid_short_tag(self.short_tag)
+        for tag in self.longs_as_list():
+            check_valid_long_tag(tag)
+
+    def longs_as_list(self) -> list[str]:
         if isinstance(self.long_tag_aliases, str):
-            return self.long_tag_aliases
-        return self.long_tag_aliases[0]
+            return [self.long_tag_aliases]
+        return self.long_tag_aliases
+
+    def long_tag(self) -> str:
+        return self.longs_as_list()[0]
+
+
+@dataclass
+class TagTranslation:
+    long_tag_en: str
+    short_tag: str
+    long_tag: str
+
+    def __post_init__(self) -> None:
+        # No need to check for long_tag_en, an invalid char means it's not in tag_bank
+        check_valid_short_tag(self.short_tag)
+        check_valid_long_tag(self.long_tag)
 
 
 type Locale = dict[
     str,  # iso
-    dict[
-        str,  # English long tag
-        tuple[
-            str,  # Localized short tag
-            str,  # Localized long tag
-        ],
-    ],
+    list[TagTranslation],
 ]
+
+INVALID_SHORT_TAG_CHARS = ' ;/"\\\n\r\t'  # Forbid spaces: yomitan will split them
+INVALID_LONG_TAG_CHARS = ';/"\\\n\r\t'
+
+
+def check_valid_short_tag(tag: str) -> None:
+    _check_valid_tag(tag, INVALID_SHORT_TAG_CHARS)
+
+
+def check_valid_long_tag(tag: str) -> None:
+    _check_valid_tag(tag, INVALID_LONG_TAG_CHARS)
+
+
+def _check_valid_tag(tag: str, invalid_chars: str) -> None:
+    invalid = [c for c in tag if c in invalid_chars]
+    assert not invalid, (
+        f"Invalid tag '{tag}': contains forbidden character(s): "
+        f"{', '.join(repr(c) for c in set(invalid))}"
+    )
 
 
 def write_warning(f) -> None:
@@ -91,25 +124,17 @@ def generate_tags_rs(
         f"pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); {len(whitelisted_tags)}] = [\n"
     )
     for wt in whitelisted_tags:
-        longs_as_list = (
-            wt.long_tag_aliases
-            if isinstance(wt.long_tag_aliases, list)
-            else [wt.long_tag_aliases]
-        )
-        longs_str = str(longs_as_list).replace("'", '"')
+        longs_str = str(wt.longs_as_list()).replace("'", '"')
         w(
             f'{idt}("{wt.short_tag}", "{wt.category}", {wt.sort_order}, &{longs_str}, {wt.popularity_score}),\n'
         )
     w("];\n\n")
 
-    wts_pos = []
+    wts_pos: list[tuple[str, str]] = []
     for wt in whitelisted_tags:
         if wt.category == "partOfSpeech":
-            if isinstance(wt.long_tag_aliases, list):
-                for alias in wt.long_tag_aliases:
-                    wts_pos.append((alias, wt.short_tag))
-            else:
-                wts_pos.append((wt.long_tag_aliases, wt.short_tag))
+            for alias in wt.longs_as_list():
+                wts_pos.append((alias, wt.short_tag))
 
     w(f"pub const POSES: [(&str, &str); {len(wts_pos)}] = [\n")
     for long, short in wts_pos:
@@ -433,14 +458,16 @@ def generate_tags_localization(
             f"fn localize_tag_{iso}(short_tag: &str) -> Option<(&'static str, &'static str)> {{\n"
         )
         w("    match short_tag {\n")
-        for key, (short, long) in translations.items():
-            if key not in long_to_short:
+        for trans in translations:
+            if trans.long_tag_en not in long_to_short:
                 print(
-                    f"[{iso}] ERROR: locale key '{key}' has no matching tag bank entry"
+                    f"[{iso}] ERROR: tag '{trans.long_tag_en}' has no matching tag bank entry"
                 )
                 sys.exit(1)
-            short_key = long_to_short[key]
-            w(f'        "{short_key}" => Some(("{short}", "{long}")),\n')
+            short_key = long_to_short[trans.long_tag_en]
+            w(
+                f'        "{short_key}" => Some(("{trans.short_tag}", "{trans.long_tag}")),\n'
+            )
         w("        _ => None,\n")
         w("    }\n")
         w("}\n")
@@ -639,12 +666,6 @@ def main() -> None:
     with path_tag_bank_json.open() as f:
         data = json.load(f)
     whitelisted_tags = [WhitelistedTag(*row) for row in data]
-    for wtag in whitelisted_tags:
-        if " " in wtag.short_tag:
-            # This is an issue because yomitan will treat them as separate tags.
-            print(
-                f"WARN: space detected in short tag: {wtag.short_tag}. Use an hyphen instead."
-            )
     # Overwrite to ensure formatting and sort
     whitelisted_tags.sort(
         key=lambda wt: (
@@ -670,7 +691,7 @@ def main() -> None:
             data = json.load(f)
         with path_localization_json.open("w") as f:
             json.dump(data, f, indent=4, ensure_ascii=False)
-        locale[lang.iso] = data
+        locale[lang.iso] = [TagTranslation(k, v[0], v[1]) for k, v in data.items()]
 
     # import sys
     # generate_lang_rs(langs, sys.stdout)
