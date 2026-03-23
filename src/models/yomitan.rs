@@ -291,18 +291,20 @@ pub fn wrap(tag: NTag, content_ty: &str, content: Node) -> Node {
 // The actual yomitan type.
 //
 // https://github.com/MarvNC/yomichan-dict-builder/blob/master/src/types/yomitan/tagbank.ts
-#[derive(Debug)]
+#[derive(Debug, PartialEq, Eq)]
 pub struct TagInformation {
     pub short_tag: String, // tagName
     pub category: String,
-    sort_order: i32,      // sortingOrder
+    pub sort_order: i32,  // sortingOrder
     pub long_tag: String, // notes (only this changes)
-    popularity_score: i32,
+    pub popularity_score: i32,
 }
 
 impl TagInformation {
     // The entry plays the role of the WhitelistedTag struct
     pub fn new(entry: &(&str, &str, i32, &[&str], i32)) -> Self {
+        // The short tag should not contain a space: yomitan will split it then.
+        debug_assert!(!entry.0.contains(' '));
         Self {
             short_tag: entry.0.into(),
             category: entry.1.into(),

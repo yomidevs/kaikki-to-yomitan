@@ -29,6 +29,23 @@ class WhitelistedTag:
     long_tag_aliases: str | list[str]
     popularity_score: int
 
+    def long_tag(self) -> str:
+        if isinstance(self.long_tag_aliases, str):
+            return self.long_tag_aliases
+        return self.long_tag_aliases[0]
+
+
+type Locale = dict[
+    str,  # iso
+    dict[
+        str,  # English long tag
+        tuple[
+            str,  # Localized short tag
+            str,  # Localized long tag
+        ],
+    ],
+]
+
 
 def write_warning(f) -> None:
     f.write("//! This file was generated and should not be edited directly.\n")
@@ -380,6 +397,57 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
     w("}\n")
 
 
+def generate_tags_localization(
+    locale: Locale, whitelisted_tags: list[WhitelistedTag], f
+) -> None:
+    w = f.write
+
+    # SAFETY: check that all locale keys match a known long tag
+    known_long_tags = {wt.long_tag() for wt in whitelisted_tags}
+    for iso, iso_translations in locale.items():
+        for key in iso_translations:
+            if key not in known_long_tags:
+                print(
+                    f"[{iso}] WARN: locale key '{key}' has no matching tag bank entry"
+                )
+
+    write_warning(f)
+
+    w("use crate::lang::Lang;\n\n")
+
+    w("pub fn has_locale(lang: Lang) -> bool {\n")
+    w("    match lang {\n")
+    for iso in locale:
+        w(f"        Lang::{iso.title()} => true,\n")
+    w("        _ => false,\n")
+    w("    }\n")
+    w("}\n\n")
+
+    w(
+        "pub fn localize_tag(lang: Lang, short_tag: &str) -> Option<(&'static str, &'static str)> {\n"
+    )
+    w("    match lang {\n")
+    for iso in locale:
+        w(f"        Lang::{iso.title()} => localize_tag_{iso}(short_tag),\n")
+    w("        _ => None,\n")
+    w("    }\n")
+    w("}\n\n")
+
+    long_to_short = {wt.long_tag(): wt.short_tag for wt in whitelisted_tags}
+
+    for iso, translations in locale.items():
+        w(
+            f"fn localize_tag_{iso}(short_tag: &str) -> Option<(&'static str, &'static str)> {{\n"
+        )
+        w("    match short_tag {\n")
+        for key, (short, long) in translations.items():
+            short_key = long_to_short[key]
+            w(f'        "{short_key}" => Some(("{short}", "{long}")),\n')
+        w("        _ => None,\n")
+        w("    }\n")
+        w("}\n")
+
+
 def load_lang(item: Any) -> Lang:
     return Lang(
         item["iso"],
@@ -534,15 +602,18 @@ def main() -> None:
     src = Path("src")
     path_lang_rs = src / "lang.rs"
     path_tags_rs = src / "tags" / "tags_constants.rs"
+    path_tags_loc_rs = src / "tags" / "tags_localization.rs"
     jsons_root = Path("assets")
     path_languages_json = jsons_root / "languages.json"
     path_tag_order_json = jsons_root / "tag_order.json"
     path_tag_bank_json = jsons_root / "tag_bank_term.json"
+    path_tag_locale_folder = jsons_root / "tags" / "locale"
 
     for path in (
         path_languages_json,
         path_tag_order_json,
         path_tag_bank_json,
+        path_tag_locale_folder,
     ):
         if not path.exists:
             print(f"Path does not exist @ {path}")
@@ -566,6 +637,7 @@ def main() -> None:
     # Overwrite to ensure formatting
     with path_tag_order_json.open("w") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
+
     with path_tag_bank_json.open() as f:
         data = json.load(f)
     whitelisted_tags = [WhitelistedTag(*row) for row in data]
@@ -589,6 +661,19 @@ def main() -> None:
             [astuple(wt) for wt in whitelisted_tags], f, indent=4, ensure_ascii=False
         )
 
+    # read tags_X.json files inside localization folder, where X is the iso
+    locale: Locale = {}
+    for lang in langs:
+        path_localization_json = path_tag_locale_folder / f"tags_{lang.iso}.json"
+        if not path_localization_json.exists():
+            continue
+        # Overwrite to ensure formatting
+        with path_localization_json.open() as f:
+            data = json.load(f)
+        with path_localization_json.open("w") as f:
+            json.dump(data, f, indent=4, ensure_ascii=False)
+        locale[lang.iso] = data
+
     # import sys
     # generate_lang_rs(langs, sys.stdout)
     # generate_tags_rs(tag_order, sys.stdout)
@@ -599,6 +684,9 @@ def main() -> None:
     with path_tags_rs.open("w") as f:
         generate_tags_rs(tag_order, whitelisted_tags, f)
         print(f"Wrote rust code @ {path_tags_rs}")
+    with path_tags_loc_rs.open("w") as f:
+        generate_tags_localization(locale, whitelisted_tags, f)
+        print(f"Wrote rust code @ {path_tags_loc_rs}")
 
 
 if __name__ == "__main__":
