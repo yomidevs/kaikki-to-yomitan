@@ -299,5 +299,27 @@
         }
       ]
     }
+  },
+  "弁当": {
+    "べんとう": {
+      "noun": [
+        {
+          "gloss_tree": {
+            "外出先で食べるために容器に詰めた食べ物。": {
+              "topics": [
+                "cuisine"
+              ]
+            },
+            "料理店などで出す、箱に詰めた料理。": {
+              "topics": [
+                "cuisine"
+              ]
+            }
+          },
+          "wlink": "https://ja.wiktionary.org/wiki/弁当#Japanese",
+          "klink": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/弁/弁当/弁当.html"
+        }
+      ]
+    }
   }
 }

@@ -10,5 +10,23 @@
         }
       ]
     }
+  ],
+  [
+    "弁当",
+    "ipa",
+    {
+      "reading": "べんとう",
+      "transcriptions": [
+        {
+          "ipa": "[bẽ̞nto̞ː]"
+        },
+        {
+          "ipa": "/be~_onto~_o:/",
+          "tags": [
+            "XS"
+          ]
+        }
+      ]
+    }
   ]
 ]

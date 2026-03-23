@@ -81,7 +81,7 @@ pub const TAG_ORDER: [&str; 76] = [
 ];
 
 #[rustfmt::skip]
-pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 257] = [
+pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 258] = [
     ("animate", "animacy", 0, &["animate"], 0),
     ("inanim", "animacy", 0, &["inanimate"], 0),
     ("dated", "archaism", 0, &["dated"], 0),
@@ -106,6 +106,7 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 257] = [
     ("reltnl", "grammar", 0, &["relational"], 0),
     ("reltv", "grammar", 0, &["relative"], 0),
     ("uncount", "grammar", 0, &["uncountable"], 0),
+    ("XS", "ipa", 0, &["X-SAMPA"], 0),
     ("abbv", "morphology", 0, &["abbreviation", "abbrev"], 0),
     ("aug", "morphology", 0, &["augmentative"], 0),
     ("circumfix", "morphology", 0, &["circumfix"], 0),

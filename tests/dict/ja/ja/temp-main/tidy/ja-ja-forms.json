@@ -258,5 +258,15 @@
         ]
       ]
     }
+  },
+  "弁当": {
+    "べんとう": {
+      "noun": [
+        "extracted",
+        [
+          "transliteration"
+        ]
+      ]
+    }
   }
 }
