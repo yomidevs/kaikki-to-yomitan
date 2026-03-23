@@ -2,6 +2,7 @@
 
 # Note that there is also the isolang.rs crate
 
+import sys
 import argparse
 import json
 import re
@@ -402,15 +403,6 @@ def generate_tags_localization(
 ) -> None:
     w = f.write
 
-    # SAFETY: check that all locale keys match a known long tag
-    known_long_tags = {wt.long_tag() for wt in whitelisted_tags}
-    for iso, iso_translations in locale.items():
-        for key in iso_translations:
-            if key not in known_long_tags:
-                print(
-                    f"[{iso}] WARN: locale key '{key}' has no matching tag bank entry"
-                )
-
     write_warning(f)
 
     w("use crate::lang::Lang;\n\n")
@@ -441,6 +433,11 @@ def generate_tags_localization(
         )
         w("    match short_tag {\n")
         for key, (short, long) in translations.items():
+            if key not in long_to_short:
+                print(
+                    f"[{iso}] ERROR: locale key '{key}' has no matching tag bank entry"
+                )
+                sys.exit(1)
             short_key = long_to_short[key]
             w(f'        "{short_key}" => Some(("{short}", "{long}")),\n')
         w("        _ => None,\n")
