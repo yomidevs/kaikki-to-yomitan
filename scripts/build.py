@@ -1,12 +1,13 @@
-# Makes rust types from language.json
+"""Generate rust source files from assets.
 
-# Note that there is also the isolang.rs crate
+Requires python 3.12+
+"""
 
-import sys
 import argparse
 import json
 import re
-from dataclasses import dataclass, astuple
+import sys
+from dataclasses import astuple, dataclass
 from pathlib import Path
 from typing import Any
 
