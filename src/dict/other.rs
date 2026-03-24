@@ -234,35 +234,25 @@ fn to_yomitan_glossary_extended(target: Lang, irs: IGlossaryExtended) -> Vec<Yom
         .collect()
 }
 
-// default version getphonetictranscription
+// Grouping by ipa is done at process_ipa
 pub fn get_ipas(entry: &WordEntry) -> Vec<Ipa> {
-    let ipas_iter = entry.sounds.iter().filter_map(|sound| {
-        if sound.ipa.is_empty() {
-            return None;
-        }
-        let ipa = sound.ipa.clone();
-        let mut tags = sound.tags.clone();
-        if !sound.note.is_empty() {
-            tags.push(sound.note.clone());
-        }
-        Some(Ipa { ipa, tags })
-    });
-
-    // rg: saveIpaResult - Group by ipa
-    let mut ipas_grouped: Vec<Ipa> = Vec::new();
-    for ipa in ipas_iter {
-        if let Some(existing) = ipas_grouped.iter_mut().find(|e| e.ipa == ipa.ipa) {
-            for tag in ipa.tags {
-                if !existing.tags.contains(&tag) {
-                    existing.tags.push(tag);
-                }
+    entry
+        .sounds
+        .iter()
+        .filter_map(|sound| {
+            if sound.ipa.is_empty() {
+                return None;
             }
-        } else {
-            ipas_grouped.push(ipa);
-        }
-    }
-
-    ipas_grouped
+            let mut tags = sound.tags.clone();
+            if !sound.note.is_empty() {
+                tags.push(sound.note.clone());
+            }
+            Some(Ipa {
+                ipa: sound.ipa.clone(),
+                tags,
+            })
+        })
+        .collect()
 }
 
 /// ((lemma, reading), transcription)
