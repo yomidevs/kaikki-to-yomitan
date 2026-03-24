@@ -104,7 +104,7 @@ impl Serialize for TermPhoneticTranscription {
     where
         S: Serializer,
     {
-        let mut tup = serializer.serialize_tuple(2)?;
+        let mut tup = serializer.serialize_tuple(3)?;
         tup.serialize_element(&self.0)?;
         tup.serialize_element(&"ipa")?;
         tup.serialize_element(&self.1)?;
