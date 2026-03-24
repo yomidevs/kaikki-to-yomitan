@@ -117,3 +117,32 @@ These are some steps to debug why a Wiktionary tag may not appear in yomitan:
 4. **The tag is in wiktextract, but not in the dictionary?** Check if the tag is whitelisted in `assets/tag_bank_term.json`.
 5. **The tag is whitelisted, but not in the dictionary?** Finally our problem, please open an [issue](https://github.com/yomidevs/wiktionary-to-yomitan/issues/new).
 
+## Localization
+
+To add or update tag localization for a language, create a file named `tags_{iso}.json` in the appropriate directory (e.g. `assets/tags/locale/tags_ja.json` for Japanese).
+
+Localization is automatically applied to every dictionary that uses that language as its target.
+You do not need to localize every tag: any tag without a localization entry will fall back to English.
+
+The file maps English canonical tag names to their localized equivalents:
+```json
+{
+    "noun": ["名", "名詞"],
+    "verb": ["動", "動詞"],
+    "transitive verb": ["他動", "他動詞"]
+}
+```
+
+Each entry is a pair of `[short, long]` forms, where `short` is shown in the dictionary and `long` is shown on hover.
+
+The key must match the 4th field of the corresponding entry in `assets/tag_bank_term.json`.
+When that field is a string, use it directly. When it is an array, use the **first** element (the primary alias):
+```json
+["v", "partOfSpeech", -1, "verb", 1]
+→ key is "verb"
+
+["vt", "partOfSpeech", -1, ["transitive verb", "transitive"], 1]
+→ key is "transitive verb", not "transitive"
+```
+
+!!! warning "Run the build script after any modification to update the rust code: either `just build` or `python3 scripts/build.py`"
