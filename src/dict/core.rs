@@ -7,6 +7,7 @@ use std::fs::File;
 use std::io::{BufRead, BufReader, BufWriter, Write};
 use std::path::PathBuf;
 
+use crate::Map;
 use crate::cli::{LangSpecs, Options};
 use crate::dict::writer::write_yomitan;
 use crate::lang::{Edition, Lang};
@@ -83,6 +84,16 @@ where
     }
 }
 
+impl<A, B> Intermediate for Map<A, B>
+where
+    A: Serialize,
+    B: Serialize,
+{
+    fn len(&self) -> usize {
+        Self::len(self)
+    }
+}
+
 /// Trait to abstract the process of making a dictionary.
 pub trait Dictionary {
     type A: TryInto<PathManager, Error = anyhow::Error>;
@@ -113,6 +124,7 @@ pub trait Dictionary {
     /// How to transform a `WordEntry` into intermediate representation.
     ///
     /// Most dictionaries only make *at most one* `Self::I` from a `WordEntry`.
+    // TODO: why not take ownership of entry?
     fn process(&self, langs: Langs, entry: &WordEntry, irs: &mut Self::I);
 
     /// Console message for found irs. It is customized for the main dictionary.
