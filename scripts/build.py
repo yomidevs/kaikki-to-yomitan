@@ -424,7 +424,7 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
     w("}\n")
 
 
-def generate_tags_localization(
+def generate_tags_localization_rs(
     locale: Locale, whitelisted_tags: list[WhitelistedTag], f
 ) -> None:
     w = f.write
@@ -454,6 +454,11 @@ def generate_tags_localization(
     long_to_short = {wt.long_tag(): wt.short_tag for wt in whitelisted_tags}
 
     for iso, translations in locale.items():
+        ratio = len(translations) / len(long_to_short)
+
+        w(
+            f"/// Coverage: {len(translations)}/{len(long_to_short)} tags ({ratio:.1%})\n"
+        )
         w(
             f"fn localize_tag_{iso}(short_tag: &str) -> Option<(&'static str, &'static str)> {{\n"
         )
@@ -704,7 +709,7 @@ def main() -> None:
         generate_tags_rs(tag_order, whitelisted_tags, f)
         print(f"Wrote rust code @ {path_tags_rs}")
     with path_tags_loc_rs.open("w") as f:
-        generate_tags_localization(locale, whitelisted_tags, f)
+        generate_tags_localization_rs(locale, whitelisted_tags, f)
         print(f"Wrote rust code @ {path_tags_loc_rs}")
 
 
