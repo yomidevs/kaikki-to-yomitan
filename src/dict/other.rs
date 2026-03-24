@@ -83,7 +83,7 @@ impl Dictionary for DIpa {
     type A = IpaArgs;
 
     fn process(&self, langs: Langs, entry: &WordEntry, irs: &mut Self::I) {
-        process_ipa(langs.edition, langs.source, entry, irs);
+        process_ipa(langs.edition, langs.source, langs.target, entry, irs);
     }
 
     fn to_yomitan(&self, _: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntry> {
@@ -96,7 +96,7 @@ impl Dictionary for DIpaMerged {
     type A = IpaMergedArgs;
 
     fn process(&self, langs: Langs, entry: &WordEntry, irs: &mut Self::I) {
-        process_ipa(langs.edition, langs.source, entry, irs);
+        process_ipa(langs.edition, langs.source, langs.target, entry, irs);
     }
 
     fn postprocess(&self, irs: &mut Self::I) {
@@ -111,7 +111,6 @@ impl Dictionary for DIpaMerged {
     }
 }
 
-// rg: process translations processtranslations
 fn process_glossary(source: Edition, target: Lang, entry: &WordEntry, irs: &mut Vec<YomitanEntry>) {
     let mut translations: Map<&str, Vec<String>> = Map::default();
     for translation in entry.non_trivial_translations() {
@@ -274,7 +273,13 @@ pub fn get_ipas(entry: &WordEntry) -> Vec<Ipa> {
 
 type IIpa = (String, PhoneticTranscription);
 
-fn process_ipa(edition: Edition, source: Lang, entry: &WordEntry, irs: &mut Vec<IIpa>) {
+fn process_ipa(
+    edition: Edition,
+    source: Lang,
+    target: Lang,
+    entry: &WordEntry,
+    irs: &mut Vec<IIpa>,
+) {
     let mut ipas = get_ipas(entry);
 
     if ipas.is_empty() {
@@ -286,7 +291,7 @@ fn process_ipa(edition: Edition, source: Lang, entry: &WordEntry, irs: &mut Vec<
     for ipa in &mut ipas {
         for tag in &mut ipa.tags {
             if let Some(tag_info) = find_tag_in_bank(tag) {
-                *tag = match localize_tag(edition.into(), &tag_info.short_tag) {
+                *tag = match localize_tag(target, &tag_info.short_tag) {
                     Some((short, _)) => short.to_string(),
                     None => (*tag_info.short_tag).to_string(),
                 }
