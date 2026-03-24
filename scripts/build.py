@@ -451,6 +451,9 @@ def generate_tags_localization_rs(
     w("    }\n")
     w("}\n\n")
 
+    # Keyed by primary alias only. Secondary aliases are irrelevant.
+    # This is because we only translate short tags. Every alias converges to a short tag
+    # and it's that short tag that we will localize into: (trans.short_tag, trans.long_tag)
     long_to_short = {wt.long_tag(): wt.short_tag for wt in whitelisted_tags}
 
     for iso, translations in locale.items():

@@ -222,7 +222,7 @@ fn to_yomitan_glossary_extended(target: Lang, irs: IGlossaryExtended) -> Vec<Yom
             let short_pos = find_short_pos_or_default(&pos);
             let loc_short_pos = match localize_tag(target, short_pos) {
                 Some((short, _)) => short,
-                None => pos.as_ref(),
+                None => short_pos.as_ref(),
             };
 
             YomitanEntry::TermBank(TermBank(
@@ -350,6 +350,7 @@ mod tests {
         let dict = DGlossaryExtended;
         let langs = Langs::new(Edition::En, Lang::Grc, Lang::Sh);
         let mut entry = WordEntry::default();
+        entry.pos = "noun".to_string();
         entry.translations = vec![
             Translation::new("grc", "British overseas territory", "Ἡράκλειαι στῆλαι"),
             Translation::new("grc", "British overseas territory", "Ἡράκλειαι στῆλαι"),
@@ -368,10 +369,11 @@ mod tests {
 
         assert_eq!(irs.len(), 3);
 
-        let (lemma1, _, _, defs1) = &irs[0];
+        let (lemma1, pos, _, defs1) = &irs[0];
         let (lemma2, _, _, defs2) = &irs[1];
         let (lemma3, _, _, defs3) = &irs[2];
 
+        assert_eq!(pos, "noun");
         assert_eq!(lemma1, "Ἡράκλειαι στῆλαι");
         assert_eq!(lemma2, "Ἡράκλειαι στῆλαι");
         assert_eq!(lemma3, "Κάλπη");
@@ -383,6 +385,16 @@ mod tests {
 
         dict.postprocess(&mut irs);
         assert_eq!(irs.len(), 2);
+
+        let yomitan_entries = to_yomitan_glossary_extended(Lang::Grc, irs);
+        assert_eq!(yomitan_entries.len(), 2);
+        match yomitan_entries.first().unwrap() {
+            YomitanEntry::TermBank(term_bank) => {
+                // Should use the short pos here (noun > n)
+                assert_eq!(term_bank.2, "n")
+            }
+            _ => panic!(), // We know that this dict only produces TermBank
+        }
     }
 
     #[test]
@@ -397,13 +409,13 @@ mod tests {
             Translation::new("en", "some sense", "english"),
         ];
 
-        let mut irs = Vec::new();
+        let mut irs = IGlossaryExtended::new();
         dict.process(langs, &entry, &mut irs);
 
         assert_eq!(irs.len(), 1);
-        let (_, short_pos, _, _) = &irs[0];
+        let (_, pos, _, _) = &irs[0];
 
-        assert_eq!(short_pos, "noun");
+        assert_eq!(pos, "noun");
 
         let yomitan_entries = to_yomitan_glossary_extended(Lang::Ja, irs);
         match &yomitan_entries[0] {
