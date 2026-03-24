@@ -29,10 +29,6 @@ impl Dictionary for DGlossary {
     type I = Vec<YomitanEntry>;
     type A = GlossaryArgs;
 
-    fn keep_if(&self, source: Lang, entry: &WordEntry) -> bool {
-        entry.lang_code == source.iso()
-    }
-
     fn process(&self, langs: Langs, entry: &WordEntry, irs: &mut Self::I) {
         process_glossary(langs.edition, langs.target, entry, irs);
     }
@@ -48,6 +44,10 @@ impl Dictionary for DGlossaryExtended {
 
     fn keep_if(&self, _: Lang, _: &WordEntry) -> bool {
         true
+    }
+
+    fn supports_probe(&self) -> bool {
+        false
     }
 
     fn process(&self, langs: Langs, entry: &WordEntry, irs: &mut Self::I) {
@@ -82,14 +82,6 @@ impl Dictionary for DIpa {
     type I = Vec<IIpa>;
     type A = IpaArgs;
 
-    fn keep_if(&self, source: Lang, entry: &WordEntry) -> bool {
-        entry.lang_code == source.iso()
-    }
-
-    fn supports_probe(&self) -> bool {
-        true
-    }
-
     fn process(&self, langs: Langs, entry: &WordEntry, irs: &mut Self::I) {
         process_ipa(langs.edition, langs.source, entry, irs);
     }
@@ -102,10 +94,6 @@ impl Dictionary for DIpa {
 impl Dictionary for DIpaMerged {
     type I = Vec<IIpa>;
     type A = IpaMergedArgs;
-
-    fn keep_if(&self, source: Lang, entry: &WordEntry) -> bool {
-        entry.lang_code == source.iso()
-    }
 
     fn process(&self, langs: Langs, entry: &WordEntry, irs: &mut Self::I) {
         process_ipa(langs.edition, langs.source, entry, irs);

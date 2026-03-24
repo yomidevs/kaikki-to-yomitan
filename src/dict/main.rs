@@ -279,14 +279,6 @@ impl Dictionary for DMain {
     type I = Tidy;
     type A = MainArgs;
 
-    fn keep_if(&self, source: Lang, entry: &WordEntry) -> bool {
-        entry.lang_code == source.iso()
-    }
-
-    fn supports_probe(&self) -> bool {
-        true
-    }
-
     fn preprocess(&self, langs: Langs, entry: &mut WordEntry, opts: &Options, irs: &mut Self::I) {
         preprocess_main(langs.edition, langs.source, opts, entry, irs);
     }
