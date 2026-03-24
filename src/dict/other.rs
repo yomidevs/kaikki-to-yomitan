@@ -99,6 +99,11 @@ impl Dictionary for DIpaMerged {
         process_ipa(langs.edition, langs.source, langs.target, entry, irs);
     }
 
+    fn postprocess(&self, irs: &mut Self::I) {
+        // Sorting is not needed ~ just for visibility
+        irs.sort_unstable_keys();
+    }
+
     fn to_yomitan(&self, _: LangSpecs, tidy: Self::I) -> Vec<LabelledYomitanEntry> {
         vec![LabelledYomitanEntry::new("term", to_yomitan_ipa(tidy))]
     }
@@ -471,14 +476,18 @@ mod tests {
     #[test]
     fn process_ipa_merged_tag_merge() {
         let dict = DIpaMerged;
-        let langs = Langs::new(Edition::En, Lang::La, Lang::La);
+        let (source, target) = (Lang::La, Lang::La);
+
+        let edition = Edition::En;
+        let langs = Langs::new(edition, source, target);
         let mut entry = WordEntry::default();
         entry.sounds = vec![Sound::with_tag("ipa1", "tag1")];
 
         let mut irs = IIpa::default();
         dict.process(langs, &entry, &mut irs);
 
-        let langs = Langs::new(Edition::De, Lang::La, Lang::La);
+        let edition = Edition::De;
+        let langs = Langs::new(edition, source, target);
         let mut entry = WordEntry::default();
         // same ipa, different tag (coming from another edition)
         entry.sounds = vec![Sound::with_tag("ipa1", "tag2")];
@@ -489,5 +498,29 @@ mod tests {
         // Both tags should be present after merging
         assert!(transcriptions[0].tags.contains(&"tag1".to_string()));
         assert!(transcriptions[0].tags.contains(&"tag2".to_string()));
+    }
+
+    #[test]
+    fn process_ipa_merged_postprocess_order() {
+        let dict = DIpaMerged;
+        let (source, target) = (Lang::La, Lang::La);
+        let langs = Langs::new(Edition::En, source, target);
+
+        let mut irs = IIpa::default();
+
+        let mut entry = WordEntry::default();
+        entry.word = "zebra".to_string();
+        entry.sounds = vec![Sound::new("ipa1")];
+        dict.process(langs, &entry, &mut irs);
+
+        let mut entry = WordEntry::default();
+        entry.word = "apple".to_string();
+        entry.sounds = vec![Sound::new("ipa2")];
+        dict.process(langs, &entry, &mut irs);
+
+        dict.postprocess(&mut irs);
+
+        let keys: Vec<&String> = irs.keys().map(|(word, _)| word).collect();
+        assert_eq!(keys, vec!["apple", "zebra"]);
     }
 }
