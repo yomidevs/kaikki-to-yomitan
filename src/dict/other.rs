@@ -314,7 +314,6 @@ fn to_yomitan_ipa(irs: IIpa) -> Vec<YomitanEntry> {
             YomitanEntry::TermBankMeta(TermBankMeta::TermPhoneticTranscription(
                 TermPhoneticTranscription(
                     lemma,
-                    "ipa".to_string(),
                     PhoneticTranscription {
                         reading,
                         transcriptions,

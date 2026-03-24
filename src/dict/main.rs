@@ -182,8 +182,7 @@ pub mod heap {
     impl HeapSize for TermPhoneticTranscription {
         fn heap_size(&self) -> usize {
             self.0.heap_size() // term
-                + self.1.heap_size() // "ipa" string
-                + self.2.heap_size() // PhoneticTranscription
+                + self.1.heap_size() // PhoneticTranscription
         }
     }
 
