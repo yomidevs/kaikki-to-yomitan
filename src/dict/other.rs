@@ -70,10 +70,10 @@ impl Dictionary for DGlossaryExtended {
         }));
     }
 
-    fn to_yomitan(&self, _: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntry> {
+    fn to_yomitan(&self, langs: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntry> {
         vec![LabelledYomitanEntry::new(
             "term",
-            to_yomitan_glossary_extended(irs),
+            to_yomitan_glossary_extended(langs.target, irs),
         )]
     }
 }
@@ -205,14 +205,12 @@ fn process_glossary_extended(
         return;
     }
 
-    let short_pos = find_short_pos_or_default(&entry.pos);
-
     // A "semi" cartesian product. See the test below.
     irs.extend(translations.iter().flat_map(|(_, (targets, sources))| {
         sources.iter().map(|lemma| {
             (
                 (*lemma).to_string(),
-                short_pos.to_string(),
+                entry.pos.clone(),
                 edition,
                 targets.iter().map(|def| (*def).to_string()).collect(),
             )
@@ -220,14 +218,20 @@ fn process_glossary_extended(
     }));
 }
 
-fn to_yomitan_glossary_extended(irs: Vec<IGlossaryExtended>) -> Vec<YomitanEntry> {
+fn to_yomitan_glossary_extended(target: Lang, irs: Vec<IGlossaryExtended>) -> Vec<YomitanEntry> {
     irs.into_iter()
-        .map(|(lemma, found_pos, _, translations)| {
+        .map(|(lemma, pos, _, translations)| {
+            let short_pos = find_short_pos_or_default(&pos);
+            let loc_short_pos = match localize_tag(target, short_pos) {
+                Some((short, _)) => short,
+                None => pos.as_ref(),
+            };
+
             YomitanEntry::TermBank(TermBank(
                 lemma,
                 String::new(),
-                found_pos.clone(),
-                found_pos,
+                loc_short_pos.to_string(),
+                short_pos.to_string(),
                 translations
                     .into_iter()
                     .map(DetailedDefinition::Text)
@@ -372,6 +376,33 @@ mod tests {
 
         dict.postprocess(&mut irs);
         assert_eq!(irs.len(), 2);
+    }
+
+    #[test]
+    fn process_glossary_extended_pos_localization() {
+        let dict = DGlossaryExtended;
+        // Japanese as target, source irrelevant
+        let langs = Langs::new(Edition::En, Lang::Ja, Lang::En);
+        let mut entry = WordEntry::default();
+        entry.pos = "noun".to_string();
+        entry.translations = vec![
+            Translation::new("ja", "some sense", "日本語"),
+            Translation::new("en", "some sense", "english"),
+        ];
+
+        let mut irs = Vec::new();
+        dict.process(langs, &entry, &mut irs);
+
+        assert_eq!(irs.len(), 1);
+        let (_, short_pos, _, _) = &irs[0];
+
+        assert_eq!(short_pos, "noun");
+
+        let yomitan_entries = to_yomitan_glossary_extended(Lang::Ja, irs);
+        match &yomitan_entries[0] {
+            YomitanEntry::TermBank(term_bank) => assert_eq!(term_bank.2, "名"),
+            _ => panic!(), // We know that this dict only produces TermBank
+        }
     }
 
     impl Sound {
