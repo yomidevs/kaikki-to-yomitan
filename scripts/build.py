@@ -92,7 +92,7 @@ def generate_tags_rs(
     whitelisted_tags: list[WhitelistedTag],
     f,
 ) -> None:
-    # Having duplicated short tags is an error, use aliases instead.
+    # Having duplicated short tags is pointless, use aliases instead.
     seen = {}
     for wt in whitelisted_tags:
         st = wt.short_tag
@@ -102,6 +102,17 @@ def generate_tags_rs(
             sys.exit(1)
         else:
             seen[st] = wt
+
+    # Having duplicated long tags is pointless, only the first will be found by find_map.
+    seen = {}
+    for wt in whitelisted_tags:
+        lt = wt.long_tag()
+        if lt in seen:
+            old = seen[lt]
+            print(f"ERROR: duplicated long tag\n{wt}\n{old}")
+            sys.exit(1)
+        else:
+            seen[lt] = wt
 
     idt = " " * 4
     w = f.write  # shorthand
