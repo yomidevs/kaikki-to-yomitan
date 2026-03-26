@@ -2035,21 +2035,21 @@
                         "content": [
                           {
                             "tag": "span",
-                            "title": "impersonal",
-                            "data": {
-                              "content": "tag",
-                              "category": "transitivity"
-                            },
-                            "content": "impers"
-                          },
-                          {
-                            "tag": "span",
                             "title": "intransitive verb",
                             "data": {
                               "content": "tag",
                               "category": "partOfSpeech"
                             },
                             "content": "vi"
+                          },
+                          {
+                            "tag": "span",
+                            "title": "impersonal",
+                            "data": {
+                              "content": "tag",
+                              "category": "transitivity"
+                            },
+                            "content": "impers"
                           }
                         ]
                       },

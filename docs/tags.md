@@ -67,8 +67,8 @@ In the main dictionary, tag order depends on its type:
 1. **Inflection tags**: we sort them ourselves when building the dictionary, using `assets/tag_order.json`. While this file has categories (formatility, cases etc.), those are later strip and serve only as visual help. The sorting is done with the flattened list.
 Tag postprocessing is only done for _forms_ after building the whole intermediate representation, to only sort once with every extracted tag. The relevant function is `src/dict/main.rs::postprocess_forms`.
 They appear in the order they are in the dictionary.
-2. **Top-level tags**: are sorted by yomitan based on `sortingOrder` of the `tag_bank_term_1.json` shipped with the dictionary. They may **NOT** appear in the order they are in the dictionary.
-3. **Inner tags**: they appear in the order they are in the dictionary.
+2. **Top-level tags**: are sorted by yomitan based on `sortingOrder` (see below) of the `tag_bank_term_1.json` shipped with the dictionary. The relevant yomitan code can be found [here](https://github.com/yomidevs/yomitan/blob/e03bae777aa161783ce00128cdc81de221fda56f/ext/js/language/translator.js#L1124). They may **NOT** appear in the order they are in the dictionary.
+3. **Inner tags**: we sort them ourselves when building the dictionary based on `sortingOrder`. They appear in the order they are in the dictionary.
 
 ## Tag processing
 
