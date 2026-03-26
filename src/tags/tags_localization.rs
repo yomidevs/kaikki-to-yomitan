@@ -17,7 +17,7 @@ pub fn localize_tag(lang: Lang, short_tag: &str) -> Option<(&'static str, &'stat
     }
 }
 
-/// Coverage: 10/256 tags (3.9%)
+/// Coverage: 10/259 tags (3.9%)
 fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
     match short_tag {
         "v" => Some(("動", "動詞")),

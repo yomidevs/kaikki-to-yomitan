@@ -642,6 +642,15 @@
                               "category": "partOfSpeech"
                             },
                             "content": "pron"
+                          },
+                          {
+                            "tag": "span",
+                            "title": "weak",
+                            "data": {
+                              "content": "tag",
+                              "category": ""
+                            },
+                            "content": "weak"
                           }
                         ]
                       },
