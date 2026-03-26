@@ -1,14 +1,15 @@
 pub mod tags_constants;
+pub mod tags_localization;
 
 use std::cmp::Ordering;
 
 use indexmap::IndexMap;
 use tags_constants::{POSES, TAG_BANK, TAG_ORDER};
 
+use crate::lang::Lang;
 use crate::models::kaikki::Tag;
 use crate::models::yomitan::TagInformation;
-
-// TODO: a bunch of sorting and handling of tags should go here
+use crate::tags::tags_localization::{has_locale, localize_tag};
 
 /// Tags that are blacklisted if they happen at *some* expanded form @ tidy
 pub const BLACKLISTED_FORM_TAGS: [&str; 14] = [
@@ -41,7 +42,7 @@ pub const IDENTITY_FORM_TAGS: [&str; 3] = ["nominative", "singular", "infinitive
 /// Tags that we just remove from forms @ tidy
 pub const REDUNDANT_FORM_TAGS: [&str; 1] = ["combined-form"];
 
-/// Sort tags by their position in the tag bank.
+/// Sort tags by their position in the tag_order.json file.
 ///
 /// Expects (but does not check) tags WITHOUT spaces.
 pub fn sort_tags(tags: &mut [&str]) {
@@ -187,9 +188,35 @@ pub fn merge_person_tags(tags: &mut Vec<Tag>) {
     }
 }
 
+// Note that while target is an Edition for the main dictionary, it can be any Lang
+// for the glossary dictionary, which also uses tags.
+//
 /// Return a Vec<TagInformation> from `TAG_BANK` (`tag_bank_terms.json`).
-pub fn get_tag_bank_as_tag_info() -> Vec<TagInformation> {
-    TAG_BANK.iter().map(TagInformation::new).collect()
+pub fn get_tag_bank_as_tag_info(target: Lang) -> Vec<TagInformation> {
+    if has_locale(target) {
+        TAG_BANK
+            .iter()
+            .map(
+                |&(short_tag, category, sort_order, long_tag_aliases, popularity_score)| {
+                    let (short_tag_loc, long_tag_loc) = match localize_tag(target, short_tag) {
+                        Some((short, long)) => (short, long),
+                        // This short_tag hasn't been localized yet, use the English version
+                        None => (short_tag, long_tag_aliases[0]),
+                    };
+
+                    TagInformation {
+                        short_tag: short_tag_loc.to_string(),
+                        category: category.to_string(),
+                        sort_order,
+                        long_tag: long_tag_loc.to_string(),
+                        popularity_score,
+                    }
+                },
+            )
+            .collect()
+    } else {
+        TAG_BANK.iter().map(TagInformation::new).collect()
+    }
 }
 
 /// Find the tag in `TAG_BANK` (`tag_bank_terms.json`) and return the `TagInformation` if any.
@@ -355,5 +382,21 @@ mod tests {
     fn tags_subsets() {
         assert!(tags_are_subset("foo bar", "bar foo baz"));
         assert!(!tags_are_subset("foo qux", "foo bar baz"));
+    }
+
+    use crate::{lang::Lang, models::yomitan::TagInformation};
+
+    #[test]
+    fn locale_ja_tag_bank() {
+        let tag_bank = get_tag_bank_as_tag_info(Lang::Ja);
+        let entry = ("動", "partOfSpeech", -1, &["動詞"][..], 1);
+        let loc_tag_info = TagInformation::new(&entry);
+        assert!(tag_bank.contains(&loc_tag_info))
+    }
+
+    #[test]
+    fn locale_ja_translate_tag() {
+        let loc_tag = localize_tag(Lang::Ja, "v");
+        assert_eq!(loc_tag, Some(("動", "動詞")));
     }
 }

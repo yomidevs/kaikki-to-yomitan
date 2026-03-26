@@ -6,9 +6,11 @@ const BASE_URL: &str = "https://huggingface.co/datasets/daxida/wty-release/resol
 // It is sort of a kludge due to the fact that write_yomitan expects a source: Lang
 fn source_str(dict_ty: DictionaryType, source: &Lang) -> &str {
     match dict_ty {
-        DictionaryType::Main | DictionaryType::Ipa | DictionaryType::Glossary => source.as_ref(),
+        DictionaryType::Main
+        | DictionaryType::Ipa
+        | DictionaryType::Glossary
+        | DictionaryType::GlossaryExtended => source.as_ref(),
         DictionaryType::IpaMerged => "all",
-        _ => unimplemented!(),
     }
 }
 

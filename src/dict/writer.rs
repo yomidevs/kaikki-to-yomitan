@@ -90,8 +90,8 @@ pub fn write_yomitan(
         zip.write_all(STYLES_CSS)?;
     }
 
-    // Zip a copy of tag_bank.json
-    let tag_bank = get_tag_bank_as_tag_info();
+    // Zip a (potentially localized) version without aliases of tag_bank_term.json
+    let tag_bank = get_tag_bank_as_tag_info(target);
     let tag_bank_bytes = serde_json::to_vec_pretty(&tag_bank)?;
     zip.start_file("tag_bank_1.json", zip_opts)?; // it needs to end in _1
     zip.write_all(&tag_bank_bytes)?;

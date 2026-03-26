@@ -23,7 +23,7 @@ use crate::{
     path::PathManager,
     tags::{
         REDUNDANT_FORM_TAGS, find_short_pos_or_default, find_tag_in_bank, merge_person_tags,
-        remove_redundant_tags, sort_tags, sort_tags_by_similar,
+        remove_redundant_tags, sort_tags, sort_tags_by_similar, tags_localization::localize_tag,
     },
     utils::{link_kaikki, link_wiktionary, pretty_println_at_path},
 };
@@ -182,8 +182,7 @@ pub mod heap {
     impl HeapSize for TermPhoneticTranscription {
         fn heap_size(&self) -> usize {
             self.0.heap_size() // term
-                + self.1.heap_size() // "ipa" string
-                + self.2.heap_size() // PhoneticTranscription
+                + self.1.heap_size() // PhoneticTranscription
         }
     }
 
@@ -278,14 +277,6 @@ impl Intermediate for Tidy {
 impl Dictionary for DMain {
     type I = Tidy;
     type A = MainArgs;
-
-    fn keep_if(&self, source: Lang, entry: &WordEntry) -> bool {
-        entry.lang_code == source.iso()
-    }
-
-    fn supports_probe(&self) -> bool {
-        true
-    }
 
     fn preprocess(&self, langs: Langs, entry: &mut WordEntry, opts: &Options, irs: &mut Self::I) {
         preprocess_main(langs.edition, langs.source, opts, entry, irs);
@@ -1422,6 +1413,14 @@ fn to_yomitan_lemma(
     let yomitan_reading = if *reading == *lemma { "" } else { reading };
 
     let common_short_tags_found = get_found_tags(pos, &info);
+    let definition_tags = common_short_tags_found
+        .iter()
+        .map(|short_tag| match localize_tag(target, short_tag) {
+            Some((short, _)) => short,
+            None => short_tag,
+        })
+        .collect::<Vec<_>>()
+        .join(" ");
 
     let mut detailed_definition_content = Node::new_array();
 
@@ -1443,7 +1442,7 @@ fn to_yomitan_lemma(
     YomitanEntry::TermBank(TermBank(
         lemma.to_string(),
         yomitan_reading.to_string(),
-        common_short_tags_found.join(" "),
+        definition_tags,
         get_rule_identifier(short_pos),
         vec![DetailedDefinition::structured(detailed_definition_content)],
     ))
@@ -1471,7 +1470,7 @@ fn get_found_tags(pos: &Pos, info: &LemmaInfo) -> Vec<Tag> {
         .chain(info.tags.clone()) // top level tags (the non-En preferred way)
         .chain(common_tags_iter)
         .filter_map(|tag| match find_tag_in_bank(&tag) {
-            Some(res) => Some(res.short_tag),
+            Some(tag_info) => Some(tag_info.short_tag),
             None => {
                 // log skipped tags
                 // tracing::debug!("{}", tag);
@@ -1579,7 +1578,9 @@ fn structured_glosses_go(
 
         let mut level_content = Node::new_array();
 
-        if let Some(structured_tags) = structured_tags(&minimal_tags, common_short_tags_found) {
+        if let Some(structured_tags) =
+            structured_tags(target, &minimal_tags, common_short_tags_found)
+        {
             level_content.push(structured_tags);
         }
 
@@ -1615,28 +1616,33 @@ fn structured_glosses_go(
 }
 
 /// cf [`crate::models::yomitan::TagInformation`]
-fn structured_tags(tags: &[Tag], common_short_tags_found: &[Tag]) -> Option<Node> {
+fn structured_tags(target: Lang, tags: &[Tag], common_short_tags_found: &[Tag]) -> Option<Node> {
     let structured_tags_content: Vec<_> = tags
         .iter()
         .filter_map(|tag| {
-            if let Some(tag_info) = find_tag_in_bank(tag)
-                && !common_short_tags_found.contains(&tag_info.short_tag)
-            {
-                Some(
-                    GenericNode {
-                        tag: NTag::Span,
-                        title: Some(tag_info.long_tag),
-                        data: Some(NodeData::from_iter([
-                            ("content", "tag"),
-                            ("category", &tag_info.category), // can be empty
-                        ])),
-                        content: Node::Text(tag_info.short_tag),
-                    }
-                    .into_node(),
-                )
-            } else {
-                None
+            let tag_info = find_tag_in_bank(tag)?;
+
+            if common_short_tags_found.contains(&tag_info.short_tag) {
+                return None;
             }
+
+            let (short_tag, long_tag) = match localize_tag(target, &tag_info.short_tag) {
+                Some((short, long)) => (short.to_string(), long.to_string()),
+                None => (tag_info.short_tag, tag_info.long_tag),
+            };
+
+            Some(
+                GenericNode {
+                    tag: NTag::Span,
+                    title: Some(long_tag),
+                    data: Some(NodeData::from_iter([
+                        ("content", "tag"),
+                        ("category", &tag_info.category),
+                    ])),
+                    content: Node::Text(short_tag),
+                }
+                .into_node(),
+            )
         })
         .collect();
 

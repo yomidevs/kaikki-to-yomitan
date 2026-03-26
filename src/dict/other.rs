@@ -10,7 +10,7 @@ use crate::{
             TermPhoneticTranscription, YomitanEntry, wrap,
         },
     },
-    tags::{find_short_pos_or_default, find_tag_in_bank},
+    tags::{find_short_pos_or_default, find_tag_in_bank, tags_localization::localize_tag},
 };
 
 #[derive(Debug, Clone, Copy)]
@@ -26,12 +26,8 @@ pub struct DIpa;
 pub struct DIpaMerged;
 
 impl Dictionary for DGlossary {
-    type I = Vec<YomitanEntry>;
     type A = GlossaryArgs;
-
-    fn keep_if(&self, source: Lang, entry: &WordEntry) -> bool {
-        entry.lang_code == source.iso()
-    }
+    type I = Vec<YomitanEntry>;
 
     fn process(&self, langs: Langs, entry: &WordEntry, irs: &mut Self::I) {
         process_glossary(langs.edition, langs.target, entry, irs);
@@ -43,11 +39,15 @@ impl Dictionary for DGlossary {
 }
 
 impl Dictionary for DGlossaryExtended {
-    type I = Vec<IGlossaryExtended>;
     type A = GlossaryExtendedArgs;
+    type I = IGlossaryExtended;
 
     fn keep_if(&self, _: Lang, _: &WordEntry) -> bool {
         true
+    }
+
+    fn supports_probe(&self) -> bool {
+        false
     }
 
     fn process(&self, langs: Langs, entry: &WordEntry, irs: &mut Self::I) {
@@ -70,28 +70,20 @@ impl Dictionary for DGlossaryExtended {
         }));
     }
 
-    fn to_yomitan(&self, _: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntry> {
+    fn to_yomitan(&self, langs: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntry> {
         vec![LabelledYomitanEntry::new(
             "term",
-            to_yomitan_glossary_extended(irs),
+            to_yomitan_glossary_extended(langs.target, irs),
         )]
     }
 }
 
 impl Dictionary for DIpa {
-    type I = Vec<IIpa>;
     type A = IpaArgs;
-
-    fn keep_if(&self, source: Lang, entry: &WordEntry) -> bool {
-        entry.lang_code == source.iso()
-    }
-
-    fn supports_probe(&self) -> bool {
-        true
-    }
+    type I = IIpa;
 
     fn process(&self, langs: Langs, entry: &WordEntry, irs: &mut Self::I) {
-        process_ipa(langs.edition, langs.source, entry, irs);
+        process_ipa(langs.edition, langs.source, langs.target, entry, irs);
     }
 
     fn to_yomitan(&self, _: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntry> {
@@ -100,22 +92,16 @@ impl Dictionary for DIpa {
 }
 
 impl Dictionary for DIpaMerged {
-    type I = Vec<IIpa>;
     type A = IpaMergedArgs;
-
-    fn keep_if(&self, source: Lang, entry: &WordEntry) -> bool {
-        entry.lang_code == source.iso()
-    }
+    type I = IIpa;
 
     fn process(&self, langs: Langs, entry: &WordEntry, irs: &mut Self::I) {
-        process_ipa(langs.edition, langs.source, entry, irs);
+        process_ipa(langs.edition, langs.source, langs.target, entry, irs);
     }
 
     fn postprocess(&self, irs: &mut Self::I) {
-        // Keep only unique entries
-        *irs = Set::from_iter(irs.drain(..)).into_iter().collect();
         // Sorting is not needed ~ just for visibility
-        irs.sort_by(|a, b| a.0.cmp(&b.0));
+        irs.sort_unstable_keys();
     }
 
     fn to_yomitan(&self, _: LangSpecs, tidy: Self::I) -> Vec<LabelledYomitanEntry> {
@@ -123,7 +109,6 @@ impl Dictionary for DIpaMerged {
     }
 }
 
-// rg: process translations processtranslations
 fn process_glossary(source: Edition, target: Lang, entry: &WordEntry, irs: &mut Vec<YomitanEntry>) {
     let mut translations: Map<&str, Vec<String>> = Map::default();
     for translation in entry.non_trivial_translations() {
@@ -167,24 +152,29 @@ fn process_glossary(source: Edition, target: Lang, entry: &WordEntry, irs: &mut 
 
     let reading = get_reading(source, target, entry).unwrap_or_else(|| entry.word.clone());
     let short_pos = find_short_pos_or_default(&entry.pos);
+    let loc_short_pos = match localize_tag(target, &short_pos) {
+        Some((short, _)) => short,
+        None => short_pos,
+    };
 
     irs.push(YomitanEntry::TermBank(TermBank(
         entry.word.clone(),
         reading,
-        short_pos.to_string(),
+        loc_short_pos.to_string(),
         short_pos.to_string(),
         definitions,
     )));
 }
 
-type IGlossaryExtended = (String, String, Edition, Vec<String>);
+/// (lemma, pos, edition, translations)
+type IGlossaryExtended = Vec<(String, String, Edition, Vec<String>)>;
 
 fn process_glossary_extended(
     edition: Edition,
     source: Lang,
     target: Lang,
     entry: &WordEntry,
-    irs: &mut Vec<IGlossaryExtended>,
+    irs: &mut IGlossaryExtended,
 ) {
     let mut translations: Map<&str, (Vec<&str>, Vec<&str>)> = Map::default();
 
@@ -213,14 +203,12 @@ fn process_glossary_extended(
         return;
     }
 
-    let short_pos = find_short_pos_or_default(&entry.pos);
-
     // A "semi" cartesian product. See the test below.
     irs.extend(translations.iter().flat_map(|(_, (targets, sources))| {
         sources.iter().map(|lemma| {
             (
                 (*lemma).to_string(),
-                short_pos.to_string(),
+                entry.pos.clone(),
                 edition,
                 targets.iter().map(|def| (*def).to_string()).collect(),
             )
@@ -228,14 +216,20 @@ fn process_glossary_extended(
     }));
 }
 
-fn to_yomitan_glossary_extended(irs: Vec<IGlossaryExtended>) -> Vec<YomitanEntry> {
+fn to_yomitan_glossary_extended(target: Lang, irs: IGlossaryExtended) -> Vec<YomitanEntry> {
     irs.into_iter()
-        .map(|(lemma, found_pos, _, translations)| {
+        .map(|(lemma, pos, _, translations)| {
+            let short_pos = find_short_pos_or_default(&pos);
+            let loc_short_pos = match localize_tag(target, short_pos) {
+                Some((short, _)) => short,
+                None => short_pos.as_ref(),
+            };
+
             YomitanEntry::TermBank(TermBank(
                 lemma,
                 String::new(),
-                found_pos.clone(),
-                found_pos,
+                loc_short_pos.to_string(),
+                short_pos.to_string(),
                 translations
                     .into_iter()
                     .map(DetailedDefinition::Text)
@@ -245,68 +239,81 @@ fn to_yomitan_glossary_extended(irs: Vec<IGlossaryExtended>) -> Vec<YomitanEntry
         .collect()
 }
 
-// default version getphonetictranscription
+// Grouping by ipa is done at process_ipa
 pub fn get_ipas(entry: &WordEntry) -> Vec<Ipa> {
-    let ipas_iter = entry.sounds.iter().filter_map(|sound| {
-        if sound.ipa.is_empty() {
-            return None;
-        }
-        let ipa = sound.ipa.clone();
-        let mut tags = sound.tags.clone();
-        if !sound.note.is_empty() {
-            tags.push(sound.note.clone());
-        }
-        Some(Ipa { ipa, tags })
-    });
-
-    // rg: saveIpaResult - Group by ipa
-    let mut ipas_grouped: Vec<Ipa> = Vec::new();
-    for ipa in ipas_iter {
-        if let Some(existing) = ipas_grouped.iter_mut().find(|e| e.ipa == ipa.ipa) {
-            for tag in ipa.tags {
-                if !existing.tags.contains(&tag) {
-                    existing.tags.push(tag);
-                }
+    entry
+        .sounds
+        .iter()
+        .filter_map(|sound| {
+            if sound.ipa.is_empty() {
+                return None;
             }
-        } else {
-            ipas_grouped.push(ipa);
-        }
-    }
-
-    ipas_grouped
+            let mut tags = sound.tags.clone();
+            if !sound.note.is_empty() {
+                tags.push(sound.note.clone());
+            }
+            Some(Ipa {
+                ipa: sound.ipa.clone(),
+                tags,
+            })
+        })
+        .collect()
 }
 
-type IIpa = (String, PhoneticTranscription);
+/// ((lemma, reading), transcription)
+type IIpa = Map<(String, String), Vec<Ipa>>;
 
-fn process_ipa(edition: Edition, source: Lang, entry: &WordEntry, irs: &mut Vec<IIpa>) {
+fn process_ipa(edition: Edition, source: Lang, target: Lang, entry: &WordEntry, irs: &mut IIpa) {
     let mut ipas = get_ipas(entry);
 
     if ipas.is_empty() {
         return;
     }
 
-    // This replacing with the short tag will still show the long version on hover.
+    // This replacing with the short tag will still show the long version on hover,
+    // even though they are not really top-level tags (in the sense of the main dict)
     for ipa in &mut ipas {
         for tag in &mut ipa.tags {
+            // tracing::warn!("tag {tag} @ {} (ed: {edition})", &entry.word);
             if let Some(tag_info) = find_tag_in_bank(tag) {
-                *tag = (*tag_info.short_tag).to_string();
+                // tracing::warn!("found tag {tag_info:?}");
+                *tag = match localize_tag(target, &tag_info.short_tag) {
+                    Some((short, _)) => {
+                        // tracing::warn!("localized short tag {short:?}");
+                        short.to_string()
+                    }
+                    None => (*tag_info.short_tag).to_string(),
+                }
             }
         }
     }
 
-    let phonetic_transcription = PhoneticTranscription {
-        reading: get_reading(edition, source, entry).unwrap_or_else(|| entry.word.clone()),
-        transcriptions: ipas,
-    };
-
-    irs.push((entry.word.clone(), phonetic_transcription));
+    let reading = get_reading(edition, source, entry).unwrap_or_else(|| entry.word.clone());
+    let existing = irs.entry((entry.word.clone(), reading)).or_default();
+    for ipa in ipas {
+        if let Some(existing_ipa) = existing.iter_mut().find(|e| e.ipa == ipa.ipa) {
+            for tag in ipa.tags {
+                if !existing_ipa.tags.contains(&tag) {
+                    existing_ipa.tags.push(tag);
+                }
+            }
+        } else {
+            existing.push(ipa);
+        }
+    }
 }
 
-fn to_yomitan_ipa(irs: Vec<IIpa>) -> Vec<YomitanEntry> {
+fn to_yomitan_ipa(irs: IIpa) -> Vec<YomitanEntry> {
     irs.into_iter()
-        .map(|(lemma, transcription)| {
+        .map(|((lemma, reading), transcriptions)| {
             YomitanEntry::TermBankMeta(TermBankMeta::TermPhoneticTranscription(
-                TermPhoneticTranscription(lemma, "ipa".to_string(), transcription),
+                TermPhoneticTranscription(
+                    lemma,
+                    PhoneticTranscription {
+                        reading,
+                        transcriptions,
+                    },
+                ),
             ))
         })
         .collect()
@@ -343,6 +350,7 @@ mod tests {
         let dict = DGlossaryExtended;
         let langs = Langs::new(Edition::En, Lang::Grc, Lang::Sh);
         let mut entry = WordEntry::default();
+        entry.pos = "noun".to_string();
         entry.translations = vec![
             Translation::new("grc", "British overseas territory", "Ἡράκλειαι στῆλαι"),
             Translation::new("grc", "British overseas territory", "Ἡράκλειαι στῆλαι"),
@@ -361,10 +369,11 @@ mod tests {
 
         assert_eq!(irs.len(), 3);
 
-        let (lemma1, _, _, defs1) = &irs[0];
+        let (lemma1, pos, _, defs1) = &irs[0];
         let (lemma2, _, _, defs2) = &irs[1];
         let (lemma3, _, _, defs3) = &irs[2];
 
+        assert_eq!(pos, "noun");
         assert_eq!(lemma1, "Ἡράκλειαι στῆλαι");
         assert_eq!(lemma2, "Ἡράκλειαι στῆλαι");
         assert_eq!(lemma3, "Κάλπη");
@@ -376,6 +385,43 @@ mod tests {
 
         dict.postprocess(&mut irs);
         assert_eq!(irs.len(), 2);
+
+        let yomitan_entries = to_yomitan_glossary_extended(Lang::Grc, irs);
+        assert_eq!(yomitan_entries.len(), 2);
+        match yomitan_entries.first().unwrap() {
+            YomitanEntry::TermBank(term_bank) => {
+                // Should use the short pos here (noun > n)
+                assert_eq!(term_bank.2, "n")
+            }
+            _ => panic!(), // We know that this dict only produces TermBank
+        }
+    }
+
+    #[test]
+    fn process_glossary_extended_pos_localization() {
+        let dict = DGlossaryExtended;
+        // Japanese as target, source irrelevant
+        let langs = Langs::new(Edition::En, Lang::Ja, Lang::En);
+        let mut entry = WordEntry::default();
+        entry.pos = "noun".to_string();
+        entry.translations = vec![
+            Translation::new("ja", "some sense", "日本語"),
+            Translation::new("en", "some sense", "english"),
+        ];
+
+        let mut irs = IGlossaryExtended::new();
+        dict.process(langs, &entry, &mut irs);
+
+        assert_eq!(irs.len(), 1);
+        let (_, pos, _, _) = &irs[0];
+
+        assert_eq!(pos, "noun");
+
+        let yomitan_entries = to_yomitan_glossary_extended(Lang::Ja, irs);
+        match &yomitan_entries[0] {
+            YomitanEntry::TermBank(term_bank) => assert_eq!(term_bank.2, "名"),
+            _ => panic!(), // We know that this dict only produces TermBank
+        }
     }
 
     impl Sound {
@@ -402,19 +448,15 @@ mod tests {
         let mut entry = WordEntry::default();
         entry.sounds = vec![Sound::new("ipa1"), Sound::new("ipa1"), Sound::new("ipa2")];
 
-        let mut irs = Vec::new();
+        let mut irs = IIpa::default();
         dict.process(langs, &entry, &mut irs);
 
         assert_eq!(irs.len(), 1);
 
-        let transcriptions = &irs[0].1.transcriptions;
+        let transcriptions = irs.values().next().unwrap();
         assert_eq!(transcriptions.len(), 2);
-
         assert_eq!(&transcriptions[0].ipa, "ipa1");
         assert_eq!(&transcriptions[1].ipa, "ipa2");
-
-        dict.postprocess(&mut irs);
-        assert_eq!(irs[0].1.transcriptions.len(), 2);
     }
 
     #[test]
@@ -427,12 +469,12 @@ mod tests {
             Sound::with_tag("ipa2", "modern Italianate Ecclesiastical"),
         ];
 
-        let mut irs = Vec::new();
+        let mut irs = IIpa::default();
         dict.process(langs, &entry, &mut irs);
 
         assert_eq!(irs.len(), 1);
 
-        let transcriptions = &irs[0].1.transcriptions;
+        let transcriptions = irs.values().next().unwrap();
         assert_eq!(transcriptions.len(), 2);
 
         assert_eq!(&transcriptions[0].ipa, "ipa1");
@@ -441,8 +483,56 @@ mod tests {
         // Check that tags are properly simplified
         assert_eq!(&transcriptions[0].tags[0], "tag1");
         assert_eq!(&transcriptions[1].tags[0], "⛪");
+    }
+
+    #[test]
+    fn process_ipa_merged_tag_merge() {
+        let dict = DIpaMerged;
+        let (source, target) = (Lang::La, Lang::La);
+
+        let edition = Edition::En;
+        let langs = Langs::new(edition, source, target);
+        let mut entry = WordEntry::default();
+        entry.sounds = vec![Sound::with_tag("ipa1", "tag1")];
+
+        let mut irs = IIpa::default();
+        dict.process(langs, &entry, &mut irs);
+
+        let edition = Edition::De;
+        let langs = Langs::new(edition, source, target);
+        let mut entry = WordEntry::default();
+        // same ipa, different tag (coming from another edition)
+        entry.sounds = vec![Sound::with_tag("ipa1", "tag2")];
+        dict.process(langs, &entry, &mut irs);
+
+        let transcriptions = irs.values().next().unwrap();
+        assert_eq!(transcriptions.len(), 1);
+        // Both tags should be present after merging
+        assert!(transcriptions[0].tags.contains(&"tag1".to_string()));
+        assert!(transcriptions[0].tags.contains(&"tag2".to_string()));
+    }
+
+    #[test]
+    fn process_ipa_merged_postprocess_order() {
+        let dict = DIpaMerged;
+        let (source, target) = (Lang::La, Lang::La);
+        let langs = Langs::new(Edition::En, source, target);
+
+        let mut irs = IIpa::default();
+
+        let mut entry = WordEntry::default();
+        entry.word = "zebra".to_string();
+        entry.sounds = vec![Sound::new("ipa1")];
+        dict.process(langs, &entry, &mut irs);
+
+        let mut entry = WordEntry::default();
+        entry.word = "apple".to_string();
+        entry.sounds = vec![Sound::new("ipa2")];
+        dict.process(langs, &entry, &mut irs);
 
         dict.postprocess(&mut irs);
-        assert_eq!(irs[0].1.transcriptions.len(), 2);
+
+        let keys: Vec<&String> = irs.keys().map(|(word, _)| word).collect();
+        assert_eq!(keys, vec!["apple", "zebra"]);
     }
 }

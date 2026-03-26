@@ -2,7 +2,7 @@
   [
     "立命",
     "りつめい",
-    "n",
+    "名",
     "n",
     0,
     [
@@ -83,12 +83,12 @@
                         "content": [
                           {
                             "tag": "span",
-                            "title": "dated",
+                            "title": "古風",
                             "data": {
                               "content": "tag",
                               "category": "archaism"
                             },
-                            "content": "dated"
+                            "content": "旧"
                           }
                         ]
                       },
@@ -754,7 +754,7 @@
   [
     "命令",
     "めいれい",
-    "n irreg",
+    "名 irreg",
     "n",
     0,
     [
@@ -830,7 +830,7 @@
   [
     "水流",
     "",
-    "name",
+    "名前",
     "name",
     0,
     [
@@ -1033,7 +1033,7 @@
   [
     "日本国",
     "",
-    "n sl",
+    "名 俗",
     "n",
     0,
     [
@@ -1127,6 +1127,71 @@
               {
                 "tag": "a",
                 "href": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/日/日本/日本国.html",
+                "content": "Kaikki"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "弁当",
+    "べんとう",
+    "名",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
+            "content": [
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "外出先で食べるために容器に詰めた食べ物。"
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "料理店などで出す、箱に詰めた料理。"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://ja.wiktionary.org/wiki/弁当#Japanese",
+                "content": "Wiktionary"
+              },
+              " | ",
+              {
+                "tag": "a",
+                "href": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/弁/弁当/弁当.html",
                 "content": "Kaikki"
               }
             ]

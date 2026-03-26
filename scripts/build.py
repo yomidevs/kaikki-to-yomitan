@@ -1,11 +1,13 @@
-# Makes rust types from language.json
+"""Generate rust source files from assets.
 
-# Note that there is also the isolang.rs crate
+Requires python 3.12+
+"""
 
 import argparse
 import json
 import re
-from dataclasses import dataclass, astuple
+import sys
+from dataclasses import astuple, dataclass
 from pathlib import Path
 from typing import Any
 
@@ -28,6 +30,56 @@ class WhitelistedTag:
     # if array, first element will be used, others are aliases
     long_tag_aliases: str | list[str]
     popularity_score: int
+
+    def __post_init__(self) -> None:
+        check_valid_short_tag(self.short_tag)
+        for tag in self.longs_as_list():
+            check_valid_long_tag(tag)
+
+    def longs_as_list(self) -> list[str]:
+        if isinstance(self.long_tag_aliases, str):
+            return [self.long_tag_aliases]
+        return self.long_tag_aliases
+
+    def long_tag(self) -> str:
+        return self.longs_as_list()[0]
+
+
+@dataclass
+class TagTranslation:
+    long_tag_en: str
+    short_tag: str
+    long_tag: str
+
+    def __post_init__(self) -> None:
+        # No need to check for long_tag_en, an invalid char means it's not in tag_bank
+        check_valid_short_tag(self.short_tag)
+        check_valid_long_tag(self.long_tag)
+
+
+type Locale = dict[
+    str,  # iso
+    list[TagTranslation],
+]
+
+INVALID_SHORT_TAG_CHARS = ' ;/"\\\n\r\t'  # Forbid spaces: yomitan will split them
+INVALID_LONG_TAG_CHARS = ';/"\\\n\r\t'
+
+
+def check_valid_short_tag(tag: str) -> None:
+    _check_valid_tag(tag, INVALID_SHORT_TAG_CHARS)
+
+
+def check_valid_long_tag(tag: str) -> None:
+    _check_valid_tag(tag, INVALID_LONG_TAG_CHARS)
+
+
+def _check_valid_tag(tag: str, invalid_chars: str) -> None:
+    invalid = [c for c in tag if c in invalid_chars]
+    assert not invalid, (
+        f"Invalid tag '{tag}': contains forbidden character(s): "
+        f"{', '.join(repr(c) for c in set(invalid))}"
+    )
 
 
 def write_warning(f) -> None:
@@ -72,25 +124,17 @@ def generate_tags_rs(
         f"pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); {len(whitelisted_tags)}] = [\n"
     )
     for wt in whitelisted_tags:
-        longs_as_list = (
-            wt.long_tag_aliases
-            if isinstance(wt.long_tag_aliases, list)
-            else [wt.long_tag_aliases]
-        )
-        longs_str = str(longs_as_list).replace("'", '"')
+        longs_str = str(wt.longs_as_list()).replace("'", '"')
         w(
             f'{idt}("{wt.short_tag}", "{wt.category}", {wt.sort_order}, &{longs_str}, {wt.popularity_score}),\n'
         )
     w("];\n\n")
 
-    wts_pos = []
+    wts_pos: list[tuple[str, str]] = []
     for wt in whitelisted_tags:
         if wt.category == "partOfSpeech":
-            if isinstance(wt.long_tag_aliases, list):
-                for alias in wt.long_tag_aliases:
-                    wts_pos.append((alias, wt.short_tag))
-            else:
-                wts_pos.append((wt.long_tag_aliases, wt.short_tag))
+            for alias in wt.longs_as_list():
+                wts_pos.append((alias, wt.short_tag))
 
     w(f"pub const POSES: [(&str, &str); {len(wts_pos)}] = [\n")
     for long, short in wts_pos:
@@ -380,6 +424,63 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
     w("}\n")
 
 
+def generate_tags_localization_rs(
+    locale: Locale, whitelisted_tags: list[WhitelistedTag], f
+) -> None:
+    w = f.write
+
+    write_warning(f)
+
+    w("use crate::lang::Lang;\n\n")
+
+    w("pub fn has_locale(lang: Lang) -> bool {\n")
+    w("    match lang {\n")
+    for iso in locale:
+        w(f"        Lang::{iso.title()} => true,\n")
+    w("        _ => false,\n")
+    w("    }\n")
+    w("}\n\n")
+
+    w(
+        "pub fn localize_tag(lang: Lang, short_tag: &str) -> Option<(&'static str, &'static str)> {\n"
+    )
+    w("    match lang {\n")
+    for iso in locale:
+        w(f"        Lang::{iso.title()} => localize_tag_{iso}(short_tag),\n")
+    w("        _ => None,\n")
+    w("    }\n")
+    w("}\n\n")
+
+    # Keyed by primary alias only. Secondary aliases are irrelevant.
+    # This is because we only translate short tags. Every alias converges to a short tag
+    # and it's that short tag that we will localize into: (trans.short_tag, trans.long_tag)
+    long_to_short = {wt.long_tag(): wt.short_tag for wt in whitelisted_tags}
+
+    for iso, translations in locale.items():
+        ratio = len(translations) / len(long_to_short)
+
+        w(
+            f"/// Coverage: {len(translations)}/{len(long_to_short)} tags ({ratio:.1%})\n"
+        )
+        w(
+            f"fn localize_tag_{iso}(short_tag: &str) -> Option<(&'static str, &'static str)> {{\n"
+        )
+        w("    match short_tag {\n")
+        for trans in translations:
+            if trans.long_tag_en not in long_to_short:
+                print(
+                    f"[{iso}] ERROR: tag '{trans.long_tag_en}' has no matching tag bank entry"
+                )
+                sys.exit(1)
+            short_key = long_to_short[trans.long_tag_en]
+            w(
+                f'        "{short_key}" => Some(("{trans.short_tag}", "{trans.long_tag}")),\n'
+            )
+        w("        _ => None,\n")
+        w("    }\n")
+        w("}\n")
+
+
 def load_lang(item: Any) -> Lang:
     return Lang(
         item["iso"],
@@ -534,15 +635,18 @@ def main() -> None:
     src = Path("src")
     path_lang_rs = src / "lang.rs"
     path_tags_rs = src / "tags" / "tags_constants.rs"
+    path_tags_loc_rs = src / "tags" / "tags_localization.rs"
     jsons_root = Path("assets")
     path_languages_json = jsons_root / "languages.json"
     path_tag_order_json = jsons_root / "tag_order.json"
     path_tag_bank_json = jsons_root / "tag_bank_term.json"
+    path_tag_locale_folder = jsons_root / "tags" / "locale"
 
     for path in (
         path_languages_json,
         path_tag_order_json,
         path_tag_bank_json,
+        path_tag_locale_folder,
     ):
         if not path.exists:
             print(f"Path does not exist @ {path}")
@@ -566,15 +670,10 @@ def main() -> None:
     # Overwrite to ensure formatting
     with path_tag_order_json.open("w") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
+
     with path_tag_bank_json.open() as f:
         data = json.load(f)
     whitelisted_tags = [WhitelistedTag(*row) for row in data]
-    for wtag in whitelisted_tags:
-        if " " in wtag.short_tag:
-            # This is an issue because yomitan will treat them as separate tags.
-            print(
-                f"WARN: space detected in short tag: {wtag.short_tag}. Use an hyphen instead."
-            )
     # Overwrite to ensure formatting and sort
     whitelisted_tags.sort(
         key=lambda wt: (
@@ -589,6 +688,19 @@ def main() -> None:
             [astuple(wt) for wt in whitelisted_tags], f, indent=4, ensure_ascii=False
         )
 
+    # read tags_X.json files inside localization folder, where X is the iso
+    locale: Locale = {}
+    for lang in langs:
+        path_localization_json = path_tag_locale_folder / f"tags_{lang.iso}.json"
+        if not path_localization_json.exists():
+            continue
+        # Overwrite to ensure formatting
+        with path_localization_json.open() as f:
+            data = json.load(f)
+        with path_localization_json.open("w") as f:
+            json.dump(data, f, indent=4, ensure_ascii=False)
+        locale[lang.iso] = [TagTranslation(k, v[0], v[1]) for k, v in data.items()]
+
     # import sys
     # generate_lang_rs(langs, sys.stdout)
     # generate_tags_rs(tag_order, sys.stdout)
@@ -599,6 +711,9 @@ def main() -> None:
     with path_tags_rs.open("w") as f:
         generate_tags_rs(tag_order, whitelisted_tags, f)
         print(f"Wrote rust code @ {path_tags_rs}")
+    with path_tags_loc_rs.open("w") as f:
+        generate_tags_localization_rs(locale, whitelisted_tags, f)
+        print(f"Wrote rust code @ {path_tags_loc_rs}")
 
 
 if __name__ == "__main__":

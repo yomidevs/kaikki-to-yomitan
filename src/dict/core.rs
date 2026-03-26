@@ -7,6 +7,7 @@ use std::fs::File;
 use std::io::{BufRead, BufReader, BufWriter, Write};
 use std::path::PathBuf;
 
+use crate::Map;
 use crate::cli::{LangSpecs, Options};
 use crate::dict::writer::write_yomitan;
 use crate::lang::{Edition, Lang};
@@ -83,19 +84,35 @@ where
     }
 }
 
+impl<A, B> Intermediate for Map<A, B>
+where
+    A: Serialize,
+    B: Serialize,
+{
+    fn len(&self) -> usize {
+        Self::len(self)
+    }
+}
+
 /// Trait to abstract the process of making a dictionary.
 pub trait Dictionary {
     type A: TryInto<PathManager, Error = anyhow::Error>;
     type I: Intermediate;
 
     /// Whether to keep or not this entry.
-    fn keep_if(&self, source: Lang, entry: &WordEntry) -> bool;
+    ///
+    /// It is only overwritten in glossary extended.
+    fn keep_if(&self, source: Lang, entry: &WordEntry) -> bool {
+        entry.lang_code == source.iso()
+    }
 
     /// Whether we can quickly probe a jsonline to avoid a full deserialization.
     ///
-    /// Only used for the main dictionary. It probes on source Lang.
+    /// It probes on source Lang, performing the same check of the default `keep_if`.
+    ///
+    /// It is only overwritten in glossary extended.
     fn supports_probe(&self) -> bool {
-        false
+        true
     }
 
     // NOTE: Maybe we can get rid of this (blocked by mutable behaviour of the main dictionary).
@@ -107,6 +124,7 @@ pub trait Dictionary {
     /// How to transform a `WordEntry` into intermediate representation.
     ///
     /// Most dictionaries only make *at most one* `Self::I` from a `WordEntry`.
+    // TODO: why not take ownership of entry?
     fn process(&self, langs: Langs, entry: &WordEntry, irs: &mut Self::I);
 
     /// Console message for found irs. It is customized for the main dictionary.
@@ -270,6 +288,11 @@ pub fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
                 std::io::stdout().flush()?;
             }
 
+            // This slows down tests, since we pay the deserialization even though we
+            // do not filter any entry.
+            // TODO: at some point we should have a "make_dict" for CLI/release.rs
+            // with a db, and another, without probing, for tests, instead of having
+            // one for release.rs and other for CLI/tests.
             if dict.supports_probe() {
                 let probe: LangCodeProbe = serde_json::from_slice(&line)
                     .with_context(|| "Error decoding JSON @ make_dict")?;
