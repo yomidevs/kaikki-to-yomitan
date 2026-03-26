@@ -5,6 +5,7 @@ use crate::lang::Lang;
 
 pub fn has_locale(lang: Lang) -> bool {
     match lang {
+        Lang::De => true,
         Lang::Ja => true,
         _ => false,
     }
@@ -12,11 +13,24 @@ pub fn has_locale(lang: Lang) -> bool {
 
 pub fn localize_tag(lang: Lang, short_tag: &str) -> Option<(&'static str, &'static str)> {
     match lang {
+        Lang::De => localize_tag_de(short_tag),
         Lang::Ja => localize_tag_ja(short_tag),
         _ => None,
     }
 }
 
+/// Coverage: 6/354 tags (1.7%)
+fn localize_tag_de(short_tag: &str) -> Option<(&'static str, &'static str)> {
+    match short_tag {
+        "n" => Some(("S", "Substantiv")),
+        "masc" => Some(("Mask", "Maskulinum")),
+        "fem" => Some(("Fem", "Femininum")),
+        "v" => Some(("V", "Verb")),
+        "adj" => Some(("Adj", "Adjektiv")),
+        "name" => Some(("Vorn", "Vorname")),
+        _ => None,
+    }
+}
 /// Coverage: 10/354 tags (2.8%)
 fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
     match short_tag {

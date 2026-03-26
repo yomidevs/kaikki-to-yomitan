@@ -728,6 +728,8 @@ def main() -> None:
         if not path_localization_json.exists():
             continue
         # Overwrite to ensure formatting
+        # TODO: when overwriting, do it in some order coherent across languages
+        # preferably respecting categories, in a way similar to whitelisted tags
         with path_localization_json.open() as f:
             data = json.load(f)
         with path_localization_json.open("w") as f:

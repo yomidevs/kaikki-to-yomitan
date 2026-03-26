@@ -2,7 +2,7 @@
   [
     "Rock",
     "",
-    "n masc",
+    "S Mask",
     "n",
     0,
     [
@@ -137,7 +137,7 @@
   [
     "Rock",
     "",
-    "n masc",
+    "S Mask",
     "n",
     0,
     [
@@ -271,7 +271,7 @@
   [
     "Garage",
     "",
-    "n fem",
+    "S Fem",
     "n",
     0,
     [
@@ -845,7 +845,7 @@
   [
     "ausmachen",
     "",
-    "v",
+    "V",
     "v",
     0,
     [
@@ -1670,7 +1670,7 @@
   [
     "Peter",
     "",
-    "name masc n",
+    "Vorn Mask S",
     "name",
     0,
     [
