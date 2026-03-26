@@ -10,7 +10,8 @@ use crate::{
     Map, Set,
     cli::{LangSpecs, MainArgs, Options},
     dict::{
-        Dictionary, Intermediate, LabelledYomitanEntry, Langs, locale::localize_examples_string,
+        Dictionary, Intermediate, LabelledYomitanEntry, Langs,
+        locale::{localize_etymology_string, localize_examples_string, localize_grammar_string},
     },
     lang::{Edition, Lang},
     models::{
@@ -1426,6 +1427,7 @@ fn to_yomitan_lemma(
 
     if info.etymology_text.is_some() || info.head_info_text.is_some() {
         detailed_definition_content.push(structured_preamble(
+            target,
             info.etymology_text,
             info.head_info_text,
         ));
@@ -1489,24 +1491,30 @@ fn get_rule_identifier(short_pos: &str) -> String {
     short_pos.to_string()
 }
 
-fn build_details_entry(ty: &str, content: String) -> Node {
+fn build_details_entry(ty: &str, ty_loc: &str, content: String) -> Node {
     wrap(
         NTag::Details,
         &format!("details-entry-{ty}"),
         Node::Array(vec![
-            wrap(NTag::Summary, "summary-entry", Node::Text(ty.into())),
+            wrap(NTag::Summary, "summary-entry", Node::Text(ty_loc.into())),
             wrap(NTag::Div, &format!("{ty}-content"), Node::Text(content)),
         ]),
     )
 }
 
-fn structured_preamble(etymology_text: Option<String>, head_info_text: Option<String>) -> Node {
+fn structured_preamble(
+    target: Lang,
+    etymology_text: Option<String>,
+    head_info_text: Option<String>,
+) -> Node {
     let mut preamble_content = Node::new_array();
     if let Some(head_info_text) = head_info_text {
-        preamble_content.push(build_details_entry("Grammar", head_info_text));
+        let ty_loc = localize_grammar_string(target);
+        preamble_content.push(build_details_entry("Grammar", ty_loc, head_info_text));
     }
     if let Some(etymology_text) = etymology_text {
-        preamble_content.push(build_details_entry("Etymology", etymology_text));
+        let ty_loc = localize_etymology_string(target);
+        preamble_content.push(build_details_entry("Etymology", ty_loc, etymology_text));
     }
 
     wrap(

@@ -2,7 +2,9 @@ use crate::lang::Lang;
 
 // This should be done differently, and support every section of the dictionary (i.e. Etymology)
 
-// In practice, this is only called for target: Edition, in the main dictionary
+/// Localize Example/Examples
+///
+/// In practice, this is only called for target: Edition, in the main dictionary
 pub fn localize_examples_string(target: Lang, n: usize) -> String {
     let (singular, plural) = match target {
         Lang::Fr => ("exemple", "exemples"),
@@ -32,5 +34,57 @@ pub fn localize_examples_string(target: Lang, n: usize) -> String {
         format!("1 {singular}")
     } else {
         format!("{n} {plural}")
+    }
+}
+
+/// Localize Etymology
+pub fn localize_etymology_string(target: Lang) -> &'static str {
+    match target {
+        Lang::Zh => "词源",
+        Lang::Cs => "Etymologie",
+        Lang::Nl => "Etymologie",
+        Lang::Fr => "Étymologie",
+        Lang::De => "Etymologie",
+        Lang::El => "Ετυμολογία",
+        Lang::Id => "Etimologi",
+        Lang::It => "Etimologia",
+        Lang::Ja => "語源",
+        Lang::Ko => "어원",
+        Lang::Ku => "Rêç",
+        Lang::Ms => "Etimologi",
+        Lang::Pl => "Etymologia",
+        Lang::Pt => "Etimologia",
+        Lang::Ru => "Этимология",
+        Lang::Es => "Etimología",
+        Lang::Th => "รากศัพท์",
+        Lang::Tr => "Etimoloji",
+        Lang::Vi => "Nguồn gốc từ",
+        _ => "Etymology",
+    }
+}
+
+/// Localize Grammar
+pub fn localize_grammar_string(target: Lang) -> &'static str {
+    match target {
+        Lang::Zh => "语法",
+        Lang::Cs => "Gramatika",
+        Lang::Nl => "Grammatica",
+        Lang::Fr => "Grammaire",
+        Lang::De => "Grammatik",
+        Lang::El => "Γραμματική",
+        Lang::Id => "Tata bahasa",
+        Lang::It => "Grammatica",
+        Lang::Ja => "文法",
+        Lang::Ko => "문법",
+        Lang::Ku => "Gramera",
+        Lang::Ms => "Tatabahasa",
+        Lang::Pl => "Gramatyka",
+        Lang::Pt => "Gramática",
+        Lang::Ru => "Грамматика",
+        Lang::Es => "Gramática",
+        Lang::Th => "ไวยากรณ์",
+        Lang::Tr => "Dilbilgisi",
+        Lang::Vi => "Ngữ pháp",
+        _ => "Grammar",
     }
 }
