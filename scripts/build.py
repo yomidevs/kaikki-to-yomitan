@@ -92,18 +92,14 @@ def generate_tags_rs(
     whitelisted_tags: list[WhitelistedTag],
     f,
 ) -> None:
-    # SAFETY: because the IPA dictionary uses only short tags and relies on yomitan
-    # to complete the long version on hover based on tag_bank_*.json, it is important to
-    # not have short tag duplicates, unless the meaning of the long version are the same.
+    # Having duplicated short tags is an error, use aliases instead.
     seen = {}
     for wt in whitelisted_tags:
         st = wt.short_tag
-        if st in ("fig", "dialect"):
-            # These are ok, since the long versions are the same (figurative, figuratively)
-            continue
         if st in seen:
             old = seen[st]
-            print(f"WARN: duplicated short tag\n{wt}\n{old}")
+            print(f"ERROR: duplicated short tag\n{wt}\n{old}")
+            sys.exit(1)
         else:
             seen[st] = wt
 

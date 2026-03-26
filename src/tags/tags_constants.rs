@@ -81,7 +81,7 @@ pub const TAG_ORDER: [&str; 76] = [
 ];
 
 #[rustfmt::skip]
-pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 258] = [
+pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 256] = [
     ("animate", "animacy", 0, &["animate"], 0),
     ("inanim", "animacy", 0, &["inanimate"], 0),
     ("dated", "archaism", 0, &["dated"], 0),
@@ -316,11 +316,9 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 258] = [
     ("pers", "transitivity", 0, &["personal"], 0),
     ("ref-pron", "transitivity", 0, &["takes a reflexive pronoun"], 0),
     ("cmn", "usage", 0, &["common"], 0),
-    ("dialect", "usage", 0, &["dialect"], 0),
-    ("dialect", "usage", 0, &["dialectal"], 0),
+    ("dialect", "usage", 0, &["dialectal", "dialect"], 0),
     ("euph", "usage", 0, &["euphemistic"], 0),
-    ("fig", "usage", 0, &["figuratively"], 0),
-    ("fig", "usage", 0, &["figurative"], 0),
+    ("fig", "usage", 0, &["figuratively", "figurative"], 0),
     ("idio", "usage", 0, &["idiomatic"], 0),
     ("ltrl", "usage", 0, &["literal"], 0),
     ("ltrly", "usage", 0, &["literally"], 0),

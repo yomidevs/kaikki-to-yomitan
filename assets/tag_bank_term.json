@@ -1701,14 +1701,10 @@
         "dialect",
         "usage",
         0,
-        "dialect",
-        0
-    ],
-    [
-        "dialect",
-        "usage",
-        0,
-        "dialectal",
+        [
+            "dialectal",
+            "dialect"
+        ],
         0
     ],
     [
@@ -1722,14 +1718,10 @@
         "fig",
         "usage",
         0,
-        "figuratively",
-        0
-    ],
-    [
-        "fig",
-        "usage",
-        0,
-        "figurative",
+        [
+            "figuratively",
+            "figurative"
+        ],
         0
     ],
     [
