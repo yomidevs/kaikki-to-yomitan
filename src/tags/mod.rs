@@ -389,7 +389,7 @@ mod tests {
     #[test]
     fn locale_ja_tag_bank() {
         let tag_bank = get_tag_bank_as_tag_info(Lang::Ja);
-        let entry = ("動", "partOfSpeech", -1, &["動詞"][..], 1);
+        let entry = ("動", "partOfSpeech", -2, &["動詞"][..], 2);
         let loc_tag_info = TagInformation::new(&entry);
         assert!(tag_bank.contains(&loc_tag_info))
     }
