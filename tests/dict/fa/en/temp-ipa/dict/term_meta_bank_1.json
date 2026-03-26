@@ -8,23 +8,23 @@
         {
           "ipa": "/ma.ˈlak/",
           "tags": [
-            "Classical-Persian"
+            "classic"
           ]
         },
         {
           "ipa": "[mä.lák]",
           "tags": [
-            "Dari",
+            "🇦🇫",
             "formal",
-            "Kabuli",
+            "🇦🇫KA",
             "Hazaragi",
-            "Tajik"
+            "🇹🇯"
           ]
         },
         {
           "ipa": "[mæ.lǽkʰʲ]",
           "tags": [
-            "Iran",
+            "🇮🇷",
             "formal"
           ]
         }
@@ -40,15 +40,15 @@
         {
           "ipa": "/faːr.ˈsiː/",
           "tags": [
-            "Classical-Persian"
+            "classic"
           ]
         },
         {
           "ipa": "[fɑːɾ.síː]",
           "tags": [
-            "Dari",
+            "🇦🇫",
             "formal",
-            "Kabuli"
+            "🇦🇫KA"
           ]
         },
         {
@@ -60,14 +60,14 @@
         {
           "ipa": "[fɒːɹ.síː]",
           "tags": [
-            "Iran",
+            "🇮🇷",
             "formal"
           ]
         },
         {
           "ipa": "[fɔɾ.sí]",
           "tags": [
-            "Tajik",
+            "🇹🇯",
             "formal"
           ]
         }

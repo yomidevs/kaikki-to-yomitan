@@ -72,7 +72,7 @@ They appear in the order they are in the dictionary.
 
 ## Tag processing
 
-Tag processing is ruled by `assets/tag_bank_term.json`. The items of this JSON list are a custom version of:
+Tag processing is ruled by `tag_bank_term` files. Currently, there are two: `assets/tag_bank_term.json` and `assets/tag_bank_term_variety.json`, separated only for visibility, but later merged via the build script in `tag_constants.rs`. The items of this JSON list are a custom version of:
 
 ```typescript
 type TagInformation = [
@@ -114,7 +114,7 @@ These are some steps to debug why a Wiktionary tag may not appear in yomitan:
 1. **Is the Wiktionary tag really a tag?** Sometimes badly formatted text, or a wrong template may **look** like a tag but it is not.
 2. **Is the Wiktionary tag being extracted by wiktextract?** Check the Kaikki link on the popup bottom-right to confirm.
 3. **Is the Wiktionary tag being extracted as a `raw_tag`?** If it doesn't, see this [issue](https://github.com/yomidevs/wiktionary-to-yomitan/issues/84), and the associated [PR](https://github.com/tatuylonen/wiktextract/pull/997) in wiktextract to have a grasp on how to request/add translations.
-4. **The tag is in wiktextract, but not in the dictionary?** Check if the tag is whitelisted in `assets/tag_bank_term.json`.
+4. **The tag is in wiktextract, but not in the dictionary?** Check if the tag is whitelisted in any `tag_bank_term` file.
 5. **The tag is whitelisted, but not in the dictionary?** Finally our problem, please open an [issue](https://github.com/yomidevs/wiktionary-to-yomitan/issues/new).
 
 ## Localization
