@@ -16,23 +16,23 @@
     [
         "dated",
         "archaism",
-        0,
+        4,
         "dated",
-        0
+        -4
     ],
     [
         "obs",
         "archaism",
-        0,
+        4,
         "obsolete",
-        0
+        -4
     ],
     [
         "out",
         "archaism",
-        0,
+        4,
         "outdated",
-        0
+        -4
     ],
     [
         "arch",
@@ -288,9 +288,9 @@
     [
         "surn",
         "name",
-        0,
+        -1,
         "surname",
-        0
+        1
     ],
     [
         "in-pl",
@@ -1644,9 +1644,9 @@
     [
         "🪨",
         "topic",
-        1,
+        0,
         "mineralogy",
-        -1
+        0
     ],
     [
         "aux",
@@ -1769,9 +1769,9 @@
     [
         "rare",
         "usage",
-        1,
+        0,
         "rare",
-        -1
+        0
     ],
     [
         "char",
