@@ -187,6 +187,32 @@
                   {
                     "tag": "div",
                     "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "title": "Guatemala",
+                            "data": {
+                              "content": "tag",
+                              "category": "variety"
+                            },
+                            "content": "🇬🇹"
+                          },
+                          {
+                            "tag": "span",
+                            "title": "Mexico",
+                            "data": {
+                              "content": "tag",
+                              "category": "variety"
+                            },
+                            "content": "🇲🇽"
+                          }
+                        ]
+                      },
                       "Tipo de helado preparado a base de agua congelada y sabor artificial."
                     ]
                   }

@@ -14,31 +14,31 @@
         0
     ],
     [
-        "dated",
-        "archaism",
-        0,
-        "dated",
-        0
-    ],
-    [
-        "obs",
-        "archaism",
-        0,
-        "obsolete",
-        0
-    ],
-    [
-        "out",
-        "archaism",
-        0,
-        "outdated",
-        0
-    ],
-    [
         "arch",
         "archaism",
         4,
         "archaic",
+        -4
+    ],
+    [
+        "dated",
+        "archaism",
+        4,
+        "dated",
+        -4
+    ],
+    [
+        "obs",
+        "archaism",
+        4,
+        "obsolete",
+        -4
+    ],
+    [
+        "out",
+        "archaism",
+        4,
+        "outdated",
         -4
     ],
     [
@@ -288,9 +288,9 @@
     [
         "surn",
         "name",
-        0,
+        -1,
         "surname",
-        0
+        1
     ],
     [
         "in-pl",
@@ -371,229 +371,229 @@
     [
         "adj",
         "partOfSpeech",
-        -1,
+        -2,
         [
             "adjective",
             "adj"
         ],
-        1
+        2
     ],
     [
         "adv",
         "partOfSpeech",
-        -1,
+        -2,
         [
             "adverb",
             "adv"
         ],
-        1
+        2
     ],
     [
         "artic",
         "partOfSpeech",
-        -1,
+        -2,
         "article",
-        1
+        2
     ],
     [
         "conj",
         "partOfSpeech",
-        -1,
+        -2,
         [
             "conjunction",
             "conj"
         ],
-        1
+        2
     ],
     [
         "det",
         "partOfSpeech",
-        -1,
+        -2,
         [
             "determiner",
             "det"
         ],
-        1
+        2
     ],
     [
         "intj",
         "partOfSpeech",
-        -1,
+        -2,
         [
             "interjection",
             "intj"
         ],
-        1
+        2
     ],
     [
         "n",
         "partOfSpeech",
-        -1,
+        -2,
         "noun",
-        1
+        2
     ],
     [
         "num",
         "partOfSpeech",
-        -1,
+        -2,
         [
             "numeral",
             "num"
         ],
-        1
+        2
     ],
     [
         "phrase",
         "partOfSpeech",
-        -1,
+        -2,
         "phrase",
-        1
+        2
     ],
     [
         "pos-r",
         "partOfSpeech",
-        -1,
+        -2,
         "pos-root",
-        1
+        2
     ],
     [
         "postp",
         "partOfSpeech",
-        -1,
+        -2,
         [
             "postposition",
             "postp"
         ],
-        1
+        2
     ],
     [
         "pref",
         "partOfSpeech",
-        -1,
+        -2,
         "prefix",
-        1
+        2
     ],
     [
         "prep",
         "partOfSpeech",
-        -1,
+        -2,
         [
             "preposition",
             "prep"
         ],
-        1
+        2
     ],
     [
         "prep-phrase",
         "partOfSpeech",
-        -1,
+        -2,
         [
             "prepositional phrase",
             "prep_phrase"
         ],
-        1
+        2
     ],
     [
         "pron",
         "partOfSpeech",
-        -1,
+        -2,
         [
             "pronoun",
             "pron"
         ],
-        1
+        2
     ],
     [
         "prop-n",
         "partOfSpeech",
-        -1,
+        -2,
         [
             "proper noun",
             "proper-noun"
         ],
-        1
+        2
     ],
     [
         "prov",
         "partOfSpeech",
-        -1,
+        -2,
         "proverb",
-        1
+        2
     ],
     [
         "ptcl",
         "partOfSpeech",
-        -1,
+        -2,
         "particle",
-        1
+        2
     ],
     [
         "ptcpl",
         "partOfSpeech",
-        -1,
+        -2,
         "participle",
-        1
+        2
     ],
     [
         "r",
         "partOfSpeech",
-        -1,
+        -2,
         "root",
-        1
+        2
     ],
     [
         "suf",
         "partOfSpeech",
-        -1,
+        -2,
         "suffix",
-        1
+        2
     ],
     [
         "v",
         "partOfSpeech",
-        -1,
+        -2,
         "verb",
-        1
+        2
     ],
     [
         "vdt",
         "partOfSpeech",
-        -1,
+        -2,
         [
             "ditransitive verb",
             "ditransitive"
         ],
-        1
+        2
     ],
     [
         "vi",
         "partOfSpeech",
-        -1,
+        -2,
         [
             "intransitive verb",
             "intransitive"
         ],
-        1
+        2
     ],
     [
         "vr",
         "partOfSpeech",
-        -1,
+        -2,
         [
             "reflexive verb",
             "reflexive"
         ],
-        1
+        2
     ],
     [
         "vt",
         "partOfSpeech",
-        -1,
+        -2,
         [
             "transitive verb",
             "transitive"
         ],
-        1
+        2
     ],
     [
         "child",
@@ -1635,18 +1635,18 @@
         0
     ],
     [
+        "🪨",
+        "topic",
+        0,
+        "mineralogy",
+        0
+    ],
+    [
         "🫀",
         "topic",
         0,
         "cardiology",
         0
-    ],
-    [
-        "🪨",
-        "topic",
-        1,
-        "mineralogy",
-        -1
     ],
     [
         "aux",
@@ -1701,14 +1701,10 @@
         "dialect",
         "usage",
         0,
-        "dialect",
-        0
-    ],
-    [
-        "dialect",
-        "usage",
-        0,
-        "dialectal",
+        [
+            "dialectal",
+            "dialect"
+        ],
         0
     ],
     [
@@ -1722,14 +1718,10 @@
         "fig",
         "usage",
         0,
-        "figuratively",
-        0
-    ],
-    [
-        "fig",
-        "usage",
-        0,
-        "figurative",
+        [
+            "figuratively",
+            "figurative"
+        ],
         0
     ],
     [
@@ -1761,6 +1753,13 @@
         0
     ],
     [
+        "rare",
+        "usage",
+        0,
+        "rare",
+        0
+    ],
+    [
         "regio",
         "usage",
         0,
@@ -1775,72 +1774,6 @@
         0
     ],
     [
-        "rare",
-        "usage",
-        1,
-        "rare",
-        -1
-    ],
-    [
-        "Alemannic",
-        "variety",
-        0,
-        "Alemannic",
-        0
-    ],
-    [
-        "Austrian-German",
-        "variety",
-        0,
-        "Austrian German",
-        0
-    ],
-    [
-        "Bavarian",
-        "variety",
-        0,
-        "Bavarian",
-        0
-    ],
-    [
-        "Germany",
-        "variety",
-        0,
-        "Germany",
-        0
-    ],
-    [
-        "North-German",
-        "variety",
-        0,
-        "North German",
-        0
-    ],
-    [
-        "South-German",
-        "variety",
-        0,
-        [
-            "South German",
-            "South-German"
-        ],
-        0
-    ],
-    [
-        "Swabian",
-        "variety",
-        0,
-        "Swabian",
-        0
-    ],
-    [
-        "Swiss-Standard-German",
-        "variety",
-        0,
-        "Swiss Standard German",
-        0
-    ],
-    [
         "char",
         "",
         0,
@@ -1848,6 +1781,13 @@
         0
     ],
     [
+        "mix",
+        "",
+        0,
+        "mixed",
+        0
+    ],
+    [
         "punct",
         "",
         0,
@@ -1855,10 +1795,24 @@
         0
     ],
     [
+        "strong",
+        "",
+        0,
+        "strong",
+        0
+    ],
+    [
         "symb",
         "",
         0,
         "symbol",
+        0
+    ],
+    [
+        "weak",
+        "",
+        0,
+        "weak",
         0
     ],
     [

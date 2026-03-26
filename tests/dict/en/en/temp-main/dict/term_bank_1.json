@@ -169,21 +169,21 @@
                         "content": [
                           {
                             "tag": "span",
-                            "title": "figuratively",
-                            "data": {
-                              "content": "tag",
-                              "category": "usage"
-                            },
-                            "content": "fig"
-                          },
-                          {
-                            "tag": "span",
                             "title": "transitive verb",
                             "data": {
                               "content": "tag",
                               "category": "partOfSpeech"
                             },
                             "content": "vt"
+                          },
+                          {
+                            "tag": "span",
+                            "title": "figuratively",
+                            "data": {
+                              "content": "tag",
+                              "category": "usage"
+                            },
+                            "content": "fig"
                           }
                         ]
                       },

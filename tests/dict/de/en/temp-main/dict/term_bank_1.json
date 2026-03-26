@@ -2,7 +2,7 @@
   [
     "pflegen",
     "",
-    "v",
+    "v strong weak",
     "v",
     0,
     [
@@ -545,21 +545,21 @@
                                 "content": [
                                   {
                                     "tag": "span",
-                                    "title": "archaic",
-                                    "data": {
-                                      "content": "tag",
-                                      "category": "archaism"
-                                    },
-                                    "content": "arch"
-                                  },
-                                  {
-                                    "tag": "span",
                                     "title": "intransitive verb",
                                     "data": {
                                       "content": "tag",
                                       "category": "partOfSpeech"
                                     },
                                     "content": "vi"
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "title": "archaic",
+                                    "data": {
+                                      "content": "tag",
+                                      "category": "archaism"
+                                    },
+                                    "content": "arch"
                                   }
                                 ]
                               },
@@ -1231,7 +1231,7 @@
   [
     "Fuchs",
     "",
-    "n masc",
+    "n masc strong",
     "n",
     0,
     [
@@ -1990,7 +1990,7 @@
   [
     "Fahrer",
     "",
-    "n masc",
+    "n masc strong",
     "n",
     0,
     [

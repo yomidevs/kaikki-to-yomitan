@@ -1,9 +1,9 @@
 """Keep tag_bank_term and tag_order jsons in sync."""
 
-from collections import Counter
 import json
-from pathlib import Path
+from collections import Counter, defaultdict
 from dataclasses import dataclass
+from pathlib import Path
 
 ASSETS_PATH = Path("assets")
 
@@ -34,17 +34,22 @@ class WhitelistedTag:
 
 
 def main() -> None:
-    tag_bank_path = ASSETS_PATH / "tag_bank_term.json"
-    tag_order_path = ASSETS_PATH / "tag_order.json"
-    with tag_bank_path.open("r", encoding="utf-8") as f:
+    jsons_root = ASSETS_PATH
+    path_tag_order_json = jsons_root / "tag_order.json"
+    path_tag_bank_json = jsons_root / "tag_bank_term.json"
+    path_tag_bank_variety_json = jsons_root / "tag_bank_term_variety.json"
+    with path_tag_bank_json.open("r", encoding="utf-8") as f:
         tag_bank = json.load(f)
-    with tag_order_path.open("r", encoding="utf-8") as f:
+    with path_tag_bank_variety_json.open("r", encoding="utf-8") as f:
+        tag_bank_variety = json.load(f)
+    with path_tag_order_json.open("r", encoding="utf-8") as f:
         tag_order = json.load(f)
+    tag_bank.extend(tag_bank_variety)
 
     order_tags = []
     for group, tags in tag_order.items():
-        for cat in tags:
-            order_tags.append((group, cat))
+        for cats in tags:
+            order_tags.append((group, cats))
     wtags = [WhitelistedTag(*row) for row in tag_bank]
 
     # Debug wtags categories
@@ -63,6 +68,39 @@ def main() -> None:
         for cat, count in unique_wtags_categories.most_common()
     }
     print(summary)
+
+    # Check if all tags in the same category have the same sort_order
+    # ~ not really needed, but it makes sense
+    category_sort_orders = {}
+    for wtag in wtags:
+        if wtag.category not in category_sort_orders:
+            category_sort_orders[wtag.category] = Counter()
+        category_sort_orders[wtag.category][wtag.sort_order] += 1
+
+    for category, sort_orders in category_sort_orders.items():
+        if category and len(sort_orders) > 1:
+            min_count = min(sort_orders.values())
+            bad_orders = {so for so, c in sort_orders.items() if c == min_count}
+            offenders = [
+                wt.short_tag
+                for wt in wtags
+                if wt.category == category and wt.sort_order in bad_orders
+            ]
+            print(
+                f"Category '{category}' has inconsistent sort_orders: {dict(sort_orders)}, {offenders=}"
+            )
+
+    # Since we know that every category shares a sort_order, we can show
+    # the categories that match every sort_order level
+    sort_order_counter = Counter(wtag.sort_order for wtag in wtags)
+    print(f"Sort order counts: {sort_order_counter.most_common()}")
+    sort_order_categories = defaultdict(set)
+    for wt in wtags:
+        cat = wt.category or "None"
+        sort_order_categories[wt.sort_order].add(cat)
+    for so, categories in sorted(sort_order_categories.items()):
+        cats = ", ".join(sorted(categories))
+        print(f"  * {so:>3}: {cats}")
 
     # Quick diagnostic search
     # Compares tag_order groups with whitelisted tags categories

@@ -35,6 +35,12 @@ class WhitelistedTag:
         check_valid_short_tag(self.short_tag)
         for tag in self.longs_as_list():
             check_valid_long_tag(tag)
+        if isinstance(self.long_tag_aliases, list):
+            assert len(self.long_tag_aliases) > 1, (
+                f"Invalid long_tag_aliases for '{self.short_tag}': "
+                "list must contain more than one element. "
+                "Use a string instead if there is only one alias."
+            )
 
     def longs_as_list(self) -> list[str]:
         if isinstance(self.long_tag_aliases, str):
@@ -92,20 +98,27 @@ def generate_tags_rs(
     whitelisted_tags: list[WhitelistedTag],
     f,
 ) -> None:
-    # SAFETY: because the IPA dictionary uses only short tags and relies on yomitan
-    # to complete the long version on hover based on tag_bank_*.json, it is important to
-    # not have short tag duplicates, unless the meaning of the long version are the same.
+    # Having duplicated short tags is pointless, use aliases instead.
     seen = {}
     for wt in whitelisted_tags:
         st = wt.short_tag
-        if st in ("fig", "dialect"):
-            # These are ok, since the long versions are the same (figurative, figuratively)
-            continue
         if st in seen:
             old = seen[st]
-            print(f"WARN: duplicated short tag\n{wt}\n{old}")
+            print(f"ERROR: duplicated short tag\n{wt}\n{old}")
+            sys.exit(1)
         else:
             seen[st] = wt
+
+    # Having duplicated long tags is pointless, only the first will be found by find_map.
+    seen = {}
+    for wt in whitelisted_tags:
+        lt = wt.long_tag()
+        if lt in seen:
+            old = seen[lt]
+            print(f"ERROR: duplicated long tag\n{wt}\n{old}")
+            sys.exit(1)
+        else:
+            seen[lt] = wt
 
     idt = " " * 4
     w = f.write  # shorthand
@@ -624,6 +637,28 @@ def check_kaikki_langs(langs: list[Lang]) -> None:
             print(f"[missing from English kaikki ({upto})] {lang}, {num_senses}")
 
 
+def sort_tags(tags: list[WhitelistedTag]) -> list[WhitelistedTag]:
+    return sorted(
+        tags,
+        key=lambda wt: (
+            wt.category == "",  # No category goes at the bottom
+            wt.category,
+            wt.sort_order,
+            wt.short_tag,
+        ),
+    )
+
+
+def load_sort_dump_tags(path: Path) -> list[WhitelistedTag]:
+    with path.open() as f:
+        data = json.load(f)
+    tags = sort_tags([WhitelistedTag(*row) for row in data])
+    # Overwrite to ensure formatting and sort
+    with path.open("w") as f:
+        json.dump([astuple(wt) for wt in tags], f, indent=4, ensure_ascii=False)
+    return tags
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check-yomitan", action="store_true")
@@ -640,12 +675,14 @@ def main() -> None:
     path_languages_json = jsons_root / "languages.json"
     path_tag_order_json = jsons_root / "tag_order.json"
     path_tag_bank_json = jsons_root / "tag_bank_term.json"
+    path_tag_bank_variety_json = jsons_root / "tag_bank_term_variety.json"
     path_tag_locale_folder = jsons_root / "tags" / "locale"
 
     for path in (
         path_languages_json,
         path_tag_order_json,
         path_tag_bank_json,
+        path_tag_bank_variety_json,
         path_tag_locale_folder,
     ):
         if not path.exists:
@@ -671,22 +708,18 @@ def main() -> None:
     with path_tag_order_json.open("w") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
 
-    with path_tag_bank_json.open() as f:
-        data = json.load(f)
-    whitelisted_tags = [WhitelistedTag(*row) for row in data]
-    # Overwrite to ensure formatting and sort
-    whitelisted_tags.sort(
-        key=lambda wt: (
-            wt.category == "",  # No category goes at the bottom
-            wt.category,
-            wt.sort_order,
-            wt.short_tag,
-        )
-    )
-    with path_tag_bank_json.open("w") as f:
-        json.dump(
-            [astuple(wt) for wt in whitelisted_tags], f, indent=4, ensure_ascii=False
-        )
+    whitelisted_tags = load_sort_dump_tags(path_tag_bank_json)
+    for wt in whitelisted_tags:
+        if wt.category == "variety":
+            raise ValueError(f"{wt.short_tag}: 'variety' not allowed here")
+
+    whitelisted_variety_tags = load_sort_dump_tags(path_tag_bank_variety_json)
+    for wt in whitelisted_variety_tags:
+        if wt.category != "variety":
+            raise ValueError(f"{wt.short_tag}: expected 'variety', got '{wt.category}'")
+
+    whitelisted_tags.extend(whitelisted_variety_tags)
+    whitelisted_tags = sort_tags(whitelisted_tags)
 
     # read tags_X.json files inside localization folder, where X is the iso
     locale: Locale = {}

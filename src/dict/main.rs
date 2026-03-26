@@ -1615,34 +1615,43 @@ fn structured_glosses_go(
     nested
 }
 
+/// Structure inner tags.
+///
+/// We sort them ourselves since yomitan only sorts top-level tags.
+///
 /// cf [`crate::models::yomitan::TagInformation`]
 fn structured_tags(target: Lang, tags: &[Tag], common_short_tags_found: &[Tag]) -> Option<Node> {
-    let structured_tags_content: Vec<_> = tags
+    let mut tag_infos: Vec<_> = tags
         .iter()
         .filter_map(|tag| {
             let tag_info = find_tag_in_bank(tag)?;
-
             if common_short_tags_found.contains(&tag_info.short_tag) {
-                return None;
+                None
+            } else {
+                Some(tag_info)
             }
+        })
+        .collect();
 
+    tag_infos.sort_unstable_by_key(|t| t.sort_order);
+
+    let structured_tags_content: Vec<_> = tag_infos
+        .into_iter()
+        .map(|tag_info| {
             let (short_tag, long_tag) = match localize_tag(target, &tag_info.short_tag) {
                 Some((short, long)) => (short.to_string(), long.to_string()),
                 None => (tag_info.short_tag, tag_info.long_tag),
             };
-
-            Some(
-                GenericNode {
-                    tag: NTag::Span,
-                    title: Some(long_tag),
-                    data: Some(NodeData::from_iter([
-                        ("content", "tag"),
-                        ("category", &tag_info.category),
-                    ])),
-                    content: Node::Text(short_tag),
-                }
-                .into_node(),
-            )
+            GenericNode {
+                tag: NTag::Span,
+                title: Some(long_tag),
+                data: Some(NodeData::from_iter([
+                    ("content", "tag"),
+                    ("category", &tag_info.category),
+                ])),
+                content: Node::Text(short_tag),
+            }
+            .into_node()
         })
         .collect();
 

@@ -67,12 +67,12 @@ In the main dictionary, tag order depends on its type:
 1. **Inflection tags**: we sort them ourselves when building the dictionary, using `assets/tag_order.json`. While this file has categories (formatility, cases etc.), those are later strip and serve only as visual help. The sorting is done with the flattened list.
 Tag postprocessing is only done for _forms_ after building the whole intermediate representation, to only sort once with every extracted tag. The relevant function is `src/dict/main.rs::postprocess_forms`.
 They appear in the order they are in the dictionary.
-2. **Top-level tags**: are sorted by yomitan based on `sortingOrder` of the `tag_bank_term_1.json` shipped with the dictionary. They may **NOT** appear in the order they are in the dictionary.
-3. **Inner tags**: they appear in the order they are in the dictionary.
+2. **Top-level tags**: are sorted by yomitan based on `sortingOrder` (see below) of the `tag_bank_term_1.json` shipped with the dictionary. The relevant yomitan code can be found [here](https://github.com/yomidevs/yomitan/blob/e03bae777aa161783ce00128cdc81de221fda56f/ext/js/language/translator.js#L1124). They may **NOT** appear in the order they are in the dictionary.
+3. **Inner tags**: we sort them ourselves when building the dictionary based on `sortingOrder`. They appear in the order they are in the dictionary.
 
 ## Tag processing
 
-Tag processing is ruled by `assets/tag_bank_term.json`. The items of this JSON list are a custom version of:
+Tag processing is ruled by `tag_bank_term` files. Currently, there are two: `assets/tag_bank_term.json` and `assets/tag_bank_term_variety.json`, separated only for visibility, but later merged via the build script in `tag_constants.rs`. The items of this JSON list are a custom version of:
 
 ```typescript
 type TagInformation = [
@@ -114,15 +114,12 @@ These are some steps to debug why a Wiktionary tag may not appear in yomitan:
 1. **Is the Wiktionary tag really a tag?** Sometimes badly formatted text, or a wrong template may **look** like a tag but it is not.
 2. **Is the Wiktionary tag being extracted by wiktextract?** Check the Kaikki link on the popup bottom-right to confirm.
 3. **Is the Wiktionary tag being extracted as a `raw_tag`?** If it doesn't, see this [issue](https://github.com/yomidevs/wiktionary-to-yomitan/issues/84), and the associated [PR](https://github.com/tatuylonen/wiktextract/pull/997) in wiktextract to have a grasp on how to request/add translations.
-4. **The tag is in wiktextract, but not in the dictionary?** Check if the tag is whitelisted in `assets/tag_bank_term.json`.
+4. **The tag is in wiktextract, but not in the dictionary?** Check if the tag is whitelisted in any `tag_bank_term` file.
 5. **The tag is whitelisted, but not in the dictionary?** Finally our problem, please open an [issue](https://github.com/yomidevs/wiktionary-to-yomitan/issues/new).
 
 ## Localization
 
 To add or update tag localization for a language, create a file named `tags_{iso}.json` in the appropriate directory (e.g. `assets/tags/locale/tags_ja.json` for Japanese).
-
-Localization is automatically applied to every dictionary that uses that language as its target.
-You do not need to localize every tag: any tag without a localization entry will fall back to English.
 
 The file maps English canonical tag names to their localized equivalents:
 ```json
@@ -146,3 +143,16 @@ When that field is a string, use it directly. When it is an array, use the **fir
 ```
 
 !!! warning "Run the build script after any modification to update the rust code: either `just build` or `python3 scripts/build.py`"
+
+Localization is automatically applied to every dictionary that uses that language as its target.
+You do not need to localize every tag: any tag without a localization entry will fall back to English.
+
+### Tips
+
+On how to write a `tags_{iso}.json` localization file.
+
+* Start with a simple subset. If you are familiar with the dictionary, localize the most common tags first. You can also localize a common category like `partOfSpech`
+* (_For finding the English long tag_) Be familiar with long tag forms of `assets/tag_bank_term.json`. Reminder that you only need to localize the first element. If the tag is not yet localized, the English long tag is displayed on hovering a tag.
+* (_For finding the localized long tag_) You can check what wiktextract does when translating `raw_tags` to `tags`/`topics` and do the inverse. For instance, this is the relevant file for [Japanese](https://github.com/tatuylonen/wiktextract/blob/master/src/wiktextract/extractor/ja/tags.py), and this one for [Greek](https://github.com/tatuylonen/wiktextract/blob/master/src/wiktextract/extractor/el/tags.py). To chose between aliases that get normalized in wiktextract, consulting Wiktionary can be a solution, but ultimately is a matter of personal taste.
+* (_For Japanese_) Because of the Japanese-focused roots of yomitan, one can take inspiration of the [official JMDict page](https://www.edrdg.org/jmwsgi/edhelp.py?svc=jmdict&sid=#kw_pos) (found in the yomitan [wiki](https://github.com/yomidevs/yomitan/blob/master/docs/making-yomitan-dictionaries.md))
+* (_For finding the localized short tag_) One can take inspiration, among other places, from [wordreference](https://www.wordreference.com/english/abbreviationsWRD.aspx?dict=gren).

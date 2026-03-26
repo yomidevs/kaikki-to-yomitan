@@ -748,12 +748,12 @@
                         "content": [
                           {
                             "tag": "span",
-                            "title": "Swiss Standard German",
+                            "title": "Switzerland",
                             "data": {
                               "content": "tag",
                               "category": "variety"
                             },
-                            "content": "Swiss-Standard-German"
+                            "content": "🇨🇭"
                           }
                         ]
                       },
