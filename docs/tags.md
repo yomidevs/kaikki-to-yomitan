@@ -41,22 +41,7 @@ Even though `topics` happen almost exclusively as inner tags, a wiktextract tag 
 
 ### CSS
 
-TODO: should this be in the css page?
-
-Here is a basic example on how to handle these tags with your custom css.
-
-```css
-/* Hide inflections (~book icon, inflection tags) */
-.inflection-rule-chains { display: none !important; }
-
-/* Hide dictionary name (top-level tag) */
-[data-category="dictionary"] { display: none !important; }
-/* Hide gender tags (top-level tag) */
-[data-category="gender"] { display: none !important; }
-
-/* Hide inner topic tags (note the -sc-) */
-[data-sc-category="topic"] { display: none !important; }
-```
+See the relevant section in [css](css.md#tags).
 
 ---
 
