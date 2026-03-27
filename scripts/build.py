@@ -442,6 +442,14 @@ def generate_tags_localization_rs(
 ) -> None:
     w = f.write
 
+    # SAFETY: no two long tags should be repeated
+    for iso, translations in locale.items():
+        seen_longs = set()
+        for trans in translations:
+            if trans.long_tag in seen_longs:
+                print(f"[WARN] Duplicated long tag {trans.long_tag} for {iso}")
+            seen_longs.add(trans.long_tag)
+
     write_warning(f)
 
     w("use crate::lang::Lang;\n\n")
