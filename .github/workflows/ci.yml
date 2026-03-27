@@ -45,3 +45,22 @@ jobs:
 
       - name: Check formatting
         run: cargo fmt --all -- --check
+
+  build-check:
+    name: Build Script Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python (>= 3.12)
+        uses: actions/setup-python@v5
+        with:
+          python-version: '>=3.12'
+
+      - name: Run build script
+        run: python3 scripts/build.py
+
+      - name: Check for diffs (there should not be any)
+        run: git diff --exit-code

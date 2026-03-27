@@ -268,5 +268,104 @@
         ]
       ]
     }
+  },
+  "うえかえる": {
+    "植え替える": {
+      "verb": [
+        "extracted",
+        [
+          "kanji"
+        ]
+      ]
+    },
+    "植え換える": {
+      "verb": [
+        "extracted",
+        [
+          "kanji"
+        ]
+      ]
+    },
+    "うえかえ": {
+      "verb": [
+        "extracted",
+        [
+          "a-row shimoichidan ichidan continuative",
+          "imperfective a-row shimoichidan ichidan"
+        ]
+      ]
+    },
+    "うえかえれ": {
+      "verb": [
+        "extracted",
+        [
+          "a-row shimoichidan ichidan hypothetical"
+        ]
+      ]
+    },
+    "うえかえろ": {
+      "verb": [
+        "extracted",
+        [
+          "imperative a-row shimoichidan ichidan"
+        ]
+      ]
+    },
+    "うえかえよ": {
+      "verb": [
+        "extracted",
+        [
+          "imperative a-row shimoichidan ichidan"
+        ]
+      ]
+    },
+    "うえかえない": {
+      "verb": [
+        "extracted",
+        [
+          "imperfective negative"
+        ]
+      ]
+    },
+    "うえかえよう": {
+      "verb": [
+        "extracted",
+        [
+          "imperfective volitional"
+        ]
+      ]
+    },
+    "うえかえます": {
+      "verb": [
+        "extracted",
+        [
+          "polite continuative"
+        ]
+      ]
+    },
+    "うえかえた": {
+      "verb": [
+        "extracted",
+        [
+          "past completive continuative"
+        ]
+      ]
+    },
+    "うえかえること": {
+      "verb": [
+        "extracted",
+        [
+          "noun-from-verb attributive"
+        ]
+      ]
+    },
+    "うえかえれば": {
+      "verb": [
+        "extracted",
+        [
+          "conditional hypothetical"
+        ]
+      ]
+    }
   }
 }

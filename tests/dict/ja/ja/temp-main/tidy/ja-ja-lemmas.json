@@ -321,5 +321,89 @@
         }
       ]
     }
+  },
+  "婉曲": {
+    "婉曲": {
+      "adj_noun": [
+        {
+          "gloss_tree": {
+            "間接的な。遠まわしな。": {
+              "examples": [
+                {
+                  "text": "「ねえ、お延、藤井の叔父さんは飯を食いに来いったら、来るかい」「そりゃどうだかあたしにゃ解らないわ」　叔母は婉曲に自己を表現した。「おおかたいらっしゃらないでしょう」",
+                  "ref": "（夏目漱石『明暗』）",
+                  "bold_text_offsets": [
+                    [
+                      54,
+                      56
+                    ]
+                  ]
+                },
+                {
+                  "text": "経験に乏しい処女の期待するような予言はともかくも、男女関係に一日の長ある年上の女として、相当の注意を与えてやりたい親切もないではなかった。彼女は差し障りのない際どい筋の上を婉曲に渡って歩いた。",
+                  "ref": "（夏目漱石『明暗』　縁語的比喩を含む表現）",
+                  "bold_text_offsets": [
+                    [
+                      86,
+                      88
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "wlink": "https://ja.wiktionary.org/wiki/婉曲#Japanese",
+          "klink": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/婉/婉曲/婉曲.html"
+        }
+      ]
+    }
+  },
+  "うえかえる": {
+    "うえかえる": {
+      "verb": [
+        {
+          "gloss_tree": {
+            "植物を他の鉢や場所に移して植える。": {}
+          },
+          "tags": [
+            "a-row",
+            "ichidan",
+            "shimoichidan"
+          ],
+          "wlink": "https://ja.wiktionary.org/wiki/うえかえる#Japanese",
+          "klink": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/う/うえ/うえかえる.html"
+        }
+      ]
+    }
+  },
+  "とある": {
+    "とある": {
+      "adnominal": [
+        {
+          "gloss_tree": {
+            "ある。ちょっとした。さる。": {}
+          },
+          "wlink": "https://ja.wiktionary.org/wiki/とある#Japanese",
+          "klink": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/と/とあ/とある.html"
+        }
+      ]
+    }
+  },
+  "好み": {
+    "好み": {
+      "unknown": [
+        {
+          "gloss_tree": {
+            "このみの漢字表記。": {}
+          },
+          "tags": [
+            "form-of",
+            "kanji"
+          ],
+          "wlink": "https://ja.wiktionary.org/wiki/好み#Japanese",
+          "klink": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/好/好み/好み.html"
+        }
+      ]
+    }
   }
 }

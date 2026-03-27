@@ -1,37 +1,5 @@
 [
   [
-    "命令",
-    "めいれい",
-    "S",
-    "n",
-    0,
-    [
-      {
-        "type": "structured-content",
-        "content": {
-          "tag": "div",
-          "content": [
-            {
-              "tag": "span",
-              "content": "コンピュータ"
-            },
-            {
-              "tag": "ul",
-              "content": [
-                {
-                  "tag": "li",
-                  "content": "Instruktion"
-                }
-              ]
-            }
-          ]
-        }
-      }
-    ],
-    0,
-    ""
-  ],
-  [
     "婉曲",
     "婉曲",
     "adj_noun",
@@ -52,19 +20,19 @@
               "content": [
                 {
                   "tag": "li",
-                  "content": "beschönigend"
+                  "content": "kaunisteleva"
                 },
                 {
                   "tag": "li",
-                  "content": "verhüllend"
+                  "content": "eufemistinen"
                 },
                 {
                   "tag": "li",
-                  "content": "euphemistisch"
+                  "content": "epäsuora"
                 },
                 {
                   "tag": "li",
-                  "content": "indirekt"
+                  "content": "välillinen"
                 }
               ]
             }

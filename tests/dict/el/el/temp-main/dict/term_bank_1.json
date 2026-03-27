@@ -29,7 +29,7 @@
                         "data": {
                           "content": "summary-entry"
                         },
-                        "content": "Etymology"
+                        "content": "Ετυμολογία"
                       },
                       {
                         "tag": "div",
@@ -253,7 +253,7 @@
                         "data": {
                           "content": "summary-entry"
                         },
-                        "content": "Etymology"
+                        "content": "Ετυμολογία"
                       },
                       {
                         "tag": "div",
@@ -342,7 +342,7 @@
                         "data": {
                           "content": "summary-entry"
                         },
-                        "content": "Etymology"
+                        "content": "Ετυμολογία"
                       },
                       {
                         "tag": "div",
@@ -388,7 +388,7 @@
                         "content": [
                           {
                             "tag": "span",
-                            "title": "figuratively",
+                            "title": "figurative",
                             "data": {
                               "content": "tag",
                               "category": "usage"

@@ -442,6 +442,14 @@ def generate_tags_localization_rs(
 ) -> None:
     w = f.write
 
+    # SAFETY: no two long tags should be repeated
+    for iso, translations in locale.items():
+        seen_longs = set()
+        for trans in translations:
+            if trans.long_tag in seen_longs:
+                print(f"[WARN] Duplicated long tag {trans.long_tag} for {iso}")
+            seen_longs.add(trans.long_tag)
+
     write_warning(f)
 
     w("use crate::lang::Lang;\n\n")
@@ -486,9 +494,10 @@ def generate_tags_localization_rs(
                 )
                 sys.exit(1)
             short_key = long_to_short[trans.long_tag_en]
-            w(
-                f'        "{short_key}" => Some(("{trans.short_tag}", "{trans.long_tag}")),\n'
-            )
+            # If the short tag was left empty, it means there is no short version
+            # and we default to showing the long one.
+            short_tag = trans.short_tag or trans.long_tag
+            w(f'        "{short_key}" => Some(("{short_tag}", "{trans.long_tag}")),\n')
         w("        _ => None,\n")
         w("    }\n")
         w("}\n")

@@ -379,6 +379,13 @@
         2
     ],
     [
+        "adj_noun",
+        "partOfSpeech",
+        -2,
+        "adj_noun",
+        2
+    ],
+    [
         "adv",
         "partOfSpeech",
         -2,
@@ -594,6 +601,13 @@
             "transitive"
         ],
         2
+    ],
+    [
+        "adn",
+        "partOfSpeech",
+        0,
+        "adnominal",
+        0
     ],
     [
         "child",
@@ -833,7 +847,10 @@
         "Prot✝️",
         "topic",
         0,
-        "Protestantism",
+        [
+            "Protestantism",
+            "Protestant"
+        ],
         0
     ],
     [
@@ -1554,7 +1571,10 @@
         "✝️",
         "topic",
         0,
-        "Christianity",
+        [
+            "Christianity",
+            "Christian"
+        ],
         0
     ],
     [
@@ -1719,8 +1739,8 @@
         "usage",
         0,
         [
-            "figuratively",
-            "figurative"
+            "figurative",
+            "figuratively"
         ],
         0
     ],
@@ -1781,6 +1801,20 @@
         0
     ],
     [
+        "godan",
+        "",
+        0,
+        "godan",
+        0
+    ],
+    [
+        "ichidan",
+        "",
+        0,
+        "ichidan",
+        0
+    ],
+    [
         "mix",
         "",
         0,
@@ -1788,10 +1822,24 @@
         0
     ],
     [
+        "onoma",
+        "",
+        0,
+        "onomatopoeic",
+        0
+    ],
+    [
         "punct",
         "",
         0,
         "punct",
+        0
+    ],
+    [
+        "shimoichidan",
+        "",
+        0,
+        "shimoichidan",
         0
     ],
     [
@@ -1813,6 +1861,13 @@
         "",
         0,
         "weak",
+        0
+    ],
+    [
+        "🌍",
+        "",
+        0,
+        "place",
         0
     ],
     [

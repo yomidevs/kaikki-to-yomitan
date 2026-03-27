@@ -12,12 +12,20 @@
         "形容詞"
     ],
     "dated": [
-        "旧",
+        "",
         "古風"
     ],
     "archaic": [
-        "古",
+        "",
         "古語"
+    ],
+    "figurative": [
+        "",
+        "比喩"
+    ],
+    "abbreviation": [
+        "略",
+        "略語"
     ],
     "name": [
         "名前",
@@ -32,11 +40,107 @@
         "俗語"
     ],
     "mathematics": [
-        "数",
+        "",
         "数学"
     ],
     "transitive verb": [
         "他動",
         "他動詞"
+    ],
+    "intransitive verb": [
+        "自動",
+        "自動詞"
+    ],
+    "informal": [
+        "",
+        "非形式的"
+    ],
+    "literary": [
+        "",
+        "文語"
+    ],
+    "pejorative": [
+        "",
+        "軽蔑的"
+    ],
+    "dialectal": [
+        "",
+        "方言"
+    ],
+    "rare": [
+        "",
+        "まれ"
+    ],
+    "adverb": [
+        "副",
+        "副詞"
+    ],
+    "article": [
+        "定",
+        "定冠詞"
+    ],
+    "auxiliary verb": [
+        "助動",
+        "助動詞"
+    ],
+    "conjunction": [
+        "接続",
+        "接続詞"
+    ],
+    "contraction": [
+        "縮約",
+        "縮約形"
+    ],
+    "interjection": [
+        "間投",
+        "間投詞"
+    ],
+    "pronoun": [
+        "代",
+        "代名詞"
+    ],
+    "philosophy": [
+        "",
+        "哲学"
+    ],
+    "suffix": [
+        "",
+        "接尾辞"
+    ],
+    "adj_noun": [
+        "",
+        "形容動詞"
+    ],
+    "godan": [
+        "五段",
+        "五段活用"
+    ],
+    "ichidan": [
+        "一段",
+        "一段活用"
+    ],
+    "shimoichidan": [
+        "下一段",
+        "下一段活用"
+    ],
+    "onomatopoeic": [
+        "オノマ",
+        "オノマトペ"
+    ],
+    "adnominal": [
+        "",
+        "連体詞"
+    ],
+    "linguistics": [
+        "",
+        "言語学"
+    ],
+    "education": [
+        "",
+        "教育"
+    ],
+    "preposition": [
+        "前",
+        "前置詞"
     ]
 }

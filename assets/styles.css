@@ -2,6 +2,17 @@
 .tag[data-details='neuter'] .tag-label{background-color: #40ac65;}
 .tag[data-details='masculine'] .tag-label{background-color: #4d82e8;}
 
+/* Category colouring is only valid for top-level tags
+   https://github.com/yomidevs/yomitan/blob/master/docs/making-yomitan-dictionaries.md
+   So we need to add them again for the relevant categories used in inner tags.
+*/
+div[data-sc-content="tags"] span[data-sc-category="frequent"] {
+    background-color: #5bc0de;
+}
+div[data-sc-content="tags"] span[data-sc-category="archaism"] {
+    background-color: #d9534f;
+}
+
 div[data-sc-content="tags"] span {
     font-size: 0.8em;
     font-weight: bold;
