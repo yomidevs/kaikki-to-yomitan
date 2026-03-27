@@ -486,9 +486,10 @@ def generate_tags_localization_rs(
                 )
                 sys.exit(1)
             short_key = long_to_short[trans.long_tag_en]
-            w(
-                f'        "{short_key}" => Some(("{trans.short_tag}", "{trans.long_tag}")),\n'
-            )
+            # If the short tag was left empty, it means there is no short version
+            # and we default to showing the long one.
+            short_tag = trans.short_tag or trans.long_tag
+            w(f'        "{short_key}" => Some(("{short_tag}", "{trans.long_tag}")),\n')
         w("        _ => None,\n")
         w("    }\n")
         w("}\n")

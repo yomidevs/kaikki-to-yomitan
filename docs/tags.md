@@ -132,6 +132,8 @@ The file maps English canonical tag names to their localized equivalents:
 
 Each entry is a pair of `[short, long]` forms, where `short` is shown in the dictionary and `long` is shown on hover.
 
+The `short` field can be left empty, in which case we default to using `long` at both places.
+
 The key must match the 4th field of the corresponding entry in `assets/tag_bank_term.json`.
 When that field is a string, use it directly. When it is an array, use the **first** element (the primary alias):
 ```json
@@ -153,6 +155,6 @@ On how to write a `tags_{iso}.json` localization file.
 
 * Start with a simple subset. If you are familiar with the dictionary, localize the most common tags first. You can also localize a common category like `partOfSpech`
 * (_For finding the English long tag_) Be familiar with long tag forms of `assets/tag_bank_term.json`. Reminder that you only need to localize the first element. If the tag is not yet localized, the English long tag is displayed on hovering a tag.
-* (_For finding the localized long tag_) You can check what wiktextract does when translating `raw_tags` to `tags`/`topics` and do the inverse. For instance, this is the relevant file for [Japanese](https://github.com/tatuylonen/wiktextract/blob/master/src/wiktextract/extractor/ja/tags.py), and this one for [Greek](https://github.com/tatuylonen/wiktextract/blob/master/src/wiktextract/extractor/el/tags.py). To chose between aliases that get normalized in wiktextract, consulting Wiktionary can be a solution, but ultimately is a matter of personal taste.
+* (_For finding the localized long tag_) You can check what wiktextract does when translating `raw_tags` to `tags`/`topics` and do the inverse. For instance, this is the relevant file for [Japanese](https://github.com/tatuylonen/wiktextract/blob/master/src/wiktextract/extractor/ja/tags.py), and this one for [Greek](https://github.com/tatuylonen/wiktextract/blob/master/src/wiktextract/extractor/el/tags.py). To chose between aliases that get normalized in wiktextract, consulting Wiktionary can be a solution (and sometimes, they happen to [document](https://ja.wiktionary.org/wiki/テンプレート:context) it), but ultimately is a matter of personal taste.
 * (_For Japanese_) Because of the Japanese-focused roots of yomitan, one can take inspiration of the [official JMDict page](https://www.edrdg.org/jmwsgi/edhelp.py?svc=jmdict&sid=#kw_pos) (found in the yomitan [wiki](https://github.com/yomidevs/yomitan/blob/master/docs/making-yomitan-dictionaries.md))
-* (_For finding the localized short tag_) One can take inspiration, among other places, from [wordreference](https://www.wordreference.com/english/abbreviationsWRD.aspx?dict=gren).
+* (_For finding the localized short tag_) One can take inspiration, among other places, from wordreference abbreviations. Here is the one for [Japanese](https://www.wordreference.com/english/abbreviationsWRD.aspx?dict=jaen), and this one for [Greek](https://www.wordreference.com/english/abbreviationsWRD.aspx?dict=gren).
