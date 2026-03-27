@@ -31,7 +31,7 @@ fn localize_tag_de(short_tag: &str) -> Option<(&'static str, &'static str)> {
         _ => None,
     }
 }
-/// Coverage: 37/362 tags (10.2%)
+/// Coverage: 36/362 tags (9.9%)
 fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
     match short_tag {
         "v" => Some(("動", "動詞")),
@@ -54,7 +54,6 @@ fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
         "rare" => Some(("まれ", "まれ")),
         "adv" => Some(("副", "副詞")),
         "artic" => Some(("定", "定冠詞")),
-        "art" => Some(("定", "定冠詞")),
         "aux-v" => Some(("助動", "助動詞")),
         "conj" => Some(("接続", "接続詞")),
         "contr" => Some(("縮約", "縮約形")),
