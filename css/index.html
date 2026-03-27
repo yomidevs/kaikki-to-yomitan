@@ -361,6 +361,51 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Customize css">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tags
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-dictionary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main dictionary
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipa-dictionary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ipa dictionary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -561,6 +606,46 @@
 <li>Yomitan documentation contains <a href="https://yomitan.wiki/tools-resources/?h=css#yomitan-colored-css">themes</a> and how to set them up.</li>
 <li>The sunset Yomichan has a still mostly valid <a href="https://learnjapanese.moe/yomicss/">guide</a> on how to customize css.</li>
 </ul>
+<h3 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h3>
+<p>The first thing to know, if you want the css to only affect a <code>wty</code> dictionary, is to preface every declaration with: </p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="nt">data-dictionary</span><span class="o">=</span><span class="s2">&quot;dictionary-name&quot;</span><span class="o">]</span>
+</code></pre></div>
+<p>For example, this will only show the "Hokkien" pronunciation in <code>wty-zh-en-ipa</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="nt">data-dictionary</span><span class="o">=</span><span class="s2">&quot;wty-zh-en-ipa&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">pronunciation</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="o">[</span><span class="nt">data-dictionary</span><span class="o">=</span><span class="s2">&quot;wty-zh-en-ipa&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">pronunciation</span><span class="p">:</span><span class="nd">has</span><span class="o">(</span><span class="p">.</span><span class="nc">tag</span><span class="o">[</span><span class="nt">data-details</span><span class="o">=</span><span class="s2">&quot;Hokkien&quot;</span><span class="o">])</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">From now on, we will skip this declaration for simplicity.</p>
+</div>
+<h4 id="main-dictionary">Main dictionary<a class="headerlink" href="#main-dictionary" title="Permanent link">&para;</a></h4>
+<p>Here is a basic example on how to handle these tags with your custom css.</p>
+<div class="highlight"><pre><span></span><code><span class="c">/* Hide inflections (~book icon, inflection tags) */</span>
+<span class="p">.</span><span class="nc">inflection-rule-chains</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="c">/* Hide dictionary name (top-level tag) */</span>
+<span class="o">[</span><span class="nt">data-category</span><span class="o">=</span><span class="s2">&quot;dictionary&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="c">/* Hide gender tags (top-level tag) */</span>
+<span class="o">[</span><span class="nt">data-category</span><span class="o">=</span><span class="s2">&quot;gender&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="c">/* Hide inner topic tags (note the -sc-) */</span>
+<span class="o">[</span><span class="nt">data-sc-category</span><span class="o">=</span><span class="s2">&quot;topic&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<h4 id="ipa-dictionary">Ipa dictionary<a class="headerlink" href="#ipa-dictionary" title="Permanent link">&para;</a></h4>
+<p>This css will only show "Hokkien" and "bopomofo" pronunciations:</p>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">pronunciation</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="nc">pronunciation</span><span class="p">:</span><span class="nd">has</span><span class="o">(</span><span class="p">.</span><span class="nc">tag</span><span class="o">[</span><span class="nt">data-details</span><span class="o">=</span><span class="s2">&quot;Hokkien&quot;</span><span class="o">])</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="nc">pronunciation</span><span class="p">:</span><span class="nd">has</span><span class="o">(</span><span class="p">.</span><span class="nc">tag</span><span class="o">[</span><span class="nt">data-details</span><span class="o">=</span><span class="s2">&quot;bopomofo&quot;</span><span class="o">])</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
 
 
 

@@ -668,19 +668,7 @@
 
 <p>Even though <code>topics</code> happen almost exclusively as inner tags, a wiktextract tag can be used as any of the three.</p>
 <h3 id="css">CSS<a class="headerlink" href="#css" title="Permanent link">&para;</a></h3>
-<p>TODO: should this be in the css page?</p>
-<p>Here is a basic example on how to handle these tags with your custom css.</p>
-<div class="highlight"><pre><span></span><code><span class="c">/* Hide inflections (~book icon, inflection tags) */</span>
-<span class="p">.</span><span class="nc">inflection-rule-chains</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-
-<span class="c">/* Hide dictionary name (top-level tag) */</span>
-<span class="o">[</span><span class="nt">data-category</span><span class="o">=</span><span class="s2">&quot;dictionary&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="c">/* Hide gender tags (top-level tag) */</span>
-<span class="o">[</span><span class="nt">data-category</span><span class="o">=</span><span class="s2">&quot;gender&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-
-<span class="c">/* Hide inner topic tags (note the -sc-) */</span>
-<span class="o">[</span><span class="nt">data-sc-category</span><span class="o">=</span><span class="s2">&quot;topic&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-</code></pre></div>
+<p>See the relevant section in <a href="../css/#tags">css</a>.</p>
 <hr />
 <h2 id="tag-order">Tag order<a class="headerlink" href="#tag-order" title="Permanent link">&para;</a></h2>
 <p>In the main dictionary, tag order depends on its type:</p>
@@ -738,6 +726,7 @@ They appear in the order they are in the dictionary.</li>
 <span class="p">}</span>
 </code></pre></div></p>
 <p>Each entry is a pair of <code>[short, long]</code> forms, where <code>short</code> is shown in the dictionary and <code>long</code> is shown on hover.</p>
+<p>The <code>short</code> field can be left empty, in which case we default to using <code>long</code> at both places.</p>
 <p>The key must match the 4th field of the corresponding entry in <code>assets/tag_bank_term.json</code>.
 When that field is a string, use it directly. When it is an array, use the <strong>first</strong> element (the primary alias):
 <div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;v&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;partOfSpeech&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;verb&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span>
@@ -756,9 +745,9 @@ You do not need to localize every tag: any tag without a localization entry will
 <ul>
 <li>Start with a simple subset. If you are familiar with the dictionary, localize the most common tags first. You can also localize a common category like <code>partOfSpech</code></li>
 <li>(<em>For finding the English long tag</em>) Be familiar with long tag forms of <code>assets/tag_bank_term.json</code>. Reminder that you only need to localize the first element. If the tag is not yet localized, the English long tag is displayed on hovering a tag.</li>
-<li>(<em>For finding the localized long tag</em>) You can check what wiktextract does when translating <code>raw_tags</code> to <code>tags</code>/<code>topics</code> and do the inverse. For instance, this is the relevant file for <a href="https://github.com/tatuylonen/wiktextract/blob/master/src/wiktextract/extractor/ja/tags.py">Japanese</a>, and this one for <a href="https://github.com/tatuylonen/wiktextract/blob/master/src/wiktextract/extractor/el/tags.py">Greek</a>. To chose between aliases that get normalized in wiktextract, consulting Wiktionary can be a solution, but ultimately is a matter of personal taste.</li>
+<li>(<em>For finding the localized long tag</em>) You can check what wiktextract does when translating <code>raw_tags</code> to <code>tags</code>/<code>topics</code> and do the inverse. For instance, this is the relevant file for <a href="https://github.com/tatuylonen/wiktextract/blob/master/src/wiktextract/extractor/ja/tags.py">Japanese</a>, and this one for <a href="https://github.com/tatuylonen/wiktextract/blob/master/src/wiktextract/extractor/el/tags.py">Greek</a>. To chose between aliases that get normalized in wiktextract, consulting Wiktionary can be a solution (and sometimes, they happen to <a href="https://ja.wiktionary.org/wiki/テンプレート:context">document</a> it), but ultimately is a matter of personal taste.</li>
 <li>(<em>For Japanese</em>) Because of the Japanese-focused roots of yomitan, one can take inspiration of the <a href="https://www.edrdg.org/jmwsgi/edhelp.py?svc=jmdict&amp;sid=#kw_pos">official JMDict page</a> (found in the yomitan <a href="https://github.com/yomidevs/yomitan/blob/master/docs/making-yomitan-dictionaries.md">wiki</a>)</li>
-<li>(<em>For finding the localized short tag</em>) One can take inspiration, among other places, from <a href="https://www.wordreference.com/english/abbreviationsWRD.aspx?dict=gren">wordreference</a>.</li>
+<li>(<em>For finding the localized short tag</em>) One can take inspiration, among other places, from wordreference abbreviations. Here is the one for <a href="https://www.wordreference.com/english/abbreviationsWRD.aspx?dict=jaen">Japanese</a>, and this one for <a href="https://www.wordreference.com/english/abbreviationsWRD.aspx?dict=gren">Greek</a>.</li>
 </ul>
 
 
