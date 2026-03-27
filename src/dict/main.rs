@@ -659,6 +659,10 @@ fn process_main(edition: Edition, source: Lang, entry: &WordEntry, irs: &mut Tid
 
     process_alt_forms(entry, irs);
 
+    // Also redirections of this type:
+    // https://ja.wiktionary.org/wiki/好み#Japanese
+    // このみの漢字表記。
+    //
     // match edition {
     //     Edition::Ja => {
     //         if let Some(sense) = entry.senses.first() {
@@ -1475,7 +1479,7 @@ fn get_found_tags(pos: &Pos, info: &LemmaInfo) -> Vec<Tag> {
             Some(tag_info) => Some(tag_info.short_tag),
             None => {
                 // log skipped tags
-                // tracing::debug!("{}", tag);
+                // tracing::debug!("{} @ {}", tag, info.link_wiktionary);
                 None
             }
         })

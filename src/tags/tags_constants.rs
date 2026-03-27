@@ -81,7 +81,7 @@ pub const TAG_ORDER: [&str; 76] = [
 ];
 
 #[rustfmt::skip]
-pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 354] = [
+pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 362] = [
     ("animate", "animacy", 0, &["animate"], 0),
     ("inanim", "animacy", 0, &["inanimate"], 0),
     ("arch", "archaism", 4, &["archaic"], -4),
@@ -134,6 +134,7 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 354] = [
     ("frac-num", "number-type", 0, &["fractional number"], 0),
     ("ord-num", "number-type", 0, &["ordinal number"], 0),
     ("adj", "partOfSpeech", -2, &["adjective", "adj"], 2),
+    ("adj_noun", "partOfSpeech", -2, &["adj_noun"], 2),
     ("adv", "partOfSpeech", -2, &["adverb", "adv"], 2),
     ("artic", "partOfSpeech", -2, &["article"], 2),
     ("conj", "partOfSpeech", -2, &["conjunction", "conj"], 2),
@@ -159,6 +160,7 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 354] = [
     ("vi", "partOfSpeech", -2, &["intransitive verb", "intransitive"], 2),
     ("vr", "partOfSpeech", -2, &["reflexive verb", "reflexive"], 2),
     ("vt", "partOfSpeech", -2, &["transitive verb", "transitive"], 2),
+    ("adn", "partOfSpeech", 0, &["adnominal"], 0),
     ("child", "register", 0, &["childish"], 0),
     ("col", "register", 0, &["colloquial"], 0),
     ("crim-sl", "register", 0, &["criminal slang"], 0),
@@ -192,7 +194,7 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 354] = [
     ("Hind🛕", "topic", 0, &["Hinduism"], 0),
     ("LGBT", "topic", 0, &["LGBT"], 0),
     ("OOP", "topic", 0, &["object-oriented programming"], 0),
-    ("Prot✝️", "topic", 0, &["Protestantism"], 0),
+    ("Prot✝️", "topic", 0, &["Protestantism", "Protestant"], 0),
     ("agr", "topic", 0, &["agriculture"], 0),
     ("anat", "topic", 0, &["anatomy"], 0),
     ("anthro", "topic", 0, &["anthropology"], 0),
@@ -295,7 +297,7 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 354] = [
     ("⚽", "topic", 0, &["soccer"], 0),
     ("⛪", "topic", 0, &["modern Italianate Ecclesiastical"], 0),
     ("✒️clgphy", "topic", 0, &["calligraphy"], 0),
-    ("✝️", "topic", 0, &["Christianity"], 0),
+    ("✝️", "topic", 0, &["Christianity", "Christian"], 0),
     ("✡️", "topic", 0, &["Judaism"], 0),
     ("🌿", "topic", 0, &["botany"], 0),
     ("🎾ten", "topic", 0, &["tennis"], 0),
@@ -318,7 +320,7 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 354] = [
     ("cmn", "usage", 0, &["common"], 0),
     ("dialect", "usage", 0, &["dialectal", "dialect"], 0),
     ("euph", "usage", 0, &["euphemistic"], 0),
-    ("fig", "usage", 0, &["figuratively", "figurative"], 0),
+    ("fig", "usage", 0, &["figurative", "figuratively"], 0),
     ("idio", "usage", 0, &["idiomatic"], 0),
     ("ltrl", "usage", 0, &["literal"], 0),
     ("ltrly", "usage", 0, &["literally"], 0),
@@ -414,6 +416,7 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 354] = [
     ("🇵🇾", "variety", 0, &["Paraguay"], 0),
     ("🇶🇦", "variety", 0, &["Qatar"], 0),
     ("🇷🇸", "variety", 0, &["Serbia"], 0),
+    ("🇷🇺", "variety", 0, &["Russia"], 0),
     ("🇸🇦", "variety", 0, &["Saudi Arabia"], 0),
     ("🇸🇻", "variety", 0, &["El Salvador"], 0),
     ("🇸🇾", "variety", 0, &["Syria"], 0),
@@ -430,17 +433,23 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 354] = [
     ("🦁", "variety", 0, &["Lviv"], 0),
     ("🧜‍♀️", "variety", 0, &["Warsaw"], 0),
     ("char", "", 0, &["character"], 0),
+    ("godan", "", 0, &["godan"], 0),
+    ("ichidan", "", 0, &["ichidan"], 0),
     ("mix", "", 0, &["mixed"], 0),
+    ("onoma", "", 0, &["onomatopoeic"], 0),
     ("punct", "", 0, &["punct"], 0),
+    ("shimoichidan", "", 0, &["shimoichidan"], 0),
     ("strong", "", 0, &["strong"], 0),
     ("symb", "", 0, &["symbol"], 0),
     ("weak", "", 0, &["weak"], 0),
+    ("🌍", "", 0, &["place"], 0),
     ("non-lemma", "", 10, &["non-lemma"], -10),
 ];
 
-pub const POSES: [(&str, &str); 41] = [
+pub const POSES: [(&str, &str); 43] = [
     ("adjective", "adj"),
     ("adj", "adj"),
+    ("adj_noun", "adj_noun"),
     ("adverb", "adv"),
     ("adv", "adv"),
     ("article", "artic"),
@@ -480,4 +489,5 @@ pub const POSES: [(&str, &str); 41] = [
     ("reflexive", "vr"),
     ("transitive verb", "vt"),
     ("transitive", "vt"),
+    ("adnominal", "adn"),
 ];
