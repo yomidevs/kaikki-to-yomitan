@@ -669,6 +669,8 @@ fn process_main(edition: Edition, source: Lang, entry: &WordEntry, irs: &mut Tid
     // https://ja.wiktionary.org/wiki/好み#Japanese
     // このみの漢字表記。
     //
+    // https://ja.wiktionary.org/wiki/諄い
+    // くどいを参照。
     // match edition {
     //     Edition::Ja => {
     //         if let Some(sense) = entry.senses.first() {

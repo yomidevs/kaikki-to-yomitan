@@ -2,7 +2,7 @@
   [
     "κόρφος",
     "",
-    "n masc",
+    "ουσ αρ",
     "n",
     0,
     [
@@ -64,12 +64,12 @@
                         "content": [
                           {
                             "tag": "span",
-                            "title": "vulgar",
+                            "title": "χυδαίο",
                             "data": {
                               "content": "tag",
                               "category": "register"
                             },
-                            "content": "vulg"
+                            "content": "χυδαίο"
                           }
                         ]
                       },
@@ -128,12 +128,12 @@
                         "content": [
                           {
                             "tag": "span",
-                            "title": "vulgar",
+                            "title": "χυδαίο",
                             "data": {
                               "content": "tag",
                               "category": "register"
                             },
-                            "content": "vulg"
+                            "content": "χυδαίο"
                           }
                         ]
                       },
@@ -226,7 +226,7 @@
   [
     "αζωικός",
     "",
-    "adj masc",
+    "επίθ αρ",
     "adj",
     0,
     [
@@ -315,7 +315,7 @@
   [
     "γορίλλας",
     "",
-    "n masc",
+    "ουσ αρ",
     "n",
     0,
     [
@@ -388,12 +388,12 @@
                         "content": [
                           {
                             "tag": "span",
-                            "title": "figurative",
+                            "title": "μεταφορικά",
                             "data": {
                               "content": "tag",
                               "category": "usage"
                             },
-                            "content": "fig"
+                            "content": "μτφ"
                           }
                         ]
                       },

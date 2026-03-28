@@ -42,6 +42,13 @@
         -4
     ],
     [
+        "rare",
+        "archaism",
+        4,
+        "rare",
+        -4
+    ],
+    [
         "impf",
         "aspect",
         0,
@@ -123,13 +130,6 @@
         "grammar",
         0,
         "countable",
-        0
-    ],
-    [
-        "gramm",
-        "grammar",
-        0,
-        "grammar",
         0
     ],
     [
@@ -1127,6 +1127,13 @@
         0
     ],
     [
+        "gramm",
+        "topic",
+        0,
+        "grammar",
+        0
+    ],
+    [
         "greek-myth",
         "topic",
         0,
@@ -1766,13 +1773,6 @@
         "usage",
         0,
         "nonstandard",
-        0
-    ],
-    [
-        "rare",
-        "usage",
-        0,
-        "rare",
         0
     ],
     [

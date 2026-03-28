@@ -6,6 +6,7 @@ use crate::lang::Lang;
 pub fn has_locale(lang: Lang) -> bool {
     match lang {
         Lang::De => true,
+        Lang::El => true,
         Lang::Ja => true,
         _ => false,
     }
@@ -14,6 +15,7 @@ pub fn has_locale(lang: Lang) -> bool {
 pub fn localize_tag(lang: Lang, short_tag: &str) -> Option<(&'static str, &'static str)> {
     match lang {
         Lang::De => localize_tag_de(short_tag),
+        Lang::El => localize_tag_el(short_tag),
         Lang::Ja => localize_tag_ja(short_tag),
         _ => None,
     }
@@ -42,7 +44,35 @@ fn localize_tag_de(short_tag: &str) -> Option<(&'static str, &'static str)> {
         _ => None,
     }
 }
-/// Coverage: 36/361 tags (10.0%)
+/// Coverage: 22/361 tags (6.1%)
+fn localize_tag_el(short_tag: &str) -> Option<(&'static str, &'static str)> {
+    match short_tag {
+        "n" => Some(("ουσ", "ουσιαστικό")),
+        "masc" => Some(("αρ", "αρσενικό")),
+        "fem" => Some(("θηλ", "θηλυκό")),
+        "neut" => Some(("ουδ", "ουδέτερο")),
+        "pl" => Some(("πλ", "πληθυντικό")),
+        "v" => Some(("ρ", "ρήμα")),
+        "adj" => Some(("επίθ", "επίθετο")),
+        "vt" => Some(("ρ.μετ", "μεταβατικό ρήμα")),
+        "vi" => Some(("ρ.αμ", "αμετάβατο ρήμα")),
+        "name" => Some(("όνομα", "όνομα")),
+        "arch" => Some(("απαρχ", "απαρχαιωμένο")),
+        "dated" => Some(("ξεπερ", "ξεπερασμένο")),
+        "rare" => Some(("σπάνιο", "σπάνιο")),
+        "col" => Some(("καθομιλουμένη", "καθομιλουμένη")),
+        "fig" => Some(("μτφ", "μεταφορικά")),
+        "vulg" => Some(("χυδαίο", "χυδαίο")),
+        "sl" => Some(("αργκό", "αργκό")),
+        "offens" => Some(("προσβλητικό", "προσβλητικό")),
+        "formal" => Some(("επίσημο", "επίσημο")),
+        "inf" => Some(("ανεπίσημο", "ανεπίσημο")),
+        "literal" => Some(("κυρ", "κυριολεξία")),
+        "lit" => Some(("λόγιο", "λόγιο")),
+        _ => None,
+    }
+}
+/// Coverage: 39/361 tags (10.8%)
 fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
     match short_tag {
         "v" => Some(("動", "動詞")),
@@ -80,6 +110,9 @@ fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
         "adn" => Some(("連体詞", "連体詞")),
         "ling" => Some(("言語学", "言語学")),
         "edu" => Some(("教育", "教育")),
+        "sumo" => Some(("相撲", "相撲")),
+        "cook" => Some(("調理", "調理")),
+        "psych" => Some(("心理学", "心理学")),
         "prep" => Some(("前", "前置詞")),
         _ => None,
     }

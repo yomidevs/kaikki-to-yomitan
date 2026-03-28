@@ -795,7 +795,7 @@
                             "title": "rare",
                             "data": {
                               "content": "tag",
-                              "category": "usage"
+                              "category": "archaism"
                             },
                             "content": "rare"
                           }
@@ -865,21 +865,21 @@
                           },
                           {
                             "tag": "span",
-                            "title": "rare",
-                            "data": {
-                              "content": "tag",
-                              "category": "usage"
-                            },
-                            "content": "rare"
-                          },
-                          {
-                            "tag": "span",
                             "title": "obsolete",
                             "data": {
                               "content": "tag",
                               "category": "archaism"
                             },
                             "content": "obs"
+                          },
+                          {
+                            "tag": "span",
+                            "title": "rare",
+                            "data": {
+                              "content": "tag",
+                              "category": "archaism"
+                            },
+                            "content": "rare"
                           }
                         ]
                       },
