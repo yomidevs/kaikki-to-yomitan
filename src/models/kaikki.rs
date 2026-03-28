@@ -123,8 +123,9 @@ pub struct Form {
 #[derive(rkyv::Archive, rkyv::Deserialize, rkyv::Serialize)]
 pub struct Synonym {
     pub word: String,
-    #[serde(skip_serializing_if = "Vec::is_empty")]
-    pub tags: Vec<Tag>,
+    // Unused for the moment
+    // #[serde(skip_serializing_if = "Vec::is_empty")]
+    // pub tags: Vec<Tag>,
 }
 
 #[derive(Debug, Deserialize, Serialize, Default)]
