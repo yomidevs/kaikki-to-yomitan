@@ -704,7 +704,7 @@
         0
     ],
     [
-        "ltrry",
+        "lit",
         "register",
         0,
         "literary",
@@ -1613,7 +1613,7 @@
         0
     ],
     [
-        "📚lit",
+        "📚",
         "topic",
         0,
         "literature",
@@ -1752,17 +1752,13 @@
         0
     ],
     [
-        "ltrl",
-        "usage",
-        0,
         "literal",
-        0
-    ],
-    [
-        "ltrly",
         "usage",
         0,
-        "literally",
+        [
+            "literal",
+            "literally"
+        ],
         0
     ],
     [

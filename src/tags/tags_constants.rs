@@ -81,7 +81,7 @@ pub const TAG_ORDER: [&str; 76] = [
 ];
 
 #[rustfmt::skip]
-pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 362] = [
+pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 361] = [
     ("animate", "animacy", 0, &["animate"], 0),
     ("inanim", "animacy", 0, &["inanimate"], 0),
     ("arch", "archaism", 4, &["archaic"], -4),
@@ -174,7 +174,7 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 362] = [
     ("imp", "register", 0, &["impolite"], 0),
     ("inf", "register", 0, &["informal"], 0),
     ("jar", "register", 0, &["jargon"], 0),
-    ("ltrry", "register", 0, &["literary"], 0),
+    ("lit", "register", 0, &["literary"], 0),
     ("mil-sl", "register", 0, &["military slang"], 0),
     ("net-sl", "register", 0, &["Internet slang"], 0),
     ("offens", "register", 0, &["offensive"], 0),
@@ -303,7 +303,7 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 362] = [
     ("🎾ten", "topic", 0, &["tennis"], 0),
     ("👷", "topic", 0, &["construction"], 0),
     ("📐trig", "topic", 0, &["trigonometry"], 0),
-    ("📚lit", "topic", 0, &["literature"], 0),
+    ("📚", "topic", 0, &["literature"], 0),
     ("🔭", "topic", 0, &["astronomy"], 0),
     ("🚢", "topic", 0, &["nautical"], 0),
     ("🛐", "topic", 0, &["religion"], 0),
@@ -322,8 +322,7 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 362] = [
     ("euph", "usage", 0, &["euphemistic"], 0),
     ("fig", "usage", 0, &["figurative", "figuratively"], 0),
     ("idio", "usage", 0, &["idiomatic"], 0),
-    ("ltrl", "usage", 0, &["literal"], 0),
-    ("ltrly", "usage", 0, &["literally"], 0),
+    ("literal", "usage", 0, &["literal", "literally"], 0),
     ("non-std", "usage", 0, &["nonstandard"], 0),
     ("rare", "usage", 0, &["rare"], 0),
     ("regio", "usage", 0, &["regional"], 0),

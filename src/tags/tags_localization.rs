@@ -19,19 +19,30 @@ pub fn localize_tag(lang: Lang, short_tag: &str) -> Option<(&'static str, &'stat
     }
 }
 
-/// Coverage: 6/362 tags (1.7%)
+/// Coverage: 17/361 tags (4.7%)
 fn localize_tag_de(short_tag: &str) -> Option<(&'static str, &'static str)> {
     match short_tag {
         "n" => Some(("S", "Substantiv")),
         "masc" => Some(("Mask", "Maskulinum")),
         "fem" => Some(("Fem", "Femininum")),
+        "neut" => Some(("Neut", "Neutrum")),
         "v" => Some(("V", "Verb")),
         "adj" => Some(("Adj", "Adjektiv")),
+        "vt" => Some(("Vt", "transitives Verb")),
+        "vi" => Some(("Vi", "intransitives Verb")),
         "name" => Some(("Vorn", "Vorname")),
+        "arch" => Some(("veraltet", "veraltet")),
+        "dated" => Some(("altmod", "altmodisch")),
+        "col" => Some(("ums", "umgangssprachlich")),
+        "fig" => Some(("übertragen", "übertragen")),
+        "vulg" => Some(("vulgär", "vulgär")),
+        "literal" => Some(("wörtlich", "wörtlich")),
+        "lit" => Some(("liter", "literarisch")),
+        "sports" => Some(("Sport", "Sport")),
         _ => None,
     }
 }
-/// Coverage: 36/362 tags (9.9%)
+/// Coverage: 36/361 tags (10.0%)
 fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
     match short_tag {
         "v" => Some(("動", "動詞")),
@@ -48,7 +59,7 @@ fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
         "vt" => Some(("他動", "他動詞")),
         "vi" => Some(("自動", "自動詞")),
         "inf" => Some(("非形式的", "非形式的")),
-        "ltrry" => Some(("文語", "文語")),
+        "lit" => Some(("文語", "文語")),
         "pej" => Some(("軽蔑的", "軽蔑的")),
         "dialect" => Some(("方言", "方言")),
         "rare" => Some(("まれ", "まれ")),

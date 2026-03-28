@@ -11,6 +11,10 @@
         "Fem",
         "Femininum"
     ],
+    "neuter": [
+        "Neut",
+        "Neutrum"
+    ],
     "verb": [
         "V",
         "Verb"
@@ -19,8 +23,48 @@
         "Adj",
         "Adjektiv"
     ],
+    "transitive verb": [
+        "Vt",
+        "transitives Verb"
+    ],
+    "intransitive verb": [
+        "Vi",
+        "intransitives Verb"
+    ],
     "name": [
         "Vorn",
         "Vorname"
+    ],
+    "archaic": [
+        "",
+        "veraltet"
+    ],
+    "dated": [
+        "altmod",
+        "altmodisch"
+    ],
+    "colloquial": [
+        "ums",
+        "umgangssprachlich"
+    ],
+    "figurative": [
+        "",
+        "übertragen"
+    ],
+    "vulgar": [
+        "",
+        "vulgär"
+    ],
+    "literal": [
+        "",
+        "wörtlich"
+    ],
+    "literary": [
+        "liter",
+        "literarisch"
+    ],
+    "sports": [
+        "",
+        "Sport"
     ]
 }
