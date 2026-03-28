@@ -112,6 +112,36 @@
           {
             "tag": "div",
             "data": {
+              "content": "synonyms"
+            },
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "synonyms-label"
+                },
+                "content": "Synonyme"
+              },
+              {
+                "tag": "ul",
+                "data": {
+                  "content": "synonyms-list"
+                },
+                "content": [
+                  {
+                    "tag": "li",
+                    "data": {
+                      "content": "synonym-item"
+                    },
+                    "content": "Rock 'n' Roll"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
               "content": "backlink"
             },
             "content": [
@@ -238,6 +268,36 @@
                         ]
                       }
                     ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "synonyms"
+            },
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "synonyms-label"
+                },
+                "content": "Synonyme"
+              },
+              {
+                "tag": "ul",
+                "data": {
+                  "content": "synonyms-list"
+                },
+                "content": [
+                  {
+                    "tag": "li",
+                    "data": {
+                      "content": "synonym-item"
+                    },
+                    "content": "Simurgh"
                   }
                 ]
               }
@@ -812,6 +872,36 @@
                         ]
                       }
                     ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "synonyms"
+            },
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "synonyms-label"
+                },
+                "content": "Synonyme"
+              },
+              {
+                "tag": "ul",
+                "data": {
+                  "content": "synonyms-list"
+                },
+                "content": [
+                  {
+                    "tag": "li",
+                    "data": {
+                      "content": "synonym-item"
+                    },
+                    "content": "Autowerkstatt"
                   }
                 ]
               }
@@ -1645,6 +1735,50 @@
           {
             "tag": "div",
             "data": {
+              "content": "synonyms"
+            },
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "synonyms-label"
+                },
+                "content": "Synonyme"
+              },
+              {
+                "tag": "ul",
+                "data": {
+                  "content": "synonyms-list"
+                },
+                "content": [
+                  {
+                    "tag": "li",
+                    "data": {
+                      "content": "synonym-item"
+                    },
+                    "content": "verabreden"
+                  },
+                  {
+                    "tag": "li",
+                    "data": {
+                      "content": "synonym-item"
+                    },
+                    "content": "vereinbaren"
+                  },
+                  {
+                    "tag": "li",
+                    "data": {
+                      "content": "synonym-item"
+                    },
+                    "content": "abmachen"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
               "content": "backlink"
             },
             "content": [
@@ -2265,6 +2399,50 @@
                         ]
                       }
                     ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "synonyms"
+            },
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "synonyms-label"
+                },
+                "content": "Synonyme"
+              },
+              {
+                "tag": "ul",
+                "data": {
+                  "content": "synonyms-list"
+                },
+                "content": [
+                  {
+                    "tag": "li",
+                    "data": {
+                      "content": "synonym-item"
+                    },
+                    "content": "jetzt"
+                  },
+                  {
+                    "tag": "li",
+                    "data": {
+                      "content": "synonym-item"
+                    },
+                    "content": "augenblicklich"
+                  },
+                  {
+                    "tag": "li",
+                    "data": {
+                      "content": "synonym-item"
+                    },
+                    "content": "gegenwärtig"
                   }
                 ]
               }
@@ -3263,6 +3441,50 @@
                         ]
                       }
                     ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "synonyms"
+            },
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "synonyms-label"
+                },
+                "content": "Synonyme"
+              },
+              {
+                "tag": "ul",
+                "data": {
+                  "content": "synonyms-list"
+                },
+                "content": [
+                  {
+                    "tag": "li",
+                    "data": {
+                      "content": "synonym-item"
+                    },
+                    "content": "an"
+                  },
+                  {
+                    "tag": "li",
+                    "data": {
+                      "content": "synonym-item"
+                    },
+                    "content": "auf"
+                  },
+                  {
+                    "tag": "li",
+                    "data": {
+                      "content": "synonym-item"
+                    },
+                    "content": "nach"
                   }
                 ]
               }

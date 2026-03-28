@@ -175,6 +175,17 @@
               }
             }
           },
+          "synonyms": [
+            {
+              "word": "全く"
+            },
+            {
+              "word": "少しも"
+            },
+            {
+              "word": "ない"
+            }
+          ],
           "wlink": "https://ja.wiktionary.org/wiki/全然#Japanese",
           "klink": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/全/全然/全然.html"
         }
@@ -193,6 +204,11 @@
           "tags": [
             "irregular",
             "sa-row"
+          ],
+          "synonyms": [
+            {
+              "word": "指令"
+            }
           ],
           "wlink": "https://ja.wiktionary.org/wiki/命令#Japanese",
           "klink": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/命/命令/命令.html"
@@ -316,6 +332,17 @@
               ]
             }
           },
+          "synonyms": [
+            {
+              "word": "携帯食"
+            },
+            {
+              "word": "携行食"
+            },
+            {
+              "word": "駅弁"
+            }
+          ],
           "wlink": "https://ja.wiktionary.org/wiki/弁当#Japanese",
           "klink": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/弁/弁当/弁当.html"
         }
@@ -352,6 +379,14 @@
               ]
             }
           },
+          "synonyms": [
+            {
+              "word": "間接"
+            },
+            {
+              "word": "間接的"
+            }
+          ],
           "wlink": "https://ja.wiktionary.org/wiki/婉曲#Japanese",
           "klink": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/婉/婉曲/婉曲.html"
         }
