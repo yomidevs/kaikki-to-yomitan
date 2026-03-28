@@ -260,7 +260,7 @@ fn normalize_ipa(text: &str) -> String {
     match (fst, lst) {
         (Some('['), Some(']')) => text.to_string(),
         (Some('/'), Some('/')) => text.to_string(),
-        (Some('\\'), Some('\\')) => format!("/{}/", &text[1..text.len() - 1]),
+        (Some('\\'), Some('\\')) if text.len() > 1 => format!("/{}/", &text[1..text.len() - 1]),
         _ => format!("/{}/", text),
     }
 }
@@ -271,7 +271,8 @@ fn ipa_inner(text: &str) -> &str {
     let lst = text.chars().last();
 
     match (fst, lst) {
-        (Some('['), Some(']')) | (Some('/'), Some('/')) | (Some('\\'), Some('\\')) => {
+        (Some('['), Some(']')) => &text[1..text.len() - 1],
+        (Some('/'), Some('/')) | (Some('\\'), Some('\\')) if text.len() > 1 => {
             &text[1..text.len() - 1]
         }
         _ => text,
