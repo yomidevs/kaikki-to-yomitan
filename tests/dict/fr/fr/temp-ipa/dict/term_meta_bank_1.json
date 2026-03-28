@@ -6,9 +6,6 @@
       "reading": "avatar",
       "transcriptions": [
         {
-          "ipa": "\\a.va.taʁ\\"
-        },
-        {
           "ipa": "[a.va.taʁ]"
         }
       ]
@@ -21,13 +18,10 @@
       "reading": "encyclopédie",
       "transcriptions": [
         {
-          "ipa": "\\ɑ̃.si.klɔ.pe.di\\"
+          "ipa": "[ɑ̃.si.klɔ.pe.di]"
         },
         {
           "ipa": "[yn ɑ̃.si.klɔ.pe.di]"
-        },
-        {
-          "ipa": "[ɑ̃.si.klɔ.pe.di]"
         }
       ]
     }
@@ -39,7 +33,7 @@
       "reading": "arrive",
       "transcriptions": [
         {
-          "ipa": "\\a.ʁiv\\"
+          "ipa": "/a.ʁiv/"
         }
       ]
     }
@@ -51,16 +45,13 @@
       "reading": "manger",
       "transcriptions": [
         {
-          "ipa": "\\mɑ̃.ʒe\\"
+          "ipa": "[mɑ̃.ʒe]"
         },
         {
           "ipa": "[mɑ̃ː.ˈʒe]"
         },
         {
-          "ipa": "[mɑ̃.ʒe]"
-        },
-        {
-          "ipa": "\\mã.ʒe\\"
+          "ipa": "/mã.ʒe/"
         }
       ]
     }

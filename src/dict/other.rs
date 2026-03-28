@@ -239,8 +239,52 @@ fn to_yomitan_glossary_extended(target: Lang, irs: IGlossaryExtended) -> Vec<Yom
         .collect()
 }
 
+/// Normalize IPA notation: convert `\X\`, bare `X` to `/X/`, preserve `[X]`
+///
+/// `\X\` is used in the French edition for some reason, and `X` is just laziness.
+///
+/// ## Difference between `/X/` and `[X]`
+///
+/// - `/ ... /` is for phonemic transcription
+/// - `[ ... ]` is for phonetic transcription
+///
+/// For example, the English words pin and spin become:
+/// - `/pɪn/` and `/spɪn/`
+/// - `[pʰɪn]` and `[spɪn]`.
+///
+/// See <https://en.wiktionary.org/wiki/Wiktionary:International_Phonetic_Alphabet>
+fn normalize_ipa(text: &str) -> String {
+    let fst = text.chars().next();
+    let lst = text.chars().last();
+
+    match (fst, lst) {
+        (Some('['), Some(']')) => text.to_string(),
+        (Some('/'), Some('/')) => text.to_string(),
+        (Some('\\'), Some('\\')) if text.len() > 1 => format!("/{}/", &text[1..text.len() - 1]),
+        _ => format!("/{}/", text),
+    }
+}
+
+/// Extract inner IPA content without delimiters for comparison
+fn ipa_inner(text: &str) -> &str {
+    let fst = text.chars().next();
+    let lst = text.chars().last();
+
+    match (fst, lst) {
+        (Some('['), Some(']')) => &text[1..text.len() - 1],
+        (Some('/'), Some('/')) | (Some('\\'), Some('\\')) if text.len() > 1 => {
+            &text[1..text.len() - 1]
+        }
+        _ => text,
+    }
+}
+
+fn is_phonetic(text: &str) -> bool {
+    text.starts_with('[') && text.ends_with(']')
+}
+
 // Grouping by ipa is done at process_ipa
-pub fn get_ipas(entry: &WordEntry) -> Vec<Ipa> {
+fn get_ipas(entry: &WordEntry) -> Vec<Ipa> {
     entry
         .sounds
         .iter()
@@ -253,7 +297,7 @@ pub fn get_ipas(entry: &WordEntry) -> Vec<Ipa> {
                 tags.push(sound.note.clone());
             }
             Some(Ipa {
-                ipa: sound.ipa.clone(),
+                ipa: normalize_ipa(&sound.ipa),
                 tags,
             })
         })
@@ -291,7 +335,12 @@ fn process_ipa(edition: Edition, source: Lang, target: Lang, entry: &WordEntry, 
     let reading = get_reading(edition, source, entry).unwrap_or_else(|| entry.word.clone());
     let existing = irs.entry((entry.word.clone(), reading)).or_default();
     for ipa in ipas {
-        if let Some(existing_ipa) = existing.iter_mut().find(|e| e.ipa == ipa.ipa) {
+        let inner = ipa_inner(&ipa.ipa);
+        if let Some(existing_ipa) = existing.iter_mut().find(|e| ipa_inner(&e.ipa) == inner) {
+            // Prefer phonetic [X] over phonemic /X/ (more specific)
+            if is_phonetic(&ipa.ipa) {
+                existing_ipa.ipa = ipa.ipa;
+            }
             for tag in ipa.tags {
                 if !existing_ipa.tags.contains(&tag) {
                     existing_ipa.tags.push(tag);
@@ -306,6 +355,14 @@ fn process_ipa(edition: Edition, source: Lang, target: Lang, entry: &WordEntry, 
 fn to_yomitan_ipa(irs: IIpa) -> Vec<YomitanEntry> {
     irs.into_iter()
         .map(|((lemma, reading), transcriptions)| {
+            // NOTE: sorting is tricky because the order in Wiktionary may matter, with the first
+            // result being the most relevant (not always, remains to be tested).
+            // This is relevant for X-Y-ipa dicts, for merged X-ipa dicts the order is completely
+            // random, as in it depends on edition iteration order, and therefore sorting is much
+            // more justified.
+            //
+            // transcriptions.sort_unstable_by(|a, b| ipa_inner(&a.ipa).cmp(ipa_inner(&b.ipa)));
+
             YomitanEntry::TermBankMeta(TermBankMeta::TermPhoneticTranscription(
                 TermPhoneticTranscription(
                     lemma,
@@ -446,7 +503,12 @@ mod tests {
         let dict = DIpaMerged;
         let langs = Langs::new(Edition::En, Lang::Grc, Lang::Sh);
         let mut entry = WordEntry::default();
-        entry.sounds = vec![Sound::new("ipa1"), Sound::new("ipa1"), Sound::new("ipa2")];
+        entry.sounds = vec![
+            Sound::new("/ipa1/"), // '/' phonemic gets replaced by '[]' phonetic...
+            Sound::new("[ipa1]"),
+            Sound::new("/ipa1/"), // ...independently of order
+            Sound::new("[ipa2]"),
+        ];
 
         let mut irs = IIpa::default();
         dict.process(langs, &entry, &mut irs);
@@ -455,8 +517,8 @@ mod tests {
 
         let transcriptions = irs.values().next().unwrap();
         assert_eq!(transcriptions.len(), 2);
-        assert_eq!(&transcriptions[0].ipa, "ipa1");
-        assert_eq!(&transcriptions[1].ipa, "ipa2");
+        assert_eq!(&transcriptions[0].ipa, "[ipa1]");
+        assert_eq!(&transcriptions[1].ipa, "[ipa2]");
     }
 
     #[test]
@@ -465,8 +527,8 @@ mod tests {
         let langs = Langs::new(Edition::En, Lang::La, Lang::La); // irrelevant
         let mut entry = WordEntry::default();
         entry.sounds = vec![
-            Sound::with_tag("ipa1", "tag1"),
-            Sound::with_tag("ipa2", "modern Italianate Ecclesiastical"),
+            Sound::with_tag("[ipa1]", "tag1"),
+            Sound::with_tag("[ipa2]", "modern Italianate Ecclesiastical"),
         ];
 
         let mut irs = IIpa::default();
@@ -477,8 +539,8 @@ mod tests {
         let transcriptions = irs.values().next().unwrap();
         assert_eq!(transcriptions.len(), 2);
 
-        assert_eq!(&transcriptions[0].ipa, "ipa1");
-        assert_eq!(&transcriptions[1].ipa, "ipa2");
+        assert_eq!(&transcriptions[0].ipa, "[ipa1]");
+        assert_eq!(&transcriptions[1].ipa, "[ipa2]");
 
         // Check that tags are properly simplified
         assert_eq!(&transcriptions[0].tags[0], "tag1");
