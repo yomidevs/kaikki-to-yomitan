@@ -99,21 +99,21 @@
     ],
     [
         "fem",
-        "gender",
+        "gender-feminine",
         -1,
         "feminine",
         1
     ],
     [
         "masc",
-        "gender",
+        "gender-masculine",
         -1,
         "masculine",
         1
     ],
     [
         "neut",
-        "gender",
+        "gender-neuter",
         -1,
         "neuter",
         1

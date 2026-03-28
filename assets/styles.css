@@ -1,6 +1,7 @@
-.tag[data-details='feminine'] .tag-label{background-color: #ca4d93;}
-.tag[data-details='neuter'] .tag-label{background-color: #40ac65;}
-.tag[data-details='masculine'] .tag-label{background-color: #4d82e8;}
+/* Data-category is locale independent */
+.tag[data-category='gender-feminine'] .tag-label{background-color: #ca4d93;}
+.tag[data-category='gender-masculine'] .tag-label{background-color: #4d82e8;}
+.tag[data-category='gender-neuter'] .tag-label{background-color: #40ac65;}
 
 /* Category colouring is only valid for top-level tags
    https://github.com/yomidevs/yomitan/blob/master/docs/making-yomitan-dictionaries.md
@@ -127,8 +128,7 @@ summary[data-sc-content="summary-entry"] {
     color: var(--text-color-light4);
 }
 details[data-sc-content^="details-entry-Grammar"] summary[data-sc-content="summary-entry"],
-details[data-sc-content^="details-entry-Etymology"] summary[data-sc-content="summary-entry"],
-details[data-sc-content^="details-entry-Morphemes"] summary[data-sc-content="summary-entry"] {
+details[data-sc-content^="details-entry-Etymology"] summary[data-sc-content="summary-entry"] {
     font-weight: bold;
 }
 
