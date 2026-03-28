@@ -11,11 +11,14 @@ use crate::{
     cli::{LangSpecs, MainArgs, Options},
     dict::{
         Dictionary, Intermediate, LabelledYomitanEntry, Langs,
-        locale::{localize_etymology_string, localize_examples_string, localize_grammar_string},
+        locale::{
+            localize_etymology_string, localize_examples_string, localize_grammar_string,
+            localize_synonyms_string,
+        },
     },
     lang::{Edition, Lang},
     models::{
-        kaikki::{Example, Form, HeadTemplate, Offset, Pos, Sense, Tag, WordEntry},
+        kaikki::{Example, Form, HeadTemplate, Offset, Pos, Sense, Synonym, Tag, WordEntry},
         yomitan::{
             BacklinkContent, BacklinkContentKind, DetailedDefinition, GenericNode, NTag, Node,
             NodeData, TermBank, TermBankSimplified, YomitanEntry, wrap,
@@ -510,6 +513,9 @@ struct LemmaInfo {
 
     #[serde(skip_serializing_if = "Vec::is_empty")]
     tags: Vec<Tag>,
+
+    #[serde(skip_serializing_if = "Vec::is_empty")]
+    synonyms: Vec<Synonym>,
 
     #[serde(skip_serializing_if = "Option::is_none")]
     etymology_text: Option<String>,
@@ -1044,6 +1050,7 @@ fn process_entry(edition: Edition, source: Lang, entry: &WordEntry) -> LemmaInfo
     LemmaInfo {
         gloss_tree: get_gloss_tree(entry),
         tags: entry.tags.clone(),
+        synonyms: entry.synonyms.iter().take(3).cloned().collect(),
         etymology_text: entry
             .etymology_texts()
             .map(|etymology_text| etymology_text.join("\n")),
@@ -1443,6 +1450,10 @@ fn to_yomitan_lemma(
         &common_short_tags_found,
     ));
 
+    if let Some(synonyms_node) = structured_synonyms(target, &info.synonyms) {
+        detailed_definition_content.push(synonyms_node);
+    }
+
     detailed_definition_content.push(structured_backlink(info.link_wiktionary, info.link_kaikki));
 
     YomitanEntry::TermBank(TermBank(
@@ -1775,6 +1786,34 @@ fn structured_example_text(text: &str, offsets: &[Offset]) -> Node {
     }
 
     content
+}
+
+fn structured_synonyms(target: Lang, synonyms: &[Synonym]) -> Option<Node> {
+    if synonyms.is_empty() {
+        return None;
+    }
+
+    Some(wrap(
+        NTag::Div,
+        "synonyms",
+        Node::Array(vec![
+            wrap(
+                NTag::Div,
+                "synonyms-label",
+                Node::Text(localize_synonyms_string(target).into()),
+            ),
+            wrap(
+                NTag::Ul,
+                "synonyms-list",
+                Node::Array(
+                    synonyms
+                        .iter()
+                        .map(|syn| wrap(NTag::Li, "synonym-item", Node::Text(syn.word.clone())))
+                        .collect(),
+                ),
+            ),
+        ]),
+    ))
 }
 
 /// Returns only valid, non-overlapping offsets within bounds of `upto`.

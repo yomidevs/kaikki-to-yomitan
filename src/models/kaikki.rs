@@ -44,6 +44,8 @@ pub struct WordEntry {
     pub form_of: Vec<AltForm>,
     pub alt_of: Vec<AltForm>,
 
+    pub synonyms: Vec<Synonym>,
+
     pub translations: Vec<Translation>, // used in glossary
 }
 
@@ -114,6 +116,15 @@ pub struct Form {
     pub tags: Vec<Tag>,
     #[serde(skip_serializing_if = "Vec::is_empty")]
     pub ruby: Vec<(String, String)>, // [ja] (kanji, hiragana)
+}
+
+#[derive(Debug, Deserialize, Serialize, Default, Clone)]
+#[serde(default)]
+#[derive(rkyv::Archive, rkyv::Deserialize, rkyv::Serialize)]
+pub struct Synonym {
+    pub word: String,
+    #[serde(skip_serializing_if = "Vec::is_empty")]
+    pub tags: Vec<Tag>,
 }
 
 #[derive(Debug, Deserialize, Serialize, Default)]

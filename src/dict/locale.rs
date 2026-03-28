@@ -88,3 +88,29 @@ pub fn localize_grammar_string(target: Lang) -> &'static str {
         _ => "Grammar",
     }
 }
+
+/// Localize Synonyms
+pub fn localize_synonyms_string(target: Lang) -> &'static str {
+    match target {
+        Lang::Zh => "同义词",
+        Lang::Cs => "Synonyma",
+        Lang::Nl => "Synoniemen",
+        Lang::Fr => "Synonymes",
+        Lang::De => "Synonyme",
+        Lang::El => "Συνώνυμα",
+        Lang::Id => "Sinonim",
+        Lang::It => "Sinonimi",
+        Lang::Ja => "類義語",
+        Lang::Ko => "동의어",
+        Lang::Ku => "Hevwate",
+        Lang::Ms => "Sinonim",
+        Lang::Pl => "Synonimy",
+        Lang::Pt => "Sinónimos",
+        Lang::Ru => "Синонимы",
+        Lang::Es => "Sinónimos",
+        Lang::Th => "คำพ้องความหมาย",
+        Lang::Tr => "Eş anlamlılar",
+        Lang::Vi => "Từ đồng nghĩa",
+        _ => "Synonyms",
+    }
+}
