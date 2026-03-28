@@ -32,6 +32,17 @@
             "feminine",
             "singular"
           ],
+          "synonyms": [
+            {
+              "word": "fissata"
+            },
+            {
+              "word": "stabile"
+            },
+            {
+              "word": "salda"
+            }
+          ],
           "etymology_text": "vedi fisso",
           "wlink": "https://it.wiktionary.org/wiki/fissa#Italian",
           "klink": "https://kaikki.org/itwiktionary/All%20languages%20combined/meaning/f/fi/fissa.html"
@@ -62,6 +73,17 @@
           "tags": [
             "feminine",
             "singular"
+          ],
+          "synonyms": [
+            {
+              "word": "attenzione"
+            },
+            {
+              "word": "cautela"
+            },
+            {
+              "word": "coscienza"
+            }
           ],
           "etymology_text": "dal latino cūra",
           "wlink": "https://it.wiktionary.org/wiki/cura#Italian",

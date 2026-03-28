@@ -6,6 +6,17 @@
           "gloss_tree": {
             "酒的一種，以大麥芽和啤酒花為主要原料，經酵母發酵製成。酒精含量2%～7.5%。": {}
           },
+          "synonyms": [
+            {
+              "word": "啤的"
+            },
+            {
+              "word": "畢威"
+            },
+            {
+              "word": "畢露"
+            }
+          ],
           "etymology_text": "源自啤 (pí, “英語 beer 或德語 Bier 的音譯，經由上海話”) + 酒 (jiǔ)。",
           "wlink": "https://zh.wiktionary.org/wiki/啤酒#Chinese",
           "klink": "https://kaikki.org/zhwiktionary/All%20languages%20combined/meaning/啤/啤酒/啤酒.html"

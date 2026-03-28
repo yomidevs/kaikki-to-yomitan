@@ -21,6 +21,11 @@
           "tags": [
             "masculine"
           ],
+          "synonyms": [
+            {
+              "word": "Rock 'n' Roll"
+            }
+          ],
           "etymology_text": "in den 50er Jahren des 20. Jahrhunderts von englisch rock ^(→ en) Rock 'n' Roll entlehnt, einem amerikanischen Slang-Ausdruck, nach den Schaukelbewegungen der Schiffe (to rock = stampfen und to roll = rollen)",
           "wlink": "https://de.wiktionary.org/wiki/Rock#German",
           "klink": "https://kaikki.org/dewiktionary/All%20languages%20combined/meaning/R/Ro/Rock.html"
@@ -43,6 +48,11 @@
           },
           "tags": [
             "masculine"
+          ],
+          "synonyms": [
+            {
+              "word": "Simurgh"
+            }
           ],
           "etymology_text": "von arabisch/persisch ruh, roh entlehnt, = arabisch: الرُخّ (ar-ruchch, aus dem Persischen)",
           "wlink": "https://de.wiktionary.org/wiki/Rock#German",
@@ -178,6 +188,11 @@
           },
           "tags": [
             "feminine"
+          ],
+          "synonyms": [
+            {
+              "word": "Autowerkstatt"
+            }
           ],
           "etymology_text": "seit dem 20. Jahrhundert bezeugte Entlehnung aus gleichbedeutendem französisch garage ^(→ fr) m, eigentlich „(das) Ausweichen, Ausweichstelle“; dieses ist eine deverbative Ableitung von französisch garer ^(→ fr) „in eine sichere Verwahrstelle bringen; in Sicherheit bringen; ausweichen“, das seinerseits aus okzitanisch garar ^(→ oc) „Acht geben, bewahren“ übernommen wurde; dieses entstammt entweder mit Übergang von w- zu g- der (nicht belegbaren, aber rekonstruierten) germanischen Form *war-ō- „beachten“ (vergleiche »wahren«) oder dem lateinischen varāre ^(→ la) „ausweichen“ (zu lateinisch vārus ^(→ la) „auseinandergebogen“)",
           "wlink": "https://de.wiktionary.org/wiki/Garage#German",
@@ -392,6 +407,17 @@
               ]
             }
           },
+          "synonyms": [
+            {
+              "word": "verabreden"
+            },
+            {
+              "word": "vereinbaren"
+            },
+            {
+              "word": "abmachen"
+            }
+          ],
           "etymology_text": "gebildet aus der Partikel aus als Verbzusatz und dem Verb machen",
           "wlink": "https://de.wiktionary.org/wiki/ausmachen#German",
           "klink": "https://kaikki.org/dewiktionary/All%20languages%20combined/meaning/a/au/ausmachen.html"
@@ -537,6 +563,17 @@
               ]
             }
           },
+          "synonyms": [
+            {
+              "word": "jetzt"
+            },
+            {
+              "word": "augenblicklich"
+            },
+            {
+              "word": "gegenwärtig"
+            }
+          ],
           "etymology_text": "über mittelhochdeutsch nū̆(n) ^(→ gmh) aus althochdeutsch nū̆ ^(→ goh), „wahrscheinlich ablautend verwandt mit neu; vgl. griechisch ný ^(→ el), nỹn ^(→ el) = jetzt“; oder unter anderem (im 8. Jahrhundert) aus althochdeutsch nū̌ ^(→ goh) und nl. nu",
           "wlink": "https://de.wiktionary.org/wiki/nun#German",
           "klink": "https://kaikki.org/dewiktionary/All%20languages%20combined/meaning/n/nu/nun.html"
@@ -828,6 +865,17 @@
               ]
             }
           },
+          "synonyms": [
+            {
+              "word": "an"
+            },
+            {
+              "word": "auf"
+            },
+            {
+              "word": "nach"
+            }
+          ],
           "etymology_text": "mittelhochdeutsch in, althochdeutsch in, belegt seit dem 8. Jahrhundert, geht auf germanisch *in zurück",
           "wlink": "https://de.wiktionary.org/wiki/in#German",
           "klink": "https://kaikki.org/dewiktionary/All%20languages%20combined/meaning/i/in/in.html"

@@ -132,6 +132,23 @@ details[data-sc-content^="details-entry-Etymology"] summary[data-sc-content="sum
     font-weight: bold;
 }
 
+/* Make the label bold, and group synonyms inline, separated by ' • ' */
+div[data-sc-content="synonyms"] div[data-sc-content="synonyms-label"] {
+    font-weight: bold;
+    display: block;
+    margin-top: 0.3em;
+}
+div[data-sc-content="synonyms"] ul[data-sc-content="synonyms-list"] {
+    list-style: none;
+    padding-left: 1.5em;
+}
+div[data-sc-content="synonyms"] ul[data-sc-content="synonyms-list"] li {
+    display: inline;
+}
+div[data-sc-content="synonyms"] ul[data-sc-content="synonyms-list"] li:not(:last-child)::after {
+    content: " • ";
+}
+
 details[data-sc-content^="details-entry"][open=""] summary[data-sc-content="summary-entry"] {
     color: var(--text-color);
 }
