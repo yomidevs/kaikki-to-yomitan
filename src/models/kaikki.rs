@@ -2,6 +2,7 @@
 //!
 //! Non-en JSON schemas:
 //! <https://tatuylonen.github.io/wiktextract>
+//! <https://tatuylonen.github.io/wiktextract/compare_schemas.html>
 //!
 //! There is no EN JSON schema but there are some approximations:
 //! <https://kaikki.org/dictionary/errors/mapping/index.html>
@@ -118,6 +119,10 @@ pub struct Form {
     pub ruby: Vec<(String, String)>, // [ja] (kanji, hiragana)
 }
 
+// * We don't extract Synonyms in Senses, even though some editions use them.
+// * We also don't disambiguate to which Sense matches a certain Synonym because
+// the wiktextract field sense_index is sometimes an int / sometimes a String.
+// TODO: report / fix the above in wiktextract...
 #[derive(Debug, Deserialize, Serialize, Default, Clone)]
 #[serde(default)]
 #[derive(rkyv::Archive, rkyv::Deserialize, rkyv::Serialize)]
