@@ -18,6 +18,8 @@ impl Code for Edition {}
 
 #[derive(Debug, Clone, Copy, Serialize, Deserialize, PartialEq, Eq, Hash)]
 pub enum Lang {
+    /// Afrikaans
+    Af,
     /// Albanian
     Sq,
     /// Egyptian Arabic
@@ -46,6 +48,8 @@ pub enum Lang {
     Be,
     /// Bengali
     Bn,
+    /// Central Bikol
+    Bcl,
     /// Bulgarian
     Bg,
     /// Burmese
@@ -64,6 +68,8 @@ pub enum Lang {
     Da,
     /// Dutch
     Nl,
+    /// Egyptian
+    Egy,
     /// English
     En,
     /// Middle English
@@ -76,10 +82,14 @@ pub enum Lang {
     Eo,
     /// Estonian
     Et,
+    /// Faroese
+    Fo,
     /// Finnish
     Fi,
     /// French
     Fr,
+    /// Old French
+    Fro,
     /// Galician
     Gl,
     /// Georgian
@@ -92,6 +102,8 @@ pub enum Lang {
     El,
     /// Ancient Greek
     Grc,
+    /// Gujarati
+    Gu,
     /// Hawaiian
     Haw,
     /// Hebrew
@@ -106,6 +118,8 @@ pub enum Lang {
     Io,
     /// Indonesian
     Id,
+    /// Ingrian
+    Izh,
     /// Irish
     Ga,
     /// Old Irish
@@ -124,6 +138,10 @@ pub enum Lang {
     Ko,
     /// Kurdish
     Ku,
+    /// Northern Kurdish
+    Kmr,
+    /// Ladin
+    Lld,
     /// Lao
     Lo,
     /// Latin
@@ -132,6 +150,8 @@ pub enum Lang {
     Lv,
     /// Lithuanian
     Lt,
+    /// Luxembourgish
+    Lb,
     /// Macedonian
     Mk,
     /// Malay
@@ -146,6 +166,8 @@ pub enum Lang {
     Mn,
     /// Navajo
     Nv,
+    /// Norman
+    Nrf,
     /// Norwegian
     No,
     /// Norwegian Bokmål
@@ -156,6 +178,8 @@ pub enum Lang {
     Non,
     /// Pali
     Pi,
+    /// Pannonian Rusyn
+    Rsk,
     /// Persian
     Fa,
     /// Polish
@@ -186,6 +210,8 @@ pub enum Lang {
     Sw,
     /// Swedish
     Sv,
+    /// Classical Syriac
+    Syc,
     /// Tagalog
     Tl,
     /// Tamil
@@ -210,6 +236,8 @@ pub enum Lang {
     Cy,
     /// Yiddish
     Yi,
+    /// Yoruba
+    Yo,
 }
 
 impl From<Edition> for Lang {
@@ -242,11 +270,11 @@ impl From<Edition> for Lang {
 
 impl Lang {
     pub const fn help_isos() -> &'static str {
-        "Supported isos: sq | arz | afb | ar | apc | ajp | hy | xcl | aii | ast | az | eu | be | bn | bg | my | yue | ca | ceb | zh | cs | da | nl | en | enm | ang | simple | eo | et | fi | fr | gl | ka | de | got | el | grc | haw | he | hi | hu | is | io | id | ga | sga | it | ja | kn | kk | km | ko | ku | lo | la | lv | lt | mk | ms | ml | mt | mr | mn | nv | no | nb | nn | non | pi | fa | pl | pt | pa | ro | ru | sa | gd | sh | scn | sk | sl | es | sw | sv | tl | ta | te | th | tok | tr | ota | uk | ur | vi | cy | yi"
+        "Supported isos: af | sq | arz | afb | ar | apc | ajp | hy | xcl | aii | ast | az | eu | be | bn | bcl | bg | my | yue | ca | ceb | zh | cs | da | nl | egy | en | enm | ang | simple | eo | et | fo | fi | fr | fro | gl | ka | de | got | el | grc | gu | haw | he | hi | hu | is | io | id | izh | ga | sga | it | ja | kn | kk | km | ko | ku | kmr | lld | lo | la | lv | lt | lb | mk | ms | ml | mt | mr | mn | nv | nrf | no | nb | nn | non | pi | rsk | fa | pl | pt | pa | ro | ru | sa | gd | sh | scn | sk | sl | es | sw | sv | syc | tl | ta | te | th | tok | tr | ota | uk | ur | vi | cy | yi | yo"
     }
 
     pub const fn help_isos_coloured() -> &'static str {
-        "Supported isos: sq | arz | afb | ar | apc | ajp | hy | xcl | aii | ast | az | eu | be | bn | bg | my | yue | ca | ceb | [32mzh[0m | [32mcs[0m | da | [32mnl[0m | [32men[0m | enm | ang | [32msimple[0m | eo | et | fi | [32mfr[0m | gl | ka | [32mde[0m | got | [32mel[0m | grc | haw | he | hi | hu | is | io | [32mid[0m | ga | sga | [32mit[0m | [32mja[0m | kn | kk | km | [32mko[0m | [32mku[0m | lo | la | lv | lt | mk | [32mms[0m | ml | mt | mr | mn | nv | no | nb | nn | non | pi | fa | [32mpl[0m | [32mpt[0m | pa | ro | [32mru[0m | sa | gd | sh | scn | sk | sl | [32mes[0m | sw | sv | tl | ta | te | [32mth[0m | tok | [32mtr[0m | ota | uk | ur | [32mvi[0m | cy | yi"
+        "Supported isos: af | sq | arz | afb | ar | apc | ajp | hy | xcl | aii | ast | az | eu | be | bn | bcl | bg | my | yue | ca | ceb | [32mzh[0m | [32mcs[0m | da | [32mnl[0m | egy | [32men[0m | enm | ang | [32msimple[0m | eo | et | fo | fi | [32mfr[0m | fro | gl | ka | [32mde[0m | got | [32mel[0m | grc | gu | haw | he | hi | hu | is | io | [32mid[0m | izh | ga | sga | [32mit[0m | [32mja[0m | kn | kk | km | [32mko[0m | [32mku[0m | kmr | lld | lo | la | lv | lt | lb | mk | [32mms[0m | ml | mt | mr | mn | nv | nrf | no | nb | nn | non | pi | rsk | fa | [32mpl[0m | [32mpt[0m | pa | ro | [32mru[0m | sa | gd | sh | scn | sk | sl | [32mes[0m | sw | sv | syc | tl | ta | te | [32mth[0m | tok | [32mtr[0m | ota | uk | ur | [32mvi[0m | cy | yi | yo"
     }
 
     pub const fn help_editions() -> &'static str {
@@ -255,6 +283,7 @@ impl Lang {
 
     pub const fn long(&self) -> &'static str {
         match self {
+            Self::Af => "Afrikaans",
             Self::Sq => "Albanian",
             Self::Arz => "Egyptian Arabic",
             Self::Afb => "Gulf Arabic",
@@ -269,6 +298,7 @@ impl Lang {
             Self::Eu => "Basque",
             Self::Be => "Belarusian",
             Self::Bn => "Bengali",
+            Self::Bcl => "Central Bikol",
             Self::Bg => "Bulgarian",
             Self::My => "Burmese",
             Self::Yue => "Cantonese",
@@ -278,20 +308,24 @@ impl Lang {
             Self::Cs => "Czech",
             Self::Da => "Danish",
             Self::Nl => "Dutch",
+            Self::Egy => "Egyptian",
             Self::En => "English",
             Self::Enm => "Middle English",
             Self::Ang => "Old English",
             Self::Simple => "Simple English",
             Self::Eo => "Esperanto",
             Self::Et => "Estonian",
+            Self::Fo => "Faroese",
             Self::Fi => "Finnish",
             Self::Fr => "French",
+            Self::Fro => "Old French",
             Self::Gl => "Galician",
             Self::Ka => "Georgian",
             Self::De => "German",
             Self::Got => "Gothic",
             Self::El => "Greek",
             Self::Grc => "Ancient Greek",
+            Self::Gu => "Gujarati",
             Self::Haw => "Hawaiian",
             Self::He => "Hebrew",
             Self::Hi => "Hindi",
@@ -299,6 +333,7 @@ impl Lang {
             Self::Is => "Icelandic",
             Self::Io => "Ido",
             Self::Id => "Indonesian",
+            Self::Izh => "Ingrian",
             Self::Ga => "Irish",
             Self::Sga => "Old Irish",
             Self::It => "Italian",
@@ -308,10 +343,13 @@ impl Lang {
             Self::Km => "Khmer",
             Self::Ko => "Korean",
             Self::Ku => "Kurdish",
+            Self::Kmr => "Northern Kurdish",
+            Self::Lld => "Ladin",
             Self::Lo => "Lao",
             Self::La => "Latin",
             Self::Lv => "Latvian",
             Self::Lt => "Lithuanian",
+            Self::Lb => "Luxembourgish",
             Self::Mk => "Macedonian",
             Self::Ms => "Malay",
             Self::Ml => "Malayalam",
@@ -319,11 +357,13 @@ impl Lang {
             Self::Mr => "Marathi",
             Self::Mn => "Mongolian",
             Self::Nv => "Navajo",
+            Self::Nrf => "Norman",
             Self::No => "Norwegian",
             Self::Nb => "Norwegian Bokmål",
             Self::Nn => "Norwegian Nynorsk",
             Self::Non => "Old Norse",
             Self::Pi => "Pali",
+            Self::Rsk => "Pannonian Rusyn",
             Self::Fa => "Persian",
             Self::Pl => "Polish",
             Self::Pt => "Portuguese",
@@ -339,6 +379,7 @@ impl Lang {
             Self::Es => "Spanish",
             Self::Sw => "Swahili",
             Self::Sv => "Swedish",
+            Self::Syc => "Classical Syriac",
             Self::Tl => "Tagalog",
             Self::Ta => "Tamil",
             Self::Te => "Telugu",
@@ -351,11 +392,13 @@ impl Lang {
             Self::Vi => "Vietnamese",
             Self::Cy => "Welsh",
             Self::Yi => "Yiddish",
+            Self::Yo => "Yoruba",
         }
     }
 
     pub fn all() -> Vec<Self> {
         vec![
+            Self::Af,
             Self::Sq,
             Self::Arz,
             Self::Afb,
@@ -370,6 +413,7 @@ impl Lang {
             Self::Eu,
             Self::Be,
             Self::Bn,
+            Self::Bcl,
             Self::Bg,
             Self::My,
             Self::Yue,
@@ -379,20 +423,24 @@ impl Lang {
             Self::Cs,
             Self::Da,
             Self::Nl,
+            Self::Egy,
             Self::En,
             Self::Enm,
             Self::Ang,
             Self::Simple,
             Self::Eo,
             Self::Et,
+            Self::Fo,
             Self::Fi,
             Self::Fr,
+            Self::Fro,
             Self::Gl,
             Self::Ka,
             Self::De,
             Self::Got,
             Self::El,
             Self::Grc,
+            Self::Gu,
             Self::Haw,
             Self::He,
             Self::Hi,
@@ -400,6 +448,7 @@ impl Lang {
             Self::Is,
             Self::Io,
             Self::Id,
+            Self::Izh,
             Self::Ga,
             Self::Sga,
             Self::It,
@@ -409,10 +458,13 @@ impl Lang {
             Self::Km,
             Self::Ko,
             Self::Ku,
+            Self::Kmr,
+            Self::Lld,
             Self::Lo,
             Self::La,
             Self::Lv,
             Self::Lt,
+            Self::Lb,
             Self::Mk,
             Self::Ms,
             Self::Ml,
@@ -420,11 +472,13 @@ impl Lang {
             Self::Mr,
             Self::Mn,
             Self::Nv,
+            Self::Nrf,
             Self::No,
             Self::Nb,
             Self::Nn,
             Self::Non,
             Self::Pi,
+            Self::Rsk,
             Self::Fa,
             Self::Pl,
             Self::Pt,
@@ -440,6 +494,7 @@ impl Lang {
             Self::Es,
             Self::Sw,
             Self::Sv,
+            Self::Syc,
             Self::Tl,
             Self::Ta,
             Self::Te,
@@ -452,6 +507,7 @@ impl Lang {
             Self::Vi,
             Self::Cy,
             Self::Yi,
+            Self::Yo,
         ]
     }
 }
@@ -492,6 +548,7 @@ impl FromStr for Lang {
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
         match s.to_lowercase().as_str() {
+            "af" => Ok(Self::Af),
             "sq" => Ok(Self::Sq),
             "arz" => Ok(Self::Arz),
             "afb" => Ok(Self::Afb),
@@ -506,6 +563,7 @@ impl FromStr for Lang {
             "eu" => Ok(Self::Eu),
             "be" => Ok(Self::Be),
             "bn" => Ok(Self::Bn),
+            "bcl" => Ok(Self::Bcl),
             "bg" => Ok(Self::Bg),
             "my" => Ok(Self::My),
             "yue" => Ok(Self::Yue),
@@ -515,20 +573,24 @@ impl FromStr for Lang {
             "cs" => Ok(Self::Cs),
             "da" => Ok(Self::Da),
             "nl" => Ok(Self::Nl),
+            "egy" => Ok(Self::Egy),
             "en" => Ok(Self::En),
             "enm" => Ok(Self::Enm),
             "ang" => Ok(Self::Ang),
             "simple" => Ok(Self::Simple),
             "eo" => Ok(Self::Eo),
             "et" => Ok(Self::Et),
+            "fo" => Ok(Self::Fo),
             "fi" => Ok(Self::Fi),
             "fr" => Ok(Self::Fr),
+            "fro" => Ok(Self::Fro),
             "gl" => Ok(Self::Gl),
             "ka" => Ok(Self::Ka),
             "de" => Ok(Self::De),
             "got" => Ok(Self::Got),
             "el" => Ok(Self::El),
             "grc" => Ok(Self::Grc),
+            "gu" => Ok(Self::Gu),
             "haw" => Ok(Self::Haw),
             "he" => Ok(Self::He),
             "hi" => Ok(Self::Hi),
@@ -536,6 +598,7 @@ impl FromStr for Lang {
             "is" => Ok(Self::Is),
             "io" => Ok(Self::Io),
             "id" => Ok(Self::Id),
+            "izh" => Ok(Self::Izh),
             "ga" => Ok(Self::Ga),
             "sga" => Ok(Self::Sga),
             "it" => Ok(Self::It),
@@ -545,10 +608,13 @@ impl FromStr for Lang {
             "km" => Ok(Self::Km),
             "ko" => Ok(Self::Ko),
             "ku" => Ok(Self::Ku),
+            "kmr" => Ok(Self::Kmr),
+            "lld" => Ok(Self::Lld),
             "lo" => Ok(Self::Lo),
             "la" => Ok(Self::La),
             "lv" => Ok(Self::Lv),
             "lt" => Ok(Self::Lt),
+            "lb" => Ok(Self::Lb),
             "mk" => Ok(Self::Mk),
             "ms" => Ok(Self::Ms),
             "ml" => Ok(Self::Ml),
@@ -556,11 +622,13 @@ impl FromStr for Lang {
             "mr" => Ok(Self::Mr),
             "mn" => Ok(Self::Mn),
             "nv" => Ok(Self::Nv),
+            "nrf" => Ok(Self::Nrf),
             "no" => Ok(Self::No),
             "nb" => Ok(Self::Nb),
             "nn" => Ok(Self::Nn),
             "non" => Ok(Self::Non),
             "pi" => Ok(Self::Pi),
+            "rsk" => Ok(Self::Rsk),
             "fa" => Ok(Self::Fa),
             "pl" => Ok(Self::Pl),
             "pt" => Ok(Self::Pt),
@@ -576,6 +644,7 @@ impl FromStr for Lang {
             "es" => Ok(Self::Es),
             "sw" => Ok(Self::Sw),
             "sv" => Ok(Self::Sv),
+            "syc" => Ok(Self::Syc),
             "tl" => Ok(Self::Tl),
             "ta" => Ok(Self::Ta),
             "te" => Ok(Self::Te),
@@ -588,6 +657,7 @@ impl FromStr for Lang {
             "vi" => Ok(Self::Vi),
             "cy" => Ok(Self::Cy),
             "yi" => Ok(Self::Yi),
+            "yo" => Ok(Self::Yo),
             _ => Err(format!("unsupported iso code '{s}'\n{}", Self::help_isos())),
         }
     }
@@ -596,6 +666,7 @@ impl FromStr for Lang {
 impl AsRef<str> for Lang {
     fn as_ref(&self) -> &str {
         match self {
+            Self::Af => "af",
             Self::Sq => "sq",
             Self::Arz => "arz",
             Self::Afb => "afb",
@@ -610,6 +681,7 @@ impl AsRef<str> for Lang {
             Self::Eu => "eu",
             Self::Be => "be",
             Self::Bn => "bn",
+            Self::Bcl => "bcl",
             Self::Bg => "bg",
             Self::My => "my",
             Self::Yue => "yue",
@@ -619,20 +691,24 @@ impl AsRef<str> for Lang {
             Self::Cs => "cs",
             Self::Da => "da",
             Self::Nl => "nl",
+            Self::Egy => "egy",
             Self::En => "en",
             Self::Enm => "enm",
             Self::Ang => "ang",
             Self::Simple => "simple",
             Self::Eo => "eo",
             Self::Et => "et",
+            Self::Fo => "fo",
             Self::Fi => "fi",
             Self::Fr => "fr",
+            Self::Fro => "fro",
             Self::Gl => "gl",
             Self::Ka => "ka",
             Self::De => "de",
             Self::Got => "got",
             Self::El => "el",
             Self::Grc => "grc",
+            Self::Gu => "gu",
             Self::Haw => "haw",
             Self::He => "he",
             Self::Hi => "hi",
@@ -640,6 +716,7 @@ impl AsRef<str> for Lang {
             Self::Is => "is",
             Self::Io => "io",
             Self::Id => "id",
+            Self::Izh => "izh",
             Self::Ga => "ga",
             Self::Sga => "sga",
             Self::It => "it",
@@ -649,10 +726,13 @@ impl AsRef<str> for Lang {
             Self::Km => "km",
             Self::Ko => "ko",
             Self::Ku => "ku",
+            Self::Kmr => "kmr",
+            Self::Lld => "lld",
             Self::Lo => "lo",
             Self::La => "la",
             Self::Lv => "lv",
             Self::Lt => "lt",
+            Self::Lb => "lb",
             Self::Mk => "mk",
             Self::Ms => "ms",
             Self::Ml => "ml",
@@ -660,11 +740,13 @@ impl AsRef<str> for Lang {
             Self::Mr => "mr",
             Self::Mn => "mn",
             Self::Nv => "nv",
+            Self::Nrf => "nrf",
             Self::No => "no",
             Self::Nb => "nb",
             Self::Nn => "nn",
             Self::Non => "non",
             Self::Pi => "pi",
+            Self::Rsk => "rsk",
             Self::Fa => "fa",
             Self::Pl => "pl",
             Self::Pt => "pt",
@@ -680,6 +762,7 @@ impl AsRef<str> for Lang {
             Self::Es => "es",
             Self::Sw => "sw",
             Self::Sv => "sv",
+            Self::Syc => "syc",
             Self::Tl => "tl",
             Self::Ta => "ta",
             Self::Te => "te",
@@ -692,6 +775,7 @@ impl AsRef<str> for Lang {
             Self::Vi => "vi",
             Self::Cy => "cy",
             Self::Yi => "yi",
+            Self::Yo => "yo",
         }
     }
 }

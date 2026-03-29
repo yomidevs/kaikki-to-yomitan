@@ -620,13 +620,14 @@ def check_kaikki_langs(langs: list[Lang]) -> None:
     import requests
 
     url = "https://kaikki.org/dictionary/"
+    print(f"Checking for unsupported langs @ {url}")
     response = requests.get(url)
     response.raise_for_status()
     response.encoding = "utf-8"
     text = response.text
 
     supported = {lang.language for lang in langs}
-    upto = 80
+    upto = 100
 
     # Get names (isos are not in the website)
     matches = re.findall(
