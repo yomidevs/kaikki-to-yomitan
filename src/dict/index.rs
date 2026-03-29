@@ -71,7 +71,7 @@ pub fn get_index(
   "revision": "{current_date}",
   "sequenced": true,
   "author": "wty contributors",
-  "url": "https://github.com/daxida/wty",
+  "url": "https://github.com/yomidevs/wiktionary-to-yomitan",
   "description": "Dictionaries for various language pairs generated from Wiktionary data, via Kaikki and wty.",
   "attribution": "https://kaikki.org/",
   "sourceLanguage": "{source_str}",
