@@ -7,7 +7,8 @@
   <td><div class="dl-source-combobox">
   <input class="dl-source-search" placeholder="Search source..." autocomplete="off">
   <div class="dl-source-dropdown">
-    <option value="sq">Albanian</option>
+    <option value="af">Afrikaans</option>
+  <option value="sq">Albanian</option>
   <option value="arz">Arabic, Egyptian</option>
   <option value="afb">Arabic, Gulf</option>
   <option value="ar">Arabic, MSA</option>
@@ -21,6 +22,7 @@
   <option value="eu">Basque</option>
   <option value="be">Belarusian</option>
   <option value="bn">Bengali</option>
+  <option value="bcl">Bikol, Central</option>
   <option value="bg">Bulgarian</option>
   <option value="my">Burmese</option>
   <option value="yue">Cantonese</option>
@@ -30,20 +32,24 @@
   <option value="cs">Czech</option>
   <option value="da">Danish</option>
   <option value="nl">Dutch</option>
+  <option value="egy">Egyptian</option>
   <option value="en">English</option>
   <option value="enm">English, Middle</option>
   <option value="ang">English, Old</option>
   <option value="simple">English, Simple</option>
   <option value="eo">Esperanto</option>
   <option value="et">Estonian</option>
+  <option value="fo">Faroese</option>
   <option value="fi">Finnish</option>
   <option value="fr">French</option>
+  <option value="fro">French, Old</option>
   <option value="gl">Galician</option>
   <option value="ka">Georgian</option>
   <option value="de">German</option>
   <option value="got">Gothic</option>
   <option value="el">Greek</option>
   <option value="grc">Greek, Ancient</option>
+  <option value="gu">Gujarati</option>
   <option value="haw">Hawaiian</option>
   <option value="he">Hebrew</option>
   <option value="hi">Hindi</option>
@@ -51,6 +57,7 @@
   <option value="is">Icelandic</option>
   <option value="io">Ido</option>
   <option value="id">Indonesian</option>
+  <option value="izh">Ingrian</option>
   <option value="ga">Irish</option>
   <option value="sga">Irish, Old</option>
   <option value="it">Italian</option>
@@ -60,10 +67,13 @@
   <option value="km">Khmer</option>
   <option value="ko">Korean</option>
   <option value="ku">Kurdish</option>
+  <option value="kmr">Kurdish, Northern</option>
+  <option value="lld">Ladin</option>
   <option value="lo">Lao</option>
   <option value="la">Latin</option>
   <option value="lv">Latvian</option>
   <option value="lt">Lithuanian</option>
+  <option value="lb">Luxembourgish</option>
   <option value="mk">Macedonian</option>
   <option value="ms">Malay</option>
   <option value="ml">Malayalam</option>
@@ -71,11 +81,13 @@
   <option value="mr">Marathi</option>
   <option value="mn">Mongolian</option>
   <option value="nv">Navajo</option>
+  <option value="nrf">Norman</option>
   <option value="no">Norwegian</option>
   <option value="nb">Norwegian, Bokmål</option>
   <option value="nn">Norwegian, Nynorsk</option>
   <option value="non">Old Norse</option>
   <option value="pi">Pali</option>
+  <option value="rsk">Pannonian Rusyn</option>
   <option value="fa">Persian</option>
   <option value="pl">Polish</option>
   <option value="pt">Portuguese</option>
@@ -91,6 +103,7 @@
   <option value="es">Spanish</option>
   <option value="sw">Swahili</option>
   <option value="sv">Swedish</option>
+  <option value="syc">Syriac, Classical</option>
   <option value="tl">Tagalog</option>
   <option value="ta">Tamil</option>
   <option value="te">Telugu</option>
@@ -103,6 +116,7 @@
   <option value="vi">Vietnamese</option>
   <option value="cy">Welsh</option>
   <option value="yi">Yiddish</option>
+  <option value="yo">Yoruba</option>
   </div>
   <input type="hidden" class="dl-source">
 </div></td>
@@ -141,7 +155,8 @@
   <td><div class="dl-source-combobox">
   <input class="dl-source-search" placeholder="Search source..." autocomplete="off">
   <div class="dl-source-dropdown">
-    <option value="sq">Albanian</option>
+    <option value="af">Afrikaans</option>
+  <option value="sq">Albanian</option>
   <option value="arz">Arabic, Egyptian</option>
   <option value="afb">Arabic, Gulf</option>
   <option value="ar">Arabic, MSA</option>
@@ -155,6 +170,7 @@
   <option value="eu">Basque</option>
   <option value="be">Belarusian</option>
   <option value="bn">Bengali</option>
+  <option value="bcl">Bikol, Central</option>
   <option value="bg">Bulgarian</option>
   <option value="my">Burmese</option>
   <option value="yue">Cantonese</option>
@@ -164,19 +180,23 @@
   <option value="cs">Czech</option>
   <option value="da">Danish</option>
   <option value="nl">Dutch</option>
+  <option value="egy">Egyptian</option>
   <option value="en">English</option>
   <option value="enm">English, Middle</option>
   <option value="ang">English, Old</option>
   <option value="eo">Esperanto</option>
   <option value="et">Estonian</option>
+  <option value="fo">Faroese</option>
   <option value="fi">Finnish</option>
   <option value="fr">French</option>
+  <option value="fro">French, Old</option>
   <option value="gl">Galician</option>
   <option value="ka">Georgian</option>
   <option value="de">German</option>
   <option value="got">Gothic</option>
   <option value="el">Greek</option>
   <option value="grc">Greek, Ancient</option>
+  <option value="gu">Gujarati</option>
   <option value="haw">Hawaiian</option>
   <option value="he">Hebrew</option>
   <option value="hi">Hindi</option>
@@ -184,6 +204,7 @@
   <option value="is">Icelandic</option>
   <option value="io">Ido</option>
   <option value="id">Indonesian</option>
+  <option value="izh">Ingrian</option>
   <option value="ga">Irish</option>
   <option value="sga">Irish, Old</option>
   <option value="it">Italian</option>
@@ -193,10 +214,13 @@
   <option value="km">Khmer</option>
   <option value="ko">Korean</option>
   <option value="ku">Kurdish</option>
+  <option value="kmr">Kurdish, Northern</option>
+  <option value="lld">Ladin</option>
   <option value="lo">Lao</option>
   <option value="la">Latin</option>
   <option value="lv">Latvian</option>
   <option value="lt">Lithuanian</option>
+  <option value="lb">Luxembourgish</option>
   <option value="mk">Macedonian</option>
   <option value="ms">Malay</option>
   <option value="ml">Malayalam</option>
@@ -204,11 +228,13 @@
   <option value="mr">Marathi</option>
   <option value="mn">Mongolian</option>
   <option value="nv">Navajo</option>
+  <option value="nrf">Norman</option>
   <option value="no">Norwegian</option>
   <option value="nb">Norwegian, Bokmål</option>
   <option value="nn">Norwegian, Nynorsk</option>
   <option value="non">Old Norse</option>
   <option value="pi">Pali</option>
+  <option value="rsk">Pannonian Rusyn</option>
   <option value="fa">Persian</option>
   <option value="pl">Polish</option>
   <option value="pt">Portuguese</option>
@@ -224,6 +250,7 @@
   <option value="es">Spanish</option>
   <option value="sw">Swahili</option>
   <option value="sv">Swedish</option>
+  <option value="syc">Syriac, Classical</option>
   <option value="tl">Tagalog</option>
   <option value="ta">Tamil</option>
   <option value="te">Telugu</option>
@@ -236,6 +263,7 @@
   <option value="vi">Vietnamese</option>
   <option value="cy">Welsh</option>
   <option value="yi">Yiddish</option>
+  <option value="yo">Yoruba</option>
   </div>
   <input type="hidden" class="dl-source">
 </div></td>
@@ -274,7 +302,8 @@
   <td><div class="dl-target-combobox">
   <input class="dl-target-search" placeholder="Search target..." autocomplete="off">
   <div class="dl-target-dropdown">
-    <option value="sq">Albanian</option>
+    <option value="af">Afrikaans</option>
+  <option value="sq">Albanian</option>
   <option value="arz">Arabic, Egyptian</option>
   <option value="afb">Arabic, Gulf</option>
   <option value="ar">Arabic, MSA</option>
@@ -288,6 +317,7 @@
   <option value="eu">Basque</option>
   <option value="be">Belarusian</option>
   <option value="bn">Bengali</option>
+  <option value="bcl">Bikol, Central</option>
   <option value="bg">Bulgarian</option>
   <option value="my">Burmese</option>
   <option value="yue">Cantonese</option>
@@ -297,19 +327,23 @@
   <option value="cs">Czech</option>
   <option value="da">Danish</option>
   <option value="nl">Dutch</option>
+  <option value="egy">Egyptian</option>
   <option value="en">English</option>
   <option value="enm">English, Middle</option>
   <option value="ang">English, Old</option>
   <option value="eo">Esperanto</option>
   <option value="et">Estonian</option>
+  <option value="fo">Faroese</option>
   <option value="fi">Finnish</option>
   <option value="fr">French</option>
+  <option value="fro">French, Old</option>
   <option value="gl">Galician</option>
   <option value="ka">Georgian</option>
   <option value="de">German</option>
   <option value="got">Gothic</option>
   <option value="el">Greek</option>
   <option value="grc">Greek, Ancient</option>
+  <option value="gu">Gujarati</option>
   <option value="haw">Hawaiian</option>
   <option value="he">Hebrew</option>
   <option value="hi">Hindi</option>
@@ -317,6 +351,7 @@
   <option value="is">Icelandic</option>
   <option value="io">Ido</option>
   <option value="id">Indonesian</option>
+  <option value="izh">Ingrian</option>
   <option value="ga">Irish</option>
   <option value="sga">Irish, Old</option>
   <option value="it">Italian</option>
@@ -326,10 +361,13 @@
   <option value="km">Khmer</option>
   <option value="ko">Korean</option>
   <option value="ku">Kurdish</option>
+  <option value="kmr">Kurdish, Northern</option>
+  <option value="lld">Ladin</option>
   <option value="lo">Lao</option>
   <option value="la">Latin</option>
   <option value="lv">Latvian</option>
   <option value="lt">Lithuanian</option>
+  <option value="lb">Luxembourgish</option>
   <option value="mk">Macedonian</option>
   <option value="ms">Malay</option>
   <option value="ml">Malayalam</option>
@@ -337,11 +375,13 @@
   <option value="mr">Marathi</option>
   <option value="mn">Mongolian</option>
   <option value="nv">Navajo</option>
+  <option value="nrf">Norman</option>
   <option value="no">Norwegian</option>
   <option value="nb">Norwegian, Bokmål</option>
   <option value="nn">Norwegian, Nynorsk</option>
   <option value="non">Old Norse</option>
   <option value="pi">Pali</option>
+  <option value="rsk">Pannonian Rusyn</option>
   <option value="fa">Persian</option>
   <option value="pl">Polish</option>
   <option value="pt">Portuguese</option>
@@ -357,6 +397,7 @@
   <option value="es">Spanish</option>
   <option value="sw">Swahili</option>
   <option value="sv">Swedish</option>
+  <option value="syc">Syriac, Classical</option>
   <option value="tl">Tagalog</option>
   <option value="ta">Tamil</option>
   <option value="te">Telugu</option>
@@ -369,6 +410,7 @@
   <option value="vi">Vietnamese</option>
   <option value="cy">Welsh</option>
   <option value="yi">Yiddish</option>
+  <option value="yo">Yoruba</option>
   </div>
   <input type="hidden" class="dl-target">
 </div></td>
@@ -406,7 +448,8 @@
   <td><div class="dl-target-combobox">
   <input class="dl-target-search" placeholder="Search target..." autocomplete="off">
   <div class="dl-target-dropdown">
-    <option value="sq">Albanian</option>
+    <option value="af">Afrikaans</option>
+  <option value="sq">Albanian</option>
   <option value="arz">Arabic, Egyptian</option>
   <option value="afb">Arabic, Gulf</option>
   <option value="ar">Arabic, MSA</option>
@@ -420,6 +463,7 @@
   <option value="eu">Basque</option>
   <option value="be">Belarusian</option>
   <option value="bn">Bengali</option>
+  <option value="bcl">Bikol, Central</option>
   <option value="bg">Bulgarian</option>
   <option value="my">Burmese</option>
   <option value="yue">Cantonese</option>
@@ -429,19 +473,23 @@
   <option value="cs">Czech</option>
   <option value="da">Danish</option>
   <option value="nl">Dutch</option>
+  <option value="egy">Egyptian</option>
   <option value="en">English</option>
   <option value="enm">English, Middle</option>
   <option value="ang">English, Old</option>
   <option value="eo">Esperanto</option>
   <option value="et">Estonian</option>
+  <option value="fo">Faroese</option>
   <option value="fi">Finnish</option>
   <option value="fr">French</option>
+  <option value="fro">French, Old</option>
   <option value="gl">Galician</option>
   <option value="ka">Georgian</option>
   <option value="de">German</option>
   <option value="got">Gothic</option>
   <option value="el">Greek</option>
   <option value="grc">Greek, Ancient</option>
+  <option value="gu">Gujarati</option>
   <option value="haw">Hawaiian</option>
   <option value="he">Hebrew</option>
   <option value="hi">Hindi</option>
@@ -449,6 +497,7 @@
   <option value="is">Icelandic</option>
   <option value="io">Ido</option>
   <option value="id">Indonesian</option>
+  <option value="izh">Ingrian</option>
   <option value="ga">Irish</option>
   <option value="sga">Irish, Old</option>
   <option value="it">Italian</option>
@@ -458,10 +507,13 @@
   <option value="km">Khmer</option>
   <option value="ko">Korean</option>
   <option value="ku">Kurdish</option>
+  <option value="kmr">Kurdish, Northern</option>
+  <option value="lld">Ladin</option>
   <option value="lo">Lao</option>
   <option value="la">Latin</option>
   <option value="lv">Latvian</option>
   <option value="lt">Lithuanian</option>
+  <option value="lb">Luxembourgish</option>
   <option value="mk">Macedonian</option>
   <option value="ms">Malay</option>
   <option value="ml">Malayalam</option>
@@ -469,11 +521,13 @@
   <option value="mr">Marathi</option>
   <option value="mn">Mongolian</option>
   <option value="nv">Navajo</option>
+  <option value="nrf">Norman</option>
   <option value="no">Norwegian</option>
   <option value="nb">Norwegian, Bokmål</option>
   <option value="nn">Norwegian, Nynorsk</option>
   <option value="non">Old Norse</option>
   <option value="pi">Pali</option>
+  <option value="rsk">Pannonian Rusyn</option>
   <option value="fa">Persian</option>
   <option value="pl">Polish</option>
   <option value="pt">Portuguese</option>
@@ -489,6 +543,7 @@
   <option value="es">Spanish</option>
   <option value="sw">Swahili</option>
   <option value="sv">Swedish</option>
+  <option value="syc">Syriac, Classical</option>
   <option value="tl">Tagalog</option>
   <option value="ta">Tamil</option>
   <option value="te">Telugu</option>
@@ -501,6 +556,7 @@
   <option value="vi">Vietnamese</option>
   <option value="cy">Welsh</option>
   <option value="yi">Yiddish</option>
+  <option value="yo">Yoruba</option>
   </div>
   <input type="hidden" class="dl-target">
 </div></td>
