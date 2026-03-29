@@ -81,7 +81,7 @@ pub const TAG_ORDER: [&str; 76] = [
 ];
 
 #[rustfmt::skip]
-pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 362] = [
+pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 363] = [
     ("animate", "animacy", 0, &["animate"], 0),
     ("inanim", "animacy", 0, &["inanimate"], 0),
     ("arch", "archaism", 4, &["archaic"], -4),
@@ -388,10 +388,11 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 362] = [
     ("🇪🇬", "variety", 0, &["Egypt"], 0),
     ("🇪🇸", "variety", 0, &["Spain"], 0),
     ("🇬🇧", "variety", 0, &["UK"], 0),
+    ("🇬🇷", "variety", 0, &["Greek"], 0),
     ("🇬🇹", "variety", 0, &["Guatemala"], 0),
     ("🇭🇳", "variety", 0, &["Honduras"], 0),
     ("🇭🇷", "variety", 0, &["Croatia"], 0),
-    ("🇮🇪", "variety", 0, &["Ireland"], 0),
+    ("🇮🇪", "variety", 0, &["Ireland", "Irish"], 0),
     ("🇮🇶", "variety", 0, &["Iraq"], 0),
     ("🇮🇷", "variety", 0, &["Iran"], 0),
     ("🇮🇷TE", "variety", 0, &["Tehrani"], 0),

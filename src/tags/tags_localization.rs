@@ -21,7 +21,7 @@ pub fn localize_tag(lang: Lang, short_tag: &str) -> Option<(&'static str, &'stat
     }
 }
 
-/// Coverage: 17/362 tags (4.7%)
+/// Coverage: 17/363 tags (4.7%)
 fn localize_tag_de(short_tag: &str) -> Option<(&'static str, &'static str)> {
     match short_tag {
         "n" => Some(("S", "Substantiv")),
@@ -44,7 +44,7 @@ fn localize_tag_de(short_tag: &str) -> Option<(&'static str, &'static str)> {
         _ => None,
     }
 }
-/// Coverage: 26/362 tags (7.2%)
+/// Coverage: 26/363 tags (7.2%)
 fn localize_tag_el(short_tag: &str) -> Option<(&'static str, &'static str)> {
     match short_tag {
         "n" => Some(("ουσ", "ουσιαστικό")),
@@ -76,7 +76,7 @@ fn localize_tag_el(short_tag: &str) -> Option<(&'static str, &'static str)> {
         _ => None,
     }
 }
-/// Coverage: 39/362 tags (10.8%)
+/// Coverage: 39/363 tags (10.7%)
 fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
     match short_tag {
         "v" => Some(("動", "動詞")),

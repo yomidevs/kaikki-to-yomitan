@@ -1492,7 +1492,9 @@ fn get_found_tags(pos: &Pos, info: &LemmaInfo) -> Vec<Tag> {
             Some(tag_info) => Some(tag_info.short_tag),
             None => {
                 // log skipped tags
-                // tracing::debug!("{} @ {}", tag, info.link_wiktionary);
+                // if !["alt-of", "alternative", "form-of"].contains(&tag.as_str()) {
+                //     tracing::debug!("{} @ {}", tag, info.link_wiktionary);
+                // }
                 None
             }
         })

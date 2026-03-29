@@ -440,6 +440,13 @@
         0
     ],
     [
+        "🇬🇷",
+        "variety",
+        0,
+        "Greek",
+        0
+    ],
+    [
         "🇬🇹",
         "variety",
         0,
@@ -464,7 +471,10 @@
         "🇮🇪",
         "variety",
         0,
-        "Ireland",
+        [
+            "Ireland",
+            "Irish"
+        ],
         0
     ],
     [
