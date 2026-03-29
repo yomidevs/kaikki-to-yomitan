@@ -829,6 +829,23 @@
                   {
                     "tag": "div",
                     "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "title": "familiar",
+                            "data": {
+                              "content": "tag",
+                              "category": "register"
+                            },
+                            "content": "fam"
+                          }
+                        ]
+                      },
                       "Témoigner une vive hostilité envers quelqu'un.",
                       {
                         "tag": "details",
@@ -990,6 +1007,23 @@
                   {
                     "tag": "div",
                     "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "title": "familiar",
+                            "data": {
+                              "content": "tag",
+                              "category": "register"
+                            },
+                            "content": "fam"
+                          }
+                        ]
+                      },
                       "Se faire du souci.",
                       {
                         "tag": "details",

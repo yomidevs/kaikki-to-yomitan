@@ -81,7 +81,7 @@ pub const TAG_ORDER: [&str; 76] = [
 ];
 
 #[rustfmt::skip]
-pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 361] = [
+pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 362] = [
     ("animate", "animacy", 0, &["animate"], 0),
     ("inanim", "animacy", 0, &["inanimate"], 0),
     ("arch", "archaism", 4, &["archaic"], -4),
@@ -167,6 +167,7 @@ pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); 361] = [
     ("defer", "register", 0, &["deferential"], 0),
     ("derog", "register", 0, &["derogatory"], 0),
     ("ethn-slr", "register", 0, &["ethnic slur"], 0),
+    ("fam", "register", 0, &["familiar"], 0),
     ("fan-sl", "register", 0, &["fandom slang"], 0),
     ("formal", "register", 0, &["formal"], 0),
     ("high-reg", "register", 0, &["higher register"], 0),
