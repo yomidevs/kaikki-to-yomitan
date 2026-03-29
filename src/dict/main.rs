@@ -1291,7 +1291,12 @@ fn handle_inflection_sense(
             // they are obscenely verbose.
             match sense.form_of.as_slice() {
                 [form_of] => {
-                    debug_assert!(sense.tags.iter().any(|tag| *tag == "form-of"));
+                    // Some redirections may not contain the "form-of" tag at sense level!
+                    // https://kaikki.org/jawiktionary/日本語/meaning/名/名前/名前.html
+                    debug_assert!(
+                        sense.tags.iter().any(|tag| *tag == "form-of")
+                            || entry.tags.iter().any(|tag| *tag == "form-of")
+                    );
                     let allowed_tags: Vec<_> = sense
                         .tags
                         .iter()

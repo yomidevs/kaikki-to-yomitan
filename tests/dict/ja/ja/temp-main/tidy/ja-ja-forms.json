@@ -367,5 +367,25 @@
         ]
       ]
     }
+  },
+  "なまえ": {
+    "名前": {
+      "unknown": [
+        "inflection",
+        [
+          "redirected from 名前"
+        ]
+      ]
+    }
+  },
+  "名前": {
+    "なまえ": {
+      "unknown": [
+        "extracted",
+        [
+          "transliteration"
+        ]
+      ]
+    }
   }
 }
