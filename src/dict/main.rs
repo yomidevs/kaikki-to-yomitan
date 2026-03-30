@@ -665,6 +665,9 @@ fn process_main(edition: Edition, source: Lang, entry: &WordEntry, irs: &mut Tid
 
     process_alt_forms(entry, irs);
 
+    // All of these are scuffed pages that should be using the {{ja-wagokanji}} template, i.e.
+    // (correct) https://ja.wiktionary.org/wiki/減らす
+    //
     // Also redirections of this type:
     // https://ja.wiktionary.org/wiki/好み#Japanese
     // このみの漢字表記。

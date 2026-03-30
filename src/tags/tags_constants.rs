@@ -81,7 +81,7 @@ pub const TAG_ORDER: [&str; 76] = [
 ];
 
 #[rustfmt::skip]
-pub static TAG_BANK: [(&str, &str, i32, &[&str], i32); 363] = [
+pub static TAG_BANK: [(&str, &str, i32, &[&str], i32); 370] = [
     ("animate", "animacy", 0, &["animate"], 0),
     ("inanim", "animacy", 0, &["inanimate"], 0),
     ("arch", "archaism", 4, &["archaic"], -4),
@@ -387,6 +387,8 @@ pub static TAG_BANK: [(&str, &str, i32, &[&str], i32); 363] = [
     ("🇪🇨", "variety", 0, &["Ecuador"], 0),
     ("🇪🇬", "variety", 0, &["Egypt"], 0),
     ("🇪🇸", "variety", 0, &["Spain"], 0),
+    ("🇪🇺", "variety", 0, &["Europe"], 0),
+    ("🇫🇷", "variety", 0, &["France", "French"], 0),
     ("🇬🇧", "variety", 0, &["UK"], 0),
     ("🇬🇷", "variety", 0, &["Greek"], 0),
     ("🇬🇹", "variety", 0, &["Guatemala"], 0),
@@ -427,6 +429,7 @@ pub static TAG_BANK: [(&str, &str, i32, &[&str], i32); 363] = [
     ("🇺🇾", "variety", 0, &["Uruguay"], 0),
     ("🇻🇪", "variety", 0, &["Venezuela"], 0),
     ("🇾🇪", "variety", 0, &["Yemen"], 0),
+    ("🌍AF", "variety", 0, &["Africa"], 0),
     ("🌎", "variety", 0, &["Latin America"], 0),
     ("🏴󠁧󠁢󠁥󠁮󠁧󠁿", "variety", 0, &["Received-Pronunciation"], 0),
     ("🏴󠁧󠁢󠁳󠁣󠁴󠁿", "variety", 0, &["Scotland", "Scottish"], 0),
@@ -436,13 +439,17 @@ pub static TAG_BANK: [(&str, &str, i32, &[&str], i32); 363] = [
     ("char", "", 0, &["character"], 0),
     ("godan", "", 0, &["godan"], 0),
     ("ichidan", "", 0, &["ichidan"], 0),
+    ("kamiichidan", "", 0, &["kamiichidan"], 0),
     ("mix", "", 0, &["mixed"], 0),
+    ("nidan", "", 0, &["nidan"], 0),
     ("onoma", "", 0, &["onomatopoeic"], 0),
     ("punct", "", 0, &["punct"], 0),
     ("shimoichidan", "", 0, &["shimoichidan"], 0),
+    ("shimonidan", "", 0, &["shimonidan"], 0),
     ("strong", "", 0, &["strong"], 0),
     ("symb", "", 0, &["symbol"], 0),
     ("weak", "", 0, &["weak"], 0),
+    ("yodan", "", 0, &["yodan"], 0),
     ("🌍", "", 0, &["place"], 0),
     ("non-lemma", "", 10, &["non-lemma"], -10),
 ];

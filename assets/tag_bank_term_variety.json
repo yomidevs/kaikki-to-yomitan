@@ -433,6 +433,23 @@
         0
     ],
     [
+        "🇪🇺",
+        "variety",
+        0,
+        "Europe",
+        0
+    ],
+    [
+        "🇫🇷",
+        "variety",
+        0,
+        [
+            "France",
+            "French"
+        ],
+        0
+    ],
+    [
         "🇬🇧",
         "variety",
         0,
@@ -713,6 +730,13 @@
         "variety",
         0,
         "Yemen",
+        0
+    ],
+    [
+        "🌍AF",
+        "variety",
+        0,
+        "Africa",
         0
     ],
     [
