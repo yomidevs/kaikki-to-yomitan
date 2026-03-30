@@ -440,5 +440,19 @@
         }
       ]
     }
+  },
+  "まわり": {
+    "まわり": {
+      "counter": [
+        {
+          "gloss_tree": {
+            "回る回数を表す語。": {},
+            "年齢を12年を一つの期間で数える語。": {}
+          },
+          "wlink": "https://ja.wiktionary.org/wiki/まわり#Japanese",
+          "klink": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/ま/まわ/まわり.html"
+        }
+      ]
+    }
   }
 }

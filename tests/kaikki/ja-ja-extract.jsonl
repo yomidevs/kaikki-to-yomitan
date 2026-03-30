@@ -10,3 +10,4 @@
 {"word": "とある", "pos": "adnominal", "lang_code": "ja", "lang": "日本語", "pos_title": "連体詞", "senses": [{"glosses": ["ある。ちょっとした。さる。"]}]}
 {"word": "好み", "pos": "unknown", "lang_code": "ja", "lang": "日本語", "pos_title": "和語の漢字表記", "senses": [{"glosses": ["このみの漢字表記。"]}], "categories": ["日本語", "日本語 和語の漢字表記"], "tags": ["form-of", "kanji"]}
 {"word":"名前","lang_code":"ja","lang":"日本語","pos":"unknown","pos_title":"和語の漢字表記","senses":[{"glosses":["なまえの漢字表記。"],"form_of":[{"word":"なまえ"}]}],"categories":["日本語","日本語 和語の漢字表記"],"tags":["form-of","kanji"],"forms":[{"form":"なまえ","tags":["transliteration"]}]}
+{"word":"まわり","lang_code":"ja","lang":"日本語","pos":"counter","pos_title":"助数詞","senses":[{"glosses":["回る回数を表す語。"]},{"glosses":["年齢を12年を一つの期間で数える語。"]}]}
