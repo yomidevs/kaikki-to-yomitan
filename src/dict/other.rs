@@ -152,7 +152,7 @@ fn process_glossary(source: Edition, target: Lang, entry: &WordEntry, irs: &mut 
 
     let reading = get_reading(source, target, entry).unwrap_or_else(|| entry.word.clone());
     let short_pos = find_short_pos_or_default(&entry.pos);
-    let loc_short_pos = match localize_tag(target, &short_pos) {
+    let loc_short_pos = match localize_tag(target, short_pos) {
         Some((short, _)) => short,
         None => short_pos,
     };
@@ -222,7 +222,7 @@ fn to_yomitan_glossary_extended(target: Lang, irs: IGlossaryExtended) -> Vec<Yom
             let short_pos = find_short_pos_or_default(&pos);
             let loc_short_pos = match localize_tag(target, short_pos) {
                 Some((short, _)) => short,
-                None => short_pos.as_ref(),
+                None => short_pos,
             };
 
             YomitanEntry::TermBank(TermBank(

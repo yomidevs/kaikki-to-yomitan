@@ -4,12 +4,7 @@
 use crate::lang::Lang;
 
 pub fn has_locale(lang: Lang) -> bool {
-    match lang {
-        Lang::De => true,
-        Lang::El => true,
-        Lang::Ja => true,
-        _ => false,
-    }
+    matches!(lang, Lang::De | Lang::El | Lang::Ja)
 }
 
 pub fn localize_tag(lang: Lang, short_tag: &str) -> Option<(&'static str, &'static str)> {

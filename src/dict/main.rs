@@ -1413,25 +1413,27 @@ fn normalize_orthography(source: Lang, word: &str) -> String {
 fn to_yomitan_lemmas(target: Lang, lemma_map: LemmaMap) -> Vec<YomitanEntry> {
     lemma_map
         .into_flat_iter()
-        .map(move |(lemma, reading, pos, info)| {
-            to_yomitan_lemma(target, &lemma, &reading, &pos, info)
-        })
+        .map(move |(lemma, reading, pos, info)| to_yomitan_lemma(target, lemma, reading, pos, info))
         .collect()
 }
 
 // TODO: consume info
 fn to_yomitan_lemma(
     target: Lang,
-    lemma: &str,
-    reading: &str,
-    pos: &Pos, // should be &str
+    lemma: String,
+    reading: String,
+    pos: String,
     info: LemmaInfo,
 ) -> YomitanEntry {
-    let short_pos = find_short_pos_or_default(pos);
+    let short_pos = find_short_pos_or_default(&pos);
 
-    let yomitan_reading = if *reading == *lemma { "" } else { reading };
+    let yomitan_reading = if reading == lemma {
+        "".to_string()
+    } else {
+        reading
+    };
 
-    let common_short_tags_found = get_found_tags(pos, &info);
+    let common_short_tags_found = get_found_tags(&pos, &info);
     let definition_tags = common_short_tags_found
         .iter()
         .map(|short_tag| match localize_tag(target, short_tag) {
@@ -1464,8 +1466,8 @@ fn to_yomitan_lemma(
     detailed_definition_content.push(structured_backlink(info.link_wiktionary, info.link_kaikki));
 
     YomitanEntry::TermBank(TermBank(
-        lemma.to_string(),
-        yomitan_reading.to_string(),
+        lemma,
+        yomitan_reading,
         definition_tags,
         get_rule_identifier(short_pos),
         vec![DetailedDefinition::structured(detailed_definition_content)],
@@ -1883,7 +1885,7 @@ fn to_yomitan_forms(source: Lang, form_map: FormMap) -> Vec<YomitanEntry> {
             YomitanEntry::TermBankSimplified(TermBankSimplified(
                 normalized_inflected,
                 reading,
-                get_rule_identifier(&short_pos),
+                get_rule_identifier(short_pos),
                 deinflection_definitions,
             ))
         })

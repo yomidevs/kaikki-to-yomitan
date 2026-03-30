@@ -134,7 +134,7 @@ def generate_tags_rs(
 
     w("#[rustfmt::skip]\n")
     w(
-        f"pub const TAG_BANK: [(&str, &str, i32, &[&str], i32); {len(whitelisted_tags)}] = [\n"
+        f"pub static TAG_BANK: [(&str, &str, i32, &[&str], i32); {len(whitelisted_tags)}] = [\n"
     )
     for wt in whitelisted_tags:
         longs_str = str(wt.longs_as_list()).replace("'", '"')
@@ -455,11 +455,12 @@ def generate_tags_localization_rs(
     w("use crate::lang::Lang;\n\n")
 
     w("pub fn has_locale(lang: Lang) -> bool {\n")
-    w("    match lang {\n")
-    for iso in locale:
-        w(f"        Lang::{iso.title()} => true,\n")
-    w("        _ => false,\n")
-    w("    }\n")
+    w("    matches!(lang, ")
+    for i, iso in enumerate(locale):
+        if i > 0:
+            w(" | ")
+        w(f"Lang::{iso.title()}")
+    w(")\n")
     w("}\n\n")
 
     w(
