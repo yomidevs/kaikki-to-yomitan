@@ -413,6 +413,13 @@
         2
     ],
     [
+        "counter",
+        "partOfSpeech",
+        -2,
+        "counter",
+        2
+    ],
+    [
         "det",
         "partOfSpeech",
         -2,
@@ -1763,6 +1770,13 @@
         "usage",
         0,
         "idiomatic",
+        0
+    ],
+    [
+        "idiom",
+        "usage",
+        0,
+        "idiom",
         0
     ],
     [

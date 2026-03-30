@@ -16,7 +16,7 @@ pub fn localize_tag(lang: Lang, short_tag: &str) -> Option<(&'static str, &'stat
     }
 }
 
-/// Coverage: 17/370 tags (4.6%)
+/// Coverage: 17/372 tags (4.6%)
 fn localize_tag_de(short_tag: &str) -> Option<(&'static str, &'static str)> {
     match short_tag {
         "n" => Some(("S", "Substantiv")),
@@ -39,7 +39,7 @@ fn localize_tag_de(short_tag: &str) -> Option<(&'static str, &'static str)> {
         _ => None,
     }
 }
-/// Coverage: 26/370 tags (7.0%)
+/// Coverage: 26/372 tags (7.0%)
 fn localize_tag_el(short_tag: &str) -> Option<(&'static str, &'static str)> {
     match short_tag {
         "n" => Some(("ουσ", "ουσιαστικό")),
@@ -71,13 +71,15 @@ fn localize_tag_el(short_tag: &str) -> Option<(&'static str, &'static str)> {
         _ => None,
     }
 }
-/// Coverage: 47/370 tags (12.7%)
+/// Coverage: 52/372 tags (14.0%)
 fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
     match short_tag {
         "v" => Some(("動", "動詞")),
         "n" => Some(("名", "名詞")),
         "adj" => Some(("形", "形容詞")),
+        "counter" => Some(("助数詞", "助数詞")),
         "dated" => Some(("古風", "古風")),
+        "obs" => Some(("廃語", "廃語")),
         "arch" => Some(("古語", "古語")),
         "fig" => Some(("比喩", "比喩")),
         "abbv" => Some(("略", "略語")),
@@ -120,6 +122,9 @@ fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
         "psych" => Some(("心理学", "心理学")),
         "log" => Some(("論理学", "論理学")),
         "gramm" => Some(("文法", "文法")),
+        "idiom" => Some(("成句", "成句")),
+        "mil" => Some(("軍事", "軍事")),
+        "program" => Some(("プログラミング", "プログラミング")),
         "prep" => Some(("前", "前置詞")),
         _ => None,
     }

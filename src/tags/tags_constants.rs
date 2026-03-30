@@ -81,7 +81,7 @@ pub const TAG_ORDER: [&str; 76] = [
 ];
 
 #[rustfmt::skip]
-pub static TAG_BANK: [(&str, &str, i32, &[&str], i32); 370] = [
+pub static TAG_BANK: [(&str, &str, i32, &[&str], i32); 372] = [
     ("animate", "animacy", 0, &["animate"], 0),
     ("inanim", "animacy", 0, &["inanimate"], 0),
     ("arch", "archaism", 4, &["archaic"], -4),
@@ -138,6 +138,7 @@ pub static TAG_BANK: [(&str, &str, i32, &[&str], i32); 370] = [
     ("adv", "partOfSpeech", -2, &["adverb", "adv"], 2),
     ("artic", "partOfSpeech", -2, &["article"], 2),
     ("conj", "partOfSpeech", -2, &["conjunction", "conj"], 2),
+    ("counter", "partOfSpeech", -2, &["counter"], 2),
     ("det", "partOfSpeech", -2, &["determiner", "det"], 2),
     ("intj", "partOfSpeech", -2, &["interjection", "intj"], 2),
     ("n", "partOfSpeech", -2, &["noun"], 2),
@@ -324,6 +325,7 @@ pub static TAG_BANK: [(&str, &str, i32, &[&str], i32); 370] = [
     ("euph", "usage", 0, &["euphemistic"], 0),
     ("fig", "usage", 0, &["figurative", "figuratively"], 0),
     ("idio", "usage", 0, &["idiomatic"], 0),
+    ("idiom", "usage", 0, &["idiom"], 0),
     ("literal", "usage", 0, &["literal", "literally"], 0),
     ("non-std", "usage", 0, &["nonstandard"], 0),
     ("regio", "usage", 0, &["regional"], 0),
@@ -454,7 +456,7 @@ pub static TAG_BANK: [(&str, &str, i32, &[&str], i32); 370] = [
     ("non-lemma", "", 10, &["non-lemma"], -10),
 ];
 
-pub const POSES: [(&str, &str); 43] = [
+pub const POSES: [(&str, &str); 44] = [
     ("adjective", "adj"),
     ("adj", "adj"),
     ("adj_noun", "adj_noun"),
@@ -463,6 +465,7 @@ pub const POSES: [(&str, &str); 43] = [
     ("article", "artic"),
     ("conjunction", "conj"),
     ("conj", "conj"),
+    ("counter", "counter"),
     ("determiner", "det"),
     ("det", "det"),
     ("interjection", "intj"),
