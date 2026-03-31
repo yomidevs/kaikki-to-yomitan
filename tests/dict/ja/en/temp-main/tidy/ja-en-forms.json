@@ -251,14 +251,6 @@
         ]
       ]
     },
-    "tanoshikarō": {
-      "adj": [
-        "extracted",
-        [
-          "volitional"
-        ]
-      ]
-    },
     "楽しさ": {
       "adj": [
         "extracted",
@@ -616,14 +608,6 @@
         ]
       ]
     },
-    "suki darō": {
-      "adj": [
-        "extracted",
-        [
-          "volitional"
-        ]
-      ]
-    },
     "すきに": {
       "adj": [
         "extracted",
@@ -851,14 +835,6 @@
       ]
     },
     "はしろう": {
-      "verb": [
-        "extracted",
-        [
-          "volitional"
-        ]
-      ]
-    },
-    "hashirō": {
       "verb": [
         "extracted",
         [
@@ -1439,25 +1415,7 @@
         ]
       ]
     },
-    "yōdate": {
-      "verb": [
-        "extracted",
-        [
-          "continuative",
-          "imperfective"
-        ]
-      ]
-    },
     "ようだてる": {
-      "verb": [
-        "extracted",
-        [
-          "attributive",
-          "terminative"
-        ]
-      ]
-    },
-    "yōdateru": {
       "verb": [
         "extracted",
         [
@@ -1475,14 +1433,6 @@
       ]
     },
     "ようだてれ": {
-      "verb": [
-        "extracted",
-        [
-          "hypothetical"
-        ]
-      ]
-    },
-    "yōdatere": {
       "verb": [
         "extracted",
         [
@@ -1522,22 +1472,6 @@
         ]
       ]
     },
-    "yōdateyo": {
-      "verb": [
-        "extracted",
-        [
-          "imperative literary"
-        ]
-      ]
-    },
-    "yōdatero": {
-      "verb": [
-        "extracted",
-        [
-          "imperative colloquial"
-        ]
-      ]
-    },
     "用立てられる": {
       "verb": [
         "extracted",
@@ -1548,15 +1482,6 @@
       ]
     },
     "ようだてられる": {
-      "verb": [
-        "extracted",
-        [
-          "passive",
-          "potential"
-        ]
-      ]
-    },
-    "yōdaterareru": {
       "verb": [
         "extracted",
         [
@@ -1597,22 +1522,6 @@
         ]
       ]
     },
-    "yōdatesaseru": {
-      "verb": [
-        "extracted",
-        [
-          "causative"
-        ]
-      ]
-    },
-    "yōdatesasu": {
-      "verb": [
-        "extracted",
-        [
-          "causative"
-        ]
-      ]
-    },
     "用立てれる": {
       "verb": [
         "extracted",
@@ -1629,14 +1538,6 @@
         ]
       ]
     },
-    "yōdatereru": {
-      "verb": [
-        "extracted",
-        [
-          "colloquial potential"
-        ]
-      ]
-    },
     "用立てよう": {
       "verb": [
         "extracted",
@@ -1646,14 +1547,6 @@
       ]
     },
     "ようだてよう": {
-      "verb": [
-        "extracted",
-        [
-          "volitional"
-        ]
-      ]
-    },
-    "yōdateyō": {
       "verb": [
         "extracted",
         [
@@ -1709,30 +1602,6 @@
         ]
       ]
     },
-    "yōdatenai": {
-      "verb": [
-        "extracted",
-        [
-          "negative"
-        ]
-      ]
-    },
-    "yōdatenu": {
-      "verb": [
-        "extracted",
-        [
-          "negative"
-        ]
-      ]
-    },
-    "yōdaten": {
-      "verb": [
-        "extracted",
-        [
-          "negative"
-        ]
-      ]
-    },
     "用立てず": {
       "verb": [
         "extracted",
@@ -1742,14 +1611,6 @@
       ]
     },
     "ようだてず": {
-      "verb": [
-        "extracted",
-        [
-          "negative continuative"
-        ]
-      ]
-    },
-    "yōdatezu": {
       "verb": [
         "extracted",
         [
@@ -1773,23 +1634,7 @@
         ]
       ]
     },
-    "yōdatemasu": {
-      "verb": [
-        "extracted",
-        [
-          "formal"
-        ]
-      ]
-    },
     "ようだてた": {
-      "verb": [
-        "extracted",
-        [
-          "perfective"
-        ]
-      ]
-    },
-    "yōdateta": {
       "verb": [
         "extracted",
         [
@@ -1813,14 +1658,6 @@
         ]
       ]
     },
-    "yōdatete": {
-      "verb": [
-        "extracted",
-        [
-          "conjunctive"
-        ]
-      ]
-    },
     "用立てれば": {
       "verb": [
         "extracted",
@@ -1830,14 +1667,6 @@
       ]
     },
     "ようだてれば": {
-      "verb": [
-        "extracted",
-        [
-          "conditional hypothetical"
-        ]
-      ]
-    },
-    "yōdatereba": {
       "verb": [
         "extracted",
         [

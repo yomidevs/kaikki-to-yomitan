@@ -871,8 +871,8 @@ fn should_skip_form(edition: Edition, source: Lang, form: &Form) -> bool {
             }
         }
         (Edition::En, Lang::Ja) => {
-            // Skip transliterations: "hashireru" etc.
-            if is_roman(&form.form) {
+            // Skip transliterations: "hashireru", "tanoshikarō" etc.
+            if is_japanese_romanization(&form.form) {
                 return true;
             }
         }
@@ -881,8 +881,9 @@ fn should_skip_form(edition: Edition, source: Lang, form: &Form) -> bool {
     false
 }
 
-const fn is_roman(form: &str) -> bool {
-    form.is_ascii()
+fn is_japanese_romanization(form: &str) -> bool {
+    form.chars()
+        .all(|c| c.is_ascii() || matches!(c, 'ā' | 'ī' | 'ū' | 'ē' | 'ō'))
 }
 
 // Finnish from the English edition crashes with out-of-memory.
