@@ -513,5 +513,20 @@
         }
       ]
     }
+  },
+  "用立てる": {
+    "ようだてる": {
+      "verb": [
+        {
+          "gloss_tree": {
+            "use": {},
+            "lend money": {}
+          },
+          "head_info_text": "用(よう)立(だ)てる • (yōdateru) transitive ichidan (stem 用(よう)立(だ)て (yōdate), past 用(よう)立(だ)てた (yōdateta))",
+          "wlink": "https://en.wiktionary.org/wiki/用立てる#Japanese",
+          "klink": "https://kaikki.org/dictionary/Japanese/meaning/用/用立/用立てる.html"
+        }
+      ]
+    }
   }
 }
