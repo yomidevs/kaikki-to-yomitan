@@ -769,5 +769,160 @@
         ]
       ]
     }
+  },
+  "sehen": {
+    "sehe": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular present active indicative",
+          "first/third-person singular present active subjunctive-i"
+        ]
+      ]
+    },
+    "siehst": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present active indicative"
+        ]
+      ]
+    },
+    "sieht": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular present active indicative"
+        ]
+      ]
+    },
+    "sah": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular past active indicative"
+        ]
+      ]
+    },
+    "sähe": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular past active subjunctive-ii"
+        ]
+      ]
+    },
+    "gesehen": {
+      "verb": [
+        "extracted",
+        [
+          "active infinitive extended"
+        ]
+      ]
+    },
+    "sehend": {
+      "verb": [
+        "extracted",
+        [
+          "present active participle"
+        ]
+      ]
+    },
+    "sehender": {
+      "verb": [
+        "extracted",
+        [
+          "participle gerundive"
+        ]
+      ]
+    },
+    "sehest": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present active subjunctive-i"
+        ]
+      ]
+    },
+    "seht": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present active indicative"
+        ]
+      ]
+    },
+    "sehet": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present active subjunctive-i"
+        ]
+      ]
+    },
+    "sahst": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past active indicative"
+        ]
+      ]
+    },
+    "sähest": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past active subjunctive-ii"
+        ]
+      ]
+    },
+    "sähst": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past active subjunctive-ii"
+        ]
+      ]
+    },
+    "sahen": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person plural past active indicative"
+        ]
+      ]
+    },
+    "sähen": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person plural past active subjunctive-ii"
+        ]
+      ]
+    },
+    "saht": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past active indicative"
+        ]
+      ]
+    },
+    "sähet": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past active subjunctive-ii"
+        ]
+      ]
+    },
+    "säht": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past active subjunctive-ii"
+        ]
+      ]
+    }
   }
 }

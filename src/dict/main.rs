@@ -774,7 +774,7 @@ fn preprocess_main(
     // WARN:: mutates entry::forms (and entry::forms::form)
     //
     // See the function documentation.
-    if edition == Edition::De && source == Lang::De {
+    if edition == Edition::De && source == Lang::De && entry.pos == "verb" {
         preprocess_forms_de(entry);
     }
 
@@ -852,6 +852,16 @@ fn preprocess_forms_de(entry: &mut WordEntry) {
         }
     }
 
+    // Another possible simplification:
+    //
+    // Reflexive forms, i.e. "wir meldeten uns an"
+    // Just skip: there should be an active table anyway, and they become redundant.
+    //
+    // Here they have the reflexive tag:
+    // https://de.wiktionary.org/wiki/Flexion:anmelden
+    // ...but in general they don't need to, if there is only the reflexive option:
+    // https://de.wiktionary.org/wiki/Flexion:fortscheren
+
     // 2. Remove auxiliary verb constructions
     //
     // Working with tags is better than doing string replacement, because in that case we may
@@ -872,6 +882,8 @@ fn preprocess_forms_de(entry: &mut WordEntry) {
         });
 
         !is_compound && !form.form.ends_with(['…', '!'])
+            // "Partizip II des Verbs sehen, nur unmittelbar nach einem Infinitiv" etc.
+            && !form.form.contains(',')
     });
 
     // The above tag strategy "requires"* us to clean the "extended" forms.
@@ -879,10 +891,12 @@ fn preprocess_forms_de(entry: &mut WordEntry) {
     // that most likely happens in some other page, but since it gives the same result as the
     // (previous) string replacement, we keep it as it is.
     for form in &mut entry.forms {
+        if let Some(stripped) = form.form.strip_prefix("zu ") {
+            form.form = stripped.to_string();
+        }
         if form.tags.iter().any(|tag| tag == "extended") {
             if let Some(stripped) = form.form.strip_suffix(" zu haben") {
                 form.form = stripped.to_string();
-                break;
             }
         }
     }

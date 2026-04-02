@@ -1,17 +1,5 @@
 [
   [
-    "in",
-    "in",
-    "prep",
-    "prep",
-    0,
-    [
-      "在"
-    ],
-    0,
-    ""
-  ],
-  [
     "sehen",
     "sehen",
     "v",
@@ -32,7 +20,7 @@
               "content": [
                 {
                   "tag": "li",
-                  "content": "看"
+                  "content": "دیدن"
                 }
               ]
             }
