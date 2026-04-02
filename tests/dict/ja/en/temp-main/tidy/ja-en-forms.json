@@ -1674,5 +1674,17 @@
         ]
       ]
     }
+  },
+  "toraware": {
+    "とらわれ": {
+      "romanization": [
+        "altof",
+        [
+          "Rōmaji",
+          "alt-of",
+          "romanization"
+        ]
+      ]
+    }
   }
 }

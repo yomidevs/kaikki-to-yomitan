@@ -528,5 +528,24 @@
         }
       ]
     }
+  },
+  "toraware": {
+    "toraware": {
+      "romanization": [
+        {
+          "gloss_tree": {
+            "Rōmaji transcription of とらわれ": {
+              "tags": [
+                "Rōmaji",
+                "alt-of",
+                "romanization"
+              ]
+            }
+          },
+          "wlink": "https://en.wiktionary.org/wiki/toraware#Japanese",
+          "klink": "https://kaikki.org/dictionary/Japanese/meaning/t/to/toraware.html"
+        }
+      ]
+    }
   }
 }

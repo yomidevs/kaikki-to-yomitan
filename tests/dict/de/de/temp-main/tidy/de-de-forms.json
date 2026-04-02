@@ -1556,5 +1556,36 @@
         ]
       ]
     }
+  },
+  "ausgehen": {
+    "gehe aus": {
+      "verb": [
+        "inflection",
+        [
+          "1. Person Singular Indikativ Präsens Aktiv der Hauptsatzkonjugation",
+          "1. Person Singular Konjunktiv I Präsens Aktiv der Hauptsatzkonjugation",
+          "2. Person Singular Imperativ Präsens Aktiv",
+          "3. Person Singular Konjunktiv I Präsens Aktiv der Hauptsatzkonjugation"
+        ]
+      ]
+    }
+  },
+  "gehe aus": {
+    "geh aus": {
+      "verb": [
+        "extracted",
+        [
+          "variant"
+        ]
+      ]
+    },
+    "ausgehe": {
+      "verb": [
+        "extracted",
+        [
+          "variant subordinate-clause"
+        ]
+      ]
+    }
   }
 }

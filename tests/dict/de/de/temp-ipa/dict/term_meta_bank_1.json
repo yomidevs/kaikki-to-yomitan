@@ -103,5 +103,17 @@
         }
       ]
     }
+  ],
+  [
+    "gehe aus",
+    "ipa",
+    {
+      "reading": "gehe aus",
+      "transcriptions": [
+        {
+          "ipa": "[ˌɡeːə ˈaʊ̯s]"
+        }
+      ]
+    }
   ]
 ]

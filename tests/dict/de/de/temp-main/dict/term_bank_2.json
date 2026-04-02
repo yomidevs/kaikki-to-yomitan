@@ -3484,5 +3484,74 @@
     ],
     0,
     ""
+  ],
+  [
+    "gehe aus",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "ausgehen",
+        [
+          "1. Person Singular Indikativ Präsens Aktiv der Hauptsatzkonjugation"
+        ]
+      ],
+      [
+        "ausgehen",
+        [
+          "1. Person Singular Konjunktiv I Präsens Aktiv der Hauptsatzkonjugation"
+        ]
+      ],
+      [
+        "ausgehen",
+        [
+          "2. Person Singular Imperativ Präsens Aktiv"
+        ]
+      ],
+      [
+        "ausgehen",
+        [
+          "3. Person Singular Konjunktiv I Präsens Aktiv der Hauptsatzkonjugation"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "geh aus",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "gehe aus",
+        [
+          "variant"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "ausgehe",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "gehe aus",
+        [
+          "variant subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
   ]
 ]
