@@ -771,6 +771,13 @@ fn preprocess_main(
         }
     }
 
+    // WARN:: mutates entry::forms (and entry::forms::form)
+    //
+    // See the function documentation.
+    if edition == Edition::De && source == Lang::De && entry.pos == "verb" {
+        preprocess_forms_de(entry);
+    }
+
     // WARN: mutates entry::senses
     //
     // What if the current word is an inflection but *also* has an inflection table?
@@ -820,6 +827,76 @@ fn preprocess_main(
                 if !TRAILING_PUNCT_RE.is_match(gloss) {
                     gloss.push(' ');
                 }
+            }
+        }
+    }
+}
+
+// In German, verb forms come with personal pronouns which makes for poor results (worse
+// search, deduplication, dictionary bloat etc.)
+// This should probably be fixed at wiktextract at some point.
+// Here we trim personal pronouns prefixes: "ich ", "du ", "er/sie/es " etc.
+//
+// TODO: We could do the same for French, instead of discarding such forms in should_skip_form
+//
+// See: https://kaikki.org/dewiktionary/Deutsch/meaning/a/au/ausmachen.html
+fn preprocess_forms_de(entry: &mut WordEntry) {
+    // 1. Trim personal pronouns from verb forms (this information is already in tags)
+    const PRONOUNS: &[&str] = &["ich ", "du ", "er/sie/es ", "wir ", "ihr ", "sie "];
+    for form in &mut entry.forms {
+        for &prefix in PRONOUNS {
+            if let Some(stripped) = form.form.strip_prefix(prefix) {
+                form.form = stripped.to_string();
+                break;
+            }
+        }
+    }
+
+    // Another possible simplification:
+    //
+    // Reflexive forms, i.e. "wir meldeten uns an"
+    // Just skip: there should be an active table anyway, and they become redundant.
+    //
+    // Here they have the reflexive tag:
+    // https://de.wiktionary.org/wiki/Flexion:anmelden
+    // ...but in general they don't need to, if there is only the reflexive option:
+    // https://de.wiktionary.org/wiki/Flexion:fortscheren
+
+    // 2. Remove auxiliary verb constructions
+    //
+    // Working with tags is better than doing string replacement, because in that case we may
+    // stumble into edge cases like "anhaben", where we don't want to confuse the auxiliary verb
+    // with the actual verb.
+    // See: https://www.verblisten.de/listen/verben/anfangsbuchstabe/ueberblick.html?i=haben
+    entry.forms.retain(|form| {
+        let is_compound = form.tags.iter().any(|tag| {
+            matches!(
+                tag.as_str(),
+                "perfect"
+                    | "pluperfect"
+                    | "future-i"
+                    | "future-ii"
+                    | "processual-passive"
+                    | "statal-passive"
+            )
+        });
+
+        !is_compound && !form.form.ends_with(['…', '!'])
+            // "Partizip II des Verbs sehen, nur unmittelbar nach einem Infinitiv" etc.
+            && !form.form.contains(',')
+    });
+
+    // The above tag strategy "requires"* us to clean the "extended" forms.
+    // *I'm not entirely sure this is needed, specially because the form obtained is an adjective
+    // that most likely happens in some other page, but since it gives the same result as the
+    // (previous) string replacement, we keep it as it is.
+    for form in &mut entry.forms {
+        if let Some(stripped) = form.form.strip_prefix("zu ") {
+            form.form = stripped.to_string();
+        }
+        if form.tags.iter().any(|tag| tag == "extended") {
+            if let Some(stripped) = form.form.strip_suffix(" zu haben") {
+                form.form = stripped.to_string();
             }
         }
     }

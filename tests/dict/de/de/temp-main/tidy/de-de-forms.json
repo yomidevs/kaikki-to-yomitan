@@ -72,7 +72,8 @@
       "verb": [
         "extracted",
         [
-          "present"
+          "first-person singular present active indicative main-clause",
+          "first/third-person singular present active main-clause subjunctive-i"
         ]
       ]
     },
@@ -80,7 +81,7 @@
       "verb": [
         "extracted",
         [
-          "present"
+          "second-person singular present active indicative main-clause"
         ]
       ]
     },
@@ -88,7 +89,8 @@
       "verb": [
         "extracted",
         [
-          "present"
+          "second-person plural present active indicative main-clause",
+          "third-person singular present active indicative main-clause"
         ]
       ]
     },
@@ -96,73 +98,8 @@
       "verb": [
         "extracted",
         [
-          "past",
-          "subjunctive-ii"
-        ]
-      ]
-    },
-    "mach aus!": {
-      "verb": [
-        "extracted",
-        [
-          "second-person singular present imperative active"
-        ]
-      ]
-    },
-    "macht aus!": {
-      "verb": [
-        "extracted",
-        [
-          "second-person plural present imperative active"
-        ]
-      ]
-    },
-    "ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "perfect participle-2",
-          "perfect passive participle"
-        ]
-      ]
-    },
-    "ausgemacht haben": {
-      "verb": [
-        "extracted",
-        [
-          "perfect active infinitive"
-        ]
-      ]
-    },
-    "ausgemacht werden": {
-      "verb": [
-        "extracted",
-        [
-          "present infinitive processual-passive"
-        ]
-      ]
-    },
-    "ausgemacht worden sein": {
-      "verb": [
-        "extracted",
-        [
-          "perfect infinitive processual-passive"
-        ]
-      ]
-    },
-    "ausgemacht sein": {
-      "verb": [
-        "extracted",
-        [
-          "present infinitive statal-passive"
-        ]
-      ]
-    },
-    "ausgemacht gewesen sein": {
-      "verb": [
-        "extracted",
-        [
-          "perfect infinitive statal-passive"
+          "first/third-person singular past active indicative main-clause",
+          "first/third-person singular past active main-clause subjunctive-ii"
         ]
       ]
     },
@@ -174,43 +111,11 @@
         ]
       ]
     },
-    "ausgemacht zu haben": {
+    "ausgemacht": {
       "verb": [
         "extracted",
         [
           "active infinitive extended"
-        ]
-      ]
-    },
-    "ausgemacht zu werden": {
-      "verb": [
-        "extracted",
-        [
-          "infinitive processual-passive extended"
-        ]
-      ]
-    },
-    "ausgemacht worden zu sein": {
-      "verb": [
-        "extracted",
-        [
-          "infinitive processual-passive extended"
-        ]
-      ]
-    },
-    "ausgemacht zu sein": {
-      "verb": [
-        "extracted",
-        [
-          "infinitive statal-passive extended"
-        ]
-      ]
-    },
-    "ausgemacht gewesen zu sein": {
-      "verb": [
-        "extracted",
-        [
-          "infinitive statal-passive extended"
         ]
       ]
     },
@@ -238,81 +143,16 @@
         ]
       ]
     },
-    "auszumachendes …": {
-      "verb": [
-        "extracted",
-        [
-          "participle gerundive"
-        ]
-      ]
-    },
-    "mache aus!": {
-      "verb": [
-        "extracted",
-        [
-          "second-person singular present imperative active"
-        ]
-      ]
-    },
-    "habe ausgemacht!": {
-      "verb": [
-        "extracted",
-        [
-          "second-person singular perfect imperative active uncommon"
-        ]
-      ]
-    },
-    "habt ausgemacht!": {
-      "verb": [
-        "extracted",
-        [
-          "second-person plural perfect imperative active uncommon"
-        ]
-      ]
-    },
-    "machen Sie aus!": {
-      "verb": [
-        "extracted",
-        [
-          "present imperative active honorific"
-        ]
-      ]
-    },
-    "haben Sie ausgemacht!": {
-      "verb": [
-        "extracted",
-        [
-          "perfect imperative active uncommon honorific"
-        ]
-      ]
-    },
-    "ich mache aus": {
-      "verb": [
-        "extracted",
-        [
-          "first-person singular present active indicative main-clause",
-          "first-person singular present active main-clause subjunctive-i"
-        ]
-      ]
-    },
-    "ich ausmache": {
+    "ausmache": {
       "verb": [
         "extracted",
         [
           "first-person singular present active indicative subordinate-clause",
-          "first-person singular present active subordinate-clause subjunctive-i"
+          "first/third-person singular present active subordinate-clause subjunctive-i"
         ]
       ]
     },
-    "du machst aus": {
-      "verb": [
-        "extracted",
-        [
-          "second-person singular present active indicative main-clause"
-        ]
-      ]
-    },
-    "du machest aus": {
+    "machest aus": {
       "verb": [
         "extracted",
         [
@@ -320,7 +160,7 @@
         ]
       ]
     },
-    "du ausmachst": {
+    "ausmachst": {
       "verb": [
         "extracted",
         [
@@ -328,7 +168,7 @@
         ]
       ]
     },
-    "du ausmachest": {
+    "ausmachest": {
       "verb": [
         "extracted",
         [
@@ -336,97 +176,25 @@
         ]
       ]
     },
-    "er/sie/es macht aus": {
+    "ausmacht": {
       "verb": [
         "extracted",
         [
-          "third-person singular present active indicative main-clause"
-        ]
-      ]
-    },
-    "er/sie/es mache aus": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular present active main-clause subjunctive-i"
-        ]
-      ]
-    },
-    "er/sie/es ausmacht": {
-      "verb": [
-        "extracted",
-        [
+          "second-person plural present active indicative subordinate-clause",
           "third-person singular present active indicative subordinate-clause"
         ]
       ]
     },
-    "er/sie/es ausmache": {
+    "machen aus": {
       "verb": [
         "extracted",
         [
-          "third-person singular present active subordinate-clause subjunctive-i"
+          "first/third-person plural present active indicative main-clause",
+          "first/third-person plural present active main-clause subjunctive-i"
         ]
       ]
     },
-    "er/sie/es wird ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular present indicative processual-passive"
-        ]
-      ]
-    },
-    "er/sie/es werde ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular present processual-passive subjunctive-i"
-        ]
-      ]
-    },
-    "er/sie/es ist ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular present indicative statal-passive"
-        ]
-      ]
-    },
-    "er/sie/es sei ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular present statal-passive subjunctive-i"
-        ]
-      ]
-    },
-    "wir machen aus": {
-      "verb": [
-        "extracted",
-        [
-          "first-person plural present active indicative main-clause",
-          "first-person plural present active main-clause subjunctive-i"
-        ]
-      ]
-    },
-    "wir ausmachen": {
-      "verb": [
-        "extracted",
-        [
-          "first-person plural present active indicative subordinate-clause",
-          "first-person plural present active subordinate-clause subjunctive-i"
-        ]
-      ]
-    },
-    "ihr macht aus": {
-      "verb": [
-        "extracted",
-        [
-          "second-person plural present active indicative main-clause"
-        ]
-      ]
-    },
-    "ihr machet aus": {
+    "machet aus": {
       "verb": [
         "extracted",
         [
@@ -434,15 +202,7 @@
         ]
       ]
     },
-    "ihr ausmacht": {
-      "verb": [
-        "extracted",
-        [
-          "second-person plural present active indicative subordinate-clause"
-        ]
-      ]
-    },
-    "ihr ausmachet": {
+    "ausmachet": {
       "verb": [
         "extracted",
         [
@@ -450,68 +210,16 @@
         ]
       ]
     },
-    "sie machen aus": {
+    "ausmachte": {
       "verb": [
         "extracted",
         [
-          "third-person plural present active indicative main-clause",
-          "third-person plural present active main-clause subjunctive-i"
+          "first/third-person singular past active indicative subordinate-clause",
+          "first/third-person singular past active subordinate-clause subjunctive-ii"
         ]
       ]
     },
-    "sie ausmachen": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural present active indicative subordinate-clause",
-          "third-person plural present active subordinate-clause subjunctive-i"
-        ]
-      ]
-    },
-    "sie werden ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural present indicative processual-passive",
-          "third-person plural present processual-passive subjunctive-i"
-        ]
-      ]
-    },
-    "sie sind ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural present indicative statal-passive"
-        ]
-      ]
-    },
-    "sie seien ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural present statal-passive subjunctive-i"
-        ]
-      ]
-    },
-    "ich machte aus": {
-      "verb": [
-        "extracted",
-        [
-          "first-person singular past active indicative main-clause",
-          "first-person singular past active main-clause subjunctive-ii"
-        ]
-      ]
-    },
-    "ich ausmachte": {
-      "verb": [
-        "extracted",
-        [
-          "first-person singular past active indicative subordinate-clause",
-          "first-person singular past active subordinate-clause subjunctive-ii"
-        ]
-      ]
-    },
-    "du machtest aus": {
+    "machtest aus": {
       "verb": [
         "extracted",
         [
@@ -520,7 +228,7 @@
         ]
       ]
     },
-    "du ausmachtest": {
+    "ausmachtest": {
       "verb": [
         "extracted",
         [
@@ -529,75 +237,25 @@
         ]
       ]
     },
-    "er/sie/es machte aus": {
+    "machten aus": {
       "verb": [
         "extracted",
         [
-          "third-person singular past active indicative main-clause",
-          "third-person singular past active main-clause subjunctive-ii"
+          "first/third-person plural past active indicative main-clause",
+          "first/third-person plural past active main-clause subjunctive-ii"
         ]
       ]
     },
-    "er/sie/es ausmachte": {
+    "ausmachten": {
       "verb": [
         "extracted",
         [
-          "third-person singular past active indicative subordinate-clause",
-          "third-person singular past active subordinate-clause subjunctive-ii"
+          "first/third-person plural past active indicative subordinate-clause",
+          "first/third-person plural past active subordinate-clause subjunctive-ii"
         ]
       ]
     },
-    "er/sie/es wurde ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular past indicative processual-passive"
-        ]
-      ]
-    },
-    "er/sie/es würde ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular past processual-passive subjunctive-ii"
-        ]
-      ]
-    },
-    "er/sie/es war ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular past indicative statal-passive"
-        ]
-      ]
-    },
-    "er/sie/es wäre ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular past statal-passive subjunctive-ii"
-        ]
-      ]
-    },
-    "wir machten aus": {
-      "verb": [
-        "extracted",
-        [
-          "first-person plural past active indicative main-clause",
-          "first-person plural past active main-clause subjunctive-ii"
-        ]
-      ]
-    },
-    "wir ausmachten": {
-      "verb": [
-        "extracted",
-        [
-          "first-person plural past active indicative subordinate-clause",
-          "first-person plural past active subordinate-clause subjunctive-ii"
-        ]
-      ]
-    },
-    "ihr machtet aus": {
+    "machtet aus": {
       "verb": [
         "extracted",
         [
@@ -606,757 +264,12 @@
         ]
       ]
     },
-    "ihr ausmachtet": {
+    "ausmachtet": {
       "verb": [
         "extracted",
         [
           "second-person plural past active indicative subordinate-clause",
           "second-person plural past active subordinate-clause subjunctive-ii"
-        ]
-      ]
-    },
-    "sie machten aus": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural past active indicative main-clause",
-          "third-person plural past active main-clause subjunctive-ii"
-        ]
-      ]
-    },
-    "sie ausmachten": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural past active indicative subordinate-clause",
-          "third-person plural past active subordinate-clause subjunctive-ii"
-        ]
-      ]
-    },
-    "sie wurden ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural past indicative processual-passive"
-        ]
-      ]
-    },
-    "sie würden ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural past processual-passive subjunctive-ii"
-        ]
-      ]
-    },
-    "sie waren ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural past indicative statal-passive"
-        ]
-      ]
-    },
-    "sie wären ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural past statal-passive subjunctive-ii"
-        ]
-      ]
-    },
-    "ich habe ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "first-person singular perfect active indicative",
-          "first-person singular perfect active subjunctive-i"
-        ]
-      ]
-    },
-    "du hast ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "second-person singular perfect active indicative"
-        ]
-      ]
-    },
-    "du habest ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "second-person singular perfect active subjunctive-i"
-        ]
-      ]
-    },
-    "er/sie/es hat ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular perfect active indicative"
-        ]
-      ]
-    },
-    "er/sie/es habe ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular perfect active subjunctive-i"
-        ]
-      ]
-    },
-    "er/sie/es ist ausgemacht worden": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular perfect indicative processual-passive"
-        ]
-      ]
-    },
-    "er/sie/es sei ausgemacht worden": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular perfect processual-passive subjunctive-i"
-        ]
-      ]
-    },
-    "er/sie/es ist ausgemacht gewesen": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular perfect indicative statal-passive"
-        ]
-      ]
-    },
-    "er/sie/es sei ausgemacht gewesen": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular perfect statal-passive subjunctive-i"
-        ]
-      ]
-    },
-    "wir haben ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "first-person plural perfect active indicative",
-          "first-person plural perfect active subjunctive-i"
-        ]
-      ]
-    },
-    "ihr habt ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "second-person plural perfect active indicative"
-        ]
-      ]
-    },
-    "ihr habet ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "second-person plural perfect active subjunctive-i"
-        ]
-      ]
-    },
-    "sie haben ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural perfect active indicative",
-          "third-person plural perfect active subjunctive-i"
-        ]
-      ]
-    },
-    "sie sind ausgemacht worden": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural perfect indicative processual-passive"
-        ]
-      ]
-    },
-    "sie seien ausgemacht worden": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural perfect processual-passive subjunctive-i"
-        ]
-      ]
-    },
-    "sie sind ausgemacht gewesen": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural perfect indicative statal-passive"
-        ]
-      ]
-    },
-    "sie seien ausgemacht gewesen": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural perfect statal-passive subjunctive-i"
-        ]
-      ]
-    },
-    "ich hatte ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "first-person singular pluperfect active indicative"
-        ]
-      ]
-    },
-    "ich hätte ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "first-person singular pluperfect active subjunctive-ii"
-        ]
-      ]
-    },
-    "du hattest ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "second-person singular pluperfect active indicative"
-        ]
-      ]
-    },
-    "du hättest ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "second-person singular pluperfect active subjunctive-ii"
-        ]
-      ]
-    },
-    "er/sie/es hatte ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular pluperfect active indicative"
-        ]
-      ]
-    },
-    "er/sie/es hätte ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular pluperfect active subjunctive-ii"
-        ]
-      ]
-    },
-    "er/sie/es war ausgemacht worden": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular pluperfect indicative processual-passive"
-        ]
-      ]
-    },
-    "er/sie/es wäre ausgemacht worden": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular pluperfect processual-passive subjunctive-ii"
-        ]
-      ]
-    },
-    "er/sie/es war ausgemacht gewesen": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular pluperfect indicative statal-passive"
-        ]
-      ]
-    },
-    "er/sie/es wäre ausgemacht gewesen": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular pluperfect statal-passive subjunctive-ii"
-        ]
-      ]
-    },
-    "wir hatten ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "first-person plural pluperfect active indicative"
-        ]
-      ]
-    },
-    "wir hätten ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "first-person plural pluperfect active subjunctive-ii"
-        ]
-      ]
-    },
-    "ihr hattet ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "second-person plural pluperfect active indicative"
-        ]
-      ]
-    },
-    "ihr hättet ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "second-person plural pluperfect active subjunctive-ii"
-        ]
-      ]
-    },
-    "sie hatten ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural pluperfect active indicative"
-        ]
-      ]
-    },
-    "sie hätten ausgemacht": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural pluperfect active subjunctive-ii"
-        ]
-      ]
-    },
-    "sie waren ausgemacht worden": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural pluperfect indicative processual-passive"
-        ]
-      ]
-    },
-    "sie wären ausgemacht worden": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural pluperfect processual-passive subjunctive-ii"
-        ]
-      ]
-    },
-    "sie waren ausgemacht gewesen": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural pluperfect indicative statal-passive"
-        ]
-      ]
-    },
-    "sie wären ausgemacht gewesen": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural pluperfect statal-passive subjunctive-ii"
-        ]
-      ]
-    },
-    "ich werde ausmachen": {
-      "verb": [
-        "extracted",
-        [
-          "first-person singular future-i active indicative",
-          "first-person singular future-i active subjunctive-i"
-        ]
-      ]
-    },
-    "ich würde ausmachen": {
-      "verb": [
-        "extracted",
-        [
-          "first-person singular future-i active subjunctive-ii"
-        ]
-      ]
-    },
-    "du wirst ausmachen": {
-      "verb": [
-        "extracted",
-        [
-          "second-person singular future-i active indicative"
-        ]
-      ]
-    },
-    "du werdest ausmachen": {
-      "verb": [
-        "extracted",
-        [
-          "second-person singular future-i active subjunctive-i"
-        ]
-      ]
-    },
-    "du würdest ausmachen": {
-      "verb": [
-        "extracted",
-        [
-          "second-person singular future-i active subjunctive-ii"
-        ]
-      ]
-    },
-    "er/sie/es wird ausmachen": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular future-i active indicative"
-        ]
-      ]
-    },
-    "er/sie/es werde ausmachen": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular future-i active subjunctive-i"
-        ]
-      ]
-    },
-    "er/sie/es würde ausmachen": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular future-i active subjunctive-ii"
-        ]
-      ]
-    },
-    "er/sie/es wird ausgemacht werden": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular future-i indicative processual-passive"
-        ]
-      ]
-    },
-    "er/sie/es werde ausgemacht werden": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular future-i processual-passive subjunctive-i"
-        ]
-      ]
-    },
-    "er/sie/es würde ausgemacht werden": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular future-i processual-passive subjunctive-ii"
-        ]
-      ]
-    },
-    "er/sie/es wird ausgemacht sein": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular future-i indicative statal-passive"
-        ]
-      ]
-    },
-    "er/sie/es werde ausgemacht sein": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular future-i statal-passive subjunctive-i"
-        ]
-      ]
-    },
-    "er/sie/es würde ausgemacht sein": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular future-i statal-passive subjunctive-ii"
-        ]
-      ]
-    },
-    "wir werden ausmachen": {
-      "verb": [
-        "extracted",
-        [
-          "first-person plural future-i active indicative",
-          "first-person plural future-i active subjunctive-i"
-        ]
-      ]
-    },
-    "wir würden ausmachen": {
-      "verb": [
-        "extracted",
-        [
-          "first-person plural future-i active subjunctive-ii"
-        ]
-      ]
-    },
-    "ihr werdet ausmachen": {
-      "verb": [
-        "extracted",
-        [
-          "second-person plural future-i active indicative",
-          "second-person plural future-i active subjunctive-i"
-        ]
-      ]
-    },
-    "ihr würdet ausmachen": {
-      "verb": [
-        "extracted",
-        [
-          "second-person plural future-i active subjunctive-ii"
-        ]
-      ]
-    },
-    "sie werden ausmachen": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural future-i active indicative",
-          "third-person plural future-i active subjunctive-i"
-        ]
-      ]
-    },
-    "sie würden ausmachen": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural future-i active subjunctive-ii"
-        ]
-      ]
-    },
-    "sie werden ausgemacht werden": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural future-i indicative processual-passive",
-          "third-person plural future-i processual-passive subjunctive-i"
-        ]
-      ]
-    },
-    "sie würden ausgemacht werden": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural future-i processual-passive subjunctive-ii"
-        ]
-      ]
-    },
-    "sie werden ausgemacht sein": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural future-i indicative statal-passive",
-          "third-person plural future-i statal-passive subjunctive-i"
-        ]
-      ]
-    },
-    "sie würden ausgemacht sein": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural future-i statal-passive subjunctive-ii"
-        ]
-      ]
-    },
-    "ich werde ausgemacht haben": {
-      "verb": [
-        "extracted",
-        [
-          "first-person singular future-ii active indicative",
-          "first-person singular future-ii active subjunctive-i"
-        ]
-      ]
-    },
-    "ich würde ausgemacht haben": {
-      "verb": [
-        "extracted",
-        [
-          "first-person singular future-ii active subjunctive-ii"
-        ]
-      ]
-    },
-    "du wirst ausgemacht haben": {
-      "verb": [
-        "extracted",
-        [
-          "second-person singular future-ii active indicative"
-        ]
-      ]
-    },
-    "du werdest ausgemacht haben": {
-      "verb": [
-        "extracted",
-        [
-          "second-person singular future-ii active subjunctive-i"
-        ]
-      ]
-    },
-    "du würdest ausgemacht haben": {
-      "verb": [
-        "extracted",
-        [
-          "second-person singular future-ii active subjunctive-ii"
-        ]
-      ]
-    },
-    "er/sie/es wird ausgemacht haben": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular future-ii active indicative"
-        ]
-      ]
-    },
-    "er/sie/es werde ausgemacht haben": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular future-ii active subjunctive-i"
-        ]
-      ]
-    },
-    "er/sie/es würde ausgemacht haben": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular future-ii active subjunctive-ii"
-        ]
-      ]
-    },
-    "er/sie/es wird ausgemacht worden sein": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular future-ii indicative processual-passive"
-        ]
-      ]
-    },
-    "er/sie/es werde ausgemacht worden sein": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular future-ii processual-passive subjunctive-i"
-        ]
-      ]
-    },
-    "er/sie/es würde ausgemacht worden sein": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular future-ii processual-passive subjunctive-ii"
-        ]
-      ]
-    },
-    "er/sie/es wird ausgemacht gewesen sein": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular future-ii indicative statal-passive"
-        ]
-      ]
-    },
-    "er/sie/es werde ausgemacht gewesen sein": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular future-ii statal-passive subjunctive-i"
-        ]
-      ]
-    },
-    "er/sie/es würde ausgemacht gewesen sein": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular future-ii statal-passive subjunctive-ii"
-        ]
-      ]
-    },
-    "wir werden ausgemacht haben": {
-      "verb": [
-        "extracted",
-        [
-          "first-person plural future-ii active indicative",
-          "first-person plural future-ii active subjunctive-i"
-        ]
-      ]
-    },
-    "wir würden ausgemacht haben": {
-      "verb": [
-        "extracted",
-        [
-          "first-person plural future-ii active subjunctive-ii"
-        ]
-      ]
-    },
-    "ihr werdet ausgemacht haben": {
-      "verb": [
-        "extracted",
-        [
-          "second-person plural future-ii active indicative",
-          "second-person plural future-ii active subjunctive-i"
-        ]
-      ]
-    },
-    "ihr würdet ausgemacht haben": {
-      "verb": [
-        "extracted",
-        [
-          "second-person plural future-ii active subjunctive-ii"
-        ]
-      ]
-    },
-    "sie werden ausgemacht haben": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural future-ii active indicative",
-          "third-person plural future-ii active subjunctive-i"
-        ]
-      ]
-    },
-    "sie würden ausgemacht haben": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural future-ii active subjunctive-ii"
-        ]
-      ]
-    },
-    "sie werden ausgemacht worden sein": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural future-ii indicative processual-passive",
-          "third-person plural future-ii processual-passive subjunctive-i"
-        ]
-      ]
-    },
-    "sie würden ausgemacht worden sein": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural future-ii processual-passive subjunctive-ii"
-        ]
-      ]
-    },
-    "sie werden ausgemacht gewesen sein": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural future-ii indicative statal-passive",
-          "third-person plural future-ii statal-passive subjunctive-i"
-        ]
-      ]
-    },
-    "sie würden ausgemacht gewesen sein": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural future-ii statal-passive subjunctive-ii"
         ]
       ]
     }
@@ -1584,6 +497,430 @@
         "extracted",
         [
           "variant subordinate-clause"
+        ]
+      ]
+    }
+  },
+  "anhaben": {
+    "an haben": {
+      "verb": [
+        "extracted",
+        [
+          "alternative"
+        ]
+      ]
+    },
+    "habe an": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular present active indicative main-clause",
+          "first/third-person singular present active main-clause subjunctive-i"
+        ]
+      ]
+    },
+    "hast an": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present active indicative main-clause"
+        ]
+      ]
+    },
+    "hat an": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular present active indicative main-clause"
+        ]
+      ]
+    },
+    "hatte an": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular past active indicative main-clause"
+        ]
+      ]
+    },
+    "hätte an": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular past active main-clause subjunctive-ii"
+        ]
+      ]
+    },
+    "anzuhaben": {
+      "verb": [
+        "extracted",
+        [
+          "active infinitive extended"
+        ]
+      ]
+    },
+    "angehabt": {
+      "verb": [
+        "extracted",
+        [
+          "active infinitive extended"
+        ]
+      ]
+    },
+    "anhabend": {
+      "verb": [
+        "extracted",
+        [
+          "present active participle"
+        ]
+      ]
+    },
+    "anhabe": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular present active indicative subordinate-clause",
+          "first/third-person singular present active subordinate-clause subjunctive-i"
+        ]
+      ]
+    },
+    "habest an": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present active main-clause subjunctive-i"
+        ]
+      ]
+    },
+    "anhast": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present active indicative subordinate-clause"
+        ]
+      ]
+    },
+    "anhabest": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present active subordinate-clause subjunctive-i"
+        ]
+      ]
+    },
+    "anhat": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular present active indicative subordinate-clause"
+        ]
+      ]
+    },
+    "haben an": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person plural present active indicative main-clause",
+          "first/third-person plural present active main-clause subjunctive-i"
+        ]
+      ]
+    },
+    "habt an": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present active indicative main-clause"
+        ]
+      ]
+    },
+    "habet an": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present active main-clause subjunctive-i"
+        ]
+      ]
+    },
+    "anhabt": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present active indicative subordinate-clause"
+        ]
+      ]
+    },
+    "anhabet": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present active subordinate-clause subjunctive-i"
+        ]
+      ]
+    },
+    "anhatte": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular past active indicative subordinate-clause"
+        ]
+      ]
+    },
+    "anhätte": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular past active subordinate-clause subjunctive-ii"
+        ]
+      ]
+    },
+    "hattest an": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past active indicative main-clause"
+        ]
+      ]
+    },
+    "hättest an": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past active main-clause subjunctive-ii"
+        ]
+      ]
+    },
+    "anhattest": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past active indicative subordinate-clause"
+        ]
+      ]
+    },
+    "anhättest": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past active subordinate-clause subjunctive-ii"
+        ]
+      ]
+    },
+    "hatten an": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person plural past active indicative main-clause"
+        ]
+      ]
+    },
+    "hätten an": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person plural past active main-clause subjunctive-ii"
+        ]
+      ]
+    },
+    "anhatten": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person plural past active indicative subordinate-clause"
+        ]
+      ]
+    },
+    "anhätten": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person plural past active subordinate-clause subjunctive-ii"
+        ]
+      ]
+    },
+    "hattet an": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past active indicative main-clause"
+        ]
+      ]
+    },
+    "hättet an": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past active main-clause subjunctive-ii"
+        ]
+      ]
+    },
+    "anhattet": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past active indicative subordinate-clause"
+        ]
+      ]
+    },
+    "anhättet": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past active subordinate-clause subjunctive-ii"
+        ]
+      ]
+    }
+  },
+  "sehen": {
+    "sehe": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular present active indicative",
+          "first/third-person singular present active subjunctive-i"
+        ]
+      ]
+    },
+    "siehst": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present active indicative"
+        ]
+      ]
+    },
+    "sieht": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular present active indicative"
+        ]
+      ]
+    },
+    "sah": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular past active indicative"
+        ]
+      ]
+    },
+    "sähe": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular past active subjunctive-ii"
+        ]
+      ]
+    },
+    "gesehen": {
+      "verb": [
+        "extracted",
+        [
+          "active infinitive extended"
+        ]
+      ]
+    },
+    "sehend": {
+      "verb": [
+        "extracted",
+        [
+          "present active participle"
+        ]
+      ]
+    },
+    "sehender": {
+      "verb": [
+        "extracted",
+        [
+          "participle gerundive"
+        ]
+      ]
+    },
+    "sehest": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present active subjunctive-i"
+        ]
+      ]
+    },
+    "seht": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present active indicative"
+        ]
+      ]
+    },
+    "sehet": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present active subjunctive-i"
+        ]
+      ]
+    },
+    "sahst": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past active indicative"
+        ]
+      ]
+    },
+    "sähest": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past active subjunctive-ii"
+        ]
+      ]
+    },
+    "sähst": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past active subjunctive-ii"
+        ]
+      ]
+    },
+    "sahen": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person plural past active indicative"
+        ]
+      ]
+    },
+    "sähen": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person plural past active subjunctive-ii"
+        ]
+      ]
+    },
+    "saht": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past active indicative"
+        ]
+      ]
+    },
+    "sähet": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past active subjunctive-ii"
+        ]
+      ]
+    },
+    "säht": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past active subjunctive-ii"
         ]
       ]
     }
