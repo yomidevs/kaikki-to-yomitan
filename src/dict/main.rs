@@ -909,7 +909,7 @@ fn process_forms(edition: Edition, source: Lang, entry: &WordEntry, irs: &mut Ti
             break;
         }
 
-        if should_skip_form(edition, source, form) {
+        if should_skip_form(edition, source, &entry.pos, form) {
             continue;
         }
 
@@ -943,7 +943,7 @@ fn process_forms(edition: Edition, source: Lang, entry: &WordEntry, irs: &mut Ti
 //
 // Eventually it would be preferable if these were done at wiktextract level, but let's do the work
 // ourselves for now
-fn should_skip_form(edition: Edition, source: Lang, form: &Form) -> bool {
+fn should_skip_form(edition: Edition, source: Lang, pos: &str, form: &Form) -> bool {
     match (edition, source) {
         (Edition::Fr, Lang::Fr) => {
             // Objectively better
@@ -962,6 +962,22 @@ fn should_skip_form(edition: Edition, source: Lang, form: &Form) -> bool {
         (Edition::En, Lang::Ja) => {
             // Skip transliterations: "hashireru", "tanoshikarō" etc.
             if is_japanese_romanization(&form.form) {
+                return true;
+            }
+        }
+        (Edition::Ja, Lang::Ja) => {
+            // Skip {{ja-noun-suru}} conjugation table.
+            // Yomitan will find a result anyway if search resolution is set to Letter (as it
+            // works best for Japanese).
+            // The issue is that sometimes the pos is "verb" depending on the editor, and on if they
+            // decided to add the table in a "verb" section... And selecting pos == "verb" trims
+            // actually useful tables of non-suru verbs.
+            if pos == "noun"
+                && !form
+                    .tags
+                    .iter()
+                    .any(|tag| tag == "transliteration" || tag == "kanji")
+            {
                 return true;
             }
         }
