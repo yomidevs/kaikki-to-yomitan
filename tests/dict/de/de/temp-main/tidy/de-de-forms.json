@@ -103,16 +103,15 @@
         ]
       ]
     },
-    "ausgemacht": {
+    "auszumachen": {
       "verb": [
         "extracted",
         [
-          "perfect participle-2",
-          "perfect passive participle"
+          "active infinitive extended"
         ]
       ]
     },
-    "auszumachen": {
+    "ausgemacht": {
       "verb": [
         "extracted",
         [
@@ -498,6 +497,275 @@
         "extracted",
         [
           "variant subordinate-clause"
+        ]
+      ]
+    }
+  },
+  "anhaben": {
+    "an haben": {
+      "verb": [
+        "extracted",
+        [
+          "alternative"
+        ]
+      ]
+    },
+    "habe an": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular present active indicative main-clause",
+          "first/third-person singular present active main-clause subjunctive-i"
+        ]
+      ]
+    },
+    "hast an": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present active indicative main-clause"
+        ]
+      ]
+    },
+    "hat an": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular present active indicative main-clause"
+        ]
+      ]
+    },
+    "hatte an": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular past active indicative main-clause"
+        ]
+      ]
+    },
+    "hätte an": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular past active main-clause subjunctive-ii"
+        ]
+      ]
+    },
+    "anzuhaben": {
+      "verb": [
+        "extracted",
+        [
+          "active infinitive extended"
+        ]
+      ]
+    },
+    "angehabt": {
+      "verb": [
+        "extracted",
+        [
+          "active infinitive extended"
+        ]
+      ]
+    },
+    "anhabend": {
+      "verb": [
+        "extracted",
+        [
+          "present active participle"
+        ]
+      ]
+    },
+    "anhabe": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular present active indicative subordinate-clause",
+          "first/third-person singular present active subordinate-clause subjunctive-i"
+        ]
+      ]
+    },
+    "habest an": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present active main-clause subjunctive-i"
+        ]
+      ]
+    },
+    "anhast": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present active indicative subordinate-clause"
+        ]
+      ]
+    },
+    "anhabest": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present active subordinate-clause subjunctive-i"
+        ]
+      ]
+    },
+    "anhat": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular present active indicative subordinate-clause"
+        ]
+      ]
+    },
+    "haben an": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person plural present active indicative main-clause",
+          "first/third-person plural present active main-clause subjunctive-i"
+        ]
+      ]
+    },
+    "habt an": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present active indicative main-clause"
+        ]
+      ]
+    },
+    "habet an": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present active main-clause subjunctive-i"
+        ]
+      ]
+    },
+    "anhabt": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present active indicative subordinate-clause"
+        ]
+      ]
+    },
+    "anhabet": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present active subordinate-clause subjunctive-i"
+        ]
+      ]
+    },
+    "anhatte": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular past active indicative subordinate-clause"
+        ]
+      ]
+    },
+    "anhätte": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular past active subordinate-clause subjunctive-ii"
+        ]
+      ]
+    },
+    "hattest an": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past active indicative main-clause"
+        ]
+      ]
+    },
+    "hättest an": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past active main-clause subjunctive-ii"
+        ]
+      ]
+    },
+    "anhattest": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past active indicative subordinate-clause"
+        ]
+      ]
+    },
+    "anhättest": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past active subordinate-clause subjunctive-ii"
+        ]
+      ]
+    },
+    "hatten an": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person plural past active indicative main-clause"
+        ]
+      ]
+    },
+    "hätten an": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person plural past active main-clause subjunctive-ii"
+        ]
+      ]
+    },
+    "anhatten": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person plural past active indicative subordinate-clause"
+        ]
+      ]
+    },
+    "anhätten": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person plural past active subordinate-clause subjunctive-ii"
+        ]
+      ]
+    },
+    "hattet an": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past active indicative main-clause"
+        ]
+      ]
+    },
+    "hättet an": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past active main-clause subjunctive-ii"
+        ]
+      ]
+    },
+    "anhattet": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past active indicative subordinate-clause"
+        ]
+      ]
+    },
+    "anhättet": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past active subordinate-clause subjunctive-ii"
         ]
       ]
     }

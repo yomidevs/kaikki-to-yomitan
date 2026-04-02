@@ -115,5 +115,20 @@
         }
       ]
     }
+  ],
+  [
+    "anhaben",
+    "ipa",
+    {
+      "reading": "anhaben",
+      "transcriptions": [
+        {
+          "ipa": "[ˈanˌhaːbn̩]"
+        },
+        {
+          "ipa": "[ˈanˌhaːbm̩]"
+        }
+      ]
+    }
   ]
 ]

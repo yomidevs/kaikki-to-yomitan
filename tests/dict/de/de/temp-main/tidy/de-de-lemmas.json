@@ -882,5 +882,88 @@
         }
       ]
     }
+  },
+  "anhaben": {
+    "anhaben": {
+      "verb": [
+        {
+          "gloss_tree": {
+            "ein Kleidungsstück am Körper tragen": {
+              "tags": [
+                "colloquial",
+                "transitive"
+              ],
+              "examples": [
+                {
+                  "text": "Er hat immer dasselbe an.",
+                  "bold_text_offsets": [
+                    [
+                      3,
+                      6
+                    ],
+                    [
+                      22,
+                      25
+                    ]
+                  ]
+                }
+              ]
+            },
+            "eingeschaltet haben": {
+              "tags": [
+                "colloquial",
+                "transitive"
+              ],
+              "examples": [
+                {
+                  "text": "Bei Oma und Opa war es langweilig; sie saßen auf dem Sofa und hatten nichts an – kein Radio, keinen Fernseher, nichts.",
+                  "bold_text_offsets": [
+                    [
+                      24,
+                      26
+                    ],
+                    [
+                      62,
+                      68
+                    ],
+                    [
+                      76,
+                      78
+                    ]
+                  ]
+                }
+              ]
+            },
+            "jemandem schaden, jemandem eine Straftat oder Ähnliches nachweisen": {
+              "tags": [
+                "transitive"
+              ],
+              "examples": [
+                {
+                  "text": "Sie kann mir in dieser Sache nichts anhaben.",
+                  "bold_text_offsets": [
+                    [
+                      36,
+                      44
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "synonyms": [
+            {
+              "word": "tragen"
+            },
+            {
+              "word": "schaden"
+            }
+          ],
+          "etymology_text": "gebildet aus der Partikel an als Verbzusatz und dem Verb haben",
+          "wlink": "https://de.wiktionary.org/wiki/anhaben#German",
+          "klink": "https://kaikki.org/dewiktionary/All%20languages%20combined/meaning/a/an/anhaben.html"
+        }
+      ]
+    }
   }
 }

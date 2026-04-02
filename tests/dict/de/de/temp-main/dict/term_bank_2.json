@@ -272,7 +272,7 @@
     ""
   ],
   [
-    "ausgemacht",
+    "auszumachen",
     "",
     "non-lemma",
     "v",
@@ -281,13 +281,7 @@
       [
         "ausmachen",
         [
-          "perfect participle-2"
-        ]
-      ],
-      [
-        "ausmachen",
-        [
-          "perfect passive participle"
+          "active infinitive extended"
         ]
       ]
     ],
@@ -295,7 +289,7 @@
     ""
   ],
   [
-    "auszumachen",
+    "ausgemacht",
     "",
     "non-lemma",
     "v",
@@ -1155,6 +1149,585 @@
         "gehe aus",
         [
           "variant subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "an haben",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "alternative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "habe an",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "first-person singular present active indicative main-clause"
+        ]
+      ],
+      [
+        "anhaben",
+        [
+          "first/third-person singular present active main-clause subjunctive-i"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "hast an",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "second-person singular present active indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "hat an",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "third-person singular present active indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "hatte an",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "first/third-person singular past active indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "hätte an",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "first/third-person singular past active main-clause subjunctive-ii"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "anzuhaben",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "active infinitive extended"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "angehabt",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "active infinitive extended"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "anhabend",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "present active participle"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "anhabe",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "first-person singular present active indicative subordinate-clause"
+        ]
+      ],
+      [
+        "anhaben",
+        [
+          "first/third-person singular present active subordinate-clause subjunctive-i"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "habest an",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "second-person singular present active main-clause subjunctive-i"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "anhast",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "second-person singular present active indicative subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "anhabest",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "second-person singular present active subordinate-clause subjunctive-i"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "anhat",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "third-person singular present active indicative subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "haben an",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "first/third-person plural present active indicative main-clause"
+        ]
+      ],
+      [
+        "anhaben",
+        [
+          "first/third-person plural present active main-clause subjunctive-i"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "habt an",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "second-person plural present active indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "habet an",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "second-person plural present active main-clause subjunctive-i"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "anhabt",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "second-person plural present active indicative subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "anhabet",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "second-person plural present active subordinate-clause subjunctive-i"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "anhatte",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "first/third-person singular past active indicative subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "anhätte",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "first/third-person singular past active subordinate-clause subjunctive-ii"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "hattest an",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "second-person singular past active indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "hättest an",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "second-person singular past active main-clause subjunctive-ii"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "anhattest",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "second-person singular past active indicative subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "anhättest",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "second-person singular past active subordinate-clause subjunctive-ii"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "hatten an",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "first/third-person plural past active indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "hätten an",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "first/third-person plural past active main-clause subjunctive-ii"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "anhatten",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "first/third-person plural past active indicative subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "anhätten",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "first/third-person plural past active subordinate-clause subjunctive-ii"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "hattet an",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "second-person plural past active indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "hättet an",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "second-person plural past active main-clause subjunctive-ii"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "anhattet",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "second-person plural past active indicative subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "anhättet",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "anhaben",
+        [
+          "second-person plural past active subordinate-clause subjunctive-ii"
         ]
       ]
     ],

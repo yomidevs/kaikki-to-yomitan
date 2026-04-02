@@ -841,7 +841,7 @@ fn preprocess_main(
 //
 // See: https://kaikki.org/dewiktionary/Deutsch/meaning/a/au/ausmachen.html
 fn preprocess_forms_de(entry: &mut WordEntry) {
-    // Trim personal pronouns from verb forms (this information is already in tags)
+    // 1. Trim personal pronouns from verb forms (this information is already in tags)
     const PRONOUNS: &[&str] = &["ich ", "du ", "er/sie/es ", "wir ", "ihr ", "sie "];
     for form in &mut entry.forms {
         for &prefix in PRONOUNS {
@@ -853,26 +853,39 @@ fn preprocess_forms_de(entry: &mut WordEntry) {
     }
 
     // 2. Remove auxiliary verb constructions
-    #[rustfmt::skip]
-    const AUX_PREFIXES: &[&str] = &[
-        "werden ", "wird ", "werde ", "werdet ", "wirst ", "werdest ",
-        "würde ", "würden ", "würdest ", "würdet ",
-        "haben ", "habe ", "hat ", "hast ", "habt ", "habest ", "habet ",
-        "hatte ", "hatten ", "hattest ", "hattet ",
-        "hätte ", "hätten ", "hättest ", "hättet ",
-        "sein ", "ist ", "sind ", "war ", "waren ", "wäre ", "wären ",
-        "sei ", "seien ", "wurde ", "wurden ",
-    ];
-
-    const AUX_INFIXES: &[&str] = &[" haben", " werden", " sein", " worden ", " gewesen "];
-
+    //
+    // Working with tags is better than doing string replacement, because in that case we may
+    // stumble into edge cases like "anhaben", where we don't want to confuse the auxiliary verb
+    // with the actual verb.
+    // See: https://www.verblisten.de/listen/verben/anfangsbuchstabe/ueberblick.html?i=haben
     entry.forms.retain(|form| {
-        let f = form.form.as_str();
+        let is_compound = form.tags.iter().any(|tag| {
+            matches!(
+                tag.as_str(),
+                "perfect"
+                    | "pluperfect"
+                    | "future-i"
+                    | "future-ii"
+                    | "processual-passive"
+                    | "statal-passive"
+            )
+        });
 
-        !f.ends_with(['…', '!'])
-            && !AUX_PREFIXES.iter().any(|&prefix| f.starts_with(prefix))
-            && !AUX_INFIXES.iter().any(|&infix| f.contains(infix))
+        !is_compound && !form.form.ends_with(['…', '!'])
     });
+
+    // The above tag strategy "requires"* us to clean the "extended" forms.
+    // *I'm not entirely sure this is needed, specially because the form obtained is an adjective
+    // that most likely happens in some other page, but since it gives the same result as the
+    // (previous) string replacement, we keep it as it is.
+    for form in &mut entry.forms {
+        if form.tags.iter().any(|tag| tag == "extended") {
+            if let Some(stripped) = form.form.strip_suffix(" zu haben") {
+                form.form = stripped.to_string();
+                break;
+            }
+        }
+    }
 }
 
 /// Add Extracted forms. That is, forms from `entry.forms`.
