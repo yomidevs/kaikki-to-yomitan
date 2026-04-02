@@ -471,7 +471,7 @@ def generate_tags_localization_rs(
         w(f"        Lang::{iso.title()} => localize_tag_{iso}(short_tag),\n")
     w("        _ => None,\n")
     w("    }\n")
-    w("}\n\n")
+    w("}\n")
 
     # Keyed by primary alias only. Secondary aliases are irrelevant.
     # This is because we only translate short tags. Every alias converges to a short tag
@@ -481,6 +481,7 @@ def generate_tags_localization_rs(
     for iso, translations in locale.items():
         ratio = len(translations) / len(long_to_short)
 
+        w("\n")
         w(
             f"/// Coverage: {len(translations)}/{len(long_to_short)} tags ({ratio:.1%})\n"
         )
@@ -489,6 +490,7 @@ def generate_tags_localization_rs(
         )
         w("    match short_tag {\n")
         for trans in translations:
+            # TODO: This should not crash but just continue if I keep using it for finding new tags
             if trans.long_tag_en not in long_to_short:
                 print(
                     f"[{iso}] ERROR: tag '{trans.long_tag_en}' has no matching tag bank entry"

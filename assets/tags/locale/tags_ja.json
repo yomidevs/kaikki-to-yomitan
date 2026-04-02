@@ -47,6 +47,18 @@
         "俗",
         "俗語"
     ],
+    "vulgar": [
+        "",
+        "卑語"
+    ],
+    "euphemistic": [
+        "",
+        "婉曲"
+    ],
+    "childish": [
+        "",
+        "幼児語"
+    ],
     "mathematics": [
         "",
         "数学"
@@ -202,6 +214,18 @@
     "programming": [
         "",
         "プログラミング"
+    ],
+    "economics": [
+        "",
+        "経済"
+    ],
+    "geography": [
+        "",
+        "地理"
+    ],
+    "phonetics": [
+        "",
+        "音声学"
     ],
     "preposition": [
         "前",

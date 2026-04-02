@@ -39,6 +39,7 @@ fn localize_tag_de(short_tag: &str) -> Option<(&'static str, &'static str)> {
         _ => None,
     }
 }
+
 /// Coverage: 26/372 tags (7.0%)
 fn localize_tag_el(short_tag: &str) -> Option<(&'static str, &'static str)> {
     match short_tag {
@@ -71,7 +72,8 @@ fn localize_tag_el(short_tag: &str) -> Option<(&'static str, &'static str)> {
         _ => None,
     }
 }
-/// Coverage: 52/372 tags (14.0%)
+
+/// Coverage: 58/372 tags (15.6%)
 fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
     match short_tag {
         "v" => Some(("動", "動詞")),
@@ -86,6 +88,9 @@ fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
         "name" => Some(("名前", "固有名詞")),
         "ptcl" => Some(("助", "助詞")),
         "sl" => Some(("俗", "俗語")),
+        "vulg" => Some(("卑語", "卑語")),
+        "euph" => Some(("婉曲", "婉曲")),
+        "child" => Some(("幼児語", "幼児語")),
         "math" => Some(("数学", "数学")),
         "vt" => Some(("他動", "他動詞")),
         "vi" => Some(("自動", "自動詞")),
@@ -125,6 +130,9 @@ fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
         "idiom" => Some(("成句", "成句")),
         "mil" => Some(("軍事", "軍事")),
         "program" => Some(("プログラミング", "プログラミング")),
+        "econ" => Some(("経済", "経済")),
+        "geo" => Some(("地理", "地理")),
+        "phonet" => Some(("音声学", "音声学")),
         "prep" => Some(("前", "前置詞")),
         _ => None,
     }
