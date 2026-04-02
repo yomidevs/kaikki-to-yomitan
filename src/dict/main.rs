@@ -661,6 +661,10 @@ fn postprocess_forms(form_map: &mut FormMap) {
 }
 
 fn process_main(edition: Edition, source: Lang, entry: &WordEntry, irs: &mut Tidy) {
+    if should_skip_entry(entry) {
+        return;
+    }
+
     process_forms(edition, source, entry, irs);
 
     process_alt_forms(entry, irs);
@@ -700,6 +704,14 @@ fn process_main(edition: Edition, source: Lang, entry: &WordEntry, irs: &mut Tid
             process_entry(edition, source, entry),
         );
     }
+}
+
+/// Whether we should completely skip this entry.
+///
+/// The function is trivial at the moment and only relevant for the [ja-en] dict.
+fn should_skip_entry(entry: &WordEntry) -> bool {
+    // https://en.wiktionary.org/wiki/toraware#Japanese
+    entry.pos == "romanization"
 }
 
 // Everything that mutates entry
