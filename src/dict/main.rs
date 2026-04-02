@@ -771,6 +771,13 @@ fn preprocess_main(
         }
     }
 
+    // WARN:: mutates entry::forms (and entry::forms::form)
+    //
+    // See the function documentation.
+    if edition == Edition::De && source == Lang::De {
+        preprocess_forms_de(entry);
+    }
+
     // WARN: mutates entry::senses
     //
     // What if the current word is an inflection but *also* has an inflection table?
@@ -823,6 +830,49 @@ fn preprocess_main(
             }
         }
     }
+}
+
+// In German, verb forms come with personal pronouns which makes for poor results (worse
+// search, deduplication, dictionary bloat etc.)
+// This should probably be fixed at wiktextract at some point.
+// Here we trim personal pronouns prefixes: "ich ", "du ", "er/sie/es " etc.
+//
+// TODO: We could do the same for French, instead of discarding such forms in should_skip_form
+//
+// See: https://kaikki.org/dewiktionary/Deutsch/meaning/a/au/ausmachen.html
+fn preprocess_forms_de(entry: &mut WordEntry) {
+    // Trim personal pronouns from verb forms (this information is already in tags)
+    const PRONOUNS: &[&str] = &["ich ", "du ", "er/sie/es ", "wir ", "ihr ", "sie "];
+    for form in &mut entry.forms {
+        for &prefix in PRONOUNS {
+            if let Some(stripped) = form.form.strip_prefix(prefix) {
+                form.form = stripped.to_string();
+                break;
+            }
+        }
+    }
+
+    // 2. Remove auxiliary verb constructions
+    #[rustfmt::skip]
+    const AUX_PREFIXES: &[&str] = &[
+        "werden ", "wird ", "werde ", "werdet ", "wirst ", "werdest ",
+        "würde ", "würden ", "würdest ", "würdet ",
+        "haben ", "habe ", "hat ", "hast ", "habt ", "habest ", "habet ",
+        "hatte ", "hatten ", "hattest ", "hattet ",
+        "hätte ", "hätten ", "hättest ", "hättet ",
+        "sein ", "ist ", "sind ", "war ", "waren ", "wäre ", "wären ",
+        "sei ", "seien ", "wurde ", "wurden ",
+    ];
+
+    const AUX_INFIXES: &[&str] = &[" haben", " werden", " sein", " worden ", " gewesen "];
+
+    entry.forms.retain(|form| {
+        let f = form.form.as_str();
+
+        !f.ends_with(['…', '!'])
+            && !AUX_PREFIXES.iter().any(|&prefix| f.starts_with(prefix))
+            && !AUX_INFIXES.iter().any(|&infix| f.contains(infix))
+    });
 }
 
 /// Add Extracted forms. That is, forms from `entry.forms`.
