@@ -10,41 +10,6 @@
         "type": "structured-content",
         "content": [
           {
-            "tag": "div",
-            "content": [
-              {
-                "tag": "div",
-                "data": {
-                  "content": "preamble"
-                },
-                "content": [
-                  {
-                    "tag": "details",
-                    "data": {
-                      "content": "details-entry-Etymology"
-                    },
-                    "content": [
-                      {
-                        "tag": "summary",
-                        "data": {
-                          "content": "summary-entry"
-                        },
-                        "content": "Этимология"
-                      },
-                      {
-                        "tag": "div",
-                        "data": {
-                          "content": "Etymology-content"
-                        },
-                        "content": "Происходит от ??"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "tag": "ol",
             "data": {
               "content": "glosses"

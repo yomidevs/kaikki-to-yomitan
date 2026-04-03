@@ -1164,6 +1164,13 @@ fn process_entry(edition: Edition, source: Lang, entry: &WordEntry) -> LemmaInfo
         synonyms: entry.synonyms.iter().take(3).cloned().collect(),
         etymology_text: entry
             .etymology_texts()
+            .filter(|texts| match edition {
+                // "Missing etymology" placeholder: remove it
+                // We can't do it at preprocess_main because of the opaqueness of etymology text due to
+                // some editions using a String (etymology text), and others a Vec (etymology textS)
+                Edition::Ru => !texts.contains(&"Происходит от ??"),
+                _ => true,
+            })
             .map(|etymology_text| etymology_text.join("\n")),
         head_info_text: get_head_info(&entry.head_templates)
             .map(|head_info_text| head_info_text.join("\n")),
