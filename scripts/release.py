@@ -20,14 +20,16 @@ git push
 (when it says enter password, actually type the token...)
 """
 
+import argparse
 import datetime
 import re
 import shutil
 import subprocess
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 from pprint import pprint
-from typing import Literal
+from typing import Literal, get_args
 
 from dotenv import load_dotenv
 from huggingface_hub import HfApi, whoami
@@ -41,14 +43,14 @@ BINARY_PATH = "target/release/wty"
 ANSI_ESCAPE_RE = re.compile(r"\x1B[@-_][0-?]*[ -/]*[@-~]")
 
 type DictTy = Literal["main", "ipa", "ipa-merged", "glossary"]
+type CmdTy = Literal["publish", "squash"]
+
+CMD_CHOICES = get_args(CmdTy.__value__)
 
 
 @dataclass
 class Args:
-    verbose: int
-    dry_run: bool
-    jobs: int
-    dtype: DictTy | None
+    cmd: CmdTy
 
 
 def release_version() -> str:
@@ -163,12 +165,7 @@ def prepare_stage() -> None:
         shutil.copytree(str(PM.index), destination / "index")
 
 
-# https://huggingface.co/new-dataset
-# https://huggingface.co/settings/tokens
-def upload_to_huggingface() -> None:
-
-    PM.check_dict_dir()
-
+def login_to_huggingface() -> None:
     try:
         # Requires an ".env" file with
         # HF_TOKEN="hf_..."
@@ -177,7 +174,15 @@ def upload_to_huggingface() -> None:
         print(f"✓ Successfully logged in as: {user_info['name']}")
     except Exception as e:
         print(f"✗ Login failed: {e}")
-        return
+        sys.exit(1)
+
+
+# https://huggingface.co/new-dataset
+# https://huggingface.co/settings/tokens
+def upload_to_huggingface() -> None:
+    PM.check_dict_dir()
+
+    login_to_huggingface()
 
     dict_dir = PM.dictionary
     _, size = stats(dict_dir)
@@ -223,6 +228,21 @@ def upload_to_huggingface() -> None:
         print(f"Uploaded README @ {folder_in_repo or 'root'}")
 
 
+def super_squash() -> None:
+    """Squash the huggingface repo history.
+
+    Huggingface will complain once we reach a certain amount of commits.
+    Since the commits are mangled due to upload_large_folder anyway, we don't care
+    too much about the history, and they claim this speeds things up...
+    """
+    login_to_huggingface()
+    api = HfApi()
+    api.super_squash_history(
+        repo_id=REPO_ID_HF,
+        repo_type="dataset",
+    )
+
+
 def update_readme_local(readme_path: Path, commit_sha: str, version: str) -> None:
     """Write the README of the huggingface repo @ readme_path."""
     commit_sha_short = commit_sha[:7]
@@ -257,9 +277,27 @@ def pre_stage() -> None:
         print(f"[pre-stage] moved: {src} -> {dst}")
 
 
+def parse_args() -> Args:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "cmd",
+        nargs="?",
+        default="publish",
+        choices=CMD_CHOICES,
+        help="Command to run (default: publish)",
+    )
+    args = parser.parse_args()
+    return Args(cmd=args.cmd)
+
+
 def main() -> None:
-    pre_stage()
-    upload_to_huggingface()
+    args = parse_args()
+    match args.cmd:
+        case "publish":
+            pre_stage()
+            upload_to_huggingface()
+        case "squash":
+            super_squash()
 
 
 if __name__ == "__main__":
