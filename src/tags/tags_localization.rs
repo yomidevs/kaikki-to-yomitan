@@ -73,12 +73,14 @@ fn localize_tag_el(short_tag: &str) -> Option<(&'static str, &'static str)> {
     }
 }
 
-/// Coverage: 58/372 tags (15.6%)
+/// Coverage: 62/372 tags (16.7%)
 fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
     match short_tag {
         "v" => Some(("動", "動詞")),
         "n" => Some(("名", "名詞")),
         "adj" => Some(("形", "形容詞")),
+        "prov" => Some(("ことわざ", "ことわざ")),
+        "num" => Some(("数詞", "数詞")),
         "counter" => Some(("助数詞", "助数詞")),
         "dated" => Some(("古風", "古風")),
         "obs" => Some(("廃語", "廃語")),
@@ -100,6 +102,7 @@ fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
         "offens" => Some(("蔑称", "蔑称")),
         "dialect" => Some(("方言", "方言")),
         "rare" => Some(("まれ", "まれ")),
+        "humor" => Some(("滑稽", "滑稽")),
         "adv" => Some(("副", "副詞")),
         "artic" => Some(("定", "定冠詞")),
         "aux-v" => Some(("助動", "助動詞")),
@@ -127,6 +130,7 @@ fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
         "psych" => Some(("心理学", "心理学")),
         "log" => Some(("論理学", "論理学")),
         "gramm" => Some(("文法", "文法")),
+        "hist" => Some(("歴史", "歴史")),
         "idiom" => Some(("成句", "成句")),
         "mil" => Some(("軍事", "軍事")),
         "program" => Some(("プログラミング", "プログラミング")),
