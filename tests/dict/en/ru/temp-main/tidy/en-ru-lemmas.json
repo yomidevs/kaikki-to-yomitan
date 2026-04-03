@@ -1,0 +1,36 @@
+{
+  "read": {
+    "read": {
+      "verb": [
+        {
+          "gloss_tree": {
+            "читать": {},
+            "прочесть": {},
+            "считывать": {},
+            "гласить": {},
+            "изучать": {},
+            "толковать": {},
+            "показывать": {},
+            "вычитывать": {},
+            "снимать показания": {},
+            "объяснять": {}
+          },
+          "synonyms": [
+            {
+              "word": "declaim"
+            },
+            {
+              "word": "deliver"
+            },
+            {
+              "word": "say"
+            }
+          ],
+          "etymology_text": "Происходит от ??",
+          "wlink": "https://ru.wiktionary.org/wiki/read#English",
+          "klink": "https://kaikki.org/ruwiktionary/All%20languages%20combined/meaning/r/re/read.html"
+        }
+      ]
+    }
+  }
+}
