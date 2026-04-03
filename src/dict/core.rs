@@ -99,18 +99,12 @@ pub trait Dictionary {
     type A: TryInto<PathManager, Error = anyhow::Error>;
     type I: Intermediate;
 
-    /// Whether to keep or not this entry.
+    /// Whether we want to quickly probe a jsonline to avoid a full deserialization.
     ///
-    /// It is only overwritten in glossary extended.
-    fn keep_if(&self, source: Lang, entry: &WordEntry) -> bool {
-        entry.lang_code == source.iso()
-    }
-
-    /// Whether we can quickly probe a jsonline to avoid a full deserialization.
+    /// By default, it probes on source Lang.
     ///
-    /// It probes on source Lang, performing the same check of the default `keep_if`.
-    ///
-    /// It is only overwritten in glossary extended.
+    /// It is only overwritten in glossary extended, and it is pointless when working
+    /// with a database.
     fn supports_probe(&self) -> bool {
         true
     }
@@ -242,9 +236,17 @@ pub fn iter_datasets(pm: &PathManager) -> impl Iterator<Item = Result<(Edition, 
 
 #[derive(Deserialize)]
 #[serde(default)]
-struct LangCodeProbe<'a> {
+pub struct LangCodeProbe<'a> {
     #[serde(borrow)]
     lang_code: Cow<'a, str>,
+}
+
+impl LangCodeProbe<'_> {
+    pub fn should_skip(line: &[u8], lang: Lang) -> Result<bool> {
+        let probe: LangCodeProbe =
+            serde_json::from_slice(line).with_context(|| "Error decoding JSON @ probe")?;
+        Ok(probe.lang_code != lang.iso())
+    }
 }
 
 impl Default for LangCodeProbe<'_> {
@@ -293,22 +295,14 @@ pub fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
             // TODO: at some point we should have a "make_dict" for CLI/release.rs
             // with a db, and another, without probing, for tests, instead of having
             // one for release.rs and other for CLI/tests.
-            if dict.supports_probe() {
-                let probe: LangCodeProbe = serde_json::from_slice(&line)
-                    .with_context(|| "Error decoding JSON @ make_dict")?;
-                if probe.lang_code.as_ref() != source_pm.iso() {
-                    continue;
-                }
+            if dict.supports_probe() && LangCodeProbe::should_skip(&line, source_pm)? {
+                continue;
             }
 
             let mut entry: WordEntry =
                 serde_json::from_slice(&line).with_context(|| "Error decoding JSON @ make_dict")?;
 
             if rejected(&entry, opts) {
-                continue;
-            }
-
-            if !dict.keep_if(source_pm, &entry) {
                 continue;
             }
 

@@ -42,10 +42,6 @@ impl Dictionary for DGlossaryExtended {
     type A = GlossaryExtendedArgs;
     type I = IGlossaryExtended;
 
-    fn keep_if(&self, _: Lang, _: &WordEntry) -> bool {
-        true
-    }
-
     fn supports_probe(&self) -> bool {
         false
     }
