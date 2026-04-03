@@ -48,6 +48,9 @@ pub enum Command {
 
     /// Build a release with all dictionaries
     Release(ReleaseArgs),
+
+    /// Diagnostic utility
+    Scan(MainLangs),
 }
 
 #[derive(Parser, Debug, Clone)]

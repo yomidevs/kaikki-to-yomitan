@@ -909,7 +909,7 @@ fn process_forms(edition: Edition, source: Lang, entry: &WordEntry, irs: &mut Ti
             break;
         }
 
-        if should_skip_form(edition, source, form) {
+        if should_skip_form(edition, source, &entry.pos, form) {
             continue;
         }
 
@@ -943,7 +943,7 @@ fn process_forms(edition: Edition, source: Lang, entry: &WordEntry, irs: &mut Ti
 //
 // Eventually it would be preferable if these were done at wiktextract level, but let's do the work
 // ourselves for now
-fn should_skip_form(edition: Edition, source: Lang, form: &Form) -> bool {
+fn should_skip_form(edition: Edition, source: Lang, pos: &str, form: &Form) -> bool {
     match (edition, source) {
         (Edition::Fr, Lang::Fr) => {
             // Objectively better
@@ -962,6 +962,22 @@ fn should_skip_form(edition: Edition, source: Lang, form: &Form) -> bool {
         (Edition::En, Lang::Ja) => {
             // Skip transliterations: "hashireru", "tanoshikarō" etc.
             if is_japanese_romanization(&form.form) {
+                return true;
+            }
+        }
+        (Edition::Ja, Lang::Ja) => {
+            // Skip {{ja-noun-suru}} conjugation table.
+            // Yomitan will find a result anyway if search resolution is set to Letter (as it
+            // works best for Japanese).
+            // The issue is that sometimes the pos is "verb" depending on the editor, and on if they
+            // decided to add the table in a "verb" section... And selecting pos == "verb" trims
+            // actually useful tables of non-suru verbs.
+            if pos == "noun"
+                && !form
+                    .tags
+                    .iter()
+                    .any(|tag| tag == "transliteration" || tag == "kanji")
+            {
                 return true;
             }
         }
@@ -1590,13 +1606,7 @@ fn get_found_tags(pos: &Pos, info: &LemmaInfo) -> Vec<Tag> {
         .chain(common_tags_iter)
         .filter_map(|tag| match find_tag_in_bank(&tag) {
             Some(tag_info) => Some(tag_info.short_tag),
-            None => {
-                // log skipped tags
-                // if !["alt-of", "alternative", "form-of"].contains(&tag.as_str()) {
-                //     tracing::debug!("{} @ {}", tag, info.link_wiktionary);
-                // }
-                None
-            }
+            None => None,
         })
         .collect()
 }
@@ -1767,16 +1777,7 @@ fn structured_tags(target: Lang, tags: &[Tag], common_short_tags_found: &[Tag]) 
         .map(|tag_info| {
             let (short_tag, long_tag) = match localize_tag(target, &tag_info.short_tag) {
                 Some((short, long)) => (short.to_string(), long.to_string()),
-                None => {
-                    // if tag_info.category != "topic" && tag_info.category != "variety" {
-                    //     tracing::debug!(
-                    //         "Tag not localized to {target}: {} ({})",
-                    //         tag_info.short_tag,
-                    //         tag_info.long_tag
-                    //     );
-                    // }
-                    (tag_info.short_tag, tag_info.long_tag)
-                }
+                None => (tag_info.short_tag, tag_info.long_tag),
             };
             GenericNode {
                 tag: NTag::Span,

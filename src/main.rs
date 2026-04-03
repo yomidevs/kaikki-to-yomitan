@@ -6,7 +6,7 @@ use wty::{
     cli::{Cli, Command, LangSpecs},
     dict::{
         DGlossary, DGlossaryExtended, DIpa, DIpaMerged, DMain, find_or_download_jsonl, make_dict,
-        release::release,
+        release::release, scan::scan,
     },
     lang::{Edition, Lang},
     path::PathManager,
@@ -61,6 +61,7 @@ fn run(cmd: Command) -> Result<()> {
             Ok(())
         }
         Command::Release(args) => release(args),
+        Command::Scan(args) => scan(args),
     }
 }
 
