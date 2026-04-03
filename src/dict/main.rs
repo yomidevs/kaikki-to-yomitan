@@ -1606,13 +1606,7 @@ fn get_found_tags(pos: &Pos, info: &LemmaInfo) -> Vec<Tag> {
         .chain(common_tags_iter)
         .filter_map(|tag| match find_tag_in_bank(&tag) {
             Some(tag_info) => Some(tag_info.short_tag),
-            None => {
-                // log skipped tags
-                // if !["alt-of", "alternative", "form-of"].contains(&tag.as_str()) {
-                //     tracing::debug!("{} @ {}", tag, info.link_wiktionary);
-                // }
-                None
-            }
+            None => None,
         })
         .collect()
 }
@@ -1783,16 +1777,7 @@ fn structured_tags(target: Lang, tags: &[Tag], common_short_tags_found: &[Tag]) 
         .map(|tag_info| {
             let (short_tag, long_tag) = match localize_tag(target, &tag_info.short_tag) {
                 Some((short, long)) => (short.to_string(), long.to_string()),
-                None => {
-                    // if tag_info.category != "topic" && tag_info.category != "variety" {
-                    //     tracing::debug!(
-                    //         "Tag not localized to {target}: {} ({})",
-                    //         tag_info.short_tag,
-                    //         tag_info.long_tag
-                    //     );
-                    // }
-                    (tag_info.short_tag, tag_info.long_tag)
-                }
+                None => (tag_info.short_tag, tag_info.long_tag),
             };
             GenericNode {
                 tag: NTag::Span,

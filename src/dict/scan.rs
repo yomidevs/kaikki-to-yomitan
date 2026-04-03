@@ -39,6 +39,8 @@ impl TagDiagnostics {
         match find_tag_in_bank(&tag) {
             Some(tag_info) => match localize_tag(target, &tag_info.short_tag) {
                 Some(_) => (),
+                // TODO: maybe don't log not localized tags if the short form was an emoji,
+                // since those are supposed to be language-agnostic
                 None => self.not_localized.increment(tag, edition, source, word),
             },
             None => self.not_found.increment(tag, edition, source, word),
