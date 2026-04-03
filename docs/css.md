@@ -1,10 +1,20 @@
-## Customize css
+## Prelude
 
 - The css used by all dictionaries can be found [here](https://raw.githubusercontent.com/yomidevs/wiktionary-to-yomitan/master/assets/styles.css).
 - Yomitan documentation contains [themes](https://yomitan.wiki/tools-resources/?h=css#yomitan-colored-css) and how to set them up.
 - The sunset Yomichan has a still mostly valid [guide](https://learnjapanese.moe/yomicss/) on how to customize css.
 
-### Tags
+## Customize css
+
+To add some custom css, follow the instructions from this [issue](https://github.com/yomidevs/wiktionary-to-yomitan/issues/244):
+
+1. Open your Yomitan settings
+2. Ensure `Advanced` is enabled at the bottom left
+3. Select the `Appearance` section
+4. Select the option `Configure custom CSS…`
+5. In the `Popup CSS` section, paste the CSS code
+
+---
 
 The first thing to know, if you want the css to only affect a `wty` dictionary, is to preface every declaration with: 
 
@@ -25,9 +35,25 @@ For example, this will only show the "Hokkien" pronunciation in `wty-zh-en-ipa`:
 
 !!! note "From now on, we will skip this declaration for simplicity."
 
-#### Main dictionary
+## Main dictionary
 
-Here is a basic example on how to handle these tags with your custom css.
+### Sections
+
+```css
+/* Hide Grammar + Etymology sections on top */
+div[data-sc-content="preamble"] {
+  display: none;
+}
+
+/* Hide links at the bottom right */
+div[data-sc-content="backlink"] {
+  display: none;
+}
+```
+
+### Tags
+
+Here is a basic example on how to handle tags with your custom css.
 
 ```css
 /* Hide inflections (~book icon, inflection tags) */
@@ -42,7 +68,9 @@ Here is a basic example on how to handle these tags with your custom css.
 [data-sc-category="topic"] { display: none; }
 ```
 
-#### Ipa dictionary
+## Ipa dictionary
+
+### Tags
 
 This css will only show "Hokkien" and "bopomofo" pronunciations:
 

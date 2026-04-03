@@ -1,0 +1,20 @@
+{
+  "read": {
+    "reads": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular"
+        ]
+      ]
+    },
+    "reading": {
+      "verb": [
+        "extracted",
+        [
+          "gerund"
+        ]
+      ]
+    }
+  }
+}
