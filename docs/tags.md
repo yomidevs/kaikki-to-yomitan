@@ -41,7 +41,7 @@ Even though `topics` happen almost exclusively as inner tags, a wiktextract tag 
 
 ### CSS
 
-See the relevant section in [css](css.md#tags).
+See the relevant section in [css](css.md).
 
 ---
 
