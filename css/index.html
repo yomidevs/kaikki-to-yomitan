@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#customize-css" class="md-skip">
+        <a href="#prelude" class="md-skip">
           Skip to content
         </a>
       
@@ -353,6 +353,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#prelude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prelude
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#customize-css" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -361,8 +372,30 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Customize css">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-dictionary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main dictionary
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Main dictionary">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sections
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#tags" class="md-nav__link">
@@ -373,21 +406,14 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Tags">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#main-dictionary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Main dictionary
-      
-    </span>
-  </a>
-  
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ipa-dictionary" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -396,10 +422,17 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Ipa dictionary">
+      <ul class="md-nav__list">
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#tags_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tags
+      
+    </span>
+  </a>
   
 </li>
         
@@ -600,13 +633,22 @@
 
   <h1>Css</h1>
 
-<h2 id="customize-css">Customize css<a class="headerlink" href="#customize-css" title="Permanent link">&para;</a></h2>
+<h2 id="prelude">Prelude<a class="headerlink" href="#prelude" title="Permanent link">&para;</a></h2>
 <ul>
 <li>The css used by all dictionaries can be found <a href="https://raw.githubusercontent.com/yomidevs/wiktionary-to-yomitan/master/assets/styles.css">here</a>.</li>
 <li>Yomitan documentation contains <a href="https://yomitan.wiki/tools-resources/?h=css#yomitan-colored-css">themes</a> and how to set them up.</li>
 <li>The sunset Yomichan has a still mostly valid <a href="https://learnjapanese.moe/yomicss/">guide</a> on how to customize css.</li>
 </ul>
-<h3 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h3>
+<h2 id="customize-css">Customize css<a class="headerlink" href="#customize-css" title="Permanent link">&para;</a></h2>
+<p>To add some custom css, follow the instructions from this <a href="https://github.com/yomidevs/wiktionary-to-yomitan/issues/244">issue</a>:</p>
+<ol>
+<li>Open your Yomitan settings</li>
+<li>Ensure <code>Advanced</code> is enabled at the bottom left</li>
+<li>Select the <code>Appearance</code> section</li>
+<li>Select the option <code>Configure custom CSS…</code></li>
+<li>In the <code>Popup CSS</code> section, paste the CSS code</li>
+</ol>
+<hr />
 <p>The first thing to know, if you want the css to only affect a <code>wty</code> dictionary, is to preface every declaration with: </p>
 <div class="highlight"><pre><span></span><code><span class="o">[</span><span class="nt">data-dictionary</span><span class="o">=</span><span class="s2">&quot;dictionary-name&quot;</span><span class="o">]</span>
 </code></pre></div>
@@ -621,8 +663,20 @@
 <div class="admonition note">
 <p class="admonition-title">From now on, we will skip this declaration for simplicity.</p>
 </div>
-<h4 id="main-dictionary">Main dictionary<a class="headerlink" href="#main-dictionary" title="Permanent link">&para;</a></h4>
-<p>Here is a basic example on how to handle these tags with your custom css.</p>
+<h2 id="main-dictionary">Main dictionary<a class="headerlink" href="#main-dictionary" title="Permanent link">&para;</a></h2>
+<h3 id="sections">Sections<a class="headerlink" href="#sections" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c">/* Hide Grammar + Etymology sections on top */</span>
+<span class="nt">div</span><span class="o">[</span><span class="nt">data-sc-content</span><span class="o">=</span><span class="s2">&quot;preamble&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Hide links at the bottom right */</span>
+<span class="nt">div</span><span class="o">[</span><span class="nt">data-sc-content</span><span class="o">=</span><span class="s2">&quot;backlink&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h3>
+<p>Here is a basic example on how to handle tags with your custom css.</p>
 <div class="highlight"><pre><span></span><code><span class="c">/* Hide inflections (~book icon, inflection tags) */</span>
 <span class="p">.</span><span class="nc">inflection-rule-chains</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 
@@ -634,7 +688,8 @@
 <span class="c">/* Hide inner topic tags (note the -sc-) */</span>
 <span class="o">[</span><span class="nt">data-sc-category</span><span class="o">=</span><span class="s2">&quot;topic&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 </code></pre></div>
-<h4 id="ipa-dictionary">Ipa dictionary<a class="headerlink" href="#ipa-dictionary" title="Permanent link">&para;</a></h4>
+<h2 id="ipa-dictionary">Ipa dictionary<a class="headerlink" href="#ipa-dictionary" title="Permanent link">&para;</a></h2>
+<h3 id="tags_1">Tags<a class="headerlink" href="#tags_1" title="Permanent link">&para;</a></h3>
 <p>This css will only show "Hokkien" and "bopomofo" pronunciations:</p>
 <div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">pronunciation</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
