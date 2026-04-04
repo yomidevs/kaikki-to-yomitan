@@ -1181,14 +1181,17 @@ fn process_entry(edition: Edition, source: Lang, entry: &WordEntry) -> LemmaInfo
 
 static PARENS_RE: LazyLock<Regex> = LazyLock::new(|| Regex::new(r"\(.+?\)").unwrap());
 
-// rg: getheadinfo
 // For consistency, it's better if this function shares return type with .etymology_texts()
 fn get_head_info(head_templates: &[HeadTemplate]) -> Option<Vec<&str>> {
+    // It's rare, but duplicates can happen:
+    // https://kaikki.org/dictionary/Irish/meaning/p/po/postáil.html
+    let mut seen = Set::default();
     let result: Vec<_> = head_templates
         .iter()
         .filter_map(|head_template| {
-            if PARENS_RE.is_match(&head_template.expansion) {
-                Some(head_template.expansion.as_str())
+            let expansion = head_template.expansion.as_str();
+            if PARENS_RE.is_match(expansion) && seen.insert(expansion) {
+                Some(expansion)
             } else {
                 None
             }
