@@ -2030,7 +2030,7 @@
   [
     "nun",
     "",
-    "adv",
+    "Adv",
     "adv",
     0,
     [
@@ -2476,7 +2476,7 @@
   [
     "in",
     "",
-    "prep",
+    "Präp",
     "prep",
     0,
     [
@@ -2547,12 +2547,12 @@
                           },
                           {
                             "tag": "span",
-                            "title": "with-dative",
+                            "title": "mit Dativ",
                             "data": {
                               "content": "tag",
                               "category": "case"
                             },
-                            "content": "dat"
+                            "content": "Dat"
                           }
                         ]
                       },
@@ -2854,12 +2854,12 @@
                           },
                           {
                             "tag": "span",
-                            "title": "with-accusative",
+                            "title": "mit Akkusativ",
                             "data": {
                               "content": "tag",
                               "category": "case"
                             },
-                            "content": "acc"
+                            "content": "Akk"
                           }
                         ]
                       },
@@ -3860,7 +3860,7 @@
   [
     "sehen",
     "",
-    "V irreg",
+    "V unreg",
     "v",
     0,
     [

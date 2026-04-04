@@ -16,7 +16,7 @@ pub fn localize_tag(lang: Lang, short_tag: &str) -> Option<(&'static str, &'stat
     }
 }
 
-/// Coverage: 17/372 tags (4.6%)
+/// Coverage: 37/372 tags (9.9%)
 fn localize_tag_de(short_tag: &str) -> Option<(&'static str, &'static str)> {
     match short_tag {
         "n" => Some(("S", "Substantiv")),
@@ -25,16 +25,36 @@ fn localize_tag_de(short_tag: &str) -> Option<(&'static str, &'static str)> {
         "neut" => Some(("Neut", "Neutrum")),
         "v" => Some(("V", "Verb")),
         "adj" => Some(("Adj", "Adjektiv")),
+        "adv" => Some(("Adv", "Adverb")),
+        "name" => Some(("Vorn", "Vorname")),
+        "num" => Some(("Num", "Numerale")),
+        "phrase" => Some(("Wortverbindung", "Wortverbindung")),
+        "artic" => Some(("Artik", "Artikel")),
+        "pron" => Some(("Pron", "Pronomen")),
+        "pref" => Some(("Präf", "Präfix")),
+        "suf" => Some(("Suf", "Suffix")),
+        "ptcl" => Some(("Ptkl", "Partikel")),
+        "conj" => Some(("Konj", "Konjunktion")),
+        "prep" => Some(("Präp", "Präposition")),
+        "intj" => Some(("Int", "Interjektion")),
         "vt" => Some(("Vt", "transitives Verb")),
         "vi" => Some(("Vi", "intransitives Verb")),
-        "name" => Some(("Vorn", "Vorname")),
+        "vr" => Some(("Vr", "reflexives Verb")),
+        "dat" => Some(("Dat", "mit Dativ")),
+        "acc" => Some(("Akk", "mit Akkusativ")),
+        "no-pl" => Some(("k-Pl", "kein Plural")),
+        "pl-only" => Some(("n-Pl", "nur Plural")),
+        "irreg" => Some(("unreg", "unregelmäßig")),
         "arch" => Some(("veraltet", "veraltet")),
+        "out" => Some(("veralt", "veraltende Bedeutung")),
         "dated" => Some(("altmod", "altmodisch")),
         "col" => Some(("ums", "umgangssprachlich")),
         "fig" => Some(("übertragen", "übertragen")),
         "vulg" => Some(("vulgär", "vulgär")),
         "literal" => Some(("wörtlich", "wörtlich")),
         "lit" => Some(("liter", "literarisch")),
+        "hist" => Some(("hist", "historisch")),
+        "tech" => Some(("Tech", "Technik")),
         "sports" => Some(("Sport", "Sport")),
         _ => None,
     }

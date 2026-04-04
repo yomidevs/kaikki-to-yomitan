@@ -23,6 +23,54 @@
         "Adj",
         "Adjektiv"
     ],
+    "adverb": [
+        "Adv",
+        "Adverb"
+    ],
+    "name": [
+        "Vorn",
+        "Vorname"
+    ],
+    "numeral": [
+        "Num",
+        "Numerale"
+    ],
+    "phrase": [
+        "",
+        "Wortverbindung"
+    ],
+    "article": [
+        "Artik",
+        "Artikel"
+    ],
+    "pronoun": [
+        "Pron",
+        "Pronomen"
+    ],
+    "prefix": [
+        "Präf",
+        "Präfix"
+    ],
+    "suffix": [
+        "Suf",
+        "Suffix"
+    ],
+    "particle": [
+        "Ptkl",
+        "Partikel"
+    ],
+    "conjunction": [
+        "Konj",
+        "Konjunktion"
+    ],
+    "preposition": [
+        "Präp",
+        "Präposition"
+    ],
+    "interjection": [
+        "Int",
+        "Interjektion"
+    ],
     "transitive verb": [
         "Vt",
         "transitives Verb"
@@ -31,13 +79,37 @@
         "Vi",
         "intransitives Verb"
     ],
-    "name": [
-        "Vorn",
-        "Vorname"
+    "reflexive verb": [
+        "Vr",
+        "reflexives Verb"
+    ],
+    "with-dative": [
+        "Dat",
+        "mit Dativ"
+    ],
+    "with-accusative": [
+        "Akk",
+        "mit Akkusativ"
+    ],
+    "no-plural": [
+        "k-Pl",
+        "kein Plural"
+    ],
+    "plural only": [
+        "n-Pl",
+        "nur Plural"
+    ],
+    "irregular": [
+        "unreg",
+        "unregelmäßig"
     ],
     "archaic": [
         "",
         "veraltet"
+    ],
+    "outdated": [
+        "veralt",
+        "veraltende Bedeutung"
     ],
     "dated": [
         "altmod",
@@ -62,6 +134,14 @@
     "literary": [
         "liter",
         "literarisch"
+    ],
+    "historical": [
+        "hist",
+        "historisch"
+    ],
+    "technology": [
+        "Tech",
+        "Technik"
     ],
     "sports": [
         "",
