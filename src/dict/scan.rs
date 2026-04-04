@@ -2,6 +2,8 @@
 //!
 //! Analyzes tags, POS, and localization coverage across dictionary entries.
 
+#![allow(unused)]
+
 use std::{
     collections::HashMap,
     fs::File,
@@ -24,17 +26,24 @@ use crate::{
 
 /// Any tag with this count or less are not serialized. They are too rare to care.
 const MIN_COUNT_TO_SHOW: usize = 10;
+const N_LINKS_TO_SHOW: usize = 1;
+
+const TAGS_TO_IGNORE: [&str; 3] = ["unknown", "form-of", "alt-of"];
 
 #[derive(Default, Serialize)]
 struct TagDiagnostics {
-    total: TagCounter,
+    // total: TagCounter,
     not_found: TagCounterWithLink,
     not_localized: TagCounterWithLink,
 }
 
 impl TagDiagnostics {
     fn process(&mut self, edition: Edition, source: Lang, target: Lang, tag: String, word: &str) {
-        self.total.increment(tag.to_string());
+        if TAGS_TO_IGNORE.contains(&tag.as_str()) {
+            return;
+        }
+
+        self.process_simple(tag.to_string());
 
         match find_tag_in_bank(&tag) {
             Some(tag_info) => match localize_tag(target, &tag_info.short_tag) {
@@ -48,7 +57,7 @@ impl TagDiagnostics {
     }
 
     fn process_simple(&mut self, tag: String) {
-        self.total.increment(tag);
+        // self.total.increment(tag);
     }
 }
 
@@ -82,7 +91,7 @@ impl Serialize for TagCounter {
 #[derive(Serialize)]
 struct TagInfo {
     count: usize,
-    link: String,
+    links: Vec<String>,
 }
 
 /// Counter with link to first occurrence
@@ -93,10 +102,15 @@ impl TagCounterWithLink {
     fn increment(&mut self, key: String, edition: Edition, source: Lang, word: &str) {
         self.0
             .entry(key)
-            .and_modify(|e| e.count += 1)
+            .and_modify(|e| {
+                e.count += 1;
+                if e.links.len() < N_LINKS_TO_SHOW {
+                    e.links.push(link_wiktionary(edition, source, word));
+                }
+            })
             .or_insert_with(|| TagInfo {
                 count: 1,
-                link: link_wiktionary(edition, source, word),
+                links: vec![link_wiktionary(edition, source, word)],
             });
     }
 }
@@ -195,6 +209,7 @@ pub fn scan(args: MainLangs) -> Result<()> {
     let (edition, source, path_jsonl) = setup_args(args)?;
 
     tracing::warn!("Ignoring tags with count <= {MIN_COUNT_TO_SHOW}");
+    tracing::warn!("Showing at most {N_LINKS_TO_SHOW} link(s)");
 
     let capacity = 256 * (1 << 10); // default is 8 * (1 << 10) := 8KB
     let mut line = Vec::with_capacity(1 << 10);
