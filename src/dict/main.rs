@@ -965,6 +965,22 @@ fn should_skip_form(edition: Edition, source: Lang, pos: &str, form: &Form) -> b
                 return true;
             }
         }
+        (Edition::En, Lang::Fi) => {
+            // Bloated, remove anything non-essential
+            // For the reasoning behind possessive, see. should_break_at_finish_forms
+            if form
+                .tags
+                .iter()
+                .any(|tag| tag == "rare" || tag == "possessive")
+            {
+                return true;
+            }
+            // We don't support composite forms
+            // https://en.wiktionary.org/wiki/pullistaa
+            if form.form.contains(' ') {
+                return true;
+            }
+        }
         (Edition::Ja, Lang::Ja) => {
             // Skip {{ja-noun-suru}} conjugation table.
             // Yomitan will find a result anyway if search resolution is set to Letter (as it
