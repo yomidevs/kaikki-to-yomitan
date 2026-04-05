@@ -975,8 +975,14 @@ fn should_skip_form(edition: Edition, source: Lang, pos: &str, form: &Form) -> b
             }
         }
         (Edition::En, Lang::Ja) => {
-            // Skip transliterations: "hashireru", "tanoshikarō" etc.
+            // Skip romanization: "hashireru", "tanoshikarō" etc.
             if is_japanese_romanization(&form.form) {
+                return true;
+            }
+            // Sometimes romanization is at the end: 走っていません [hashitte imasen]
+            // (which seems like a parsing error on compound-word by wiktextract)
+            // This should be safe enough: I can't think of a useful form with brackets.
+            if form.form.contains('[') && form.form.contains(']') {
                 return true;
             }
         }
