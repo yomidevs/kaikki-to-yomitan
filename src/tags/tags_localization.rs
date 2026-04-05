@@ -16,7 +16,7 @@ pub fn localize_tag(lang: Lang, short_tag: &str) -> Option<(&'static str, &'stat
     }
 }
 
-/// Coverage: 37/372 tags (9.9%)
+/// Coverage: 67/372 tags (18.0%)
 fn localize_tag_de(short_tag: &str) -> Option<(&'static str, &'static str)> {
     match short_tag {
         "n" => Some(("S", "Substantiv")),
@@ -49,12 +49,42 @@ fn localize_tag_de(short_tag: &str) -> Option<(&'static str, &'static str)> {
         "out" => Some(("veralt", "veraltende Bedeutung")),
         "dated" => Some(("altmod", "altmodisch")),
         "col" => Some(("ums", "umgangssprachlich")),
+        "derog" => Some(("abwert", "abwertend")),
         "fig" => Some(("übertragen", "übertragen")),
         "vulg" => Some(("vulgär", "vulgär")),
         "literal" => Some(("wörtlich", "wörtlich")),
         "lit" => Some(("liter", "literarisch")),
         "hist" => Some(("hist", "historisch")),
         "tech" => Some(("Tech", "Technik")),
+        "ling" => Some(("Ling", "Linguistik")),
+        "biol" => Some(("Bio", "Biologie")),
+        "comp" => Some(("Infor", "Informatik")),
+        "med" => Some(("Med", "Medizin")),
+        "eco" => Some(("Ökol", "Ökologie")),
+        "law" => Some(("Recht", "Recht")),
+        "electr" => Some(("Elek", "Elektronik")),
+        "math" => Some(("Math", "Mathematik")),
+        "mil" => Some(("Mil", "Militär")),
+        "polit" => Some(("Pol", "Politik")),
+        "anat" => Some(("Anat", "Anatomie")),
+        "chem" => Some(("Chem", "Chemie")),
+        "econ" => Some(("Wirt", "Wirtschaft")),
+        "geol" => Some(("Geol", "Geologie")),
+        "philos" => Some(("Phil", "Philosophie")),
+        "psych" => Some(("Psy", "Psychologie")),
+        "agr" => Some(("Landwirt", "Landwirtschaft")),
+        "history" => Some(("Gesch", "Geschichte")),
+        "myth" => Some(("Myth", "Mythologie")),
+        "aux" => Some(("Hvb", "Hilfsverb")),
+        "sg" => Some(("Sing", "Singular")),
+        "physics" => Some(("Phys", "Physik")),
+        "ecc" => Some(("kirchl", "kirchlich")),
+        "geo" => Some(("Geogr", "Geografie")),
+        "jar" => Some(("Fachspr", "Fachsprache")),
+        "impf" => Some(("imperf", "imperfektiv")),
+        "pf" => Some(("perf", "perfektiv")),
+        "contr" => Some(("Abkz", "Abkürzung")),
+        "zoo" => Some(("Zoo", "Zoologie")),
         "sports" => Some(("Sport", "Sport")),
         _ => None,
     }

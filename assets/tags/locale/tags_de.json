@@ -119,6 +119,10 @@
         "ums",
         "umgangssprachlich"
     ],
+    "derogatory": [
+        "abwert",
+        "abwertend"
+    ],
     "figurative": [
         "",
         "übertragen"
@@ -142,6 +146,122 @@
     "technology": [
         "Tech",
         "Technik"
+    ],
+    "linguistics": [
+        "Ling",
+        "Linguistik"
+    ],
+    "biology": [
+        "Bio",
+        "Biologie"
+    ],
+    "computing": [
+        "Infor",
+        "Informatik"
+    ],
+    "medicine": [
+        "Med",
+        "Medizin"
+    ],
+    "ecology": [
+        "Ökol",
+        "Ökologie"
+    ],
+    "law": [
+        "",
+        "Recht"
+    ],
+    "electronics": [
+        "Elek",
+        "Elektronik"
+    ],
+    "mathematics": [
+        "Math",
+        "Mathematik"
+    ],
+    "military": [
+        "Mil",
+        "Militär"
+    ],
+    "politics": [
+        "Pol",
+        "Politik"
+    ],
+    "anatomy": [
+        "Anat",
+        "Anatomie"
+    ],
+    "chemistry": [
+        "Chem",
+        "Chemie"
+    ],
+    "economics": [
+        "Wirt",
+        "Wirtschaft"
+    ],
+    "geology": [
+        "Geol",
+        "Geologie"
+    ],
+    "philosophy": [
+        "Phil",
+        "Philosophie"
+    ],
+    "psychology": [
+        "Psy",
+        "Psychologie"
+    ],
+    "agriculture": [
+        "Landwirt",
+        "Landwirtschaft"
+    ],
+    "history": [
+        "Gesch",
+        "Geschichte"
+    ],
+    "mythology": [
+        "Myth",
+        "Mythologie"
+    ],
+    "auxiliary": [
+        "Hvb",
+        "Hilfsverb"
+    ],
+    "singular": [
+        "Sing",
+        "Singular"
+    ],
+    "physics": [
+        "Phys",
+        "Physik"
+    ],
+    "ecclesiastical": [
+        "kirchl",
+        "kirchlich"
+    ],
+    "geography": [
+        "Geogr",
+        "Geografie"
+    ],
+    "jargon": [
+        "Fachspr",
+        "Fachsprache"
+    ],
+    "imperfective": [
+        "imperf",
+        "imperfektiv"
+    ],
+    "perfective": [
+        "perf",
+        "perfektiv"
+    ],
+    "contraction": [
+        "Abkz",
+        "Abkürzung"
+    ],
+    "zoology": [
+        "Zoo",
+        "Zoologie"
     ],
     "sports": [
         "",
