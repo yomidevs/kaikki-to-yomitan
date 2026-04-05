@@ -65,7 +65,7 @@ ol[data-sc-content="glosses"] {
     list-style-type: upper-roman;
 }
 [data-sc-content="summary-entry"]::marker {
-    color: var(--checkbox-disabled-color);
+    color: var(--checkbox-disabled-color, #aaaaaa);
 }
 
 /* Circled numbers (note: they contain a space after the number) */
@@ -125,7 +125,7 @@ ol[data-sc-content="glosses"] > li:nth-child(50) { list-style-type: "㊿ "; }
 
 summary[data-sc-content="summary-entry"] {
     list-style-position: inside;
-    color: var(--text-color-light4);
+    color: var(--text-color-light4, #888888);
 }
 details[data-sc-content^="details-entry-Grammar"] summary[data-sc-content="summary-entry"],
 details[data-sc-content^="details-entry-Etymology"] summary[data-sc-content="summary-entry"] {
@@ -150,16 +150,16 @@ div[data-sc-content="synonyms"] ul[data-sc-content="synonyms-list"] li:not(:last
 }
 
 details[data-sc-content^="details-entry"][open=""] summary[data-sc-content="summary-entry"] {
-    color: var(--text-color);
+    color: var(--text-color, #222222);
 }
 details[data-sc-content^="details-entry"][open=""] summary[data-sc-content="summary-entry"]::marker {
-    color: var(--text-color);
+    color: var(--text-color, #222222);
 }
 summary[data-sc-content="summary-entry"]:hover {
     border-radius: 0.4em;
     background-color: var(--notification-background-color-lighter);
     cursor: pointer;
-    color: var(--text-color);
+    color: var(--text-color, #222222);
 }
 summary[data-sc-content="summary-entry"] ~ div {
     margin: 0.5em 0;
