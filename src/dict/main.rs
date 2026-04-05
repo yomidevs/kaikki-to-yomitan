@@ -351,6 +351,16 @@ impl Dictionary for DMain {
 
     fn postprocess(&self, irs: &mut Self::I) {
         postprocess_forms(&mut irs.form_map);
+
+        // Check for form redirects A > B where B does not have a lemma, to remove bloat.
+        // This can happen when:
+        // 1. A form redirects to another form that's not registered as a lemma
+        // 2. Data inconsistencies in the source dictionary
+        //
+        // Caveats:
+        // 1. People using multiple dictionaries, where B as a lemma in another dict.
+        // 2. A > B > C and C has a lemma (to test)
+        // check_orphaned_redirects(irs);
     }
 
     fn to_yomitan(&self, langs: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntry> {
@@ -359,6 +369,29 @@ impl Dictionary for DMain {
             LabelledYomitanEntry::new("form", to_yomitan_forms(langs.source, irs.form_map)),
         ]
     }
+}
+
+// For now, only diagnostic.
+#[allow(unused)]
+fn check_orphaned_redirects(irs: &mut Tidy) {
+    let mut orphaned_count = 0;
+    let total = irs.form_map.len();
+
+    let lemmas_found: Set<_> = irs
+        .lemma_map
+        .0
+        .iter()
+        .map(|(key, _)| key.lemma.as_str())
+        .collect();
+
+    for (uninfl, _, _, _, _) in irs.form_map.flat_iter() {
+        if !lemmas_found.contains(uninfl) {
+            // tracing::debug!("{:?} does not exist as lemma", uninfl);
+            orphaned_count += 1;
+        }
+    }
+
+    tracing::error!("{orphaned_count} orphaned_count from {total}")
 }
 
 #[derive(Debug, Clone, Hash, PartialEq, Eq)]
