@@ -56,8 +56,7 @@
       "noun": [
         "extracted",
         [
-          "accusative plural definite",
-          "nominative plural definite"
+          "plural definite nominative/accusative"
         ]
       ]
     },
@@ -73,8 +72,7 @@
       "noun": [
         "extracted",
         [
-          "ablative singular indefinite",
-          "dative singular indefinite"
+          "singular indefinite dative/ablative"
         ]
       ]
     },
@@ -82,8 +80,7 @@
       "noun": [
         "extracted",
         [
-          "ablative singular definite",
-          "dative singular definite"
+          "singular definite dative/ablative"
         ]
       ]
     },
@@ -91,9 +88,8 @@
       "noun": [
         "extracted",
         [
-          "ablative plural definite",
-          "dative plural definite",
-          "dative plural indefinite"
+          "dative plural indefinite",
+          "plural definite dative/ablative"
         ]
       ]
     },

@@ -483,19 +483,7 @@
       [
         "Fuchs",
         [
-          "accusative plural definite"
-        ]
-      ],
-      [
-        "Fuchs",
-        [
-          "genitive plural definite"
-        ]
-      ],
-      [
-        "Fuchs",
-        [
-          "nominative plural definite"
+          "plural definite nominative/genitive/accusative"
         ]
       ]
     ],
@@ -614,31 +602,13 @@
       [
         "Herz",
         [
-          "accusative plural definite"
-        ]
-      ],
-      [
-        "Herz",
-        [
-          "dative plural definite"
-        ]
-      ],
-      [
-        "Herz",
-        [
           "dative singular"
         ]
       ],
       [
         "Herz",
         [
-          "genitive plural definite"
-        ]
-      ],
-      [
-        "Herz",
-        [
-          "nominative plural definite"
+          "plural definite nominative/genitive/dative/accusative"
         ]
       ]
     ],
@@ -757,25 +727,7 @@
       [
         "Base",
         [
-          "accusative plural definite"
-        ]
-      ],
-      [
-        "Base",
-        [
-          "dative plural definite"
-        ]
-      ],
-      [
-        "Base",
-        [
-          "genitive plural definite"
-        ]
-      ],
-      [
-        "Base",
-        [
-          "nominative plural definite"
+          "plural definite nominative/genitive/dative/accusative"
         ]
       ]
     ],

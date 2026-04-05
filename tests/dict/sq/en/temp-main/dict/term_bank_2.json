@@ -111,13 +111,7 @@
       [
         "gjuhë",
         [
-          "accusative plural definite"
-        ]
-      ],
-      [
-        "gjuhë",
-        [
-          "nominative plural definite"
+          "plural definite nominative/accusative"
         ]
       ]
     ],
@@ -151,13 +145,7 @@
       [
         "gjuhë",
         [
-          "ablative singular indefinite"
-        ]
-      ],
-      [
-        "gjuhë",
-        [
-          "dative singular indefinite"
+          "singular indefinite dative/ablative"
         ]
       ]
     ],
@@ -174,13 +162,7 @@
       [
         "gjuhë",
         [
-          "ablative singular definite"
-        ]
-      ],
-      [
-        "gjuhë",
-        [
-          "dative singular definite"
+          "singular definite dative/ablative"
         ]
       ]
     ],
@@ -197,19 +179,13 @@
       [
         "gjuhë",
         [
-          "ablative plural definite"
-        ]
-      ],
-      [
-        "gjuhë",
-        [
-          "dative plural definite"
-        ]
-      ],
-      [
-        "gjuhë",
-        [
           "dative plural indefinite"
+        ]
+      ],
+      [
+        "gjuhë",
+        [
+          "plural definite dative/ablative"
         ]
       ]
     ],

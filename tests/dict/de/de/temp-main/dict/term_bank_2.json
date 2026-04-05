@@ -160,25 +160,7 @@
       [
         "Garage",
         [
-          "accusative plural"
-        ]
-      ],
-      [
-        "Garage",
-        [
-          "dative plural"
-        ]
-      ],
-      [
-        "Garage",
-        [
-          "genitive plural"
-        ]
-      ],
-      [
-        "Garage",
-        [
-          "nominative plural"
+          "plural nominative/genitive/dative/accusative"
         ]
       ]
     ],
@@ -987,31 +969,13 @@
       [
         "Peter",
         [
-          "accusative plural"
-        ]
-      ],
-      [
-        "Peter",
-        [
-          "dative plural"
-        ]
-      ],
-      [
-        "Peter",
-        [
-          "genitive plural"
-        ]
-      ],
-      [
-        "Peter",
-        [
           "genitive singular"
         ]
       ],
       [
         "Peter",
         [
-          "nominative plural"
+          "plural nominative/genitive/dative/accusative"
         ]
       ]
     ],

@@ -59,10 +59,7 @@
       "noun": [
         "extracted",
         [
-          "accusative plural",
-          "dative plural",
-          "genitive plural",
-          "nominative plural"
+          "plural nominative/genitive/dative/accusative"
         ]
       ]
     }
@@ -423,11 +420,8 @@
       "name": [
         "extracted",
         [
-          "accusative plural",
-          "dative plural",
-          "genitive plural",
           "genitive singular",
-          "nominative plural"
+          "plural nominative/genitive/dative/accusative"
         ]
       ]
     },

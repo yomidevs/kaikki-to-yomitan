@@ -1964,19 +1964,13 @@
       [
         "قدم",
         [
-          "accusative singular construct dual triptote"
-        ]
-      ],
-      [
-        "قدم",
-        [
-          "genitive singular construct dual triptote"
-        ]
-      ],
-      [
-        "قدم",
-        [
           "informal singular construct dual triptote"
+        ]
+      ],
+      [
+        "قدم",
+        [
+          "singular construct dual triptote genitive/accusative"
         ]
       ]
     ],
@@ -2044,13 +2038,7 @@
       [
         "قدم",
         [
-          "accusative singular indefinite dual triptote"
-        ]
-      ],
-      [
-        "قدم",
-        [
-          "genitive singular indefinite dual triptote"
+          "singular indefinite dual triptote genitive/accusative"
         ]
       ]
     ],
@@ -2067,13 +2055,7 @@
       [
         "قدم",
         [
-          "accusative singular definite dual triptote"
-        ]
-      ],
-      [
-        "قدم",
-        [
-          "genitive singular definite dual triptote"
+          "singular definite dual triptote genitive/accusative"
         ]
       ]
     ],

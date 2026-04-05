@@ -835,9 +835,8 @@
       "noun": [
         "extracted",
         [
-          "accusative singular construct dual triptote",
-          "genitive singular construct dual triptote",
-          "informal singular construct dual triptote"
+          "informal singular construct dual triptote",
+          "singular construct dual triptote genitive/accusative"
         ]
       ]
     },
@@ -861,8 +860,7 @@
       "noun": [
         "extracted",
         [
-          "accusative singular indefinite dual triptote",
-          "genitive singular indefinite dual triptote"
+          "singular indefinite dual triptote genitive/accusative"
         ]
       ]
     },
@@ -870,8 +868,7 @@
       "noun": [
         "extracted",
         [
-          "accusative singular definite dual triptote",
-          "genitive singular definite dual triptote"
+          "singular definite dual triptote genitive/accusative"
         ]
       ]
     },

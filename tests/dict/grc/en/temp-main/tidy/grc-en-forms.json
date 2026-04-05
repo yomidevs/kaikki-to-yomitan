@@ -12,9 +12,7 @@
       "noun": [
         "extracted",
         [
-          "accusative dual",
-          "nominative dual",
-          "vocative dual"
+          "dual nominative/accusative/vocative"
         ]
       ]
     },
@@ -22,8 +20,7 @@
       "noun": [
         "extracted",
         [
-          "nominative plural",
-          "vocative plural"
+          "plural nominative/vocative"
         ]
       ]
     },
@@ -31,8 +28,7 @@
       "noun": [
         "extracted",
         [
-          "dative dual",
-          "genitive dual"
+          "dual genitive/dative"
         ]
       ]
     },

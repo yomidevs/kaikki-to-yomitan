@@ -26,19 +26,7 @@
       [
         "ἀγρός",
         [
-          "accusative dual"
-        ]
-      ],
-      [
-        "ἀγρός",
-        [
-          "nominative dual"
-        ]
-      ],
-      [
-        "ἀγρός",
-        [
-          "vocative dual"
+          "dual nominative/accusative/vocative"
         ]
       ]
     ],
@@ -55,13 +43,7 @@
       [
         "ἀγρός",
         [
-          "nominative plural"
-        ]
-      ],
-      [
-        "ἀγρός",
-        [
-          "vocative plural"
+          "plural nominative/vocative"
         ]
       ]
     ],
@@ -78,13 +60,7 @@
       [
         "ἀγρός",
         [
-          "dative dual"
-        ]
-      ],
-      [
-        "ἀγρός",
-        [
-          "genitive dual"
+          "dual genitive/dative"
         ]
       ]
     ],

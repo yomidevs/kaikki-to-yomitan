@@ -27,7 +27,7 @@ use crate::{
     path::PathManager,
     tags::{
         REDUNDANT_FORM_TAGS, find_short_pos_or_default, find_tag_in_bank, localize_tag,
-        merge_person_tags, remove_redundant_tags, sort_tags, sort_tags_by_similar,
+        merge_case_tags, merge_person_tags, remove_redundant_tags, sort_tags, sort_tags_by_similar,
     },
     utils::{link_kaikki, link_wiktionary, pretty_println_at_path},
 };
@@ -696,8 +696,9 @@ fn postprocess_forms(form_map: &mut FormMap) {
         // Keep only unique tags and remove tags subsets
         remove_redundant_tags(tags);
 
-        // Merge person tags
+        // Merges
         merge_person_tags(tags);
+        merge_case_tags(tags);
 
         // Sort inner words
         for tag in tags.iter_mut() {

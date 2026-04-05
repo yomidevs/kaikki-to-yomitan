@@ -26,25 +26,13 @@
       [
         "zpráva",
         [
-          "accusative plural"
-        ]
-      ],
-      [
-        "zpráva",
-        [
           "genitive singular"
         ]
       ],
       [
         "zpráva",
         [
-          "nominative plural"
-        ]
-      ],
-      [
-        "zpráva",
-        [
-          "vocative plural"
+          "plural nominative/accusative/vocative"
         ]
       ]
     ],
@@ -78,13 +66,7 @@
       [
         "zpráva",
         [
-          "dative singular"
-        ]
-      ],
-      [
-        "zpráva",
-        [
-          "locative singular"
+          "singular dative/locative"
         ]
       ]
     ],

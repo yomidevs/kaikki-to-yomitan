@@ -9,13 +9,7 @@
       [
         "κόρφος",
         [
-          "nominative plural"
-        ]
-      ],
-      [
-        "κόρφος",
-        [
-          "vocative plural"
+          "plural nominative/vocative"
         ]
       ]
     ],
@@ -123,19 +117,13 @@
       [
         "αζωικός",
         [
-          "accusative singular feminine"
-        ]
-      ],
-      [
-        "αζωικός",
-        [
           "nominative singular feminine"
         ]
       ],
       [
         "αζωικός",
         [
-          "vocative singular feminine"
+          "singular feminine accusative/vocative"
         ]
       ]
     ],
@@ -158,19 +146,13 @@
       [
         "αζωικός",
         [
-          "accusative singular neuter"
-        ]
-      ],
-      [
-        "αζωικός",
-        [
           "nominative singular neuter"
         ]
       ],
       [
         "αζωικός",
         [
-          "vocative singular neuter"
+          "singular neuter accusative/vocative"
         ]
       ]
     ],
@@ -244,13 +226,7 @@
       [
         "αζωικός",
         [
-          "nominative plural masculine"
-        ]
-      ],
-      [
-        "αζωικός",
-        [
-          "vocative plural masculine"
+          "plural masculine nominative/vocative"
         ]
       ]
     ],
@@ -267,19 +243,7 @@
       [
         "αζωικός",
         [
-          "accusative plural feminine"
-        ]
-      ],
-      [
-        "αζωικός",
-        [
-          "nominative plural feminine"
-        ]
-      ],
-      [
-        "αζωικός",
-        [
-          "vocative plural feminine"
+          "plural feminine nominative/accusative/vocative"
         ]
       ]
     ],
@@ -296,19 +260,7 @@
       [
         "αζωικός",
         [
-          "accusative plural neuter"
-        ]
-      ],
-      [
-        "αζωικός",
-        [
-          "nominative plural neuter"
-        ]
-      ],
-      [
-        "αζωικός",
-        [
-          "vocative plural neuter"
+          "plural neuter nominative/accusative/vocative"
         ]
       ]
     ],
@@ -371,19 +323,7 @@
       [
         "γορίλλας",
         [
-          "accusative plural"
-        ]
-      ],
-      [
-        "γορίλλας",
-        [
-          "nominative plural"
-        ]
-      ],
-      [
-        "γορίλλας",
-        [
-          "vocative plural"
+          "plural nominative/accusative/vocative"
         ]
       ]
     ],
@@ -400,19 +340,7 @@
       [
         "γορίλλας",
         [
-          "accusative singular"
-        ]
-      ],
-      [
-        "γορίλλας",
-        [
-          "genitive singular"
-        ]
-      ],
-      [
-        "γορίλλας",
-        [
-          "vocative singular"
+          "singular genitive/accusative/vocative"
         ]
       ]
     ],
@@ -497,19 +425,13 @@
       [
         "ψηφίσας",
         [
-          "accusative singular feminine"
-        ]
-      ],
-      [
-        "ψηφίσας",
-        [
           "nominative singular feminine"
         ]
       ],
       [
         "ψηφίσας",
         [
-          "vocative singular feminine"
+          "singular feminine accusative/vocative"
         ]
       ]
     ],
@@ -526,19 +448,13 @@
       [
         "ψηφίσας",
         [
-          "accusative singular neuter"
-        ]
-      ],
-      [
-        "ψηφίσας",
-        [
           "nominative singular neuter"
         ]
       ],
       [
         "ψηφίσας",
         [
-          "vocative singular neuter"
+          "singular neuter accusative/vocative"
         ]
       ]
     ],
@@ -578,37 +494,13 @@
       [
         "ψηφίσας",
         [
-          "accusative plural neuter"
+          "plural neuter nominative/accusative/vocative"
         ]
       ],
       [
         "ψηφίσας",
         [
-          "accusative singular masculine"
-        ]
-      ],
-      [
-        "ψηφίσας",
-        [
-          "genitive singular masculine"
-        ]
-      ],
-      [
-        "ψηφίσας",
-        [
-          "nominative plural neuter"
-        ]
-      ],
-      [
-        "ψηφίσας",
-        [
-          "vocative plural neuter"
-        ]
-      ],
-      [
-        "ψηφίσας",
-        [
-          "vocative singular masculine"
+          "singular masculine genitive/accusative/vocative"
         ]
       ]
     ],
@@ -659,19 +551,7 @@
       [
         "ψηφίσας",
         [
-          "accusative plural masculine"
-        ]
-      ],
-      [
-        "ψηφίσας",
-        [
-          "nominative plural masculine"
-        ]
-      ],
-      [
-        "ψηφίσας",
-        [
-          "vocative plural masculine"
+          "plural masculine nominative/accusative/vocative"
         ]
       ]
     ],
@@ -688,19 +568,7 @@
       [
         "ψηφίσας",
         [
-          "accusative plural feminine"
-        ]
-      ],
-      [
-        "ψηφίσας",
-        [
-          "nominative plural feminine"
-        ]
-      ],
-      [
-        "ψηφίσας",
-        [
-          "vocative plural feminine"
+          "plural feminine nominative/accusative/vocative"
         ]
       ]
     ],
@@ -757,19 +625,13 @@
       [
         "εκφρασμένος",
         [
-          "accusative singular feminine"
-        ]
-      ],
-      [
-        "εκφρασμένος",
-        [
           "nominative singular feminine"
         ]
       ],
       [
         "εκφρασμένος",
         [
-          "vocative singular feminine"
+          "singular feminine accusative/vocative"
         ]
       ]
     ],
@@ -792,19 +654,13 @@
       [
         "εκφρασμένος",
         [
-          "accusative singular neuter"
-        ]
-      ],
-      [
-        "εκφρασμένος",
-        [
           "nominative singular neuter"
         ]
       ],
       [
         "εκφρασμένος",
         [
-          "vocative singular neuter"
+          "singular neuter accusative/vocative"
         ]
       ]
     ],
@@ -878,13 +734,7 @@
       [
         "εκφρασμένος",
         [
-          "nominative plural masculine"
-        ]
-      ],
-      [
-        "εκφρασμένος",
-        [
-          "vocative plural masculine"
+          "plural masculine nominative/vocative"
         ]
       ]
     ],
@@ -901,19 +751,7 @@
       [
         "εκφρασμένος",
         [
-          "accusative plural feminine"
-        ]
-      ],
-      [
-        "εκφρασμένος",
-        [
-          "nominative plural feminine"
-        ]
-      ],
-      [
-        "εκφρασμένος",
-        [
-          "vocative plural feminine"
+          "plural feminine nominative/accusative/vocative"
         ]
       ]
     ],
@@ -930,19 +768,7 @@
       [
         "εκφρασμένος",
         [
-          "accusative plural neuter"
-        ]
-      ],
-      [
-        "εκφρασμένος",
-        [
-          "nominative plural neuter"
-        ]
-      ],
-      [
-        "εκφρασμένος",
-        [
-          "vocative plural neuter"
+          "plural neuter nominative/accusative/vocative"
         ]
       ]
     ],

@@ -26,13 +26,7 @@
       [
         "снег",
         [
-          "accusative plural irregular"
-        ]
-      ],
-      [
-        "снег",
-        [
-          "nominative plural irregular"
+          "plural irregular nominative/accusative"
         ]
       ]
     ],
@@ -117,13 +111,7 @@
       [
         "снег",
         [
-          "dative singular"
-        ]
-      ],
-      [
-        "снег",
-        [
-          "partitive singular"
+          "singular dative/partitive"
         ]
       ]
     ],
@@ -674,13 +662,7 @@
       [
         "зимний",
         [
-          "accusative neuter"
-        ]
-      ],
-      [
-        "зимний",
-        [
-          "nominative neuter"
+          "neuter nominative/accusative"
         ]
       ]
     ],
@@ -760,13 +742,7 @@
       [
         "зимний",
         [
-          "dative feminine"
-        ]
-      ],
-      [
-        "зимний",
-        [
-          "genitive feminine"
+          "feminine genitive/dative"
         ]
       ],
       [
