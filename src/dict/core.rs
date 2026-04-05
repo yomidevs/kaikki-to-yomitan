@@ -109,6 +109,12 @@ pub trait Dictionary {
         true
     }
 
+    /// Whether to completely ignore this entry.
+    #[allow(unused_variables)]
+    fn skip_if(&self, entry: &WordEntry) -> bool {
+        false
+    }
+
     // NOTE: Maybe we can get rid of this (blocked by mutable behaviour of the main dictionary).
     //
     /// How to preprocess a `WordEntry`. Everything that mutates `entry` should go here.
@@ -314,6 +320,10 @@ pub fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
             accepted_count += 1;
             if accepted_count == opts.first {
                 break;
+            }
+
+            if dict.skip_if(&entry) {
+                continue;
             }
 
             let langs = Langs {

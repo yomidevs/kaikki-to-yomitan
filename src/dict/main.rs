@@ -286,6 +286,10 @@ impl Dictionary for DMain {
     type I = Tidy;
     type A = MainArgs;
 
+    fn skip_if(&self, entry: &WordEntry) -> bool {
+        should_skip_entry(entry)
+    }
+
     fn preprocess(&self, langs: Langs, entry: &mut WordEntry, opts: &Options, irs: &mut Self::I) {
         preprocess_main(langs.edition, langs.source, opts, entry, irs);
     }
@@ -674,10 +678,6 @@ fn postprocess_forms(form_map: &mut FormMap) {
 }
 
 fn process_main(edition: Edition, source: Lang, entry: &WordEntry, irs: &mut Tidy) {
-    if should_skip_entry(entry) {
-        return;
-    }
-
     process_forms(edition, source, entry, irs);
 
     process_alt_forms(entry, irs);

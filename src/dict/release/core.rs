@@ -341,6 +341,10 @@ fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
             let blob: &[u8] = row.get_ref(0)?.as_blob()?;
             let mut entry = WiktextractDb::blob_to_word_entry(blob)?;
 
+            if dict.skip_if(&entry) {
+                continue;
+            }
+
             dict.preprocess(langs, &mut entry, opts, &mut irs);
             dict.process(langs, &entry, &mut irs);
         }
