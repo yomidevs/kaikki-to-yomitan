@@ -34,6 +34,7 @@ use crate::{
 
 const MAX_NUMBER_OF_SYNONYMS: usize = 3;
 const MAX_SIZE_OF_EXAMPLE: usize = 120;
+const MAX_SIZE_OF_EXAMPLE_REFERENCE: usize = 120;
 
 pub mod heap {
     use std::mem::size_of;
@@ -1234,14 +1235,18 @@ fn get_gloss_tree(entry: &WordEntry) -> GlossTree {
     let mut gloss_tree = GlossTree::default();
 
     for sense in &entry.senses {
-        // rg: examplefiltering
-        // bunch of example filtering: skip
-
         let mut filtered_examples: Vec<_> = sense
             .examples
             .iter()
             .filter(|ex| !ex.text.is_empty() && ex.text.chars().count() <= MAX_SIZE_OF_EXAMPLE)
             .cloned()
+            .map(|mut ex| {
+                // Remove reference if too long
+                if ex.reference.chars().count() > MAX_SIZE_OF_EXAMPLE_REFERENCE {
+                    ex.reference = "".to_string();
+                }
+                ex
+            })
             .collect();
         // Place examples with translations first
         filtered_examples.sort_by_key(|ex| ex.translation.is_empty());
