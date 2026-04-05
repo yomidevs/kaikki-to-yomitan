@@ -969,6 +969,16 @@ fn should_skip_form(edition: Edition, source: Lang, pos: &str, form: &Form) -> b
                 return true;
             }
         }
+        (Edition::En, Lang::En) => {
+            // Bloated, remove rare variants
+            if form
+                .tags
+                .iter()
+                .any(|tag| tag == "rare" || tag == "nonstandard" || tag == "dialectal")
+            {
+                return true;
+            }
+        }
         (Edition::En, Lang::Fi) => {
             // Bloated, remove anything non-essential
             // For the reasoning behind possessive, see. should_break_at_finish_forms
