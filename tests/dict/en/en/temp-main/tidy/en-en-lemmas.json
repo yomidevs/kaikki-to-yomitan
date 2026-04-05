@@ -211,5 +211,66 @@
         }
       ]
     }
+  },
+  "synonyme": {
+    "synonyme": {
+      "noun": [
+        {
+          "gloss_tree": {
+            "Archaic form of synonym.": {
+              "tags": [
+                "alt-of",
+                "archaic"
+              ]
+            }
+          },
+          "head_info_text": "synonyme (plural synonymes)",
+          "wlink": "https://en.wiktionary.org/wiki/synonyme#English",
+          "klink": "https://kaikki.org/dictionary/English/meaning/s/sy/synonyme.html"
+        }
+      ]
+    }
+  },
+  "participate": {
+    "participate": {
+      "verb": [
+        {
+          "gloss_tree": {
+            "To join in, to take part, to involve oneself (in something).": {
+              "tags": [
+                "intransitive"
+              ]
+            },
+            "To share, to take part in (something).": {
+              "tags": [
+                "obsolete",
+                "transitive"
+              ],
+              "examples": [
+                {
+                  "text": "A spirit I am indeed;\nBut am in that dimension grossly clad\nWhich from the womb I did participate.",
+                  "ref": "c. 1601–1602 (date written), William Shakespeare, “Twelfe Night, or What You Will”, in Mr. William Shakespeares Comedies, Histories, & Tragedies […] (First Folio), London: […] Isaac Iaggard, and Ed[ward] Blount, published 1623, →OCLC, [Act V, scene i]:",
+                  "bold_text_offsets": [
+                    [
+                      86,
+                      97
+                    ]
+                  ]
+                }
+              ]
+            },
+            "To share (something) with others; to transfer (something) to or unto others.": {
+              "tags": [
+                "obsolete"
+              ]
+            }
+          },
+          "etymology_text": "Borrowed from Latin participātus, the perfect passive participle of participō (“to take part in, share in, give part in, impart”) (see -ate (verb-forming suffix) and -ate (adjective-forming suffix)), from particeps (“taking part (in), sharing (in); someone who takes part (in)”, particip- in compounds), from pars (“part”, part- in compounds) + -ceps (“which takes, taker”), literally “(someone) who takes part”; see part and capable. Compare Old English dǣlniman (“to participate”), an earlier calque of the same Latin verb.",
+          "head_info_text": "participate (third-person singular simple present participates, present participle participating, simple past and past participle participated)",
+          "wlink": "https://en.wiktionary.org/wiki/participate#English",
+          "klink": "https://kaikki.org/dictionary/English/meaning/p/pa/participate.html"
+        }
+      ]
+    }
   }
 }

@@ -217,5 +217,96 @@
     ],
     0,
     ""
+  ],
+  [
+    "synonymes",
+    "",
+    "non-lemma",
+    "n",
+    0,
+    [
+      [
+        "synonyme",
+        [
+          "plural"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "synonym",
+    "",
+    "non-lemma",
+    "n",
+    0,
+    [
+      [
+        "synonyme",
+        [
+          "alt-of"
+        ]
+      ],
+      [
+        "synonyme",
+        [
+          "archaic"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "participates",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "participate",
+        [
+          "third-person singular present"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "participating",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "participate",
+        [
+          "present participle"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "participated",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "participate",
+        [
+          "past participle"
+        ]
+      ]
+    ],
+    0,
+    ""
   ]
 ]

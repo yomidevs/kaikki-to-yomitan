@@ -87,5 +87,50 @@
         ]
       ]
     }
+  },
+  "synonyme": {
+    "synonymes": {
+      "noun": [
+        "extracted",
+        [
+          "plural"
+        ]
+      ]
+    },
+    "synonym": {
+      "noun": [
+        "altof",
+        [
+          "alt-of",
+          "archaic"
+        ]
+      ]
+    }
+  },
+  "participate": {
+    "participates": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular present"
+        ]
+      ]
+    },
+    "participating": {
+      "verb": [
+        "extracted",
+        [
+          "present participle"
+        ]
+      ]
+    },
+    "participated": {
+      "verb": [
+        "extracted",
+        [
+          "past participle"
+        ]
+      ]
+    }
   }
 }

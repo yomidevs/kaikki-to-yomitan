@@ -62,5 +62,41 @@
     ],
     0,
     ""
+  ],
+  [
+    "participate",
+    "participate",
+    "v",
+    "v",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "to join in, to take part, to involve oneself"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "شرکت کردن"
+                },
+                {
+                  "tag": "li",
+                  "content": "شرکتادن"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
   ]
 ]

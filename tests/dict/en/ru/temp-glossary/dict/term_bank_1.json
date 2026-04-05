@@ -118,5 +118,45 @@
     ],
     0,
     ""
+  ],
+  [
+    "participate",
+    "participate",
+    "v",
+    "v",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "to join in, to take part, to involve oneself"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "уча́ствовать"
+                },
+                {
+                  "tag": "li",
+                  "content": "принима́ть уча́стие"
+                },
+                {
+                  "tag": "li",
+                  "content": "приня́ть уча́стие"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
   ]
 ]
