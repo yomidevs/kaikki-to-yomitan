@@ -60,6 +60,7 @@
     {"iso": "ko",  "language": "Korean",                 "displayName": "Korean",                   "flag": "🇰🇷",   "hasEdition": true },
     {"iso": "ku",  "language": "Kurdish",                "displayName": "Kurdish",                  "flag": "🇮🇶",   "hasEdition": true },
     {"iso": "kmr", "language": "Northern Kurdish",       "displayName": "Kurdish, Northern",        "flag": "🇹🇷"                       },
+    {"iso": "ky",  "language": "Kyrgyz",                 "displayName": "Kyrgyz",                   "flag": "🇰🇬"                       },
     {"iso": "lld", "language": "Ladin",                  "displayName": "Ladin",                    "flag": "🏔️"                       },
     {"iso": "lo",  "language": "Lao",                    "displayName": "Lao",                      "flag": "🇱🇦"                       },
     {"iso": "la",  "language": "Latin",                  "displayName": "Latin",                    "flag": "🏛"                       },

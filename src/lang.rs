@@ -140,6 +140,8 @@ pub enum Lang {
     Ku,
     /// Northern Kurdish
     Kmr,
+    /// Kyrgyz
+    Ky,
     /// Ladin
     Lld,
     /// Lao
@@ -270,11 +272,11 @@ impl From<Edition> for Lang {
 
 impl Lang {
     pub const fn help_isos() -> &'static str {
-        "Supported isos: af | sq | arz | afb | ar | apc | ajp | hy | xcl | aii | ast | az | eu | be | bn | bcl | bg | my | yue | ca | ceb | zh | cs | da | nl | egy | en | enm | ang | simple | eo | et | fo | fi | fr | fro | gl | ka | de | got | el | grc | gu | haw | he | hi | hu | is | io | id | izh | ga | sga | it | ja | kn | kk | km | ko | ku | kmr | lld | lo | la | lv | lt | lb | mk | ms | ml | mt | mr | mn | nv | nrf | no | nb | nn | non | pi | rsk | fa | pl | pt | pa | ro | ru | sa | gd | sh | scn | sk | sl | es | sw | sv | syc | tl | ta | te | th | tok | tr | ota | uk | ur | vi | cy | yi | yo"
+        "Supported isos: af | sq | arz | afb | ar | apc | ajp | hy | xcl | aii | ast | az | eu | be | bn | bcl | bg | my | yue | ca | ceb | zh | cs | da | nl | egy | en | enm | ang | simple | eo | et | fo | fi | fr | fro | gl | ka | de | got | el | grc | gu | haw | he | hi | hu | is | io | id | izh | ga | sga | it | ja | kn | kk | km | ko | ku | kmr | ky | lld | lo | la | lv | lt | lb | mk | ms | ml | mt | mr | mn | nv | nrf | no | nb | nn | non | pi | rsk | fa | pl | pt | pa | ro | ru | sa | gd | sh | scn | sk | sl | es | sw | sv | syc | tl | ta | te | th | tok | tr | ota | uk | ur | vi | cy | yi | yo"
     }
 
     pub const fn help_isos_coloured() -> &'static str {
-        "Supported isos: af | sq | arz | afb | ar | apc | ajp | hy | xcl | aii | ast | az | eu | be | bn | bcl | bg | my | yue | ca | ceb | [32mzh[0m | [32mcs[0m | da | [32mnl[0m | egy | [32men[0m | enm | ang | [32msimple[0m | eo | et | fo | fi | [32mfr[0m | fro | gl | ka | [32mde[0m | got | [32mel[0m | grc | gu | haw | he | hi | hu | is | io | [32mid[0m | izh | ga | sga | [32mit[0m | [32mja[0m | kn | kk | km | [32mko[0m | [32mku[0m | kmr | lld | lo | la | lv | lt | lb | mk | [32mms[0m | ml | mt | mr | mn | nv | nrf | no | nb | nn | non | pi | rsk | fa | [32mpl[0m | [32mpt[0m | pa | ro | [32mru[0m | sa | gd | sh | scn | sk | sl | [32mes[0m | sw | sv | syc | tl | ta | te | [32mth[0m | tok | [32mtr[0m | ota | uk | ur | [32mvi[0m | cy | yi | yo"
+        "Supported isos: af | sq | arz | afb | ar | apc | ajp | hy | xcl | aii | ast | az | eu | be | bn | bcl | bg | my | yue | ca | ceb | [32mzh[0m | [32mcs[0m | da | [32mnl[0m | egy | [32men[0m | enm | ang | [32msimple[0m | eo | et | fo | fi | [32mfr[0m | fro | gl | ka | [32mde[0m | got | [32mel[0m | grc | gu | haw | he | hi | hu | is | io | [32mid[0m | izh | ga | sga | [32mit[0m | [32mja[0m | kn | kk | km | [32mko[0m | [32mku[0m | kmr | ky | lld | lo | la | lv | lt | lb | mk | [32mms[0m | ml | mt | mr | mn | nv | nrf | no | nb | nn | non | pi | rsk | fa | [32mpl[0m | [32mpt[0m | pa | ro | [32mru[0m | sa | gd | sh | scn | sk | sl | [32mes[0m | sw | sv | syc | tl | ta | te | [32mth[0m | tok | [32mtr[0m | ota | uk | ur | [32mvi[0m | cy | yi | yo"
     }
 
     pub const fn help_editions() -> &'static str {
@@ -344,6 +346,7 @@ impl Lang {
             Self::Ko => "Korean",
             Self::Ku => "Kurdish",
             Self::Kmr => "Northern Kurdish",
+            Self::Ky => "Kyrgyz",
             Self::Lld => "Ladin",
             Self::Lo => "Lao",
             Self::La => "Latin",
@@ -459,6 +462,7 @@ impl Lang {
             Self::Ko,
             Self::Ku,
             Self::Kmr,
+            Self::Ky,
             Self::Lld,
             Self::Lo,
             Self::La,
@@ -609,6 +613,7 @@ impl FromStr for Lang {
             "ko" => Ok(Self::Ko),
             "ku" => Ok(Self::Ku),
             "kmr" => Ok(Self::Kmr),
+            "ky" => Ok(Self::Ky),
             "lld" => Ok(Self::Lld),
             "lo" => Ok(Self::Lo),
             "la" => Ok(Self::La),
@@ -727,6 +732,7 @@ impl AsRef<str> for Lang {
             Self::Ko => "ko",
             Self::Ku => "ku",
             Self::Kmr => "kmr",
+            Self::Ky => "ky",
             Self::Lld => "lld",
             Self::Lo => "lo",
             Self::La => "la",

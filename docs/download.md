@@ -68,6 +68,7 @@
   <option value="ko">Korean</option>
   <option value="ku">Kurdish</option>
   <option value="kmr">Kurdish, Northern</option>
+  <option value="ky">Kyrgyz</option>
   <option value="lld">Ladin</option>
   <option value="lo">Lao</option>
   <option value="la">Latin</option>
@@ -215,6 +216,7 @@
   <option value="ko">Korean</option>
   <option value="ku">Kurdish</option>
   <option value="kmr">Kurdish, Northern</option>
+  <option value="ky">Kyrgyz</option>
   <option value="lld">Ladin</option>
   <option value="lo">Lao</option>
   <option value="la">Latin</option>
@@ -362,6 +364,7 @@
   <option value="ko">Korean</option>
   <option value="ku">Kurdish</option>
   <option value="kmr">Kurdish, Northern</option>
+  <option value="ky">Kyrgyz</option>
   <option value="lld">Ladin</option>
   <option value="lo">Lao</option>
   <option value="la">Latin</option>
@@ -508,6 +511,7 @@
   <option value="ko">Korean</option>
   <option value="ku">Kurdish</option>
   <option value="kmr">Kurdish, Northern</option>
+  <option value="ky">Kyrgyz</option>
   <option value="lld">Ladin</option>
   <option value="lo">Lao</option>
   <option value="la">Latin</option>
