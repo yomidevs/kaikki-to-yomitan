@@ -650,17 +650,9 @@
     }
   },
   "狸": {
-    "貍": {
-      "noun": [
-        "extracted",
-        [
-          "alternative kanji"
-        ]
-      ]
-    },
     "狸饂飩": {
       "noun": [
-        "altof",
+        "altofsense",
         [
           "abbreviation",
           "alt-of"
@@ -669,7 +661,7 @@
     },
     "狸寝入り": {
       "noun": [
-        "altof",
+        "altofsense",
         [
           "abbreviation",
           "alt-of",
@@ -679,7 +671,7 @@
     },
     "狸汁": {
       "noun": [
-        "altof",
+        "altofsense",
         [
           "abbreviation",
           "alt-of",
@@ -687,9 +679,26 @@
           "rare"
         ]
       ]
+    },
+    "貍": {
+      "noun": [
+        "extracted",
+        [
+          "alternative kanji"
+        ]
+      ]
     }
   },
   "走る": {
+    "ハシる": {
+      "verb": [
+        "altofsense",
+        [
+          "alt-of",
+          "alternative"
+        ]
+      ]
+    },
     "走り": {
       "verb": [
         "extracted",
@@ -1339,15 +1348,6 @@
           "negative continuative"
         ]
       ]
-    },
-    "ハシる": {
-      "verb": [
-        "altof",
-        [
-          "alt-of",
-          "alternative"
-        ]
-      ]
     }
   },
   "五色": {
@@ -1671,6 +1671,18 @@
         "extracted",
         [
           "conditional hypothetical"
+        ]
+      ]
+    }
+  },
+  "toraware": {
+    "とらわれ": {
+      "romanization": [
+        "altofsense",
+        [
+          "Rōmaji",
+          "alt-of",
+          "romanization"
         ]
       ]
     }

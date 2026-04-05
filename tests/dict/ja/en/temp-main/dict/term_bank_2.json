@@ -1396,23 +1396,6 @@
     ""
   ],
   [
-    "貍",
-    "",
-    "non-lemma",
-    "n",
-    0,
-    [
-      [
-        "狸",
-        [
-          "alternative kanji"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
     "狸饂飩",
     "",
     "non-lemma",
@@ -1493,6 +1476,46 @@
         "狸",
         [
           "rare"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "貍",
+    "",
+    "non-lemma",
+    "n",
+    0,
+    [
+      [
+        "狸",
+        [
+          "alternative kanji"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "ハシる",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "走る",
+        [
+          "alt-of"
+        ]
+      ],
+      [
+        "走る",
+        [
+          "alternative"
         ]
       ]
     ],
@@ -2920,29 +2943,6 @@
     ""
   ],
   [
-    "ハシる",
-    "",
-    "non-lemma",
-    "v",
-    0,
-    [
-      [
-        "走る",
-        [
-          "alt-of"
-        ]
-      ],
-      [
-        "走る",
-        [
-          "alternative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
     "ごしき",
     "",
     "non-lemma",
@@ -3641,6 +3641,35 @@
         "用立てる",
         [
           "conditional hypothetical"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "とらわれ",
+    "",
+    "non-lemma",
+    "romanization",
+    0,
+    [
+      [
+        "toraware",
+        [
+          "Rōmaji"
+        ]
+      ],
+      [
+        "toraware",
+        [
+          "alt-of"
+        ]
+      ],
+      [
+        "toraware",
+        [
+          "romanization"
         ]
       ]
     ],

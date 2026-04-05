@@ -49,20 +49,20 @@
     }
   },
   "synonyme": {
+    "synonym": {
+      "noun": [
+        "altofsense",
+        [
+          "alt-of",
+          "archaic"
+        ]
+      ]
+    },
     "synonymes": {
       "noun": [
         "extracted",
         [
           "plural"
-        ]
-      ]
-    },
-    "synonym": {
-      "noun": [
-        "altof",
-        [
-          "alt-of",
-          "archaic"
         ]
       ]
     }

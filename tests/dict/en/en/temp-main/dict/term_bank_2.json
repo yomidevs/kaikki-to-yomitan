@@ -103,23 +103,6 @@
     ""
   ],
   [
-    "synonymes",
-    "",
-    "non-lemma",
-    "n",
-    0,
-    [
-      [
-        "synonyme",
-        [
-          "plural"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
     "synonym",
     "",
     "non-lemma",
@@ -136,6 +119,23 @@
         "synonyme",
         [
           "archaic"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "synonymes",
+    "",
+    "non-lemma",
+    "n",
+    0,
+    [
+      [
+        "synonyme",
+        [
+          "plural"
         ]
       ]
     ],

@@ -499,7 +499,7 @@ impl FormMap {
     }
 
     fn len_alt_of(&self) -> usize {
-        self.len_of(FormSource::AltOf)
+        self.len_of(FormSource::AltOfTop) + self.len_of(FormSource::AltOfSense)
     }
 }
 
@@ -511,8 +511,9 @@ enum FormSource {
     Extracted,
     /// Form added via gloss analysis ("is inflection of...")
     Inflection,
-    /// Alternative forms
-    AltOf,
+    /// Alternative forms (top-level and sense-level)
+    AltOfTop,
+    AltOfSense,
 }
 
 // NOTE: the less we have here the better. For example, the links could be entirely moved to the
@@ -600,6 +601,8 @@ impl Tidy {
         tags: Vec<Tag>,
     ) {
         debug_assert_ne!(uninflected, inflected);
+        debug_assert!(!uninflected.is_empty());
+        debug_assert!(!inflected.is_empty());
         debug_assert!(!tags.is_empty());
 
         let key = FormKey {
@@ -818,6 +821,8 @@ fn preprocess_main(
             && (!opts.experimental || entry.non_trivial_forms().next().is_none())
         {
             handle_inflection_sense(edition, source, entry, &sense, irs);
+        } else if !sense.alt_of.is_empty() {
+            handle_alt_of_sense(entry, &sense, irs);
         } else {
             senses_without_inflections.push(sense);
         }
@@ -1060,31 +1065,14 @@ fn should_break_at_finish_forms(edition: Edition, source: Lang, form: &Form) -> 
 
 /// Add `AltOf` forms. That is, alternative forms.
 fn process_alt_forms(entry: &WordEntry, irs: &mut Tidy) {
-    let base_tags = vec!["alt-of".to_string()];
-
     for alt_form in &entry.alt_of {
         irs.insert_form(
             &entry.word,
             &alt_form.word,
             &entry.pos,
-            FormSource::AltOf,
-            base_tags.clone(),
+            FormSource::AltOfTop,
+            vec!["alt-of".to_string()],
         );
-    }
-
-    for sense in &entry.senses {
-        let mut sense_tags = sense.tags.clone();
-        sense_tags.extend(base_tags.clone());
-
-        for alt_form in &sense.alt_of {
-            irs.insert_form(
-                &entry.word,
-                &alt_form.word,
-                &entry.pos,
-                FormSource::AltOf,
-                sense_tags.clone(),
-            );
-        }
     }
 }
 
@@ -1539,6 +1527,31 @@ fn handle_inflection_sense_en(source: Lang, entry: &WordEntry, sense: &Sense, ir
             &entry.pos,
             FormSource::Inflection,
             vec![inflection],
+        );
+    }
+}
+
+fn handle_alt_of_sense(entry: &WordEntry, sense: &Sense, irs: &mut Tidy) {
+    // We rely on Wiktionary having a page for the alt_form, otherwise this can potentially
+    // remove useful glosses. Then again, the same applies to handle_inflection_sense.
+    //
+    // The issue with alt_of is that the best redirection order is not granted, while for
+    // form_of is easy to redirect FROM form_of TO the lemma.
+    //
+    // At worst, just move this back to process_alt_forms, to not modify the senses.
+    for alt_form in &sense.alt_of {
+        // Some defective entries may not contain the "alt-of" tag. See [de-de] caritativ
+        let mut sense_tags = sense.tags.clone();
+        if !sense_tags.iter().any(|tag| tag == "alt-of") {
+            sense_tags.push("alt-of".to_string());
+        }
+
+        irs.insert_form(
+            &entry.word,
+            &alt_form.word,
+            &entry.pos,
+            FormSource::AltOfSense,
+            sense_tags.clone(),
         );
     }
 }
