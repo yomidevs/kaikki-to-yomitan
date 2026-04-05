@@ -46,6 +46,8 @@ impl TagDiagnostics {
         self.process_simple(tag.to_string());
 
         match find_tag_in_bank(&tag) {
+            // No localizations for English: go a bit faster
+            Some(_) if edition == Edition::En => (),
             Some(tag_info) => match localize_tag(target, &tag_info.short_tag) {
                 Some(_) => (),
                 // TODO: maybe don't log not localized tags if the short form was an emoji,

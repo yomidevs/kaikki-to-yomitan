@@ -129,7 +129,7 @@ pub trait Dictionary {
 
     /// Console message for found irs. It is customized for the main dictionary.
     fn found_ir_message(&self, langs: LangSpecs, irs: &Self::I) {
-        println!(
+        tracing::debug!(
             "[{}-{}] Found {} irs",
             langs.source,
             langs.target,
