@@ -117,5 +117,17 @@
         }
       ]
     }
+  ],
+  [
+    "expansive",
+    "ipa",
+    {
+      "reading": "expansive",
+      "transcriptions": [
+        {
+          "ipa": "/ɪkˈspænsɪv/"
+        }
+      ]
+    }
   ]
 ]

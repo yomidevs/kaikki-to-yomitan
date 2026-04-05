@@ -270,5 +270,40 @@
         }
       ]
     }
+  },
+  "expansive": {
+    "expansive": {
+      "adj": [
+        {
+          "gloss_tree": {
+            "Comprehensive in scope or extent.": {
+              "examples": [
+                {
+                  "text": "expansive research work",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      9
+                    ]
+                  ]
+                }
+              ]
+            },
+            "Talkative and sociable.": {},
+            "Able to be expanded.": {},
+            "Exhibiting expansivity.": {
+              "topics": [
+                "mathematics",
+                "sciences"
+              ]
+            }
+          },
+          "etymology_text": "From Latin expāns-, past-participle stem of expandere (“to spread out”; see expand) + -ive.",
+          "head_info_text": "expansive (comparative more expansive, superlative most expansive)",
+          "wlink": "https://en.wiktionary.org/wiki/expansive#English",
+          "klink": "https://kaikki.org/dictionary/English/meaning/e/ex/expansive.html"
+        }
+      ]
+    }
   }
 }

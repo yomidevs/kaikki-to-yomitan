@@ -106,5 +106,37 @@
     ],
     0,
     ""
+  ],
+  [
+    "expansive",
+    "expansive",
+    "adj",
+    "adj",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "Comprehensive in scope or extent"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "lātus"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
   ]
 ]

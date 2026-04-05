@@ -978,6 +978,16 @@ fn should_skip_form(edition: Edition, source: Lang, pos: &str, form: &Form) -> b
             {
                 return true;
             }
+
+            // "more expansive" ~ forms are useless, hovering "expansive" is enough
+            if form.form.contains(' ')
+                && form
+                    .tags
+                    .iter()
+                    .any(|tag| tag == "comparative" || tag == "superlative")
+            {
+                return true;
+            }
         }
         (Edition::En, Lang::Fi) => {
             // Bloated, remove anything non-essential
