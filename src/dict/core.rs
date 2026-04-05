@@ -122,8 +122,13 @@ pub trait Dictionary {
     fn process(&self, langs: Langs, entry: &WordEntry, irs: &mut Self::I);
 
     /// Console message for found irs. It is customized for the main dictionary.
-    fn found_ir_message(&self, irs: &Self::I) {
-        println!("Found {} irs", irs.len());
+    fn found_ir_message(&self, langs: LangSpecs, irs: &Self::I) {
+        println!(
+            "[{}-{}] Found {} irs",
+            langs.source,
+            langs.target,
+            irs.len()
+        );
     }
 
     /// Whether to write or not `Self::I` to disk.
@@ -228,7 +233,7 @@ pub fn iter_datasets(pm: &PathManager) -> impl Iterator<Item = Result<(Edition, 
 
     edition_pm.variants().into_iter().map(move |edition| {
         let path_jsonl = find_or_download_jsonl(edition, Some(source_pm), pm)?;
-        tracing::debug!("edition: {edition}, path: {}", path_jsonl.display());
+        tracing::trace!("edition: {edition}, path: {}", path_jsonl.display());
 
         Ok((edition, path_jsonl))
     })
@@ -327,7 +332,7 @@ pub fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
     }
 
     if !opts.quiet {
-        dict.found_ir_message(&irs);
+        dict.found_ir_message(pm.langs, &irs);
     }
 
     if irs.is_empty() {

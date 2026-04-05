@@ -347,7 +347,7 @@ fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
     }
 
     if !opts.quiet {
-        dict.found_ir_message(&irs);
+        dict.found_ir_message(pm.langs, &irs);
     }
 
     if irs.is_empty() {
