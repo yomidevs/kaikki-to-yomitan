@@ -442,14 +442,6 @@ def generate_tags_localization_rs(
 ) -> None:
     w = f.write
 
-    # SAFETY: no two long tags should be repeated
-    for iso, translations in locale.items():
-        seen_longs = set()
-        for trans in translations:
-            if trans.long_tag in seen_longs:
-                print(f"[WARN] Duplicated long tag {trans.long_tag} for {iso}")
-            seen_longs.add(trans.long_tag)
-
     write_warning(f)
 
     w("use crate::lang::Lang;\n\n")
@@ -490,12 +482,7 @@ def generate_tags_localization_rs(
         )
         w("    match short_tag {\n")
         for trans in translations:
-            # TODO: This should not crash but just continue if I keep using it for finding new tags
-            if trans.long_tag_en not in long_to_short:
-                print(
-                    f"[{iso}] ERROR: tag '{trans.long_tag_en}' has no matching tag bank entry"
-                )
-                sys.exit(1)
+            # SAFETY: we already checked that long_tag_en is in long_to_short
             short_key = long_to_short[trans.long_tag_en]
             # If the short tag was left empty, it means there is no short version
             # and we default to showing the long one.
@@ -672,6 +659,52 @@ def load_sort_dump_tags(path: Path) -> list[WhitelistedTag]:
     return tags
 
 
+def load_sort_dump_localization(
+    path: Path, iso: str, long_to_wt: dict[str, WhitelistedTag]
+) -> list[TagTranslation]:
+    with path.open() as f:
+        data = json.load(f)
+    translations = [TagTranslation(k, v[0], v[1]) for k, v in data.items()]
+
+    # SAFETY: no two long tags should be repeated
+    seen_longs = set()
+    for trans in translations:
+        if trans.long_tag in seen_longs:
+            print(f"[WARN] Duplicated long tag {trans.long_tag} for {iso}")
+        seen_longs.add(trans.long_tag)
+
+    # SAFETY: long_tag_en must be in long_to_short for sorting to work
+    # (and, in general, it is most likely an error if it is not there)
+    for trans in translations:
+        if trans.long_tag_en not in long_to_wt:
+            print(
+                f"[{iso}] ERROR: tag '{trans.long_tag_en}' has no matching tag bank entry"
+            )
+            sys.exit(1)
+
+    # Same sort logic as sort_tags
+    translations = sorted(
+        translations,
+        key=lambda tr: (
+            long_to_wt[tr.long_tag_en].category == "",
+            long_to_wt[tr.long_tag_en].category,
+            long_to_wt[tr.long_tag_en].sort_order,
+            long_to_wt[tr.long_tag_en].short_tag,
+        ),
+    )
+
+    # Overwrite to ensure formatting and sort
+    with path.open("w") as f:
+        json.dump(
+            {tr.long_tag_en: [tr.short_tag, tr.long_tag] for tr in translations},
+            f,
+            indent=4,
+            ensure_ascii=False,
+        )
+
+    return translations
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check-yomitan", action="store_true")
@@ -735,19 +768,15 @@ def main() -> None:
     whitelisted_tags = sort_tags(whitelisted_tags)
 
     # read tags_X.json files inside localization folder, where X is the iso
+    long_to_wt = {wt.long_tag(): wt for wt in whitelisted_tags}
     locale: Locale = {}
     for lang in langs:
         path_localization_json = path_tag_locale_folder / f"tags_{lang.iso}.json"
         if not path_localization_json.exists():
             continue
-        # Overwrite to ensure formatting
-        # TODO: when overwriting, do it in some order coherent across languages
-        # preferably respecting categories, in a way similar to whitelisted tags
-        with path_localization_json.open() as f:
-            data = json.load(f)
-        with path_localization_json.open("w") as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
-        locale[lang.iso] = [TagTranslation(k, v[0], v[1]) for k, v in data.items()]
+        locale[lang.iso] = load_sort_dump_localization(
+            path_localization_json, lang.iso, long_to_wt
+        )
 
     # import sys
     # generate_lang_rs(langs, sys.stdout)

@@ -1,251 +1,15 @@
 {
-    "noun": [
-        "S",
-        "Substantiv"
-    ],
-    "masculine": [
-        "Mask",
-        "Maskulinum"
-    ],
-    "feminine": [
-        "Fem",
-        "Femininum"
-    ],
-    "neuter": [
-        "Neut",
-        "Neutrum"
-    ],
-    "verb": [
-        "V",
-        "Verb"
-    ],
-    "adjective": [
-        "Adj",
-        "Adjektiv"
-    ],
-    "adverb": [
-        "Adv",
-        "Adverb"
-    ],
-    "name": [
-        "Vorn",
-        "Vorname"
-    ],
-    "numeral": [
-        "Num",
-        "Numerale"
-    ],
-    "phrase": [
-        "",
-        "Wortverbindung"
-    ],
-    "article": [
-        "Artik",
-        "Artikel"
-    ],
-    "pronoun": [
-        "Pron",
-        "Pronomen"
-    ],
-    "prefix": [
-        "Präf",
-        "Präfix"
-    ],
-    "suffix": [
-        "Suf",
-        "Suffix"
-    ],
-    "particle": [
-        "Ptkl",
-        "Partikel"
-    ],
-    "conjunction": [
-        "Konj",
-        "Konjunktion"
-    ],
-    "preposition": [
-        "Präp",
-        "Präposition"
-    ],
-    "interjection": [
-        "Int",
-        "Interjektion"
-    ],
-    "transitive verb": [
-        "Vt",
-        "transitives Verb"
-    ],
-    "intransitive verb": [
-        "Vi",
-        "intransitives Verb"
-    ],
-    "reflexive verb": [
-        "Vr",
-        "reflexives Verb"
-    ],
-    "with-dative": [
-        "Dat",
-        "mit Dativ"
-    ],
-    "with-accusative": [
-        "Akk",
-        "mit Akkusativ"
-    ],
-    "no-plural": [
-        "k-Pl",
-        "kein Plural"
-    ],
-    "plural only": [
-        "n-Pl",
-        "nur Plural"
-    ],
-    "irregular": [
-        "unreg",
-        "unregelmäßig"
-    ],
     "archaic": [
         "",
         "veraltet"
-    ],
-    "outdated": [
-        "veralt",
-        "veraltende Bedeutung"
     ],
     "dated": [
         "altmod",
         "altmodisch"
     ],
-    "colloquial": [
-        "ums",
-        "umgangssprachlich"
-    ],
-    "derogatory": [
-        "abwert",
-        "abwertend"
-    ],
-    "figurative": [
-        "",
-        "übertragen"
-    ],
-    "vulgar": [
-        "",
-        "vulgär"
-    ],
-    "literal": [
-        "",
-        "wörtlich"
-    ],
-    "literary": [
-        "liter",
-        "literarisch"
-    ],
-    "historical": [
-        "hist",
-        "historisch"
-    ],
-    "technology": [
-        "Tech",
-        "Technik"
-    ],
-    "linguistics": [
-        "Ling",
-        "Linguistik"
-    ],
-    "biology": [
-        "Bio",
-        "Biologie"
-    ],
-    "computing": [
-        "Infor",
-        "Informatik"
-    ],
-    "medicine": [
-        "Med",
-        "Medizin"
-    ],
-    "ecology": [
-        "Ökol",
-        "Ökologie"
-    ],
-    "law": [
-        "",
-        "Recht"
-    ],
-    "electronics": [
-        "Elek",
-        "Elektronik"
-    ],
-    "mathematics": [
-        "Math",
-        "Mathematik"
-    ],
-    "military": [
-        "Mil",
-        "Militär"
-    ],
-    "politics": [
-        "Pol",
-        "Politik"
-    ],
-    "anatomy": [
-        "Anat",
-        "Anatomie"
-    ],
-    "chemistry": [
-        "Chem",
-        "Chemie"
-    ],
-    "economics": [
-        "Wirt",
-        "Wirtschaft"
-    ],
-    "geology": [
-        "Geol",
-        "Geologie"
-    ],
-    "philosophy": [
-        "Phil",
-        "Philosophie"
-    ],
-    "psychology": [
-        "Psy",
-        "Psychologie"
-    ],
-    "agriculture": [
-        "Landwirt",
-        "Landwirtschaft"
-    ],
-    "history": [
-        "Gesch",
-        "Geschichte"
-    ],
-    "mythology": [
-        "Myth",
-        "Mythologie"
-    ],
-    "auxiliary": [
-        "Hvb",
-        "Hilfsverb"
-    ],
-    "singular": [
-        "Sing",
-        "Singular"
-    ],
-    "physics": [
-        "Phys",
-        "Physik"
-    ],
-    "ecclesiastical": [
-        "kirchl",
-        "kirchlich"
-    ],
-    "geography": [
-        "Geogr",
-        "Geografie"
-    ],
-    "jargon": [
-        "Fachspr",
-        "Fachsprache"
+    "outdated": [
+        "veralt",
+        "veraltende Bedeutung"
     ],
     "imperfective": [
         "imperf",
@@ -255,16 +19,252 @@
         "perf",
         "perfektiv"
     ],
+    "with-accusative": [
+        "Akk",
+        "mit Akkusativ"
+    ],
+    "with-dative": [
+        "Dat",
+        "mit Dativ"
+    ],
+    "feminine": [
+        "Fem",
+        "Femininum"
+    ],
+    "masculine": [
+        "Mask",
+        "Maskulinum"
+    ],
+    "neuter": [
+        "Neut",
+        "Neutrum"
+    ],
     "contraction": [
         "Abkz",
         "Abkürzung"
+    ],
+    "irregular": [
+        "unreg",
+        "unregelmäßig"
+    ],
+    "name": [
+        "Vorn",
+        "Vorname"
+    ],
+    "no-plural": [
+        "k-Pl",
+        "kein Plural"
+    ],
+    "plural only": [
+        "n-Pl",
+        "nur Plural"
+    ],
+    "singular": [
+        "Sing",
+        "Singular"
+    ],
+    "adjective": [
+        "Adj",
+        "Adjektiv"
+    ],
+    "adverb": [
+        "Adv",
+        "Adverb"
+    ],
+    "article": [
+        "Artik",
+        "Artikel"
+    ],
+    "conjunction": [
+        "Konj",
+        "Konjunktion"
+    ],
+    "interjection": [
+        "Int",
+        "Interjektion"
+    ],
+    "noun": [
+        "S",
+        "Substantiv"
+    ],
+    "numeral": [
+        "Num",
+        "Numerale"
+    ],
+    "phrase": [
+        "",
+        "Wortverbindung"
+    ],
+    "prefix": [
+        "Präf",
+        "Präfix"
+    ],
+    "preposition": [
+        "Präp",
+        "Präposition"
+    ],
+    "pronoun": [
+        "Pron",
+        "Pronomen"
+    ],
+    "particle": [
+        "Ptkl",
+        "Partikel"
+    ],
+    "suffix": [
+        "Suf",
+        "Suffix"
+    ],
+    "verb": [
+        "V",
+        "Verb"
+    ],
+    "intransitive verb": [
+        "Vi",
+        "intransitives Verb"
+    ],
+    "reflexive verb": [
+        "Vr",
+        "reflexives Verb"
+    ],
+    "transitive verb": [
+        "Vt",
+        "transitives Verb"
+    ],
+    "colloquial": [
+        "ums",
+        "umgangssprachlich"
+    ],
+    "derogatory": [
+        "abwert",
+        "abwertend"
+    ],
+    "jargon": [
+        "Fachspr",
+        "Fachsprache"
+    ],
+    "literary": [
+        "liter",
+        "literarisch"
+    ],
+    "vulgar": [
+        "",
+        "vulgär"
+    ],
+    "agriculture": [
+        "Landwirt",
+        "Landwirtschaft"
+    ],
+    "anatomy": [
+        "Anat",
+        "Anatomie"
+    ],
+    "biology": [
+        "Bio",
+        "Biologie"
+    ],
+    "chemistry": [
+        "Chem",
+        "Chemie"
+    ],
+    "computing": [
+        "Infor",
+        "Informatik"
+    ],
+    "ecclesiastical": [
+        "kirchl",
+        "kirchlich"
+    ],
+    "ecology": [
+        "Ökol",
+        "Ökologie"
+    ],
+    "economics": [
+        "Wirt",
+        "Wirtschaft"
+    ],
+    "electronics": [
+        "Elek",
+        "Elektronik"
+    ],
+    "geography": [
+        "Geogr",
+        "Geografie"
+    ],
+    "geology": [
+        "Geol",
+        "Geologie"
+    ],
+    "historical": [
+        "hist",
+        "historisch"
+    ],
+    "history": [
+        "Gesch",
+        "Geschichte"
+    ],
+    "law": [
+        "",
+        "Recht"
+    ],
+    "linguistics": [
+        "Ling",
+        "Linguistik"
+    ],
+    "mathematics": [
+        "Math",
+        "Mathematik"
+    ],
+    "medicine": [
+        "Med",
+        "Medizin"
+    ],
+    "military": [
+        "Mil",
+        "Militär"
+    ],
+    "mythology": [
+        "Myth",
+        "Mythologie"
+    ],
+    "philosophy": [
+        "Phil",
+        "Philosophie"
+    ],
+    "physics": [
+        "Phys",
+        "Physik"
+    ],
+    "politics": [
+        "Pol",
+        "Politik"
+    ],
+    "psychology": [
+        "Psy",
+        "Psychologie"
+    ],
+    "sports": [
+        "",
+        "Sport"
+    ],
+    "technology": [
+        "Tech",
+        "Technik"
     ],
     "zoology": [
         "Zoo",
         "Zoologie"
     ],
-    "sports": [
+    "auxiliary": [
+        "Hvb",
+        "Hilfsverb"
+    ],
+    "figurative": [
         "",
-        "Sport"
+        "übertragen"
+    ],
+    "literal": [
+        "",
+        "wörtlich"
     ]
 }
