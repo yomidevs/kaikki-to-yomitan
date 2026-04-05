@@ -9,13 +9,13 @@
       [
         "fama",
         [
-          "plural nominative/vocative"
+          "genitive/dative singular"
         ]
       ],
       [
         "fama",
         [
-          "singular genitive/dative"
+          "nominative/vocative plural"
         ]
       ]
     ],
@@ -49,7 +49,7 @@
       [
         "fama",
         [
-          "plural dative/ablative"
+          "dative/ablative plural"
         ]
       ]
     ],
@@ -1876,7 +1876,7 @@
       [
         "lego",
         [
-          "singular future imperative active second/third-person"
+          "second/third-person singular future imperative active"
         ]
       ]
     ],
@@ -1927,7 +1927,7 @@
       [
         "lego",
         [
-          "singular future imperative passive second/third-person"
+          "second/third-person singular future imperative passive"
         ]
       ]
     ],
@@ -2182,7 +2182,7 @@
       [
         "lego",
         [
-          "gerund noun-from-verb dative/ablative"
+          "dative/ablative gerund noun-from-verb"
         ]
       ]
     ],
@@ -2267,7 +2267,7 @@
       [
         "lilium",
         [
-          "plural nominative/accusative/vocative"
+          "nominative/accusative/vocative plural"
         ]
       ]
     ],
@@ -2301,7 +2301,7 @@
       [
         "lilium",
         [
-          "singular dative/ablative"
+          "dative/ablative singular"
         ]
       ]
     ],
@@ -2318,7 +2318,7 @@
       [
         "lilium",
         [
-          "plural dative/ablative"
+          "dative/ablative plural"
         ]
       ]
     ],
@@ -2335,7 +2335,7 @@
       [
         "lilium",
         [
-          "singular accusative/vocative"
+          "accusative/vocative singular"
         ]
       ]
     ],
@@ -2352,13 +2352,13 @@
       [
         "rectus",
         [
-          "plural neuter nominative/accusative/vocative"
+          "nominative/accusative/vocative plural neuter"
         ]
       ],
       [
         "rectus",
         [
-          "singular feminine nominative/vocative"
+          "nominative/vocative singular feminine"
         ]
       ]
     ],
@@ -2381,7 +2381,7 @@
       [
         "rectus",
         [
-          "singular neuter nominative/accusative/vocative"
+          "nominative/accusative/vocative singular neuter"
         ]
       ]
     ],
@@ -2478,7 +2478,7 @@
       [
         "rectus",
         [
-          "plural masculine nominative/vocative"
+          "nominative/vocative plural masculine"
         ]
       ]
     ],
@@ -2495,13 +2495,13 @@
       [
         "rectus",
         [
-          "plural feminine nominative/vocative"
+          "genitive/dative singular feminine"
         ]
       ],
       [
         "rectus",
         [
-          "singular feminine genitive/dative"
+          "nominative/vocative plural feminine"
         ]
       ]
     ],
@@ -2558,13 +2558,13 @@
       [
         "rectus",
         [
-          "singular masculine dative/ablative"
+          "dative/ablative singular masculine"
         ]
       ],
       [
         "rectus",
         [
-          "singular neuter dative/ablative"
+          "dative/ablative singular neuter"
         ]
       ]
     ],
@@ -2581,7 +2581,7 @@
       [
         "rectus",
         [
-          "plural masculine feminine neuter dative/ablative"
+          "dative/ablative plural masculine feminine neuter"
         ]
       ]
     ],
@@ -2689,7 +2689,7 @@
       [
         "domus",
         [
-          "plural nominative/accusative/vocative"
+          "nominative/accusative/vocative plural"
         ]
       ]
     ],
@@ -2706,7 +2706,7 @@
       [
         "domus",
         [
-          "singular genitive/locative"
+          "genitive/locative singular"
         ]
       ]
     ],
@@ -2774,7 +2774,7 @@
       [
         "domus",
         [
-          "singular dative/ablative"
+          "dative/ablative singular"
         ]
       ]
     ],
@@ -2791,7 +2791,7 @@
       [
         "domus",
         [
-          "singular dative/ablative"
+          "dative/ablative singular"
         ]
       ]
     ],
@@ -2808,7 +2808,7 @@
       [
         "domus",
         [
-          "plural dative/ablative"
+          "dative/ablative plural"
         ]
       ]
     ],
@@ -5089,7 +5089,7 @@
       [
         "cogito",
         [
-          "singular future imperative active second/third-person"
+          "second/third-person singular future imperative active"
         ]
       ]
     ],
@@ -5140,7 +5140,7 @@
       [
         "cogito",
         [
-          "singular future imperative passive second/third-person"
+          "second/third-person singular future imperative passive"
         ]
       ]
     ],
@@ -5395,7 +5395,7 @@
       [
         "cogito",
         [
-          "gerund noun-from-verb dative/ablative"
+          "dative/ablative gerund noun-from-verb"
         ]
       ]
     ],

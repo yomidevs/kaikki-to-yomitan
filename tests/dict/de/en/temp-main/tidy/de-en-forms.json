@@ -209,7 +209,7 @@
       "noun": [
         "extracted",
         [
-          "plural definite nominative/genitive/accusative"
+          "nominative/genitive/accusative plural definite"
         ]
       ]
     },
@@ -268,7 +268,7 @@
         "extracted",
         [
           "dative singular",
-          "plural definite nominative/genitive/dative/accusative"
+          "nominative/genitive/dative/accusative plural definite"
         ]
       ]
     },
@@ -330,7 +330,7 @@
       "noun": [
         "extracted",
         [
-          "plural definite nominative/genitive/dative/accusative"
+          "nominative/genitive/dative/accusative plural definite"
         ]
       ]
     }

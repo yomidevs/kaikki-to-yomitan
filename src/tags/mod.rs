@@ -13,6 +13,11 @@ use crate::lang::Lang;
 use crate::models::kaikki::Tag;
 use crate::models::yomitan::TagInformation;
 
+/// Tag separator.
+///
+/// Needs to be synced between merge logic and sorting.
+const TAG_SEP: &str = "/";
+
 /// Tags that are blacklisted if they happen at *some* expanded form @ tidy
 pub const BLACKLISTED_FORM_TAGS: [&str; 14] = [
     "inflection-template",
@@ -44,15 +49,29 @@ pub const IDENTITY_FORM_TAGS: [&str; 3] = ["nominative", "singular", "infinitive
 /// Tags that we just remove from forms @ tidy
 pub const REDUNDANT_FORM_TAGS: [&str; 1] = ["combined-form"];
 
+/// Get the substring before TAG_SEP, or default to the whole string.
+fn before_sep(s: &str) -> &str {
+    s.split_once(TAG_SEP).map(|(before, _)| before).unwrap_or(s)
+}
+
+// TODO: instead of doing TAG_ORDER.index, rewrite build.py to produce a match
+// statement that returns directly the order.
+//
 /// Sort tags by their position in the tag_order.json file.
+///
+/// If a tag contains TAG_SEP, the substring before TAG_SEP is used instead.
+/// This is done so we can sort merged tags: nominative/accusative etc.
 ///
 /// Expects (but does not check) tags WITHOUT spaces.
 pub fn sort_tags(tags: &mut [&str]) {
     debug_assert!(tags.iter().all(|tag| !tag.contains(' ')));
 
     tags.sort_by(|a, b| {
-        let index_a = TAG_ORDER.iter().position(|&x| x == *a);
-        let index_b = TAG_ORDER.iter().position(|&x| x == *b);
+        let bef_a = before_sep(a);
+        let bef_b = before_sep(b);
+
+        let index_a = TAG_ORDER.iter().position(|&x| x == bef_a);
+        let index_b = TAG_ORDER.iter().position(|&x| x == bef_b);
 
         match (index_a, index_b) {
             (Some(i), Some(j)) => i.cmp(&j),   // both found → compare positions
@@ -199,11 +218,36 @@ mod tests {
 
     // This imitates the original. Can be removed if sort_tags logic changes.
     #[test]
-    fn sort_tags_base() {
+    fn sort_tags_not_found() {
         let tag_not_found = "__sentinel";
         assert!(!TAG_ORDER.contains(&tag_not_found));
         let mut received = to_str_vec(&[tag_not_found, "Gheg"]);
         let expected = to_string_vec(&[tag_not_found, "Gheg"]);
+        sort_tags(&mut received);
+        assert_eq!(received, expected);
+    }
+
+    #[test]
+    fn sort_tags_base() {
+        let tag1 = "genitive";
+        let tag2 = "accusative";
+        let index_1 = TAG_ORDER.iter().position(|&x| x == tag1).unwrap();
+        let index_2 = TAG_ORDER.iter().position(|&x| x == tag2).unwrap();
+        assert!(index_1 < index_2);
+
+        let mut received = to_str_vec(&[tag2, tag1]);
+        let expected = to_string_vec(&[tag1, tag2]);
+        sort_tags(&mut received);
+        assert_eq!(received, expected);
+    }
+
+    #[test]
+    fn sort_tags_with_separator() {
+        let tag1 = "genitive/dative";
+        let tag2 = "accusative";
+
+        let mut received = to_str_vec(&[tag2, tag1]);
+        let expected = to_string_vec(&[tag1, tag2]);
         sort_tags(&mut received);
         assert_eq!(received, expected);
     }

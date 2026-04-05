@@ -1,6 +1,7 @@
 use indexmap::IndexMap;
 
 use crate::models::kaikki::Tag;
+use crate::tags::TAG_SEP;
 
 const PERSON_TAGS: [&str; 3] = ["first-person", "second-person", "third-person"];
 
@@ -45,7 +46,7 @@ pub fn merge_person_tags(tags: &mut Vec<Tag>) {
             // SAFETY: PERSON_TAGS contains pmatch so it always ends in -person
             .map(|pmatch| pmatch.strip_suffix("-person").unwrap())
             .collect::<Vec<_>>()
-            .join("/")
+            .join(TAG_SEP)
             + "-person";
 
         let tag = other_tags
@@ -106,7 +107,7 @@ fn merge_tags_by_category(tags: &mut Vec<Tag>, category_tags: &[&str]) {
     for (other_tags, mut matches) in grouped {
         matches.sort_by_key(|x| category_tags.iter().position(|p| p == x).unwrap_or(999));
 
-        let merged = matches.join("/");
+        let merged = matches.join(TAG_SEP);
 
         let tag = other_tags
             .into_iter()

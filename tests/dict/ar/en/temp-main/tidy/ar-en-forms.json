@@ -181,8 +181,8 @@
       "verb": [
         "extracted",
         [
-          "feminine imperfective active indicative dual non-past second/third-person",
-          "second-person masculine imperfective active indicative dual non-past"
+          "second-person masculine imperfective active indicative dual non-past",
+          "second/third-person feminine imperfective active indicative dual non-past"
         ]
       ]
     },
@@ -277,10 +277,10 @@
       "verb": [
         "extracted",
         [
-          "feminine active dual jussive second/third-person",
-          "feminine active subjunctive dual second/third-person",
           "second-person masculine active dual jussive",
-          "second-person masculine active subjunctive dual"
+          "second-person masculine active subjunctive dual",
+          "second/third-person feminine active dual jussive",
+          "second/third-person feminine active subjunctive dual"
         ]
       ]
     },
@@ -542,8 +542,8 @@
       "verb": [
         "extracted",
         [
-          "feminine imperfective passive indicative dual non-past second/third-person",
-          "second-person masculine imperfective passive indicative dual non-past"
+          "second-person masculine imperfective passive indicative dual non-past",
+          "second/third-person feminine imperfective passive indicative dual non-past"
         ]
       ]
     },
@@ -638,10 +638,10 @@
       "verb": [
         "extracted",
         [
-          "feminine passive dual jussive second/third-person",
-          "feminine passive subjunctive dual second/third-person",
           "second-person masculine passive dual jussive",
-          "second-person masculine passive subjunctive dual"
+          "second-person masculine passive subjunctive dual",
+          "second/third-person feminine passive dual jussive",
+          "second/third-person feminine passive subjunctive dual"
         ]
       ]
     },
@@ -835,8 +835,8 @@
       "noun": [
         "extracted",
         [
-          "informal singular construct dual triptote",
-          "singular construct dual triptote genitive/accusative"
+          "genitive/accusative singular construct dual triptote",
+          "informal singular construct dual triptote"
         ]
       ]
     },
@@ -860,7 +860,7 @@
       "noun": [
         "extracted",
         [
-          "singular indefinite dual triptote genitive/accusative"
+          "genitive/accusative singular indefinite dual triptote"
         ]
       ]
     },
@@ -868,7 +868,7 @@
       "noun": [
         "extracted",
         [
-          "singular definite dual triptote genitive/accusative"
+          "genitive/accusative singular definite dual triptote"
         ]
       ]
     },

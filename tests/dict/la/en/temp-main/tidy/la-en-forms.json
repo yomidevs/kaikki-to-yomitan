@@ -4,8 +4,8 @@
       "noun": [
         "extracted",
         [
-          "plural nominative/vocative",
-          "singular genitive/dative"
+          "genitive/dative singular",
+          "nominative/vocative plural"
         ]
       ]
     },
@@ -21,7 +21,7 @@
       "noun": [
         "extracted",
         [
-          "plural dative/ablative"
+          "dative/ablative plural"
         ]
       ]
     },
@@ -870,7 +870,7 @@
       "verb": [
         "extracted",
         [
-          "singular future imperative active second/third-person"
+          "second/third-person singular future imperative active"
         ]
       ]
     },
@@ -894,7 +894,7 @@
       "verb": [
         "extracted",
         [
-          "singular future imperative passive second/third-person"
+          "second/third-person singular future imperative passive"
         ]
       ]
     },
@@ -1014,7 +1014,7 @@
       "verb": [
         "extracted",
         [
-          "gerund noun-from-verb dative/ablative"
+          "dative/ablative gerund noun-from-verb"
         ]
       ]
     },
@@ -1056,7 +1056,7 @@
       "noun": [
         "extracted",
         [
-          "plural nominative/accusative/vocative"
+          "nominative/accusative/vocative plural"
         ]
       ]
     },
@@ -1072,7 +1072,7 @@
       "noun": [
         "extracted",
         [
-          "singular dative/ablative"
+          "dative/ablative singular"
         ]
       ]
     },
@@ -1080,7 +1080,7 @@
       "noun": [
         "extracted",
         [
-          "plural dative/ablative"
+          "dative/ablative plural"
         ]
       ]
     },
@@ -1088,7 +1088,7 @@
       "noun": [
         "extracted",
         [
-          "singular accusative/vocative"
+          "accusative/vocative singular"
         ]
       ]
     }
@@ -1098,8 +1098,8 @@
       "verb": [
         "extracted",
         [
-          "plural neuter nominative/accusative/vocative",
-          "singular feminine nominative/vocative"
+          "nominative/accusative/vocative plural neuter",
+          "nominative/vocative singular feminine"
         ]
       ]
     },
@@ -1108,7 +1108,7 @@
         "extracted",
         [
           "accusative singular masculine",
-          "singular neuter nominative/accusative/vocative"
+          "nominative/accusative/vocative singular neuter"
         ]
       ]
     },
@@ -1150,7 +1150,7 @@
         [
           "genitive singular masculine",
           "genitive singular neuter",
-          "plural masculine nominative/vocative"
+          "nominative/vocative plural masculine"
         ]
       ]
     },
@@ -1158,8 +1158,8 @@
       "verb": [
         "extracted",
         [
-          "plural feminine nominative/vocative",
-          "singular feminine genitive/dative"
+          "genitive/dative singular feminine",
+          "nominative/vocative plural feminine"
         ]
       ]
     },
@@ -1184,8 +1184,8 @@
       "verb": [
         "extracted",
         [
-          "singular masculine dative/ablative",
-          "singular neuter dative/ablative"
+          "dative/ablative singular masculine",
+          "dative/ablative singular neuter"
         ]
       ]
     },
@@ -1193,7 +1193,7 @@
       "verb": [
         "extracted",
         [
-          "plural masculine feminine neuter dative/ablative"
+          "dative/ablative plural masculine feminine neuter"
         ]
       ]
     },
@@ -1244,7 +1244,7 @@
         "extracted",
         [
           "genitive singular",
-          "plural nominative/accusative/vocative"
+          "nominative/accusative/vocative plural"
         ]
       ]
     },
@@ -1252,7 +1252,7 @@
       "noun": [
         "extracted",
         [
-          "singular genitive/locative"
+          "genitive/locative singular"
         ]
       ]
     },
@@ -1284,7 +1284,7 @@
       "noun": [
         "extracted",
         [
-          "singular dative/ablative"
+          "dative/ablative singular"
         ]
       ]
     },
@@ -1292,7 +1292,7 @@
       "noun": [
         "extracted",
         [
-          "singular dative/ablative"
+          "dative/ablative singular"
         ]
       ]
     },
@@ -1300,7 +1300,7 @@
       "noun": [
         "extracted",
         [
-          "plural dative/ablative"
+          "dative/ablative plural"
         ]
       ]
     },
@@ -2359,7 +2359,7 @@
       "verb": [
         "extracted",
         [
-          "singular future imperative active second/third-person"
+          "second/third-person singular future imperative active"
         ]
       ]
     },
@@ -2383,7 +2383,7 @@
       "verb": [
         "extracted",
         [
-          "singular future imperative passive second/third-person"
+          "second/third-person singular future imperative passive"
         ]
       ]
     },
@@ -2503,7 +2503,7 @@
       "verb": [
         "extracted",
         [
-          "gerund noun-from-verb dative/ablative"
+          "dative/ablative gerund noun-from-verb"
         ]
       ]
     },

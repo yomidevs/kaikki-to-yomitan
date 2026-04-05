@@ -12,7 +12,7 @@
       "noun": [
         "extracted",
         [
-          "plural irregular nominative/accusative"
+          "nominative/accusative plural irregular"
         ]
       ]
     },
@@ -52,7 +52,7 @@
       "noun": [
         "extracted",
         [
-          "singular dative/partitive"
+          "dative/partitive singular"
         ]
       ]
     },
@@ -312,7 +312,7 @@
       "adj": [
         "extracted",
         [
-          "neuter nominative/accusative"
+          "nominative/accusative neuter"
         ]
       ]
     },
@@ -346,7 +346,7 @@
       "adj": [
         "extracted",
         [
-          "feminine genitive/dative",
+          "genitive/dative feminine",
           "instrumental feminine",
           "prepositional feminine"
         ]

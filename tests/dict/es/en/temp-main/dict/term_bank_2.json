@@ -981,7 +981,7 @@
       [
         "vivir",
         [
-          "infinitive object-first-person object-singular dative/accusative"
+          "dative/accusative infinitive object-first-person object-singular"
         ]
       ]
     ],
@@ -998,7 +998,7 @@
       [
         "vivir",
         [
-          "infinitive object-second-person object-singular dative/accusative"
+          "dative/accusative infinitive object-second-person object-singular"
         ]
       ]
     ],
@@ -1032,13 +1032,13 @@
       [
         "vivir",
         [
-          "infinitive object-third-person object-plural dative/accusative"
+          "dative/accusative infinitive object-third-person object-plural"
         ]
       ],
       [
         "vivir",
         [
-          "infinitive object-third-person object-singular dative/accusative"
+          "dative/accusative infinitive object-third-person object-singular"
         ]
       ]
     ],
@@ -1055,7 +1055,7 @@
       [
         "vivir",
         [
-          "infinitive object-first-person object-plural dative/accusative"
+          "dative/accusative infinitive object-first-person object-plural"
         ]
       ]
     ],
@@ -1072,7 +1072,7 @@
       [
         "vivir",
         [
-          "infinitive object-second-person object-plural dative/accusative"
+          "dative/accusative infinitive object-second-person object-plural"
         ]
       ]
     ],
@@ -1174,7 +1174,7 @@
       [
         "vivir",
         [
-          "gerund object-first-person object-singular dative/accusative"
+          "dative/accusative gerund object-first-person object-singular"
         ]
       ]
     ],
@@ -1191,7 +1191,7 @@
       [
         "vivir",
         [
-          "gerund object-second-person object-singular dative/accusative"
+          "dative/accusative gerund object-second-person object-singular"
         ]
       ]
     ],
@@ -1225,13 +1225,13 @@
       [
         "vivir",
         [
-          "gerund object-third-person object-plural dative/accusative"
+          "dative/accusative gerund object-third-person object-plural"
         ]
       ],
       [
         "vivir",
         [
-          "gerund object-third-person object-singular dative/accusative"
+          "dative/accusative gerund object-third-person object-singular"
         ]
       ]
     ],
@@ -1248,7 +1248,7 @@
       [
         "vivir",
         [
-          "gerund object-first-person object-plural dative/accusative"
+          "dative/accusative gerund object-first-person object-plural"
         ]
       ]
     ],
@@ -1265,7 +1265,7 @@
       [
         "vivir",
         [
-          "gerund object-second-person object-plural dative/accusative"
+          "dative/accusative gerund object-second-person object-plural"
         ]
       ]
     ],
@@ -1367,7 +1367,7 @@
       [
         "vivir",
         [
-          "informal second-person singular imperative object-first-person object-singular with-tú dative/accusative"
+          "informal dative/accusative second-person singular imperative object-first-person object-singular with-tú"
         ]
       ]
     ],
@@ -1384,7 +1384,7 @@
       [
         "vivir",
         [
-          "informal second-person singular imperative object-second-person object-singular with-tú dative/accusative"
+          "informal dative/accusative second-person singular imperative object-second-person object-singular with-tú"
         ]
       ]
     ],
@@ -1418,7 +1418,7 @@
       [
         "vivir",
         [
-          "informal second-person singular imperative object-first-person object-plural with-tú dative/accusative"
+          "informal dative/accusative second-person singular imperative object-first-person object-plural with-tú"
         ]
       ]
     ],
@@ -1520,7 +1520,7 @@
       [
         "vivir",
         [
-          "informal second-person singular imperative object-first-person object-singular with-vos dative/accusative"
+          "informal dative/accusative second-person singular imperative object-first-person object-singular with-vos"
         ]
       ]
     ],
@@ -1537,7 +1537,7 @@
       [
         "vivir",
         [
-          "informal second-person singular imperative object-second-person object-singular with-vos dative/accusative"
+          "informal dative/accusative second-person singular imperative object-second-person object-singular with-vos"
         ]
       ]
     ],
@@ -1571,7 +1571,7 @@
       [
         "vivir",
         [
-          "informal second-person singular imperative object-first-person object-plural with-vos dative/accusative"
+          "informal dative/accusative second-person singular imperative object-first-person object-plural with-vos"
         ]
       ]
     ],
@@ -1673,7 +1673,7 @@
       [
         "vivir",
         [
-          "formal second-person singular imperative object-first-person object-singular dative/accusative"
+          "formal dative/accusative second-person singular imperative object-first-person object-singular"
         ]
       ]
     ],
@@ -1707,7 +1707,7 @@
       [
         "vivir",
         [
-          "formal second-person singular imperative object-third-person object-singular dative/accusative"
+          "formal dative/accusative second-person singular imperative object-third-person object-singular"
         ]
       ]
     ],
@@ -1724,7 +1724,7 @@
       [
         "vivir",
         [
-          "formal second-person singular imperative object-first-person object-plural dative/accusative"
+          "formal dative/accusative second-person singular imperative object-first-person object-plural"
         ]
       ]
     ],
@@ -1826,7 +1826,7 @@
       [
         "vivir",
         [
-          "first-person plural imperative object-second-person object-singular dative/accusative"
+          "dative/accusative first-person plural imperative object-second-person object-singular"
         ]
       ]
     ],
@@ -1860,7 +1860,7 @@
       [
         "vivir",
         [
-          "first-person plural imperative object-first-person object-plural dative/accusative"
+          "dative/accusative first-person plural imperative object-first-person object-plural"
         ]
       ]
     ],
@@ -1877,7 +1877,7 @@
       [
         "vivir",
         [
-          "first-person plural imperative object-second-person object-plural dative/accusative"
+          "dative/accusative first-person plural imperative object-second-person object-plural"
         ]
       ]
     ],
@@ -1979,7 +1979,7 @@
       [
         "vivir",
         [
-          "informal second-person plural imperative object-first-person object-singular dative/accusative"
+          "informal dative/accusative second-person plural imperative object-first-person object-singular"
         ]
       ]
     ],
@@ -2013,7 +2013,7 @@
       [
         "vivir",
         [
-          "informal second-person plural imperative object-first-person object-plural dative/accusative"
+          "informal dative/accusative second-person plural imperative object-first-person object-plural"
         ]
       ]
     ],
@@ -2030,7 +2030,7 @@
       [
         "vivir",
         [
-          "informal second-person plural imperative object-second-person object-plural dative/accusative"
+          "informal dative/accusative second-person plural imperative object-second-person object-plural"
         ]
       ]
     ],
@@ -2132,7 +2132,7 @@
       [
         "vivir",
         [
-          "formal second-person plural imperative object-first-person object-singular dative/accusative"
+          "formal dative/accusative second-person plural imperative object-first-person object-singular"
         ]
       ]
     ],
@@ -2166,7 +2166,7 @@
       [
         "vivir",
         [
-          "formal second-person plural imperative object-first-person object-plural dative/accusative"
+          "formal dative/accusative second-person plural imperative object-first-person object-plural"
         ]
       ]
     ],
@@ -2200,7 +2200,7 @@
       [
         "vivir",
         [
-          "formal second-person plural imperative object-third-person object-plural dative/accusative"
+          "formal dative/accusative second-person plural imperative object-third-person object-plural"
         ]
       ]
     ],

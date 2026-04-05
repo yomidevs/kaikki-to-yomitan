@@ -379,13 +379,13 @@
       [
         "قدم",
         [
-          "feminine imperfective active indicative dual non-past second/third-person"
+          "second-person masculine imperfective active indicative dual non-past"
         ]
       ],
       [
         "قدم",
         [
-          "second-person masculine imperfective active indicative dual non-past"
+          "second/third-person feminine imperfective active indicative dual non-past"
         ]
       ]
     ],
@@ -614,18 +614,6 @@
       [
         "قدم",
         [
-          "feminine active dual jussive second/third-person"
-        ]
-      ],
-      [
-        "قدم",
-        [
-          "feminine active subjunctive dual second/third-person"
-        ]
-      ],
-      [
-        "قدم",
-        [
           "second-person masculine active dual jussive"
         ]
       ],
@@ -633,6 +621,18 @@
         "قدم",
         [
           "second-person masculine active subjunctive dual"
+        ]
+      ],
+      [
+        "قدم",
+        [
+          "second/third-person feminine active dual jussive"
+        ]
+      ],
+      [
+        "قدم",
+        [
+          "second/third-person feminine active subjunctive dual"
         ]
       ]
     ],
@@ -1243,13 +1243,13 @@
       [
         "قدم",
         [
-          "feminine imperfective passive indicative dual non-past second/third-person"
+          "second-person masculine imperfective passive indicative dual non-past"
         ]
       ],
       [
         "قدم",
         [
-          "second-person masculine imperfective passive indicative dual non-past"
+          "second/third-person feminine imperfective passive indicative dual non-past"
         ]
       ]
     ],
@@ -1478,18 +1478,6 @@
       [
         "قدم",
         [
-          "feminine passive dual jussive second/third-person"
-        ]
-      ],
-      [
-        "قدم",
-        [
-          "feminine passive subjunctive dual second/third-person"
-        ]
-      ],
-      [
-        "قدم",
-        [
           "second-person masculine passive dual jussive"
         ]
       ],
@@ -1497,6 +1485,18 @@
         "قدم",
         [
           "second-person masculine passive subjunctive dual"
+        ]
+      ],
+      [
+        "قدم",
+        [
+          "second/third-person feminine passive dual jussive"
+        ]
+      ],
+      [
+        "قدم",
+        [
+          "second/third-person feminine passive subjunctive dual"
         ]
       ]
     ],
@@ -1964,13 +1964,13 @@
       [
         "قدم",
         [
-          "informal singular construct dual triptote"
+          "genitive/accusative singular construct dual triptote"
         ]
       ],
       [
         "قدم",
         [
-          "singular construct dual triptote genitive/accusative"
+          "informal singular construct dual triptote"
         ]
       ]
     ],
@@ -2038,7 +2038,7 @@
       [
         "قدم",
         [
-          "singular indefinite dual triptote genitive/accusative"
+          "genitive/accusative singular indefinite dual triptote"
         ]
       ]
     ],
@@ -2055,7 +2055,7 @@
       [
         "قدم",
         [
-          "singular definite dual triptote genitive/accusative"
+          "genitive/accusative singular definite dual triptote"
         ]
       ]
     ],

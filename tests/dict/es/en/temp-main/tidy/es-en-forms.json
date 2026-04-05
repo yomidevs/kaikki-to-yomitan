@@ -445,7 +445,7 @@
       "verb": [
         "extracted",
         [
-          "infinitive object-first-person object-singular dative/accusative"
+          "dative/accusative infinitive object-first-person object-singular"
         ]
       ]
     },
@@ -453,7 +453,7 @@
       "verb": [
         "extracted",
         [
-          "infinitive object-second-person object-singular dative/accusative"
+          "dative/accusative infinitive object-second-person object-singular"
         ]
       ]
     },
@@ -469,8 +469,8 @@
       "verb": [
         "extracted",
         [
-          "infinitive object-third-person object-plural dative/accusative",
-          "infinitive object-third-person object-singular dative/accusative"
+          "dative/accusative infinitive object-third-person object-plural",
+          "dative/accusative infinitive object-third-person object-singular"
         ]
       ]
     },
@@ -478,7 +478,7 @@
       "verb": [
         "extracted",
         [
-          "infinitive object-first-person object-plural dative/accusative"
+          "dative/accusative infinitive object-first-person object-plural"
         ]
       ]
     },
@@ -486,7 +486,7 @@
       "verb": [
         "extracted",
         [
-          "infinitive object-second-person object-plural dative/accusative"
+          "dative/accusative infinitive object-second-person object-plural"
         ]
       ]
     },
@@ -534,7 +534,7 @@
       "verb": [
         "extracted",
         [
-          "gerund object-first-person object-singular dative/accusative"
+          "dative/accusative gerund object-first-person object-singular"
         ]
       ]
     },
@@ -542,7 +542,7 @@
       "verb": [
         "extracted",
         [
-          "gerund object-second-person object-singular dative/accusative"
+          "dative/accusative gerund object-second-person object-singular"
         ]
       ]
     },
@@ -558,8 +558,8 @@
       "verb": [
         "extracted",
         [
-          "gerund object-third-person object-plural dative/accusative",
-          "gerund object-third-person object-singular dative/accusative"
+          "dative/accusative gerund object-third-person object-plural",
+          "dative/accusative gerund object-third-person object-singular"
         ]
       ]
     },
@@ -567,7 +567,7 @@
       "verb": [
         "extracted",
         [
-          "gerund object-first-person object-plural dative/accusative"
+          "dative/accusative gerund object-first-person object-plural"
         ]
       ]
     },
@@ -575,7 +575,7 @@
       "verb": [
         "extracted",
         [
-          "gerund object-second-person object-plural dative/accusative"
+          "dative/accusative gerund object-second-person object-plural"
         ]
       ]
     },
@@ -623,7 +623,7 @@
       "verb": [
         "extracted",
         [
-          "informal second-person singular imperative object-first-person object-singular with-tú dative/accusative"
+          "informal dative/accusative second-person singular imperative object-first-person object-singular with-tú"
         ]
       ]
     },
@@ -631,7 +631,7 @@
       "verb": [
         "extracted",
         [
-          "informal second-person singular imperative object-second-person object-singular with-tú dative/accusative"
+          "informal dative/accusative second-person singular imperative object-second-person object-singular with-tú"
         ]
       ]
     },
@@ -647,7 +647,7 @@
       "verb": [
         "extracted",
         [
-          "informal second-person singular imperative object-first-person object-plural with-tú dative/accusative"
+          "informal dative/accusative second-person singular imperative object-first-person object-plural with-tú"
         ]
       ]
     },
@@ -695,7 +695,7 @@
       "verb": [
         "extracted",
         [
-          "informal second-person singular imperative object-first-person object-singular with-vos dative/accusative"
+          "informal dative/accusative second-person singular imperative object-first-person object-singular with-vos"
         ]
       ]
     },
@@ -703,7 +703,7 @@
       "verb": [
         "extracted",
         [
-          "informal second-person singular imperative object-second-person object-singular with-vos dative/accusative"
+          "informal dative/accusative second-person singular imperative object-second-person object-singular with-vos"
         ]
       ]
     },
@@ -719,7 +719,7 @@
       "verb": [
         "extracted",
         [
-          "informal second-person singular imperative object-first-person object-plural with-vos dative/accusative"
+          "informal dative/accusative second-person singular imperative object-first-person object-plural with-vos"
         ]
       ]
     },
@@ -767,7 +767,7 @@
       "verb": [
         "extracted",
         [
-          "formal second-person singular imperative object-first-person object-singular dative/accusative"
+          "formal dative/accusative second-person singular imperative object-first-person object-singular"
         ]
       ]
     },
@@ -783,7 +783,7 @@
       "verb": [
         "extracted",
         [
-          "formal second-person singular imperative object-third-person object-singular dative/accusative"
+          "formal dative/accusative second-person singular imperative object-third-person object-singular"
         ]
       ]
     },
@@ -791,7 +791,7 @@
       "verb": [
         "extracted",
         [
-          "formal second-person singular imperative object-first-person object-plural dative/accusative"
+          "formal dative/accusative second-person singular imperative object-first-person object-plural"
         ]
       ]
     },
@@ -839,7 +839,7 @@
       "verb": [
         "extracted",
         [
-          "first-person plural imperative object-second-person object-singular dative/accusative"
+          "dative/accusative first-person plural imperative object-second-person object-singular"
         ]
       ]
     },
@@ -855,7 +855,7 @@
       "verb": [
         "extracted",
         [
-          "first-person plural imperative object-first-person object-plural dative/accusative"
+          "dative/accusative first-person plural imperative object-first-person object-plural"
         ]
       ]
     },
@@ -863,7 +863,7 @@
       "verb": [
         "extracted",
         [
-          "first-person plural imperative object-second-person object-plural dative/accusative"
+          "dative/accusative first-person plural imperative object-second-person object-plural"
         ]
       ]
     },
@@ -911,7 +911,7 @@
       "verb": [
         "extracted",
         [
-          "informal second-person plural imperative object-first-person object-singular dative/accusative"
+          "informal dative/accusative second-person plural imperative object-first-person object-singular"
         ]
       ]
     },
@@ -927,7 +927,7 @@
       "verb": [
         "extracted",
         [
-          "informal second-person plural imperative object-first-person object-plural dative/accusative"
+          "informal dative/accusative second-person plural imperative object-first-person object-plural"
         ]
       ]
     },
@@ -935,7 +935,7 @@
       "verb": [
         "extracted",
         [
-          "informal second-person plural imperative object-second-person object-plural dative/accusative"
+          "informal dative/accusative second-person plural imperative object-second-person object-plural"
         ]
       ]
     },
@@ -983,7 +983,7 @@
       "verb": [
         "extracted",
         [
-          "formal second-person plural imperative object-first-person object-singular dative/accusative"
+          "formal dative/accusative second-person plural imperative object-first-person object-singular"
         ]
       ]
     },
@@ -999,7 +999,7 @@
       "verb": [
         "extracted",
         [
-          "formal second-person plural imperative object-first-person object-plural dative/accusative"
+          "formal dative/accusative second-person plural imperative object-first-person object-plural"
         ]
       ]
     },
@@ -1015,7 +1015,7 @@
       "verb": [
         "extracted",
         [
-          "formal second-person plural imperative object-third-person object-plural dative/accusative"
+          "formal dative/accusative second-person plural imperative object-third-person object-plural"
         ]
       ]
     },
