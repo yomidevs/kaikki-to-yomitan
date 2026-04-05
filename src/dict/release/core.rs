@@ -12,6 +12,9 @@ use std::time::{Duration, Instant};
 use anyhow::Result;
 use rayon::ThreadPoolBuilder;
 use rayon::prelude::*;
+use rusqlite::{Rows, Statement};
+
+// TODO: time dictionary creation
 
 use crate::{
     cli::{
@@ -27,6 +30,8 @@ use crate::{
     lang::{Edition, EditionSpec, Lang},
     path::PathManager,
 };
+
+const MAX_NUM_THREADS_MAIN: usize = 2;
 
 #[derive(Debug, Default)]
 pub struct TimingStats {
@@ -154,7 +159,7 @@ fn release_main(rargs: &ReleaseArgs, edition: Edition, stats: &TimingStats) {
     let pool = ThreadPoolBuilder::new()
         // 2 seems fine with a MemoryMax of 20GB (works on my machine TM)
         // 8 is fine for testing with only English/German/French editions
-        .num_threads(2)
+        .num_threads(MAX_NUM_THREADS_MAIN)
         .build()
         .expect("Failed to build local thread pool");
 
@@ -312,7 +317,49 @@ fn release_glossary_extended(source: Lang, stats: &TimingStats) {
     });
 }
 
-fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
+/// Implementation of the sql query.
+///
+/// Defaults to selecting entries that match the source lang.
+pub trait DQuery {
+    fn statement_str() -> &'static str {
+        "SELECT entry FROM wiktextract WHERE lang = ?1"
+    }
+
+    fn query<'a>(
+        stmt: &'a mut Statement,
+        source: &str,
+        _target: &str,
+    ) -> rusqlite::Result<Rows<'a>> {
+        stmt.query([source])
+    }
+}
+
+impl DQuery for DMain {}
+impl DQuery for DIpa {}
+impl DQuery for DIpaMerged {}
+impl DQuery for DGlossaryExtended {}
+
+/// Select entries that match the source lang and have translations in target.
+impl DQuery for DGlossary {
+    fn statement_str() -> &'static str {
+        r#"
+            SELECT w.entry
+            FROM wiktextract w
+            JOIN translations t ON w.id = t.entry_id
+            WHERE w.lang = ?1 AND t.target_lang = ?2
+            "#
+    }
+
+    fn query<'a>(
+        stmt: &'a mut Statement,
+        source: &str,
+        target: &str,
+    ) -> rusqlite::Result<rusqlite::Rows<'a>> {
+        stmt.query([source, target])
+    }
+}
+
+pub fn make_dict<D: Dictionary + DQuery>(dict: D, raw_args: D::A) -> Result<()> {
     let pm: &PathManager = &raw_args.try_into()?;
     let (_, source_pm, target_pm) = pm.langs();
     let opts = &pm.opts;
@@ -332,10 +379,8 @@ fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
             target: target_pm,
         };
 
-        let mut stmt = db
-            .conn
-            .prepare("SELECT entry FROM wiktextract WHERE lang = ?")?;
-        let mut rows = stmt.query([source_pm.iso()])?;
+        let mut stmt = db.conn.prepare(D::statement_str())?;
+        let mut rows = D::query(&mut stmt, source_pm.iso(), target_pm.iso())?;
 
         while let Some(row) = rows.next()? {
             let blob: &[u8] = row.get_ref(0)?.as_blob()?;

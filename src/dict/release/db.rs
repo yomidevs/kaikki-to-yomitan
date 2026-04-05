@@ -1,4 +1,5 @@
 use std::{
+    collections::HashSet,
     fs::File,
     io::{BufRead, BufReader},
     path::{Path, PathBuf},
@@ -51,16 +52,28 @@ impl WiktextractDb {
         let conn = Connection::open(&db_path)?;
 
         conn.execute_batch(
-            r"
+            r#"
             CREATE TABLE IF NOT EXISTS wiktextract (
                 id INTEGER PRIMARY KEY,
                 lang TEXT NOT NULL,
                 entry BLOB NOT NULL
             );
 
+            CREATE TABLE IF NOT EXISTS translations (
+                entry_id INTEGER NOT NULL,
+                target_lang TEXT NOT NULL,
+                FOREIGN KEY(entry_id) REFERENCES wiktextract(id)
+            );
+
             CREATE INDEX IF NOT EXISTS idx_wiktextract_lang
             ON wiktextract(lang);
-            ",
+
+            CREATE INDEX IF NOT EXISTS idx_translations_target_lang
+            ON translations(target_lang);
+
+            CREATE INDEX IF NOT EXISTS idx_translations_entry_id
+            ON translations(entry_id);
+            "#,
         )?;
 
         let mut db = Self { conn };
@@ -88,17 +101,31 @@ impl WiktextractDb {
 
         let tx = self.conn.transaction()?;
         {
-            let mut stmt = tx.prepare("INSERT INTO wiktextract (lang, entry) VALUES (?, ?)")?;
+            let mut insert_entry =
+                tx.prepare("INSERT INTO wiktextract (lang, entry) VALUES (?, ?)")?;
+
+            let mut insert_translation =
+                tx.prepare("INSERT INTO translations (entry_id, target_lang) VALUES (?, ?)")?;
 
             for line in reader.lines() {
                 let line = line?;
                 let word_entry: WordEntry = serde_json::from_str(&line)?;
                 let bytes = rkyv::to_bytes::<rkyv::rancor::Error>(&word_entry)?;
 
-                stmt.execute(params![word_entry.lang_code, bytes.as_ref()])?;
+                insert_entry.execute(params![word_entry.lang_code, bytes.as_ref()])?;
+
+                let entry_id = tx.last_insert_rowid();
+
+                let mut seen = HashSet::new();
+                for trans in word_entry.translations {
+                    if seen.insert(trans.lang_code.clone()) {
+                        insert_translation.execute(params![entry_id, trans.lang_code])?;
+                    }
+                }
             }
         }
         tx.commit()?;
+
         tracing::debug!(
             "Making db took {:.3} ms",
             start.elapsed().as_secs_f64() * 1000.0
