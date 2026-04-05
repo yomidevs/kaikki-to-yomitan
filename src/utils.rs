@@ -27,11 +27,15 @@ pub fn human_size(size_bytes: f64) -> String {
     let mut size = size_bytes;
     for unit in ["B", "KB", "MB"] {
         if size < 1024.0 {
-            return format!("{size:.2} {unit}");
+            return format!("{size:.1} {unit}");
         }
         size /= 1024.0;
     }
-    format!("{size:.2} GB")
+    format!("{size:.1} GB")
+}
+
+pub fn human_time(ms: u128) -> String {
+    format!("{:.1} s", ms as f64 / 1000.0)
 }
 
 fn get_file_size_human(path: &Path) -> Result<String> {

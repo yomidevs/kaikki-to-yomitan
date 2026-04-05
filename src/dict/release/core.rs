@@ -5,7 +5,9 @@
 //! Command to limit memory usage (linux):
 //! systemd-run --user --scope -p MemoryMax=24G -p MemoryHigh=24G cargo run -r -- release -v
 
-use std::time::Instant;
+use std::collections::HashMap;
+use std::sync::Mutex;
+use std::time::{Duration, Instant};
 
 use anyhow::Result;
 use rayon::ThreadPoolBuilder;
@@ -25,6 +27,23 @@ use crate::{
     lang::{Edition, EditionSpec, Lang},
     path::PathManager,
 };
+
+#[derive(Debug, Default)]
+pub struct TimingStats {
+    pub timings: Mutex<HashMap<String, Duration>>,
+}
+
+impl TimingStats {
+    fn new() -> Self {
+        Self {
+            timings: Mutex::new(HashMap::new()),
+        }
+    }
+
+    fn record(&self, key: String, duration: Duration) {
+        self.timings.lock().unwrap().insert(key, duration);
+    }
+}
 
 pub fn release(rargs: ReleaseArgs) -> Result<()> {
     // let editions = [Edition::En, Edition::De, Edition::Fr];
@@ -52,19 +71,20 @@ pub fn release(rargs: ReleaseArgs) -> Result<()> {
     download_and_create_db(&rargs, &editions);
 
     let start = Instant::now();
+    let stats = TimingStats::new();
 
     editions.par_iter().for_each(|edition| {
-        release_main(&rargs, *edition);
-        release_ipa(&rargs, *edition);
-        release_glossary(&rargs, *edition);
+        release_main(&rargs, *edition, &stats);
+        release_ipa(&rargs, *edition, &stats);
+        release_glossary(&rargs, *edition, &stats);
     });
 
     let targets = Lang::all();
     // let targets = [Lang::Afb];
     // let targets: Vec<Lang> = editions.iter().map(|ed| (*ed).into()).collect();
     targets.par_iter().for_each(|target| {
-        release_ipa_merged(&rargs, *target);
-        // release_glossary_extended(*target);
+        release_ipa_merged(&rargs, *target, &stats);
+        // release_glossary_extended(*target, &stats);
     });
 
     let elapsed = start.elapsed();
@@ -72,7 +92,7 @@ pub fn release(rargs: ReleaseArgs) -> Result<()> {
 
     extract_indexes(&rargs)?;
 
-    write_dict_metadata(&rargs.root_dir)?;
+    write_dict_metadata(&rargs.root_dir, &stats)?;
 
     Ok(())
 }
@@ -108,16 +128,27 @@ fn download_and_create_db(rargs: &ReleaseArgs, editions: &[Edition]) {
 }
 
 // Pretty print utility
-fn pp(dict_name: &str, first_lang: Lang, second_lang: Option<Lang>, time: Instant) {
-    // Printing sizes requires a PM
-    let label = match second_lang {
-        Some(second_lang) => format!("[{dict_name}-{first_lang}-{second_lang}]"),
-        None => format!("[{dict_name}-{first_lang}]"), // ipa-merged
+fn pp(
+    dict_name: &str,
+    first_lang: Lang,
+    second_lang: Option<Lang>,
+    time: Instant,
+    stats: &TimingStats,
+) {
+    let duration = time.elapsed();
+
+    let key = match second_lang {
+        Some(second_lang) => format!("{}-{}-{}", dict_name, first_lang, second_lang),
+        None => format!("{}-{}", dict_name, first_lang),
     };
-    eprintln!("{label:<20} done in {:.2?}", time.elapsed());
+
+    stats.record(key.clone(), duration);
+
+    // let label = format!("[{}]", key);
+    // eprintln!("{label:<20} done in {:.2?}", time.elapsed());
 }
 
-fn release_main(rargs: &ReleaseArgs, edition: Edition) {
+fn release_main(rargs: &ReleaseArgs, edition: Edition, stats: &TimingStats) {
     // Limit only this workload (as opposed to the full logic. IPA and glossaries are completely
     // fine and will never OOM).
     let pool = ThreadPoolBuilder::new()
@@ -154,14 +185,14 @@ fn release_main(rargs: &ReleaseArgs, edition: Edition) {
             };
 
             match make_dict(DMain, args) {
-                Ok(()) => pp("main", *source, Some(edition.into()), start),
+                Ok(()) => pp("main", *source, Some(edition.into()), start, stats),
                 Err(err) => tracing::error!("[main-{source}-{edition}] ERROR: {err:?}"),
             }
         });
     });
 }
 
-fn release_ipa(rargs: &ReleaseArgs, edition: Edition) {
+fn release_ipa(rargs: &ReleaseArgs, edition: Edition, stats: &TimingStats) {
     Lang::all().par_iter().for_each(|source| {
         let start = Instant::now();
 
@@ -188,13 +219,13 @@ fn release_ipa(rargs: &ReleaseArgs, edition: Edition) {
         };
 
         match make_dict(DIpa, args) {
-            Ok(()) => pp("ipa", *source, Some(edition.into()), start),
+            Ok(()) => pp("ipa", *source, Some(edition.into()), start, stats),
             Err(err) => tracing::error!("[ipa-{source}-{edition}] ERROR: {err:?}"),
         }
     });
 }
 
-fn release_ipa_merged(rargs: &ReleaseArgs, target: Lang) {
+fn release_ipa_merged(rargs: &ReleaseArgs, target: Lang, stats: &TimingStats) {
     let start = Instant::now();
 
     let langs = match target {
@@ -213,12 +244,12 @@ fn release_ipa_merged(rargs: &ReleaseArgs, target: Lang) {
     };
 
     match make_dict(DIpaMerged, args) {
-        Ok(()) => pp("ipa-merged", target, None, start),
+        Ok(()) => pp("ipa-merged", target, None, start, stats),
         Err(err) => tracing::error!("[ipa-merged-{target}] ERROR: {err:?}"),
     }
 }
 
-fn release_glossary(rargs: &ReleaseArgs, edition: Edition) {
+fn release_glossary(rargs: &ReleaseArgs, edition: Edition, stats: &TimingStats) {
     Lang::all().par_iter().for_each(|target| {
         let start = Instant::now();
 
@@ -243,14 +274,14 @@ fn release_glossary(rargs: &ReleaseArgs, edition: Edition) {
 
         match make_dict(DGlossary, args) {
             // Reverse order of main/ipa
-            Ok(()) => pp("gloss", edition.into(), Some(*target), start),
-            Err(err) => tracing::error!("[gloss-{edition}-{target}] ERROR: {err:?}"),
+            Ok(()) => pp("glossary", edition.into(), Some(*target), start, stats),
+            Err(err) => tracing::error!("[glossary-{edition}-{target}] ERROR: {err:?}"),
         }
     });
 }
 
 #[allow(unused)]
-fn release_glossary_extended(source: Lang) {
+fn release_glossary_extended(source: Lang, stats: &TimingStats) {
     Lang::all().par_iter().for_each(|target| {
         let start = Instant::now();
 
@@ -275,7 +306,7 @@ fn release_glossary_extended(source: Lang) {
         };
 
         match make_dict(DGlossaryExtended, args) {
-            Ok(()) => pp("gloss-all", source, Some(*target), start),
+            Ok(()) => pp("gloss-all", source, Some(*target), start, stats),
             Err(err) => tracing::error!("[gloss-all-{source}-{target}] ERROR: {err:?}"),
         }
     });
