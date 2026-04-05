@@ -32,6 +32,9 @@ use crate::{
     utils::{link_kaikki, link_wiktionary, pretty_println_at_path},
 };
 
+const MAX_NUMBER_OF_SYNONYMS: usize = 3;
+const MAX_SIZE_OF_EXAMPLE: usize = 120;
+
 pub mod heap {
     use std::mem::size_of;
 
@@ -1177,9 +1180,15 @@ fn process_entry(edition: Edition, source: Lang, entry: &WordEntry) -> LemmaInfo
     LemmaInfo {
         gloss_tree: get_gloss_tree(entry),
         tags: entry.tags.clone(),
-        synonyms: entry.synonyms.iter().take(3).cloned().collect(),
+        synonyms: entry
+            .synonyms
+            .iter()
+            .take(MAX_NUMBER_OF_SYNONYMS)
+            .cloned()
+            .collect(),
         etymology_text: entry
             .etymology_texts()
+            // TODO: patch this in wiktextract
             .filter(|texts| match edition {
                 // "Missing etymology" placeholder: remove it
                 // We can't do it at preprocess_main because of the opaqueness of etymology text due to
@@ -1231,7 +1240,7 @@ fn get_gloss_tree(entry: &WordEntry) -> GlossTree {
         let mut filtered_examples: Vec<_> = sense
             .examples
             .iter()
-            .filter(|ex| !ex.text.is_empty() && ex.text.chars().count() <= 120) // equal to JS length
+            .filter(|ex| !ex.text.is_empty() && ex.text.chars().count() <= MAX_SIZE_OF_EXAMPLE)
             .cloned()
             .collect();
         // Place examples with translations first
