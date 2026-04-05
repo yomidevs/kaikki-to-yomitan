@@ -20,7 +20,7 @@ use crate::{
     lang::{Edition, Lang},
     models::kaikki::WordEntry,
     path::{DictionaryType, PathManager},
-    tags::{find_tag_in_bank, tags_localization::localize_tag},
+    tags::{find_tag_in_bank, localize_tag},
     utils::link_wiktionary,
 };
 

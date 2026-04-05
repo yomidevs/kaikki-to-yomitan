@@ -10,7 +10,7 @@ use crate::{
             TermPhoneticTranscription, YomitanEntry, wrap,
         },
     },
-    tags::{find_short_pos_or_default, find_tag_in_bank, tags_localization::localize_tag},
+    tags::{find_short_pos_or_default, find_tag_in_bank, localize_tag},
 };
 
 #[derive(Debug, Clone, Copy)]

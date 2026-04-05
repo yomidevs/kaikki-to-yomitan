@@ -26,8 +26,8 @@ use crate::{
     },
     path::PathManager,
     tags::{
-        REDUNDANT_FORM_TAGS, find_short_pos_or_default, find_tag_in_bank, merge_person_tags,
-        remove_redundant_tags, sort_tags, sort_tags_by_similar, tags_localization::localize_tag,
+        REDUNDANT_FORM_TAGS, find_short_pos_or_default, find_tag_in_bank, localize_tag,
+        merge_person_tags, remove_redundant_tags, sort_tags, sort_tags_by_similar,
     },
     utils::{link_kaikki, link_wiktionary, pretty_println_at_path},
 };

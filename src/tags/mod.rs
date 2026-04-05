@@ -1,15 +1,17 @@
-pub mod tags_constants;
-pub mod tags_localization;
+mod tags_constants;
+use tags_constants::{POSES, TAG_BANK, TAG_ORDER};
+
+mod tags_localization;
+pub use tags_localization::*;
+
+mod merge;
+pub use merge::*;
 
 use std::cmp::Ordering;
-
-use indexmap::IndexMap;
-use tags_constants::{POSES, TAG_BANK, TAG_ORDER};
 
 use crate::lang::Lang;
 use crate::models::kaikki::Tag;
 use crate::models::yomitan::TagInformation;
-use crate::tags::tags_localization::{has_locale, localize_tag};
 
 /// Tags that are blacklisted if they happen at *some* expanded form @ tidy
 pub const BLACKLISTED_FORM_TAGS: [&str; 14] = [
@@ -128,66 +130,6 @@ fn tags_are_subset(a: &str, b: &str) -> bool {
         .all(|a_word| b.split(' ').any(|b_word| b_word == a_word))
 }
 
-const PERSON_TAGS: [&str; 3] = ["first-person", "second-person", "third-person"];
-
-fn person_sort(tags: &mut [&str]) {
-    tags.sort_by_key(|x| PERSON_TAGS.iter().position(|p| p == x).unwrap_or(999));
-}
-
-/// Merge similar tags if the only difference is the person-tags.
-///
-/// F.e.
-/// in:  ['first-person singular', 'third-person singular']
-/// out: ['singular first/third-person ']
-///
-/// Note that this does not preserve logical tag order, and should be called before `sort_tag`.
-pub fn merge_person_tags(tags: &mut Vec<Tag>) {
-    let contains_person = tags
-        .iter()
-        .any(|tag| PERSON_TAGS.iter().any(|p| tag.contains(p)));
-
-    if !contains_person {
-        return;
-    }
-
-    // Leave tags with same capacity since we are going to repopulate it
-    let mut old_tags = Vec::with_capacity(tags.capacity());
-    std::mem::swap(&mut old_tags, tags);
-
-    let mut grouped: IndexMap<Vec<&str>, Vec<&str>> = IndexMap::new();
-
-    for tag in &old_tags {
-        let (person_tags, other_tags): (Vec<_>, Vec<_>) =
-            tag.split(' ').partition(|t| PERSON_TAGS.contains(t));
-
-        match person_tags.as_slice() {
-            [person] => grouped.entry(other_tags).or_default().push(person),
-            _ => tags.push(tag.to_string()),
-        }
-    }
-
-    for (other_tags, mut person_matches) in grouped {
-        person_sort(&mut person_matches);
-
-        // [first-person, third-person] > first/third-person
-        let merged_person_tag = person_matches
-            .iter()
-            // SAFETY: PERSON_TAGS contains pmatch so it always ends in -person
-            .map(|pmatch| pmatch.strip_suffix("-person").unwrap())
-            .collect::<Vec<_>>()
-            .join("/")
-            + "-person";
-
-        let tag = other_tags
-            .into_iter()
-            .chain(std::iter::once(merged_person_tag.as_ref()))
-            .collect::<Vec<_>>()
-            .join(" ");
-
-        tags.push(tag);
-    }
-}
-
 // Note that while target is an Edition for the main dictionary, it can be any Lang
 // for the glossary dictionary, which also uses tags.
 //
@@ -291,39 +233,6 @@ mod tests {
         make_test_sort_tags_by_similar(
             &["dual nominative", "accusative dual", "dual vocative"],
             &["accusative dual", "dual nominative", "dual vocative"],
-        );
-    }
-
-    fn make_test_merge_person_tags(received: &[&str], expected: &[&str]) {
-        let mut vreceived: Vec<String> = to_string_vec(received);
-        let vexpected: Vec<String> = to_string_vec(expected);
-        merge_person_tags(&mut vreceived);
-        assert_eq!(vreceived, vexpected);
-    }
-
-    #[test]
-    fn merge_person_tags1() {
-        make_test_merge_person_tags(
-            &[
-                "first-person singular present",
-                "third-person singular present",
-            ],
-            &["singular present first/third-person"],
-        );
-    }
-
-    // Improvement over the original that would return:
-    // "first/second-person singular past",
-    // "third-person singular past",
-    #[test]
-    fn merge_person_tags2() {
-        make_test_merge_person_tags(
-            &[
-                "first-person singular past",
-                "second-person singular past",
-                "third-person singular past",
-            ],
-            &["singular past first/second/third-person"],
         );
     }
 
