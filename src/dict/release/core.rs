@@ -14,8 +14,6 @@ use rayon::ThreadPoolBuilder;
 use rayon::prelude::*;
 use rusqlite::{Rows, Statement};
 
-// TODO: time dictionary creation
-
 use crate::{
     cli::{
         DictName, GlossaryArgs, GlossaryExtendedArgs, GlossaryExtendedLangs, GlossaryLangs,
@@ -54,8 +52,7 @@ pub fn release(rargs: ReleaseArgs) -> Result<()> {
     // let editions = [Edition::En, Edition::De, Edition::Fr];
 
     let mut editions = Edition::all();
-    // English is the bottleneck, and while I'm not entirely sure this works, getting to work asap
-    // with English dictionaries should make things faster. This puts English first.
+    // English is the bottleneck. This puts English first to start working asap.
     editions.sort_by_key(|ed| i32::from(*ed != Edition::En));
 
     println!("rargs: {:?}", &rargs);
@@ -73,7 +70,8 @@ pub fn release(rargs: ReleaseArgs) -> Result<()> {
     //
     // NOTE: For some reason this takes time even when db are init, why?
     let _ = std::fs::create_dir(&rargs.root_dir);
-    download_and_create_db(&rargs, &editions);
+    let db_stats = TimingStats::new();
+    download_and_create_db(&rargs, &editions, &db_stats);
 
     let start = Instant::now();
     let stats = TimingStats::new();
@@ -97,19 +95,18 @@ pub fn release(rargs: ReleaseArgs) -> Result<()> {
 
     extract_indexes(&rargs)?;
 
-    write_dict_metadata(&rargs.root_dir, &stats)?;
+    write_dict_metadata(&rargs.root_dir, &db_stats, &stats)?;
 
     Ok(())
 }
 
-fn download_and_create_db(rargs: &ReleaseArgs, editions: &[Edition]) {
+fn download_and_create_db(rargs: &ReleaseArgs, editions: &[Edition], stats: &TimingStats) {
     let start = Instant::now();
 
     let dir_kaik = rargs.root_dir.join("kaikki"); // cf. same function @ path.rs
     let _ = std::fs::create_dir(dir_kaik);
 
     editions.par_iter().for_each(|edition| {
-        let now = Instant::now();
         let args = MainArgs {
             langs: MainLangs {
                 source: (*edition).into(),
@@ -123,9 +120,14 @@ fn download_and_create_db(rargs: &ReleaseArgs, editions: &[Edition]) {
             },
         };
         let pm: &PathManager = &args.try_into().unwrap();
+
+        let now = Instant::now();
         let path_jsonl = find_or_download_jsonl(*edition, None, pm).unwrap();
         println!("Finished download for {edition} ({:.2?})", now.elapsed());
+
+        let now = Instant::now();
         let _ = WiktextractDb::create(rargs.root_dir.clone(), *edition, path_jsonl).unwrap();
+        stats.record(edition.to_string(), now.elapsed());
         println!("Finished database for {edition} ({:.2?})", now.elapsed());
     });
 

@@ -43,6 +43,7 @@ struct Metadata {
     size: u64,
     count: u64,
     time: u128,
+    db: BTreeMap<String, u128>,
     dicts: DictInfo,
 }
 
@@ -76,10 +77,11 @@ impl serde::Serialize for TypeInfo {
 
 impl serde::Serialize for Metadata {
     fn serialize<S: serde::Serializer>(&self, s: S) -> Result<S::Ok, S::Error> {
-        let mut state = s.serialize_struct("Metadata", 4)?;
+        let mut state = s.serialize_struct("Metadata", 5)?;
         state.serialize_field("size", &human_size(self.size as f64))?;
         state.serialize_field("count", &self.count)?;
         state.serialize_field("time", &human_time(self.time))?;
+        state.serialize_field("db", &self.db)?;
         state.serialize_field("dicts", &self.dicts)?;
         state.end()
     }
@@ -164,9 +166,17 @@ fn scan_and_group(root_dir: &Path, stats: &TimingStats) -> Result<Metadata> {
     Ok(meta)
 }
 
-pub fn write_dict_metadata(root_dir: &Path, stats: &TimingStats) -> Result<()> {
+pub fn write_dict_metadata(
+    root_dir: &Path,
+    db_stats: &TimingStats,
+    stats: &TimingStats,
+) -> Result<()> {
     let dict_dir = root_dir.join("dict");
-    let metadata = scan_and_group(&dict_dir, stats)?;
+    let mut metadata = scan_and_group(&dict_dir, stats)?;
+    let db_timings = db_stats.timings.lock().unwrap();
+    for (edition, timing) in db_timings.clone().into_iter() {
+        metadata.db.insert(edition, (timing).as_millis());
+    }
     let json = serde_json::to_string_pretty(&metadata)?;
     let out_path = Path::new("docs/release_metadata.json");
     std::fs::write(out_path, &json)?;
