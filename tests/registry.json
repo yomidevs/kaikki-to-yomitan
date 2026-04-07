@@ -37482,6 +37482,2035 @@
           "lang": "English",
           "lang_code": "en"
         }
+      },
+      {
+        "url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/s/sy/synonyme.html",
+        "download_url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/s/sy/synonyme.jsonl",
+        "json": {
+          "word": "synonyme",
+          "pos": "noun",
+          "senses": [
+            {
+              "examples": [
+                {
+                  "text": "The constancy of the alkaloids is the factor that has made alkalometry the synonyme of exact medication in veterinary science.",
+                  "ref": "1910, Scientific Proceedings of the Annual Meeting of the American Veterinary Medical Association, volume 46, page 306:",
+                  "type": "quotation",
+                  "bold_text_offsets": [
+                    [
+                      75,
+                      83
+                    ]
+                  ]
+                },
+                {
+                  "text": "In reading, the novice should note the varied mode of expression practiced by good authors, and should keep in his mind for future use the many appropriate synonymes he encounters.",
+                  "ref": "1920, H P Lovecraft, H.P. Lovecraft's Writings in the United Amateur (1915-1922), page 120:",
+                  "type": "quotation",
+                  "bold_text_offsets": [
+                    [
+                      156,
+                      165
+                    ]
+                  ]
+                }
+              ],
+              "links": [
+                [
+                  "synonym",
+                  "synonym#English"
+                ]
+              ],
+              "categories": [
+                "English archaic forms",
+                "English countable nouns",
+                "English entries with incorrect language header",
+                "English lemmas",
+                "English nouns",
+                "English terms with quotations",
+                "Pages with 7 entries",
+                "Pages with entries",
+                "Quotation templates to be cleaned"
+              ],
+              "glosses": [
+                "Archaic form of synonym."
+              ],
+              "tags": [
+                "alt-of",
+                "archaic"
+              ],
+              "alt_of": [
+                {
+                  "word": "synonym"
+                }
+              ]
+            }
+          ],
+          "head_templates": [
+            {
+              "name": "en-noun",
+              "args": {},
+              "expansion": "synonyme (plural synonymes)"
+            }
+          ],
+          "forms": [
+            {
+              "form": "synonymes",
+              "tags": [
+                "plural"
+              ]
+            }
+          ],
+          "lang": "English",
+          "lang_code": "en",
+          "categories": [
+            "Pages with 7 entries",
+            "Pages with entries"
+          ]
+        }
+      },
+      {
+        "url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/p/pa/participate.html",
+        "download_url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/p/pa/participate.jsonl",
+        "json": {
+          "word": "participate",
+          "pos": "verb",
+          "senses": [
+            {
+              "examples": [
+                {
+                  "text": "For the second year, foreign amateur runners were allowed to participate in a 10-kilometer race, a half-marathon or a full marathon in Pyongyang, the capital. The races were a part of the April 15 birthday celebration of Kim Il-sung, the former leader of North Korea and father of his successors: Kim Jong-il, a son, and Kim Jong-un, a grandson.",
+                  "ref": "2015 April 16, Jeré Longman, “At Marathon in North Korea, Curiosity Goes a Long Way”, in The New York Times:",
+                  "type": "quotation",
+                  "bold_text_offsets": [
+                    [
+                      61,
+                      72
+                    ]
+                  ]
+                }
+              ],
+              "attestations": [
+                {
+                  "date": "from 16th c.",
+                  "references": []
+                }
+              ],
+              "categories": [
+                "English intransitive verbs",
+                "English terms with quotations"
+              ],
+              "links": [
+                [
+                  "join in",
+                  "join in"
+                ],
+                [
+                  "take part",
+                  "take part"
+                ],
+                [
+                  "involve",
+                  "involve"
+                ],
+                [
+                  "in",
+                  "in#English"
+                ]
+              ],
+              "raw_glosses": [
+                "(intransitive) To join in, to take part, to involve oneself (in something)."
+              ],
+              "glosses": [
+                "To join in, to take part, to involve oneself (in something)."
+              ],
+              "tags": [
+                "intransitive"
+              ]
+            },
+            {
+              "examples": [
+                {
+                  "text": "A spirit I am indeed;\nBut am in that dimension grossly clad\nWhich from the womb I did participate.",
+                  "ref": "c. 1601–1602 (date written), William Shakespeare, “Twelfe Night, or What You Will”, in Mr. William Shakespeares Comedies, Histories, & Tragedies […] (First Folio), London: […] Isaac Iaggard, and Ed[ward] Blount, published 1623, →OCLC, [Act V, scene i]:",
+                  "type": "quotation",
+                  "bold_text_offsets": [
+                    [
+                      86,
+                      97
+                    ]
+                  ]
+                },
+                {
+                  "text": "[The Persees] are tollerated all sorts of meat; but (in obedience to the Mahomitan and Bannyan ’mongst whom they live) refraine Beefe and Hog flesh: they seldome feed together, lest they might participate one anothers impurity: each has his owne cup […].",
+                  "ref": "1638, Thomas Herbert, Some Yeares Travels Into Africa & Asia the Great, London: Jacob Blome and Richard Bishop, Book I, p. 52:",
+                  "type": "quotation",
+                  "bold_text_offsets": [
+                    [
+                      193,
+                      204
+                    ]
+                  ]
+                },
+                {
+                  "text": "[H]e is less likely there to find companions who understand him, and can participate his pleasure: for the French ladies in general have, I believe, very little notion of that species of delight that arises from contemplating the simple beauties of nature.",
+                  "ref": "1792, Charlotte Smith, Desmond, Broadview, published 2001, page 244:",
+                  "type": "quotation",
+                  "bold_text_offsets": [
+                    [
+                      73,
+                      84
+                    ]
+                  ]
+                },
+                {
+                  "text": "In what country on the globe is it, that in the class of mankind doomed to labour, we shall not find tribes, the women of which participate the toils of the men?",
+                  "ref": "1803, Robert Charles Dallas, The History of the Maroons, London: Longman and Rees, Volume 1, Letter 4, p. 109:",
+                  "type": "quotation",
+                  "bold_text_offsets": [
+                    [
+                      128,
+                      139
+                    ]
+                  ]
+                }
+              ],
+              "attestations": [
+                {
+                  "date": "16th–19th c.",
+                  "references": []
+                }
+              ],
+              "categories": [
+                "English terms with obsolete senses",
+                "English terms with quotations",
+                "English transitive verbs",
+                "Quotation templates to be cleaned"
+              ],
+              "links": [
+                [
+                  "share",
+                  "share"
+                ]
+              ],
+              "raw_glosses": [
+                "(obsolete, transitive) To share, to take part in (something)."
+              ],
+              "glosses": [
+                "To share, to take part in (something)."
+              ],
+              "tags": [
+                "obsolete",
+                "transitive"
+              ]
+            },
+            {
+              "examples": [
+                {
+                  "text": "1661, Thomas Salusbury, Galilaeus Galilaeus Lyncaeus, His Systeme of the World, Second Dialogue, in Mathematical Collections and Translations, London, p. 105,\nMake the Earth […] turn round its own axis in twenty four hours, and towards the same point with all the other Spheres; and without participating this same motion to any other Planet or Star, all shall have their risings, settings, and in a word, all their other appearances."
+                }
+              ],
+              "attestations": [
+                {
+                  "date": "16th–18th c.",
+                  "references": []
+                }
+              ],
+              "categories": [
+                "English terms with obsolete senses"
+              ],
+              "links": [
+                [
+                  "with",
+                  "with#English"
+                ],
+                [
+                  "to",
+                  "to#English"
+                ],
+                [
+                  "unto",
+                  "unto#English"
+                ]
+              ],
+              "raw_glosses": [
+                "(obsolete) To share (something) with others; to transfer (something) to or unto others."
+              ],
+              "glosses": [
+                "To share (something) with others; to transfer (something) to or unto others."
+              ],
+              "tags": [
+                "obsolete"
+              ]
+            }
+          ],
+          "head_templates": [
+            {
+              "name": "en-verb",
+              "args": {},
+              "expansion": "participate (third-person singular simple present participates, present participle participating, simple past and past participle participated)"
+            }
+          ],
+          "categories": [
+            "English adjectives",
+            "English entries with incorrect language header",
+            "English heteronyms",
+            "English lemmas",
+            "English terms borrowed from Latin",
+            "English terms derived from Latin",
+            "English terms derived from Proto-Indo-European",
+            "English terms derived from the Proto-Indo-European root *keh₂p-",
+            "English terms derived from the Proto-Indo-European root *perh₃-",
+            "English terms suffixed with -ate (adjective)",
+            "English terms suffixed with -ate (verb)",
+            "English uncomparable adjectives",
+            "English verbs",
+            "Entries with translation boxes",
+            "Pages with 3 entries",
+            "Pages with entries",
+            "Terms with Ancient Greek translations",
+            "Terms with Arabic translations",
+            "Terms with Armenian translations",
+            "Terms with Asturian translations",
+            "Terms with Azerbaijani translations",
+            "Terms with Belarusian translations",
+            "Terms with Bulgarian translations",
+            "Terms with Burmese translations",
+            "Terms with Cantonese translations",
+            "Terms with Catalan translations",
+            "Terms with Czech translations",
+            "Terms with Danish translations",
+            "Terms with Dutch translations",
+            "Terms with Esperanto translations",
+            "Terms with Estonian translations",
+            "Terms with Finnish translations",
+            "Terms with French translations",
+            "Terms with Galician translations",
+            "Terms with Georgian translations",
+            "Terms with German translations",
+            "Terms with Gothic translations",
+            "Terms with Greek translations",
+            "Terms with Haitian Creole translations",
+            "Terms with Hebrew translations",
+            "Terms with Hindi translations",
+            "Terms with Hokkien translations",
+            "Terms with Hungarian translations",
+            "Terms with Icelandic translations",
+            "Terms with Ido translations",
+            "Terms with Irish translations",
+            "Terms with Italian translations",
+            "Terms with Japanese translations",
+            "Terms with Kazakh translations",
+            "Terms with Khmer translations",
+            "Terms with Korean translations",
+            "Terms with Kyrgyz translations",
+            "Terms with Lao translations",
+            "Terms with Latin translations",
+            "Terms with Latvian translations",
+            "Terms with Lingala translations",
+            "Terms with Lithuanian translations",
+            "Terms with Macedonian translations",
+            "Terms with Malay translations",
+            "Terms with Maltese translations",
+            "Terms with Mandarin translations",
+            "Terms with Mongolian translations",
+            "Terms with Māori translations",
+            "Terms with Norwegian Bokmål translations",
+            "Terms with Old English translations",
+            "Terms with Persian translations",
+            "Terms with Polish translations",
+            "Terms with Portuguese translations",
+            "Terms with Romanian translations",
+            "Terms with Russian translations",
+            "Terms with Sanskrit translations",
+            "Terms with Serbo-Croatian translations",
+            "Terms with Slovak translations",
+            "Terms with Slovene translations",
+            "Terms with Sotho translations",
+            "Terms with Spanish translations",
+            "Terms with Swahili translations",
+            "Terms with Swedish translations",
+            "Terms with Tajik translations",
+            "Terms with Tamil translations",
+            "Terms with Tatar translations",
+            "Terms with Teke-Tege translations",
+            "Terms with Thai translations",
+            "Terms with Turkish translations",
+            "Terms with Tày translations",
+            "Terms with Ukrainian translations",
+            "Terms with Urdu translations",
+            "Terms with Uzbek translations",
+            "Terms with Vietnamese translations",
+            "Terms with West Frisian translations",
+            "Terms with Yiddish translations"
+          ],
+          "forms": [
+            {
+              "form": "participates",
+              "tags": [
+                "present",
+                "singular",
+                "third-person"
+              ]
+            },
+            {
+              "form": "participating",
+              "tags": [
+                "participle",
+                "present"
+              ]
+            },
+            {
+              "form": "participated",
+              "tags": [
+                "participle",
+                "past"
+              ]
+            },
+            {
+              "form": "participated",
+              "tags": [
+                "past"
+              ]
+            }
+          ],
+          "derived": [
+            {
+              "word": "coparticipate"
+            },
+            {
+              "word": "nonparticipating"
+            },
+            {
+              "word": "participance"
+            },
+            {
+              "word": "participatingly"
+            },
+            {
+              "word": "unparticipatedn"
+            },
+            {
+              "word": "unparticipating"
+            }
+          ],
+          "related": [
+            {
+              "word": "participant"
+            },
+            {
+              "word": "participation"
+            },
+            {
+              "word": "participative"
+            },
+            {
+              "word": "participator"
+            },
+            {
+              "word": "participatory"
+            },
+            {
+              "word": "participial"
+            },
+            {
+              "word": "participle"
+            }
+          ],
+          "translations": [
+            {
+              "lang": "Arabic",
+              "code": "ar",
+              "lang_code": "ar",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "šāraka",
+              "word": "شَارَكَ"
+            },
+            {
+              "lang": "Arabic",
+              "code": "ar",
+              "lang_code": "ar",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "sāhama",
+              "word": "سَاهَمَ"
+            },
+            {
+              "lang": "Arabic",
+              "code": "ar",
+              "lang_code": "ar",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "ištaraka",
+              "word": "اِشْتَرَكَ"
+            },
+            {
+              "lang": "Armenian",
+              "code": "hy",
+              "lang_code": "hy",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "masnakcʻel",
+              "word": "մասնակցել"
+            },
+            {
+              "lang": "Asturian",
+              "code": "ast",
+              "lang_code": "ast",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "participar"
+            },
+            {
+              "lang": "Azerbaijani",
+              "code": "az",
+              "lang_code": "az",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "iştirak etmək"
+            },
+            {
+              "lang": "Belarusian",
+              "code": "be",
+              "lang_code": "be",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "bracʹ udzjél",
+              "tags": [
+                "imperfective"
+              ],
+              "word": "браць удзе́л"
+            },
+            {
+              "lang": "Belarusian",
+              "code": "be",
+              "lang_code": "be",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "wzjacʹ udzjél",
+              "tags": [
+                "perfective"
+              ],
+              "word": "ўзяць удзе́л"
+            },
+            {
+              "lang": "Bulgarian",
+              "code": "bg",
+              "lang_code": "bg",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "učástvuvam",
+              "tags": [
+                "imperfective"
+              ],
+              "word": "уча́ствувам"
+            },
+            {
+              "lang": "Bulgarian",
+              "code": "bg",
+              "lang_code": "bg",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "vzémam učástie",
+              "tags": [
+                "imperfective"
+              ],
+              "word": "взе́мам уча́стие"
+            },
+            {
+              "lang": "Bulgarian",
+              "code": "bg",
+              "lang_code": "bg",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "vzéma učástie",
+              "tags": [
+                "perfective"
+              ],
+              "word": "взе́ма уча́стие"
+            },
+            {
+              "lang": "Burmese",
+              "code": "my",
+              "lang_code": "my",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "hnwai:",
+              "word": "နွှဲ"
+            },
+            {
+              "lang": "Burmese",
+              "code": "my",
+              "lang_code": "my",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "hyanyhnwai:",
+              "word": "ယှဉ်နွှဲ"
+            },
+            {
+              "lang": "Burmese",
+              "code": "my",
+              "lang_code": "my",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "hcanghnwai:",
+              "word": "ဆင်နွှဲ"
+            },
+            {
+              "lang": "Burmese",
+              "code": "my",
+              "lang_code": "my",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "hpang.hnwai:",
+              "word": "ဖင့်နွှဲ"
+            },
+            {
+              "lang": "Catalan",
+              "code": "ca",
+              "lang_code": "ca",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "participar"
+            },
+            {
+              "lang": "Chinese Cantonese",
+              "code": "yue",
+              "lang_code": "yue",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "caam¹ gaa¹",
+              "word": "參加 /参加"
+            },
+            {
+              "lang": "Chinese",
+              "code": "nan-hbl",
+              "lang_code": "nan-hbl",
+              "tags": [
+                "Hokkien"
+              ],
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "zh-min-nan",
+              "word": "參加 /参加"
+            },
+            {
+              "lang": "Chinese Mandarin",
+              "code": "cmn",
+              "lang_code": "cmn",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "cānjiā",
+              "word": "參加 /参加"
+            },
+            {
+              "lang": "Czech",
+              "code": "cs",
+              "lang_code": "cs",
+              "sense": "to join in, to take part, to involve oneself",
+              "tags": [
+                "imperfective"
+              ],
+              "word": "účastnit se"
+            },
+            {
+              "lang": "Czech",
+              "code": "cs",
+              "lang_code": "cs",
+              "sense": "to join in, to take part, to involve oneself",
+              "tags": [
+                "perfective"
+              ],
+              "word": "zúčastnit se"
+            },
+            {
+              "lang": "Danish",
+              "code": "da",
+              "lang_code": "da",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "deltage"
+            },
+            {
+              "lang": "Danish",
+              "code": "da",
+              "lang_code": "da",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "participere"
+            },
+            {
+              "lang": "Dutch",
+              "code": "nl",
+              "lang_code": "nl",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "meedoen"
+            },
+            {
+              "lang": "Dutch",
+              "code": "nl",
+              "lang_code": "nl",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "deelnemen"
+            },
+            {
+              "lang": "Dutch",
+              "code": "nl",
+              "lang_code": "nl",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "participeren"
+            },
+            {
+              "lang": "Esperanto",
+              "code": "eo",
+              "lang_code": "eo",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "partopreni"
+            },
+            {
+              "lang": "Estonian",
+              "code": "et",
+              "lang_code": "et",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "osa võtma"
+            },
+            {
+              "lang": "Estonian",
+              "code": "et",
+              "lang_code": "et",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "osalema"
+            },
+            {
+              "lang": "Finnish",
+              "code": "fi",
+              "lang_code": "fi",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "osallistua"
+            },
+            {
+              "lang": "Finnish",
+              "code": "fi",
+              "lang_code": "fi",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "ottaa osaa"
+            },
+            {
+              "lang": "French",
+              "code": "fr",
+              "lang_code": "fr",
+              "sense": "to join in, to take part, to involve oneself",
+              "english": "to participate (in)",
+              "translation": "to participate (in)",
+              "word": "participer (à)"
+            },
+            {
+              "lang": "French",
+              "code": "fr",
+              "lang_code": "fr",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "prendre part"
+            },
+            {
+              "lang": "West-Frisian",
+              "code": "fy",
+              "lang_code": "fy",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "meidwaan"
+            },
+            {
+              "lang": "West-Frisian",
+              "code": "fy",
+              "lang_code": "fy",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "dielnimme"
+            },
+            {
+              "lang": "West-Frisian",
+              "code": "fy",
+              "lang_code": "fy",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "partisipearje"
+            },
+            {
+              "lang": "Galician",
+              "code": "gl",
+              "lang_code": "gl",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "participar"
+            },
+            {
+              "lang": "Georgian",
+              "code": "ka",
+              "lang_code": "ka",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "monac̣ileoba",
+              "word": "მონაწილეობა"
+            },
+            {
+              "lang": "German",
+              "code": "de",
+              "lang_code": "de",
+              "sense": "to join in, to take part, to involve oneself",
+              "english": "to participate (in); an",
+              "translation": "to participate (in); an",
+              "word": "teilnehmen"
+            },
+            {
+              "lang": "German",
+              "code": "de",
+              "lang_code": "de",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "sich beteiligen"
+            },
+            {
+              "lang": "Gothic",
+              "code": "got",
+              "lang_code": "got",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "fairaihan",
+              "word": "𐍆𐌰𐌹𐍂𐌰𐌹𐌷𐌰𐌽"
+            },
+            {
+              "lang": "Greek",
+              "code": "el",
+              "lang_code": "el",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "symmetécho",
+              "word": "συμμετέχω"
+            },
+            {
+              "lang": "Ancient Greek",
+              "code": "grc",
+              "lang_code": "grc",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "metékhō",
+              "word": "μετέχω"
+            },
+            {
+              "lang": "Haitian Creole",
+              "code": "ht",
+              "lang_code": "ht",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "patisipe"
+            },
+            {
+              "lang": "Hebrew",
+              "code": "he",
+              "lang_code": "he",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "hishtatéf",
+              "word": "השתתף"
+            },
+            {
+              "lang": "Hindi",
+              "code": "hi",
+              "lang_code": "hi",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "bhāg lenā",
+              "word": "भाग लेना"
+            },
+            {
+              "lang": "Hindi",
+              "code": "hi",
+              "lang_code": "hi",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "hissā lenā",
+              "word": "हिस्सा लेना"
+            },
+            {
+              "lang": "Hindi",
+              "code": "hi",
+              "lang_code": "hi",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "śarākat karnā",
+              "word": "शराकत करना"
+            },
+            {
+              "lang": "Hungarian",
+              "code": "hu",
+              "lang_code": "hu",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "részt vesz"
+            },
+            {
+              "lang": "Hungarian",
+              "code": "hu",
+              "lang_code": "hu",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "közreműködik"
+            },
+            {
+              "lang": "Icelandic",
+              "code": "is",
+              "lang_code": "is",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "taka þátt"
+            },
+            {
+              "lang": "Ido",
+              "code": "io",
+              "lang_code": "io",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "partoprenar"
+            },
+            {
+              "lang": "Irish",
+              "code": "ga",
+              "lang_code": "ga",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "rannpháirtigh"
+            },
+            {
+              "lang": "Italian",
+              "code": "it",
+              "lang_code": "it",
+              "sense": "to join in, to take part, to involve oneself",
+              "english": "to participate (in)",
+              "translation": "to participate (in)",
+              "word": "partecipare (a)"
+            },
+            {
+              "lang": "Japanese",
+              "code": "ja",
+              "lang_code": "ja",
+              "sense": "to join in, to take part, to involve oneself",
+              "alt": "さんかする",
+              "roman": "sanka suru",
+              "word": "参加する"
+            },
+            {
+              "lang": "Kazakh",
+              "code": "kk",
+              "lang_code": "kk",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "qatysu",
+              "word": "қатысу"
+            },
+            {
+              "lang": "Khmer",
+              "code": "km",
+              "lang_code": "km",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "coul ruəm",
+              "word": "ចូលរួម"
+            },
+            {
+              "lang": "Khmer",
+              "code": "km",
+              "lang_code": "km",
+              "sense": "to join in, to take part, to involve oneself",
+              "tags": [
+                "archaic"
+              ],
+              "roman": "muut",
+              "word": "មូត"
+            },
+            {
+              "lang": "Khmer",
+              "code": "km",
+              "lang_code": "km",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "ruəm",
+              "word": "រួម"
+            },
+            {
+              "lang": "Khmer",
+              "code": "km",
+              "lang_code": "km",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "coul day",
+              "word": "ចូលដៃ"
+            },
+            {
+              "lang": "Korean",
+              "code": "ko",
+              "lang_code": "ko",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "chamgahada",
+              "word": "참가하다"
+            },
+            {
+              "lang": "Kyrgyz",
+              "code": "ky",
+              "lang_code": "ky",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "katışuu",
+              "word": "катышуу"
+            },
+            {
+              "lang": "Lao",
+              "code": "lo",
+              "lang_code": "lo",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "khao hūam",
+              "word": "ເຂົ້າຮ່ວມ"
+            },
+            {
+              "lang": "Lao",
+              "code": "lo",
+              "lang_code": "lo",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "hūam",
+              "word": "ຮ່ວມ"
+            },
+            {
+              "lang": "Lao",
+              "code": "lo",
+              "lang_code": "lo",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "lao",
+              "word": "ເລົ່າ"
+            },
+            {
+              "lang": "Latin",
+              "code": "la",
+              "lang_code": "la",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "participō"
+            },
+            {
+              "lang": "Latvian",
+              "code": "lv",
+              "lang_code": "lv",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "piedalīties"
+            },
+            {
+              "lang": "Lingala",
+              "code": "ln",
+              "lang_code": "ln",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "kaba"
+            },
+            {
+              "lang": "Lingala",
+              "code": "ln",
+              "lang_code": "ln",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "kabola"
+            },
+            {
+              "lang": "Lithuanian",
+              "code": "lt",
+              "lang_code": "lt",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "dalyvauti"
+            },
+            {
+              "lang": "Macedonian",
+              "code": "mk",
+              "lang_code": "mk",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "učestvuva",
+              "tags": [
+                "imperfective"
+              ],
+              "word": "учествува"
+            },
+            {
+              "lang": "Malay",
+              "code": "ms",
+              "lang_code": "ms",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "menyertai"
+            },
+            {
+              "lang": "Maltese",
+              "code": "mt",
+              "lang_code": "mt",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "ipparteċipa"
+            },
+            {
+              "lang": "Māori",
+              "code": "mi",
+              "lang_code": "mi",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "uru"
+            },
+            {
+              "lang": "Mongolian",
+              "code": "mn",
+              "lang_code": "mn",
+              "tags": [
+                "Cyrillic"
+              ],
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "orolcox",
+              "word": "оролцох"
+            },
+            {
+              "lang": "Norwegian Bokmål",
+              "code": "nb",
+              "lang_code": "nb",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "delta"
+            },
+            {
+              "lang": "Old English",
+              "code": "ang",
+              "lang_code": "ang",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "dǣlniman"
+            },
+            {
+              "lang": "Old English",
+              "code": "ang",
+              "lang_code": "ang",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "drēogan"
+            },
+            {
+              "lang": "Persian",
+              "code": "fa",
+              "lang_code": "fa",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "šerkat kardan",
+              "word": "شرکت کردن"
+            },
+            {
+              "lang": "Persian",
+              "code": "fa",
+              "lang_code": "fa",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "شرکتادن"
+            },
+            {
+              "lang": "Polish",
+              "code": "pl",
+              "lang_code": "pl",
+              "sense": "to join in, to take part, to involve oneself",
+              "tags": [
+                "imperfective"
+              ],
+              "word": "uczestniczyć"
+            },
+            {
+              "lang": "Polish",
+              "code": "pl",
+              "lang_code": "pl",
+              "sense": "to join in, to take part, to involve oneself",
+              "tags": [
+                "imperfective"
+              ],
+              "word": "brać udział"
+            },
+            {
+              "lang": "Polish",
+              "code": "pl",
+              "lang_code": "pl",
+              "sense": "to join in, to take part, to involve oneself",
+              "tags": [
+                "perfective"
+              ],
+              "word": "wziąć udział"
+            },
+            {
+              "lang": "Portuguese",
+              "code": "pt",
+              "lang_code": "pt",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "participar"
+            },
+            {
+              "lang": "Romanian",
+              "code": "ro",
+              "lang_code": "ro",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "participa"
+            },
+            {
+              "lang": "Russian",
+              "code": "ru",
+              "lang_code": "ru",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "učástvovatʹ",
+              "tags": [
+                "imperfective"
+              ],
+              "word": "уча́ствовать"
+            },
+            {
+              "lang": "Russian",
+              "code": "ru",
+              "lang_code": "ru",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "prinimátʹ učástije",
+              "tags": [
+                "imperfective"
+              ],
+              "word": "принима́ть уча́стие"
+            },
+            {
+              "lang": "Russian",
+              "code": "ru",
+              "lang_code": "ru",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "prinjátʹ učástije",
+              "tags": [
+                "perfective"
+              ],
+              "word": "приня́ть уча́стие"
+            },
+            {
+              "lang": "Sanskrit",
+              "code": "sa",
+              "lang_code": "sa",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "sacate",
+              "word": "सचते"
+            },
+            {
+              "lang": "Serbo-Croatian",
+              "code": "sh",
+              "lang_code": "sh",
+              "tags": [
+                "Cyrillic",
+                "imperfective"
+              ],
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "у̀чествовати"
+            },
+            {
+              "lang": "Serbo-Croatian",
+              "code": "sh",
+              "lang_code": "sh",
+              "tags": [
+                "Latin",
+                "imperfective"
+              ],
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "ùčestvovati"
+            },
+            {
+              "lang": "Slovak",
+              "code": "sk",
+              "lang_code": "sk",
+              "sense": "to join in, to take part, to involve oneself",
+              "tags": [
+                "imperfective"
+              ],
+              "word": "zúčastňovať sa"
+            },
+            {
+              "lang": "Slovak",
+              "code": "sk",
+              "lang_code": "sk",
+              "sense": "to join in, to take part, to involve oneself",
+              "tags": [
+                "perfective"
+              ],
+              "word": "zúčastniť sa"
+            },
+            {
+              "lang": "Slovene",
+              "code": "sl",
+              "lang_code": "sl",
+              "sense": "to join in, to take part, to involve oneself",
+              "tags": [
+                "imperfective"
+              ],
+              "word": "udeleževati se"
+            },
+            {
+              "lang": "Slovene",
+              "code": "sl",
+              "lang_code": "sl",
+              "sense": "to join in, to take part, to involve oneself",
+              "tags": [
+                "perfective"
+              ],
+              "word": "udeležiti se"
+            },
+            {
+              "lang": "Sotho",
+              "code": "st",
+              "lang_code": "st",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "ho nka karolo"
+            },
+            {
+              "lang": "Spanish",
+              "code": "es",
+              "lang_code": "es",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "participar"
+            },
+            {
+              "lang": "Swahili",
+              "code": "sw",
+              "lang_code": "sw",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "shiriki"
+            },
+            {
+              "lang": "Swedish",
+              "code": "sv",
+              "lang_code": "sv",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "delta"
+            },
+            {
+              "lang": "Swedish",
+              "code": "sv",
+              "lang_code": "sv",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "deltaga"
+            },
+            {
+              "lang": "Tajik",
+              "code": "tg",
+              "lang_code": "tg",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "ištirok kardan",
+              "word": "иштирок кардан"
+            },
+            {
+              "lang": "Tajik",
+              "code": "tg",
+              "lang_code": "tg",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "širkat kardan",
+              "word": "ширкат кардан"
+            },
+            {
+              "lang": "Tamil",
+              "code": "ta",
+              "lang_code": "ta",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "kalantukoḷ",
+              "word": "கலந்துகொள்"
+            },
+            {
+              "lang": "Tatar",
+              "code": "tt",
+              "lang_code": "tt",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "qatnaşırğa",
+              "word": "катнашырга"
+            },
+            {
+              "lang": "Tày",
+              "code": "tyz",
+              "lang_code": "tyz",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "cáp"
+            },
+            {
+              "lang": "Teke-Tege",
+              "code": "teg",
+              "lang_code": "teg",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "kaba"
+            },
+            {
+              "lang": "Thai",
+              "code": "th",
+              "lang_code": "th",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "kâo-rûuam",
+              "word": "เข้าร่วม"
+            },
+            {
+              "lang": "Thai",
+              "code": "th",
+              "lang_code": "th",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "rûuam-mʉʉ",
+              "word": "ร่วมมือ"
+            },
+            {
+              "lang": "Thai",
+              "code": "th",
+              "lang_code": "th",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "rûuam",
+              "word": "ร่วม"
+            },
+            {
+              "lang": "Turkish",
+              "code": "tr",
+              "lang_code": "tr",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "katılmak"
+            },
+            {
+              "lang": "Turkish",
+              "code": "tr",
+              "lang_code": "tr",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "iştirak etmek"
+            },
+            {
+              "lang": "Ukrainian",
+              "code": "uk",
+              "lang_code": "uk",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "bráty účastʹ",
+              "tags": [
+                "imperfective"
+              ],
+              "word": "бра́ти у́часть"
+            },
+            {
+              "lang": "Ukrainian",
+              "code": "uk",
+              "lang_code": "uk",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "vzjáty účastʹ",
+              "tags": [
+                "perfective"
+              ],
+              "word": "взя́ти у́часть"
+            },
+            {
+              "lang": "Urdu",
+              "code": "ur",
+              "lang_code": "ur",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "iśtirāk karnā",
+              "word": "اشتراک کرنا"
+            },
+            {
+              "lang": "Urdu",
+              "code": "ur",
+              "lang_code": "ur",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "śarākat karnā",
+              "word": "شراکت کرنا"
+            },
+            {
+              "lang": "Uzbek",
+              "code": "uz",
+              "lang_code": "uz",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "ishtiroq etmoq"
+            },
+            {
+              "lang": "Vietnamese",
+              "code": "vi",
+              "lang_code": "vi",
+              "sense": "to join in, to take part, to involve oneself",
+              "word": "tham gia"
+            },
+            {
+              "lang": "Yiddish",
+              "code": "yi",
+              "lang_code": "yi",
+              "sense": "to join in, to take part, to involve oneself",
+              "roman": "onteyl nemen",
+              "word": "אָנטייל נעמען"
+            }
+          ],
+          "etymology_text": "Borrowed from Latin participātus, the perfect passive participle of participō (“to take part in, share in, give part in, impart”) (see -ate (verb-forming suffix) and -ate (adjective-forming suffix)), from particeps (“taking part (in), sharing (in); someone who takes part (in)”, particip- in compounds), from pars (“part”, part- in compounds) + -ceps (“which takes, taker”), literally “(someone) who takes part”; see part and capable. Compare Old English dǣlniman (“to participate”), an earlier calque of the same Latin verb.",
+          "etymology_templates": [
+            {
+              "name": "root",
+              "args": {
+                "1": "en",
+                "2": "ine-pro",
+                "3": "*perh₃-"
+              },
+              "expansion": ""
+            },
+            {
+              "name": "root",
+              "args": {
+                "1": "en",
+                "2": "ine-pro",
+                "3": "*keh₂p-"
+              },
+              "expansion": ""
+            },
+            {
+              "name": "bor+",
+              "args": {
+                "1": "en",
+                "2": "la",
+                "3": "participātus"
+              },
+              "expansion": "Borrowed from Latin participātus"
+            },
+            {
+              "name": "glossary",
+              "args": {
+                "1": "perfect"
+              },
+              "expansion": "perfect"
+            },
+            {
+              "name": "glossary",
+              "args": {
+                "1": "passive"
+              },
+              "expansion": "passive"
+            },
+            {
+              "name": "glossary",
+              "args": {
+                "1": "participle"
+              },
+              "expansion": "participle"
+            },
+            {
+              "name": "af",
+              "args": {
+                "1": "en",
+                "2": "-ate",
+                "id1": "verb",
+                "pos1": "verb-forming suffix"
+              },
+              "expansion": "-ate (verb-forming suffix)"
+            },
+            {
+              "name": "af",
+              "args": {
+                "1": "en",
+                "2": "-ate",
+                "id1": "adjective",
+                "pos1": "adjective-forming suffix"
+              },
+              "expansion": "-ate (adjective-forming suffix)"
+            },
+            {
+              "name": "af",
+              "args": {
+                "1": "la",
+                "2": "pars",
+                "3": "-ceps",
+                "t1": "part",
+                "pos1": "part- in compounds",
+                "t2": "which takes, taker",
+                "lit": "(someone) who takes part",
+                "nocat": "1"
+              },
+              "expansion": "pars (“part”, part- in compounds) + -ceps (“which takes, taker”), literally “(someone) who takes part”"
+            }
+          ],
+          "sounds": [
+            {
+              "tags": [
+                "Received-Pronunciation"
+              ],
+              "ipa": "/pɑːˈtɪs.ɪ.peɪt/"
+            },
+            {
+              "tags": [
+                "Canada",
+                "General-American"
+              ],
+              "ipa": "/pɑɹˈtɪs.ə.peɪt/"
+            },
+            {
+              "audio": "En-us-participate.ogg",
+              "ogg_url": "https://upload.wikimedia.org/wikipedia/commons/2/27/En-us-participate.ogg",
+              "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/27/En-us-participate.ogg/En-us-participate.ogg.mp3"
+            },
+            {
+              "tags": [
+                "General-Australian"
+              ],
+              "ipa": "/pɐːˈtɪs.ə.pæɪt/"
+            },
+            {
+              "tags": [
+                "New-Zealand"
+              ],
+              "ipa": "/pɐːˈtəs.ə.pæɪt/"
+            },
+            {
+              "note": "Indic",
+              "ipa": "/ˈpɑ(r).ʈɪsɪˌpeʈ/"
+            }
+          ],
+          "lang": "English",
+          "lang_code": "en"
+        }
+      },
+      {
+        "url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/e/ex/expansive.html",
+        "download_url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/e/ex/expansive.jsonl",
+        "json": {
+          "word": "expansive",
+          "pos": "adj",
+          "senses": [
+            {
+              "examples": [
+                {
+                  "text": "expansive research work",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      9
+                    ]
+                  ],
+                  "type": "example"
+                },
+                {
+                  "text": "She laughed, she winked, and nodded knowingly at Pen; she tapped him on the arm with her fan; she tapped Blanche; she tapped the Major;—her contentment was boundless, and her method of showing her joy equally expansive.",
+                  "ref": "1848 November – 1850 December, William Makepeace Thackeray, chapter 46, in The History of Pendennis. […], volume (please specify |volume=I or II), London: Bradbury and Evans, […], published 1849–1850, →OCLC:",
+                  "type": "quotation",
+                  "bold_text_offsets": [
+                    [
+                      209,
+                      218
+                    ]
+                  ]
+                }
+              ],
+              "links": [
+                [
+                  "Comprehensive",
+                  "comprehensive"
+                ],
+                [
+                  "scope",
+                  "scope"
+                ],
+                [
+                  "extent",
+                  "extent"
+                ]
+              ],
+              "glosses": [
+                "Comprehensive in scope or extent."
+              ],
+              "categories": [
+                "English terms with quotations",
+                "English terms with usage examples"
+              ]
+            },
+            {
+              "links": [
+                [
+                  "Talkative",
+                  "talkative"
+                ],
+                [
+                  "sociable",
+                  "sociable"
+                ]
+              ],
+              "glosses": [
+                "Talkative and sociable."
+              ]
+            },
+            {
+              "examples": [
+                {
+                  "text": "The Elastick or expansive faculty of the Air, whereby it dilates itself, when compressed (indeed this lower Region of it by reason of the weight of the superincumbent is al∣ways in a compressed State) hath been made use of in the common Weather-glasses, in Wind guns, and in several ingenious Water∣works, and doubtless hath a great Interest in many natural Effects and Operations.",
+                  "ref": "1691, John Ray, The Wisdom of God Manifested in the Works of the Creation, page 56:",
+                  "type": "quotation",
+                  "bold_text_offsets": [
+                    [
+                      16,
+                      25
+                    ]
+                  ]
+                },
+                {
+                  "text": "Such instruments, however ingenious, are not of scientific value; because they do not admit of rigid comparison, are liable to alter in their contractile and expansive properties, and cannot be made to indicate precisely alike.",
+                  "ref": "1864, Negretti and Zambra, chapter 11, in A Treatise on Meteorological Instruments:",
+                  "type": "quotation",
+                  "bold_text_offsets": [
+                    [
+                      158,
+                      167
+                    ]
+                  ]
+                }
+              ],
+              "links": [
+                [
+                  "expanded",
+                  "expanded"
+                ]
+              ],
+              "categories": [
+                "English terms with quotations",
+                "Quotation templates to be cleaned"
+              ],
+              "glosses": [
+                "Able to be expanded."
+              ]
+            },
+            {
+              "topics": [
+                "mathematics",
+                "sciences"
+              ],
+              "links": [
+                [
+                  "mathematics",
+                  "mathematics"
+                ],
+                [
+                  "expansivity",
+                  "expansivity"
+                ]
+              ],
+              "categories": [
+                "en:Mathematics"
+              ],
+              "raw_glosses": [
+                "(mathematics) Exhibiting expansivity."
+              ],
+              "glosses": [
+                "Exhibiting expansivity."
+              ]
+            }
+          ],
+          "head_templates": [
+            {
+              "name": "en-adj",
+              "args": {},
+              "expansion": "expansive (comparative more expansive, superlative most expansive)"
+            }
+          ],
+          "categories": [
+            "English adjectives",
+            "English entries with incorrect language header",
+            "English lemmas",
+            "English terms derived from Latin",
+            "English terms suffixed with -ive",
+            "Entries with translation boxes",
+            "Pages with 4 entries",
+            "Pages with entries",
+            "Rhymes:English/ɪv",
+            "Rhymes:English/ɪv/3 syllables",
+            "Terms with Bulgarian translations",
+            "Terms with Dutch translations",
+            "Terms with French translations",
+            "Terms with Galician translations",
+            "Terms with German translations",
+            "Terms with Italian translations",
+            "Terms with Latin translations",
+            "Terms with Māori translations",
+            "Terms with Portuguese translations",
+            "Terms with Sanskrit translations",
+            "Terms with Serbo-Croatian translations",
+            "Terms with Spanish translations",
+            "Terms with Swedish translations",
+            "en:Talking"
+          ],
+          "forms": [
+            {
+              "form": "more expansive",
+              "tags": [
+                "comparative"
+              ]
+            },
+            {
+              "form": "most expansive",
+              "tags": [
+                "superlative"
+              ]
+            }
+          ],
+          "derived": [
+            {
+              "word": "expansively"
+            },
+            {
+              "word": "expansiveness"
+            },
+            {
+              "word": "expansivist"
+            },
+            {
+              "word": "gender-expansive"
+            },
+            {
+              "word": "hyperexpansive"
+            },
+            {
+              "word": "nonexpansive"
+            },
+            {
+              "word": "overexpansive"
+            },
+            {
+              "word": "unexpansive"
+            }
+          ],
+          "related": [
+            {
+              "word": "antiexpansionist"
+            },
+            {
+              "word": "expansionary"
+            },
+            {
+              "word": "expansionistic"
+            }
+          ],
+          "translations": [
+            {
+              "lang": "Bulgarian",
+              "code": "bg",
+              "lang_code": "bg",
+              "sense": "Comprehensive in scope or extent",
+              "roman": "obširen",
+              "word": "обширен"
+            },
+            {
+              "lang": "Bulgarian",
+              "code": "bg",
+              "lang_code": "bg",
+              "sense": "Comprehensive in scope or extent",
+              "roman": "prostoren",
+              "word": "просторен"
+            },
+            {
+              "lang": "Dutch",
+              "code": "nl",
+              "lang_code": "nl",
+              "sense": "Comprehensive in scope or extent",
+              "word": "omvattend"
+            },
+            {
+              "lang": "German",
+              "code": "de",
+              "lang_code": "de",
+              "sense": "Comprehensive in scope or extent",
+              "word": "umfangreich"
+            },
+            {
+              "lang": "German",
+              "code": "de",
+              "lang_code": "de",
+              "sense": "Comprehensive in scope or extent",
+              "word": "umfassend"
+            },
+            {
+              "lang": "Latin",
+              "code": "la",
+              "lang_code": "la",
+              "sense": "Comprehensive in scope or extent",
+              "word": "lātus"
+            },
+            {
+              "lang": "Māori",
+              "code": "mi",
+              "lang_code": "mi",
+              "sense": "Comprehensive in scope or extent",
+              "word": "roha"
+            },
+            {
+              "lang": "Sanskrit",
+              "code": "sa",
+              "lang_code": "sa",
+              "sense": "Comprehensive in scope or extent",
+              "roman": "pṛthú",
+              "word": "पृथु"
+            },
+            {
+              "lang": "Serbo-Croatian",
+              "code": "sh",
+              "lang_code": "sh",
+              "sense": "Comprehensive in scope or extent",
+              "tags": [
+                "masculine"
+              ],
+              "word": "opširan"
+            },
+            {
+              "lang": "Spanish",
+              "code": "es",
+              "lang_code": "es",
+              "sense": "Comprehensive in scope or extent",
+              "word": "expansivo"
+            },
+            {
+              "lang": "Swedish",
+              "code": "sv",
+              "lang_code": "sv",
+              "sense": "Comprehensive in scope or extent",
+              "word": "omfattande"
+            },
+            {
+              "lang": "German",
+              "code": "de",
+              "lang_code": "de",
+              "sense": "Talkative and sociable",
+              "word": "gesprächig"
+            },
+            {
+              "lang": "German",
+              "code": "de",
+              "lang_code": "de",
+              "sense": "Talkative and sociable",
+              "word": "gesellig"
+            },
+            {
+              "lang": "German",
+              "code": "de",
+              "lang_code": "de",
+              "sense": "Talkative and sociable",
+              "word": "herzlich"
+            },
+            {
+              "lang": "German",
+              "code": "de",
+              "lang_code": "de",
+              "sense": "Talkative and sociable",
+              "word": "beredt"
+            },
+            {
+              "lang": "German",
+              "code": "de",
+              "lang_code": "de",
+              "sense": "Talkative and sociable",
+              "word": "mitteilsam"
+            },
+            {
+              "lang": "German",
+              "code": "de",
+              "lang_code": "de",
+              "sense": "Talkative and sociable",
+              "word": "freundlich"
+            },
+            {
+              "lang": "Portuguese",
+              "code": "pt",
+              "lang_code": "pt",
+              "sense": "Talkative and sociable",
+              "word": "expansivo"
+            },
+            {
+              "lang": "Spanish",
+              "code": "es",
+              "lang_code": "es",
+              "sense": "Talkative and sociable",
+              "word": "expansivo"
+            },
+            {
+              "lang": "Bulgarian",
+              "code": "bg",
+              "lang_code": "bg",
+              "sense": "Able to be expanded",
+              "roman": "razširjaem",
+              "word": "разширяем"
+            },
+            {
+              "lang": "French",
+              "code": "fr",
+              "lang_code": "fr",
+              "sense": "Able to be expanded",
+              "word": "expansible"
+            },
+            {
+              "lang": "Galician",
+              "code": "gl",
+              "lang_code": "gl",
+              "sense": "Able to be expanded",
+              "word": "expansíbel"
+            },
+            {
+              "lang": "Galician",
+              "code": "gl",
+              "lang_code": "gl",
+              "sense": "Able to be expanded",
+              "word": "expansible"
+            },
+            {
+              "lang": "German",
+              "code": "de",
+              "lang_code": "de",
+              "sense": "Able to be expanded",
+              "english": "expandable",
+              "translation": "expandable",
+              "word": "expandierbar"
+            },
+            {
+              "lang": "German",
+              "code": "de",
+              "lang_code": "de",
+              "sense": "Able to be expanded",
+              "word": "ausdehnbar"
+            },
+            {
+              "lang": "German",
+              "code": "de",
+              "lang_code": "de",
+              "sense": "Able to be expanded",
+              "word": "ausdehnungsfähig"
+            },
+            {
+              "lang": "Italian",
+              "code": "it",
+              "lang_code": "it",
+              "sense": "Able to be expanded",
+              "word": "espansibile"
+            },
+            {
+              "lang": "Italian",
+              "code": "it",
+              "lang_code": "it",
+              "sense": "Able to be expanded",
+              "word": "espandibile"
+            },
+            {
+              "lang": "Serbo-Croatian",
+              "code": "sh",
+              "lang_code": "sh",
+              "sense": "Able to be expanded",
+              "tags": [
+                "masculine"
+              ],
+              "word": "proširiv"
+            },
+            {
+              "lang": "German",
+              "code": "de",
+              "lang_code": "de",
+              "sense": "(mathematics) Exhibiting expansivity",
+              "word": "expansiv"
+            },
+            {
+              "lang": "Italian",
+              "code": "it",
+              "lang_code": "it",
+              "sense": "(mathematics) Exhibiting expansivity",
+              "tags": [
+                "masculine"
+              ],
+              "word": "espansivo"
+            },
+            {
+              "lang": "Spanish",
+              "code": "es",
+              "lang_code": "es",
+              "sense": "(mathematics) Exhibiting expansivity",
+              "word": "expansivo"
+            },
+            {
+              "lang": "Spanish",
+              "code": "es",
+              "lang_code": "es",
+              "sense": "(mathematics) Exhibiting expansivity",
+              "word": "expandiente"
+            }
+          ],
+          "etymology_text": "From Latin expāns-, past-participle stem of expandere (“to spread out”; see expand) + -ive.",
+          "etymology_templates": [
+            {
+              "name": "der",
+              "args": {
+                "1": "en",
+                "2": "la",
+                "3": "",
+                "4": "expāns-"
+              },
+              "expansion": "Latin expāns-"
+            },
+            {
+              "name": "suffix",
+              "args": {
+                "1": "en",
+                "2": "",
+                "3": "ive"
+              },
+              "expansion": "+ -ive"
+            }
+          ],
+          "sounds": [
+            {
+              "ipa": "/ɪkˈspænsɪv/"
+            },
+            {
+              "audio": "LL-Q1860 (eng)-Vealhurl-expansive.wav",
+              "ogg_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/2a/LL-Q1860_%28eng%29-Vealhurl-expansive.wav/LL-Q1860_%28eng%29-Vealhurl-expansive.wav.ogg",
+              "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/2a/LL-Q1860_%28eng%29-Vealhurl-expansive.wav/LL-Q1860_%28eng%29-Vealhurl-expansive.wav.mp3"
+            },
+            {
+              "rhymes": "-ɪv"
+            }
+          ],
+          "lang": "English",
+          "lang_code": "en"
+        }
       }
     ],
     "es": [
@@ -69440,6 +71469,1070 @@
             },
             {
               "other": "[도길]"
+            }
+          ],
+          "lang": "Korean",
+          "lang_code": "ko"
+        }
+      },
+      {
+        "url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/-/-에/-에서.html",
+        "download_url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/-/-에/-에서.jsonl",
+        "json": {
+          "word": "-에서",
+          "pos": "particle",
+          "senses": [
+            {
+              "examples": [
+                {
+                  "text": "어디에서 왔어요?",
+                  "bold_text_offsets": [
+                    [
+                      2,
+                      4
+                    ]
+                  ],
+                  "roman": "eodi-eseo wasseo-yo?",
+                  "bold_roman_offsets": [
+                    [
+                      5,
+                      9
+                    ]
+                  ],
+                  "translation": "Where do you come from?",
+                  "english": "Where do you come from?",
+                  "bold_translation_offsets": [
+                    [
+                      18,
+                      22
+                    ]
+                  ],
+                  "type": "example"
+                },
+                {
+                  "text": "깊은 신앙심에서 우러나오는 순수함",
+                  "bold_text_offsets": [
+                    [
+                      6,
+                      8
+                    ]
+                  ],
+                  "roman": "gipeun sinangsim-eseo ureonaoneun sunsuham",
+                  "bold_roman_offsets": [
+                    [
+                      17,
+                      21
+                    ]
+                  ],
+                  "translation": "an innocence springing forth from deep religious faith",
+                  "english": "an innocence springing forth from deep religious faith",
+                  "bold_translation_offsets": [
+                    [
+                      29,
+                      33
+                    ]
+                  ],
+                  "type": "example"
+                }
+              ],
+              "links": [
+                [
+                  "from",
+                  "from"
+                ]
+              ],
+              "raw_glosses": [
+                "(of a movement) from"
+              ],
+              "glosses": [
+                "from"
+              ],
+              "categories": [
+                "Korean terms with usage examples"
+              ],
+              "raw_tags": [
+                "of a movement"
+              ]
+            },
+            {
+              "examples": [
+                {
+                  "text": "1에서 10까지",
+                  "bold_text_offsets": [
+                    [
+                      1,
+                      3
+                    ]
+                  ],
+                  "roman": "ir-eseo sip-kkaji",
+                  "bold_roman_offsets": [
+                    [
+                      3,
+                      7
+                    ]
+                  ],
+                  "translation": "from 1 to 10",
+                  "english": "from 1 to 10",
+                  "type": "example"
+                }
+              ],
+              "links": [
+                [
+                  "from",
+                  "from"
+                ]
+              ],
+              "synonyms": [
+                {
+                  "word": "-부터"
+                }
+              ],
+              "raw_glosses": [
+                "(of a range) from"
+              ],
+              "glosses": [
+                "from"
+              ],
+              "categories": [
+                "Korean terms with usage examples"
+              ],
+              "raw_tags": [
+                "of a range"
+              ]
+            },
+            {
+              "examples": [
+                {
+                  "text": "집에서 낮잠 잔다.",
+                  "bold_text_offsets": [
+                    [
+                      1,
+                      3
+                    ]
+                  ],
+                  "roman": "Jib-eseo natjam janda.",
+                  "bold_roman_offsets": [
+                    [
+                      4,
+                      8
+                    ]
+                  ],
+                  "translation": "I'm taking a nap at home.",
+                  "english": "I'm taking a nap at home.",
+                  "bold_translation_offsets": [
+                    [
+                      17,
+                      19
+                    ]
+                  ],
+                  "type": "example"
+                }
+              ],
+              "links": [
+                [
+                  "in",
+                  "in"
+                ],
+                [
+                  "inside",
+                  "inside"
+                ],
+                [
+                  "at",
+                  "at"
+                ],
+                [
+                  "on",
+                  "on"
+                ]
+              ],
+              "glosses": [
+                "in, inside, at, on"
+              ],
+              "categories": [
+                "Korean terms with usage examples"
+              ]
+            },
+            {
+              "examples": [
+                {
+                  "text": "국가에서 준 돈",
+                  "bold_text_offsets": [
+                    [
+                      2,
+                      4
+                    ]
+                  ],
+                  "roman": "gukga-eseo jun don",
+                  "bold_roman_offsets": [
+                    [
+                      6,
+                      10
+                    ]
+                  ],
+                  "translation": "the money which the government gave out",
+                  "english": "the money which the government gave out",
+                  "type": "example"
+                }
+              ],
+              "links": [
+                [
+                  "nominative case",
+                  "nominative case#English"
+                ]
+              ],
+              "synonyms": [
+                {
+                  "word": "-이"
+                },
+                {
+                  "word": "-가"
+                }
+              ],
+              "raw_glosses": [
+                "(for an organization) Marks the nominative case."
+              ],
+              "glosses": [
+                "Marks the nominative case."
+              ],
+              "categories": [
+                "Korean terms with usage examples"
+              ],
+              "raw_tags": [
+                "for an organization"
+              ]
+            }
+          ],
+          "head_templates": [
+            {
+              "name": "ko-pos",
+              "args": {
+                "1": "particle"
+              },
+              "expansion": "-에서 • (-eseo)"
+            }
+          ],
+          "categories": [
+            "Korean compound terms",
+            "Korean entries with incorrect language header",
+            "Korean lemmas",
+            "Korean particles",
+            "Korean terms derived from Middle Korean",
+            "Korean terms inherited from Middle Korean",
+            "Korean terms with IPA pronunciation",
+            "Korean terms with redundant script codes",
+            "Korean terms with redundant transliterations",
+            "Pages with 1 entry",
+            "Pages with entries"
+          ],
+          "forms": [
+            {
+              "form": "-eseo",
+              "tags": [
+                "romanization"
+              ]
+            },
+            {
+              "form": "-서",
+              "tags": [
+                "alternative",
+                "contraction"
+              ],
+              "roman": "-seo"
+            }
+          ],
+          "etymology_text": "From Middle Korean -에〮셔〮 (Yale: -éy-syé), equivalent to -에 (-e) + -서 (-seo). Compare -어서 (-eoseo), -면서 (-myeonseo). The second element is from the infinitive of the verb 이시다〮 (Yale: ìsìtá, “to be at”).",
+          "etymology_templates": [
+            {
+              "name": "inh",
+              "args": {
+                "1": "ko",
+                "2": "okm",
+                "3": "-"
+              },
+              "expansion": "Middle Korean"
+            },
+            {
+              "name": "okm-l",
+              "args": {
+                "1": "-에〮셔〮",
+                "2": "-éy-syé"
+              },
+              "expansion": "-에〮셔〮 (Yale: -éy-syé)"
+            },
+            {
+              "name": "compound",
+              "args": {
+                "1": "ko",
+                "2": "-에",
+                "3": "-서"
+              },
+              "expansion": "-에 (-e) + -서 (-seo)"
+            },
+            {
+              "name": "okm-l",
+              "args": {
+                "1": "이시다〮",
+                "2": "ìsìtá",
+                "3": "to be at"
+              },
+              "expansion": "이시다〮 (Yale: ìsìtá, “to be at”)"
+            }
+          ],
+          "sounds": [
+            {
+              "tags": [
+                "SK-Standard",
+                "Seoul"
+              ],
+              "ipa": "[e̞sʰʌ̹]"
+            },
+            {
+              "hangeul": "에서"
+            },
+            {
+              "other": "[에서]"
+            }
+          ],
+          "lang": "Korean",
+          "lang_code": "ko"
+        }
+      },
+      {
+        "url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/겉/겉-/겉-.html",
+        "download_url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/겉/겉-/겉-.jsonl",
+        "json": {
+          "word": "겉-",
+          "pos": "prefix",
+          "senses": [
+            {
+              "examples": [
+                {
+                  "text": "겉가량",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "roman": "geotgaryang",
+                  "bold_roman_offsets": [
+                    [
+                      0,
+                      4
+                    ]
+                  ],
+                  "translation": "approximate amount",
+                  "english": "approximate amount",
+                  "bold_translation_offsets": [
+                    [
+                      0,
+                      11
+                    ]
+                  ],
+                  "type": "example"
+                },
+                {
+                  "text": "겉잡다",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "roman": "geotjapda",
+                  "bold_roman_offsets": [
+                    [
+                      0,
+                      4
+                    ]
+                  ],
+                  "translation": "to roughly grasp",
+                  "english": "to roughly grasp",
+                  "bold_translation_offsets": [
+                    [
+                      3,
+                      10
+                    ]
+                  ],
+                  "type": "example"
+                }
+              ],
+              "links": [
+                [
+                  "noun",
+                  "noun"
+                ],
+                [
+                  "verb",
+                  "verb"
+                ],
+                [
+                  "quantity",
+                  "quantity"
+                ],
+                [
+                  "degree",
+                  "degree"
+                ],
+                [
+                  "rough",
+                  "rough"
+                ],
+                [
+                  "ly",
+                  "roughly"
+                ],
+                [
+                  "approximate",
+                  "approximate"
+                ],
+                [
+                  "ly",
+                  "approximately"
+                ]
+              ],
+              "raw_glosses": [
+                "(with a noun or verb implying quantity or degree) rough(ly), approximate(ly)"
+              ],
+              "glosses": [
+                "rough(ly), approximate(ly)"
+              ],
+              "categories": [
+                "Korean terms with usage examples"
+              ],
+              "tags": [
+                "morpheme"
+              ],
+              "raw_tags": [
+                "with a noun or verb implying quantity or degree"
+              ]
+            },
+            {
+              "examples": [
+                {
+                  "text": "겉대답",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "roman": "geotdaedap",
+                  "bold_roman_offsets": [
+                    [
+                      0,
+                      4
+                    ]
+                  ],
+                  "translation": "superficial response",
+                  "english": "superficial response",
+                  "bold_translation_offsets": [
+                    [
+                      0,
+                      11
+                    ]
+                  ],
+                  "type": "example"
+                },
+                {
+                  "text": "겉핥다",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "roman": "geothalda",
+                  "bold_roman_offsets": [
+                    [
+                      0,
+                      4
+                    ]
+                  ],
+                  "translation": "to skim the surface",
+                  "english": "to skim the surface",
+                  "literal_meaning": "to lick superficially",
+                  "bold_literal_offsets": [
+                    [
+                      8,
+                      21
+                    ]
+                  ],
+                  "type": "example"
+                },
+                {
+                  "text": "겉약다",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "roman": "geonnyakda",
+                  "bold_roman_offsets": [
+                    [
+                      0,
+                      4
+                    ]
+                  ],
+                  "translation": "mild-mannered but actually foolish",
+                  "english": "mild-mannered but actually foolish",
+                  "type": "example"
+                }
+              ],
+              "links": [
+                [
+                  "noun",
+                  "noun"
+                ],
+                [
+                  "verb",
+                  "verb"
+                ],
+                [
+                  "adjective",
+                  "adjective"
+                ],
+                [
+                  "appearance",
+                  "appearance#English"
+                ],
+                [
+                  "underlying",
+                  "underlying#English"
+                ],
+                [
+                  "reality",
+                  "reality#English"
+                ],
+                [
+                  "superficial",
+                  "superficial"
+                ],
+                [
+                  "ly",
+                  "superficially"
+                ],
+                [
+                  "facade",
+                  "facade"
+                ]
+              ],
+              "raw_glosses": [
+                "(with a noun, verb or adjective) Indicating a certain appearance despite underlying reality: superficial(ly); facade"
+              ],
+              "glosses": [
+                "Indicating a certain appearance despite underlying reality: superficial(ly); facade"
+              ],
+              "categories": [
+                "Korean terms with usage examples"
+              ],
+              "tags": [
+                "adjective",
+                "morpheme",
+                "verb"
+              ],
+              "raw_tags": [
+                "with a noun"
+              ]
+            },
+            {
+              "examples": [
+                {
+                  "text": "겉놀다",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "roman": "geonnolda",
+                  "bold_roman_offsets": [
+                    [
+                      0,
+                      4
+                    ]
+                  ],
+                  "translation": "to play separately (without fitting well with others)",
+                  "english": "to play separately (without fitting well with others)",
+                  "bold_translation_offsets": [
+                    [
+                      8,
+                      18
+                    ]
+                  ],
+                  "type": "example"
+                }
+              ],
+              "links": [
+                [
+                  "verb",
+                  "verb"
+                ],
+                [
+                  "separately",
+                  "separately"
+                ],
+                [
+                  "mixing",
+                  "mixing"
+                ]
+              ],
+              "raw_glosses": [
+                "(with a verb) separately, without mixing"
+              ],
+              "glosses": [
+                "separately, without mixing"
+              ],
+              "categories": [
+                "Korean terms with usage examples"
+              ],
+              "tags": [
+                "morpheme"
+              ],
+              "raw_tags": [
+                "with a verb"
+              ]
+            },
+            {
+              "examples": [
+                {
+                  "text": "겉밤",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "roman": "geot-bam",
+                  "bold_roman_offsets": [
+                    [
+                      0,
+                      4
+                    ]
+                  ],
+                  "translation": "unhulled chestnut",
+                  "english": "unhulled chestnut",
+                  "bold_translation_offsets": [
+                    [
+                      0,
+                      8
+                    ]
+                  ],
+                  "type": "example"
+                },
+                {
+                  "text": "겉절이",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "roman": "geotjeori",
+                  "bold_roman_offsets": [
+                    [
+                      0,
+                      4
+                    ]
+                  ],
+                  "translation": "freshly eaten pickled vegetables (without fermentation)",
+                  "english": "freshly eaten pickled vegetables (without fermentation)",
+                  "type": "example"
+                }
+              ],
+              "links": [
+                [
+                  "unpeeled",
+                  "unpeeled"
+                ],
+                [
+                  "unhulled",
+                  "unhulled"
+                ],
+                [
+                  "preparation",
+                  "preparation"
+                ],
+                [
+                  "grain",
+                  "grain"
+                ],
+                [
+                  "fruit",
+                  "fruit"
+                ]
+              ],
+              "glosses": [
+                "unpeeled, unhulled; without further preparation (of grains or fruit)"
+              ],
+              "categories": [
+                "Korean terms with usage examples"
+              ],
+              "tags": [
+                "morpheme"
+              ]
+            }
+          ],
+          "head_templates": [
+            {
+              "name": "ko-pos",
+              "args": {
+                "1": "prefix"
+              },
+              "expansion": "겉- • (geot-)"
+            }
+          ],
+          "categories": [
+            "Korean entries with incorrect language header",
+            "Korean lemmas",
+            "Korean prefixes",
+            "Korean terms with IPA pronunciation",
+            "Korean terms with redundant script codes",
+            "Korean terms with redundant transliterations",
+            "Pages using catfix",
+            "Pages with 1 entry",
+            "Pages with entries"
+          ],
+          "forms": [
+            {
+              "form": "geot-",
+              "tags": [
+                "romanization"
+              ]
+            }
+          ],
+          "etymology_text": "From 겉 (geot, “surface, outside; appearance, exposure”).",
+          "sounds": [
+            {
+              "tags": [
+                "SK-Standard",
+                "Seoul"
+              ],
+              "ipa": "[kʌ̹t̚]"
+            },
+            {
+              "hangeul": "걷"
+            },
+            {
+              "other": "[걷]"
+            }
+          ],
+          "lang": "Korean",
+          "lang_code": "ko"
+        }
+      },
+      {
+        "url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/-/-겠/-겠-.html",
+        "download_url": "https://kaikki.org/dictionary/All%20languages%20combined/meaning/-/-겠/-겠-.jsonl",
+        "json": {
+          "word": "-겠-",
+          "pos": "suffix",
+          "senses": [
+            {
+              "examples": [
+                {
+                  "text": "다시는 담배를 피우지 않겠다!",
+                  "bold_text_offsets": [
+                    [
+                      13,
+                      14
+                    ]
+                  ],
+                  "roman": "dasi-neun dambae-reul piuji anketda!",
+                  "bold_roman_offsets": [
+                    [
+                      30,
+                      33
+                    ]
+                  ],
+                  "translation": "I won't smoke again!",
+                  "english": "I won't smoke again!",
+                  "type": "example"
+                },
+                {
+                  "text": "철수가 오늘 김밥을 먹겠대요.",
+                  "bold_text_offsets": [
+                    [
+                      12,
+                      13
+                    ]
+                  ],
+                  "roman": "Cheolsu-ga oneul gimbab-eul meokgetdaeyo.",
+                  "bold_roman_offsets": [
+                    [
+                      32,
+                      35
+                    ]
+                  ],
+                  "translation": "Cheolsu said he would eat kimbap today.",
+                  "english": "Cheolsu said he would eat kimbap today.",
+                  "type": "example"
+                }
+              ],
+              "links": [
+                [
+                  "speculative",
+                  "speculative#English"
+                ],
+                [
+                  "-으시-",
+                  "-으시-#Korean"
+                ],
+                [
+                  "will",
+                  "will"
+                ],
+                [
+                  "intend",
+                  "intend"
+                ]
+              ],
+              "raw_glosses": [
+                "A general future speculative suffix; it attaches directly to the stem, including the honorific -으시- (-eusi-), and precedes another verbal suffix.",
+                "(mainly used with 1st person or in quotative sentences) will, intend: a suffix indicating that the subject intends to do the action in the future with their own efforts, thus showing their will, determination."
+              ],
+              "glosses": [
+                "A general future speculative suffix; it attaches directly to the stem, including the honorific -으시- (-eusi-), and precedes another verbal suffix.",
+                "will, intend: a suffix indicating that the subject intends to do the action in the future with their own efforts, thus showing their will, determination."
+              ],
+              "categories": [
+                "Korean terms with usage examples"
+              ],
+              "tags": [
+                "mainly",
+                "morpheme"
+              ],
+              "raw_tags": [
+                "used with 1st person or in quotative sentences"
+              ]
+            },
+            {
+              "examples": [
+                {
+                  "text": "내일 비가 오겠네요.",
+                  "bold_text_offsets": [
+                    [
+                      7,
+                      8
+                    ]
+                  ],
+                  "roman": "Naeil bi-ga ogen-ne-yo.",
+                  "bold_roman_offsets": [
+                    [
+                      13,
+                      16
+                    ]
+                  ],
+                  "translation": "Tomorrow it will probably rain.",
+                  "english": "Tomorrow it will probably rain.",
+                  "type": "example"
+                },
+                {
+                  "text": "어제 모스크바에서도 눈이 내렸겠지요?",
+                  "bold_text_offsets": [
+                    [
+                      16,
+                      17
+                    ]
+                  ],
+                  "roman": "eoje Moseukeuba-eseo-do nun-i naeryeotget-ji-yo?",
+                  "bold_roman_offsets": [
+                    [
+                      38,
+                      41
+                    ]
+                  ],
+                  "translation": "It probably snowed in Moscow too yesterday, right?",
+                  "english": "It probably snowed in Moscow too yesterday, right?",
+                  "type": "example"
+                }
+              ],
+              "links": [
+                [
+                  "speculative",
+                  "speculative#English"
+                ],
+                [
+                  "-으시-",
+                  "-으시-#Korean"
+                ],
+                [
+                  "will",
+                  "will"
+                ],
+                [
+                  "may",
+                  "may"
+                ]
+              ],
+              "glosses": [
+                "A general future speculative suffix; it attaches directly to the stem, including the honorific -으시- (-eusi-), and precedes another verbal suffix.",
+                "will, may: A suffix denoting guess or assumption of varied possibility."
+              ],
+              "categories": [
+                "Korean terms with usage examples"
+              ],
+              "tags": [
+                "morpheme"
+              ]
+            },
+            {
+              "examples": [
+                {
+                  "text": "제가 말을 좀 해도 되겠어요?",
+                  "bold_text_offsets": [
+                    [
+                      12,
+                      13
+                    ]
+                  ],
+                  "roman": "je-ga mar-eul jom hae-do doegesseoyo?",
+                  "bold_roman_offsets": [
+                    [
+                      28,
+                      31
+                    ]
+                  ],
+                  "translation": "Would it be okay if I said something?",
+                  "english": "Would it be okay if I said something?",
+                  "type": "example"
+                }
+              ],
+              "links": [
+                [
+                  "speculative",
+                  "speculative#English"
+                ],
+                [
+                  "-으시-",
+                  "-으시-#Korean"
+                ],
+                [
+                  "will",
+                  "will"
+                ],
+                [
+                  "would",
+                  "would"
+                ]
+              ],
+              "glosses": [
+                "A general future speculative suffix; it attaches directly to the stem, including the honorific -으시- (-eusi-), and precedes another verbal suffix.",
+                "will, would: A suffix indicating an indirect polite proposal with some degree of future supposition."
+              ],
+              "categories": [
+                "Korean terms with usage examples"
+              ],
+              "tags": [
+                "morpheme"
+              ]
+            }
+          ],
+          "head_templates": [
+            {
+              "name": "ko-suffix",
+              "args": {},
+              "expansion": "-겠- • (-get-)"
+            }
+          ],
+          "categories": [
+            "Korean entries with incorrect language header",
+            "Korean lemmas",
+            "Korean suffixes",
+            "Korean terms derived from Middle Korean",
+            "Korean terms inherited from Middle Korean",
+            "Korean terms with redundant script codes",
+            "Korean terms with redundant transliterations",
+            "Korean terms without ko-IPA template",
+            "Pages with 1 entry",
+            "Pages with entries"
+          ],
+          "forms": [
+            {
+              "form": "-get-",
+              "tags": [
+                "romanization"
+              ]
+            },
+            {
+              "form": "-게엿-",
+              "tags": [
+                "alternative",
+                "Early",
+                "Modern"
+              ],
+              "roman": "-geyeot-"
+            },
+            {
+              "form": "-게얏-",
+              "tags": [
+                "alternative",
+                "Early",
+                "Modern"
+              ],
+              "roman": "-geyat-"
+            },
+            {
+              "form": "-갯-",
+              "tags": [
+                "alternative",
+                "Hamgyong"
+              ],
+              "roman": "-gaet-"
+            },
+            {
+              "form": "-겄-",
+              "tags": [
+                "alternative"
+              ],
+              "roman": "-geot-"
+            },
+            {
+              "form": "-갔-",
+              "tags": [
+                "alternative"
+              ],
+              "roman": "-gat-"
+            },
+            {
+              "form": "-갓-",
+              "tags": [
+                "alternative"
+              ],
+              "roman": "-gat-"
+            }
+          ],
+          "related": [
+            {
+              "tags": [
+                "adnominal",
+                "irrealis",
+                "suffix"
+              ],
+              "roman": "-eul",
+              "word": "-을"
+            }
+          ],
+          "etymology_number": 1,
+          "etymology_text": "Contraction of older and synonymous 게 하였 (-ge ha-yeot-), 게 ᄒᆞ엿 (Yale: -key hoy-es-) in historical spelling. 게 ᄒᆞ엿 (Yale: -key hoy-es-) has been used with future meaning since the late sixteenth century.\nIn Modern Korean, 게 하였 (-ge ha-yeot-) most literally means \"caused [one] to [VERB]\", e.g. 먹게 하였다 (meok-ge ha-yeot--da, “[I] made [him] eat”). Hence, there are multiple theories with regards to the semantics. Some believe that the verb 하다 (hada) in this context was synonymous to 되다 (doeda), and hence that the construction originally had the same meaning as modern 게 되었 (-ge doe-eot-), e.g. 먹게 되었다 (meok-ge doe-eot--da, “[he] ended up eating”). Others believe that the suffix developed from a more reflexive use of the causative, equivalent to modern 도록 하였 (-dorok ha-yeot-), e.g. 먹도록 하였다 (meok-dorok ha-yeot--da, “[he] decided to eat”).\nIncreasingly displaced older future-like -으리- (-euri-).",
+          "etymology_templates": [
+            {
+              "name": "okm-l",
+              "args": {
+                "1": "게 ᄒᆞ엿",
+                "2": "-key hoy-es-"
+              },
+              "expansion": "게 ᄒᆞ엿 (Yale: -key hoy-es-)"
+            },
+            {
+              "name": "okm-l",
+              "args": {
+                "1": "게 ᄒᆞ엿",
+                "2": "-key hoy-es-"
+              },
+              "expansion": "게 ᄒᆞ엿 (Yale: -key hoy-es-)"
             }
           ],
           "lang": "Korean",
