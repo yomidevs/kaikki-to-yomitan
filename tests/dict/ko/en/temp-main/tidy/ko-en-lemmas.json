@@ -18,5 +18,314 @@
         }
       ]
     }
+  },
+  "-에서": {
+    "-에서": {
+      "particle": [
+        {
+          "gloss_tree": {
+            "from": {
+              "examples": [
+                {
+                  "text": "1에서 10까지",
+                  "translation": "from 1 to 10",
+                  "bold_text_offsets": [
+                    [
+                      1,
+                      3
+                    ]
+                  ]
+                }
+              ]
+            },
+            "in, inside, at, on": {
+              "examples": [
+                {
+                  "text": "집에서 낮잠 잔다.",
+                  "translation": "I'm taking a nap at home.",
+                  "bold_text_offsets": [
+                    [
+                      1,
+                      3
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      17,
+                      19
+                    ]
+                  ]
+                }
+              ]
+            },
+            "Marks the nominative case.": {
+              "examples": [
+                {
+                  "text": "국가에서 준 돈",
+                  "translation": "the money which the government gave out",
+                  "bold_text_offsets": [
+                    [
+                      2,
+                      4
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "etymology_text": "From Middle Korean -에〮셔〮 (Yale: -éy-syé), equivalent to -에 (-e) + -서 (-seo). Compare -어서 (-eoseo), -면서 (-myeonseo). The second element is from the infinitive of the verb 이시다〮 (Yale: ìsìtá, “to be at”).",
+          "head_info_text": "-에서 • (-eseo)",
+          "wlink": "https://en.wiktionary.org/wiki/-에서#Korean",
+          "klink": "https://kaikki.org/dictionary/Korean/meaning/-/-에/-에서.html"
+        }
+      ]
+    }
+  },
+  "겉-": {
+    "겉-": {
+      "prefix": [
+        {
+          "gloss_tree": {
+            "rough(ly), approximate(ly)": {
+              "tags": [
+                "morpheme"
+              ],
+              "examples": [
+                {
+                  "text": "겉가량",
+                  "translation": "approximate amount",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      0,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "text": "겉잡다",
+                  "translation": "to roughly grasp",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      3,
+                      10
+                    ]
+                  ]
+                }
+              ]
+            },
+            "Indicating a certain appearance despite underlying reality: superficial(ly); facade": {
+              "tags": [
+                "adjective",
+                "morpheme",
+                "verb"
+              ],
+              "examples": [
+                {
+                  "text": "겉대답",
+                  "translation": "superficial response",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      0,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "text": "겉핥다",
+                  "translation": "to skim the surface",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "text": "겉약다",
+                  "translation": "mild-mannered but actually foolish",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                }
+              ]
+            },
+            "separately, without mixing": {
+              "tags": [
+                "morpheme"
+              ],
+              "examples": [
+                {
+                  "text": "겉놀다",
+                  "translation": "to play separately (without fitting well with others)",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      8,
+                      18
+                    ]
+                  ]
+                }
+              ]
+            },
+            "unpeeled, unhulled; without further preparation (of grains or fruit)": {
+              "tags": [
+                "morpheme"
+              ],
+              "examples": [
+                {
+                  "text": "겉밤",
+                  "translation": "unhulled chestnut",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "bold_translation_offsets": [
+                    [
+                      0,
+                      8
+                    ]
+                  ]
+                },
+                {
+                  "text": "겉절이",
+                  "translation": "freshly eaten pickled vegetables (without fermentation)",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "etymology_text": "From 겉 (geot, “surface, outside; appearance, exposure”).",
+          "head_info_text": "겉- • (geot-)",
+          "wlink": "https://en.wiktionary.org/wiki/겉-#Korean",
+          "klink": "https://kaikki.org/dictionary/Korean/meaning/겉/겉-/겉-.html"
+        }
+      ]
+    }
+  },
+  "-겠-": {
+    "-겠-": {
+      "suffix": [
+        {
+          "gloss_tree": {
+            "A general future speculative suffix; it attaches directly to the stem, including the honorific -으시- (-eusi-), and precedes another verbal suffix.": {
+              "tags": [
+                "morpheme"
+              ],
+              "children": {
+                "will, intend: a suffix indicating that the subject intends to do the action in the future with their own efforts, thus showing their will, determination.": {
+                  "tags": [
+                    "mainly",
+                    "morpheme"
+                  ],
+                  "examples": [
+                    {
+                      "text": "다시는 담배를 피우지 않겠다!",
+                      "translation": "I won't smoke again!",
+                      "bold_text_offsets": [
+                        [
+                          13,
+                          14
+                        ]
+                      ]
+                    },
+                    {
+                      "text": "철수가 오늘 김밥을 먹겠대요.",
+                      "translation": "Cheolsu said he would eat kimbap today.",
+                      "bold_text_offsets": [
+                        [
+                          12,
+                          13
+                        ]
+                      ]
+                    }
+                  ]
+                },
+                "will, may: A suffix denoting guess or assumption of varied possibility.": {
+                  "tags": [
+                    "morpheme"
+                  ],
+                  "examples": [
+                    {
+                      "text": "내일 비가 오겠네요.",
+                      "translation": "Tomorrow it will probably rain.",
+                      "bold_text_offsets": [
+                        [
+                          7,
+                          8
+                        ]
+                      ]
+                    },
+                    {
+                      "text": "어제 모스크바에서도 눈이 내렸겠지요?",
+                      "translation": "It probably snowed in Moscow too yesterday, right?",
+                      "bold_text_offsets": [
+                        [
+                          16,
+                          17
+                        ]
+                      ]
+                    }
+                  ]
+                },
+                "will, would: A suffix indicating an indirect polite proposal with some degree of future supposition.": {
+                  "tags": [
+                    "morpheme"
+                  ],
+                  "examples": [
+                    {
+                      "text": "제가 말을 좀 해도 되겠어요?",
+                      "translation": "Would it be okay if I said something?",
+                      "bold_text_offsets": [
+                        [
+                          12,
+                          13
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "etymology_text": "Contraction of older and synonymous 게 하였 (-ge ha-yeot-), 게 ᄒᆞ엿 (Yale: -key hoy-es-) in historical spelling. 게 ᄒᆞ엿 (Yale: -key hoy-es-) has been used with future meaning since the late sixteenth century.\nIn Modern Korean, 게 하였 (-ge ha-yeot-) most literally means \"caused [one] to [VERB]\", e.g. 먹게 하였다 (meok-ge ha-yeot--da, “[I] made [him] eat”). Hence, there are multiple theories with regards to the semantics. Some believe that the verb 하다 (hada) in this context was synonymous to 되다 (doeda), and hence that the construction originally had the same meaning as modern 게 되었 (-ge doe-eot-), e.g. 먹게 되었다 (meok-ge doe-eot--da, “[he] ended up eating”). Others believe that the suffix developed from a more reflexive use of the causative, equivalent to modern 도록 하였 (-dorok ha-yeot-), e.g. 먹도록 하였다 (meok-dorok ha-yeot--da, “[he] decided to eat”).\nIncreasingly displaced older future-like -으리- (-euri-).",
+          "head_info_text": "-겠- • (-get-)",
+          "wlink": "https://en.wiktionary.org/wiki/-겠-#Korean",
+          "klink": "https://kaikki.org/dictionary/Korean/meaning/-/-겠/-겠-.html"
+        }
+      ]
+    }
   }
 }

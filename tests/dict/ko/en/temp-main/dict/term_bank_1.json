@@ -109,5 +109,1249 @@
     ],
     0,
     ""
+  ],
+  [
+    "-에서",
+    "",
+    "ptcl",
+    "ptcl",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "preamble"
+                },
+                "content": [
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Grammar"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Grammar"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Grammar-content"
+                        },
+                        "content": "-에서 • (-eseo)"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Etymology"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Etymology"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
+                        },
+                        "content": "From Middle Korean -에〮셔〮 (Yale: -éy-syé), equivalent to -에 (-e) + -서 (-seo). Compare -어서 (-eoseo), -면서 (-myeonseo). The second element is from the infinitive of the verb 이시다〮 (Yale: ìsìtá, “to be at”)."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
+            "content": [
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "from",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 example"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": [
+                                    "1",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "에서"
+                                    },
+                                    " 10까지"
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "from 1 to 10"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "in, inside, at, on",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 example"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": [
+                                    "집",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "에서"
+                                    },
+                                    " 낮잠 잔다."
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": [
+                                    "I'm taking a nap ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "at"
+                                    },
+                                    " home."
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "Marks the nominative case.",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 example"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": [
+                                    "국가",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "에서"
+                                    },
+                                    " 준 돈"
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "the money which the government gave out"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/-에서#Korean",
+                "content": "Wiktionary"
+              },
+              " | ",
+              {
+                "tag": "a",
+                "href": "https://kaikki.org/dictionary/Korean/meaning/-/-에/-에서.html",
+                "content": "Kaikki"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "겉-",
+    "",
+    "pref",
+    "pref",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "preamble"
+                },
+                "content": [
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Grammar"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Grammar"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Grammar-content"
+                        },
+                        "content": "겉- • (geot-)"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Etymology"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Etymology"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
+                        },
+                        "content": "From 겉 (geot, “surface, outside; appearance, exposure”)."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
+            "content": [
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "rough(ly), approximate(ly)",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "2 examples"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "겉"
+                                    },
+                                    "가량"
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "approximate"
+                                    },
+                                    " amount"
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "겉"
+                                    },
+                                    "잡다"
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": [
+                                    "to ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "roughly"
+                                    },
+                                    " grasp"
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "title": "adjective",
+                            "data": {
+                              "content": "tag",
+                              "category": "partOfSpeech"
+                            },
+                            "content": "adj"
+                          },
+                          {
+                            "tag": "span",
+                            "title": "verb",
+                            "data": {
+                              "content": "tag",
+                              "category": "partOfSpeech"
+                            },
+                            "content": "v"
+                          }
+                        ]
+                      },
+                      "Indicating a certain appearance despite underlying reality: superficial(ly); facade",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "3 examples"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "겉"
+                                    },
+                                    "대답"
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "superficial"
+                                    },
+                                    " response"
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "겉"
+                                    },
+                                    "핥다"
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "to skim the surface"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "겉"
+                                    },
+                                    "약다"
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "mild-mannered but actually foolish"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "separately, without mixing",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 example"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "겉"
+                                    },
+                                    "놀다"
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": [
+                                    "to play ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "separately"
+                                    },
+                                    " (without fitting well with others)"
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "unpeeled, unhulled; without further preparation (of grains or fruit)",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "2 examples"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "겉"
+                                    },
+                                    "밤"
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "unhulled"
+                                    },
+                                    " chestnut"
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": [
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "겉"
+                                    },
+                                    "절이"
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-b"
+                                  },
+                                  "content": "freshly eaten pickled vegetables (without fermentation)"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/겉-#Korean",
+                "content": "Wiktionary"
+              },
+              " | ",
+              {
+                "tag": "a",
+                "href": "https://kaikki.org/dictionary/Korean/meaning/겉/겉-/겉-.html",
+                "content": "Kaikki"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "-겠-",
+    "",
+    "suf",
+    "suf",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "preamble"
+                },
+                "content": [
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Grammar"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Grammar"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Grammar-content"
+                        },
+                        "content": "-겠- • (-get-)"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Etymology"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Etymology"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
+                        },
+                        "content": "Contraction of older and synonymous 게 하였 (-ge ha-yeot-), 게 ᄒᆞ엿 (Yale: -key hoy-es-) in historical spelling. 게 ᄒᆞ엿 (Yale: -key hoy-es-) has been used with future meaning since the late sixteenth century.\nIn Modern Korean, 게 하였 (-ge ha-yeot-) most literally means \"caused [one] to [VERB]\", e.g. 먹게 하였다 (meok-ge ha-yeot--da, “[I] made [him] eat”). Hence, there are multiple theories with regards to the semantics. Some believe that the verb 하다 (hada) in this context was synonymous to 되다 (doeda), and hence that the construction originally had the same meaning as modern 게 되었 (-ge doe-eot-), e.g. 먹게 되었다 (meok-ge doe-eot--da, “[he] ended up eating”). Others believe that the suffix developed from a more reflexive use of the causative, equivalent to modern 도록 하였 (-dorok ha-yeot-), e.g. 먹도록 하였다 (meok-dorok ha-yeot--da, “[he] decided to eat”).\nIncreasingly displaced older future-like -으리- (-euri-)."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
+            "content": [
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "A general future speculative suffix; it attaches directly to the stem, including the honorific -으시- (-eusi-), and precedes another verbal suffix."
+                    ]
+                  },
+                  {
+                    "tag": "ul",
+                    "content": [
+                      {
+                        "tag": "li",
+                        "content": [
+                          "will, intend: a suffix indicating that the subject intends to do the action in the future with their own efforts, thus showing their will, determination.",
+                          {
+                            "tag": "details",
+                            "data": {
+                              "content": "details-entry-examples"
+                            },
+                            "content": [
+                              {
+                                "tag": "summary",
+                                "data": {
+                                  "content": "summary-entry"
+                                },
+                                "content": "2 examples"
+                              },
+                              {
+                                "tag": "div",
+                                "data": {
+                                  "content": "extra-info"
+                                },
+                                "content": {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence"
+                                  },
+                                  "content": [
+                                    {
+                                      "tag": "div",
+                                      "data": {
+                                        "content": "example-sentence-a"
+                                      },
+                                      "content": [
+                                        "다시는 담배를 피우지 않",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "겠"
+                                        },
+                                        "다!"
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "data": {
+                                        "content": "example-sentence-b"
+                                      },
+                                      "content": "I won't smoke again!"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "tag": "div",
+                                "data": {
+                                  "content": "extra-info"
+                                },
+                                "content": {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence"
+                                  },
+                                  "content": [
+                                    {
+                                      "tag": "div",
+                                      "data": {
+                                        "content": "example-sentence-a"
+                                      },
+                                      "content": [
+                                        "철수가 오늘 김밥을 먹",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "겠"
+                                        },
+                                        "대요."
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "data": {
+                                        "content": "example-sentence-b"
+                                      },
+                                      "content": "Cheolsu said he would eat kimbap today."
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "content": [
+                          "will, may: A suffix denoting guess or assumption of varied possibility.",
+                          {
+                            "tag": "details",
+                            "data": {
+                              "content": "details-entry-examples"
+                            },
+                            "content": [
+                              {
+                                "tag": "summary",
+                                "data": {
+                                  "content": "summary-entry"
+                                },
+                                "content": "2 examples"
+                              },
+                              {
+                                "tag": "div",
+                                "data": {
+                                  "content": "extra-info"
+                                },
+                                "content": {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence"
+                                  },
+                                  "content": [
+                                    {
+                                      "tag": "div",
+                                      "data": {
+                                        "content": "example-sentence-a"
+                                      },
+                                      "content": [
+                                        "내일 비가 오",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "겠"
+                                        },
+                                        "네요."
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "data": {
+                                        "content": "example-sentence-b"
+                                      },
+                                      "content": "Tomorrow it will probably rain."
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "tag": "div",
+                                "data": {
+                                  "content": "extra-info"
+                                },
+                                "content": {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence"
+                                  },
+                                  "content": [
+                                    {
+                                      "tag": "div",
+                                      "data": {
+                                        "content": "example-sentence-a"
+                                      },
+                                      "content": [
+                                        "어제 모스크바에서도 눈이 내렸",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "겠"
+                                        },
+                                        "지요?"
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "data": {
+                                        "content": "example-sentence-b"
+                                      },
+                                      "content": "It probably snowed in Moscow too yesterday, right?"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "content": [
+                          "will, would: A suffix indicating an indirect polite proposal with some degree of future supposition.",
+                          {
+                            "tag": "details",
+                            "data": {
+                              "content": "details-entry-examples"
+                            },
+                            "content": [
+                              {
+                                "tag": "summary",
+                                "data": {
+                                  "content": "summary-entry"
+                                },
+                                "content": "1 example"
+                              },
+                              {
+                                "tag": "div",
+                                "data": {
+                                  "content": "extra-info"
+                                },
+                                "content": {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence"
+                                  },
+                                  "content": [
+                                    {
+                                      "tag": "div",
+                                      "data": {
+                                        "content": "example-sentence-a"
+                                      },
+                                      "content": [
+                                        "제가 말을 좀 해도 되",
+                                        {
+                                          "tag": "span",
+                                          "data": {
+                                            "content": "bold-text"
+                                          },
+                                          "content": "겠"
+                                        },
+                                        "어요?"
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "data": {
+                                        "content": "example-sentence-b"
+                                      },
+                                      "content": "Would it be okay if I said something?"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://en.wiktionary.org/wiki/-겠-#Korean",
+                "content": "Wiktionary"
+              },
+              " | ",
+              {
+                "tag": "a",
+                "href": "https://kaikki.org/dictionary/Korean/meaning/-/-겠/-겠-.html",
+                "content": "Kaikki"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
   ]
 ]

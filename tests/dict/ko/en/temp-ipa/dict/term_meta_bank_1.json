@@ -14,5 +14,37 @@
         }
       ]
     }
+  ],
+  [
+    "-에서",
+    "ipa",
+    {
+      "reading": "-에서",
+      "transcriptions": [
+        {
+          "ipa": "[e̞sʰʌ̹]",
+          "tags": [
+            "SK-Standard",
+            "Seoul"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "겉-",
+    "ipa",
+    {
+      "reading": "겉-",
+      "transcriptions": [
+        {
+          "ipa": "[kʌ̹t̚]",
+          "tags": [
+            "SK-Standard",
+            "Seoul"
+          ]
+        }
+      ]
+    }
   ]
 ]
