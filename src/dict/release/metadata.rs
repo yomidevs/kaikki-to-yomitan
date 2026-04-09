@@ -39,11 +39,17 @@ struct TypeInfo {
 type DictInfo = BTreeMap<String, TypeInfo>;
 
 #[derive(Debug, Default)]
+struct DbInfo {
+    size: u64,
+    time: u128,
+}
+
+#[derive(Debug, Default)]
 struct Metadata {
     size: u64,
     count: u64,
     time: u128,
-    db: BTreeMap<String, u128>,
+    db: BTreeMap<String, DbInfo>,
     dicts: DictInfo,
 }
 
@@ -83,6 +89,15 @@ impl serde::Serialize for Metadata {
         state.serialize_field("time", &human_time(self.time))?;
         state.serialize_field("db", &self.db)?;
         state.serialize_field("dicts", &self.dicts)?;
+        state.end()
+    }
+}
+
+impl serde::Serialize for DbInfo {
+    fn serialize<S: serde::Serializer>(&self, s: S) -> Result<S::Ok, S::Error> {
+        let mut state = s.serialize_struct("DbInfo", 2)?;
+        state.serialize_field("size", &human_size(self.size as f64))?;
+        state.serialize_field("time", &human_time(self.time))?;
         state.end()
     }
 }
@@ -166,6 +181,21 @@ fn scan_and_group(root_dir: &Path, stats: &TimingStats) -> Result<Metadata> {
     Ok(meta)
 }
 
+fn add_db_metadata(root_dir: &Path, db_stats: &TimingStats, metadata: &mut Metadata) -> Result<()> {
+    let db_timings = db_stats.timings.lock().unwrap();
+    let db_dir = root_dir.join("db");
+
+    for (edition, timing) in db_timings.iter() {
+        let db_path = db_dir.join(format!("wiktextract_{edition}.db"));
+        let size = db_path.metadata()?.len();
+        let time = timing.as_millis();
+        let db_info = DbInfo { size, time };
+        metadata.db.insert(edition.clone(), db_info);
+    }
+
+    Ok(())
+}
+
 pub fn write_dict_metadata(
     root_dir: &Path,
     db_stats: &TimingStats,
@@ -173,10 +203,7 @@ pub fn write_dict_metadata(
 ) -> Result<()> {
     let dict_dir = root_dir.join("dict");
     let mut metadata = scan_and_group(&dict_dir, stats)?;
-    let db_timings = db_stats.timings.lock().unwrap();
-    for (edition, timing) in db_timings.clone().into_iter() {
-        metadata.db.insert(edition, (timing).as_millis());
-    }
+    add_db_metadata(root_dir, db_stats, &mut metadata)?;
     let json = serde_json::to_string_pretty(&metadata)?;
     let out_path = Path::new("docs/release_metadata.json");
     std::fs::write(out_path, &json)?;
