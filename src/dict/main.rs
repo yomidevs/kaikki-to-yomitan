@@ -946,10 +946,10 @@ fn preprocess_forms_de(entry: &mut WordEntry) {
         if let Some(stripped) = form.form.strip_prefix("zu ") {
             form.form = stripped.to_string();
         }
-        if form.tags.iter().any(|tag| tag == "extended") {
-            if let Some(stripped) = form.form.strip_suffix(" zu haben") {
-                form.form = stripped.to_string();
-            }
+        if form.tags.iter().any(|tag| tag == "extended")
+            && let Some(stripped) = form.form.strip_suffix(" zu haben")
+        {
+            form.form = stripped.to_string();
         }
     }
 }

@@ -112,6 +112,10 @@ impl WiktextractDb {
                 let word_entry: WordEntry = serde_json::from_str(&line)?;
                 let bytes = rkyv::to_bytes::<rkyv::rancor::Error>(&word_entry)?;
 
+                // We are fine with adding entries for unsupported languages because we support
+                // almost everything, and the remaining percentage is very low.
+                // It takes more time to filter the unsupported languages than to ignore them.
+
                 insert_entry.execute(params![word_entry.lang_code, bytes.as_ref()])?;
 
                 let entry_id = tx.last_insert_rowid();
