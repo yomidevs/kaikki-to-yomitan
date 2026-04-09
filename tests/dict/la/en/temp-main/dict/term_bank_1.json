@@ -1716,7 +1716,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "4 examples"
+                            "content": "3 examples"
                           },
                           {
                             "tag": "div",
@@ -1853,41 +1853,6 @@
                                       "content": "on one's own"
                                     }
                                   ]
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": "id nunc experior domō"
-                                },
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-b"
-                                  },
-                                  "content": "Now I'm learning this first-hand."
-                                },
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-c"
-                                  },
-                                  "content": "c. 190 BCE – 185 BCE, Plautus, Amphitryon 637"
                                 }
                               ]
                             }

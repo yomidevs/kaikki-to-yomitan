@@ -53,22 +53,6 @@
                       16
                     ]
                   ]
-                },
-                {
-                  "text": "Ήρθα πρώτος στο αγώνισμα.",
-                  "translation": "I came first in the competition.",
-                  "bold_text_offsets": [
-                    [
-                      0,
-                      4
-                    ]
-                  ],
-                  "bold_translation_offsets": [
-                    [
-                      2,
-                      6
-                    ]
-                  ]
                 }
               ]
             },

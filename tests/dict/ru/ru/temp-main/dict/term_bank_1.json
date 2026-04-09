@@ -68,7 +68,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "5 примеры"
+                            "content": "3 примеры"
                           },
                           {
                             "tag": "div",
@@ -183,81 +183,6 @@
                                 }
                               ]
                             }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "Снег"
-                                    },
-                                    " бил в окна и клочьями прилипал к стёклам."
-                                  ]
-                                },
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-c"
-                                  },
-                                  "content": "И. А. Гончаров, «Обыкновенная история», 1847 г. [НКРЯ]"
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "Мелькает, вьётся первый ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "снег"
-                                    },
-                                    ", звездами падая на брег."
-                                  ]
-                                },
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-c"
-                                  },
-                                  "content": "А. С. Пушкин, «Евгений Онегин», 1823–1831 гг. [НКРЯ]"
-                                }
-                              ]
-                            }
                           }
                         ]
                       }
@@ -283,7 +208,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "5 примеры"
+                            "content": "3 примеры"
                           },
                           {
                             "tag": "div",
@@ -395,82 +320,6 @@
                                     "content": "example-sentence-c"
                                   },
                                   "content": "Н. С. Лесков, «Житие одной бабы», 1863 г. [НКРЯ]"
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "Глубокий ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "снег"
-                                    },
-                                    " лежит на улицах и через белые, как сахар, пласты его, прочные и крепкие, протоптаны узкие дорожки."
-                                  ]
-                                },
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-c"
-                                  },
-                                  "content": "П. Н. Краснов, «От Двуглавого Орла к красному знамени», 1922 г. [НКРЯ]"
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "За окнами чернота и белизна ― сплошные чёрные леса в белых глубоких ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "снегах"
-                                    },
-                                    "."
-                                  ]
-                                },
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-c"
-                                  },
-                                  "content": "И. А. Бунин, «Нобелевские дни», 1933 г. [НКРЯ]"
                                 }
                               ]
                             }

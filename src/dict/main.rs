@@ -33,6 +33,7 @@ use crate::{
 };
 
 const MAX_NUMBER_OF_SYNONYMS: usize = 3;
+const MAX_NUMBER_OF_EXAMPLES: usize = 3;
 const MAX_SIZE_OF_EXAMPLE: usize = 120;
 const MAX_SIZE_OF_EXAMPLE_REFERENCE: usize = 120;
 
@@ -1293,6 +1294,7 @@ fn get_gloss_tree(entry: &WordEntry) -> GlossTree {
             .examples
             .iter()
             .filter(|ex| !ex.text.is_empty() && ex.text.chars().count() <= MAX_SIZE_OF_EXAMPLE)
+            .take(MAX_NUMBER_OF_EXAMPLES)
             .cloned()
             .map(|mut ex| {
                 // Remove reference if too long

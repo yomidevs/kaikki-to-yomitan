@@ -145,16 +145,6 @@
                       22
                     ]
                   ]
-                },
-                {
-                  "text": "ça ne prend pas avec moi",
-                  "translation": "that won't wash with me",
-                  "bold_text_offsets": [
-                    [
-                      6,
-                      11
-                    ]
-                  ]
                 }
               ]
             },
@@ -213,10 +203,6 @@
                 {
                   "text": "bien lui en prit",
                   "translation": "good for him; it was a good choice"
-                },
-                {
-                  "text": "mal lui en prit",
-                  "translation": "too bad for him; it was a bad choice"
                 }
               ]
             },
@@ -252,58 +238,6 @@
                 {
                   "text": "prendre de l'avance",
                   "translation": "to gain ground"
-                },
-                {
-                  "text": "prendre du retard",
-                  "translation": "to fall behind schedule, to run late, to drop behind"
-                },
-                {
-                  "text": "prendre de la hauteur",
-                  "translation": "to gain some perspective"
-                },
-                {
-                  "text": "prendre du recul",
-                  "translation": "to take a step back"
-                },
-                {
-                  "text": "prendre de la bouteille",
-                  "translation": "to gain experience"
-                },
-                {
-                  "text": "en prendre de la graine",
-                  "translation": "to take away a lesson"
-                },
-                {
-                  "text": "prendre du poids",
-                  "translation": "to gain weight"
-                },
-                {
-                  "text": "prendre de la masse",
-                  "translation": "to build muscle"
-                },
-                {
-                  "text": "prendre de la brioche, prendre du bide, prendre du ventre",
-                  "translation": "to get a paunch"
-                },
-                {
-                  "text": "prendre du bouchon",
-                  "translation": "to fail"
-                },
-                {
-                  "text": "prendre de l'élan",
-                  "translation": "to gain momentum"
-                },
-                {
-                  "text": "prendre de l'âge",
-                  "translation": "to get older"
-                },
-                {
-                  "text": "prendre de la valeur",
-                  "translation": "to gain value"
-                },
-                {
-                  "text": "prendre de l'importance",
-                  "translation": "to become important"
                 }
               ]
             },

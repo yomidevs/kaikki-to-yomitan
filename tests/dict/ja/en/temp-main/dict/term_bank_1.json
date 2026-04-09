@@ -231,7 +231,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "4 examples"
+                            "content": "3 examples"
                           },
                           {
                             "tag": "div",
@@ -361,54 +361,6 @@
                                     "content": "example-sentence-b"
                                   },
                                   "content": "“I like you.” → idiomatically used to express: “I love you.”"
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "どうとも",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "好き"
-                                    },
-                                    "にしなさい。"
-                                  ]
-                                },
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-b"
-                                  },
-                                  "content": [
-                                    "Feel free to do as you ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "like"
-                                    },
-                                    "."
-                                  ]
                                 }
                               ]
                             }

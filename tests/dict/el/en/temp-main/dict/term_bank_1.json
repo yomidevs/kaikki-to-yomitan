@@ -90,7 +90,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "4 examples"
+                            "content": "3 examples"
                           },
                           {
                             "tag": "div",
@@ -230,53 +230,6 @@
                                       "content": "coming"
                                     },
                                     "."
-                                  ]
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "Ήρθα"
-                                    },
-                                    " πρώτος στο αγώνισμα."
-                                  ]
-                                },
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-b"
-                                  },
-                                  "content": [
-                                    "I ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "came"
-                                    },
-                                    " first in the competition."
                                   ]
                                 }
                               ]

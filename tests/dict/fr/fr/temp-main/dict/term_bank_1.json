@@ -374,7 +374,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "5 exemples"
+                            "content": "3 exemples"
                           },
                           {
                             "tag": "div",
@@ -484,82 +484,6 @@
                                     "content": "example-sentence-c"
                                   },
                                   "content": "Victor Méric, Les Compagnons de l’Escopette, Éditions de l’Épi, Paris, 1930, page 213"
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "J’avais neuf ans et j’attrapais avec mon frère des sauterelles que nous faisions griller dans le jardin pour les ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "manger"
-                                    },
-                                    "."
-                                  ]
-                                },
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-c"
-                                  },
-                                  "content": "Francis Carco, Maman Petitdoigt, La Revue de Paris, 1920"
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "Il ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "mangea"
-                                    },
-                                    " quelques mûres qu’il trouva dans les ronces de la lisière, après quoi il chercha à s’orienter."
-                                  ]
-                                },
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-c"
-                                  },
-                                  "content": "André Dhôtel, Le Pays où l’on n’arrive jamais, 1955"
                                 }
                               ]
                             }

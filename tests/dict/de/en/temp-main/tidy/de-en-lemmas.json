@@ -117,54 +117,6 @@
                           18
                         ]
                       ]
-                    },
-                    {
-                      "text": "Sie hat sich stets sehr gepflegt.",
-                      "translation": "She has always taken care of her appearance.",
-                      "bold_text_offsets": [
-                        [
-                          24,
-                          32
-                        ]
-                      ],
-                      "bold_translation_offsets": [
-                        [
-                          15,
-                          28
-                        ]
-                      ]
-                    },
-                    {
-                      "text": "Er setzte sich faul hin und pflegte sich.",
-                      "translation": "He sat down lazily and went easy on himself.",
-                      "bold_text_offsets": [
-                        [
-                          28,
-                          35
-                        ]
-                      ],
-                      "bold_translation_offsets": [
-                        [
-                          23,
-                          35
-                        ]
-                      ]
-                    },
-                    {
-                      "text": "Daten pflegen",
-                      "translation": "to maintain data (keep up-to-date)",
-                      "bold_text_offsets": [
-                        [
-                          6,
-                          13
-                        ]
-                      ],
-                      "bold_translation_offsets": [
-                        [
-                          3,
-                          11
-                        ]
-                      ]
                     }
                   ],
                   "children": {

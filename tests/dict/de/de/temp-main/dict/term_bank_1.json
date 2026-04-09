@@ -397,7 +397,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "5 Beispiele"
+                            "content": "3 Beispiele"
                           },
                           {
                             "tag": "div",
@@ -498,75 +498,6 @@
                                 }
                               ]
                             }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "„Als ich zur ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "Garage"
-                                    },
-                                    " gehe, sehe ich die Post auf dem Wohnzimmertisch.“"
-                                  ]
-                                },
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-c"
-                                  },
-                                  "content": "Rolf W. Brednich: www.worldwidewitz.com. Humor im Cyberspace. Herder, Freiburg/Basel/Wien 2005, , Seite 145."
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "„Er ging zur ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "Garage"
-                                    },
-                                    ", um nach Guiseppe zu sehen.“"
-                                  ]
-                                }
-                              ]
-                            }
                           }
                         ]
                       }
@@ -592,7 +523,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "4 Beispiele"
+                            "content": "3 Beispiele"
                           },
                           {
                             "tag": "div",
@@ -697,37 +628,6 @@
                                     "content": "example-sentence-c"
                                   },
                                   "content": "Rolf W. Brednich: www.worldwidewitz.com. Humor im Cyberspace. Herder, Freiburg/Basel/Wien 2005, , Seite 145."
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "„Er ging zur ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "Garage"
-                                    },
-                                    ", um nach Guiseppe zu sehen.“"
-                                  ]
                                 }
                               ]
                             }
@@ -1835,7 +1735,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "4 Beispiele"
+                            "content": "3 Beispiele"
                           },
                           {
                             "tag": "div",
@@ -1923,37 +1823,6 @@
                                       "content": "Peter"
                                     },
                                     " Müller wollte uns kein Interview geben."
-                                  ]
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "Kennen sie den Vornamen ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "Peter"
-                                    },
-                                    "?"
                                   ]
                                 }
                               ]
@@ -2533,7 +2402,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "7 Beispiele"
+                            "content": "3 Beispiele"
                           },
                           {
                             "tag": "div",
@@ -2629,162 +2498,6 @@
                                       "content": "in"
                                     },
                                     "."
-                                  ]
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "Wenn du e",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "in"
-                                    },
-                                    "e Frage hast, so schlage ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "in"
-                                    },
-                                    " e",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "in"
-                                    },
-                                    "em Lexikon nach."
-                                  ]
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "Was trägst du denn alles ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "in"
-                                    },
-                                    " der Hosentasche mit dir herum?"
-                                  ]
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "Wir saßen ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "in"
-                                    },
-                                    " Decken gehüllt und frierend ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "in"
-                                    },
-                                    " e",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "in"
-                                    },
-                                    "em ungeheizten Zimmer."
-                                  ]
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "„Sie wirkten Wundertaten nachmals ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "in"
-                                    },
-                                    " König Etzels Land“. (Nibelungenlied)"
                                   ]
                                 }
                               ]
@@ -2960,7 +2673,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "5 Beispiele"
+                            "content": "3 Beispiele"
                           },
                           {
                             "tag": "div",
@@ -3077,67 +2790,6 @@
                                 }
                               ]
                             }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "Die bunt gefärbten Blätter gehören ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "in"
-                                    },
-                                    " die Herbstzeit."
-                                  ]
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "In"
-                                    },
-                                    " der Kinderzeit ist es wichtig, unbeschwert heranzuwachsen."
-                                  ]
-                                }
-                              ]
-                            }
                           }
                         ]
                       }
@@ -3163,7 +2815,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "7 Beispiele"
+                            "content": "3 Beispiele"
                           },
                           {
                             "tag": "div",
@@ -3267,137 +2919,6 @@
                                       "content": "in"
                                     },
                                     " Schrecken."
-                                  ]
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "Das Wochenende begannen wir ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "in"
-                                    },
-                                    " guter Stimmung und ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "in"
-                                    },
-                                    " allerbester Laune."
-                                  ]
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "In"
-                                    },
-                                    " rasender Fahrt ging es nach Hause."
-                                  ]
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "Wer lebt schon ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "in"
-                                    },
-                                    " Saus und Braus?"
-                                  ]
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "Dieser Text ist ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "in"
-                                    },
-                                    " deutscher Sprache geschrieben."
                                   ]
                                 }
                               ]
@@ -3891,7 +3412,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "4 Beispiele"
+                            "content": "3 Beispiele"
                           },
                           {
                             "tag": "div",
@@ -3984,36 +3505,6 @@
                                 }
                               ]
                             }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "Miriam hatte ihre Tante lange nicht ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "gesehen."
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
                           }
                         ]
                       }
@@ -4056,7 +3547,7 @@
                             "data": {
                               "content": "summary-entry"
                             },
-                            "content": "4 Beispiele"
+                            "content": "3 Beispiele"
                           },
                           {
                             "tag": "div",
@@ -4146,44 +3637,6 @@
                                       "content": "sehe,"
                                     },
                                     " heißt das, wir können die Kosten noch gar nicht kalkulieren?"
-                                  ]
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "tag": "div",
-                            "data": {
-                              "content": "extra-info"
-                            },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    "Ich ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "habe"
-                                    },
-                                    " das kommen ",
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "sehen."
-                                    }
                                   ]
                                 }
                               ]
