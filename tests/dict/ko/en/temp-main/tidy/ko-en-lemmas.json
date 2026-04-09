@@ -327,5 +327,36 @@
         }
       ]
     }
+  },
+  "읽다": {
+    "읽다": {
+      "verb": [
+        {
+          "gloss_tree": {
+            "to read": {
+              "tags": [
+                "transitive"
+              ],
+              "examples": [
+                {
+                  "text": "여러분, 종이 신문을 읽으시나요?",
+                  "translation": "Ladies and gentlemen (or everybody, you guys), do you read paper newspapers?",
+                  "bold_text_offsets": [
+                    [
+                      12,
+                      13
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "etymology_text": "First attested in the Seokbo sangjeol (釋譜詳節 / 석보상절), 1447, as Middle Korean 닑다〮 (Yale: nìlk-tá).",
+          "head_info_text": "읽다 • (ikda) (infinitive 읽어, sequential 읽으니)",
+          "wlink": "https://en.wiktionary.org/wiki/읽다#Korean",
+          "klink": "https://kaikki.org/dictionary/Korean/meaning/읽/읽다/읽다.html"
+        }
+      ]
+    }
   }
 }

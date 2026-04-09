@@ -46,5 +46,28 @@
         }
       ]
     }
+  ],
+  [
+    "읽다",
+    "ipa",
+    {
+      "reading": "읽다",
+      "transcriptions": [
+        {
+          "ipa": "[ik̚t͈a̠]",
+          "tags": [
+            "SK-Standard",
+            "Seoul"
+          ]
+        },
+        {
+          "ipa": "[ˈi(ː)ɭt͈a̠]",
+          "tags": [
+            "SK-Standard",
+            "Seoul"
+          ]
+        }
+      ]
+    }
   ]
 ]

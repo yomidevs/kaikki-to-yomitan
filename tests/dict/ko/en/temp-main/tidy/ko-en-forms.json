@@ -8,5 +8,609 @@
         ]
       ]
     }
+  },
+  "읽다": {
+    "읽으니": {
+      "verb": [
+        "extracted",
+        [
+          "informal causative polite",
+          "sequential"
+        ]
+      ]
+    },
+    "읽는다": {
+      "verb": [
+        "extracted",
+        [
+          "formal indicative non-past"
+        ]
+      ]
+    },
+    "읽어": {
+      "verb": [
+        "extracted",
+        [
+          "formal causative",
+          "informal hortative",
+          "informal imperative",
+          "informal indicative non-past",
+          "informal interrogative non-past"
+        ]
+      ]
+    },
+    "읽어요": {
+      "verb": [
+        "extracted",
+        [
+          "informal hortative polite",
+          "informal imperative polite",
+          "informal indicative non-past polite",
+          "informal interrogative non-past polite"
+        ]
+      ]
+    },
+    "읽습니다": {
+      "verb": [
+        "extracted",
+        [
+          "formal indicative non-past polite"
+        ]
+      ]
+    },
+    "읽었다": {
+      "verb": [
+        "extracted",
+        [
+          "formal past indicative"
+        ]
+      ]
+    },
+    "읽었어": {
+      "verb": [
+        "extracted",
+        [
+          "informal past indicative",
+          "informal past interrogative"
+        ]
+      ]
+    },
+    "읽었어요": {
+      "verb": [
+        "extracted",
+        [
+          "informal past indicative polite",
+          "informal past interrogative polite"
+        ]
+      ]
+    },
+    "읽었습니다": {
+      "verb": [
+        "extracted",
+        [
+          "formal past indicative polite"
+        ]
+      ]
+    },
+    "읽느냐": {
+      "verb": [
+        "extracted",
+        [
+          "formal interrogative non-past"
+        ]
+      ]
+    },
+    "읽습니까": {
+      "verb": [
+        "extracted",
+        [
+          "formal interrogative non-past polite"
+        ]
+      ]
+    },
+    "읽었느냐": {
+      "verb": [
+        "extracted",
+        [
+          "formal past interrogative"
+        ]
+      ]
+    },
+    "읽었습니까": {
+      "verb": [
+        "extracted",
+        [
+          "formal past interrogative polite"
+        ]
+      ]
+    },
+    "읽자": {
+      "verb": [
+        "extracted",
+        [
+          "formal hortative"
+        ]
+      ]
+    },
+    "읽으십시다": {
+      "verb": [
+        "extracted",
+        [
+          "formal hortative polite"
+        ]
+      ]
+    },
+    "읽어라": {
+      "verb": [
+        "extracted",
+        [
+          "formal imperative"
+        ]
+      ]
+    },
+    "읽읍시오": {
+      "verb": [
+        "extracted",
+        [
+          "formal imperative polite"
+        ]
+      ]
+    },
+    "읽겠다": {
+      "verb": [
+        "extracted",
+        [
+          "formal assertive"
+        ]
+      ]
+    },
+    "읽겠어": {
+      "verb": [
+        "extracted",
+        [
+          "informal assertive"
+        ]
+      ]
+    },
+    "읽겠어요": {
+      "verb": [
+        "extracted",
+        [
+          "informal assertive polite"
+        ]
+      ]
+    },
+    "읽겠습니다": {
+      "verb": [
+        "extracted",
+        [
+          "formal assertive polite"
+        ]
+      ]
+    },
+    "읽어서": {
+      "verb": [
+        "extracted",
+        [
+          "informal causative"
+        ]
+      ]
+    },
+    "읽으니까": {
+      "verb": [
+        "extracted",
+        [
+          "formal causative polite"
+        ]
+      ]
+    },
+    "읽지만": {
+      "verb": [
+        "extracted",
+        [
+          "formal contrastive"
+        ]
+      ]
+    },
+    "읽는데": {
+      "verb": [
+        "extracted",
+        [
+          "informal contrastive"
+        ]
+      ]
+    },
+    "읽더니": {
+      "verb": [
+        "extracted",
+        [
+          "informal contrastive polite"
+        ]
+      ]
+    },
+    "읽고": {
+      "verb": [
+        "extracted",
+        [
+          "formal conjunctive"
+        ]
+      ]
+    },
+    "읽으면": {
+      "verb": [
+        "extracted",
+        [
+          "formal conditional"
+        ]
+      ]
+    },
+    "읽어야": {
+      "verb": [
+        "extracted",
+        [
+          "informal conditional"
+        ]
+      ]
+    },
+    "읽으려고": {
+      "verb": [
+        "extracted",
+        [
+          "formal motive-form"
+        ]
+      ]
+    },
+    "읽음": {
+      "verb": [
+        "extracted",
+        [
+          "formal noun-from-verb"
+        ]
+      ]
+    },
+    "읽기": {
+      "verb": [
+        "extracted",
+        [
+          "informal noun-from-verb"
+        ]
+      ]
+    },
+    "읽었음": {
+      "verb": [
+        "extracted",
+        [
+          "formal past noun-from-verb"
+        ]
+      ]
+    },
+    "읽었기": {
+      "verb": [
+        "extracted",
+        [
+          "informal past noun-from-verb"
+        ]
+      ]
+    },
+    "읽은": {
+      "verb": [
+        "extracted",
+        [
+          "formal past determiner"
+        ]
+      ]
+    },
+    "읽는": {
+      "verb": [
+        "extracted",
+        [
+          "formal present determiner"
+        ]
+      ]
+    },
+    "읽을": {
+      "verb": [
+        "extracted",
+        [
+          "formal future determiner"
+        ]
+      ]
+    },
+    "읽으신다": {
+      "verb": [
+        "extracted",
+        [
+          "formal indicative non-past"
+        ]
+      ]
+    },
+    "읽으셔": {
+      "verb": [
+        "extracted",
+        [
+          "formal causative",
+          "informal imperative",
+          "informal indicative non-past",
+          "informal interrogative non-past"
+        ]
+      ]
+    },
+    "읽으세요": {
+      "verb": [
+        "extracted",
+        [
+          "informal imperative polite",
+          "informal indicative non-past polite",
+          "informal interrogative non-past polite"
+        ]
+      ]
+    },
+    "읽으셔요": {
+      "verb": [
+        "extracted",
+        [
+          "informal indicative non-past polite",
+          "informal interrogative non-past polite"
+        ]
+      ]
+    },
+    "읽으십니다": {
+      "verb": [
+        "extracted",
+        [
+          "formal indicative non-past polite"
+        ]
+      ]
+    },
+    "읽으셨다": {
+      "verb": [
+        "extracted",
+        [
+          "formal past indicative"
+        ]
+      ]
+    },
+    "읽으셨어": {
+      "verb": [
+        "extracted",
+        [
+          "informal past indicative",
+          "informal past interrogative"
+        ]
+      ]
+    },
+    "읽으셨어요": {
+      "verb": [
+        "extracted",
+        [
+          "informal past indicative polite",
+          "informal past interrogative polite"
+        ]
+      ]
+    },
+    "읽으셨습니다": {
+      "verb": [
+        "extracted",
+        [
+          "formal past indicative polite"
+        ]
+      ]
+    },
+    "읽으시느냐": {
+      "verb": [
+        "extracted",
+        [
+          "formal interrogative non-past"
+        ]
+      ]
+    },
+    "읽으십니까": {
+      "verb": [
+        "extracted",
+        [
+          "formal interrogative non-past polite"
+        ]
+      ]
+    },
+    "읽으셨느냐": {
+      "verb": [
+        "extracted",
+        [
+          "formal past interrogative"
+        ]
+      ]
+    },
+    "읽으셨습니까": {
+      "verb": [
+        "extracted",
+        [
+          "formal past interrogative polite"
+        ]
+      ]
+    },
+    "읽으시라": {
+      "verb": [
+        "extracted",
+        [
+          "formal imperative"
+        ]
+      ]
+    },
+    "읽으십시오": {
+      "verb": [
+        "extracted",
+        [
+          "formal imperative polite"
+        ]
+      ]
+    },
+    "읽으시겠다": {
+      "verb": [
+        "extracted",
+        [
+          "formal assertive"
+        ]
+      ]
+    },
+    "읽으시겠어": {
+      "verb": [
+        "extracted",
+        [
+          "informal assertive"
+        ]
+      ]
+    },
+    "읽으시겠어요": {
+      "verb": [
+        "extracted",
+        [
+          "informal assertive polite"
+        ]
+      ]
+    },
+    "읽으시겠습니다": {
+      "verb": [
+        "extracted",
+        [
+          "formal assertive polite"
+        ]
+      ]
+    },
+    "읽으셔서": {
+      "verb": [
+        "extracted",
+        [
+          "informal causative"
+        ]
+      ]
+    },
+    "읽으시니": {
+      "verb": [
+        "extracted",
+        [
+          "informal causative polite"
+        ]
+      ]
+    },
+    "읽으시니까": {
+      "verb": [
+        "extracted",
+        [
+          "formal causative polite"
+        ]
+      ]
+    },
+    "읽으시지만": {
+      "verb": [
+        "extracted",
+        [
+          "formal contrastive"
+        ]
+      ]
+    },
+    "읽으시는데": {
+      "verb": [
+        "extracted",
+        [
+          "informal contrastive"
+        ]
+      ]
+    },
+    "읽으시더니": {
+      "verb": [
+        "extracted",
+        [
+          "informal contrastive polite"
+        ]
+      ]
+    },
+    "읽으시고": {
+      "verb": [
+        "extracted",
+        [
+          "formal conjunctive"
+        ]
+      ]
+    },
+    "읽으시면": {
+      "verb": [
+        "extracted",
+        [
+          "formal conditional"
+        ]
+      ]
+    },
+    "읽으셔야": {
+      "verb": [
+        "extracted",
+        [
+          "informal conditional"
+        ]
+      ]
+    },
+    "읽으시려고": {
+      "verb": [
+        "extracted",
+        [
+          "formal motive-form"
+        ]
+      ]
+    },
+    "읽으심": {
+      "verb": [
+        "extracted",
+        [
+          "formal noun-from-verb"
+        ]
+      ]
+    },
+    "읽으시기": {
+      "verb": [
+        "extracted",
+        [
+          "informal noun-from-verb"
+        ]
+      ]
+    },
+    "읽으셨음": {
+      "verb": [
+        "extracted",
+        [
+          "formal past noun-from-verb"
+        ]
+      ]
+    },
+    "읽으셨기": {
+      "verb": [
+        "extracted",
+        [
+          "informal past noun-from-verb"
+        ]
+      ]
+    },
+    "읽으신": {
+      "verb": [
+        "extracted",
+        [
+          "formal past determiner"
+        ]
+      ]
+    },
+    "읽으시는": {
+      "verb": [
+        "extracted",
+        [
+          "formal present determiner"
+        ]
+      ]
+    },
+    "읽으실": {
+      "verb": [
+        "extracted",
+        [
+          "formal future determiner"
+        ]
+      ]
+    }
   }
 }
