@@ -1582,6 +1582,26 @@ fn handle_alt_of_sense(entry: &WordEntry, sense: &Sense, irs: &mut Tidy) {
     //
     // At worst, just move this back to process_alt_forms, to not modify the senses.
     for alt_form in &sense.alt_of {
+        // [en-en] Ignore variations of little value.
+        // misspellings: https://en.wiktionary.org/wiki/peninsular#English
+        // misconstruction: https://en.wiktionary.org/wiki/attributative#English
+        // non-standard: https://en.wiktionary.org/wiki/%27cept
+        // pronunciation-spelling: https://en.wiktionary.org/wiki/Espanish#English
+        // obsolete: https://en.wiktionary.org/wiki/enhabit#English
+        // abbreviation: https://en.wiktionary.org/wiki/pp#English
+        //
+        // NOTE: At some point, this begs the question as to why even add alt_of...
+        if sense.tags.iter().any(|tag| {
+            tag == "misspelling"
+                || tag == "misconstruction"
+                || tag == "nonstandard"
+                || tag == "pronunciation-spelling"
+                || tag == "obsolete"
+                || tag == "abbreviation"
+        }) {
+            continue;
+        }
+
         // Some defective entries may not contain the "alt-of" tag. See [de-de] caritativ
         let mut sense_tags = sense.tags.clone();
         if !sense_tags.iter().any(|tag| tag == "alt-of") {
