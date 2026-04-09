@@ -286,5 +286,25 @@
         }
       ]
     }
+  },
+  "peninsular": {
+    "peninsular": {
+      "noun": [
+        {
+          "gloss_tree": {
+            "One who inhabits a peninsula.": {},
+            "A person born on the Iberian Peninsula who emigrated to a (contemporary or former) Spanish colony.": {
+              "tags": [
+                "historical"
+              ]
+            }
+          },
+          "etymology_text": "Learned borrowing from Latin paenīnsulāris. By surface analysis, peninsula + -ar. In the historical sense borrowed from Spanish peninsular.",
+          "head_info_text": "peninsular (plural peninsulars or peninsulares)",
+          "wlink": "https://en.wiktionary.org/wiki/peninsular#English",
+          "klink": "https://kaikki.org/dictionary/English/meaning/p/pe/peninsular.html"
+        }
+      ]
+    }
   }
 }

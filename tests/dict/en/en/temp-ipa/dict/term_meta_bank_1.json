@@ -129,5 +129,38 @@
         }
       ]
     }
+  ],
+  [
+    "peninsular",
+    "ipa",
+    {
+      "reading": "peninsular",
+      "transcriptions": [
+        {
+          "ipa": "/pəˈnɪn.sjə.lə(ɹ)/",
+          "tags": [
+            "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+          ]
+        },
+        {
+          "ipa": "/ˈpɛn.ɪn.sjʊ.lə(ɹ)/",
+          "tags": [
+            "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+          ]
+        },
+        {
+          "ipa": "/pəˈnɪn.sə.ləɹ/",
+          "tags": [
+            "General-American"
+          ]
+        },
+        {
+          "ipa": "/pəˈnɪn.ʃə.lə(ɹ)/",
+          "tags": [
+            "General Australian, yod-coalescence"
+          ]
+        }
+      ]
+    }
   ]
 ]

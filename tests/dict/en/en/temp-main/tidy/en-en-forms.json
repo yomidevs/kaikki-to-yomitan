@@ -92,5 +92,54 @@
         ]
       ]
     }
+  },
+  "peninsular": {
+    "peninsula": {
+      "noun": [
+        "altofsense",
+        [
+          "alt-of",
+          "misspelling"
+        ]
+      ]
+    },
+    "found chiefly in non-rhotic accents": {
+      "noun": [
+        "altofsense",
+        [
+          "alt-of",
+          "misspelling"
+        ]
+      ]
+    },
+    "peninsulars": {
+      "noun": [
+        "extracted",
+        [
+          "plural"
+        ]
+      ]
+    },
+    "peninsulares": {
+      "noun": [
+        "extracted",
+        [
+          "plural"
+        ]
+      ]
+    }
+  },
+  "1920's": {
+    "1920s": {
+      "noun": [
+        "altofsense",
+        [
+          "alt-of",
+          "alternative",
+          "plural",
+          "plural-only"
+        ]
+      ]
+    }
   }
 }
