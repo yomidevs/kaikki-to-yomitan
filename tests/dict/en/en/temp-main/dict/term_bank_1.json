@@ -1777,13 +1777,6 @@
                     "data": {
                       "content": "synonym-item"
                     },
-                    "content": "magical"
-                  },
-                  {
-                    "tag": "li",
-                    "data": {
-                      "content": "synonym-item"
-                    },
                     "content": "mystic"
                   },
                   {
@@ -1792,6 +1785,13 @@
                       "content": "synonym-item"
                     },
                     "content": "mystical"
+                  },
+                  {
+                    "tag": "li",
+                    "data": {
+                      "content": "synonym-item"
+                    },
+                    "content": "numinous"
                   }
                 ]
               }

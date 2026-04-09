@@ -1241,6 +1241,7 @@ fn process_entry(edition: Edition, source: Lang, entry: &WordEntry) -> LemmaInfo
         synonyms: entry
             .synonyms
             .iter()
+            .filter(|syn| syn.word != entry.word)
             .take(MAX_NUMBER_OF_SYNONYMS)
             .cloned()
             .collect(),
