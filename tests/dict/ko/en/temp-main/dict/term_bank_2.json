@@ -72,25 +72,13 @@
       [
         "읽다",
         [
-          "informal hortative"
+          "informal imperative/hortative"
         ]
       ],
       [
         "읽다",
         [
-          "informal imperative"
-        ]
-      ],
-      [
-        "읽다",
-        [
-          "informal indicative non-past"
-        ]
-      ],
-      [
-        "읽다",
-        [
-          "informal interrogative non-past"
+          "informal indicative/interrogative non-past"
         ]
       ]
     ],
@@ -107,25 +95,13 @@
       [
         "읽다",
         [
-          "informal hortative polite"
+          "informal imperative/hortative polite"
         ]
       ],
       [
         "읽다",
         [
-          "informal imperative polite"
-        ]
-      ],
-      [
-        "읽다",
-        [
-          "informal indicative non-past polite"
-        ]
-      ],
-      [
-        "읽다",
-        [
-          "informal interrogative non-past polite"
+          "informal indicative/interrogative non-past polite"
         ]
       ]
     ],
@@ -176,13 +152,7 @@
       [
         "읽다",
         [
-          "informal past indicative"
-        ]
-      ],
-      [
-        "읽다",
-        [
-          "informal past interrogative"
+          "informal past indicative/interrogative"
         ]
       ]
     ],
@@ -199,13 +169,7 @@
       [
         "읽다",
         [
-          "informal past indicative polite"
-        ]
-      ],
-      [
-        "읽다",
-        [
-          "informal past interrogative polite"
+          "informal past indicative/interrogative polite"
         ]
       ]
     ],
@@ -744,13 +708,7 @@
       [
         "읽다",
         [
-          "informal indicative non-past"
-        ]
-      ],
-      [
-        "읽다",
-        [
-          "informal interrogative non-past"
+          "informal indicative/interrogative non-past"
         ]
       ]
     ],
@@ -773,13 +731,7 @@
       [
         "읽다",
         [
-          "informal indicative non-past polite"
-        ]
-      ],
-      [
-        "읽다",
-        [
-          "informal interrogative non-past polite"
+          "informal indicative/interrogative non-past polite"
         ]
       ]
     ],
@@ -796,13 +748,7 @@
       [
         "읽다",
         [
-          "informal indicative non-past polite"
-        ]
-      ],
-      [
-        "읽다",
-        [
-          "informal interrogative non-past polite"
+          "informal indicative/interrogative non-past polite"
         ]
       ]
     ],
@@ -853,13 +799,7 @@
       [
         "읽다",
         [
-          "informal past indicative"
-        ]
-      ],
-      [
-        "읽다",
-        [
-          "informal past interrogative"
+          "informal past indicative/interrogative"
         ]
       ]
     ],
@@ -876,13 +816,7 @@
       [
         "읽다",
         [
-          "informal past indicative polite"
-        ]
-      ],
-      [
-        "읽다",
-        [
-          "informal past interrogative polite"
+          "informal past indicative/interrogative polite"
         ]
       ]
     ],

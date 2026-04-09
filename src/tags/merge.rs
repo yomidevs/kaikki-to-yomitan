@@ -60,6 +60,7 @@ pub fn merge_person_tags(tags: &mut Vec<Tag>) {
 }
 
 // Uses a subset of tag_order.json cases
+// TODO: At some point, generate this from that file
 const CASE_TAGS: [&str; 8] = [
     "nominative",
     "genitive",
@@ -71,9 +72,28 @@ const CASE_TAGS: [&str; 8] = [
     "partitive",
 ];
 
-// TODO: this messes up the sort by inner words!
 pub fn merge_case_tags(tags: &mut Vec<Tag>) {
     merge_tags_by_category(tags, &CASE_TAGS);
+}
+
+// Uses a subset of tag_order.json cases
+// TODO: At some point, generate this from that file
+const VERB_FORM_TAGS: [&str; 11] = [
+    "imperative",
+    "gerund",
+    "imperfective",
+    "perfective",
+    "active",
+    "passive",
+    "participle",
+    "subjunctive",
+    "indicative",
+    "hortative",
+    "interrogative",
+];
+
+pub fn merge_verb_form_tags(tags: &mut Vec<Tag>) {
+    merge_tags_by_category(tags, &VERB_FORM_TAGS);
 }
 
 /// Generic merge function.

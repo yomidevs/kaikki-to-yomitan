@@ -1,7 +1,7 @@
 //! This file was generated and should not be edited directly.
 //! The source code can be found at scripts/build.py
 
-pub const TAG_ORDER: [&str; 76] = [
+pub const TAG_ORDER: [&str; 78] = [
     "informal",
     "formal",
     "nominative",
@@ -58,6 +58,8 @@ pub const TAG_ORDER: [&str; 76] = [
     "participle",
     "subjunctive",
     "indicative",
+    "hortative",
+    "interrogative",
     "adjective",
     "noun-from-verb",
     "infinitive",

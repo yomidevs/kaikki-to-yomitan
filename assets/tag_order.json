@@ -73,7 +73,9 @@
         "passive",
         "participle",
         "subjunctive",
-        "indicative"
+        "indicative",
+        "hortative",
+        "interrogative"
     ],
     "modifiers": [
         "adjective",

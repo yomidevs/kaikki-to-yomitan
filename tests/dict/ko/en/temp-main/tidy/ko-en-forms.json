@@ -32,10 +32,8 @@
         "extracted",
         [
           "formal causative",
-          "informal hortative",
-          "informal imperative",
-          "informal indicative non-past",
-          "informal interrogative non-past"
+          "informal imperative/hortative",
+          "informal indicative/interrogative non-past"
         ]
       ]
     },
@@ -43,10 +41,8 @@
       "verb": [
         "extracted",
         [
-          "informal hortative polite",
-          "informal imperative polite",
-          "informal indicative non-past polite",
-          "informal interrogative non-past polite"
+          "informal imperative/hortative polite",
+          "informal indicative/interrogative non-past polite"
         ]
       ]
     },
@@ -70,8 +66,7 @@
       "verb": [
         "extracted",
         [
-          "informal past indicative",
-          "informal past interrogative"
+          "informal past indicative/interrogative"
         ]
       ]
     },
@@ -79,8 +74,7 @@
       "verb": [
         "extracted",
         [
-          "informal past indicative polite",
-          "informal past interrogative polite"
+          "informal past indicative/interrogative polite"
         ]
       ]
     },
@@ -330,8 +324,7 @@
         [
           "formal causative",
           "informal imperative",
-          "informal indicative non-past",
-          "informal interrogative non-past"
+          "informal indicative/interrogative non-past"
         ]
       ]
     },
@@ -340,8 +333,7 @@
         "extracted",
         [
           "informal imperative polite",
-          "informal indicative non-past polite",
-          "informal interrogative non-past polite"
+          "informal indicative/interrogative non-past polite"
         ]
       ]
     },
@@ -349,8 +341,7 @@
       "verb": [
         "extracted",
         [
-          "informal indicative non-past polite",
-          "informal interrogative non-past polite"
+          "informal indicative/interrogative non-past polite"
         ]
       ]
     },
@@ -374,8 +365,7 @@
       "verb": [
         "extracted",
         [
-          "informal past indicative",
-          "informal past interrogative"
+          "informal past indicative/interrogative"
         ]
       ]
     },
@@ -383,8 +373,7 @@
       "verb": [
         "extracted",
         [
-          "informal past indicative polite",
-          "informal past interrogative polite"
+          "informal past indicative/interrogative polite"
         ]
       ]
     },
