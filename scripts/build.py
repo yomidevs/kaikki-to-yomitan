@@ -21,6 +21,11 @@ class Lang:
     # https://github.com/tatuylonen/wiktextract/tree/master/src/wiktextract/extractor
     has_edition: bool
 
+    @property
+    def ident(self) -> str:
+        """Identifier in rust code. Removes forbidden chars."""
+        return self.iso.replace("-", "").title()
+
 
 @dataclass
 class WhitelistedTag:
@@ -197,7 +202,7 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
     w("pub enum Lang {\n")
     for lang in langs:
         w(f"{idt}/// {lang.language}\n")  # doc
-        w(f"{idt}{lang.iso.title()},\n")
+        w(f"{idt}{lang.ident},\n")
     w("}\n\n")
 
     # Lang: From<Edition>
@@ -206,7 +211,7 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
     w(f"{idt * 2}match value {{\n")
     for lang in langs:
         if lang.has_edition:
-            w(f"{idt * 3}Edition::{lang.iso.title()} => Self::{lang.iso.title()},\n")
+            w(f"{idt * 3}Edition::{lang.ident} => Self::{lang.ident},\n")
     w(f"{idt * 2}}}\n")
     w(f"{idt}}}\n")
     w("}\n\n")
@@ -237,7 +242,7 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
     w(f"{idt}pub const fn long(&self) -> &'static str {{\n")
     w(f"{idt * 2}match self {{\n")
     for lang in langs:
-        w(f'{idt * 3}Self::{lang.iso.title()} => "{lang.language}",\n')
+        w(f'{idt * 3}Self::{lang.ident} => "{lang.language}",\n')
     w(f"{idt * 2}}}\n")
     w(f"{idt}}}\n\n")
 
@@ -245,7 +250,7 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
     w(f"{idt}pub fn all() -> Vec<Self> {{\n")
     w(f"{idt * 2}vec![\n")
     for lang in langs:
-        w(f"{idt * 3}Self::{lang.iso.title()},\n")
+        w(f"{idt * 3}Self::{lang.ident},\n")
     w(f"{idt * 2}]\n")
     w(f"{idt}}}\n")
     w("}\n\n")
@@ -257,9 +262,7 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
     w(f"{idt * 2}match self {{\n")
     for lang in langs:
         if lang.has_edition:
-            w(
-                f"{idt * 3}Self::{lang.iso.title()} => Ok(Edition::{lang.iso.title()}),\n"
-            )
+            w(f"{idt * 3}Self::{lang.ident} => Ok(Edition::{lang.ident}),\n")
     w(f'{idt * 3}_ => Err("language has no edition"),\n')
     w(f"{idt * 2}}}\n")
     w(f"{idt}}}\n")
@@ -271,7 +274,7 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
     w(f"{idt}fn from_str(s: &str) -> Result<Self, Self::Err> {{\n")
     w(f"{idt * 2}match s.to_lowercase().as_str() {{\n")
     for lang in langs:
-        w(f'{idt * 3}"{lang.iso.lower()}" => Ok(Self::{lang.iso.title()}),\n')
+        w(f'{idt * 3}"{lang.iso.lower()}" => Ok(Self::{lang.ident}),\n')
     w(
         f"{idt * 3}_ => Err(format!(\"unsupported iso code '{{s}}'\\n{{}}\", Self::{fn_name}())),\n"
     )
@@ -284,7 +287,7 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
     w(f"{idt}fn as_ref(&self) -> &str {{\n")
     w(f"{idt * 2}match self {{\n")
     for lang in langs:
-        w(f'{idt * 3}Self::{lang.iso.title()} => "{lang.iso.lower()}",\n')
+        w(f'{idt * 3}Self::{lang.ident} => "{lang.iso.lower()}",\n')
     w(f"{idt * 2}}}\n")
     w(f"{idt}}}\n")
     w("}\n\n")
@@ -381,7 +384,7 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
     for lang in langs:
         if lang.has_edition:
             w(f"{idt}/// {lang.language}\n")  # doc
-            w(f"{idt}{lang.iso.title()},\n")
+            w(f"{idt}{lang.ident},\n")
     w("}\n\n")
 
     # Edition: all (iteration)
@@ -390,7 +393,7 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
     w(f"{idt * 2}vec![\n")
     for lang in langs:
         if lang.has_edition:
-            w(f"{idt * 3}Self::{lang.iso.title()},\n")
+            w(f"{idt * 3}Self::{lang.ident},\n")
     w(f"{idt * 2}]\n")
     w(f"{idt}}}\n")
     w("}\n\n")
@@ -402,7 +405,7 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
     w(f"{idt * 2}match s.to_lowercase().as_str() {{\n")
     for lang in langs:
         if lang.has_edition:
-            w(f'{idt * 3}"{lang.iso.lower()}" => Ok(Self::{lang.iso.title()}),\n')
+            w(f'{idt * 3}"{lang.iso.lower()}" => Ok(Self::{lang.ident}),\n')
     w(f"{idt * 3}_ => Err(format!(\"invalid edition '{{s}}'\")),\n")
     w(f"{idt * 2}}}\n")
     w(f"{idt}}}\n")
@@ -414,7 +417,7 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
     w(f"{idt * 2}match self {{\n")
     for lang in langs:
         if lang.has_edition:
-            w(f'{idt * 3}Self::{lang.iso.title()} => "{lang.iso.lower()}",\n')
+            w(f'{idt * 3}Self::{lang.ident} => "{lang.iso.lower()}",\n')
     w(f"{idt * 2}}}\n")
     w(f"{idt}}}\n")
     w("}\n\n")
@@ -617,7 +620,7 @@ def check_kaikki_langs(langs: list[Lang]) -> None:
     text = response.text
 
     supported = {lang.language for lang in langs}
-    upto = 100
+    upto = 150
 
     # Get names (isos are not in the website)
     matches = re.findall(

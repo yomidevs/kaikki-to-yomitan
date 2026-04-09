@@ -36,12 +36,18 @@ pub enum Lang {
     Hy,
     /// Old Armenian
     Xcl,
+    /// Aromanian
+    Rup,
+    /// Assamese
+    As,
     /// Assyrian Neo-Aramaic
     Aii,
     /// Asturian
     Ast,
     /// Azerbaijani
     Az,
+    /// Bashkir
+    Ba,
     /// Basque
     Eu,
     /// Belarusian
@@ -62,12 +68,24 @@ pub enum Lang {
     Ceb,
     /// Chinese
     Zh,
+    /// Cimbrian
+    Cim,
+    /// Coptic
+    Cop,
+    /// Cornish
+    Kw,
+    /// Crimean Tatar
+    Crh,
     /// Czech
     Cs,
+    /// Old Czech
+    Zlwocs,
     /// Danish
     Da,
     /// Dutch
     Nl,
+    /// Middle Dutch
+    Dum,
     /// Egyptian
     Egy,
     /// English
@@ -88,6 +106,8 @@ pub enum Lang {
     Fi,
     /// French
     Fr,
+    /// Middle French
+    Frm,
     /// Old French
     Fro,
     /// Galician
@@ -96,6 +116,8 @@ pub enum Lang {
     Ka,
     /// German
     De,
+    /// Old High German
+    Goh,
     /// Gothic
     Got,
     /// Greek
@@ -120,6 +142,8 @@ pub enum Lang {
     Id,
     /// Ingrian
     Izh,
+    /// Interlingua
+    Ia,
     /// Irish
     Ga,
     /// Old Irish
@@ -128,10 +152,16 @@ pub enum Lang {
     It,
     /// Japanese
     Ja,
+    /// Javanese
+    Jv,
     /// Kannada
     Kn,
+    /// Kashubian
+    Csb,
     /// Kazakh
     Kk,
+    /// Khiamniungan Naga
+    Kix,
     /// Khmer
     Km,
     /// Korean
@@ -150,32 +180,52 @@ pub enum Lang {
     La,
     /// Latvian
     Lv,
+    /// Laz
+    Lzz,
     /// Lithuanian
     Lt,
+    /// Livonian
+    Liv,
     /// Luxembourgish
     Lb,
     /// Macedonian
     Mk,
+    /// Malagasy
+    Mg,
     /// Malay
     Ms,
     /// Malayalam
     Ml,
     /// Maltese
     Mt,
+    /// Manx
+    Gv,
     /// Marathi
     Mr,
     /// Mongolian
     Mn,
+    /// Māori
+    Mi,
+    /// Classical Nahuatl
+    Nah,
     /// Navajo
     Nv,
     /// Norman
     Nrf,
+    /// Northern Sami
+    Se,
     /// Norwegian
     No,
     /// Norwegian Bokmål
     Nb,
     /// Norwegian Nynorsk
     Nn,
+    /// Occitan
+    Oc,
+    /// Odia
+    Or,
+    /// Old Church Slavonic
+    Cu,
     /// Old Norse
     Non,
     /// Pali
@@ -184,10 +234,22 @@ pub enum Lang {
     Rsk,
     /// Persian
     Fa,
+    /// Plautdietsch
+    Pdt,
     /// Polish
     Pl,
+    /// Old Polish
+    Zlwopl,
     /// Portuguese
     Pt,
+    /// Proto-Finnic
+    Urjfinpro,
+    /// Proto-Germanic
+    Gempro,
+    /// Proto-Slavic
+    Slapro,
+    /// Proto-West Germanic
+    Gmwpro,
     /// Punjabi
     Pa,
     /// Romanian
@@ -196,6 +258,8 @@ pub enum Lang {
     Ru,
     /// Sanskrit
     Sa,
+    /// Scots
+    Sco,
     /// Scottish Gaelic
     Gd,
     /// Serbo-Croatian
@@ -206,8 +270,12 @@ pub enum Lang {
     Sk,
     /// Slovene
     Sl,
+    /// Lower Sorbian
+    Dsb,
     /// Spanish
     Es,
+    /// Sundanese
+    Su,
     /// Swahili
     Sw,
     /// Swedish
@@ -216,12 +284,16 @@ pub enum Lang {
     Syc,
     /// Tagalog
     Tl,
+    /// Tajik
+    Tg,
     /// Tamil
     Ta,
     /// Telugu
     Te,
     /// Thai
     Th,
+    /// Tibetan
+    Bo,
     /// Toki Pona
     Tok,
     /// Turkish
@@ -232,14 +304,32 @@ pub enum Lang {
     Uk,
     /// Urdu
     Ur,
+    /// Uyghur
+    Ug,
+    /// Uzbek
+    Uz,
+    /// Venetan
+    Vec,
     /// Vietnamese
     Vi,
+    /// Volapük
+    Vo,
+    /// Votic
+    Vot,
     /// Welsh
     Cy,
+    /// West Circassian
+    Ady,
+    /// West Frisian
+    Fy,
+    /// Yakut
+    Sah,
     /// Yiddish
     Yi,
     /// Yoruba
     Yo,
+    /// Zulu
+    Zu,
 }
 
 impl From<Edition> for Lang {
@@ -272,11 +362,11 @@ impl From<Edition> for Lang {
 
 impl Lang {
     pub const fn help_isos() -> &'static str {
-        "Supported isos: af | sq | arz | afb | ar | apc | ajp | hy | xcl | aii | ast | az | eu | be | bn | bcl | bg | my | yue | ca | ceb | zh | cs | da | nl | egy | en | enm | ang | simple | eo | et | fo | fi | fr | fro | gl | ka | de | got | el | grc | gu | haw | he | hi | hu | is | io | id | izh | ga | sga | it | ja | kn | kk | km | ko | ku | kmr | ky | lld | lo | la | lv | lt | lb | mk | ms | ml | mt | mr | mn | nv | nrf | no | nb | nn | non | pi | rsk | fa | pl | pt | pa | ro | ru | sa | gd | sh | scn | sk | sl | es | sw | sv | syc | tl | ta | te | th | tok | tr | ota | uk | ur | vi | cy | yi | yo"
+        "Supported isos: af | sq | arz | afb | ar | apc | ajp | hy | xcl | rup | as | aii | ast | az | ba | eu | be | bn | bcl | bg | my | yue | ca | ceb | zh | cim | cop | kw | crh | cs | zlw-ocs | da | nl | dum | egy | en | enm | ang | simple | eo | et | fo | fi | fr | frm | fro | gl | ka | de | goh | got | el | grc | gu | haw | he | hi | hu | is | io | id | izh | ia | ga | sga | it | ja | jv | kn | csb | kk | kix | km | ko | ku | kmr | ky | lld | lo | la | lv | lzz | lt | liv | lb | mk | mg | ms | ml | mt | gv | mr | mn | mi | nah | nv | nrf | se | no | nb | nn | oc | or | cu | non | pi | rsk | fa | pdt | pl | zlw-opl | pt | urj-fin-pro | gem-pro | sla-pro | gmw-pro | pa | ro | ru | sa | sco | gd | sh | scn | sk | sl | dsb | es | su | sw | sv | syc | tl | tg | ta | te | th | bo | tok | tr | ota | uk | ur | ug | uz | vec | vi | vo | vot | cy | ady | fy | sah | yi | yo | zu"
     }
 
     pub const fn help_isos_coloured() -> &'static str {
-        "Supported isos: af | sq | arz | afb | ar | apc | ajp | hy | xcl | aii | ast | az | eu | be | bn | bcl | bg | my | yue | ca | ceb | [32mzh[0m | [32mcs[0m | da | [32mnl[0m | egy | [32men[0m | enm | ang | [32msimple[0m | eo | et | fo | fi | [32mfr[0m | fro | gl | ka | [32mde[0m | got | [32mel[0m | grc | gu | haw | he | hi | hu | is | io | [32mid[0m | izh | ga | sga | [32mit[0m | [32mja[0m | kn | kk | km | [32mko[0m | [32mku[0m | kmr | ky | lld | lo | la | lv | lt | lb | mk | [32mms[0m | ml | mt | mr | mn | nv | nrf | no | nb | nn | non | pi | rsk | fa | [32mpl[0m | [32mpt[0m | pa | ro | [32mru[0m | sa | gd | sh | scn | sk | sl | [32mes[0m | sw | sv | syc | tl | ta | te | [32mth[0m | tok | [32mtr[0m | ota | uk | ur | [32mvi[0m | cy | yi | yo"
+        "Supported isos: af | sq | arz | afb | ar | apc | ajp | hy | xcl | rup | as | aii | ast | az | ba | eu | be | bn | bcl | bg | my | yue | ca | ceb | [32mzh[0m | cim | cop | kw | crh | [32mcs[0m | zlw-ocs | da | [32mnl[0m | dum | egy | [32men[0m | enm | ang | [32msimple[0m | eo | et | fo | fi | [32mfr[0m | frm | fro | gl | ka | [32mde[0m | goh | got | [32mel[0m | grc | gu | haw | he | hi | hu | is | io | [32mid[0m | izh | ia | ga | sga | [32mit[0m | [32mja[0m | jv | kn | csb | kk | kix | km | [32mko[0m | [32mku[0m | kmr | ky | lld | lo | la | lv | lzz | lt | liv | lb | mk | mg | [32mms[0m | ml | mt | gv | mr | mn | mi | nah | nv | nrf | se | no | nb | nn | oc | or | cu | non | pi | rsk | fa | pdt | [32mpl[0m | zlw-opl | [32mpt[0m | urj-fin-pro | gem-pro | sla-pro | gmw-pro | pa | ro | [32mru[0m | sa | sco | gd | sh | scn | sk | sl | dsb | [32mes[0m | su | sw | sv | syc | tl | tg | ta | te | [32mth[0m | bo | tok | [32mtr[0m | ota | uk | ur | ug | uz | vec | [32mvi[0m | vo | vot | cy | ady | fy | sah | yi | yo | zu"
     }
 
     pub const fn help_editions() -> &'static str {
@@ -294,9 +384,12 @@ impl Lang {
             Self::Ajp => "South Levantine Arabic",
             Self::Hy => "Armenian",
             Self::Xcl => "Old Armenian",
+            Self::Rup => "Aromanian",
+            Self::As => "Assamese",
             Self::Aii => "Assyrian Neo-Aramaic",
             Self::Ast => "Asturian",
             Self::Az => "Azerbaijani",
+            Self::Ba => "Bashkir",
             Self::Eu => "Basque",
             Self::Be => "Belarusian",
             Self::Bn => "Bengali",
@@ -307,9 +400,15 @@ impl Lang {
             Self::Ca => "Catalan",
             Self::Ceb => "Cebuano",
             Self::Zh => "Chinese",
+            Self::Cim => "Cimbrian",
+            Self::Cop => "Coptic",
+            Self::Kw => "Cornish",
+            Self::Crh => "Crimean Tatar",
             Self::Cs => "Czech",
+            Self::Zlwocs => "Old Czech",
             Self::Da => "Danish",
             Self::Nl => "Dutch",
+            Self::Dum => "Middle Dutch",
             Self::Egy => "Egyptian",
             Self::En => "English",
             Self::Enm => "Middle English",
@@ -320,10 +419,12 @@ impl Lang {
             Self::Fo => "Faroese",
             Self::Fi => "Finnish",
             Self::Fr => "French",
+            Self::Frm => "Middle French",
             Self::Fro => "Old French",
             Self::Gl => "Galician",
             Self::Ka => "Georgian",
             Self::De => "German",
+            Self::Goh => "Old High German",
             Self::Got => "Gothic",
             Self::El => "Greek",
             Self::Grc => "Ancient Greek",
@@ -336,12 +437,16 @@ impl Lang {
             Self::Io => "Ido",
             Self::Id => "Indonesian",
             Self::Izh => "Ingrian",
+            Self::Ia => "Interlingua",
             Self::Ga => "Irish",
             Self::Sga => "Old Irish",
             Self::It => "Italian",
             Self::Ja => "Japanese",
+            Self::Jv => "Javanese",
             Self::Kn => "Kannada",
+            Self::Csb => "Kashubian",
             Self::Kk => "Kazakh",
+            Self::Kix => "Khiamniungan Naga",
             Self::Km => "Khmer",
             Self::Ko => "Korean",
             Self::Ku => "Kurdish",
@@ -351,51 +456,81 @@ impl Lang {
             Self::Lo => "Lao",
             Self::La => "Latin",
             Self::Lv => "Latvian",
+            Self::Lzz => "Laz",
             Self::Lt => "Lithuanian",
+            Self::Liv => "Livonian",
             Self::Lb => "Luxembourgish",
             Self::Mk => "Macedonian",
+            Self::Mg => "Malagasy",
             Self::Ms => "Malay",
             Self::Ml => "Malayalam",
             Self::Mt => "Maltese",
+            Self::Gv => "Manx",
             Self::Mr => "Marathi",
             Self::Mn => "Mongolian",
+            Self::Mi => "Māori",
+            Self::Nah => "Classical Nahuatl",
             Self::Nv => "Navajo",
             Self::Nrf => "Norman",
+            Self::Se => "Northern Sami",
             Self::No => "Norwegian",
             Self::Nb => "Norwegian Bokmål",
             Self::Nn => "Norwegian Nynorsk",
+            Self::Oc => "Occitan",
+            Self::Or => "Odia",
+            Self::Cu => "Old Church Slavonic",
             Self::Non => "Old Norse",
             Self::Pi => "Pali",
             Self::Rsk => "Pannonian Rusyn",
             Self::Fa => "Persian",
+            Self::Pdt => "Plautdietsch",
             Self::Pl => "Polish",
+            Self::Zlwopl => "Old Polish",
             Self::Pt => "Portuguese",
+            Self::Urjfinpro => "Proto-Finnic",
+            Self::Gempro => "Proto-Germanic",
+            Self::Slapro => "Proto-Slavic",
+            Self::Gmwpro => "Proto-West Germanic",
             Self::Pa => "Punjabi",
             Self::Ro => "Romanian",
             Self::Ru => "Russian",
             Self::Sa => "Sanskrit",
+            Self::Sco => "Scots",
             Self::Gd => "Scottish Gaelic",
             Self::Sh => "Serbo-Croatian",
             Self::Scn => "Sicilian",
             Self::Sk => "Slovak",
             Self::Sl => "Slovene",
+            Self::Dsb => "Lower Sorbian",
             Self::Es => "Spanish",
+            Self::Su => "Sundanese",
             Self::Sw => "Swahili",
             Self::Sv => "Swedish",
             Self::Syc => "Classical Syriac",
             Self::Tl => "Tagalog",
+            Self::Tg => "Tajik",
             Self::Ta => "Tamil",
             Self::Te => "Telugu",
             Self::Th => "Thai",
+            Self::Bo => "Tibetan",
             Self::Tok => "Toki Pona",
             Self::Tr => "Turkish",
             Self::Ota => "Ottoman Turkish",
             Self::Uk => "Ukrainian",
             Self::Ur => "Urdu",
+            Self::Ug => "Uyghur",
+            Self::Uz => "Uzbek",
+            Self::Vec => "Venetan",
             Self::Vi => "Vietnamese",
+            Self::Vo => "Volapük",
+            Self::Vot => "Votic",
             Self::Cy => "Welsh",
+            Self::Ady => "West Circassian",
+            Self::Fy => "West Frisian",
+            Self::Sah => "Yakut",
             Self::Yi => "Yiddish",
             Self::Yo => "Yoruba",
+            Self::Zu => "Zulu",
         }
     }
 
@@ -410,9 +545,12 @@ impl Lang {
             Self::Ajp,
             Self::Hy,
             Self::Xcl,
+            Self::Rup,
+            Self::As,
             Self::Aii,
             Self::Ast,
             Self::Az,
+            Self::Ba,
             Self::Eu,
             Self::Be,
             Self::Bn,
@@ -423,9 +561,15 @@ impl Lang {
             Self::Ca,
             Self::Ceb,
             Self::Zh,
+            Self::Cim,
+            Self::Cop,
+            Self::Kw,
+            Self::Crh,
             Self::Cs,
+            Self::Zlwocs,
             Self::Da,
             Self::Nl,
+            Self::Dum,
             Self::Egy,
             Self::En,
             Self::Enm,
@@ -436,10 +580,12 @@ impl Lang {
             Self::Fo,
             Self::Fi,
             Self::Fr,
+            Self::Frm,
             Self::Fro,
             Self::Gl,
             Self::Ka,
             Self::De,
+            Self::Goh,
             Self::Got,
             Self::El,
             Self::Grc,
@@ -452,12 +598,16 @@ impl Lang {
             Self::Io,
             Self::Id,
             Self::Izh,
+            Self::Ia,
             Self::Ga,
             Self::Sga,
             Self::It,
             Self::Ja,
+            Self::Jv,
             Self::Kn,
+            Self::Csb,
             Self::Kk,
+            Self::Kix,
             Self::Km,
             Self::Ko,
             Self::Ku,
@@ -467,51 +617,81 @@ impl Lang {
             Self::Lo,
             Self::La,
             Self::Lv,
+            Self::Lzz,
             Self::Lt,
+            Self::Liv,
             Self::Lb,
             Self::Mk,
+            Self::Mg,
             Self::Ms,
             Self::Ml,
             Self::Mt,
+            Self::Gv,
             Self::Mr,
             Self::Mn,
+            Self::Mi,
+            Self::Nah,
             Self::Nv,
             Self::Nrf,
+            Self::Se,
             Self::No,
             Self::Nb,
             Self::Nn,
+            Self::Oc,
+            Self::Or,
+            Self::Cu,
             Self::Non,
             Self::Pi,
             Self::Rsk,
             Self::Fa,
+            Self::Pdt,
             Self::Pl,
+            Self::Zlwopl,
             Self::Pt,
+            Self::Urjfinpro,
+            Self::Gempro,
+            Self::Slapro,
+            Self::Gmwpro,
             Self::Pa,
             Self::Ro,
             Self::Ru,
             Self::Sa,
+            Self::Sco,
             Self::Gd,
             Self::Sh,
             Self::Scn,
             Self::Sk,
             Self::Sl,
+            Self::Dsb,
             Self::Es,
+            Self::Su,
             Self::Sw,
             Self::Sv,
             Self::Syc,
             Self::Tl,
+            Self::Tg,
             Self::Ta,
             Self::Te,
             Self::Th,
+            Self::Bo,
             Self::Tok,
             Self::Tr,
             Self::Ota,
             Self::Uk,
             Self::Ur,
+            Self::Ug,
+            Self::Uz,
+            Self::Vec,
             Self::Vi,
+            Self::Vo,
+            Self::Vot,
             Self::Cy,
+            Self::Ady,
+            Self::Fy,
+            Self::Sah,
             Self::Yi,
             Self::Yo,
+            Self::Zu,
         ]
     }
 }
@@ -561,9 +741,12 @@ impl FromStr for Lang {
             "ajp" => Ok(Self::Ajp),
             "hy" => Ok(Self::Hy),
             "xcl" => Ok(Self::Xcl),
+            "rup" => Ok(Self::Rup),
+            "as" => Ok(Self::As),
             "aii" => Ok(Self::Aii),
             "ast" => Ok(Self::Ast),
             "az" => Ok(Self::Az),
+            "ba" => Ok(Self::Ba),
             "eu" => Ok(Self::Eu),
             "be" => Ok(Self::Be),
             "bn" => Ok(Self::Bn),
@@ -574,9 +757,15 @@ impl FromStr for Lang {
             "ca" => Ok(Self::Ca),
             "ceb" => Ok(Self::Ceb),
             "zh" => Ok(Self::Zh),
+            "cim" => Ok(Self::Cim),
+            "cop" => Ok(Self::Cop),
+            "kw" => Ok(Self::Kw),
+            "crh" => Ok(Self::Crh),
             "cs" => Ok(Self::Cs),
+            "zlw-ocs" => Ok(Self::Zlwocs),
             "da" => Ok(Self::Da),
             "nl" => Ok(Self::Nl),
+            "dum" => Ok(Self::Dum),
             "egy" => Ok(Self::Egy),
             "en" => Ok(Self::En),
             "enm" => Ok(Self::Enm),
@@ -587,10 +776,12 @@ impl FromStr for Lang {
             "fo" => Ok(Self::Fo),
             "fi" => Ok(Self::Fi),
             "fr" => Ok(Self::Fr),
+            "frm" => Ok(Self::Frm),
             "fro" => Ok(Self::Fro),
             "gl" => Ok(Self::Gl),
             "ka" => Ok(Self::Ka),
             "de" => Ok(Self::De),
+            "goh" => Ok(Self::Goh),
             "got" => Ok(Self::Got),
             "el" => Ok(Self::El),
             "grc" => Ok(Self::Grc),
@@ -603,12 +794,16 @@ impl FromStr for Lang {
             "io" => Ok(Self::Io),
             "id" => Ok(Self::Id),
             "izh" => Ok(Self::Izh),
+            "ia" => Ok(Self::Ia),
             "ga" => Ok(Self::Ga),
             "sga" => Ok(Self::Sga),
             "it" => Ok(Self::It),
             "ja" => Ok(Self::Ja),
+            "jv" => Ok(Self::Jv),
             "kn" => Ok(Self::Kn),
+            "csb" => Ok(Self::Csb),
             "kk" => Ok(Self::Kk),
+            "kix" => Ok(Self::Kix),
             "km" => Ok(Self::Km),
             "ko" => Ok(Self::Ko),
             "ku" => Ok(Self::Ku),
@@ -618,51 +813,81 @@ impl FromStr for Lang {
             "lo" => Ok(Self::Lo),
             "la" => Ok(Self::La),
             "lv" => Ok(Self::Lv),
+            "lzz" => Ok(Self::Lzz),
             "lt" => Ok(Self::Lt),
+            "liv" => Ok(Self::Liv),
             "lb" => Ok(Self::Lb),
             "mk" => Ok(Self::Mk),
+            "mg" => Ok(Self::Mg),
             "ms" => Ok(Self::Ms),
             "ml" => Ok(Self::Ml),
             "mt" => Ok(Self::Mt),
+            "gv" => Ok(Self::Gv),
             "mr" => Ok(Self::Mr),
             "mn" => Ok(Self::Mn),
+            "mi" => Ok(Self::Mi),
+            "nah" => Ok(Self::Nah),
             "nv" => Ok(Self::Nv),
             "nrf" => Ok(Self::Nrf),
+            "se" => Ok(Self::Se),
             "no" => Ok(Self::No),
             "nb" => Ok(Self::Nb),
             "nn" => Ok(Self::Nn),
+            "oc" => Ok(Self::Oc),
+            "or" => Ok(Self::Or),
+            "cu" => Ok(Self::Cu),
             "non" => Ok(Self::Non),
             "pi" => Ok(Self::Pi),
             "rsk" => Ok(Self::Rsk),
             "fa" => Ok(Self::Fa),
+            "pdt" => Ok(Self::Pdt),
             "pl" => Ok(Self::Pl),
+            "zlw-opl" => Ok(Self::Zlwopl),
             "pt" => Ok(Self::Pt),
+            "urj-fin-pro" => Ok(Self::Urjfinpro),
+            "gem-pro" => Ok(Self::Gempro),
+            "sla-pro" => Ok(Self::Slapro),
+            "gmw-pro" => Ok(Self::Gmwpro),
             "pa" => Ok(Self::Pa),
             "ro" => Ok(Self::Ro),
             "ru" => Ok(Self::Ru),
             "sa" => Ok(Self::Sa),
+            "sco" => Ok(Self::Sco),
             "gd" => Ok(Self::Gd),
             "sh" => Ok(Self::Sh),
             "scn" => Ok(Self::Scn),
             "sk" => Ok(Self::Sk),
             "sl" => Ok(Self::Sl),
+            "dsb" => Ok(Self::Dsb),
             "es" => Ok(Self::Es),
+            "su" => Ok(Self::Su),
             "sw" => Ok(Self::Sw),
             "sv" => Ok(Self::Sv),
             "syc" => Ok(Self::Syc),
             "tl" => Ok(Self::Tl),
+            "tg" => Ok(Self::Tg),
             "ta" => Ok(Self::Ta),
             "te" => Ok(Self::Te),
             "th" => Ok(Self::Th),
+            "bo" => Ok(Self::Bo),
             "tok" => Ok(Self::Tok),
             "tr" => Ok(Self::Tr),
             "ota" => Ok(Self::Ota),
             "uk" => Ok(Self::Uk),
             "ur" => Ok(Self::Ur),
+            "ug" => Ok(Self::Ug),
+            "uz" => Ok(Self::Uz),
+            "vec" => Ok(Self::Vec),
             "vi" => Ok(Self::Vi),
+            "vo" => Ok(Self::Vo),
+            "vot" => Ok(Self::Vot),
             "cy" => Ok(Self::Cy),
+            "ady" => Ok(Self::Ady),
+            "fy" => Ok(Self::Fy),
+            "sah" => Ok(Self::Sah),
             "yi" => Ok(Self::Yi),
             "yo" => Ok(Self::Yo),
+            "zu" => Ok(Self::Zu),
             _ => Err(format!("unsupported iso code '{s}'\n{}", Self::help_isos())),
         }
     }
@@ -680,9 +905,12 @@ impl AsRef<str> for Lang {
             Self::Ajp => "ajp",
             Self::Hy => "hy",
             Self::Xcl => "xcl",
+            Self::Rup => "rup",
+            Self::As => "as",
             Self::Aii => "aii",
             Self::Ast => "ast",
             Self::Az => "az",
+            Self::Ba => "ba",
             Self::Eu => "eu",
             Self::Be => "be",
             Self::Bn => "bn",
@@ -693,9 +921,15 @@ impl AsRef<str> for Lang {
             Self::Ca => "ca",
             Self::Ceb => "ceb",
             Self::Zh => "zh",
+            Self::Cim => "cim",
+            Self::Cop => "cop",
+            Self::Kw => "kw",
+            Self::Crh => "crh",
             Self::Cs => "cs",
+            Self::Zlwocs => "zlw-ocs",
             Self::Da => "da",
             Self::Nl => "nl",
+            Self::Dum => "dum",
             Self::Egy => "egy",
             Self::En => "en",
             Self::Enm => "enm",
@@ -706,10 +940,12 @@ impl AsRef<str> for Lang {
             Self::Fo => "fo",
             Self::Fi => "fi",
             Self::Fr => "fr",
+            Self::Frm => "frm",
             Self::Fro => "fro",
             Self::Gl => "gl",
             Self::Ka => "ka",
             Self::De => "de",
+            Self::Goh => "goh",
             Self::Got => "got",
             Self::El => "el",
             Self::Grc => "grc",
@@ -722,12 +958,16 @@ impl AsRef<str> for Lang {
             Self::Io => "io",
             Self::Id => "id",
             Self::Izh => "izh",
+            Self::Ia => "ia",
             Self::Ga => "ga",
             Self::Sga => "sga",
             Self::It => "it",
             Self::Ja => "ja",
+            Self::Jv => "jv",
             Self::Kn => "kn",
+            Self::Csb => "csb",
             Self::Kk => "kk",
+            Self::Kix => "kix",
             Self::Km => "km",
             Self::Ko => "ko",
             Self::Ku => "ku",
@@ -737,51 +977,81 @@ impl AsRef<str> for Lang {
             Self::Lo => "lo",
             Self::La => "la",
             Self::Lv => "lv",
+            Self::Lzz => "lzz",
             Self::Lt => "lt",
+            Self::Liv => "liv",
             Self::Lb => "lb",
             Self::Mk => "mk",
+            Self::Mg => "mg",
             Self::Ms => "ms",
             Self::Ml => "ml",
             Self::Mt => "mt",
+            Self::Gv => "gv",
             Self::Mr => "mr",
             Self::Mn => "mn",
+            Self::Mi => "mi",
+            Self::Nah => "nah",
             Self::Nv => "nv",
             Self::Nrf => "nrf",
+            Self::Se => "se",
             Self::No => "no",
             Self::Nb => "nb",
             Self::Nn => "nn",
+            Self::Oc => "oc",
+            Self::Or => "or",
+            Self::Cu => "cu",
             Self::Non => "non",
             Self::Pi => "pi",
             Self::Rsk => "rsk",
             Self::Fa => "fa",
+            Self::Pdt => "pdt",
             Self::Pl => "pl",
+            Self::Zlwopl => "zlw-opl",
             Self::Pt => "pt",
+            Self::Urjfinpro => "urj-fin-pro",
+            Self::Gempro => "gem-pro",
+            Self::Slapro => "sla-pro",
+            Self::Gmwpro => "gmw-pro",
             Self::Pa => "pa",
             Self::Ro => "ro",
             Self::Ru => "ru",
             Self::Sa => "sa",
+            Self::Sco => "sco",
             Self::Gd => "gd",
             Self::Sh => "sh",
             Self::Scn => "scn",
             Self::Sk => "sk",
             Self::Sl => "sl",
+            Self::Dsb => "dsb",
             Self::Es => "es",
+            Self::Su => "su",
             Self::Sw => "sw",
             Self::Sv => "sv",
             Self::Syc => "syc",
             Self::Tl => "tl",
+            Self::Tg => "tg",
             Self::Ta => "ta",
             Self::Te => "te",
             Self::Th => "th",
+            Self::Bo => "bo",
             Self::Tok => "tok",
             Self::Tr => "tr",
             Self::Ota => "ota",
             Self::Uk => "uk",
             Self::Ur => "ur",
+            Self::Ug => "ug",
+            Self::Uz => "uz",
+            Self::Vec => "vec",
             Self::Vi => "vi",
+            Self::Vo => "vo",
+            Self::Vot => "vot",
             Self::Cy => "cy",
+            Self::Ady => "ady",
+            Self::Fy => "fy",
+            Self::Sah => "sah",
             Self::Yi => "yi",
             Self::Yo => "yo",
+            Self::Zu => "zu",
         }
     }
 }
