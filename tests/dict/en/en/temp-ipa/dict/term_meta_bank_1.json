@@ -162,5 +162,17 @@
         }
       ]
     }
+  ],
+  [
+    "magical",
+    "ipa",
+    {
+      "reading": "magical",
+      "transcriptions": [
+        {
+          "ipa": "/ˈmæd͡ʒ.ɪ.kəl/"
+        }
+      ]
+    }
   ]
 ]

@@ -255,5 +255,39 @@
     ],
     0,
     ""
+  ],
+  [
+    "magicall",
+    "",
+    "non-lemma",
+    "adj",
+    0,
+    [
+      [
+        "magical",
+        [
+          "alternative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "magyckal",
+    "",
+    "non-lemma",
+    "adj",
+    0,
+    [
+      [
+        "magical",
+        [
+          "alternative"
+        ]
+      ]
+    ],
+    0,
+    ""
   ]
 ]

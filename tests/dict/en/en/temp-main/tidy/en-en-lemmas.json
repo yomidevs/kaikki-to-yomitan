@@ -306,5 +306,44 @@
         }
       ]
     }
+  },
+  "magical": {
+    "magical": {
+      "adj": [
+        {
+          "gloss_tree": {
+            "Of, relating to, or by means of magic.": {},
+            "Enchanting.": {
+              "examples": [
+                {
+                  "text": "The fireworks created a magical atmosphere in that beautiful summer night.",
+                  "bold_text_offsets": [
+                    [
+                      24,
+                      31
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "synonyms": [
+            {
+              "word": "magical"
+            },
+            {
+              "word": "mystic"
+            },
+            {
+              "word": "mystical"
+            }
+          ],
+          "etymology_text": "From magic + -al.",
+          "head_info_text": "magical (comparative more magical, superlative most magical)",
+          "wlink": "https://en.wiktionary.org/wiki/magical#English",
+          "klink": "https://kaikki.org/dictionary/English/meaning/m/ma/magical.html"
+        }
+      ]
+    }
   }
 }

@@ -229,5 +229,41 @@
     ],
     0,
     ""
+  ],
+  [
+    "magical",
+    "magical",
+    "Adj",
+    "adj",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "relating to magic"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "magisch"
+                },
+                {
+                  "tag": "li",
+                  "content": "zauberisch"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
   ]
 ]

@@ -122,5 +122,23 @@
         ]
       ]
     }
+  },
+  "magical": {
+    "magicall": {
+      "adj": [
+        "extracted",
+        [
+          "alternative"
+        ]
+      ]
+    },
+    "magyckal": {
+      "adj": [
+        "extracted",
+        [
+          "alternative"
+        ]
+      ]
+    }
   }
 }

@@ -138,5 +138,70 @@
     ],
     0,
     ""
+  ],
+  [
+    "magical",
+    "magical",
+    "adj",
+    "adj",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "relating to magic"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "magicus"
+                },
+                {
+                  "tag": "li",
+                  "content": "magus"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "enchanting"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "fascinans"
+                },
+                {
+                  "tag": "li",
+                  "content": "magicus"
+                },
+                {
+                  "tag": "li",
+                  "content": "magus"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
   ]
 ]
