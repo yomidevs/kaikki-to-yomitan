@@ -16,7 +16,7 @@ use serde::{Serialize, Serializer, ser::SerializeMap};
 
 use crate::{
     cli::{DictName, MainLangs, Options},
-    dict::{LangCodeProbe, find_or_download_jsonl, get_reading},
+    dict::{LangCodeProbe, find_or_download_jsonl, main::get_reading},
     lang::{Edition, Lang},
     models::kaikki::WordEntry,
     path::{DictionaryType, PathManager},

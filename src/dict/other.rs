@@ -1,7 +1,7 @@
 use crate::{
     Map, Set,
     cli::{GlossaryArgs, GlossaryExtendedArgs, IpaArgs, IpaMergedArgs, LangSpecs},
-    dict::{Dictionary, LabelledYomitanEntry, Langs, get_reading},
+    dict::{Dictionary, LabelledYomitanEntry, Langs, main::get_reading},
     lang::{Edition, Lang},
     models::{
         kaikki::WordEntry,
