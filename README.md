@@ -1,6 +1,7 @@
 ## wiktionary to yomitan (wty)
 
 [![Build status](https://github.com/yomidevs/wiktionary-to-yomitan/workflows/ci/badge.svg)](https://github.com/yomidevs/wiktionary-to-yomitan/actions)
+[![Crates.io](https://img.shields.io/crates/v/wty.svg)](https://crates.io/crates/wty)
 
 Converts wiktionary data from [kaikki](https://kaikki.org/) ([wiktextract](https://github.com/tatuylonen/wiktextract)) to [yomitan](https://github.com/yomidevs/yomitan)-compatible dictionaries.
 
@@ -13,7 +14,7 @@ Converted dictionaries can be found on the [downloads](https://yomidevs.github.i
 This example use German (de) to English (en).
 
 ```console
-$ cargo install --git https://github.com/yomidevs/wiktionary-to-yomitan
+$ cargo install wty
 $ wty main de en
 ...
 ✓ Wrote yomitan dict @ data/dict/de/en/wty-de-en.zip (20.94 MB)
