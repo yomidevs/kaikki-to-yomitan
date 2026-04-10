@@ -1,6 +1,14 @@
+//! Utilities for downloading Kaikki jsonlines.
+
+use std::path::PathBuf;
+
 use anyhow::Result;
 
-use crate::lang::Edition;
+use crate::{
+    lang::{Edition, Lang},
+    path::{PathKind, PathManager},
+    utils::skip_because_file_exists,
+};
 
 /// Return the url of the "raw" dataset.
 fn url_jsonl_gz(edition: Edition) -> Result<String> {
@@ -12,6 +20,38 @@ fn url_jsonl_gz(edition: Edition) -> Result<String> {
             "{root}/{other}wiktionary/raw-wiktextract-data.jsonl.gz"
         )),
     }
+}
+
+/// Try to find the jsonlines in disk, otherwise download it.
+pub fn find_or_download_jsonl(
+    edition: Edition,
+    lang: Option<Lang>,
+    pm: &PathManager,
+) -> Result<PathBuf> {
+    let paths_candidates = pm.dataset_paths(edition, lang);
+    let kinds_to_check = [PathKind::Unfiltered, PathKind::Filtered];
+    let of_kind = paths_candidates.of_kind(&kinds_to_check);
+
+    if !pm.opts.redownload
+        && let Some(existing) = of_kind.iter().find(|p| p.exists())
+    {
+        if !pm.opts.quiet {
+            skip_because_file_exists("download", &existing);
+        }
+        return Ok(existing.clone());
+    }
+
+    let path = &of_kind.into_iter().next_back().unwrap_or_else(|| {
+        panic!(
+            "No path available, \
+             for edition={edition:?} and lang={lang:?} | {paths_candidates:?}"
+        )
+    });
+
+    #[cfg(feature = "html")]
+    crate::download::download_jsonl(edition, path, false)?;
+
+    Ok(path.clone())
 }
 
 #[cfg(feature = "html")]

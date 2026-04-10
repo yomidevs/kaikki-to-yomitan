@@ -1,3 +1,5 @@
+//! Main dictionary.
+
 use std::{fs::File, io::BufWriter, sync::LazyLock};
 
 use anyhow::Result;
@@ -15,7 +17,7 @@ use heap::HeapSize;
 use crate::{
     Map, Set,
     cli::{LangSpecs, MainArgs, Options},
-    dict::{Dictionary, Intermediate, LabelledYomitanEntry, Langs},
+    dict::{Dictionary, Intermediate, LabelledYomitanEntries, Langs},
     lang::{Edition, Lang},
     models::{
         kaikki::{Example, Form, HeadTemplate, Offset, Pos, Sense, Synonym, Tag, WordEntry},
@@ -30,7 +32,7 @@ use crate::{
         merge_case_tags, merge_person_tags, merge_verb_form_tags, remove_redundant_tags, sort_tags,
         sort_tags_by_similar,
     },
-    utils::{link_kaikki, link_wiktionary, pretty_println_at_path},
+    utils::{human_size, link_kaikki, link_wiktionary, pretty_println_at_path},
 };
 
 const MAX_NUMBER_OF_SYNONYMS: usize = 3;
@@ -68,50 +70,7 @@ impl Dictionary for DMain {
     }
 
     fn found_ir_message(&self, langs: LangSpecs, irs: &Self::I) {
-        let n_lemmas = irs.lemma_map.len();
-        let n_forms = irs.form_map.len();
-        let n_irs = n_lemmas + n_forms;
-        let n_forms_inflection = irs.form_map.len_inflection();
-        let n_forms_extracted = irs.form_map.len_extracted();
-        let n_forms_alt_of = irs.form_map.len_alt_of();
-
-        debug_assert_eq!(
-            n_forms,
-            n_forms_inflection + n_forms_extracted + n_forms_alt_of,
-            "mismatch in form counts"
-        );
-
-        let lemma_heap = irs.lemma_map.heap_size() as f64;
-        let form_heap = irs.form_map.heap_size() as f64;
-        let irs_heap = lemma_heap + form_heap;
-        let lemma_heap_msg = crate::utils::human_size(lemma_heap);
-        let form_heap_msg = crate::utils::human_size(form_heap);
-        let irs_heap_msg = crate::utils::human_size(irs_heap);
-
-        const MB: f64 = 1024.0 * 1024.0;
-        if irs_heap > 500.0 * MB {
-            tracing::debug!(
-                "[{}-{}] Found {} irs ({})",
-                langs.source,
-                langs.target,
-                n_irs,
-                irs_heap_msg,
-            );
-            tracing::debug!("├─ lemmas: {} ({})", n_lemmas, lemma_heap_msg,);
-            tracing::debug!(
-                "└─ forms : {} ({}) [infl {}, extr {}, alt {}]",
-                n_forms,
-                form_heap_msg,
-                n_forms_inflection,
-                n_forms_extracted,
-                n_forms_alt_of,
-            );
-        } else {
-            tracing::debug!(
-                "Found {n_irs} irs: {n_lemmas} lemmas, {n_forms} forms \
-                [{n_forms_inflection} infl, {n_forms_extracted} extr, {n_forms_alt_of} alt]"
-            );
-        }
+        found_ir_message_impl(langs, irs);
     }
 
     fn write_ir(&self) -> bool {
@@ -132,10 +91,10 @@ impl Dictionary for DMain {
         // check_orphaned_redirects(irs);
     }
 
-    fn to_yomitan(&self, langs: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntry> {
+    fn to_yomitan(&self, langs: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntries> {
         vec![
-            LabelledYomitanEntry::new("lemma", to_yomitan_lemmas(langs.target, irs.lemma_map)),
-            LabelledYomitanEntry::new("form", to_yomitan_forms(langs.source, irs.form_map)),
+            LabelledYomitanEntries::new("lemma", to_yomitan_lemmas(langs.target, irs.lemma_map)),
+            LabelledYomitanEntries::new("form", to_yomitan_forms(langs.source, irs.form_map)),
         ]
     }
 }
@@ -161,6 +120,53 @@ fn check_orphaned_redirects(irs: &mut Tidy) {
     }
 
     tracing::error!("{orphaned_count} orphaned_count from {total}");
+}
+
+fn found_ir_message_impl(langs: LangSpecs, irs: &Tidy) {
+    let n_lemmas = irs.lemma_map.len();
+    let n_forms = irs.form_map.len();
+    let n_irs = n_lemmas + n_forms;
+    let n_forms_inflection = irs.form_map.len_inflection();
+    let n_forms_extracted = irs.form_map.len_extracted();
+    let n_forms_alt_of = irs.form_map.len_alt_of();
+
+    debug_assert_eq!(
+        n_forms,
+        n_forms_inflection + n_forms_extracted + n_forms_alt_of,
+        "mismatch in form counts"
+    );
+
+    let lemma_heap = irs.lemma_map.heap_size() as f64;
+    let form_heap = irs.form_map.heap_size() as f64;
+    let irs_heap = lemma_heap + form_heap;
+    let lemma_heap_msg = human_size(lemma_heap);
+    let form_heap_msg = human_size(form_heap);
+    let irs_heap_msg = human_size(irs_heap);
+
+    const MB: f64 = 1024.0 * 1024.0;
+    if irs_heap > 500.0 * MB {
+        tracing::debug!(
+            "[{}-{}] Found {} irs ({})",
+            langs.source,
+            langs.target,
+            n_irs,
+            irs_heap_msg,
+        );
+        tracing::debug!("├─ lemmas: {} ({})", n_lemmas, lemma_heap_msg,);
+        tracing::debug!(
+            "└─ forms : {} ({}) [infl {}, extr {}, alt {}]",
+            n_forms,
+            form_heap_msg,
+            n_forms_inflection,
+            n_forms_extracted,
+            n_forms_alt_of,
+        );
+    } else {
+        tracing::debug!(
+            "Found {n_irs} irs: {n_lemmas} lemmas, {n_forms} forms \
+                [{n_forms_inflection} infl, {n_forms_extracted} extr, {n_forms_alt_of} alt]"
+        );
+    }
 }
 
 #[derive(Debug, Clone, Hash, PartialEq, Eq)]

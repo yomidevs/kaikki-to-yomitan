@@ -164,6 +164,9 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
     idt = " " * 4
     w = f.write  # shorthand
 
+    f.write("//! Abstractions over language codes.\n")
+    f.write("//!\n")
+
     write_warning(f)
 
     # w("#![rustfmt::skip]\n")
@@ -189,6 +192,8 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
         "Hash",
     ]
     w("// The idea is from https://github.com/johnstonskj/rust-codes/tree/main\n")
+    w("//\n")
+    w("/// Helper trait to ensure that some other traits are implemented.\n")
     w(f"pub trait Code: {' + '.join(shared_traits)} {{}}\n\n")
     w("impl Code for Lang {}\n")
     w("impl Code for EditionSpec {}\n")

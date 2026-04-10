@@ -1,34 +1,43 @@
+//! [`Dictionary`] trait and dictionary build pipeline.
+
 use anyhow::{Context, Ok, Result};
 use serde::{Deserialize, Serialize};
 
-use std::borrow::Cow;
-use std::fmt;
-use std::fs::File;
-use std::io::{BufRead, BufReader, BufWriter, Write};
-use std::path::PathBuf;
+use std::{
+    borrow::Cow,
+    fmt,
+    fs::File,
+    io::{BufRead, BufReader, BufWriter, Write},
+    path::PathBuf,
+};
 
-use crate::Map;
-use crate::cli::{LangSpecs, Options};
-use crate::dict::writer::write_yomitan;
-use crate::lang::{Edition, Lang};
-use crate::models::kaikki::WordEntry;
-use crate::models::yomitan::YomitanEntry;
-use crate::path::{PathKind, PathManager};
-use crate::utils::pretty_print_at_path;
-use crate::utils::skip_because_file_exists;
+use crate::{
+    Map,
+    cli::{LangSpecs, Options},
+    dict::writer::write_yomitan,
+    download::find_or_download_jsonl,
+    lang::{Edition, Lang},
+    models::{kaikki::WordEntry, yomitan::YomitanEntry},
+    path::PathManager,
+    utils::pretty_print_at_path,
+};
 
 const CONSOLE_PRINT_INTERVAL: i32 = 10000;
 
 // pub type E = Box<dyn Iterator<Item = YomitanEntry>>;
-pub type E = Vec<YomitanEntry>;
+pub(crate) type E = Vec<YomitanEntry>;
 
-// Used in tests to write separate files for lemmas/forms.
-pub struct LabelledYomitanEntry {
+/// A Vec<[`YomitanEntry`]> with a string label (f.e. `"lemmas"`, or `"forms"`).
+///
+/// Labels are only used internally, for debugging. The separation is also relevant
+/// when writing dictionaries since the current term bank will end, and a new one
+/// will start for the next label.
+pub struct LabelledYomitanEntries {
     pub label: &'static str,
     pub entries: E,
 }
 
-impl LabelledYomitanEntry {
+impl LabelledYomitanEntries {
     pub fn new(
         label: &'static str,
         // entries: impl IntoIterator<Item = YomitanEntry> + 'static,
@@ -44,7 +53,7 @@ impl LabelledYomitanEntry {
 
 /// Trait for Intermediate representation. Used for postprocessing (merge, etc.) and debugging via snapshots.
 ///
-/// The simplest form is a Vec<YomitanEntry> if we don't want to do anything fancy, cf. `DGlossary`
+/// The simplest form is a `Vec<YomitanEntry>` if we don't want to do anything fancy, cf. `DGlossary`
 pub trait Intermediate: Default {
     fn len(&self) -> usize;
     fn is_empty(&self) -> bool {
@@ -154,7 +163,7 @@ pub trait Dictionary {
     fn postprocess(&self, irs: &mut Self::I) {}
 
     /// How to convert `Self::I` into one or more yomitan entries.
-    fn to_yomitan(&self, langs: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntry>;
+    fn to_yomitan(&self, langs: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntries>;
 }
 
 fn rejected(entry: &WordEntry, opts: &Options) -> bool {
@@ -162,6 +171,7 @@ fn rejected(entry: &WordEntry, opts: &Options) -> bool {
         || !opts.filter.iter().all(|(k, v)| k.field_value(entry) == v)
 }
 
+/// Unified language configuration. See [`crate::cli::LangSpecs`].
 #[derive(Clone, Copy, PartialEq, Eq, Hash)]
 pub struct Langs {
     pub edition: Edition,
@@ -189,52 +199,9 @@ impl fmt::Debug for Langs {
     }
 }
 
-pub fn find_or_download_jsonl(
-    edition: Edition,
-    lang: Option<Lang>,
+pub(crate) fn iter_datasets(
     pm: &PathManager,
-) -> Result<PathBuf> {
-    let paths_candidates = pm.dataset_paths(edition, lang);
-    let kinds_to_check = [PathKind::Unfiltered, PathKind::Filtered];
-    let of_kind: Vec<_> = paths_candidates
-        .inner
-        .iter()
-        .filter(|p| kinds_to_check.contains(&p.kind))
-        .collect();
-
-    if !pm.opts.redownload
-        && let Some(existing) = of_kind.iter().find(|p| p.path.exists())
-    {
-        if !pm.opts.quiet {
-            skip_because_file_exists("download", &existing.path);
-        }
-        return Ok(existing.path.clone());
-    }
-
-    let path = &of_kind
-        .iter()
-        .next_back()
-        .unwrap_or_else(|| {
-            panic!(
-                "No path available, \
-             for edition={edition:?} and lang={lang:?} | {paths_candidates:?}"
-            )
-        })
-        .path;
-
-    // TODO: remove this once it's done: it prevents downloading in the testsuite
-    // anyhow::bail!(
-    //     "Downloading is disabled but JSONL file was not found @ {}",
-    //     path.display()
-    // );
-
-    #[cfg(feature = "html")]
-    crate::download::download_jsonl(edition, path, false)?;
-
-    Ok(path.clone())
-}
-
-pub fn iter_datasets(pm: &PathManager) -> impl Iterator<Item = Result<(Edition, PathBuf)>> + '_ {
+) -> impl Iterator<Item = Result<(Edition, PathBuf)>> + '_ {
     let (edition_pm, source_pm, _) = pm.langs();
 
     edition_pm.variants().into_iter().map(move |edition| {
@@ -247,7 +214,7 @@ pub fn iter_datasets(pm: &PathManager) -> impl Iterator<Item = Result<(Edition, 
 
 #[derive(Deserialize)]
 #[serde(default)]
-pub struct LangCodeProbe<'a> {
+pub(crate) struct LangCodeProbe<'a> {
     #[serde(borrow)]
     lang_code: Cow<'a, str>,
 }
@@ -268,7 +235,8 @@ impl Default for LangCodeProbe<'_> {
     }
 }
 
-pub fn make_dict<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
+/// Make a dictionary from a Kaikki jsonlines.
+pub fn make_dict_from_jsonl<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()> {
     let pm: &PathManager = &raw_args.try_into()?;
     let (_, source_pm, target_pm) = pm.langs();
     let opts = &pm.opts;

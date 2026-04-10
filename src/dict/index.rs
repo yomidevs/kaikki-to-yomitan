@@ -1,3 +1,5 @@
+//! Build yomitan's dictionary `index.json`.
+
 use crate::{lang::Lang, path::DictionaryType};
 
 const BASE_URL: &str = "https://huggingface.co/datasets/daxida/wty-release/resolve/main/latest";
@@ -47,7 +49,7 @@ fn index_url(dict_name_expanded: &str) -> String {
 // 4. Show a button notifying that an update is available
 // 5. If the user decides to update, download downloadUrl
 //
-/// Dictionary index.
+/// Yomitan's dictionary `index.json`.
 ///
 /// indexUrl points to a separate copy of the index in the download repository.
 /// downloadUrl points to the download link in the download repository.

@@ -2,14 +2,14 @@ use std::fs;
 use std::path::{Path, PathBuf};
 
 use anyhow::{Ok, Result};
-use tracing_subscriber::EnvFilter;
-use tracing_subscriber::fmt::format::FmtSpan;
+use tracing_subscriber::{EnvFilter, fmt::format::FmtSpan};
 
-use wty::cli::{DictName, GlossaryArgs, GlossaryLangs, IpaArgs, MainArgs, MainLangs, Options};
-use wty::dict::{DGlossary, DIpa, DMain};
-use wty::lang::{Edition, Lang};
-use wty::make_dict;
-use wty::path::PathManager;
+use wty::{
+    cli::{DictName, GlossaryArgs, GlossaryLangs, IpaArgs, MainArgs, MainLangs, Options},
+    dict::{DGlossary, DIpa, DMain, make_dict_from_jsonl},
+    lang::{Edition, Lang},
+    path::PathManager,
+};
 
 /// Clean empty folders under folder "root" recursively.
 fn cleanup(root: &Path) -> bool {
@@ -159,7 +159,7 @@ fn snapshot() {
                 continue;
             }
             let args = fixture_glossary_args(source, *possible_target, &fixture_dir);
-            make_dict(DGlossary, args).unwrap();
+            make_dict_from_jsonl(DGlossary, args).unwrap();
         }
     }
 
@@ -169,7 +169,7 @@ fn snapshot() {
             continue; // skip if target is not edition
         };
         let args = fixture_ipa_args(*source, target, &fixture_dir);
-        make_dict(DIpa, args).unwrap();
+        make_dict_from_jsonl(DIpa, args).unwrap();
     }
 
     cleanup(&fixture_dir.join("dict"));
@@ -209,7 +209,7 @@ fn check_git_diff(pm: &PathManager) -> Result<()> {
 fn shapshot_main(margs: MainArgs) -> Result<()> {
     let pm = &PathManager::try_from(margs.clone())?;
     delete_previous_output(pm)?;
-    make_dict(DMain, margs)?;
+    make_dict_from_jsonl(DMain, margs)?;
     check_git_diff(pm)?;
     Ok(())
 }

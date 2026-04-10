@@ -12,7 +12,7 @@ use zip::ZipWriter;
 use zip::write::SimpleFileOptions;
 
 use crate::cli::Options;
-use crate::dict::core::LabelledYomitanEntry;
+use crate::dict::core::LabelledYomitanEntries;
 use crate::dict::index::get_index;
 use crate::lang::Lang;
 use crate::models::yomitan::YomitanEntry;
@@ -38,7 +38,7 @@ pub fn write_yomitan(
     target: Lang,
     opts: &Options,
     pm: &PathManager,
-    labelled_entries: Vec<LabelledYomitanEntry>,
+    labelled_entries: Vec<LabelledYomitanEntries>,
 ) -> Result<()> {
     let mut bank_index = 0;
 

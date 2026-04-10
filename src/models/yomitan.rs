@@ -1,3 +1,5 @@
+//! Yomitan data model.
+
 use crate::{Map, models::kaikki::Tag};
 use serde::ser::{SerializeTuple, Serializer};
 use serde::{Deserialize, Serialize};

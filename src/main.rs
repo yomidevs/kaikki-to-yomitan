@@ -5,9 +5,9 @@ use tracing_subscriber::fmt::format::FmtSpan;
 use wty::{
     cli::{Cli, Command, LangSpecs},
     dict::{
-        DGlossary, DGlossaryExtended, DIpa, DIpaMerged, DMain, find_or_download_jsonl, make_dict,
-        release::release, scan,
+        DGlossary, DGlossaryExtended, DIpa, DIpaMerged, DMain, make_dict_from_jsonl, release, scan,
     },
+    download::find_or_download_jsonl,
     lang::{Edition, Lang},
     path::PathManager,
 };
@@ -36,11 +36,11 @@ fn run(cmd: Command) -> Result<()> {
     tracing::trace!("{:#?}", cmd);
 
     match cmd {
-        Command::Main(args) => make_dict(DMain, args),
-        Command::Glossary(args) => make_dict(DGlossary, args),
-        Command::GlossaryExtended(args) => make_dict(DGlossaryExtended, args),
-        Command::Ipa(args) => make_dict(DIpa, args),
-        Command::IpaMerged(args) => make_dict(DIpaMerged, args),
+        Command::Main(args) => make_dict_from_jsonl(DMain, args),
+        Command::Glossary(args) => make_dict_from_jsonl(DGlossary, args),
+        Command::GlossaryExtended(args) => make_dict_from_jsonl(DGlossaryExtended, args),
+        Command::Ipa(args) => make_dict_from_jsonl(DIpa, args),
+        Command::IpaMerged(args) => make_dict_from_jsonl(DIpaMerged, args),
         Command::Download(args) => {
             // NOTE: uses MainArgs, so it expects two language codes.
             let langs: LangSpecs = args.langs.clone().try_into()?;

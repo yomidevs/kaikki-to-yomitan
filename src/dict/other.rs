@@ -1,7 +1,9 @@
+//! Other, non-main dictionaries: ipa and glossaries.
+
 use crate::{
     Map, Set,
     cli::{GlossaryArgs, GlossaryExtendedArgs, IpaArgs, IpaMergedArgs, LangSpecs},
-    dict::{Dictionary, LabelledYomitanEntry, Langs, main::get_reading},
+    dict::{Dictionary, LabelledYomitanEntries, Langs, main::get_reading},
     lang::{Edition, Lang},
     models::{
         kaikki::WordEntry,
@@ -33,8 +35,8 @@ impl Dictionary for DGlossary {
         process_glossary(langs.edition, langs.target, entry, irs);
     }
 
-    fn to_yomitan(&self, _: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntry> {
-        vec![LabelledYomitanEntry::new("term", irs)]
+    fn to_yomitan(&self, _: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntries> {
+        vec![LabelledYomitanEntries::new("term", irs)]
     }
 }
 
@@ -66,8 +68,8 @@ impl Dictionary for DGlossaryExtended {
         }));
     }
 
-    fn to_yomitan(&self, langs: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntry> {
-        vec![LabelledYomitanEntry::new(
+    fn to_yomitan(&self, langs: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntries> {
+        vec![LabelledYomitanEntries::new(
             "term",
             to_yomitan_glossary_extended(langs.target, irs),
         )]
@@ -82,8 +84,8 @@ impl Dictionary for DIpa {
         process_ipa(langs.edition, langs.source, langs.target, entry, irs);
     }
 
-    fn to_yomitan(&self, _: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntry> {
-        vec![LabelledYomitanEntry::new("term", to_yomitan_ipa(irs))]
+    fn to_yomitan(&self, _: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntries> {
+        vec![LabelledYomitanEntries::new("term", to_yomitan_ipa(irs))]
     }
 }
 
@@ -100,8 +102,8 @@ impl Dictionary for DIpaMerged {
         irs.sort_unstable_keys();
     }
 
-    fn to_yomitan(&self, _: LangSpecs, tidy: Self::I) -> Vec<LabelledYomitanEntry> {
-        vec![LabelledYomitanEntry::new("term", to_yomitan_ipa(tidy))]
+    fn to_yomitan(&self, _: LangSpecs, tidy: Self::I) -> Vec<LabelledYomitanEntries> {
+        vec![LabelledYomitanEntries::new("term", to_yomitan_ipa(tidy))]
     }
 }
 

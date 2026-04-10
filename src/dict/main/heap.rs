@@ -220,7 +220,7 @@ impl HeapSize for BacklinkContentKind {
     }
 }
 
-impl HeapSize for LabelledYomitanEntry {
+impl HeapSize for LabelledYomitanEntries {
     fn heap_size(&self) -> usize {
         0
         // self.entries.heap_size()

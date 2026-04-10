@@ -1,3 +1,5 @@
+//! Abstractions over language codes.
+//!
 //! This file was generated and should not be edited directly.
 //! The source code can be found at scripts/build.py
 
@@ -10,6 +12,8 @@ use std::{
 use serde::{Deserialize, Serialize};
 
 // The idea is from https://github.com/johnstonskj/rust-codes/tree/main
+//
+/// Helper trait to ensure that some other traits are implemented.
 pub trait Code: Clone + Debug + Display + FromStr + AsRef<str> + PartialEq + Eq + Hash {}
 
 impl Code for Lang {}

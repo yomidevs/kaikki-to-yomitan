@@ -1,4 +1,4 @@
-//! Wiktextract / kaikki data models.
+//! Wiktextract / kaikki data model.
 //!
 //! Non-en JSON schemas:
 //! <https://tatuylonen.github.io/wiktextract>

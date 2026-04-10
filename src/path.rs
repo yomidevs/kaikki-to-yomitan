@@ -1,11 +1,15 @@
-use std::fmt;
-use std::fs;
-use std::path::PathBuf;
+//! Helper module to manage paths.
 
-use crate::cli::{DictName, LangSpecs, Options};
-use crate::lang::{Edition, EditionSpec, Lang};
+use std::{fmt, fs, path::PathBuf};
 
-/// Enum used by `PathManager` to manage filetree operations.
+use crate::{
+    cli::{DictName, LangSpecs, Options},
+    lang::{Edition, EditionSpec, Lang},
+};
+
+// This abstraction leaks.
+//
+/// Enum used by [`PathManager`] to manage filetree operations.
 #[derive(Debug, Clone, Copy)]
 pub enum DictionaryType {
     Main,
@@ -28,9 +32,9 @@ impl fmt::Display for DictionaryType {
     }
 }
 
-// this could also be used to ingest some other shape of the data (like rkyv Archive)
+/// Kind of the path. Filtered (by language) for tests. Unfiltered for Kaikki downloads.
 //
-// cf. download::DatasetKind
+// this could also be used to ingest some other shape of the data (like rkyv Archive)
 #[derive(Debug, PartialEq, Eq)]
 pub enum PathKind {
     /// Path to a filtered jsonl. For tests only.
@@ -40,14 +44,30 @@ pub enum PathKind {
 }
 
 #[derive(Debug, PartialEq, Eq)]
-pub struct DatasetPath {
-    pub kind: PathKind,
-    pub path: PathBuf,
+struct DatasetPath {
+    kind: PathKind,
+    path: PathBuf,
 }
 
+/// A Vec of paths with their respective [`PathKind`].
 #[derive(Debug, PartialEq, Eq)]
 pub struct DatasetPaths {
-    pub inner: Vec<DatasetPath>,
+    inner: Vec<DatasetPath>,
+}
+
+impl DatasetPaths {
+    pub fn of_kind(&self, kinds: &[PathKind]) -> Vec<PathBuf> {
+        self.inner
+            .iter()
+            .filter_map(|p| {
+                if kinds.contains(&p.kind) {
+                    Some(p.path.clone())
+                } else {
+                    None
+                }
+            })
+            .collect()
+    }
 }
 
 fn dataset_raw_unfiltered(edition: Edition, root: PathBuf) -> DatasetPath {
@@ -135,7 +155,7 @@ impl PathManager {
     /// Example: `data/dict/el/el/temp-main`
     /// Example: `data/dict/el/el/temp-glossary`
     fn dir_temp(&self) -> PathBuf {
-        // Maybe remove the "temp-" altogether?
+        // TODO: Maybe remove the "temp-" altogether?
         self.dir_dict().join(format!("temp-{}", self.dict_ty))
     }
     /// Example: `data/dict/el/el/temp/tidy`
@@ -156,7 +176,6 @@ impl PathManager {
         Ok(())
     }
 
-    /// Cf. `paths_jsonl` documentation
     pub fn dataset_paths(&self, edition: Edition, lang: Option<Lang>) -> DatasetPaths {
         DatasetPaths::new(edition, lang, self.dir_kaik())
     }

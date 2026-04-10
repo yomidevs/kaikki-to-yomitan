@@ -1,14 +1,15 @@
-use std::fmt;
-use std::ops::Deref;
-use std::path::PathBuf;
-use std::str::FromStr;
+//! Command line interface.
+
+use std::{fmt, ops::Deref, path::PathBuf, str::FromStr};
 
 use anyhow::{Ok, Result, bail};
 use clap::{Parser, Subcommand};
 
-use crate::lang::{Edition, EditionSpec, Lang};
-use crate::models::kaikki::WordEntry;
-use crate::path::{DictionaryType, PathManager};
+use crate::{
+    lang::{Edition, EditionSpec, Lang},
+    models::kaikki::WordEntry,
+    path::{DictionaryType, PathManager},
+};
 
 #[derive(Debug, Parser)]
 #[command(version)]
@@ -228,7 +229,7 @@ pub struct Options {
     pub root_dir: PathBuf,
 }
 
-/// Newtype wrapper to overwrite the Default implementation.
+/// Newtype string wrapper to overwrite Default with `wty`.
 #[derive(Debug, Clone)]
 pub struct DictName(String);
 
@@ -269,6 +270,7 @@ fn parse_tuple(s: &str) -> Result<(FilterKey, String), String> {
     core::result::Result::Ok((filter_key, parts[1].clone()))
 }
 
+/// A key used to filter a [`WordEntry`] by one of its fields.
 #[derive(Debug, Clone)]
 pub enum FilterKey {
     LangCode,
@@ -328,7 +330,7 @@ impl Cli {
     }
 }
 
-/// Unified language configuration
+/// Unified language configuration. See [`crate::dict::Langs`].
 #[derive(Debug, Clone, Copy)]
 pub struct LangSpecs {
     pub edition: EditionSpec,
