@@ -174,7 +174,7 @@ impl Diagnostics {
         for form in entry.forms {
             for tag in form.tags {
                 // These are never localized
-                self.tags_forms.process_simple(tag)
+                self.tags_forms.process_simple(tag);
             }
         }
     }

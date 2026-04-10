@@ -449,7 +449,7 @@ def generate_tags_localization_rs(
 
     w("use crate::lang::Lang;\n\n")
 
-    w("pub fn has_locale(lang: Lang) -> bool {\n")
+    w("pub const fn has_locale(lang: Lang) -> bool {\n")
     w("    matches!(lang, ")
     for i, iso in enumerate(locale):
         if i > 0:

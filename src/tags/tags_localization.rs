@@ -3,7 +3,7 @@
 
 use crate::lang::Lang;
 
-pub fn has_locale(lang: Lang) -> bool {
+pub const fn has_locale(lang: Lang) -> bool {
     matches!(lang, Lang::De | Lang::El | Lang::Ja)
 }
 

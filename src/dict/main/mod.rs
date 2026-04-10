@@ -160,7 +160,7 @@ fn check_orphaned_redirects(irs: &mut Tidy) {
         }
     }
 
-    tracing::error!("{orphaned_count} orphaned_count from {total}")
+    tracing::error!("{orphaned_count} orphaned_count from {total}");
 }
 
 #[derive(Debug, Clone, Hash, PartialEq, Eq)]
@@ -1069,7 +1069,7 @@ fn get_gloss_tree(entry: &WordEntry) -> GlossTree {
             .map(|mut ex| {
                 // Remove reference if too long
                 if ex.reference.chars().count() > MAX_SIZE_OF_EXAMPLE_REFERENCE {
-                    ex.reference = "".to_string();
+                    ex.reference = String::new();
                 }
                 ex
             })
@@ -1448,7 +1448,7 @@ fn to_yomitan_lemma(
     let short_pos = find_short_pos_or_default(&pos);
 
     let yomitan_reading = if reading == lemma {
-        "".to_string()
+        String::new()
     } else {
         reading
     };
@@ -1771,7 +1771,7 @@ fn structured_example(example: &Example) -> Node {
     )
 }
 
-/// Wraps in NTag::Span bold ranges if there are any.
+/// Wraps in `NTag::Span` bold ranges if there are any.
 ///
 /// Note that wiktextract only extracts bold offsets for Examples.
 fn structured_example_text(text: &str, offsets: &[Offset]) -> Node {

@@ -49,17 +49,17 @@ pub const IDENTITY_FORM_TAGS: [&str; 3] = ["nominative", "singular", "infinitive
 /// Tags that we just remove from forms @ tidy
 pub const REDUNDANT_FORM_TAGS: [&str; 1] = ["combined-form"];
 
-/// Get the substring before TAG_SEP, or default to the whole string.
+/// Get the substring before `TAG_SEP`, or default to the whole string.
 fn before_sep(s: &str) -> &str {
-    s.split_once(TAG_SEP).map(|(before, _)| before).unwrap_or(s)
+    s.split_once(TAG_SEP).map_or(s, |(before, _)| before)
 }
 
 // TODO: instead of doing TAG_ORDER.index, rewrite build.py to produce a match
 // statement that returns directly the order.
 //
-/// Sort tags by their position in the tag_order.json file.
+/// Sort tags by their position in the `tag_order.json` file.
 ///
-/// If a tag contains TAG_SEP, the substring before TAG_SEP is used instead.
+/// If a tag contains `TAG_SEP`, the substring before `TAG_SEP` is used instead.
 /// This is done so we can sort merged tags: nominative/accusative etc.
 ///
 /// Expects (but does not check) tags WITHOUT spaces.
@@ -344,7 +344,7 @@ mod tests {
         let tag_bank = get_tag_bank_as_tag_info(Lang::Ja);
         let entry = ("動", "partOfSpeech", -2, &["動詞"][..], 2);
         let loc_tag_info = TagInformation::new(&entry);
-        assert!(tag_bank.contains(&loc_tag_info))
+        assert!(tag_bank.contains(&loc_tag_info));
     }
 
     #[test]

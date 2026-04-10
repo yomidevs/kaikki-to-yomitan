@@ -98,7 +98,7 @@ pub fn merge_verb_form_tags(tags: &mut Vec<Tag>) {
 
 /// Generic merge function.
 ///
-/// Similar to merge_person_tags with minor differences.
+/// Similar to `merge_person_tags` with minor differences.
 fn merge_tags_by_category(tags: &mut Vec<Tag>, category_tags: &[&str]) {
     let contains = tags
         .iter()

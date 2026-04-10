@@ -344,12 +344,12 @@ impl DQuery for DGlossaryExtended {}
 /// Select entries that match the source lang and have translations in target.
 impl DQuery for DGlossary {
     fn statement_str() -> &'static str {
-        r#"
-            SELECT w.entry
-            FROM wiktextract w
-            JOIN translations t ON w.id = t.entry_id
-            WHERE w.lang = ?1 AND t.target_lang = ?2
-            "#
+        r"
+        SELECT w.entry
+        FROM wiktextract w
+        JOIN translations t ON w.id = t.entry_id
+        WHERE w.lang = ?1 AND t.target_lang = ?2
+        "
     }
 
     fn query<'a>(

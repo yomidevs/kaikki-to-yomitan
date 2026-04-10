@@ -38,7 +38,7 @@ pub fn localize_examples_string(target: Lang, n: usize) -> String {
 }
 
 /// Localize Etymology
-pub fn localize_etymology_string(target: Lang) -> &'static str {
+pub const fn localize_etymology_string(target: Lang) -> &'static str {
     match target {
         Lang::Zh => "词源",
         Lang::Cs => "Etymologie",
@@ -64,7 +64,7 @@ pub fn localize_etymology_string(target: Lang) -> &'static str {
 }
 
 /// Localize Grammar
-pub fn localize_grammar_string(target: Lang) -> &'static str {
+pub const fn localize_grammar_string(target: Lang) -> &'static str {
     match target {
         Lang::Zh => "语法",
         Lang::Cs => "Gramatika",
@@ -90,7 +90,7 @@ pub fn localize_grammar_string(target: Lang) -> &'static str {
 }
 
 /// Localize Synonyms
-pub fn localize_synonyms_string(target: Lang) -> &'static str {
+pub const fn localize_synonyms_string(target: Lang) -> &'static str {
     match target {
         Lang::Zh => "同义词",
         Lang::Cs => "Synonyma",

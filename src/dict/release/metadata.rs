@@ -148,17 +148,14 @@ fn scan_and_group(root_dir: &Path, stats: &TimingStats) -> Result<Metadata> {
 
         // TODO: fix this (?)
         let timing_key = match dict_type {
-            "ipa-merged" => format!("ipa-merged-{}", target),
+            "ipa-merged" => format!("ipa-merged-{target}"),
             other => {
-                format!("{}-{}-{}", other, source, target)
+                format!("{other}-{source}-{target}")
             }
         };
-        let time = match timings.get(&timing_key) {
-            Some(time) => time.as_millis(),
-            None => {
-                tracing::error!("Key {timing_key} was not found");
-                0
-            }
+        let time = if let Some(time) = timings.get(&timing_key) { time.as_millis() } else {
+            tracing::error!("Key {timing_key} was not found");
+            0
         };
 
         let target_info = TargetInfo { size };

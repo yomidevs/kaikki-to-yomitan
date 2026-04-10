@@ -257,7 +257,7 @@ fn normalize_ipa(text: &str) -> String {
         (Some('['), Some(']')) => text.to_string(),
         (Some('/'), Some('/')) => text.to_string(),
         (Some('\\'), Some('\\')) if text.len() > 1 => format!("/{}/", &text[1..text.len() - 1]),
-        _ => format!("/{}/", text),
+        _ => format!("/{text}/"),
     }
 }
 
@@ -444,7 +444,7 @@ mod tests {
         match yomitan_entries.first().unwrap() {
             YomitanEntry::TermBank(term_bank) => {
                 // Should use the short pos here (noun > n)
-                assert_eq!(term_bank.2, "n")
+                assert_eq!(term_bank.2, "n");
             }
             _ => panic!(), // We know that this dict only produces TermBank
         }

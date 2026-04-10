@@ -6,7 +6,7 @@ use wty::{
     cli::{Cli, Command, LangSpecs},
     dict::{
         DGlossary, DGlossaryExtended, DIpa, DIpaMerged, DMain, find_or_download_jsonl, make_dict,
-        release::release, scan::scan,
+        release::release, scan,
     },
     lang::{Edition, Lang},
     path::PathManager,
