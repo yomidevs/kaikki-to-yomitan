@@ -8,7 +8,7 @@ use crate::{
     models::{
         kaikki::WordEntry,
         yomitan::{
-            DetailedDefinition, Ipa, NTag, Node, PhoneticTranscription, TermBank, TermBankMeta,
+            DetailedDefinition, Ipa, NTag, Node, PhoneticTranscription, TermInfo, TermMeta,
             TermPhoneticTranscription, YomitanEntry, wrap,
         },
     },
@@ -155,7 +155,7 @@ fn process_glossary(source: Edition, target: Lang, entry: &WordEntry, irs: &mut 
         None => short_pos,
     };
 
-    irs.push(YomitanEntry::TermBank(TermBank(
+    irs.push(YomitanEntry::TermInfo(TermInfo(
         entry.word.clone(),
         reading,
         loc_short_pos.to_string(),
@@ -223,7 +223,7 @@ fn to_yomitan_glossary_extended(target: Lang, irs: IGlossaryExtended) -> Vec<Yom
                 None => short_pos,
             };
 
-            YomitanEntry::TermBank(TermBank(
+            YomitanEntry::TermInfo(TermInfo(
                 lemma,
                 String::new(),
                 loc_short_pos.to_string(),
@@ -361,7 +361,7 @@ fn to_yomitan_ipa(irs: IIpa) -> Vec<YomitanEntry> {
             //
             // transcriptions.sort_unstable_by(|a, b| ipa_inner(&a.ipa).cmp(ipa_inner(&b.ipa)));
 
-            YomitanEntry::TermBankMeta(TermBankMeta::TermPhoneticTranscription(
+            YomitanEntry::TermMeta(TermMeta::TermPhoneticTranscription(
                 TermPhoneticTranscription(
                     lemma,
                     PhoneticTranscription {
@@ -444,7 +444,7 @@ mod tests {
         let yomitan_entries = to_yomitan_glossary_extended(Lang::Grc, irs);
         assert_eq!(yomitan_entries.len(), 2);
         match yomitan_entries.first().unwrap() {
-            YomitanEntry::TermBank(term_bank) => {
+            YomitanEntry::TermInfo(term_bank) => {
                 // Should use the short pos here (noun > n)
                 assert_eq!(term_bank.2, "n");
             }
@@ -474,7 +474,7 @@ mod tests {
 
         let yomitan_entries = to_yomitan_glossary_extended(Lang::Ja, irs);
         match &yomitan_entries[0] {
-            YomitanEntry::TermBank(term_bank) => assert_eq!(term_bank.2, "名"),
+            YomitanEntry::TermInfo(term_bank) => assert_eq!(term_bank.2, "名"),
             _ => panic!(), // We know that this dict only produces TermBank
         }
     }

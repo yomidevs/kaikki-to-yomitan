@@ -1,4 +1,4 @@
-//! Diagnostics scanner for the jsonl data.
+//! Scan the Kaikki jsonlines for diagnostics.
 //!
 //! Analyzes tags, POS, and localization coverage across dictionary entries.
 
@@ -208,6 +208,7 @@ fn setup_args(args: MainLangs) -> Result<(Edition, Lang, PathBuf)> {
     Ok((edition, source, path_jsonl))
 }
 
+/// Scan the Kaikki jsonlines for diagnostics.
 pub fn scan(args: MainLangs) -> Result<()> {
     let (edition, source, path_jsonl) = setup_args(args)?;
 

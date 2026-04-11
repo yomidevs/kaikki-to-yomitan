@@ -1,12 +1,11 @@
+//! Compute the heap size of the intermediate representation for the main dictionary.
+
 use std::mem::size_of;
 
 use super::*;
-use crate::{
-    Map,
-    models::yomitan::{
-        Ipa, PhoneticTranscription, StructuredContent, TermBankMeta, TermPhoneticTranscription,
-    },
-};
+use crate::Map;
+use crate::dict::LabelledYomitanEntries;
+use crate::models::yomitan::*;
 
 pub trait HeapSize {
     fn heap_size(&self) -> usize;
@@ -115,14 +114,14 @@ impl<T: HeapSize> HeapSize for Box<T> {
 impl HeapSize for YomitanEntry {
     fn heap_size(&self) -> usize {
         match self {
-            Self::TermBank(tb) => tb.heap_size(),
-            Self::TermBankSimplified(tbs) => tbs.heap_size(),
-            Self::TermBankMeta(tbm) => tbm.heap_size(),
+            Self::TermInfo(tb) => tb.heap_size(),
+            Self::TermInfoForm(tbs) => tbs.heap_size(),
+            Self::TermMeta(tbm) => tbm.heap_size(),
         }
     }
 }
 
-impl HeapSize for TermBank {
+impl HeapSize for TermInfo {
     fn heap_size(&self) -> usize {
         self.0.heap_size() // term
                 + self.1.heap_size() // reading
@@ -132,7 +131,7 @@ impl HeapSize for TermBank {
     }
 }
 
-impl HeapSize for TermBankSimplified {
+impl HeapSize for TermInfoForm {
     fn heap_size(&self) -> usize {
         self.0.heap_size() // term
                 + self.1.heap_size() // reading
@@ -140,7 +139,7 @@ impl HeapSize for TermBankSimplified {
     }
 }
 
-impl HeapSize for TermBankMeta {
+impl HeapSize for TermMeta {
     fn heap_size(&self) -> usize {
         match self {
             Self::TermPhoneticTranscription(tpt) => tpt.heap_size(),

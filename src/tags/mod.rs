@@ -11,7 +11,7 @@ use std::cmp::Ordering;
 
 use crate::lang::Lang;
 use crate::models::kaikki::Tag;
-use crate::models::yomitan::TagInformation;
+use crate::models::yomitan::TagInfo;
 
 /// Tag separator.
 ///
@@ -153,7 +153,7 @@ fn tags_are_subset(a: &str, b: &str) -> bool {
 // for the glossary dictionary, which also uses tags.
 //
 /// Return a Vec<TagInformation> from `TAG_BANK` (`tag_bank_terms.json`).
-pub fn get_tag_bank_as_tag_info(target: Lang) -> Vec<TagInformation> {
+pub fn get_tag_bank_as_tag_info(target: Lang) -> Vec<TagInfo> {
     if has_locale(target) {
         TAG_BANK
             .iter()
@@ -165,7 +165,7 @@ pub fn get_tag_bank_as_tag_info(target: Lang) -> Vec<TagInformation> {
                         None => (short_tag, long_tag_aliases[0]),
                     };
 
-                    TagInformation {
+                    TagInfo {
                         short_tag: short_tag_loc.to_string(),
                         category: category.to_string(),
                         sort_order,
@@ -176,15 +176,15 @@ pub fn get_tag_bank_as_tag_info(target: Lang) -> Vec<TagInformation> {
             )
             .collect()
     } else {
-        TAG_BANK.iter().map(TagInformation::new).collect()
+        TAG_BANK.iter().map(TagInfo::new).collect()
     }
 }
 
 /// Find the tag in `TAG_BANK` (`tag_bank_terms.json`) and return the `TagInformation` if any.
-pub fn find_tag_in_bank(tag: &str) -> Option<TagInformation> {
+pub fn find_tag_in_bank(tag: &str) -> Option<TagInfo> {
     TAG_BANK.iter().find_map(|entry| {
         if entry.3.contains(&tag) {
-            Some(TagInformation::new(entry))
+            Some(TagInfo::new(entry))
         } else {
             None
         }
@@ -337,13 +337,13 @@ mod tests {
         assert!(!tags_are_subset("foo qux", "foo bar baz"));
     }
 
-    use crate::{lang::Lang, models::yomitan::TagInformation};
+    use crate::{lang::Lang, models::yomitan::TagInfo};
 
     #[test]
     fn locale_ja_tag_bank() {
         let tag_bank = get_tag_bank_as_tag_info(Lang::Ja);
         let entry = ("動", "partOfSpeech", -2, &["動詞"][..], 2);
-        let loc_tag_info = TagInformation::new(&entry);
+        let loc_tag_info = TagInfo::new(&entry);
         assert!(tag_bank.contains(&loc_tag_info));
     }
 

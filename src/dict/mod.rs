@@ -8,8 +8,12 @@ mod release;
 mod scan;
 mod writer;
 
-pub use core::*;
+pub use core::{Dictionary, Intermediate, Langs, make_dict_from_jsonl};
+use core::{LabelledYomitanEntries, LangCodeProbe, iter_datasets};
+
+// Dictionary types
 pub use main::DMain;
-pub use other::*;
+pub use other::{DGlossary, DGlossaryExtended, DIpa, DIpaMerged};
+
 pub use release::{make_dict_from_db, release};
 pub use scan::scan;

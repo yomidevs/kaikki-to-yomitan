@@ -1,4 +1,11 @@
 //! Yomitan data model.
+//!
+//! Most of the structs and enums have been simplified and trimmed of unused fields for performance.
+//!
+//! Ported from the typescript [yomitan-dict-builder] library. See also the [spec].
+//!
+//! [yomitan-dict-builder]: https://github.com/MarvNC/yomichan-dict-builder/tree/master/src/types/yomitan
+//! [spec]: https://github.com/yomidevs/yomitan/tree/master/ext/data/schemas
 
 use crate::{Map, models::kaikki::Tag};
 use serde::ser::{SerializeTuple, Serializer};
@@ -7,31 +14,30 @@ use serde::{Deserialize, Serialize};
 #[derive(Debug, Serialize, Clone)]
 #[serde(untagged)]
 pub enum YomitanEntry {
-    TermBank(TermBank),                     // 120 (24 * 5)
-    TermBankSimplified(TermBankSimplified), // 120 (24 * 5)
-    TermBankMeta(TermBankMeta),             // 104
+    TermInfo(TermInfo),         // 120 (24 * 5)
+    TermInfoForm(TermInfoForm), // 120 (24 * 5)
+    TermMeta(TermMeta),         // 104
 }
 
 impl YomitanEntry {
     pub const fn file_prefix(&self) -> &str {
         match self {
-            Self::TermBank(_) | Self::TermBankSimplified(_) => "term_bank",
-            Self::TermBankMeta(_) => "term_meta_bank",
+            Self::TermInfo(_) | Self::TermInfoForm(_) => "term_bank",
+            Self::TermMeta(_) => "term_meta_bank",
         }
     }
 }
 
-// Simplified version to avoid storing fields that we don't use. Those are written later on via the
-// serialize implementation.
+// Simplified version to avoid storing some fields. Those are written later on via serialize.
 //
 // The skipped fields are (at index): frequency (4), sequence (6), term_tags (7)
 //
-// https://github.com/yomidevs/yomitan/blob/f271fc0da3e55a98fa91c9834d75fccc96deae27/ext/data/schemas/dictionary-term-bank-v3-schema.json
-//
-// https://github.com/MarvNC/yomichan-dict-builder/blob/master/src/types/yomitan/termbank.ts
-// @ TermInformation
+/// A term information. See [yomitan-dict-builder] and the [spec].
+///
+/// [yomitan-dict-builder]: https://github.com/MarvNC/yomichan-dict-builder/blob/master/src/types/yomitan/termbank.ts#L159
+/// [spec]: https://github.com/yomidevs/yomitan/blob/master/ext/data/schemas/dictionary-term-bank-v3-schema.json
 #[derive(Debug, Clone)]
-pub struct TermBank(
+pub struct TermInfo(
     pub String,                  // term
     pub String,                  // reading
     pub String,                  // definition_tags
@@ -39,7 +45,7 @@ pub struct TermBank(
     pub Vec<DetailedDefinition>, // definitions
 );
 
-impl Serialize for TermBank {
+impl Serialize for TermInfo {
     fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
     where
         S: Serializer,
@@ -57,17 +63,16 @@ impl Serialize for TermBank {
     }
 }
 
-// Used for forms in the main dictionary: definition_tags and rules do not change.
-// The objective is to minimize memory storage.
+/// A term information with hardcoded definition tags. Used in forms.
 #[derive(Debug, Clone)]
-pub struct TermBankSimplified(
+pub struct TermInfoForm(
     pub String,                  // term
     pub String,                  // reading
     pub String,                  // space-separated rules
     pub Vec<DetailedDefinition>, // definitions
 );
 
-impl Serialize for TermBankSimplified {
+impl Serialize for TermInfoForm {
     fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
     where
         S: Serializer,
@@ -85,10 +90,14 @@ impl Serialize for TermBankSimplified {
     }
 }
 
-// There are other variants that we don't use at the moment.
+/// A term meta entry. See [yomitan-dict-builder].
+///
+/// Trivial enum. There are other variants that we don't use.
+///
+/// [yomitan-dict-builder]: https://github.com/MarvNC/yomichan-dict-builder/blob/master/src/types/yomitan/termbankmeta.ts#L49
 #[derive(Debug, Serialize, Clone)]
 #[serde(untagged)]
-pub enum TermBankMeta {
+pub enum TermMeta {
     TermPhoneticTranscription(TermPhoneticTranscription),
 }
 
@@ -128,8 +137,9 @@ pub struct Ipa {
     pub tags: Vec<Tag>,
 }
 
-// https://github.com/MarvNC/yomichan-dict-builder/blob/master/src/types/yomitan/termbank.ts
-// @ StructuredContentNode
+/// A structured content node. See [yomitan-dict-builder].
+///
+/// [yomitan-dict-builder]: https://github.com/MarvNC/yomichan-dict-builder/blob/master/src/types/yomitan/termbank.ts#L91
 #[derive(Debug, Serialize, Clone)]
 #[serde(untagged)]
 pub enum Node {
@@ -175,6 +185,7 @@ where
     }
 }
 
+/// A [`GenericNode`] tag.
 #[derive(Debug, Serialize, Clone, Copy)]
 #[serde(rename_all = "lowercase")]
 pub enum NTag {
@@ -187,7 +198,9 @@ pub enum NTag {
     Summary,
 }
 
-// Fields are ordered for visualization and may be different from yomitan builder order.
+/// One of the possible values of the [`Node`] enum.
+///
+/// Note that fields are ordered for visualization and may be different from yomitan builder order.
 #[derive(Debug, Serialize, Clone)]
 pub struct GenericNode {
     pub tag: NTag,
@@ -208,7 +221,7 @@ impl GenericNode {
 }
 
 // In the general case, this should be a String. We use an enum to shrink the size of Node.
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Serialize)]
 pub enum BacklinkContentKind {
     Wiktionary,
     Kaikki,
@@ -236,13 +249,7 @@ impl Serialize for BacklinkContent {
         let mut state = serializer.serialize_struct("BacklinkContent", 3)?;
         state.serialize_field("tag", "a")?;
         state.serialize_field("href", &self.href)?;
-        state.serialize_field(
-            "content",
-            match &self.content {
-                BacklinkContentKind::Wiktionary => "Wiktionary",
-                BacklinkContentKind::Kaikki => "Kaikki",
-            },
-        )?;
+        state.serialize_field("content", &self.content)?;
         state.end()
     }
 }
@@ -286,35 +293,19 @@ pub fn wrap(tag: NTag, content_ty: &str, content: Node) -> Node {
     .into_node()
 }
 
-// Internal legacy types that are just for documentation since we ended up loading
-// tag_bank_term.json as a raw list of tuples in tags::mod.rs
-//
-// #[derive(Deserialize, Default)]
-// struct WhitelistedTags(Vec<WhitelistedTag>);
-//
-// // Internal type
-// #[derive(Deserialize, Default)]
-// struct WhitelistedTag {
-//     short_tag: String,
-//     category: String,
-//     sort_order: i32,
-//     aliases: Vec<String>, // only this changes
-//     popularity_score: i32,
-// }
-
-// The actual yomitan type.
-//
-// https://github.com/MarvNC/yomichan-dict-builder/blob/master/src/types/yomitan/tagbank.ts
+/// A tag. See [yomitan-dict-builder].
+///
+/// [yomitan-dict-builder]: https://github.com/MarvNC/yomichan-dict-builder/blob/master/src/types/yomitan/tagbank.ts
 #[derive(Debug, PartialEq, Eq)]
-pub struct TagInformation {
+pub struct TagInfo {
     pub short_tag: String, // tagName
-    pub category: String,
-    pub sort_order: i32,  // sortingOrder
-    pub long_tag: String, // notes (only this changes)
+    pub category: String,  // category
+    pub sort_order: i32,   // sortingOrder
+    pub long_tag: String,  // notes (only this changes)
     pub popularity_score: i32,
 }
 
-impl TagInformation {
+impl TagInfo {
     // The entry plays the role of the WhitelistedTag struct
     pub fn new(entry: &(&str, &str, i32, &[&str], i32)) -> Self {
         // The short tag should not contain a space: yomitan will split it then.
@@ -329,7 +320,7 @@ impl TagInformation {
     }
 }
 
-impl Serialize for TagInformation {
+impl Serialize for TagInfo {
     // serialize as array
     fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
     where

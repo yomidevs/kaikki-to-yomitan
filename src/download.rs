@@ -36,7 +36,7 @@ pub fn find_or_download_jsonl(
         && let Some(existing) = of_kind.iter().find(|p| p.exists())
     {
         if !pm.opts.quiet {
-            skip_because_file_exists("download", &existing);
+            skip_because_file_exists("download", existing);
         }
         return Ok(existing.clone());
     }
