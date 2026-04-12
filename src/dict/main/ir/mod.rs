@@ -80,10 +80,14 @@ impl Tidy {
         source: FormSource,
         tags: Vec<Tag>,
     ) {
-        debug_assert_ne!(uninflected, inflected);
-        debug_assert!(!uninflected.is_empty());
-        debug_assert!(!inflected.is_empty());
-        debug_assert!(!tags.is_empty());
+        // There are too many callers of this function: better check it here.
+        if tags.is_empty()
+            || uninflected.is_empty()
+            || inflected.is_empty()
+            || uninflected == inflected
+        {
+            return;
+        }
 
         let key = FormKey {
             uninflected: uninflected.into(),
@@ -1188,15 +1192,13 @@ fn handle_inflection_sense(
             {
                 let inflection_tags = inflection_tags.as_str().trim();
 
-                if !inflection_tags.is_empty() {
-                    irs.insert_form(
-                        uninflected.as_str(),
-                        &entry.word,
-                        &entry.pos,
-                        FormSource::Inflection,
-                        vec![inflection_tags.to_string()],
-                    );
-                }
+                irs.insert_form(
+                    uninflected.as_str(),
+                    &entry.word,
+                    &entry.pos,
+                    FormSource::Inflection,
+                    vec![inflection_tags.to_string()],
+                );
             }
         }
         Edition::El => {
@@ -1212,7 +1214,7 @@ fn handle_inflection_sense(
             } else {
                 allowed_tags
             };
-            for form in sense.form_of.iter().filter(|form| form.word != entry.word) {
+            for form in &sense.form_of {
                 irs.insert_form(
                     &form.word,
                     &entry.word,

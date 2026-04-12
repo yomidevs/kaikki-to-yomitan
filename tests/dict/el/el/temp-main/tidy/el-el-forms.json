@@ -384,5 +384,714 @@
         ]
       ]
     }
+  },
+  "αμελητέος": {
+    "αμελητέα": {
+      "adj": [
+        "extracted",
+        [
+          "accusative/vocative singular feminine",
+          "nominative singular feminine",
+          "nominative/accusative/vocative plural neuter"
+        ]
+      ]
+    },
+    "αμελητέο": {
+      "adj": [
+        "extracted",
+        [
+          "accusative singular masculine",
+          "accusative/vocative singular neuter",
+          "nominative singular neuter"
+        ]
+      ]
+    },
+    "αμελητέου": {
+      "adj": [
+        "extracted",
+        [
+          "genitive singular masculine",
+          "genitive singular neuter"
+        ]
+      ]
+    },
+    "αμελητέας": {
+      "adj": [
+        "extracted",
+        [
+          "genitive singular feminine"
+        ]
+      ]
+    },
+    "αμελητέε": {
+      "adj": [
+        "extracted",
+        [
+          "vocative singular masculine"
+        ]
+      ]
+    },
+    "αμελητέοι": {
+      "adj": [
+        "extracted",
+        [
+          "nominative/vocative plural masculine"
+        ]
+      ]
+    },
+    "αμελητέες": {
+      "adj": [
+        "extracted",
+        [
+          "nominative/accusative/vocative plural feminine"
+        ]
+      ]
+    },
+    "αμελητέων": {
+      "adj": [
+        "extracted",
+        [
+          "genitive plural feminine",
+          "genitive plural masculine",
+          "genitive plural neuter"
+        ]
+      ]
+    },
+    "αμελητέους": {
+      "adj": [
+        "extracted",
+        [
+          "accusative plural masculine"
+        ]
+      ]
+    }
+  },
+  "εκτρέπομαι": {
+    "εκτρεπόμουν": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular imperfect"
+        ]
+      ]
+    },
+    "εκτρεπόμουνα": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular imperfect"
+        ]
+      ]
+    },
+    "θα εκτρέπομαι": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular future imperfect"
+        ]
+      ]
+    },
+    "να εκτρέπομαι": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular subjunctive"
+        ]
+      ]
+    },
+    "εκτρέπεσαι": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present"
+        ]
+      ]
+    },
+    "εκτρεπόσουν": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular imperfect"
+        ]
+      ]
+    },
+    "εκτρεπόσουνα": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular imperfect"
+        ]
+      ]
+    },
+    "θα εκτρέπεσαι": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular future imperfect"
+        ]
+      ]
+    },
+    "να εκτρέπεσαι": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular subjunctive"
+        ]
+      ]
+    },
+    "εκτρέπου": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular imperative"
+        ]
+      ]
+    },
+    "εκτρέπεται": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular present"
+        ]
+      ]
+    },
+    "εκτρεπόταν": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular imperfect"
+        ]
+      ]
+    },
+    "εκτρεπότανε": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular imperfect"
+        ]
+      ]
+    },
+    "θα εκτρέπεται": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular future imperfect"
+        ]
+      ]
+    },
+    "να εκτρέπεται": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular subjunctive"
+        ]
+      ]
+    },
+    "εκτρεπόμαστε": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural imperfect",
+          "first-person plural present"
+        ]
+      ]
+    },
+    "εκτρεπόμασταν": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural imperfect"
+        ]
+      ]
+    },
+    "θα εκτρεπόμαστε": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural future imperfect"
+        ]
+      ]
+    },
+    "να εκτρεπόμαστε": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural subjunctive"
+        ]
+      ]
+    },
+    "εκτρέπεστε": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural imperative",
+          "second-person plural present"
+        ]
+      ]
+    },
+    "εκτρεπόσαστε": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural imperfect"
+        ]
+      ]
+    },
+    "εκτρεπόσασταν": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural imperfect"
+        ]
+      ]
+    },
+    "θα εκτρέπεστε": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural future imperfect"
+        ]
+      ]
+    },
+    "να εκτρέπεστε": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural subjunctive"
+        ]
+      ]
+    },
+    "εκτρέπονται": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural present"
+        ]
+      ]
+    },
+    "εκτρέπονταν": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural imperfect"
+        ]
+      ]
+    },
+    "εκτρεπόντουσαν": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural imperfect"
+        ]
+      ]
+    },
+    "θα εκτρέπονται": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural future imperfect"
+        ]
+      ]
+    },
+    "να εκτρέπονται": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural subjunctive"
+        ]
+      ]
+    },
+    "εκτράπηκα": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular aorist"
+        ]
+      ]
+    },
+    "θα εκτραπώ": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular future"
+        ]
+      ]
+    },
+    "να εκτραπώ": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular subjunctive"
+        ]
+      ]
+    },
+    "εκτράπηκες": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular aorist"
+        ]
+      ]
+    },
+    "θα εκτραπείς": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular future"
+        ]
+      ]
+    },
+    "να εκτραπείς": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular subjunctive"
+        ]
+      ]
+    },
+    "εκτρέψου": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular imperative"
+        ]
+      ]
+    },
+    "εκτράπηκε": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular aorist"
+        ]
+      ]
+    },
+    "θα εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular future"
+        ]
+      ]
+    },
+    "να εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular subjunctive"
+        ]
+      ]
+    },
+    "εκτραπήκαμε": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural aorist"
+        ]
+      ]
+    },
+    "θα εκτραπούμε": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural future"
+        ]
+      ]
+    },
+    "να εκτραπούμε": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural subjunctive"
+        ]
+      ]
+    },
+    "εκτραπήκατε": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural aorist"
+        ]
+      ]
+    },
+    "θα εκτραπείτε": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural future"
+        ]
+      ]
+    },
+    "να εκτραπείτε": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural subjunctive"
+        ]
+      ]
+    },
+    "εκτραπείτε": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural imperative"
+        ]
+      ]
+    },
+    "εκτράπηκαν": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural aorist"
+        ]
+      ]
+    },
+    "εκτραπήκαν": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural aorist"
+        ]
+      ]
+    },
+    "εκτραπήκανε": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural aorist"
+        ]
+      ]
+    },
+    "θα εκτραπούν": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural future"
+        ]
+      ]
+    },
+    "θα εκτραπούνε": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural future"
+        ]
+      ]
+    },
+    "να εκτραπούν": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural subjunctive"
+        ]
+      ]
+    },
+    "να εκτραπούνε": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural subjunctive"
+        ]
+      ]
+    },
+    "έχω εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular perfect"
+        ]
+      ]
+    },
+    "είχα εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular pluperfect"
+        ]
+      ]
+    },
+    "θα έχω εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular future perfect"
+        ]
+      ]
+    },
+    "να έχω εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular subjunctive"
+        ]
+      ]
+    },
+    "ένος": {
+      "verb": [
+        "extracted",
+        [
+          "participle"
+        ]
+      ]
+    },
+    "έχεις εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular perfect"
+        ]
+      ]
+    },
+    "είχες εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular pluperfect"
+        ]
+      ]
+    },
+    "θα έχεις εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular future perfect"
+        ]
+      ]
+    },
+    "να έχεις εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular subjunctive"
+        ]
+      ]
+    },
+    "έχει εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular perfect"
+        ]
+      ]
+    },
+    "είχε εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular pluperfect"
+        ]
+      ]
+    },
+    "θα έχει εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular future perfect"
+        ]
+      ]
+    },
+    "να έχει εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular subjunctive"
+        ]
+      ]
+    },
+    "έχουμε εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural perfect"
+        ]
+      ]
+    },
+    "είχαμε εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural pluperfect"
+        ]
+      ]
+    },
+    "θα έχουμε εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural future perfect"
+        ]
+      ]
+    },
+    "να έχουμε εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural subjunctive"
+        ]
+      ]
+    },
+    "έχετε εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural perfect"
+        ]
+      ]
+    },
+    "είχατε εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural pluperfect"
+        ]
+      ]
+    },
+    "θα έχετε εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural future perfect"
+        ]
+      ]
+    },
+    "να έχετε εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural subjunctive"
+        ]
+      ]
+    },
+    "έχουν εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural perfect"
+        ]
+      ]
+    },
+    "είχαν εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural pluperfect"
+        ]
+      ]
+    },
+    "θα έχουν εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural future perfect"
+        ]
+      ]
+    },
+    "να έχουν εκτραπεί": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural subjunctive"
+        ]
+      ]
+    }
   }
 }

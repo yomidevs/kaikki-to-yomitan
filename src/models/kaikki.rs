@@ -195,7 +195,7 @@ impl WordEntry {
 
     pub fn non_trivial_forms(&self) -> impl Iterator<Item = &Form> {
         self.forms.iter().filter(move |form| {
-            if form.form == self.word {
+            if form.form.is_empty() || form.form == self.word {
                 return false;
             }
 
