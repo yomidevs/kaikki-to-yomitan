@@ -374,5 +374,25 @@
         ]
       ]
     }
+  },
+  "αστροφυσική": {
+    "αστροφυσική": {
+      "adj": [
+        "inflection",
+        [
+          "feminine",
+          "nominative/accusative/vocative",
+          "singular"
+        ]
+      ]
+    },
+    "αστροφυσικής": {
+      "adj": [
+        "extracted",
+        [
+          "genitive singular"
+        ]
+      ]
+    }
   }
 }
