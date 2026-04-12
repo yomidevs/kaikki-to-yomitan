@@ -685,6 +685,8 @@ fn preprocess_forms_de(entry: &mut WordEntry) {
 /// Add Extracted forms. That is, forms from `entry.forms`.
 fn process_forms(edition: Edition, source: Lang, entry: &WordEntry, irs: &mut Tidy) {
     for form in entry.non_trivial_forms() {
+        debug_assert_ne!(form.form, entry.word);
+
         if should_break_at_finish_forms(edition, source, form) {
             break;
         }
@@ -1210,7 +1212,7 @@ fn handle_inflection_sense(
             } else {
                 allowed_tags
             };
-            for form in &sense.form_of {
+            for form in sense.form_of.iter().filter(|form| form.word != entry.word) {
                 irs.insert_form(
                     &form.word,
                     &entry.word,
