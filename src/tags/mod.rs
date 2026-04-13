@@ -152,7 +152,7 @@ fn tags_are_subset(a: &str, b: &str) -> bool {
 // Note that while target is an Edition for the main dictionary, it can be any Lang
 // for the glossary dictionary, which also uses tags.
 //
-/// Return a Vec<TagInformation> from `TAG_BANK` (`tag_bank_terms.json`).
+/// Return a Vec<[`TagInfo`]> from `TAG_BANK` (`tag_bank_terms.json`).
 pub fn get_tag_bank_as_tag_info(target: Lang) -> Vec<TagInfo> {
     if has_locale(target) {
         TAG_BANK

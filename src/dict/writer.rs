@@ -3,22 +3,25 @@
 //! Structs that are dictionary dependent, like the intermediate representation or diagnostics, are
 //! not included here and should be next to their dictionary for visibility.
 
-use std::fs::{self, File};
-use std::io::Write;
-use std::path::Path;
+use std::{
+    fs::{self, File},
+    io::Write,
+    path::Path,
+};
 
 use anyhow::Result;
 use zip::ZipWriter;
 use zip::write::SimpleFileOptions;
 
-use crate::cli::Options;
-use crate::dict::core::LabelledYomitanEntries;
-use crate::dict::index::get_index;
-use crate::lang::Lang;
-use crate::models::yomitan::YomitanEntry;
-use crate::path::PathManager;
-use crate::tags::get_tag_bank_as_tag_info;
-use crate::utils::{CHECK_C, pretty_print_at_path, pretty_println_at_path};
+use crate::{
+    cli::Options,
+    dict::{LabelledYomitanEntries, index::get_index},
+    lang::Lang,
+    models::yomitan::YomitanEntry,
+    path::PathManager,
+    tags::get_tag_bank_as_tag_info,
+    utils::{CHECK_C, pretty_print_at_path, pretty_println_at_path},
+};
 
 const BANK_SIZE: usize = 25_000;
 
@@ -30,7 +33,7 @@ enum Sink<'a> {
     Zip(&'a mut ZipWriter<File>, SimpleFileOptions),
 }
 
-/// Write yomitan labelled entries in banks to a sink (either disk or zip).
+/// Write yomitan `labelled_entries` to a sink (either disk or zip).
 ///
 /// When zipping, also write metadata (index, css etc.).
 pub fn write_yomitan(
@@ -115,7 +118,7 @@ pub fn write_yomitan(
     Ok(())
 }
 
-/// Writes `yomitan_entries` in batches to `out_sink` (either disk or a zip).
+/// Writes `yomitan_entries` in banks to a sink (either disk or zip).
 #[tracing::instrument(skip_all, level = "DEBUG")]
 fn write_banks(
     pretty: bool,

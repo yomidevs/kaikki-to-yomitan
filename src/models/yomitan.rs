@@ -20,7 +20,7 @@ pub enum YomitanEntry {
 }
 
 impl YomitanEntry {
-    pub const fn file_prefix(&self) -> &str {
+    pub const fn file_prefix(&self) -> &'static str {
         match self {
             Self::TermInfo(_) | Self::TermInfoForm(_) => "term_bank",
             Self::TermMeta(_) => "term_meta_bank",

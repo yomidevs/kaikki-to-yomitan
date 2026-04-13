@@ -267,7 +267,7 @@ fn structured_glosses_go(
 ///
 /// We sort them ourselves since yomitan only sorts top-level tags.
 ///
-/// cf [`crate::models::yomitan::TagInformation`]
+/// cf [`crate::models::yomitan::TagInfo`]
 fn structured_tags(target: Lang, tags: &[Tag], common_short_tags_found: &[Tag]) -> Option<Node> {
     let mut tag_infos: Vec<_> = tags
         .iter()

@@ -53,7 +53,7 @@ impl LabelledYomitanEntries {
 
 /// Trait for Intermediate representation. Used for postprocessing (merge, etc.) and debugging via snapshots.
 ///
-/// The simplest form is a `Vec<YomitanEntry>` if we don't want to do anything fancy, cf. `DGlossary`
+/// The simplest form is a Vec<[`YomitanEntry`]> if we don't want to do anything fancy, cf. [`crate::dict::DGlossary`]
 pub trait Intermediate: Default {
     fn len(&self) -> usize;
     fn is_empty(&self) -> bool {
@@ -62,11 +62,8 @@ pub trait Intermediate: Default {
 
     /// How to write `Self::I` to disk.
     ///
-    /// Only called if `opts.save_temps` is set and `Dictionary::write_ir` returns true.
-    #[allow(unused_variables)]
-    fn write(&self, pm: &PathManager) -> Result<()> {
-        Ok(())
-    }
+    /// Only called if [`crate::cli::Options::save_temps`] is set and [`Dictionary::write_ir`] returns true.
+    fn write(&self, pm: &PathManager) -> Result<()>;
 }
 
 impl<T> Intermediate for Vec<T>
@@ -79,6 +76,9 @@ where
 
     fn write(&self, pm: &PathManager) -> Result<()> {
         let writer_path = pm.dir_tidy().join("tidy.jsonl");
+        if let Some(parent) = writer_path.parent() {
+            std::fs::create_dir_all(parent)?;
+        }
         let writer_file = File::create(&writer_path)?;
         let writer = BufWriter::new(&writer_file);
         if pm.opts.pretty {
@@ -100,6 +100,10 @@ where
 {
     fn len(&self) -> usize {
         Self::len(self)
+    }
+
+    fn write(&self, _: &PathManager) -> Result<()> {
+        unimplemented!()
     }
 }
 
@@ -124,9 +128,7 @@ pub trait Dictionary {
         false
     }
 
-    // NOTE: Maybe we can get rid of this (blocked by mutable behaviour of the main dictionary).
-    //
-    /// How to preprocess a `WordEntry`. Everything that mutates `entry` should go here.
+    /// How to preprocess a [`WordEntry`]. Everything that mutates `entry` should go here.
     #[allow(unused_variables)]
     fn preprocess(&self, langs: Langs, entry: &mut WordEntry, opts: &Options, irs: &mut Self::I) {}
 
@@ -148,7 +150,8 @@ pub trait Dictionary {
 
     /// Whether to write or not `Self::I` to disk.
     ///
-    /// Compare to `save_temp`, that rules if `Self::I` AND the `term_banks` are written to disk.
+    /// Compare to [`crate::cli::Options::save_temps`], that rules if `Self::I` AND the `term_banks`
+    /// are written to disk.
     ///
     /// This is mainly a debug function, in order to allow not writing the ir `Self::I` to disk for
     /// minor dictionaries in the testsuite. It is only set to true in the main dictionary.
