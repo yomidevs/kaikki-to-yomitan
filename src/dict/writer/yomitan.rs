@@ -25,8 +25,8 @@ use crate::{
 
 const BANK_SIZE: usize = 25_000;
 
-const STYLES_CSS: &[u8] = include_bytes!("../../assets/styles.css");
-const STYLES_CSS_EXPERIMENTAL: &[u8] = include_bytes!("../../assets/styles_experimental.css");
+const STYLES_CSS: &[u8] = include_bytes!("../../../assets/styles.css");
+const STYLES_CSS_EXPERIMENTAL: &[u8] = include_bytes!("../../../assets/styles_experimental.css");
 
 enum Sink<'a> {
     Disk,

@@ -228,6 +228,7 @@ pub struct Options {
     #[arg(long, default_value = "data")]
     pub root_dir: PathBuf,
 
+    /// Writer format
     #[arg(long, default_value_t = WriterFormat::Yomitan)]
     pub format: WriterFormat,
 }
