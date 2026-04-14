@@ -108,6 +108,8 @@ impl Tidy {
     // NOTE: we write stuff even if irs.attribute is empty
     #[tracing::instrument(skip_all)]
     fn write(&self, pm: &PathManager) -> Result<()> {
+        let _ = std::fs::create_dir_all(pm.dir_tidy());
+
         let opath = pm.path_lemmas();
         let file = File::create(&opath)?;
         let writer = BufWriter::new(file);

@@ -13,7 +13,7 @@ use std::{
 
 use crate::{
     Map,
-    cli::{LangSpecs, Options},
+    cli::{LangSpecs, Options, WriterFormat},
     dict::writer::write_yomitan,
     download::find_or_download_jsonl,
     lang::{Edition, Lang},
@@ -326,9 +326,75 @@ pub fn make_dict_from_jsonl<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()
     }
 
     if !opts.skip_yomitan {
-        let labelled_entries = dict.to_yomitan(pm.langs, irs);
-        write_yomitan(source_pm, target_pm, opts, pm, labelled_entries)?;
+        opts.format.write(dict, pm.langs, opts, pm, irs)?;
     }
 
     Ok(())
+}
+
+/// WARN:
+/// - The issues: we want to write both for tests
+/// - Decoupling IR writing and dict writing is hard
+///   - behaviour against a bunch of flags (this should be easy to fix)
+/// - Multiple writers require clone
+///   - but irs.write() doesnt???? (because of references)
+///     - >>> this is the convention, we should do the same!
+///     - hard because every to_yomitan implementor uses the owned data
+///       to avoid clones
+/// - [ ] Move this to another file
+/// - [ ] Sort out the flags that became useless (and therefore the docs too...)
+
+pub struct YomitanWriter;
+pub struct IrWriter;
+
+/// Trait for dictionaries that can be written in a specific format
+pub trait SupportsFormat<D: Dictionary> {
+    fn write(
+        &self,
+        dict: D,
+        langs: LangSpecs,
+        opts: &Options,
+        pm: &PathManager,
+        irs: D::I,
+    ) -> Result<()>;
+}
+
+// Update YomitanWriter to only require ToYomitan (not full Writer trait)
+impl<D: Dictionary> SupportsFormat<D> for YomitanWriter {
+    fn write(
+        &self,
+        dict: D,
+        langs: LangSpecs,
+        opts: &Options,
+        pm: &PathManager,
+        irs: D::I,
+    ) -> Result<()> {
+        let labelled_entries = dict.to_yomitan(langs, irs);
+        write_yomitan(langs.source, langs.target, opts, pm, labelled_entries)
+    }
+}
+
+// IrWriter works with any Dictionary
+impl<D: Dictionary> SupportsFormat<D> for IrWriter {
+    fn write(&self, _: D, _: LangSpecs, _: &Options, pm: &PathManager, irs: D::I) -> Result<()> {
+        irs.write(pm)
+    }
+}
+
+// we impl write over the cli enum
+impl WriterFormat {
+    /// Write using this format (requires dictionary D to support all formats)
+    pub fn write<D: Dictionary>(
+        &self,
+        dict: D,
+        langs: LangSpecs,
+        opts: &Options,
+        pm: &PathManager,
+        irs: D::I,
+    ) -> Result<()> {
+        match self {
+            WriterFormat::Yomitan => YomitanWriter.write(dict, langs, opts, pm, irs),
+            WriterFormat::None => IrWriter.write(dict, langs, opts, pm, irs),
+        }
+    }
 }

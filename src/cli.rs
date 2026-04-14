@@ -3,7 +3,7 @@
 use std::{fmt, ops::Deref, path::PathBuf, str::FromStr};
 
 use anyhow::{Ok, Result, bail};
-use clap::{Parser, Subcommand};
+use clap::{Parser, Subcommand, ValueEnum};
 
 use crate::{
     lang::{Edition, EditionSpec, Lang},
@@ -227,6 +227,26 @@ pub struct Options {
     /// Change the root directory
     #[arg(long, default_value = "data")]
     pub root_dir: PathBuf,
+
+    #[arg(long, default_value_t = WriterFormat::Yomitan)]
+    pub format: WriterFormat,
+}
+
+// Or writer kind?
+#[derive(ValueEnum, Debug, Default, Clone)]
+pub enum WriterFormat {
+    #[default]
+    Yomitan,
+    None,
+}
+
+impl fmt::Display for WriterFormat {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        f.write_str(match self {
+            WriterFormat::Yomitan => "yomitan",
+            WriterFormat::None => "none",
+        })
+    }
 }
 
 /// Newtype string wrapper to overwrite Default with `wty`.
