@@ -3,9 +3,10 @@
 use std::{fmt, ops::Deref, path::PathBuf, str::FromStr};
 
 use anyhow::{Ok, Result, bail};
-use clap::{Parser, Subcommand, ValueEnum};
+use clap::{Parser, Subcommand};
 
 use crate::{
+    dict::WriterFormat,
     lang::{Edition, EditionSpec, Lang},
     models::kaikki::WordEntry,
     path::{DictionaryType, PathManager},
@@ -176,10 +177,6 @@ pub struct IpaMergedLangs {
 #[expect(clippy::struct_excessive_bools)]
 #[derive(Parser, Debug, Default, Clone)]
 pub struct Options {
-    /// Write temporary files to disk and skip zipping
-    #[arg(long, short)]
-    pub save_temps: bool,
-
     /// Redownload kaikki files
     #[arg(long, short)]
     pub redownload: bool,
@@ -216,10 +213,6 @@ pub struct Options {
     #[arg(short, long)]
     pub pretty: bool,
 
-    /// Skip converting to yomitan (to speed up testing)
-    #[arg(long)]
-    pub skip_yomitan: bool,
-
     /// Include experimental features
     #[arg(short, long)]
     pub experimental: bool,
@@ -231,23 +224,6 @@ pub struct Options {
     /// Writer format
     #[arg(long, default_value_t = WriterFormat::Yomitan)]
     pub format: WriterFormat,
-}
-
-// Or writer kind?
-#[derive(ValueEnum, Debug, Default, Clone)]
-pub enum WriterFormat {
-    #[default]
-    Yomitan,
-    None,
-}
-
-impl fmt::Display for WriterFormat {
-    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        f.write_str(match self {
-            WriterFormat::Yomitan => "yomitan",
-            WriterFormat::None => "none",
-        })
-    }
 }
 
 /// Newtype string wrapper to overwrite Default with `wty`.

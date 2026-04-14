@@ -1,88 +1,70 @@
+use std::fmt;
+
 use anyhow::Result;
+use clap::ValueEnum;
 
 use crate::{
-    cli::{LangSpecs, Options, WriterFormat},
+    cli::{LangSpecs, Options},
     dict::{Dictionary, Intermediate},
     path::PathManager,
 };
 
 mod yomitan;
-use yomitan::write_yomitan;
+use yomitan::{write_yomitan, write_yomitan_simple};
 
-/// WARN:
-/// - The issues: we want to write both for tests
-/// - Decoupling IR writing and dict writing is hard
-///   - behaviour against a bunch of flags (this should be easy to fix)
-/// - Multiple writers require clone
-///   - but irs.write() doesnt???? (because of references)
-///     - >>> this is the convention, we should do the same!
-///     - hard because every to_yomitan implementor uses the owned data
-///       to avoid clones
-/// - [ ] Sort out the flags that became useless (and therefore the docs too...)
-///   - [ ] Maybe separate WriteFormat with WriteFormatSpec
+#[derive(ValueEnum, Debug, Default, Clone, Copy)]
+pub enum WriterFormat {
+    // Yomitan zipped
+    #[default]
+    Yomitan,
+    // Yomitan unzipped (json) + no metadata (index.json etc.)
+    YomitanSimple,
+    // Write irs as json
+    Ir,
+    // Self::YomitanSimple + Self::Ir
+    #[value(skip)]
+    Tests,
+    // Skip writing (for benchmarking etc.)
+    Skip,
+}
 
-/// WARN:
-/// The issue: we want to write both Yomitan and IRS for tests
-/// 1. Decoupling IR writing and dict writing is hard
-/// 2. Multiple writers require clone
-///   - but irs.write() doesnt???? (because of references)
-///     - >>> this is the convention, we should do the same!
-///     - hard because every to_yomitan implementor uses the owned data
-///       to avoid clones
-/// - [ ] Sort out the flags that became useless (and therefore the docs too...)
-///   - [ ] Maybe separate WriteFormat with WriteFormatSpec (same issue as 2.)
+impl fmt::Display for WriterFormat {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        f.write_str(match self {
+            Self::Yomitan => "yomitan",
+            Self::YomitanSimple => "yomitan-simple",
+            Self::Ir => "ir",
+            Self::Tests => "tests",
+            Self::Skip => "skip",
+        })
+    }
+}
 
-// we impl write over the cli enum
 impl WriterFormat {
-    /// Write using this format (requires dictionary D to support all formats)
     pub fn write<D: Dictionary>(
-        &self,
-        dict: D,
+        self,
+        dict: &D,
         langs: LangSpecs,
         opts: &Options,
         pm: &PathManager,
         irs: &D::I,
     ) -> Result<()> {
         match self {
-            WriterFormat::Yomitan => YomitanWriter.write(dict, langs, opts, pm, irs),
-            WriterFormat::None => IrWriter.write(dict, langs, opts, pm, irs),
+            Self::Yomitan => write_yomitan(
+                langs.source,
+                langs.target,
+                opts,
+                pm,
+                dict.to_yomitan(langs, irs),
+            ),
+            Self::YomitanSimple => write_yomitan_simple(opts, pm, dict.to_yomitan(langs, irs)),
+            Self::Ir => irs.write(pm),
+            Self::Tests => {
+                irs.write(pm)?;
+                write_yomitan_simple(opts, pm, dict.to_yomitan(langs, irs))?;
+                Ok(())
+            }
+            Self::Skip => Ok(()),
         }
-    }
-}
-
-/// Trait for dictionaries that can be written in a specific format
-trait SupportsFormat<D: Dictionary> {
-    fn write(
-        &self,
-        dict: D,
-        langs: LangSpecs,
-        opts: &Options,
-        pm: &PathManager,
-        irs: &D::I,
-    ) -> Result<()>;
-}
-
-struct YomitanWriter;
-struct IrWriter;
-
-// Update YomitanWriter to only require ToYomitan (not full Writer trait)
-impl<D: Dictionary> SupportsFormat<D> for YomitanWriter {
-    fn write(
-        &self,
-        dict: D,
-        langs: LangSpecs,
-        opts: &Options,
-        pm: &PathManager,
-        irs: &D::I,
-    ) -> Result<()> {
-        let labelled_entries = dict.to_yomitan(langs, irs);
-        write_yomitan(langs.source, langs.target, opts, pm, labelled_entries)
-    }
-}
-
-// IrWriter works with any Dictionary
-impl<D: Dictionary> SupportsFormat<D> for IrWriter {
-    fn write(&self, _: D, _: LangSpecs, _: &Options, pm: &PathManager, irs: &D::I) -> Result<()> {
-        irs.write(pm)
     }
 }

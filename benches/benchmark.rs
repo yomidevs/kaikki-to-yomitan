@@ -2,22 +2,22 @@ use std::path::Path;
 
 use criterion::{Criterion, criterion_group, criterion_main};
 
-use wty::cli::{DictName, MainArgs, MainLangs, Options};
-use wty::dict::DMain;
-use wty::lang::{Edition, Lang};
-use wty::make_dict;
-use wty::path::PathManager;
+use wty::{
+    cli::{DictName, MainArgs, MainLangs, Options},
+    dict::{DMain, WriterFormat, make_dict_from_jsonl},
+    lang::{Edition, Lang},
+    path::PathManager,
+};
 
 const BENCH_FIXTURES_DIR_100: &str = "benches/fixtures";
 
 fn fixture_options(fixture_dir: &Path) -> Options {
     Options {
-        save_temps: true,
         pretty: true,
         experimental: false,
-        skip_yomitan: true, // !!! Skip the writing part for benching
         quiet: true,
         root_dir: fixture_dir.to_path_buf(),
+        format: WriterFormat::Ir,
         ..Default::default()
     }
 }
@@ -36,7 +36,7 @@ fn bench_monolingual(c: &mut Criterion, edition: Edition, label: &str) {
     let pm: PathManager = args.clone().try_into().unwrap();
 
     c.bench_function(label, |b| {
-        b.iter(|| make_dict(DMain, args.clone()));
+        b.iter(|| make_dict_from_jsonl(DMain, args.clone()));
     });
 
     std::fs::remove_dir_all(pm.dir_dicts()).unwrap();

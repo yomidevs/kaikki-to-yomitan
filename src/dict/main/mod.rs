@@ -4,7 +4,7 @@ mod ir;
 mod locale;
 mod yomitan;
 
-pub(crate) use ir::get_reading;
+pub use ir::get_reading;
 
 use crate::{
     cli::{LangSpecs, MainArgs, Options},
@@ -37,10 +37,6 @@ impl Dictionary for DMain {
 
     fn found_ir_message(&self, langs: LangSpecs, irs: &Self::I) {
         ir::found_ir_message_impl(langs, irs);
-    }
-
-    fn write_ir(&self) -> bool {
-        true
     }
 
     fn to_yomitan(&self, langs: LangSpecs, irs: &Self::I) -> Vec<LabelledYomitanEntries> {

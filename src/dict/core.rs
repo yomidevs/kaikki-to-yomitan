@@ -60,8 +60,6 @@ pub trait Intermediate: Default {
     }
 
     /// How to write `Self::I` to disk.
-    ///
-    /// Only called if [`crate::cli::Options::save_temps`] is set and [`Dictionary::write_ir`] returns true.
     fn write(&self, pm: &PathManager) -> Result<()>;
 }
 
@@ -148,19 +146,6 @@ pub trait Dictionary {
             langs.target,
             irs.len()
         );
-    }
-
-    /// Whether to write or not `Self::I` to disk.
-    ///
-    /// Compare to [`crate::cli::Options::save_temps`], that rules if `Self::I` AND the `term_banks`
-    /// are written to disk.
-    ///
-    /// This is mainly a debug function, in order to allow not writing the ir `Self::I` to disk for
-    /// minor dictionaries in the testsuite. It is only set to true in the main dictionary.
-    ///
-    /// WARN: ... and therefore, equivalent to D == DMain (leaky...)
-    fn write_ir(&self) -> bool {
-        false
     }
 
     /// How to convert `Self::I` into one or more yomitan entries.
@@ -320,13 +305,7 @@ pub fn make_dict_from_jsonl<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()
 
     dict.postprocess(&mut irs);
 
-    if opts.save_temps && dict.write_ir() {
-        irs.write(pm)?;
-    }
-
-    if !opts.skip_yomitan {
-        opts.format.write(dict, pm.langs, opts, pm, &irs)?;
-    }
+    opts.format.write(&dict, pm.langs, opts, pm, &irs)?;
 
     Ok(())
 }

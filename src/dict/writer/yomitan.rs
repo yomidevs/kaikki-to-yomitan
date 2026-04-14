@@ -33,6 +33,35 @@ enum Sink<'a> {
     Zip(&'a mut ZipWriter<File>, SimpleFileOptions),
 }
 
+// no metadata - writes to disk
+pub fn write_yomitan_simple(
+    opts: &Options,
+    pm: &PathManager,
+    labelled_entries: Vec<LabelledYomitanEntries>,
+) -> Result<()> {
+    let out_dir = pm.dir_temp_dict();
+    fs::create_dir_all(&out_dir)?;
+
+    let mut bank_index = 0;
+    for lentry in labelled_entries {
+        write_banks(
+            opts.pretty,
+            opts.quiet,
+            &lentry.entries,
+            &mut bank_index,
+            lentry.label,
+            &out_dir,
+            Sink::Disk,
+        )?;
+    }
+
+    if !opts.quiet {
+        pretty_println_at_path(&format!("{CHECK_C} Wrote yomitan files"), &out_dir);
+    }
+
+    Ok(())
+}
+
 /// Write yomitan `labelled_entries` to a sink (either disk or zip).
 ///
 /// When zipping, also write metadata (index, css etc.).
@@ -43,8 +72,6 @@ pub fn write_yomitan(
     pm: &PathManager,
     labelled_entries: Vec<LabelledYomitanEntries>,
 ) -> Result<()> {
-    let mut bank_index = 0;
-
     // use crate::dict::heap::HeapSize;
     // let heap_size = labelled_entries.heap_size();
     // let heap_size_msg = crate::utils::human_size(heap_size as f64);
@@ -52,27 +79,6 @@ pub fn write_yomitan(
     //     "[{source}-{target}] YomitanEntry Vec heap size: {}",
     //     heap_size_msg
     // );
-
-    if opts.save_temps {
-        let out_dir = pm.dir_temp_dict();
-        fs::create_dir_all(&out_dir)?;
-        for lentry in labelled_entries {
-            write_banks(
-                opts.pretty,
-                opts.quiet,
-                &lentry.entries,
-                &mut bank_index,
-                lentry.label,
-                &out_dir,
-                Sink::Disk,
-            )?;
-        }
-
-        if !opts.quiet {
-            pretty_println_at_path(&format!("{CHECK_C} Wrote temp data"), &out_dir);
-        }
-        return Ok(());
-    }
 
     let writer_path = pm.path_dict();
     let writer_file = File::create(&writer_path)?;
@@ -99,6 +105,7 @@ pub fn write_yomitan(
     zip.start_file("tag_bank_1.json", zip_opts)?; // it needs to end in _1
     zip.write_all(&tag_bank_bytes)?;
 
+    let mut bank_index = 0;
     for lentry in labelled_entries {
         write_banks(
             opts.pretty,
