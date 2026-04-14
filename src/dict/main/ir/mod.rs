@@ -258,15 +258,16 @@ impl Serialize for LemmaMap {
 }
 
 impl LemmaMap {
-    pub fn into_flat_iter(self) -> impl Iterator<Item = (String, String, Pos, LemmaInfo)> {
-        self.0.into_iter().flat_map(|(key, infos)| {
-            let lemma = key.lemma;
-            let reading = key.reading;
-            let pos = key.pos;
-
-            infos
-                .into_iter()
-                .map(move |info| (lemma.clone(), reading.clone(), pos.clone(), info))
+    pub fn flat_iter(&self) -> impl Iterator<Item = (&str, &str, &str, &LemmaInfo)> {
+        self.0.iter().flat_map(|(key, infos)| {
+            infos.iter().map(move |info| {
+                (
+                    key.lemma.as_str(),
+                    key.reading.as_str(),
+                    key.pos.as_str(),
+                    info,
+                )
+            })
         })
     }
 

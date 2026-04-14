@@ -164,7 +164,7 @@ pub trait Dictionary {
     }
 
     /// How to convert `Self::I` into one or more yomitan entries.
-    fn to_yomitan(&self, langs: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntries>;
+    fn to_yomitan(&self, langs: LangSpecs, irs: &Self::I) -> Vec<LabelledYomitanEntries>;
 }
 
 fn rejected(entry: &WordEntry, opts: &Options) -> bool {
@@ -325,7 +325,7 @@ pub fn make_dict_from_jsonl<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()
     }
 
     if !opts.skip_yomitan {
-        opts.format.write(dict, pm.langs, opts, pm, irs)?;
+        opts.format.write(dict, pm.langs, opts, pm, &irs)?;
     }
 
     Ok(())

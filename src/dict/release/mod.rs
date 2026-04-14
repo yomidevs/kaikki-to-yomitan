@@ -421,7 +421,7 @@ pub fn make_dict_from_db<D: Dictionary + DQuery>(dict: D, raw_args: D::A) -> Res
     }
 
     if !opts.skip_yomitan {
-        opts.format.write(dict, pm.langs, opts, pm, irs)?;
+        opts.format.write(dict, pm.langs, opts, pm, &irs)?;
     }
 
     Ok(())

@@ -43,7 +43,7 @@ impl Dictionary for DMain {
         true
     }
 
-    fn to_yomitan(&self, langs: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntries> {
+    fn to_yomitan(&self, langs: LangSpecs, irs: &Self::I) -> Vec<LabelledYomitanEntries> {
         yomitan::to_yomitan_impl(langs, irs)
     }
 }

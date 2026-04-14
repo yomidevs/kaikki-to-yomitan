@@ -41,7 +41,7 @@ impl WriterFormat {
         langs: LangSpecs,
         opts: &Options,
         pm: &PathManager,
-        irs: D::I,
+        irs: &D::I,
     ) -> Result<()> {
         match self {
             WriterFormat::Yomitan => YomitanWriter.write(dict, langs, opts, pm, irs),
@@ -58,7 +58,7 @@ trait SupportsFormat<D: Dictionary> {
         langs: LangSpecs,
         opts: &Options,
         pm: &PathManager,
-        irs: D::I,
+        irs: &D::I,
     ) -> Result<()>;
 }
 
@@ -73,7 +73,7 @@ impl<D: Dictionary> SupportsFormat<D> for YomitanWriter {
         langs: LangSpecs,
         opts: &Options,
         pm: &PathManager,
-        irs: D::I,
+        irs: &D::I,
     ) -> Result<()> {
         let labelled_entries = dict.to_yomitan(langs, irs);
         write_yomitan(langs.source, langs.target, opts, pm, labelled_entries)
@@ -82,7 +82,7 @@ impl<D: Dictionary> SupportsFormat<D> for YomitanWriter {
 
 // IrWriter works with any Dictionary
 impl<D: Dictionary> SupportsFormat<D> for IrWriter {
-    fn write(&self, _: D, _: LangSpecs, _: &Options, pm: &PathManager, irs: D::I) -> Result<()> {
+    fn write(&self, _: D, _: LangSpecs, _: &Options, pm: &PathManager, irs: &D::I) -> Result<()> {
         irs.write(pm)
     }
 }

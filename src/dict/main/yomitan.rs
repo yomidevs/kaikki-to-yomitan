@@ -13,7 +13,7 @@ use crate::{
     },
     lang::Lang,
     models::{
-        kaikki::{Example, Offset, Pos, Synonym, Tag},
+        kaikki::{Example, Offset, Synonym, Tag},
         yomitan::{
             BacklinkContent, BacklinkContentKind, DetailedDefinition, GenericNode, NTag, Node,
             NodeData, TermInfo, TermInfoForm, YomitanEntry, wrap,
@@ -22,38 +22,37 @@ use crate::{
     tags::{find_short_pos_or_default, find_tag_in_bank, localize_tag},
 };
 
-pub(crate) fn to_yomitan_impl(langs: LangSpecs, irs: Tidy) -> Vec<LabelledYomitanEntries> {
+pub(crate) fn to_yomitan_impl(langs: LangSpecs, irs: &Tidy) -> Vec<LabelledYomitanEntries> {
     vec![
-        LabelledYomitanEntries::new("lemma", to_yomitan_lemmas(langs.target, irs.lemma_map)),
-        LabelledYomitanEntries::new("form", to_yomitan_forms(langs.source, irs.form_map)),
+        LabelledYomitanEntries::new("lemma", to_yomitan_lemmas(langs.target, &irs.lemma_map)),
+        LabelledYomitanEntries::new("form", to_yomitan_forms(langs.source, &irs.form_map)),
     ]
 }
 
 #[tracing::instrument(skip_all, level = "trace")]
-fn to_yomitan_lemmas(target: Lang, lemma_map: LemmaMap) -> Vec<YomitanEntry> {
+fn to_yomitan_lemmas(target: Lang, lemma_map: &LemmaMap) -> Vec<YomitanEntry> {
     lemma_map
-        .into_flat_iter()
+        .flat_iter()
         .map(move |(lemma, reading, pos, info)| to_yomitan_lemma(target, lemma, reading, pos, info))
         .collect()
 }
 
-// TODO: consume info
 fn to_yomitan_lemma(
     target: Lang,
-    lemma: String,
-    reading: String,
-    pos: String,
-    info: LemmaInfo,
+    lemma: &str,
+    reading: &str,
+    pos: &str,
+    info: &LemmaInfo,
 ) -> YomitanEntry {
     let short_pos = find_short_pos_or_default(&pos);
 
     let yomitan_reading = if reading == lemma {
         String::new()
     } else {
-        reading
+        reading.to_string()
     };
 
-    let common_short_tags_found = get_found_tags(&pos, &info);
+    let common_short_tags_found = get_found_tags(pos, info);
     let definition_tags = common_short_tags_found
         .iter()
         .map(|short_tag| match localize_tag(target, short_tag) {
@@ -68,14 +67,14 @@ fn to_yomitan_lemma(
     if info.etymology_text.is_some() || info.head_info_text.is_some() {
         detailed_definition_content.push(structured_preamble(
             target,
-            info.etymology_text,
-            info.head_info_text,
+            info.etymology_text.clone(),
+            info.head_info_text.clone(),
         ));
     }
 
     detailed_definition_content.push(structured_glosses(
         target,
-        info.gloss_tree,
+        info.gloss_tree.clone(),
         &common_short_tags_found,
     ));
 
@@ -83,10 +82,13 @@ fn to_yomitan_lemma(
         detailed_definition_content.push(synonyms_node);
     }
 
-    detailed_definition_content.push(structured_backlink(info.link_wiktionary, info.link_kaikki));
+    detailed_definition_content.push(structured_backlink(
+        info.link_wiktionary.clone(),
+        info.link_kaikki.clone(),
+    ));
 
     YomitanEntry::TermInfo(TermInfo(
-        lemma,
+        lemma.to_string(),
         yomitan_reading,
         definition_tags,
         get_rule_identifier(short_pos),
@@ -103,7 +105,7 @@ fn to_yomitan_lemma(
 ///
 /// For sense-level tags, only those present in *every* gloss are kept
 /// (set intersection across all gloss entries).
-fn get_found_tags(pos: &Pos, info: &LemmaInfo) -> Vec<Tag> {
+fn get_found_tags(pos: &str, info: &LemmaInfo) -> Vec<Tag> {
     let common_tags_iter = info
         .gloss_tree
         .values()
@@ -465,9 +467,9 @@ fn sanitize_offsets(offsets: &[Offset], upto: usize) -> Vec<Offset> {
 }
 
 #[tracing::instrument(skip_all, level = "trace")]
-fn to_yomitan_forms(source: Lang, form_map: FormMap) -> Vec<YomitanEntry> {
+fn to_yomitan_forms(source: Lang, form_map: &FormMap) -> Vec<YomitanEntry> {
     form_map
-        .into_flat_iter()
+        .flat_iter()
         .map(move |(uninflected, inflected, pos, _, tags)| {
             // There needs to be DetailedDefinition per tag because yomitan reads
             // multiple tags in a single Inflection as a causal inflection chain.
@@ -482,7 +484,7 @@ fn to_yomitan_forms(source: Lang, form_map: FormMap) -> Vec<YomitanEntry> {
             let reading = if normalized_inflected == inflected {
                 String::new()
             } else {
-                inflected
+                inflected.to_string()
             };
 
             let short_pos = find_short_pos_or_default(&pos);
