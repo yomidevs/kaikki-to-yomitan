@@ -35,8 +35,8 @@ impl Dictionary for DGlossary {
         process_glossary(langs.edition, langs.target, entry, irs);
     }
 
-    fn to_yomitan(&self, _: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntries> {
-        vec![LabelledYomitanEntries::new("term", irs)]
+    fn to_yomitan(&self, _: LangSpecs, irs: &Self::I) -> Vec<LabelledYomitanEntries> {
+        vec![LabelledYomitanEntries::new("term", irs.clone())]
     }
 }
 
@@ -68,7 +68,7 @@ impl Dictionary for DGlossaryExtended {
         }));
     }
 
-    fn to_yomitan(&self, langs: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntries> {
+    fn to_yomitan(&self, langs: LangSpecs, irs: &Self::I) -> Vec<LabelledYomitanEntries> {
         vec![LabelledYomitanEntries::new(
             "term",
             to_yomitan_glossary_extended(langs.target, irs),
@@ -84,7 +84,7 @@ impl Dictionary for DIpa {
         process_ipa(langs.edition, langs.source, langs.target, entry, irs);
     }
 
-    fn to_yomitan(&self, _: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntries> {
+    fn to_yomitan(&self, _: LangSpecs, irs: &Self::I) -> Vec<LabelledYomitanEntries> {
         vec![LabelledYomitanEntries::new("term", to_yomitan_ipa(irs))]
     }
 }
@@ -102,8 +102,8 @@ impl Dictionary for DIpaMerged {
         irs.sort_unstable_keys();
     }
 
-    fn to_yomitan(&self, _: LangSpecs, tidy: Self::I) -> Vec<LabelledYomitanEntries> {
-        vec![LabelledYomitanEntries::new("term", to_yomitan_ipa(tidy))]
+    fn to_yomitan(&self, _: LangSpecs, irs: &Self::I) -> Vec<LabelledYomitanEntries> {
+        vec![LabelledYomitanEntries::new("term", to_yomitan_ipa(irs))]
     }
 }
 
@@ -214,7 +214,7 @@ fn process_glossary_extended(
     }));
 }
 
-fn to_yomitan_glossary_extended(target: Lang, irs: IGlossaryExtended) -> Vec<YomitanEntry> {
+fn to_yomitan_glossary_extended(target: Lang, irs: &IGlossaryExtended) -> Vec<YomitanEntry> {
     irs.into_iter()
         .map(|(lemma, pos, _, translations)| {
             let short_pos = find_short_pos_or_default(&pos);
@@ -224,12 +224,13 @@ fn to_yomitan_glossary_extended(target: Lang, irs: IGlossaryExtended) -> Vec<Yom
             };
 
             YomitanEntry::TermInfo(TermInfo(
-                lemma,
+                lemma.clone(),
                 String::new(),
                 loc_short_pos.to_string(),
                 short_pos.to_string(),
                 translations
-                    .into_iter()
+                    .iter()
+                    .cloned()
                     .map(DetailedDefinition::Text)
                     .collect(),
             ))
@@ -350,7 +351,7 @@ fn process_ipa(edition: Edition, source: Lang, target: Lang, entry: &WordEntry, 
     }
 }
 
-fn to_yomitan_ipa(irs: IIpa) -> Vec<YomitanEntry> {
+fn to_yomitan_ipa(irs: &IIpa) -> Vec<YomitanEntry> {
     irs.into_iter()
         .map(|((lemma, reading), transcriptions)| {
             // NOTE: sorting is tricky because the order in Wiktionary may matter, with the first
@@ -363,10 +364,10 @@ fn to_yomitan_ipa(irs: IIpa) -> Vec<YomitanEntry> {
 
             YomitanEntry::TermMeta(TermMeta::TermPhoneticTranscription(
                 TermPhoneticTranscription(
-                    lemma,
+                    lemma.clone(),
                     PhoneticTranscription {
-                        reading,
-                        transcriptions,
+                        reading: reading.clone(),
+                        transcriptions: transcriptions.clone(),
                     },
                 ),
             ))
@@ -441,7 +442,7 @@ mod tests {
         dict.postprocess(&mut irs);
         assert_eq!(irs.len(), 2);
 
-        let yomitan_entries = to_yomitan_glossary_extended(Lang::Grc, irs);
+        let yomitan_entries = to_yomitan_glossary_extended(Lang::Grc, &irs);
         assert_eq!(yomitan_entries.len(), 2);
         match yomitan_entries.first().unwrap() {
             YomitanEntry::TermInfo(term_bank) => {
@@ -472,7 +473,7 @@ mod tests {
 
         assert_eq!(pos, "noun");
 
-        let yomitan_entries = to_yomitan_glossary_extended(Lang::Ja, irs);
+        let yomitan_entries = to_yomitan_glossary_extended(Lang::Ja, &irs);
         match &yomitan_entries[0] {
             YomitanEntry::TermInfo(term_bank) => assert_eq!(term_bank.2, "名"),
             _ => panic!(), // We know that this dict only produces TermBank

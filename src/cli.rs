@@ -6,6 +6,7 @@ use anyhow::{Ok, Result, bail};
 use clap::{Parser, Subcommand};
 
 use crate::{
+    dict::WriterFormat,
     lang::{Edition, EditionSpec, Lang},
     models::kaikki::WordEntry,
     path::{DictionaryType, PathManager},
@@ -176,10 +177,6 @@ pub struct IpaMergedLangs {
 #[expect(clippy::struct_excessive_bools)]
 #[derive(Parser, Debug, Default, Clone)]
 pub struct Options {
-    /// Write temporary files to disk and skip zipping
-    #[arg(long, short)]
-    pub save_temps: bool,
-
     /// Redownload kaikki files
     #[arg(long, short)]
     pub redownload: bool,
@@ -216,10 +213,6 @@ pub struct Options {
     #[arg(short, long)]
     pub pretty: bool,
 
-    /// Skip converting to yomitan (to speed up testing)
-    #[arg(long)]
-    pub skip_yomitan: bool,
-
     /// Include experimental features
     #[arg(short, long)]
     pub experimental: bool,
@@ -227,6 +220,10 @@ pub struct Options {
     /// Change the root directory
     #[arg(long, default_value = "data")]
     pub root_dir: PathBuf,
+
+    /// Writer format
+    #[arg(long, default_value_t = WriterFormat::Yomitan)]
+    pub format: WriterFormat,
 }
 
 /// Newtype string wrapper to overwrite Default with `wty`.

@@ -1,12 +1,14 @@
-use std::fs;
-use std::path::{Path, PathBuf};
+use std::{
+    fs,
+    path::{Path, PathBuf},
+};
 
 use anyhow::{Ok, Result};
 use tracing_subscriber::{EnvFilter, fmt::format::FmtSpan};
 
 use wty::{
     cli::{DictName, GlossaryArgs, GlossaryLangs, IpaArgs, MainArgs, MainLangs, Options},
-    dict::{DGlossary, DIpa, DMain, make_dict_from_jsonl},
+    dict::{DGlossary, DIpa, DMain, WriterFormat, make_dict_from_jsonl},
     lang::{Edition, Lang},
     path::PathManager,
 };
@@ -40,12 +42,12 @@ fn cleanup(root: &Path) -> bool {
     is_empty
 }
 
-fn fixture_options(fixture_dir: &Path) -> Options {
+fn fixture_options(fixture_dir: &Path, format: WriterFormat) -> Options {
     Options {
-        save_temps: true,
         pretty: true,
         experimental: false,
         root_dir: fixture_dir.to_path_buf(),
+        format,
         ..Default::default()
     }
 }
@@ -54,7 +56,7 @@ fn fixture_main_args(source: Lang, target: Edition, fixture_dir: &Path) -> MainA
     MainArgs {
         langs: MainLangs { source, target },
         dict_name: DictName::default(),
-        options: fixture_options(fixture_dir),
+        options: fixture_options(fixture_dir, WriterFormat::Tests),
     }
 }
 
@@ -62,7 +64,7 @@ fn fixture_ipa_args(source: Lang, target: Edition, fixture_dir: &Path) -> IpaArg
     IpaArgs {
         langs: MainLangs { source, target },
         dict_name: DictName::default(),
-        options: fixture_options(fixture_dir),
+        options: fixture_options(fixture_dir, WriterFormat::YomitanSimple),
     }
 }
 
@@ -70,7 +72,7 @@ fn fixture_glossary_args(source: Edition, target: Lang, fixture_dir: &Path) -> G
     GlossaryArgs {
         langs: GlossaryLangs { source, target },
         dict_name: DictName::default(),
-        options: fixture_options(fixture_dir),
+        options: fixture_options(fixture_dir, WriterFormat::YomitanSimple),
     }
 }
 

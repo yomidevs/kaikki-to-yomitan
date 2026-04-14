@@ -14,7 +14,6 @@ use std::{
 use crate::{
     Map,
     cli::{LangSpecs, Options},
-    dict::writer::write_yomitan,
     download::find_or_download_jsonl,
     lang::{Edition, Lang},
     models::{kaikki::WordEntry, yomitan::YomitanEntry},
@@ -61,8 +60,6 @@ pub trait Intermediate: Default {
     }
 
     /// How to write `Self::I` to disk.
-    ///
-    /// Only called if [`crate::cli::Options::save_temps`] is set and [`Dictionary::write_ir`] returns true.
     fn write(&self, pm: &PathManager) -> Result<()>;
 }
 
@@ -76,9 +73,6 @@ where
 
     fn write(&self, pm: &PathManager) -> Result<()> {
         let writer_path = pm.dir_tidy().join("tidy.jsonl");
-        if let Some(parent) = writer_path.parent() {
-            std::fs::create_dir_all(parent)?;
-        }
         let writer_file = File::create(&writer_path)?;
         let writer = BufWriter::new(&writer_file);
         if pm.opts.pretty {
@@ -134,9 +128,15 @@ pub trait Dictionary {
 
     /// How to transform a `WordEntry` into intermediate representation.
     ///
-    /// Most dictionaries only make *at most one* `Self::I` from a `WordEntry`.
+    /// Most dictionaries only make *at most one* `Self::I` from a [`WordEntry`].
     // TODO: why not take ownership of entry?
     fn process(&self, langs: Langs, entry: &WordEntry, irs: &mut Self::I);
+
+    /// How to postprocess the intermediate representation.
+    ///
+    /// This can be implemented to merge entries from different edition, to postprocess tags etc.
+    #[allow(unused_variables)]
+    fn postprocess(&self, irs: &mut Self::I) {}
 
     /// Console message for found irs. It is customized for the main dictionary.
     fn found_ir_message(&self, langs: LangSpecs, irs: &Self::I) {
@@ -148,25 +148,8 @@ pub trait Dictionary {
         );
     }
 
-    /// Whether to write or not `Self::I` to disk.
-    ///
-    /// Compare to [`crate::cli::Options::save_temps`], that rules if `Self::I` AND the `term_banks`
-    /// are written to disk.
-    ///
-    /// This is mainly a debug function, in order to allow not writing the ir `Self::I` to disk for
-    /// minor dictionaries in the testsuite. It is only set to true in the main dictionary.
-    fn write_ir(&self) -> bool {
-        false
-    }
-
-    /// How to postprocess the intermediate representation.
-    ///
-    /// This can be implemented to merge entries from different edition, to postprocess tags etc.
-    #[allow(unused_variables)]
-    fn postprocess(&self, irs: &mut Self::I) {}
-
     /// How to convert `Self::I` into one or more yomitan entries.
-    fn to_yomitan(&self, langs: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntries>;
+    fn to_yomitan(&self, langs: LangSpecs, irs: &Self::I) -> Vec<LabelledYomitanEntries>;
 }
 
 fn rejected(entry: &WordEntry, opts: &Options) -> bool {
@@ -322,14 +305,7 @@ pub fn make_dict_from_jsonl<D: Dictionary>(dict: D, raw_args: D::A) -> Result<()
 
     dict.postprocess(&mut irs);
 
-    if opts.save_temps && dict.write_ir() {
-        irs.write(pm)?;
-    }
-
-    if !opts.skip_yomitan {
-        let labelled_entries = dict.to_yomitan(pm.langs, irs);
-        write_yomitan(source_pm, target_pm, opts, pm, labelled_entries)?;
-    }
+    opts.format.write(&dict, pm.langs, opts, pm, &irs)?;
 
     Ok(())
 }

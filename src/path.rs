@@ -4,6 +4,7 @@ use std::{fmt, fs, path::PathBuf};
 
 use crate::{
     cli::{DictName, LangSpecs, Options},
+    dict::WriterFormat,
     lang::{Edition, EditionSpec, Lang},
 };
 
@@ -167,8 +168,8 @@ impl PathManager {
         fs::create_dir_all(self.dir_kaik())?;
         fs::create_dir_all(self.dir_dict())?;
 
-        if self.opts.save_temps {
-            // not needed for dictionaries that don't support write_ir
+        // TODO: test this
+        if matches!(self.opts.format, WriterFormat::Ir) {
             fs::create_dir_all(self.dir_tidy())?;
             fs::create_dir_all(self.dir_temp_dict())?;
         }

@@ -108,6 +108,8 @@ impl Tidy {
     // NOTE: we write stuff even if irs.attribute is empty
     #[tracing::instrument(skip_all)]
     fn write(&self, pm: &PathManager) -> Result<()> {
+        let _ = std::fs::create_dir_all(pm.dir_tidy());
+
         let opath = pm.path_lemmas();
         let file = File::create(&opath)?;
         let writer = BufWriter::new(file);
@@ -256,15 +258,16 @@ impl Serialize for LemmaMap {
 }
 
 impl LemmaMap {
-    pub fn into_flat_iter(self) -> impl Iterator<Item = (String, String, Pos, LemmaInfo)> {
-        self.0.into_iter().flat_map(|(key, infos)| {
-            let lemma = key.lemma;
-            let reading = key.reading;
-            let pos = key.pos;
-
-            infos
-                .into_iter()
-                .map(move |info| (lemma.clone(), reading.clone(), pos.clone(), info))
+    pub fn flat_iter(&self) -> impl Iterator<Item = (&str, &str, &str, &LemmaInfo)> {
+        self.0.iter().flat_map(|(key, infos)| {
+            infos.iter().map(move |info| {
+                (
+                    key.lemma.as_str(),
+                    key.reading.as_str(),
+                    key.pos.as_str(),
+                    info,
+                )
+            })
         })
     }
 

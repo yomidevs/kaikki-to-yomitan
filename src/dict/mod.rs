@@ -17,3 +17,4 @@ pub use other::{DGlossary, DGlossaryExtended, DIpa, DIpaMerged};
 
 pub use release::{make_dict_from_db, release};
 pub use scan::scan;
+pub use writer::WriterFormat;

@@ -29,7 +29,7 @@ use crate::{
     },
     dict::{
         DGlossary, DGlossaryExtended, DIpa, DIpaMerged, DMain, Dictionary, Intermediate, Langs,
-        iter_datasets, writer::write_yomitan,
+        iter_datasets,
     },
     download::find_or_download_jsonl,
     lang::{Edition, EditionSpec, Lang},
@@ -416,14 +416,7 @@ pub fn make_dict_from_db<D: Dictionary + DQuery>(dict: D, raw_args: D::A) -> Res
 
     dict.postprocess(&mut irs);
 
-    if opts.save_temps && dict.write_ir() {
-        irs.write(pm)?;
-    }
-
-    if !opts.skip_yomitan {
-        let labelled_entries = dict.to_yomitan(pm.langs, irs);
-        write_yomitan(source_pm, target_pm, opts, pm, labelled_entries)?;
-    }
+    opts.format.write(&dict, pm.langs, opts, pm, &irs)?;
 
     Ok(())
 }
