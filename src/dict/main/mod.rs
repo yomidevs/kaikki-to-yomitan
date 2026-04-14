@@ -31,16 +31,16 @@ impl Dictionary for DMain {
         ir::process_main(langs.edition, langs.source, entry, irs);
     }
 
+    fn postprocess(&self, irs: &mut Self::I) {
+        ir::postprocess_main(irs);
+    }
+
     fn found_ir_message(&self, langs: LangSpecs, irs: &Self::I) {
         ir::found_ir_message_impl(langs, irs);
     }
 
     fn write_ir(&self) -> bool {
         true
-    }
-
-    fn postprocess(&self, irs: &mut Self::I) {
-        ir::postprocess_main(irs);
     }
 
     fn to_yomitan(&self, langs: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntries> {

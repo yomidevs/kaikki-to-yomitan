@@ -102,8 +102,8 @@ impl Dictionary for DIpaMerged {
         irs.sort_unstable_keys();
     }
 
-    fn to_yomitan(&self, _: LangSpecs, tidy: Self::I) -> Vec<LabelledYomitanEntries> {
-        vec![LabelledYomitanEntries::new("term", to_yomitan_ipa(tidy))]
+    fn to_yomitan(&self, _: LangSpecs, irs: Self::I) -> Vec<LabelledYomitanEntries> {
+        vec![LabelledYomitanEntries::new("term", to_yomitan_ipa(irs))]
     }
 }
 
