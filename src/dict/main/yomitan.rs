@@ -5,10 +5,12 @@ use crate::{
     cli::LangSpecs,
     dict::{
         LabelledYomitanEntries,
-        main::ir::{FormMap, GlossTree, LemmaInfo, LemmaMap, Tidy, normalize_orthography},
-        main::locale::{
-            localize_etymology_string, localize_examples_string, localize_grammar_string,
-            localize_synonyms_string,
+        main::{
+            ir::{FormMap, GlossTree, LemmaInfo, LemmaMap, Tidy, normalize_orthography},
+            locale::{
+                localize_etymology_string, localize_examples_string, localize_grammar_string,
+                localize_synonyms_string,
+            },
         },
     },
     lang::Lang,
@@ -16,7 +18,7 @@ use crate::{
         kaikki::{Example, Offset, Synonym, Tag},
         yomitan::{
             BacklinkContent, BacklinkContentKind, DetailedDefinition, GenericNode, NTag, Node,
-            NodeData, TermInfo, TermInfoForm, YomitanEntry, wrap,
+            NodeData, NodeDataKey, TermInfo, TermInfoForm, YomitanEntry, wrap,
         },
     },
     tags::{find_short_pos_or_default, find_tag_in_bank, localize_tag},
@@ -296,8 +298,8 @@ fn structured_tags(target: Lang, tags: &[Tag], common_short_tags_found: &[Tag]) 
                 tag: NTag::Span,
                 title: Some(long_tag),
                 data: Some(NodeData::from_iter([
-                    ("content", "tag"),
-                    ("category", &tag_info.category),
+                    (NodeDataKey::Content, "tag"),
+                    (NodeDataKey::Category, &tag_info.category),
                 ])),
                 content: Node::Text(short_tag),
             }

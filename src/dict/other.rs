@@ -363,7 +363,7 @@ fn to_yomitan_ipa(irs: &IIpa) -> Vec<YomitanEntry> {
             // transcriptions.sort_unstable_by(|a, b| ipa_inner(&a.ipa).cmp(ipa_inner(&b.ipa)));
 
             YomitanEntry::TermMeta(TermMeta::TermPhoneticTranscription(
-                TermPhoneticTranscription(
+                TermPhoneticTranscription::new(
                     lemma.clone(),
                     PhoneticTranscription {
                         reading: reading.clone(),

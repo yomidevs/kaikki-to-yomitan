@@ -7,9 +7,10 @@
 //! [yomitan-dict-builder]: https://github.com/MarvNC/yomichan-dict-builder/tree/master/src/types/yomitan
 //! [spec]: https://github.com/yomidevs/yomitan/tree/master/ext/data/schemas
 
-use crate::{Map, models::kaikki::Tag};
-use serde::ser::{SerializeTuple, Serializer};
+use serde::ser::{SerializeStruct, SerializeTuple, Serializer};
 use serde::{Deserialize, Serialize};
+
+use crate::{Map, models::kaikki::Tag};
 
 #[derive(Debug, Serialize, Clone)]
 #[serde(untagged)]
@@ -105,10 +106,19 @@ pub enum TermMeta {
 //
 // https://github.com/MarvNC/yomichan-dict-builder/blob/master/src/types/yomitan/termbankmeta.ts
 #[derive(Debug, Clone)]
-pub struct TermPhoneticTranscription(
-    pub String,                // term
-    pub PhoneticTranscription, // phonetic transcription
-);
+pub struct TermPhoneticTranscription {
+    pub term: String,
+    pub transcription: PhoneticTranscription,
+}
+
+impl TermPhoneticTranscription {
+    pub const fn new(term: String, transcription: PhoneticTranscription) -> Self {
+        Self {
+            term,
+            transcription,
+        }
+    }
+}
 
 impl Serialize for TermPhoneticTranscription {
     fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
@@ -116,9 +126,9 @@ impl Serialize for TermPhoneticTranscription {
         S: Serializer,
     {
         let mut tup = serializer.serialize_tuple(3)?;
-        tup.serialize_element(&self.0)?;
+        tup.serialize_element(&self.term)?;
         tup.serialize_element(&"ipa")?;
-        tup.serialize_element(&self.1)?;
+        tup.serialize_element(&self.transcription)?;
         tup.end()
     }
 }
@@ -168,19 +178,22 @@ impl Node {
     }
 }
 
-#[derive(Debug, Serialize, Clone)]
-pub struct NodeData(pub Map<String, String>);
+#[derive(Debug, Serialize, Clone, PartialEq, Eq, Hash)]
+#[serde(rename_all = "lowercase")]
+pub enum NodeDataKey {
+    Content,
+    Category,
+}
 
-impl<K, V> FromIterator<(K, V)> for NodeData
+#[derive(Debug, Serialize, Clone)]
+pub struct NodeData(pub Map<NodeDataKey, String>);
+
+impl<V> FromIterator<(NodeDataKey, V)> for NodeData
 where
-    K: Into<String>,
     V: Into<String>,
 {
-    fn from_iter<I: IntoIterator<Item = (K, V)>>(iter: I) -> Self {
-        let inner = iter
-            .into_iter()
-            .map(|(k, v)| (k.into(), v.into()))
-            .collect();
+    fn from_iter<I: IntoIterator<Item = (NodeDataKey, V)>>(iter: I) -> Self {
+        let inner = iter.into_iter().map(|(k, v)| (k, v.into())).collect();
         Self(inner)
     }
 }
@@ -243,9 +256,8 @@ impl BacklinkContent {
 impl Serialize for BacklinkContent {
     fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
     where
-        S: serde::Serializer,
+        S: Serializer,
     {
-        use serde::ser::SerializeStruct;
         let mut state = serializer.serialize_struct("BacklinkContent", 3)?;
         state.serialize_field("tag", "a")?;
         state.serialize_field("href", &self.href)?;
@@ -266,18 +278,26 @@ pub enum DetailedDefinition {
 
 impl DetailedDefinition {
     pub fn structured(content: Node) -> Self {
-        Self::StructuredContent(StructuredContent {
-            ty: "structured-content".to_string(),
-            content,
-        })
+        Self::StructuredContent(StructuredContent { content })
     }
 }
 
-#[derive(Debug, Serialize, Clone)]
+#[derive(Debug, Clone)]
 pub struct StructuredContent {
-    #[serde(rename = "type")]
-    pub ty: String, // should be hardcoded to "structured-content" (but then to serialize it...)
     pub content: Node,
+}
+
+// Custom Serialize to not have to store the constant 'structured-content' type
+impl Serialize for StructuredContent {
+    fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
+    where
+        S: Serializer,
+    {
+        let mut state = serializer.serialize_struct("StructuredContent", 2)?;
+        state.serialize_field("type", "structured-content")?;
+        state.serialize_field("content", &self.content)?;
+        state.end()
+    }
 }
 
 pub fn wrap(tag: NTag, content_ty: &str, content: Node) -> Node {
@@ -286,7 +306,7 @@ pub fn wrap(tag: NTag, content_ty: &str, content: Node) -> Node {
         title: None, // hardcoded since most of the wrap calls don't use it
         data: match content_ty {
             "" => None,
-            _ => Some(NodeData::from_iter([("content", content_ty)])),
+            _ => Some(NodeData::from_iter([(NodeDataKey::Content, content_ty)])),
         },
         content,
     }
@@ -306,7 +326,6 @@ pub struct TagInfo {
 }
 
 impl TagInfo {
-    // The entry plays the role of the WhitelistedTag struct
     pub fn new(entry: &(&str, &str, i32, &[&str], i32)) -> Self {
         // The short tag should not contain a space: yomitan will split it then.
         debug_assert!(!entry.0.contains(' '));
@@ -321,7 +340,6 @@ impl TagInfo {
 }
 
 impl Serialize for TagInfo {
-    // serialize as array
     fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
     where
         S: Serializer,

@@ -149,8 +149,7 @@ impl HeapSize for TermMeta {
 
 impl HeapSize for TermPhoneticTranscription {
     fn heap_size(&self) -> usize {
-        self.0.heap_size() // term
-                + self.1.heap_size() // PhoneticTranscription
+        self.term.heap_size() + self.transcription.heap_size()
     }
 }
 
@@ -178,7 +177,7 @@ impl HeapSize for DetailedDefinition {
 
 impl HeapSize for StructuredContent {
     fn heap_size(&self) -> usize {
-        self.ty.heap_size() + self.content.heap_size()
+        self.content.heap_size()
     }
 }
 
@@ -204,6 +203,12 @@ impl HeapSize for GenericNode {
 impl HeapSize for NodeData {
     fn heap_size(&self) -> usize {
         self.0.heap_size()
+    }
+}
+
+impl HeapSize for NodeDataKey {
+    fn heap_size(&self) -> usize {
+        0
     }
 }
 
