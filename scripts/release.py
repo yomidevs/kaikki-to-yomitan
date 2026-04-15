@@ -1,10 +1,4 @@
-"""Run the rust binary over a matrix of languages.
-
-- The languages are collected from languages.json
-- Generated dictionaries are stored @ data/release
-- Then, use huggingface_hub API to:
-  - update the huggingface metadata (README, logs etc.)
-  - upload the data/release folder
+"""Publish a release made with `wty release` to huggingface.
 
 Uploading to the hub requires:
 pip install python-dotenv huggingface-hub
@@ -37,10 +31,6 @@ from huggingface_hub import HfApi, whoami
 REPO_ID_HF = "daxida/wty-release"
 REPO_HF = f"https://huggingface.co/datasets/{REPO_ID_HF}"
 REPO_ID_GH = "https://github.com/daxida/wty"
-
-BINARY_PATH = "target/release/wty"
-
-ANSI_ESCAPE_RE = re.compile(r"\x1B[@-_][0-?]*[ -/]*[@-~]")
 
 type DictTy = Literal["main", "ipa", "ipa-merged", "glossary"]
 type CmdTy = Literal["publish", "squash"]
@@ -92,10 +82,6 @@ class PathManager:
 
 PM = PathManager(Path("data"))
 """Global to simplify the argument passing. Should be read-only."""
-
-
-def clean(line: str) -> str:
-    return ANSI_ESCAPE_RE.sub("", line)
 
 
 def double_check(msg: str = "") -> None:
