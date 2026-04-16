@@ -1,5 +1,6 @@
 //! Main dictionary.
 
+pub mod html;
 mod ir;
 mod locale;
 mod yomitan;

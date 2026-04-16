@@ -191,6 +191,16 @@ pub fn find_tag_in_bank(tag: &str) -> Option<TagInfo> {
     })
 }
 
+pub fn find_short_tag_in_bank(tag: &str) -> Option<TagInfo> {
+    TAG_BANK.iter().find_map(|entry| {
+        if entry.0 == tag {
+            Some(TagInfo::new(entry))
+        } else {
+            None
+        }
+    })
+}
+
 /// Find the short form in POSES (`tag_bank_terms.json` with category "partOfSpeech").
 fn find_short_pos(pos: &str) -> Option<&'static str> {
     POSES

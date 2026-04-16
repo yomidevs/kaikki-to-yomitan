@@ -44,6 +44,7 @@ rkyv = { version = "0.8.15" }
 rayon = { version = "1.11.0", default-features = false }
 rusqlite = { version = "0.38.0", default-features = false, features = ["bundled"] }
 walkdir = "2.5.0"
+maud = { version = "0.27.0", default-features = false }
 
 [dev-dependencies]
 criterion = "0.8.1"
