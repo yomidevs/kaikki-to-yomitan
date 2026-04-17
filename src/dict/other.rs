@@ -12,7 +12,7 @@ use crate::{
             TermPhoneticTranscription, YomitanEntry, wrap,
         },
     },
-    tags::{find_short_pos_or_default, find_tag_in_bank, localize_tag},
+    tags::{find_short_pos_or_default, find_tag_in_bank, localize_tag, localize_tag_info},
 };
 
 #[derive(Debug, Clone, Copy)]
@@ -149,17 +149,20 @@ fn process_glossary(source: Edition, target: Lang, entry: &WordEntry, irs: &mut 
     }
 
     let reading = get_reading(source, target, entry).unwrap_or_else(|| entry.word.clone());
-    let short_pos = find_short_pos_or_default(&entry.pos);
-    let loc_short_pos = match localize_tag(target, short_pos) {
-        Some((short, _)) => short,
-        None => short_pos,
+    let definition_tags = match find_tag_in_bank(&entry.pos) {
+        Some(mut tag_info) => {
+            localize_tag_info(target, &mut tag_info);
+            vec![tag_info]
+        }
+        None => vec![],
     };
+    let rules = find_short_pos_or_default(&entry.pos);
 
-    irs.push(YomitanEntry::TermInfo(TermInfo(
+    irs.push(YomitanEntry::TermInfo(TermInfo::new(
         entry.word.clone(),
         reading,
-        loc_short_pos.to_string(),
-        short_pos.to_string(),
+        definition_tags,
+        rules.to_string(),
         definitions,
     )));
 }
@@ -217,17 +220,20 @@ fn process_glossary_extended(
 fn to_yomitan_glossary_extended(target: Lang, irs: &IGlossaryExtended) -> Vec<YomitanEntry> {
     irs.into_iter()
         .map(|(lemma, pos, _, translations)| {
-            let short_pos = find_short_pos_or_default(&pos);
-            let loc_short_pos = match localize_tag(target, short_pos) {
-                Some((short, _)) => short,
-                None => short_pos,
+            let definition_tags = match find_tag_in_bank(&pos) {
+                Some(mut tag_info) => {
+                    localize_tag_info(target, &mut tag_info);
+                    vec![tag_info]
+                }
+                None => vec![],
             };
+            let rules = find_short_pos_or_default(&pos);
 
-            YomitanEntry::TermInfo(TermInfo(
+            YomitanEntry::TermInfo(TermInfo::new(
                 lemma.clone(),
                 String::new(),
-                loc_short_pos.to_string(),
-                short_pos.to_string(),
+                definition_tags,
+                rules.to_string(),
                 translations
                     .iter()
                     .cloned()
@@ -447,7 +453,7 @@ mod tests {
         match yomitan_entries.first().unwrap() {
             YomitanEntry::TermInfo(term_bank) => {
                 // Should use the short pos here (noun > n)
-                assert_eq!(term_bank.2, "n");
+                assert_eq!(term_bank.definition_tags[0].short_tag, "n");
             }
             _ => panic!(), // We know that this dict only produces TermBank
         }
@@ -475,7 +481,9 @@ mod tests {
 
         let yomitan_entries = to_yomitan_glossary_extended(Lang::Ja, &irs);
         match &yomitan_entries[0] {
-            YomitanEntry::TermInfo(term_bank) => assert_eq!(term_bank.2, "名"),
+            YomitanEntry::TermInfo(term_bank) => {
+                assert_eq!(term_bank.definition_tags[0].short_tag, "名")
+            }
             _ => panic!(), // We know that this dict only produces TermBank
         }
     }

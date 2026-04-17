@@ -1,11 +1,8 @@
 use maud::{Markup, html};
 
-use crate::{
-    models::yomitan::{
-        BacklinkContent, BacklinkContentKind, DetailedDefinition, GenericNode, NTag, Node,
-        NodeDataKey, StructuredContent, TagInfo, TermInfo, TermInfoForm, YomitanEntry,
-    },
-    tags::find_short_tag_in_bank,
+use crate::models::yomitan::{
+    BacklinkContent, BacklinkContentKind, DetailedDefinition, GenericNode, NTag, Node, NodeDataKey,
+    StructuredContent, TermInfo, TermInfoForm, YomitanEntry,
 };
 
 // I think there is a trait for this in maud???
@@ -29,32 +26,14 @@ impl ToHtml for YomitanEntry {
 
 impl ToHtml for TermInfo {
     fn to_html(&self) -> Markup {
-        let term = &self.0;
-        let reading = &self.1;
-        let tags = &self.2;
-        let defs = &self.4;
-
-        // Because we relied on yomitan, we have to re-do some work to get the info back
-        // HACK: something quick for now
-        let tinfos: Vec<TagInfo> = tags
-            .split_whitespace()
-            .map(|tag| {
-                // SAFETY: we already found the tag in the back
-                // (it's probably better to carry this info in the data structure,
-                // then only serialize the short forms I guess!)
-                find_short_tag_in_bank(tag).expect(&format!("tag {tag} was not in bank!"))
-            })
-            .collect();
-        // TODO: we are supposed to sort them ourselves too!
-
         html! {
             div class="entry" {
 
-                h2 { (term) }
-                div class="reading" { (reading) }
+                h2 { (self.term) }
+                div class="reading" { (self.reading) }
 
                 div class="definition-tag-list tag-list" {
-                    @for tag in tinfos {
+                    @for tag in &self.definition_tags {
                         span
                             class="tag"
                             title=(tag.long_tag)
@@ -70,7 +49,7 @@ impl ToHtml for TermInfo {
 
                 ul class="gloss-list" {
                     span class="gloss-content structured-content" {
-                        @for def in defs {
+                        @for def in &self.definitions {
                             li { (def.to_html()) }
                         }
                     }
@@ -84,11 +63,11 @@ impl ToHtml for TermInfoForm {
     fn to_html(&self) -> Markup {
         html! {
             div class="entry form" {
-                h2 { (&self.0) }
-                div class="reading" { (&self.1) }
+                h2 { (&self.term) }
+                div class="reading" { (&self.reading) }
 
                 ul {
-                    @for def in &self.3 {
+                    @for def in &self.definitions {
                         li { (def.to_html()) }
                     }
                 }

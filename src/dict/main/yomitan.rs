@@ -18,10 +18,10 @@ use crate::{
         kaikki::{Example, Offset, Synonym, Tag},
         yomitan::{
             BacklinkContent, BacklinkContentKind, DetailedDefinition, GenericNode, NTag, Node,
-            NodeData, NodeDataKey, TermInfo, TermInfoForm, YomitanEntry, wrap,
+            NodeData, NodeDataKey, TagInfo, TermInfo, TermInfoForm, YomitanEntry, wrap,
         },
     },
-    tags::{find_short_pos_or_default, find_tag_in_bank, localize_tag},
+    tags::{find_short_pos_or_default, find_tag_in_bank, localize_tag, localize_tag_info},
 };
 
 pub(crate) fn to_yomitan_impl(langs: LangSpecs, irs: &Tidy) -> Vec<LabelledYomitanEntries> {
@@ -54,15 +54,18 @@ fn to_yomitan_lemma(
         reading.to_string()
     };
 
-    let common_short_tags_found = get_found_tags(pos, info);
-    let definition_tags = common_short_tags_found
+    let common_tag_infos_found = get_found_tags(pos, info);
+    let common_short_tags_found: Vec<_> = common_tag_infos_found
         .iter()
-        .map(|short_tag| match localize_tag(target, short_tag) {
-            Some((short, _)) => short,
-            None => short_tag,
+        .map(|tag_info| tag_info.short_tag.clone())
+        .collect();
+    let definition_tags: Vec<_> = common_tag_infos_found
+        .into_iter()
+        .map(|mut tag_info| {
+            localize_tag_info(target, &mut tag_info);
+            tag_info
         })
-        .collect::<Vec<_>>()
-        .join(" ");
+        .collect();
 
     let mut detailed_definition_content = Node::new_array();
 
@@ -89,7 +92,7 @@ fn to_yomitan_lemma(
         info.link_kaikki.clone(),
     ));
 
-    YomitanEntry::TermInfo(TermInfo(
+    YomitanEntry::TermInfo(TermInfo::new(
         lemma.to_string(),
         yomitan_reading,
         definition_tags,
@@ -107,7 +110,7 @@ fn to_yomitan_lemma(
 ///
 /// For sense-level tags, only those present in *every* gloss are kept
 /// (set intersection across all gloss entries).
-fn get_found_tags(pos: &str, info: &LemmaInfo) -> Vec<Tag> {
+fn get_found_tags(pos: &str, info: &LemmaInfo) -> Vec<TagInfo> {
     let common_tags_iter = info
         .gloss_tree
         .values()
@@ -119,10 +122,7 @@ fn get_found_tags(pos: &str, info: &LemmaInfo) -> Vec<Tag> {
     std::iter::once(pos.to_string())
         .chain(info.tags.clone()) // top level tags (the non-En preferred way)
         .chain(common_tags_iter)
-        .filter_map(|tag| match find_tag_in_bank(&tag) {
-            Some(tag_info) => Some(tag_info.short_tag),
-            None => None,
-        })
+        .filter_map(|tag| find_tag_in_bank(&tag))
         .collect()
 }
 
@@ -491,7 +491,7 @@ fn to_yomitan_forms(source: Lang, form_map: &FormMap) -> Vec<YomitanEntry> {
 
             let short_pos = find_short_pos_or_default(&pos);
 
-            YomitanEntry::TermInfoForm(TermInfoForm(
+            YomitanEntry::TermInfoForm(TermInfoForm::new(
                 normalized_inflected,
                 reading,
                 get_rule_identifier(short_pos),

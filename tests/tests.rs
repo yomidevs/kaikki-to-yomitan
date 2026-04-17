@@ -184,6 +184,15 @@ fn snapshot() {
         options: fixture_options(&fixture_dir, WriterFormat::Html),
     };
     make_dict_from_jsonl(DMain, args).unwrap();
+    let args = MainArgs {
+        langs: MainLangs {
+            source: Lang::Ja,
+            target: Edition::Ja,
+        },
+        dict_name: DictName::default(),
+        options: fixture_options(&fixture_dir, WriterFormat::Html),
+    };
+    make_dict_from_jsonl(DMain, args).unwrap();
     tracing::error!("Before cleanup");
 
     cleanup(&fixture_dir.join("dict"));

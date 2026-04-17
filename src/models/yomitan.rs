@@ -38,13 +38,34 @@ impl YomitanEntry {
 /// [yomitan-dict-builder]: https://github.com/MarvNC/yomichan-dict-builder/blob/master/src/types/yomitan/termbank.ts#L159
 /// [spec]: https://github.com/yomidevs/yomitan/blob/master/ext/data/schemas/dictionary-term-bank-v3-schema.json
 #[derive(Debug, Clone)]
-pub struct TermInfo(
-    pub String,                  // term
-    pub String,                  // reading
-    pub String,                  // definition_tags
-    pub String,                  // space-separated rules
-    pub Vec<DetailedDefinition>, // definitions
-);
+pub struct TermInfo {
+    pub term: String,
+    pub reading: String,
+    // While we could store just a String, and let Yomitan deal with it, it is
+    // preferable to keep the full information for other formats based on the
+    // Yomitan model, than can not defer this work.
+    pub definition_tags: Vec<TagInfo>,
+    pub rules: String, // space-separated rules
+    pub definitions: Vec<DetailedDefinition>,
+}
+
+impl TermInfo {
+    pub const fn new(
+        term: String,
+        reading: String,
+        definition_tags: Vec<TagInfo>,
+        rules: String,
+        definitions: Vec<DetailedDefinition>,
+    ) -> Self {
+        Self {
+            term,
+            reading,
+            definition_tags,
+            rules,
+            definitions,
+        }
+    }
+}
 
 impl Serialize for TermInfo {
     fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
@@ -52,26 +73,51 @@ impl Serialize for TermInfo {
         S: Serializer,
     {
         let mut tup = serializer.serialize_tuple(8)?;
-        tup.serialize_element(&self.0)?;
-        tup.serialize_element(&self.1)?;
-        tup.serialize_element(&self.2)?;
-        tup.serialize_element(&self.3)?;
+        tup.serialize_element(&self.term)?;
+        tup.serialize_element(&self.reading)?;
+        // We only retain the short versions. Yomitan will resolve them via tag_bank.
+        let definition_tags_str = self
+            .definition_tags
+            .iter()
+            .map(|tag_info| tag_info.short_tag.to_string())
+            .collect::<Vec<_>>()
+            .join(" ");
+        tup.serialize_element(&definition_tags_str)?;
+        tup.serialize_element(&self.rules)?;
         tup.serialize_element(&0u8)?;
-        tup.serialize_element(&self.4)?;
+        tup.serialize_element(&self.definitions)?;
         tup.serialize_element(&0u8)?;
         tup.serialize_element(&"")?;
         tup.end()
     }
 }
 
+// TODO: use named struct
+
 /// A term information with hardcoded definition tags. Used in forms.
 #[derive(Debug, Clone)]
-pub struct TermInfoForm(
-    pub String,                  // term
-    pub String,                  // reading
-    pub String,                  // space-separated rules
-    pub Vec<DetailedDefinition>, // definitions
-);
+pub struct TermInfoForm {
+    pub term: String,
+    pub reading: String,
+    pub rules: String, // space-separated rules
+    pub definitions: Vec<DetailedDefinition>,
+}
+
+impl TermInfoForm {
+    pub const fn new(
+        term: String,
+        reading: String,
+        rules: String,
+        definitions: Vec<DetailedDefinition>,
+    ) -> Self {
+        Self {
+            term,
+            reading,
+            rules,
+            definitions,
+        }
+    }
+}
 
 impl Serialize for TermInfoForm {
     fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
@@ -79,12 +125,12 @@ impl Serialize for TermInfoForm {
         S: Serializer,
     {
         let mut tup = serializer.serialize_tuple(8)?;
-        tup.serialize_element(&self.0)?;
-        tup.serialize_element(&self.1)?;
+        tup.serialize_element(&self.term)?;
+        tup.serialize_element(&self.reading)?;
         tup.serialize_element(&"non-lemma")?;
-        tup.serialize_element(&self.2)?;
+        tup.serialize_element(&self.rules)?;
         tup.serialize_element(&0u8)?;
-        tup.serialize_element(&self.3)?;
+        tup.serialize_element(&self.definitions)?;
         tup.serialize_element(&0u8)?;
         tup.serialize_element(&"")?;
         tup.end()
@@ -316,7 +362,7 @@ pub fn wrap(tag: NTag, content_ty: &str, content: Node) -> Node {
 /// A tag. See [yomitan-dict-builder].
 ///
 /// [yomitan-dict-builder]: https://github.com/MarvNC/yomichan-dict-builder/blob/master/src/types/yomitan/tagbank.ts
-#[derive(Debug, PartialEq, Eq)]
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub struct TagInfo {
     pub short_tag: String, // tagName
     pub category: String,  // category

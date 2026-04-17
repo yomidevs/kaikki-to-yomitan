@@ -68,7 +68,8 @@ impl WriterFormat {
                 use std::fs::File;
                 use std::io::{BufWriter, Write};
                 use std::path::Path;
-                let filename = Path::new("html/test.html");
+                let filepath = format!("html/test_{}_{}.html", langs.source, langs.target);
+                let filename = Path::new(&filepath);
                 if let Some(parent) = filename.parent() {
                     std::fs::create_dir_all(parent)?;
                 }

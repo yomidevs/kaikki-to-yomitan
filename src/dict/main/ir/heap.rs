@@ -123,19 +123,17 @@ impl HeapSize for YomitanEntry {
 
 impl HeapSize for TermInfo {
     fn heap_size(&self) -> usize {
-        self.0.heap_size() // term
-                + self.1.heap_size() // reading
-                + self.2.heap_size() // definition_tags
-                + self.3.heap_size() // rules
-                + self.4.heap_size() // definitions
+        self.term.heap_size()
+            + self.reading.heap_size()
+            + self.definition_tags.heap_size()
+            + self.rules.heap_size()
+            + self.definitions.heap_size()
     }
 }
 
 impl HeapSize for TermInfoForm {
     fn heap_size(&self) -> usize {
-        self.0.heap_size() // term
-                + self.1.heap_size() // reading
-                + self.2.heap_size() // definitions
+        self.term.heap_size() + self.reading.heap_size() + self.definitions.heap_size()
     }
 }
 
@@ -228,5 +226,11 @@ impl HeapSize for LabelledYomitanEntries {
     fn heap_size(&self) -> usize {
         0
         // self.entries.heap_size()
+    }
+}
+
+impl HeapSize for TagInfo {
+    fn heap_size(&self) -> usize {
+        self.short_tag.heap_size() + self.category.heap_size() + self.long_tag.heap_size()
     }
 }
