@@ -2,7 +2,7 @@ use maud::{Markup, html};
 
 use crate::models::yomitan::{
     BacklinkContent, BacklinkContentKind, DetailedDefinition, GenericNode, NTag, Node, NodeDataKey,
-    StructuredContent, TermInfo, TermInfoForm, YomitanEntry,
+    PhoneticTranscription, StructuredContent, TermInfo, TermInfoForm, TermMeta, YomitanEntry,
 };
 
 // I think there is a trait for this in maud???
@@ -19,7 +19,7 @@ impl ToHtml for YomitanEntry {
         match self {
             YomitanEntry::TermInfo(t) => t.to_html(),
             YomitanEntry::TermInfoForm(t) => t.to_html(),
-            YomitanEntry::TermMeta(_) => unimplemented!(),
+            YomitanEntry::TermMeta(t) => t.to_html(),
         }
     }
 }
@@ -70,6 +70,32 @@ impl ToHtml for TermInfoForm {
                     @for def in &self.definitions {
                         li { (def.to_html()) }
                     }
+                }
+            }
+        }
+    }
+}
+
+// Just a prototype, very rough
+impl ToHtml for TermMeta {
+    fn to_html(&self) -> Markup {
+        let TermMeta::TermPhoneticTranscription(tm) = self;
+        html! {
+            div class="entry form" {
+                h2 { (tm.term) }
+                h3 { (tm.transcription.to_html()) }
+            }
+        }
+    }
+}
+
+impl ToHtml for PhoneticTranscription {
+    fn to_html(&self) -> Markup {
+        html! {
+            b { (self.reading) }
+            ul {
+                @for tr in &self.transcriptions {
+                    li { (tr.ipa) (tr.tags.join("|")) }
                 }
             }
         }
