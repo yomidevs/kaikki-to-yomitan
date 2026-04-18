@@ -48,10 +48,8 @@ impl ToHtml for TermInfo {
                 }
 
                 ul class="gloss-list" {
-                    span class="gloss-content structured-content" {
-                        @for def in &self.definitions {
-                            li { (def.to_html()) }
-                        }
+                    @for def in &self.definitions {
+                        li { (def.to_html()) }
                     }
                 }
             }
