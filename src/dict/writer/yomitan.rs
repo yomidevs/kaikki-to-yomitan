@@ -15,7 +15,7 @@ use zip::write::SimpleFileOptions;
 
 use crate::{
     cli::Options,
-    dict::{LabelledYomitanEntries, index::get_index},
+    dict::{LabelledYomitanEntries, core::Label, index::get_index},
     lang::Lang,
     models::yomitan::YomitanEntry,
     path::PathManager,
@@ -132,7 +132,7 @@ fn write_banks(
     quiet: bool,
     yomitan_entries: &[YomitanEntry],
     bank_index: &mut usize,
-    label: &str,
+    label: Label,
     out_dir: &Path,
     mut sink: Sink,
 ) -> Result<()> {

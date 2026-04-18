@@ -32,13 +32,13 @@ pub(crate) type E = Vec<YomitanEntry>;
 /// when writing dictionaries since the current term bank will end, and a new one
 /// will start for the next label.
 pub struct LabelledYomitanEntries {
-    pub label: &'static str,
+    pub label: Label,
     pub entries: E,
 }
 
 impl LabelledYomitanEntries {
     pub fn new(
-        label: &'static str,
+        label: Label,
         // entries: impl IntoIterator<Item = YomitanEntry> + 'static,
         entries: Vec<YomitanEntry>,
     ) -> Self {
@@ -47,6 +47,23 @@ impl LabelledYomitanEntries {
             // entries: Box::new(entries.into_iter()),
             entries,
         }
+    }
+}
+
+pub enum Label {
+    Lemma,
+    Form,
+    Term,
+}
+
+impl fmt::Display for Label {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        let s = match self {
+            Label::Lemma => "lemma",
+            Label::Form => "form",
+            Label::Term => "term",
+        };
+        write!(f, "{s}")
     }
 }
 

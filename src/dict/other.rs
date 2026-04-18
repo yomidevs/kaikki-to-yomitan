@@ -3,7 +3,11 @@
 use crate::{
     Map, Set,
     cli::{GlossaryArgs, GlossaryExtendedArgs, IpaArgs, IpaMergedArgs, LangSpecs},
-    dict::{Dictionary, LabelledYomitanEntries, Langs, main::get_reading},
+    dict::{
+        Dictionary, Langs,
+        core::{Label, LabelledYomitanEntries},
+        main::get_reading,
+    },
     lang::{Edition, Lang},
     models::{
         kaikki::WordEntry,
@@ -36,7 +40,7 @@ impl Dictionary for DGlossary {
     }
 
     fn to_yomitan(&self, _: LangSpecs, irs: &Self::I) -> Vec<LabelledYomitanEntries> {
-        vec![LabelledYomitanEntries::new("term", irs.clone())]
+        vec![LabelledYomitanEntries::new(Label::Term, irs.clone())]
     }
 }
 
@@ -70,7 +74,7 @@ impl Dictionary for DGlossaryExtended {
 
     fn to_yomitan(&self, langs: LangSpecs, irs: &Self::I) -> Vec<LabelledYomitanEntries> {
         vec![LabelledYomitanEntries::new(
-            "term",
+            Label::Term,
             to_yomitan_glossary_extended(langs.target, irs),
         )]
     }
@@ -85,7 +89,10 @@ impl Dictionary for DIpa {
     }
 
     fn to_yomitan(&self, _: LangSpecs, irs: &Self::I) -> Vec<LabelledYomitanEntries> {
-        vec![LabelledYomitanEntries::new("term", to_yomitan_ipa(irs))]
+        vec![LabelledYomitanEntries::new(
+            Label::Term,
+            to_yomitan_ipa(irs),
+        )]
     }
 }
 
@@ -103,7 +110,10 @@ impl Dictionary for DIpaMerged {
     }
 
     fn to_yomitan(&self, _: LangSpecs, irs: &Self::I) -> Vec<LabelledYomitanEntries> {
-        vec![LabelledYomitanEntries::new("term", to_yomitan_ipa(irs))]
+        vec![LabelledYomitanEntries::new(
+            Label::Term,
+            to_yomitan_ipa(irs),
+        )]
     }
 }
 

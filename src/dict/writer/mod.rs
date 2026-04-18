@@ -11,7 +11,11 @@ use clap::ValueEnum;
 
 use crate::{
     cli::{LangSpecs, Options},
-    dict::{Dictionary, Intermediate, core::LabelledYomitanEntries, main::html::render_entry},
+    dict::{
+        Dictionary, Intermediate,
+        core::{Label, LabelledYomitanEntries},
+        main::html::render_entry,
+    },
     models::yomitan::{DetailedDefinition, YomitanEntry},
     path::PathManager,
 };
@@ -225,12 +229,15 @@ fn write_stardict(
 ) -> Result<()> {
     let mut lemmas = vec![];
     let mut forms = vec![];
-    // HACK:
+
+    // HACK:the label should not (maybe yes?) be used to infer anything about the structure
+    // of the dictionary.
+    // ... although, in practice, as long as it is not a form, it is structurally a lemma
+    // (and this is valid for all dictionaries)
     for lentry in labelled_entries {
         match lentry.label {
-            "lemma" => lemmas = lentry.entries,
-            "form" => forms = lentry.entries,
-            other => unimplemented!("Didn't recognize label {}", other),
+            Label::Lemma | Label::Term => lemmas = lentry.entries,
+            Label::Form => forms = lentry.entries,
         }
     }
 

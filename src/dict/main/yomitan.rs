@@ -4,7 +4,7 @@ use crate::{
     Set,
     cli::LangSpecs,
     dict::{
-        LabelledYomitanEntries,
+        core::{Label, LabelledYomitanEntries},
         main::{
             ir::{FormMap, GlossTree, LemmaInfo, LemmaMap, Tidy, normalize_orthography},
             locale::{
@@ -26,8 +26,11 @@ use crate::{
 
 pub(crate) fn to_yomitan_impl(langs: LangSpecs, irs: &Tidy) -> Vec<LabelledYomitanEntries> {
     vec![
-        LabelledYomitanEntries::new("lemma", to_yomitan_lemmas(langs.target, &irs.lemma_map)),
-        LabelledYomitanEntries::new("form", to_yomitan_forms(langs.source, &irs.form_map)),
+        LabelledYomitanEntries::new(
+            Label::Lemma,
+            to_yomitan_lemmas(langs.target, &irs.lemma_map),
+        ),
+        LabelledYomitanEntries::new(Label::Form, to_yomitan_forms(langs.source, &irs.form_map)),
     ]
 }
 
