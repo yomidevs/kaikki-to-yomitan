@@ -25,12 +25,41 @@ impl ToHtml for YomitanEntry {
 }
 
 impl ToHtml for TermInfo {
+    // 1. Reading
+    // A simple reading can be rendered with
+    // div class="entry" {
+    //    h2 { (self.term) }
+    //    div class="reading" { (self.reading) }
+    //    ...
+    // but yomitan renders them as ruby.
+    // See https://github.com/yomidevs/yomitan/blob/master/ext/js/display/display-generator.js#L1050
+    //
+    // WARN: rendering as ruby may not be supported in some readers.
+    // See https://github.com/koreader/koreader/issues/15259#issuecomment-4231135351
+    //
+    //
+    // 2. Multiple definitions
+    // This part works in yomitan because they group multiple definitions...
+    // but other formats may not.
+    //
+    // It is unclear to me if we want to merge them or not, prior to this rendering.
+    //
+    // Note that we always have exactly one definition. That is how we comply with
+    // the yomitan schema.
     fn to_html(&self) -> Markup {
+        debug_assert!(self.definitions.len() == 1);
+        let def = &self.definitions[0];
+
         html! {
             div class="entry" {
-
-                h2 { (self.term) }
-                div class="reading" { (self.reading) }
+                div class="headword" {
+                    ruby {
+                        (self.term)
+                        @if !self.reading.is_empty() {
+                            rt { (self.reading) }
+                        }
+                    }
+                }
 
                 div class="definition-tag-list tag-list" {
                     @for tag in &self.definition_tags {
@@ -47,11 +76,7 @@ impl ToHtml for TermInfo {
                     }
                 }
 
-                ul class="gloss-list" {
-                    @for def in &self.definitions {
-                        li { (def.to_html()) }
-                    }
-                }
+                (def.to_html())
             }
         }
     }
