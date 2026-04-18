@@ -44,12 +44,9 @@ impl ToHtml for TermInfo {
     //
     // It is unclear to me if we want to merge them or not, prior to this rendering.
     //
-    // Note that we always have exactly one definition in lemmas. That is how we comply with
-    // the yomitan schema. This is NOT true for forms.
+    // Note that, for the main dictionary, we always have exactly one definition in lemmas.
+    // This is NOT true for forms in the main dictionary, nor for the glossary dictionary.
     fn to_html(&self) -> Markup {
-        debug_assert!(self.definitions.len() == 1);
-        let def = &self.definitions[0];
-
         html! {
             div class="entry" {
                 div class="headword" {
@@ -76,7 +73,17 @@ impl ToHtml for TermInfo {
                     }
                 }
 
-                (def.to_html())
+                @if self.definitions.len() == 1 {
+                    (self.definitions[0].to_html())
+                } @else {
+                    ol class="definition-list" {
+                        @for def in &self.definitions {
+                            li {
+                                (def.to_html())
+                            }
+                        }
+                    }
+                }
             }
         }
     }

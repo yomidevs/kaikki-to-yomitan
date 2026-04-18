@@ -202,6 +202,15 @@ fn snapshot() {
         options: fixture_options(&fixture_dir, WriterFormat::Html),
     };
     make_dict_from_jsonl(DIpa, args).unwrap();
+    let args = GlossaryArgs {
+        langs: GlossaryLangs {
+            source: Edition::Ja,
+            target: Lang::En,
+        },
+        dict_name: DictName::default(),
+        options: fixture_options(&fixture_dir, WriterFormat::Html),
+    };
+    make_dict_from_jsonl(DGlossary, args).unwrap();
     tracing::error!("Before cleanup");
 
     cleanup(&fixture_dir.join("dict"));
