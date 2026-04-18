@@ -1,30 +1,25 @@
+//! HTML renderers for the YomitanEntry type.
+
+use crate::models::yomitan::*;
 use maud::{Markup, html};
 
-use crate::models::yomitan::{
-    BacklinkContent, BacklinkContentKind, DetailedDefinition, GenericNode, NTag, Node, NodeDataKey,
-    PhoneticTranscription, StructuredContent, TermInfo, TermInfoForm, TermMeta, YomitanEntry,
-};
+// The closest rendering to the yomitan popup.
+// It is used as the default for the Renderer trait.
+pub struct BaseRenderer;
+// Rendering that mostly targets KOReader
+pub struct StardictRenderer;
 
-// I think there is a trait for this in maud???
-trait ToHtml {
-    fn to_html(&self) -> Markup;
-}
+impl Renderer for BaseRenderer {}
 
-pub fn render_entry(entry: &YomitanEntry) -> Markup {
-    entry.to_html()
-}
-
-impl ToHtml for YomitanEntry {
-    fn to_html(&self) -> Markup {
-        match self {
-            YomitanEntry::TermInfo(t) => t.to_html(),
-            YomitanEntry::TermInfoForm(t) => t.to_html(),
-            YomitanEntry::TermMeta(t) => t.to_html(),
+pub trait Renderer {
+    fn render_entry(entry: &YomitanEntry) -> Markup {
+        match entry {
+            YomitanEntry::TermInfo(t) => Self::render_term_info(t),
+            YomitanEntry::TermInfoForm(t) => Self::render_term_info_form(t),
+            YomitanEntry::TermMeta(t) => Self::render_term_meta(t),
         }
     }
-}
 
-impl ToHtml for TermInfo {
     // 1. Reading
     // A simple reading can be rendered with
     // div class="entry" {
@@ -46,40 +41,38 @@ impl ToHtml for TermInfo {
     //
     // Note that, for the main dictionary, we always have exactly one definition in lemmas.
     // This is NOT true for forms in the main dictionary, nor for the glossary dictionary.
-    fn to_html(&self) -> Markup {
+    fn render_term_info(entry: &TermInfo) -> Markup {
         html! {
             div class="entry" {
                 div class="headword" {
                     ruby {
-                        (self.term)
-                        @if !self.reading.is_empty() {
-                            rt { (self.reading) }
+                        (entry.term)
+                        @if !entry.reading.is_empty() {
+                            rt { (entry.reading) }
                         }
                     }
                 }
-
                 div class="definition-tag-list tag-list" {
-                    @for tag in &self.definition_tags {
+                    @for tag in &entry.definition_tags {
                         span
                             class="tag"
                             title=(tag.long_tag)
                             data-details=(tag.long_tag)
                             data-category=(tag.category)
-                       {
-                           span class="tag-label" {
-                               span class="tag-label-content" { (tag.short_tag) }
-                           }
-                       }
+                        {
+                            span class="tag-label" {
+                                span class="tag-label-content" { (tag.short_tag) }
+                            }
+                        }
                     }
                 }
-
-                @if self.definitions.len() == 1 {
-                    (self.definitions[0].to_html())
+                @if entry.definitions.len() == 1 {
+                    (Self::render_detailed_definition(&entry.definitions[0]))
                 } @else {
                     ol class="definition-list" {
-                        @for def in &self.definitions {
+                        @for def in &entry.definitions {
                             li {
-                                (def.to_html())
+                                (Self::render_detailed_definition(def))
                             }
                         }
                     }
@@ -87,100 +80,71 @@ impl ToHtml for TermInfo {
             }
         }
     }
-}
 
-impl ToHtml for TermInfoForm {
-    fn to_html(&self) -> Markup {
+    fn render_term_info_form(entry: &TermInfoForm) -> Markup {
         html! {
             div class="entry form" {
-                h2 { (&self.term) }
-                div class="reading" { (&self.reading) }
-
+                h2 { (&entry.term) }
+                div class="reading" { (&entry.reading) }
                 ul {
-                    @for def in &self.definitions {
-                        li { (def.to_html()) }
+                    @for def in &entry.definitions {
+                        li { (Self::render_detailed_definition(def)) }
                     }
                 }
             }
         }
     }
-}
 
-// Just a prototype, very rough
-impl ToHtml for TermMeta {
-    fn to_html(&self) -> Markup {
-        let TermMeta::TermPhoneticTranscription(tm) = self;
+    fn render_term_meta(entry: &TermMeta) -> Markup {
+        let TermMeta::TermPhoneticTranscription(tm) = entry;
         html! {
             div class="entry form" {
                 h2 { (tm.term) }
-                h3 { (tm.transcription.to_html()) }
+                h3 { (Self::render_phonetic_transcription(&tm.transcription)) }
             }
         }
     }
-}
 
-impl ToHtml for PhoneticTranscription {
-    fn to_html(&self) -> Markup {
+    fn render_phonetic_transcription(pt: &PhoneticTranscription) -> Markup {
         html! {
-            b { (self.reading) }
+            b { (pt.reading) }
             ul {
-                @for tr in &self.transcriptions {
+                @for tr in &pt.transcriptions {
                     li { (tr.ipa) (tr.tags.join("|")) }
                 }
             }
         }
     }
-}
 
-impl ToHtml for DetailedDefinition {
-    fn to_html(&self) -> Markup {
-        match self {
+    fn render_detailed_definition(def: &DetailedDefinition) -> Markup {
+        match def {
             DetailedDefinition::Text(s) => html! { (s) },
-            DetailedDefinition::StructuredContent(s) => s.to_html(),
-            DetailedDefinition::Inflection((label, forms)) => {
-                html! {
-                    b { (label) } ": " (forms.join(", "))
-                }
-            }
+            DetailedDefinition::StructuredContent(s) => Self::render_structured_content(s),
+            DetailedDefinition::Inflection((label, forms)) => html! {
+                b { (label) } ": " (forms.join(", "))
+            },
         }
     }
-}
 
-impl ToHtml for StructuredContent {
-    fn to_html(&self) -> Markup {
-        self.content.to_html()
+    fn render_structured_content(sc: &StructuredContent) -> Markup {
+        Self::render_node(&sc.content)
     }
-}
 
-impl ToHtml for Node {
-    fn to_html(&self) -> Markup {
-        match self {
+    fn render_node(node: &Node) -> Markup {
+        match node {
             Node::Text(t) => html! { (t) },
             Node::Array(nodes) => html! {
-                @for n in nodes {
-                    (n.to_html())
-                }
+                @for n in nodes { (Self::render_node(n)) }
             },
-            Node::Generic(g) => g.to_html(),
-            Node::Backlink(b) => b.to_html(),
+            Node::Generic(g) => Self::render_generic_node(g),
+            Node::Backlink(b) => Self::render_backlink(b),
         }
     }
-}
 
-impl ToHtml for GenericNode {
-    fn to_html(&self) -> Markup {
-        let content = self.content.to_html();
+    fn render_generic_node(node: &GenericNode) -> Markup {
+        let content = Self::render_node(&node.content);
 
-        // Node data is map<String, String>
-        // "data": {
-        //   "content": "tag",
-        //   "category": "partOfSpeech"
-        // },
-        // that we want to add to the tags metadata
-        // like <span data-sc=content=tag
-
-        let data = self.data.as_ref();
-
+        let data = node.data.as_ref();
         let content_attr = data
             .and_then(|d| d.0.get(&NodeDataKey::Content))
             .map(|s| s.as_str());
@@ -194,85 +158,84 @@ impl ToHtml for GenericNode {
 
         // https://github.com/lambda-fairy/maud/issues/240
         // The attr=[value] syntax skips the attribute if the value is None
-
-        match self.tag {
+        match node.tag {
             NTag::Span => html! {
                 span
                     class=[class]
                     data-sc-content=[content_attr]
                     data-sc-category=[category_attr]
-                {
-                    (content)
-                }
+                { (content) }
             },
-
             NTag::Div => html! {
                 div
                     class=[class]
                     data-sc-content=[content_attr]
                     data-sc-category=[category_attr]
-                {
-                    (content)
-                }
+                { (content) }
             },
-
             NTag::Ol => html! {
                 ol
                     data-sc-content=[content_attr]
                     data-sc-category=[category_attr]
-                {
-                    (content)
-                }
+                { (content) }
             },
-
             NTag::Ul => html! {
                 ul
                     data-sc-content=[content_attr]
                     data-sc-category=[category_attr]
-                {
-                    (content)
-                }
+                { (content) }
             },
-
             NTag::Li => html! {
                 li
                     data-sc-content=[content_attr]
                     data-sc-category=[category_attr]
-                {
-                    (content)
-                }
+                { (content) }
             },
-
             NTag::Details => html! {
                 details
                     data-sc-content=[content_attr]
                     data-sc-category=[category_attr]
-                {
-                    (content)
-                }
+                { (content) }
             },
-
             NTag::Summary => html! {
                 summary
                     data-sc-content=[content_attr]
                     data-sc-category=[category_attr]
-                {
-                    (content)
-                }
+                { (content) }
             },
+        }
+    }
+
+    fn render_backlink(b: &BacklinkContent) -> Markup {
+        let label = match b.content {
+            BacklinkContentKind::Wiktionary => "Wiktionary",
+            BacklinkContentKind::Kaikki => "Kaikki",
+        };
+        html! {
+            a href=(b.href) data-sc-content="backlink" { (label) }
         }
     }
 }
 
-impl ToHtml for BacklinkContent {
-    fn to_html(&self) -> Markup {
-        let label = match self.content {
-            BacklinkContentKind::Wiktionary => "Wiktionary",
-            BacklinkContentKind::Kaikki => "Kaikki",
-        };
-
+impl Renderer for StardictRenderer {
+    fn render_term_info(entry: &TermInfo) -> Markup {
+        let def = &entry.definitions[0];
         html! {
-            a href=(self.href) data-sc-content="backlink" { (label) }
+            div class="entry" {
+                div class="headword" {
+                    // no ruby
+                    (entry.term)
+                    @if !entry.reading.is_empty() {
+                        span class="reading" { " [" (entry.reading) "]" }
+                    }
+                }
+                (Self::render_detailed_definition(def))
+            }
         }
+    }
+
+    fn render_backlink(_: &BacklinkContent) -> Markup {
+        // not supported in KOReader
+        html! {}
     }
 }

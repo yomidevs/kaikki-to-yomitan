@@ -14,7 +14,7 @@ use crate::{
     dict::{
         Dictionary, Intermediate,
         core::{Label, LabelledYomitanEntries},
-        main::html::render_entry,
+        main::html::{BaseRenderer, Renderer, StardictRenderer},
     },
     models::yomitan::{DetailedDefinition, YomitanEntry},
     path::PathManager,
@@ -122,7 +122,7 @@ fn write_html(
     // we don't care about labels for html
     for lentry in labelled_entries {
         for entry in lentry.entries {
-            let html = render_entry(&entry).into_string();
+            let html = BaseRenderer::render_entry(&entry).into_string();
             if opts.pretty {
                 let pretty = prettify_html(&html);
                 writer.write_all(pretty.as_bytes())?;
@@ -158,7 +158,7 @@ fn write_mdict_text(
             writer.write_all(entry.term().as_bytes())?;
             writer.write_all(b"\n")?;
 
-            let html = render_entry(&entry).into_string();
+            let html = BaseRenderer::render_entry(&entry).into_string();
             // Requires a css include in each entry!
             writer.write_all(b"<link rel='stylesheet' href='styles.css' type='text/css'>")?;
             if opts.pretty {
@@ -247,7 +247,12 @@ fn write_stardict(
     let definitions = lemmas
         .into_iter()
         // the into below is for PreEscapedString > String
-        .map(|entry| (entry.term().to_string(), render_entry(&entry).into()))
+        .map(|entry| {
+            (
+                entry.term().to_string(),
+                StardictRenderer::render_entry(&entry).into(),
+            )
+        })
         .collect();
     let synonyms = forms
         .into_iter()
