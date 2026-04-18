@@ -27,6 +27,17 @@ impl YomitanEntry {
             Self::TermMeta(_) => "term_meta_bank",
         }
     }
+
+    pub fn term(&self) -> &str {
+        match self {
+            YomitanEntry::TermInfo(t) => t.term.as_str(),
+            YomitanEntry::TermInfoForm(t) => t.term.as_str(),
+            YomitanEntry::TermMeta(t) => {
+                let TermMeta::TermPhoneticTranscription(t) = t;
+                t.term.as_str()
+            }
+        }
+    }
 }
 
 // Simplified version to avoid storing some fields. Those are written later on via serialize.
