@@ -44,8 +44,8 @@ impl ToHtml for TermInfo {
     //
     // It is unclear to me if we want to merge them or not, prior to this rendering.
     //
-    // Note that we always have exactly one definition. That is how we comply with
-    // the yomitan schema.
+    // Note that we always have exactly one definition in lemmas. That is how we comply with
+    // the yomitan schema. This is NOT true for forms.
     fn to_html(&self) -> Markup {
         debug_assert!(self.definitions.len() == 1);
         let def = &self.definitions[0];
