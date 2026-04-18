@@ -44,6 +44,28 @@
         [
           "plural"
         ]
+      ],
+      "verb": [
+        "extracted",
+        [
+          "third-person singular present"
+        ]
+      ]
+    },
+    "falconing": {
+      "verb": [
+        "extracted",
+        [
+          "present participle"
+        ]
+      ]
+    },
+    "falconed": {
+      "verb": [
+        "extracted",
+        [
+          "past participle"
+        ]
       ]
     }
   },

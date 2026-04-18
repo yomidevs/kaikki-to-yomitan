@@ -68,6 +68,42 @@
     ""
   ],
   [
+    "falcon",
+    "falcon",
+    "V",
+    "v",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "to hunt with a falcon or falcons"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "Falknerei betreiben"
+                },
+                {
+                  "tag": "li",
+                  "content": "Beizjagd betreiben"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ],
+  [
     "participate",
     "participate",
     "V",

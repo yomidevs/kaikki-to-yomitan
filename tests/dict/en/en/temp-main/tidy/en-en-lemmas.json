@@ -208,6 +208,30 @@
           "wlink": "https://en.wiktionary.org/wiki/falcon#English",
           "klink": "https://kaikki.org/dictionary/English/meaning/f/fa/falcon.html"
         }
+      ],
+      "verb": [
+        {
+          "gloss_tree": {
+            "To hunt with a falcon or falcons.": {
+              "examples": [
+                {
+                  "text": "He rode astride while hawking; she falconed in the ladylike position of sidesaddle.",
+                  "ref": "2003, Brenda Joyce, House of Dreams, page 175:",
+                  "bold_text_offsets": [
+                    [
+                      35,
+                      43
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "etymology_text": "From Middle English faucoun, falcon, faulcon, from Old French falcun, from Late Latin falcō (“falcon”), of Germanic origin, probably via Frankish *falkō (“falcon, hawk”), from Proto-Germanic *falkô (“falcon”), from Proto-Indo-European *pol̑- (“pale”), from *pel- (“fallow”).\nCognates\nCognate with Old English *fealca, fealcen (“falcon”), Dutch valk (“falcon, hawk”), German Falke (“falcon, hawk”), Norwegian and Swedish falk (“falcon”), Icelandic fálki (“falcon”), French faucon (“falcon”), Italian falco (“falcon”), Spanish halcón (“falcon”), Portuguese falcão (“falcon”), Latin falco (“falcon”), Lithuanian pálšas (“pale”), Latvian bāls (“pale”), Latgalian buolgs (“pale”). More at fallow.",
+          "head_info_text": "falcon (third-person singular simple present falcons, present participle falconing, simple past and past participle falconed)",
+          "wlink": "https://en.wiktionary.org/wiki/falcon#English",
+          "klink": "https://kaikki.org/dictionary/English/meaning/f/fa/falcon.html"
+        }
       ]
     }
   },
