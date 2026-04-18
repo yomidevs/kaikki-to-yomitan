@@ -61,13 +61,16 @@ pub struct TermInfo {
 }
 
 impl TermInfo {
-    pub const fn new(
+    pub fn new(
         term: String,
         reading: String,
         definition_tags: Vec<TagInfo>,
         rules: String,
         definitions: Vec<DetailedDefinition>,
     ) -> Self {
+        // INVARIANT: yomitan discards the reading if it's equal to term,
+        // but we don't want it to pollute other formats.
+        debug_assert_ne!(term, reading);
         Self {
             term,
             reading,
@@ -103,8 +106,6 @@ impl Serialize for TermInfo {
     }
 }
 
-// TODO: use named struct
-
 /// A term information with hardcoded definition tags. Used in forms.
 #[derive(Debug, Clone)]
 pub struct TermInfoForm {
@@ -115,12 +116,15 @@ pub struct TermInfoForm {
 }
 
 impl TermInfoForm {
-    pub const fn new(
+    pub fn new(
         term: String,
         reading: String,
         rules: String,
         definitions: Vec<DetailedDefinition>,
     ) -> Self {
+        // INVARIANT: yomitan discards the reading if it's equal to term,
+        // but we don't want it to pollute other formats.
+        debug_assert_ne!(term, reading);
         Self {
             term,
             reading,
