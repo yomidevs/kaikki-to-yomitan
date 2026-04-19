@@ -177,6 +177,7 @@ pub trait Renderer {
             NTag::Span => html! {
                 span
                     class=[class]
+                    title=[node.title.clone()]
                     data-sc-content=[content_attr]
                     data-sc-category=[category_attr]
                 { (content) }

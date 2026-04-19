@@ -78,25 +78,25 @@ impl WriterFormat {
         pm: &PathManager,
         irs: &D::I,
     ) -> Result<()> {
-        let path = match self {
+        let wrote_at_path = match self {
             Self::Yomitan => write_yomitan(
                 langs.source,
                 langs.target,
                 opts,
                 pm,
                 dict.to_yomitan(langs, irs),
-            ),
-            Self::Ir => irs.write(pm),
-            Self::Html => write_html(opts, pm, dict.to_yomitan(langs, irs)),
-            Self::MdictText => write_mdict_text(opts, pm, dict.to_yomitan(langs, irs)),
+            )?,
+            Self::Ir => irs.write(pm)?,
+            Self::Html => write_html(opts, pm, dict.to_yomitan(langs, irs))?,
+            Self::MdictText => write_mdict_text(opts, pm, dict.to_yomitan(langs, irs))?,
             Self::Stardict => write_stardict(
                 langs.source,
                 langs.target,
                 opts,
                 pm,
                 dict.to_yomitan(langs, irs),
-            ),
-            Self::DebugForms => write_debug_forms(opts, pm, dict.to_yomitan(langs, irs)),
+            )?,
+            Self::DebugForms => write_debug_forms(opts, pm, dict.to_yomitan(langs, irs))?,
 
             // We don't need to pretty print a message for these.
             Self::TestHtml => {
@@ -116,7 +116,7 @@ impl WriterFormat {
         };
 
         if !opts.quiet {
-            pretty_println_at_path(&format!("{CHECK_C} Wrote dict"), path?);
+            pretty_println_at_path(&format!("{CHECK_C} Wrote dict"), wrote_at_path);
         }
 
         Ok(())
