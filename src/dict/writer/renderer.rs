@@ -3,14 +3,6 @@
 use crate::models::yomitan::*;
 use maud::{Markup, html};
 
-// The closest rendering to the yomitan popup.
-// It is used as the default for the Renderer trait.
-pub struct BaseRenderer;
-// Rendering that mostly targets KOReader
-pub struct StardictRenderer;
-
-impl Renderer for BaseRenderer {}
-
 pub trait Renderer {
     fn render_entry(entry: &YomitanEntry) -> Markup {
         match entry {
@@ -214,28 +206,5 @@ pub trait Renderer {
         html! {
             a href=(b.href) data-sc-content="backlink" { (label) }
         }
-    }
-}
-
-impl Renderer for StardictRenderer {
-    fn render_term_info(entry: &TermInfo) -> Markup {
-        let def = &entry.definitions[0];
-        html! {
-            div class="entry" {
-                div class="headword" {
-                    // no ruby
-                    (entry.term)
-                    @if !entry.reading.is_empty() {
-                        span class="reading" { " [" (entry.reading) "]" }
-                    }
-                }
-                (Self::render_detailed_definition(def))
-            }
-        }
-    }
-
-    fn render_backlink(_: &BacklinkContent) -> Markup {
-        // not supported in KOReader
-        html! {}
     }
 }
