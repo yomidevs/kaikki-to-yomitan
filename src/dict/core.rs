@@ -50,6 +50,7 @@ impl LabelledYomitanEntries {
     }
 }
 
+#[derive(Debug, PartialEq, Eq)]
 pub enum Label {
     Lemma,
     Form,

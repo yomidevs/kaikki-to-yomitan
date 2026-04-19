@@ -39,6 +39,8 @@ pub enum WriterFormat {
     MdictText,
     // Stardict format
     Stardict,
+    // Debug inflections (only useful for the main dict)
+    DebugForms,
     // Self::YomitanSimple + Self::Ir
     #[value(skip)]
     Tests,
@@ -55,6 +57,7 @@ impl fmt::Display for WriterFormat {
             Self::Html => "html",
             Self::MdictText => "mdict-text",
             Self::Stardict => "stardict",
+            Self::DebugForms => "debug-forms",
             Self::Tests => "tests",
             Self::Skip => "skip",
         })
@@ -83,6 +86,7 @@ impl WriterFormat {
             Self::Html => write_html(opts, pm, dict.to_yomitan(langs, irs)),
             Self::MdictText => write_mdict_text(opts, pm, dict.to_yomitan(langs, irs)),
             Self::Stardict => write_stardict(opts, pm, dict.to_yomitan(langs, irs)),
+            Self::DebugForms => write_debug_forms(opts, pm, dict.to_yomitan(langs, irs)),
             Self::Tests => {
                 irs.write(pm)?;
                 write_yomitan_simple(opts, pm, dict.to_yomitan(langs, irs))?;
@@ -91,6 +95,65 @@ impl WriterFormat {
             Self::Skip => Ok(()),
         }
     }
+}
+
+fn write_debug_forms(
+    _: &Options,
+    pm: &PathManager,
+    labelled_entries: Vec<LabelledYomitanEntries>,
+) -> Result<()> {
+    let dname = pm.dict_name_expanded();
+    let filepath = format!("html/test-{}.txt", dname);
+    let filename = Path::new(&filepath);
+    if let Some(parent) = filename.parent() {
+        std::fs::create_dir_all(parent)?;
+    }
+    let file = File::create(filename)?;
+    let mut writer = BufWriter::new(file);
+
+    // NOTE: we are undoing work and going back to irs... but we can't replace
+    // labelled_entries with irs, since then we should assume that the irs can be
+    // of ANY dictionary (and we only care about the main one)
+    // ... and in theory, there is no guarantee that the irs format of the main
+    // dictionary won't change, while this logic remains the same.
+    let mut grouped_by: HashMap<String, Vec<String>> = HashMap::new();
+
+    for lentry in labelled_entries {
+        // TODO: instead of having labels, restructure Entries to use directly
+        // the yomitan types
+        if lentry.label != Label::Form {
+            continue;
+        }
+        for entry in lentry.entries {
+            let term = entry.term().to_string();
+            let YomitanEntry::TermInfoForm(t) = entry else {
+                panic!()
+            };
+            for def in t.definitions {
+                let DetailedDefinition::Inflection((from, _tags)) = def else {
+                    panic!("forms must be made from inflections");
+                };
+                let tos = grouped_by.entry(from).or_default();
+                if !tos.contains(&term) {
+                    tos.push(term.clone());
+                }
+            }
+        }
+    }
+
+    for (from, tos) in &grouped_by {
+        writer.write_all(from.as_bytes())?;
+        writer.write_all(b"\n")?;
+        for to in tos {
+            writer.write_all(to.as_bytes())?;
+            writer.write_all(b"\n")?;
+        }
+        writer.write_all(b"\n")?;
+    }
+
+    crate::utils::pretty_println_at_path("Wrote debug file", filename);
+
+    Ok(())
 }
 
 // TODO: move this
@@ -281,15 +344,11 @@ fn write_stardict(
 
 // In my machine (ubuntu, flatpak), dict should be @
 // ~/.var/app/rocks.koreader.KOReader/config/koreader/data/dict
-//
-// NOTE: (KOReader) Furigana is not supported. Nor are backlinks.
-//
-// TODO: Fix synonyms
 fn write_to_stardict(
     opath: &Path,
     mut definitions: Definitions,
     mut synonyms: Synonyms,
-) -> std::io::Result<()> {
+) -> Result<()> {
     let output_base = opath.join("output");
 
     let dict_path = output_base.with_extension("dict");
