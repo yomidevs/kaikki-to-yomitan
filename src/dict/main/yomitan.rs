@@ -3,14 +3,11 @@
 use crate::{
     Set,
     cli::LangSpecs,
-    dict::{
-        core::{Label, LabelledYomitanEntries},
-        main::{
-            ir::{FormMap, GlossTree, LemmaInfo, LemmaMap, Tidy, normalize_orthography},
-            locale::{
-                localize_etymology_string, localize_examples_string, localize_grammar_string,
-                localize_synonyms_string,
-            },
+    dict::main::{
+        ir::{FormMap, GlossTree, LemmaInfo, LemmaMap, Tidy, normalize_orthography},
+        locale::{
+            localize_etymology_string, localize_examples_string, localize_grammar_string,
+            localize_synonyms_string,
         },
     },
     lang::Lang,
@@ -18,24 +15,20 @@ use crate::{
         kaikki::{Example, Offset, Synonym, Tag},
         yomitan::{
             BacklinkContent, BacklinkContentKind, DetailedDefinition, GenericNode, NTag, Node,
-            NodeData, NodeDataKey, TagInfo, TermInfo, TermInfoForm, YomitanEntry, wrap,
+            NodeData, NodeDataKey, TagInfo, TermInfo, TermInfoForm, YomitanDict, wrap,
         },
     },
     tags::{find_short_pos_or_default, find_tag_in_bank, localize_tag, localize_tag_info},
 };
 
-pub(crate) fn to_yomitan_impl(langs: LangSpecs, irs: &Tidy) -> Vec<LabelledYomitanEntries> {
-    vec![
-        LabelledYomitanEntries::new(
-            Label::Lemma,
-            to_yomitan_lemmas(langs.target, &irs.lemma_map),
-        ),
-        LabelledYomitanEntries::new(Label::Form, to_yomitan_forms(langs.source, &irs.form_map)),
-    ]
+pub(crate) fn to_yomitan_impl(langs: LangSpecs, irs: &Tidy) -> YomitanDict {
+    let term_info = to_yomitan_lemmas(langs.target, &irs.lemma_map);
+    let term_info_form = to_yomitan_forms(langs.source, &irs.form_map);
+    YomitanDict::new(term_info, term_info_form, vec![])
 }
 
 #[tracing::instrument(skip_all, level = "trace")]
-fn to_yomitan_lemmas(target: Lang, lemma_map: &LemmaMap) -> Vec<YomitanEntry> {
+fn to_yomitan_lemmas(target: Lang, lemma_map: &LemmaMap) -> Vec<TermInfo> {
     lemma_map
         .flat_iter()
         .map(move |(lemma, reading, pos, info)| to_yomitan_lemma(target, lemma, reading, pos, info))
@@ -48,7 +41,7 @@ fn to_yomitan_lemma(
     reading: &str,
     pos: &str,
     info: &LemmaInfo,
-) -> YomitanEntry {
+) -> TermInfo {
     let short_pos = find_short_pos_or_default(&pos);
 
     let yomitan_reading = if reading == lemma {
@@ -95,13 +88,13 @@ fn to_yomitan_lemma(
         info.link_kaikki.clone(),
     ));
 
-    YomitanEntry::TermInfo(TermInfo::new(
+    TermInfo::new(
         lemma.to_string(),
         yomitan_reading,
         definition_tags,
         get_rule_identifier(short_pos),
         vec![DetailedDefinition::structured(detailed_definition_content)],
-    ))
+    )
 }
 
 /// Extracts and normalizes tags associated with a lemma.
@@ -472,7 +465,7 @@ fn sanitize_offsets(offsets: &[Offset], upto: usize) -> Vec<Offset> {
 }
 
 #[tracing::instrument(skip_all, level = "trace")]
-fn to_yomitan_forms(source: Lang, form_map: &FormMap) -> Vec<YomitanEntry> {
+fn to_yomitan_forms(source: Lang, form_map: &FormMap) -> Vec<TermInfoForm> {
     form_map
         .flat_iter()
         .map(move |(uninflected, inflected, pos, _, tags)| {
@@ -494,12 +487,12 @@ fn to_yomitan_forms(source: Lang, form_map: &FormMap) -> Vec<YomitanEntry> {
 
             let short_pos = find_short_pos_or_default(&pos);
 
-            YomitanEntry::TermInfoForm(TermInfoForm::new(
+            TermInfoForm::new(
                 normalized_inflected,
                 reading,
                 get_rule_identifier(short_pos),
                 deinflection_definitions,
-            ))
+            )
         })
         .collect()
 }

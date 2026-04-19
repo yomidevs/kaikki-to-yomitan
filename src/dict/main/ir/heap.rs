@@ -4,7 +4,6 @@ use std::mem::size_of;
 
 use super::*;
 use crate::Map;
-use crate::dict::LabelledYomitanEntries;
 use crate::models::yomitan::*;
 
 pub trait HeapSize {
@@ -222,7 +221,7 @@ impl HeapSize for BacklinkContentKind {
     }
 }
 
-impl HeapSize for LabelledYomitanEntries {
+impl HeapSize for YomitanDict {
     fn heap_size(&self) -> usize {
         0
         // self.entries.heap_size()

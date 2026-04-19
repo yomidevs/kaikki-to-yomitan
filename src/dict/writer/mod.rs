@@ -13,10 +13,9 @@ use crate::{
     cli::{LangSpecs, Options},
     dict::{
         Dictionary, Intermediate,
-        core::{Label, LabelledYomitanEntries},
         main::html::{BaseRenderer, Renderer, StardictRenderer},
     },
-    models::yomitan::{DetailedDefinition, YomitanEntry},
+    models::yomitan::{DetailedDefinition, YomitanDict, YomitanEntry},
     path::PathManager,
 };
 
@@ -97,11 +96,7 @@ impl WriterFormat {
     }
 }
 
-fn write_debug_forms(
-    _: &Options,
-    pm: &PathManager,
-    labelled_entries: Vec<LabelledYomitanEntries>,
-) -> Result<()> {
+fn write_debug_forms(_: &Options, pm: &PathManager, ydict: YomitanDict) -> Result<()> {
     let dname = pm.dict_name_expanded();
     let filepath = format!("html/test-{}.txt", dname);
     let filename = Path::new(&filepath);
@@ -112,31 +107,21 @@ fn write_debug_forms(
     let mut writer = BufWriter::new(file);
 
     // NOTE: we are undoing work and going back to irs... but we can't replace
-    // labelled_entries with irs, since then we should assume that the irs can be
+    // the yomitan dict with irs, since then we should assume that the irs can be
     // of ANY dictionary (and we only care about the main one)
     // ... and in theory, there is no guarantee that the irs format of the main
     // dictionary won't change, while this logic remains the same.
     let mut grouped_by: HashMap<String, Vec<String>> = HashMap::new();
 
-    for lentry in labelled_entries {
-        // TODO: instead of having labels, restructure Entries to use directly
-        // the yomitan types
-        if lentry.label != Label::Form {
-            continue;
-        }
-        for entry in lentry.entries {
-            let term = entry.term().to_string();
-            let YomitanEntry::TermInfoForm(t) = entry else {
-                panic!()
+    for entry in ydict.term_info_form {
+        let term = entry.term.to_string();
+        for def in entry.definitions {
+            let DetailedDefinition::Inflection((from, _tags)) = def else {
+                panic!("forms must be made from inflections");
             };
-            for def in t.definitions {
-                let DetailedDefinition::Inflection((from, _tags)) = def else {
-                    panic!("forms must be made from inflections");
-                };
-                let tos = grouped_by.entry(from).or_default();
-                if !tos.contains(&term) {
-                    tos.push(term.clone());
-                }
+            let tos = grouped_by.entry(from).or_default();
+            if !tos.contains(&term) {
+                tos.push(term.clone());
             }
         }
     }
@@ -157,11 +142,7 @@ fn write_debug_forms(
 }
 
 // TODO: move this
-fn write_html(
-    opts: &Options,
-    pm: &PathManager,
-    labelled_entries: Vec<LabelledYomitanEntries>,
-) -> Result<()> {
+fn write_html(opts: &Options, pm: &PathManager, ydict: YomitanDict) -> Result<()> {
     let dname = pm.dict_name_expanded();
     let filepath = format!("html/test-{}.html", dname);
     let filename = Path::new(&filepath);
@@ -182,16 +163,13 @@ fn write_html(
             "#,
     )?;
 
-    // we don't care about labels for html
-    for lentry in labelled_entries {
-        for entry in lentry.entries {
-            let html = BaseRenderer::render_entry(&entry).into_string();
-            if opts.pretty {
-                let pretty = prettify_html(&html);
-                writer.write_all(pretty.as_bytes())?;
-            } else {
-                writer.write_all(html.as_bytes())?;
-            }
+    for entry in ydict.into_iter_flat() {
+        let html = BaseRenderer::render_entry(&entry).into_string();
+        if opts.pretty {
+            let pretty = prettify_html(&html);
+            writer.write_all(pretty.as_bytes())?;
+        } else {
+            writer.write_all(html.as_bytes())?;
         }
     }
     writer.write_all(br#"</body></html>"#)?;
@@ -201,11 +179,7 @@ fn write_html(
 }
 
 // TODO: move this
-fn write_mdict_text(
-    opts: &Options,
-    pm: &PathManager,
-    labelled_entries: Vec<LabelledYomitanEntries>,
-) -> Result<()> {
+fn write_mdict_text(opts: &Options, pm: &PathManager, ydict: YomitanDict) -> Result<()> {
     let dname = pm.dict_name_expanded();
     let filepath = format!("html/test-{}.txt", dname);
     let filename = Path::new(&filepath);
@@ -215,25 +189,22 @@ fn write_mdict_text(
     let file = File::create(filename)?;
     let mut writer = BufWriter::new(file);
 
-    // we don't care about labels for html
-    for lentry in labelled_entries {
-        for entry in lentry.entries {
-            writer.write_all(entry.term().as_bytes())?;
-            writer.write_all(b"\n")?;
+    for entry in ydict.into_iter_flat() {
+        writer.write_all(entry.term().as_bytes())?;
+        writer.write_all(b"\n")?;
 
-            let html = BaseRenderer::render_entry(&entry).into_string();
-            // Requires a css include in each entry!
-            writer.write_all(b"<link rel='stylesheet' href='styles.css' type='text/css'>")?;
-            if opts.pretty {
-                let pretty = prettify_html(&html);
-                writer.write_all(pretty.as_bytes())?;
-            } else {
-                writer.write_all(html.as_bytes())?;
-            }
-            writer.write_all(b"\n")?;
-            writer.write_all(b"</>")?;
-            writer.write_all(b"\n")?;
+        let html = BaseRenderer::render_entry(&entry).into_string();
+        // Requires a css include in each entry!
+        writer.write_all(b"<link rel='stylesheet' href='styles.css' type='text/css'>")?;
+        if opts.pretty {
+            let pretty = prettify_html(&html);
+            writer.write_all(pretty.as_bytes())?;
+        } else {
+            writer.write_all(html.as_bytes())?;
         }
+        writer.write_all(b"\n")?;
+        writer.write_all(b"</>")?;
+        writer.write_all(b"\n")?;
     }
     writer.write_all(br#"</body></html>"#)?;
     crate::utils::pretty_println_at_path("Wrote html", filename);
@@ -285,24 +256,21 @@ use std::collections::HashMap;
 type Definitions = Vec<(String, String)>;
 type Synonyms = Vec<(String, Vec<String>)>;
 
-fn write_stardict(
-    _: &Options,
-    _: &PathManager,
-    labelled_entries: Vec<LabelledYomitanEntries>,
-) -> Result<()> {
-    let mut lemmas = vec![];
-    let mut forms = vec![];
+fn write_stardict(_: &Options, _: &PathManager, ydict: YomitanDict) -> Result<()> {
+    let term_info_erased: Vec<_> = ydict
+        .term_info
+        .into_iter()
+        .map(YomitanEntry::TermInfo)
+        .collect();
+    let term_meta_erased: Vec<_> = ydict
+        .term_meta
+        .into_iter()
+        .map(YomitanEntry::TermMeta)
+        .collect();
 
-    // HACK:the label should not (maybe yes?) be used to infer anything about the structure
-    // of the dictionary.
-    // ... although, in practice, as long as it is not a form, it is structurally a lemma
-    // (and this is valid for all dictionaries)
-    for lentry in labelled_entries {
-        match lentry.label {
-            Label::Lemma | Label::Term => lemmas = lentry.entries,
-            Label::Form => forms = lentry.entries,
-        }
-    }
+    let mut lemmas = term_info_erased;
+    lemmas.extend(term_meta_erased);
+    let forms = ydict.term_info_form;
 
     let opath = Path::new("wty-stardict");
     let _ = fs::create_dir(&opath);
@@ -320,12 +288,10 @@ fn write_stardict(
     let synonyms = forms
         .into_iter()
         .map(|entry| {
-            let redirects_to = entry.term().to_string();
+            let redirects_to = entry.term;
             let redirects_from = {
-                let YomitanEntry::TermInfoForm(t) = entry else {
-                    panic!("synonyms must be made from forms");
-                };
-                t.definitions
+                entry
+                    .definitions
                     .into_iter()
                     .map(|def| {
                         let DetailedDefinition::Inflection((from, _tags)) = def else {

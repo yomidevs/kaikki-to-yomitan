@@ -15,9 +15,9 @@ use zip::write::SimpleFileOptions;
 
 use crate::{
     cli::Options,
-    dict::{LabelledYomitanEntries, core::Label, index::get_index},
+    dict::index::get_index,
     lang::Lang,
-    models::yomitan::YomitanEntry,
+    models::yomitan::{YomitanDict, YomitanEntry},
     path::PathManager,
     tags::get_tag_bank_as_tag_info,
     utils::{CHECK_C, pretty_print_at_path, pretty_println_at_path},
@@ -34,22 +34,18 @@ enum Sink<'a> {
 }
 
 // no metadata - writes to disk
-pub fn write_yomitan_simple(
-    opts: &Options,
-    pm: &PathManager,
-    labelled_entries: Vec<LabelledYomitanEntries>,
-) -> Result<()> {
+pub fn write_yomitan_simple(opts: &Options, pm: &PathManager, ydict: YomitanDict) -> Result<()> {
     let out_dir = pm.dir_temp_dict();
     fs::create_dir_all(&out_dir)?;
 
     let mut bank_index = 0;
-    for lentry in labelled_entries {
+    for group in ydict.into_iter_grouped() {
         write_banks(
             opts.pretty,
             opts.quiet,
-            &lentry.entries,
+            &group.entries,
             &mut bank_index,
-            lentry.label,
+            group.label,
             &out_dir,
             Sink::Disk,
         )?;
@@ -62,7 +58,7 @@ pub fn write_yomitan_simple(
     Ok(())
 }
 
-/// Write yomitan `labelled_entries` to a sink (either disk or zip).
+/// Write a [`YomitanDict`] to a sink (either disk or zip).
 ///
 /// When zipping, also write metadata (index, css etc.).
 pub fn write_yomitan(
@@ -70,16 +66,8 @@ pub fn write_yomitan(
     target: Lang,
     opts: &Options,
     pm: &PathManager,
-    labelled_entries: Vec<LabelledYomitanEntries>,
+    ydict: YomitanDict,
 ) -> Result<()> {
-    // use crate::dict::heap::HeapSize;
-    // let heap_size = labelled_entries.heap_size();
-    // let heap_size_msg = crate::utils::human_size(heap_size as f64);
-    // tracing::error!(
-    //     "[{source}-{target}] YomitanEntry Vec heap size: {}",
-    //     heap_size_msg
-    // );
-
     let writer_path = pm.path_dict();
     let writer_file = File::create(&writer_path)?;
     let mut zip = ZipWriter::new(writer_file);
@@ -106,13 +94,13 @@ pub fn write_yomitan(
     zip.write_all(&tag_bank_bytes)?;
 
     let mut bank_index = 0;
-    for lentry in labelled_entries {
+    for group in ydict.into_iter_grouped() {
         write_banks(
             opts.pretty,
             opts.quiet,
-            &lentry.entries,
+            &group.entries,
             &mut bank_index,
-            lentry.label,
+            group.label,
             &writer_path,
             Sink::Zip(&mut zip, zip_opts),
         )?;
@@ -132,7 +120,7 @@ fn write_banks(
     quiet: bool,
     yomitan_entries: &[YomitanEntry],
     bank_index: &mut usize,
-    label: Label,
+    label: &'static str,
     out_dir: &Path,
     mut sink: Sink,
 ) -> Result<()> {

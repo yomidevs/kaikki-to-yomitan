@@ -16,61 +16,16 @@ use crate::{
     cli::{LangSpecs, Options},
     download::find_or_download_jsonl,
     lang::{Edition, Lang},
-    models::{kaikki::WordEntry, yomitan::YomitanEntry},
+    models::{kaikki::WordEntry, yomitan::YomitanDict},
     path::PathManager,
     utils::pretty_print_at_path,
 };
 
 const CONSOLE_PRINT_INTERVAL: i32 = 10000;
 
-// pub type E = Box<dyn Iterator<Item = YomitanEntry>>;
-pub(crate) type E = Vec<YomitanEntry>;
-
-/// A Vec<[`YomitanEntry`]> with a string label (f.e. `"lemmas"`, or `"forms"`).
+/// Trait for Intermediate representation.
 ///
-/// Labels are only used internally, for debugging. The separation is also relevant
-/// when writing dictionaries since the current term bank will end, and a new one
-/// will start for the next label.
-pub struct LabelledYomitanEntries {
-    pub label: Label,
-    pub entries: E,
-}
-
-impl LabelledYomitanEntries {
-    pub fn new(
-        label: Label,
-        // entries: impl IntoIterator<Item = YomitanEntry> + 'static,
-        entries: Vec<YomitanEntry>,
-    ) -> Self {
-        Self {
-            label,
-            // entries: Box::new(entries.into_iter()),
-            entries,
-        }
-    }
-}
-
-#[derive(Debug, PartialEq, Eq)]
-pub enum Label {
-    Lemma,
-    Form,
-    Term,
-}
-
-impl fmt::Display for Label {
-    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        let s = match self {
-            Label::Lemma => "lemma",
-            Label::Form => "form",
-            Label::Term => "term",
-        };
-        write!(f, "{s}")
-    }
-}
-
-/// Trait for Intermediate representation. Used for postprocessing (merge, etc.) and debugging via snapshots.
-///
-/// The simplest form is a Vec<[`YomitanEntry`]> if we don't want to do anything fancy, cf. [`crate::dict::DGlossary`]
+/// Used for postprocessing (merge, etc.) and debugging via snapshots.
 pub trait Intermediate: Default {
     fn len(&self) -> usize;
     fn is_empty(&self) -> bool {
@@ -167,7 +122,7 @@ pub trait Dictionary {
     }
 
     /// How to convert `Self::I` into one or more yomitan entries.
-    fn to_yomitan(&self, langs: LangSpecs, irs: &Self::I) -> Vec<LabelledYomitanEntries>;
+    fn to_yomitan(&self, langs: LangSpecs, irs: &Self::I) -> YomitanDict;
 }
 
 fn rejected(entry: &WordEntry, opts: &Options) -> bool {

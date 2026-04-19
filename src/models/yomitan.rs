@@ -12,6 +12,89 @@ use serde::{Deserialize, Serialize};
 
 use crate::{Map, models::kaikki::Tag};
 
+/// A custom type for a yomitan dictionary.
+///
+/// This does not properly match anything in the yomitan schemas. It is just convenient
+/// to store some information that gets erased at [`YomitanEntry`] level.
+///
+/// For instance, term_info and term_info_form are virtually the same to yomitan, but
+/// we want to remember that the [`YomitanEntry`] in term_info_form represent forms.
+/// This allows to separate them when we write the yomitan dictionary, but also to
+/// easily be able to discriminate them when it comes to other formats made from the
+/// yomitan data model.
+pub struct YomitanDict {
+    pub term_info: Vec<TermInfo>,
+    pub term_info_form: Vec<TermInfoForm>,
+    pub term_meta: Vec<TermMeta>,
+}
+
+impl YomitanDict {
+    pub fn new(
+        term_info: Vec<TermInfo>,
+        term_info_form: Vec<TermInfoForm>,
+        term_meta: Vec<TermMeta>,
+    ) -> Self {
+        Self {
+            term_info,
+            term_info_form,
+            term_meta,
+        }
+    }
+
+    /// Flat iterator over type-erased [`YomitanEntry`].
+    pub fn into_iter_flat(self) -> impl Iterator<Item = YomitanEntry> {
+        self.term_info
+            .into_iter()
+            .map(YomitanEntry::TermInfo)
+            .chain(
+                self.term_info_form
+                    .into_iter()
+                    .map(YomitanEntry::TermInfoForm),
+            )
+            .chain(self.term_meta.into_iter().map(YomitanEntry::TermMeta))
+    }
+
+    /// Grouped iterator over type-erased [`YomitanEntry`].
+    ///
+    /// The label string should only be used to print progress to the CLI.
+    pub fn into_iter_grouped(self) -> Vec<EntryGroup> {
+        vec![
+            EntryGroup::new(
+                "term",
+                self.term_info
+                    .into_iter()
+                    .map(YomitanEntry::TermInfo)
+                    .collect(),
+            ),
+            EntryGroup::new(
+                "form",
+                self.term_info_form
+                    .into_iter()
+                    .map(YomitanEntry::TermInfoForm)
+                    .collect(),
+            ),
+            EntryGroup::new(
+                "meta",
+                self.term_meta
+                    .into_iter()
+                    .map(YomitanEntry::TermMeta)
+                    .collect(),
+            ),
+        ]
+    }
+}
+
+pub struct EntryGroup {
+    pub label: &'static str,
+    pub entries: Vec<YomitanEntry>,
+}
+
+impl EntryGroup {
+    fn new(label: &'static str, entries: Vec<YomitanEntry>) -> Self {
+        Self { label, entries }
+    }
+}
+
 #[derive(Debug, Serialize, Clone)]
 #[serde(untagged)]
 pub enum YomitanEntry {

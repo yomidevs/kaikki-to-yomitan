@@ -207,9 +207,9 @@ pub(crate) fn found_ir_message_impl(langs: LangSpecs, irs: &Tidy) {
             n_irs,
             irs_heap_msg,
         );
-        tracing::debug!("├─ lemmas: {} ({})", n_lemmas, lemma_heap_msg,);
+        tracing::debug!("├─ terms: {} ({})", n_lemmas, lemma_heap_msg,);
         tracing::debug!(
-            "└─ forms : {} ({}) [infl {}, extr {}, alt {}]",
+            "└─ forms: {} ({}) [infl {}, extr {}, alt {}]",
             n_forms,
             form_heap_msg,
             n_forms_inflection,
@@ -218,7 +218,7 @@ pub(crate) fn found_ir_message_impl(langs: LangSpecs, irs: &Tidy) {
         );
     } else {
         tracing::debug!(
-            "Found {n_irs} irs: {n_lemmas} lemmas, {n_forms} forms \
+            "Found {n_irs} irs: {n_lemmas} terms, {n_forms} forms \
                 [{n_forms_inflection} infl, {n_forms_extracted} extr, {n_forms_alt_of} alt]"
         );
     }
