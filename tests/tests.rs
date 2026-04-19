@@ -52,27 +52,42 @@ fn fixture_options(fixture_dir: &Path, format: WriterFormat) -> Options {
     }
 }
 
-fn fixture_main_args(source: Lang, target: Edition, fixture_dir: &Path) -> MainArgs {
+fn fixture_main_args(
+    source: Lang,
+    target: Edition,
+    fixture_dir: &Path,
+    format: WriterFormat,
+) -> MainArgs {
     MainArgs {
         langs: MainLangs { source, target },
         dict_name: DictName::default(),
-        options: fixture_options(fixture_dir, WriterFormat::TestYomitanMain),
+        options: fixture_options(fixture_dir, format),
     }
 }
 
-fn fixture_ipa_args(source: Lang, target: Edition, fixture_dir: &Path) -> IpaArgs {
+fn fixture_ipa_args(
+    source: Lang,
+    target: Edition,
+    fixture_dir: &Path,
+    format: WriterFormat,
+) -> IpaArgs {
     IpaArgs {
         langs: MainLangs { source, target },
         dict_name: DictName::default(),
-        options: fixture_options(fixture_dir, WriterFormat::TestYomitan),
+        options: fixture_options(fixture_dir, format),
     }
 }
 
-fn fixture_glossary_args(source: Edition, target: Lang, fixture_dir: &Path) -> GlossaryArgs {
+fn fixture_glossary_args(
+    source: Edition,
+    target: Lang,
+    fixture_dir: &Path,
+    format: WriterFormat,
+) -> GlossaryArgs {
     GlossaryArgs {
         langs: GlossaryLangs { source, target },
         dict_name: DictName::default(),
-        options: fixture_options(fixture_dir, WriterFormat::TestYomitan),
+        options: fixture_options(fixture_dir, format),
     }
 }
 
@@ -136,7 +151,7 @@ fn snapshot() {
         let Result::Ok(target) = (*target).try_into() else {
             continue; // skip if target is not edition
         };
-        let args = fixture_main_args(*source, target, &fixture_dir);
+        let args = fixture_main_args(*source, target, &fixture_dir, WriterFormat::TestYomitanMain);
 
         if let Err(e) = shapshot_main(args) {
             panic!("({source}): {e}");
@@ -160,7 +175,12 @@ fn snapshot() {
             if source == Edition::Simple || *possible_target == Lang::Simple {
                 continue;
             }
-            let args = fixture_glossary_args(source, *possible_target, &fixture_dir);
+            let args = fixture_glossary_args(
+                source,
+                *possible_target,
+                &fixture_dir,
+                WriterFormat::TestYomitan,
+            );
             make_dict_from_jsonl(DGlossary, args).unwrap();
         }
     }
@@ -170,50 +190,31 @@ fn snapshot() {
         let Result::Ok(target) = (*target).try_into() else {
             continue; // skip if target is not edition
         };
-        let args = fixture_ipa_args(*source, target, &fixture_dir);
+        let args = fixture_ipa_args(*source, target, &fixture_dir, WriterFormat::TestYomitan);
         make_dict_from_jsonl(DIpa, args).unwrap();
     }
 
-    // html for the wty-en-en (main)
-    let args = MainArgs {
-        langs: MainLangs {
-            source: Lang::En,
-            target: Edition::En,
-        },
-        dict_name: DictName::default(),
-        options: fixture_options(&fixture_dir, WriterFormat::TestHtml),
-    };
-    make_dict_from_jsonl(DMain, args).unwrap();
-    let args = MainArgs {
-        langs: MainLangs {
-            source: Lang::Ja,
-            target: Edition::Ja,
-        },
-        dict_name: DictName::default(),
-        options: fixture_options(&fixture_dir, WriterFormat::TestHtml),
-    };
-    make_dict_from_jsonl(DMain, args).unwrap();
-    let args = IpaArgs {
-        langs: MainLangs {
-            source: Lang::Ja,
-            target: Edition::Ja,
-        },
-        dict_name: DictName::default(),
-        options: fixture_options(&fixture_dir, WriterFormat::TestHtml),
-    };
-    make_dict_from_jsonl(DIpa, args).unwrap();
-    let args = GlossaryArgs {
-        langs: GlossaryLangs {
-            source: Edition::Ja,
-            target: Lang::En,
-        },
-        dict_name: DictName::default(),
-        options: fixture_options(&fixture_dir, WriterFormat::TestHtml),
-    };
-    make_dict_from_jsonl(DGlossary, args).unwrap();
-    tracing::error!("Before cleanup");
+    // html format tests
+    snapshot_main_html(&fixture_dir).unwrap();
 
     cleanup(&fixture_dir.join("dict"));
+}
+
+fn snapshot_main_html(fixture_dir: &Path) -> Result<()> {
+    let format = WriterFormat::TestHtml;
+
+    let args = fixture_main_args(Lang::En, Edition::En, fixture_dir, format);
+    make_dict_from_jsonl(DMain, args).unwrap();
+    let args = fixture_main_args(Lang::Ja, Edition::Ja, fixture_dir, format);
+    make_dict_from_jsonl(DMain, args).unwrap();
+
+    let args = fixture_ipa_args(Lang::Ja, Edition::Ja, fixture_dir, format);
+    make_dict_from_jsonl(DIpa, args).unwrap();
+
+    let args = fixture_glossary_args(Edition::Ja, Lang::En, fixture_dir, format);
+    make_dict_from_jsonl(DGlossary, args).unwrap();
+
+    Ok(())
 }
 
 /// Delete generated artifacts from previous tests runs, if any
