@@ -28,5 +28,30 @@
         }
       ]
     }
+  },
+  "crodh": {
+    "crodh": {
+      "noun": [
+        {
+          "gloss_tree": {
+            "cattle, wealth (in cattle)": {
+              "tags": [
+                "literary",
+                "masculine"
+              ]
+            },
+            "dowry": {
+              "tags": [
+                "masculine"
+              ]
+            }
+          },
+          "etymology_text": "From Old Irish crod (“cattle, herds, stock; goods, property, wealth”).",
+          "head_info_text": "crodh m (genitive singular croidh, nominative plural croidh)",
+          "wlink": "https://en.wiktionary.org/wiki/crodh#Irish",
+          "klink": "https://kaikki.org/dictionary/Irish/meaning/c/cr/crodh.html"
+        }
+      ]
+    }
   }
 }

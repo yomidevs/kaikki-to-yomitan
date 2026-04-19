@@ -689,7 +689,8 @@ fn preprocess_forms_de_de(entry: &mut WordEntry) {
 }
 
 fn preprocess_forms_ga_en(entry: &mut WordEntry) {
-    const PREFIXES: &[&str] = &["a ", "an ", "leis an ", "don "];
+    // https://en.wiktionary.org/wiki/crodh#Irish
+    const PREFIXES: &[&str] = &["a ", "an ", "na ", "leis an ", "don ", "leis na "];
     for form in &mut entry.forms {
         for &prefix in PREFIXES {
             if let Some(stripped) = form.form.strip_prefix(prefix) {

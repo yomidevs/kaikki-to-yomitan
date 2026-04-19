@@ -72,5 +72,131 @@
     ],
     0,
     ""
+  ],
+  [
+    "croidh",
+    "",
+    "non-lemma",
+    "n",
+    0,
+    [
+      [
+        "crodh",
+        [
+          "genitive singular indefinite"
+        ]
+      ],
+      [
+        "crodh",
+        [
+          "nominative/dative plural definite"
+        ]
+      ],
+      [
+        "crodh",
+        [
+          "nominative/dative plural indefinite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "chroidh",
+    "",
+    "non-lemma",
+    "n",
+    0,
+    [
+      [
+        "crodh",
+        [
+          "genitive singular definite"
+        ]
+      ],
+      [
+        "crodh",
+        [
+          "vocative singular indefinite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "chrodha",
+    "",
+    "non-lemma",
+    "n",
+    0,
+    [
+      [
+        "crodh",
+        [
+          "vocative plural indefinite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "gcrodh",
+    "",
+    "non-lemma",
+    "n",
+    0,
+    [
+      [
+        "crodh",
+        [
+          "dative singular definite"
+        ]
+      ],
+      [
+        "crodh",
+        [
+          "genitive plural definite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "chrodh",
+    "",
+    "non-lemma",
+    "n",
+    0,
+    [
+      [
+        "crodh",
+        [
+          "dative singular definite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "crudh",
+    "",
+    "non-lemma",
+    "n",
+    0,
+    [
+      [
+        "crodh",
+        [
+          "alternative"
+        ]
+      ]
+    ],
+    0,
+    ""
   ]
 ]

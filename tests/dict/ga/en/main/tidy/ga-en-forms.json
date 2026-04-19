@@ -33,5 +33,59 @@
         ]
       ]
     }
+  },
+  "crodh": {
+    "croidh": {
+      "noun": [
+        "extracted",
+        [
+          "genitive singular indefinite",
+          "nominative/dative plural definite",
+          "nominative/dative plural indefinite"
+        ]
+      ]
+    },
+    "chroidh": {
+      "noun": [
+        "extracted",
+        [
+          "genitive singular definite",
+          "vocative singular indefinite"
+        ]
+      ]
+    },
+    "chrodha": {
+      "noun": [
+        "extracted",
+        [
+          "vocative plural indefinite"
+        ]
+      ]
+    },
+    "gcrodh": {
+      "noun": [
+        "extracted",
+        [
+          "dative singular definite",
+          "genitive plural definite"
+        ]
+      ]
+    },
+    "chrodh": {
+      "noun": [
+        "extracted",
+        [
+          "dative singular definite"
+        ]
+      ]
+    },
+    "crudh": {
+      "noun": [
+        "extracted",
+        [
+          "alternative"
+        ]
+      ]
+    }
   }
 }
