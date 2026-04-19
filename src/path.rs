@@ -1,6 +1,9 @@
 //! Helper module to manage paths.
 
-use std::{fmt, fs, path::PathBuf};
+use std::{
+    fmt, fs,
+    path::{Path, PathBuf},
+};
 
 use crate::{
     cli::{DictName, LangSpecs, Options},
@@ -155,12 +158,20 @@ impl PathManager {
     ///
     /// Example: `data/dict/el/el/main/`
     /// Example: `data/dict/el/el/glossary/`
+    //
+    // TODO: make this depend on WriterFromat?
     fn dir_stage(&self) -> PathBuf {
         self.dir_dict().join(self.dict_ty.to_string())
     }
+    /// Example: `data/dict/el/el/main/path`
+    /// Example: `data/dict/el/el/glossary/path`
+    pub fn dir_in_stage<P: AsRef<Path>>(&self, path: P) -> PathBuf {
+        self.dir_stage().join(path)
+    }
     /// Example: `data/dict/el/el/main/tidy`
+    /// Example: `data/dict/el/el/glossary/tidy`
     pub fn dir_tidy(&self) -> PathBuf {
-        self.dir_stage().join("tidy")
+        self.dir_in_stage("tidy")
     }
 
     pub fn setup_dirs(&self) -> anyhow::Result<()> {

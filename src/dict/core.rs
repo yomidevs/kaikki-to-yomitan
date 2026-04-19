@@ -18,7 +18,6 @@ use crate::{
     lang::{Edition, Lang},
     models::{kaikki::WordEntry, yomitan::YomitanDict},
     path::PathManager,
-    utils::pretty_print_at_path,
 };
 
 const CONSOLE_PRINT_INTERVAL: i32 = 10000;
@@ -33,7 +32,7 @@ pub trait Intermediate: Default {
     }
 
     /// How to write `Self::I` to disk.
-    fn write(&self, pm: &PathManager) -> Result<()>;
+    fn write(&self, pm: &PathManager) -> Result<PathBuf>;
 }
 
 impl<T> Intermediate for Vec<T>
@@ -44,7 +43,7 @@ where
         Self::len(self)
     }
 
-    fn write(&self, pm: &PathManager) -> Result<()> {
+    fn write(&self, pm: &PathManager) -> Result<PathBuf> {
         let writer_path = pm.dir_tidy().join("tidy.jsonl");
         let writer_file = File::create(&writer_path)?;
         let writer = BufWriter::new(&writer_file);
@@ -53,10 +52,7 @@ where
         } else {
             serde_json::to_writer(writer, self)?;
         }
-        if !pm.opts.quiet {
-            pretty_print_at_path("Wrote tidy", &writer_path);
-        }
-        Ok(())
+        Ok(writer_path)
     }
 }
 
@@ -69,7 +65,7 @@ where
         Self::len(self)
     }
 
-    fn write(&self, _: &PathManager) -> Result<()> {
+    fn write(&self, _: &PathManager) -> Result<PathBuf> {
         unimplemented!()
     }
 }

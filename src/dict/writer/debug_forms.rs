@@ -2,7 +2,7 @@ use std::{
     collections::HashMap,
     fs::File,
     io::{BufWriter, Write},
-    path::Path,
+    path::PathBuf,
 };
 
 use anyhow::Result;
@@ -13,14 +13,11 @@ use crate::{
     path::PathManager,
 };
 
-pub fn write_debug_forms(_: &Options, pm: &PathManager, ydict: YomitanDict) -> Result<()> {
-    let dname = pm.dict_name_expanded();
-    let filepath = format!("html/test-{dname}.txt");
-    let filename = Path::new(&filepath);
-    if let Some(parent) = filename.parent() {
-        std::fs::create_dir_all(parent)?;
-    }
-    let file = File::create(filename)?;
+pub fn write_debug_forms(_: &Options, _: &PathManager, ydict: YomitanDict) -> Result<PathBuf> {
+    // This is a debug format, so just write it at the root
+    let filepath = PathBuf::from("debug_forms.txt");
+
+    let file = File::create(&filepath)?;
     let mut writer = BufWriter::new(file);
 
     // NOTE: we are undoing work and going back to irs... but we can't replace
@@ -53,7 +50,5 @@ pub fn write_debug_forms(_: &Options, pm: &PathManager, ydict: YomitanDict) -> R
         writer.write_all(b"\n")?;
     }
 
-    crate::utils::pretty_println_at_path("Wrote debug file", filename);
-
-    Ok(())
+    Ok(filepath)
 }

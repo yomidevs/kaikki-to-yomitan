@@ -1,7 +1,7 @@
 use std::{
-    fs::File,
+    fs::{self, File},
     io::{BufWriter, Write},
-    path::Path,
+    path::PathBuf,
 };
 
 use anyhow::Result;
@@ -11,21 +11,19 @@ use crate::{
     dict::writer::{html::prettify_html, renderer::Renderer},
     models::yomitan::YomitanDict,
     path::PathManager,
-    utils::pretty_println_at_path,
 };
 
 mod renderer;
 use renderer::MdictTextRenderer;
 
-pub fn write_mdict_text(opts: &Options, pm: &PathManager, ydict: YomitanDict) -> Result<()> {
-    let dname = pm.dict_name_expanded();
-    let filepath = format!("html/test-{dname}.txt");
-    let filename = Path::new(&filepath);
-    if let Some(parent) = filename.parent() {
-        std::fs::create_dir_all(parent)?;
-    }
+pub fn write_mdict_text(opts: &Options, pm: &PathManager, ydict: YomitanDict) -> Result<PathBuf> {
+    let dir_in_stage = pm.dir_in_stage("mdict");
+    _ = fs::create_dir_all(&dir_in_stage);
 
-    let file = File::create(filename)?;
+    let dict_name = format!("{}.txt", pm.dict_name_expanded());
+    let path_dict = dir_in_stage.join(dict_name);
+
+    let file = File::create(&path_dict)?;
     let mut writer = BufWriter::new(file);
 
     for entry in ydict.into_iter_flat() {
@@ -43,7 +41,5 @@ pub fn write_mdict_text(opts: &Options, pm: &PathManager, ydict: YomitanDict) ->
         writer.write_all(b"\n</>\n")?;
     }
 
-    pretty_println_at_path("Wrote mdict-text", filename);
-
-    Ok(())
+    Ok(path_dict)
 }

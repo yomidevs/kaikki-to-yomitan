@@ -56,7 +56,7 @@ fn fixture_main_args(source: Lang, target: Edition, fixture_dir: &Path) -> MainA
     MainArgs {
         langs: MainLangs { source, target },
         dict_name: DictName::default(),
-        options: fixture_options(fixture_dir, WriterFormat::Tests),
+        options: fixture_options(fixture_dir, WriterFormat::TestYomitanMain),
     }
 }
 
@@ -64,7 +64,7 @@ fn fixture_ipa_args(source: Lang, target: Edition, fixture_dir: &Path) -> IpaArg
     IpaArgs {
         langs: MainLangs { source, target },
         dict_name: DictName::default(),
-        options: fixture_options(fixture_dir, WriterFormat::YomitanSimple),
+        options: fixture_options(fixture_dir, WriterFormat::TestYomitan),
     }
 }
 
@@ -72,7 +72,7 @@ fn fixture_glossary_args(source: Edition, target: Lang, fixture_dir: &Path) -> G
     GlossaryArgs {
         langs: GlossaryLangs { source, target },
         dict_name: DictName::default(),
-        options: fixture_options(fixture_dir, WriterFormat::YomitanSimple),
+        options: fixture_options(fixture_dir, WriterFormat::TestYomitan),
     }
 }
 
@@ -181,7 +181,7 @@ fn snapshot() {
             target: Edition::En,
         },
         dict_name: DictName::default(),
-        options: fixture_options(&fixture_dir, WriterFormat::Html),
+        options: fixture_options(&fixture_dir, WriterFormat::TestHtml),
     };
     make_dict_from_jsonl(DMain, args).unwrap();
     let args = MainArgs {
@@ -190,7 +190,7 @@ fn snapshot() {
             target: Edition::Ja,
         },
         dict_name: DictName::default(),
-        options: fixture_options(&fixture_dir, WriterFormat::Html),
+        options: fixture_options(&fixture_dir, WriterFormat::TestHtml),
     };
     make_dict_from_jsonl(DMain, args).unwrap();
     let args = IpaArgs {
@@ -199,7 +199,7 @@ fn snapshot() {
             target: Edition::Ja,
         },
         dict_name: DictName::default(),
-        options: fixture_options(&fixture_dir, WriterFormat::Html),
+        options: fixture_options(&fixture_dir, WriterFormat::TestHtml),
     };
     make_dict_from_jsonl(DIpa, args).unwrap();
     let args = GlossaryArgs {
@@ -208,7 +208,7 @@ fn snapshot() {
             target: Lang::En,
         },
         dict_name: DictName::default(),
-        options: fixture_options(&fixture_dir, WriterFormat::Html),
+        options: fixture_options(&fixture_dir, WriterFormat::TestHtml),
     };
     make_dict_from_jsonl(DGlossary, args).unwrap();
     tracing::error!("Before cleanup");

@@ -6,10 +6,10 @@
 use std::{
     fs::{self, File},
     io::Write,
-    path::Path,
+    path::{Path, PathBuf},
 };
 
-use anyhow::Result;
+use anyhow::{Ok, Result};
 use zip::ZipWriter;
 use zip::write::SimpleFileOptions;
 
@@ -20,7 +20,7 @@ use crate::{
     models::yomitan::{YomitanDict, YomitanEntry},
     path::PathManager,
     tags::get_tag_bank_as_tag_info,
-    utils::{CHECK_C, pretty_print_at_path, pretty_println_at_path},
+    utils::pretty_print_at_path,
 };
 
 const BANK_SIZE: usize = 25_000;
@@ -34,7 +34,7 @@ enum Sink<'a> {
 }
 
 // no metadata - writes to disk
-pub fn write_yomitan_simple(opts: &Options, pm: &PathManager, ydict: YomitanDict) -> Result<()> {
+pub fn write_test_yomitan(opts: &Options, pm: &PathManager, ydict: YomitanDict) -> Result<PathBuf> {
     let out_dir = pm.dir_temp_dict();
     fs::create_dir_all(&out_dir)?;
 
@@ -51,11 +51,7 @@ pub fn write_yomitan_simple(opts: &Options, pm: &PathManager, ydict: YomitanDict
         )?;
     }
 
-    if !opts.quiet {
-        pretty_println_at_path(&format!("{CHECK_C} Wrote yomitan files"), &out_dir);
-    }
-
-    Ok(())
+    Ok(out_dir)
 }
 
 /// Write a [`YomitanDict`] to a sink (either disk or zip).
@@ -67,7 +63,7 @@ pub fn write_yomitan(
     opts: &Options,
     pm: &PathManager,
     ydict: YomitanDict,
-) -> Result<()> {
+) -> Result<PathBuf> {
     let writer_path = pm.path_dict();
     let writer_file = File::create(&writer_path)?;
     let mut zip = ZipWriter::new(writer_file);
@@ -108,9 +104,7 @@ pub fn write_yomitan(
 
     zip.finish()?;
 
-    pretty_println_at_path(&format!("{CHECK_C} Wrote yomitan dict"), &writer_path);
-
-    Ok(())
+    Ok(writer_path)
 }
 
 /// Writes `yomitan_entries` in banks to a sink (either disk or zip).
@@ -165,7 +159,7 @@ fn write_banks(
                     bank_num + 1,
                     bank.len()
                 ),
-                &file_path,
+                file_path,
             );
             std::io::stdout().flush()?;
         }

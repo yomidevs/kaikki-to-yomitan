@@ -2,7 +2,7 @@ use std::{
     collections::{HashMap, HashSet},
     fs::{self, File},
     io::{BufWriter, Write},
-    path::Path,
+    path::{Path, PathBuf},
 };
 
 use anyhow::Result;
@@ -25,13 +25,20 @@ pub fn write_stardict(
     source: Lang,
     target: Lang,
     _: &Options,
-    _: &PathManager,
+    pm: &PathManager,
     ydict: YomitanDict,
-) -> Result<()> {
-    let fname = format!("wty-stardict-{source}-{target}");
-    let opath = Path::new(&fname);
-    let _ = fs::create_dir(opath);
+) -> Result<PathBuf> {
+    let fname = format!("stardict-{source}-{target}");
+    let dir_in_stage = pm.dir_in_stage(fname);
+    _ = fs::create_dir_all(&dir_in_stage);
 
+    let (definitions, synonyms) = extract_definitions_and_synonyms(ydict);
+    write_to_stardict(&dir_in_stage, definitions, synonyms)?;
+
+    Ok(dir_in_stage)
+}
+
+fn extract_definitions_and_synonyms(ydict: YomitanDict) -> (Definitions, Synonyms) {
     let definitions = ydict
         .term_info
         .into_iter()
@@ -44,31 +51,27 @@ pub fn write_stardict(
             )
         })
         .collect();
-    let forms = ydict.term_info_form;
 
-    let synonyms = forms
+    let synonyms = ydict
+        .term_info_form
         .into_iter()
         .map(|entry| {
             let redirects_to = entry.term;
-            let redirects_from = {
-                entry
-                    .definitions
-                    .into_iter()
-                    .map(|def| {
-                        let DetailedDefinition::Inflection((from, _tags)) = def else {
-                            panic!("forms must be made from inflections");
-                        };
-                        from
-                    })
-                    .collect::<Vec<_>>()
-            };
+            let redirects_from = entry
+                .definitions
+                .into_iter()
+                .map(|def| {
+                    let DetailedDefinition::Inflection((from, _tags)) = def else {
+                        panic!("forms must be made from inflections");
+                    };
+                    from
+                })
+                .collect::<Vec<_>>();
             (redirects_to, redirects_from)
         })
         .collect();
 
-    write_to_stardict(opath, definitions, synonyms)?;
-
-    Ok(())
+    (definitions, synonyms)
 }
 
 // In my machine (ubuntu, flatpak), dict should be @
@@ -78,7 +81,7 @@ fn write_to_stardict(
     mut definitions: Definitions,
     mut synonyms: Synonyms,
 ) -> Result<()> {
-    let output_base = opath.join("output");
+    let output_base = opath.join("wty");
     let dict_path = output_base.with_extension("dict");
     let idx_path = output_base.with_extension("idx");
     let syn_path = output_base.with_extension("syn");
@@ -100,14 +103,14 @@ fn write_to_stardict(
     write_ifo_file(&ifo_path, definitions.len(), syn_count, idxfilesize)?;
 
     let wordcount = definitions.len();
-    println!("Done!");
-    println!("Definitions: {wordcount}");
-    println!("Synonyms: {syn_count}");
-    println!("Files created:");
-    println!(" - {}", dict_path.display());
-    println!(" - {}", idx_path.display());
-    println!(" - {}", syn_path.display());
-    println!(" - {}", ifo_path.display());
+
+    tracing::debug!("Definitions: {wordcount}");
+    tracing::debug!("Synonyms: {syn_count}");
+    // println!("Files created:");
+    // println!(" - {}", dict_path.display());
+    // println!(" - {}", idx_path.display());
+    // println!(" - {}", syn_path.display());
+    // println!(" - {}", ifo_path.display());
 
     Ok(())
 }
