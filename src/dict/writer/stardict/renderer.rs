@@ -6,35 +6,38 @@ use maud::{Markup, html};
 
 use crate::{
     dict::writer::renderer::Renderer,
-    models::yomitan::{BacklinkContent, TermInfo},
+    models::yomitan::{BacklinkContent, GenericNode, NodeDataKey, TagInfo},
 };
 
 // Rendering that mostly targets KOReader
 pub(crate) struct StardictRenderer;
 
 impl Renderer for StardictRenderer {
-    // Render term info without ruby
-    fn render_term_info(entry: &TermInfo) -> Markup {
-        html! {
-            div class="entry" {
-                div class="headword" {
-                    (entry.term)
-                    @if !entry.reading.is_empty() {
-                        span class="reading" { " [" (entry.reading) "]" }
-                    }
-                }
-                @if entry.definitions.len() == 1 {
-                    (Self::render_detailed_definition(&entry.definitions[0]))
-                } @else {
-                    ol class="definition-list" {
-                        @for def in &entry.definitions {
-                            li {
-                                (Self::render_detailed_definition(def))
-                            }
-                        }
-                    }
-                }
+    fn skip_render_generic_node(node: &GenericNode) -> bool {
+        let data = node.data.as_ref();
+        let content_attr = data
+            .and_then(|d| d.0.get(&NodeDataKey::Content))
+            .map(|s| s.as_str());
+        matches!(
+            content_attr,
+            Some("preamble") | Some("summary-entry") | Some("example-sentence")
+        )
+    }
+
+    // Render headword without ruby
+    fn render_headword(term: &str, reading: &str) -> Markup {
+        html!(
+            (term)
+            @if !reading.is_empty() {
+                span class="reading" { " [" (reading) "]" }
             }
+        )
+    }
+
+    // b doesnt work :/
+    fn render_definition_tag(tag: &TagInfo) -> Markup {
+        html! {
+            h3 { (tag.long_tag) }
         }
     }
 

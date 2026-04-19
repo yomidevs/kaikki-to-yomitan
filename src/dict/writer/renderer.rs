@@ -37,25 +37,11 @@ pub trait Renderer {
         html! {
             div class="entry" {
                 div class="headword" {
-                    ruby {
-                        (entry.term)
-                        @if !entry.reading.is_empty() {
-                            rt { (entry.reading) }
-                        }
-                    }
+                    (Self::render_headword(&entry.term, &entry.reading))
                 }
                 div class="definition-tag-list tag-list" {
                     @for tag in &entry.definition_tags {
-                        span
-                            class="tag"
-                            title=(tag.long_tag)
-                            data-details=(tag.long_tag)
-                            data-category=(tag.category)
-                        {
-                            span class="tag-label" {
-                                span class="tag-label-content" { (tag.short_tag) }
-                            }
-                        }
+                        (Self::render_definition_tag(tag))
                     }
                 }
                 @if entry.definitions.len() == 1 {
@@ -71,6 +57,32 @@ pub trait Renderer {
                 }
             }
         }
+    }
+
+    fn render_headword(term: &str, reading: &str) -> Markup {
+        html!(
+            ruby {
+                (term)
+                @if !reading.is_empty() {
+                    rt { (reading) }
+                }
+            }
+        )
+    }
+
+    fn render_definition_tag(tag: &TagInfo) -> Markup {
+        html!(
+            span
+                class="tag"
+                title=(tag.long_tag)
+                data-details=(tag.long_tag)
+                data-category=(tag.category)
+            {
+                span class="tag-label" {
+                    span class="tag-label-content" { (tag.short_tag) }
+                }
+            }
+        )
     }
 
     fn render_term_info_form(entry: &TermInfoForm) -> Markup {
@@ -133,7 +145,18 @@ pub trait Renderer {
         }
     }
 
+    // Whether to skip rendering for this node or not.
+    // This is the simplest way to skip some nodes for other formats.
+    #[allow(unused_variables)]
+    fn skip_render_generic_node(node: &GenericNode) -> bool {
+        false
+    }
+
     fn render_generic_node(node: &GenericNode) -> Markup {
+        if Self::skip_render_generic_node(node) {
+            return html! {};
+        }
+
         let content = Self::render_node(&node.content);
 
         let data = node.data.as_ref();
