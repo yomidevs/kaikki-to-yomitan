@@ -1,0 +1,37 @@
+{
+  "buneolas": {
+    "buneolais": {
+      "noun": [
+        "extracted",
+        [
+          "genitive singular indefinite"
+        ]
+      ]
+    },
+    "bhuneolais": {
+      "noun": [
+        "extracted",
+        [
+          "genitive singular definite",
+          "vocative singular indefinite"
+        ]
+      ]
+    },
+    "mbuneolas": {
+      "noun": [
+        "extracted",
+        [
+          "dative singular definite"
+        ]
+      ]
+    },
+    "bhuneolas": {
+      "noun": [
+        "extracted",
+        [
+          "dative singular definite"
+        ]
+      ]
+    }
+  }
+}

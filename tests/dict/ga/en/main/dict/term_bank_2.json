@@ -1,0 +1,76 @@
+[
+  [
+    "buneolais",
+    "",
+    "non-lemma",
+    "n",
+    0,
+    [
+      [
+        "buneolas",
+        [
+          "genitive singular indefinite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "bhuneolais",
+    "",
+    "non-lemma",
+    "n",
+    0,
+    [
+      [
+        "buneolas",
+        [
+          "genitive singular definite"
+        ]
+      ],
+      [
+        "buneolas",
+        [
+          "vocative singular indefinite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "mbuneolas",
+    "",
+    "non-lemma",
+    "n",
+    0,
+    [
+      [
+        "buneolas",
+        [
+          "dative singular definite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "bhuneolas",
+    "",
+    "non-lemma",
+    "n",
+    0,
+    [
+      [
+        "buneolas",
+        [
+          "dative singular definite"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ]
+]

@@ -552,10 +552,14 @@ pub(crate) fn preprocess_main(
     }
 
     // WARN:: mutates entry::forms (and entry::forms::form)
-    //
-    // See the function documentation.
-    if edition == Edition::De && source == Lang::De && entry.pos == "verb" {
-        preprocess_forms_de(entry);
+    match (edition, source) {
+        (Edition::De, Lang::De) => {
+            if entry.pos == "verb" {
+                preprocess_forms_de_de(entry);
+            }
+        }
+        (Edition::En, Lang::Ga) => preprocess_forms_ga_en(entry),
+        _ => (),
     }
 
     // WARN: mutates entry::senses
@@ -622,7 +626,7 @@ pub(crate) fn preprocess_main(
 // TODO: We could do the same for French, instead of discarding such forms in should_skip_form
 //
 // See: https://kaikki.org/dewiktionary/Deutsch/meaning/a/au/ausmachen.html
-fn preprocess_forms_de(entry: &mut WordEntry) {
+fn preprocess_forms_de_de(entry: &mut WordEntry) {
     // 1. Trim personal pronouns from verb forms (this information is already in tags)
     const PRONOUNS: &[&str] = &["ich ", "du ", "er/sie/es ", "wir ", "ihr ", "sie "];
     for form in &mut entry.forms {
@@ -680,6 +684,18 @@ fn preprocess_forms_de(entry: &mut WordEntry) {
             && let Some(stripped) = form.form.strip_suffix(" zu haben")
         {
             form.form = stripped.to_string();
+        }
+    }
+}
+
+fn preprocess_forms_ga_en(entry: &mut WordEntry) {
+    const PREFIXES: &[&str] = &["a ", "an ", "leis an ", "don "];
+    for form in &mut entry.forms {
+        for &prefix in PREFIXES {
+            if let Some(stripped) = form.form.strip_prefix(prefix) {
+                form.form = stripped.to_string();
+                break;
+            }
         }
     }
 }

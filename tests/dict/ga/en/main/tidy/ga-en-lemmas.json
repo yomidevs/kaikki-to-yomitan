@@ -1,0 +1,32 @@
+{
+  "buneolas": {
+    "buneolas": {
+      "noun": [
+        {
+          "gloss_tree": {
+            "basic knowledge; having basic competence in something (e.g. a skill or a language)": {
+              "tags": [
+                "masculine"
+              ],
+              "examples": [
+                {
+                  "text": "Tá buneolas aici ar an nGaeilge.",
+                  "translation": "She has a basic understanding of Irish.",
+                  "bold_text_offsets": [
+                    [
+                      3,
+                      11
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "head_info_text": "buneolas m (genitive singular buneolais)",
+          "wlink": "https://en.wiktionary.org/wiki/buneolas#Irish",
+          "klink": "https://kaikki.org/dictionary/Irish/meaning/b/bu/buneolas.html"
+        }
+      ]
+    }
+  }
+}
