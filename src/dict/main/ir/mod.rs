@@ -17,8 +17,9 @@ use crate::{
     models::kaikki::{Example, Form, HeadTemplate, Pos, Sense, Synonym, Tag, WordEntry},
     path::PathManager,
     tags::{
-        REDUNDANT_FORM_TAGS, merge_case_tags, merge_person_tags, merge_verb_form_tags,
-        remove_redundant_tags, sort_tags, sort_tags_by_similar,
+        REDUNDANT_FORM_TAGS, merge_tags_by_case, merge_tags_by_definitiveness,
+        merge_tags_by_person, merge_tags_by_verb_form, remove_redundant_tags, sort_tags,
+        sort_tags_by_similar,
     },
     utils::{human_size, link_kaikki, link_wiktionary},
 };
@@ -429,9 +430,10 @@ fn postprocess_forms(form_map: &mut FormMap) {
         remove_redundant_tags(tags);
 
         // Merges
-        merge_person_tags(tags);
-        merge_case_tags(tags);
-        merge_verb_form_tags(tags);
+        merge_tags_by_person(tags);
+        merge_tags_by_case(tags);
+        merge_tags_by_verb_form(tags);
+        merge_tags_by_definitiveness(tags);
 
         // Sort inner words
         for tag in tags.iter_mut() {

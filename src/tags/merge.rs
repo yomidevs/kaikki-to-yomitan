@@ -12,7 +12,7 @@ const PERSON_TAGS: [&str; 3] = ["first-person", "second-person", "third-person"]
 /// out: ['singular first/third-person ']
 ///
 /// Note that this does not preserve logical tag order, and should be called before `sort_tag`.
-pub fn merge_person_tags(tags: &mut Vec<Tag>) {
+pub fn merge_tags_by_person(tags: &mut Vec<Tag>) {
     let contains_person = tags
         .iter()
         .any(|tag| PERSON_TAGS.iter().any(|p| tag.contains(p)));
@@ -72,7 +72,7 @@ const CASE_TAGS: [&str; 8] = [
     "partitive",
 ];
 
-pub fn merge_case_tags(tags: &mut Vec<Tag>) {
+pub fn merge_tags_by_case(tags: &mut Vec<Tag>) {
     merge_tags_by_category(tags, &CASE_TAGS);
 }
 
@@ -92,8 +92,16 @@ const VERB_FORM_TAGS: [&str; 11] = [
     "interrogative",
 ];
 
-pub fn merge_verb_form_tags(tags: &mut Vec<Tag>) {
+pub fn merge_tags_by_verb_form(tags: &mut Vec<Tag>) {
     merge_tags_by_category(tags, &VERB_FORM_TAGS);
+}
+
+// Uses a subset of tag_order.json cases
+// TODO: At some point, generate this from that file
+const DEFINITIVENESS_TAGS: [&str; 2] = ["definite", "indefinite"];
+
+pub fn merge_tags_by_definitiveness(tags: &mut Vec<Tag>) {
+    merge_tags_by_category(tags, &DEFINITIVENESS_TAGS);
 }
 
 /// Generic merge function.
@@ -150,7 +158,7 @@ mod tests {
     fn make_test_merge_person_tags(received: &[&str], expected: &[&str]) {
         let mut vreceived: Vec<String> = to_string_vec(received);
         let vexpected: Vec<String> = to_string_vec(expected);
-        merge_person_tags(&mut vreceived);
+        merge_tags_by_person(&mut vreceived);
         assert_eq!(vreceived, vexpected);
     }
 
