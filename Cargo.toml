@@ -1,6 +1,6 @@
 [package]
 name = "wty"
-version = "0.7.1"
+version = "0.8.0"
 edition = "2024"
 description = "Yomitan-compatible dictionaries from wikitionary data"
 license = "MIT"
@@ -18,36 +18,36 @@ path = "src/main.rs"
 bench = false
 
 [dependencies]
-anyhow = "1.0.100"
-chrono = { version = "0.4.42", default-features = false, features = ["now"] }
-clap = { version = "4.5.51", features = ["derive"] }
-fxhash = "0.2.1"
-indexmap = { version = "2.12.0", features = ["serde"] }
-regex = "1.12.2"
-serde = { version = "1.0.228", features = ["derive"] }
-serde_json = "1.0.145"
-tracing = { version = "0.1.41" }
-tracing-subscriber = { version = "0.3.20", features = ["env-filter", "chrono"] }
+anyhow = "1.0.102"
+chrono = { version = "0.4.44", default-features = false, features = ["now"] }
+clap = { version = "4.6.1", features = ["derive"] }
+fxhash = { version = "0.2.1", default-features = false }
+indexmap = { version = "2.14.0", features = ["serde"] }
+regex = "1.12.3"
+serde = { version = "1.0.228", default-features = false, features = ["std", "derive"] }
+serde_json = { version = "1.0.149", default-features = false, features = ["std"] }
+tracing = { version = "0.1.44" }
+tracing-subscriber = { version = "0.3.23", features = ["env-filter", "chrono"] }
 unicode-normalization = "0.1.25"
 zip = { version = "6.0.0", default-features = false, features = ["deflate"] }
 
 # Optional
 
 # Only used to ungzip the download
-flate2 = { version = "1.1.5", optional = true }
+flate2 = { version = "1.1.9", optional = true }
 # We are not using the gzip feature; instead, we directly use flat2
 # https://docs.rs/ureq/latest/ureq/#features
-ureq = { version = "3.1.4", default-features = false, features = ["rustls"], optional = true }
+ureq = { version = "3.3.0", default-features = false, features = ["rustls"], optional = true }
 
 # Database & parallel libraries for the release command
 rkyv = { version = "0.8.15" }
-rayon = { version = "1.11.0", default-features = false }
+rayon = { version = "1.12.0", default-features = false }
 rusqlite = { version = "0.38.0", default-features = false, features = ["bundled"] }
-walkdir = "2.5.0"
+walkdir = { version = "2.5.0", default-features = false }
 maud = { version = "0.27.0", default-features = false }
 
 [dev-dependencies]
-criterion = "0.8.1"
+criterion = "0.8.2"
 
 [profile.release]
 debug = true
