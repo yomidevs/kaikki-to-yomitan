@@ -17,8 +17,8 @@ use crate::{Map, models::kaikki::Tag};
 /// This does not properly match anything in the yomitan schemas. It is just convenient
 /// to store some information that gets erased at [`YomitanEntry`] level.
 ///
-/// For instance, term_info and term_info_form are virtually the same to yomitan, but
-/// we want to remember that the [`YomitanEntry`] in term_info_form represent forms.
+/// For instance, `term_info` and `term_info_form` are virtually the same to yomitan, but
+/// we want to remember that the [`YomitanEntry`] in `term_info_form` represent forms.
 /// This allows to separate them when we write the yomitan dictionary, but also to
 /// easily be able to discriminate them when it comes to other formats made from the
 /// yomitan data model.
@@ -29,7 +29,7 @@ pub struct YomitanDict {
 }
 
 impl YomitanDict {
-    pub fn new(
+    pub const fn new(
         term_info: Vec<TermInfo>,
         term_info_form: Vec<TermInfoForm>,
         term_meta: Vec<TermMeta>,
@@ -90,7 +90,7 @@ pub struct EntryGroup {
 }
 
 impl EntryGroup {
-    fn new(label: &'static str, entries: Vec<YomitanEntry>) -> Self {
+    const fn new(label: &'static str, entries: Vec<YomitanEntry>) -> Self {
         Self { label, entries }
     }
 }
@@ -111,11 +111,11 @@ impl YomitanEntry {
         }
     }
 
-    pub fn term(&self) -> &str {
+    pub const fn term(&self) -> &str {
         match self {
-            YomitanEntry::TermInfo(t) => t.term.as_str(),
-            YomitanEntry::TermInfoForm(t) => t.term.as_str(),
-            YomitanEntry::TermMeta(t) => {
+            Self::TermInfo(t) => t.term.as_str(),
+            Self::TermInfoForm(t) => t.term.as_str(),
+            Self::TermMeta(t) => {
                 let TermMeta::TermPhoneticTranscription(t) = t;
                 t.term.as_str()
             }
@@ -176,7 +176,7 @@ impl Serialize for TermInfo {
         let definition_tags_str = self
             .definition_tags
             .iter()
-            .map(|tag_info| tag_info.short_tag.to_string())
+            .map(|tag_info| tag_info.short_tag.clone())
             .collect::<Vec<_>>()
             .join(" ");
         tup.serialize_element(&definition_tags_str)?;
@@ -298,7 +298,7 @@ pub struct Ipa {
 #[serde(untagged)]
 pub enum Node {
     Text(String),              // 32
-    Array(Vec<Node>),          // 32
+    Array(Vec<Self>),          // 32
     Generic(Box<GenericNode>), // 16
     Backlink(BacklinkContent), // 32
 }
@@ -421,7 +421,7 @@ pub enum DetailedDefinition {
 }
 
 impl DetailedDefinition {
-    pub fn structured(content: Node) -> Self {
+    pub const fn structured(content: Node) -> Self {
         Self::StructuredContent(StructuredContent { content })
     }
 }

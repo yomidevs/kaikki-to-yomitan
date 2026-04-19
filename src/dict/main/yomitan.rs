@@ -21,7 +21,7 @@ use crate::{
     tags::{find_short_pos_or_default, find_tag_in_bank, localize_tag, localize_tag_info},
 };
 
-pub(crate) fn to_yomitan_impl(langs: LangSpecs, irs: &Tidy) -> YomitanDict {
+pub fn to_yomitan_impl(langs: LangSpecs, irs: &Tidy) -> YomitanDict {
     let term_info = to_yomitan_lemmas(langs.target, &irs.lemma_map);
     let term_info_form = to_yomitan_forms(langs.source, &irs.form_map);
     YomitanDict::new(term_info, term_info_form, vec![])
@@ -42,7 +42,7 @@ fn to_yomitan_lemma(
     pos: &str,
     info: &LemmaInfo,
 ) -> TermInfo {
-    let short_pos = find_short_pos_or_default(&pos);
+    let short_pos = find_short_pos_or_default(pos);
 
     let yomitan_reading = if reading == lemma {
         String::new()
@@ -474,18 +474,18 @@ fn to_yomitan_forms(source: Lang, form_map: &FormMap) -> Vec<TermInfoForm> {
             let deinflection_definitions: Vec<_> = tags
                 .iter()
                 .map(|tag| {
-                    DetailedDefinition::Inflection((uninflected.to_string(), vec![tag.to_string()]))
+                    DetailedDefinition::Inflection((uninflected.to_string(), vec![tag.clone()]))
                 })
                 .collect();
 
-            let normalized_inflected = normalize_orthography(source, &inflected);
+            let normalized_inflected = normalize_orthography(source, inflected);
             let reading = if normalized_inflected == inflected {
                 String::new()
             } else {
                 inflected.to_string()
             };
 
-            let short_pos = find_short_pos_or_default(&pos);
+            let short_pos = find_short_pos_or_default(pos);
 
             TermInfoForm::new(
                 normalized_inflected,

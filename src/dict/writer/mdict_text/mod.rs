@@ -19,7 +19,7 @@ use renderer::MdictTextRenderer;
 
 pub fn write_mdict_text(opts: &Options, pm: &PathManager, ydict: YomitanDict) -> Result<()> {
     let dname = pm.dict_name_expanded();
-    let filepath = format!("html/test-{}.txt", dname);
+    let filepath = format!("html/test-{dname}.txt");
     let filename = Path::new(&filepath);
     if let Some(parent) = filename.parent() {
         std::fs::create_dir_all(parent)?;

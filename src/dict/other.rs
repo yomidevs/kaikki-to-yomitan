@@ -149,7 +149,7 @@ fn process_glossary(source: Edition, target: Lang, entry: &WordEntry, irs: &mut 
         )));
     }
 
-    let reading = get_reading(source, target, entry).unwrap_or(String::new());
+    let reading = get_reading(source, target, entry).unwrap_or_default();
     let definition_tags = match find_tag_in_bank(&entry.pos) {
         Some(mut tag_info) => {
             localize_tag_info(target, &mut tag_info);

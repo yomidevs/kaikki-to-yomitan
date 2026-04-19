@@ -10,7 +10,7 @@ use crate::{
 };
 
 // Rendering that mostly targets KOReader
-pub(crate) struct StardictRenderer;
+pub struct StardictRenderer;
 
 impl Renderer for StardictRenderer {
     fn skip_render_generic_node(node: &GenericNode) -> bool {
@@ -20,7 +20,7 @@ impl Renderer for StardictRenderer {
             .map(|s| s.as_str());
         matches!(
             content_attr,
-            Some("preamble") | Some("summary-entry") | Some("example-sentence")
+            Some("preamble" | "summary-entry" | "example-sentence")
         )
     }
 

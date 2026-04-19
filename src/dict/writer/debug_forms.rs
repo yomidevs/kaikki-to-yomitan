@@ -15,7 +15,7 @@ use crate::{
 
 pub fn write_debug_forms(_: &Options, pm: &PathManager, ydict: YomitanDict) -> Result<()> {
     let dname = pm.dict_name_expanded();
-    let filepath = format!("html/test-{}.txt", dname);
+    let filepath = format!("html/test-{dname}.txt");
     let filename = Path::new(&filepath);
     if let Some(parent) = filename.parent() {
         std::fs::create_dir_all(parent)?;
@@ -31,7 +31,7 @@ pub fn write_debug_forms(_: &Options, pm: &PathManager, ydict: YomitanDict) -> R
     let mut grouped_by: HashMap<String, Vec<String>> = HashMap::new();
 
     for entry in ydict.term_info_form {
-        let term = entry.term.to_string();
+        let term = entry.term.clone();
         for def in entry.definitions {
             let DetailedDefinition::Inflection((from, _tags)) = def else {
                 panic!("forms must be made from inflections");

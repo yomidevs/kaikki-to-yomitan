@@ -15,7 +15,7 @@ use renderer::HtmlRenderer;
 
 pub fn write_html(opts: &Options, pm: &PathManager, ydict: YomitanDict) -> Result<()> {
     let dname = pm.dict_name_expanded();
-    let filepath = format!("html/test-{}.html", dname);
+    let filepath = format!("html/test-{dname}.html");
     let filename = Path::new(&filepath);
     if let Some(parent) = filename.parent() {
         std::fs::create_dir_all(parent)?;
@@ -43,7 +43,7 @@ pub fn write_html(opts: &Options, pm: &PathManager, ydict: YomitanDict) -> Resul
             writer.write_all(html.as_bytes())?;
         }
     }
-    writer.write_all(br#"</body></html>"#)?;
+    writer.write_all(br"</body></html>")?;
     crate::utils::pretty_println_at_path("Wrote file", filename);
 
     Ok(())
@@ -73,7 +73,7 @@ pub fn prettify_html(html: &str) -> String {
                 in_tag = false;
 
                 // Adjust indent based on tag type
-                let last_tag = result.split('<').last().unwrap_or("");
+                let last_tag = result.split('<').next_back().unwrap_or("");
                 if last_tag.starts_with('/') {
                     indent = indent.saturating_sub(1);
                 } else if !last_tag.ends_with('/') && !last_tag.starts_with('!') {

@@ -10,6 +10,7 @@ use anyhow::Result;
 use crate::{
     cli::Options,
     dict::writer::renderer::Renderer,
+    lang::Lang,
     models::yomitan::{DetailedDefinition, YomitanDict, YomitanEntry},
     path::PathManager,
 };
@@ -20,9 +21,16 @@ use renderer::StardictRenderer;
 type Definitions = Vec<(String, String)>;
 type Synonyms = Vec<(String, Vec<String>)>;
 
-pub fn write_stardict(_: &Options, _: &PathManager, ydict: YomitanDict) -> Result<()> {
-    let opath = Path::new("wty-stardict");
-    let _ = fs::create_dir(&opath);
+pub fn write_stardict(
+    source: Lang,
+    target: Lang,
+    _: &Options,
+    _: &PathManager,
+    ydict: YomitanDict,
+) -> Result<()> {
+    let fname = format!("wty-stardict-{source}-{target}");
+    let opath = Path::new(&fname);
+    let _ = fs::create_dir(opath);
 
     let definitions = ydict
         .term_info

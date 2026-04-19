@@ -83,7 +83,13 @@ impl WriterFormat {
             Self::Ir => irs.write(pm),
             Self::Html => write_html(opts, pm, dict.to_yomitan(langs, irs)),
             Self::MdictText => write_mdict_text(opts, pm, dict.to_yomitan(langs, irs)),
-            Self::Stardict => write_stardict(opts, pm, dict.to_yomitan(langs, irs)),
+            Self::Stardict => write_stardict(
+                langs.source,
+                langs.target,
+                opts,
+                pm,
+                dict.to_yomitan(langs, irs),
+            ),
             Self::DebugForms => write_debug_forms(opts, pm, dict.to_yomitan(langs, irs)),
             Self::Tests => {
                 irs.write(pm)?;

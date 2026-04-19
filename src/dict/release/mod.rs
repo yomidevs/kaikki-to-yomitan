@@ -153,8 +153,8 @@ fn pp(
     let duration = time.elapsed();
 
     let key = match second_lang {
-        Some(second_lang) => format!("{}-{}-{}", dict_name, first_lang, second_lang),
-        None => format!("{}-{}", dict_name, first_lang),
+        Some(second_lang) => format!("{dict_name}-{first_lang}-{second_lang}"),
+        None => format!("{dict_name}-{first_lang}"),
     };
 
     stats.record(key.clone(), duration);
