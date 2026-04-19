@@ -153,15 +153,14 @@ impl PathManager {
     }
     /// Depends on the type of dictionary being made.
     ///
-    /// Example: `data/dict/el/el/temp-main`
-    /// Example: `data/dict/el/el/temp-glossary`
-    fn dir_temp(&self) -> PathBuf {
-        // TODO: Maybe remove the "temp-" altogether?
-        self.dir_dict().join(format!("temp-{}", self.dict_ty))
+    /// Example: `data/dict/el/el/main/`
+    /// Example: `data/dict/el/el/glossary/`
+    fn dir_stage(&self) -> PathBuf {
+        self.dir_dict().join(self.dict_ty.to_string())
     }
-    /// Example: `data/dict/el/el/temp/tidy`
+    /// Example: `data/dict/el/el/main/tidy`
     pub fn dir_tidy(&self) -> PathBuf {
-        self.dir_temp().join("tidy")
+        self.dir_stage().join("tidy")
     }
 
     pub fn setup_dirs(&self) -> anyhow::Result<()> {
@@ -205,7 +204,7 @@ impl PathManager {
     ///
     /// Example: `data/dict/el/el/temp/dict`
     pub fn dir_temp_dict(&self) -> PathBuf {
-        self.dir_temp().join("dict")
+        self.dir_stage().join("dict")
     }
 
     // Should not go here, but since it uses dict_ty...
@@ -250,6 +249,6 @@ impl PathManager {
 
     /// Example: `data/dict/el/el/temp/diagnostics`
     pub fn dir_diagnostics(&self) -> PathBuf {
-        self.dir_temp().join("diagnostics")
+        self.dir_stage().join("diagnostics")
     }
 }
