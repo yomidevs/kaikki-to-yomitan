@@ -1,0 +1,42 @@
+[
+  [
+    "снег",
+    "",
+    "n",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "осадки"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "snjór"
+                },
+                {
+                  "tag": "li",
+                  "content": "snær"
+                },
+                {
+                  "tag": "li",
+                  "content": "fönn"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ]
+]

@@ -3,14 +3,11 @@
 use crate::{
     Set,
     cli::LangSpecs,
-    dict::{
-        LabelledYomitanEntries,
-        main::{
-            ir::{FormMap, GlossTree, LemmaInfo, LemmaMap, Tidy, normalize_orthography},
-            locale::{
-                localize_etymology_string, localize_examples_string, localize_grammar_string,
-                localize_synonyms_string,
-            },
+    dict::main::{
+        ir::{FormMap, GlossTree, LemmaInfo, LemmaMap, Tidy, normalize_orthography},
+        locale::{
+            localize_etymology_string, localize_examples_string, localize_grammar_string,
+            localize_synonyms_string,
         },
     },
     lang::Lang,
@@ -18,21 +15,20 @@ use crate::{
         kaikki::{Example, Offset, Synonym, Tag},
         yomitan::{
             BacklinkContent, BacklinkContentKind, DetailedDefinition, GenericNode, NTag, Node,
-            NodeData, NodeDataKey, TermInfo, TermInfoForm, YomitanEntry, wrap,
+            NodeData, NodeDataKey, TagInfo, TermInfo, TermInfoForm, YomitanDict, wrap,
         },
     },
-    tags::{find_short_pos_or_default, find_tag_in_bank, localize_tag},
+    tags::{find_short_pos_or_default, find_tag_in_bank, localize_tag, localize_tag_info},
 };
 
-pub(crate) fn to_yomitan_impl(langs: LangSpecs, irs: &Tidy) -> Vec<LabelledYomitanEntries> {
-    vec![
-        LabelledYomitanEntries::new("lemma", to_yomitan_lemmas(langs.target, &irs.lemma_map)),
-        LabelledYomitanEntries::new("form", to_yomitan_forms(langs.source, &irs.form_map)),
-    ]
+pub fn to_yomitan_impl(langs: LangSpecs, irs: &Tidy) -> YomitanDict {
+    let term_info = to_yomitan_lemmas(langs.target, &irs.lemma_map);
+    let term_info_form = to_yomitan_forms(langs.source, &irs.form_map);
+    YomitanDict::new(term_info, term_info_form, vec![])
 }
 
 #[tracing::instrument(skip_all, level = "trace")]
-fn to_yomitan_lemmas(target: Lang, lemma_map: &LemmaMap) -> Vec<YomitanEntry> {
+fn to_yomitan_lemmas(target: Lang, lemma_map: &LemmaMap) -> Vec<TermInfo> {
     lemma_map
         .flat_iter()
         .map(move |(lemma, reading, pos, info)| to_yomitan_lemma(target, lemma, reading, pos, info))
@@ -45,8 +41,8 @@ fn to_yomitan_lemma(
     reading: &str,
     pos: &str,
     info: &LemmaInfo,
-) -> YomitanEntry {
-    let short_pos = find_short_pos_or_default(&pos);
+) -> TermInfo {
+    let short_pos = find_short_pos_or_default(pos);
 
     let yomitan_reading = if reading == lemma {
         String::new()
@@ -54,15 +50,18 @@ fn to_yomitan_lemma(
         reading.to_string()
     };
 
-    let common_short_tags_found = get_found_tags(pos, info);
-    let definition_tags = common_short_tags_found
+    let common_tag_infos_found = get_found_tags(pos, info);
+    let common_short_tags_found: Vec<_> = common_tag_infos_found
         .iter()
-        .map(|short_tag| match localize_tag(target, short_tag) {
-            Some((short, _)) => short,
-            None => short_tag,
+        .map(|tag_info| tag_info.short_tag.clone())
+        .collect();
+    let definition_tags: Vec<_> = common_tag_infos_found
+        .into_iter()
+        .map(|mut tag_info| {
+            localize_tag_info(target, &mut tag_info);
+            tag_info
         })
-        .collect::<Vec<_>>()
-        .join(" ");
+        .collect();
 
     let mut detailed_definition_content = Node::new_array();
 
@@ -89,13 +88,13 @@ fn to_yomitan_lemma(
         info.link_kaikki.clone(),
     ));
 
-    YomitanEntry::TermInfo(TermInfo(
+    TermInfo::new(
         lemma.to_string(),
         yomitan_reading,
         definition_tags,
         get_rule_identifier(short_pos),
         vec![DetailedDefinition::structured(detailed_definition_content)],
-    ))
+    )
 }
 
 /// Extracts and normalizes tags associated with a lemma.
@@ -107,7 +106,7 @@ fn to_yomitan_lemma(
 ///
 /// For sense-level tags, only those present in *every* gloss are kept
 /// (set intersection across all gloss entries).
-fn get_found_tags(pos: &str, info: &LemmaInfo) -> Vec<Tag> {
+fn get_found_tags(pos: &str, info: &LemmaInfo) -> Vec<TagInfo> {
     let common_tags_iter = info
         .gloss_tree
         .values()
@@ -119,10 +118,7 @@ fn get_found_tags(pos: &str, info: &LemmaInfo) -> Vec<Tag> {
     std::iter::once(pos.to_string())
         .chain(info.tags.clone()) // top level tags (the non-En preferred way)
         .chain(common_tags_iter)
-        .filter_map(|tag| match find_tag_in_bank(&tag) {
-            Some(tag_info) => Some(tag_info.short_tag),
-            None => None,
-        })
+        .filter_map(|tag| find_tag_in_bank(&tag))
         .collect()
 }
 
@@ -469,7 +465,7 @@ fn sanitize_offsets(offsets: &[Offset], upto: usize) -> Vec<Offset> {
 }
 
 #[tracing::instrument(skip_all, level = "trace")]
-fn to_yomitan_forms(source: Lang, form_map: &FormMap) -> Vec<YomitanEntry> {
+fn to_yomitan_forms(source: Lang, form_map: &FormMap) -> Vec<TermInfoForm> {
     form_map
         .flat_iter()
         .map(move |(uninflected, inflected, pos, _, tags)| {
@@ -478,25 +474,25 @@ fn to_yomitan_forms(source: Lang, form_map: &FormMap) -> Vec<YomitanEntry> {
             let deinflection_definitions: Vec<_> = tags
                 .iter()
                 .map(|tag| {
-                    DetailedDefinition::Inflection((uninflected.to_string(), vec![tag.to_string()]))
+                    DetailedDefinition::Inflection((uninflected.to_string(), vec![tag.clone()]))
                 })
                 .collect();
 
-            let normalized_inflected = normalize_orthography(source, &inflected);
+            let normalized_inflected = normalize_orthography(source, inflected);
             let reading = if normalized_inflected == inflected {
                 String::new()
             } else {
                 inflected.to_string()
             };
 
-            let short_pos = find_short_pos_or_default(&pos);
+            let short_pos = find_short_pos_or_default(pos);
 
-            YomitanEntry::TermInfoForm(TermInfoForm(
+            TermInfoForm::new(
                 normalized_inflected,
                 reading,
                 get_rule_identifier(short_pos),
                 deinflection_definitions,
-            ))
+            )
         })
         .collect()
 }

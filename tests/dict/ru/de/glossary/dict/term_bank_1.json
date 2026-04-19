@@ -1,0 +1,46 @@
+[
+  [
+    "снег",
+    "",
+    "S",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "осадки"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "Schnee"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "продолжать",
+    "",
+    "V",
+    "v",
+    0,
+    [
+      "fortsetzen"
+    ],
+    0,
+    ""
+  ]
+]

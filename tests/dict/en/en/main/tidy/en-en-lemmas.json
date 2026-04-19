@@ -1,0 +1,373 @@
+{
+  "bring": {
+    "bring": {
+      "verb": [
+        {
+          "gloss_tree": {
+            "To transport toward somebody/somewhere.": {
+              "tags": [
+                "ditransitive",
+                "transitive"
+              ],
+              "examples": [
+                {
+                  "text": "Waiter, please bring me a single malt whiskey.",
+                  "bold_text_offsets": [
+                    [
+                      15,
+                      20
+                    ]
+                  ]
+                }
+              ]
+            },
+            "To supply or contribute.": {
+              "tags": [
+                "figuratively",
+                "transitive"
+              ],
+              "examples": [
+                {
+                  "text": "The new company director brought a fresh perspective on sales and marketing.",
+                  "bold_text_offsets": [
+                    [
+                      25,
+                      32
+                    ]
+                  ]
+                }
+              ]
+            },
+            "To occasion or bring about.": {
+              "tags": [
+                "transitive"
+              ],
+              "examples": [
+                {
+                  "text": "Let's bring our differences to an issue.",
+                  "bold_text_offsets": [
+                    [
+                      6,
+                      11
+                    ]
+                  ]
+                },
+                {
+                  "text": "The controversial TV broadcast brought a storm of complaints.",
+                  "bold_text_offsets": [
+                    [
+                      31,
+                      38
+                    ]
+                  ]
+                },
+                {
+                  "text": "Seeing her brought the memories flooding back and tears to my eyes.",
+                  "bold_text_offsets": [
+                    [
+                      11,
+                      18
+                    ]
+                  ]
+                }
+              ]
+            },
+            "To raise (a lawsuit, charges, etc.) against somebody.": {
+              "tags": [
+                "transitive"
+              ]
+            },
+            "To persuade; to induce; to draw; to lead; to guide.": {
+              "examples": [
+                {
+                  "text": "It seems so preposterous a thing[…]that they do not easily bring themselves to it.",
+                  "bold_text_offsets": [
+                    [
+                      59,
+                      64
+                    ]
+                  ]
+                }
+              ]
+            },
+            "To produce in exchange; to sell for; to fetch.": {
+              "examples": [
+                {
+                  "text": "What does coal bring per ton?",
+                  "bold_text_offsets": [
+                    [
+                      15,
+                      20
+                    ]
+                  ]
+                }
+              ]
+            },
+            "To pitch, often referring to a particularly hard thrown fastball.": {
+              "topics": [
+                "ball-games",
+                "baseball",
+                "games",
+                "hobbies",
+                "lifestyle",
+                "sports"
+              ],
+              "examples": [
+                {
+                  "text": "The closer Jones can really bring it.",
+                  "bold_text_offsets": [
+                    [
+                      28,
+                      33
+                    ]
+                  ]
+                }
+              ]
+            },
+            "To move a piece into a more active position, esp. to initially develop it.": {
+              "topics": [
+                "board-games",
+                "chess",
+                "games"
+              ],
+              "examples": [
+                {
+                  "text": "You want to bring the rook and then start pushing your pawns.",
+                  "bold_text_offsets": [
+                    [
+                      12,
+                      17
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "etymology_text": "From Middle English bryngen, from Old English bringan, from Proto-West Germanic *bringan, from Proto-Germanic *bringaną (“to bring”), from Proto-Indo-European *bʰrenk-, possibly based on *bʰer-.\nCompare Scots bring, West Frisian bringe, Low German brengen, Dutch brengen, Afrikaans bring, German bringen; also Welsh hebrwng (“to bring, lead”), Tocharian B pränk- (“to take away; restrain oneself, hold back”), Latvian brankti (“lying close”), Lithuanian branktas (“whiffletree”).",
+          "head_info_text": "bring (third-person singular simple present brings, present participle bringing, simple past brought, past participle brought or (rare, dialectal) broughten)",
+          "wlink": "https://en.wiktionary.org/wiki/bring#English",
+          "klink": "https://kaikki.org/dictionary/English/meaning/b/br/bring.html"
+        }
+      ]
+    }
+  },
+  "wain": {
+    "wain": {
+      "noun": [
+        {
+          "gloss_tree": {
+            "A wagon; a four-wheeled cart for hauling loads, usually pulled by horses or oxen.": {
+              "tags": [
+                "archaic",
+                "literary"
+              ],
+              "examples": [
+                {
+                  "text": "\"The Hay Wain\" is a famous painting by John Constable.",
+                  "bold_text_offsets": [
+                    [
+                      9,
+                      13
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "etymology_text": "From Middle English wayn, from Old English wæġn, from Proto-West Germanic *wagn, from Proto-Germanic *wagnaz, from Proto-Indo-European *woǵʰnos, from *weǵʰ- (“to bring, transport”). Doublet of wagon, borrowed from Middle Dutch.\nCognates\nCognate with West Frisian wein, Dutch wagen, German Wagen, Danish vogn, Norwegian vogn, Swedish vagn.",
+          "head_info_text": "wain (plural wains)",
+          "wlink": "https://en.wiktionary.org/wiki/wain#English",
+          "klink": "https://kaikki.org/dictionary/English/meaning/w/wa/wain.html"
+        }
+      ]
+    }
+  },
+  "falcon": {
+    "falcon": {
+      "noun": [
+        {
+          "gloss_tree": {
+            "Any bird of the genus Falco, all of which are birds of prey.": {},
+            "Any bird of prey of the subfamilies Falconinae and Herpetotherinae.": {},
+            "A female such bird, a male being a tiercel.": {
+              "topics": [
+                "falconry",
+                "hobbies",
+                "hunting",
+                "lifestyle"
+              ]
+            },
+            "A light cannon used from the 15th to the 17th century.": {
+              "tags": [
+                "historical"
+              ]
+            }
+          },
+          "etymology_text": "From Middle English faucoun, falcon, faulcon, from Old French falcun, from Late Latin falcō (“falcon”), of Germanic origin, probably via Frankish *falkō (“falcon, hawk”), from Proto-Germanic *falkô (“falcon”), from Proto-Indo-European *pol̑- (“pale”), from *pel- (“fallow”).\nCognates\nCognate with Old English *fealca, fealcen (“falcon”), Dutch valk (“falcon, hawk”), German Falke (“falcon, hawk”), Norwegian and Swedish falk (“falcon”), Icelandic fálki (“falcon”), French faucon (“falcon”), Italian falco (“falcon”), Spanish halcón (“falcon”), Portuguese falcão (“falcon”), Latin falco (“falcon”), Lithuanian pálšas (“pale”), Latvian bāls (“pale”), Latgalian buolgs (“pale”). More at fallow.",
+          "head_info_text": "falcon (plural falcons)",
+          "wlink": "https://en.wiktionary.org/wiki/falcon#English",
+          "klink": "https://kaikki.org/dictionary/English/meaning/f/fa/falcon.html"
+        }
+      ],
+      "verb": [
+        {
+          "gloss_tree": {
+            "To hunt with a falcon or falcons.": {
+              "examples": [
+                {
+                  "text": "He rode astride while hawking; she falconed in the ladylike position of sidesaddle.",
+                  "ref": "2003, Brenda Joyce, House of Dreams, page 175:",
+                  "bold_text_offsets": [
+                    [
+                      35,
+                      43
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "etymology_text": "From Middle English faucoun, falcon, faulcon, from Old French falcun, from Late Latin falcō (“falcon”), of Germanic origin, probably via Frankish *falkō (“falcon, hawk”), from Proto-Germanic *falkô (“falcon”), from Proto-Indo-European *pol̑- (“pale”), from *pel- (“fallow”).\nCognates\nCognate with Old English *fealca, fealcen (“falcon”), Dutch valk (“falcon, hawk”), German Falke (“falcon, hawk”), Norwegian and Swedish falk (“falcon”), Icelandic fálki (“falcon”), French faucon (“falcon”), Italian falco (“falcon”), Spanish halcón (“falcon”), Portuguese falcão (“falcon”), Latin falco (“falcon”), Lithuanian pálšas (“pale”), Latvian bāls (“pale”), Latgalian buolgs (“pale”). More at fallow.",
+          "head_info_text": "falcon (third-person singular simple present falcons, present participle falconing, simple past and past participle falconed)",
+          "wlink": "https://en.wiktionary.org/wiki/falcon#English",
+          "klink": "https://kaikki.org/dictionary/English/meaning/f/fa/falcon.html"
+        }
+      ]
+    }
+  },
+  "participate": {
+    "participate": {
+      "verb": [
+        {
+          "gloss_tree": {
+            "To join in, to take part, to involve oneself (in something).": {
+              "tags": [
+                "intransitive"
+              ]
+            },
+            "To share, to take part in (something).": {
+              "tags": [
+                "obsolete",
+                "transitive"
+              ],
+              "examples": [
+                {
+                  "text": "A spirit I am indeed;\nBut am in that dimension grossly clad\nWhich from the womb I did participate.",
+                  "bold_text_offsets": [
+                    [
+                      86,
+                      97
+                    ]
+                  ]
+                }
+              ]
+            },
+            "To share (something) with others; to transfer (something) to or unto others.": {
+              "tags": [
+                "obsolete"
+              ]
+            }
+          },
+          "etymology_text": "Borrowed from Latin participātus, the perfect passive participle of participō (“to take part in, share in, give part in, impart”) (see -ate (verb-forming suffix) and -ate (adjective-forming suffix)), from particeps (“taking part (in), sharing (in); someone who takes part (in)”, particip- in compounds), from pars (“part”, part- in compounds) + -ceps (“which takes, taker”), literally “(someone) who takes part”; see part and capable. Compare Old English dǣlniman (“to participate”), an earlier calque of the same Latin verb.",
+          "head_info_text": "participate (third-person singular simple present participates, present participle participating, simple past and past participle participated)",
+          "wlink": "https://en.wiktionary.org/wiki/participate#English",
+          "klink": "https://kaikki.org/dictionary/English/meaning/p/pa/participate.html"
+        }
+      ]
+    }
+  },
+  "expansive": {
+    "expansive": {
+      "adj": [
+        {
+          "gloss_tree": {
+            "Comprehensive in scope or extent.": {
+              "examples": [
+                {
+                  "text": "expansive research work",
+                  "bold_text_offsets": [
+                    [
+                      0,
+                      9
+                    ]
+                  ]
+                }
+              ]
+            },
+            "Talkative and sociable.": {},
+            "Able to be expanded.": {},
+            "Exhibiting expansivity.": {
+              "topics": [
+                "mathematics",
+                "sciences"
+              ]
+            }
+          },
+          "etymology_text": "From Latin expāns-, past-participle stem of expandere (“to spread out”; see expand) + -ive.",
+          "head_info_text": "expansive (comparative more expansive, superlative most expansive)",
+          "wlink": "https://en.wiktionary.org/wiki/expansive#English",
+          "klink": "https://kaikki.org/dictionary/English/meaning/e/ex/expansive.html"
+        }
+      ]
+    }
+  },
+  "peninsular": {
+    "peninsular": {
+      "noun": [
+        {
+          "gloss_tree": {
+            "One who inhabits a peninsula.": {},
+            "A person born on the Iberian Peninsula who emigrated to a (contemporary or former) Spanish colony.": {
+              "tags": [
+                "historical"
+              ]
+            }
+          },
+          "etymology_text": "Learned borrowing from Latin paenīnsulāris. By surface analysis, peninsula + -ar. In the historical sense borrowed from Spanish peninsular.",
+          "head_info_text": "peninsular (plural peninsulars or peninsulares)",
+          "wlink": "https://en.wiktionary.org/wiki/peninsular#English",
+          "klink": "https://kaikki.org/dictionary/English/meaning/p/pe/peninsular.html"
+        }
+      ]
+    }
+  },
+  "magical": {
+    "magical": {
+      "adj": [
+        {
+          "gloss_tree": {
+            "Of, relating to, or by means of magic.": {},
+            "Enchanting.": {
+              "examples": [
+                {
+                  "text": "The fireworks created a magical atmosphere in that beautiful summer night.",
+                  "bold_text_offsets": [
+                    [
+                      24,
+                      31
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "synonyms": [
+            {
+              "word": "mystic"
+            },
+            {
+              "word": "mystical"
+            },
+            {
+              "word": "numinous"
+            }
+          ],
+          "etymology_text": "From magic + -al.",
+          "head_info_text": "magical (comparative more magical, superlative most magical)",
+          "wlink": "https://en.wiktionary.org/wiki/magical#English",
+          "klink": "https://kaikki.org/dictionary/English/meaning/m/ma/magical.html"
+        }
+      ]
+    }
+  }
+}

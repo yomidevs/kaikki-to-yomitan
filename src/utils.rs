@@ -1,14 +1,14 @@
+use std::{fs, path::Path};
+
 use anyhow::Result;
-use std::fs;
-use std::path::Path;
 
 use crate::lang::{Edition, Lang};
 
 pub const SKIP_C: &str = "⏭";
 pub const CHECK_C: &str = "✓";
 
-fn size(path: &Path) -> std::io::Result<u64> {
-    let md = fs::metadata(path)?;
+fn size<P: AsRef<Path>>(path: P) -> std::io::Result<u64> {
+    let md = fs::metadata(path.as_ref())?;
     if md.is_file() {
         Ok(md.len())
     } else if md.is_dir() {
@@ -38,11 +38,13 @@ pub fn human_time(ms: u128) -> String {
     format!("{:.1} s", ms as f64 / 1000.0)
 }
 
-fn get_file_size_human(path: &Path) -> Result<String> {
+fn get_file_size_human<P: AsRef<Path>>(path: P) -> Result<String> {
     Ok(human_size(size(path)? as f64))
 }
 
-fn pretty_msg_at_path(msg: &str, path: &Path) -> String {
+fn pretty_msg_at_path<P: AsRef<Path>>(msg: &str, path: P) -> String {
+    let path = path.as_ref();
+
     let at = "\x1b[1;36m@\x1b[0m"; // bold + cyan
     match get_file_size_human(path) {
         Result::Ok(size_mb) => {
@@ -54,15 +56,15 @@ fn pretty_msg_at_path(msg: &str, path: &Path) -> String {
     }
 }
 
-pub fn pretty_println_at_path(msg: &str, path: &Path) {
+pub fn pretty_println_at_path<P: AsRef<Path>>(msg: &str, path: P) {
     println!("{}", pretty_msg_at_path(msg, path));
 }
 
-pub fn pretty_print_at_path(msg: &str, path: &Path) {
+pub fn pretty_print_at_path<P: AsRef<Path>>(msg: &str, path: P) {
     print!("{}", pretty_msg_at_path(msg, path));
 }
 
-pub fn skip_because_file_exists(skipped: &str, path: &Path) {
+pub fn skip_because_file_exists<P: AsRef<Path>>(skipped: &str, path: P) {
     let msg = format!("{SKIP_C} Skipping {skipped}: file already exists");
     pretty_println_at_path(&msg, path);
 }

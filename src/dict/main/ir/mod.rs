@@ -1,4 +1,4 @@
-use std::{fs::File, io::BufWriter, sync::LazyLock};
+use std::{fs::File, io::BufWriter, path::PathBuf, sync::LazyLock};
 
 use anyhow::Result;
 use indexmap::map::Entry;
@@ -20,7 +20,7 @@ use crate::{
         REDUNDANT_FORM_TAGS, merge_case_tags, merge_person_tags, merge_verb_form_tags,
         remove_redundant_tags, sort_tags, sort_tags_by_similar,
     },
-    utils::{human_size, link_kaikki, link_wiktionary, pretty_println_at_path},
+    utils::{human_size, link_kaikki, link_wiktionary},
 };
 
 const MAX_NUMBER_OF_SYNONYMS: usize = 3;
@@ -40,7 +40,7 @@ impl Intermediate for Tidy {
         self.len()
     }
 
-    fn write(&self, pm: &PathManager) -> Result<()> {
+    fn write(&self, pm: &PathManager) -> Result<PathBuf> {
         self.write(pm)
     }
 }
@@ -107,8 +107,9 @@ impl Tidy {
 
     // NOTE: we write stuff even if irs.attribute is empty
     #[tracing::instrument(skip_all)]
-    fn write(&self, pm: &PathManager) -> Result<()> {
-        let _ = std::fs::create_dir_all(pm.dir_tidy());
+    fn write(&self, pm: &PathManager) -> Result<PathBuf> {
+        let dir_tidy = pm.dir_tidy();
+        _ = std::fs::create_dir_all(&dir_tidy);
 
         let opath = pm.path_lemmas();
         let file = File::create(&opath)?;
@@ -118,9 +119,6 @@ impl Tidy {
             serde_json::to_writer_pretty(writer, &self.lemma_map)?;
         } else {
             serde_json::to_writer(writer, &self.lemma_map)?;
-        }
-        if !pm.opts.quiet {
-            pretty_println_at_path("Wrote tidy lemmas", &opath);
         }
 
         let opath = pm.path_forms();
@@ -132,11 +130,8 @@ impl Tidy {
         } else {
             serde_json::to_writer(writer, &self.form_map)?;
         }
-        if !pm.opts.quiet {
-            pretty_println_at_path("Wrote tidy forms", &opath);
-        }
 
-        Ok(())
+        Ok(dir_tidy)
     }
 }
 
@@ -207,9 +202,9 @@ pub(crate) fn found_ir_message_impl(langs: LangSpecs, irs: &Tidy) {
             n_irs,
             irs_heap_msg,
         );
-        tracing::debug!("├─ lemmas: {} ({})", n_lemmas, lemma_heap_msg,);
+        tracing::debug!("├─ terms: {} ({})", n_lemmas, lemma_heap_msg,);
         tracing::debug!(
-            "└─ forms : {} ({}) [infl {}, extr {}, alt {}]",
+            "└─ forms: {} ({}) [infl {}, extr {}, alt {}]",
             n_forms,
             form_heap_msg,
             n_forms_inflection,
@@ -218,7 +213,7 @@ pub(crate) fn found_ir_message_impl(langs: LangSpecs, irs: &Tidy) {
         );
     } else {
         tracing::debug!(
-            "Found {n_irs} irs: {n_lemmas} lemmas, {n_forms} forms \
+            "Found {n_irs} irs: {n_lemmas} terms, {n_forms} forms \
                 [{n_forms_inflection} infl, {n_forms_extracted} extr, {n_forms_alt_of} alt]"
         );
     }

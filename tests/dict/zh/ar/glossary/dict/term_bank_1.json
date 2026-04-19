@@ -1,0 +1,42 @@
+[
+  [
+    "啤酒",
+    "",
+    "n",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "大麥芽發酵的酒"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "بِيرَة"
+                },
+                {
+                  "tag": "li",
+                  "content": "جِعَة"
+                },
+                {
+                  "tag": "li",
+                  "content": "مِزْر"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ]
+]

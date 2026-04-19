@@ -16,43 +16,15 @@ use crate::{
     cli::{LangSpecs, Options},
     download::find_or_download_jsonl,
     lang::{Edition, Lang},
-    models::{kaikki::WordEntry, yomitan::YomitanEntry},
+    models::{kaikki::WordEntry, yomitan::YomitanDict},
     path::PathManager,
-    utils::pretty_print_at_path,
 };
 
 const CONSOLE_PRINT_INTERVAL: i32 = 10000;
 
-// pub type E = Box<dyn Iterator<Item = YomitanEntry>>;
-pub(crate) type E = Vec<YomitanEntry>;
-
-/// A Vec<[`YomitanEntry`]> with a string label (f.e. `"lemmas"`, or `"forms"`).
+/// Trait for Intermediate representation.
 ///
-/// Labels are only used internally, for debugging. The separation is also relevant
-/// when writing dictionaries since the current term bank will end, and a new one
-/// will start for the next label.
-pub struct LabelledYomitanEntries {
-    pub label: &'static str,
-    pub entries: E,
-}
-
-impl LabelledYomitanEntries {
-    pub fn new(
-        label: &'static str,
-        // entries: impl IntoIterator<Item = YomitanEntry> + 'static,
-        entries: Vec<YomitanEntry>,
-    ) -> Self {
-        Self {
-            label,
-            // entries: Box::new(entries.into_iter()),
-            entries,
-        }
-    }
-}
-
-/// Trait for Intermediate representation. Used for postprocessing (merge, etc.) and debugging via snapshots.
-///
-/// The simplest form is a Vec<[`YomitanEntry`]> if we don't want to do anything fancy, cf. [`crate::dict::DGlossary`]
+/// Used for postprocessing (merge, etc.) and debugging via snapshots.
 pub trait Intermediate: Default {
     fn len(&self) -> usize;
     fn is_empty(&self) -> bool {
@@ -60,7 +32,7 @@ pub trait Intermediate: Default {
     }
 
     /// How to write `Self::I` to disk.
-    fn write(&self, pm: &PathManager) -> Result<()>;
+    fn write(&self, pm: &PathManager) -> Result<PathBuf>;
 }
 
 impl<T> Intermediate for Vec<T>
@@ -71,7 +43,7 @@ where
         Self::len(self)
     }
 
-    fn write(&self, pm: &PathManager) -> Result<()> {
+    fn write(&self, pm: &PathManager) -> Result<PathBuf> {
         let writer_path = pm.dir_tidy().join("tidy.jsonl");
         let writer_file = File::create(&writer_path)?;
         let writer = BufWriter::new(&writer_file);
@@ -80,10 +52,7 @@ where
         } else {
             serde_json::to_writer(writer, self)?;
         }
-        if !pm.opts.quiet {
-            pretty_print_at_path("Wrote tidy", &writer_path);
-        }
-        Ok(())
+        Ok(writer_path)
     }
 }
 
@@ -96,7 +65,7 @@ where
         Self::len(self)
     }
 
-    fn write(&self, _: &PathManager) -> Result<()> {
+    fn write(&self, _: &PathManager) -> Result<PathBuf> {
         unimplemented!()
     }
 }
@@ -149,7 +118,7 @@ pub trait Dictionary {
     }
 
     /// How to convert `Self::I` into one or more yomitan entries.
-    fn to_yomitan(&self, langs: LangSpecs, irs: &Self::I) -> Vec<LabelledYomitanEntries>;
+    fn to_yomitan(&self, langs: LangSpecs, irs: &Self::I) -> YomitanDict;
 }
 
 fn rejected(entry: &WordEntry, opts: &Options) -> bool {

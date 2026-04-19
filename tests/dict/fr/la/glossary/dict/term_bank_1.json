@@ -1,0 +1,92 @@
+[
+  [
+    "manger",
+    "",
+    "v",
+    "v",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "Mâcher et avaler un aliment dans le but de se nourrir"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "edo"
+                },
+                {
+                  "tag": "li",
+                  "content": "vescor"
+                },
+                {
+                  "tag": "li",
+                  "content": "manduco"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "Prendre un repas"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "prandeo"
+                },
+                {
+                  "tag": "li",
+                  "content": "ieiento"
+                },
+                {
+                  "tag": "li",
+                  "content": "iento"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "Dissiper en folles dépenses"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "comedo"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ]
+]

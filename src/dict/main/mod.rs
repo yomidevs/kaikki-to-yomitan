@@ -8,8 +8,8 @@ pub use ir::get_reading;
 
 use crate::{
     cli::{LangSpecs, MainArgs, Options},
-    dict::{Dictionary, LabelledYomitanEntries, Langs},
-    models::kaikki::WordEntry,
+    dict::{Dictionary, Langs},
+    models::{kaikki::WordEntry, yomitan::YomitanDict},
 };
 
 #[derive(Debug, Clone, Copy)]
@@ -39,7 +39,7 @@ impl Dictionary for DMain {
         ir::found_ir_message_impl(langs, irs);
     }
 
-    fn to_yomitan(&self, langs: LangSpecs, irs: &Self::I) -> Vec<LabelledYomitanEntries> {
+    fn to_yomitan(&self, langs: LangSpecs, irs: &Self::I) -> YomitanDict {
         yomitan::to_yomitan_impl(langs, irs)
     }
 }

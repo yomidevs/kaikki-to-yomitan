@@ -445,6 +445,7 @@ def generate_lang_rs(langs: list[Lang], f) -> None:
     w("}\n")
 
 
+# TODO: use idt here for indentation
 def generate_tags_localization_rs(
     locale: Locale, whitelisted_tags: list[WhitelistedTag], f
 ) -> None:
@@ -452,7 +453,8 @@ def generate_tags_localization_rs(
 
     write_warning(f)
 
-    w("use crate::lang::Lang;\n\n")
+    w("use crate::lang::Lang;\n")
+    w("use crate::models::yomitan::TagInfo;\n\n")
 
     w("pub const fn has_locale(lang: Lang) -> bool {\n")
     w("    matches!(lang, ")
@@ -470,6 +472,16 @@ def generate_tags_localization_rs(
     for iso in locale:
         w(f"        Lang::{iso.title()} => localize_tag_{iso}(short_tag),\n")
     w("        _ => None,\n")
+    w("    }\n")
+    w("}\n\n")
+
+    # This is similar to get_tag_bank_as_tag_info but not enough to merge them.
+    w("pub fn localize_tag_info(lang: Lang, tag_info: &mut TagInfo) {\n")
+    w(
+        "    if let Some((short, long)) = localize_tag(lang, tag_info.short_tag.as_str()) {\n"
+    )
+    w("        tag_info.short_tag = short.to_string();\n")
+    w("        tag_info.long_tag = long.to_string();\n")
     w("    }\n")
     w("}\n")
 

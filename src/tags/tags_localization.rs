@@ -2,6 +2,7 @@
 //! The source code can be found at scripts/build.py
 
 use crate::lang::Lang;
+use crate::models::yomitan::TagInfo;
 
 pub const fn has_locale(lang: Lang) -> bool {
     matches!(lang, Lang::De | Lang::El | Lang::Ja)
@@ -13,6 +14,13 @@ pub fn localize_tag(lang: Lang, short_tag: &str) -> Option<(&'static str, &'stat
         Lang::El => localize_tag_el(short_tag),
         Lang::Ja => localize_tag_ja(short_tag),
         _ => None,
+    }
+}
+
+pub fn localize_tag_info(lang: Lang, tag_info: &mut TagInfo) {
+    if let Some((short, long)) = localize_tag(lang, tag_info.short_tag.as_str()) {
+        tag_info.short_tag = short.to_string();
+        tag_info.long_tag = long.to_string();
     }
 }
 

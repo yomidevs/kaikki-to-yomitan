@@ -12,6 +12,89 @@ use serde::{Deserialize, Serialize};
 
 use crate::{Map, models::kaikki::Tag};
 
+/// A custom type for a yomitan dictionary.
+///
+/// This does not properly match anything in the yomitan schemas. It is just convenient
+/// to store some information that gets erased at [`YomitanEntry`] level.
+///
+/// For instance, `term_info` and `term_info_form` are virtually the same to yomitan, but
+/// we want to remember that the [`YomitanEntry`] in `term_info_form` represent forms.
+/// This allows to separate them when we write the yomitan dictionary, but also to
+/// easily be able to discriminate them when it comes to other formats made from the
+/// yomitan data model.
+pub struct YomitanDict {
+    pub term_info: Vec<TermInfo>,
+    pub term_info_form: Vec<TermInfoForm>,
+    pub term_meta: Vec<TermMeta>,
+}
+
+impl YomitanDict {
+    pub const fn new(
+        term_info: Vec<TermInfo>,
+        term_info_form: Vec<TermInfoForm>,
+        term_meta: Vec<TermMeta>,
+    ) -> Self {
+        Self {
+            term_info,
+            term_info_form,
+            term_meta,
+        }
+    }
+
+    /// Flat iterator over type-erased [`YomitanEntry`].
+    pub fn into_iter_flat(self) -> impl Iterator<Item = YomitanEntry> {
+        self.term_info
+            .into_iter()
+            .map(YomitanEntry::TermInfo)
+            .chain(
+                self.term_info_form
+                    .into_iter()
+                    .map(YomitanEntry::TermInfoForm),
+            )
+            .chain(self.term_meta.into_iter().map(YomitanEntry::TermMeta))
+    }
+
+    /// Grouped iterator over type-erased [`YomitanEntry`].
+    ///
+    /// The label string should only be used to print progress to the CLI.
+    pub fn into_iter_grouped(self) -> Vec<EntryGroup> {
+        vec![
+            EntryGroup::new(
+                "term",
+                self.term_info
+                    .into_iter()
+                    .map(YomitanEntry::TermInfo)
+                    .collect(),
+            ),
+            EntryGroup::new(
+                "form",
+                self.term_info_form
+                    .into_iter()
+                    .map(YomitanEntry::TermInfoForm)
+                    .collect(),
+            ),
+            EntryGroup::new(
+                "meta",
+                self.term_meta
+                    .into_iter()
+                    .map(YomitanEntry::TermMeta)
+                    .collect(),
+            ),
+        ]
+    }
+}
+
+pub struct EntryGroup {
+    pub label: &'static str,
+    pub entries: Vec<YomitanEntry>,
+}
+
+impl EntryGroup {
+    const fn new(label: &'static str, entries: Vec<YomitanEntry>) -> Self {
+        Self { label, entries }
+    }
+}
+
 #[derive(Debug, Serialize, Clone)]
 #[serde(untagged)]
 pub enum YomitanEntry {
@@ -27,6 +110,17 @@ impl YomitanEntry {
             Self::TermMeta(_) => "term_meta_bank",
         }
     }
+
+    pub const fn term(&self) -> &str {
+        match self {
+            Self::TermInfo(t) => t.term.as_str(),
+            Self::TermInfoForm(t) => t.term.as_str(),
+            Self::TermMeta(t) => {
+                let TermMeta::TermPhoneticTranscription(t) = t;
+                t.term.as_str()
+            }
+        }
+    }
 }
 
 // Simplified version to avoid storing some fields. Those are written later on via serialize.
@@ -38,13 +132,37 @@ impl YomitanEntry {
 /// [yomitan-dict-builder]: https://github.com/MarvNC/yomichan-dict-builder/blob/master/src/types/yomitan/termbank.ts#L159
 /// [spec]: https://github.com/yomidevs/yomitan/blob/master/ext/data/schemas/dictionary-term-bank-v3-schema.json
 #[derive(Debug, Clone)]
-pub struct TermInfo(
-    pub String,                  // term
-    pub String,                  // reading
-    pub String,                  // definition_tags
-    pub String,                  // space-separated rules
-    pub Vec<DetailedDefinition>, // definitions
-);
+pub struct TermInfo {
+    pub term: String,
+    pub reading: String,
+    // While we could store just a String, and let Yomitan deal with it, it is
+    // preferable to keep the full information for other formats based on the
+    // Yomitan model, than can not defer this work.
+    pub definition_tags: Vec<TagInfo>,
+    pub rules: String, // space-separated rules
+    pub definitions: Vec<DetailedDefinition>,
+}
+
+impl TermInfo {
+    pub fn new(
+        term: String,
+        reading: String,
+        definition_tags: Vec<TagInfo>,
+        rules: String,
+        definitions: Vec<DetailedDefinition>,
+    ) -> Self {
+        // INVARIANT: yomitan discards the reading if it's equal to term,
+        // but we don't want it to pollute other formats.
+        debug_assert_ne!(term, reading);
+        Self {
+            term,
+            reading,
+            definition_tags,
+            rules,
+            definitions,
+        }
+    }
+}
 
 impl Serialize for TermInfo {
     fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
@@ -52,12 +170,19 @@ impl Serialize for TermInfo {
         S: Serializer,
     {
         let mut tup = serializer.serialize_tuple(8)?;
-        tup.serialize_element(&self.0)?;
-        tup.serialize_element(&self.1)?;
-        tup.serialize_element(&self.2)?;
-        tup.serialize_element(&self.3)?;
+        tup.serialize_element(&self.term)?;
+        tup.serialize_element(&self.reading)?;
+        // We only retain the short versions. Yomitan will resolve them via tag_bank.
+        let definition_tags_str = self
+            .definition_tags
+            .iter()
+            .map(|tag_info| tag_info.short_tag.clone())
+            .collect::<Vec<_>>()
+            .join(" ");
+        tup.serialize_element(&definition_tags_str)?;
+        tup.serialize_element(&self.rules)?;
         tup.serialize_element(&0u8)?;
-        tup.serialize_element(&self.4)?;
+        tup.serialize_element(&self.definitions)?;
         tup.serialize_element(&0u8)?;
         tup.serialize_element(&"")?;
         tup.end()
@@ -66,12 +191,31 @@ impl Serialize for TermInfo {
 
 /// A term information with hardcoded definition tags. Used in forms.
 #[derive(Debug, Clone)]
-pub struct TermInfoForm(
-    pub String,                  // term
-    pub String,                  // reading
-    pub String,                  // space-separated rules
-    pub Vec<DetailedDefinition>, // definitions
-);
+pub struct TermInfoForm {
+    pub term: String,
+    pub reading: String,
+    pub rules: String, // space-separated rules
+    pub definitions: Vec<DetailedDefinition>,
+}
+
+impl TermInfoForm {
+    pub fn new(
+        term: String,
+        reading: String,
+        rules: String,
+        definitions: Vec<DetailedDefinition>,
+    ) -> Self {
+        // INVARIANT: yomitan discards the reading if it's equal to term,
+        // but we don't want it to pollute other formats.
+        debug_assert_ne!(term, reading);
+        Self {
+            term,
+            reading,
+            rules,
+            definitions,
+        }
+    }
+}
 
 impl Serialize for TermInfoForm {
     fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
@@ -79,12 +223,12 @@ impl Serialize for TermInfoForm {
         S: Serializer,
     {
         let mut tup = serializer.serialize_tuple(8)?;
-        tup.serialize_element(&self.0)?;
-        tup.serialize_element(&self.1)?;
+        tup.serialize_element(&self.term)?;
+        tup.serialize_element(&self.reading)?;
         tup.serialize_element(&"non-lemma")?;
-        tup.serialize_element(&self.2)?;
+        tup.serialize_element(&self.rules)?;
         tup.serialize_element(&0u8)?;
-        tup.serialize_element(&self.3)?;
+        tup.serialize_element(&self.definitions)?;
         tup.serialize_element(&0u8)?;
         tup.serialize_element(&"")?;
         tup.end()
@@ -154,7 +298,7 @@ pub struct Ipa {
 #[serde(untagged)]
 pub enum Node {
     Text(String),              // 32
-    Array(Vec<Node>),          // 32
+    Array(Vec<Self>),          // 32
     Generic(Box<GenericNode>), // 16
     Backlink(BacklinkContent), // 32
 }
@@ -277,7 +421,7 @@ pub enum DetailedDefinition {
 }
 
 impl DetailedDefinition {
-    pub fn structured(content: Node) -> Self {
+    pub const fn structured(content: Node) -> Self {
         Self::StructuredContent(StructuredContent { content })
     }
 }
@@ -316,7 +460,7 @@ pub fn wrap(tag: NTag, content_ty: &str, content: Node) -> Node {
 /// A tag. See [yomitan-dict-builder].
 ///
 /// [yomitan-dict-builder]: https://github.com/MarvNC/yomichan-dict-builder/blob/master/src/types/yomitan/tagbank.ts
-#[derive(Debug, PartialEq, Eq)]
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub struct TagInfo {
     pub short_tag: String, // tagName
     pub category: String,  // category
