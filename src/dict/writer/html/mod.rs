@@ -13,17 +13,16 @@ use anyhow::Result;
 mod renderer;
 use renderer::HtmlRenderer;
 
+const STYLES_CSS_HTML: &[u8] = include_bytes!("../../../../assets/styles_html.css");
+
 #[allow(unused)]
 pub fn write_html(opts: &Options, pm: &PathManager, ydict: YomitanDict) -> Result<PathBuf> {
-    todo!()
-}
-
-pub fn write_test_html(opts: &Options, pm: &PathManager, ydict: YomitanDict) -> Result<PathBuf> {
     let dir_in_stage = pm.dir_in_stage("html");
     _ = fs::create_dir_all(&dir_in_stage);
 
     let dict_name = format!("{}.html", pm.dict_name_expanded());
-    let path_dict = dir_in_stage.join(dict_name);
+    let path_dict = dir_in_stage.join(&dict_name);
+    let path_css = dir_in_stage.join("styles.css");
 
     let file = File::create(&path_dict)?;
     let mut writer = BufWriter::new(file);
@@ -41,14 +40,36 @@ pub fn write_test_html(opts: &Options, pm: &PathManager, ydict: YomitanDict) -> 
 
     for entry in ydict.into_iter_flat() {
         let html = HtmlRenderer::render_entry(&entry).into_string();
+        // Ignore pretty since it can mess the result
+        writer.write_all(html.as_bytes())?;
+    }
+
+    writer.write_all(br"</body></html>")?;
+
+    // Copy assets/styles_html.css into dir_in_stage/styles.css
+    fs::write(&path_css, STYLES_CSS_HTML)?;
+
+    Ok(dir_in_stage)
+}
+
+pub fn write_test_html(opts: &Options, pm: &PathManager, ydict: YomitanDict) -> Result<PathBuf> {
+    let dir_in_stage = pm.dir_in_stage("html");
+    _ = fs::create_dir_all(&dir_in_stage);
+
+    let dict_name = format!("{}.html", pm.dict_name_expanded());
+    let path_dict = dir_in_stage.join(dict_name);
+
+    let file = File::create(&path_dict)?;
+    let mut writer = BufWriter::new(file);
+
+    for entry in ydict.into_iter_flat() {
+        let html = HtmlRenderer::render_entry(&entry).into_string();
         if opts.pretty {
             writer.write_all(prettify_html(&html).as_bytes())?;
         } else {
             writer.write_all(html.as_bytes())?;
         }
     }
-
-    writer.write_all(br"</body></html>")?;
 
     Ok(path_dict)
 }

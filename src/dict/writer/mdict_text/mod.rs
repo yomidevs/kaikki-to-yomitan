@@ -41,5 +41,7 @@ pub fn write_mdict_text(opts: &Options, pm: &PathManager, ydict: YomitanDict) ->
         writer.write_all(b"\n</>\n")?;
     }
 
+    // TODO: maybe also copy the css here?
+
     Ok(path_dict)
 }
