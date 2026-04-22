@@ -504,6 +504,9 @@ pub(crate) fn preprocess_main(
     entry: &mut WordEntry,
     irs: &mut Tidy,
 ) {
+    // WARN:: mutates entry::forms (and entry::forms::form)
+    preprocess_forms(edition, source, entry);
+
     // WARN: mutates entry::senses::sense::tags
     match edition {
         Edition::En => {
@@ -551,17 +554,6 @@ pub(crate) fn preprocess_main(
                 .glosses
                 .retain(|gloss| *gloss != "definizione mancante; se vuoi, aggiungila tu");
         }
-    }
-
-    // WARN:: mutates entry::forms (and entry::forms::form)
-    match (edition, source) {
-        (Edition::De, Lang::De) => {
-            if entry.pos == "verb" {
-                preprocess_forms_de_de(entry);
-            }
-        }
-        (Edition::En, Lang::Ga) => preprocess_forms_ga_en(entry),
-        _ => (),
     }
 
     // WARN: mutates entry::senses
@@ -620,6 +612,19 @@ pub(crate) fn preprocess_main(
     }
 }
 
+fn preprocess_forms(edition: Edition, source: Lang, entry: &mut WordEntry) {
+    match (edition, source) {
+        (Edition::De, Lang::De) if entry.pos == "verb" => {
+            preprocess_forms_de_de(entry);
+        }
+        (Edition::Fr, Lang::Fr) if entry.pos == "verb" => {
+            preprocess_forms_fr_fr(entry);
+        }
+        (Edition::En, Lang::Ga) => preprocess_forms_ga_en(entry),
+        _ => (),
+    }
+}
+
 // In German, verb forms come with personal pronouns which makes for poor results (worse
 // search, deduplication, dictionary bloat etc.)
 // This should probably be fixed at wiktextract at some point.
@@ -631,6 +636,7 @@ pub(crate) fn preprocess_main(
 fn preprocess_forms_de_de(entry: &mut WordEntry) {
     // 1. Trim personal pronouns from verb forms (this information is already in tags)
     const PRONOUNS: &[&str] = &["ich ", "du ", "er/sie/es ", "wir ", "ihr ", "sie "];
+    debug_assert!(PRONOUNS.iter().all(|pron| pron.ends_with(' ')));
     for form in &mut entry.forms {
         for &prefix in PRONOUNS {
             if let Some(stripped) = form.form.strip_prefix(prefix) {
@@ -690,9 +696,47 @@ fn preprocess_forms_de_de(entry: &mut WordEntry) {
     }
 }
 
+// This function is made based on preprocess_forms_de_de. See that function for more details.
+fn preprocess_forms_fr_fr(entry: &mut WordEntry) {
+    const PRONOUNS: &[&str] = &[
+        "je ",
+        "j' ",
+        "tu ",
+        "il/elle/on ",
+        "nous ",
+        "vous ",
+        "ils/elles ",
+    ];
+    debug_assert!(PRONOUNS.iter().all(|pron| pron.ends_with(' ')));
+    for form in &mut entry.forms {
+        for &prefix in PRONOUNS {
+            if let Some(stripped) = form.form.strip_prefix(prefix) {
+                form.form = stripped.to_string();
+                break;
+            }
+        }
+    }
+
+    entry.forms.retain(|form| {
+        let is_compound = form
+            .tags
+            .iter()
+            .any(|tag| matches!(tag.as_str(), "perfect" | "pluperfect" | "anterior"));
+        let is_past_conditional = ["past", "conditional"]
+            .iter()
+            .all(|ctag| form.tags.iter().any(|tag| tag == ctag));
+        let is_past_imperative = ["past", "imperative"]
+            .iter()
+            .all(|ctag| form.tags.iter().any(|tag| tag == ctag));
+
+        !is_compound && !is_past_conditional && !is_past_imperative
+    });
+}
+
 fn preprocess_forms_ga_en(entry: &mut WordEntry) {
     // https://en.wiktionary.org/wiki/crodh#Irish
     const PREFIXES: &[&str] = &["a ", "an ", "na ", "leis an ", "don ", "leis na "];
+    debug_assert!(PREFIXES.iter().all(|pron| pron.ends_with(' ')));
     for form in &mut entry.forms {
         for &prefix in PREFIXES {
             if let Some(stripped) = form.form.strip_prefix(prefix) {
@@ -750,15 +794,10 @@ fn should_skip_form(edition: Edition, source: Lang, pos: &str, form: &Form) -> b
     match (edition, source) {
         (Edition::Fr, Lang::Fr) => {
             // Objectively better
-            if ["qu’", "que ", "il/elle/on", "ils/elles", "en "]
+            if ["qu’", "que ", "en "]
                 .iter()
                 .any(|p| form.form.starts_with(p))
             {
-                return true;
-            }
-            // Debatable, but since we contain the part participle (mangé), we most likely don't
-            // need "j’avais mangé"
-            if form.tags.iter().any(|tag| tag == "pluperfect") {
                 return true;
             }
         }
