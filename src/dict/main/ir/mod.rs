@@ -9,6 +9,9 @@ use unicode_normalization::UnicodeNormalization;
 mod heap;
 use heap::HeapSize;
 
+mod preprocess_forms;
+use preprocess_forms::preprocess_forms;
+
 use crate::{
     Map, Set,
     cli::{LangSpecs, Options},
@@ -607,141 +610,6 @@ pub(crate) fn preprocess_main(
                 if !TRAILING_PUNCT_RE.is_match(gloss) {
                     gloss.push(' ');
                 }
-            }
-        }
-    }
-}
-
-fn preprocess_forms(edition: Edition, source: Lang, entry: &mut WordEntry) {
-    match (edition, source) {
-        (Edition::De, Lang::De) if entry.pos == "verb" => {
-            preprocess_forms_de_de(entry);
-        }
-        (Edition::Fr, Lang::Fr) if entry.pos == "verb" => {
-            preprocess_forms_fr_fr(entry);
-        }
-        (Edition::En, Lang::Ga) => preprocess_forms_ga_en(entry),
-        _ => (),
-    }
-}
-
-// In German, verb forms come with personal pronouns which makes for poor results (worse
-// search, deduplication, dictionary bloat etc.)
-// This should probably be fixed at wiktextract at some point.
-// Here we trim personal pronouns prefixes: "ich ", "du ", "er/sie/es " etc.
-//
-// TODO: We could do the same for French, instead of discarding such forms in should_skip_form
-//
-// See: https://kaikki.org/dewiktionary/Deutsch/meaning/a/au/ausmachen.html
-fn preprocess_forms_de_de(entry: &mut WordEntry) {
-    // 1. Trim personal pronouns from verb forms (this information is already in tags)
-    const PRONOUNS: &[&str] = &["ich ", "du ", "er/sie/es ", "wir ", "ihr ", "sie "];
-    debug_assert!(PRONOUNS.iter().all(|pron| pron.ends_with(' ')));
-    for form in &mut entry.forms {
-        for &prefix in PRONOUNS {
-            if let Some(stripped) = form.form.strip_prefix(prefix) {
-                form.form = stripped.to_string();
-                break;
-            }
-        }
-    }
-
-    // Another possible simplification:
-    //
-    // Reflexive forms, i.e. "wir meldeten uns an"
-    // Just skip: there should be an active table anyway, and they become redundant.
-    //
-    // Here they have the reflexive tag:
-    // https://de.wiktionary.org/wiki/Flexion:anmelden
-    // ...but in general they don't need to, if there is only the reflexive option:
-    // https://de.wiktionary.org/wiki/Flexion:fortscheren
-
-    // 2. Remove auxiliary verb constructions
-    //
-    // Working with tags is better than doing string replacement, because in that case we may
-    // stumble into edge cases like "anhaben", where we don't want to confuse the auxiliary verb
-    // with the actual verb.
-    // See: https://www.verblisten.de/listen/verben/anfangsbuchstabe/ueberblick.html?i=haben
-    entry.forms.retain(|form| {
-        let is_compound = form.tags.iter().any(|tag| {
-            matches!(
-                tag.as_str(),
-                "perfect"
-                    | "pluperfect"
-                    | "future-i"
-                    | "future-ii"
-                    | "processual-passive"
-                    | "statal-passive"
-            )
-        });
-
-        !is_compound && !form.form.ends_with(['…', '!'])
-            // "Partizip II des Verbs sehen, nur unmittelbar nach einem Infinitiv" etc.
-            && !form.form.contains(',')
-    });
-
-    // The above tag strategy "requires"* us to clean the "extended" forms.
-    // *I'm not entirely sure this is needed, specially because the form obtained is an adjective
-    // that most likely happens in some other page, but since it gives the same result as the
-    // (previous) string replacement, we keep it as it is.
-    for form in &mut entry.forms {
-        if let Some(stripped) = form.form.strip_prefix("zu ") {
-            form.form = stripped.to_string();
-        }
-        if form.tags.iter().any(|tag| tag == "extended")
-            && let Some(stripped) = form.form.strip_suffix(" zu haben")
-        {
-            form.form = stripped.to_string();
-        }
-    }
-}
-
-// This function is made based on preprocess_forms_de_de. See that function for more details.
-fn preprocess_forms_fr_fr(entry: &mut WordEntry) {
-    const PRONOUNS: &[&str] = &[
-        "je ",
-        "j' ",
-        "tu ",
-        "il/elle/on ",
-        "nous ",
-        "vous ",
-        "ils/elles ",
-    ];
-    debug_assert!(PRONOUNS.iter().all(|pron| pron.ends_with(' ')));
-    for form in &mut entry.forms {
-        for &prefix in PRONOUNS {
-            if let Some(stripped) = form.form.strip_prefix(prefix) {
-                form.form = stripped.to_string();
-                break;
-            }
-        }
-    }
-
-    entry.forms.retain(|form| {
-        let is_compound = form
-            .tags
-            .iter()
-            .any(|tag| matches!(tag.as_str(), "perfect" | "pluperfect" | "anterior"));
-        let is_past_conditional = ["past", "conditional"]
-            .iter()
-            .all(|ctag| form.tags.iter().any(|tag| tag == ctag));
-        let is_past_imperative = ["past", "imperative"]
-            .iter()
-            .all(|ctag| form.tags.iter().any(|tag| tag == ctag));
-
-        !is_compound && !is_past_conditional && !is_past_imperative
-    });
-}
-
-fn preprocess_forms_ga_en(entry: &mut WordEntry) {
-    // https://en.wiktionary.org/wiki/crodh#Irish
-    const PREFIXES: &[&str] = &["a ", "an ", "na ", "leis an ", "don ", "leis na "];
-    debug_assert!(PREFIXES.iter().all(|pron| pron.ends_with(' ')));
-    for form in &mut entry.forms {
-        for &prefix in PREFIXES {
-            if let Some(stripped) = form.form.strip_prefix(prefix) {
-                form.form = stripped.to_string();
-                break;
             }
         }
     }
