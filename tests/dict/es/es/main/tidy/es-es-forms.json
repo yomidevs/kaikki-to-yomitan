@@ -8,5 +8,728 @@
         ]
       ]
     }
+  },
+  "comer": {
+    "habercomido": {
+      "verb": [
+        "extracted",
+        [
+          "infinitive impersonal"
+        ]
+      ]
+    },
+    "comiendo": {
+      "verb": [
+        "extracted",
+        [
+          "gerund impersonal"
+        ]
+      ]
+    },
+    "habiendo": {
+      "verb": [
+        "extracted",
+        [
+          "gerund impersonal"
+        ]
+      ]
+    },
+    "comido": {
+      "verb": [
+        "extracted",
+        [
+          "first/second/third-person plural conditional compound",
+          "first/second/third-person plural future indicative compound",
+          "first/second/third-person plural pluperfect subjunctive/indicative",
+          "first/second/third-person plural present perfect indicative compound",
+          "first/second/third-person plural present perfect subjunctive",
+          "first/third-person singular conditional compound",
+          "first/third-person singular future indicative compound",
+          "first/third-person singular pluperfect subjunctive/indicative",
+          "first/third-person singular present perfect indicative compound",
+          "first/third-person singular present perfect subjunctive",
+          "gerund/participle impersonal",
+          "second-person singular conditional vos-form compound",
+          "second-person singular future indicative vos-form compound",
+          "second-person singular pluperfect subjunctive/indicative vos-form",
+          "second-person singular present perfect indicative vos-form compound",
+          "second-person singular present perfect subjunctive vos-form"
+        ]
+      ]
+    },
+    "como": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular present indicative"
+        ]
+      ]
+    },
+    "comes": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present indicative"
+        ]
+      ]
+    },
+    "comés": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present indicative vos-form"
+        ]
+      ]
+    },
+    "come": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present imperative",
+          "third-person singular present indicative"
+        ]
+      ]
+    },
+    "comemos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural present indicative"
+        ]
+      ]
+    },
+    "coméis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present indicative"
+        ]
+      ]
+    },
+    "comen": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural present indicative"
+        ]
+      ]
+    },
+    "comía": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular past imperfect indicative"
+        ]
+      ]
+    },
+    "comías": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past imperfect indicative vos-form"
+        ]
+      ]
+    },
+    "comíamos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural past imperfect indicative"
+        ]
+      ]
+    },
+    "comíais": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past imperfect indicative"
+        ]
+      ]
+    },
+    "comían": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural past imperfect indicative"
+        ]
+      ]
+    },
+    "comí": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular present perfect indicative"
+        ]
+      ]
+    },
+    "comiste": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present perfect indicative vos-form"
+        ]
+      ]
+    },
+    "comió": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular present perfect indicative"
+        ]
+      ]
+    },
+    "comimos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural present perfect indicative"
+        ]
+      ]
+    },
+    "comisteis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present perfect indicative"
+        ]
+      ]
+    },
+    "comieron": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural present perfect indicative"
+        ]
+      ]
+    },
+    "había": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular pluperfect indicative"
+        ]
+      ]
+    },
+    "habías": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular pluperfect indicative vos-form"
+        ]
+      ]
+    },
+    "habíamos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural pluperfect indicative"
+        ]
+      ]
+    },
+    "habíais": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural pluperfect indicative"
+        ]
+      ]
+    },
+    "habían": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural pluperfect indicative"
+        ]
+      ]
+    },
+    "he": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular present perfect indicative compound"
+        ]
+      ]
+    },
+    "has": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present perfect indicative vos-form compound"
+        ]
+      ]
+    },
+    "ha": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular present perfect indicative compound"
+        ]
+      ]
+    },
+    "hemos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural present perfect indicative compound"
+        ]
+      ]
+    },
+    "habéis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present perfect indicative compound"
+        ]
+      ]
+    },
+    "han": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural present perfect indicative compound"
+        ]
+      ]
+    },
+    "comeré": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular future indicative"
+        ]
+      ]
+    },
+    "comerás": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular future indicative vos-form"
+        ]
+      ]
+    },
+    "comerá": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular future indicative"
+        ]
+      ]
+    },
+    "comeremos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural future indicative"
+        ]
+      ]
+    },
+    "comeréis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural future indicative"
+        ]
+      ]
+    },
+    "comerán": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural future indicative"
+        ]
+      ]
+    },
+    "habré": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular future indicative compound"
+        ]
+      ]
+    },
+    "habrás": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular future indicative vos-form compound"
+        ]
+      ]
+    },
+    "habrá": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular future indicative compound"
+        ]
+      ]
+    },
+    "habremos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural future indicative compound"
+        ]
+      ]
+    },
+    "habréis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural future indicative compound"
+        ]
+      ]
+    },
+    "habrán": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural future indicative compound"
+        ]
+      ]
+    },
+    "comería": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular conditional"
+        ]
+      ]
+    },
+    "comerías": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular conditional vos-form"
+        ]
+      ]
+    },
+    "comeríamos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural conditional"
+        ]
+      ]
+    },
+    "comeríais": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural conditional"
+        ]
+      ]
+    },
+    "comerían": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural conditional"
+        ]
+      ]
+    },
+    "habría": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular conditional compound"
+        ]
+      ]
+    },
+    "habrías": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular conditional vos-form compound"
+        ]
+      ]
+    },
+    "habríamos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural conditional compound"
+        ]
+      ]
+    },
+    "habríais": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural conditional compound"
+        ]
+      ]
+    },
+    "habrían": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural conditional compound"
+        ]
+      ]
+    },
+    "coma": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular present subjunctive",
+          "third-person singular present imperative"
+        ]
+      ]
+    },
+    "comas": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present subjunctive vos-form"
+        ]
+      ]
+    },
+    "comás": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present subjunctive vos-form"
+        ]
+      ]
+    },
+    "comamos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural present imperative/subjunctive"
+        ]
+      ]
+    },
+    "comáis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present subjunctive"
+        ]
+      ]
+    },
+    "coman": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural present imperative/subjunctive"
+        ]
+      ]
+    },
+    "comiera": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular past imperfect subjunctive"
+        ]
+      ]
+    },
+    "comiese": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular past imperfect subjunctive"
+        ]
+      ]
+    },
+    "comieras": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past imperfect subjunctive vos-form"
+        ]
+      ]
+    },
+    "comieses": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past imperfect subjunctive vos-form"
+        ]
+      ]
+    },
+    "comiéramos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural past imperfect subjunctive"
+        ]
+      ]
+    },
+    "comiésemos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural past imperfect subjunctive"
+        ]
+      ]
+    },
+    "comierais": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past imperfect subjunctive"
+        ]
+      ]
+    },
+    "comieseis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past imperfect subjunctive"
+        ]
+      ]
+    },
+    "comieran": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural past imperfect subjunctive"
+        ]
+      ]
+    },
+    "comiesen": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural past imperfect subjunctive"
+        ]
+      ]
+    },
+    "haya": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular present perfect subjunctive"
+        ]
+      ]
+    },
+    "hayas": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present perfect subjunctive vos-form"
+        ]
+      ]
+    },
+    "hayamos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural present perfect subjunctive"
+        ]
+      ]
+    },
+    "hayáis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present perfect subjunctive"
+        ]
+      ]
+    },
+    "hayan": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural present perfect subjunctive"
+        ]
+      ]
+    },
+    "hubiera": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular pluperfect subjunctive"
+        ]
+      ]
+    },
+    "hubiese": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular pluperfect subjunctive"
+        ]
+      ]
+    },
+    "hubieras": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular pluperfect subjunctive vos-form"
+        ]
+      ]
+    },
+    "hubieses": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular pluperfect subjunctive vos-form"
+        ]
+      ]
+    },
+    "hubiéramos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural pluperfect subjunctive"
+        ]
+      ]
+    },
+    "hubiésemos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural pluperfect subjunctive"
+        ]
+      ]
+    },
+    "hubierais": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural pluperfect subjunctive"
+        ]
+      ]
+    },
+    "hubieseis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural pluperfect subjunctive"
+        ]
+      ]
+    },
+    "hubieran": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural pluperfect subjunctive"
+        ]
+      ]
+    },
+    "hubiesen": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural pluperfect subjunctive"
+        ]
+      ]
+    },
+    "comé": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present imperative vos-form"
+        ]
+      ]
+    },
+    "comed": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present imperative"
+        ]
+      ]
+    }
   }
 }

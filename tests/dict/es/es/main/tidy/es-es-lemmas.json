@@ -67,5 +67,57 @@
         }
       ]
     }
+  },
+  "comer": {
+    "comer": {
+      "verb": [
+        {
+          "gloss_tree": {
+            "Ingerir o tomar alimentos.": {
+              "tags": [
+                "pronominal",
+                "transitive"
+              ],
+              "examples": [
+                {
+                  "text": "Si no comes en varias semanas, morirás de inanición."
+                }
+              ]
+            },
+            "Tomar la principal comida del día.": {
+              "examples": [
+                {
+                  "text": "«He quedado con unos amigos para ir a comer».",
+                  "ref": "«Ejemplo brindado por Wikcionario».",
+                  "bold_text_offsets": [
+                    [
+                      38,
+                      43
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "tags": [
+            "intransitive"
+          ],
+          "synonyms": [
+            {
+              "word": "meterse entre pecho y espalda"
+            },
+            {
+              "word": "yantar"
+            },
+            {
+              "word": "almorzar"
+            }
+          ],
+          "etymology_text": "Se documenta por primera vez en 1140. Del latín comedĕre, infinitivo del latín comedo, formado a partir cum ('con') y edō ('comer').",
+          "wlink": "https://es.wiktionary.org/wiki/comer#Spanish",
+          "klink": "https://kaikki.org/eswiktionary/All%20languages%20combined/meaning/c/co/comer.html"
+        }
+      ]
+    }
   }
 }
