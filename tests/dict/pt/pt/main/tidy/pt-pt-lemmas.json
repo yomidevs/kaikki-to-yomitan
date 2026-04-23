@@ -1,0 +1,31 @@
+{
+  "dormir": {
+    "dormir": {
+      "verb": [
+        {
+          "gloss_tree": {
+            "entrar em estado de sono": {},
+            "estar em estado de sono": {}
+          },
+          "tags": [
+            "intransitive"
+          ],
+          "synonyms": [
+            {
+              "word": "adormecer"
+            },
+            {
+              "word": "cair no sono"
+            },
+            {
+              "word": "mimir"
+            }
+          ],
+          "etymology_text": "Do latim dormio⁽ˡᵃ⁾, infinitivo dormire.",
+          "wlink": "https://pt.wiktionary.org/wiki/dormir#Portuguese",
+          "klink": "https://kaikki.org/ptwiktionary/All%20languages%20combined/meaning/d/do/dormir.html"
+        }
+      ]
+    }
+  }
+}

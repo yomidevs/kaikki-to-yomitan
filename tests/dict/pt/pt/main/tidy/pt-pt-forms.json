@@ -1,0 +1,396 @@
+{
+  "dormir": {
+    "dormindo": {
+      "verb": [
+        "extracted",
+        [
+          "gerund"
+        ]
+      ]
+    },
+    "dormido": {
+      "verb": [
+        "extracted",
+        [
+          "participle"
+        ]
+      ]
+    },
+    "durmo": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular present indicative"
+        ]
+      ]
+    },
+    "dormes": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present indicative"
+        ]
+      ]
+    },
+    "dorme": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular imperative affirmative",
+          "third-person singular present indicative"
+        ]
+      ]
+    },
+    "dormimos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural past indicative",
+          "first-person plural present indicative"
+        ]
+      ]
+    },
+    "dormis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present indicative"
+        ]
+      ]
+    },
+    "dormem": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural present indicative"
+        ]
+      ]
+    },
+    "dormia": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular past indicative continuative"
+        ]
+      ]
+    },
+    "dormias": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past indicative continuative"
+        ]
+      ]
+    },
+    "dormíamos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural past indicative continuative"
+        ]
+      ]
+    },
+    "dormíeis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past indicative continuative"
+        ]
+      ]
+    },
+    "dormiam": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural past indicative continuative"
+        ]
+      ]
+    },
+    "dormi": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular past indicative",
+          "second-person plural imperative affirmative"
+        ]
+      ]
+    },
+    "dormiste": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past indicative"
+        ]
+      ]
+    },
+    "dormiu": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular past indicative"
+        ]
+      ]
+    },
+    "dormistes": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past indicative"
+        ]
+      ]
+    },
+    "dormiram": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural past indicative",
+          "third-person plural pluperfect indicative"
+        ]
+      ]
+    },
+    "dormira": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular pluperfect indicative"
+        ]
+      ]
+    },
+    "dormiras": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular pluperfect indicative"
+        ]
+      ]
+    },
+    "dormíramos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural pluperfect indicative"
+        ]
+      ]
+    },
+    "dormíreis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural pluperfect indicative"
+        ]
+      ]
+    },
+    "dormirei": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular present future indicative"
+        ]
+      ]
+    },
+    "dormirás": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular present future indicative"
+        ]
+      ]
+    },
+    "dormirá": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular present future indicative"
+        ]
+      ]
+    },
+    "dormiremos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural present future indicative"
+        ]
+      ]
+    },
+    "dormireis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural present future indicative"
+        ]
+      ]
+    },
+    "dormirão": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural present future indicative"
+        ]
+      ]
+    },
+    "dormiria": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular past future indicative"
+        ]
+      ]
+    },
+    "dormirias": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past future indicative"
+        ]
+      ]
+    },
+    "dormiríamos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural past future indicative"
+        ]
+      ]
+    },
+    "dormiríeis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past future indicative"
+        ]
+      ]
+    },
+    "dormiriam": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural past future indicative"
+        ]
+      ]
+    },
+    "durma": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular present subjunctive conjunctive",
+          "third-person singular imperative affirmative",
+          "third-person singular imperative negative"
+        ]
+      ]
+    },
+    "durmas": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular imperative negative",
+          "second-person singular present subjunctive conjunctive"
+        ]
+      ]
+    },
+    "durmamos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural imperative affirmative",
+          "first-person plural imperative negative",
+          "first-person plural present subjunctive conjunctive"
+        ]
+      ]
+    },
+    "durmais": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural imperative negative",
+          "second-person plural present subjunctive conjunctive"
+        ]
+      ]
+    },
+    "durmam": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural imperative affirmative",
+          "third-person plural imperative negative",
+          "third-person plural present subjunctive conjunctive"
+        ]
+      ]
+    },
+    "dormisse": {
+      "verb": [
+        "extracted",
+        [
+          "first/third-person singular past subjunctive conjunctive continuative"
+        ]
+      ]
+    },
+    "dormisses": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past subjunctive conjunctive continuative"
+        ]
+      ]
+    },
+    "dormíssemos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural past subjunctive conjunctive continuative"
+        ]
+      ]
+    },
+    "dormísseis": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past subjunctive conjunctive continuative"
+        ]
+      ]
+    },
+    "dormissem": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural past subjunctive conjunctive continuative"
+        ]
+      ]
+    },
+    "dormires": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular future subjunctive conjunctive",
+          "second-person singular infinitive personal"
+        ]
+      ]
+    },
+    "dormirmos": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural future subjunctive conjunctive",
+          "first-person plural infinitive personal"
+        ]
+      ]
+    },
+    "dormirdes": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural future subjunctive conjunctive",
+          "second-person plural infinitive personal"
+        ]
+      ]
+    },
+    "dormirem": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural future subjunctive conjunctive",
+          "third-person plural infinitive personal"
+        ]
+      ]
+    }
+  }
+}

@@ -13,5 +13,17 @@
         }
       ]
     }
+  ],
+  [
+    "comer",
+    "ipa",
+    {
+      "reading": "comer",
+      "transcriptions": [
+        {
+          "ipa": "[koˈmeɾ]"
+        }
+      ]
+    }
   ]
 ]

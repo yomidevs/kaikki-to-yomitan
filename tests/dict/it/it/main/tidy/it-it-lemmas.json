@@ -91,5 +91,49 @@
         }
       ]
     }
+  },
+  "mangiare": {
+    "mangiare": {
+      "verb": [
+        {
+          "gloss_tree": {
+            "nutrirsi di alimenti solidi o semisolidi": {
+              "examples": [
+                {
+                  "text": "L’alimentazione fornisce energia al corpo e teoricamente non si dovrebbe mangiare più di ciò che si consuma"
+                }
+              ]
+            },
+            "muovere un pezzo sulla casella in cui sta un altro pezzo, eliminando così il secondo dal gioco": {
+              "topics": [
+                "chess"
+              ],
+              "examples": [
+                {
+                  "text": "devi mangiare il cavallo"
+                }
+              ]
+            }
+          },
+          "tags": [
+            "transitive"
+          ],
+          "synonyms": [
+            {
+              "word": "alimenti"
+            },
+            {
+              "word": "cibo"
+            },
+            {
+              "word": "derrate"
+            }
+          ],
+          "etymology_text": "dall'antico francese mangier, dal latino manducare, infinito presente attivo di manduco, da mando cioè \"masticare\" che sostituisce il più classico edo ovvero \"mangiare\"",
+          "wlink": "https://it.wiktionary.org/wiki/mangiare#Italian",
+          "klink": "https://kaikki.org/itwiktionary/All%20languages%20combined/meaning/m/ma/mangiare.html"
+        }
+      ]
+    }
   }
 }
