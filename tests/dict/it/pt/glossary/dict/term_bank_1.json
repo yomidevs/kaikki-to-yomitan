@@ -1,0 +1,238 @@
+[
+  [
+    "cura",
+    "",
+    "n",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "(medicina) terapia"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "tratamento"
+                },
+                {
+                  "tag": "li",
+                  "content": "terapia"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "premura, sollecitudine"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "cuidado"
+                },
+                {
+                  "tag": "li",
+                  "content": "solicitude"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "serietà, precisione, esattezza, accuratezza, diligenza, zelo, solerzia, creanza"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "cuidado"
+                },
+                {
+                  "tag": "li",
+                  "content": "seriedade"
+                },
+                {
+                  "tag": "li",
+                  "content": "precisão"
+                },
+                {
+                  "tag": "li",
+                  "content": "exatidão"
+                },
+                {
+                  "tag": "li",
+                  "content": "zelo"
+                },
+                {
+                  "tag": "li",
+                  "content": "diligência"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "cura",
+    "",
+    "v",
+    "v",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "(medicina) terapia"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "tratamento"
+                },
+                {
+                  "tag": "li",
+                  "content": "terapia"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "premura, sollecitudine"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "cuidado"
+                },
+                {
+                  "tag": "li",
+                  "content": "solicitude"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "serietà, precisione, esattezza, accuratezza, diligenza, zelo, solerzia, creanza"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "cuidado"
+                },
+                {
+                  "tag": "li",
+                  "content": "seriedade"
+                },
+                {
+                  "tag": "li",
+                  "content": "precisão"
+                },
+                {
+                  "tag": "li",
+                  "content": "exatidão"
+                },
+                {
+                  "tag": "li",
+                  "content": "zelo"
+                },
+                {
+                  "tag": "li",
+                  "content": "diligência"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "mangiare",
+    "",
+    "v",
+    "v",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "ingerire cibo solido per nutrirsi"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "comer"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ]
+]
