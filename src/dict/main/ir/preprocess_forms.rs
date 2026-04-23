@@ -6,31 +6,11 @@ use crate::{
 pub fn preprocess_forms(edition: Edition, source: Lang, entry: &mut WordEntry) {
     match (edition, source, entry.pos.as_str()) {
         (Edition::De, Lang::De, "verb") => preprocess_forms_de_de(entry),
+        (Edition::En, Lang::Ga, _) => preprocess_forms_ga_en(entry),
         (Edition::Es, Lang::Es, "verb") => preprocess_forms_es_es(entry),
         (Edition::Fr, Lang::Fr, "verb") => preprocess_forms_fr_fr(entry),
-        (Edition::En, Lang::Ga, _) => preprocess_forms_ga_en(entry),
+        (Edition::It, Lang::It, "verb") => preprocess_forms_it_it(entry),
         _ => (),
-    }
-}
-
-fn preprocess_forms_es_es(entry: &mut WordEntry) {
-    // The auxiliary haber is wrongly parsed as a form
-    #[rustfmt::skip]
-    const HABER_FORMS: &[&str] = &[
-        "he", "has", "ha", "hemos", "habéis", "han",
-        "había", "habías", "había", "habíamos", "habíais", "habían",
-        "habré", "habrás", "habrá", "habremos", "habréis", "habrán",
-        "habría", "habrías", "habría", "habríamos", "habríais", "habrían",
-        "haya", "hayas", "haya", "hayamos", "hayáis", "hayan",
-        "hubiera", "hubieras", "hubiera", "hubiéramos", "hubierais", "hubieran",
-        "hubiese", "hubieses", "hubiese", "hubiésemos", "hubieseis", "hubiesen",
-    ];
-    if entry.word != "haber" {
-        entry.forms.retain(|form| {
-            let is_auxiliary_form = HABER_FORMS.contains(&form.form.as_str());
-
-            !is_auxiliary_form
-        });
     }
 }
 
@@ -108,6 +88,33 @@ fn preprocess_forms_de_de(entry: &mut WordEntry) {
     }
 }
 
+fn preprocess_forms_ga_en(entry: &mut WordEntry) {
+    // https://en.wiktionary.org/wiki/crodh#Irish
+    const PREFIXES: &[&str] = &["a ", "an ", "na ", "leis an ", "don ", "leis na "];
+    strip_prefixes(entry, PREFIXES);
+}
+
+fn preprocess_forms_es_es(entry: &mut WordEntry) {
+    // The auxiliary haber is wrongly parsed as a form
+    #[rustfmt::skip]
+    const HABER_AUX: &[&str] = &[
+        "he", "has", "ha", "hemos", "habéis", "han",
+        "había", "habías", "había", "habíamos", "habíais", "habían",
+        "habré", "habrás", "habrá", "habremos", "habréis", "habrán",
+        "habría", "habrías", "habría", "habríamos", "habríais", "habrían",
+        "haya", "hayas", "haya", "hayamos", "hayáis", "hayan",
+        "hubiera", "hubieras", "hubiera", "hubiéramos", "hubierais", "hubieran",
+        "hubiese", "hubieses", "hubiese", "hubiésemos", "hubieseis", "hubiesen",
+    ];
+    if entry.word != "haber" {
+        entry.forms.retain(|form| {
+            let is_auxiliary_form = HABER_AUX.contains(&form.form.as_str());
+
+            !is_auxiliary_form
+        });
+    }
+}
+
 // This function is made based on preprocess_forms_de_de. See that function for more details.
 fn preprocess_forms_fr_fr(entry: &mut WordEntry) {
     const PRONOUNS: &[&str] = &[
@@ -137,8 +144,31 @@ fn preprocess_forms_fr_fr(entry: &mut WordEntry) {
     });
 }
 
-fn preprocess_forms_ga_en(entry: &mut WordEntry) {
-    // https://en.wiktionary.org/wiki/crodh#Irish
-    const PREFIXES: &[&str] = &["a ", "an ", "na ", "leis an ", "don ", "leis na "];
-    strip_prefixes(entry, PREFIXES);
+fn preprocess_forms_it_it(entry: &mut WordEntry) {
+    const AVERE_AUX: &[&str] = &[
+        "avrei ",
+        "avresti ",
+        "avrebbe ",
+        "avremmo ",
+        "avreste ",
+        "avrebbero ",
+        // These are actually perfect tense, but wiktionary doesn't parse them as such
+        "abbia ",
+        "abbiamo ",
+        "abbiate ",
+        "abbiano ",
+        // Adding this here for simplicity: "non mangiare"
+        "non ",
+    ];
+    strip_prefixes(entry, AVERE_AUX);
+
+    entry.forms.retain(|form| {
+        let is_compound = form
+            .tags
+            .iter()
+            .any(|tag| matches!(tag.as_str(), "perfect" | "pluperfect" | "historic"));
+
+        // mangiarsi (coniugazione)
+        !is_compound && !form.form.ends_with(')')
+    });
 }
