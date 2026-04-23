@@ -48,5 +48,630 @@
         ]
       ]
     }
+  },
+  "mangiare": {
+    "mangiarsi (coniugazione)": {
+      "verb": [
+        "extracted",
+        [
+          "reflexive pronominal"
+        ]
+      ]
+    },
+    "mangiando": {
+      "verb": [
+        "extracted",
+        [
+          "gerund"
+        ]
+      ]
+    },
+    "mangiante": {
+      "verb": [
+        "extracted",
+        [
+          "present participle"
+        ]
+      ]
+    },
+    "mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "past participle"
+        ]
+      ]
+    },
+    "mangio": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular present"
+        ]
+      ]
+    },
+    "mangi": {
+      "verb": [
+        "extracted",
+        [
+          "imperative",
+          "second-person singular present"
+        ]
+      ]
+    },
+    "mangia": {
+      "verb": [
+        "extracted",
+        [
+          "imperative",
+          "third-person singular present"
+        ]
+      ]
+    },
+    "mangiamo": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural present",
+          "imperative"
+        ]
+      ]
+    },
+    "mangiate": {
+      "verb": [
+        "extracted",
+        [
+          "imperative",
+          "second-person plural present"
+        ]
+      ]
+    },
+    "mangiano": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural present"
+        ]
+      ]
+    },
+    "mangiavo": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular imperfect"
+        ]
+      ]
+    },
+    "mangiavi": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular imperfect"
+        ]
+      ]
+    },
+    "mangiava": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular imperfect"
+        ]
+      ]
+    },
+    "mangiavamo": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural imperfect"
+        ]
+      ]
+    },
+    "mangiavate": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural imperfect"
+        ]
+      ]
+    },
+    "mangiavano": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural imperfect"
+        ]
+      ]
+    },
+    "mangiai": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular past-remote"
+        ]
+      ]
+    },
+    "mangiasti": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past-remote"
+        ]
+      ]
+    },
+    "mangiò": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular past-remote"
+        ]
+      ]
+    },
+    "mangiammo": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural past-remote"
+        ]
+      ]
+    },
+    "mangiaste": {
+      "verb": [
+        "extracted",
+        [
+          "imperfect",
+          "second-person plural past-remote"
+        ]
+      ]
+    },
+    "mangiarono": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural past-remote"
+        ]
+      ]
+    },
+    "mangerò": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular future"
+        ]
+      ]
+    },
+    "mangerai": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular future"
+        ]
+      ]
+    },
+    "mangerà": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular future"
+        ]
+      ]
+    },
+    "mangeremo": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural future"
+        ]
+      ]
+    },
+    "mangerete": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural future"
+        ]
+      ]
+    },
+    "mangeranno": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural future"
+        ]
+      ]
+    },
+    "ho mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular past perfect"
+        ]
+      ]
+    },
+    "hai mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past perfect"
+        ]
+      ]
+    },
+    "ha mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular past perfect"
+        ]
+      ]
+    },
+    "abbiamo mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural past perfect"
+        ]
+      ]
+    },
+    "avete mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past perfect"
+        ]
+      ]
+    },
+    "hanno mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural past perfect"
+        ]
+      ]
+    },
+    "avevo mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular past perfect pluperfect"
+        ]
+      ]
+    },
+    "avevi mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular past perfect pluperfect"
+        ]
+      ]
+    },
+    "aveva mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular past perfect pluperfect"
+        ]
+      ]
+    },
+    "avevamo mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural past perfect pluperfect"
+        ]
+      ]
+    },
+    "avevate mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural past perfect pluperfect"
+        ]
+      ]
+    },
+    "avevano mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural past perfect pluperfect"
+        ]
+      ]
+    },
+    "ebbi mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular historic past-remote"
+        ]
+      ]
+    },
+    "avesti mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular historic past-remote"
+        ]
+      ]
+    },
+    "ebbe mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular historic past-remote"
+        ]
+      ]
+    },
+    "avemmo mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural historic past-remote"
+        ]
+      ]
+    },
+    "aveste mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "past perfect",
+          "second-person plural historic past-remote"
+        ]
+      ]
+    },
+    "ebbero mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural historic past-remote"
+        ]
+      ]
+    },
+    "avrò mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular future perfect"
+        ]
+      ]
+    },
+    "avrai mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular future perfect"
+        ]
+      ]
+    },
+    "avrà mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "third-person singular future perfect"
+        ]
+      ]
+    },
+    "avremo mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "first-person plural future perfect"
+        ]
+      ]
+    },
+    "avrete mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "second-person plural future perfect"
+        ]
+      ]
+    },
+    "avranno mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "third-person plural future perfect"
+        ]
+      ]
+    },
+    "mangerei": {
+      "verb": [
+        "extracted",
+        [
+          "present"
+        ]
+      ]
+    },
+    "mangeresti": {
+      "verb": [
+        "extracted",
+        [
+          "present"
+        ]
+      ]
+    },
+    "mangerebbe": {
+      "verb": [
+        "extracted",
+        [
+          "present"
+        ]
+      ]
+    },
+    "mangeremmo": {
+      "verb": [
+        "extracted",
+        [
+          "present"
+        ]
+      ]
+    },
+    "mangereste": {
+      "verb": [
+        "extracted",
+        [
+          "present"
+        ]
+      ]
+    },
+    "mangerebbero": {
+      "verb": [
+        "extracted",
+        [
+          "present"
+        ]
+      ]
+    },
+    "avrei mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "past"
+        ]
+      ]
+    },
+    "avresti mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "past"
+        ]
+      ]
+    },
+    "avrebbe mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "past"
+        ]
+      ]
+    },
+    "avremmo mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "past"
+        ]
+      ]
+    },
+    "avreste mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "past"
+        ]
+      ]
+    },
+    "avrebbero mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "past"
+        ]
+      ]
+    },
+    "mangino": {
+      "verb": [
+        "extracted",
+        [
+          "imperative",
+          "present"
+        ]
+      ]
+    },
+    "mangiassi": {
+      "verb": [
+        "extracted",
+        [
+          "imperfect"
+        ]
+      ]
+    },
+    "mangiasse": {
+      "verb": [
+        "extracted",
+        [
+          "imperfect"
+        ]
+      ]
+    },
+    "mangiassimo": {
+      "verb": [
+        "extracted",
+        [
+          "imperfect"
+        ]
+      ]
+    },
+    "mangiassero": {
+      "verb": [
+        "extracted",
+        [
+          "imperfect"
+        ]
+      ]
+    },
+    "abbia mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "past"
+        ]
+      ]
+    },
+    "abbiate mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "past"
+        ]
+      ]
+    },
+    "abbiano mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "past"
+        ]
+      ]
+    },
+    "avessi mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "past perfect"
+        ]
+      ]
+    },
+    "avesse mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "past perfect"
+        ]
+      ]
+    },
+    "avessimo mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "past perfect"
+        ]
+      ]
+    },
+    "avessero mangiato": {
+      "verb": [
+        "extracted",
+        [
+          "past perfect"
+        ]
+      ]
+    },
+    "non mangiare": {
+      "verb": [
+        "extracted",
+        [
+          "imperative"
+        ]
+      ]
+    }
   }
 }

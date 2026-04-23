@@ -34,5 +34,49 @@
     ],
     0,
     ""
+  ],
+  [
+    "mangiare",
+    "",
+    "v",
+    "v",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "ingerire cibo solido per nutrirsi"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "edo"
+                },
+                {
+                  "tag": "li",
+                  "content": "gusto"
+                },
+                {
+                  "tag": "li",
+                  "content": "mando"
+                },
+                {
+                  "tag": "li",
+                  "content": "manduco"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
   ]
 ]

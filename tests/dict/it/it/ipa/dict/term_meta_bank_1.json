@@ -22,5 +22,17 @@
         }
       ]
     }
+  ],
+  [
+    "mangiare",
+    "ipa",
+    {
+      "reading": "mangiare",
+      "transcriptions": [
+        {
+          "ipa": "/manˈdʒare/"
+        }
+      ]
+    }
   ]
 ]

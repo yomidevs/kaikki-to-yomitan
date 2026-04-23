@@ -431,5 +431,238 @@
     ],
     0,
     ""
+  ],
+  [
+    "mangiare",
+    "",
+    "v vt",
+    "v",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "preamble"
+                },
+                "content": [
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Etymology"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Etimologia"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
+                        },
+                        "content": "dall'antico francese mangier, dal latino manducare, infinito presente attivo di manduco, da mando cioè \"masticare\" che sostituisce il più classico edo ovvero \"mangiare\""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
+            "content": [
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "nutrirsi di alimenti solidi o semisolidi",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 esempio"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "L’alimentazione fornisce energia al corpo e teoricamente non si dovrebbe mangiare più di ciò che si consuma"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "title": "chess",
+                            "data": {
+                              "content": "tag",
+                              "category": "topic"
+                            },
+                            "content": "chess"
+                          }
+                        ]
+                      },
+                      "muovere un pezzo sulla casella in cui sta un altro pezzo, eliminando così il secondo dal gioco",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 esempio"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": "devi mangiare il cavallo"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "synonyms"
+            },
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "synonyms-label"
+                },
+                "content": "Sinonimi"
+              },
+              {
+                "tag": "ul",
+                "data": {
+                  "content": "synonyms-list"
+                },
+                "content": [
+                  {
+                    "tag": "li",
+                    "data": {
+                      "content": "synonym-item"
+                    },
+                    "content": "alimenti"
+                  },
+                  {
+                    "tag": "li",
+                    "data": {
+                      "content": "synonym-item"
+                    },
+                    "content": "cibo"
+                  },
+                  {
+                    "tag": "li",
+                    "data": {
+                      "content": "synonym-item"
+                    },
+                    "content": "derrate"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://it.wiktionary.org/wiki/mangiare#Italian",
+                "content": "Wiktionary"
+              },
+              " | ",
+              {
+                "tag": "a",
+                "href": "https://kaikki.org/itwiktionary/All%20languages%20combined/meaning/m/ma/mangiare.html",
+                "content": "Kaikki"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
   ]
 ]
