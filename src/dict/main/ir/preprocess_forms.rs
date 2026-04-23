@@ -6,9 +6,31 @@ use crate::{
 pub fn preprocess_forms(edition: Edition, source: Lang, entry: &mut WordEntry) {
     match (edition, source, entry.pos.as_str()) {
         (Edition::De, Lang::De, "verb") => preprocess_forms_de_de(entry),
+        (Edition::Es, Lang::Es, "verb") => preprocess_forms_es_es(entry),
         (Edition::Fr, Lang::Fr, "verb") => preprocess_forms_fr_fr(entry),
         (Edition::En, Lang::Ga, _) => preprocess_forms_ga_en(entry),
         _ => (),
+    }
+}
+
+fn preprocess_forms_es_es(entry: &mut WordEntry) {
+    // The auxiliary haber is wrongly parsed as a form
+    #[rustfmt::skip]
+    const HABER_FORMS: &[&str] = &[
+        "he", "has", "ha", "hemos", "habéis", "han",
+        "había", "habías", "había", "habíamos", "habíais", "habían",
+        "habré", "habrás", "habrá", "habremos", "habréis", "habrán",
+        "habría", "habrías", "habría", "habríamos", "habríais", "habrían",
+        "haya", "hayas", "haya", "hayamos", "hayáis", "hayan",
+        "hubiera", "hubieras", "hubiera", "hubiéramos", "hubierais", "hubieran",
+        "hubiese", "hubieses", "hubiese", "hubiésemos", "hubieseis", "hubiesen",
+    ];
+    if entry.word != "haber" {
+        entry.forms.retain(|form| {
+            let is_auxiliary_form = HABER_FORMS.contains(&form.form.as_str());
+
+            !is_auxiliary_form
+        });
     }
 }
 
