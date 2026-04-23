@@ -10,6 +10,7 @@ pub fn preprocess_forms(edition: Edition, source: Lang, entry: &mut WordEntry) {
         (Edition::Es, Lang::Es, "verb") => preprocess_forms_es_es(entry),
         (Edition::Fr, Lang::Fr, "verb") => preprocess_forms_fr_fr(entry),
         (Edition::It, Lang::It, "verb") => preprocess_forms_it_it(entry),
+        (Edition::Pt, Lang::Pt, "verb") => preprocess_forms_pt_pt(entry),
         _ => (),
     }
 }
@@ -171,4 +172,8 @@ fn preprocess_forms_it_it(entry: &mut WordEntry) {
         // mangiarsi (coniugazione)
         !is_compound && !form.form.ends_with(')')
     });
+}
+
+fn preprocess_forms_pt_pt(entry: &mut WordEntry) {
+    strip_prefixes(entry, &["não "]);
 }

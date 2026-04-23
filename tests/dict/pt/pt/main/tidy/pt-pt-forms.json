@@ -273,7 +273,8 @@
         "extracted",
         [
           "first/third-person singular present subjunctive conjunctive",
-          "third-person singular imperative affirmative"
+          "third-person singular imperative affirmative",
+          "third-person singular imperative negative"
         ]
       ]
     },
@@ -281,6 +282,7 @@
       "verb": [
         "extracted",
         [
+          "second-person singular imperative negative",
           "second-person singular present subjunctive conjunctive"
         ]
       ]
@@ -290,6 +292,7 @@
         "extracted",
         [
           "first-person plural imperative affirmative",
+          "first-person plural imperative negative",
           "first-person plural present subjunctive conjunctive"
         ]
       ]
@@ -298,6 +301,7 @@
       "verb": [
         "extracted",
         [
+          "second-person plural imperative negative",
           "second-person plural present subjunctive conjunctive"
         ]
       ]
@@ -307,6 +311,7 @@
         "extracted",
         [
           "third-person plural imperative affirmative",
+          "third-person plural imperative negative",
           "third-person plural present subjunctive conjunctive"
         ]
       ]
@@ -384,46 +389,6 @@
         [
           "third-person plural future subjunctive conjunctive",
           "third-person plural infinitive personal"
-        ]
-      ]
-    },
-    "não durmas": {
-      "verb": [
-        "extracted",
-        [
-          "second-person singular imperative negative"
-        ]
-      ]
-    },
-    "não durma": {
-      "verb": [
-        "extracted",
-        [
-          "third-person singular imperative negative"
-        ]
-      ]
-    },
-    "não durmamos": {
-      "verb": [
-        "extracted",
-        [
-          "first-person plural imperative negative"
-        ]
-      ]
-    },
-    "não durmais": {
-      "verb": [
-        "extracted",
-        [
-          "second-person plural imperative negative"
-        ]
-      ]
-    },
-    "não durmam": {
-      "verb": [
-        "extracted",
-        [
-          "third-person plural imperative negative"
         ]
       ]
     }

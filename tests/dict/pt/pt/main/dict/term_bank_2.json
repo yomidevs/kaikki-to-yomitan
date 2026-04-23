@@ -602,6 +602,12 @@
         [
           "third-person singular imperative affirmative"
         ]
+      ],
+      [
+        "dormir",
+        [
+          "third-person singular imperative negative"
+        ]
       ]
     ],
     0,
@@ -614,6 +620,12 @@
     "v",
     0,
     [
+      [
+        "dormir",
+        [
+          "second-person singular imperative negative"
+        ]
+      ],
       [
         "dormir",
         [
@@ -640,6 +652,12 @@
       [
         "dormir",
         [
+          "first-person plural imperative negative"
+        ]
+      ],
+      [
+        "dormir",
+        [
           "first-person plural present subjunctive conjunctive"
         ]
       ]
@@ -654,6 +672,12 @@
     "v",
     0,
     [
+      [
+        "dormir",
+        [
+          "second-person plural imperative negative"
+        ]
+      ],
       [
         "dormir",
         [
@@ -675,6 +699,12 @@
         "dormir",
         [
           "third-person plural imperative affirmative"
+        ]
+      ],
+      [
+        "dormir",
+        [
+          "third-person plural imperative negative"
         ]
       ],
       [
@@ -858,91 +888,6 @@
         "dormir",
         [
           "third-person plural infinitive personal"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "não durmas",
-    "",
-    "non-lemma",
-    "v",
-    0,
-    [
-      [
-        "dormir",
-        [
-          "second-person singular imperative negative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "não durma",
-    "",
-    "non-lemma",
-    "v",
-    0,
-    [
-      [
-        "dormir",
-        [
-          "third-person singular imperative negative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "não durmamos",
-    "",
-    "non-lemma",
-    "v",
-    0,
-    [
-      [
-        "dormir",
-        [
-          "first-person plural imperative negative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "não durmais",
-    "",
-    "non-lemma",
-    "v",
-    0,
-    [
-      [
-        "dormir",
-        [
-          "second-person plural imperative negative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "não durmam",
-    "",
-    "non-lemma",
-    "v",
-    0,
-    [
-      [
-        "dormir",
-        [
-          "third-person plural imperative negative"
         ]
       ]
     ],
