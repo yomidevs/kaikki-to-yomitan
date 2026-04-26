@@ -26,6 +26,7 @@ pub fn write_debug_forms(_: &Options, _: &PathManager, ydict: YomitanDict) -> Re
     // ... and in theory, there is no guarantee that the irs format of the main
     // dictionary won't change, while this logic remains the same.
     let mut grouped_by: HashMap<String, Vec<String>> = HashMap::new();
+    let mut rules: HashMap<String, String> = HashMap::new(); // it's short pos
 
     for entry in ydict.term_info_form {
         let term = entry.term.clone();
@@ -33,6 +34,7 @@ pub fn write_debug_forms(_: &Options, _: &PathManager, ydict: YomitanDict) -> Re
             let DetailedDefinition::Inflection((from, _tags)) = def else {
                 panic!("forms must be made from inflections");
             };
+            rules.entry(from.clone()).or_insert(entry.rules.clone());
             let tos = grouped_by.entry(from).or_default();
             if !tos.contains(&term) {
                 tos.push(term.clone());
@@ -41,7 +43,9 @@ pub fn write_debug_forms(_: &Options, _: &PathManager, ydict: YomitanDict) -> Re
     }
 
     for (from, tos) in &grouped_by {
-        writer.write_all(from.as_bytes())?;
+        // SAFETY: rules has the from key, by previous logic
+        let from_expanded = format!("{from} | {}", rules.get(from).unwrap());
+        writer.write_all(from_expanded.as_bytes())?;
         writer.write_all(b"\n")?;
         for to in tos {
             writer.write_all(to.as_bytes())?;
