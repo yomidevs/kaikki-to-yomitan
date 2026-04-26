@@ -141,5 +141,37 @@
     ],
     0,
     ""
+  ],
+  [
+    "Nantes",
+    "",
+    "όνομα",
+    "name",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "größte französische Stadt in der Bretagne"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "Νάντη"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
   ]
 ]

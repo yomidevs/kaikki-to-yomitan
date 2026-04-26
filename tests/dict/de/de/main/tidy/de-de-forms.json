@@ -1081,5 +1081,39 @@
         ]
       ]
     }
+  },
+  "Nantes": {
+    "des Nantes": {
+      "name": [
+        "extracted",
+        [
+          "genitive singular"
+        ]
+      ]
+    },
+    "Nantes’": {
+      "name": [
+        "extracted",
+        [
+          "genitive singular"
+        ]
+      ]
+    },
+    "(dem) Nantes": {
+      "name": [
+        "extracted",
+        [
+          "dative singular"
+        ]
+      ]
+    },
+    "(das) Nantes": {
+      "name": [
+        "extracted",
+        [
+          "accusative singular"
+        ]
+      ]
+    }
   }
 }

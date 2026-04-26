@@ -457,5 +457,37 @@
     ],
     0,
     ""
+  ],
+  [
+    "Nantes",
+    "",
+    "name",
+    "name",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "größte französische Stadt in der Bretagne"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "Nantes"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
   ]
 ]

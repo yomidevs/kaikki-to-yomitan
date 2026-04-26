@@ -2496,5 +2496,73 @@
     ],
     0,
     ""
+  ],
+  [
+    "des Nantes",
+    "",
+    "non-lemma",
+    "name",
+    0,
+    [
+      [
+        "Nantes",
+        [
+          "genitive singular"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "Nantes’",
+    "",
+    "non-lemma",
+    "name",
+    0,
+    [
+      [
+        "Nantes",
+        [
+          "genitive singular"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "(dem) Nantes",
+    "",
+    "non-lemma",
+    "name",
+    0,
+    [
+      [
+        "Nantes",
+        [
+          "dative singular"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "(das) Nantes",
+    "",
+    "non-lemma",
+    "name",
+    0,
+    [
+      [
+        "Nantes",
+        [
+          "accusative singular"
+        ]
+      ]
+    ],
+    0,
+    ""
   ]
 ]

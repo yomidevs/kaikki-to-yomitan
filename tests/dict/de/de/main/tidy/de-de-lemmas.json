@@ -947,5 +947,44 @@
         }
       ]
     }
+  },
+  "Nantes": {
+    "Nantes": {
+      "name": [
+        {
+          "gloss_tree": {
+            "größte französische Stadt in der Bretagne": {
+              "examples": [
+                {
+                  "text": "Lucas arbeitet in Nantes bei Airbus.",
+                  "bold_text_offsets": [
+                    [
+                      18,
+                      24
+                    ]
+                  ]
+                },
+                {
+                  "text": "Von Paris aus ist Nantes in gut zwei Stunden per TGV erreichbar.",
+                  "ref": "Wikipedia-Artikel „Nantes“",
+                  "bold_text_offsets": [
+                    [
+                      18,
+                      24
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "tags": [
+            "neuter",
+            "noun"
+          ],
+          "wlink": "https://de.wiktionary.org/wiki/Nantes#German",
+          "klink": "https://kaikki.org/dewiktionary/All%20languages%20combined/meaning/N/Na/Nantes.html"
+        }
+      ]
+    }
   }
 }

@@ -163,5 +163,17 @@
         }
       ]
     }
+  ],
+  [
+    "Nantes",
+    "ipa",
+    {
+      "reading": "Nantes",
+      "transcriptions": [
+        {
+          "ipa": "[nɑ̃ːt]"
+        }
+      ]
+    }
   ]
 ]
