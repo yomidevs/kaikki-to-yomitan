@@ -47,10 +47,6 @@
         "unreg",
         "unregelmäßig"
     ],
-    "name": [
-        "Vorn",
-        "Vorname"
-    ],
     "no-plural": [
         "k-Pl",
         "kein Plural"
@@ -130,6 +126,10 @@
     "transitive verb": [
         "Vt",
         "transitives Verb"
+    ],
+    "name": [
+        "Vorn",
+        "Vorname"
     ],
     "colloquial": [
         "ums",

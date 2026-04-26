@@ -279,20 +279,6 @@
         0
     ],
     [
-        "name",
-        "name",
-        -1,
-        "name",
-        1
-    ],
-    [
-        "surn",
-        "name",
-        -1,
-        "surname",
-        1
-    ],
-    [
         "in-pl",
         "number",
         0,
@@ -608,6 +594,20 @@
             "transitive"
         ],
         2
+    ],
+    [
+        "name",
+        "partOfSpeech",
+        -1,
+        "name",
+        1
+    ],
+    [
+        "surn",
+        "partOfSpeech",
+        -1,
+        "surname",
+        1
     ],
     [
         "adn",
