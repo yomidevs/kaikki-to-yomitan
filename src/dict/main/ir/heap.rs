@@ -52,6 +52,12 @@ impl HeapSize for FormSource {
     }
 }
 
+impl<T: HeapSize> HeapSize for Option<T> {
+    fn heap_size(&self) -> usize {
+        self.as_ref().map_or(0, HeapSize::heap_size)
+    }
+}
+
 impl<A, B> HeapSize for (A, B)
 where
     A: HeapSize,

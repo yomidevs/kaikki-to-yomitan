@@ -240,9 +240,9 @@ fn structured_glosses_go(
 
         nested.push(wrap(html_tag, "", level_content));
 
-        if gloss_info.children.is_empty() {
+        let Some(children) = &gloss_info.children else {
             continue;
-        }
+        };
 
         // We dont want tags from the parent appearing again in the children
         let mut new_common_short_tags_found = minimal_tags;
@@ -253,7 +253,7 @@ fn structured_glosses_go(
             "",
             Node::Array(structured_glosses_go(
                 target,
-                &gloss_info.children,
+                children,
                 &new_common_short_tags_found,
                 level + 1,
             )),

@@ -409,8 +409,11 @@ pub struct GlossInfo {
     #[serde(skip_serializing_if = "Vec::is_empty")]
     pub examples: Vec<Example>,
 
-    #[serde(skip_serializing_if = "Map::is_empty")]
-    pub children: GlossTree,
+    /// Children glosses (sub-senses).
+    /// Boxed to avoid paying for a full [`GlossTree`] allocation (a [`Map`])
+    /// on every leaf node - which is the common case.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub children: Option<Box<GlossTree>>,
 }
 
 fn postprocess_forms(form_map: &mut FormMap) {
@@ -989,7 +992,8 @@ fn insert_glosses(
     let node = gloss_tree.entry(head.clone()).or_insert_with(|| GlossInfo {
         tags: tags.to_vec(),
         topics: topics.to_vec(),
-        ..Default::default()
+        examples: Vec::new(),
+        children: None,
     });
 
     // intersect tags if node already exists
@@ -1007,7 +1011,10 @@ fn insert_glosses(
         return;
     }
 
-    insert_glosses(&mut node.children, tail, tags, topics, examples);
+    let children = node
+        .children
+        .get_or_insert_with(|| Box::new(GlossTree::default()));
+    insert_glosses(children, tail, tags, topics, examples);
 }
 
 static DE_INFLECTION_RE: LazyLock<Regex> = LazyLock::new(|| {
