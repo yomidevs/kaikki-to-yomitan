@@ -38,7 +38,7 @@ use crate::{
     path::PathManager,
 };
 
-const MAX_NUM_THREADS_MAIN: usize = 2;
+const MAX_NUM_THREADS_MAIN: usize = 4;
 
 #[derive(Debug, Default)]
 struct TimingStats {
@@ -86,7 +86,7 @@ pub fn release(rargs: ReleaseArgs) -> Result<()> {
     let start = Instant::now();
     let stats = TimingStats::new();
 
-    editions.par_iter().for_each(|edition| {
+    editions.iter().for_each(|edition| {
         release_main(&rargs, *edition, &stats);
         release_ipa(&rargs, *edition, &stats);
         release_glossary(&rargs, *edition, &stats);
