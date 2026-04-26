@@ -2069,12 +2069,48 @@
     ""
   ],
   [
-    "am unauffälligsten",
+    "unauffälligsten",
     "",
     "non-lemma",
     "adj",
     0,
     [
+      [
+        "unauffällig",
+        [
+          "dative plural superlative strong"
+        ]
+      ],
+      [
+        "unauffällig",
+        [
+          "genitive singular neuter superlative strong"
+        ]
+      ],
+      [
+        "unauffällig",
+        [
+          "genitive/accusative singular masculine superlative strong"
+        ]
+      ],
+      [
+        "unauffällig",
+        [
+          "genitive/dative singular feminine/neuter superlative weak/mixed"
+        ]
+      ],
+      [
+        "unauffällig",
+        [
+          "genitive/dative/accusative singular masculine superlative weak/mixed"
+        ]
+      ],
+      [
+        "unauffällig",
+        [
+          "nominative/genitive/dative/accusative plural superlative weak/mixed"
+        ]
+      ],
       [
         "unauffällig",
         [
@@ -2434,53 +2470,6 @@
     ""
   ],
   [
-    "unauffälligsten",
-    "",
-    "non-lemma",
-    "adj",
-    0,
-    [
-      [
-        "unauffällig",
-        [
-          "dative plural superlative strong"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "genitive singular neuter superlative strong"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "genitive/accusative singular masculine superlative strong"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "genitive/dative singular feminine/neuter superlative weak/mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "genitive/dative/accusative singular masculine superlative weak/mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative/genitive/dative/accusative plural superlative weak/mixed"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
     "unauffälligstem",
     "",
     "non-lemma",
@@ -2491,6 +2480,92 @@
         "unauffällig",
         [
           "dative singular masculine/neuter superlative strong"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "Abbenhues",
+    "",
+    "non-lemma",
+    "name",
+    0,
+    [
+      [
+        "Abbenhaus",
+        [
+          "variant"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "Abbenhausens",
+    "",
+    "non-lemma",
+    "name",
+    0,
+    [
+      [
+        "Abbenhaus",
+        [
+          "nominative/genitive/dative/accusative plural"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "Neugeborener",
+    "",
+    "non-lemma",
+    "n",
+    0,
+    [
+      [
+        "Neugeborene",
+        [
+          "genitive plural"
+        ]
+      ],
+      [
+        "Neugeborene",
+        [
+          "genitive/dative singular"
+        ]
+      ],
+      [
+        "Neugeborene",
+        [
+          "masculine"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "Neugeborenen",
+    "",
+    "non-lemma",
+    "n",
+    0,
+    [
+      [
+        "Neugeborene",
+        [
+          "genitive/dative singular"
+        ]
+      ],
+      [
+        "Neugeborene",
+        [
+          "nominative/genitive/dative/accusative plural"
         ]
       ]
     ],

@@ -175,5 +175,29 @@
         }
       ]
     }
+  ],
+  [
+    "Abbenhaus",
+    "ipa",
+    {
+      "reading": "Abbenhaus",
+      "transcriptions": [
+        {
+          "ipa": "[ˈabn̩haʊ̯s]"
+        }
+      ]
+    }
+  ],
+  [
+    "Neugeborene",
+    "ipa",
+    {
+      "reading": "Neugeborene",
+      "transcriptions": [
+        {
+          "ipa": "[ˈnɔɪ̯ɡəˌboːʁənə]"
+        }
+      ]
+    }
   ]
 ]

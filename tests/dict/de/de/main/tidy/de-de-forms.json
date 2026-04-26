@@ -932,10 +932,16 @@
         ]
       ]
     },
-    "am unauffälligsten": {
+    "unauffälligsten": {
       "adj": [
         "extracted",
         [
+          "dative plural superlative strong",
+          "genitive singular neuter superlative strong",
+          "genitive/accusative singular masculine superlative strong",
+          "genitive/dative singular feminine/neuter superlative weak/mixed",
+          "genitive/dative/accusative singular masculine superlative weak/mixed",
+          "nominative/genitive/dative/accusative plural superlative weak/mixed",
           "plural superlative predicative",
           "singular masculine/feminine/neuter superlative predicative"
         ]
@@ -1060,24 +1066,50 @@
         ]
       ]
     },
-    "unauffälligsten": {
-      "adj": [
-        "extracted",
-        [
-          "dative plural superlative strong",
-          "genitive singular neuter superlative strong",
-          "genitive/accusative singular masculine superlative strong",
-          "genitive/dative singular feminine/neuter superlative weak/mixed",
-          "genitive/dative/accusative singular masculine superlative weak/mixed",
-          "nominative/genitive/dative/accusative plural superlative weak/mixed"
-        ]
-      ]
-    },
     "unauffälligstem": {
       "adj": [
         "extracted",
         [
           "dative singular masculine/neuter superlative strong"
+        ]
+      ]
+    }
+  },
+  "Abbenhaus": {
+    "Abbenhues": {
+      "name": [
+        "extracted",
+        [
+          "variant"
+        ]
+      ]
+    },
+    "Abbenhausens": {
+      "name": [
+        "extracted",
+        [
+          "nominative/genitive/dative/accusative plural"
+        ]
+      ]
+    }
+  },
+  "Neugeborene": {
+    "Neugeborener": {
+      "noun": [
+        "extracted",
+        [
+          "genitive plural",
+          "genitive/dative singular",
+          "masculine"
+        ]
+      ]
+    },
+    "Neugeborenen": {
+      "noun": [
+        "extracted",
+        [
+          "genitive/dative singular",
+          "nominative/genitive/dative/accusative plural"
         ]
       ]
     }

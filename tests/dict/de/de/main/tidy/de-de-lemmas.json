@@ -986,5 +986,76 @@
         }
       ]
     }
+  },
+  "Abbenhaus": {
+    "Abbenhaus": {
+      "name": [
+        {
+          "gloss_tree": {
+            "deutscher Nachname, Familienname, dessen Zentrum der Verbreitung im Kreis Coesfeld liegt": {
+              "examples": [
+                {
+                  "text": "„Nur Myriam Dyckhoff, eigentlich Torhüterin, und Trainerin Gabi Abbenhaus standen als Einwechselspieler zur Verfügung.“",
+                  "ref": "Abbenhaus spricht Klartext. Westfälische Nachrichten, 5. Februar 2013, abgerufen am 27. September 2013.",
+                  "bold_text_offsets": [
+                    [
+                      64,
+                      73
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "tags": [
+            "feminine",
+            "masculine",
+            "noun"
+          ],
+          "etymology_text": "Herkunftsname nach dem Ortsteil Abbenhaus, Gemeinde Rosendahl, Kreis Coesfeld.",
+          "wlink": "https://de.wiktionary.org/wiki/Abbenhaus#German",
+          "klink": "https://kaikki.org/dewiktionary/All%20languages%20combined/meaning/A/Ab/Abbenhaus.html"
+        }
+      ]
+    }
+  },
+  "Neugeborene": {
+    "Neugeborene": {
+      "noun": [
+        {
+          "gloss_tree": {
+            "geborenes weibliches Kind bis zu einem Alter von vier Wochen": {
+              "examples": [
+                {
+                  "text": "„Die Neugeborene liegt auf seiner Brust.“",
+                  "ref": "bento: The Rock bekommt eine Tochter – und verneigt sich vor allen Frauen. 24. April 2018, abgerufen am 12. Mai 2018.",
+                  "bold_text_offsets": [
+                    [
+                      5,
+                      16
+                    ]
+                  ]
+                },
+                {
+                  "text": "„Wegen der heftigen Erschütterung fiel ein Stück der Zimmerdecke genau in den Korb, in dem die Neugeborene lag.“",
+                  "bold_text_offsets": [
+                    [
+                      95,
+                      106
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "tags": [
+            "feminine"
+          ],
+          "etymology_text": "Ableitung von neugeboren mit dem Ableitungsmorphem -e",
+          "wlink": "https://de.wiktionary.org/wiki/Neugeborene#German",
+          "klink": "https://kaikki.org/dewiktionary/All%20languages%20combined/meaning/N/Ne/Neugeborene.html"
+        }
+      ]
+    }
   }
 }

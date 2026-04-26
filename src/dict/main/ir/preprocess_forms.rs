@@ -15,6 +15,8 @@ pub fn preprocess_forms(edition: Edition, source: Lang, entry: &mut WordEntry) {
         (Edition::De, Lang::De, "verb") => preprocess_verb_forms_de_de(entry),
         (Edition::De, Lang::De, "adj") => preprocess_adj_forms_de_de(entry),
         (Edition::De, Lang::De, "name") => preprocess_name_forms_de_de(entry),
+        (Edition::De, Lang::De, "noun" | "phrase") => preprocess_noun_forms_de_de(entry),
+
         (Edition::En, Lang::Ga, _) => preprocess_forms_ga_en(entry),
         (Edition::Es, Lang::Es, "verb") => preprocess_verb_forms_es_es(entry),
         (Edition::Fr, Lang::Fr, "verb") => preprocess_verb_forms_fr_fr(entry),
@@ -96,14 +98,33 @@ fn preprocess_verb_forms_de_de(entry: &mut WordEntry) {
 fn preprocess_adj_forms_de_de(entry: &mut WordEntry) {
     const PREFIXES: &[&str] = &["er ist ", "es ist ", "sie ist ", "sie sind "];
     strip_prefixes(entry, PREFIXES);
+    strip_prefixes(entry, &["am "]);
 }
 
 // This was fixed for nouns in wiktextract, but I guess not names
 fn preprocess_name_forms_de_de(entry: &mut WordEntry) {
-    const PREFIXES: &[&str] = &["des ", "(dem) ", "(das) "];
+    const PREFIXES: &[&str] = &[
+        "des ", "(das) ", "dem ", "(dem) ", "der ", "(der) ", "die ", "(die) ", "den ",
+    ];
     strip_prefixes(entry, PREFIXES);
 
     entry.forms.retain(|form| !form.form.ends_with('’'));
+}
+
+fn preprocess_noun_forms_de_de(entry: &mut WordEntry) {
+    #[rustfmt::skip]
+    const PREFIXES: &[&str] = &[
+        // Nominative
+        "der ", "das ", "die ",
+        "ein ", "eine ", "keine ",
+        // Accusative
+        "den ", "einen ",
+        // Dative
+        "dem ", "einem ", "keinen ",
+        // Genitive
+        "des ", "eines ", "einer ", "keiner "
+    ];
+    strip_prefixes(entry, PREFIXES);
 }
 
 fn preprocess_forms_ga_en(entry: &mut WordEntry) {
