@@ -27,30 +27,5 @@
         }
       ]
     }
-  },
-  "dormiram": {
-    "dormiram": {
-      "verb": [
-        {
-          "gloss_tree": {
-            "terceira pessoa do plural (eles/elas/vocês) do pretérito perfeito do indicativo do verbo dormir": {
-              "tags": [
-                "form-of"
-              ]
-            },
-            "terceira pessoa do plural (eles/elas/vocês) do pretérito mais-que-perfeito do indicativo do verbo dormir": {
-              "tags": [
-                "form-of"
-              ]
-            }
-          },
-          "tags": [
-            "form-of"
-          ],
-          "wlink": "https://pt.wiktionary.org/wiki/dormiram#Portuguese",
-          "klink": "https://kaikki.org/ptwiktionary/All%20languages%20combined/meaning/d/do/dormiram.html"
-        }
-      ]
-    }
   }
 }

@@ -1068,7 +1068,9 @@ fn is_inflection_sense(edition: Edition, sense: &Sense) -> bool {
                 false
             })
         }
-        Edition::Fr | Edition::It | Edition::Ja => {
+        _ => {
+            // (This comment talks about the Italian edition since it was the first implementation)
+            //
             // Cf. https://kaikki.org/itwiktionary/Italiano/meaning/s/sc/scorrevo.html
             //
             // This is the most generic way of dealing with inflection, but assumes that the
@@ -1089,7 +1091,6 @@ fn is_inflection_sense(edition: Edition, sense: &Sense) -> bool {
             // Cf. https://it.wiktionary.org/wiki/ceni#Italiano
             sense.form_of.len() == 1
         }
-        _ => false,
     }
 }
 
@@ -1155,7 +1156,7 @@ fn handle_inflection_sense(
             }
         }
         Edition::En => handle_inflection_sense_en(source, entry, sense, irs),
-        Edition::Fr | Edition::It | Edition::Ja => {
+        _ => {
             // One could use sense::glosses as tags, and while they carry important information
             // they are obscenely verbose.
             match sense.form_of.as_slice() {
@@ -1192,7 +1193,6 @@ fn handle_inflection_sense(
                 _ => unreachable!(),
             }
         }
-        _ => unreachable!("Unhandled lang that implements is_inflection_sense"),
     }
 }
 
