@@ -110,15 +110,15 @@ fn get_found_tags(pos: Pos, info: &LemmaInfo) -> Vec<TagInfo> {
     let common_tags_iter = info
         .gloss_tree
         .values()
-        .map(|g| Set::from_iter(g.tags.iter().cloned()))
-        .reduce(|acc, set| acc.intersection(&set).cloned().collect::<Set<Tag>>())
+        .map(|g| Set::from_iter(g.tags.iter().map(String::as_str)))
+        .reduce(|acc, set| acc.intersection(&set).copied().collect::<Set<&str>>())
         .unwrap() // a non-empty gloss_tree has at least one gloss
         .into_iter();
 
-    std::iter::once(pos.long().to_string())
-        .chain(info.tags.clone()) // top level tags (the non-En preferred way)
+    std::iter::once(pos.long())
+        .chain(info.tags.iter().map(String::as_str)) // top level tags (the non-En preferred way)
         .chain(common_tags_iter)
-        .filter_map(|tag| find_tag_in_bank(&tag))
+        .filter_map(|tag| find_tag_in_bank(tag))
         .collect()
 }
 
