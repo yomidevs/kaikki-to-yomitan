@@ -2466,13 +2466,7 @@
       [
         "rectus",
         [
-          "genitive singular masculine"
-        ]
-      ],
-      [
-        "rectus",
-        [
-          "genitive singular neuter"
+          "genitive singular masculine/neuter"
         ]
       ],
       [
@@ -2518,13 +2512,7 @@
       [
         "rectus",
         [
-          "genitive plural masculine"
-        ]
-      ],
-      [
-        "rectus",
-        [
-          "genitive plural neuter"
+          "genitive plural masculine/neuter"
         ]
       ]
     ],
@@ -2558,13 +2546,7 @@
       [
         "rectus",
         [
-          "dative/ablative singular masculine"
-        ]
-      ],
-      [
-        "rectus",
-        [
-          "dative/ablative singular neuter"
+          "dative/ablative singular masculine/neuter"
         ]
       ]
     ],

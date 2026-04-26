@@ -2119,13 +2119,7 @@
       [
         "unauffällig",
         [
-          "nominative/accusative singular feminine positive weak"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative/accusative singular neuter positive weak"
+          "nominative/accusative singular feminine/neuter positive weak"
         ]
       ]
     ],
@@ -2183,25 +2177,13 @@
       [
         "unauffällig",
         [
-          "genitive/dative singular feminine positive mixed"
+          "genitive/dative singular feminine/neuter positive mixed"
         ]
       ],
       [
         "unauffällig",
         [
-          "genitive/dative singular feminine positive weak"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "genitive/dative singular neuter positive mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "genitive/dative singular neuter positive weak"
+          "genitive/dative singular feminine/neuter positive weak"
         ]
       ],
       [
@@ -2242,13 +2224,7 @@
       [
         "unauffällig",
         [
-          "dative singular masculine positive strong"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "dative singular neuter positive strong"
+          "dative singular masculine/neuter positive strong"
         ]
       ]
     ],
@@ -2392,13 +2368,7 @@
       [
         "unauffällig",
         [
-          "nominative/accusative singular feminine comparative weak"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative/accusative singular neuter comparative weak"
+          "nominative/accusative singular feminine/neuter comparative weak"
         ]
       ]
     ],
@@ -2456,25 +2426,13 @@
       [
         "unauffällig",
         [
-          "genitive/dative singular feminine comparative mixed"
+          "genitive/dative singular feminine/neuter comparative mixed"
         ]
       ],
       [
         "unauffällig",
         [
-          "genitive/dative singular feminine comparative weak"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "genitive/dative singular neuter comparative mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "genitive/dative singular neuter comparative weak"
+          "genitive/dative singular feminine/neuter comparative weak"
         ]
       ],
       [
@@ -2515,13 +2473,7 @@
       [
         "unauffällig",
         [
-          "dative singular masculine comparative strong"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "dative singular neuter comparative strong"
+          "dative singular masculine/neuter comparative strong"
         ]
       ]
     ],
@@ -2665,13 +2617,7 @@
       [
         "unauffällig",
         [
-          "nominative/accusative singular feminine superlative weak"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative/accusative singular neuter superlative weak"
+          "nominative/accusative singular feminine/neuter superlative weak"
         ]
       ]
     ],
@@ -2729,25 +2675,13 @@
       [
         "unauffällig",
         [
-          "genitive/dative singular feminine superlative mixed"
+          "genitive/dative singular feminine/neuter superlative mixed"
         ]
       ],
       [
         "unauffällig",
         [
-          "genitive/dative singular feminine superlative weak"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "genitive/dative singular neuter superlative mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "genitive/dative singular neuter superlative weak"
+          "genitive/dative singular feminine/neuter superlative weak"
         ]
       ],
       [
@@ -2788,13 +2722,7 @@
       [
         "unauffällig",
         [
-          "dative singular masculine superlative strong"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "dative singular neuter superlative strong"
+          "dative singular masculine/neuter superlative strong"
         ]
       ]
     ],

@@ -74,8 +74,7 @@
       "adj": [
         "extracted",
         [
-          "genitive singular masculine",
-          "genitive singular neuter"
+          "genitive singular masculine/neuter"
         ]
       ]
     },
@@ -123,9 +122,7 @@
       "adj": [
         "extracted",
         [
-          "genitive plural feminine",
-          "genitive plural masculine",
-          "genitive plural neuter"
+          "genitive plural masculine/feminine/neuter"
         ]
       ]
     },
@@ -213,8 +210,7 @@
       "verb": [
         "extracted",
         [
-          "genitive singular masculine",
-          "genitive singular neuter"
+          "genitive singular masculine/neuter"
         ]
       ]
     },
@@ -263,8 +259,7 @@
       "verb": [
         "extracted",
         [
-          "genitive plural masculine",
-          "genitive plural neuter"
+          "genitive plural masculine/neuter"
         ]
       ]
     },
@@ -301,8 +296,7 @@
       "verb": [
         "extracted",
         [
-          "genitive singular masculine",
-          "genitive singular neuter"
+          "genitive singular masculine/neuter"
         ]
       ]
     },
@@ -350,9 +344,7 @@
       "verb": [
         "extracted",
         [
-          "genitive plural feminine",
-          "genitive plural masculine",
-          "genitive plural neuter"
+          "genitive plural masculine/feminine/neuter"
         ]
       ]
     },
@@ -410,8 +402,7 @@
       "adj": [
         "extracted",
         [
-          "genitive singular masculine",
-          "genitive singular neuter"
+          "genitive singular masculine/neuter"
         ]
       ]
     },
@@ -451,9 +442,7 @@
       "adj": [
         "extracted",
         [
-          "genitive plural feminine",
-          "genitive plural masculine",
-          "genitive plural neuter"
+          "genitive plural masculine/feminine/neuter"
         ]
       ]
     },

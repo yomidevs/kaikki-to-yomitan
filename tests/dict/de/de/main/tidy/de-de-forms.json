@@ -948,8 +948,7 @@
           "nominative/accusative plural positive strong",
           "nominative/accusative singular feminine positive mixed",
           "nominative/accusative singular feminine positive strong",
-          "nominative/accusative singular feminine positive weak",
-          "nominative/accusative singular neuter positive weak"
+          "nominative/accusative singular feminine/neuter positive weak"
         ]
       ]
     },
@@ -969,10 +968,8 @@
           "dative plural positive strong",
           "genitive singular neuter positive strong",
           "genitive/accusative singular masculine positive strong",
-          "genitive/dative singular feminine positive mixed",
-          "genitive/dative singular feminine positive weak",
-          "genitive/dative singular neuter positive mixed",
-          "genitive/dative singular neuter positive weak",
+          "genitive/dative singular feminine/neuter positive mixed",
+          "genitive/dative singular feminine/neuter positive weak",
           "genitive/dative/accusative singular masculine positive mixed",
           "genitive/dative/accusative singular masculine positive weak",
           "nominative/genitive/dative/accusative plural positive mixed",
@@ -984,8 +981,7 @@
       "adj": [
         "extracted",
         [
-          "dative singular masculine positive strong",
-          "dative singular neuter positive strong"
+          "dative singular masculine/neuter positive strong"
         ]
       ]
     },
@@ -1040,8 +1036,7 @@
           "nominative/accusative plural comparative strong",
           "nominative/accusative singular feminine comparative mixed",
           "nominative/accusative singular feminine comparative strong",
-          "nominative/accusative singular feminine comparative weak",
-          "nominative/accusative singular neuter comparative weak"
+          "nominative/accusative singular feminine/neuter comparative weak"
         ]
       ]
     },
@@ -1061,10 +1056,8 @@
           "dative plural comparative strong",
           "genitive singular neuter comparative strong",
           "genitive/accusative singular masculine comparative strong",
-          "genitive/dative singular feminine comparative mixed",
-          "genitive/dative singular feminine comparative weak",
-          "genitive/dative singular neuter comparative mixed",
-          "genitive/dative singular neuter comparative weak",
+          "genitive/dative singular feminine/neuter comparative mixed",
+          "genitive/dative singular feminine/neuter comparative weak",
           "genitive/dative/accusative singular masculine comparative mixed",
           "genitive/dative/accusative singular masculine comparative weak",
           "nominative/genitive/dative/accusative plural comparative mixed",
@@ -1076,8 +1069,7 @@
       "adj": [
         "extracted",
         [
-          "dative singular masculine comparative strong",
-          "dative singular neuter comparative strong"
+          "dative singular masculine/neuter comparative strong"
         ]
       ]
     },
@@ -1132,8 +1124,7 @@
           "nominative/accusative plural superlative strong",
           "nominative/accusative singular feminine superlative mixed",
           "nominative/accusative singular feminine superlative strong",
-          "nominative/accusative singular feminine superlative weak",
-          "nominative/accusative singular neuter superlative weak"
+          "nominative/accusative singular feminine/neuter superlative weak"
         ]
       ]
     },
@@ -1153,10 +1144,8 @@
           "dative plural superlative strong",
           "genitive singular neuter superlative strong",
           "genitive/accusative singular masculine superlative strong",
-          "genitive/dative singular feminine superlative mixed",
-          "genitive/dative singular feminine superlative weak",
-          "genitive/dative singular neuter superlative mixed",
-          "genitive/dative singular neuter superlative weak",
+          "genitive/dative singular feminine/neuter superlative mixed",
+          "genitive/dative singular feminine/neuter superlative weak",
           "genitive/dative/accusative singular masculine superlative mixed",
           "genitive/dative/accusative singular masculine superlative weak",
           "nominative/genitive/dative/accusative plural superlative mixed",
@@ -1168,8 +1157,7 @@
       "adj": [
         "extracted",
         [
-          "dative singular masculine superlative strong",
-          "dative singular neuter superlative strong"
+          "dative singular masculine/neuter superlative strong"
         ]
       ]
     },

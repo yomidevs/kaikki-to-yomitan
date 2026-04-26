@@ -104,6 +104,14 @@ pub fn merge_tags_by_definitiveness(tags: &mut Vec<Tag>) {
     merge_tags_by_category(tags, &DEFINITIVENESS_TAGS);
 }
 
+// Uses a subset of tag_order.json cases
+// TODO: At some point, generate this from that file
+const GENDER_TAGS: [&str; 3] = ["masculine", "feminine", "neuter"];
+
+pub fn merge_tags_by_gender(tags: &mut Vec<Tag>) {
+    merge_tags_by_category(tags, &GENDER_TAGS);
+}
+
 /// Generic merge function.
 ///
 /// Similar to `merge_person_tags` with minor differences.
