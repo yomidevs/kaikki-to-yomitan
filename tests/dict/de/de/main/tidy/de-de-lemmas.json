@@ -442,7 +442,7 @@
   },
   "nun": {
     "nun": {
-      "adv": [
+      "adverb": [
         {
           "gloss_tree": {
             "zu diesem Zeitpunkt, zum jetzigen Zeitpunkt, in dem Moment": {
@@ -541,7 +541,7 @@
   },
   "in": {
     "in": {
-      "prep": [
+      "preposition": [
         {
           "gloss_tree": {
             "Angabe eines Ortes, innerhalb dessen sich etwas befindet oder tut; Bestandteil einer Antwort auf die Frage mit „wo“": {
@@ -897,7 +897,7 @@
   },
   "unauffällig": {
     "unauffällig": {
-      "adj": [
+      "adjective": [
         {
           "gloss_tree": {
             "keine Aufmerksamkeit auf sich ziehend": {

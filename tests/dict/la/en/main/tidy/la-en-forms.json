@@ -2523,7 +2523,7 @@
   },
   "in": {
     "en": {
-      "prep": [
+      "preposition": [
         "extracted",
         [
           "alternative Old-Latin"
@@ -2531,7 +2531,7 @@
       ]
     },
     "endo": {
-      "prep": [
+      "preposition": [
         "extracted",
         [
           "alternative Old-Latin"
@@ -2539,7 +2539,7 @@
       ]
     },
     "indu": {
-      "prep": [
+      "preposition": [
         "extracted",
         [
           "alternative Old-Latin"
@@ -2549,7 +2549,7 @@
   },
   "lente": {
     "lentius": {
-      "adv": [
+      "adverb": [
         "extracted",
         [
           "comparative"
@@ -2557,7 +2557,7 @@
       ]
     },
     "lentissimē": {
-      "adv": [
+      "adverb": [
         "extracted",
         [
           "superlative"
