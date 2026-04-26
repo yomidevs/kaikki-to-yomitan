@@ -372,6 +372,13 @@
         2
     ],
     [
+        "adn",
+        "partOfSpeech",
+        -2,
+        "adnominal",
+        2
+    ],
+    [
         "adv",
         "partOfSpeech",
         -2,
@@ -386,6 +393,13 @@
         "partOfSpeech",
         -2,
         "article",
+        2
+    ],
+    [
+        "char",
+        "partOfSpeech",
+        -2,
+        "character",
         2
     ],
     [
@@ -608,13 +622,6 @@
         -1,
         "surname",
         1
-    ],
-    [
-        "adn",
-        "partOfSpeech",
-        0,
-        "adnominal",
-        0
     ],
     [
         "child",
@@ -1808,13 +1815,6 @@
         "usage",
         0,
         "uncommon",
-        0
-    ],
-    [
-        "char",
-        "",
-        0,
-        "character",
         0
     ],
     [

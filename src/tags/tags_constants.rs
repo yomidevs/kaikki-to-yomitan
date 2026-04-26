@@ -138,8 +138,10 @@ pub static TAG_BANK: [(&str, &str, i32, &[&str], i32); 372] = [
     ("ord-num", "number-type", 0, &["ordinal number"], 0),
     ("adj", "partOfSpeech", -2, &["adjective", "adj"], 2),
     ("adj_noun", "partOfSpeech", -2, &["adj_noun"], 2),
+    ("adn", "partOfSpeech", -2, &["adnominal"], 2),
     ("adv", "partOfSpeech", -2, &["adverb", "adv"], 2),
     ("artic", "partOfSpeech", -2, &["article"], 2),
+    ("char", "partOfSpeech", -2, &["character"], 2),
     ("conj", "partOfSpeech", -2, &["conjunction", "conj"], 2),
     ("counter", "partOfSpeech", -2, &["counter"], 2),
     ("det", "partOfSpeech", -2, &["determiner", "det"], 2),
@@ -166,7 +168,6 @@ pub static TAG_BANK: [(&str, &str, i32, &[&str], i32); 372] = [
     ("vt", "partOfSpeech", -2, &["transitive verb", "transitive"], 2),
     ("name", "partOfSpeech", -1, &["name"], 1),
     ("surn", "partOfSpeech", -1, &["surname"], 1),
-    ("adn", "partOfSpeech", 0, &["adnominal"], 0),
     ("child", "register", 0, &["childish"], 0),
     ("col", "register", 0, &["colloquial"], 0),
     ("crim-sl", "register", 0, &["criminal slang"], 0),
@@ -443,7 +444,6 @@ pub static TAG_BANK: [(&str, &str, i32, &[&str], i32); 372] = [
     ("🐐", "variety", 0, &["Poznań"], 0),
     ("🦁", "variety", 0, &["Lviv"], 0),
     ("🧜‍♀️", "variety", 0, &["Warsaw"], 0),
-    ("char", "", 0, &["character"], 0),
     ("godan", "", 0, &["godan"], 0),
     ("ichidan", "", 0, &["ichidan"], 0),
     ("kamiichidan", "", 0, &["kamiichidan"], 0),
@@ -461,13 +461,14 @@ pub static TAG_BANK: [(&str, &str, i32, &[&str], i32); 372] = [
     ("non-lemma", "", 10, &["non-lemma"], -10),
 ];
 
-
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 pub enum Pos {
     Adjective,
     AdjNoun,
+    Adnominal,
     Adverb,
     Article,
+    Character,
     Conjunction,
     Counter,
     Determiner,
@@ -494,7 +495,6 @@ pub enum Pos {
     TransitiveVerb,
     Name,
     Surname,
-    Adnominal,
     Unknown,
 }
 
@@ -503,8 +503,10 @@ impl From<&str> for Pos {
         match s {
             "adjective" | "adj" => Self::Adjective,
             "adj_noun" => Self::AdjNoun,
+            "adnominal" => Self::Adnominal,
             "adverb" | "adv" => Self::Adverb,
             "article" => Self::Article,
+            "character" => Self::Character,
             "conjunction" | "conj" => Self::Conjunction,
             "counter" => Self::Counter,
             "determiner" | "det" => Self::Determiner,
@@ -531,7 +533,6 @@ impl From<&str> for Pos {
             "transitive verb" | "transitive" => Self::TransitiveVerb,
             "name" => Self::Name,
             "surname" => Self::Surname,
-            "adnominal" => Self::Adnominal,
             _ => Self::Unknown,
         }
     }
@@ -542,8 +543,10 @@ impl Pos {
         match self {
             Self::Adjective => "adjective",
             Self::AdjNoun => "adj_noun",
+            Self::Adnominal => "adnominal",
             Self::Adverb => "adverb",
             Self::Article => "article",
+            Self::Character => "character",
             Self::Conjunction => "conjunction",
             Self::Counter => "counter",
             Self::Determiner => "determiner",
@@ -570,7 +573,6 @@ impl Pos {
             Self::TransitiveVerb => "transitive verb",
             Self::Name => "name",
             Self::Surname => "surname",
-            Self::Adnominal => "adnominal",
             Self::Unknown => "unknown",
         }
     }
@@ -581,8 +583,10 @@ impl Pos {
         match self {
             Self::Adjective => "adj",
             Self::AdjNoun => "adj_noun",
+            Self::Adnominal => "adn",
             Self::Adverb => "adv",
             Self::Article => "artic",
+            Self::Character => "char",
             Self::Conjunction => "conj",
             Self::Counter => "counter",
             Self::Determiner => "det",
@@ -609,7 +613,6 @@ impl Pos {
             Self::TransitiveVerb => "vt",
             Self::Name => "name",
             Self::Surname => "surn",
-            Self::Adnominal => "adn",
             Self::Unknown => "?",
         }
     }

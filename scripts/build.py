@@ -166,7 +166,6 @@ def generate_tags_rs(
     # and sometimes 1. matches 2., for example, for "prep" (long: preprosition)
 
     # Enum definition
-    w("\n")
     w("#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]\n")
     w("pub enum Pos {\n")
     for pos in poses:
