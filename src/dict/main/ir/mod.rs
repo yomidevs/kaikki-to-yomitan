@@ -21,8 +21,8 @@ use crate::{
     path::PathManager,
     tags::{
         REDUNDANT_FORM_TAGS, merge_tags_by_case, merge_tags_by_definitiveness,
-        merge_tags_by_gender, merge_tags_by_person, merge_tags_by_verb_form, remove_redundant_tags,
-        sort_tags, sort_tags_by_similar,
+        merge_tags_by_gender, merge_tags_by_german_verb_type, merge_tags_by_person,
+        merge_tags_by_verb_form, remove_redundant_tags, sort_tags, sort_tags_by_similar,
     },
     utils::{human_size, link_kaikki, link_wiktionary},
 };
@@ -433,11 +433,15 @@ fn postprocess_forms(form_map: &mut FormMap) {
         remove_redundant_tags(tags);
 
         // Merges
+        // Note that while some of the merges are only relevant for certain editions,
+        // they are quite cheap, and don't deserve (for now), to be only applied in case
+        // we match some (Edition, Lang) pairs.
         merge_tags_by_person(tags);
         merge_tags_by_case(tags);
         merge_tags_by_verb_form(tags);
-        merge_tags_by_definitiveness(tags);
+        merge_tags_by_definitiveness(tags); // [ko-en]
         merge_tags_by_gender(tags);
+        merge_tags_by_german_verb_type(tags);
 
         // Sort inner words
         for tag in tags.iter_mut() {

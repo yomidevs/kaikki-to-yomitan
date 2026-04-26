@@ -2055,13 +2055,7 @@
       [
         "unauffällig",
         [
-          "nominative singular masculine positive mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative singular masculine positive strong"
+          "nominative singular masculine positive strong/mixed"
         ]
       ]
     ],
@@ -2107,13 +2101,7 @@
       [
         "unauffällig",
         [
-          "nominative/accusative singular feminine positive mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative/accusative singular feminine positive strong"
+          "nominative/accusative singular feminine positive strong/mixed"
         ]
       ],
       [
@@ -2136,13 +2124,7 @@
       [
         "unauffällig",
         [
-          "nominative/accusative singular neuter positive mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative/accusative singular neuter positive strong"
+          "nominative/accusative singular neuter positive strong/mixed"
         ]
       ]
     ],
@@ -2177,37 +2159,19 @@
       [
         "unauffällig",
         [
-          "genitive/dative singular feminine/neuter positive mixed"
+          "genitive/dative singular feminine/neuter positive weak/mixed"
         ]
       ],
       [
         "unauffällig",
         [
-          "genitive/dative singular feminine/neuter positive weak"
+          "genitive/dative/accusative singular masculine positive weak/mixed"
         ]
       ],
       [
         "unauffällig",
         [
-          "genitive/dative/accusative singular masculine positive mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "genitive/dative/accusative singular masculine positive weak"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative/genitive/dative/accusative plural positive mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative/genitive/dative/accusative plural positive weak"
+          "nominative/genitive/dative/accusative plural positive weak/mixed"
         ]
       ]
     ],
@@ -2321,13 +2285,7 @@
       [
         "unauffällig",
         [
-          "nominative singular masculine comparative mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative singular masculine comparative strong"
+          "nominative singular masculine comparative strong/mixed"
         ]
       ]
     ],
@@ -2356,13 +2314,7 @@
       [
         "unauffällig",
         [
-          "nominative/accusative singular feminine comparative mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative/accusative singular feminine comparative strong"
+          "nominative/accusative singular feminine comparative strong/mixed"
         ]
       ],
       [
@@ -2385,13 +2337,7 @@
       [
         "unauffällig",
         [
-          "nominative/accusative singular neuter comparative mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative/accusative singular neuter comparative strong"
+          "nominative/accusative singular neuter comparative strong/mixed"
         ]
       ]
     ],
@@ -2426,37 +2372,19 @@
       [
         "unauffällig",
         [
-          "genitive/dative singular feminine/neuter comparative mixed"
+          "genitive/dative singular feminine/neuter comparative weak/mixed"
         ]
       ],
       [
         "unauffällig",
         [
-          "genitive/dative singular feminine/neuter comparative weak"
+          "genitive/dative/accusative singular masculine comparative weak/mixed"
         ]
       ],
       [
         "unauffällig",
         [
-          "genitive/dative/accusative singular masculine comparative mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "genitive/dative/accusative singular masculine comparative weak"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative/genitive/dative/accusative plural comparative mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative/genitive/dative/accusative plural comparative weak"
+          "nominative/genitive/dative/accusative plural comparative weak/mixed"
         ]
       ]
     ],
@@ -2570,13 +2498,7 @@
       [
         "unauffällig",
         [
-          "nominative singular masculine superlative mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative singular masculine superlative strong"
+          "nominative singular masculine superlative strong/mixed"
         ]
       ]
     ],
@@ -2605,13 +2527,7 @@
       [
         "unauffällig",
         [
-          "nominative/accusative singular feminine superlative mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative/accusative singular feminine superlative strong"
+          "nominative/accusative singular feminine superlative strong/mixed"
         ]
       ],
       [
@@ -2634,13 +2550,7 @@
       [
         "unauffällig",
         [
-          "nominative/accusative singular neuter superlative mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative/accusative singular neuter superlative strong"
+          "nominative/accusative singular neuter superlative strong/mixed"
         ]
       ]
     ],
@@ -2675,37 +2585,19 @@
       [
         "unauffällig",
         [
-          "genitive/dative singular feminine/neuter superlative mixed"
+          "genitive/dative singular feminine/neuter superlative weak/mixed"
         ]
       ],
       [
         "unauffällig",
         [
-          "genitive/dative singular feminine/neuter superlative weak"
+          "genitive/dative/accusative singular masculine superlative weak/mixed"
         ]
       ],
       [
         "unauffällig",
         [
-          "genitive/dative/accusative singular masculine superlative mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "genitive/dative/accusative singular masculine superlative weak"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative/genitive/dative/accusative plural superlative mixed"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
-          "nominative/genitive/dative/accusative plural superlative weak"
+          "nominative/genitive/dative/accusative plural superlative weak/mixed"
         ]
       ]
     ],

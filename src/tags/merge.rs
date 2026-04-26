@@ -112,6 +112,14 @@ pub fn merge_tags_by_gender(tags: &mut Vec<Tag>) {
     merge_tags_by_category(tags, &GENDER_TAGS);
 }
 
+// Uses a subset of tag_order.json cases
+// TODO: At some point, generate this from that file
+const GERMAN_VERB_TYPE_TAGS: [&str; 3] = ["weak", "strong", "mixed"];
+
+pub fn merge_tags_by_german_verb_type(tags: &mut Vec<Tag>) {
+    merge_tags_by_category(tags, &GERMAN_VERB_TYPE_TAGS);
+}
+
 /// Generic merge function.
 ///
 /// Similar to `merge_person_tags` with minor differences.

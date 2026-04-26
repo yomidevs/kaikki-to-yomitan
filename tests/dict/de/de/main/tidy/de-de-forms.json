@@ -927,8 +927,7 @@
           "comparative",
           "genitive plural positive strong",
           "genitive/dative singular feminine positive strong",
-          "nominative singular masculine positive mixed",
-          "nominative singular masculine positive strong"
+          "nominative singular masculine positive strong/mixed"
         ]
       ]
     },
@@ -946,8 +945,7 @@
         [
           "nominative singular masculine positive weak",
           "nominative/accusative plural positive strong",
-          "nominative/accusative singular feminine positive mixed",
-          "nominative/accusative singular feminine positive strong",
+          "nominative/accusative singular feminine positive strong/mixed",
           "nominative/accusative singular feminine/neuter positive weak"
         ]
       ]
@@ -956,8 +954,7 @@
       "adj": [
         "extracted",
         [
-          "nominative/accusative singular neuter positive mixed",
-          "nominative/accusative singular neuter positive strong"
+          "nominative/accusative singular neuter positive strong/mixed"
         ]
       ]
     },
@@ -968,12 +965,9 @@
           "dative plural positive strong",
           "genitive singular neuter positive strong",
           "genitive/accusative singular masculine positive strong",
-          "genitive/dative singular feminine/neuter positive mixed",
-          "genitive/dative singular feminine/neuter positive weak",
-          "genitive/dative/accusative singular masculine positive mixed",
-          "genitive/dative/accusative singular masculine positive weak",
-          "nominative/genitive/dative/accusative plural positive mixed",
-          "nominative/genitive/dative/accusative plural positive weak"
+          "genitive/dative singular feminine/neuter positive weak/mixed",
+          "genitive/dative/accusative singular masculine positive weak/mixed",
+          "nominative/genitive/dative/accusative plural positive weak/mixed"
         ]
       ]
     },
@@ -1023,8 +1017,7 @@
         [
           "genitive plural comparative strong",
           "genitive/dative singular feminine comparative strong",
-          "nominative singular masculine comparative mixed",
-          "nominative singular masculine comparative strong"
+          "nominative singular masculine comparative strong/mixed"
         ]
       ]
     },
@@ -1034,8 +1027,7 @@
         [
           "nominative singular masculine comparative weak",
           "nominative/accusative plural comparative strong",
-          "nominative/accusative singular feminine comparative mixed",
-          "nominative/accusative singular feminine comparative strong",
+          "nominative/accusative singular feminine comparative strong/mixed",
           "nominative/accusative singular feminine/neuter comparative weak"
         ]
       ]
@@ -1044,8 +1036,7 @@
       "adj": [
         "extracted",
         [
-          "nominative/accusative singular neuter comparative mixed",
-          "nominative/accusative singular neuter comparative strong"
+          "nominative/accusative singular neuter comparative strong/mixed"
         ]
       ]
     },
@@ -1056,12 +1047,9 @@
           "dative plural comparative strong",
           "genitive singular neuter comparative strong",
           "genitive/accusative singular masculine comparative strong",
-          "genitive/dative singular feminine/neuter comparative mixed",
-          "genitive/dative singular feminine/neuter comparative weak",
-          "genitive/dative/accusative singular masculine comparative mixed",
-          "genitive/dative/accusative singular masculine comparative weak",
-          "nominative/genitive/dative/accusative plural comparative mixed",
-          "nominative/genitive/dative/accusative plural comparative weak"
+          "genitive/dative singular feminine/neuter comparative weak/mixed",
+          "genitive/dative/accusative singular masculine comparative weak/mixed",
+          "nominative/genitive/dative/accusative plural comparative weak/mixed"
         ]
       ]
     },
@@ -1111,8 +1099,7 @@
         [
           "genitive plural superlative strong",
           "genitive/dative singular feminine superlative strong",
-          "nominative singular masculine superlative mixed",
-          "nominative singular masculine superlative strong"
+          "nominative singular masculine superlative strong/mixed"
         ]
       ]
     },
@@ -1122,8 +1109,7 @@
         [
           "nominative singular masculine superlative weak",
           "nominative/accusative plural superlative strong",
-          "nominative/accusative singular feminine superlative mixed",
-          "nominative/accusative singular feminine superlative strong",
+          "nominative/accusative singular feminine superlative strong/mixed",
           "nominative/accusative singular feminine/neuter superlative weak"
         ]
       ]
@@ -1132,8 +1118,7 @@
       "adj": [
         "extracted",
         [
-          "nominative/accusative singular neuter superlative mixed",
-          "nominative/accusative singular neuter superlative strong"
+          "nominative/accusative singular neuter superlative strong/mixed"
         ]
       ]
     },
@@ -1144,12 +1129,9 @@
           "dative plural superlative strong",
           "genitive singular neuter superlative strong",
           "genitive/accusative singular masculine superlative strong",
-          "genitive/dative singular feminine/neuter superlative mixed",
-          "genitive/dative singular feminine/neuter superlative weak",
-          "genitive/dative/accusative singular masculine superlative mixed",
-          "genitive/dative/accusative singular masculine superlative weak",
-          "nominative/genitive/dative/accusative plural superlative mixed",
-          "nominative/genitive/dative/accusative plural superlative weak"
+          "genitive/dative singular feminine/neuter superlative weak/mixed",
+          "genitive/dative/accusative singular masculine superlative weak/mixed",
+          "nominative/genitive/dative/accusative plural superlative weak/mixed"
         ]
       ]
     },
