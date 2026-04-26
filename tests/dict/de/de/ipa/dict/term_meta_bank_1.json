@@ -148,5 +148,20 @@
         }
       ]
     }
+  ],
+  [
+    "unauffällig",
+    "ipa",
+    {
+      "reading": "unauffällig",
+      "transcriptions": [
+        {
+          "ipa": "[ˈʊnˌʔaʊ̯fɛlɪç]"
+        },
+        {
+          "ipa": "[ˈʊnˌʔaʊ̯fɛlɪk]"
+        }
+      ]
+    }
   ]
 ]

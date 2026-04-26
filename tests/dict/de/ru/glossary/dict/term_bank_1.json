@@ -491,5 +491,37 @@
     ],
     0,
     ""
+  ],
+  [
+    "unauffällig",
+    "",
+    "adj",
+    "adj",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "keine Aufmerksamkeit auf sich ziehend"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "неприметный"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
   ]
 ]

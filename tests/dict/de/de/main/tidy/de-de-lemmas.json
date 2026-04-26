@@ -894,5 +894,58 @@
         }
       ]
     }
+  },
+  "unauffällig": {
+    "unauffällig": {
+      "adj": [
+        {
+          "gloss_tree": {
+            "keine Aufmerksamkeit auf sich ziehend": {
+              "examples": [
+                {
+                  "text": "„Folgen Sie mir unauffällig.“",
+                  "bold_text_offsets": [
+                    [
+                      16,
+                      28
+                    ]
+                  ]
+                },
+                {
+                  "text": "\"Viele Vögel brüten unauffällig\", sagte Hendrik Brunckhorst, Sprecher der Nationalparkverwaltung [Wattenmeer].",
+                  "bold_text_offsets": [
+                    [
+                      20,
+                      31
+                    ]
+                  ]
+                },
+                {
+                  "text": "„Seine explosive Fracht transportierte er in einem unauffälligen Holzkoffer.“",
+                  "ref": "Christine Richter: Attentäter ohne Netzwerk. In: G/Geschichte. Nummer 5/2017, ISSN 1617-9412, Seite 45.",
+                  "bold_text_offsets": [
+                    [
+                      51,
+                      64
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "synonyms": [
+            {
+              "word": "dezent"
+            },
+            {
+              "word": "unscheinbar"
+            }
+          ],
+          "etymology_text": "Ableitung zu auffällig mit dem Derivatem (Ableitungsmorphem) un-",
+          "wlink": "https://de.wiktionary.org/wiki/unauffällig#German",
+          "klink": "https://kaikki.org/dewiktionary/All%20languages%20combined/meaning/u/un/unauffällig.html"
+        }
+      ]
+    }
   }
 }
