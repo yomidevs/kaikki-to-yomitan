@@ -1,5 +1,6 @@
 mod tags_constants;
-use tags_constants::{POSES, TAG_BANK, TAG_ORDER};
+pub use tags_constants::Pos;
+use tags_constants::{TAG_BANK, TAG_ORDER};
 
 mod tags_localization;
 pub use tags_localization::*;
@@ -181,6 +182,8 @@ pub fn get_tag_bank_as_tag_info(target: Lang) -> Vec<TagInfo> {
 }
 
 /// Find the tag in `TAG_BANK` (`tag_bank_terms.json`) and return the `TagInformation` if any.
+///
+/// Expects the long version of the tag.
 pub fn find_tag_in_bank(tag: &str) -> Option<TagInfo> {
     TAG_BANK.iter().find_map(|entry| {
         if entry.3.contains(&tag) {
@@ -189,19 +192,6 @@ pub fn find_tag_in_bank(tag: &str) -> Option<TagInfo> {
             None
         }
     })
-}
-
-/// Find the short form in POSES (`tag_bank_terms.json` with category "partOfSpeech").
-fn find_short_pos(pos: &str) -> Option<&'static str> {
-    POSES
-        .iter()
-        .find_map(|(long, short)| if *long == pos { Some(*short) } else { None })
-}
-
-/// Find the short form in POSES (`tag_bank_terms.json` with category "partOfSpeech"), or default
-/// to input.
-pub fn find_short_pos_or_default(pos: &str) -> &str {
-    find_short_pos(pos).unwrap_or(pos)
 }
 
 #[cfg(test)]

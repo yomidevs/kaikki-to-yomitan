@@ -17,10 +17,10 @@ use crate::{
     cli::{LangSpecs, Options},
     dict::Intermediate,
     lang::{Edition, Lang},
-    models::kaikki::{Example, Form, HeadTemplate, Pos, Sense, Synonym, Tag, WordEntry},
+    models::kaikki::{Example, Form, HeadTemplate, Sense, Synonym, Tag, WordEntry},
     path::PathManager,
     tags::{
-        REDUNDANT_FORM_TAGS, merge_tags_by_case, merge_tags_by_definitiveness,
+        Pos, REDUNDANT_FORM_TAGS, merge_tags_by_case, merge_tags_by_definitiveness,
         merge_tags_by_gender, merge_tags_by_german_verb_type, merge_tags_by_person,
         merge_tags_by_verb_form, remove_redundant_tags, sort_tags, sort_tags_by_similar,
     },
@@ -96,7 +96,7 @@ impl Tidy {
         let key = FormKey {
             uninflected: uninflected.into(),
             inflected: inflected.into(),
-            pos: pos.into(),
+            pos: Pos::from(pos),
         };
 
         match self.form_map.0.entry(key) {
@@ -241,7 +241,7 @@ impl Serialize for LemmaMap {
     where
         S: serde::Serializer,
     {
-        let mut nested: Map<&str, Map<&str, Map<&str, &Vec<LemmaInfo>>>> = Map::default();
+        let mut nested: Map<&str, Map<&str, Map<Pos, &Vec<LemmaInfo>>>> = Map::default();
 
         for (key, infos) in &self.0 {
             nested
@@ -249,7 +249,7 @@ impl Serialize for LemmaMap {
                 .or_default()
                 .entry(&key.reading)
                 .or_default()
-                .insert(&key.pos, infos);
+                .insert(key.pos, infos);
         }
 
         nested.serialize(serializer)
@@ -257,16 +257,11 @@ impl Serialize for LemmaMap {
 }
 
 impl LemmaMap {
-    pub fn flat_iter(&self) -> impl Iterator<Item = (&str, &str, &str, &LemmaInfo)> {
+    pub fn flat_iter(&self) -> impl Iterator<Item = (&str, &str, Pos, &LemmaInfo)> {
         self.0.iter().flat_map(|(key, infos)| {
-            infos.iter().map(move |info| {
-                (
-                    key.lemma.as_str(),
-                    key.reading.as_str(),
-                    key.pos.as_str(),
-                    info,
-                )
-            })
+            infos
+                .iter()
+                .map(move |info| (key.lemma.as_str(), key.reading.as_str(), key.pos, info))
         })
     }
 
@@ -294,8 +289,7 @@ impl Serialize for FormMap {
         S: serde::Serializer,
     {
         #[expect(clippy::type_complexity)]
-        let mut nested: Map<&str, Map<&str, Map<&str, &(FormSource, Vec<String>)>>> =
-            Map::default();
+        let mut nested: Map<&str, Map<&str, Map<Pos, &(FormSource, Vec<String>)>>> = Map::default();
 
         for (key, infos) in &self.0 {
             nested
@@ -303,7 +297,7 @@ impl Serialize for FormMap {
                 .or_default()
                 .entry(&key.inflected)
                 .or_default()
-                .insert(&key.pos, infos);
+                .insert(key.pos, infos);
         }
 
         nested.serialize(serializer)
@@ -312,12 +306,12 @@ impl Serialize for FormMap {
 
 impl FormMap {
     /// Iterates over: uninflected, inflected, pos, source, tags
-    pub fn flat_iter(&self) -> impl Iterator<Item = (&str, &str, &str, &FormSource, &Vec<String>)> {
+    pub fn flat_iter(&self) -> impl Iterator<Item = (&str, &str, Pos, &FormSource, &Vec<String>)> {
         self.0.iter().map(|(key, (source, tags))| {
             (
                 key.uninflected.as_str(),
                 key.inflected.as_str(),
-                key.pos.as_str(),
+                key.pos,
                 source,
                 tags,
             )
@@ -326,7 +320,7 @@ impl FormMap {
 
     pub fn into_flat_iter(
         self,
-    ) -> impl Iterator<Item = (String, String, String, FormSource, Vec<String>)> {
+    ) -> impl Iterator<Item = (String, String, Pos, FormSource, Vec<String>)> {
         self.0
             .into_iter()
             .map(|(key, (source, tags))| (key.uninflected, key.inflected, key.pos, source, tags))
@@ -335,12 +329,12 @@ impl FormMap {
     /// Iterates over: uninflected, inflected, pos, source, tags
     pub fn flat_iter_mut(
         &mut self,
-    ) -> impl Iterator<Item = (&str, &str, &str, &mut FormSource, &mut Vec<String>)> {
+    ) -> impl Iterator<Item = (&str, &str, Pos, &mut FormSource, &mut Vec<String>)> {
         self.0.iter_mut().map(|(key, (source, tags))| {
             (
                 key.uninflected.as_str(),
                 key.inflected.as_str(),
-                key.pos.as_str(),
+                key.pos,
                 source,
                 tags,
             )

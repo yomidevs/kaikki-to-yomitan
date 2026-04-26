@@ -18,7 +18,7 @@ use crate::{
             NodeData, NodeDataKey, TagInfo, TermInfo, TermInfoForm, YomitanDict, wrap,
         },
     },
-    tags::{find_short_pos_or_default, find_tag_in_bank, localize_tag, localize_tag_info},
+    tags::{Pos, find_tag_in_bank, localize_tag, localize_tag_info},
 };
 
 pub fn to_yomitan_impl(langs: LangSpecs, irs: &Tidy) -> YomitanDict {
@@ -39,10 +39,10 @@ fn to_yomitan_lemma(
     target: Lang,
     lemma: &str,
     reading: &str,
-    pos: &str,
+    pos: Pos,
     info: &LemmaInfo,
 ) -> TermInfo {
-    let short_pos = find_short_pos_or_default(pos);
+    let short_pos = pos.short();
 
     let yomitan_reading = if reading == lemma {
         String::new()
@@ -106,7 +106,7 @@ fn to_yomitan_lemma(
 ///
 /// For sense-level tags, only those present in *every* gloss are kept
 /// (set intersection across all gloss entries).
-fn get_found_tags(pos: &str, info: &LemmaInfo) -> Vec<TagInfo> {
+fn get_found_tags(pos: Pos, info: &LemmaInfo) -> Vec<TagInfo> {
     let common_tags_iter = info
         .gloss_tree
         .values()
@@ -115,7 +115,7 @@ fn get_found_tags(pos: &str, info: &LemmaInfo) -> Vec<TagInfo> {
         .unwrap() // a non-empty gloss_tree has at least one gloss
         .into_iter();
 
-    std::iter::once(pos.to_string())
+    std::iter::once(pos.long().to_string())
         .chain(info.tags.clone()) // top level tags (the non-En preferred way)
         .chain(common_tags_iter)
         .filter_map(|tag| find_tag_in_bank(&tag))
@@ -485,7 +485,7 @@ fn to_yomitan_forms(source: Lang, form_map: &FormMap) -> Vec<TermInfoForm> {
                 inflected.to_string()
             };
 
-            let short_pos = find_short_pos_or_default(pos);
+            let short_pos = pos.short();
 
             TermInfoForm::new(
                 normalized_inflected,

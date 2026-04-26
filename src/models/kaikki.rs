@@ -17,14 +17,13 @@ use crate::tags::{BLACKLISTED_FORM_TAGS, IDENTITY_FORM_TAGS};
 
 // In case we ever decide to narrow them
 pub type Tag = String;
-pub type Pos = String;
 
 #[derive(Debug, Deserialize, Serialize, Default)]
 #[serde(default)]
 #[derive(rkyv::Archive, rkyv::Deserialize, rkyv::Serialize)]
 pub struct WordEntry {
     pub word: String,
-    pub pos: Pos,
+    pub pos: String,
 
     pub lang_code: String,
 

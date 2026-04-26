@@ -28,6 +28,12 @@ impl<T: HeapSize> HeapSize for Vec<T> {
     }
 }
 
+impl HeapSize for Pos {
+    fn heap_size(&self) -> usize {
+        0
+    }
+}
+
 impl HeapSize for LemmaKey {
     fn heap_size(&self) -> usize {
         self.lemma.heap_size() + self.reading.heap_size() + self.pos.heap_size()
