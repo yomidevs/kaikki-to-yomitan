@@ -7,6 +7,10 @@ cov:
 update *args:
   python3 scripts/update_tests.py {{args}}
 
+# Release
+release *args:
+  systemd-run --user --scope -p MemoryMax=24G -p MemoryHigh=24G cargo run -r -- release {{args}}
+
 # Publish a release made with release.rs to hugging face
 publish *args:
   python3 scripts/release.py {{args}}
