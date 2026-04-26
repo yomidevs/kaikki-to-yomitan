@@ -14,7 +14,7 @@ fn size<P: AsRef<Path>>(path: P) -> std::io::Result<u64> {
     } else if md.is_dir() {
         let mut total = 0;
         for entry in fs::read_dir(path)? {
-            total += size(&entry?.path())?;
+            total += size(entry?.path())?;
         }
         Ok(total)
     } else {

@@ -220,7 +220,7 @@ fn process_glossary_extended(
 }
 
 fn to_yomitan_glossary_extended(target: Lang, irs: &IGlossaryExtended) -> Vec<TermInfo> {
-    irs.into_iter()
+    irs.iter()
         .map(|(lemma, pos, _, translations)| {
             let definition_tags = match find_tag_in_bank(pos.long()) {
                 Some(mut tag_info) => {
