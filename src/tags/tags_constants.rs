@@ -623,4 +623,3 @@ impl serde::Serialize for Pos {
         serializer.serialize_str(self.long())
     }
 }
-

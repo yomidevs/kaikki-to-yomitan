@@ -218,7 +218,7 @@ def generate_tags_rs(
     )
     w(f"{idt * 2}serializer.serialize_str(self.long())\n")
     w(f"{idt}}}\n")
-    w("}\n\n")
+    w("}\n")
 
 
 def generate_lang_rs(langs: list[Lang], f) -> None:

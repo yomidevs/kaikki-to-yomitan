@@ -318,14 +318,6 @@ impl FormMap {
         })
     }
 
-    pub fn into_flat_iter(
-        self,
-    ) -> impl Iterator<Item = (String, String, Pos, FormSource, Vec<String>)> {
-        self.0
-            .into_iter()
-            .map(|(key, (source, tags))| (key.uninflected, key.inflected, key.pos, source, tags))
-    }
-
     /// Iterates over: uninflected, inflected, pos, source, tags
     pub fn flat_iter_mut(
         &mut self,

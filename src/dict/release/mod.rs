@@ -5,9 +5,11 @@
 //! Command to limit memory usage (linux):
 //! systemd-run --user --scope -p MemoryMax=24G -p MemoryHigh=24G cargo run -r -- release -v
 
-use std::collections::HashMap;
-use std::sync::Mutex;
-use std::time::{Duration, Instant};
+use std::{
+    collections::HashMap,
+    sync::Mutex,
+    time::{Duration, Instant},
+};
 
 use anyhow::Result;
 use rayon::ThreadPoolBuilder;
