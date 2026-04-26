@@ -13,6 +13,7 @@ use crate::{
 pub fn preprocess_forms(edition: Edition, source: Lang, entry: &mut WordEntry) {
     match (edition, source, entry.pos.as_str()) {
         (Edition::De, Lang::De, "verb") => preprocess_verb_forms_de_de(entry),
+        (Edition::De, Lang::De, "adj") => preprocess_adj_forms_de_de(entry),
         (Edition::En, Lang::Ga, _) => preprocess_forms_ga_en(entry),
         (Edition::Es, Lang::Es, "verb") => preprocess_verb_forms_es_es(entry),
         (Edition::Fr, Lang::Fr, "verb") => preprocess_verb_forms_fr_fr(entry),
@@ -89,6 +90,11 @@ fn preprocess_verb_forms_de_de(entry: &mut WordEntry) {
             form.form = stripped.to_string();
         }
     }
+}
+
+fn preprocess_adj_forms_de_de(entry: &mut WordEntry) {
+    const PREFIXES: &[&str] = &["er ist ", "es ist ", "sie ist ", "sie sind "];
+    strip_prefixes(entry, PREFIXES);
 }
 
 fn preprocess_forms_ga_en(entry: &mut WordEntry) {

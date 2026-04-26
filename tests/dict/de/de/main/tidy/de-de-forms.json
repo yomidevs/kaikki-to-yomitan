@@ -924,10 +924,11 @@
       "adj": [
         "extracted",
         [
-          "comparative",
           "genitive plural positive strong",
           "genitive/dative singular feminine positive strong",
-          "nominative singular masculine positive strong/mixed"
+          "nominative singular masculine positive strong/mixed",
+          "plural comparative predicative",
+          "singular masculine/feminine/neuter comparative predicative"
         ]
       ]
     },
@@ -935,7 +936,8 @@
       "adj": [
         "extracted",
         [
-          "superlative"
+          "plural superlative predicative",
+          "singular masculine/feminine/neuter superlative predicative"
         ]
       ]
     },
@@ -976,38 +978,6 @@
         "extracted",
         [
           "dative singular masculine/neuter positive strong"
-        ]
-      ]
-    },
-    "er ist unauffällig": {
-      "adj": [
-        "extracted",
-        [
-          "singular masculine positive predicative"
-        ]
-      ]
-    },
-    "sie ist unauffällig": {
-      "adj": [
-        "extracted",
-        [
-          "singular feminine positive predicative"
-        ]
-      ]
-    },
-    "es ist unauffällig": {
-      "adj": [
-        "extracted",
-        [
-          "singular neuter positive predicative"
-        ]
-      ]
-    },
-    "sie sind unauffällig": {
-      "adj": [
-        "extracted",
-        [
-          "plural positive predicative"
         ]
       ]
     },
@@ -1061,38 +1031,6 @@
         ]
       ]
     },
-    "er ist unauffälliger": {
-      "adj": [
-        "extracted",
-        [
-          "singular masculine comparative predicative"
-        ]
-      ]
-    },
-    "sie ist unauffälliger": {
-      "adj": [
-        "extracted",
-        [
-          "singular feminine comparative predicative"
-        ]
-      ]
-    },
-    "es ist unauffälliger": {
-      "adj": [
-        "extracted",
-        [
-          "singular neuter comparative predicative"
-        ]
-      ]
-    },
-    "sie sind unauffälliger": {
-      "adj": [
-        "extracted",
-        [
-          "plural comparative predicative"
-        ]
-      ]
-    },
     "unauffälligster": {
       "adj": [
         "extracted",
@@ -1140,38 +1078,6 @@
         "extracted",
         [
           "dative singular masculine/neuter superlative strong"
-        ]
-      ]
-    },
-    "er ist am unauffälligsten": {
-      "adj": [
-        "extracted",
-        [
-          "singular masculine superlative predicative"
-        ]
-      ]
-    },
-    "sie ist am unauffälligsten": {
-      "adj": [
-        "extracted",
-        [
-          "singular feminine superlative predicative"
-        ]
-      ]
-    },
-    "es ist am unauffälligsten": {
-      "adj": [
-        "extracted",
-        [
-          "singular neuter superlative predicative"
-        ]
-      ]
-    },
-    "sie sind am unauffälligsten": {
-      "adj": [
-        "extracted",
-        [
-          "plural superlative predicative"
         ]
       ]
     }

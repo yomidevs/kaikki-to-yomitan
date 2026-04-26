@@ -2037,12 +2037,6 @@
       [
         "unauffällig",
         [
-          "comparative"
-        ]
-      ],
-      [
-        "unauffällig",
-        [
           "genitive plural positive strong"
         ]
       ],
@@ -2056,6 +2050,18 @@
         "unauffällig",
         [
           "nominative singular masculine positive strong/mixed"
+        ]
+      ],
+      [
+        "unauffällig",
+        [
+          "plural comparative predicative"
+        ]
+      ],
+      [
+        "unauffällig",
+        [
+          "singular masculine/feminine/neuter comparative predicative"
         ]
       ]
     ],
@@ -2072,7 +2078,13 @@
       [
         "unauffällig",
         [
-          "superlative"
+          "plural superlative predicative"
+        ]
+      ],
+      [
+        "unauffällig",
+        [
+          "singular masculine/feminine/neuter superlative predicative"
         ]
       ]
     ],
@@ -2189,74 +2201,6 @@
         "unauffällig",
         [
           "dative singular masculine/neuter positive strong"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "er ist unauffällig",
-    "",
-    "non-lemma",
-    "adj",
-    0,
-    [
-      [
-        "unauffällig",
-        [
-          "singular masculine positive predicative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "sie ist unauffällig",
-    "",
-    "non-lemma",
-    "adj",
-    0,
-    [
-      [
-        "unauffällig",
-        [
-          "singular feminine positive predicative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "es ist unauffällig",
-    "",
-    "non-lemma",
-    "adj",
-    0,
-    [
-      [
-        "unauffällig",
-        [
-          "singular neuter positive predicative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "sie sind unauffällig",
-    "",
-    "non-lemma",
-    "adj",
-    0,
-    [
-      [
-        "unauffällig",
-        [
-          "plural positive predicative"
         ]
       ]
     ],
@@ -2409,74 +2353,6 @@
     ""
   ],
   [
-    "er ist unauffälliger",
-    "",
-    "non-lemma",
-    "adj",
-    0,
-    [
-      [
-        "unauffällig",
-        [
-          "singular masculine comparative predicative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "sie ist unauffälliger",
-    "",
-    "non-lemma",
-    "adj",
-    0,
-    [
-      [
-        "unauffällig",
-        [
-          "singular feminine comparative predicative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "es ist unauffälliger",
-    "",
-    "non-lemma",
-    "adj",
-    0,
-    [
-      [
-        "unauffällig",
-        [
-          "singular neuter comparative predicative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "sie sind unauffälliger",
-    "",
-    "non-lemma",
-    "adj",
-    0,
-    [
-      [
-        "unauffällig",
-        [
-          "plural comparative predicative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
     "unauffälligster",
     "",
     "non-lemma",
@@ -2615,74 +2491,6 @@
         "unauffällig",
         [
           "dative singular masculine/neuter superlative strong"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "er ist am unauffälligsten",
-    "",
-    "non-lemma",
-    "adj",
-    0,
-    [
-      [
-        "unauffällig",
-        [
-          "singular masculine superlative predicative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "sie ist am unauffälligsten",
-    "",
-    "non-lemma",
-    "adj",
-    0,
-    [
-      [
-        "unauffällig",
-        [
-          "singular feminine superlative predicative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "es ist am unauffälligsten",
-    "",
-    "non-lemma",
-    "adj",
-    0,
-    [
-      [
-        "unauffällig",
-        [
-          "singular neuter superlative predicative"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
-    "sie sind am unauffälligsten",
-    "",
-    "non-lemma",
-    "adj",
-    0,
-    [
-      [
-        "unauffällig",
-        [
-          "plural superlative predicative"
         ]
       ]
     ],
