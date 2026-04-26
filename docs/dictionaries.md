@@ -45,3 +45,10 @@ $ wty glossary-extended all de en
 ✓ Wrote yomitan dict @ data/dict/de/en/wty-all-de-en-gloss.zip (2.70 MB)
 ```
 
+## Notes
+
+As of now, there is no way to make a **main** dictionary with only lemmas, or only forms. See this [issue](https://github.com/yomidevs/wiktionary-to-yomitan/issues/166).
+
+It is possible to hack your way around it, either by modifying the code as stated in the issue above, or by manually deleting the unwanted banks,
+since the writter will jump to a next bank when we go from lemmas to forms.
+
