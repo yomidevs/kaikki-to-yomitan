@@ -77,6 +77,11 @@
         "hortative",
         "interrogative"
     ],
+    "germanVerbType": [
+        "weak",
+        "strong",
+        "mixed"
+    ],
     "modifiers": [
         "adjective",
         "noun-from-verb",

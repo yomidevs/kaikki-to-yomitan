@@ -1,3 +1,10 @@
+//! Preprocesses word forms to only retain the headword.
+//!
+//! This amounts to fixing parsing errors in wiktextract and could be upstreamed.
+//!
+//! For example, in German, verb forms come with personal pronouns which makes for
+//! poor results (worse search, deduplication, dictionary bloat etc.)
+
 use crate::{
     lang::{Edition, Lang},
     models::kaikki::WordEntry,
@@ -5,12 +12,16 @@ use crate::{
 
 pub fn preprocess_forms(edition: Edition, source: Lang, entry: &mut WordEntry) {
     match (edition, source, entry.pos.as_str()) {
-        (Edition::De, Lang::De, "verb") => preprocess_forms_de_de(entry),
+        (Edition::De, Lang::De, "verb") => preprocess_verb_forms_de_de(entry),
+        (Edition::De, Lang::De, "adj") => preprocess_adj_forms_de_de(entry),
+        (Edition::De, Lang::De, "name") => preprocess_name_forms_de_de(entry),
+        (Edition::De, Lang::De, "noun" | "phrase") => preprocess_noun_forms_de_de(entry),
+
         (Edition::En, Lang::Ga, _) => preprocess_forms_ga_en(entry),
-        (Edition::Es, Lang::Es, "verb") => preprocess_forms_es_es(entry),
-        (Edition::Fr, Lang::Fr, "verb") => preprocess_forms_fr_fr(entry),
-        (Edition::It, Lang::It, "verb") => preprocess_forms_it_it(entry),
-        (Edition::Pt, Lang::Pt, "verb") => preprocess_forms_pt_pt(entry),
+        (Edition::Es, Lang::Es, "verb") => preprocess_verb_forms_es_es(entry),
+        (Edition::Fr, Lang::Fr, "verb") => preprocess_verb_forms_fr_fr(entry),
+        (Edition::It, Lang::It, "verb") => preprocess_verb_forms_it_it(entry),
+        (Edition::Pt, Lang::Pt, "verb") => preprocess_verb_forms_pt_pt(entry),
         _ => (),
     }
 }
@@ -28,13 +39,8 @@ fn strip_prefixes(entry: &mut WordEntry, prefixes: &[&str]) {
     }
 }
 
-// In German, verb forms come with personal pronouns which makes for poor results (worse
-// search, deduplication, dictionary bloat etc.)
-// This should probably be fixed at wiktextract at some point.
-// Here we trim personal pronouns prefixes: "ich ", "du ", "er/sie/es " etc.
-//
 // See: https://kaikki.org/dewiktionary/Deutsch/meaning/a/au/ausmachen.html
-fn preprocess_forms_de_de(entry: &mut WordEntry) {
+fn preprocess_verb_forms_de_de(entry: &mut WordEntry) {
     // 1. Trim personal pronouns from verb forms (this information is already in tags)
     const PRONOUNS: &[&str] = &["ich ", "du ", "er/sie/es ", "wir ", "ihr ", "sie "];
     strip_prefixes(entry, PRONOUNS);
@@ -89,13 +95,45 @@ fn preprocess_forms_de_de(entry: &mut WordEntry) {
     }
 }
 
+fn preprocess_adj_forms_de_de(entry: &mut WordEntry) {
+    const PREFIXES: &[&str] = &["er ist ", "es ist ", "sie ist ", "sie sind "];
+    strip_prefixes(entry, PREFIXES);
+    strip_prefixes(entry, &["am "]);
+}
+
+// This was fixed for nouns in wiktextract, but I guess not names
+fn preprocess_name_forms_de_de(entry: &mut WordEntry) {
+    const PREFIXES: &[&str] = &[
+        "des ", "(das) ", "dem ", "(dem) ", "der ", "(der) ", "die ", "(die) ", "den ",
+    ];
+    strip_prefixes(entry, PREFIXES);
+
+    entry.forms.retain(|form| !form.form.ends_with('’'));
+}
+
+fn preprocess_noun_forms_de_de(entry: &mut WordEntry) {
+    #[rustfmt::skip]
+    const PREFIXES: &[&str] = &[
+        // Nominative
+        "der ", "das ", "die ",
+        "ein ", "eine ", "keine ",
+        // Accusative
+        "den ", "einen ",
+        // Dative
+        "dem ", "einem ", "keinen ",
+        // Genitive
+        "des ", "eines ", "einer ", "keiner "
+    ];
+    strip_prefixes(entry, PREFIXES);
+}
+
 fn preprocess_forms_ga_en(entry: &mut WordEntry) {
     // https://en.wiktionary.org/wiki/crodh#Irish
     const PREFIXES: &[&str] = &["a ", "an ", "na ", "leis an ", "don ", "leis na "];
     strip_prefixes(entry, PREFIXES);
 }
 
-fn preprocess_forms_es_es(entry: &mut WordEntry) {
+fn preprocess_verb_forms_es_es(entry: &mut WordEntry) {
     // The auxiliary haber is wrongly parsed as a form
     #[rustfmt::skip]
     const HABER_AUX: &[&str] = &[
@@ -117,7 +155,7 @@ fn preprocess_forms_es_es(entry: &mut WordEntry) {
 }
 
 // This function is made based on preprocess_forms_de_de. See that function for more details.
-fn preprocess_forms_fr_fr(entry: &mut WordEntry) {
+fn preprocess_verb_forms_fr_fr(entry: &mut WordEntry) {
     const PRONOUNS: &[&str] = &[
         "je ",
         "j' ",
@@ -145,7 +183,7 @@ fn preprocess_forms_fr_fr(entry: &mut WordEntry) {
     });
 }
 
-fn preprocess_forms_it_it(entry: &mut WordEntry) {
+fn preprocess_verb_forms_it_it(entry: &mut WordEntry) {
     const AVERE_AUX: &[&str] = &[
         "avrei ",
         "avresti ",
@@ -174,6 +212,6 @@ fn preprocess_forms_it_it(entry: &mut WordEntry) {
     });
 }
 
-fn preprocess_forms_pt_pt(entry: &mut WordEntry) {
+fn preprocess_verb_forms_pt_pt(entry: &mut WordEntry) {
     strip_prefixes(entry, &["não "]);
 }

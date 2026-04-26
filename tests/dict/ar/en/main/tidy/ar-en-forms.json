@@ -44,8 +44,7 @@
       "verb": [
         "extracted",
         [
-          "first-person singular feminine past perfective active indicative",
-          "first-person singular masculine past perfective active indicative"
+          "first-person singular masculine/feminine past perfective active indicative"
         ]
       ]
     },
@@ -75,8 +74,7 @@
       "verb": [
         "extracted",
         [
-          "second-person feminine past perfective active indicative dual",
-          "second-person masculine past perfective active indicative dual"
+          "second-person masculine/feminine past perfective active indicative dual"
         ]
       ]
     },
@@ -98,8 +96,7 @@
       "verb": [
         "extracted",
         [
-          "first-person plural feminine past perfective active indicative",
-          "first-person plural masculine past perfective active indicative"
+          "first-person plural masculine/feminine past perfective active indicative"
         ]
       ]
     },
@@ -163,8 +160,7 @@
       "verb": [
         "extracted",
         [
-          "first-person singular feminine imperfective active indicative non-past",
-          "first-person singular masculine imperfective active indicative non-past"
+          "first-person singular masculine/feminine imperfective active indicative non-past"
         ]
       ]
     },
@@ -198,8 +194,7 @@
       "verb": [
         "extracted",
         [
-          "first-person plural feminine imperfective active indicative non-past",
-          "first-person plural masculine imperfective active indicative non-past"
+          "first-person plural masculine/feminine imperfective active indicative non-past"
         ]
       ]
     },
@@ -251,8 +246,7 @@
       "verb": [
         "extracted",
         [
-          "first-person singular feminine active subjunctive",
-          "first-person singular masculine active subjunctive"
+          "first-person singular masculine/feminine active subjunctive"
         ]
       ]
     },
@@ -297,8 +291,7 @@
       "verb": [
         "extracted",
         [
-          "first-person plural feminine active subjunctive",
-          "first-person plural masculine active subjunctive"
+          "first-person plural masculine/feminine active subjunctive"
         ]
       ]
     },
@@ -333,8 +326,7 @@
       "verb": [
         "extracted",
         [
-          "first-person singular feminine active jussive",
-          "first-person singular masculine active jussive"
+          "first-person singular masculine/feminine active jussive"
         ]
       ]
     },
@@ -359,8 +351,7 @@
       "verb": [
         "extracted",
         [
-          "first-person plural feminine active jussive",
-          "first-person plural masculine active jussive"
+          "first-person plural masculine/feminine active jussive"
         ]
       ]
     },
@@ -376,8 +367,7 @@
       "verb": [
         "extracted",
         [
-          "second-person feminine imperative active dual",
-          "second-person masculine imperative active dual"
+          "second-person masculine/feminine imperative active dual"
         ]
       ]
     },
@@ -409,8 +399,7 @@
       "verb": [
         "extracted",
         [
-          "first-person singular feminine past perfective passive indicative",
-          "first-person singular masculine past perfective passive indicative"
+          "first-person singular masculine/feminine past perfective passive indicative"
         ]
       ]
     },
@@ -434,8 +423,7 @@
       "verb": [
         "extracted",
         [
-          "second-person feminine past perfective passive indicative dual",
-          "second-person masculine past perfective passive indicative dual"
+          "second-person masculine/feminine past perfective passive indicative dual"
         ]
       ]
     },
@@ -451,8 +439,7 @@
       "verb": [
         "extracted",
         [
-          "first-person plural feminine past perfective passive indicative",
-          "first-person plural masculine past perfective passive indicative"
+          "first-person plural masculine/feminine past perfective passive indicative"
         ]
       ]
     },
@@ -516,8 +503,7 @@
       "verb": [
         "extracted",
         [
-          "first-person singular feminine imperfective passive indicative non-past",
-          "first-person singular masculine imperfective passive indicative non-past"
+          "first-person singular masculine/feminine imperfective passive indicative non-past"
         ]
       ]
     },
@@ -559,8 +545,7 @@
       "verb": [
         "extracted",
         [
-          "first-person plural feminine imperfective passive indicative non-past",
-          "first-person plural masculine imperfective passive indicative non-past"
+          "first-person plural masculine/feminine imperfective passive indicative non-past"
         ]
       ]
     },
@@ -612,8 +597,7 @@
       "verb": [
         "extracted",
         [
-          "first-person singular feminine passive subjunctive",
-          "first-person singular masculine passive subjunctive"
+          "first-person singular masculine/feminine passive subjunctive"
         ]
       ]
     },
@@ -658,8 +642,7 @@
       "verb": [
         "extracted",
         [
-          "first-person plural feminine passive subjunctive",
-          "first-person plural masculine passive subjunctive"
+          "first-person plural masculine/feminine passive subjunctive"
         ]
       ]
     },
@@ -694,8 +677,7 @@
       "verb": [
         "extracted",
         [
-          "first-person singular feminine passive jussive",
-          "first-person singular masculine passive jussive"
+          "first-person singular masculine/feminine passive jussive"
         ]
       ]
     },
@@ -720,8 +702,7 @@
       "verb": [
         "extracted",
         [
-          "first-person plural feminine passive jussive",
-          "first-person plural masculine passive jussive"
+          "first-person plural masculine/feminine passive jussive"
         ]
       ]
     },

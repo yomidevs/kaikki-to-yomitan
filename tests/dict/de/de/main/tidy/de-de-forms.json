@@ -918,5 +918,200 @@
         ]
       ]
     }
+  },
+  "unauffällig": {
+    "unauffälliger": {
+      "adj": [
+        "extracted",
+        [
+          "genitive plural positive strong",
+          "genitive/dative singular feminine positive strong",
+          "nominative singular masculine positive strong/mixed",
+          "plural comparative predicative",
+          "singular masculine/feminine/neuter comparative predicative"
+        ]
+      ]
+    },
+    "unauffälligsten": {
+      "adj": [
+        "extracted",
+        [
+          "dative plural superlative strong",
+          "genitive singular neuter superlative strong",
+          "genitive/accusative singular masculine superlative strong",
+          "genitive/dative singular feminine/neuter superlative weak/mixed",
+          "genitive/dative/accusative singular masculine superlative weak/mixed",
+          "nominative/genitive/dative/accusative plural superlative weak/mixed",
+          "plural superlative predicative",
+          "singular masculine/feminine/neuter superlative predicative"
+        ]
+      ]
+    },
+    "unauffällige": {
+      "adj": [
+        "extracted",
+        [
+          "nominative singular masculine positive weak",
+          "nominative/accusative plural positive strong",
+          "nominative/accusative singular feminine positive strong/mixed",
+          "nominative/accusative singular feminine/neuter positive weak"
+        ]
+      ]
+    },
+    "unauffälliges": {
+      "adj": [
+        "extracted",
+        [
+          "nominative/accusative singular neuter positive strong/mixed"
+        ]
+      ]
+    },
+    "unauffälligen": {
+      "adj": [
+        "extracted",
+        [
+          "dative plural positive strong",
+          "genitive singular neuter positive strong",
+          "genitive/accusative singular masculine positive strong",
+          "genitive/dative singular feminine/neuter positive weak/mixed",
+          "genitive/dative/accusative singular masculine positive weak/mixed",
+          "nominative/genitive/dative/accusative plural positive weak/mixed"
+        ]
+      ]
+    },
+    "unauffälligem": {
+      "adj": [
+        "extracted",
+        [
+          "dative singular masculine/neuter positive strong"
+        ]
+      ]
+    },
+    "unauffälligerer": {
+      "adj": [
+        "extracted",
+        [
+          "genitive plural comparative strong",
+          "genitive/dative singular feminine comparative strong",
+          "nominative singular masculine comparative strong/mixed"
+        ]
+      ]
+    },
+    "unauffälligere": {
+      "adj": [
+        "extracted",
+        [
+          "nominative singular masculine comparative weak",
+          "nominative/accusative plural comparative strong",
+          "nominative/accusative singular feminine comparative strong/mixed",
+          "nominative/accusative singular feminine/neuter comparative weak"
+        ]
+      ]
+    },
+    "unauffälligeres": {
+      "adj": [
+        "extracted",
+        [
+          "nominative/accusative singular neuter comparative strong/mixed"
+        ]
+      ]
+    },
+    "unauffälligeren": {
+      "adj": [
+        "extracted",
+        [
+          "dative plural comparative strong",
+          "genitive singular neuter comparative strong",
+          "genitive/accusative singular masculine comparative strong",
+          "genitive/dative singular feminine/neuter comparative weak/mixed",
+          "genitive/dative/accusative singular masculine comparative weak/mixed",
+          "nominative/genitive/dative/accusative plural comparative weak/mixed"
+        ]
+      ]
+    },
+    "unauffälligerem": {
+      "adj": [
+        "extracted",
+        [
+          "dative singular masculine/neuter comparative strong"
+        ]
+      ]
+    },
+    "unauffälligster": {
+      "adj": [
+        "extracted",
+        [
+          "genitive plural superlative strong",
+          "genitive/dative singular feminine superlative strong",
+          "nominative singular masculine superlative strong/mixed"
+        ]
+      ]
+    },
+    "unauffälligste": {
+      "adj": [
+        "extracted",
+        [
+          "nominative singular masculine superlative weak",
+          "nominative/accusative plural superlative strong",
+          "nominative/accusative singular feminine superlative strong/mixed",
+          "nominative/accusative singular feminine/neuter superlative weak"
+        ]
+      ]
+    },
+    "unauffälligstes": {
+      "adj": [
+        "extracted",
+        [
+          "nominative/accusative singular neuter superlative strong/mixed"
+        ]
+      ]
+    },
+    "unauffälligstem": {
+      "adj": [
+        "extracted",
+        [
+          "dative singular masculine/neuter superlative strong"
+        ]
+      ]
+    }
+  },
+  "Abbenhaus": {
+    "Abbenhues": {
+      "name": [
+        "extracted",
+        [
+          "variant"
+        ]
+      ]
+    },
+    "Abbenhausens": {
+      "name": [
+        "extracted",
+        [
+          "nominative/genitive/dative/accusative plural"
+        ]
+      ]
+    }
+  },
+  "Neugeborene": {
+    "Neugeborener": {
+      "noun": [
+        "extracted",
+        [
+          "genitive plural",
+          "genitive/dative singular",
+          "masculine"
+        ]
+      ]
+    },
+    "Neugeborenen": {
+      "noun": [
+        "extracted",
+        [
+          "genitive/dative singular",
+          "nominative/genitive/dative/accusative plural"
+        ]
+      ]
+    }
   }
 }

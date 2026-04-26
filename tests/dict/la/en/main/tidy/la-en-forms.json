@@ -1148,8 +1148,7 @@
       "verb": [
         "extracted",
         [
-          "genitive singular masculine",
-          "genitive singular neuter",
+          "genitive singular masculine/neuter",
           "nominative/vocative plural masculine"
         ]
       ]
@@ -1167,8 +1166,7 @@
       "verb": [
         "extracted",
         [
-          "genitive plural masculine",
-          "genitive plural neuter"
+          "genitive plural masculine/neuter"
         ]
       ]
     },
@@ -1184,8 +1182,7 @@
       "verb": [
         "extracted",
         [
-          "dative/ablative singular masculine",
-          "dative/ablative singular neuter"
+          "dative/ablative singular masculine/neuter"
         ]
       ]
     },

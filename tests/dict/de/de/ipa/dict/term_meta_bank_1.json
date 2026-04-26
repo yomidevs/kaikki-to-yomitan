@@ -148,5 +148,56 @@
         }
       ]
     }
+  ],
+  [
+    "unauffällig",
+    "ipa",
+    {
+      "reading": "unauffällig",
+      "transcriptions": [
+        {
+          "ipa": "[ˈʊnˌʔaʊ̯fɛlɪç]"
+        },
+        {
+          "ipa": "[ˈʊnˌʔaʊ̯fɛlɪk]"
+        }
+      ]
+    }
+  ],
+  [
+    "Nantes",
+    "ipa",
+    {
+      "reading": "Nantes",
+      "transcriptions": [
+        {
+          "ipa": "[nɑ̃ːt]"
+        }
+      ]
+    }
+  ],
+  [
+    "Abbenhaus",
+    "ipa",
+    {
+      "reading": "Abbenhaus",
+      "transcriptions": [
+        {
+          "ipa": "[ˈabn̩haʊ̯s]"
+        }
+      ]
+    }
+  ],
+  [
+    "Neugeborene",
+    "ipa",
+    {
+      "reading": "Neugeborene",
+      "transcriptions": [
+        {
+          "ipa": "[ˈnɔɪ̯ɡəˌboːʁənə]"
+        }
+      ]
+    }
   ]
 ]
