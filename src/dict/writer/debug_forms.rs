@@ -25,26 +25,28 @@ pub fn write_debug_forms(_: &Options, _: &PathManager, ydict: YomitanDict) -> Re
     // of ANY dictionary (and we only care about the main one)
     // ... and in theory, there is no guarantee that the irs format of the main
     // dictionary won't change, while this logic remains the same.
-    let mut grouped_by: HashMap<String, Vec<String>> = HashMap::new();
-    let mut rules: HashMap<String, String> = HashMap::new(); // it's short pos
+    let mut grouped_by: HashMap<&str, Vec<&str>> = HashMap::new();
+    let mut from_to_rules: HashMap<&str, Vec<&str>> = HashMap::new(); // it's short pos
 
-    for entry in ydict.term_info_form {
-        let term = entry.term.clone();
-        for def in entry.definitions {
+    for entry in &ydict.term_info_form {
+        for def in &entry.definitions {
             let DetailedDefinition::Inflection((from, _tags)) = def else {
                 panic!("forms must be made from inflections");
             };
-            rules.entry(from.clone()).or_insert(entry.rules.clone());
-            let tos = grouped_by.entry(from).or_default();
-            if !tos.contains(&term) {
-                tos.push(term.clone());
+            let rules = from_to_rules.entry(&from).or_default();
+            if !rules.contains(&entry.rules.as_str()) {
+                rules.push(entry.rules.as_str());
+            }
+            let tos = grouped_by.entry(&from).or_default();
+            if !tos.contains(&entry.term.as_str()) {
+                tos.push(entry.term.as_str());
             }
         }
     }
 
     for (from, tos) in &grouped_by {
         // SAFETY: rules has the from key, by previous logic
-        let from_expanded = format!("{from} | {}", rules.get(from).unwrap());
+        let from_expanded = format!("{from} | {}", from_to_rules.get(from).unwrap().join(", "));
         writer.write_all(from_expanded.as_bytes())?;
         writer.write_all(b"\n")?;
         for to in tos {
