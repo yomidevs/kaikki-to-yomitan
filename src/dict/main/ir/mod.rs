@@ -54,28 +54,10 @@ impl Tidy {
         self.lemma_map.len() + self.form_map.len()
     }
 
-    // This is usually called at the end, so it could just move the arguments...
-    // TODO: move this impl to lemmamap
     fn insert_lemma(&mut self, lemma: &str, reading: &str, pos: &str, entry: LemmaInfo) {
-        debug_assert!(!entry.gloss_tree.is_empty());
-
-        let key = LemmaKey {
-            lemma: lemma.into(),
-            reading: reading.into(),
-            pos: pos.into(),
-        };
-
-        match self.lemma_map.0.entry(key) {
-            Entry::Vacant(e) => {
-                e.insert(vec![entry]);
-            }
-            Entry::Occupied(mut e) => {
-                e.get_mut().push(entry);
-            }
-        }
+        self.lemma_map.insert(lemma, reading, pos, entry);
     }
 
-    // TODO: move this impl to formmap
     fn insert_form(
         &mut self,
         uninflected: &str,
@@ -84,29 +66,8 @@ impl Tidy {
         source: FormSource,
         tags: Vec<Tag>,
     ) {
-        // There are too many callers of this function: better check it here.
-        if tags.is_empty()
-            || uninflected.is_empty()
-            || inflected.is_empty()
-            || uninflected == inflected
-        {
-            return;
-        }
-
-        let key = FormKey {
-            uninflected: uninflected.into(),
-            inflected: inflected.into(),
-            pos: Pos::from(pos),
-        };
-
-        match self.form_map.0.entry(key) {
-            Entry::Vacant(e) => {
-                e.insert((source, tags));
-            }
-            Entry::Occupied(mut e) => {
-                e.get_mut().1.extend(tags);
-            }
-        }
+        self.form_map
+            .insert(uninflected, inflected, pos, source, tags);
     }
 
     // NOTE: we write stuff even if irs.attribute is empty
@@ -230,8 +191,39 @@ struct LemmaKey {
     pos: Pos,
 }
 
+impl LemmaKey {
+    fn new(lemma: &str, reading: &str, pos: Pos) -> Self {
+        Self {
+            lemma: lemma.into(),
+            reading: reading.into(),
+            pos,
+        }
+    }
+
+    fn unpack(&self) -> (&str, &str, Pos) {
+        (&self.lemma, &self.reading, self.pos)
+    }
+}
+
 #[derive(Debug, Default)]
 pub struct LemmaMap(Map<LemmaKey, Vec<LemmaInfo>>);
+
+impl LemmaMap {
+    fn insert(&mut self, lemma: &str, reading: &str, pos: &str, entry: LemmaInfo) {
+        debug_assert!(!entry.gloss_tree.is_empty());
+
+        let key = LemmaKey::new(lemma, reading, Pos::from(pos));
+
+        match self.0.entry(key) {
+            Entry::Vacant(e) => {
+                e.insert(vec![entry]);
+            }
+            Entry::Occupied(mut e) => {
+                e.get_mut().push(entry);
+            }
+        }
+    }
+}
 
 // We only serialize for debugging in the testsuite, so having this tmp nested is easy to write and
 // has no overhead when building the dictionary without --save-temps. This way, we avoid storing
@@ -244,12 +236,13 @@ impl Serialize for LemmaMap {
         let mut nested: Map<&str, Map<&str, Map<Pos, &Vec<LemmaInfo>>>> = Map::default();
 
         for (key, infos) in &self.0 {
+            let (lemma, reading, pos) = key.unpack();
             nested
-                .entry(&key.lemma)
+                .entry(lemma)
                 .or_default()
-                .entry(&key.reading)
+                .entry(reading)
                 .or_default()
-                .insert(key.pos, infos);
+                .insert(pos, infos);
         }
 
         nested.serialize(serializer)
@@ -259,9 +252,10 @@ impl Serialize for LemmaMap {
 impl LemmaMap {
     pub fn flat_iter(&self) -> impl Iterator<Item = (&str, &str, Pos, &LemmaInfo)> {
         self.0.iter().flat_map(|(key, infos)| {
-            infos
-                .iter()
-                .map(move |info| (key.lemma.as_str(), key.reading.as_str(), key.pos, info))
+            infos.iter().map(move |info| {
+                let (lemma, reading, pos) = key.unpack();
+                (lemma, reading, pos, info)
+            })
         })
     }
 
@@ -277,8 +271,53 @@ pub struct FormKey {
     pos: Pos,
 }
 
+impl FormKey {
+    fn new(uninflected: &str, inflected: &str, pos: Pos) -> Self {
+        Self {
+            uninflected: uninflected.into(),
+            inflected: inflected.into(),
+            pos,
+        }
+    }
+
+    fn unpack(&self) -> (&str, &str, Pos) {
+        (self.uninflected.as_str(), self.inflected.as_str(), self.pos)
+    }
+}
+
 #[derive(Debug, Default)]
 pub struct FormMap(Map<FormKey, (FormSource, Vec<String>)>);
+
+impl FormMap {
+    fn insert(
+        &mut self,
+        uninflected: &str,
+        inflected: &str,
+        pos: &str,
+        source: FormSource,
+        tags: Vec<Tag>,
+    ) {
+        // There are too many callers of this function: better check it here.
+        if tags.is_empty()
+            || uninflected.is_empty()
+            || inflected.is_empty()
+            || uninflected == inflected
+        {
+            return;
+        }
+
+        let key = FormKey::new(uninflected, inflected, Pos::from(pos));
+
+        match self.0.entry(key) {
+            Entry::Vacant(e) => {
+                e.insert((source, tags));
+            }
+            Entry::Occupied(mut e) => {
+                e.get_mut().1.extend(tags);
+            }
+        }
+    }
+}
 
 // We only serialize for debugging in the testsuite, so having this tmp nested is easy to write and
 // has no overhead when building the dictionary without --save-temps. This way, we avoid storing
@@ -292,12 +331,13 @@ impl Serialize for FormMap {
         let mut nested: Map<&str, Map<&str, Map<Pos, &(FormSource, Vec<String>)>>> = Map::default();
 
         for (key, infos) in &self.0 {
+            let (uninflected, inflected, pos) = key.unpack();
             nested
-                .entry(&key.uninflected)
+                .entry(uninflected)
                 .or_default()
-                .entry(&key.inflected)
+                .entry(inflected)
                 .or_default()
-                .insert(key.pos, infos);
+                .insert(pos, infos);
         }
 
         nested.serialize(serializer)
@@ -308,13 +348,8 @@ impl FormMap {
     /// Iterates over: uninflected, inflected, pos, source, tags
     pub fn flat_iter(&self) -> impl Iterator<Item = (&str, &str, Pos, &FormSource, &Vec<String>)> {
         self.0.iter().map(|(key, (source, tags))| {
-            (
-                key.uninflected.as_str(),
-                key.inflected.as_str(),
-                key.pos,
-                source,
-                tags,
-            )
+            let (uninflected, inflected, pos) = key.unpack();
+            (uninflected, inflected, pos, source, tags)
         })
     }
 
@@ -323,13 +358,8 @@ impl FormMap {
         &mut self,
     ) -> impl Iterator<Item = (&str, &str, Pos, &mut FormSource, &mut Vec<String>)> {
         self.0.iter_mut().map(|(key, (source, tags))| {
-            (
-                key.uninflected.as_str(),
-                key.inflected.as_str(),
-                key.pos,
-                source,
-                tags,
-            )
+            let (uninflected, inflected, pos) = key.unpack();
+            (uninflected, inflected, pos, source, tags)
         })
     }
 
