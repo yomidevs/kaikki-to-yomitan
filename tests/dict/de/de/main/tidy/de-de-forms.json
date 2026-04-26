@@ -1,7 +1,7 @@
 {
   "befruchtet": {
     "befruchteten": {
-      "adj": [
+      "adjective": [
         "inflection",
         [
           "Akkusativ Singular Maskulinum der gemischten Deklination des Positivs",
@@ -436,7 +436,7 @@
   },
   "nun": {
     "nu": {
-      "adv": [
+      "adverb": [
         "extracted",
         [
           "variant"
@@ -456,7 +456,7 @@
   },
   "in": {
     "i.": {
-      "prep": [
+      "preposition": [
         "extracted",
         [
           "abbreviation"
@@ -921,7 +921,7 @@
   },
   "unauffällig": {
     "unauffälliger": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "genitive plural positive strong",
@@ -933,7 +933,7 @@
       ]
     },
     "unauffälligsten": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "dative plural superlative strong",
@@ -948,7 +948,7 @@
       ]
     },
     "unauffällige": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "nominative singular masculine positive weak",
@@ -959,7 +959,7 @@
       ]
     },
     "unauffälliges": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "nominative/accusative singular neuter positive strong/mixed"
@@ -967,7 +967,7 @@
       ]
     },
     "unauffälligen": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "dative plural positive strong",
@@ -980,7 +980,7 @@
       ]
     },
     "unauffälligem": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "dative singular masculine/neuter positive strong"
@@ -988,7 +988,7 @@
       ]
     },
     "unauffälligerer": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "genitive plural comparative strong",
@@ -998,7 +998,7 @@
       ]
     },
     "unauffälligere": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "nominative singular masculine comparative weak",
@@ -1009,7 +1009,7 @@
       ]
     },
     "unauffälligeres": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "nominative/accusative singular neuter comparative strong/mixed"
@@ -1017,7 +1017,7 @@
       ]
     },
     "unauffälligeren": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "dative plural comparative strong",
@@ -1030,7 +1030,7 @@
       ]
     },
     "unauffälligerem": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "dative singular masculine/neuter comparative strong"
@@ -1038,7 +1038,7 @@
       ]
     },
     "unauffälligster": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "genitive plural superlative strong",
@@ -1048,7 +1048,7 @@
       ]
     },
     "unauffälligste": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "nominative singular masculine superlative weak",
@@ -1059,7 +1059,7 @@
       ]
     },
     "unauffälligstes": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "nominative/accusative singular neuter superlative strong/mixed"
@@ -1067,7 +1067,7 @@
       ]
     },
     "unauffälligstem": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "dative singular masculine/neuter superlative strong"

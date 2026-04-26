@@ -33,11 +33,11 @@ pub fn write_debug_forms(_: &Options, _: &PathManager, ydict: YomitanDict) -> Re
             let DetailedDefinition::Inflection((from, _tags)) = def else {
                 panic!("forms must be made from inflections");
             };
-            let rules = from_to_rules.entry(&from).or_default();
+            let rules = from_to_rules.entry(from).or_default();
             if !rules.contains(&entry.rules.as_str()) {
                 rules.push(entry.rules.as_str());
             }
-            let tos = grouped_by.entry(&from).or_default();
+            let tos = grouped_by.entry(from).or_default();
             if !tos.contains(&entry.term.as_str()) {
                 tos.push(entry.term.as_str());
             }

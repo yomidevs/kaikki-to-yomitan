@@ -12,7 +12,7 @@ use crate::{
             TermPhoneticTranscription, YomitanDict, wrap,
         },
     },
-    tags::{find_short_pos_or_default, find_tag_in_bank, localize_tag, localize_tag_info},
+    tags::{Pos, find_tag_in_bank, localize_tag, localize_tag_info},
 };
 
 #[derive(Debug, Clone, Copy)]
@@ -157,7 +157,8 @@ fn process_glossary(source: Edition, target: Lang, entry: &WordEntry, irs: &mut 
         }
         None => vec![],
     };
-    let rules = find_short_pos_or_default(&entry.pos);
+    let pos = Pos::from(entry.pos.as_str());
+    let rules = pos.short();
 
     irs.push(TermInfo::new(
         entry.word.clone(),
@@ -169,7 +170,7 @@ fn process_glossary(source: Edition, target: Lang, entry: &WordEntry, irs: &mut 
 }
 
 /// (lemma, pos, edition, translations)
-type IGlossaryExtended = Vec<(String, String, Edition, Vec<String>)>;
+type IGlossaryExtended = Vec<(String, Pos, Edition, Vec<String>)>;
 
 fn process_glossary_extended(
     edition: Edition,
@@ -210,7 +211,7 @@ fn process_glossary_extended(
         sources.iter().map(|lemma| {
             (
                 (*lemma).to_string(),
-                entry.pos.clone(),
+                Pos::from(entry.pos.as_str()),
                 edition,
                 targets.iter().map(|def| (*def).to_string()).collect(),
             )
@@ -219,16 +220,16 @@ fn process_glossary_extended(
 }
 
 fn to_yomitan_glossary_extended(target: Lang, irs: &IGlossaryExtended) -> Vec<TermInfo> {
-    irs.into_iter()
+    irs.iter()
         .map(|(lemma, pos, _, translations)| {
-            let definition_tags = match find_tag_in_bank(&pos) {
+            let definition_tags = match find_tag_in_bank(pos.long()) {
                 Some(mut tag_info) => {
                     localize_tag_info(target, &mut tag_info);
                     vec![tag_info]
                 }
                 None => vec![],
             };
-            let rules = find_short_pos_or_default(&pos);
+            let rules = pos.short();
 
             TermInfo::new(
                 lemma.clone(),
@@ -434,7 +435,7 @@ mod tests {
         let (lemma2, _, _, defs2) = &irs[1];
         let (lemma3, _, _, defs3) = &irs[2];
 
-        assert_eq!(pos, "noun");
+        assert_eq!(pos.long(), "noun");
         assert_eq!(lemma1, "Ἡράκλειαι στῆλαι");
         assert_eq!(lemma2, "Ἡράκλειαι στῆλαι");
         assert_eq!(lemma3, "Κάλπη");
@@ -471,7 +472,7 @@ mod tests {
         assert_eq!(irs.len(), 1);
         let (_, pos, _, _) = &irs[0];
 
-        assert_eq!(pos, "noun");
+        assert_eq!(pos.long(), "noun");
 
         let yomitan_entries = to_yomitan_glossary_extended(Lang::Ja, &irs);
         let term_bank = yomitan_entries.first().unwrap();

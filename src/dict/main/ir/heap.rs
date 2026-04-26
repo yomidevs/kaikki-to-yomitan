@@ -28,6 +28,12 @@ impl<T: HeapSize> HeapSize for Vec<T> {
     }
 }
 
+impl HeapSize for Pos {
+    fn heap_size(&self) -> usize {
+        0
+    }
+}
+
 impl HeapSize for LemmaKey {
     fn heap_size(&self) -> usize {
         self.lemma.heap_size() + self.reading.heap_size() + self.pos.heap_size()
@@ -43,6 +49,12 @@ impl HeapSize for FormKey {
 impl HeapSize for FormSource {
     fn heap_size(&self) -> usize {
         0
+    }
+}
+
+impl<T: HeapSize> HeapSize for Option<T> {
+    fn heap_size(&self) -> usize {
+        self.as_ref().map_or(0, HeapSize::heap_size)
     }
 }
 

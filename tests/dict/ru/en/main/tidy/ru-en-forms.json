@@ -281,7 +281,7 @@
   },
   "зимний": {
     "зи́мне": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "adverb",
@@ -290,7 +290,7 @@
       ]
     },
     "по-зи́мнему": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "adverb"
@@ -298,7 +298,7 @@
       ]
     },
     "зи́мний": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "accusative masculine inanimate",
@@ -307,7 +307,7 @@
       ]
     },
     "зи́мнее": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "nominative/accusative neuter"
@@ -315,7 +315,7 @@
       ]
     },
     "зи́мняя": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "nominative feminine"
@@ -323,7 +323,7 @@
       ]
     },
     "зи́мние": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "accusative plural inanimate",
@@ -332,7 +332,7 @@
       ]
     },
     "зи́мнего": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "accusative masculine animate",
@@ -341,7 +341,7 @@
       ]
     },
     "зи́мней": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "genitive/dative feminine",
@@ -351,7 +351,7 @@
       ]
     },
     "зи́мних": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "accusative plural animate",
@@ -361,7 +361,7 @@
       ]
     },
     "зи́мнему": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "dative masculine neuter"
@@ -369,7 +369,7 @@
       ]
     },
     "зи́мним": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "dative plural",
@@ -378,7 +378,7 @@
       ]
     },
     "зи́мнюю": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "accusative feminine"
@@ -386,7 +386,7 @@
       ]
     },
     "зи́мнею": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "instrumental feminine"
@@ -394,7 +394,7 @@
       ]
     },
     "зи́мними": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "instrumental plural"
@@ -402,7 +402,7 @@
       ]
     },
     "зи́мнем": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "prepositional masculine neuter"
@@ -410,7 +410,7 @@
       ]
     },
     "зи́мня": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "feminine short-form"
@@ -418,7 +418,7 @@
       ]
     },
     "зи́мни": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "plural short-form"

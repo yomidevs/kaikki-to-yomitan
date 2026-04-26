@@ -1,7 +1,7 @@
 {
   "楽しい": {
     "楽しく": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "adverbial",
@@ -10,7 +10,7 @@
       ]
     },
     "楽しかろ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "imperfective stem"
@@ -18,7 +18,7 @@
       ]
     },
     "たのしかろ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "imperfective stem"
@@ -26,7 +26,7 @@
       ]
     },
     "たのしく": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "adverbial",
@@ -35,7 +35,7 @@
       ]
     },
     "たのしい": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "attributive stem",
@@ -44,7 +44,7 @@
       ]
     },
     "楽しけれ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "hypothetical stem"
@@ -52,7 +52,7 @@
       ]
     },
     "たのしけれ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "hypothetical stem"
@@ -60,7 +60,7 @@
       ]
     },
     "楽しかれ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "imperative stem"
@@ -68,7 +68,7 @@
       ]
     },
     "たのしかれ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "imperative stem"
@@ -76,7 +76,7 @@
       ]
     },
     "楽しくない": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "informal negative"
@@ -84,7 +84,7 @@
       ]
     },
     "たのしくない": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "informal negative"
@@ -92,7 +92,7 @@
       ]
     },
     "楽しかった": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "informal past"
@@ -100,7 +100,7 @@
       ]
     },
     "たのしかった": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "informal past"
@@ -108,7 +108,7 @@
       ]
     },
     "楽しくなかった": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "informal past negative"
@@ -116,7 +116,7 @@
       ]
     },
     "たのしくなかった": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "informal past negative"
@@ -124,7 +124,7 @@
       ]
     },
     "楽しいです": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal"
@@ -132,7 +132,7 @@
       ]
     },
     "たのしいです": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal"
@@ -140,7 +140,7 @@
       ]
     },
     "楽しくないです": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal negative"
@@ -148,7 +148,7 @@
       ]
     },
     "たのしくないです": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal negative"
@@ -156,7 +156,7 @@
       ]
     },
     "楽しかったです": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal past"
@@ -164,7 +164,7 @@
       ]
     },
     "たのしかったです": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal past"
@@ -172,7 +172,7 @@
       ]
     },
     "楽しくなかったです": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal past negative"
@@ -180,7 +180,7 @@
       ]
     },
     "たのしくなかったです": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal past negative"
@@ -188,7 +188,7 @@
       ]
     },
     "楽しくて": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "conjunctive"
@@ -196,7 +196,7 @@
       ]
     },
     "たのしくて": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "conjunctive"
@@ -204,7 +204,7 @@
       ]
     },
     "楽しければ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "conditional"
@@ -212,7 +212,7 @@
       ]
     },
     "たのしければ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "conditional"
@@ -220,7 +220,7 @@
       ]
     },
     "楽しかったら": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "past conditional"
@@ -228,7 +228,7 @@
       ]
     },
     "たのしかったら": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "past conditional"
@@ -236,7 +236,7 @@
       ]
     },
     "楽しかろう": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "volitional"
@@ -244,7 +244,7 @@
       ]
     },
     "たのしかろう": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "volitional"
@@ -252,7 +252,7 @@
       ]
     },
     "楽しさ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "noun-from-adj"
@@ -260,7 +260,7 @@
       ]
     },
     "たのしさ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "noun-from-adj"
@@ -268,7 +268,7 @@
       ]
     },
     "樂しい": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "alternative kanji kyūjitai"
@@ -278,7 +278,7 @@
   },
   "好き": {
     "好きな": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "adnominal",
@@ -287,7 +287,7 @@
       ]
     },
     "好きに": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "adverbial"
@@ -295,7 +295,7 @@
       ]
     },
     "好きだろ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "imperfective stem"
@@ -303,7 +303,7 @@
       ]
     },
     "すきだろ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "imperfective stem"
@@ -311,7 +311,7 @@
       ]
     },
     "好きで": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "conjunctive",
@@ -320,7 +320,7 @@
       ]
     },
     "すきで": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "conjunctive",
@@ -329,7 +329,7 @@
       ]
     },
     "好きだ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "stem terminative"
@@ -337,7 +337,7 @@
       ]
     },
     "すきだ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "stem terminative"
@@ -345,7 +345,7 @@
       ]
     },
     "すきな": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "attributive stem"
@@ -353,7 +353,7 @@
       ]
     },
     "好きなら": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "hypothetical stem"
@@ -361,7 +361,7 @@
       ]
     },
     "すきなら": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "hypothetical stem"
@@ -369,7 +369,7 @@
       ]
     },
     "好きであれ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "imperative stem"
@@ -377,7 +377,7 @@
       ]
     },
     "すきであれ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "imperative stem"
@@ -385,7 +385,7 @@
       ]
     },
     "好きではない": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "informal negative"
@@ -393,7 +393,7 @@
       ]
     },
     "好きじゃない": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "informal negative"
@@ -401,7 +401,7 @@
       ]
     },
     "すきではない": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "informal negative"
@@ -409,7 +409,7 @@
       ]
     },
     "すきじゃない": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "informal negative"
@@ -417,7 +417,7 @@
       ]
     },
     "好きだった": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "informal past"
@@ -425,7 +425,7 @@
       ]
     },
     "すきだった": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "informal past"
@@ -433,7 +433,7 @@
       ]
     },
     "好きではなかった": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "informal past negative"
@@ -441,7 +441,7 @@
       ]
     },
     "好きじゃなかった": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "informal past negative"
@@ -449,7 +449,7 @@
       ]
     },
     "すきではなかった": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "informal past negative"
@@ -457,7 +457,7 @@
       ]
     },
     "すきじゃなかった": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "informal past negative"
@@ -465,7 +465,7 @@
       ]
     },
     "好きです": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal"
@@ -473,7 +473,7 @@
       ]
     },
     "すきです": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal"
@@ -481,7 +481,7 @@
       ]
     },
     "好きではありません": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal negative"
@@ -489,7 +489,7 @@
       ]
     },
     "好きじゃありません": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal negative"
@@ -497,7 +497,7 @@
       ]
     },
     "すきではありません": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal negative"
@@ -505,7 +505,7 @@
       ]
     },
     "すきじゃありません": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal negative"
@@ -513,7 +513,7 @@
       ]
     },
     "好きでした": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal past"
@@ -521,7 +521,7 @@
       ]
     },
     "すきでした": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal past"
@@ -529,7 +529,7 @@
       ]
     },
     "好きではありませんでした": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal past negative"
@@ -537,7 +537,7 @@
       ]
     },
     "好きじゃありませんでした": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal past negative"
@@ -545,7 +545,7 @@
       ]
     },
     "すきではありませんでした": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal past negative"
@@ -553,7 +553,7 @@
       ]
     },
     "すきじゃありませんでした": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "formal past negative"
@@ -561,7 +561,7 @@
       ]
     },
     "好きなら（ば）": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "conditional"
@@ -569,7 +569,7 @@
       ]
     },
     "すきなら（ば）": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "conditional"
@@ -577,7 +577,7 @@
       ]
     },
     "好きだったら": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "past conditional"
@@ -585,7 +585,7 @@
       ]
     },
     "すきだったら": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "past conditional"
@@ -593,7 +593,7 @@
       ]
     },
     "好きだろう": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "volitional"
@@ -601,7 +601,7 @@
       ]
     },
     "すきだろう": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "volitional"
@@ -609,7 +609,7 @@
       ]
     },
     "すきに": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "adverbial"
@@ -617,7 +617,7 @@
       ]
     },
     "好きさ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "noun-from-adj"
@@ -625,7 +625,7 @@
       ]
     },
     "すきさ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "noun-from-adj"
@@ -633,7 +633,7 @@
       ]
     },
     "数奇": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "rare alternative kanji"
@@ -641,7 +641,7 @@
       ]
     },
     "数寄": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "rare alternative kanji"

@@ -52,7 +52,7 @@
   },
   "αζωικός": {
     "αζωική": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "accusative/vocative singular feminine",
@@ -61,7 +61,7 @@
       ]
     },
     "αζωικό": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "accusative singular masculine",
@@ -71,7 +71,7 @@
       ]
     },
     "αζωικού": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "genitive singular masculine/neuter"
@@ -79,7 +79,7 @@
       ]
     },
     "αζωικής": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "genitive singular feminine"
@@ -87,7 +87,7 @@
       ]
     },
     "αζωικέ": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "vocative singular masculine"
@@ -95,7 +95,7 @@
       ]
     },
     "αζωικοί": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "nominative/vocative plural masculine"
@@ -103,7 +103,7 @@
       ]
     },
     "αζωικές": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "nominative/accusative/vocative plural feminine"
@@ -111,7 +111,7 @@
       ]
     },
     "αζωικά": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "nominative/accusative/vocative plural neuter"
@@ -119,7 +119,7 @@
       ]
     },
     "αζωικών": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "genitive plural masculine/feminine/neuter"
@@ -127,7 +127,7 @@
       ]
     },
     "αζωικούς": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "accusative plural masculine"
@@ -369,7 +369,7 @@
   },
   "αστροφυσική": {
     "αστροφυσικής": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "genitive singular"
@@ -379,7 +379,7 @@
   },
   "αμελητέος": {
     "αμελητέα": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "accusative/vocative singular feminine",
@@ -389,7 +389,7 @@
       ]
     },
     "αμελητέο": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "accusative singular masculine",
@@ -399,7 +399,7 @@
       ]
     },
     "αμελητέου": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "genitive singular masculine/neuter"
@@ -407,7 +407,7 @@
       ]
     },
     "αμελητέας": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "genitive singular feminine"
@@ -415,7 +415,7 @@
       ]
     },
     "αμελητέε": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "vocative singular masculine"
@@ -423,7 +423,7 @@
       ]
     },
     "αμελητέοι": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "nominative/vocative plural masculine"
@@ -431,7 +431,7 @@
       ]
     },
     "αμελητέες": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "nominative/accusative/vocative plural feminine"
@@ -439,7 +439,7 @@
       ]
     },
     "αμελητέων": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "genitive plural masculine/feminine/neuter"
@@ -447,7 +447,7 @@
       ]
     },
     "αμελητέους": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "accusative plural masculine"

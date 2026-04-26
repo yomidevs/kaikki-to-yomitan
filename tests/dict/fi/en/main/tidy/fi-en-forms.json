@@ -1,7 +1,7 @@
 {
   "iso": {
     "isompi": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "comparative"
@@ -9,7 +9,7 @@
       ]
     },
     "isoin": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "plural instructive",
@@ -18,7 +18,7 @@
       ]
     },
     "isot": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "genitive accusative plural",
@@ -27,7 +27,7 @@
       ]
     },
     "ison": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "genitive accusative singular"
@@ -35,7 +35,7 @@
       ]
     },
     "isojen": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "genitive plural"
@@ -43,7 +43,7 @@
       ]
     },
     "isoa": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "partitive singular"
@@ -51,7 +51,7 @@
       ]
     },
     "isoja": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "partitive plural"
@@ -59,7 +59,7 @@
       ]
     },
     "isossa": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "singular inessive"
@@ -67,7 +67,7 @@
       ]
     },
     "isoissa": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "plural inessive"
@@ -75,7 +75,7 @@
       ]
     },
     "isosta": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "singular elative"
@@ -83,7 +83,7 @@
       ]
     },
     "isoista": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "plural elative"
@@ -91,7 +91,7 @@
       ]
     },
     "isoon": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "singular illative"
@@ -99,7 +99,7 @@
       ]
     },
     "isoihin": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "plural illative"
@@ -107,7 +107,7 @@
       ]
     },
     "isolla": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "singular adessive"
@@ -115,7 +115,7 @@
       ]
     },
     "isoilla": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "plural adessive"
@@ -123,7 +123,7 @@
       ]
     },
     "isolta": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "ablative singular"
@@ -131,7 +131,7 @@
       ]
     },
     "isoilta": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "ablative plural"
@@ -139,7 +139,7 @@
       ]
     },
     "isolle": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "singular allative"
@@ -147,7 +147,7 @@
       ]
     },
     "isoille": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "plural allative"
@@ -155,7 +155,7 @@
       ]
     },
     "isona": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "singular essive"
@@ -163,7 +163,7 @@
       ]
     },
     "isoina": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "plural essive"
@@ -171,7 +171,7 @@
       ]
     },
     "isoksi": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "singular translative"
@@ -179,7 +179,7 @@
       ]
     },
     "isoiksi": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "plural translative"
@@ -187,7 +187,7 @@
       ]
     },
     "isotta": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "singular abessive"
@@ -195,7 +195,7 @@
       ]
     },
     "isoitta": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "plural abessive"
@@ -203,7 +203,7 @@
       ]
     },
     "isoine": {
-      "adj": [
+      "adjective": [
         "extracted",
         [
           "plural comitative"

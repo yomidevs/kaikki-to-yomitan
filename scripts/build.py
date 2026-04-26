@@ -36,6 +36,13 @@ class WhitelistedTag:
     long_tag_aliases: str | list[str]
     popularity_score: int
 
+    @property
+    def ident(self) -> str:
+        """Identifier in rust code. Removes forbidden chars."""
+        return (
+            self.long_tag().replace("-", " ").replace("_", " ").title().replace(" ", "")
+        )
+
     def __post_init__(self) -> None:
         check_valid_short_tag(self.short_tag)
         for tag in self.longs_as_list():
@@ -148,16 +155,70 @@ def generate_tags_rs(
         )
     w("];\n\n")
 
-    wts_pos: list[tuple[str, str]] = []
-    for wt in whitelisted_tags:
-        if wt.category == "partOfSpeech":
-            for alias in wt.longs_as_list():
-                wts_pos.append((alias, wt.short_tag))
+    poses = [wt for wt in whitelisted_tags if wt.category == "partOfSpeech"]
 
-    w(f"pub const POSES: [(&str, &str); {len(wts_pos)}] = [\n")
-    for long, short in wts_pos:
-        w(f'{idt}("{long}", "{short}"),\n')
-    w("];\n")
+    # Note that there is a difference between:
+    # 1. the pos that wiktextract normalizes
+    # 2. the short version we decide upon
+    # 3. The long version we decide upon.
+    #
+    # Sometimes 1. matches 3., for example for "noun" (short: n);
+    # and sometimes 1. matches 2., for example, for "prep" (long: preprosition)
+
+    # Enum definition
+    w("#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]\n")
+    w("pub enum Pos {\n")
+    for pos in poses:
+        w(f"{idt}{pos.ident},\n")
+    # w(f"{idt}Other(Box<str>),\n")
+    w(f"{idt}Unknown,\n")
+    w("}\n\n")
+
+    # From<&str>
+    w("impl From<&str> for Pos {\n")
+    w(f"{idt}fn from(s: &str) -> Self {{\n")
+    w(f"{idt * 2}match s {{\n")
+    for pos in poses:
+        choices = " | ".join(f'"{long}"' for long in pos.longs_as_list())
+        w(f"{idt * 3}{choices} => Self::{pos.ident},\n")
+    # w(f"{idt * 3}_ => Self::Other(s.into()),\n")
+    w(f"{idt * 3}_ => Self::Unknown,\n")
+    w(f"{idt * 2}}}\n")
+    w(f"{idt}}}\n")
+    w("}\n\n")
+
+    # long
+    w("impl Pos {\n")
+    w(f"{idt}pub fn long(&self) -> &str {{\n")
+    w(f"{idt * 2}match self {{\n")
+    for pos in poses:
+        w(f'{idt * 3}Self::{pos.ident} => "{pos.long_tag()}",\n')
+    # w(f"{idt * 3}Self::Other(s) => s,\n")
+    w(f'{idt * 3}Self::Unknown => "unknown",\n')
+    w(f"{idt * 2}}}\n")
+    w(f"{idt}}}\n")
+    w("}\n\n")
+
+    # short
+    w("impl Pos {\n")
+    w(f"{idt}pub fn short(&self) -> &str {{\n")
+    w(f"{idt * 2}match self {{\n")
+    for pos in poses:
+        w(f'{idt * 3}Self::{pos.ident} => "{pos.short_tag}",\n')
+    # w(f"{idt}{idt}{idt}Self::Other(s) => s,\n")
+    w(f'{idt * 3}Self::Unknown => "?",\n')
+    w(f"{idt * 2}}}\n")
+    w(f"{idt}}}\n")
+    w("}\n\n")
+
+    # Serde::serialize as sort
+    w("impl serde::Serialize for Pos {\n")
+    w(
+        f"{idt}fn serialize<S: serde::Serializer>(&self, serializer: S) -> Result<S::Ok, S::Error> {{\n"
+    )
+    w(f"{idt * 2}serializer.serialize_str(self.long())\n")
+    w(f"{idt}}}\n")
+    w("}\n")
 
 
 def generate_lang_rs(langs: list[Lang], f) -> None:

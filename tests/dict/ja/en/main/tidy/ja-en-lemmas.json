@@ -1,7 +1,7 @@
 {
   "楽しい": {
     "たのしい": {
-      "adj": [
+      "adjective": [
         {
           "gloss_tree": {
             "pleasant, delightful, fun, enjoyable": {}
@@ -21,7 +21,7 @@
   },
   "好き": {
     "すき": {
-      "adj": [
+      "adjective": [
         {
           "gloss_tree": {
             "liked, likable": {

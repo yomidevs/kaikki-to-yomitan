@@ -279,20 +279,6 @@
         0
     ],
     [
-        "name",
-        "name",
-        -1,
-        "name",
-        1
-    ],
-    [
-        "surn",
-        "name",
-        -1,
-        "surname",
-        1
-    ],
-    [
         "in-pl",
         "number",
         0,
@@ -386,6 +372,13 @@
         2
     ],
     [
+        "adn",
+        "partOfSpeech",
+        -2,
+        "adnominal",
+        2
+    ],
+    [
         "adv",
         "partOfSpeech",
         -2,
@@ -400,6 +393,13 @@
         "partOfSpeech",
         -2,
         "article",
+        2
+    ],
+    [
+        "char",
+        "partOfSpeech",
+        -2,
+        "character",
         2
     ],
     [
@@ -610,11 +610,18 @@
         2
     ],
     [
-        "adn",
+        "name",
         "partOfSpeech",
-        0,
-        "adnominal",
-        0
+        -1,
+        "name",
+        1
+    ],
+    [
+        "surn",
+        "partOfSpeech",
+        -1,
+        "surname",
+        1
     ],
     [
         "child",
@@ -1808,13 +1815,6 @@
         "usage",
         0,
         "uncommon",
-        0
-    ],
-    [
-        "char",
-        "",
-        0,
-        "character",
         0
     ],
     [
