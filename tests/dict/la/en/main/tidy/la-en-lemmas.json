@@ -24,7 +24,7 @@
                 {
                   "text": "“Oenōtrī coluēre virī; nunc fāma minōrēs",
                   "translation": "“Oenotrian men tilled [the land]; now rumor [has it that their] descendants call the nation ‘Italy’ after the name of its leader, [Italus].”",
-                  "ref": "29 BCE – 19 BCE, Vergilius, Aeneid 1.532–533"
+                  "ref": "29 BCE – 19 BCE, Vergilius, Aeneis 1.532–533"
                 }
               ]
             },
@@ -53,7 +53,7 @@
                 {
                   "text": "Fāma tamen clāra est; et adhūc sine crīmine vīxī.",
                   "translation": "My good name is nevertheless unstained; and so far I have lived without blame.",
-                  "ref": "43 BCE – c. 17 CE, Ovidius, The Heroines 17.17, (translation Benham's Book of Quotations 1948)"
+                  "ref": "43 BCE – c. 17 CE, Ovidius, Heroides 17.17, (translation Benham's Book of Quotations 1948)"
                 },
                 {
                   "text": "Multī fāmam, conscientiam paucī verentur.",
@@ -84,7 +84,7 @@
                 {
                   "text": "“… Date volnera lymphīs / abluam, et, extrēmus sī quis super hālitus errat, / ōre legam.” …",
                   "translation": "“Grant that I may wash her wounds with water, and, if any last breath wanders over her, I will gather it with my lips.”",
-                  "ref": "29 BCE – 19 BCE, Vergilius, Aeneid 4.683-685"
+                  "ref": "29 BCE – 19 BCE, Vergilius, Aeneis 4.683-685"
                 }
               ]
             },
@@ -182,7 +182,7 @@
               ]
             }
           },
-          "etymology_text": "Etymology tree\nProto-Indo-European *leǵ-der.\nProto-Italic *legōder.\nLatin lego\nFrom Proto-Italic *legō, from Proto-Indo-European *léǵeti, from *leǵ-. Cognates include Ancient Greek λέγω (légō, “I speak, I choose, I mean”) and Albanian mbledh. May be related to lēx.\n(to read): Compare typologically разбира́ть (razbirátʹ), разбира́ться (razbirátʹsja) (< брать (bratʹ)), разбо́рчивый (razbórčivyj) (по́черк (póčerk)).",
+          "etymology_text": "Etymology tree\nProto-Indo-European *leǵ-\nProto-Indo-European *-eti\nProto-Indo-European *léǵeti\nProto-Italic *legōder.\nLatin legō\nFrom Proto-Italic *legō, from Proto-Indo-European *léǵeti, from *leǵ-. Cognates include Ancient Greek λέγω (légō, “to speak, to choose, to mean”) and Albanian mbledh. May be related to lēx.\nFor sense 6 (“to read”), compare typologically разбира́ть (razbirátʹ), разбира́ться (razbirátʹsja) (< брать (bratʹ)), разбо́рчивый (razbórčivyj) (по́черк (póčerk)).",
           "head_info_text": "legō (present infinitive legere, perfect active lēgī, supine lēctum); third conjugation",
           "wlink": "https://en.wiktionary.org/wiki/lego#Latin",
           "klink": "https://kaikki.org/dictionary/Latin/meaning/l/le/lego.html"
@@ -233,7 +233,7 @@
                 {
                   "text": "ab ōvō usque ad māla",
                   "translation": "from the beginning to the end\n(literally, “from the egg to the apples”)",
-                  "ref": "c. 35 BCE, Horace, Satires (book 1) 1.3"
+                  "ref": "c. 35 BCE, Horatius, Sermones 1.3.6–7"
                 },
                 {
                   "text": ", Latin Vulgate translation of Psalm 71:8; Canadian national motto\nĀ marī usque ad mare.",
@@ -296,7 +296,7 @@
                 {
                   "text": "Via stultī rēcta in oculīs eius; quī autem sapiēns est audit cōnsilia.",
                   "translation": "The way of a fool is right in his own eyes: but he that is wise hearkeneth unto counsels. (Douay-Rheims trans., Challoner rev.: 1752 CE)",
-                  "ref": "405 CE, Hieronymus, Vulgate Proverbs.12.15"
+                  "ref": "c. 347 CE – 420 CE, Hieronymus, Vulgate Proverbs.12.15"
                 }
               ]
             }
@@ -604,8 +604,14 @@
               ],
               "examples": [
                 {
-                  "text": "Seneca",
-                  "translation": "Poison is drunk from a gold cup."
+                  "text": "omne adeo genvs in terris hominvmqve ferarvmqve et genvs æqvorevm pecvdes pictæqve volvcres in fvrias ignemqve rvvnt",
+                  "translation": "So far does every species on earth of man and beast, whether the aquatic species, livestock, or painted-winged, collapse into the frenzies and the fire",
+                  "ref": "c. 37 BCE – 30 BCE, Vergilius, Georgicon III"
+                },
+                {
+                  "text": "venenum in auro bibitur",
+                  "translation": "Poison is drunk from a gold cup",
+                  "ref": "Seneca"
                 }
               ]
             },
@@ -617,7 +623,7 @@
                 {
                   "text": "lentus in umbrā",
                   "translation": "sluggish under the shade",
-                  "ref": "c. 41 BCE – 39 BCE, Vergilius, Eclogues 1.4"
+                  "ref": "c. 41 BCE – 39 BCE, Vergilius, Eclogae 1.4"
                 }
               ]
             },
