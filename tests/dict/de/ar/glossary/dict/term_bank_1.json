@@ -6,7 +6,27 @@
     "prep",
     0,
     [
-      "في"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "Angabe eines Ortes, innerhalb dessen sich etwas befindet oder tut; Antwort auf die Frage mit „wo“"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "في"
+                }
+              ]
+            }
+          ]
+        }
+      }
     ],
     0,
     ""

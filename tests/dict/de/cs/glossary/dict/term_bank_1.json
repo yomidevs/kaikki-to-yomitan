@@ -483,9 +483,69 @@
     "prep",
     0,
     [
-      "v",
-      "dovnitř",
-      "za"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "Angabe eines Ortes, innerhalb dessen sich etwas befindet oder tut; Antwort auf die Frage mit „wo“"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "v"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "Angabe einer Richtung in etwas hinein; Bestandteil einer Antwort auf die Frage mit „wohin“"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "dovnitř"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "Beschreibung einer Zeitspanne, auf einen bestimmten Zeitpunkt; Antwort auf die Frage mit „wann“"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "za"
+                }
+              ]
+            }
+          ]
+        }
+      }
     ],
     0,
     ""
