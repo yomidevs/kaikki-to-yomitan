@@ -10,14 +10,6 @@
     }
   },
   "comer": {
-    "habercomido": {
-      "verb": [
-        "extracted",
-        [
-          "infinitive impersonal"
-        ]
-      ]
-    },
     "comiendo": {
       "verb": [
         "extracted",
@@ -26,7 +18,7 @@
         ]
       ]
     },
-    "habiendo": {
+    "habiendo comido": {
       "verb": [
         "extracted",
         [
@@ -38,22 +30,7 @@
       "verb": [
         "extracted",
         [
-          "first/second/third-person plural conditional compound",
-          "first/second/third-person plural future indicative compound",
-          "first/second/third-person plural pluperfect subjunctive/indicative",
-          "first/second/third-person plural present perfect indicative compound",
-          "first/second/third-person plural present perfect subjunctive",
-          "first/third-person singular conditional compound",
-          "first/third-person singular future indicative compound",
-          "first/third-person singular pluperfect subjunctive/indicative",
-          "first/third-person singular present perfect indicative compound",
-          "first/third-person singular present perfect subjunctive",
-          "gerund/participle impersonal",
-          "second-person singular conditional vos-form compound",
-          "second-person singular future indicative vos-form compound",
-          "second-person singular pluperfect subjunctive/indicative vos-form",
-          "second-person singular present perfect indicative vos-form compound",
-          "second-person singular present perfect subjunctive vos-form"
+          "participle impersonal"
         ]
       ]
     },

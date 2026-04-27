@@ -17,23 +17,6 @@
     ""
   ],
   [
-    "habercomido",
-    "",
-    "non-lemma",
-    "v",
-    0,
-    [
-      [
-        "comer",
-        [
-          "infinitive impersonal"
-        ]
-      ]
-    ],
-    0,
-    ""
-  ],
-  [
     "comiendo",
     "",
     "non-lemma",
@@ -51,7 +34,7 @@
     ""
   ],
   [
-    "habiendo",
+    "habiendo comido",
     "",
     "non-lemma",
     "v",
@@ -77,97 +60,7 @@
       [
         "comer",
         [
-          "first/second/third-person plural conditional compound"
-        ]
-      ],
-      [
-        "comer",
-        [
-          "first/second/third-person plural future indicative compound"
-        ]
-      ],
-      [
-        "comer",
-        [
-          "first/second/third-person plural pluperfect subjunctive/indicative"
-        ]
-      ],
-      [
-        "comer",
-        [
-          "first/second/third-person plural present perfect indicative compound"
-        ]
-      ],
-      [
-        "comer",
-        [
-          "first/second/third-person plural present perfect subjunctive"
-        ]
-      ],
-      [
-        "comer",
-        [
-          "first/third-person singular conditional compound"
-        ]
-      ],
-      [
-        "comer",
-        [
-          "first/third-person singular future indicative compound"
-        ]
-      ],
-      [
-        "comer",
-        [
-          "first/third-person singular pluperfect subjunctive/indicative"
-        ]
-      ],
-      [
-        "comer",
-        [
-          "first/third-person singular present perfect indicative compound"
-        ]
-      ],
-      [
-        "comer",
-        [
-          "first/third-person singular present perfect subjunctive"
-        ]
-      ],
-      [
-        "comer",
-        [
-          "gerund/participle impersonal"
-        ]
-      ],
-      [
-        "comer",
-        [
-          "second-person singular conditional vos-form compound"
-        ]
-      ],
-      [
-        "comer",
-        [
-          "second-person singular future indicative vos-form compound"
-        ]
-      ],
-      [
-        "comer",
-        [
-          "second-person singular pluperfect subjunctive/indicative vos-form"
-        ]
-      ],
-      [
-        "comer",
-        [
-          "second-person singular present perfect indicative vos-form compound"
-        ]
-      ],
-      [
-        "comer",
-        [
-          "second-person singular present perfect subjunctive vos-form"
+          "participle impersonal"
         ]
       ]
     ],

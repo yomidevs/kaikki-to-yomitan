@@ -7,7 +7,7 @@
 
 use crate::{
     lang::{Edition, Lang},
-    models::kaikki::WordEntry,
+    models::kaikki::{Form, WordEntry},
 };
 
 pub fn preprocess_forms(edition: Edition, source: Lang, entry: &mut WordEntry) {
@@ -37,6 +37,11 @@ fn strip_prefixes(entry: &mut WordEntry, prefixes: &[&str]) {
             }
         }
     }
+}
+
+fn contains_all(form: &Form, tags: &[&str]) -> bool {
+    tags.iter()
+        .all(|ctag| form.tags.iter().any(|tag| tag == ctag))
 }
 
 // See: https://kaikki.org/dewiktionary/Deutsch/meaning/a/au/ausmachen.html
@@ -134,24 +139,16 @@ fn preprocess_forms_ga_en(entry: &mut WordEntry) {
 }
 
 fn preprocess_verb_forms_es_es(entry: &mut WordEntry) {
-    // The auxiliary haber is wrongly parsed as a form
-    #[rustfmt::skip]
-    const HABER_AUX: &[&str] = &[
-        "he", "has", "ha", "hemos", "habéis", "han",
-        "había", "habías", "había", "habíamos", "habíais", "habían",
-        "habré", "habrás", "habrá", "habremos", "habréis", "habrán",
-        "habría", "habrías", "habría", "habríamos", "habríais", "habrían",
-        "haya", "hayas", "haya", "hayamos", "hayáis", "hayan",
-        "hubiera", "hubieras", "hubiera", "hubiéramos", "hubierais", "hubieran",
-        "hubiese", "hubieses", "hubiese", "hubiésemos", "hubieseis", "hubiesen",
-    ];
-    if entry.word != "haber" {
-        entry.forms.retain(|form| {
-            let is_auxiliary_form = HABER_AUX.contains(&form.form.as_str());
+    entry.forms.retain(|form| {
+        let is_compound = form
+            .tags
+            .iter()
+            .any(|tag| matches!(tag.as_str(), "pluperfect" | "compound"));
+        let is_infinitive_impersonal = contains_all(form, &["infinitive", "impersonal"]);
+        let is_perfect_subjunctive = contains_all(form, &["perfect", "subjunctive"]);
 
-            !is_auxiliary_form
-        });
-    }
+        !is_compound && !is_infinitive_impersonal && !is_perfect_subjunctive
+    });
 }
 
 // This function is made based on preprocess_forms_de_de. See that function for more details.
@@ -172,12 +169,8 @@ fn preprocess_verb_forms_fr_fr(entry: &mut WordEntry) {
             .tags
             .iter()
             .any(|tag| matches!(tag.as_str(), "perfect" | "pluperfect" | "anterior"));
-        let is_past_conditional = ["past", "conditional"]
-            .iter()
-            .all(|ctag| form.tags.iter().any(|tag| tag == ctag));
-        let is_past_imperative = ["past", "imperative"]
-            .iter()
-            .all(|ctag| form.tags.iter().any(|tag| tag == ctag));
+        let is_past_conditional = contains_all(form, &["past", "conditional"]);
+        let is_past_imperative = contains_all(form, &["past", "imperative"]);
 
         !is_compound && !is_past_conditional && !is_past_imperative
     });
