@@ -1,0 +1,37 @@
+{
+  "afnokken": {
+    "afnokken": {
+      "verb": [
+        {
+          "gloss_tree": {
+            "weggaan, ophouden": {
+              "tags": [
+                "ergative",
+                "informal"
+              ],
+              "examples": [
+                {
+                  "text": "En daarna was hij afgenokt.",
+                  "bold_text_offsets": [
+                    [
+                      18,
+                      26
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "synonyms": [
+            {
+              "word": "aftaaien"
+            }
+          ],
+          "etymology_text": "verbastering van 19e eeuws Engels knock off ww , slang voor \"ophouden met iets te doen (en vervolgens weggaan)\", op te vatten als samenstelling van af bw en nokken ww , in de betekenis van ‘weggaan’ voor het eerst aangetroffen in 1900 (zie de vindplaats hieronder)",
+          "wlink": "https://nl.wiktionary.org/wiki/afnokken#Dutch",
+          "klink": "https://kaikki.org/nlwiktionary/All%20languages%20combined/meaning/a/af/afnokken.html"
+        }
+      ]
+    }
+  }
+}

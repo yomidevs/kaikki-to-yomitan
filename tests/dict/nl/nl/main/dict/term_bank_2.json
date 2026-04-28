@@ -1,0 +1,813 @@
+[
+  [
+    "nokte af",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "first/second/third-person singular past imperfect indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "afgenokt",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "past participle"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "af te nokken",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "present imperfect active infinitive long-form"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zullen afnokken\naf zullen nokken",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "future imperfect active infinitive short-form"
+        ]
+      ],
+      [
+        "afnokken",
+        [
+          "future subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "te zullen afnokken\naf te zullen nokken",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "future imperfect active infinitive long-form"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zijn afgenokt",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "first/second/third-person present perfect"
+        ]
+      ],
+      [
+        "afnokken",
+        [
+          "present perfect active infinitive short-form"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "te zijn afgenokt",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "present perfect active infinitive long-form"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "afgenokt zullen zijn",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "future perfect active infinitive short-form"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "afgenokt te zullen zijn",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "future perfect active infinitive long-form"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "afnokkend",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "imperfect participle"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "ev.\n nok af",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "imperative"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "nok af",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "first-person singular present imperfect indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "nokt af",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "second/third-person singular present imperfect indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "nokken af",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "first/second/third-person plural present imperfect indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "nokten af",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "first/second/third-person plural past imperfect indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zal afnokken",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "first/second/third-person singular future imperfect indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zult afnokken",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "second-person singular future imperfect indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zullen afnokken",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "first/second/third-person plural future imperfect indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zou afnokken",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "first/second/third-person singular imperfect conditional indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zou(dt) afnokken",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "second-person singular imperfect conditional indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zoudt afnokken",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "second-person singular imperfect conditional indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zouden afnokken",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "first/second/third-person plural imperfect conditional indicative main-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "afnok",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "present subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "afnokt",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "present subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "afnokte",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "past subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "afnokten",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "past subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zal afnokken\naf zal nokken",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "future subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zult afnokken\naf zult/zal nokken",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "future subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zal afnokken\naf zult/zal nokken",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "future subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zult afnokken\naf zult nokken",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "future subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zou afnokken\naf zou nokken",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "conditional subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zou(dt) afnokken\naf zou(dt) nokken",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "conditional subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zoudt afnokken\naf zoudt nokken",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "conditional subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zouden afnokken\naf zouden nokken",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "conditional subordinate-clause"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "ben afgenokt",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "first-person present perfect"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "bent afgenokt",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "second-person present perfect"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "is afgenokt",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "second/third-person present perfect"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zijt afgenokt",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "second-person present perfect"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "was afgenokt",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "first/second/third-person past perfect"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "waart afgenokt",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "second-person past perfect"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "waren afgenokt",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "first/second/third-person past perfect"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zal afgenokt zijn",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "first/second/third-person future perfect"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zult afgenokt zijn",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "second-person future perfect"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zullen afgenokt zijn",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "first/second/third-person future perfect"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zou afgenokt zijn",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "first/second/third-person perfect conditional"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zoudt afgenokt zijn",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "second-person perfect conditional"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ],
+  [
+    "zouden afgenokt zijn",
+    "",
+    "non-lemma",
+    "v",
+    0,
+    [
+      [
+        "afnokken",
+        [
+          "first/second/third-person perfect conditional"
+        ]
+      ]
+    ],
+    0,
+    ""
+  ]
+]

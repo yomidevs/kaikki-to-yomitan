@@ -1,0 +1,382 @@
+{
+  "afnokken": {
+    "nokte af": {
+      "verb": [
+        "extracted",
+        [
+          "first/second/third-person singular past imperfect indicative main-clause"
+        ]
+      ]
+    },
+    "afgenokt": {
+      "verb": [
+        "extracted",
+        [
+          "past participle"
+        ]
+      ]
+    },
+    "af te nokken": {
+      "verb": [
+        "extracted",
+        [
+          "present imperfect active infinitive long-form"
+        ]
+      ]
+    },
+    "zullen afnokken\naf zullen nokken": {
+      "verb": [
+        "extracted",
+        [
+          "future imperfect active infinitive short-form",
+          "future subordinate-clause"
+        ]
+      ]
+    },
+    "te zullen afnokken\naf te zullen nokken": {
+      "verb": [
+        "extracted",
+        [
+          "future imperfect active infinitive long-form"
+        ]
+      ]
+    },
+    "zijn afgenokt": {
+      "verb": [
+        "extracted",
+        [
+          "first/second/third-person present perfect",
+          "present perfect active infinitive short-form"
+        ]
+      ]
+    },
+    "te zijn afgenokt": {
+      "verb": [
+        "extracted",
+        [
+          "present perfect active infinitive long-form"
+        ]
+      ]
+    },
+    "afgenokt zullen zijn": {
+      "verb": [
+        "extracted",
+        [
+          "future perfect active infinitive short-form"
+        ]
+      ]
+    },
+    "afgenokt te zullen zijn": {
+      "verb": [
+        "extracted",
+        [
+          "future perfect active infinitive long-form"
+        ]
+      ]
+    },
+    "afnokkend": {
+      "verb": [
+        "extracted",
+        [
+          "imperfect participle"
+        ]
+      ]
+    },
+    "ev.\n nok af": {
+      "verb": [
+        "extracted",
+        [
+          "imperative"
+        ]
+      ]
+    },
+    "nok af": {
+      "verb": [
+        "extracted",
+        [
+          "first-person singular present imperfect indicative main-clause"
+        ]
+      ]
+    },
+    "nokt af": {
+      "verb": [
+        "extracted",
+        [
+          "second/third-person singular present imperfect indicative main-clause"
+        ]
+      ]
+    },
+    "nokken af": {
+      "verb": [
+        "extracted",
+        [
+          "first/second/third-person plural present imperfect indicative main-clause"
+        ]
+      ]
+    },
+    "nokten af": {
+      "verb": [
+        "extracted",
+        [
+          "first/second/third-person plural past imperfect indicative main-clause"
+        ]
+      ]
+    },
+    "zal afnokken": {
+      "verb": [
+        "extracted",
+        [
+          "first/second/third-person singular future imperfect indicative main-clause"
+        ]
+      ]
+    },
+    "zult afnokken": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular future imperfect indicative main-clause"
+        ]
+      ]
+    },
+    "zullen afnokken": {
+      "verb": [
+        "extracted",
+        [
+          "first/second/third-person plural future imperfect indicative main-clause"
+        ]
+      ]
+    },
+    "zou afnokken": {
+      "verb": [
+        "extracted",
+        [
+          "first/second/third-person singular imperfect conditional indicative main-clause"
+        ]
+      ]
+    },
+    "zou(dt) afnokken": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular imperfect conditional indicative main-clause"
+        ]
+      ]
+    },
+    "zoudt afnokken": {
+      "verb": [
+        "extracted",
+        [
+          "second-person singular imperfect conditional indicative main-clause"
+        ]
+      ]
+    },
+    "zouden afnokken": {
+      "verb": [
+        "extracted",
+        [
+          "first/second/third-person plural imperfect conditional indicative main-clause"
+        ]
+      ]
+    },
+    "afnok": {
+      "verb": [
+        "extracted",
+        [
+          "present subordinate-clause"
+        ]
+      ]
+    },
+    "afnokt": {
+      "verb": [
+        "extracted",
+        [
+          "present subordinate-clause"
+        ]
+      ]
+    },
+    "afnokte": {
+      "verb": [
+        "extracted",
+        [
+          "past subordinate-clause"
+        ]
+      ]
+    },
+    "afnokten": {
+      "verb": [
+        "extracted",
+        [
+          "past subordinate-clause"
+        ]
+      ]
+    },
+    "zal afnokken\naf zal nokken": {
+      "verb": [
+        "extracted",
+        [
+          "future subordinate-clause"
+        ]
+      ]
+    },
+    "zult afnokken\naf zult/zal nokken": {
+      "verb": [
+        "extracted",
+        [
+          "future subordinate-clause"
+        ]
+      ]
+    },
+    "zal afnokken\naf zult/zal nokken": {
+      "verb": [
+        "extracted",
+        [
+          "future subordinate-clause"
+        ]
+      ]
+    },
+    "zult afnokken\naf zult nokken": {
+      "verb": [
+        "extracted",
+        [
+          "future subordinate-clause"
+        ]
+      ]
+    },
+    "zou afnokken\naf zou nokken": {
+      "verb": [
+        "extracted",
+        [
+          "conditional subordinate-clause"
+        ]
+      ]
+    },
+    "zou(dt) afnokken\naf zou(dt) nokken": {
+      "verb": [
+        "extracted",
+        [
+          "conditional subordinate-clause"
+        ]
+      ]
+    },
+    "zoudt afnokken\naf zoudt nokken": {
+      "verb": [
+        "extracted",
+        [
+          "conditional subordinate-clause"
+        ]
+      ]
+    },
+    "zouden afnokken\naf zouden nokken": {
+      "verb": [
+        "extracted",
+        [
+          "conditional subordinate-clause"
+        ]
+      ]
+    },
+    "ben afgenokt": {
+      "verb": [
+        "extracted",
+        [
+          "first-person present perfect"
+        ]
+      ]
+    },
+    "bent afgenokt": {
+      "verb": [
+        "extracted",
+        [
+          "second-person present perfect"
+        ]
+      ]
+    },
+    "is afgenokt": {
+      "verb": [
+        "extracted",
+        [
+          "second/third-person present perfect"
+        ]
+      ]
+    },
+    "zijt afgenokt": {
+      "verb": [
+        "extracted",
+        [
+          "second-person present perfect"
+        ]
+      ]
+    },
+    "was afgenokt": {
+      "verb": [
+        "extracted",
+        [
+          "first/second/third-person past perfect"
+        ]
+      ]
+    },
+    "waart afgenokt": {
+      "verb": [
+        "extracted",
+        [
+          "second-person past perfect"
+        ]
+      ]
+    },
+    "waren afgenokt": {
+      "verb": [
+        "extracted",
+        [
+          "first/second/third-person past perfect"
+        ]
+      ]
+    },
+    "zal afgenokt zijn": {
+      "verb": [
+        "extracted",
+        [
+          "first/second/third-person future perfect"
+        ]
+      ]
+    },
+    "zult afgenokt zijn": {
+      "verb": [
+        "extracted",
+        [
+          "second-person future perfect"
+        ]
+      ]
+    },
+    "zullen afgenokt zijn": {
+      "verb": [
+        "extracted",
+        [
+          "first/second/third-person future perfect"
+        ]
+      ]
+    },
+    "zou afgenokt zijn": {
+      "verb": [
+        "extracted",
+        [
+          "first/second/third-person perfect conditional"
+        ]
+      ]
+    },
+    "zoudt afgenokt zijn": {
+      "verb": [
+        "extracted",
+        [
+          "second-person perfect conditional"
+        ]
+      ]
+    },
+    "zouden afgenokt zijn": {
+      "verb": [
+        "extracted",
+        [
+          "first/second/third-person perfect conditional"
+        ]
+      ]
+    }
+  }
+}

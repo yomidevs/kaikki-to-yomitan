@@ -1,0 +1,167 @@
+[
+  [
+    "afnokken",
+    "",
+    "v inf",
+    "v",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": [
+          {
+            "tag": "div",
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "preamble"
+                },
+                "content": [
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Etymology"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Etymologie"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
+                        },
+                        "content": "verbastering van 19e eeuws Engels knock off ww , slang voor \"ophouden met iets te doen (en vervolgens weggaan)\", op te vatten als samenstelling van af bw en nokken ww , in de betekenis van ‘weggaan’ voor het eerst aangetroffen in 1900 (zie de vindplaats hieronder)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "ol",
+            "data": {
+              "content": "glosses"
+            },
+            "content": [
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      "weggaan, ophouden",
+                      {
+                        "tag": "details",
+                        "data": {
+                          "content": "details-entry-examples"
+                        },
+                        "content": [
+                          {
+                            "tag": "summary",
+                            "data": {
+                              "content": "summary-entry"
+                            },
+                            "content": "1 voorbeeld"
+                          },
+                          {
+                            "tag": "div",
+                            "data": {
+                              "content": "extra-info"
+                            },
+                            "content": {
+                              "tag": "div",
+                              "data": {
+                                "content": "example-sentence"
+                              },
+                              "content": [
+                                {
+                                  "tag": "div",
+                                  "data": {
+                                    "content": "example-sentence-a"
+                                  },
+                                  "content": [
+                                    "En daarna was hij ",
+                                    {
+                                      "tag": "span",
+                                      "data": {
+                                        "content": "bold-text"
+                                      },
+                                      "content": "afgenokt"
+                                    },
+                                    "."
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "synonyms"
+            },
+            "content": [
+              {
+                "tag": "div",
+                "data": {
+                  "content": "synonyms-label"
+                },
+                "content": "Synoniemen"
+              },
+              {
+                "tag": "ul",
+                "data": {
+                  "content": "synonyms-list"
+                },
+                "content": [
+                  {
+                    "tag": "li",
+                    "data": {
+                      "content": "synonym-item"
+                    },
+                    "content": "aftaaien"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "data": {
+              "content": "backlink"
+            },
+            "content": [
+              {
+                "tag": "a",
+                "href": "https://nl.wiktionary.org/wiki/afnokken#Dutch",
+                "content": "Wiktionary"
+              },
+              " | ",
+              {
+                "tag": "a",
+                "href": "https://kaikki.org/nlwiktionary/All%20languages%20combined/meaning/a/af/afnokken.html",
+                "content": "Kaikki"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    0,
+    ""
+  ]
+]

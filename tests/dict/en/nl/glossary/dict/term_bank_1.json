@@ -1,0 +1,195 @@
+[
+  [
+    "bring",
+    "",
+    "v",
+    "v",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "to transport toward somebody/somewhere"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "brengen"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "falcon",
+    "",
+    "n",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "bird of the genus Falco"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "valk"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "participate",
+    "",
+    "v",
+    "v",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "to join in, to take part, to involve oneself"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "meedoen"
+                },
+                {
+                  "tag": "li",
+                  "content": "deelnemen"
+                },
+                {
+                  "tag": "li",
+                  "content": "participeren"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "expansive",
+    "",
+    "adj",
+    "adj",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "Comprehensive in scope or extent"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "omvattend"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "magical",
+    "",
+    "adj",
+    "adj",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "relating to magic"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "magisch"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "enchanting"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "betoverend"
+                },
+                {
+                  "tag": "li",
+                  "content": "magisch"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ]
+]

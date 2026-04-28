@@ -1,0 +1,151 @@
+[
+  [
+    "Rock",
+    "",
+    "n",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "Musik: populäre Musikrichtung, die Anfang der 1950er Jahre in den USA entstand"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "rock"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "Garage",
+    "",
+    "n",
+    "n",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "Raum zum dauerhaften Ab- und Unterstellen von Kraftfahrzeugen"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "garage"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "Peter",
+    "",
+    "name",
+    "name",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "männlicher Vorname"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "Pieter"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ],
+  [
+    "sehen",
+    "",
+    "v",
+    "v",
+    0,
+    [
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "aktiv und passiv wahrnehmen über das Sinnesorgan Auge"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "zien"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "übertragen: erkennen"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "zien"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    0,
+    ""
+  ]
+]
