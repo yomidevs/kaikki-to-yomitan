@@ -21,6 +21,7 @@ pub fn preprocess_forms(edition: Edition, source: Lang, entry: &mut WordEntry) {
         (Edition::Es, Lang::Es, "verb") => preprocess_verb_forms_es_es(entry),
         (Edition::Fr, Lang::Fr, "verb") => preprocess_verb_forms_fr_fr(entry),
         (Edition::It, Lang::It, "verb") => preprocess_verb_forms_it_it(entry),
+        (Edition::Nl, Lang::Nl, "verb") => preprocess_verb_forms_nl_nl(entry),
         (Edition::Pt, Lang::Pt, "verb") => preprocess_verb_forms_pt_pt(entry),
         _ => (),
     }
@@ -202,6 +203,22 @@ fn preprocess_verb_forms_it_it(entry: &mut WordEntry) {
 
         // mangiarsi (coniugazione)
         !is_compound && !form.form.ends_with(')')
+    });
+}
+
+fn preprocess_verb_forms_nl_nl(entry: &mut WordEntry) {
+    entry.forms.retain(|form| {
+        // These are unusable in this shape...
+        // * For the newlines, see https://github.com/tatuylonen/wiktextract/issues/1638
+        // * "zou(dt) afnokken"
+        let has_newline_or_parens = form.form.contains(['\n', '(']);
+
+        let is_compound = form
+            .tags
+            .iter()
+            .any(|tag| matches!(tag.as_str(), "perfect"));
+
+        !has_newline_or_parens && !is_compound
     });
 }
 
