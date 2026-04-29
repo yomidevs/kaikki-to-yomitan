@@ -503,12 +503,17 @@ pub(crate) fn process_main(edition: Edition, source: Lang, entry: &WordEntry, ir
     //     _ => (),
     // };
 
+    let reading = match get_reading(edition, source, entry) {
+        Some(reading) if reading != entry.word => reading,
+        _ => String::new(),
+    };
+
     if entry.contains_no_gloss() {
         process_no_gloss(edition, entry, irs);
     } else {
         irs.insert_lemma(
             &entry.word,
-            &get_reading(edition, source, entry).unwrap_or_else(|| String::new()),
+            &reading,
             &entry.pos,
             process_entry(edition, source, entry),
         );

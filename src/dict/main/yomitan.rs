@@ -44,12 +44,6 @@ fn to_yomitan_lemma(
 ) -> TermInfo {
     let short_pos = pos.short();
 
-    let yomitan_reading = if reading == lemma {
-        String::new()
-    } else {
-        reading.to_string()
-    };
-
     let common_tag_infos_found = get_found_tags(pos, info);
     let common_short_tags_found: Vec<_> = common_tag_infos_found
         .iter()
@@ -90,7 +84,7 @@ fn to_yomitan_lemma(
 
     TermInfo::new(
         lemma.to_string(),
-        yomitan_reading,
+        reading.to_string(),
         definition_tags,
         get_rule_identifier(short_pos),
         vec![DetailedDefinition::structured(detailed_definition_content)],
