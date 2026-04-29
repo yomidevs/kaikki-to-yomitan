@@ -1,4 +1,4 @@
-//! Other, non-main dictionaries: ipa and glossaries.
+//! Ipa and IpaMerged dictionaries.
 
 use crate::{
     Map,

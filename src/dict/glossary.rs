@@ -1,3 +1,5 @@
+//! Glossary and GlossaryExtended dictionaries.
+
 use crate::{
     Map, Set,
     cli::{GlossaryArgs, GlossaryExtendedArgs, LangSpecs},
