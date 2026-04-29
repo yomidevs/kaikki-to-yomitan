@@ -1,6 +1,6 @@
 {
   "Rock": {
-    "Rock": {
+    "": {
       "noun": [
         {
           "gloss_tree": {
@@ -62,7 +62,7 @@
     }
   },
   "Garage": {
-    "Garage": {
+    "": {
       "noun": [
         {
           "gloss_tree": {
@@ -170,7 +170,7 @@
     }
   },
   "ausmachen": {
-    "ausmachen": {
+    "": {
       "verb": [
         {
           "gloss_tree": {
@@ -393,7 +393,7 @@
     }
   },
   "Peter": {
-    "Peter": {
+    "": {
       "name": [
         {
           "gloss_tree": {
@@ -441,7 +441,7 @@
     }
   },
   "nun": {
-    "nun": {
+    "": {
       "adverb": [
         {
           "gloss_tree": {
@@ -540,7 +540,7 @@
     }
   },
   "in": {
-    "in": {
+    "": {
       "preposition": [
         {
           "gloss_tree": {
@@ -732,7 +732,7 @@
     }
   },
   "anhaben": {
-    "anhaben": {
+    "": {
       "verb": [
         {
           "gloss_tree": {
@@ -815,7 +815,7 @@
     }
   },
   "sehen": {
-    "sehen": {
+    "": {
       "verb": [
         {
           "gloss_tree": {
@@ -896,7 +896,7 @@
     }
   },
   "unauffällig": {
-    "unauffällig": {
+    "": {
       "adjective": [
         {
           "gloss_tree": {
@@ -949,7 +949,7 @@
     }
   },
   "Nantes": {
-    "Nantes": {
+    "": {
       "name": [
         {
           "gloss_tree": {
@@ -988,7 +988,7 @@
     }
   },
   "Abbenhaus": {
-    "Abbenhaus": {
+    "": {
       "name": [
         {
           "gloss_tree": {
@@ -1020,7 +1020,7 @@
     }
   },
   "Neugeborene": {
-    "Neugeborene": {
+    "": {
       "noun": [
         {
           "gloss_tree": {

@@ -1,6 +1,6 @@
 {
   "prendre": {
-    "prendre": {
+    "": {
       "verb": [
         {
           "gloss_tree": {
@@ -331,7 +331,7 @@
     }
   },
   "sembler": {
-    "sembler": {
+    "": {
       "verb": [
         {
           "gloss_tree": {
@@ -373,7 +373,7 @@
     }
   },
   "chambre": {
-    "chambre": {
+    "": {
       "noun": [
         {
           "gloss_tree": {
@@ -414,7 +414,7 @@
     }
   },
   "d'accord": {
-    "d'accord": {
+    "": {
       "adverb": [
         {
           "gloss_tree": {

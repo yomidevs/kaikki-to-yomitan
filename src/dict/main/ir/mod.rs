@@ -508,7 +508,7 @@ pub(crate) fn process_main(edition: Edition, source: Lang, entry: &WordEntry, ir
     } else {
         irs.insert_lemma(
             &entry.word,
-            &get_reading(edition, source, entry).unwrap_or_else(|| entry.word.clone()),
+            &get_reading(edition, source, entry).unwrap_or_else(|| String::new()),
             &entry.pos,
             process_entry(edition, source, entry),
         );

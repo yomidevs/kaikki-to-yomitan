@@ -1,6 +1,6 @@
 {
   "pflegen": {
-    "pflegen": {
+    "": {
       "verb": [
         {
           "gloss_tree": {
@@ -357,7 +357,7 @@
     }
   },
   "Fuchs": {
-    "Fuchs": {
+    "": {
       "noun": [
         {
           "gloss_tree": {
@@ -535,7 +535,7 @@
     }
   },
   "Herz": {
-    "Herz": {
+    "": {
       "noun": [
         {
           "gloss_tree": {
@@ -574,7 +574,7 @@
     }
   },
   "Fahrer": {
-    "Fahrer": {
+    "": {
       "noun": [
         {
           "gloss_tree": {
@@ -596,7 +596,7 @@
     }
   },
   "von": {
-    "von": {
+    "": {
       "preposition": [
         {
           "gloss_tree": {
@@ -777,7 +777,7 @@
     }
   },
   "Base": {
-    "Base": {
+    "": {
       "noun": [
         {
           "gloss_tree": {
@@ -821,7 +821,7 @@
     }
   },
   "gegenüber": {
-    "gegenüber": {
+    "": {
       "preposition": [
         {
           "gloss_tree": {
