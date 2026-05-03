@@ -28,10 +28,11 @@
   <option value="bcl">Bikol, Central</option>
   <option value="bg">Bulgarian</option>
   <option value="my">Burmese</option>
-  <option value="yue">Cantonese</option>
   <option value="ca">Catalan</option>
   <option value="ceb">Cebuano</option>
-  <option value="zh">Chinese, Mandarin</option>
+  <option value="zh">Chinese</option>
+  <option value="yue">Chinese, Cantonese</option>
+  <option value="cmn">Chinese, Mandarin</option>
   <option value="cim">Cimbrian</option>
   <option value="cop">Coptic</option>
   <option value="kw">Cornish</option>
@@ -169,7 +170,7 @@
   <td><div class="dl-target-combobox">
   <input class="dl-target-search" placeholder="Search target..." autocomplete="off">
   <div class="dl-target-dropdown">
-    <option value="zh">Chinese, Mandarin</option>
+    <option value="zh">Chinese</option>
   <option value="cs">Czech</option>
   <option value="nl">Dutch</option>
   <option value="en">English</option>
@@ -222,10 +223,11 @@
   <option value="bcl">Bikol, Central</option>
   <option value="bg">Bulgarian</option>
   <option value="my">Burmese</option>
-  <option value="yue">Cantonese</option>
   <option value="ca">Catalan</option>
   <option value="ceb">Cebuano</option>
-  <option value="zh">Chinese, Mandarin</option>
+  <option value="zh">Chinese</option>
+  <option value="yue">Chinese, Cantonese</option>
+  <option value="cmn">Chinese, Mandarin</option>
   <option value="cim">Cimbrian</option>
   <option value="cop">Coptic</option>
   <option value="kw">Cornish</option>
@@ -362,7 +364,7 @@
   <td><div class="dl-target-combobox">
   <input class="dl-target-search" placeholder="Search target..." autocomplete="off">
   <div class="dl-target-dropdown">
-    <option value="zh">Chinese, Mandarin</option>
+    <option value="zh">Chinese</option>
   <option value="cs">Czech</option>
   <option value="nl">Dutch</option>
   <option value="en">English</option>
@@ -415,10 +417,11 @@
   <option value="bcl">Bikol, Central</option>
   <option value="bg">Bulgarian</option>
   <option value="my">Burmese</option>
-  <option value="yue">Cantonese</option>
   <option value="ca">Catalan</option>
   <option value="ceb">Cebuano</option>
-  <option value="zh">Chinese, Mandarin</option>
+  <option value="zh">Chinese</option>
+  <option value="yue">Chinese, Cantonese</option>
+  <option value="cmn">Chinese, Mandarin</option>
   <option value="cim">Cimbrian</option>
   <option value="cop">Coptic</option>
   <option value="kw">Cornish</option>
@@ -560,7 +563,7 @@
   <td><div class="dl-source-combobox">
   <input class="dl-source-search" placeholder="Search source..." autocomplete="off">
   <div class="dl-source-dropdown">
-    <option value="zh">Chinese, Mandarin</option>
+    <option value="zh">Chinese</option>
   <option value="cs">Czech</option>
   <option value="nl">Dutch</option>
   <option value="en">English</option>
@@ -607,10 +610,11 @@
   <option value="bcl">Bikol, Central</option>
   <option value="bg">Bulgarian</option>
   <option value="my">Burmese</option>
-  <option value="yue">Cantonese</option>
   <option value="ca">Catalan</option>
   <option value="ceb">Cebuano</option>
-  <option value="zh">Chinese, Mandarin</option>
+  <option value="zh">Chinese</option>
+  <option value="yue">Chinese, Cantonese</option>
+  <option value="cmn">Chinese, Mandarin</option>
   <option value="cim">Cimbrian</option>
   <option value="cop">Coptic</option>
   <option value="kw">Cornish</option>

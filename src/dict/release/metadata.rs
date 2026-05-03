@@ -156,7 +156,7 @@ fn scan_and_group(root_dir: &Path, stats: &TimingStats) -> Result<Metadata> {
         let time = if let Some(time) = timings.get(&timing_key) {
             time.as_millis()
         } else {
-            tracing::error!("Key {timing_key} was not found");
+            tracing::warn!("Key {timing_key} was not found");
             0
         };
 
