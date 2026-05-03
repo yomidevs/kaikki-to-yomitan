@@ -18,7 +18,27 @@
     "n",
     0,
     [
-      "gorille"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "θηλαστικό ζώο"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "gorille"
+                }
+              ]
+            }
+          ]
+        }
+      }
     ],
     0,
     ""

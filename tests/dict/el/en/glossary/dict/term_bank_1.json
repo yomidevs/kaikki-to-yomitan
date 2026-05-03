@@ -18,8 +18,48 @@
     "n",
     0,
     [
-      "gorilla",
-      "bodyguard"
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "θηλαστικό ζώο"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "gorilla"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "structured-content",
+        "content": {
+          "tag": "div",
+          "content": [
+            {
+              "tag": "span",
+              "content": "σωματοφύλακας"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "bodyguard"
+                }
+              ]
+            }
+          ]
+        }
+      }
     ],
     0,
     ""
