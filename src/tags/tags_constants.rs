@@ -1,7 +1,7 @@
 //! This file was generated and should not be edited directly.
 //! The source code can be found at scripts/build.py
 
-pub const TAG_ORDER: [&str; 81] = [
+pub const TAG_ORDER: [&str; 82] = [
     "informal",
     "formal",
     "nominative",
@@ -39,6 +39,7 @@ pub const TAG_ORDER: [&str; 81] = [
     "superlative",
     "present",
     "past",
+    "non-past",
     "future",
     "future-i",
     "future-ii",

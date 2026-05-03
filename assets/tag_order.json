@@ -53,6 +53,7 @@
     "tenses": [
         "present",
         "past",
+        "non-past",
         "future",
         "future-i",
         "future-ii",

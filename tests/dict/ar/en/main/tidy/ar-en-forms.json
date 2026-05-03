@@ -4,7 +4,7 @@
       "verb": [
         "extracted",
         [
-          "third-person singular masculine imperfective active indicative non-past"
+          "third-person singular masculine non-past imperfective active indicative"
         ]
       ]
     },
@@ -160,7 +160,7 @@
       "verb": [
         "extracted",
         [
-          "first-person singular masculine/feminine imperfective active indicative non-past"
+          "first-person singular masculine/feminine non-past imperfective active indicative"
         ]
       ]
     },
@@ -168,8 +168,8 @@
       "verb": [
         "extracted",
         [
-          "second-person singular masculine imperfective active indicative non-past",
-          "third-person singular feminine imperfective active indicative non-past"
+          "second-person singular masculine non-past imperfective active indicative",
+          "third-person singular feminine non-past imperfective active indicative"
         ]
       ]
     },
@@ -177,8 +177,8 @@
       "verb": [
         "extracted",
         [
-          "second-person masculine imperfective active indicative dual non-past",
-          "second/third-person feminine imperfective active indicative dual non-past"
+          "second-person masculine non-past imperfective active indicative dual",
+          "second/third-person feminine non-past imperfective active indicative dual"
         ]
       ]
     },
@@ -186,7 +186,7 @@
       "verb": [
         "extracted",
         [
-          "third-person masculine imperfective active indicative dual non-past"
+          "third-person masculine non-past imperfective active indicative dual"
         ]
       ]
     },
@@ -194,7 +194,7 @@
       "verb": [
         "extracted",
         [
-          "first-person plural masculine/feminine imperfective active indicative non-past"
+          "first-person plural masculine/feminine non-past imperfective active indicative"
         ]
       ]
     },
@@ -202,7 +202,7 @@
       "verb": [
         "extracted",
         [
-          "second-person plural masculine imperfective active indicative non-past"
+          "second-person plural masculine non-past imperfective active indicative"
         ]
       ]
     },
@@ -210,7 +210,7 @@
       "verb": [
         "extracted",
         [
-          "third-person plural masculine imperfective active indicative non-past"
+          "third-person plural masculine non-past imperfective active indicative"
         ]
       ]
     },
@@ -218,7 +218,7 @@
       "verb": [
         "extracted",
         [
-          "second-person singular feminine imperfective active indicative non-past"
+          "second-person singular feminine non-past imperfective active indicative"
         ]
       ]
     },
@@ -228,7 +228,7 @@
         [
           "second-person plural feminine active jussive",
           "second-person plural feminine active subjunctive",
-          "second-person plural feminine imperfective active indicative non-past"
+          "second-person plural feminine non-past imperfective active indicative"
         ]
       ]
     },
@@ -238,7 +238,7 @@
         [
           "third-person plural feminine active jussive",
           "third-person plural feminine active subjunctive",
-          "third-person plural feminine imperfective active indicative non-past"
+          "third-person plural feminine non-past imperfective active indicative"
         ]
       ]
     },
@@ -503,7 +503,7 @@
       "verb": [
         "extracted",
         [
-          "first-person singular masculine/feminine imperfective passive indicative non-past"
+          "first-person singular masculine/feminine non-past imperfective passive indicative"
         ]
       ]
     },
@@ -511,8 +511,8 @@
       "verb": [
         "extracted",
         [
-          "second-person singular masculine imperfective passive indicative non-past",
-          "third-person singular feminine imperfective passive indicative non-past"
+          "second-person singular masculine non-past imperfective passive indicative",
+          "third-person singular feminine non-past imperfective passive indicative"
         ]
       ]
     },
@@ -520,7 +520,7 @@
       "verb": [
         "extracted",
         [
-          "third-person singular masculine imperfective passive indicative non-past"
+          "third-person singular masculine non-past imperfective passive indicative"
         ]
       ]
     },
@@ -528,8 +528,8 @@
       "verb": [
         "extracted",
         [
-          "second-person masculine imperfective passive indicative dual non-past",
-          "second/third-person feminine imperfective passive indicative dual non-past"
+          "second-person masculine non-past imperfective passive indicative dual",
+          "second/third-person feminine non-past imperfective passive indicative dual"
         ]
       ]
     },
@@ -537,7 +537,7 @@
       "verb": [
         "extracted",
         [
-          "third-person masculine imperfective passive indicative dual non-past"
+          "third-person masculine non-past imperfective passive indicative dual"
         ]
       ]
     },
@@ -545,7 +545,7 @@
       "verb": [
         "extracted",
         [
-          "first-person plural masculine/feminine imperfective passive indicative non-past"
+          "first-person plural masculine/feminine non-past imperfective passive indicative"
         ]
       ]
     },
@@ -553,7 +553,7 @@
       "verb": [
         "extracted",
         [
-          "second-person plural masculine imperfective passive indicative non-past"
+          "second-person plural masculine non-past imperfective passive indicative"
         ]
       ]
     },
@@ -561,7 +561,7 @@
       "verb": [
         "extracted",
         [
-          "third-person plural masculine imperfective passive indicative non-past"
+          "third-person plural masculine non-past imperfective passive indicative"
         ]
       ]
     },
@@ -569,7 +569,7 @@
       "verb": [
         "extracted",
         [
-          "second-person singular feminine imperfective passive indicative non-past"
+          "second-person singular feminine non-past imperfective passive indicative"
         ]
       ]
     },
@@ -577,7 +577,7 @@
       "verb": [
         "extracted",
         [
-          "second-person plural feminine imperfective passive indicative non-past",
+          "second-person plural feminine non-past imperfective passive indicative",
           "second-person plural feminine passive jussive",
           "second-person plural feminine passive subjunctive"
         ]
@@ -587,7 +587,7 @@
       "verb": [
         "extracted",
         [
-          "third-person plural feminine imperfective passive indicative non-past",
+          "third-person plural feminine non-past imperfective passive indicative",
           "third-person plural feminine passive jussive",
           "third-person plural feminine passive subjunctive"
         ]
