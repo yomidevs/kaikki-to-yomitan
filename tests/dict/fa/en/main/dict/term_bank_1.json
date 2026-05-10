@@ -175,7 +175,7 @@
   ],
   [
     "فارسی",
-    "fârsi",
+    "fārsī",
     "n",
     "n",
     0,
@@ -210,7 +210,7 @@
                         "data": {
                           "content": "Grammar-content"
                         },
-                        "content": "فارْسی • (fârsi)"
+                        "content": "فارسی • (fārsī / fârsi) (Tajik spelling форсӣ)"
                       }
                     ]
                   },
@@ -232,7 +232,7 @@
                         "data": {
                           "content": "Etymology-content"
                         },
-                        "content": "From Arabic فَارِسِيّ (fārisiyy), from Early New Persian پَارْسِی (pārsī, “Persian, Persic”)."
+                        "content": "Etymology tree\nOld Persian 𐎱𐎠𐎼𐎿 (p-a-r-s /⁠pārs⁠/)\nMiddle Persian pʾls (/⁠pārs⁠/)\nMiddle Persian -yk' (/⁠-īg⁠/)\nMiddle Persian pʾlsyk' (/⁠pārsīg⁠/)\nEarly New Persian پَارْسِی (pārsī)\n▲\nArabic فَارِسِيّ (fārisiyy)influ.\nPersian فارسی\nInherited from Early New Persian پَارْسِی (pārsī), influenced by Arabic فَارِسِيّ (fārisiyy). By surface analysis, فارس (fārs /fârs, “Fars”) + ـی (-ī /-i, suffix forming adjectives). Compare Old Armenian պարսիկ (parsik), Sanskrit पारसिक (pārasika)."
                       }
                     ]
                   }
@@ -252,7 +252,7 @@
                   {
                     "tag": "div",
                     "content": [
-                      "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan).",
+                      "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan; also its historical forms).",
                       {
                         "tag": "details",
                         "data": {
@@ -283,15 +283,15 @@
                                     "content": "example-sentence-a"
                                   },
                                   "content": [
-                                    "بَرادَرِ شُوْهَرِش ",
+                                    "برادر شوهرش ",
                                     {
                                       "tag": "span",
                                       "data": {
                                         "content": "bold-text"
                                       },
-                                      "content": "فارْسی"
+                                      "content": "فارسی"
                                     },
-                                    " بَلَدِه."
+                                    " بلده."
                                   ]
                                 },
                                 {
@@ -316,70 +316,33 @@
                   {
                     "tag": "div",
                     "content": [
-                      "Persian (the language of Ancient Persia)."
-                    ]
-                  }
-                ]
-              },
-              {
-                "tag": "li",
-                "content": [
-                  {
-                    "tag": "div",
-                    "content": [
-                      "Persian, main ethnic group of Iran.",
                       {
-                        "tag": "details",
+                        "tag": "div",
                         "data": {
-                          "content": "details-entry-examples"
+                          "content": "tags"
                         },
                         "content": [
                           {
-                            "tag": "summary",
+                            "tag": "span",
+                            "title": "dialectal",
                             "data": {
-                              "content": "summary-entry"
+                              "content": "tag",
+                              "category": "usage"
                             },
-                            "content": "1 example"
+                            "content": "dialect"
                           },
                           {
-                            "tag": "div",
+                            "tag": "span",
+                            "title": "uncommon",
                             "data": {
-                              "content": "extra-info"
+                              "content": "tag",
+                              "category": "usage"
                             },
-                            "content": {
-                              "tag": "div",
-                              "data": {
-                                "content": "example-sentence"
-                              },
-                              "content": [
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-a"
-                                  },
-                                  "content": [
-                                    {
-                                      "tag": "span",
-                                      "data": {
-                                        "content": "bold-text"
-                                      },
-                                      "content": "فارْسی"
-                                    },
-                                    " هَسْتیم."
-                                  ]
-                                },
-                                {
-                                  "tag": "div",
-                                  "data": {
-                                    "content": "example-sentence-b"
-                                  },
-                                  "content": "We are Persian."
-                                }
-                              ]
-                            }
+                            "content": "uncmmn"
                           }
                         ]
-                      }
+                      },
+                      "synonym of فارس (fārs /fârs, “Persian (person)”)"
                     ]
                   }
                 ]

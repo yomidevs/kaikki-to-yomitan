@@ -34,42 +34,33 @@
     }
   },
   "فارسی": {
-    "fârsi": {
+    "fārsī": {
       "noun": [
         {
           "gloss_tree": {
-            "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan).": {
+            "Persian (the language of modern Iran, Afghanistan and Tajikistan, and widely spoken in Uzbekistan; also its historical forms).": {
               "examples": [
                 {
-                  "text": "بَرادَرِ شُوْهَرِش فارْسی بَلَدِه.",
+                  "text": "برادر شوهرش فارسی بلده.",
                   "translation": "Her husband's brother knows Persian.",
                   "bold_text_offsets": [
                     [
-                      19,
-                      25
+                      12,
+                      17
                     ]
                   ]
                 }
               ]
             },
-            "Persian (the language of Ancient Persia).": {},
-            "Persian, main ethnic group of Iran.": {
-              "examples": [
-                {
-                  "text": "فارْسی هَسْتیم.",
-                  "translation": "We are Persian.",
-                  "bold_text_offsets": [
-                    [
-                      0,
-                      6
-                    ]
-                  ]
-                }
+            "synonym of فارس (fārs /fârs, “Persian (person)”)": {
+              "tags": [
+                "dialectal",
+                "uncommon"
               ]
             }
           },
-          "etymology_text": "From Arabic فَارِسِيّ (fārisiyy), from Early New Persian پَارْسِی (pārsī, “Persian, Persic”).",
-          "head_info_text": "فارْسی • (fârsi)",
+          "etymology_text": "Etymology tree\nOld Persian 𐎱𐎠𐎼𐎿 (p-a-r-s /⁠pārs⁠/)\nMiddle Persian pʾls (/⁠pārs⁠/)\nMiddle Persian -yk' (/⁠-īg⁠/)\nMiddle Persian pʾlsyk' (/⁠pārsīg⁠/)\nEarly New Persian پَارْسِی (pārsī)\n▲\nArabic فَارِسِيّ (fārisiyy)influ.\nPersian فارسی\nInherited from Early New Persian پَارْسِی (pārsī), influenced by Arabic فَارِسِيّ (fārisiyy). By surface analysis, فارس (fārs /fârs, “Fars”) + ـی (-ī /-i, suffix forming adjectives). Compare Old Armenian պարսիկ (parsik), Sanskrit पारसिक (pārasika).",
+          "head_info_text": "فارسی • (fārsī / fârsi) (Tajik spelling форсӣ)",
           "wlink": "https://en.wiktionary.org/wiki/فارسی#Persian",
           "klink": "https://kaikki.org/dictionary/Persian/meaning/ف/فا/فارسی.html"
         }

@@ -694,7 +694,7 @@
   [
     "wain",
     "",
-    "n arch lit",
+    "n arch",
     "n",
     0,
     [
@@ -770,6 +770,23 @@
                   {
                     "tag": "div",
                     "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "title": "literary",
+                            "data": {
+                              "content": "tag",
+                              "category": "register"
+                            },
+                            "content": "lit"
+                          }
+                        ]
+                      },
                       "A wagon; a four-wheeled cart for hauling loads, usually pulled by horses or oxen.",
                       {
                         "tag": "details",
@@ -817,6 +834,70 @@
                           }
                         ]
                       }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "li",
+                "content": [
+                  {
+                    "tag": "div",
+                    "content": [
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "tags"
+                        },
+                        "content": [
+                          {
+                            "tag": "span",
+                            "title": "journalism",
+                            "data": {
+                              "content": "tag",
+                              "category": "topic"
+                            },
+                            "content": "📰"
+                          },
+                          {
+                            "tag": "span",
+                            "title": "literature",
+                            "data": {
+                              "content": "tag",
+                              "category": "topic"
+                            },
+                            "content": "📚"
+                          },
+                          {
+                            "tag": "span",
+                            "title": "mythology",
+                            "data": {
+                              "content": "tag",
+                              "category": "topic"
+                            },
+                            "content": "myth"
+                          },
+                          {
+                            "tag": "span",
+                            "title": "philosophy",
+                            "data": {
+                              "content": "tag",
+                              "category": "topic"
+                            },
+                            "content": "philos"
+                          },
+                          {
+                            "tag": "span",
+                            "title": "poetry",
+                            "data": {
+                              "content": "tag",
+                              "category": "topic"
+                            },
+                            "content": "poetry"
+                          }
+                        ]
+                      },
+                      "A chariot or similar stately carriage."
                     ]
                   }
                 ]

@@ -39,6 +39,28 @@
                         "content": "buneolas m (genitive singular buneolais)"
                       }
                     ]
+                  },
+                  {
+                    "tag": "details",
+                    "data": {
+                      "content": "details-entry-Etymology"
+                    },
+                    "content": [
+                      {
+                        "tag": "summary",
+                        "data": {
+                          "content": "summary-entry"
+                        },
+                        "content": "Etymology"
+                      },
+                      {
+                        "tag": "div",
+                        "data": {
+                          "content": "Etymology-content"
+                        },
+                        "content": "From bun- + eolas."
+                      }
+                    ]
                   }
                 ]
               }
