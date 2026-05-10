@@ -980,13 +980,6 @@
         0
     ],
     [
-        "bus💼",
-        "topic",
-        0,
-        "business",
-        0
-    ],
-    [
         "cards",
         "topic",
         0,
@@ -1113,13 +1106,6 @@
         0
     ],
     [
-        "gen🧬",
-        "topic",
-        0,
-        "genetics",
-        0
-    ],
-    [
         "geo",
         "topic",
         0,
@@ -1211,13 +1197,6 @@
         0
     ],
     [
-        "journ📰",
-        "topic",
-        0,
-        "journalism",
-        0
-    ],
-    [
         "law",
         "topic",
         0,
@@ -1278,13 +1257,6 @@
         "topic",
         0,
         "military",
-        0
-    ],
-    [
-        "mine⛏️",
-        "topic",
-        0,
-        "mining",
         0
     ],
     [
@@ -1582,6 +1554,13 @@
         0
     ],
     [
+        "⛏️",
+        "topic",
+        0,
+        "mining",
+        0
+    ],
+    [
         "⛪",
         "topic",
         0,
@@ -1589,7 +1568,7 @@
         0
     ],
     [
-        "✒️clgphy",
+        "✒️",
         "topic",
         0,
         "calligraphy",
@@ -1620,7 +1599,7 @@
         0
     ],
     [
-        "🎾ten",
+        "🎾",
         "topic",
         0,
         "tennis",
@@ -1634,7 +1613,14 @@
         0
     ],
     [
-        "📐trig",
+        "💼",
+        "topic",
+        0,
+        "business",
+        0
+    ],
+    [
+        "📐",
         "topic",
         0,
         "trigonometry",
@@ -1645,6 +1631,13 @@
         "topic",
         0,
         "literature",
+        0
+    ],
+    [
+        "📰",
+        "topic",
+        0,
+        "journalism",
         0
     ],
     [
@@ -1666,6 +1659,13 @@
         "topic",
         0,
         "religion",
+        0
+    ],
+    [
+        "🧬",
+        "topic",
+        0,
+        "genetics",
         0
     ],
     [
