@@ -131,7 +131,7 @@ fn localize_tag_el(short_tag: &str) -> Option<(&'static str, &'static str)> {
     }
 }
 
-/// Coverage: 62/372 tags (16.7%)
+/// Coverage: 67/372 tags (18.0%)
 fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
     match short_tag {
         "arch" => Some(("古語", "古語")),
@@ -147,7 +147,7 @@ fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
         "artic" => Some(("定", "定冠詞")),
         "conj" => Some(("接続", "接続詞")),
         "counter" => Some(("助数詞", "助数詞")),
-        "intj" => Some(("間投", "間投詞")),
+        "intj" => Some(("感動詞", "感動詞")),
         "n" => Some(("名", "名詞")),
         "num" => Some(("数詞", "数詞")),
         "pref" => Some(("接頭辞", "接頭辞")),
@@ -168,9 +168,12 @@ fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
         "pej" => Some(("軽蔑的", "軽蔑的")),
         "sl" => Some(("俗", "俗語")),
         "vulg" => Some(("卑語", "卑語")),
+        "anat" => Some(("解剖学", "解剖学")),
+        "archit" => Some(("建築", "建築")),
         "cook" => Some(("調理", "調理")),
         "econ" => Some(("経済", "経済")),
         "edu" => Some(("教育", "教育")),
+        "electr" => Some(("電子工学", "電子工学")),
         "geo" => Some(("地理", "地理")),
         "gramm" => Some(("文法", "文法")),
         "hist" => Some(("歴史", "歴史")),
@@ -180,6 +183,8 @@ fn localize_tag_ja(short_tag: &str) -> Option<(&'static str, &'static str)> {
         "mil" => Some(("軍事", "軍事")),
         "philos" => Some(("哲学", "哲学")),
         "phonet" => Some(("音声学", "音声学")),
+        "physics" => Some(("物理学", "物理学")),
+        "polit" => Some(("政治", "政治")),
         "program" => Some(("プログラミング", "プログラミング")),
         "psych" => Some(("心理学", "心理学")),
         "sumo" => Some(("相撲", "相撲")),
