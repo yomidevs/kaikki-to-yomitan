@@ -478,31 +478,6 @@ pub(crate) fn process_main(edition: Edition, source: Lang, entry: &WordEntry, ir
 
     process_alt_forms(entry, irs);
 
-    // All of these are scuffed pages that should be using the {{ja-wagokanji}} template, i.e.
-    // (correct) https://ja.wiktionary.org/wiki/減らす
-    //
-    // Also redirections of this type:
-    // https://ja.wiktionary.org/wiki/好み#Japanese
-    // このみの漢字表記。
-    //
-    // https://ja.wiktionary.org/wiki/諄い
-    // くどいを参照。
-    // match edition {
-    //     Edition::Ja => {
-    //         if let Some(sense) = entry.senses.first() {
-    //             if let Some(gloss) = sense.glosses.first() {
-    //                 if gloss.ends_with("参照") && gloss.split_whitespace().count() == 2 {
-    //                     tracing::warn!(
-    //                         "Japanese redirection @ {}",
-    //                         link_wiktionary(edition, source, &entry.word)
-    //                     );
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     _ => (),
-    // };
-
     let reading = match get_reading(edition, source, entry) {
         Some(reading) if reading != entry.word => reading,
         _ => String::new(),
@@ -620,6 +595,8 @@ pub(crate) fn preprocess_main(
             // handled as inflection
         } else if handle_alt_of_sense(entry, &sense, irs) {
             // handled as alt-of
+        } else if handle_see_sense(edition, entry, &sense, irs) {
+            // handled as see
         } else {
             senses_without_inflections.push(sense);
         }
@@ -1309,6 +1286,46 @@ fn handle_alt_of_sense(entry: &WordEntry, sense: &Sense, irs: &mut Tidy) -> bool
         );
     }
     handled
+}
+
+static JA_SEE_RE: LazyLock<Regex> =
+    LazyLock::new(|| Regex::new(r"^(\S+?)(?:\s|を)?参照。?$").unwrap());
+static JA_KANJI_RE: LazyLock<Regex> =
+    LazyLock::new(|| Regex::new(r"^(\S+?)の漢字表記。?$").unwrap());
+
+// At least the 漢字表記 shouldn't be needed if they end up fixing their templates,
+// but they take ages to fix them, and there's no guarantee that they will fix everything.
+//
+/// Detects Japanese "see" redirections — scuffed pages that reference another word via 参照
+/// instead of using the proper {{wago}} template.
+///
+/// Example pages:
+/// - https://ja.wiktionary.org/wiki/減らす (correct page)
+/// - https://ja.wiktionary.org/wiki/好み#Japanese (このみの漢字表記。)
+/// - https://ja.wiktionary.org/wiki/勢い#日本語 (いきおい　参照)
+/// - https://ja.wiktionary.org/wiki/諄い (くどいを参照。)
+fn handle_see_sense(edition: Edition, entry: &WordEntry, sense: &Sense, irs: &mut Tidy) -> bool {
+    let Some(gloss) = (matches!(edition, Edition::Ja))
+        .then(|| sense.glosses.first())
+        .flatten()
+    else {
+        return false;
+    };
+    let Some(target) = JA_SEE_RE
+        .captures(gloss)
+        .or_else(|| JA_KANJI_RE.captures(gloss))
+        .and_then(|caps| caps.get(1))
+    else {
+        return false;
+    };
+    irs.insert_form(
+        target.as_str(),
+        &entry.word,
+        &entry.pos,
+        FormSource::Inflection,
+        vec![format!("redirected from {}", entry.word)],
+    );
+    true
 }
 
 pub(crate) fn normalize_orthography(source: Lang, word: &str) -> String {
