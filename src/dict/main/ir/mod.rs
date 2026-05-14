@@ -614,10 +614,10 @@ pub(crate) fn preprocess_main(
     let old_senses = std::mem::take(&mut entry.senses);
     let mut senses_without_inflections = Vec::new();
     for sense in old_senses {
-        if is_inflection_sense(edition, &sense)
-            && (!opts.experimental || entry.non_trivial_forms().next().is_none())
+        if (!opts.experimental || entry.non_trivial_forms().next().is_none())
+            && handle_inflection_sense(edition, source, entry, &sense, irs)
         {
-            handle_inflection_sense(edition, source, entry, &sense, irs);
+            // handled as inflection
         } else if !sense.alt_of.is_empty() {
             handle_alt_of_sense(entry, &sense, irs);
         } else {
@@ -1058,70 +1058,6 @@ static DE_INFLECTION_RE: LazyLock<Regex> = LazyLock::new(|| {
     ).unwrap()
 });
 
-// rg: isinflectiongloss
-fn is_inflection_sense(edition: Edition, sense: &Sense) -> bool {
-    match edition {
-        Edition::De => sense
-            .glosses
-            .iter()
-            .any(|gloss| DE_INFLECTION_RE.is_match(gloss)),
-        Edition::El => {
-            !sense.form_of.is_empty() && sense.glosses.iter().any(|gloss| gloss.contains("του"))
-        }
-        Edition::En => {
-            sense.glosses.iter().any(|gloss| {
-                if gloss.contains("inflection of") {
-                    return true;
-                }
-
-                for form in &sense.form_of {
-                    if form.word.is_empty() {
-                        continue;
-                    }
-                    // We are looking for "... of {word}$" or "... of {word} (text)$"
-                    //
-                    // Cf.
-                    // ... imperative of iki
-                    // ... perfective of возни́кнуть (vozníknutʹ)
-                    // But no
-                    // ... agent noun of fahren; driver (person)
-                    let subs = format!("of {}", form.word);
-                    if gloss.ends_with(&subs)
-                        || (gloss.contains(&format!("{subs} (")) && gloss.ends_with(')'))
-                    {
-                        return true;
-                    }
-                }
-
-                false
-            })
-        }
-        _ => {
-            // (This comment talks about the Italian edition since it was the first implementation)
-            //
-            // Cf. https://kaikki.org/itwiktionary/Italiano/meaning/s/sc/scorrevo.html
-            //
-            // This is the most generic way of dealing with inflection, but assumes that the
-            // edition is parsed by kaikki with "form_of" at sense level. It could be extended to
-            // other languages.
-            //
-            // Note: because of how "etymologies" (read, definitions) are processed by Kaikki, we
-            // are guaranteed that if we find an inflection, all the glosses are variations of that
-            // inflection.
-            // This means that a word like "cura", that both in Spanish and Italian is both a verb
-            // and a noun, will not have the glosses intermingled: we will only find glosses for
-            // the verb in the verb "etymology", and similarly for the noun.
-            // Therefore, we can safely assume that, if we have a form_of, every gloss is an
-            // explanation about the inflection, and that the only condition we really care about,
-            // is the presence of a "form_of".
-            //
-            // Cf. https://it.wiktionary.org/wiki/cura#Italiano (fixed recently)
-            // Cf. https://it.wiktionary.org/wiki/ceni#Italiano
-            sense.form_of.len() == 1
-        }
-    }
-}
-
 const TAGS_RETAINED_EL: [&str; 9] = [
     "masculine",
     "feminine",
@@ -1134,32 +1070,42 @@ const TAGS_RETAINED_EL: [&str; 9] = [
     "vocative",
 ];
 
+/// Returns `true` if the sense is an inflection and was handled (inserted as form).
 fn handle_inflection_sense(
     edition: Edition,
     source: Lang,
     entry: &WordEntry,
     sense: &Sense,
     irs: &mut Tidy,
-) {
-    debug_assert!(!sense.glosses.is_empty()); // we checked @ is_inflection_sense
+) -> bool {
+    if sense.glosses.is_empty() {
+        return false;
+    }
 
     match edition {
         Edition::De => {
-            if let Some(caps) = DE_INFLECTION_RE.captures(&sense.glosses[0])
-                && let (Some(inflection_tags), Some(uninflected)) = (caps.get(1), caps.get(2))
-            {
-                let inflection_tags = inflection_tags.as_str().trim();
-
-                irs.insert_form(
-                    uninflected.as_str(),
-                    &entry.word,
-                    &entry.pos,
-                    FormSource::Inflection,
-                    vec![inflection_tags.to_string()],
-                );
-            }
+            let Some((inflection_tags, uninflected)) = sense
+                .glosses
+                .first()
+                .and_then(|gloss| DE_INFLECTION_RE.captures(gloss))
+                .and_then(|caps| Some((caps.get(1)?, caps.get(2)?)))
+            else {
+                return false;
+            };
+            let inflection_tags = inflection_tags.as_str().trim();
+            irs.insert_form(
+                uninflected.as_str(),
+                &entry.word,
+                &entry.pos,
+                FormSource::Inflection,
+                vec![inflection_tags.to_string()],
+            );
+            true
         }
         Edition::El => {
+            if sense.form_of.is_empty() || !sense.glosses.iter().any(|g| g.contains("του")) {
+                return false;
+            }
             let allowed_tags: Vec<_> = sense
                 .tags
                 .iter()
@@ -1182,44 +1128,94 @@ fn handle_inflection_sense(
                     inflection_tags.clone(),
                 );
             }
+            true
         }
-        Edition::En => handle_inflection_sense_en(source, entry, sense, irs),
-        _ => {
-            // One could use sense::glosses as tags, and while they carry important information
-            // they are obscenely verbose.
-            match sense.form_of.as_slice() {
-                [form_of] => {
-                    // Some redirections may not contain the "form-of" tag at sense level!
-                    // https://kaikki.org/jawiktionary/日本語/meaning/名/名前/名前.html
-                    debug_assert!(
-                        sense.tags.iter().any(|tag| *tag == "form-of")
-                            || entry.tags.iter().any(|tag| *tag == "form-of")
-                    );
-                    let allowed_tags: Vec<_> = sense
-                        .tags
-                        .iter()
-                        .filter(|tag| *tag != "form-of")
-                        .map(String::from)
-                        .collect();
-                    let inflection_tags: Vec<_> = if allowed_tags.is_empty() {
-                        vec![format!("redirected from {}", entry.word)]
-                    } else {
-                        allowed_tags
-                    };
-                    // We need to normalize, for instance, for the la-ja, so that appellantur redirects to
-                    // appellare and not to appellāre (since only appellare appears as lemma)
-                    let norm_form_of_word = normalize_orthography(source, &form_of.word);
-                    irs.insert_form(
-                        &norm_form_of_word,
-                        &entry.word,
-                        &entry.pos,
-                        FormSource::Inflection,
-                        inflection_tags,
-                    );
+        Edition::En => {
+            let is_inflection = sense.glosses.iter().any(|gloss| {
+                if gloss.contains("inflection of") {
+                    return true;
                 }
-                // SAFETY: we checked that only one form_of is present.
-                _ => unreachable!(),
+                for form in &sense.form_of {
+                    if form.word.is_empty() {
+                        continue;
+                    }
+                    // We are looking for "... of {word}$" or "... of {word} (text)$"
+                    //
+                    // Cf.
+                    // ... imperative of iki
+                    // ... perfective of возни́кнуть (vozníknutʹ)
+                    // But no
+                    // ... agent noun of fahren; driver (person)
+                    let subs = format!("of {}", form.word);
+                    if gloss.ends_with(&subs)
+                        || (gloss.contains(&format!("{subs} (")) && gloss.ends_with(')'))
+                    {
+                        return true;
+                    }
+                }
+                false
+            });
+            if !is_inflection {
+                return false;
             }
+            handle_inflection_sense_en(source, entry, sense, irs);
+            true
+        }
+        // (This comment talks about the Italian edition since it was the first implementation)
+        //
+        // Cf. https://kaikki.org/itwiktionary/Italiano/meaning/s/sc/scorrevo.html
+        //
+        // This is the most generic way of dealing with inflection, but assumes that the
+        // edition is parsed by kaikki with "form_of" at sense level. It could be extended to
+        // other languages.
+        //
+        // Note: because of how "etymologies" (read, definitions) are processed by Kaikki, we
+        // are guaranteed that if we find an inflection, all the glosses are variations of that
+        // inflection.
+        // This means that a word like "cura", that both in Spanish and Italian is both a verb
+        // and a noun, will not have the glosses intermingled: we will only find glosses for
+        // the verb in the verb "etymology", and similarly for the noun.
+        // Therefore, we can safely assume that, if we have a form_of, every gloss is an
+        // explanation about the inflection, and that the only condition we really care about,
+        // is the presence of a "form_of".
+        //
+        // Cf. https://it.wiktionary.org/wiki/cura#Italiano (fixed recently)
+        // Cf. https://it.wiktionary.org/wiki/ceni#Italiano
+        _ => {
+            if sense.form_of.len() != 1 {
+                return false;
+            }
+            // One could use sense::glosses as tags, but while they carry important
+            // information, they are obscenely verbose.
+            let form_of = &sense.form_of[0];
+            // Some redirections may not contain the "form-of" tag at sense level!
+            // https://kaikki.org/jawiktionary/日本語/meaning/名/名前/名前.html
+            debug_assert!(
+                sense.tags.iter().any(|tag| *tag == "form-of")
+                    || entry.tags.iter().any(|tag| *tag == "form-of")
+            );
+            let allowed_tags: Vec<_> = sense
+                .tags
+                .iter()
+                .filter(|tag| *tag != "form-of")
+                .map(String::from)
+                .collect();
+            let inflection_tags: Vec<_> = if allowed_tags.is_empty() {
+                vec![format!("redirected from {}", entry.word)]
+            } else {
+                allowed_tags
+            };
+            // We need to normalize, for instance, for the la-ja, so that appellantur redirects to
+            // appellare and not to appellāre (since only appellare appears as lemma)
+            let norm_form_of_word = normalize_orthography(source, &form_of.word);
+            irs.insert_form(
+                &norm_form_of_word,
+                &entry.word,
+                &entry.pos,
+                FormSource::Inflection,
+                inflection_tags,
+            );
+            true
         }
     }
 }
