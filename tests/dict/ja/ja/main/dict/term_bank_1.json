@@ -1562,60 +1562,6 @@
     ""
   ],
   [
-    "好み",
-    "",
-    "",
-    "?",
-    0,
-    [
-      {
-        "type": "structured-content",
-        "content": [
-          {
-            "tag": "ol",
-            "data": {
-              "content": "glosses"
-            },
-            "content": [
-              {
-                "tag": "li",
-                "content": [
-                  {
-                    "tag": "div",
-                    "content": [
-                      "このみの漢字表記。"
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "tag": "div",
-            "data": {
-              "content": "backlink"
-            },
-            "content": [
-              {
-                "tag": "a",
-                "href": "https://ja.wiktionary.org/wiki/好み#Japanese",
-                "content": "Wiktionary"
-              },
-              " | ",
-              {
-                "tag": "a",
-                "href": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/好/好み/好み.html",
-                "content": "Kaikki"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    0,
-    ""
-  ],
-  [
     "まわり",
     "",
     "助数詞",

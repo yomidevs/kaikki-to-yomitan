@@ -417,23 +417,6 @@
       ]
     }
   },
-  "好み": {
-    "": {
-      "unknown": [
-        {
-          "gloss_tree": {
-            "このみの漢字表記。": {}
-          },
-          "tags": [
-            "form-of",
-            "kanji"
-          ],
-          "wlink": "https://ja.wiktionary.org/wiki/好み#Japanese",
-          "klink": "https://kaikki.org/jawiktionary/All%20languages%20combined/meaning/好/好み/好み.html"
-        }
-      ]
-    }
-  },
   "まわり": {
     "": {
       "counter": [
