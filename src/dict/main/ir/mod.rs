@@ -618,8 +618,8 @@ pub(crate) fn preprocess_main(
             && handle_inflection_sense(edition, source, entry, &sense, irs)
         {
             // handled as inflection
-        } else if !sense.alt_of.is_empty() {
-            handle_alt_of_sense(entry, &sense, irs);
+        } else if handle_alt_of_sense(entry, &sense, irs) {
+            // handled as alt-of
         } else {
             senses_without_inflections.push(sense);
         }
@@ -1261,7 +1261,8 @@ fn handle_inflection_sense_en(source: Lang, entry: &WordEntry, sense: &Sense, ir
     }
 }
 
-fn handle_alt_of_sense(entry: &WordEntry, sense: &Sense, irs: &mut Tidy) {
+fn handle_alt_of_sense(entry: &WordEntry, sense: &Sense, irs: &mut Tidy) -> bool {
+    let mut handled = false;
     // We rely on Wiktionary having a page for the alt_form, otherwise this can potentially
     // remove useful glosses. Then again, the same applies to handle_inflection_sense.
     //
@@ -1270,6 +1271,9 @@ fn handle_alt_of_sense(entry: &WordEntry, sense: &Sense, irs: &mut Tidy) {
     //
     // At worst, just move this back to process_alt_forms, to not modify the senses.
     for alt_form in &sense.alt_of {
+        // If there was any alt_of, we consider this handled, even if we don't add it to forms
+        handled = true;
+
         // [en-en] Ignore variations of little value.
         // misspellings: https://en.wiktionary.org/wiki/peninsular#English
         // misconstruction: https://en.wiktionary.org/wiki/attributative#English
@@ -1304,6 +1308,7 @@ fn handle_alt_of_sense(entry: &WordEntry, sense: &Sense, irs: &mut Tidy) {
             sense_tags.clone(),
         );
     }
+    handled
 }
 
 pub(crate) fn normalize_orthography(source: Lang, word: &str) -> String {
