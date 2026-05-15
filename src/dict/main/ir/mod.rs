@@ -1288,10 +1288,12 @@ fn handle_alt_of_sense(entry: &WordEntry, sense: &Sense, irs: &mut Tidy) -> bool
     handled
 }
 
-static JA_SEE_RE: LazyLock<Regex> =
-    LazyLock::new(|| Regex::new(r"^(\S+?)(?:\s|を)?参照。?$").unwrap());
-static JA_KANJI_RE: LazyLock<Regex> =
-    LazyLock::new(|| Regex::new(r"^(\S+?)の漢字表記。?$").unwrap());
+static JA_SEE_RE: LazyLock<Regex> = LazyLock::new(|| {
+    Regex::new(r"^「?([\p{Hiragana}\p{Katakana}\p{Han}ー]+?)」?\s?を?参照。?$").unwrap()
+});
+static JA_KANJI_RE: LazyLock<Regex> = LazyLock::new(|| {
+    Regex::new(r"^「?([\p{Hiragana}\p{Katakana}\p{Han}ー]+?)」?\s?の漢字表記。?$").unwrap()
+});
 
 // At least the 漢字表記 shouldn't be needed if they end up fixing their templates,
 // but they take ages to fix them, and there's no guarantee that they will fix everything.
@@ -1304,6 +1306,7 @@ static JA_KANJI_RE: LazyLock<Regex> =
 /// - https://ja.wiktionary.org/wiki/好み#Japanese (このみの漢字表記。)
 /// - https://ja.wiktionary.org/wiki/勢い#日本語 (いきおい　参照)
 /// - https://ja.wiktionary.org/wiki/諄い (くどいを参照。)
+/// - https://ja.wiktionary.org/wiki/予言 (「かねごと」参照。)
 fn handle_see_sense(edition: Edition, entry: &WordEntry, sense: &Sense, irs: &mut Tidy) -> bool {
     let Some(gloss) = (matches!(edition, Edition::Ja))
         .then(|| sense.glosses.first())
@@ -1316,6 +1319,9 @@ fn handle_see_sense(edition: Edition, entry: &WordEntry, sense: &Sense, irs: &mu
         .or_else(|| JA_KANJI_RE.captures(gloss))
         .and_then(|caps| caps.get(1))
     else {
+        // if gloss.contains("参照") || gloss.contains("漢字表記") {
+        //     tracing::warn!("unmatched see/kanji gloss: {:?}", gloss);
+        // }
         return false;
     };
     irs.insert_form(
