@@ -12,11 +12,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "to transport toward somebody/somewhere"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -48,11 +54,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "bird of the genus Falco"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -80,11 +92,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "to hunt with a falcon or falcons"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -116,11 +134,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "to join in, to take part, to involve oneself"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -152,11 +176,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "Comprehensive in scope or extent"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -177,11 +207,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "Talkative and sociable"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -218,11 +254,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "Able to be expanded"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -247,11 +289,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "(mathematics) Exhibiting expansivity"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -279,11 +327,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "relating to magic"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",

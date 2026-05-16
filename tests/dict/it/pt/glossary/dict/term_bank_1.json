@@ -12,11 +12,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "(medicina) terapia"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -37,11 +43,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "premura, sollecitudine"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -62,11 +74,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "serietà, precisione, esattezza, accuratezza, diligenza, zelo, solerzia, creanza"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -114,11 +132,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "(medicina) terapia"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -139,11 +163,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "premura, sollecitudine"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -164,11 +194,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "serietà, precisione, esattezza, accuratezza, diligenza, zelo, solerzia, creanza"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -216,11 +252,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "ingerire cibo solido per nutrirsi"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",

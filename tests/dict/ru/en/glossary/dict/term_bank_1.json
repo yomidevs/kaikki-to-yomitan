@@ -12,11 +12,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "осадки"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -33,11 +39,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "помехи"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",

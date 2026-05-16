@@ -48,11 +48,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "ingerire cibo solido per nutrirsi"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",

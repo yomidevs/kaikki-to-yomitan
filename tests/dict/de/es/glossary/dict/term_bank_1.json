@@ -12,11 +12,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "Musik: populäre Musikrichtung, die Anfang der 1950er Jahre in den USA entstand"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -44,11 +50,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "Raum zum dauerhaften Ab- und Unterstellen von Kraftfahrzeugen"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -76,11 +88,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "ein Gerät abschalten, ein Feuer löschen"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -97,11 +115,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "eine Vereinbarung treffen; einen Termin festsetzen"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -118,11 +142,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "eine bestimmte Menge darstellen"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -139,11 +169,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "etwas entfernt liegendes erkennen"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -175,11 +211,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "männlicher Vorname"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -207,11 +249,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "zu diesem Zeitpunkt, zum jetzigen Zeitpunkt, in dem Moment"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -232,11 +280,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "in unmittelbarere Zukunft"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -257,11 +311,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "in unmittelbarer Vergangenheit"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -293,11 +353,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "Angabe eines Ortes, innerhalb dessen sich etwas befindet oder tut; Antwort auf die Frage mit „wo“"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -318,11 +384,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "Angabe einer Richtung in etwas hinein; Bestandteil einer Antwort auf die Frage mit „wohin“"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -343,11 +415,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "Beschreibung einer Zeitspanne, auf einen bestimmten Zeitpunkt; Antwort auf die Frage mit „wann“"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -368,11 +446,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "Beschreibung einer bestimmten Art und Weise, eines bestimmten Zustandes, eines bestimmten Verhaltens"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -400,11 +484,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "ein Kleidungsstück am Körper tragen"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -421,11 +511,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "eingeschaltet haben"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -442,11 +538,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "jemandem schaden, jemandem eine Straftat oder Ähnliches nachweisen"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -474,11 +576,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "aktiv und passiv wahrnehmen über das Sinnesorgan Auge"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
@@ -506,11 +614,17 @@
           "tag": "div",
           "content": [
             {
-              "tag": "span",
+              "tag": "div",
+              "data": {
+                "content": "sense-label"
+              },
               "content": "keine Aufmerksamkeit auf sich ziehend"
             },
             {
               "tag": "ul",
+              "data": {
+                "content": "glossary"
+              },
               "content": [
                 {
                   "tag": "li",
