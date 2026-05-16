@@ -42,6 +42,9 @@ fn cases() -> &'static (Vec<(Lang, Lang)>, Vec<Lang>) {
 }
 
 /// Clean empty folders under folder "root" recursively.
+//
+// Not needed. Also be sure to only call this once or there can be races.
+// Eventually delete this.
 fn cleanup(root: &Path) -> bool {
     let entries = fs::read_dir(root).unwrap();
     let mut is_empty = true;
@@ -202,8 +205,6 @@ fn snapshot_glossary() {
             make_dict_from_jsonl(DGlossary, args).unwrap();
         }
     }
-
-    cleanup(&fixture_dir.join("dict"));
 }
 
 #[test]
@@ -218,12 +219,10 @@ fn snapshot_ipa() {
         let args = fixture_ipa_args(*source, target, fixture_dir, WriterFormat::TestYomitan);
         make_dict_from_jsonl(DIpa, args).unwrap();
     }
-
-    cleanup(&fixture_dir.join("dict"));
 }
 
 #[test]
-fn snapshot_main_html() -> Result<()> {
+fn snapshot_html_format() -> Result<()> {
     let fixture_dir = Path::new(FIXTURE_DIR);
     let format = WriterFormat::TestHtml;
 

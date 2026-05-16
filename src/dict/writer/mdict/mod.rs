@@ -26,13 +26,12 @@ pub fn write_mdict(
     pm: &PathManager,
     ydict: YomitanDict,
 ) -> Result<PathBuf> {
-    let fname = format!("mdict-{source}-{target}");
-    let dir_in_stage = pm.dir_in_stage(&fname);
-    fs::create_dir_all(&dir_in_stage)?;
+    let dir_in_stage = pm.dir_in_stage("mdict");
+    _ = fs::create_dir_all(&dir_in_stage);
 
-    let mdx_path = dir_in_stage.join("wty.mdx");
-    let dict_name = "wty-ja-ja";
-    let glossary = build_glossary(dict_name, ydict);
+    let dict_name = format!("wty-{source}-{target}");
+    let mdx_path = dir_in_stage.join(format!("{dict_name}.mdx"));
+    let glossary = build_glossary(&dict_name, ydict);
     debug_assert_eq!(glossary.css_files().count(), 1);
 
     MdictFormat::default().write(&mdx_path, &glossary)?;

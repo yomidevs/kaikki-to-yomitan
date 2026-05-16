@@ -27,13 +27,12 @@ pub fn write_stardict(
     pm: &PathManager,
     ydict: YomitanDict,
 ) -> Result<PathBuf> {
-    let fname = format!("stardict-{source}-{target}");
-    let dir_in_stage = pm.dir_in_stage(&fname);
-    fs::create_dir_all(&dir_in_stage)?;
+    let dir_in_stage = pm.dir_in_stage("stardict");
+    _ = fs::create_dir_all(&dir_in_stage);
 
-    let ifo_path = dir_in_stage.join("wty.ifo");
-    let dict_name = "wty-ja-ja";
-    let glossary = build_glossary(dict_name, ydict);
+    let dict_name = format!("wty-{source}-{target}");
+    let ifo_path = dir_in_stage.join(format!("{dict_name}.ifo"));
+    let glossary = build_glossary(&dict_name, ydict);
 
     StardictFormat.write(&ifo_path, &glossary)?;
 
