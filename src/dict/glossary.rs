@@ -94,10 +94,12 @@ fn process_glossary(source: Edition, target: Lang, entry: &WordEntry, irs: &mut 
             NTag::Div,
             "",
             Node::Array(vec![
-                wrap(NTag::Span, "", Node::Text(sense.to_string())),
+                wrap(NTag::Div, "sense-label", Node::Text(sense.to_string())),
                 wrap(
                     NTag::Ul,
-                    "",
+                    // We add this "data-sc-content=glossary" for compact mode
+                    // https://github.com/yomidevs/yomitan/blob/master/ext/css/structured-content.css#L240
+                    "glossary",
                     Node::Array(
                         translations
                             .into_iter()

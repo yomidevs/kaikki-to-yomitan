@@ -168,3 +168,20 @@ div[data-sc-content="backlink"] {
     font-size: 0.7em;
     text-align: right;
 }
+
+/* Glossary dictionary only */
+/* None of this interferes with other dictionaries, but if in the future it does,
+*  then consider making a separate css file for each dictionary. */
+div[data-sc-content="sense-label"] {
+    color: #777;
+}
+/* These two are for compact mode. Unfortunately, due to css insertion rules,
+*  we can't select [data-glossary-layout-mode^=compact] as Yomitan does */
+/* Remove the gloss separator */
+.gloss-item:has(.structured-content) ~ .gloss-item:not(:first-child)::before {
+    display: none;
+}
+/* Remove the newline left by the now empty gloss separator */
+.gloss-separator {
+    display: none !important;
+}
