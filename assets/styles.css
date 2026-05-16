@@ -170,6 +170,8 @@ div[data-sc-content="backlink"] {
 }
 
 /* Glossary dictionary only */
+/* None of this interferes with other dictionaries, but if in the future it does,
+*  then consider making a separate css file for each dictionary. */
 div[data-sc-content="sense-label"] {
     color: #777;
 }
