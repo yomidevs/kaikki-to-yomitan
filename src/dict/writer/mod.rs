@@ -12,6 +12,7 @@ use crate::{
 
 mod debug_forms;
 mod html;
+mod mdict;
 mod mdict_text;
 mod renderer;
 mod stardict;
@@ -19,6 +20,7 @@ mod yomitan;
 
 use debug_forms::write_debug_forms;
 use html::{write_html, write_test_html};
+use mdict::write_mdict;
 use mdict_text::write_mdict_text;
 use stardict::write_stardict;
 use yomitan::{write_test_yomitan, write_yomitan};
@@ -32,6 +34,8 @@ pub enum WriterFormat {
     Ir,
     // Simple html that matches the Yomitan structure
     Html,
+    // Mdict format
+    Mdict,
     // Text file that can be build into mdict (via, f.e. mdict-utils)
     MdictText,
     // Stardict format
@@ -58,6 +62,7 @@ impl fmt::Display for WriterFormat {
             Self::Yomitan => "yomitan",
             Self::Ir => "ir",
             Self::Html => "html",
+            Self::Mdict => "mdict",
             Self::MdictText => "mdict-text",
             Self::Stardict => "stardict",
             Self::DebugForms => "debug-forms",
@@ -88,6 +93,13 @@ impl WriterFormat {
             )?,
             Self::Ir => irs.write(pm)?,
             Self::Html => write_html(opts, pm, dict.to_yomitan(langs, irs))?,
+            Self::Mdict => write_mdict(
+                langs.source,
+                langs.target,
+                opts,
+                pm,
+                dict.to_yomitan(langs, irs),
+            )?,
             Self::MdictText => write_mdict_text(opts, pm, dict.to_yomitan(langs, irs))?,
             Self::Stardict => write_stardict(
                 langs.source,
