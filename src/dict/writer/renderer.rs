@@ -12,27 +12,6 @@ pub trait Renderer {
         }
     }
 
-    // 1. Reading
-    // A simple reading can be rendered with
-    // div class="entry" {
-    //    h2 { (self.term) }
-    //    div class="reading" { (self.reading) }
-    //    ...
-    // but yomitan renders them as ruby.
-    // See https://github.com/yomidevs/yomitan/blob/master/ext/js/display/display-generator.js#L1050
-    //
-    // WARN: rendering as ruby may not be supported in some readers.
-    // See https://github.com/koreader/koreader/issues/15259#issuecomment-4231135351
-    //
-    //
-    // 2. Multiple definitions
-    // This part works in yomitan because they group multiple definitions...
-    // but other formats may not.
-    //
-    // It is unclear to me if we want to merge them or not, prior to this rendering.
-    //
-    // Note that, for the main dictionary, we always have exactly one definition in lemmas.
-    // This is NOT true for forms in the main dictionary, nor for the glossary dictionary.
     fn render_term_bank_entry(entry: &TermBankEntry) -> Markup {
         html! {
             div class="entry" {

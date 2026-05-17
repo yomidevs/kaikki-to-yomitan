@@ -13,7 +13,7 @@ use crate::{
     cli::Options,
     dict::writer::renderer::Renderer,
     lang::Lang,
-    models::yomitan::{DetailedDefinition, YomitanDict, YomitanEntry},
+    models::yomitan::{DetailedDefinition, YomitanDict},
     path::PathManager,
 };
 
@@ -41,18 +41,24 @@ pub fn write_stardict(
 
 // Build a Glossary out of the html rendered by StardictRenderer
 fn build_glossary(dict_name: &str, ydict: YomitanDict) -> Glossary {
+    // Aren't these duplicated in entries?
+    let mut alt_map = AltMap::new();
+    for entry in &ydict.term_bank_form {
+        for def in &entry.definitions {
+            let DetailedDefinition::Inflection((from, _tags)) = def else {
+                panic!("forms must be made from inflections");
+            };
+            alt_map
+                .entry(from.clone())
+                .or_default()
+                .push(AltEntry::only_term(entry.term.clone()));
+        }
+    }
+
     // We don't need to sort entries it since pangloss does it on write:
     // https://github.com/daxida/pangloss/blob/master/src/formats/stardict/writer.rs#L66
     let entries: Vec<Entry> = ydict
-        .term_bank
-        .into_iter()
-        .map(YomitanEntry::TermBankEntry)
-        .chain(
-            ydict
-                .term_meta_bank
-                .into_iter()
-                .map(YomitanEntry::TermMetaBankEntry),
-        )
+        .into_iter_flat()
         .map(|entry| {
             Entry::new(
                 entry.term().to_string(),
@@ -60,21 +66,6 @@ fn build_glossary(dict_name: &str, ydict: YomitanDict) -> Glossary {
             )
         })
         .collect();
-
-    // Aren't these duplicated in entries?
-    let mut alt_map = AltMap::new();
-    for entry in ydict.term_bank_form {
-        let term = entry.term;
-        for def in entry.definitions {
-            let DetailedDefinition::Inflection((from, _tags)) = def else {
-                panic!("forms must be made from inflections");
-            };
-            alt_map
-                .entry(from)
-                .or_default()
-                .push(AltEntry::only_term(term.clone()));
-        }
-    }
 
     let mut info = GlossaryInfo::new();
     info.insert("name", dict_name.to_string());
