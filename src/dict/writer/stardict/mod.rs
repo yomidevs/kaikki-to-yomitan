@@ -41,6 +41,8 @@ pub fn write_stardict(
 
 // Build a Glossary out of the html rendered by StardictRenderer
 fn build_glossary(dict_name: &str, ydict: YomitanDict) -> Glossary {
+    // We don't need to sort entries it since pangloss does it on write:
+    // https://github.com/daxida/pangloss/blob/master/src/formats/stardict/writer.rs#L66
     let entries: Vec<Entry> = ydict
         .term_bank
         .into_iter()

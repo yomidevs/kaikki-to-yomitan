@@ -41,35 +41,26 @@ fn cases() -> &'static (Vec<(Lang, Lang)>, Vec<Lang>) {
     })
 }
 
-/// Clean empty folders under folder "root" recursively.
-//
-// Not needed. Also be sure to only call this once or there can be races.
-// Eventually delete this.
-fn cleanup(root: &Path) -> bool {
+/// Scan folders under "root" recursively and assert no zip files are present.
+fn assert_no_zip_files(root: &Path) {
     let entries = fs::read_dir(root).unwrap();
-    let mut is_empty = true;
-
     for entry in entries.flatten() {
         let path = entry.path();
         if path.is_dir() {
-            let child_empty = cleanup(&path);
-            if child_empty {
-                fs::remove_dir(&path).unwrap();
-            } else {
-                is_empty = false;
-            }
+            assert_no_zip_files(&path);
         } else if path
             .extension()
             .and_then(|e| e.to_str())
             .is_some_and(|ext| ext.eq_ignore_ascii_case("zip"))
         {
-            panic!("zip found in tests");
-        } else {
-            is_empty = false;
+            panic!("zip found in tests: {}", path.display());
         }
     }
+}
 
-    is_empty
+#[test]
+fn no_zip_files_in_fixtures() {
+    assert_no_zip_files(Path::new(FIXTURE_DIR));
 }
 
 fn fixture_options(fixture_dir: &Path, format: WriterFormat) -> Options {
@@ -164,8 +155,6 @@ fn snapshot_main() {
             panic!("({source}): {e}");
         }
     }
-
-    cleanup(&fixture_dir.join("dict"));
 }
 
 /// Read the expected result in the snapshot first, then git diff
