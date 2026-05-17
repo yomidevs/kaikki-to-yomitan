@@ -73,10 +73,7 @@ fn build_glossary(dict_name: &str, ydict: YomitanDict) -> Glossary {
         env!("CARGO_MANIFEST_DIR"),
         "/assets/styles_html.css"
     ));
-    let data_entries = vec![DataEntry::new(
-        "structured-content.css",
-        EXTRA_CSS_SC.to_vec(),
-    )];
+    let data_entries = vec![DataEntry::new("styles.css", EXTRA_CSS_SC.to_vec())];
 
     let mut info = GlossaryInfo::new();
     info.insert("name", dict_name.to_string());
