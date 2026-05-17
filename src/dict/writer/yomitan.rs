@@ -54,9 +54,7 @@ pub fn write_test_yomitan(opts: &Options, pm: &PathManager, ydict: YomitanDict) 
     Ok(out_dir)
 }
 
-/// Write a [`YomitanDict`] to a sink (either disk or zip).
-///
-/// When zipping, also write metadata (index, css etc.).
+/// Write a [`YomitanDict`] to a zip sink, along with metadata (index, css etc.).
 pub fn write_yomitan(
     source: Lang,
     target: Lang,

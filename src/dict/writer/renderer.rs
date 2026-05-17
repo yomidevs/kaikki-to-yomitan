@@ -6,9 +6,9 @@ use maud::{Markup, html};
 pub trait Renderer {
     fn render_entry(entry: &YomitanEntry) -> Markup {
         match entry {
-            YomitanEntry::TermInfo(t) => Self::render_term_info(t),
-            YomitanEntry::TermInfoForm(t) => Self::render_term_info_form(t),
-            YomitanEntry::TermMeta(t) => Self::render_term_meta(t),
+            YomitanEntry::TermBankEntry(t) => Self::render_term_bank_entry(t),
+            YomitanEntry::TermBankEntryForm(t) => Self::render_term_bank_entry_form(t),
+            YomitanEntry::TermMetaBankEntry(t) => Self::render_term_meta_bank_entry(t),
         }
     }
 
@@ -33,7 +33,7 @@ pub trait Renderer {
     //
     // Note that, for the main dictionary, we always have exactly one definition in lemmas.
     // This is NOT true for forms in the main dictionary, nor for the glossary dictionary.
-    fn render_term_info(entry: &TermInfo) -> Markup {
+    fn render_term_bank_entry(entry: &TermBankEntry) -> Markup {
         html! {
             div class="entry" {
                 div class="headword" {
@@ -85,7 +85,7 @@ pub trait Renderer {
         )
     }
 
-    fn render_term_info_form(entry: &TermInfoForm) -> Markup {
+    fn render_term_bank_entry_form(entry: &TermBankEntryForm) -> Markup {
         html! {
             div class="entry form" {
                 h2 { (&entry.term) }
@@ -99,8 +99,8 @@ pub trait Renderer {
         }
     }
 
-    fn render_term_meta(entry: &TermMeta) -> Markup {
-        let TermMeta::TermPhoneticTranscription(tm) = entry;
+    fn render_term_meta_bank_entry(entry: &TermMetaBankEntry) -> Markup {
+        let TermMetaBankEntry::TermPhoneticTranscription(tm) = entry;
         html! {
             div class="entry form" {
                 h2 { (tm.term) }

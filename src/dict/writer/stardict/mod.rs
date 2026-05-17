@@ -42,10 +42,15 @@ pub fn write_stardict(
 // Build a Glossary out of the html rendered by StardictRenderer
 fn build_glossary(dict_name: &str, ydict: YomitanDict) -> Glossary {
     let entries: Vec<Entry> = ydict
-        .term_info
+        .term_bank
         .into_iter()
-        .map(YomitanEntry::TermInfo)
-        .chain(ydict.term_meta.into_iter().map(YomitanEntry::TermMeta))
+        .map(YomitanEntry::TermBankEntry)
+        .chain(
+            ydict
+                .term_meta_bank
+                .into_iter()
+                .map(YomitanEntry::TermMetaBankEntry),
+        )
         .map(|entry| {
             Entry::new(
                 entry.term().to_string(),
@@ -56,7 +61,7 @@ fn build_glossary(dict_name: &str, ydict: YomitanDict) -> Glossary {
 
     // Aren't these duplicated in entries?
     let mut alt_map = AltMap::new();
-    for entry in ydict.term_info_form {
+    for entry in ydict.term_bank_form {
         let term = entry.term;
         for def in entry.definitions {
             let DetailedDefinition::Inflection((from, _tags)) = def else {
