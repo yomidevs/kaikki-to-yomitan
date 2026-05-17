@@ -15,8 +15,7 @@ use renderer::HtmlRenderer;
 
 const STYLES_CSS_HTML: &[u8] = include_bytes!("../../../../assets/styles_html.css");
 
-#[allow(unused)]
-pub fn write_html(opts: &Options, pm: &PathManager, ydict: YomitanDict) -> Result<PathBuf> {
+pub fn write_html(_: &Options, pm: &PathManager, ydict: YomitanDict) -> Result<PathBuf> {
     let dir_in_stage = pm.dir_in_stage("html");
     _ = fs::create_dir_all(&dir_in_stage);
 

@@ -12,6 +12,7 @@ use pangloss::{
 use crate::{
     cli::Options,
     dict::writer::renderer::Renderer,
+    lang::Lang,
     models::yomitan::{DetailedDefinition, YomitanDict},
     path::PathManager,
 };
@@ -20,8 +21,8 @@ mod renderer;
 use renderer::MdictRenderer;
 
 pub fn write_mdict(
-    source: crate::lang::Lang,
-    target: crate::lang::Lang,
+    source: Lang,
+    target: Lang,
     _: &Options,
     pm: &PathManager,
     ydict: YomitanDict,
