@@ -239,3 +239,37 @@ fn snapshot_html_format() -> Result<()> {
 
     Ok(())
 }
+
+#[test]
+fn snapshot_main_stardict() -> Result<()> {
+    let fixture_dir = Path::new(FIXTURE_DIR);
+    let format = WriterFormat::Stardict;
+
+    let args = fixture_main_args(Lang::En, Edition::En, fixture_dir, format);
+    make_dict_from_jsonl(DMain, args).unwrap();
+    let args = fixture_main_args(Lang::Ja, Edition::Ja, fixture_dir, format);
+    make_dict_from_jsonl(DMain, args).unwrap();
+
+    // This isn't really a snapshot (for now): we only test that it doesn't explode
+    fs::remove_dir_all(fixture_dir.join("dict/en/en/main/stardict")).ok();
+    fs::remove_dir_all(fixture_dir.join("dict/ja/ja/main/stardict")).ok();
+
+    Ok(())
+}
+
+#[test]
+fn snapshot_main_mdict() -> Result<()> {
+    let fixture_dir = Path::new(FIXTURE_DIR);
+    let format = WriterFormat::Mdict;
+
+    let args = fixture_main_args(Lang::En, Edition::En, fixture_dir, format);
+    make_dict_from_jsonl(DMain, args).unwrap();
+    let args = fixture_main_args(Lang::Ja, Edition::Ja, fixture_dir, format);
+    make_dict_from_jsonl(DMain, args).unwrap();
+
+    // This isn't really a snapshot (for now): we only test that it doesn't explode
+    fs::remove_dir_all(fixture_dir.join("dict/en/en/main/mdict")).ok();
+    fs::remove_dir_all(fixture_dir.join("dict/ja/ja/main/mdict")).ok();
+
+    Ok(())
+}
