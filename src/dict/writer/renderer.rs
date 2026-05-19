@@ -21,11 +21,7 @@ pub trait Renderer {
                     }
                 }
                 div class="entry-body" {
-                    div class="definition-tag-list tag-list" {
-                        @for tag in &entry.definition_tags {
-                            (Self::render_definition_tag(tag))
-                        }
-                    }
+                    (Self::render_definition_tags(&entry.definition_tags))
                     @if entry.definitions.len() == 1 {
                         (Self::render_detailed_definition(&entry.definitions[0]))
                     } @else {
@@ -48,6 +44,16 @@ pub trait Renderer {
                 (term)
                 @if !reading.is_empty() {
                     rt { (reading) }
+                }
+            }
+        )
+    }
+
+    fn render_definition_tags(tags: &[TagInfo]) -> Markup {
+        html!(
+            div class="definition-tag-list tag-list" {
+                @for tag in tags {
+                    (Self::render_definition_tag(tag))
                 }
             }
         )
