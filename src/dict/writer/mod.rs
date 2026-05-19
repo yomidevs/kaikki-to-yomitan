@@ -25,6 +25,11 @@ use mdict_text::write_mdict_text;
 use stardict::write_stardict;
 use yomitan::{write_test_yomitan, write_yomitan};
 
+pub const STYLES_CSS: &[u8] = include_bytes!("../../../assets/styles/styles.css");
+pub const STYLES_CSS_EXPERIMENTAL: &[u8] =
+    include_bytes!("../../../assets/styles/styles_experimental.css");
+pub const YOMITAN_CSS: &[u8] = include_bytes!("../../../assets/styles/styles_html.css");
+
 #[derive(ValueEnum, Debug, Default, Clone, Copy)]
 pub enum WriterFormat {
     // Yomitan zipped

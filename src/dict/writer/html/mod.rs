@@ -5,16 +5,16 @@ use std::{
 };
 
 use crate::{
-    cli::Options, dict::writer::renderer::Renderer, models::yomitan::YomitanDict, path::PathManager,
+    cli::Options,
+    dict::writer::{STYLES_CSS, YOMITAN_CSS, renderer::Renderer},
+    models::yomitan::YomitanDict,
+    path::PathManager,
 };
 
 use anyhow::Result;
 
 mod renderer;
 use renderer::HtmlRenderer;
-
-const STYLES_CSS: &[u8] = include_bytes!("../../../../assets/styles.css");
-const YOMITAN_CSS: &[u8] = include_bytes!("../../../../assets/styles_html.css");
 
 pub fn write_html(_: &Options, pm: &PathManager, ydict: YomitanDict) -> Result<PathBuf> {
     let dir_in_stage = pm.dir_in_stage("html");

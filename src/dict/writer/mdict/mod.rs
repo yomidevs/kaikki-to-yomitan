@@ -11,7 +11,7 @@ use pangloss::{
 
 use crate::{
     cli::Options,
-    dict::writer::renderer::Renderer,
+    dict::writer::{YOMITAN_CSS, renderer::Renderer},
     lang::Lang,
     models::yomitan::{DetailedDefinition, YomitanDict},
     path::PathManager,
@@ -66,11 +66,7 @@ fn build_glossary(dict_name: &str, ydict: YomitanDict) -> Glossary {
         .collect();
 
     // In theory we could call this in pangloss
-    const EXTRA_CSS_SC: &[u8] = include_bytes!(concat!(
-        env!("CARGO_MANIFEST_DIR"),
-        "/assets/styles_html.css"
-    ));
-    let data_entries = vec![DataEntry::new("styles.css", EXTRA_CSS_SC.to_vec())];
+    let data_entries = vec![DataEntry::new("styles.css", YOMITAN_CSS.to_vec())];
 
     let mut info = GlossaryInfo::new();
     info.insert("name", dict_name.to_string());
