@@ -16,20 +16,24 @@ pub trait Renderer {
         html! {
             div class="entry" {
                 div class="headword" {
-                    (Self::render_headword(&entry.term, &entry.reading))
-                }
-                div class="definition-tag-list tag-list" {
-                    @for tag in &entry.definition_tags {
-                        (Self::render_definition_tag(tag))
+                    span class="headword-term" {
+                        (Self::render_headword(&entry.term, &entry.reading))
                     }
                 }
-                @if entry.definitions.len() == 1 {
-                    (Self::render_detailed_definition(&entry.definitions[0]))
-                } @else {
-                    ol class="definition-list" {
-                        @for def in &entry.definitions {
-                            li {
-                                (Self::render_detailed_definition(def))
+                div class="entry-body" {
+                    div class="definition-tag-list tag-list" {
+                        @for tag in &entry.definition_tags {
+                            (Self::render_definition_tag(tag))
+                        }
+                    }
+                    @if entry.definitions.len() == 1 {
+                        (Self::render_detailed_definition(&entry.definitions[0]))
+                    } @else {
+                        ol class="definition-list" {
+                            @for def in &entry.definitions {
+                                li {
+                                    (Self::render_detailed_definition(def))
+                                }
                             }
                         }
                     }
@@ -102,7 +106,11 @@ pub trait Renderer {
     fn render_detailed_definition(def: &DetailedDefinition) -> Markup {
         match def {
             DetailedDefinition::Text(s) => html! { (s) },
-            DetailedDefinition::StructuredContent(s) => Self::render_structured_content(s),
+            DetailedDefinition::StructuredContent(s) => html! {
+                span class="gloss-content structured-content" {
+                    (Self::render_structured_content(s))
+                }
+            },
             DetailedDefinition::Inflection((label, forms)) => html! {
                 b { (label) } ": " (forms.join(", "))
             },
@@ -131,6 +139,8 @@ pub trait Renderer {
         false
     }
 
+    // This is way more convoluted that the pangloss version because maud requires
+    // knowing the tag at compile time...
     fn render_generic_node(node: &GenericNode) -> Markup {
         if Self::skip_render_generic_node(node) {
             return html! {};
