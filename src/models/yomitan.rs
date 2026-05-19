@@ -359,6 +359,20 @@ pub enum NTag {
     Summary,
 }
 
+impl NTag {
+    pub const fn as_str(&self) -> &'static str {
+        match self {
+            Self::Span => "span",
+            Self::Div => "div",
+            Self::Ol => "ol",
+            Self::Ul => "ul",
+            Self::Li => "li",
+            Self::Details => "details",
+            Self::Summary => "summary",
+        }
+    }
+}
+
 /// One of the possible values of the [`Node`] enum.
 ///
 /// Note that fields are ordered for visualization and may be different from yomitan builder order.

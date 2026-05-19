@@ -145,17 +145,14 @@ pub trait Renderer {
         let category_attr = data
             .and_then(|d| d.0.get(&NodeDataKey::Category))
             .map(|s| s.as_str());
-        let class = match content_attr {
-            Some("tag") => Some("gloss-sc-span"),
-            _ => None,
-        };
+        let class = format!("gloss-sc-{}", node.tag.as_str());
 
         // https://github.com/lambda-fairy/maud/issues/240
         // The attr=[value] syntax skips the attribute if the value is None
         match node.tag {
             NTag::Span => html! {
                 span
-                    class=[class]
+                    class=(class)
                     title=[node.title.clone()]
                     data-sc-content=[content_attr]
                     data-sc-category=[category_attr]
@@ -163,37 +160,42 @@ pub trait Renderer {
             },
             NTag::Div => html! {
                 div
-                    class=[class]
+                    class=(class)
                     data-sc-content=[content_attr]
                     data-sc-category=[category_attr]
                 { (content) }
             },
             NTag::Ol => html! {
                 ol
+                    class=(class)
                     data-sc-content=[content_attr]
                     data-sc-category=[category_attr]
                 { (content) }
             },
             NTag::Ul => html! {
                 ul
+                    class=(class)
                     data-sc-content=[content_attr]
                     data-sc-category=[category_attr]
                 { (content) }
             },
             NTag::Li => html! {
                 li
+                    class=(class)
                     data-sc-content=[content_attr]
                     data-sc-category=[category_attr]
                 { (content) }
             },
             NTag::Details => html! {
                 details
+                    class=(class)
                     data-sc-content=[content_attr]
                     data-sc-category=[category_attr]
                 { (content) }
             },
             NTag::Summary => html! {
                 summary
+                    class=(class)
                     data-sc-content=[content_attr]
                     data-sc-category=[category_attr]
                 { (content) }
