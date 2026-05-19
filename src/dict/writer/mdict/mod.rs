@@ -11,7 +11,7 @@ use pangloss::{
 
 use crate::{
     cli::Options,
-    dict::writer::{YOMITAN_CSS, renderer::Renderer},
+    dict::writer::{STYLES_CSS, YOMITAN_CSS, renderer::Renderer},
     lang::Lang,
     models::yomitan::{DetailedDefinition, YomitanDict},
     path::PathManager,
@@ -33,7 +33,6 @@ pub fn write_mdict(
     let dict_name = format!("wty-{source}-{target}");
     let mdx_path = dir_in_stage.join(format!("{dict_name}.mdx"));
     let glossary = build_glossary(&dict_name, ydict);
-    debug_assert_eq!(glossary.css_files().count(), 1);
 
     MdictFormat::default().write(&mdx_path, &glossary)?;
 
@@ -66,7 +65,10 @@ fn build_glossary(dict_name: &str, ydict: YomitanDict) -> Glossary {
         .collect();
 
     // In theory we could call this in pangloss
-    let data_entries = vec![DataEntry::new("styles.css", YOMITAN_CSS.to_vec())];
+    let data_entries = vec![
+        DataEntry::new("styles.css", STYLES_CSS.to_vec()),
+        DataEntry::new("yomitan.css", YOMITAN_CSS.to_vec()),
+    ];
 
     let mut info = GlossaryInfo::new();
     info.insert("name", dict_name.to_string());
